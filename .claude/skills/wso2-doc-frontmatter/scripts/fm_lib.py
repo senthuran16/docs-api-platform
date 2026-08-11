@@ -11,6 +11,7 @@ That makes the version segment the only genuinely tricky part of deriving a URL 
 a path, so it is all funnelled through :func:`site_paths` below.
 """
 import os
+import sys
 import re
 import subprocess
 import datetime
@@ -171,10 +172,10 @@ CT_ALIASES = {
 
 
 # ---------------------------------------------------------------------------
-# Capitalisation allowlists. Shared, because two scripts need the same answer:
-# `check_style.py` decides whether a capital in a heading is a violation, and
-# `fm_fix.py` decides whether to lowercase a word when it derives a `title` from
-# an H1. If those disagree, one script lowercases what the other says is correct.
+# Capitalisation allowlists. `fm_fix.py` uses them to decide whether to lowercase a
+# word when it derives a `title` from an H1. The `wso2-doc-style-checker` skill
+# answers the same question for headings, so keep the two in step: if they disagree,
+# one lowercases what the other calls correct.
 # ---------------------------------------------------------------------------
 
 SMALL = {"a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into", "nor",
@@ -238,7 +239,7 @@ STATUS_LABELS = {"beta", "alpha", "ga", "preview", "deprecated", "optional",
 # Words in PROPER that are NOT product names on their own. Two kinds:
 # document furniture ("Table of Contents", "Step 3"), and generic component words
 # that are only capitalised inside a longer name — "Gateway" in "AI Gateway",
-# "Portal" in "Developer Portal". `check_style.py` needs them in PROPER so it does
+# "Portal" in "Developer Portal". A heading checker needs them in PROPER so it does
 # not flag those longer names word by word, but a title derived from an H1 should
 # lowercase them unless the full phrase is present in PROPER_PHRASES.
 TITLE_GENERIC = {"Table", "Contents", "Note", "Tip", "Warning", "Example", "Appendix",
@@ -413,13 +414,52 @@ def first_h1(body):
     return re.sub(r"\s+", " ", t).strip() or None
 
 
-def md_files(docs_root=DOCS_ROOT):
+def md_files(docs_root=DOCS_ROOT, scope=None):
     out = []
     for root, _, fs in os.walk(docs_root):
         for f in fs:
             if f.endswith(".md"):
-                out.append(os.path.relpath(os.path.join(root, f), docs_root).replace("\\", "/"))
+                rel = os.path.relpath(os.path.join(root, f),
+                                      docs_root).replace("\\", "/")
+                if scope and not (rel == scope or rel.startswith(scope.rstrip("/") + "/")):
+                    continue
+                out.append(rel)
     return sorted(out)
+
+
+VERSION_SEGMENT = re.compile(r"\A(?:\d+\.\d+(?:\.\d+)?|next)\Z")
+
+
+def check_docs_root(docs_root):
+    """Refuse a docs root that is really a subdirectory of one. Returns a message.
+
+    `canonical_url` and `md_url` are derived from a page's path RELATIVE TO THE DOCS
+    ROOT, so pointing the scripts at `en/docs/api-manager/4.6.0` to "work on one
+    version" silently drops `api-manager/4.6.0/` from every URL it writes:
+
+        correct   https://wso2.com/api-platform/docs/api-manager/4.6.0/get-started/p/
+        narrowed  https://wso2.com/api-platform/docs/get-started/p/
+
+    Nothing later catches that — the frontmatter is well-formed and internally
+    consistent, just wrong, on every page in the version. Scoping is what `--scope`
+    is for: it keeps the root at `en/docs` and filters which pages are touched.
+    """
+    parts = [x for x in os.path.abspath(docs_root).replace("\\", "/").split("/") if x]
+    for i, seg in enumerate(parts):
+        if VERSION_SEGMENT.match(seg) or (seg == "docs" and i < len(parts) - 1
+                                          and parts[-1] != "docs"):
+            if "docs" in parts[:i + 1] or VERSION_SEGMENT.match(seg):
+                return ("`%s` looks like a subdirectory of the docs root, not the "
+                        "docs root itself.\n"
+                        "canonical_url and md_url are derived from the path relative "
+                        "to the root, so this would write URLs with the version "
+                        "segment missing — on every page.\n"
+                        "Pass the real root and scope instead:\n"
+                        "    %s en/docs --scope %s"
+                        % (docs_root, os.path.basename(sys.argv[0]),
+                           "/".join(parts[parts.index("docs") + 1:])
+                           if "docs" in parts else "<product>/<version>"))
+    return None
 
 
 def yaml_str(s):

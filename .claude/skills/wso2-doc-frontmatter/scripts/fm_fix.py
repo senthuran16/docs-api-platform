@@ -35,7 +35,7 @@ import collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fm_lib import (  # noqa: E402
     REQUIRED, AUTHOR, DESC_MAX, effective_allowed_ct, CT_ALIASES,
-    discover_versions, site_paths, split_frontmatter, md_files,
+    discover_versions, site_paths, split_frontmatter, md_files, check_docs_root,
     norm_date, git_last_modified, first_h1, render_frontmatter, load_frontmatter,
 )
 
@@ -47,8 +47,8 @@ def sentence_case(s):
 
     Preserved: the first word, acronyms, anything in `TITLE_PROPER`, and any
     multi-word product name in `PROPER_PHRASES` ("API Manager", "Developer
-    Portal"). Those allowlists are shared with `check_style.py` — without them
-    this function lowercases the very capitals that checker calls correct, and
+    Portal"). Without them this function lowercases the very capitals a heading
+    style check calls correct, and
     an H1 of "API Manager Configuration Catalog" becomes the wrong
     "API manager configuration catalog".
     """
@@ -105,6 +105,10 @@ def derive_tags(rel):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("docs_root", nargs="?", default="en/docs")
+    ap.add_argument("--scope", default=None,
+                    help="Limit to this path prefix, e.g. api-manager/4.6.0. "
+                         "Keeps docs_root at en/docs, which is what the URLs "
+                         "are derived from.")
     ap.add_argument("--files", nargs="*", default=None)
     ap.add_argument("--policy", default="keep-all",
                     choices=["keep-all", "latest-only", "strip-all"])
@@ -121,11 +125,15 @@ def main():
     if not args.apply:
         args.dry_run = True
     root = args.docs_root.rstrip("/")
+    bad_root = check_docs_root(root)
+    if bad_root:
+        print("Refusing to run.\n" + bad_root)
+        return 2
     versions = discover_versions(root)
     allowed_ct = effective_allowed_ct()
     filled = json.load(open(args.fill)) if args.fill else {}
 
-    files = args.files or md_files(root)
+    files = args.files or md_files(root, args.scope)
     files = [f[len(root) + 1:] if f.startswith(root + "/") else f for f in files]
 
     changes = collections.Counter()

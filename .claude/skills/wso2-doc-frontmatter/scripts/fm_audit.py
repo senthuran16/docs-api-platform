@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fm_lib import (  # noqa: E402
     BASE, REQUIRED, AUTHOR, DESC_MAX, DESC_MIN, TITLE_MAX,
     effective_allowed_ct, CT_ALIASES, discover_versions, site_paths,
-    split_frontmatter, md_files, norm_date, split_version,
+    split_frontmatter, md_files, norm_date, split_version, check_docs_root,
     load_frontmatter, parse_frontmatter_yaml, HAVE_PYYAML, is_legacy_url,
 )
 
@@ -66,6 +66,10 @@ def selftest(root):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("docs_root", nargs="?", default="en/docs")
+    ap.add_argument("--scope", default=None,
+                    help="Limit to this path prefix, e.g. api-manager/4.6.0. "
+                         "Keeps docs_root at en/docs, which is what the URLs "
+                         "are derived from.")
     ap.add_argument("--files", nargs="*", default=None,
                     help="Limit to these paths (relative to docs_root or to cwd).")
     ap.add_argument("--policy", default="keep-all",
@@ -90,7 +94,12 @@ def main():
             f = f.replace("\\", "/")
             files.append(f[len(root) + 1:] if f.startswith(root + "/") else f)
     else:
-        files = md_files(root)
+        files = md_files(root, args.scope)
+
+    bad_root = check_docs_root(root)
+    if bad_root:
+        print("Refusing to run.\n" + bad_root)
+        return 2
 
     findings = []
 

@@ -36,78 +36,135 @@ import json
 import argparse
 import collections
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from links_lib import (  # noqa: E402
+    url_base, page_id, slug, harvest_anchors, resolve_candidates,
+    rewrite_target, is_raw_html,
+)
+
 APPLICABLE = {
     "malformed": "link syntax, exact",
     "dir_style": "written as a URL; adding `.md` lets mkdocs resolve it",
     "depth": "wrong relative depth, exact",
     "templated_fixable": "build-time variable where the resource exists, exact",
     "renamed": "target moved, proposed with a confidence",
+    "case": "right path, wrong capital letters — exact",
+    "include": "`{! !}` shared block converted to `--8<--`, exact",
+    "anchor_case": "anchor names a real heading with different capitals — exact",
+    "anchor_legacy": "original Confluence anchor, matched to the one heading that agrees",
+    "anchor_punct": "anchor names a real heading, different hyphens or underscores — exact",
+    "templated_typo": "`{{base_path}}` misspelled and the resource exists — exact",
+    "partial_fixable": ("link in a shared block; one path works from every page that "
+                        "includes it"),
+    "stale_mapped": "old-site url whose path exists under this version — exact",
+    "anchor_deep": ("heading is deeper than toc_depth so it has no id; insert "
+                    "`<a name>` above it"),
+    # An agent's own decisions, in a plan it wrote itself. Same shape, same
+    # verification, same journal — so a judgement call is applied by the one thing
+    # in this skill that checks its work, and shows up in `git diff` and the
+    # journal exactly like a mechanical fix. The alternative is an agent editing
+    # pages by hand, where nothing checks the result and nothing records why.
+    "agent": ("decided by an agent after reading the pages; verified like any other, "
+              "and refused unless the reasoning is quoted in `evidence`"),
 }
 REFUSED = {
     "templated": "the resource does not exist at that path — may be served by a redirect",
     "stale": "points at a pre-migration domain — needs the new equivalent page",
     "anchor": "the heading was reworded — needs someone to pick the new one",
     "gone": "no target anywhere — was it dropped, missed, or merged?",
+    "partial": ("the page is included into other pages, so a relative link resolves "
+                "against the includer's url — no single relative path can be right"),
 }
 
 
-def slug(h):
-    """python-markdown's toc slugify: strip non-word chars, then collapse runs of
-    whitespace AND hyphens into one hyphen. Kept identical to check_links.py."""
-    h = re.sub(r"`|\*", "", h)
-    h = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", h)
-    h = re.sub(r"<[^>]+>", "", h)
-    h = re.sub(r"[^\w\s-]", "", h).strip().lower()
-    return re.sub(r"[-\s]+", "-", h)
 
 
 def anchors_of(path):
+    """Anchor ids the page at `path` publishes. `toc_depth` is not applied here:
+    refusing a fix because an anchor is too deep for the TOC would block a
+    correct path rewrite over a separate, separately-reported defect."""
     txt = open(path, encoding="utf-8", errors="replace").read()
-    txt = re.sub(r"<!--.*?-->", "", txt, flags=re.S)
-    txt = re.sub(r"```.*?```", "", txt, flags=re.S)
-    out = set()
-    for m in re.finditer(r"^#{1,6}\s+(.+?)\s*$", txt, re.M):
-        h = m.group(1)
-        exp = re.search(r"\{#([\w-]+)\}", h)
-        if exp:
-            out.add(exp.group(1))
-            h = h[:exp.start()]
-        out.add(slug(h))
-    for m in re.finditer(r"""<a[^>]+(?:name|id)=(["'])(.*?)\1""", txt):
-        out.add(m.group(2))
-    for m in re.finditer(r"\{#([\w-]+)\}", txt):
-        out.add(m.group(1))
-    return out
+    anchors, _deep = harvest_anchors(txt)
+    return anchors
 
 
-def page_id(p):
-    """Collapse the ways one page can be spelled into a single identity, so
-    `foo/bar`, `foo/bar.md` and `foo/bar/index.md` compare equal."""
-    p = (p or "").rstrip("/")
-    for suffix in ("/index.md", "/README.md"):
-        if p.endswith(suffix):
-            return p[: -len(suffix)]
-    return p[:-3] if p.endswith(".md") else p
 
 
-def resolve(root, src_rel, target):
+
+
+def entry_is_html(root, entry):
+    """Whether this entry's link was written as raw HTML. The reporter records it;
+    reading it back off the page is the fallback for older plans."""
+    v = entry.get("is_html")
+    if v is not None:
+        return bool(v)
+    try:
+        txt = open(os.path.join(root, entry["file"]), encoding="utf-8",
+                   errors="replace").read()
+    except OSError:
+        return False
+    return is_raw_html(txt, entry.get("link", ""))
+
+
+
+
+
+
+def resolve(root, src_rel, target, is_html=False):
     """Where does `target`, written in the page `src_rel`, land on disk?
 
     Returns a repo-relative path that exists, or None. Directory URLs mean a
     bare path may be a file, the same file with `.md`, or a directory's index.
+
+    The base depends on the syntax, and this is the load-bearing part. mkdocs
+    resolves a Markdown target against the SOURCE directory, but passes raw HTML
+    through untouched, so the browser resolves it against the RENDERED url — one
+    level deeper for a non-index page. Checking a raw-HTML fix source-relative
+    refuses every correct proposal, and accepts the wrong one.
     """
     target = target.split("#")[0].split("?")[0]
     if not target:
         return src_rel
-    base = os.path.dirname(src_rel)
+    base = url_base(src_rel) if is_html else os.path.dirname(src_rel)
     cand = os.path.normpath(os.path.join(base, target)).replace("\\", "/")
-    for c in (cand, cand + ".md", cand + "/index.md", cand + "/README.md"):
+    for c in resolve_candidates(cand):
         if os.path.isfile(os.path.join(root, c)):
             return c
     return None
 
 
-def verify(root, entry):
+# The two things an agent-decided fix must quote, so a reviewer can check it
+# without redoing the reading. See `check_evidence`.
+EVIDENCE_KEYS = ("sentence", "matched")
+
+
+def check_evidence(entry):
+    """For an `agent` entry: is the reasoning recorded? Returns (ok, reason).
+
+    A judgement call and a wrong guess produce the same diff — correct syntax, real
+    heading, and a reader who silently lands in the wrong section with nothing to
+    flag it ever again. The only thing that separates them is the evidence, so the
+    evidence is required rather than encouraged:
+
+    - `sentence` — the sentence on the page that contains the link, quoted. That is
+      what says where the reader was being sent.
+    - `matched` — the heading, page title or filename that was chosen, quoted from
+      the target.
+
+    Both must be non-empty, and `sentence` has to actually appear on the page, which
+    is what stops the field from being filled in with a summary written from memory.
+    Refusing here rather than warning is deliberate: a warning at the bottom of a
+    2,000-entry run is not read.
+    """
+    for k in EVIDENCE_KEYS:
+        v = (entry.get("evidence") or {}).get(k)
+        if not v or not str(v).strip():
+            return False, (f"agent fix with no `evidence.{k}` — quote the linking "
+                           f"sentence and the heading you matched")
+    return True, ""
+
+
+def verify(root, entry, tier=None):
     """Can this entry's `suggested` value be trusted? Returns (ok, reason)."""
     src = entry["file"]
     suggested = entry.get("suggested")
@@ -116,6 +173,17 @@ def verify(root, entry):
     if not os.path.isfile(os.path.join(root, src)):
         return False, "source page no longer exists"
 
+    if tier == "agent":
+        ok, why = check_evidence(entry)
+        if not ok:
+            return False, why
+        quoted = " ".join(str(entry["evidence"]["sentence"]).split())
+        page = " ".join(open(os.path.join(root, src), encoding="utf-8",
+                             errors="replace").read().split())
+        if quoted not in page:
+            return False, ("`evidence.sentence` is not on the page — quote it "
+                           "verbatim, do not paraphrase")
+
     # An absolute URL or mail link has no on-disk target to check. That is not a
     # reason to skip: these appear in `malformed`, where the fix is purely
     # syntactic (unwrapping backticks, removing a stray quote) and the address
@@ -123,13 +191,48 @@ def verify(root, entry):
     if re.match(r"^(?:[a-z][a-z0-9+.-]*:)?//|^mailto:", suggested, re.I):
         return True, "external address, syntax-only fix"
 
+    # Raw HTML and Markdown resolve against different bases, so the check has to
+    # know which one this was. The reporter records it; fall back to reading the
+    # page only for plans written before it did.
+    is_html = entry_is_html(root, entry)
+
+    if entry.get("insert_above"):
+        txt = open(os.path.join(root, src), encoding="utf-8", errors="replace").read()
+        if entry["insert_above"] not in txt:
+            return False, "the heading is no longer in the page"
+        return True, ""
+
+    if entry.get("literal"):
+        # `--8<-- "path"` is resolved by pymdownx.snippets against `base_path:
+        # docs`, so the address is docs-root-relative — not relative to the page.
+        # Checking it page-relative would refuse every correct conversion.
+        m_snip = re.match(r'--8<--\s*"([^"]+)"', suggested)
+        if not m_snip:
+            return False, "not a recognised shared-block directive"
+        tgt = m_snip.group(1)
+        if not os.path.isfile(os.path.join(root, tgt)):
+            return False, f"shared block does not exist at {tgt}"
+        return True, ""
+
+    # A link in a SHARED BLOCK is resolved from whichever page includes the block,
+    # never from the block's own folder — so check it from every includer. Checking
+    # it block-relative is what let 62 links be "fixed" into breakage.
+    incs = entry.get("includers")
+    if incs:
+        bad = [i for i in incs if resolve(root, i, suggested, is_html) is None]
+        if bad:
+            return False, (f"does not resolve from {len(bad)} of {len(incs)} "
+                           f"including page(s), e.g. {bad[0]}")
+        return True, ""
+
     frag = suggested.partition("#")[2]
-    if suggested.startswith("#"):
-        landed = src                      # same-page anchor
+    if suggested.startswith("#") or suggested in ("./", "."):
+        landed = src                      # same page
     else:
-        landed = resolve(root, src, suggested)
+        landed = resolve(root, src, suggested, is_html)
         if landed is None:
-            return False, f"suggested target does not resolve: {suggested}"
+            return False, (f"suggested target does not resolve: {suggested} "
+                           f"({'raw HTML' if is_html else 'Markdown'} base)")
 
     # Where the plan already recorded the on-disk target, the two must agree — on
     # the *page*, not the spelling. The reporter records some targets in their
@@ -208,7 +311,7 @@ def main():
     # Verify everything first. Nothing is written until the whole tier is checked.
     ready, skipped = [], []
     for e in entries:
-        ok, why = verify(root, e)
+        ok, why = verify(root, e, args.tier)
         (ready if ok else skipped).append(e if ok else (e, why))
 
     print("=" * 70)
@@ -257,20 +360,61 @@ def main():
         orig = txt
         done = set()
         for e in es:
-            if e["link"] in done:
+            html = entry_is_html(root, e)
+            key = (e["link"], html)
+            if key in done:
                 # The plan lists one entry per occurrence, and the first rewrite
-                # replaced every copy of that exact string. Not a problem.
+                # replaced every copy in the same syntax. Not a problem.
                 already += 1
                 continue
-            if e["link"] not in txt:
+            if e.get("insert_above"):
+                # Not a link rewrite: this adds an inert anchor above a heading in
+                # the TARGET page, so a link to a heading deeper than `toc_depth`
+                # has something to land on. Skipped when the anchor is already
+                # there, which is what makes re-running safe.
+                heading = e["insert_above"]
+                if heading not in txt:
+                    missing.append((rel, heading))
+                    continue
+                lines = txt.splitlines(keepends=True)
+                out_lines, n = [], 0
+                for idx, ln in enumerate(lines):
+                    if ln.rstrip("\n") == heading.rstrip("\n"):
+                        prev = out_lines[-1].strip() if out_lines else ""
+                        if e["suggested"] not in prev:
+                            indent = re.match(r"\s*", ln).group(0)
+                            out_lines.append(f"{indent}{e['suggested']}\n")
+                            n += 1
+                    out_lines.append(ln)
+                if not n:
+                    already += 1
+                    continue
+                txt = "".join(out_lines)
+                done.add(key)
+                rewrites += n
+                journal.append({"file": rel, "inserted": e["suggested"],
+                                "above": heading, "occurrences": n})
+                continue
+
+            if e.get("literal"):
+                # A shared-block directive is a whole distinctive token, not a
+                # target sitting inside a link, so there is no delimiter to anchor
+                # on and no substring hazard: `{!a/b.md!}` cannot occur inside
+                # another directive because of its closing `!}`.
+                n = txt.count(e["link"])
+                txt = txt.replace(e["link"], e["suggested"])
+            else:
+                txt, n = rewrite_target(txt, e["link"], e["suggested"], html)
+            if not n:
                 missing.append((rel, e["link"]))
                 continue
-            n = txt.count(e["link"])
-            txt = txt.replace(e["link"], e["suggested"])
-            done.add(e["link"])
+            done.add(key)
             rewrites += n
-            journal.append({"file": rel, "from": e["link"],
-                            "to": e["suggested"], "occurrences": n})
+            rec = {"file": rel, "from": e["link"], "to": e["suggested"],
+                   "syntax": "html" if html else "markdown", "occurrences": n}
+            if e.get("evidence"):
+                rec["evidence"] = e["evidence"]
+            journal.append(rec)
         if txt != orig:
             open(path, "w", encoding="utf-8").write(txt)
             changed_files += 1

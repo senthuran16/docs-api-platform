@@ -28,38 +28,20 @@ import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fm_lib import split_version, is_legacy_url  # noqa: E402
+from links_lib import (  # noqa: E402
+    find_targets, harvest_anchors, strip_noise, url_base, published, link_to,
+    slug, resolve_candidates, version_root as _version_root,
+    find_includes, snippet_for, match_anchor, normalise_var,
+    build_include_map, legacy_path, read_toc_depth,
+)
 
-LINK = re.compile(r'(!?)\[([^\]]*)\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"]*")?\s*\)')
-# Quote character captured and back-referenced: HTML allows single or double
-# quotes and these pages use both, so a double-quote-only pattern silently skips
-# whatever is single-quoted.
-HTML_SRC = re.compile(r"""<(img|a|source|iframe)[^>]+(?:src|href)=(["'])(.*?)\2""")
 
 
-def url_base(rel):
-    """Directory the RENDERED page sits in, under `use_directory_urls: true`.
 
-    `a/b/page.md` is served at `/a/b/page/`, so it is one level DEEPER than the
-    source file, while `a/b/index.md` is served at `/a/b/` — the same level.
-
-    This matters because mkdocs rewrites relative targets in Markdown syntax
-    (resolving them against the source file) but passes raw HTML through
-    untouched, so an `<img src>` is resolved by the browser against the rendered
-    URL instead. The same string is therefore correct in one syntax and broken in
-    the other, and the two must not be checked the same way.
-    """
-    d = os.path.dirname(rel)
-    stem = os.path.basename(rel)[:-3] if rel.endswith(".md") else os.path.basename(rel)
-    return d if stem in ("index", "README") else (f"{d}/{stem}" if d else stem)
 
 
 def version_root(rel):
-    """`<product>/<version>/a/b.md` -> `<product>/<version>`, else ''."""
-    ver, _ = split_version(rel)
-    if not ver:
-        return ""
-    parts = rel.split("/")
-    return "/".join(parts[: parts.index(ver) + 1])
+    return _version_root(rel, split_version)
 
 
 def main():
@@ -84,57 +66,299 @@ def main():
                 md_list.append(rel)
     md_list.sort()
 
+    # SORTED, not set order. `all_files` is a set, so iterating it puts candidates
+    # in hash order — which varies between processes. The `renamed` tier breaks
+    # ties on candidate order, so the same command proposed a different target
+    # from one run to the next (measured: 5 of 391 on one version). A plan nobody
+    # can reproduce cannot be reviewed, and two people running the skill would
+    # disagree. Sorting makes the choice a property of the repo, not of the run.
     by_basename = collections.defaultdict(list)
-    for f in all_files:
+    for f in sorted(all_files):
         by_basename[os.path.basename(f)].append(f)
 
+    # Lower-cased index, for spotting a link that differs from a real file only by
+    # capital letters. Built once: this is 50k+ paths.
+    lower_index = {}
+    for f in sorted(all_files):
+        lower_index.setdefault(f.lower(), f)
+
+    def resolved_ci(cand):
+        """The real file `cand` names if capital letters are ignored, else None.
+        Returns None when an exact match exists — that is not a case problem."""
+        for c in resolve_candidates(cand):
+            if c in all_files:
+                return None
+            hit = lower_index.get(c.lower())
+            if hit:
+                return hit
+        return None
+
+    def resolved(cand):
+        """The file `cand` actually names, or None. A bare path may be the file
+        itself, the same path with `.md`, or a directory's index."""
+        return next((c for c in resolve_candidates(cand) if c in all_files), None)
+
     def resolves(cand):
-        return any(c in all_files
-                   for c in (cand, cand + ".md", cand + "/index.md", cand + "/README.md"))
+        return resolved(cand) is not None
 
-    def slug(h):
-        h = re.sub(r"`|\*", "", h)
-        h = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", h)
-        h = re.sub(r"<[^>]+>", "", h)
-        h = re.sub(r"[^\w\s-]", "", h).strip().lower()
-        return re.sub(r"[-\s]+", "-", h)
+    # `toc_depth` matters here, not just in the checker: with `toc_depth: 3` a
+    # heading at h4 or deeper gets NO id, so a link to it goes nowhere even though
+    # the heading is plainly there. Those are a separate, fixable cause.
+    TOC = read_toc_depth(os.path.join(os.path.dirname(root) or ".", "mkdocs.yml"))
 
-    anchors = {}
+    # A page's anchors include the headings of every block it pulls in with
+    # `--8<--`: the block's text is spliced in before Markdown runs, so those
+    # headings get ids on the including page. Read the file text once, here, and
+    # hand it to the harvester — otherwise a link to a heading that lives in a
+    # shared block reads as broken on every page that uses the block.
+    page_text = {}
     for p in md_list:
-        txt = open(os.path.join(root, p), encoding="utf-8", errors="replace").read()
-        txt = re.sub(r"<!--.*?-->", "", txt, flags=re.S)
-        txt = re.sub(r"```.*?```", "", txt, flags=re.S)
-        a = set()
-        for m in re.finditer(r"^#{1,6}\s+(.+?)\s*$", txt, re.M):
-            h = m.group(1)
-            exp = re.search(r"\{#([\w-]+)\}", h)
-            if exp:
-                a.add(exp.group(1))
-                h = h[: exp.start()]
-            a.add(slug(h))
-        for m in re.finditer(r"""<a[^>]+(?:name|id)=(["'])(.*?)\1""", txt):
-            a.add(m.group(2))
-        anchors[p] = a
+        page_text[p] = open(os.path.join(root, p), encoding="utf-8",
+                            errors="replace").read()
+    included = build_include_map(root, set(md_list), version_root)
+    includes_of = {}
+    for blk, pages in included.items():
+        for pg in pages:
+            includes_of.setdefault(pg, []).append(blk)
 
+    anchors, deep_anchors = {}, {}
+    for p in md_list:
+        extra = [page_text[b] for b in includes_of.get(p, []) if b in page_text]
+        anchors[p], deep_anchors[p] = harvest_anchors(page_text[p], TOC, extra)
+
+    # ---- which pages are PARTIALS, included into other pages ----
+    #
+    # A relative link inside a partial is resolved against the url of whatever page
+    # included it, never against the partial's own location. So there is no
+    # relative path this script can propose that is right — and when a partial has
+    # two includers at different depths, no path exists that is right for both.
+    # Proposing one anyway produces a link that works on one page and breaks on
+    # another, which is the hardest kind of breakage to notice.
+    # `included` is built above, next to the anchor harvest.
+
+    # ---- WHICH SHARED BLOCKS STILL HAVE BROKEN LINKS OF THEIR OWN ----
+    #
+    # `{! !}` does nothing in this repo, so a block's content never reaches a page
+    # and its broken links are inert. Converting to `--8<--` makes the block
+    # render — and every broken link in it becomes a broken link on every page
+    # that uses it.
+    #
+    # Measured, not theorised: converting 4.6.0's 41 blocks took a real mkdocs
+    # build from 57 broken-link warnings to 78. All 13 new ones came from blocks
+    # whose own links were already broken. The instructions did start appearing,
+    # which is the point — but they appeared with broken images in them.
+    #
+    # So a block is only safe to switch on once its own links work. This records
+    # which blocks are not ready, and the `include` group refuses those.
+    def block_link_broken_for(block, includer):
+        """Does any link in `block` fail to resolve when spliced into `includer`?"""
+        btxt = strip_noise(open(os.path.join(root, block), encoding="utf-8",
+                                errors="replace").read())
+        for _k, bt, bhtml in find_targets(btxt):
+            if bt.startswith(("mailto:", "tel:", "//", "#", "#!")) or "{{" in bt:
+                continue
+            if re.match(r"^[a-z][a-z0-9+.-]*:", bt):
+                continue
+            bpath = urllib.parse.unquote(bt.partition("#")[0])
+            if not bpath or bpath.startswith("/"):
+                continue
+            ibase = os.path.dirname(includer)
+            lit = os.path.normpath(os.path.join(ibase, bpath)).replace("\\", "/")
+            rw = (not bhtml) and lit in all_files
+            cand = os.path.normpath(
+                os.path.join(ibase if rw else url_base(includer), bpath)).replace("\\", "/")
+            if not resolved(cand):
+                return True
+        return False
+
+    block_unready = {}
+    for blk in included:
+        for inc in included[blk]:
+            if block_link_broken_for(blk, inc):
+                block_unready.setdefault(blk, set()).add(inc)
+
+    deep_seen = set()      # (target page, anchor) already queued for an <a name>
     tiers = {k: [] for k in ("templated_fixable", "templated", "malformed", "dir_style",
-                             "depth", "renamed", "gone", "stale", "anchor")}
+                             "depth", "renamed", "case", "include", "gone", "stale",
+                             "anchor", "anchor_case", "anchor_legacy", "anchor_punct",
+                             "templated_typo", "partial", "partial_fixable",
+                             "stale_mapped", "anchor_deep")}
+
+    # Tiers whose fix is a relative path, and so cannot be applied inside a partial.
+    RELATIVE_TIERS = ("templated_fixable", "templated_typo", "dir_style", "depth",
+                      "renamed", "case", "stale_mapped")
 
     targets = [p for p in md_list if not args.scope or p.startswith(args.scope)]
     for p in targets:
         txt = open(os.path.join(root, p), encoding="utf-8", errors="replace").read()
-        body = re.sub(r"<!--.*?-->", "", txt, flags=re.S)
-        body = re.sub(r"```.*?```", "", body, flags=re.S)
+        body = strip_noise(txt)
         d = os.path.dirname(p)
         stem = os.path.basename(p)[:-3]
         vroot = version_root(p)
+        includers = sorted(included.get(p, ()))
+
+        def queue_deep_anchor(target_file, anchor, referenced_by):
+            """Queue an `<a name>` for a heading that sits below `toc_depth`.
+
+            python-markdown gives no id to a heading deeper than `toc_depth`, so a
+            link to it lands nowhere even though the heading is right there. An
+            inert `<a name>` above it restores the target and leaves the heading
+            level and the table of contents alone — the house pattern, already on
+            around 300 pages.
+
+            NEVER `{#id}` instead: `markdownextradata` runs every page through Jinja
+            before Markdown, `{#` opens a Jinja comment, and an unterminated one
+            fails the whole build.
+
+            One entry per heading, not per link: several links can name the same
+            heading and the anchor only needs inserting once.
+            """
+            if anchor not in deep_anchors.get(target_file, set()):
+                return False
+            if (target_file, anchor) in deep_seen:
+                return True
+            ttxt = open(os.path.join(root, target_file), encoding="utf-8",
+                        errors="replace").read()
+            heading = next((ln for ln in ttxt.splitlines()
+                            if re.match(r"^#{1,6}\s+", ln) and slug(
+                                re.sub(r"^#{1,6}\s+", "", ln).strip()) == anchor), None)
+            if not heading:
+                return False
+            deep_seen.add((target_file, anchor))
+            tiers["anchor_deep"].append({
+                "file": target_file, "anchor": anchor,
+                "link": heading, "insert_above": heading,
+                "suggested": f'<a name="{anchor}"></a>',
+                "referenced_by": referenced_by,
+                "why": f"the heading is deeper than h{TOC}, so the build gives it no "
+                       f"id; an `<a name>` above it restores the target without "
+                       f"touching the heading or the table of contents"})
+            return True
+
+        def place_anchor(t, target_file, frag):
+            """File an anchor finding — but first check the two shapes that have a
+            definite answer rather than needing a person.
+
+            `case`   the heading exists, spelled with different capitals. Exact.
+            `legacy` the anchor is an original Confluence one — page title and
+                     heading run together — and exactly one heading matches once
+                     both sides are reduced to letters and digits.
+
+            Anything else is a reworded heading, and only a person can say which
+            one was meant."""
+            # The heading EXISTS but sits deeper than `toc_depth`, so the build
+            # gives it no id and the link goes nowhere. Fixable, and the fix edits
+            # the TARGET page rather than this one: an inert `<a name>` above the
+            # heading. Already the house pattern — around 300 pages use it. Never
+            # `{#id}`: the markdownextradata plugin runs every page through Jinja
+            # before Markdown, `{#` opens a Jinja comment, and an unterminated one
+            # fails the whole build.
+            if queue_deep_anchor(target_file, frag, p):
+                return
+
+            # Match against the deep headings too. A heading below `toc_depth` is
+            # still a heading someone can have been aiming at — it just has no id
+            # yet. When the match lands on one, BOTH fixes are needed: give the
+            # heading an anchor, and repoint the link at it. They are separate
+            # groups, so run `anchor_deep` first and the target exists by the time
+            # the link is repointed.
+            known = anchors.get(target_file, set())
+            hit, how = match_anchor(frag, known | deep_anchors.get(target_file, set()))
+            if hit and hit not in known:
+                queue_deep_anchor(target_file, hit, p)
+            if hit:
+                place("anchor_" + how, {
+                    "file": p, "link": t, "target_file": target_file,
+                    "anchor": frag, "resolves_to": target_file,
+                    "is_html": is_html,
+                    "suggested": t.partition("#")[0] + "#" + hit,
+                    "confidence": "high",
+                    "why": ("the heading exists with different capital letters"
+                            if how == "case" else
+                            "the heading exists; only the hyphens and underscores "
+                            "between the words were written differently"
+                            if how == "punct" else
+                            "original Confluence anchor; exactly one heading on the "
+                            "page matches once both are reduced to letters and digits")})
+                return
+            tiers["anchor"].append({"file": p, "link": t,
+                                    "target_file": target_file, "anchor": frag})
+
+        def place(name, entry):
+            """File a proposal under its tier — unless this page is a partial.
+
+            A relative fix inside a partial is unsafe no matter how carefully it is
+            computed, so the proposal is kept for a person to read and moved out of
+            reach of `fix_links.py`. `suggested` is renamed on the way, because a
+            key named `suggested` is exactly what an agent would apply."""
+            if includers and name in RELATIVE_TIERS:
+                entry = dict(entry)
+                entry["unsafe_suggestion"] = entry.pop("suggested", None)
+                entry["intended_tier"] = name
+                entry["includers"] = includers
+                entry["why"] = ("this page is included into "
+                                f"{len(includers)} other page(s), so a relative link "
+                                "resolves against the includer's url, not this file's")
+                tiers["partial"].append(entry)
+                return
+            tiers[name].append(entry)
+
+        # ---- SHARED BLOCKS: `{! path !}` does nothing in this repo ----
+        #
+        # Not a link, but the same kind of migration damage and far more visible.
+        # `{! path !}` needs the `markdown_include` extension, which the old repo
+        # switched on and this one does not — so the directive is left on the page
+        # and the READER SEES IT as text where the steps should be.
+        #
+        # `pymdownx.snippets` IS switched on and does the same job with a different
+        # syntax, and 4.5.0 was already converted to it, so that is the target
+        # form rather than turning on a second mechanism.
+        #
+        # The address has to change too. The old repo built one site per version, so
+        # a page could write `includes/foo.md` and mean "this version's includes
+        # folder". Here all eleven versions share one tree, so the version has to be
+        # spelled out. Nothing is proposed unless the resulting file really exists.
+        for syntax, inc_path, whole in find_includes(txt):
+            if syntax == "snippet":
+                if inc_path not in all_files:
+                    tiers["include"].append({
+                        "file": p, "link": whole, "kind": "shared block",
+                        "note": f"snippet target `{inc_path}` does not exist; the "
+                                f"block it pulled in may have been dropped for this "
+                                f"version"})
+                continue
+            fixed = snippet_for(inc_path, vroot)
+            target = re.match(r'--8<--\s*"([^"]+)"', fixed).group(1)
+            if target in all_files and target in block_unready:
+                # Switching this block on would put its own broken links onto this
+                # page. Fix the block first — the `partial_fixable` and `partial`
+                # groups list exactly what is wrong with it.
+                tiers["include"].append({
+                    "file": p, "link": whole, "kind": "shared block",
+                    "blocked_by": target,
+                    "note": f"`{target}` has links that do not resolve from this "
+                            f"page, so switching the block on would move its broken "
+                            f"links onto {len(included.get(target, ()))} page(s). "
+                            f"Fix the block first — see `partial_fixable` / `partial`."})
+            elif target in all_files:
+                tiers["include"].append({
+                    "file": p, "link": whole, "suggested": fixed,
+                    "resolves_to": target, "literal": True, "kind": "shared block",
+                    "why": "`{! !}` is not enabled in this repo, so it stays on the "
+                           "page as text; `--8<--` is enabled and does the same job"})
+            else:
+                tiers["include"].append({
+                    "file": p, "link": whole, "kind": "shared block",
+                    "note": f"no file at `{target}` — the shared block was not "
+                            f"carried into this version, so someone has to say "
+                            f"whether the page still needs it"})
 
         # The third element records whether the target was written in raw HTML.
         # mkdocs rewrites Markdown targets and leaves HTML alone, so the two need
         # different bases — see url_base() above.
-        raw = [(m.group(1) == "!", m.group(3), False) for m in LINK.finditer(body)]
-        raw += [(m.group(1).lower() != "a", m.group(3), True) for m in HTML_SRC.finditer(body)]
+        raw = find_targets(body)
 
-        for is_img, t, is_html in raw:
+        for kind, t, is_html in raw:
             if t.startswith(("mailto:", "tel:", "//", "#!")):
                 continue
 
@@ -148,7 +372,24 @@ def main():
             # not a guess. Where it does not exist, the target may be served by a
             # redirect, so leave it alone until the redirect strategy is settled.
             if re.search(r"\{\{.*?\}\}", t):
-                m_bp = re.match(r"^\{\{\s*base_path\s*\}\}/?(.*)$", t)
+                # A MISSPELLED VARIABLE NAME is a different defect from a missing
+                # file, and it hides one: `{{base}}/x/` cannot resolve however
+                # present `x` is, so it lands in `templated` and looks like a
+                # content problem. Correct the spelling first and the link is
+                # judged on its target like any other.
+                m_var = re.match(r"^\{\{\s*([\w.-]+)\s*\}\}(/?.*)$", t)
+                typo_of = None
+                if m_var and m_var.group(1) != "base_path":
+                    fixed_name = normalise_var(m_var.group(1))
+                    if fixed_name == "base_path":
+                        typo_of = m_var.group(1)
+                        t_norm = "{{base_path}}" + m_var.group(2)
+                    else:
+                        t_norm = t
+                else:
+                    t_norm = t
+
+                m_bp = re.match(r"^\{\{\s*base_path\s*\}\}/?(.*)$", t_norm)
                 fixed = None
                 if m_bp:
                     rest, _, bfrag = m_bp.group(1).partition("#")
@@ -156,20 +397,34 @@ def main():
                     base_dir = vroot if vroot else ""
                     cand = f"{base_dir}/{rest}" if base_dir else rest
                     cand = os.path.normpath(cand).replace("\\", "/")
-                    target = next((c for c in (cand, cand + ".md", cand + "/index.md",
-                                               cand + "/README.md") if c in all_files), None)
-                    if target:
-                        fixed = os.path.relpath(target, d).replace("\\", "/")
+                    target = resolved(cand)
+                    if target == p:
+                        # The page links to itself. A relative path back to your own
+                        # url works but reads as a mistake; the fragment alone is
+                        # what someone would write by hand.
+                        fixed = ("#" + bfrag) if bfrag else "./"
+                    elif target:
+                        fixed = link_to(target, p, is_html)
                         if bfrag:
                             fixed += "#" + bfrag
                 if fixed:
-                    tiers["templated_fixable"].append({
+                    place("templated_typo" if typo_of else "templated_fixable", {
                         "file": p, "link": t, "suggested": fixed,
-                        "why": "resource exists, so the variable can be replaced with a relative path"})
+                        "is_html": is_html, "resolves_to": target,
+                        **({"misspelled": f"{{{{{typo_of}}}}}"} if typo_of else {}),
+                        "why": (f"`{{{{{typo_of}}}}}` is `{{{{base_path}}}}` mistyped; "
+                                f"with the spelling corrected the resource exists"
+                                if typo_of else
+                                "resource exists, so the variable can be replaced "
+                                "with a relative path")})
                 else:
-                    tiers["templated"].append({"file": p, "link": t,
-                                               "variable": ", ".join(sorted(set(
-                                                   re.findall(r"\{\{.*?\}\}", t))))})
+                    tiers["templated"].append({
+                        "file": p, "link": t,
+                        "variable": ", ".join(sorted(set(re.findall(r"\{\{.*?\}\}", t)))),
+                        **({"misspelled": f"{{{{{typo_of}}}}}",
+                            "note": f"`{{{{{typo_of}}}}}` is `{{{{base_path}}}}` mistyped, "
+                                    f"but the resource is missing too, so correcting "
+                                    f"the spelling alone would not fix it"} if typo_of else {})})
                 continue
 
             raw_t = t
@@ -186,9 +441,37 @@ def main():
                     "why": "target is wrapped in backticks or quotes, so it is not a valid URL"})
                 continue
             if is_legacy_url(t):
-                tiers["stale"].append({"file": p, "link": t})
+                # The old site is still up, so these links WORK today — which is
+                # exactly what makes them dangerous: nothing looks broken, and they
+                # all die together when that site is retired. Most can be mapped
+                # mechanically, because the migration kept the path: look the old
+                # path up under THIS page's version.
+                lp = legacy_path(t)
+                lfrag = t.partition("#")[2]
+                mapped = resolved(f"{vroot}/{lp}") if (lp and vroot) else None
+                if mapped and mapped != p:
+                    place("stale_mapped", {
+                        "file": p, "link": t, "resolves_to": mapped,
+                        "is_html": is_html, "kind": kind,
+                        "suggested": link_to(mapped, p, is_html)
+                                     + (("#" + lfrag) if lfrag else ""),
+                        "why": "the same path exists under this version, so the link "
+                               "can point inside the new docs instead of at the old site"})
+                else:
+                    tiers["stale"].append({"file": p, "link": t})
                 continue
             if re.match(r"^https?://", t):
+                continue
+
+            # A SHARED BLOCK is not judged from its own folder. Every relative
+            # answer below — does it resolve, how deep is it, what should it say —
+            # depends on a base that mkdocs never uses for a block, because the
+            # block's text is spliced into the including page before Markdown runs.
+            # The includer-aware pass further down owns these, and it can also tell
+            # a link that is genuinely fine (this loop reported those as broken)
+            # from one that breaks on the pages that use it (this loop called those
+            # clean, which is how 62 of them were "fixed" into breakage).
+            if includers:
                 continue
 
             path, _, frag = t.partition("#")
@@ -197,7 +480,7 @@ def main():
 
             if not path:
                 if frag and frag not in anchors.get(p, set()):
-                    tiers["anchor"].append({"file": p, "link": t, "target_file": p, "anchor": frag})
+                    place_anchor(t, p, frag)
                 continue
 
             # WHICH BASE APPLIES — verified against a real mkdocs build.
@@ -221,7 +504,7 @@ def main():
                     tf = next((c for c in (own_rel, own_rel + ".md", own_rel + "/index.md",
                                            own_rel + "/README.md") if c in all_files), None)
                     if tf and tf.endswith(".md") and frag not in anchors.get(tf, set()):
-                        tiers["anchor"].append({"file": p, "link": t, "target_file": tf, "anchor": frag})
+                        place_anchor(t, tf, frag)
                 continue
 
             # A Markdown link written in URL shape, whose `.md` file sits exactly
@@ -234,8 +517,10 @@ def main():
                 md_target = next((c for c in (src_guess + ".md", src_guess + "/index.md",
                                               src_guess + "/README.md") if c in all_files), None)
                 if md_target:
-                    fixed = os.path.relpath(md_target, d).replace("\\", "/")
-                    tiers["dir_style"].append({
+                    # Markdown-only by construction (`not is_html` above), so the
+                    # source path is the right form — mkdocs rewrites it from here.
+                    fixed = link_to(md_target, p, False)
+                    place("dir_style", {
                         "file": p, "link": t, "resolves_to": md_target,
                         "suggested": fixed + (("#" + frag) if frag else ""),
                         "why": "written as a URL, so mkdocs passes it through unresolved"})
@@ -244,13 +529,41 @@ def main():
             # Resolves against the OTHER base — so the depth is wrong by exactly the
             # one level between a source file and its rendered directory.
             alt_rel = os.path.normpath(os.path.join(alt_base, path)).replace("\\", "/")
-            if resolves(alt_rel):
-                fixed = os.path.relpath(alt_rel, own_base).replace("\\", "/")
-                if not is_html and alt_rel + ".md" in all_files:
-                    fixed += ".md"
-                tiers["depth"].append({"file": p, "link": t, "resolves_to": alt_rel,
-                                       "is_html": is_html,
-                                       "suggested": fixed + (("#" + frag) if frag else "")})
+            cand_ci_source = resolved_ci(own_rel)
+            cand_ci_url = resolved_ci(alt_rel)
+            alt_file = resolved(alt_rel)
+            if alt_file:
+                if alt_file == p:
+                    fixed = ("#" + frag) if frag else "./"
+                else:
+                    fixed = link_to(alt_file, p, is_html) + (("#" + frag) if frag else "")
+                place("depth", {"file": p, "link": t, "resolves_to": alt_file,
+                                       "is_html": is_html, "suggested": fixed})
+                continue
+
+            # SAME PATH, WRONG CAPITAL LETTERS.
+            #
+            # Checked before the rename search, because this is not a guess: the
+            # file is exactly where the link says, spelled with different capitals.
+            # It matters more than the count suggests — macOS treats `Photo.png`
+            # and `photo.png` as one file, so these links work perfectly in a local
+            # preview and 404 on the Linux machine that builds the real site. They
+            # are invisible to the person most likely to catch them.
+            #
+            # The fix always changes the LINK to match the FILE, never the other
+            # way round: other pages may already point at the current filename.
+            ci = None
+            for cc in (cand_ci_source, cand_ci_url):
+                if cc:
+                    ci = cc
+                    break
+            if ci:
+                place("case", {"file": p, "link": t, "resolves_to": ci,
+                               "is_html": is_html, "kind": kind,
+                               "suggested": link_to(ci, p, is_html) + (("#" + frag) if frag else ""),
+                               "why": "the file is at that path but spelled with "
+                                      "different capital letters; this works on "
+                                      "macOS and breaks on the build server"})
                 continue
 
             # Nothing resolves. Look for a file of the same name elsewhere — the
@@ -268,14 +581,16 @@ def main():
             cands = [c for c in cands if c != p]
 
             if len(cands) == 1:
-                sug = os.path.relpath(cands[0], d).replace("\\", "/")
-                tiers["renamed"].append({"file": p, "link": t, "found_at": cands[0],
+                sug = link_to(cands[0], p, is_html)
+                place("renamed", {"file": p, "link": t, "found_at": cands[0],
+                                         "is_html": is_html,
                                          "suggested": sug + (("#" + frag) if frag else ""),
                                          "confidence": "high"})
             elif 2 <= len(cands) <= 5:
-                ranked = sorted(cands, key=lambda c: -len(os.path.commonprefix([c, p])))
-                sug = os.path.relpath(ranked[0], d).replace("\\", "/")
-                tiers["renamed"].append({"file": p, "link": t, "found_at": ranked[0],
+                ranked = sorted(cands, key=lambda c: (-len(os.path.commonprefix([c, p])), c))
+                sug = link_to(ranked[0], p, is_html)
+                place("renamed", {"file": p, "link": t, "found_at": ranked[0],
+                                         "is_html": is_html,
                                          "suggested": sug + (("#" + frag) if frag else ""),
                                          "confidence": f"low ({len(cands)} candidates)",
                                          "alternatives": ranked[:5]})
@@ -283,21 +598,109 @@ def main():
                 # A generic basename like `overview.md` matches dozens of pages.
                 # Guessing one would be worse than saying nothing: a guess reads as
                 # an answer, and nobody re-checks an answer. List the field instead.
-                ranked = sorted(cands, key=lambda c: -len(os.path.commonprefix([c, p])))
+                ranked = sorted(cands, key=lambda c: (-len(os.path.commonprefix([c, p])), c))
                 tiers["gone"].append({"file": p, "link": t,
-                                      "kind": "image" if is_img else "link",
+                                      "kind": kind,
                                       "note": f"{len(cands)} files share this name — too ambiguous to propose one",
                                       "candidates": ranked[:6]})
             else:
                 tiers["gone"].append({"file": p, "link": t,
-                                      "kind": "image" if is_img else "link",
+                                      "kind": kind,
                                       "note": "no file of this name exists anywhere under the docs root"})
+
+    # ---- LINKS INSIDE SHARED BLOCKS, judged from the pages that include them ----
+    #
+    # An include splices the block's text into the including page BEFORE Markdown
+    # runs, so every link in the block is resolved as if it had been written in
+    # that page. Judging it from the block's own folder — which is what the loop
+    # above does, because it has no other way to treat a file — is wrong twice:
+    #
+    #   * it reports links that are perfectly fine, and
+    #   * it calls links CLEAN that break on every page using the block.
+    #
+    # The second is the dangerous direction and it is not hypothetical. A previous
+    # pass over 4.6.0 "fixed" 62 links to be correct relative to the block itself.
+    # They resolve from the block, they point at nothing from the includer, and
+    # nothing flagged them — because from the block's own folder they look right.
+    #
+    # So resolve from each includer instead. Where every includer agrees on one
+    # path, that path is the fix. Where they disagree, no relative link can serve
+    # them all and a person has to decide.
+    for part in sorted(included):
+        if args.scope and not part.startswith(args.scope):
+            continue
+        incs = sorted(included[part])
+        body = strip_noise(open(os.path.join(root, part), encoding="utf-8",
+                                errors="replace").read())
+        for kind, t, is_html in find_targets(body):
+            if t.startswith(("mailto:", "tel:", "//", "#", "#!")) or "{{" in t:
+                continue
+            if re.match(r"^[a-z][a-z0-9+.-]*:", t):
+                continue
+            path, _, frag = t.partition("#")
+            path = urllib.parse.unquote(path)
+            if not path or path.startswith("/"):
+                continue
+
+            def land(page, _path=path, _html=is_html):
+                """Where this link lands when the block is spliced into `page`."""
+                base = os.path.dirname(page)
+                literal = os.path.normpath(os.path.join(base, _path)).replace("\\", "/")
+                rewritten = (not _html) and literal in all_files
+                rel = base if rewritten else url_base(page)
+                return resolved(os.path.normpath(os.path.join(rel, _path)).replace("\\", "/"))
+
+            landings = {i: land(i) for i in incs}
+            if all(landings.values()):
+                continue                       # works from every including page
+            broken_for = [i for i, v in landings.items() if not v]
+
+            # What did the author mean? Whatever the link resolves to from the
+            # block's own folder is the best evidence there is — that is the base
+            # whoever wrote it was thinking in.
+            intent = land(part) or next((v for v in landings.values() if v), None)
+            if not intent:
+                # Broken from every including page AND from the block itself, so
+                # there is no evidence of what was meant. Still has to be reported:
+                # the main loop deliberately skips block pages now, so if this
+                # returned early the finding would vanish entirely.
+                tiers["partial"].append({
+                    "file": part, "link": t, "includers": incs,
+                    "broken_for": broken_for, "kind": kind,
+                    "note": "does not resolve from any page that includes this "
+                            "block, and no target of that name could be identified "
+                            "— someone has to say where it was meant to point"})
+                continue
+
+            fixes = {link_to(intent, i, is_html) + (("#" + frag) if frag else "")
+                     for i in incs}
+            if len(fixes) == 1:
+                tiers["partial_fixable"].append({
+                    "file": part, "link": t, "suggested": fixes.pop(),
+                    "resolves_to": intent, "is_html": is_html, "includers": incs,
+                    "broken_for": broken_for, "kind": kind,
+                    "why": f"resolves from the block's own folder but not from "
+                           f"{len(broken_for)} of {len(incs)} including page(s); "
+                           f"one relative path works for all of them"})
+            else:
+                tiers["partial"].append({
+                    "file": part, "link": t, "includers": incs,
+                    "broken_for": broken_for, "kind": kind,
+                    "candidates": sorted(fixes),
+                    "note": "the including pages sit at different depths, so no "
+                            "single relative path is correct for all of them — this "
+                            "needs an address that does not depend on depth, or the "
+                            "link moved out of the block into each page"})
 
     # ---------------- write the report ----------------
     n = {k: len(v) for k, v in tiers.items()}
     total = sum(n.values())
     scope_label = args.scope or f"all of {root}"
     auto = (n["templated_fixable"] + n["malformed"] + n["dir_style"] + n["depth"]
+            + n["case"] + n["anchor_case"] + n["anchor_legacy"] + n["anchor_punct"]
+            + n["templated_typo"]
+            + n["partial_fixable"] + n["stale_mapped"] + n["anchor_deep"]
+            + len([e for e in tiers["include"] if e.get("suggested")])
             + len([x for x in tiers["renamed"] if x["confidence"] == "high"]))
 
     L = []
@@ -323,6 +726,17 @@ def main():
     w(f"| 3 | `depth` | Wrong relative depth | {n['depth']} | Exact — no judgement |")
     w(f"| 4 | `renamed` | Renamed or moved target | {n['renamed']} | Proposed; `high` confidence applied by default |")
     w(f"| 5 | `templated_fixable` | `{{{{base_path}}}}` where the resource exists | {n['templated_fixable']} | Exact rewrite to a relative path |")
+    w(f"| 6 | `case` | Right path, wrong capital letters | {n['case']} | Exact — works on macOS, breaks on the build server |")
+    w(f"| 7 | `include` | `{{! !}}` shared block, which this repo does not process | "
+      f"{len([e for e in tiers['include'] if e.get('suggested')])} of {n['include']} | "
+      f"Convert to `--8<--` with the version spelled out |")
+    w(f"| 8 | `anchor_case` | Anchor names a real heading, wrong capitals | {n['anchor_case']} | Exact — heading ids are always lower-case |")
+    w(f"| 9 | `anchor_legacy` | Original Confluence anchor | {n['anchor_legacy']} | Matched to the one heading that agrees letter for letter |")
+    w(f"| 9b | `anchor_punct` | Anchor names a real heading, different hyphens/underscores | {n['anchor_punct']} | Exact — same words in the same order, one heading matches |")
+    w(f"| 10 | `templated_typo` | `{{{{base_path}}}}` misspelled, resource present | {n['templated_typo']} | Corrects the spelling and writes a relative path |")
+    w(f"| 11 | `partial_fixable` | Link in a shared block, broken for the pages that include it | {n['partial_fixable']} | One path that works from every includer |")
+    w(f"| 12 | `stale_mapped` | Old-site url whose path exists under this version | {n['stale_mapped']} | Point it inside the new docs instead |")
+    w(f"| 13 | `anchor_deep` | Heading exists but is deeper than h{TOC}, so it has no id | {n['anchor_deep']} | Insert `<a name>` above the heading |")
     w("")
     w("### Needs a person")
     w("")
@@ -336,6 +750,8 @@ def main():
     w(f"| `stale` | Pre-migration domain | {n['stale']} | Needs the equivalent page on the new site |")
     w(f"| `anchor` | Missing anchor | {n['anchor']} | The heading was reworded — which one now? |")
     w(f"| `gone` | No target anywhere | {n['gone']} | Was it dropped, missed, or merged? |")
+    w(f"| `partial` | Broken link inside an included partial | {n['partial']} | "
+      f"Resolves against the includer's url, not the partial's |")
     w("")
 
     def table(rows, cols, keys, limit):
@@ -359,6 +775,27 @@ def main():
         w("")
         table(tiers["templated_fixable"], ["Page", "Currently", "Change to"],
               ["file", "link", "suggested"], args.max_rows)
+
+    if n["partial"]:
+        files = sorted({e["file"] for e in tiers["partial"]})
+        w(f"## Excluded — {n['partial']} findings inside {len(files)} included partial(s)")
+        w("")
+        w("Every one of these would otherwise have been a mechanical fix. They are held "
+          "back because the file is pulled into other pages with an include directive, "
+          "so a relative link in it is resolved against **the includer's** url, not the "
+          "partial's own. Where a partial has includers at different depths, no single "
+          "relative path is correct for all of them — a fix that works on one page "
+          "breaks on another, which is the hardest breakage to notice.")
+        w("")
+        w("The computed path is kept as `unsafe_suggestion` in the JSON rather than "
+          "`suggested`, and `fix_links.py` refuses this tier. Resolving them needs a "
+          "decision about how partials should link at all: a root-relative path, or "
+          "moving the link out of the partial and into each page.")
+        w("")
+        table(sorted(tiers["partial"], key=lambda e: (e["file"], e["link"])),
+              ["Partial", "Link", "Intended group", "Included by"],
+              ["file", "link", "intended_tier", "includers"], args.max_rows)
+        w("")
 
     if n["templated"]:
         w("## Excluded — `{{base_path}}` where the resource does not exist")
@@ -518,8 +955,11 @@ def main():
 
     print(f"{total} findings across {len(targets)} pages "
           f"({auto} mechanically fixable, {n['gone']} need a human)")
-    for k in ("templated_fixable", "templated", "malformed", "depth", "renamed",
-              "stale", "anchor", "gone"):
+    for k in ("templated_fixable", "templated_typo", "templated", "malformed",
+              "dir_style", "depth", "renamed", "case", "include", "anchor_case",
+              "anchor_legacy", "anchor_punct", "partial_fixable", "stale_mapped",
+              "anchor_deep",
+              "stale", "anchor", "gone", "partial"):
         print(f"  {n[k]:5d}  {k}")
     print(f"\nreport -> {args.out}")
     if args.json_out:
