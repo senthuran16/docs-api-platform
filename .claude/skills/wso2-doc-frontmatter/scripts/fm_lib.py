@@ -11,6 +11,7 @@ That makes the version segment the only genuinely tricky part of deriving a URL 
 a path, so it is all funnelled through :func:`site_paths` below.
 """
 import os
+import sys
 import re
 import subprocess
 import datetime
@@ -168,6 +169,86 @@ CT_ALIASES = {
     "conceptual": "concept",
     "release notes": "release-notes",
 }
+
+
+# ---------------------------------------------------------------------------
+# Capitalisation allowlists. `fm_fix.py` uses them to decide whether to lowercase a
+# word when it derives a `title` from an H1. The `wso2-doc-style-checker` skill
+# answers the same question for headings, so keep the two in step: if they disagree,
+# one lowercases what the other calls correct.
+# ---------------------------------------------------------------------------
+
+SMALL = {"a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into", "nor",
+         "of", "on", "onto", "or", "over", "per", "the", "to", "up", "via", "with",
+         "vs", "near", "off", "out"}
+
+# Product/proper nouns and acronyms that legitimately stay capitalised mid-heading.
+PROPER = {"WSO2", "API", "APIs", "AI", "LLM", "LLMs", "MCP", "REST", "gRPC", "GraphQL",
+          "JSON", "YAML", "XML", "HTTP", "HTTPS", "OAuth", "OAuth2", "JWT", "SSO", "IdP",
+          "OIDC", "SAML", "TLS", "mTLS", "SSL", "CORS", "URL", "URI", "URLs", "ID", "IDs",
+          "UI", "CLI", "SDK", "IDE", "CI", "CD", "VM", "VMs", "K8s", "Kubernetes",
+          "Docker", "Helm", "Istio", "Envoy", "Redis", "PostgreSQL", "MySQL", "Oracle",
+          "Grafana", "Prometheus", "Jaeger", "Zipkin", "OpenTelemetry", "OpenSearch",
+          "Elasticsearch", "Moesif", "Stripe", "AWS", "Azure", "GCP", "Bedrock", "OpenAI",
+          "Anthropic", "Gemini", "Mistral", "Ollama", "Choreo", "Bijira", "Ballerina",
+          "Git", "GitHub", "GitLab", "Linux", "Windows", "macOS", "Java", "Python", "Go",
+          "Node", "npm", "Maven", "Gradle", "Swagger", "OpenAPI", "AsyncAPI", "Postman",
+          "Portal", "Gateway", "Platform", "Manager", "Publisher", "Developer",
+          "Control", "Plane",
+          "Hub", "Workspace", "Analytics", "PII", "RBAC", "ACL", "SLA", "TPS", "QPS",
+          "DNS", "IP", "TCP", "UDP", "gRPC-Web", "Kafka", "RabbitMQ", "NGINX", "Terraform",
+          "Ansible", "Prometheus-compatible", "Bitbucket", "Vault", "Keycloak", "Okta",
+          "Auth0", "Asgardeo", "I", "Step", "Table", "Contents", "Note", "Tip", "Warning",
+          "Example", "Appendix", "FAQ", "README", "Enumerated", "Values"}
+
+# Phrase-level allowlist: matched case-sensitively and masked out BEFORE per-word
+# scanning, because multi-word product names cannot be expressed as single words.
+PROPER_PHRASES = {
+    # Third-party products / cloud services
+    "Google Cloud Trace", "Google Cloud Monitoring", "Google Cloud",
+    "Azure AI Content Safety", "Azure Content Safety Content Moderation",
+    "Azure Content Safety Guardrail", "Azure Content Safety", "Azure OpenAI",
+    "AWS Bedrock Guardrails", "AWS Bedrock Guardrail", "Docker Compose",
+    "OpenSearch Dashboards", "VS Code", "Server-Sent Events",
+    # Kubernetes API kinds / concepts
+    "Horizontal Pod Autoscaler", "Pod Disruption Budget", "Custom Resource Definition",
+    "Service Account", "ConfigMap", "StatefulSet", "DaemonSet", "HTTPRoute", "Gateway API",
+    # Standards
+    "JSON Schema Draft 7", "JSON Schema", "JSONPath",
+    # WSO2 components (capitalised-dominant in the corpus)
+    "Gateway Controller", "Developer Portal", "Control Plane", "Policy Hub",
+    "Policy Engine", "Gateway Builder", "Event Gateway", "API Platform Console",
+    "API Platform", "MCP Proxy", "API Proxy", "Publisher Portal", "Admin Portal",
+    "API Gateway",
+    "API Manager", "AI Gateway", "Universal Gateway", "Micro Integrator",
+    "Service Catalog", "API Product", "API Products",
+    # --- Policy Hub policy names -------------------------------------------------
+    # Treated as proper nouns, matching the Policy Hub catalogue. Remove this block
+    # if policy names should instead follow sentence case.
+    "Model Weighted Round Robin", "Model Round Robin", "Sentence Count Guardrail",
+    "Word Count Guardrail", "Content Length Guardrail", "JSON Schema Guardrail",
+    "Regex Guardrail", "URL Guardrail", "Semantic Prompt Guard",
+    "Semantic Tool Filtering", "PII Masking", "Analytics Header Filter",
+    "Subscription Validation", "API Key Auth", "Basic Auth", "JWT Auth", "Rate Limit",
+}
+
+# Conventional release-stage / status labels never count as Title Case evidence.
+STATUS_LABELS = {"beta", "alpha", "ga", "preview", "deprecated", "optional",
+                 "experimental", "recommended", "required", "default", "new", "legacy"}
+
+# Words in PROPER that are NOT product names on their own. Two kinds:
+# document furniture ("Table of Contents", "Step 3"), and generic component words
+# that are only capitalised inside a longer name — "Gateway" in "AI Gateway",
+# "Portal" in "Developer Portal". A heading checker needs them in PROPER so it does
+# not flag those longer names word by word, but a title derived from an H1 should
+# lowercase them unless the full phrase is present in PROPER_PHRASES.
+TITLE_GENERIC = {"Table", "Contents", "Note", "Tip", "Warning", "Example", "Appendix",
+                 "Step", "Values", "Enumerated", "I",
+                 "Gateway", "Portal", "Platform", "Manager", "Publisher", "Developer",
+                 "Control", "Plane", "Hub", "Workspace", "Analytics"}
+
+# What `fm_fix.py` protects when it sentence-cases an H1 into a `title`.
+TITLE_PROPER = PROPER - TITLE_GENERIC
 
 
 # Domains the documentation has migrated away from. A link or a frontmatter URL
@@ -333,13 +414,52 @@ def first_h1(body):
     return re.sub(r"\s+", " ", t).strip() or None
 
 
-def md_files(docs_root=DOCS_ROOT):
+def md_files(docs_root=DOCS_ROOT, scope=None):
     out = []
     for root, _, fs in os.walk(docs_root):
         for f in fs:
             if f.endswith(".md"):
-                out.append(os.path.relpath(os.path.join(root, f), docs_root).replace("\\", "/"))
+                rel = os.path.relpath(os.path.join(root, f),
+                                      docs_root).replace("\\", "/")
+                if scope and not (rel == scope or rel.startswith(scope.rstrip("/") + "/")):
+                    continue
+                out.append(rel)
     return sorted(out)
+
+
+VERSION_SEGMENT = re.compile(r"\A(?:\d+\.\d+(?:\.\d+)?|next)\Z")
+
+
+def check_docs_root(docs_root):
+    """Refuse a docs root that is really a subdirectory of one. Returns a message.
+
+    `canonical_url` and `md_url` are derived from a page's path RELATIVE TO THE DOCS
+    ROOT, so pointing the scripts at `en/docs/api-manager/4.6.0` to "work on one
+    version" silently drops `api-manager/4.6.0/` from every URL it writes:
+
+        correct   https://wso2.com/api-platform/docs/api-manager/4.6.0/get-started/p/
+        narrowed  https://wso2.com/api-platform/docs/get-started/p/
+
+    Nothing later catches that — the frontmatter is well-formed and internally
+    consistent, just wrong, on every page in the version. Scoping is what `--scope`
+    is for: it keeps the root at `en/docs` and filters which pages are touched.
+    """
+    parts = [x for x in os.path.abspath(docs_root).replace("\\", "/").split("/") if x]
+    for i, seg in enumerate(parts):
+        if VERSION_SEGMENT.match(seg) or (seg == "docs" and i < len(parts) - 1
+                                          and parts[-1] != "docs"):
+            if "docs" in parts[:i + 1] or VERSION_SEGMENT.match(seg):
+                return ("`%s` looks like a subdirectory of the docs root, not the "
+                        "docs root itself.\n"
+                        "canonical_url and md_url are derived from the path relative "
+                        "to the root, so this would write URLs with the version "
+                        "segment missing — on every page.\n"
+                        "Pass the real root and scope instead:\n"
+                        "    %s en/docs --scope %s"
+                        % (docs_root, os.path.basename(sys.argv[0]),
+                           "/".join(parts[parts.index("docs") + 1:])
+                           if "docs" in parts else "<product>/<version>"))
+    return None
 
 
 def yaml_str(s):

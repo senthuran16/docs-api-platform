@@ -1,63 +1,129 @@
 ---
 name: wso2-doc-frontmatter
-description: Adds, repairs, and validates YAML frontmatter on WSO2 API Platform documentation pages, and checks the same pages for broken links and mechanical style-guide violations. Use this when migrating docs into wso2/docs-api-platform, when a page is missing frontmatter or has a wrong canonical_url/md_url/content_type/description, when checking a docs PR before merge, or when asked things like "add frontmatter to these pages", "why is this page's canonical URL wrong", "check this PR for broken links", "validate the metadata on all versions", or "audit the migrated docs". Handles the repo's multi-version layout (product/1.0.0/, product/1.1.0/, product/next/), where every version is published at a URL that includes its version segment. Also runs non-interactively as a CI gate, so keep output structured.
+description: Adds and validates YAML frontmatter on WSO2 API Platform documentation pages, and finds and fixes broken links and images on the same pages. Use this when migrating docs into wso2/docs-api-platform, when a page is missing frontmatter or has a wrong canonical_url/md_url/content_type/description, when checking a docs PR before merge, or when asked things like "add frontmatter to 4.6.0 and fix the broken links", "add frontmatter to these pages", "why is this page's canonical URL wrong", "check this PR for broken links", or "audit the migrated docs". Handles the repo's multi-version layout (product/1.0.0/, product/1.1.0/, product/next/), where every version is published at a URL that includes its version segment. Also runs non-interactively as a CI gate, so keep output structured.
 ---
 
-# WSO2 API Platform doc frontmatter and validation
+# WSO2 API Platform doc frontmatter and links
 
-Most of the work in validating these docs is mechanical, and mechanical work belongs in a script. The scripts here handle everything with one correct answer; your job is the part that needs reading the page and making a judgement — `description`, `content_type`, and `title`.
+Most of this work is mechanical, and mechanical work belongs in a script. The
+scripts here do everything with one correct answer. Your job is the part that needs
+reading the page: `description`, `content_type`, `title`, and the link fixes that
+have no computable answer.
 
-Do not hand-edit frontmatter field by field across many files. Run the scripts, then fill in only what they hand back to you.
+Never hand-edit frontmatter or link text field by field across many files. Run the
+scripts, then fill in what they hand back.
 
-## Requirements
+**Requirements:** Python 3.8+, nothing to install. Run every command from this
+skill's directory, with paths relative to the repo root (`en/docs`, `en/mkdocs.yml`).
 
-Python 3.8+ and nothing else. The scripts parse frontmatter with a built-in
-parser for the flat YAML subset used here, so they run on a bare `python3` with
-no `pip install` — which matters on macOS, where Homebrew Python refuses
-`pip install` under PEP 668. PyYAML is used automatically when present;
-`fm_audit.py --selftest` proves the built-in parser agrees with it across every
-page in the repo.
+## The usual request
 
-## The rules this enforces
+> *Add frontmatter to `<version>` and fix the broken links and images*
 
-The authoritative frontmatter spec is `.claude/rules/doc-frontmatter-and-metadata.md` **in the target repo**, not in this skill. Read it at the start of every run — it changes. `references/conventions.md` here records the mechanics that rule leaves implicit — version-to-URL mapping, quoting style, field order. Read that too.
+`<version>` is a scope path like `api-manager/4.6.0`. Pass it as `--scope` to every
+command — never run repo-wide because someone asked about one version.
 
-If the repo rule and `references/conventions.md` disagree, the repo rule wins, and say so in your report.
+**Always keep the docs root at `en/docs` and narrow with `--scope`.** Pointing a
+script at `en/docs/api-manager/4.6.0` instead looks equivalent and is not:
+`canonical_url` and `md_url` are derived from each page's path *relative to the
+root*, so a narrowed root writes every URL with the version segment missing, on
+every page, and nothing downstream catches it. `fm_audit.py` and `fm_fix.py` now
+refuse a root that looks narrowed, but do not rely on that — use `--scope`.
 
-## Workflow
+Run these seven steps in order. Every step that writes shows a sample first and
+waits for a yes.
 
-### 1. Audit first, always
+| | Step | Changes files? |
+|---|---|---|
+| 1 | Audit frontmatter | no |
+| 2 | Fix mechanical frontmatter | yes |
+| 3 | Fill in `description` / `content_type` / `title` | yes |
+| 4 | Report broken links and images | no |
+| 5 | Apply the link tiers, one at a time | yes |
+| 6 | Fix what needs reading — see `references/judgement-calls.md` | yes |
+| 7 | Re-audit and verify | no |
+
+Tell the person up front roughly how many approvals to expect — step 5 asks once per
+non-empty tier, which is usually eight to twelve — so the run does not feel like it
+has stalled.
+
+Deliverables at the end: every page in scope with complete frontmatter, and
+`BROKEN-LINKS-<scope>.md` listing what is left to decide.
+
+**Which spec you are working from.** At the start of every run, check for
+`.claude/rules/doc-frontmatter-and-metadata.md` in the target repo:
 
 ```bash
-python3 scripts/fm_audit.py en/docs --json /tmp/fm.json
+ls .claude/rules/doc-frontmatter-and-metadata.md 2>/dev/null
 ```
 
-Read the output before changing anything. It reports per-code counts and detects the repo's versioned products automatically. Add `--files a.md b.md` to scope it to a PR's changed files, and `--gate` to make it exit non-zero on blocking issues.
+- **Present** — it is the authoritative spec and it changes, so read it. Where it and
+  `references/conventions.md` disagree, the repo rule wins.
+- **Absent** — that is expected on some branches (the rules live on `main` and have
+  not reached every branch yet). Do not stop and do not go looking on another branch.
+  Work from `references/conventions.md`, which records the same field list plus the
+  mechanics the rule leaves implicit — version-to-URL mapping, quoting, field order.
 
-The `--policy` flag decides how the version segment maps to a URL. `keep-all` (the default) keeps it for every version, latest release included, which is what the site does. The other two do not match the site. Never change the policy without saying so explicitly in your report; it rewrites URLs across hundreds of files.
+Either way, **say in your report which one you used.** It is the difference between
+"checked against the repo's current rule" and "checked against the skill's copy of
+it", and a reviewer needs to know which they are getting.
 
-### 2. Let the script fix what's mechanical
+## 1. Audit first, always
 
 ```bash
-python3 scripts/fm_fix.py en/docs --dry-run                 # inspect first
-python3 scripts/fm_fix.py en/docs --scaffold --apply \
+python3 scripts/fm_audit.py en/docs --scope <version> --json /tmp/fm.json
+```
+
+Read the output before changing anything. `--files a.md b.md` narrows to a PR's
+changed files; `--gate` exits non-zero on blocking issues.
+
+`--policy` decides how the version segment maps to a URL. `keep-all` (the default)
+matches the site. The other two do not. Never change it without saying so in your
+report — it rewrites URLs across hundreds of files.
+
+## 2. Let the script fix what's mechanical
+
+```bash
+python3 scripts/fm_fix.py en/docs --scope <version> --dry-run        # inspect first
+python3 scripts/fm_fix.py en/docs --scope <version> --scaffold --apply \
     --worklist /tmp/work.json
 ```
 
-This derives `canonical_url` and `md_url` from the path, normalises `last_updated` (from `git log` when it's missing or malformed), maps out-of-enum `content_type` values, lowercases `tags`, sets the standard `author`, and — with `--scaffold` — adds a whole frontmatter block to pages that have none, taking `title` from the H1.
+This derives `canonical_url` and `md_url` from the path, normalises `last_updated`
+(from `git log` when missing or malformed), maps out-of-enum `content_type` values,
+lowercases `tags`, sets the standard `author`, and with `--scaffold` adds a whole
+frontmatter block to pages that have none, taking `title` from the H1.
 
-The *script* never invents a `description` or `title` — but **you do, in step 3.** That split is the whole design: a regex guessing a description would produce something plausible and wrong that looks finished, so nobody revisits it. Reading the page and writing a real one is your job, and it is not optional. A page left with `description: "TODO"` is not done.
+The script never invents a `description` or `title` — **you do, in step 3.** That
+split is the design: a regex guessing a description produces something plausible and
+wrong that looks finished, so nobody revisits it. A page left with
+`description: "TODO"` is not done.
 
-### 3. Fill in the judgement calls
+## 3. Fill in the judgement calls
 
-`--worklist` writes the files still needing you, with the page's H1 and current values for context. For each one, **read the actual page** — headings and opening section at minimum — then decide:
+`--worklist` writes the files still needing you, with each page's H1 and current
+values. For each one **read the page** — headings and opening section at minimum —
+then decide:
 
-- **`description`** — 90 to 155 characters, hard limit 158. Say what the reader can do or learn on this specific page, naming the actual feature or task. Present tense. No "This page describes…", no marketing adjectives, and none of the qualitative words the style guide bans ("easy", "simple", "quick"). Match the voice of existing good examples in the repo rather than inventing one.
-  - When a description is merely too long, **rewrite it — never truncate it.** A sentence cut at 158 characters reads as broken.
-- **`content_type`** — exactly one of `how-to`, `tutorial`, `reference`, `concept`, `explanation`, `troubleshooting`, `faq`, `release-notes`, `changelog`, `quickstart`. Pick by what the page *is*: numbered task steps → `how-to`; end-to-end learning walkthrough → `tutorial`; parameter and field tables → `reference`; explains an idea without steps → `concept`; diagnosing failures → `troubleshooting`. Section landing pages that are mostly link lists are `concept` — this is the settled default for this repo, so apply it without asking. `overview` is not a valid value; `CT_ALIASES` in `fm_lib.py` maps it to the closest valid type.
-- **`title`** — sentence case, under 60 characters. Only the first word plus genuine proper nouns and acronyms are capitalised: "AI Gateway", "API Platform", "Developer Portal", "Gateway Controller" stay capitalised; "Analytics", "Configuration", "Policy" do not, unless part of a product name.
+- **`description`** — 90 to 155 characters, hard limit 158. Say what the reader can
+  do or learn on this page, naming the actual feature or task. Present tense. No
+  "This page describes…", no marketing adjectives, none of the qualitative words the
+  style guide bans ("easy", "simple", "quick"). When one is merely too long,
+  **rewrite it — never truncate it.**
+- **`content_type`** — exactly one of `how-to`, `tutorial`, `reference`, `concept`,
+  `explanation`, `troubleshooting`, `faq`, `release-notes`, `changelog`,
+  `quickstart`. Pick by what the page *is*: numbered task steps → `how-to`;
+  end-to-end walkthrough → `tutorial`; parameter tables → `reference`; explains an
+  idea without steps → `concept`; diagnosing failures → `troubleshooting`. Section
+  landing pages that are mostly link lists are `concept` — settled for this repo, so
+  apply it without asking. `overview` is not valid; `CT_ALIASES` in `fm_lib.py` maps
+  it to the closest valid type.
+- **`title`** — sentence case, under 60 characters. Only the first word plus genuine
+  proper nouns and acronyms are capitalised: "AI Gateway", "API Platform",
+  "Developer Portal" stay capitalised; "Analytics", "Configuration", "Policy" do
+  not, unless part of a product name.
 
-Write your decisions as a JSON map and hand them back to the script — don't edit files by hand:
+Hand your decisions back to the script as one batch — not one run per file:
 
 ```bash
 cat > /tmp/filled.json <<'EOF'
@@ -69,102 +135,180 @@ EOF
 python3 scripts/fm_fix.py en/docs --fill /tmp/filled.json --apply
 ```
 
-Batch these — one `filled.json` for all outstanding files, not one run per file.
-
-### 4. Write the broken-link fix plan to its own file
-
-Link breakage is a *separate deliverable* from frontmatter. Never fold it into the
-chat reply or into the frontmatter report — it is a work queue someone else will
-pick up, so it belongs in a file that can be committed, reviewed, and assigned.
+## 4. Report the broken links and images
 
 ```bash
 python3 scripts/report_links.py en/docs --scope <scope> \
     --out BROKEN-LINKS-<scope>.md --json BROKEN-LINKS-<scope>.json
 ```
 
-Always pass `--scope` when working one version, product, or section, and name the
-output after that scope. A single repo-wide report goes stale immediately and nobody
-can tell which parts are theirs.
+**Always pass `--scope`** and name the output after it. A repo-wide report goes
+stale immediately and nobody can tell which parts are theirs.
 
-The report classifies every finding by **cause**, because the causes have
-completely different fixes and completely different risk:
+This is a separate deliverable from frontmatter. It is a work queue someone else
+will pick up, so it belongs in a committed file, not in the chat reply.
 
-| Tier | Cause | Fix |
-|---|---|---|
-| 0 | `{{base_path}}` and the resource exists | Exact rewrite to a relative path |
-| — | `{{base_path}}` and it does not | **Leave alone.** May be served by a redirect |
-| 0 | Malformed link syntax | Exact rewrite. No judgement. Safe in bulk. |
-| 1 | Wrong relative depth | Exact rewrite. No judgement. Safe in bulk. |
-| 2 | Renamed or moved target | A file of that name exists elsewhere; proposed, with confidence |
-| 3 | Pre-migration domain | Needs the new equivalent page — human |
-| 4 | Missing anchor | Heading was reworded — human |
-| 5 | No target anywhere | Was it dropped, missed, or merged? — human |
+The report groups every finding by **cause**, because the causes have different
+fixes and different risk:
 
-It ends with a **ready-to-paste prompt for an AI coding agent**, deliberately
-scoped to tiers 0 and 1 and the high-confidence half of tier 2. Do not widen that scope.
+| Tier name | Cause | Fix | Applied by `fix_links.py`? |
+|---|---|---|---|
+| `templated_fixable` | `{{base_path}}` and the resource exists | Exact rewrite to a relative path | Yes |
+| `malformed` | Malformed link syntax | Exact rewrite. No judgement. | Yes |
+| `dir_style` | Markdown link written in URL shape, so mkdocs never resolves it | Add `.md`; mkdocs then owns the depth | Yes |
+| `depth` | Wrong relative depth | Exact rewrite. No judgement. | Yes |
+| `renamed` | Renamed or moved target | A file of that name exists elsewhere; proposed, with confidence | Yes, `high` confidence only by default |
+| `case` | Right path, wrong capital letters | Corrects the link to match the file | Yes |
+| `include` | `{! !}` shared block, which this repo does not process | Converts to `--8<--` with the version spelled out | Yes, but only when the block's own links are clean |
+| `anchor_case` | Anchor names a real heading, wrong capitals | Lower-cases it — heading ids always are | Yes |
+| `anchor_deep` | Heading exists but sits below `toc_depth`, so it has no id | Inserts `<a name>` above the heading in the TARGET page | Yes |
+| `stale_mapped` | Old-site url whose path exists under this version | Points it inside the new docs, at this page's own version | Yes |
+| `anchor_legacy` | Original Confluence anchor (`#PageTitle-HeadingRunTogether`) | Matched to the one heading that agrees letter for letter | Yes |
+| `anchor_punct` | Anchor names a real heading but writes the separators differently (`#step-1---enable-x` for the id `step-1-enable-x`) | Exact — same words in the same order, and exactly one heading matches | Yes |
+| `templated_typo` | `{{base_path}}` misspelled, and the resource exists | Corrects the spelling, then writes a relative path | Yes |
+| `templated` | `{{base_path}}` and it does not exist | **Leave alone.** May be served by a redirect | No — refused |
+| `stale` | Pre-migration domain | Needs the new equivalent page | No — refused |
+| `anchor` | Missing anchor | Heading was reworded | No — refused |
+| `gone` | No target anywhere | Was it dropped, missed, or merged? | No — refused |
+| `partial` | Would be mechanical, but the page is an included partial | Needs a decision on how partials link at all | No — refused |
 
-Two rules the reporter enforces, and you must not work around:
+## 5. Apply the link tiers, one at a time
 
-- **`{{base_path}}` is version-root-relative.** Where the resource exists at that
-  path, convert the link to a relative path and drop the variable — that is an exact
-  fix. Where it does not exist, leave it: it may be served by a redirect.
-- **Never propose a target in a different version.** If a page under one version
-  links to something missing, the replacement must live under that same version. A
-  cross-version link silently sends a reader to a different release.
-Tiers 3 to 5 need information that is not in the repo, and an agent asked to fix
-them produces confident links to the wrong pages — worse than a visibly broken
-link, because a plausible wrong link never gets re-checked.
-
-When you report back, give the tier counts and say plainly how many need a human. A
-raw total is alarming and useless on its own; "N have an exact fix, M need a
-decision" is what someone can act on.
-
-### 5. Re-audit, and verify against a real build
+`scripts/fix_links.py` is the only thing that edits link text, and it takes one
+tier per run:
 
 ```bash
-python3 scripts/fm_audit.py en/docs --gate
-python3 scripts/check_redirects.py en/mkdocs.yml en/docs --gate
-python3 scripts/check_links.py en/docs
-python3 scripts/check_style.py en/docs
+# nothing is written
+python3 scripts/fix_links.py en/docs --plan BROKEN-LINKS-<scope>.json --tier malformed
+# apply, and record what changed
+python3 scripts/fix_links.py en/docs --plan BROKEN-LINKS-<scope>.json --tier malformed \
+    --apply --journal /tmp/fixed-malformed.json
 ```
 
-Re-auditing is not optional: it's the only thing that proves the fix worked rather than moved the problem.
+Work the tiers in this order, safest first:
 
-Where the repo can be built, `mkdocs build` is the authoritative check on links — the link checker is calibrated against it and finds a superset of what it reports. If you have the dependencies, run it and reconcile any difference rather than assuming the script is right.
+1. `malformed`
+2. `anchor_deep` — give deep headings an id, so the target exists before anything is
+   pointed at it
+3. `partial_fixable`
+4. `include` — changes what the page contains
+5. `case`
+6. `templated_typo`, `templated_fixable`
+7. `stale_mapped`
+8. `anchor_case`, `anchor_legacy`, `anchor_punct`
+9. `dir_style`
+10. `depth`
+11. `renamed` — `high` confidence only; `--min-confidence` widens it
 
-## The other checkers
+**Run the whole sequence again until it applies nothing.** Fixing a path reveals
+anchor problems that could not be seen while the link went nowhere, so a second lap
+finds work the first could not. It usually converges on the third.
 
-`scripts/check_redirects.py` validates `redirect_maps` in `mkdocs.yml` — targets exist, no source shadowed by a real file, no chains (the plugin doesn't follow them), no map left pointing at a superseded version after a version bump.
+**The rule for every tier: dry-run it, show a sample, say how many would change and
+how many the verifier refused, and wait for an explicit yes before `--apply`.**
+Never chain tiers, and never apply one the person has not seen — their answer for
+`depth`, which is arithmetic, is not their answer for `renamed`, which is a
+proposal. **Skip a tier silently when it has no findings**; do not ask about an
+empty tier.
 
-`CANONICAL_UNREACHABLE` only fires under `--policy latest-only`. Under the default `keep-all` a canonical is a versioned path, so it cannot depend on a redirect existing.
+After each applied tier, report what changed and stop:
 
-`scripts/check_links.py` resolves every relative link, image, and anchor against what's on disk, and flags links still pointing at a pre-migration location (the list is `LEGACY_DOMAINS` in `fm_lib.py`). It catches everything `mkdocs build` warns about plus two classes mkdocs stays silent on: bare directory links to a directory with no `index.md`/`README.md`, and directory links to a path that doesn't exist at all.
+```
+tier `depth`: <n> verified, <n> refused, <n> files changed, <n> links rewritten.
+Refused: <n> where the anchor no longer exists.
+Next tier is `renamed` (<n> findings, <n> verified). Apply it?
+```
 
-Note what `check_links.py` does **not** do: it only resolves links whose target is inside the repo. It cannot tell you whether a page is reachable at its own published URL — that is `check_redirects.py`'s job. "No broken links" and "every canonical URL resolves" are two different claims, and passing the first says nothing about the second.
+**Regenerate the plan between tiers** — fixing one tier changes what the others
+resolve to, and a stale plan gets skipped rather than guessed at.
 
-`scripts/check_style.py` covers only the *mechanically decidable* part of the style guide — heading case, banned qualitative and time-bound words, en dashes, non-descriptive link text. It is not a replacement for reading the prose. Two things to know before you trust its output:
+Two things the script does that you must not work around:
 
-- **Heading case depends on its allowlist.** `PROPER` and `PROPER_PHRASES` in the script hold the product names that legitimately stay capitalised, and essentially every false positive traces to a name the list doesn't know yet. When you hit one, **add the name to `PROPER_PHRASES` rather than suppressing the finding** — that is how the checker improves. Headings with exactly one unexpected capital are reported separately as `HEADING_CASE_SINGLE_WORD` at lower severity, because a lone capital is usually an unknown product name.
-- **Banned-word rules need your judgement on scope.** The style guide bans "new" and "latest" *"when describing product or feature capabilities."* "Generate a **new** token" is fine; "these **new** subcommands" is a violation. The script cannot tell these apart and will flag both. Read the surrounding sentence before reporting a `TIMELESS` or `QUALITATIVE` hit.
+- **It verifies every rewrite against the files before writing.** A proposal whose
+  target does not resolve, or whose anchor does not exist on the new page, is
+  refused. Those refusals are the useful output.
+- **It refuses `templated`, `stale`, `anchor`, `gone` and `partial` outright.** Do
+  not hand-apply them in bulk. A plausible wrong link is worse than a visibly broken
+  one, because nobody re-checks it.
 
-Some findings are established house conventions rather than slips. When a single pattern recurs across hundreds of pages, report it **once** as a convention question rather than as hundreds of findings. The style guide says outright that it "contains guidelines, not draconian rules", and a checker that ignores that stops being used.
+If a fix looks wrong, or before changing any link script, read
+`references/link-mechanics.md` — it holds the relative-path rule that decides
+whether a path is counted from the source file or from the published URL. Getting
+that wrong breaks working links.
+
+## 6. Fix what needs reading
+
+The tiers above have one computable answer each. What is left needs the target pages
+read before it can be fixed, which is your work, not something to hand back as a
+list. `references/judgement-calls.md` covers it: which groups to work, what evidence
+justifies a fix, how to judge images, how to copy files the migration left behind,
+and how to work through it in reviewable batches.
+
+Route those decisions through `fix_links.py --tier agent`, never by hand-editing.
+Each entry must quote the linking sentence verbatim and the heading it matched; the
+script refuses entries that do not.
+
+## 7. Re-audit and verify
+
+```bash
+python3 scripts/fm_audit.py en/docs --scope <version> --gate
+python3 scripts/check_links.py en/docs
+python3 scripts/check_redirects.py en/mkdocs.yml en/docs --gate
+```
+
+Re-auditing is not optional — it is the only thing that proves the fix worked rather
+than moved the problem.
+
+Where the repo can be built, `mkdocs build` is the authoritative check on links. If
+you have the dependencies, run it and reconcile any difference rather than assuming
+the script is right.
+
+**If you change `report_links.py`, `fix_links.py`, `check_links.py` or
+`links_lib.py`, prove it on a version before trusting it.** These three have to
+agree about what path is correct. When they drift apart the failure is silent — the
+reporter proposes fixes the fixer then refuses, and neither looks wrong on its own.
+So:
+
+1. Note the per-tier counts from `report_links.py` on one version *before* your change.
+2. Make the change, re-run, and account for every count that moved. A tier that grew
+   or shrank without a reason you can state is the change misfiring.
+3. Dry-run `fix_links.py` on a tier and read the sample. Proposals the fixer refuses
+   are where the reporter is being optimistic.
+4. Build the site and resolve the links in the generated HTML, not in your own
+   report. That is the only check that is not the scripts grading themselves.
+
+Test both a page whose name is `index.md` and one whose name is not — on an
+`index.md` the two path bases coincide, so a wrong rule looks correct on every
+landing page and breaks everywhere else.
 
 ## Reporting
 
-Lead with the counts and what you changed. Then group findings by code, not by file — a hundred identical `canonical_url` corrections are one line of report, not a hundred. Show one representative diff per group.
+Lead with the counts and what you changed. Group findings by code, not by file — a
+hundred identical `canonical_url` corrections are one line, not a hundred. Show one
+representative diff per group.
 
-Separate three things clearly, because they need different responses:
+Separate three things, because they need different responses:
 
 1. **Fixed automatically** — what the scripts changed, by code and count.
-2. **Needs a human decision** — genuine ambiguity or repo-wide convention questions. State the options and your recommendation; don't silently pick one.
+2. **Needs the user to decide** — genuine ambiguity, or a repo-wide convention
+   question. State the options and your recommendation; do not silently pick one.
 3. **Still outstanding** — what neither the scripts nor you could resolve, and why.
 
-Never report a count without saying whether it counts occurrences or affected files. Those differ by an order of magnitude, and conflating them makes the report useless.
+Never report a count without saying whether it counts occurrences or affected files.
+Those differ by an order of magnitude.
 
-When running in CI, end with a single machine-readable line so a build step can grep it:
+For each group you worked by reading, say how many you fixed and how many you left,
+and why. "Fixed all 98 anchors" is less trustworthy than "fixed 58, left 29 because
+the sentence did not name a section clearly enough".
+
+Style-guide review is a separate skill — `wso2-doc-style-checker`. Do not duplicate
+it here.
+
+When running in CI, end with one machine-readable line:
 
 ```
 <!-- wso2-doc-frontmatter: STATUS=FAIL files=<N> blocking=<N> should_fix=<N> -->
 ```
 
-`STATUS=FAIL` only when there is at least one blocking issue. Because blocking counts drive a merge gate, do not inflate severity — a should-fix reported as blocking is how a gate loses its credibility.
+`STATUS=FAIL` only when there is at least one blocking issue. Blocking counts drive
+a merge gate, so do not inflate severity.

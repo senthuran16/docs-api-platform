@@ -118,6 +118,15 @@ fixable, and `report_links.py` splits them accordingly:
 Redirects themselves belong either in a `redirects.yml` file or in a `redirects`
 block inside `mkdocs.yml`.
 
+## Applying a link plan
+
+`report_links.py` proposes; `fix_links.py` is the only script that rewrites link
+text. It applies one tier per run, verifies each rewrite against the disk first,
+and refuses the tiers that need the pages read (`templated`, `stale`, `anchor`, `gone`).
+
+Regenerate the plan between tiers: fixing one tier changes what the others resolve
+to. Entries whose link text can no longer be found are skipped rather than guessed.
+
 ## Adding another source of documentation
 
 Nothing in the scripts is tied to a particular product or version. Versions are
@@ -155,4 +164,4 @@ obviously missing one.
 
 `fm_fix.py` derives `title` from an existing H1 when scaffolding, since that is an
 editorial decision someone already made, and leaves `description` as `TODO` in the
-worklist for a person or an LLM to write after reading the page.
+worklist to write after reading the page.
