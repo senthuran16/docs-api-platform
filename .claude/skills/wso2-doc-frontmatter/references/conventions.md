@@ -122,7 +122,7 @@ block inside `mkdocs.yml`.
 
 `report_links.py` proposes; `fix_links.py` is the only script that rewrites link
 text. It applies one tier per run, verifies each rewrite against the disk first,
-and refuses the tiers that need a person (`templated`, `stale`, `anchor`, `gone`).
+and refuses the tiers that need the pages read (`templated`, `stale`, `anchor`, `gone`).
 
 Regenerate the plan between tiers: fixing one tier changes what the others resolve
 to. Entries whose link text can no longer be found are skipped rather than guessed.
@@ -164,4 +164,4 @@ obviously missing one.
 
 `fm_fix.py` derives `title` from an existing H1 when scaffolding, since that is an
 editorial decision someone already made, and leaves `description` as `TODO` in the
-worklist for a person or an LLM to write after reading the page.
+worklist to write after reading the page.

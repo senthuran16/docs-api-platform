@@ -3,7 +3,13 @@
 import os, re, sys, json, collections, urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from fm_lib import is_legacy_url  # noqa: E402
+from fm_lib import is_legacy_url, split_version  # noqa: E402
+from links_lib import (  # noqa: E402
+    find_targets, harvest_anchors, strip_noise, url_base, page_id,
+    read_toc_depth, read_redirect_maps, redirect_targets,
+    non_web_scheme, is_http_typo, resolve_candidates, read_extra_vars,
+    version_root, build_include_map, MD_LINK, HTML_SRC,
+)
 
 import argparse
 _ap = argparse.ArgumentParser()
@@ -12,7 +18,8 @@ _ap.add_argument("--json", dest="json_out", default=None,
                  help="Write full findings to this path. Omitted = summary only.")
 _ap.add_argument("--gate", action="store_true", help="Exit 1 if any blocking finding.")
 _ap.add_argument("--mkdocs-yml", dest="mkdocs_yml", default=None,
-                 help="Where to read `toc_depth` from. Defaults to <docs_root>/../mkdocs.yml.")
+                 help="Where to read `toc_depth` and `redirect_maps` from. "
+                      "Defaults to <docs_root>/../mkdocs.yml.")
 _args = _ap.parse_args()
 DOCS = _args.docs_root.rstrip("/")
 SITE = "https://wso2.com/api-platform/docs"
@@ -26,92 +33,51 @@ for root, _, fs in os.walk(DOCS):
         if f.endswith(".md"):
             md_files.add(rel)
 
-def slug(h):
-    """Match python-markdown's toc slugify: strip non-word chars, then collapse
-    runs of whitespace AND hyphens into a single hyphen."""
-    h = re.sub(r"`|\*", "", h)   # backticks/emphasis markers; keep _ (it is a \w char)
-    h = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", h)   # link text only
-    h = re.sub(r"<[^>]+>", "", h)
-    h = re.sub(r"[^\w\s-]", "", h).strip().lower()
-    return re.sub(r"[-\s]+", "-", h)
-
-def toc_depth(mkdocs_yml):
-    """The `toc_depth` configured for the python-markdown toc extension.
-
-    This is load-bearing, not cosmetic. With `toc_depth: 3`, python-markdown
-    assigns NO `id` to h4 and deeper — so `#some-h4-heading` links resolve to
-    nothing in the built site even though the heading is right there in the
-    Markdown. Neither this checker nor `mkdocs build` on 1.4.x flags that on its
-    own, so a page can look clean and still have dead in-page links.
-    """
-    if not os.path.isfile(mkdocs_yml):
-        return 6
-    text = open(mkdocs_yml, encoding="utf-8", errors="replace").read()
-    m = re.search(r"^\s*toc_depth:\s*['\"]?(\d)", text, re.M)
-    return int(m.group(1)) if m else 6
-
 
 MKDOCS_YML = _args.mkdocs_yml or os.path.join(os.path.dirname(DOCS) or ".", "mkdocs.yml")
-TOC_DEPTH = toc_depth(MKDOCS_YML)
+TOC_DEPTH = read_toc_depth(MKDOCS_YML)
 
-# harvest anchors per file (headings + explicit <a name>/{#id})
+# Links a redirect makes reachable even though nothing is there on disk.
 #
-# `anchors` is what the build actually produces. `deep_anchors` holds the ids a
-# heading WOULD have if toc_depth allowed it — kept separately so a link to one
-# can be reported as its own cause rather than as a generic missing anchor.
-#
-# Do NOT suggest `{#id}` as the fix for a deep heading here, even though
-# `attr_list` would honour it: the `markdownextradata` plugin runs every page
-# through Jinja BEFORE Markdown, and `{#` opens a Jinja comment. An unterminated
-# one fails the whole build with "Missing end of comment tag". The safe additive
-# fix is `<a name="...">` immediately above the heading — inert HTML, already used
-# in ~300 pages here, and it leaves the heading level and the TOC untouched.
+# `mkdocs-redirects` builds a real page at each `redirect_maps` source, so a link
+# pointing at one WORKS in the published site. Resolving against the filesystem
+# alone reports those as broken. Only the block in mkdocs.yml is consulted — the
+# old `docs-apim/en/redirects.yml` is deliberately NOT read, because how the API
+# Manager redirects should be carried over has not been decided, and guessing
+# here would quietly mark links as fine on the strength of a redirect that does
+# not exist yet.
+EXTRA_VARS = read_extra_vars(MKDOCS_YML)
+REDIRECTS = read_redirect_maps(MKDOCS_YML)
+REDIRECT_OK = redirect_targets(REDIRECTS)
+
+# `anchors` is what the build actually produces; `deep_anchors` holds ids a
+# heading would have if `toc_depth` allowed it. See links_lib.harvest_anchors.
+PAGE_TEXT = {p: open(os.path.join(DOCS, p), encoding="utf-8",
+                     errors="replace").read() for p in md_files}
 anchors, deep_anchors = {}, {}
-for p in md_files:
-    txt = open(os.path.join(DOCS, p), encoding="utf-8", errors="replace").read()
-    txt = re.sub(r"<!--.*?-->", "", txt, flags=re.S)
-    txt = re.sub(r"```.*?```", "", txt, flags=re.S)
-    a, deep = set(), set()
-    for m in re.finditer(r"^(#{1,6})\s+(.+?)\s*$", txt, re.M):
-        level, h = len(m.group(1)), m.group(2)
-        exp = re.search(r"\{#([\w-]+)\}", h)
-        if exp:
-            a.add(exp.group(1))            # explicit id survives any toc_depth
-            h = h[:exp.start()]
-        (a if level <= TOC_DEPTH else deep).add(slug(h))
-    for m in re.finditer(r"""<a[^>]+(?:name|id)=(["'])(.*?)\1""", txt): a.add(m.group(2))
-    for m in re.finditer(r'\{#([\w-]+)\}', txt): a.add(m.group(1))
-    anchors[p] = a
-    deep_anchors[p] = deep - a
 
-LINK = re.compile(r'(!?)\[([^\]]*)\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"]*")?\s*\)')
-# Tag name is captured so an `<a href>` is reported as a broken LINK and an
-# `<img src>` as a missing IMAGE. Lumping them together mislabels every raw-HTML
-# link as an image, which sends whoever reads the report looking for the wrong thing.
+
+# Which pages are SHARED BLOCKS, and which pages pull each one in.
 #
-# The quote character is captured and back-referenced, so single-quoted attributes
-# are matched too. HTML allows either, the migrated pages use both, and a
-# double-quote-only pattern skips the single-quoted ones silently — they look
-# checked when they were never read.
-HTML_SRC = re.compile(r"""<(img|a|source|iframe)[^>]+(?:src|href)=(["'])(.*?)\2""")
+# A link inside a block is resolved from the including page, never from the
+# block's own folder — so judging a block as if it were a page is wrong in both
+# directions. It reports links that are fine, and it passes links that break
+# everywhere the block is used. Correctly fixing such a link would then make this
+# checker start complaining, which is how a good fix gets reverted.
+INCLUDED = build_include_map(DOCS, md_files, lambda x: version_root(x, split_version))
 
+# A page's anchors include the headings of the blocks it pulls in — the text is
+# spliced in before Markdown runs. Harvested here, after INCLUDED exists, so the
+# checker and the reporter agree about what ids a page publishes.
+INCLUDES_OF = {}
+for _blk, _pages in INCLUDED.items():
+    for _pg in _pages:
+        INCLUDES_OF.setdefault(_pg, []).append(_blk)
+for p in md_files:
+    _extra = [PAGE_TEXT[b] for b in INCLUDES_OF.get(p, []) if b in PAGE_TEXT]
+    anchors[p], deep_anchors[p] = harvest_anchors(PAGE_TEXT[p], TOC_DEPTH, _extra)
 
-def url_base(rel):
-    """Directory the RENDERED page sits in, under `use_directory_urls: true`.
-
-    `a/b/page.md` is served at `/a/b/page/` — one level deeper than the source —
-    while `a/b/index.md` is served at `/a/b/`, the same level.
-
-    mkdocs rewrites relative targets written in Markdown syntax, resolving them
-    against the source file, but passes raw HTML through untouched, so the browser
-    resolves an `<img src>` against the rendered URL instead. The identical string
-    is therefore correct in one syntax and broken in the other. Resolving both the
-    same way is how a working image gets "fixed" into a broken one.
-    """
-    d = os.path.dirname(rel)
-    stem = os.path.basename(rel)[:-3] if rel.endswith(".md") else os.path.basename(rel)
-    return d if stem in ("index", "README") else (f"{d}/{stem}" if d else stem)
-
+used = set()          # every target that resolved, for the orphan-asset check
 findings = []
 def add(f, sev, code, msg):
     findings.append({"file": f, "severity": sev, "code": code, "message": msg})
@@ -119,23 +85,39 @@ def add(f, sev, code, msg):
 for p in sorted(md_files):
     full = os.path.join(DOCS, p)
     txt = open(full, encoding="utf-8", errors="replace").read()
-    body = re.sub(r"<!--.*?-->", "", txt, flags=re.S)
-    body = re.sub(r"```.*?```", "", body, flags=re.S)
-    body = re.sub(r"`[^`\n]*`", "", body)
+    body = re.sub(r"`[^`\n]*`", "", strip_noise(txt))
     d = os.path.dirname(p)
 
-    targets = [(m.group(1) == "!", m.group(3), False) for m in LINK.finditer(body)]
-    targets += [(m.group(1).lower() != "a", m.group(3), True) for m in HTML_SRC.finditer(body)]
+    targets = find_targets(body)
 
-    for is_img, t, is_html in targets:
-        if t.startswith(("mailto:", "tel:", "#!")):
+    for kind, t, is_html in targets:
+        if t.startswith("#!"):
             continue
-        # Build-time template variables (e.g. `{{base_path}}`) are not paths. They
-        # cannot be resolved statically and are not broken in their own context, so
-        # report them as informational rather than as broken links.
+        # Anything with a URI scheme is an ADDRESS, not a path on disk. Resolving
+        # one against the docs root reports a correct `ldap://10.100.1.100:389`
+        # example in a user-store page as a broken link. A mistyped http scheme
+        # (`ttps://`) is excluded from this and falls through, because that IS a
+        # defect and `malformed` can fix it.
+        scheme = non_web_scheme(t)
+        if scheme:
+            continue
+        # Build-time template variables. Whether this is broken depends entirely
+        # on whether the variable has a value: `extra.base_path` is not defined in
+        # this repo, so `{{base_path}}/x/` renders as `/x/` and points outside the
+        # docs. Read the config rather than assuming either way — that keeps the
+        # severity correct if someone later defines it.
+        tvars = re.findall(r"\{\{\s*([\w.]+)\s*\}\}", t)
         if re.search(r"\{\{.*?\}\}", t):
-            add(p, "polish", "LINK_TEMPLATED",
-                f"Target contains a build-time variable, so it can't be checked statically: `{t}`")
+            undefined = [v for v in tvars if v.split(".")[0] not in EXTRA_VARS]
+            if undefined:
+                add(p, "blocking", "LINK_TEMPLATED_UNDEFINED",
+                    f"`{t}` uses {', '.join('{{' + v + '}}' for v in undefined)}, which "
+                    f"has no value under `extra:` in mkdocs.yml — it renders as an empty "
+                    f"string, so the link resolves outside the docs.")
+            else:
+                add(p, "polish", "LINK_TEMPLATED",
+                    f"Target contains a build-time variable, so it can't be checked "
+                    f"statically: `{t}`")
             continue
         # stale pre-migration domain
         if is_legacy_url(t):
@@ -194,16 +176,50 @@ for p in sorted(md_files):
             add(p, "blocking", "LINK_ESCAPES_ROOT", f"Link `{t}` resolves outside the docs root.")
             continue
 
-        resolved = None
-        for c in (cand, cand + ".md", os.path.join(cand, "index.md"), os.path.join(cand, "README.md")):
-            if c in all_files:
-                resolved = c; break
+        # A shared block: resolve from each including page instead of from here.
+        if p in INCLUDED:
+            landings = {}
+            for inc in sorted(INCLUDED[p]):
+                ibase = os.path.dirname(inc)
+                ilit = os.path.normpath(os.path.join(ibase, path)).replace("\\", "/")
+                irw = (not is_html) and ilit in all_files
+                ic = os.path.normpath(
+                    os.path.join(ibase if irw else url_base(inc), path)).replace("\\", "/")
+                landings[inc] = next((c for c in resolve_candidates(ic) if c in all_files), None)
+            for v in landings.values():
+                if v:
+                    used.add(v)
+            bad = [i for i, v in landings.items() if not v]
+            if bad:
+                add(p, "blocking", "PARTIAL_LINK_BROKEN",
+                    f"`{t}` is inside a shared block and does not resolve from "
+                    f"{len(bad)} of {len(landings)} page(s) that include it, e.g. "
+                    f"`{bad[0]}`. A link in a block is resolved from the including "
+                    f"page, not from the block.")
+            continue
+
+        resolved = next((c for c in resolve_candidates(cand) if c in all_files), None)
+        if resolved:
+            used.add(resolved)
         if resolved is None:
-            if os.path.isdir(os.path.join(DOCS, cand)):
+            cand_norm = cand.replace("\\", "/")
+            if cand_norm in REDIRECT_OK or page_id(cand_norm) in REDIRECT_OK:
+                # Nothing on disk, but `redirect_maps` publishes a page here, so the
+                # link works in the built site. Reported at `polish` rather than
+                # dropped: it is worth knowing a link leans on a redirect.
+                add(p, "polish", "LINK_VIA_REDIRECT",
+                    f"`{t}` has no file on disk but is served by a `redirect_maps` "
+                    f"entry in mkdocs.yml, so it resolves in the built site.")
+            elif is_http_typo(t):
+                add(p, "blocking", "LINK_SCHEME_TYPO",
+                    f"`{t}` looks like an http(s) URL with a mistyped scheme.")
+            elif os.path.isdir(os.path.join(DOCS, cand)):
                 add(p, "should-fix", "LINK_DIR_NO_INDEX", f"Link `{t}` points at a directory with no index.md/README.md.")
             else:
-                code = "IMG_MISSING" if is_img else "LINK_BROKEN"
-                add(p, "blocking", code, f"{'Image' if is_img else 'Link'} target does not exist: `{t}`")
+                code = {"image": "IMG_MISSING", "media": "MEDIA_MISSING"}.get(
+                    kind, "LINK_BROKEN")
+                add(p, "blocking", code,
+                    f"{kind.capitalize()} target does not exist: `{t}`")
             continue
         if frag and resolved.endswith(".md"):
             if frag not in anchors.get(resolved, set()):
@@ -220,7 +236,7 @@ for p in sorted(md_files):
     #     merely mirror the text steps. Do not flag it as missing.
     #   - informative images need meaningful alt text, max 155 characters.
     #   - "Image of" / "Photo of" prefixes are called out to avoid.
-    for m in LINK.finditer(body):
+    for m in MD_LINK.finditer(body):
         if m.group(1) != "!":
             continue
         alt, src = m.group(2), m.group(3)
@@ -238,31 +254,87 @@ for p in sorted(md_files):
             add(p, "should-fix", "IMG_ANIMATED_GIF",
                 f"Animated GIF: `{src}`. The guide says use a resource-efficient format like MP4 instead.")
 
-# orphan assets
-used = set()
-for p in md_files:
-    txt = re.sub(r"<!--.*?-->", "", open(os.path.join(DOCS, p), encoding="utf-8", errors="replace").read(), flags=re.S)
-    d = os.path.dirname(p)
-    for m in list(LINK.finditer(txt)) + list(HTML_SRC.finditer(txt)):
-        t = m.group(3) if m.lastindex and m.lastindex >= 3 else m.group(1)
-        if re.match(r"^(https?:|mailto:|#)", t): continue
-        t = urllib.parse.unquote(t.split("#")[0])
-        if not t: continue
-        used.add(os.path.normpath(os.path.join(d, t)) if not t.startswith("/") else t.lstrip("/"))
-assets = {f for f in all_files if f.startswith("assets/") and re.search(r"\.(png|jpg|jpeg|gif|svg|webp|mp4)$", f, re.I)}
-orphans = sorted(assets - used)
+# ORPHAN ASSETS — an image no page points at.
+#
+# `used` is filled by the main loop above, from targets that actually RESOLVED.
+# It must not be recomputed in a separate pass: re-resolving every target against
+# the source directory regardless of syntax sends every raw-HTML reference — most
+# of the images in these docs — to the wrong path, and counts its image as
+# unreferenced.
+#
+# Images referenced only through a `{{base_path}}` link are added below rather
+# than counted as orphans. They ARE currently unreachable, but that is the
+# templated-link problem, already reported per link; listing the same files again
+# as orphans would double-count one cause and invite deleting a screenshot whose
+# only fault is the link pointing at it.
+# WHAT COUNTS AS AN ORPHAN — two different things, kept apart on purpose.
+#
+# `used` holds targets that RESOLVED. An image whose only referrer is a broken
+# link is not in it — and calling that image "never referenced" is worse than
+# useless: it is already reported as `IMG_MISSING` from the link's side, and
+# listing it here as unused invites deleting a screenshot whose only fault is the
+# link pointing at it. Fixing the link would make it referenced again.
+#
+# So `mentioned` records every basename that appears in ANY target on a page in
+# the same version, resolving or not. An asset is only an orphan when nothing in
+# its own version so much as names it. Per-version matters because each version
+# keeps its own copy of the same file: 4.1.0's `conditional-groups.png` being used
+# by a 4.4.0 page says nothing about whether 4.1.0 needs it.
+mentioned = collections.defaultdict(set)
+for p in sorted(md_files):
+    vroot = version_root(p, split_version)
+    body = strip_noise(open(os.path.join(DOCS, p), encoding="utf-8",
+                            errors="replace").read())
+    for _kind, t, _is_html in find_targets(body):
+        bare = urllib.parse.unquote(t.partition("#")[0].rstrip("/"))
+        if bare:
+            mentioned[vroot].add(os.path.basename(bare))
+        # A `{{base_path}}` target is version-root-relative; where the file is
+        # actually there, count it as used rather than as a second finding.
+        m_bp = re.match(r"^\{\{\s*base_path\s*\}\}/?(.*)$", t)
+        if m_bp:
+            rest = urllib.parse.unquote(m_bp.group(1).partition("#")[0]).strip("/")
+            cand = os.path.normpath(f"{vroot}/{rest}" if vroot else rest).replace("\\", "/")
+            hit = next((c for c in resolve_candidates(cand) if c in all_files), None)
+            if hit:
+                used.add(hit)
+
+# `assets/` AT ANY DEPTH, not just the docs root.
+#
+# `startswith("assets/")` matches only `en/docs/assets/`, while each version keeps
+# its own `api-manager/<version>/assets/` holding the bulk of the images. Anchoring
+# the match at the docs root measures a fraction of the repo while reading like a
+# whole-repo figure.
+ASSET_EXT = re.compile(r"\.(png|jpg|jpeg|gif|svg|webp|mp4)$", re.I)
+assets = {f for f in all_files
+          if ("assets/" in f.replace("\\", "/") + "/") and ASSET_EXT.search(f)}
+
+orphans, wanted_but_broken = [], []
+for f in sorted(assets - used):
+    if os.path.basename(f) in mentioned.get(version_root(f, split_version), ()):
+        wanted_but_broken.append(f)     # a page asks for it; the link is broken
+    else:
+        orphans.append(f)               # nothing in its version names it at all
+orphans_by_area = collections.Counter(
+    "/".join(o.split("/")[:2]) if "/" in o else o for o in orphans)
 
 by = collections.Counter((f["code"], f["severity"]) for f in findings)
 print("=" * 68); print("LINK & ASSET CHECK"); print("=" * 68)
 print(f"md files scanned  : {len(md_files)}")
 print(f"total findings    : {len(findings)}")
-print(f"orphaned assets   : {len(orphans)} of {len(assets)} images never referenced")
+print(f"images            : {len(assets)}  "
+      f"({len(used & assets)} referenced, {len(wanted_but_broken)} asked for by a "
+      f"broken link, {len(orphans)} never named in their version)")
+if orphans_by_area:
+    top = ", ".join(f"{k} ({v})" for k, v in orphans_by_area.most_common(4))
+    print(f"  orphans by area : {top}")
 print()
 print(f"{'COUNT':>6}  {'SEV':<11} CODE"); print("-" * 68)
 for (code, sev), n in by.most_common():
     print(f"{n:>6}  {sev:<11} {code}")
 if _args.json_out:
-    json.dump({"findings": findings, "orphans": orphans}, open(_args.json_out, "w"), indent=1)
+    json.dump({"findings": findings, "orphans": orphans,
+               "wanted_but_broken": wanted_but_broken}, open(_args.json_out, "w"), indent=1)
     print(f"\n(full findings -> {_args.json_out})")
 else:
     print("\n(re-run with --json <path> for the full findings list)")
