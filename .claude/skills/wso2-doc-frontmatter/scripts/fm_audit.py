@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate frontmatter across the WSO2 API Platform docs. Read-only.
 
-    python3 scripts/fm_audit.py en/docs                     # human summary
+    python3 scripts/fm_audit.py en/docs                     # readable summary
     python3 scripts/fm_audit.py en/docs --json out.json     # machine-readable
     python3 scripts/fm_audit.py en/docs --policy strip-all   # audit as-is today
     python3 scripts/fm_audit.py en/docs --files a.md b.md    # just these files
@@ -158,7 +158,7 @@ def main():
             if len(d) > DESC_MAX:
                 add(rel, "blocking", "DESC_TOO_LONG",
                     f"description is {len(d)} chars; the rule caps it at {DESC_MAX}. "
-                    f"Needs a human/LLM rewrite, not a truncation.")
+                    f"Needs a rewrite, not a truncation.")
             elif len(d) < DESC_MIN:
                 add(rel, "should-fix", "DESC_TOO_SHORT",
                     f"description is only {len(d)} chars — too thin to be useful for search or agents.")

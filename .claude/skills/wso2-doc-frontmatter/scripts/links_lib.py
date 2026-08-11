@@ -657,7 +657,7 @@ def match_anchor(frag, anchors):
 
     **Only accepted when exactly ONE heading matches.** A unique match is the whole
     reason this is safe to propose; where a match is ambiguous, returning None and
-    letting a person decide is the correct outcome, not picking the first.
+    returning None is the correct outcome, not picking the first.
     """
     if not frag or frag in anchors:
         return None, None
@@ -668,7 +668,7 @@ def match_anchor(frag, anchors):
 
     # Only the Confluence shape: a run-together prefix, then a hyphen, and at
     # least one capital somewhere. An ordinary lower-case anchor that simply does
-    # not exist must fall through to a person.
+    # not exist must fall through as unresolved.
     if LEGACY_ANCHOR.match(frag) and not frag.islower():
         key = squash(frag.split("-", 1)[1])
         if key:

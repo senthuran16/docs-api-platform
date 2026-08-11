@@ -5,19 +5,15 @@ that need someone to read the pages. Read it when a report hands you `anchor`,
 `stale`, `gone`, `templated` or low-confidence `renamed`, or when a tier's verifier
 refused a fix because the anchor did not exist.
 
-## Who fixes what
+## What to fix, and when to stop and ask
 
-Three kinds of work, and only the third belongs to a human:
+The scripts have already applied everything with one computable answer. The rest is
+yours: open the target pages, read them, decide, and fix.
 
-| | who | example |
-|---|---|---|
-| One correct answer, computable | the script | this link needs one more `../` |
-| Needs reading the pages | **you, the agent** | which heading did this link mean? is this the right screenshot? |
-| Needs a product or policy decision nobody can read off the page | a human | was this page dropped on purpose? what is `{{envoy_path}}` supposed to be? |
-
-The line between rows two and three is *"could someone find the answer by reading
-what is in front of them?"* If yes, it is yours. "Needs someone to read the page"
-means **you** read the page.
+Stop and ask the user only when the answer is not on the page — when the fix would
+change what a page *says* rather than where it points, or when it depends on a
+decision about the docs that has not been made. Ask once, with the options; do not
+return a list of findings instead of doing the work.
 
 **Route your decisions through `fix_links.py`, do not edit pages by hand.** Write a
 plan of the same shape and apply it with `--tier agent`:
@@ -83,8 +79,8 @@ honestly, that finding is not ready to fix — leave it and say why.
   2. **the file was never copied over** → copy it (see *Copying files the migration
      left behind*, below). This is the largest slice and it is fully yours;
   3. the content was dropped for this version → the sentence has to be rewritten or
-     removed, which changes what the page says — **ask a human**;
-  4. the page was missed in the migration → **ask a human**, it is a content
+     removed, which changes what the page says — **ask the user**;
+  4. the page was missed in the migration → **ask the user**; that is a content
      decision, not a link fix.
 - **`templated`** — same as `gone`, with a `{{base_path}}` on the front.
 
@@ -106,7 +102,7 @@ image finding is not automatically someone else's problem:
   and no build warning will ever fire. It is worth opening the images on any page
   you are already editing, and worth a deliberate pass on the pages a release
   touches. Report these separately: the fix is a new screenshot, which needs a
-  human with the product running.
+  new screenshot taken against a running product, so report it and move on.
 - *An animated GIF or a 3 MB PNG* (`IMG_ANIMATED_GIF`, size findings) — a judgement
   about whether it earns its weight. Look at it before saying.
 
@@ -151,7 +147,7 @@ breakage inherited from the old site rather than something the migration caused,
 it does not have to block the migration.
 
 **Leave alone:** `partial` needs a decision about how shared blocks should address
-things at all, which is one human decision rather than N fixes. Do not paper over
+things at all — one decision to ask about, not N fixes. Do not paper over
 it with a relative path.
 
 **Report as you go.** For each group say how many you fixed, how many you left,
@@ -191,5 +187,5 @@ A finished agent pass reads like: *"`anchor`, api-manager/4.6.0: 87 findings, re
 41 target pages, fixed 58, left 29 (19 where the sentence named no section, 10
 where two headings were equally plausible — listed below). Built the site: links
 landing on a missing heading went 87 → 29, nothing newly broken."* That is a
-result. "Needs a person" is not.
+result. A list of untouched findings is not.
 

@@ -48,7 +48,7 @@ non-empty tier, which is usually eight to twelve — so the run does not feel li
 has stalled.
 
 Deliverables at the end: every page in scope with complete frontmatter, and
-`BROKEN-LINKS-<scope>.md` listing what is left for a person to decide.
+`BROKEN-LINKS-<scope>.md` listing what is left to decide.
 
 **Which spec you are working from.** At the start of every run, check for
 `.claude/rules/doc-frontmatter-and-metadata.md` in the target repo:
@@ -238,9 +238,9 @@ that wrong breaks working links.
 
 ## 6. Fix what needs reading
 
-The tiers above have one computable answer each. What is left needs someone to open
-the pages and decide — and that is **your** job as the agent, not a human's.
-`references/judgement-calls.md` covers it: which groups to work, what evidence
+The tiers above have one computable answer each. What is left needs the target pages
+read before it can be fixed, which is your work, not something to hand back as a
+list. `references/judgement-calls.md` covers it: which groups to work, what evidence
 justifies a fix, how to judge images, how to copy files the migration left behind,
 and how to work through it in reviewable batches.
 
@@ -290,7 +290,7 @@ representative diff per group.
 Separate three things, because they need different responses:
 
 1. **Fixed automatically** — what the scripts changed, by code and count.
-2. **Needs a human decision** — genuine ambiguity or a repo-wide convention
+2. **Needs the user to decide** — genuine ambiguity, or a repo-wide convention
    question. State the options and your recommendation; do not silently pick one.
 3. **Still outstanding** — what neither the scripts nor you could resolve, and why.
 

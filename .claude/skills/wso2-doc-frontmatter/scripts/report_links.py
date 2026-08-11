@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Turn raw broken-link findings into a fix plan a person or an agent can act on.
+"""Turn raw broken-link findings into a fix plan that can be applied tier by tier.
 
     python3 scripts/report_links.py en/docs --out BROKEN-LINKS.md
     python3 scripts/report_links.py en/docs --scope <product>/<version> --out BROKEN-LINKS-<version>.md
@@ -11,7 +11,7 @@ fixes:
 
   * wrong relative depth  -> exact mechanical rewrite, no judgement at all
   * renamed / moved page  -> a target exists elsewhere; propose it, rank confidence
-  * genuinely gone        -> needs a human decision, cannot be automated
+  * genuinely gone        -> needs the pages read, cannot be automated
   * pre-migration domain  -> map to the new site or drop the link
   * missing anchor        -> heading was reworded
 
@@ -233,14 +233,14 @@ def main():
 
         def place_anchor(t, target_file, frag):
             """File an anchor finding — but first check the two shapes that have a
-            definite answer rather than needing a person.
+            definite answer rather than being left unresolved.
 
             `case`   the heading exists, spelled with different capitals. Exact.
             `legacy` the anchor is an original Confluence one — page title and
                      heading run together — and exactly one heading matches once
                      both sides are reduced to letters and digits.
 
-            Anything else is a reworded heading, and only a person can say which
+            Anything else is a reworded heading, and only reading the page says which
             one was meant."""
             # The heading EXISTS but sits deeper than `toc_depth`, so the build
             # gives it no id and the link goes nowhere. Fixable, and the fix edits
@@ -284,7 +284,7 @@ def main():
             """File a proposal under its tier — unless this page is a partial.
 
             A relative fix inside a partial is unsafe no matter how carefully it is
-            computed, so the proposal is kept for a person to read and moved out of
+            computed, so the proposal is kept to be read and moved out of
             reach of `fix_links.py`. `suggested` is renamed on the way, because a
             key named `suggested` is exactly what an agent would apply."""
             if includers and name in RELATIVE_TIERS:
@@ -621,7 +621,7 @@ def main():
     #
     # So resolve from each includer instead. Where every includer agrees on one
     # path, that path is the fix. Where they disagree, no relative link can serve
-    # them all and a person has to decide.
+    # them all, so it has to be decided rather than computed.
     for part in sorted(included):
         if args.scope and not part.startswith(args.scope):
             continue
@@ -705,7 +705,7 @@ def main():
     w("")
     w(f"**{total} findings** across {len(targets)} pages. "
       f"**{auto}** have an exact or high-confidence mechanical fix; "
-      f"**{n['gone']}** need a human decision.")
+      f"**{n['gone']}** need a decision.")
     w("")
     # Groups are named, not numbered. The name is the value `fix_links.py --tier`
     # takes, so a row in this table is directly runnable. Numbering them invited
@@ -734,7 +734,7 @@ def main():
     w(f"| 12 | `stale_mapped` | Old-site url whose path exists under this version | {n['stale_mapped']} | Point it inside the new docs instead |")
     w(f"| 13 | `anchor_deep` | Heading exists but is deeper than h{TOC}, so it has no id | {n['anchor_deep']} | Insert `<a name>` above the heading |")
     w("")
-    w("### Needs a person")
+    w("### Needs a decision")
     w("")
     w("`fix_links.py` refuses these. The information needed is not in the repository, "
       "and a guess produces a confident link to the wrong page — worse than a visibly "
@@ -950,7 +950,7 @@ def main():
                   open(args.json_out, "w"), indent=1)
 
     print(f"{total} findings across {len(targets)} pages "
-          f"({auto} mechanically fixable, {n['gone']} need a human)")
+          f"({auto} mechanically fixable, {n['gone']} need a decision)")
     for k in ("templated_fixable", "templated_typo", "templated", "malformed",
               "dir_style", "depth", "renamed", "case", "include", "anchor_case",
               "anchor_legacy", "anchor_punct", "partial_fixable", "stale_mapped",

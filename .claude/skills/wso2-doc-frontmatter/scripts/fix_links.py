@@ -279,7 +279,7 @@ def main():
 
     if args.tier in REFUSED:
         print(f"Refusing to apply `{args.tier}`: {REFUSED[args.tier]}.")
-        print("These need a person. Work them from the report by hand.")
+        print("Read the pages and decide these, then apply with `--tier agent`.")
         return 2
     if args.tier not in APPLICABLE:
         print(f"`{args.tier}` has no proposed replacements, so there is nothing to apply.")

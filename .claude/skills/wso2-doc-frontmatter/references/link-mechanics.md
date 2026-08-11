@@ -50,8 +50,7 @@ Three more rules the reporter enforces, and you must not work around:
   strips the run-together page-title prefix off an old Confluence anchor and
   compares what is left to each heading with everything but letters and digits
   removed. A unique match is what makes the group safe, so where a match is
-  ambiguous `match_anchor` must return nothing and let a person decide rather than
-  take the first. A lower-case anchor that simply does not exist is a reworded
+  ambiguous `match_anchor` must return nothing rather than take the first. A lower-case anchor that simply does not exist is a reworded
   heading and stays in `anchor`; do not widen the rule to cover it.
 - **`BASE_PATH_ALIASES` is configuration, not logic.** `{{base}}`, `{{basepath}}`
   and `{{base_patgh}}` are `{{base_path}}` mistyped. Add a spelling when one turns
@@ -80,9 +79,9 @@ Three more rules the reporter enforces, and you must not work around:
 and an agent asked to fix them produces confident links to the wrong pages — worse
 than a visibly broken link, because a plausible wrong link never gets re-checked.
 
-When you report back, give the tier counts and say plainly how many need a human. A
-raw total is alarming and useless on its own; "N have an exact fix, M need a
-decision" is what someone can act on.
+When you report back, give the tier counts and say how many still need a decision.
+A raw total is alarming and useless on its own; "N have an exact fix, M need a
+decision" is what can be acted on.
 
 
 ## What each script is for
