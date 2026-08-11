@@ -68,10 +68,10 @@ def main():
 
     # SORTED, not set order. `all_files` is a set, so iterating it puts candidates
     # in hash order — which varies between processes. The `renamed` tier breaks
-    # ties on candidate order, so the same command proposed a different target
-    # from one run to the next (measured: 5 of 391 on one version). A plan nobody
-    # can reproduce cannot be reviewed, and two people running the skill would
-    # disagree. Sorting makes the choice a property of the repo, not of the run.
+    # ties on candidate order, so without sorting the same command can propose a
+    # different target from one run to the next. A plan nobody can reproduce cannot
+    # be reviewed, and two people running the skill would disagree. Sorting makes
+    # the choice a property of the repo, not of the run.
     by_basename = collections.defaultdict(list)
     for f in sorted(all_files):
         by_basename[os.path.basename(f)].append(f)
@@ -143,13 +143,10 @@ def main():
     # render — and every broken link in it becomes a broken link on every page
     # that uses it.
     #
-    # Measured, not theorised: converting 4.6.0's 41 blocks took a real mkdocs
-    # build from 57 broken-link warnings to 78. All 13 new ones came from blocks
-    # whose own links were already broken. The instructions did start appearing,
-    # which is the point — but they appeared with broken images in them.
-    #
-    # So a block is only safe to switch on once its own links work. This records
-    # which blocks are not ready, and the `include` group refuses those.
+    # So switching on a block whose own links are broken trades hidden instructions
+    # for visible broken images on every page that includes it. A block is only safe
+    # to convert once its links work. This records which blocks are not ready, and
+    # the `include` group refuses those.
     def block_link_broken_for(block, includer):
         """Does any link in `block` fail to resolve when spliced into `includer`?"""
         btxt = strip_noise(open(os.path.join(root, block), encoding="utf-8",
@@ -203,8 +200,7 @@ def main():
             python-markdown gives no id to a heading deeper than `toc_depth`, so a
             link to it lands nowhere even though the heading is right there. An
             inert `<a name>` above it restores the target and leaves the heading
-            level and the table of contents alone — the house pattern, already on
-            around 300 pages.
+            level and the table of contents alone — the house pattern in these docs.
 
             NEVER `{#id}` instead: `markdownextradata` runs every page through Jinja
             before Markdown, `{#` opens a Jinja comment, and an unterminated one
@@ -249,7 +245,7 @@ def main():
             # The heading EXISTS but sits deeper than `toc_depth`, so the build
             # gives it no id and the link goes nowhere. Fixable, and the fix edits
             # the TARGET page rather than this one: an inert `<a name>` above the
-            # heading. Already the house pattern — around 300 pages use it. Never
+            # heading. Already the house pattern in these docs. Never
             # `{#id}`: the markdownextradata plugin runs every page through Jinja
             # before Markdown, `{#` opens a Jinja comment, and an unterminated one
             # fails the whole build.
@@ -572,11 +568,11 @@ def main():
             base = os.path.basename(path.rstrip("/")) or stem
             cands = by_basename.get(base + ".md", []) + by_basename.get(base, [])
             if vroot:
-                # STRICT. Previously this fell back to the unscoped candidate list
-                # when nothing matched inside the version, which proposed targets in
-                # *other* versions — sending a reader from a current page to an old
-                # release. A missing page inside this version is `gone`, not a reason
-                # to look in another version.
+                # STRICT — never fall back to the unscoped candidate list when
+                # nothing matches inside the version. That proposes targets in
+                # *other* versions, sending a reader from a current page to an old
+                # release. A missing page inside this version is `gone`, not a
+                # reason to look in another version.
                 cands = [c for c in cands if c.startswith(vroot + "/")]
             cands = [c for c in cands if c != p]
 

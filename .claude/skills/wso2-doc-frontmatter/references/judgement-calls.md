@@ -7,18 +7,13 @@ refused a fix because the anchor did not exist.
 
 ## Who fixes what
 
-**Read this before you tell anyone that the rest "needs a person".** It almost
-never does. When the script stops, most of what is left is work for YOU — open the
-pages, read them, decide, and fix. Do not hand a human a list of 3,000 findings and
-call that a result.
+Three kinds of work, and only the third belongs to a human:
 
-There are three kinds of work here, and only the third belongs to a human:
-
-| | who | example | how much of it |
-|---|---|---|---|
-| One correct answer, computable | the script | this link needs one more `../` | ~15,800 of 20,800 |
-| Needs reading the pages | **YOU, the agent** | which heading did this link mean? is this the right screenshot? | ~4,300 |
-| Needs a product or policy decision nobody can read off the page | a human | was this page dropped on purpose? how should shared blocks address things? what is `{{envoy_path}}` supposed to be? | a few hundred, and mostly one decision each rather than N fixes |
+| | who | example |
+|---|---|---|
+| One correct answer, computable | the script | this link needs one more `../` |
+| Needs reading the pages | **you, the agent** | which heading did this link mean? is this the right screenshot? |
+| Needs a product or policy decision nobody can read off the page | a human | was this page dropped on purpose? what is `{{envoy_path}}` supposed to be? |
 
 The line between rows two and three is *"could someone find the answer by reading
 what is in front of them?"* If yes, it is yours. "Needs someone to read the page"
@@ -62,9 +57,9 @@ guess produce the same diff.** Both have valid syntax and point at a real headin
 The difference is that the wrong one silently drops the reader in a section about
 something else, and nothing will ever flag it again — not `mkdocs build`, not
 `check_links.py`, not the next person to read the page. Quoting the two lines you
-based the decision on is what lets a reviewer check twenty and trust the rest,
-instead of taking "fixed 2,949 anchors" on faith. If you cannot fill in the two
-fields honestly, that finding is not ready to fix — leave it and say why.
+based the decision on is what lets a reviewer spot-check a handful and trust the
+rest, instead of taking a bulk claim on faith. If you cannot fill in the two fields
+honestly, that finding is not ready to fix — leave it and say why.
 
 **What to work, and what evidence justifies a fix:**
 
@@ -117,10 +112,10 @@ image finding is not automatically someone else's problem:
 
 ## Copying files the migration left behind
 
- 253 findings name a file — `.zip`,
-`.jar`, a screenshot — that still exists in `wso2/docs-apim` and was never copied.
-That is not a link problem and the link must NOT be edited: the address is right,
-the file is absent. Do the copy instead.
+Some findings name a file — `.zip`, `.jar`, a screenshot — that still exists in
+`wso2/docs-apim` and was never copied across. That is not a link problem and the
+link must NOT be edited: the address is right, the file is absent. Do the copy
+instead.
 
 ```bash
 git clone --depth 1 --branch 4.6.0 https://github.com/wso2/docs-apim /tmp/docs-apim
@@ -137,24 +132,23 @@ Rules for this, in order:
    check and fails for every reader.
 3. **Re-run `report_links.py` afterwards.** The findings should disappear on their
    own. If one does not, the path was wrong, not the file.
-4. **Ask before committing a bulk copy.** ~219 files is a change to the repo's
+4. **Ask before committing a bulk copy.** Adding files is a change to the repo's
    contents, not a link fix — show the list and the total size and wait for a yes.
 
 ## When the old repo is worth opening
 
- `wso2/docs-apim` keeps
-one branch per version (`3.0.0` … `4.7.0`), so the pre-migration page is still
-there at the path a broken link names. Measured, so nobody spends a week building
-cross-repo recovery that does not pay:
+`wso2/docs-apim` keeps one branch per version (`3.0.0` … `4.7.0`), so the
+pre-migration page is usually still there at the path a broken link names. It is
+worth opening for one thing and not the other:
 
 | | worth it? |
 |---|---|
-| A missing file — `.zip`, `.jar`, an image | **Yes.** 253 findings name a file that still exists in docs-apim and was never copied. The action is to copy the file, not to edit the link. |
-| A missing anchor | **No.** Of 3,017 anchor findings whose target page still exists in docs-apim, only **23** had that heading in the old page. **2,994 were already broken before the migration** — inherited debt, not migration damage. The old repo cannot answer them, and neither can a lookup: read the page. |
+| A missing file — `.zip`, `.jar`, an image | **Yes.** The file is usually still there and simply was not copied. Copy the file; do not edit the link. |
+| A missing anchor | **No.** Nearly all of these were already broken before the migration — the old page does not have the heading either. The old repo cannot answer them, and neither can a lookup: read the page and decide. |
 
-That second row is worth saying out loud in any report. The largest "needs a
-person" group is mostly pre-existing breakage carried over from the old site, so it
-is not a regression the migration introduced and it does not have to block it.
+The second row is worth stating in your report: most of the missing-anchor pile is
+breakage inherited from the old site rather than something the migration caused, so
+it does not have to block the migration.
 
 **Leave alone:** `partial` needs a decision about how shared blocks should address
 things at all, which is one human decision rather than N fixes. Do not paper over

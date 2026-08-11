@@ -49,10 +49,9 @@ Three more rules the reporter enforces, and you must not work around:
 - **An anchor is only matched when exactly ONE heading agrees.** `anchor_legacy`
   strips the run-together page-title prefix off an old Confluence anchor and
   compares what is left to each heading with everything but letters and digits
-  removed. Measured on this repo: 479 of 864 match exactly one heading and **none**
-  match two. That absence of ambiguity is why the group is safe — so if a match is
-  ever ambiguous, `match_anchor` must return nothing and let a person decide rather
-  than take the first. A lower-case anchor that simply does not exist is a reworded
+  removed. A unique match is what makes the group safe, so where a match is
+  ambiguous `match_anchor` must return nothing and let a person decide rather than
+  take the first. A lower-case anchor that simply does not exist is a reworded
   heading and stays in `anchor`; do not widen the rule to cover it.
 - **`BASE_PATH_ALIASES` is configuration, not logic.** `{{base}}`, `{{basepath}}`
   and `{{base_patgh}}` are `{{base_path}}` mistyped. Add a spelling when one turns
@@ -69,9 +68,9 @@ Three more rules the reporter enforces, and you must not work around:
 - **A link in a shared block is judged from the pages that INCLUDE it, never from
   the block's own folder.** The include splices the text in before Markdown runs,
   so that is what mkdocs does. Getting this wrong is wrong in both directions, and
-  the dangerous direction is the quiet one: a previous pass over 4.6.0 "fixed" 62
-  links to be correct relative to the block, which broke them on every page using
-  the block, and nothing flagged it because from the block they looked right.
+  the dangerous direction is the quiet one: making a link correct relative to the
+  block breaks it on every page that uses the block, and nothing flags it because
+  from the block it looks right.
   `build_include_map()` is shared by the checker and the reporter so the two cannot
   disagree about this. Where every includer needs the same path, that path is the
   fix (`partial_fixable`). Where they need different paths, no relative link can
@@ -96,20 +95,20 @@ reviewed or undone. It is the only script here that edits link text.
 
 `CANONICAL_UNREACHABLE` only fires under `--policy latest-only`. Under the default `keep-all` a canonical is a versioned path, so it cannot depend on a redirect existing.
 
-`scripts/links_lib.py` holds the link logic all three link scripts share — `url_base`, `published`, `link_to`, `slug`, the anchor harvester, the target finder, the rewriter, and the `mkdocs.yml` readers. **Add to it rather than copying out of it.** These pieces used to be pasted into each script and held in step by comments saying "keep identical to"; they drifted, and the reporter spent a release proposing 6,211 correct fixes that the fixer refused, because one counted from the rendered url and the other from the source directory. Neither looked wrong alone.
+`scripts/links_lib.py` holds the link logic all three link scripts share — `url_base`, `published`, `link_to`, `slug`, the anchor harvester, the target finder, the rewriter, and the `mkdocs.yml` readers. **Add to it rather than copying out of it.** If a copy is taken and the two drift, one script counts from the rendered url while the other counts from the source directory — the reporter then proposes fixes the fixer refuses, and neither looks wrong on its own.
 
 `scripts/check_links.py` resolves every relative link, image, and anchor against what's on disk, and flags links still pointing at a pre-migration location (the list is `LEGACY_DOMAINS` in `fm_lib.py`). It catches everything `mkdocs build` warns about plus two classes mkdocs stays silent on: bare directory links to a directory with no `index.md`/`README.md`, and directory links to a path that doesn't exist at all. Four of its codes need a word of explanation:
 
-- **`LINK_TEMPLATED_UNDEFINED`** (blocking) vs **`LINK_TEMPLATED`** (polish). The severity is read from the config, not assumed: a `{{var}}` whose name has no value under `extra:` in `mkdocs.yml` renders as an empty string, so the link points at the server root. `base_path` is currently undefined here, which is why ~1,660 of these are blocking. Define it and they become informational automatically.
+- **`LINK_TEMPLATED_UNDEFINED`** (blocking) vs **`LINK_TEMPLATED`** (polish). The severity is read from the config, not assumed: a `{{var}}` whose name has no value under `extra:` in `mkdocs.yml` renders as an empty string, so the link points at the server root. Define the variable under `extra:` and these become informational automatically.
 - **`LINK_VIA_REDIRECT`** (polish). No file on disk, but `mkdocs-redirects` publishes a page at that path, so the link works in the built site. Reported rather than dropped, because it is worth knowing a link leans on a redirect.
 - **`LINK_SCHEME_TYPO`** (blocking). `ttps://` and friends. Any *other* non-http scheme (`ldap:`, `ldaps:`) is skipped entirely — those are example addresses, not paths, and resolving them against the docs root reported correct configuration samples as broken links.
 
-Its image accounting separates two things that were previously one number. An image asked for by a link that doesn't resolve is **not** an orphan — it is the other side of an `IMG_MISSING`, and listing it as unused invites deleting a screenshot whose only fault is the link pointing at it. Only an image that nothing in its own version so much as names is counted as never referenced. Per-version matters: every version keeps its own copy of the same file.
+Its image accounting keeps two things apart. An image asked for by a link that doesn't resolve is **not** an orphan — it is the other side of an `IMG_MISSING`, and listing it as unused invites deleting a screenshot whose only fault is the link pointing at it. Only an image that nothing in its own version so much as names is counted as never referenced. Per-version matters: every version keeps its own copy of the same file.
 
 Note what `check_links.py` does **not** do: it only resolves links whose target is inside the repo. It cannot tell you whether a page is reachable at its own published URL — that is `check_redirects.py`'s job. "No broken links" and "every canonical URL resolves" are two different claims, and passing the first says nothing about the second.
 
 ## Redirects: what is settled and what is not
 
-The scripts read the `redirect_maps` block in `mkdocs.yml` and nothing else. `docs-apim/en/redirects.yml` — 722 entries recording where API Manager pages moved during the old repo's own restructuring — is **deliberately not read**, because how those should be carried over has not been decided.
+The scripts read the `redirect_maps` block in `mkdocs.yml` and nothing else. `docs-apim/en/redirects.yml` — which records where API Manager pages moved during the old repo's own restructuring — is **deliberately not read**, because how those should be carried over has not been decided.
 
 Do not wire it in without that decision. Consulting it in the checker would mark links as fine on the strength of a redirect that does not exist yet; using it as a rename map would produce fixes nobody has agreed the shape of. Until then, work the tiers whose fix does not depend on it: `malformed`, `dir_style`, `depth`, `renamed`, `templated_fixable` all resolve against files that are present on disk. `templated` and `stale` are exactly the redirect-dependent cases, and stay refused.

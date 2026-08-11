@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 """Shared link logic for check_links.py, report_links.py and fix_links.py.
 
-This module exists because it did not, and that cost a real bug. `url_base`,
-`slug`, the anchor harvester and the link regexes were copy-pasted into all three
-scripts, held in step only by comments saying "keep identical to". They drifted:
-`report_links.py` computed a raw-HTML path against the rendered url while
-`fix_links.py` resolved it against the source directory, so the reporter proposed
-6,211 correct fixes and the fixer refused every one of them. Neither was
-obviously wrong on its own — you had to read both.
-
-Everything here has exactly one definition. Prefer adding to this file over
-adding a fourth copy of anything.
+`url_base`, `slug`, the anchor harvester and the link patterns must have exactly
+one definition. If a copy is taken into one of the three scripts and the two drift
+— one computing a raw-HTML path against the rendered url, the other against the
+source directory — the reporter proposes fixes the fixer refuses, and neither is
+obviously wrong on its own. Prefer adding to this file over copying out of it.
 
 The two ideas that matter:
 
@@ -43,10 +38,9 @@ MD_LINK = re.compile(r'(!?)\[([^\]]*)\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"]*")?\s*\)')
 # back-referenced: HTML allows either and these pages use both, so a
 # double-quote-only pattern skips the single-quoted ones silently.
 #
-# `video`, `audio`, `embed`, `object` and `track` were missing, and `poster` and
-# `data` were not read as address attributes. That hid 8 broken tutorial videos in
-# 4.1.0 — the same one-folder-too-high mistake as the images, in tags nothing
-# looked at. A checker that only reads some tags reports "clean" for the rest.
+# Every tag that can carry an address belongs here, and every address attribute —
+# `poster` and `data` as well as `src` and `href`. A checker that reads only some
+# tags reports "clean" for the rest.
 HTML_SRC = re.compile(
     r"""<(img|a|source|iframe|video|audio|embed|object|track)\b"""
     r"""[^>]*?\b(?:src|href|data|poster)=(["'])(.*?)\2""", re.I)
@@ -83,9 +77,8 @@ HTML_OPEN = re.compile(r"""(?:src|href)\s*=\s*(["'])\Z""")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})(.*)$")
 
 # An `attr_list` explicit heading id. The spaces matter: these pages write both
-# `{#step-8}` and `{ #step-8 }`, and a pattern without `\s*` misses the spaced form
-# — which is the one the newer Kubernetes pattern pages use. That silently reported
-# real, working anchors as missing.
+# `{#step-8}` and `{ #step-8 }`, and a pattern without `\s*` misses the spaced form,
+# which reports real, working anchors as missing.
 #
 # Note `{ #id }` with a space is also the SAFE form to write: `{#` with no space
 # opens a Jinja comment, and `markdownextradata` runs Jinja over every page before
@@ -101,10 +94,8 @@ def strip_noise(text, drop_pre=True):
     shortcut pairs the first fence with the next one anywhere in the document, and
     these pages are full of fences that do not pair that way: indented inside list
     items, `~~~` as well as backticks, and fence characters shown *inside* another
-    fence. Measured before this was fixed: 1,484 of 8,948 pages lost more than 40%
-    of their text, one of them 47% including a real `## Minimal Configuration`
-    heading. Everything in the eaten regions was invisible — anchors reported as
-    missing when the heading was right there, and links never checked at all.
+    fence. Whatever such a shortcut eats goes invisible — anchors reported as
+    missing when the heading is right there, and links never checked at all.
 
     A closing fence must be the same character, at least as long, and carry no info
     string; that is the CommonMark rule and it is what makes indented and nested
@@ -116,19 +107,18 @@ def strip_noise(text, drop_pre=True):
     link as a real `<a href>`. superfences wants a closing fence and falls back to
     plain markdown without one. So an unclosed opener must not blank anything —
     otherwise the pages that have one go invisible from that line to the end while
-    the published site really does carry those links. 39 pages in this repo have a
-    stray fence like that, most often an unmatched *closing* fence someone left
-    behind after pasting console output; 772 lines were being swallowed.
+    the published site really does carry those links. Pages do have stray fences
+    like that, most often an unmatched *closing* fence left behind after someone
+    pasted console output.
 
     Lines are blanked rather than deleted so line numbers still line up with the
     file, which matters when a finding has to be pointed at.
     """
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
-    # Raw `<pre>` is literal text, not Markdown. The generated config catalogue
-    # holds thousands of lines of TOML inside `<pre><code class="toml">`, and lines
-    # like `#offset=0` read as headings otherwise — 18 invented anchor ids on that
-    # one page, each of which would let a genuinely broken link pass as fine.
-    # Newlines are preserved so line numbers still match the file.
+    # Raw `<pre>` is literal text, not Markdown. Generated pages hold configuration
+    # samples inside `<pre><code>`, where a line like `#offset=0` would otherwise
+    # read as a heading — inventing an anchor id that lets a genuinely broken link
+    # pass as fine. Newlines are preserved so line numbers still match the file.
     if drop_pre:
         text = re.sub(r"(?is)<pre\b.*?</pre\s*>",
                       lambda m: "\n" * m.group(0).count("\n"), text)
@@ -145,7 +135,7 @@ def strip_noise(text, drop_pre=True):
             # That rule is what keeps a prose line like
             #     ```--query deployed:true``` filters the revisions
             # from being read as the start of a code block — it is inline code, and
-            # the renderer treats it that way. Without the rule one such line hid
+            # the renderer treats it that way. Without the rule one such line hides
             # every link below it on the page.
             if m and not (m.group(1)[0] == "`" and "`" in m.group(2)):
                 fence = (m.group(1)[0], len(m.group(1)), i)
@@ -238,14 +228,13 @@ def md_targets(body):
     Returns a list of dicts: `target`, `is_img`, `start`, `end`, `open`.
 
     `[![](a.png)](a.png)` — a linked image, and the normal way images are written
-    in these docs (9,776 occurrences across 2,030 files) — holds two targets. A
-    `[text](target)` pattern finds only the inner one.
+    in these docs — holds two targets. A `[text](target)` pattern finds only the
+    inner one.
 
     Where the outer target is IDENTICAL to the image it wraps, it is one authored
     construct pointing at one file, and is reported once: counting it twice would
-    double every linked image (8,762 of 8,869 have identical inner and outer
-    targets) while finding nothing new. Where the two DIFFER — 107 in this repo —
-    the outer target is a separate link that nothing was checking, and it is kept.
+    double every linked image while finding nothing new. Where the two DIFFER, the
+    outer target is a separate link worth checking, and it is kept.
     """
     found = []
     for m in re.finditer(r"\]\(", body):
@@ -361,7 +350,7 @@ def non_web_scheme(target):
     Anything with a scheme is an address, not a path on disk. Resolving
     `ldap://10.100.1.100:389` against the docs root reports a correct example
     connection string in a user-store page as a broken link. Only `mailto:` and
-    `tel:` used to be skipped, so every other scheme fell through to path
+    Every non-web scheme must be listed here, or it falls through to path
     resolution.
 
     A scheme in `HTTP_TYPOS` is returned as None so the caller keeps treating it
@@ -476,7 +465,7 @@ def slug(h):
 LIST_ITEM = re.compile(r"^(\s*)(?:[-*+]|\d+[.)])\s")
 # `\s*` not `\s+` after the hashes: python-markdown is not in strict mode, so
 # `#Gateway Policies` with no space IS a heading and does get an id. Requiring a
-# space missed 142 real anchors on 4.6.0 alone.
+# space reports those anchors as missing when they work.
 HEADING = re.compile(r"^(\s*)(#{1,6})\s*([^#\s].*?)\s*$")
 
 
@@ -545,8 +534,8 @@ def harvest_anchors(text, toc_depth=6, included_text=()):
     honours it: the `markdownextradata` plugin runs every page through Jinja
     BEFORE Markdown, and `{#` opens a Jinja comment — an unterminated one fails
     the whole build with "Missing end of comment tag". The safe additive fix is
-    `<a name="...">` immediately above the heading: inert HTML, already used on
-    ~300 pages here, and it leaves the heading level and the TOC untouched.
+    `<a name="...">` immediately above the heading: inert HTML, already the pattern
+    used in these docs, and it leaves the heading level and the TOC untouched.
     """
     # Two views of the page. Headings must not be read out of a raw `<pre>` block
     # (TOML comments in there are not headings), but `id=` attributes inside one
@@ -565,7 +554,7 @@ def harvest_anchors(text, toc_depth=6, included_text=()):
             # An explicit id REPLACES the generated one — `attr_list` publishes
             # `{ #step-9 }` and nothing else, so adding the slug of the heading text
             # as well would claim an id the page does not have, and a link pointing
-            # at that id would be passed as fine. 51 such false claims on 4.6.0.
+            # at that id would be passed as fine.
             anchors.add(exp.group(1))          # explicit id survives any toc_depth
             continue
         base = slug(h)
@@ -581,7 +570,7 @@ def harvest_anchors(text, toc_depth=6, included_text=()):
     # tags: the Confluence code-block export writes
     #     <span id="cb1-1"><a href="#cb1-1"></a>...
     # so the target and the link sit on the same line, and reading only `<a id>`
-    # reported 15 working anchors on 4.6.0 as missing.
+    # reports those working anchors as missing.
     for m in re.finditer(r"""<[a-zA-Z][^>]*?\bid=(["'])(.*?)\1""", with_pre):
         anchors.add(m.group(2))
     for m in re.finditer(r"""<a[^>]+\bname=(["'])(.*?)\1""", with_pre):
@@ -666,11 +655,9 @@ def match_anchor(frag, anchors):
     ids of normal slug shape, which keeps a hand-written oddity like
     `<a name="#step3-2">` out of it.
 
-    **Only accepted when exactly ONE heading matches.** Measured across this repo:
-    of 864 anchors of that shape, 479 match exactly one heading and **none** match
-    more than one. That absence of ambiguity is the whole reason this is safe to
-    propose; if a repo ever produced an ambiguous match, returning None and letting
-    a person decide is the correct outcome, not picking the first.
+    **Only accepted when exactly ONE heading matches.** A unique match is the whole
+    reason this is safe to propose; where a match is ambiguous, returning None and
+    letting a person decide is the correct outcome, not picking the first.
     """
     if not frag or frag in anchors:
         return None, None

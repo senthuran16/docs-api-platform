@@ -154,7 +154,7 @@ def check_evidence(entry):
     Both must be non-empty, and `sentence` has to actually appear on the page, which
     is what stops the field from being filled in with a summary written from memory.
     Refusing here rather than warning is deliberate: a warning at the bottom of a
-    2,000-entry run is not read.
+    long run is not read.
     """
     for k in EVIDENCE_KEYS:
         v = (entry.get("evidence") or {}).get(k)

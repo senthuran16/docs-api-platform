@@ -256,11 +256,11 @@ for p in sorted(md_files):
 
 # ORPHAN ASSETS — an image no page points at.
 #
-# `used` is now filled by the main loop above, from targets that actually
-# RESOLVED. The old separate pass re-resolved every target against the source
-# directory regardless of syntax, so every raw-HTML reference — most of the images
-# in these docs — landed on the wrong path and its image counted as unreferenced.
-# That was invisible while the scan only covered the 428 files at the docs root.
+# `used` is filled by the main loop above, from targets that actually RESOLVED.
+# It must not be recomputed in a separate pass: re-resolving every target against
+# the source directory regardless of syntax sends every raw-HTML reference — most
+# of the images in these docs — to the wrong path, and counts its image as
+# unreferenced.
 #
 # Images referenced only through a `{{base_path}}` link are added below rather
 # than counted as orphans. They ARE currently unreachable, but that is the
@@ -301,10 +301,10 @@ for p in sorted(md_files):
 
 # `assets/` AT ANY DEPTH, not just the docs root.
 #
-# `startswith("assets/")` only ever matched `en/docs/assets/` — 428 files — while
-# each version keeps its own `api-manager/<version>/assets/`, together holding
-# over 43,000 images. So "65 of 428 images never referenced" was measuring about
-# one percent of the repo and reading like a whole-repo figure.
+# `startswith("assets/")` matches only `en/docs/assets/`, while each version keeps
+# its own `api-manager/<version>/assets/` holding the bulk of the images. Anchoring
+# the match at the docs root measures a fraction of the repo while reading like a
+# whole-repo figure.
 ASSET_EXT = re.compile(r"\.(png|jpg|jpeg|gif|svg|webp|mp4)$", re.I)
 assets = {f for f in all_files
           if ("assets/" in f.replace("\\", "/") + "/") and ASSET_EXT.search(f)}

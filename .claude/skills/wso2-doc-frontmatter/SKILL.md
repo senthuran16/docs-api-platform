@@ -201,8 +201,8 @@ Work the tiers in this order, safest first:
 11. `renamed` — `high` confidence only; `--min-confidence` widens it
 
 **Run the whole sequence again until it applies nothing.** Fixing a path reveals
-anchor problems that were invisible while the link went nowhere. Measured on 4.6.0:
-984 rewrites on the first lap, 4 on the second, 0 on the third.
+anchor problems that could not be seen while the link went nowhere, so a second lap
+finds work the first could not. It usually converges on the third.
 
 **The rule for every tier: dry-run it, show a sample, say how many would change and
 how many the verifier refused, and wait for an explicit yes before `--apply`.**
@@ -214,9 +214,9 @@ empty tier.
 After each applied tier, report what changed and stop:
 
 ```
-tier `depth`: 667 verified, 3 refused, 132 files changed, 667 links rewritten.
-Refused: 3 where the anchor no longer exists. Next tier is `renamed`
-(448, 406 verified). Apply it?
+tier `depth`: <n> verified, <n> refused, <n> files changed, <n> links rewritten.
+Refused: <n> where the anchor no longer exists.
+Next tier is `renamed` (<n> findings, <n> verified). Apply it?
 ```
 
 **Regenerate the plan between tiers** — fixing one tier changes what the others
@@ -265,9 +265,9 @@ the script is right.
 
 **If you change `report_links.py`, `fix_links.py`, `check_links.py` or
 `links_lib.py`, prove it on a version before trusting it.** These three have to
-agree about what path is correct — when they drifted apart once, the reporter
-proposed 6,211 fixes and the fixer refused every one, and neither looked wrong on its
-own. So:
+agree about what path is correct. When they drift apart the failure is silent — the
+reporter proposes fixes the fixer then refuses, and neither looks wrong on its own.
+So:
 
 1. Note the per-tier counts from `report_links.py` on one version *before* your change.
 2. Make the change, re-run, and account for every count that moved. A tier that grew
