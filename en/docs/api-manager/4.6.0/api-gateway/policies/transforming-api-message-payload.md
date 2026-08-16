@@ -35,10 +35,10 @@ from the message. As with message builders, the message formatter is selected ba
 !!! info
     Also see the following sections in the documentation. The integration runtime is used to implement the API Gateway through which API messages are transformed:
 
-    -   [Accessing content from JSON payloads](../../integrate/examples/json_examples/json-examples/#accessing-content-from-json-payloads)
-    -   [Logging JSON payloads](../../integrate/examples/json_examples/json-examples/#logging-json-payloads)
-    -   [Constructing and transforming JSON payloads](../../integrate/examples/json_examples/json-examples/#constructing-and-transforming-json-payloads)
-    -   [Troubleshooting, debugging, and logging](../../integrate/examples/json_examples/json-examples/#troubleshooting-debugging-and-logging)
+    -   [Accessing content from JSON payloads](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#access-content-from-json-payloads)
+    -   [Logging JSON payloads](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#logging-json-payloads)
+    -   [Constructing and transforming JSON payloads](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#construct-and-transforming-json-payloads)
+    -   [Troubleshooting, debugging, and logging](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#troubleshoot-debug-and-log)
 
 ### JSON message builders and formatters
 

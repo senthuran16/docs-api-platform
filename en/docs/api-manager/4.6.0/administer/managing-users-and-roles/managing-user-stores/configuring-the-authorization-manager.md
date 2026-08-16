@@ -21,8 +21,8 @@ The repository that stores Permissions should always be an RDBMS. The Authorizat
 
 Follow the instructions given below to set up and configure the Authorization Manager.
 
--   [Step 1: Setting up the repository](#ConfiguringtheAuthorizationManager-Step1:Settinguptherepository)
--   [Step 2: Updating the user realm configurations](#ConfiguringtheAuthorizationManager-Step2:Updatingtheuserrealmconfigurations)
+-   [Step 1: Setting up the repository](#step-1-setting-up-the-repository)
+-   [Step 2: Updating the user realm configurations](#step-2-updating-the-user-realm-configurations)
 
 ### Step 1: Setting up the repository
 

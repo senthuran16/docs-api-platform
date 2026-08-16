@@ -74,7 +74,7 @@ Following are the minimum userstore properties that are required to configure th
 <br />
 If you are connecting over ldaps (secured LDAP).<br />
 you need to import the certificate of the userstore to <code><&ZeroWidthSpace;APIM_HOME>/repository/resources/security/client-truststore.jks</code>. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see <br />
-<a href="../../../security/configuring-keystores/keystore-basics/creating-new-keystores.md">Using asymmetric encryption</a><br />
+<a href="../../../security/configuring-keystores/keystore-basics/creating-new-keystores/">Using asymmetric encryption</a><br />
 <br />
 If LDAP connection pooling is used, see enable connection pooling for LDAPS connections.</br>
 </p></td>
@@ -173,7 +173,7 @@ read_groups = true
 <td><p>This is a uniquely identifying attribute that represents the username of the user. Users can be authenticated using their email address, UID, etc. The value of the attribute is considered as the username.</p>
 <p>Default: uid<br />
 <br />
- Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../administer/product-security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
+ Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../security/logins-and-passwords/maintaining-logins-and-passwords/#setup-an-e-mail-login">Using email address as the username</a></p></td>
 </tr>
 <tr class="odd">
 <td>UserIDAttribute</td>
@@ -497,7 +497,7 @@ Following are some key points to consider :
            -   You also need to [enable connection pooling](https://is.docs.wso2.com/en/5.10.0/setup/performance-tuning-recommendations/#pooling-ldaps-connections) for LDAPS connections at the time of starting your server, which will enhance server performance.
     
 
-   2.  Obtain a user who has permission to read all users/attributes and perform searches on the user store from your LDAP/Active Directory administrator. For example, if the privileged user is `admin` and the password is `admin`, update the following sections of the user store configuration as shown below. Note that this user does NOT have to be the system administrator that you define [here](#admin_ConfiguringaRead-OnlyLDAPUserStore-Updatingthesystemadministrator) .
+   2.  Obtain a user who has permission to read all users/attributes and perform searches on the user store from your LDAP/Active Directory administrator. For example, if the privileged user is `admin` and the password is `admin`, update the following sections of the user store configuration as shown below. Note that this user does NOT have to be the system administrator that you define [here](#step-2-updating-the-system-administrator) .
 
      ``` 
      ConnectionName="uid=admin,ou=system"

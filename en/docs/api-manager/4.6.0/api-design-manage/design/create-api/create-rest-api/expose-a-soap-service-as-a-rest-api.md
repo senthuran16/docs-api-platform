@@ -75,7 +75,7 @@ Follow the instructions below to create a SOAP service as a RESTful API using **
      <html><div class="admonition note">
      <p class="admonition-title">Note</p>
      <p> Note that when creating this API, **API Level** was selected as the default option for the **Rate limiting level**. For more information on setting advanced throttling policies,
-     see [Enforce Throttling and Resource Access Policies](../../../../manage-apis/design/rate-limiting/setting-throttling-limits/).</p>
+     see [Enforce Throttling and Resource Access Policies](../../rate-limiting/set-api-level-throttling.md).</p>
      </div>
      </html>
 
@@ -83,6 +83,6 @@ Now, the SOAP service is created and configured successfully as a RESTful API.
 
 For more information on API publishing, see [Publish API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
-Once you create and publish the API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md">deploy the API you created</a>.
+Once you create and publish the API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/">deploy the API you created</a>.
 
 To learn more, see the tutorial on [Creating and Publishing a SOAP service as a RESTful API](../../../../tutorials/expose-a-soap-service-as-a-rest-api.md).

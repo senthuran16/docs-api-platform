@@ -48,7 +48,7 @@ The subscription process is authenticated using OAuth2 by default. The authentic
 
 **Business Plans**
 
-Developers need to select a business plan for each API subscription. The business plan determines the number of requests that are allowed to be sent to the API per minute. Therefore, this is also the [throttling policy](../manage-apis/design/rate-limiting/introducing-throttling-use-cases) that applies to a subscription.
+Developers need to select a business plan for each API subscription. The business plan determines the number of requests that are allowed to be sent to the API per minute. Therefore, this is also the [throttling policy](../api-design-manage/design/rate-limiting/assign-business-plans.md) that applies to a subscription.
 
 ### Test APIs
 

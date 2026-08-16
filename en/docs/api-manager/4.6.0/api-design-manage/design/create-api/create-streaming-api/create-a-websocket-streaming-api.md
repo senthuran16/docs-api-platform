@@ -54,7 +54,7 @@ Follow the instructions below to create a WebSocket API using the basic flow:
 
              In the above configuration, the offset is `100`. `9190` was obtained by adding `100` to the default port `9090`.
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and Click **WebSocket API**.
 
@@ -193,10 +193,10 @@ Now, you have successfully created and configured a Streaming API. Next, let's [
 
 ## End-to-end tutorial
 
-Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websocket-api.md">Creating and Publishing a WebSocket API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
+Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websocket-api/">Creating and Publishing a WebSocket API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
 
-Once you create and publish a WebSocket API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md">deploy the API you created</a>.
+Once you create and publish a WebSocket API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/">deploy the API you created</a>.
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.6.0/includes/design/stream-more-links.md"

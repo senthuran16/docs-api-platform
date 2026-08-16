@@ -21,7 +21,7 @@ invoke it using the **wscat** WebSocket client.
 <html>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For more information on WebSocket APIs, see <a href="../manage-apis/design/create-api/create-a-websocket-api">Create a WebSocket API</a>.</p>
+<p>For more information on WebSocket APIs, see <a href="../../api-design-manage/design/create-api/create-streaming-api/create-a-websocket-streaming-api/">Create a WebSocket API</a>.</p>
 </div> 
 </html>
 
@@ -43,7 +43,7 @@ invoke it using the **wscat** WebSocket client.
       </div>
      </html>
     
-     [![Create WebSocket API menu](../assets/img/learn/design-new-streaming-api.jpg)](../assets/img/learn/design-new-streaming-api.jpg)
+     [![Create WebSocket API menu](../assets/img/design/create-api/streaming-api/design-new-streaming-api.png)](../assets/img/design/create-api/streaming-api/design-new-streaming-api.png)
 
 3.  Enter the details of the new WebSocket API.
 

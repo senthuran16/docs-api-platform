@@ -130,7 +130,7 @@ Download the WSO2 API Manager Enterprise Package from the [WSO2 API Manager down
 
 Set up API control plane (ACP), traffic manager (TM), and universal gateways servers locally by performing the relevant configuration changes in the `PRODUCT_HOME/repository/conf/deployment.toml` files.
 
-In this setup, a mysql server will be used when creating databases. Follow [Changing to MySQL](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql/) to setup and configure **shared_db** and **apim_db** databases (**shared_db** is the database that stores registry and user management data and **apim_db** is the database that keeps API-M related data).
+In this setup, a mysql server will be used when creating databases. Follow [Changing to MySQL](../install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql.md) to setup and configure **shared_db** and **apim_db** databases (**shared_db** is the database that stores registry and user management data and **apim_db** is the database that keeps API-M related data).
 
 Since Rancher Desktop will be used to run the Kubernetes cluster for the Kubernetes Gateway, and it occupies port 9443, we need to avoid port conflicts when running other components locally. To do this, we use **port offsets** in the `deployment.toml` file of each component.
 
@@ -185,7 +185,7 @@ On Windows:
 
 ## Create API Proxies for the Backend APIs
 
-Create and deploy the HR System API as shown below (follow the steps in [Create a REST API from an OpenAPI Definition - WSO2 API Manager Documentation](https://apim.docs.wso2.com/en/latest/manage-apis/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/) for more information if needed) .
+Create and deploy the HR System API as shown below (follow the steps in [Create a REST API from an OpenAPI Definition - WSO2 API Manager Documentation](../api-design-manage/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md) for more information if needed) .
 
 1. Login to the publisher portal via `https://localhost:9444/publisher`
 2. Click **Create API** and then click **Import OpenAPI**. 

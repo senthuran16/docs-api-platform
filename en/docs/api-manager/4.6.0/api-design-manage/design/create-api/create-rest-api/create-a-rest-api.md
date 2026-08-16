@@ -194,7 +194,7 @@ Learn more on the concepts that you need to know when creating a REST API:
 
 -   [Endpoints](../../endpoints/endpoint-types.md)
 -   [API Security](../../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
--   [Rate Limiting](../../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+-   [Rate Limiting](../../rate-limiting/assign-business-plans.md)
 -   [Life Cycle Management](../../lifecycle-management/api-lifecycle.md)
 -   [API Monetization](../../../../monitoring/api-monetization/monetizing-an-api.md)
 -   [API Visibility](../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)

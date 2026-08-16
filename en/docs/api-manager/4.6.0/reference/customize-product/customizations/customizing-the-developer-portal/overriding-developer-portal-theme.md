@@ -75,7 +75,6 @@ The following documents describe some of the most commonly used customizations, 
   - [Enable or Disable Footer](enable-or-disable-footer.md)
   - [Enable or Disable Banner](enable-or-disable-banner.md)
   - [Styling API Details Left Menu](styling-api-details-left-menu.md)
-  - [Styling API Details Info Section](../../../../reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section/)
   - [Styling the Logo and Header](styling-the-logo-and-header.md)
   - [Customize API Listing Default View](customize-api-listing/change-default-view.md)
 

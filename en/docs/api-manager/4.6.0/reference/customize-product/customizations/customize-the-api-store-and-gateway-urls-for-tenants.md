@@ -19,7 +19,7 @@ The default URL of WSO2 API Manager Developer Portal (`https://<HostName>:9443/d
 
 -   [Configure per tenant custom domain mappings](#configure-per-tenant-custom-domain-mappings)
 
--   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-devportal)
+-   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-the-developer-portal)
 
 -   [Configure the load balancer for custom URLs](#configure-the-load-balancer-for-custom-urls)
 
@@ -79,7 +79,7 @@ The default URL of WSO2 API Manager Developer Portal (`https://<HostName>:9443/d
             }
         ```
 
-    ![](../../../assets/img/develop/customizations/create-mapping-file.png)
+    ![Registry Add Resource form with Method set to Create Text content, Name wso2.com, and the tenant customUrl JSON in the Content box](../../../assets/img/develop/customizations/create-mapping-file.png)
 
 ## Configure per tenant service provider creation for the Developer Portal
 
@@ -93,7 +93,7 @@ By default the developer portal is acting as SAAS app, which is shared among all
     "EnablePerTenantServiceProviderCreation": true
     ```
 
-    ![](../../../assets/img/develop/customizations/per-tenant-sp-creation-config.png )
+    ![Admin Portal Advanced Configurations with EnablePerTenantServiceProviderCreation set to true](../../../assets/img/develop/customizations/per-tenant-sp-creation-config.png )
 
 ## Configure the load balancer for custom URLs
 

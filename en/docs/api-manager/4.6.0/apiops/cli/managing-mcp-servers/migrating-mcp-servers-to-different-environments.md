@@ -26,7 +26,7 @@ content_type: "how-to"
     For more information, visit [Add an Environment](../getting-started-with-wso2-api-controller.md#add-an-environment).
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export MCP Servers. To create a custom user who can import/export MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export MCP Servers. To create a custom user who can import/export MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md).
 
 ### Export an MCP Server
 
@@ -336,11 +336,11 @@ mentioned gateway environments. If the **deployment environments are not provide
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the MCP Server, you may need to update the exported MCP Server with details relevant to the importing environment. For example, the subscription policies, MutualSSL certificates and deployment environments of an MCP Server might differ between the dev and production environments. Furthermore, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between environments as well. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for MCP Servers, see [Defining the params file for an MCP Server](../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters/#defining-the-params-file-for-an-mcp-server).
+    When the importing and exporting environments are different, before importing the MCP Server, you may need to update the exported MCP Server with details relevant to the importing environment. For example, the subscription policies, MutualSSL certificates and deployment environments of an MCP Server might differ between the dev and production environments. Furthermore, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between environments as well. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for MCP Servers, see [Defining the params file for an MCP Server](../advanced-topics/configuring-environment-specific-parameters.md).
 
     **Add dynamic data to environment configs**
 
-    The above parameter file supports detecting environment variables during the MCP Server import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../../../install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the MCP Server import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configurations).
 
 !!! info
     Tiers are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment.

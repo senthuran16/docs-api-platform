@@ -37,7 +37,7 @@ Follow the instructions below to create a WebHook API using the basic flow:
 
 ### Step 1 - Design a WebSub/Webhook API
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and Click **Webhook API**.
 
@@ -150,11 +150,11 @@ Now, you have successfully created and configured a Streaming API. Next, let's [
 
 ## End-to-end tutorial
 
-Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websub-api.md">Creating and Publishing a WebSub API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
+Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websub-api/">Creating and Publishing a WebSub API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.6.0/includes/design/stream-more-links.md"
 
 - [Configure an External WebSub Hub](../../../../install-and-setup/setup/advance-configurations/configuring-external-websub-hub.md) — delegate hub responsibilities to a dedicated external WebSub hub.
 - [Extend WebSub Topic Matching](../../../../reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching.md) — plug in custom topic-matching logic for WebSub APIs.

@@ -38,7 +38,7 @@ Follow the steps given below to configure the Global Key Manager
 
     [![Add Global Key Manager](../../../assets/img/administer/global-keymanager/add-global-key-manager.png)](../../../assets/img/administer/global-keymanager/add-global-key-manager.png)
 
-6. Add the Global Key Manager configurations. Refer to the [configurations](../../../api-security/key-management/third-party-key-managers/overview/#configuring-key-managers-with-wso2-api-m) of the key manager that needs to be added as the global key manager
+6. Add the Global Key Manager configurations. Refer to the [configurations](overview.md) of the key manager that needs to be added as the global key manager
 
     [![Add Global Key Manager Configurations](../../../assets/img/administer/global-keymanager/add-global-key-manager-configurations.png)](../../../assets/img/administer/global-keymanager/add-global-key-manager-configurations.png)
 

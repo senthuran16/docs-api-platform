@@ -14,7 +14,7 @@ content_type: "how-to"
 
 # Enforce Rate Limiting and Resource Access Policies
 
-**Rate limiting** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of rate limiting in WSO2 API Manager (WSO2 API-M), see [rate limiting tiers](../manage-apis/design/rate-limiting/setting-throttling-limits/).
+**Rate limiting** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of rate limiting in WSO2 API Manager (WSO2 API-M), see [rate limiting tiers](../api-design-manage/design/rate-limiting/set-api-level-throttling.md).
 
 !!! note
     This tutorial uses the `PizzaShack` API, which has  GET and POST methods to access it and a rate limiting policy enforced.

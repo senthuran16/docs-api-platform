@@ -53,7 +53,7 @@ Choose a deployment option to start WSO2 API Manager All-in-one package. The All
 
 === "Run on Kubernetes"
 
-    To use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M), follow the steps in [Deploying API-M on Kubernetes using Helm Resources.](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one/#step-1-set-up-basic-configurations)
+    To use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M), follow the steps in [Deploying API-M on Kubernetes using Helm Resources.](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md#quick-start)
 
 ### What you'll build
 

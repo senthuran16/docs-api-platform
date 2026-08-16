@@ -54,6 +54,8 @@ Follow the instructions below to configure Okta as a third-party Key Manager:
 
              [![Okta scope list](../../../assets/img/administer/okta-scope-list.png)](../../../assets/img/administer/okta-scope-list.png)
 
+    <a name="section3"></a>
+
 3. Get the API key.
 
     1. Click **API** under **Security** and then click **Tokens** in the Okta Developer Dashboard.

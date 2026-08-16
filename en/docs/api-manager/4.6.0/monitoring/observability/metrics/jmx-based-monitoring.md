@@ -241,4 +241,4 @@ Follow the steps below to use Jolokia to monitor a WSO2 product.
          
      -   Reading Heap Memory: `http://localhost:9763/jolokia/read/java.lang:type=Memory/HeapMemoryUsage`
 
-     For more information on the JMX MBeans that are available in WSO2 products, see [Monitoring a WSO2 product with JConsole](#using-the-serviceadmin-mbean).
+     For more information on the JMX MBeans that are available in WSO2 products, see [Monitoring a WSO2 product with JConsole](#monitoring-a-wso2-product-with-jconsole).

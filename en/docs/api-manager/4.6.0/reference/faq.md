@@ -18,7 +18,7 @@ content_type: "faq"
 
 ### What is WSO2 API Manager?
 
-WSO2 API Manager is a complete solution for creating, publishing and managing all aspects of an API and its life cycle. For more information, see the [introduction](../getting-started/overview/).
+WSO2 API Manager is a complete solution for creating, publishing and managing all aspects of an API and its life cycle. For more information, see the [introduction](../get-started/overview.md).
 
 ### What is the open source license of the API Manager?
 
@@ -30,7 +30,7 @@ It is completely supported from evaluation to production. For more details, see 
 
 ### What are the default ports opened in the API Manager?
 
-For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports/#api-manager).
+For a list of all default ports available, see [Default Ports of WSO2 Products](default-product-ports.md#api-m-ports).
 
 ### What are the technologies used underneath WSO2 API Manager?
 
@@ -105,7 +105,7 @@ To enable using your email (e.g., `admin@wso2.com`) as your username when deploy
 username="admin!wso2.com!carbon.super"
 ```
 
-For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login).
+For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login).
 
 ------------------------------------------------------------------------
 
@@ -241,7 +241,7 @@ Go to the **Resources &gt; Browse** menu in the management console to open the r
 
 ### How can I manage session timeouts for the management console?
 
-To configure session timeouts, see [Configuring the session time-out](../install-and-setup/install/installing-the-product/running-the-api-m/#configuring-the-session-time-out).
+To configure session timeouts, see [Configuring the session time-out](../install-and-setup/setup/security/securing-api-m-web-portals.md#configuring-session-time-out).
 
 ### How can I add authentication headers to messages going out of the API Gateway to the backend?
 
@@ -264,7 +264,7 @@ password = "<![CDATA[your-password]]>"
 
 ### How can I protect my product server from security attacks caused by weak ciphers?
 
-You can protect your server from attacks such as the Logjam attack (Man-in-the-Middle attack) by disabling weak ciphers. For more details, see [Disable weak ciphers]({{base}}/install-and-setup/setup/security/configuring-transport-level-security/#disabling-weak-ciphers) in the WSO2 Admin Guide.
+You can protect your server from attacks such as the Logjam attack (Man-in-the-Middle attack) by disabling weak ciphers. For more details, see [Disable weak ciphers](../install-and-setup/setup/security/configuring-transport-level-security.md#disabling-weak-ciphers) in the WSO2 Admin Guide.
 
 ### How can I distinguish between expired and invalid tokens in an authentication failure scenario?
 
@@ -318,6 +318,8 @@ You have to create and add a certificate for the IP/domain name in order to over
     In the following instructions, assume that you are attempting to add a self-signed certificate for the domain 'foo.com'.
 
 
+<a name="FAQ-Step1-CreateaselfsignedJavaKeyStorefileandincludeyourdomainastheCN"></a>
+
 **Step 1 - Create a self-signed Java KeyStore file and include your domain as the Common Name (CN)**
 
 1.  Open a terminal and type the following command to generate a KeyStore.
@@ -325,6 +327,8 @@ You have to create and add a certificate for the IP/domain name in order to over
     ``` java
     keytool -genkey -alias test.foo.com -keyalg RSA -keystore foo.jks -keysize 2048
     ```
+
+    <a name="FAQ-Keystorepassword"></a>
 
 2.  Specify a preferred KeyStore password when prompted.
 
@@ -441,7 +445,7 @@ There might be multiple configuration context objects created per API invocation
 The Gateway Failures UI error occurs when the `service_url`, `username`, `password` and/or `https_endpoint/http_endpoint` is incorrect. This can be rectified by checking and correcting the gateway configurations under `[[apim.gateway.environment]]` in the `<API-M_HOME>/repository/conf/deployment.toml` file.
 
 !!! tip
-    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../learn/design-api/publish-api/publish-through-multiple-api-gateways) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
+    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
 
 
 ### How can I capture the state of a system?

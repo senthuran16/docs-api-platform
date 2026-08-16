@@ -68,7 +68,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
      <html><div class="admonition note">
      <p class="admonition-title">Note</p>
      <p> Note that when creating this API, the default option of **Rate limiting level** , was selected to **API Level**. For more information on setting advanced throttling policies,
-     see [Enforce Throttling and Resource Access Policies](../manage-apis/design/rate-limiting/setting-throttling-limits/).</p>
+     see [Enforce Throttling and Resource Access Policies](../api-design-manage/design/rate-limiting/set-api-level-throttling.md).</p>
      </div>
      </html>
      
@@ -130,7 +130,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
       </table>
       </html>
 
-    ![](../assets/img/learn/soap-response.png)
+    ![API Console response pane showing HTTP 200 with the CheckPhoneNumber SOAP envelope and text/xml response headers](../assets/img/learn/soap-response.png)
 
 8.  Note the API response that appears on the console.
     <html><div class="admonition note">

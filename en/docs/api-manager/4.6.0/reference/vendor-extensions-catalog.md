@@ -31,7 +31,6 @@ As per the current implementation, following extensions are supported by API Man
   - [x-wso2-soap](#x-wso2-soap)
   - [x-wso2-mutual-ssl](#x-wso2-mutual-ssl)
   - [x-wso2-response-cache](#x-wso2-response-cache)
-  - [x-wso2-pass-request-payload-to-enforcer](#x-wso2-pass-request-payload-to-enforcer)
  
 ## x-auth-type
  

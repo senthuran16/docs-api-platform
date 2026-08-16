@@ -26,7 +26,7 @@ Follow the instructions below to test a WebSub API (WebHook API):
 
 The examples here use the `RepoWatcher` WebSub/WebHook API, which was created in [Create a WebSub/WebHook API](create-a-websub-streaming-api.md).
 
-1. {!includes/sign-in-devportal.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSub/WebHook API.
 

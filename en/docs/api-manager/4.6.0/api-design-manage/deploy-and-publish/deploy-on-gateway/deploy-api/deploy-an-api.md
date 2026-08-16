@@ -24,4 +24,4 @@ content_type: "how-to"
 
 **Undeploying an API**  will remove the API from the API Gateway Environment.
 
-{!includes/design/deploy-revision.md!}
+--8<-- "api-manager/4.6.0/includes/design/deploy-revision.md"

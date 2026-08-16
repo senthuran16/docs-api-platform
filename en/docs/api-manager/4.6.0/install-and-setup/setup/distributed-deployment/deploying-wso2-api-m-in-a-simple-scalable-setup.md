@@ -67,7 +67,7 @@ For information, see [Installing and Configuring the Databases](../setting-up-da
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M.
 
-For more information, see [Production Deployment Guidelines](../../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines/#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md).
 
 ### Step 4 - Create and import SSL certificates
 
@@ -455,7 +455,7 @@ Follow the steps given below to configure the All-in-One nodes to communicate wi
     **Add Event Hub Configurations**
 
     !!! Info
-        {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+        --8<-- "api-manager/4.6.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     === "All-in-One with High Availability"
         ```toml

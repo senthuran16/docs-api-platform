@@ -86,7 +86,7 @@ The OAuth token is saved in this cache, which is enabled by default. Whenever a 
 
 ## Response cache
 
-For information on how to enable response caching for a given API, see [Response Caching](../../../manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching/).
+For information on how to enable response caching for a given API, see [Response Caching](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching.md).
 
 ## JWT claims cache
 

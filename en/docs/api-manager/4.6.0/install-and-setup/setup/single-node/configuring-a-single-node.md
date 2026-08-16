@@ -52,7 +52,7 @@ Follow the steps in [Configuring the Proxy Server and the Load Balancer](../../.
 
 ## Step 3 - Configure the Databases
 
-WSO2 API-M is shipped with H2 databases by default. However, in a **production setup**, it is recommended to use an industry-standard RDBMS databases for  `WSO2AM_DB` and `WSO2SHARED_DB`. For more information on default databases and changing them into RDBMS databases, see [Working with Databases](../../../install-and-setup/setting-up-databases/overview/).
+WSO2 API-M is shipped with H2 databases by default. However, in a **production setup**, it is recommended to use an industry-standard RDBMS databases for  `WSO2AM_DB` and `WSO2SHARED_DB`. For more information on default databases and changing them into RDBMS databases, see [Working with Databases](../setting-up-databases/overview.md).
 
 ??? tip
     If you have configured the apim and shared databases correctly, the `deployment.toml` in `<API-M_HOME>/repository/conf` 
@@ -123,14 +123,14 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines/#common-guidelines-and-checklist).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md).
   
 ## Step 8 - Start the WSO2 API-M server
 
 If you want to deploy WSO2 API-M using a hybrid single node deployment, where WSO2 Identity Server is used as the Key Manager while the rest of the WSO2 API-M components are all in one node, configure and start the Key Manager (e.g., configure and start WSO2 Identity Server as the Key Manager) before starting the WSO2 API-M server.
 
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m/#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 === "Linux/Mac OS"
     ```bash

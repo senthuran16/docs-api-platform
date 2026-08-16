@@ -35,7 +35,7 @@ In large-scale deployments of WSO2 API Manager, when there are millions of users
 - Token persistence optimization feature will only work with JWT tokens as they can be self validated.
 - If you are enabling this feature in an existing or migrating setup,
       - The token type of all the existing applications should be changed to JWT (including the system applications; publisher, developer portal and admin portal). 
-         - Follow [Update token type of an Application from OAUTH to JWT](../../../reference/product-apis/devportal-apis/devportal-v3/devportal-v3/#tag/Applications/paths/~1applications~1%7BapplicationId%7D/put) to update the existing developer portal applications' token types.
+         - Follow [Update token type of an Application from OAUTH to JWT](../../../reference/product-apis/devportal-apis/devportal-v3/devportal-v3.md#tag/Applications/paths/~1applications~1{applicationId}/put) to update the existing developer portal applications' token types.
          - Follow the instructions for existing deployments in [Enable JWT for Portals](../../../install-and-setup/setup/security/securing-api-m-web-portals.md#enable-jwt-for-web-portals) to update existing portal applications.
       - The already generated Opaque tokens before enabling the feature will continue to work.
 - This solution will not persist the tokens during generation, hence upon every token generation request, a new JWT access and refresh token pair will be generated. So it is recommended to use this feature only with short lived access and refresh tokens.

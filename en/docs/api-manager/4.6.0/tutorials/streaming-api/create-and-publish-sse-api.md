@@ -19,7 +19,7 @@ This tutorial will guide you to create a [SSE Streaming API](../../api-design-ma
 
 ## Step 1 - Design a SSE API
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and click **SSE API**.
 
@@ -104,7 +104,7 @@ Now, you have created and configured the SSE API successfully.
 
 ## Step 4 - Invoke the SSE API
 
-1. {!includes/sign-in-devportal.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-devportal.md"
 
 2. Click on the SSE API. 
 

@@ -67,4 +67,4 @@ Given below are the API-M nodes you can have in a distributed deployment with Ke
 
 <a href="../../../../assets/img/setup-and-install/deployment-km.png"><img src="../../../../assets/img/setup-and-install/deployment-km.png" width="100%"></a>
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation.md!}
+--8<-- "api-manager/4.6.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation.md"

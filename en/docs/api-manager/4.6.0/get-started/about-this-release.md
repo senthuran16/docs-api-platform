@@ -73,7 +73,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
     - Kong Gateway: [Kubernetes](../api-gateway/federated-gateways/kong/kong-kubernetes/discover-apis-on-kong-gateway-in-kubernetes.md) | [Standalone](../api-gateway/federated-gateways/kong/kong-standalone/discover-apis-on-kong-gateway.md)
     - [Envoy Gateway](../api-gateway/federated-gateways/envoygateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes.md)
 
-    **[Learn more](../manage-apis/deploy-and-publish/deploy-on-gateway/federated-gateways/overview/)**
+    **[Learn more](../api-gateway/federated-gateways/overview.md)**
 
 ??? note "API Analytics with Moesif"
 
@@ -134,7 +134,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
     - Gateways now operate independently without shared database access, synchronizing only tenant-specific data with the control plane.
     - This architecture enhances horizontal scalability, fault isolation, and resilience, enabling seamless scaling across distributed and high-traffic deployments.
 
-     **[Learn more](../manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/maintain-seperate-gateways-per-tenants/)**
+     **[Learn more](../api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/maintain-seperate-gateways-per-tenants.md)**
 
 ??? note "API Analytics with OpenSearch"
 
@@ -144,7 +144,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
 
 ## Compatible WSO2 product versions
 
-{!includes/compatibility-matrix.md!}
+--8<-- "api-manager/4.6.0/includes/compatibility-matrix.md"
 
 ## Key Changes
 

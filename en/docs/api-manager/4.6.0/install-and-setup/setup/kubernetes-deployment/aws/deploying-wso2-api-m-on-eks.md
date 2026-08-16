@@ -427,7 +427,7 @@ Check:
 
 ## Next Steps
 
-- Set up [Rate Limiting](../../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+- Set up [Rate Limiting](../../../../api-design-manage/design/rate-limiting/assign-business-plans.md)
 - Enable [Analytics](../../../../monitoring/api-analytics/analytics-overview.md)
 
 ## See Also

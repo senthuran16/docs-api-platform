@@ -33,6 +33,8 @@ Follow the instructions given below to configure Keycloak as a third-party Key M
     !!! Note
         The documentation provides steps to configure the KeyCloak version 24.0.1. If you are using a different version, the screenshots could be different. Moreover, The steps which have been provided is to a local docker image of Keycloak. If you are using a different setup, the URL may vary.
     
+    <a name="step12"></a>
+
 2. Click **Client Scopes** and create client scope named "default".
 
      [![add default client scope](../../../assets/img/administer/keycloak-add-client-scope-default.png)](../../../assets/img/administer/keycloak-add-client-scope-default.png)

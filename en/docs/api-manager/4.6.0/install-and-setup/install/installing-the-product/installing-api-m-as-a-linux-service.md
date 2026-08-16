@@ -23,7 +23,7 @@ content_type: "how-to"
 
     **Before you begin:**
 
-    - See [our compatibility matrix](../../../install-and-setup/ProductCompatibility) to check the compatible JDK versions. 
+    - See [our compatibility matrix](../../../reference/product-compatibility.md) to check the compatible JDK versions. 
     - Set up the `JAVA_HOME` environment variable.
 
 #### Setting up CARBON\_HOME

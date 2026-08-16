@@ -85,15 +85,15 @@ Before you begin, make sure you do the following.
 
     1.  Go to **Users** -> **People** and click on your profile name.
         
-        <a href="../../../assets/img/learn/okta-profile-edit.png"><img src="../../../assets/img/learn/okta-profile-edit.png"/></a>
+        <a href="../../../../assets/img/learn/okta-profile-edit.png"><img src="../../../../assets/img/learn/okta-profile-edit.png"/></a>
     
     2.  Click **Edit** to change the profile details.
         
-        <a href="../../../assets/img/learn/okta-profile-edit2.png"><img src="../../../assets/img/learn/okta-profile-edit2.png" width="600" height="400"/></a>
+        <a href="../../../../assets/img/learn/okta-profile-edit2.png"><img src="../../../../assets/img/learn/okta-profile-edit2.png" width="600" height="400"/></a>
 
     3.  Add the **Role**. This will be used in the API Manager to map an internal role to the provisioned user.
         
-        <a href="../../../assets/img/learn/okta-profile-edit3.png"><img src="../../../assets/img/learn/okta-profile-edit3.png"/></a>
+        <a href="../../../../assets/img/learn/okta-profile-edit3.png"><img src="../../../../assets/img/learn/okta-profile-edit3.png"/></a>
 
 ## Step 2 - Setup API-Manager
 
@@ -111,13 +111,13 @@ Before you begin, make sure you do the following.
 
     3. Assign the following permissions to the role and save the role.
 
-        <a href="../../../assets/img/learn/okta-apim-add-role-permissions3.png"><img src="../../../assets/img/learn/okta-apim-add-role-permissions3.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-add-role-permissions3.png"><img src="../../../../assets/img/learn/okta-apim-add-role-permissions3.png" width=25%/></a>
         <br/>
         <br/>
-        <a href="../../../assets/img/learn/okta-apim-add-role-permissions2.png"><img src="../../../assets/img/learn/okta-apim-add-role-permissions2.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-add-role-permissions2.png"><img src="../../../../assets/img/learn/okta-apim-add-role-permissions2.png" width=25%/></a>
         <br/>
         <br/>
-        <a href="../../../assets/img/learn/okta-apim-add-role-permissions1.png"><img src="../../../assets/img/learn/okta-apim-add-role-permissions1.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-add-role-permissions1.png"><img src="../../../../assets/img/learn/okta-apim-add-role-permissions1.png" width=25%/></a>
 
 3. Log in to `https://localhost:9443/admin`. 
 

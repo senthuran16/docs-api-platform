@@ -21,9 +21,9 @@ When there are many users who use production deployment setups, accessing API 
     This will be a guide for you if you create client applications having API Manager underlying. Note that, you need to use [Password Grant](https://docs.wso2.com/display/AM260/Password+Grant) type in this scenario.
 
 
--   [Issue in having multiple access tokens](#AccessingAPIManagerbyMultipleDevicesSimultaneously-Issueinhavingmultipleaccesstokens)
--   [Recommended Solution](#AccessingAPIManagerbyMultipleDevicesSimultaneously-RecommendedSolution)
--   [How this should work](#AccessingAPIManagerbyMultipleDevicesSimultaneously-Howthisshouldwork)
+-   [Issue in having multiple access tokens](#issue-in-having-multiple-access-tokens)
+-   [Recommended Solution](#recommended-solution)
+-   [How this should work](#how-this-should-work)
 
 ### Issue in having multiple access tokens
 

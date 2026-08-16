@@ -90,7 +90,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
         [![Provisioned App Validation](../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/provisioned-app-validation.png)](../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/provisioned-app-validation.png)
 
-3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m/#starting-the-server).
+3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 4.  Sign in to the Developer Portal.
 

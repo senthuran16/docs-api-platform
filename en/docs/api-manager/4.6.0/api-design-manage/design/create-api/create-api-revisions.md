@@ -41,7 +41,7 @@ Follow the instructions below to either deploy a new revision or deploy an exist
 
 ### Deploy a new revision
 
-{!includes/design/deploy-revision.md!}
+--8<-- "api-manager/4.6.0/includes/design/deploy-revision.md"
 
 ### Deploy an existing revision
 

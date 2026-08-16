@@ -28,7 +28,7 @@ Follow the instructions below to design a GraphQL API.
 
 ### Create a GraphQL API
 
-{!includes/design/create-graphql-api.md!}
+--8<-- "api-manager/4.6.0/includes/design/create-graphql-api.md"
 
 !!! note
     For more information on the payload, see [GraphQL operations](#graphql-operations).
@@ -80,11 +80,11 @@ Learn more on the concepts that you need to know when creating a GraphQL API:
 
 -   [Endpoints](../endpoints/endpoint-types.md)
 -   [API Security](../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
--   [Rate Limiting](../../../api-design-manage/design/rate-limiting/graphql-api/overview-query-limits-for-graphql/)
+-   [Rate Limiting](../../../api-gateway/rate-limiting/enforce-graphql-query-limits.md)
 -   [Life Cycle Management](../lifecycle-management/api-lifecycle.md)
 -   [API Monetization](../../../monitoring/api-monetization/monetizing-an-api.md)
 -   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)
 -   [API Documentation](../api-documentation/add-api-documentation.md)
 -   [Custom Properties](adding-custom-properties-to-apis.md)
 
-- Try out the tutorial on <a href="../../../../tutorials/create-and-publish-a-graphql-api.md">Creating and Publishing a GraphQL API</a>.
+- Try out the tutorial on <a href="../../../../tutorials/create-and-publish-a-graphql-api/">Creating and Publishing a GraphQL API</a>.

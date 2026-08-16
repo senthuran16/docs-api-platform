@@ -633,7 +633,7 @@ For more information go to, [Using Connect with Standard Accounts](https://strip
 
 2. Create a subscription policy.
 
-    Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../manage-apis/design/rate-limiting/adding-new-throttling-policies#Adding-a-new-subscription---level-throttling-tier).
+    Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../administer/rate-limiting/manage-subscription-policies.md).
 
     !!! note
         When using Stripe as a billing engine it only allows you to create monetization plans for commercial business plans. Therefore, make sure to create a subscription policy that has a paid business plan.
@@ -679,7 +679,7 @@ When a subscriber selects a monetized API tier in the Developer Portal, APIM ini
 
     The subscription is created in APIM with a pending status while payment is being collected.
 
-3. The Developer Portal can be configured to display a **Complete Payment** link that redirects the subscriber to the Stripe-hosted Checkout page. See [Step 4 - Customize the Developer Portal for Stripe payment flows](#step-4---customize-the-developer-portal-for-stripe-payment-flows) for details.
+3. The Developer Portal can be configured to display a **Complete Payment** link that redirects the subscriber to the Stripe-hosted Checkout page. See [Step 4 - Customize the Developer Portal for Stripe payment flows](#step-4-customize-the-developer-portal-for-stripe-payment-flows) for details.
 
     !!! note
         The Checkout link is valid for 24 hours. If the subscriber does not complete payment within that window, the pending subscription is automatically cancelled when Stripe fires a `checkout.session.expired` event.
@@ -705,7 +705,7 @@ The subscriber must be authenticated (via OIDC) to access this endpoint. If no v
 !!! note
     The Checkout link is valid for 24 hours. If the subscriber does not complete payment within that window, Stripe fires a `checkout.session.expired` event and the pending subscription is automatically cancelled.
 
-On the Stripe Checkout page, the subscriber enters their payment details and confirms. For details on how the subscription is activated after payment, see [Step 3 - Subscribe to a monetized API](#step-3---subscribe-to-a-monetized-api).
+On the Stripe Checkout page, the subscriber enters their payment details and confirms. For details on how the subscription is activated after payment, see [Step 3 - Subscribe to a monetized API](#step-3-subscribe-to-a-monetized-api).
 
 #### Redirecting to the Customer Portal
 

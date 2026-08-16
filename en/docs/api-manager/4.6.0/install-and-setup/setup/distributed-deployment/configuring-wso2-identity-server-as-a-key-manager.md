@@ -74,7 +74,7 @@ Follow the instructions below to set up and configure the databases for the WSO2
     !!! warning
         If you have already created and set up the database (`WSO2_SHARED_DB`) for WSO2 API Manager, you only need to configure the data source configurations in the WSO2 IS node for it to connect with the required databases and act as the Key Manager.
 
-     <a name="#step3-2"></a>
+     <a name="step3-2"></a>
 
 2. Share `WSO2_SHARED_DB`with WSO2 IS.
 
@@ -324,13 +324,13 @@ Follow the instructions below to set up and configure the databases for the WSO2
 
 Start WSO2 Identity Server for the changes to take effect. For more information, see [Running the Product](https://is.docs.wso2.com/en/5.10.0/setup/running-the-product/) in the WSO2 Identity Server documentation.
 
-   -   [**Linux/Mac OS**](#Linux-Mac)
+   -   **Linux/Mac OS**
         ``` java
         cd <IS_KM_HOME>>/bin/
         sh wso2server.sh 
         ```
        
-   -   [**Windows**](#windows)
+   -   **Windows**
         ``` java
         cd <IS_KM_HOME>>\bin\    
         wso2server.bat 

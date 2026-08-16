@@ -62,7 +62,7 @@ In addition to using the built-in Key Manager as the IDP, WSO2 API Control Plane
 
 #### API Analytics
 
-- For information on the architecture, see [API Analytics Architecture](../monitoring/api-analytics/analytics-overview/#architecture/)
+- For information on the architecture, see [API Analytics Architecture](../monitoring/api-analytics/analytics-overview.md#architecture)
 
 - For information on working with Analytics, see the [API Analytics Getting Started Guide](../monitoring/api-analytics/moesif-analytics/moesif-integration-guide.md).
 
@@ -100,7 +100,7 @@ The Traffic Manager helps users to regulate API traffic, make APIs and applicati
 
 In addition to the above, the Traffic Manager also helps to keep the Universal Gateway's in-memory map, which is used for key validation, up-to-date via a JMS topic. The Traffic Manager publishes artifact (API/application) update events that are received from the API Publisher and API Developer Portal to a JMS topic. The Universal Gateway receives these events via the JMS topic and updates its in-memory map.
 
-For more information, see [Working with Throttling](../manage-apis/design/rate-limiting/introducing-throttling-use-cases).
+For more information, see [Working with Throttling](../api-design-manage/design/rate-limiting/assign-business-plans.md).
 
 ## Tooling
 

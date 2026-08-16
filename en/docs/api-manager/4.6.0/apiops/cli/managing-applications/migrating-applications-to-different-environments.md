@@ -25,7 +25,7 @@ content_type: "how-to"
        For more information, see [Add an Environment](../getting-started-with-wso2-api-controller.md#add-an-environment).
     
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export Applications. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export Applications. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md).
 
 ## Manage the application lifecycle
 

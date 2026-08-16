@@ -85,7 +85,7 @@ Following steps illustrate how you can enable a custom handler for a selected se
     
     !!!Info
     
-        If you are using a [distributed API Manager deployment](../../../../install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/) (i.e., Publisher, Devportal, Gateway and Key Manager components are running on separate JVMs), edit the template in the Publisher node. 
+        If you are using a [distributed API Manager deployment](../../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) (i.e., Publisher, Devportal, Gateway and Key Manager components are running on separate JVMs), edit the template in the Publisher node. 
      
  3. Save the changes.
  

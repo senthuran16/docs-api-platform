@@ -33,7 +33,7 @@ More information:
 
 Follow the instructions below to discover the integration services:
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **Services**. The available integration services appear.
 
@@ -86,8 +86,8 @@ Learn more on the concepts that you need to know when creating an API:
  - [Endpoints](../endpoints/endpoint-types.md)
  -   [API Security](../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
  -   Rate Limiting:
-     -   [Rate Limiting for REST APIs](../../../api-design-manage/design/rate-limiting/introducing-throttling-use-cases/)
-     -   [Rate Limiting for Streaming APIs](../../../api-design-manage/design/rate-limiting/rate-limiting-for-streaming-apis/)
+     -   [Rate Limiting for REST APIs](../rate-limiting/assign-business-plans.md)
+     -   [Rate Limiting for Streaming APIs](../rate-limiting/set-streaming-api-limits.md)
  -   [Life Cycle Management](../lifecycle-management/api-lifecycle.md)
  -   [API Monetization](../../../monitoring/api-monetization/monetizing-an-api.md)
  -   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)

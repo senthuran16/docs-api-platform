@@ -178,7 +178,7 @@ Follow the instructions below to add a mock implementation to the API:
 
      [![Save inline scripts](../../../assets/img/learn/create-api-prototype-click-save.png)](../../../assets/img/learn/create-api-prototype-click-save.png)
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.6.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 
@@ -330,7 +330,7 @@ Learn more on the concepts that you need to know when creating a Prototype API:
 
 -   [Endpoints](../endpoints/endpoint-types.md)
 -   [API Security](../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
--   [Rate Limiting](../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+-   [Rate Limiting](../rate-limiting/assign-business-plans.md)
 -   [Life Cycle Management](../lifecycle-management/api-lifecycle.md)
 -   [API Monetization](../../../monitoring/api-monetization/monetizing-an-api.md)
 -   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)

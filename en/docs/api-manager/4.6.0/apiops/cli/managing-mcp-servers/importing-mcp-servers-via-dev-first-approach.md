@@ -38,7 +38,7 @@ content_type: "how-to"
 
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import MCP Servers. To create a custom user who can import MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import MCP Servers. To create a custom user who can import MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md).
 
 You can import the MCP Server to an environment using any of the following commands.  
 

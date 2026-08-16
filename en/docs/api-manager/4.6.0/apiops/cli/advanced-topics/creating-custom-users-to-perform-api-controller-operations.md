@@ -24,7 +24,7 @@ Further, you can create your own custom user with a custom role to perform speci
 !!! info
     **Steps to create a custom user with a custom role for your need** 
 
-    - As shown in [Create user roles](../../../administer/managing-users-and-roles/managing-user-roles/#create-user-roles) section, you can create your own custom user role by assigning scopes that are required to perform a particular set of apictl operations by referring the table below.
+    - As shown in [Create user roles](../../../administer/managing-users-and-roles/managing-user-roles.md#creating-user-roles) section, you can create your own custom user role by assigning scopes that are required to perform a particular set of apictl operations by referring the table below.
     - Then, create a user as explained in [Adding a new User](../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user), by assigning the custom role that you created in the above step, to that user.
     - Now you can login to apictl (using `apictl login <env-name>` command) and perform the particular set of operations as per your need.
 

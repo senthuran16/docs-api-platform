@@ -20,7 +20,7 @@ A REST API artifact you create from WSO2 Integration Studio is exposed to consum
 Follow the steps given below to publish REST APIs from the Micro Integrator to the API-M runtime.
 
 !!! tip "Related Tutorials"
-        To try out an end-to-end use case where an integration service is created and used as a managed API, see tutorials: [Exposing an Integration Service as a Managed API](../../tutorials/integration-tutorials/service-catalog-tutorial) and [Exposing an Integration SOAP Service as a Managed API](../../tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services).
+        To try out an end-to-end use case where an integration service is created and used as a managed API, see tutorials: [Exposing an Integration Service as a Managed API](https://mi.docs.wso2.com/en/latest/learn/integration-tutorials/service-catalog-tutorial/) and [Exposing an Integration SOAP Service as a Managed API](https://mi.docs.wso2.com/en/latest/learn/integration-tutorials/service-catalog-tutorial-for-proxy-services/).
 
 ## Prerequisites
 
@@ -29,14 +29,13 @@ Develop a REST API artifact using WSO2 Integration Studio. This is your integrat
 !!! Tip
     For instructions on creating a new integration service, use the following documentation: 
 
-    -   [Developing your First Integration Service](../../integrate/develop/integration-development-kickstart).
-    -   [Integration Tutorials](../../tutorials/tutorials-overview/#integration-tutorials).
+    -   [Developing your First Integration Service](https://mi.docs.wso2.com/en/latest/develop/intro-integration-development/).
 
 ## Step 1 - Update the service metadata
 
 When you create a REST API artifact from WSO2 Integration Studio, a **resources** folder with metadata files is created as shown below. This metadata is used by the API management runtime to generate the API proxy for the service.
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
 
 Update the metadata for your service as explained below.
 
@@ -94,7 +93,7 @@ username = "admin"
 password = "admin"
 ```
 
-See the descriptions of the [service catalog parameters](../../reference/config-catalog-mi/#service-catalog-client).
+See the descriptions of the [service catalog parameters](https://mi.docs.wso2.com/en/latest/reference/config-catalog-mi/#service-catalog-client).
 
 ## Step 3 - Start the servers
 

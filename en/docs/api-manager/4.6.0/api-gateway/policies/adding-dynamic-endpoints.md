@@ -43,4 +43,4 @@ In this example, you have constructed the `service_ep` property dynamically and 
 
 You can copy the content of the above sequence to an XML file and upload it to an API configured with a dynamic endpoint using the Publisher Portal UI.
 
-For more information, visit [Creating and Uploading Manually in API Publisher](../../learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests#creating-and-uploading-manually-in-api-publisher).
+For more information, visit [Creating and Uploading Manually in API Publisher](../../api-design-manage/design/api-policies/create-policy.md#creating-an-api-specific-policy).
