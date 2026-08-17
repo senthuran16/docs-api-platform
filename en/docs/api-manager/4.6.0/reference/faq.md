@@ -34,7 +34,7 @@ For a list of all default ports available, see [Default Ports of WSO2 Products](
 
 ### What are the technologies used underneath WSO2 API Manager?
 
-The API Manager is built on top of [WSO2 Carbon](https://wso2.com/products/carbon/), an OSGi based components framework for SOA. For more details, see [API Manager components](../get-started/key-concepts.md).
+The API Manager is built on top of WSO2 Carbon, an OSGi based components framework for SOA. For more details, see [API Manager components](../get-started/key-concepts.md).
 
 ### Can I get involved in API-M development activities?
 
