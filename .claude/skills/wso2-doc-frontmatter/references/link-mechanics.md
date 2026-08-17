@@ -52,6 +52,17 @@ Three more rules the reporter enforces, and you must not work around:
   removed. A unique match is what makes the group safe, so where a match is
   ambiguous `match_anchor` must return nothing rather than take the first. A lower-case anchor that simply does not exist is a reworded
   heading and stays in `anchor`; do not widen the rule to cover it.
+- **An anchor on a page that renders itself in the browser is UNVERIFIABLE, not
+  missing.** The OpenAPI reference pages (`template: templates/redoc.html` plus
+  `<redoc spec-url=…>`) hold no Markdown headings at all; ReDoc builds the operation
+  anchors — `#tag/Applications/paths/~1applications~1{applicationId}/put` — at
+  runtime from the spec. Harvesting anchors from the `.md` returns an empty set, so
+  before `renders_anchors_clientside()` existed **every** such fragment was reported
+  as a reworded heading: 53 `ANCHOR_MISSING` and 18 `dir_style` refusals repo-wide,
+  all of them working links. All three scripts now skip the check for these pages —
+  **skip, not pass**: the fragment is carried through untouched and the *path* half
+  of a `dir_style` or `renamed` fix is allowed to land. Verifying one would mean
+  reading the OpenAPI spec, which none of these scripts do.
 - **`BASE_PATH_ALIASES` is configuration, not logic.** `{{base}}`, `{{basepath}}`
   and `{{base_patgh}}` are `{{base_path}}` mistyped. Add a spelling when one turns
   up; do not replace the list with a similarity measure — `base` is four characters
@@ -96,11 +107,20 @@ reviewed or undone. It is the only script here that edits link text.
 
 `scripts/links_lib.py` holds the link logic all three link scripts share — `url_base`, `published`, `link_to`, `slug`, the anchor harvester, the target finder, the rewriter, and the `mkdocs.yml` readers. **Add to it rather than copying out of it.** If a copy is taken and the two drift, one script counts from the rendered url while the other counts from the source directory — the reporter then proposes fixes the fixer refuses, and neither looks wrong on its own.
 
+**The two scheme helpers are not interchangeable, and swapping them fails silently.**
+
+| | returns | use it when |
+|---|---|---|
+| `has_uri_scheme(t)` | true for **any** scheme, http and typos included | the only question is "can this be resolved as a path on disk?" — false for every scheme |
+| `non_web_scheme(t)` | the scheme, but **None** for `http`, `https` and `HTTP_TYPOS` | an http(s) target still has to be classified afterwards (legacy domain, mistyped scheme) |
+
+`non_web_scheme` deliberately lets http through so the caller keeps handling it. So narrowing a has-any-scheme guard to `non_web_scheme` lets **external URLs fall through to path resolution**, where they are reported as broken links — and widening the other way swallows `ttps://` typos that `malformed` could have fixed. Neither mistake changes a count you would think to look at: the first inflated `partial` by 63 on one version while `gone` fell as intended, which reads like success unless every moved tier is accounted for. That is what `SKILL.md` step 7 means by accounting for every count that moved.
+
 `scripts/check_links.py` resolves every relative link, image, and anchor against what's on disk, and flags links still pointing at a pre-migration location (the list is `LEGACY_DOMAINS` in `fm_lib.py`). It catches everything `mkdocs build` warns about plus two classes mkdocs stays silent on: bare directory links to a directory with no `index.md`/`README.md`, and directory links to a path that doesn't exist at all. Four of its codes need a word of explanation:
 
 - **`LINK_TEMPLATED_UNDEFINED`** (blocking) vs **`LINK_TEMPLATED`** (polish). The severity is read from the config, not assumed: a `{{var}}` whose name has no value under `extra:` in `mkdocs.yml` renders as an empty string, so the link points at the server root. Define the variable under `extra:` and these become informational automatically.
 - **`LINK_VIA_REDIRECT`** (polish). No file on disk, but `mkdocs-redirects` publishes a page at that path, so the link works in the built site. Reported rather than dropped, because it is worth knowing a link leans on a redirect.
-- **`LINK_SCHEME_TYPO`** (blocking). `ttps://` and friends. Any *other* non-http scheme (`ldap:`, `ldaps:`) is skipped entirely — those are example addresses, not paths, and resolving them against the docs root reported correct configuration samples as broken links.
+- **`LINK_SCHEME_TYPO`** (blocking). `ttps://` and friends. Any *other* non-http scheme (`ldap:`, `ldaps:`) is skipped entirely — those are example addresses, not paths, and resolving them against the docs root reported correct configuration samples as broken links. `report_links.py` now shares this rule; until it did, the two scripts disagreed and four correct `<a href="ldap://10.100.1.100:389">` samples in the LDAP user-store pages sat in `gone` on every version.
 
 Its image accounting keeps two things apart. An image asked for by a link that doesn't resolve is **not** an orphan — it is the other side of an `IMG_MISSING`, and listing it as unused invites deleting a screenshot whose only fault is the link pointing at it. Only an image that nothing in its own version so much as names is counted as never referenced. Per-version matters: every version keeps its own copy of the same file.
 
