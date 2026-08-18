@@ -1,3 +1,18 @@
+---
+title: "Getting started with WSO2 API controller (apictl)"
+description: "Download and initialize apictl, add and remove environments, log in and out, and set proxies, request timeouts, and the export directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/getting-started-with-wso2-api-controller/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/getting-started-with-wso2-api-controller.md
+tags:
+  - api-manager
+  - apiops
+  - cli
+  - getting-started-with-wso2-api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Getting Started with WSO2 API Controller (apictl)
 
 **WSO2 API Controller (apictl)** is a command-line tool providing the capability to move APIs, API Products, and Applications across environments and to perform CI/CD operations. It can also be used to perform these same tasks on a Kubernetes deployment. Furthermore, it can perform WSO2 Micro Integrator (WSO2 MI) server specific operations such as monitoring Synapse artifacts and performing MI management/administrative tasks from the command line.
@@ -379,7 +394,7 @@ For more information, see [Download and Initialize the apictl](#download-and-ini
             ```
 
         !!!note
-            Output of the `get envs` command can be formatted with Go Templates. For more information on formatting the get commands, see [Formatting the outputs of get commands](../../install-and-setup/setup/api-controller/advanced-topics/formatting-the-output-of-get-command).
+            Output of the `get envs` command can be formatted with Go Templates. For more information on formatting the get commands, see [Formatting the outputs of get commands](advanced-topics/formatting-the-output-of-get-command.md).
 
         !!!note
             `apictl list envs` command has been deprecated from the apictl 4.0.0 onwards. Instead use `apictl get envs` as shown above. 
@@ -414,7 +429,7 @@ For more information, see [Download and Initialize the apictl](#download-and-ini
             If you run `apictl login <environment-name> --username <username>`, you are prompted to provide the password.
 
         !!! tip 
-            If you want to pass the access token directly as `apictl login <environment-name> --token <access-token>`, you can generate a personal access token providing the required scopes, see [Minimal permissions and scopes required to perform apictl operations](../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations)        
+            If you want to pass the access token directly as `apictl login <environment-name> --token <access-token>`, you can generate a personal access token providing the required scopes, see [Minimal permissions and scopes required to perform apictl operations](advanced-topics/creating-custom-users-to-perform-api-controller-operations.md)        
 
         !!! info
             **Flags:**  

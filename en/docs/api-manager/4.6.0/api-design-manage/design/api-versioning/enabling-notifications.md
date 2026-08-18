@@ -1,3 +1,18 @@
+---
+title: "Enabling notifications"
+description: "Configure the email server in deployment.toml and enable notifications so existing subscribers are emailed when another API version is created."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/api-versioning/enabling-notifications/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/api-versioning/enabling-notifications.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - api-versioning
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Enabling Notifications
 
 You can enable notifications when you create new API versions, to notify the existing subscribers (via email) that a new version of the API is available. If you want to send a different type of notification, you can extend the `org.wso2.carbon.apimgt.impl.notification.Notifier` abstract class based on your requirements.
@@ -25,7 +40,7 @@ Follow the instructions below to enable notifications for new API versions:
     | password               | App Password used to authenticate the mail server.  Follow the instructions [here](https://support.google.com/accounts/answer/185833?hl=en) to create this. |
     | signature              | Signature of the sender account.|
     
-    For more information, see [Enable Notifications](../../../reference/config-catalog/#enable-notifications).    
+    For more information, see [Enable Notifications](../../../reference/config-catalog.md#enable-notifications).    
 
 
 2. Sign in to the Admin Portal `https://<hostname>:9443/admin`

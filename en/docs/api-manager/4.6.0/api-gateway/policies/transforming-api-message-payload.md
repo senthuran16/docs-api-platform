@@ -1,3 +1,18 @@
+---
+title: "Transforming API message payload"
+description: "JSON and XML message builders and formatters in the Universal Gateway, the XML representation of JSON payloads, and payload conversion behavior."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/policies/transforming-api-message-payload/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/policies/transforming-api-message-payload.md
+tags:
+  - api-manager
+  - api-gateway
+  - policies
+  - transforming-api-message-payload
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "reference"
+---
+
 # Transforming API Message Payload
 
 When a request comes to the API Manager, it sends the response in the same format of the request. For example, 
@@ -14,16 +29,16 @@ from the message. As with message builders, the message formatter is selected ba
     Note that if you edit an API's synapse configuration as mentioned in this guide and then go back to the API 
     Publisher and save the API, your changes will be overwritten. Therefore, we do not recommend changing the API's 
     synapse configuration directly. The recommended way to extend an API's mediation flow is by 
-    [attaching policies to API operations](../../api-design-manage/design/api-policies/attach-policy/).
+    [attaching policies to API operations](../../api-design-manage/design/api-policies/attach-policy.md).
 
 
 !!! info
     Also see the following sections in the documentation. The integration runtime is used to implement the API Gateway through which API messages are transformed:
 
-    -   [Accessing content from JSON payloads](../../integrate/examples/json_examples/json-examples/#accessing-content-from-json-payloads)
-    -   [Logging JSON payloads](../../integrate/examples/json_examples/json-examples/#logging-json-payloads)
-    -   [Constructing and transforming JSON payloads](../../integrate/examples/json_examples/json-examples/#constructing-and-transforming-json-payloads)
-    -   [Troubleshooting, debugging, and logging](../../integrate/examples/json_examples/json-examples/#troubleshooting-debugging-and-logging)
+    -   [Accessing content from JSON payloads](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#access-content-from-json-payloads)
+    -   [Logging JSON payloads](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#logging-json-payloads)
+    -   [Constructing and transforming JSON payloads](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#construct-and-transforming-json-payloads)
+    -   [Troubleshooting, debugging, and logging](https://mi.docs.wso2.com/en/latest/learn/examples/json-examples/json-examples/#troubleshoot-debug-and-log)
 
 ### JSON message builders and formatters
 

@@ -1,10 +1,25 @@
+---
+title: "Create a WebSocket API"
+description: "Create a WebSocket API in WSO2 API Manager for two-way communication, define topics as independent channels, and set runtime configurations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-streaming-api/create-a-websocket-streaming-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-streaming-api/create-a-websocket-streaming-api.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create a WebSocket API
 
 ## Overview
 
 A WebSocket API is a streaming API in WSO2 API Manager that is implemented based on the [WebSocket](https://www.w3.org/TR/websockets/) protocol specification, which is compatible with HTTP. The WebSocket protocol supports full-duplex communication over a channel that is established once. Therefore, WebSocket protocols allow a continuous two-way communication between the server and the client.
 
-You can create a WebSocket API from scratch in WSO2 API-M and export the WebSocket APIs that are created within WSO2 API-M as AsyncAPI definitions. Alternatively, you can also import [existing AsyncAPI definitions to create SSE APIs in WSO2 API-M](../../../../design/create-api/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition).
+You can create a WebSocket API from scratch in WSO2 API-M and export the WebSocket APIs that are created within WSO2 API-M as AsyncAPI definitions. Alternatively, you can also import [existing AsyncAPI definitions to create SSE APIs in WSO2 API-M](create-a-streaming-api-from-an-asyncapi-definition.md).
 
 This section guides you through the process of creating a WebSocket API from scratch in which you can expose a WebSocket backend via WSO2 API Manager. After the API is created, you will be able to create independent channels to connect to each topic in the API. These topics can be mapped to different channels in the backend. As a result, the user can maintain multiple channels with the API to exchange different types of events simultaneously.
 
@@ -39,7 +54,7 @@ Follow the instructions below to create a WebSocket API using the basic flow:
 
              In the above configuration, the offset is `100`. `9190` was obtained by adding `100` to the default port `9090`.
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and Click **WebSocket API**.
 
@@ -174,14 +189,14 @@ Click **Runtime** under the **API Configurations** section, select the required 
 
    <a href="../../../../../assets/img/tutorials/streaming-api/websocket-api-runtime-configurations.png"><img src="../../../../../assets/img/tutorials/streaming-api/websocket-api-runtime-configurations.png" width="65%" alt="Runtime Configurations of WebSocket API"></a>
 
-Now, you have successfully created and configured a Streaming API. Next, let's [Publish your API](../../../../deploy-and-publish/publish-on-dev-portal/publish-an-api).
+Now, you have successfully created and configured a Streaming API. Next, let's [Publish your API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
 ## End-to-end tutorial
 
-Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websocket-api">Creating and Publishing a WebSocket API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
+Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websocket-api/">Creating and Publishing a WebSocket API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
 
 Once you create and publish a WebSocket API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/">deploy the API you created</a>.
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.6.0/includes/design/stream-more-links.md"

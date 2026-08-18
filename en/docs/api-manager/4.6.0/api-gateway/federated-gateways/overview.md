@@ -1,3 +1,18 @@
+---
+title: "Federated gateways overview"
+description: "Federated gateway support in WSO2 API Manager: discovery and deployment across AWS, Azure, Kong, and Envoy Gateway, plus custom gateway agents."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/federated-gateways/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/federated-gateways/overview.md
+tags:
+  - api-manager
+  - api-gateway
+  - federated-gateways
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Federated Gateways Overview
 
 WSO2 API Manager supports deploying APIs to external third-party API Gateways, enabling a federated API gateway architecture. This approach separates the control plane from the runtime gateways, allowing centralized API governance while enabling APIs to run closer to users or services for improved performance and resilience.
@@ -41,7 +56,7 @@ Deploy and manage APIs on Amazon Web Services API Gateway. WSO2 API Manager come
 - OAuth 2.0 security via Lambda Authorizer
 - Centralized management through WSO2 API Manager
 
-[Learn more about AWS API Gateway deployment](../../api-gateway/federated-gateways/aws/deploy-on-aws-api-gateway/)
+[Learn more about AWS API Gateway deployment](aws/deploy-on-aws-api-gateway.md)
 
 ### Azure API Gateway
 Deploy and manage APIs on Microsoft Azure API Management Service. The built-in Azure gateway connector facilitates deployment and discovery of APIs on Azure infrastructure.
@@ -52,7 +67,7 @@ Deploy and manage APIs on Microsoft Azure API Management Service. The built-in A
 - Integration with Microsoft Entra ID
 - Centralized governance from WSO2 API Manager
 
-[Learn more about Azure API Gateway deployment](../../deploy-and-publish/federated-gateways/azure/deploy-on-azure-api-gateway/)
+[Learn more about Azure API Gateway deployment](azure/deploy-on-azure-api-gateway.md)
 
 ### Kong Gateway
 Discover and manage APIs deployed on Kong Gateway. WSO2 API Manager supports both Kong Kubernetes and Kong Standalone deployments.
@@ -63,7 +78,7 @@ Discover and manage APIs deployed on Kong Gateway. WSO2 API Manager supports bot
 - Support for Kong Kubernetes and Standalone modes
 - Unified management through WSO2 API Manager Control Plane
 
-[Learn more about Kong Gateway integration](../../api-gateway/federated-gateways/kong/kong-standalone/discover-apis-on-kong-gateway/)
+[Learn more about Kong Gateway integration](kong/kong-standalone/discover-apis-on-kong-gateway.md)
 
 ### Envoy Gateway
 Discover and manage APIs deployed on Envoy Gateway in Kubernetes environments. 
@@ -73,7 +88,7 @@ Discover and manage APIs deployed on Envoy Gateway in Kubernetes environments.
 - Kubernetes-native integration
 - Centralized API governance
 
-[Learn more about Envoy Gateway integration](../../api-gateway/federated-gateways/EnvoyGateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes/)
+[Learn more about Envoy Gateway integration](envoygateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes.md)
 
 ## Gateway Modes
 
@@ -87,7 +102,7 @@ Federated gateways can operate in different modes depending on your requirements
 
 If you need to integrate with a third-party gateway that is not supported out-of-the-box, WSO2 API Manager provides the flexibility to create custom gateway agents. This allows you to extend the federated gateway capabilities to any external gateway.
 
-[Learn more about configuring custom gateway agents](../../api-gateway/federated-gateways/configure-custom-gateway-agent/)
+[Learn more about configuring custom gateway agents](configure-custom-gateway-agent.md)
 
 ## Architecture Benefits
 
@@ -112,5 +127,5 @@ To get started with federated gateways:
 
 ## Additional Resources
 
-- [Tutorial: Deploying APIs to AWS API Gateway](../../tutorials/deploying-apis-to-federated-gateways-with-wso2/)
-- [WSO2 API Manager Architecture](../../get-started/apim-architecture/)
+- [Tutorial: Deploying APIs to AWS API Gateway](../../tutorials/deploying-apis-to-federated-gateways-with-wso2.md)
+- [WSO2 API Manager Architecture](../../get-started/apim-architecture.md)

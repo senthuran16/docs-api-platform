@@ -1,3 +1,18 @@
+---
+title: "Consume MCP servers from MCP hub"
+description: "Run the WSO2 API Manager Developer Portal as an MCP Hub in MCP_ONLY mode and invoke MCP server tools with the integrated MCP Playground."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/mcp-gateway/invoke-a-mcp-server-using-playground/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/mcp-gateway/invoke-a-mcp-server-using-playground.md
+tags:
+  - api-manager
+  - ai-gateway
+  - mcp-gateway
+  - invoke-a-mcp-server-using-playground
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Consume MCP Servers from MCP Hub
 
 WSO2 API Manager can act as an MCP Hub, providing centralized discovery, management, and reuse of MCP Servers across teams and environments. When running as an MCP Hub, the API Manager Developer Portal exclusively works with MCP Servers — no APIs are available in this mode.
@@ -26,10 +41,10 @@ The Integrated MCP Playground is a visual testing interface in the Developer Por
 Follow the instructions below to use the MCP Playground to test a MCP Server:
 
 !!! prerequisite
-    - You need to have an application subscribed to the MCP Server. For more information, see [Subscribe to a MCP Server](../../ai-gateway/mcp-gateway/subscribe-to-a-mcp-server/).
-    - Obtain an access token for the application. You can use the token endpoint to get a JWT token. For more information, see [Generate an Access Token](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/#step-3-get-an-access-token).
+    - You need to have an application subscribed to the MCP Server. For more information, see [Subscribe to a MCP Server](subscribe-to-a-mcp-server.md).
+    - Obtain an access token for the application. You can use the token endpoint to get a JWT token. For more information, see [Generate an Access Token](../../api-developer-portal/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).
 
-The examples here use the `Petstore` MCP Server, which was created in [Create a MCP Server from an OpenAPI definition](../../ai-gateway/mcp-gateway/create-from-openapi/).
+The examples here use the `Petstore` MCP Server, which was created in [Create a MCP Server from an OpenAPI definition](create-from-openapi.md).
 
 1. Sign in to the WSO2 Developer Portal (`https://<hostname>:9443/devportal`).
 

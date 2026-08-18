@@ -1,3 +1,18 @@
+---
+title: "Scenario 5 - getting the developer community involved"
+description: "Try the Developer Portal community features on a sample API: SDK generation, documentation, ratings, comments, and the API console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario5-developer-community-feature/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario5-developer-community-feature.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario5-developer-community-feature
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Scenario 5 - Getting the Developer Community Involved
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to involve the developer community. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview.md).
@@ -21,7 +36,7 @@ This demo setup contains a sample API to demonstrate these features. Log in to t
 
 ![Community features](../../assets/img/tutorials/scenarios/dev-portal-community.png)
 
-You could generate client side SDKs for different programming languages. You could find more information on this in our [official documentation](../../consume/generating-sdks/write-a-client-application-using-the-sdk/).  We have provided a sample Java program created using the Java SDK downloaded from the **QuantisTrainAPI**.
+You could generate client side SDKs for different programming languages. You could find more information on this in our [official documentation](../../api-developer-portal/generating-sdks/write-a-client-application-using-the-sdk.md).  We have provided a sample Java program created using the Java SDK downloaded from the **QuantisTrainAPI**.
 
 1. Subscribe to the **QuantisTrainAPI** using an application and generate an access token.
 2. Go to the `/resources` location and invoke the API using the `sdk-demo-1.0.0.jar` with the access token

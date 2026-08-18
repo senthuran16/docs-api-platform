@@ -1,3 +1,18 @@
+---
+title: "CI/CD for APIs - overview"
+description: "CI/CD for APIs in WSO2 API Manager: the parties involved, version control as the single source of truth, and where apictl fits in."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/ci-cd-with-wso2-api-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/ci-cd-with-wso2-api-management.md
+tags:
+  - api-manager
+  - apiops
+  - cli
+  - ci-cd-with-wso2-api-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # CI/CD for APIs - Overview
 
 APIs have become a norm for connecting apps, services, and data. An organization can have multiple environments, such as development, testing, QA, staging, and production, each with its own instance of API Managers. Therefore, the APIs need to be available in each environment after developers specify the required conditions. Manually promoting APIs between environments is a tedious, error-prone, and time-consuming task. This drastically reduces an organization’s productivity.
@@ -18,5 +33,5 @@ API Developers and Publishers work with a version control system, which acts as 
 
 See the following topics for instructions:
 
--   [Building a CI/CD Pipeline for APIs using the CLI](../../install-and-setup/setup/api-controller/cicd-using-cli)
--   [Building a CI/CD Pipeline for APIs using Jenkins](../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach)
+-   [Building a CI/CD Pipeline for APIs using the CLI](cicd-using-cli.md)
+-   [Building a CI/CD Pipeline for APIs using Jenkins](building-jenkins-ci-cd-pipeline.md)

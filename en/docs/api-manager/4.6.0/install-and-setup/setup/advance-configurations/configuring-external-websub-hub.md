@@ -1,3 +1,18 @@
+---
+title: "Configuring an external WebSub hub"
+description: "Delegate WebSub hub duties to an external hub in WSO2 API Manager, with topic naming, distributed deployment, and verification."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/advance-configurations/configuring-external-websub-hub/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/advance-configurations/configuring-external-websub-hub.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - advance-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configuring an External WebSub Hub
 
 By default, WSO2 API Manager handles the WebSub protocol (topic registration, subscription, unsubscription, and content publishing) inside the Universal Gateway itself. This works well for most deployments, but there are situations where you may want to delegate the hub responsibility to a dedicated external WebSub hub — for example, to reuse an existing hub that already serves other systems, to scale hub traffic independently of API traffic, or to take advantage of hub-specific features such as guaranteed deliveries.
@@ -85,7 +100,7 @@ For example, the publish request to the `commits` topic of the `/repo-watcher/1.
 ## Verifying the configuration
 
 1. Add the `[apim.external_websub_hub]` block to `deployment.toml` on the Control Plane and restart the node.
-2. [Create a WebSub API](../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api/) with one or more topics from the Publisher and deploy a new revision to a Gateway environment.
+2. [Create a WebSub API](../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api.md) with one or more topics from the Publisher and deploy a new revision to a Gateway environment.
 3. Send a subscription request against the API's callback endpoint (`POST /<context>/<version>?hub.mode=subscribe&hub.topic=<topic>&hub.callback=<callback-url>`) and confirm that:
     - Your external hub receives the subscription request.
     - The subscriber receives the WebSub verification callback from the external hub.
@@ -97,6 +112,6 @@ Remove (or comment out) the `[apim.external_websub_hub]` block from `deployment.
 
 ## See also
 
-- [Create a WebSub/WebHook API](../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api/)
-- [Test a WebSub/WebHook API](../../../api-design-manage/design/create-api/create-streaming-api/test-a-websub-api/)
-- [Extend WebSub Topic Matching](../../../reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching/)
+- [Create a WebSub/WebHook API](../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api.md)
+- [Test a WebSub/WebHook API](../../../api-design-manage/design/create-api/create-streaming-api/test-a-websub-api.md)
+- [Extend WebSub Topic Matching](../../../reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching.md)

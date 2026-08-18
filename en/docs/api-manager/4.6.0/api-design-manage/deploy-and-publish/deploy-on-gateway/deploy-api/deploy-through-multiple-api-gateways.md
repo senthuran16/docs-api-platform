@@ -1,3 +1,18 @@
+---
+title: "Publish through multiple API Gateways"
+description: "Configure a control plane with separate production and sandbox gateway nodes, then deploy a single API through both gateway environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md
+tags:
+  - api-manager
+  - api-design-manage
+  - deploy-and-publish
+  - deploy-on-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Publish Through Multiple API Gateways
 
 If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. This helps you to distribute the API Gateway load to multiple nodes and also gives you some logical separation (e.g., production vs. sandbox) between the APIs in the Developer Portal. When you publish an API through multiple Gateway environments, the APIs in the API Developer Portal will have different server hosts and ports.
@@ -162,7 +177,7 @@ Carry out the following instructions in the **second** and the **third** instanc
 
 4.  Enable JSON Web Token (JWT) if required.
 
-     For instructions, see [Generating JSON Web Token](../../../../api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/).   
+     For instructions, see [Generating JSON Web Token](../../../../api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md).   
      
 5.  Add the public certificate of the private key (that is used for signing the tokens) to the truststore under the `"gateway_certificate_alias"` alias. 
     
@@ -180,7 +195,7 @@ Carry out the following instructions in the **second** and the **third** instanc
     1.  Create a copy of the API-M Gateway node that you just configured. This is the second node of the API-M Gateway cluster.
     2.  Configure a load balancer fronting the two Gateway nodes in your deployment.
                 
-        For instructions, see [Configuring the Proxy Server and the Load Balancer](../../../../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/).
+        For instructions, see [Configuring the Proxy Server and the Load Balancer](../../../../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md).
 
         !!! Note
         

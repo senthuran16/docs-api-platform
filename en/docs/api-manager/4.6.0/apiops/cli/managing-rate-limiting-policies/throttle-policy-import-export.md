@@ -1,3 +1,18 @@
+---
+title: "Managing rate limiting policies"
+description: "List, delete, export, and import application, subscription, advanced, and custom rate limiting policies in an environment with apictl."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/managing-rate-limiting-policies/throttle-policy-import-export/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/managing-rate-limiting-policies/throttle-policy-import-export.md
+tags:
+  - api-manager
+  - apiops
+  - cli
+  - managing-rate-limiting-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Managing Rate Limiting Policies
 
 WSO2 API Controller (apictl) allows the following actions on rate limiting Policies.
@@ -14,8 +29,8 @@ Get rate limiting policies operation allows users to list the available rate lim
 Follow the instructions below to display a list of rate limiting API Policies in an environment using apictl:
 
 1.  Make sure that the WSO2 API Manager (WSO2 API-M) is started and that the relevant version of apictl is set up.   
-     For more information, see [Download and Initialize the apictl](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+     For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller.md#login-to-an-environment).
 3.  Run the corresponding apictl command below to get (list) rate limiting Policies in an environment.
 
     - **Command**
@@ -45,8 +60,8 @@ Follow the instructions below to display a list of rate limiting API Policies in
 Follow the instructions below to delete a rate limiting policy in an environment using apictl:
 
 1.  Make sure that the WSO2 API-M is started and that the corresponding version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller.md#login-to-an-environment).
 3.  Run the corresponding apictl command below to delete a common API Policy in an environment.
 
     -   **Command**
@@ -85,7 +100,7 @@ For more information, see [Download and Initialize the apictl](../../../install-
 
 ## Export/Import rate limiting policies
 
-For more details on exporting and importing rate limiting policies, see the document on [migrating rate limiting policies](../../../install-and-setup/setup/api-controller/managing-rate-limiting-policies/migrating-rate-limiting-policies-to-different-environments/).
+For more details on exporting and importing rate limiting policies, see the document on [migrating rate limiting policies](migrating-rate-limiting-policies-to-different-environments.md).
 
 
 

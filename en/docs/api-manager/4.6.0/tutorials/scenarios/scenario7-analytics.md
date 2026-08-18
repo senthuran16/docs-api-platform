@@ -1,3 +1,18 @@
+---
+title: "Scenario 7 - analytics"
+description: "Connect WSO2 API Manager to Choreo API-M Analytics with an on-prem key, then view API usage and traffic statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario7-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario7-analytics.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario7-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Scenario 7 - Analytics
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to set up and view analytics for an API. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview.md).
@@ -15,7 +30,7 @@ Choreo API-M Analytics can be used to fulfill the stats and analytics needs of t
 ## Step 1: Set up analytics
 
 !!! info "Before you begin..."
-    You need to be a registered user to follow the steps below. Refer the [Analytics Getting Started Guide](../../monitoring/api-analytics/choreo-analytics/getting-started-guide/) for instructions.
+    You need to be a registered user to follow the steps below. Refer the [Analytics Getting Started Guide](../../monitoring/api-analytics/choreo-analytics/getting-started-guide.md) for instructions.
 
 To configure analytics, 
 

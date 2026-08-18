@@ -1,3 +1,17 @@
+---
+title: "Federate API deployment to AWS API Gateway"
+description: "Use WSO2 API Manager as the control plane to deploy APIs to AWS API Gateway, with a Lambda authorizer for OAuth 2.0 security."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/deploying-apis-to-federated-gateways-with-wso2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/deploying-apis-to-federated-gateways-with-wso2.md
+tags:
+  - api-manager
+  - tutorials
+  - deploying-apis-to-federated-gateways-with-wso2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Federated API Gateway Deployment: Using WSO2 API Manager to Federate API Deployment to AWS API Gateway
 
 ## Introduction
@@ -101,7 +115,7 @@ We will now proceed to register the AWS API Gateway as a federated gateway withi
 
 ## Register AWS API Gateway as a Federated Gateway in WSO2 API Manager
 
-1. Start the WSO2 API Control Plane (ACP) as explained in [Single CP for Multiple Gateways](https://apim.docs.wso2.com/en/latest/tutorials/single-control-plane-for-multiple-gateways/#setting-up-the-api-control-plane-and-universal-gateway).
+1. Start the WSO2 API Control Plane (ACP) as explained in [Single CP for Multiple Gateways](single-control-plane-for-multiple-gateways.md#setting-up-the-api-control-plane-and-universal-gateway).
 2. Sign in to the Admin Portal via `https://localhost:9444/admin`.
 3. Navigate to the **Gateways** section and click **Add Gateway Environment**.
 
@@ -162,7 +176,7 @@ Main steps involved are:
 
 In order to enable security for the created API, you need to configure a third party key manager which runs in a cloud environment first.
 
-Follow this [guide](https://apim.docs.wso2.com/en/latest/administer/key-managers/configure-auth0-connector/) to configure and setup Auth0 as the third party key manager in the setup.
+Follow this [guide](../api-security/key-management/third-party-key-managers/configure-auth0-connector.md) to configure and setup Auth0 as the third party key manager in the setup.
 
 ## Configure Security for the API
 
@@ -203,7 +217,7 @@ Copy and paste the following policy definition.
 }
 ```
 
-![](../assets/img/tutorials/federated-gw/policy-definition.png)
+![AWS Specify permissions JSON policy editor with an Allow statement for iam:GetRole and iam:PassRole](../assets/img/tutorials/federated-gw/policy-definition.png)
 
 Click **Next**. Provide **AWSLambda_CustomPolicy** as the policy name and click **Create policy**.
 
@@ -251,7 +265,7 @@ Configure a Lambda function in AWS to validate tokens generated from the IDP con
     Use Case : Lambda
     ```
 
-    ![](../assets/img/tutorials/federated-gw/trusted-entity.png)
+    ![AWS Select trusted entity screen with AWS service selected and Lambda chosen as the use case](../assets/img/tutorials/federated-gw/trusted-entity.png)
 
 11. Click **Next**.
 12. Under the **Add Permissions** stage attach **AWSLambdaRole** permission. Optionally attach **AWSLambdaBasicExecutionRole** if you wish to enable cloudwatch logs for the lambda function.
@@ -278,7 +292,7 @@ Configure a Lambda function in AWS to validate tokens generated from the IDP con
     }
     ```
 
-    ![](../assets/img/tutorials/federated-gw/trust-policy.png)
+    ![IAM role Trust relationships tab showing a policy that lets lambda.amazonaws.com and apigateway.amazonaws.com call sts:AssumeRole](../assets/img/tutorials/federated-gw/trust-policy.png)
 
 14. In the WSO2 API Publisher portal, navigate to the **Policies** section of the **SampleAPI** created in the above step and move to the API level policies tab.
 15. Attach the AWS OAuth policy from the Request policies tab.

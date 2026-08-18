@@ -1,3 +1,18 @@
+---
+title: "Secure APIs with API keys"
+description: "Secure an API with API keys: generate the key in the Developer Portal, invoke the API, and restrict the key by IP address or HTTP referrer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/runtime/api-authentication/secure-apis-using-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/runtime/api-authentication/secure-apis-using-api-keys.md
+tags:
+  - api-manager
+  - api-security
+  - runtime
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Secure APIs with API Keys
 
 An API key is the simplest form of application-based security that you can configure for an API. You can obtain an API key for a client application from WSO2 API Manager's Developer Portal, via the UI, or via REST APIs. Thereafter, the client application can use the API key to invoke the APIs that are secured with the API key security scheme.
@@ -10,7 +25,7 @@ When an API is invoked specifying an API key as the authentication method, the A
 - Subscription validation
 
 !!! info
-...in the WSO2 API Manager developer portal without direct key manager communication, cannot be directly forwarded to the backend through the API Gateway for API requests. To grant backends access to user, application specific attributes during API calls, enable backend JWT generation. For detailed instructions on how to enable and utilize backend JWT generation for passing end-user attributes to the backend via the API Gateway, refer to [Passing End-User Attributes to the Backend via API Gateway](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/).
+...in the WSO2 API Manager developer portal without direct key manager communication, cannot be directly forwarded to the backend through the API Gateway for API requests. To grant backends access to user, application specific attributes during API calls, enable backend JWT generation. For detailed instructions on how to enable and utilize backend JWT generation for passing end-user attributes to the backend via the API Gateway, refer to [Passing End-User Attributes to the Backend via API Gateway](../../../api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md).
 
 ## Prerequisites for API keys
 
@@ -58,11 +73,11 @@ Follow the instructions below to use API key Authentication in WSO2 API Manager.
 
 Create, publish and deploy an API that is secured with the API key security scheme as the application-level security. Let's work with the sample app for this purpose.
 
-{!includes/design/create-publish-api.md!}
+--8<-- "api-manager/4.6.0/includes/design/create-publish-api.md"
 
 ### Step 2 - Generate the API Key
 
-{!includes/design/generate-api-key.md!}
+--8<-- "api-manager/4.6.0/includes/design/generate-api-key.md"
 
 ### Step 3 - Invoke the API
 
@@ -151,7 +166,7 @@ By default, the alias name is `gateway_certificate_alias`. Follow the instructio
 
 ### Configuring Custom Keystores
 
-You can also configure and use a custom Keystore in API Manager to sign the API Keys. Given below is a sample TOML configuration to configure a custom Keystore in the API Manager server. For more information, see [Configuration Catalog](../../../reference/config-catalog/).
+You can also configure and use a custom Keystore in API Manager to sign the API Keys. Given below is a sample TOML configuration to configure a custom Keystore in the API Manager server. For more information, see [Configuration Catalog](../../../reference/config-catalog.md).
 
 To configure custom keystores, add the following to the `<API-M_HOME>/repository/conf/deployment.toml` file.
 

@@ -1,10 +1,24 @@
+---
+title: "FAQ"
+description: "Answers to common WSO2 API Manager questions on licensing, ports, installation, user stores, security, throttling, and deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/faq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/faq.md
+tags:
+  - api-manager
+  - reference
+  - faq
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "faq"
+---
+
 # FAQ
 
 ## About WSO2 API Manager
 
 ### What is WSO2 API Manager?
 
-WSO2 API Manager is a complete solution for creating, publishing and managing all aspects of an API and its life cycle. For more information, see the [introduction](../getting-started/overview/).
+WSO2 API Manager is a complete solution for creating, publishing and managing all aspects of an API and its life cycle. For more information, see the [introduction](../get-started/overview.md).
 
 ### What is the open source license of the API Manager?
 
@@ -16,11 +30,11 @@ It is completely supported from evaluation to production. For more details, see 
 
 ### What are the default ports opened in the API Manager?
 
-For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports/#api-manager).
+For a list of all default ports available, see [Default Ports of WSO2 Products](default-product-ports.md#api-m-ports).
 
 ### What are the technologies used underneath WSO2 API Manager?
 
-The API Manager is built on top of [WSO2 Carbon](https://wso2.com/products/carbon/), an OSGi based components framework for SOA. For more details, see [API Manager components](../getting-started/key-concepts/).
+The API Manager is built on top of WSO2 Carbon, an OSGi based components framework for SOA. For more details, see [API Manager components](../get-started/key-concepts.md).
 
 ### Can I get involved in API-M development activities?
 
@@ -48,7 +62,7 @@ Copy any third-party JARs to `<API-M_HOME>/repository/components/lib` directory 
 
 ### Can I connect the API Manager directly to an LDAP or Active Directory where corporate identities are stored?
 
-Yes, you can configure the API Manager with multiple user stores. For more details, see [Configuring User Stores](../administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/).
+Yes, you can configure the API Manager with multiple user stores. For more details, see [Configuring User Stores](../administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores.md).
 
 ### Can I extend the management console UI to add custom UIs?
 
@@ -68,7 +82,7 @@ The memory allocation settings are stored in the `<API-M_HOME>/bin/api-manager.s
 
 ### What are the different deployment patterns and clustering configurations of the API Manager?
 
-See [Deploying WSO2 API Manager](../install-and-setup/setup/deployment-patterns/).
+See [Deploying WSO2 API Manager](../get-started/deployment-patterns.md).
 
 ### What are the container technologies that are supported in API Manager?
 
@@ -91,13 +105,13 @@ To enable using your email (e.g., `admin@wso2.com`) as your username when deploy
 username="admin!wso2.com!carbon.super"
 ```
 
-For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login).
+For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login).
 
 ------------------------------------------------------------------------
 
 ### How can I set up a reverse proxy server to pass server requests?
 
-See [Configuring the Proxy Server and the Load Balancer](../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/).
+See [Configuring the Proxy Server and the Load Balancer](../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md).
 
 ------------------------------------------------------------------------
 
@@ -173,7 +187,7 @@ You can enable centralized authentication using a WSO2 Identity Server based [se
 
 ### How can I manage the API permissions/visibility?
 
-To set visibility of the API only to selected user roles in the server, see [API Visibility](../manage-apis/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/).
+To set visibility of the API only to selected user roles in the server, see [API Visibility](../api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md).
 
 ### How can I add security policies (UT, XACML, etc.) for the services?
 
@@ -181,11 +195,11 @@ This should be done in the backend services in the Application Server or WSO2 ES
 
 ### How can I enable self signup to the Developer Portal ?
 
-See [how to enable self signup](../consume/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/).
+See [how to enable self signup](customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md).
 
 ### How can I disable self signup to the Developer Portal ? I want to engage my own approval mechanism.
 
-To disable the self signup capability, open the API-M management console and click the **Resources &gt; Browse** menu. The registry opens. Navigate to the `/_system/governance/apimgt/applicationdata/sign-up-config.xml` file and set the `<SelfSignUp><Enabled>` element to false. To engage your own signup process, see [Adding a User Signup Workflow](../develop/customizations/adding-a-user-signup-workflow/).
+To disable the self signup capability, open the API-M management console and click the **Resources &gt; Browse** menu. The registry opens. Navigate to the `/_system/governance/apimgt/applicationdata/sign-up-config.xml` file and set the `<SelfSignUp><Enabled>` element to false. To engage your own signup process, see [Adding a User Signup Workflow](customize-product/customizations/adding-a-user-signup-workflow.md).
 
 ### Is there a way to lock a user's account after a certain number of failed login attempts to the Developer Portal ?
 
@@ -227,7 +241,7 @@ Go to the **Resources &gt; Browse** menu in the management console to open the r
 
 ### How can I manage session timeouts for the management console?
 
-To configure session timeouts, see [Configuring the session time-out](../install-and-setup/install/installing-the-product/running-the-api-m/#configuring-the-session-time-out).
+To configure session timeouts, see [Configuring the session time-out](../install-and-setup/setup/security/securing-api-m-web-portals.md#configuring-session-time-out).
 
 ### How can I add authentication headers to messages going out of the API Gateway to the backend?
 
@@ -250,7 +264,7 @@ password = "<![CDATA[your-password]]>"
 
 ### How can I protect my product server from security attacks caused by weak ciphers?
 
-You can protect your server from attacks such as the Logjam attack (Man-in-the-Middle attack) by disabling weak ciphers. For more details, see [Disable weak ciphers]({{base}}/install-and-setup/setup/security/configuring-transport-level-security/#disabling-weak-ciphers) in the WSO2 Admin Guide.
+You can protect your server from attacks such as the Logjam attack (Man-in-the-Middle attack) by disabling weak ciphers. For more details, see [Disable weak ciphers](../install-and-setup/setup/security/configuring-transport-level-security.md#disabling-weak-ciphers) in the WSO2 Admin Guide.
 
 ### How can I distinguish between expired and invalid tokens in an authentication failure scenario?
 
@@ -304,6 +318,8 @@ You have to create and add a certificate for the IP/domain name in order to over
     In the following instructions, assume that you are attempting to add a self-signed certificate for the domain 'foo.com'.
 
 
+<a name="FAQ-Step1-CreateaselfsignedJavaKeyStorefileandincludeyourdomainastheCN"></a>
+
 **Step 1 - Create a self-signed Java KeyStore file and include your domain as the Common Name (CN)**
 
 1.  Open a terminal and type the following command to generate a KeyStore.
@@ -311,6 +327,8 @@ You have to create and add a certificate for the IP/domain name in order to over
     ``` java
     keytool -genkey -alias test.foo.com -keyalg RSA -keystore foo.jks -keysize 2048
     ```
+
+    <a name="FAQ-Keystorepassword"></a>
 
 2.  Specify a preferred KeyStore password when prompted.
 
@@ -405,7 +423,7 @@ This parameter verifies the hostname of the certificate of a server when the API
 
 ### When I add new users or roles, I get an error message stating that the entered user name is not conforming to policy. What should I do?
 
-This is because your user name or password length or any other parameter is not conforming to the `RegEx` configurations of the user store. See [Managing Users and Roles](../administer/managing-users-and-roles/introduction-to-user-management/).
+This is because your user name or password length or any other parameter is not conforming to the `RegEx` configurations of the user store. See [Managing Users and Roles](../administer/managing-users-and-roles/introduction-to-user-management.md).
 
 ### When I call a REST API, a lot of temporary files are created in my server and takes up a lot of space. What should I do?
 
@@ -427,12 +445,12 @@ There might be multiple configuration context objects created per API invocation
 The Gateway Failures UI error occurs when the `service_url`, `username`, `password` and/or `https_endpoint/http_endpoint` is incorrect. This can be rectified by checking and correcting the gateway configurations under `[[apim.gateway.environment]]` in the `<API-M_HOME>/repository/conf/deployment.toml` file.
 
 !!! tip
-    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../learn/design-api/publish-api/publish-through-multiple-api-gateways) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
+    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
 
 
 ### How can I capture the state of a system?
 
-At the time of an error, you can use a tool called Carbon Dump (`carbondump.sh`) to collect all the necessary data (i.e., heap and thread dumps) from a running WSO2 API Manager instance in order to carryout a head dump and thread stack analysis. For more information on using this tool, see [Capturing the state of the system](../reference/troubleshooting/admin-troubleshooting-in-production-environments/#capturing-the-state-of-the-system) in the Administration guide.
+At the time of an error, you can use a tool called Carbon Dump (`carbondump.sh`) to collect all the necessary data (i.e., heap and thread dumps) from a running WSO2 API Manager instance in order to carryout a head dump and thread stack analysis. For more information on using this tool, see [Capturing the state of the system](troubleshooting/admin-troubleshooting-in-production-environments.md#capturing-the-state-of-the-system) in the Administration guide.
 
 ### How can I clean up the REG\_LOG table?
 

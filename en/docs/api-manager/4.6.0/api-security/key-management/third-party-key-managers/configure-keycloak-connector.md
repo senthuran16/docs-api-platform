@@ -1,3 +1,18 @@
+---
+title: "Configure Keycloak as a key manager"
+description: "Configure Keycloak as a third-party Key Manager in WSO2 API Manager: create the client and client scope, register the connector, and generate keys."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/third-party-key-managers/configure-keycloak-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/third-party-key-managers/configure-keycloak-connector.md
+tags:
+  - api-manager
+  - api-security
+  - key-management
+  - third-party-key-managers
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configure Keycloak as a Key Manager
 
 WSO2 API Manager supports multiple Key Managers. As a result, WSO2 API Manager is prepacked with an inbuilt resident Key Manager and with the use of connectors it is capable of supporting any authorization server as a Key Manager.
@@ -18,6 +33,8 @@ Follow the instructions given below to configure Keycloak as a third-party Key M
     !!! Note
         The documentation provides steps to configure the KeyCloak version 24.0.1. If you are using a different version, the screenshots could be different. Moreover, The steps which have been provided is to a local docker image of Keycloak. If you are using a different setup, the URL may vary.
     
+    <a name="step12"></a>
+
 2. Click **Client Scopes** and create client scope named "default".
 
      [![add default client scope](../../../assets/img/administer/keycloak-add-client-scope-default.png)](../../../assets/img/administer/keycloak-add-client-scope-default.png)

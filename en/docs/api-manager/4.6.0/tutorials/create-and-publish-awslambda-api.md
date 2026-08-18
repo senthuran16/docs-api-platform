@@ -1,3 +1,17 @@
+---
+title: "Create and publish an AWS lambda API"
+description: "Create a REST API backed by AWS Lambda functions: add an AWS Lambda endpoint, map function ARNs to resources, and publish."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/create-and-publish-awslambda-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/create-and-publish-awslambda-api.md
+tags:
+  - api-manager
+  - tutorials
+  - create-and-publish-awslambda-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create and Publish an AWS Lambda API
 
 When using AWS Lambda, you can execute your code without having to manage or provision servers. For more information on AWS Lambda, see [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html). WSO2 API Manager has integrated the support for invoking AWS Lambda functions through WSO2 API Gateway to get the benefits of AWS Lambda. Follow the steps below to create and publish an AWS Lambda API.
@@ -157,7 +171,7 @@ You have successfully published the AWS Lambda API. Try invoking the Lambda API 
 
     You can fine-tune the underlying HTTP connection pool used by the **AWS Lambda client** to optimize performance under high load. 
 
-    To configure the connection pooling, add the following configuration to the <code>&lt;API-M_HOME&gt;/repository/conf/deployment.toml</code> file.  For more information, see  [Configuration Catalog](../reference/config-catalog/).
+    To configure the connection pooling, add the following configuration to the <code>&lt;API-M_HOME&gt;/repository/conf/deployment.toml</code> file.  For more information, see  [Configuration Catalog](../reference/config-catalog.md).
 
 
 
@@ -230,7 +244,7 @@ You have successfully published the AWS Lambda API. Try invoking the Lambda API 
 
     When enabled, the API Manager parses the Lambda response as an [AWS API Gateway Lambda proxy integration response](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-output-format) envelope and maps the `statusCode`, `headers`, `multiValueHeaders`, `body`, and `isBase64Encoded` fields to the HTTP response.
 
-    To enable proxy response mapping, add the following configuration to the <code>&lt;API-M_HOME&gt;/repository/conf/deployment.toml</code> file. For more information, see [Configuration Catalog](../reference/config-catalog/).
+    To enable proxy response mapping, add the following configuration to the <code>&lt;API-M_HOME&gt;/repository/conf/deployment.toml</code> file. For more information, see [Configuration Catalog](../reference/config-catalog.md).
 
     ```toml
     [apim.aws_lambda]
@@ -248,7 +262,7 @@ You have successfully published the AWS Lambda API. Try invoking the Lambda API 
 
     You can configure the maximum number of retry attempts for AWS Lambda invocations. When not configured, the AWS SDK default retry behavior is preserved.
 
-    To configure the retry behavior, add the following configuration to the <code>&lt;API-M_HOME&gt;/repository/conf/deployment.toml</code> file. For more information, see [Configuration Catalog](../reference/config-catalog/).
+    To configure the retry behavior, add the following configuration to the <code>&lt;API-M_HOME&gt;/repository/conf/deployment.toml</code> file. For more information, see [Configuration Catalog](../reference/config-catalog.md).
 
     ```toml
     [apim.aws_lambda.sdk]

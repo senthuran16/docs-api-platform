@@ -1,3 +1,18 @@
+---
+title: "Manage subscription policies"
+description: "Add subscription-level rate limiting tiers, or business plans, in WSO2 API Manager, including GraphQL and streaming API limits."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/rate-limiting/manage-subscription-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/rate-limiting/manage-subscription-policies.md
+tags:
+  - api-manager
+  - administer
+  - rate-limiting
+  - subscriptions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Manage Subscription Policies (Business Plans)
 
 Subscription-level rate limiting policies (Business Plans) are used to limit the number of requests an application can make to an API during a given period of time.
@@ -53,11 +68,11 @@ The system includes the following default tiers:
      | Request Count/Request Bandwidth/Event Count | The maximum number of requests/maximum bandwidth/maximum events allowed to the API within the time period given in the next field.|
      | Unit Time                       | Time within which the number of requests given in the previous field is allowed to the API. This can be defined in minutes, hours, days, weeks, months or years.                   |
      | Burst Control (Rate Limiting)   | You can define the request count/bandwidth per unit time on an addition layer by using rate limiting. This is usually a smaller number of requests/bandwidth for a shorter time span than what is enforced in the above fields. For instance, if there's a subscription level policy enforced over a long period, you may not want users to consume the entire quota within a short time span. Enforcing a rate limit protects the backend from sudden request bursts and controls the usage at a subscription and API level. |
-     | GraphQL                         | Provide the [maximum complexity](../../manage-apis/design/rate-limiting/graphql-api/query-complexity-limitation/) and [maximum depth values](../../manage-apis/design/rate-limiting/graphql-api/query-depth-limitation/) for GraphQL APIs using this policy.|
+     | GraphQL                         | Provide the [maximum complexity](../../api-design-manage/design/rate-limiting/graphql-api/query-complexity-analysis.md) and [maximum depth values](../../api-design-manage/design/rate-limiting/graphql-api/query-depth-analysis.md) for GraphQL APIs using this policy.|
      | WebHooks                        | Maximum number of WebHooks allowed for a WebHooks API using this policy. |
      | Stop On Quota Reach             | This indicates the action to be taken when a user goes beyond the allocated quota. If the check box is selected, the user's requests are dropped and an error response (HTTP Status code 429) is given. If the check box is cleared, the requests are allowed to pass through.             |
      | Billing Plan                    | This field only makes sense if you have API Monetization enabled. The available **billing plans** are **Free, Commercial, and Freemium**. An API is tagged/labelled as Free, Paid, or Freemium depending on its subscription tiers(e.g., Unlimited, Gold, etc.), which are the tiers selected when creating an API. |
-     | Custom Attributes               | You can choose to display additional information about tiers using custom attributes during custom implementations. The main objective of these fields are to provide more information regarding the tier to Application Developers at the time of API subscription. An example usage of custom attributes is API Monetization. See [Enabling Monetization of APIs-](../../monitoring/api-monetization/monetizing-an-api/) for more information on practical usage of custom attributes in the subscription tier.      |
+     | Custom Attributes               | You can choose to display additional information about tiers using custom attributes during custom implementations. The main objective of these fields are to provide more information regarding the tier to Application Developers at the time of API subscription. An example usage of custom attributes is API Monetization. See [Enabling Monetization of APIs-](../../monitoring/api-monetization/monetizing-an-api.md) for more information on practical usage of custom attributes in the subscription tier.      |
      | Permissions                     | You can allow or deny permission for specific roles. Once permission is denied to a role, the new subscription tier that you add here will not be available to that role in the Developer Portal.          |
     
     <div class="admonition info">
@@ -67,7 +82,7 @@ The system includes the following default tiers:
      <li><b>Free</b> - If all subscription tiers are defined as Free, the API uses the **Free billing plan** and the API is labeled as Free in the Developer Portal.</li>
      <li><b>Paid</b> - If all subscription tiers are defined as Paid, the API uses the **Commercial billing plan** and the API is labeled as Paid in the Developer Portal.</li>
      <li><b>Freemium</b> - If the API has a combination of Free and Paid subscription tiers, the API uses the **Freemium billing plan** and the API is labeled as Freemium in the Developer Portal.</li></ul>
-     <p>This labeling happens on the Developer Portal only if monetization has been enabled. For information on how to enable monetization and how to tag subscription tiers, see [Configuring API Monetization Category Labels](../../monitoring/api-monetization/configuring-api-monetization-category-labels/).</p></div>
+     <p>This labeling happens on the Developer Portal only if monetization has been enabled. For information on how to enable monetization and how to tag subscription tiers, see [Configuring API Monetization Category Labels](../../monitoring/api-monetization/configuring-api-monetization-category-labels.md).</p></div>
 
 You have now successfully added a new subscription-level rate limiting policy.
 

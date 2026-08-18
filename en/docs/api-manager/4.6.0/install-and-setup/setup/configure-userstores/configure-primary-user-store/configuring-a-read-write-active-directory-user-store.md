@@ -1,3 +1,18 @@
+---
+title: "Configuring a read-write Active Directory user store"
+description: "Set an external Active Directory as the primary read-write user store of WSO2 API Manager, with the user_store properties it accepts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/configure-userstores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/configure-userstores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - configure-userstores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 #Configuring a Read-Write Active Directory User Store
 
 Follow the given steps to configure an external Active Directory as the primary user store:
@@ -138,7 +153,7 @@ Given below is a sample configuration for the external read/write user store in 
 
         Although using the user store manager does not depend on this property, you must consider enabling this if there are any performance issues in your production environment. Enabling this property affects the performance when the user logs in. This depends on the users, roles and permission stats.
 
-    -   If you are using `ldaps` (secured LDAP) to connect to the Active Directory as shown in the example below, you need to import the certificate of Active Directory to the `client-truststore.jks` of the WSO2 product. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see [Using Asymmetric Encryption](../../../../install-and-setup/setup/security/creating_keystores) .
+    -   If you are using `ldaps` (secured LDAP) to connect to the Active Directory as shown in the example below, you need to import the certificate of Active Directory to the `client-truststore.jks` of the WSO2 product. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see [Using Asymmetric Encryption](../../security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md) .
 
         ``` toml
         ConnectionURL="ldaps://10.100.1.100:636"
@@ -201,7 +216,7 @@ Given below is a sample configuration for the external read/write user store in 
         
 ### Step 2: Updating the system administrator
 
-The **admin** user is the super tenant that will be able to manage all other users, roles and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the Active Directory user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the user store. For more information on setting up the [system administrator](../../../../administer/managing-users-and-roles/configuring-the-system-administrator) and the [authorization manager](../../../../administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager.md).
+The **admin** user is the super tenant that will be able to manage all other users, roles and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the Active Directory user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the user store. For more information on setting up the [system administrator](#step-2-updating-the-system-administrator) and the [authorization manager](../../../../administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager.md).
 
 -   These two alternative configurations can be done as explained below.
 

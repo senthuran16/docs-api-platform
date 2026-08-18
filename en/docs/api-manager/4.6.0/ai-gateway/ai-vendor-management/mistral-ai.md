@@ -1,3 +1,18 @@
+---
+title: "Mistral AI"
+description: "Configure Mistral as an AI service provider in the WSO2 API Manager Admin Portal and manage the models available to AI APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/mistral-ai/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/mistral-ai.md
+tags:
+  - api-manager
+  - ai-gateway
+  - ai-vendor-management
+  - mistral-ai
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Mistral AI
 
 Mistral AI is a **default AI Service Provider** in WSO2 API Manager that provides high-performance language models through their API. For more information about Mistral AI, see the [Mistral AI Documentation](https://docs.mistral.ai/).
@@ -85,7 +100,7 @@ The following configurations can be updated:
 
 - By default, the following models are included: `mistral-small-latest`, `mistral-medium`, and `open-mistral-7b`.
 - To add available models supported by MistralAI, type the model name and press enter. 
-- This enables model-based load balancing and failover capabilities. For more details, see [Multi-Model Routing Overview](../../ai-gateway/multi-model-routing/overview/).
+- This enables model-based load balancing and failover capabilities. For more details, see [Multi-Model Routing Overview](../multi-model-routing/overview.md).
 
 
 ### Step 3: Save Configuration

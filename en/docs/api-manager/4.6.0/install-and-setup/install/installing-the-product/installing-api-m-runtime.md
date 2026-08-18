@@ -1,3 +1,18 @@
+---
+title: "Installing the API Manager runtime"
+description: "Download and extract the WSO2 API Manager distribution, set JAVA_HOME, and pass system properties to the runtime before starting it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installing-the-product/installing-api-m-runtime/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installing-the-product/installing-api-m-runtime.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Installing the API Manager Runtime
 
 Follow the steps given below to install the WSO2 API Manager runtime.
@@ -13,7 +28,7 @@ Java Development Kit (JDK) is essential to run the product.
 2.  Extract the archive file to a dedicated directory for the API Manager, which will hereafter be referred to as `<API-M_HOME>`.
 
 !!! note
-    If you want to install and setup the **Enterprise package** of WSO2 API Manager, download the package from the [WSO2 API Manager website](https://wso2.com/api-manager/) and follow the instructions in [Configure a Distributed API-M Deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/) to setup a simple scalable deployment of WSO2 API Manager.
+    If you want to install and setup the **Enterprise package** of WSO2 API Manager, download the package from the [WSO2 API Manager website](https://wso2.com/api-manager/) and follow the instructions in [Configure a Distributed API-M Deployment](../../setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) to setup a simple scalable deployment of WSO2 API Manager.
 
 ## Setting up JAVA_HOME
 

@@ -1,3 +1,18 @@
+---
+title: "Error handling"
+description: "Default fault sequences and the error codes returned by API handlers, sequences, and transports, plus how to customize error messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/troubleshooting/error-handling.md
+tags:
+  - api-manager
+  - reference
+  - troubleshooting
+  - error-handling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "reference"
+---
+
 # Error Handling
 
 When errors/exceptions occur in the system, the API Manager throws JSON-based error responses to the client by default. 
@@ -323,7 +338,7 @@ Therefore,
 Error code = 101504 + 3 = 101507
 
 These Transport error codes are used in [Advanced Configurations of
-Endpoints](../../manage-apis/design/endpoints/endpoint-types/)
+Endpoints](../../api-design-manage/design/endpoints/endpoint-types.md)
 .
 
 ### Custom error messages

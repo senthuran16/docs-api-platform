@@ -1,3 +1,18 @@
+---
+title: "Adding a Non-Blocking send operation"
+description: "Build a mediation policy that removes the ClientApiNonBlocking property before the Send mediator so large VFS file transfers use a single thread."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/policies/adding-a-non-blocking-send-operation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/policies/adding-a-non-blocking-send-operation.md
+tags:
+  - api-manager
+  - api-gateway
+  - policies
+  - adding-a-non-blocking-send-operation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Adding a Non-Blocking Send Operation
 
 In this example, the `Send` mediator in a proxy service using the VFS transport is transferring a file to a VFS endpoint. 
@@ -21,4 +36,4 @@ Let's create a new policy using the example provided below. Go ahead and create 
     </sequence>
     ```
 
-Let's assume that the policy file that you created by considering the example above is `addNonBlockingSend.xml`. We will next create a policy using this policy file. You can refer to [Create a Policy](../../api-design-manage/design/api-policies/create-policy/) to learn more about how to achieve this. When creating the policy, make sure to only select the `Request` flow when filling out the general details of the create policy form. Thus created policy can then be attached to the request flow of any API operation (refer [Attach Policies](../../api-design-manage/design/api-policies/attach-policy/) for further details).
+Let's assume that the policy file that you created by considering the example above is `addNonBlockingSend.xml`. We will next create a policy using this policy file. You can refer to [Create a Policy](../../api-design-manage/design/api-policies/create-policy.md) to learn more about how to achieve this. When creating the policy, make sure to only select the `Request` flow when filling out the general details of the create policy form. Thus created policy can then be attached to the request flow of any API operation (refer [Attach Policies](../../api-design-manage/design/api-policies/attach-policy.md) for further details).

@@ -1,3 +1,18 @@
+---
+title: "Deploying API-M on Kubernetes using Helm resources"
+description: "Deploy WSO2 API Manager on Kubernetes with the wso2/helm-apim Helm resources, from cluster prerequisites to reaching the portals."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/deploying-api-manager-with-kubernetes-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/deploying-api-manager-with-kubernetes-resources.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - deploying-api-manager-with-kubernetes-resources
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Deploying API-M on Kubernetes using Helm Resources
 
 Follow the instructions below to use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M).
@@ -73,4 +88,4 @@ Follow the instructions below to use Kubernetes (K8s) and Helm resources for con
 !!! note
     You can read the [README guide](https://github.com/wso2/helm-apim/tree/all-in-one-4.6.0-1/all-in-one/README.md) of WSO2 API Manager Git repository for further details on other dependencies and configurations.
 
-For different deployment patterns, see the deployment configurations with regard to the [Advanced Deployment Patterns](../../install-and-setup/setup/deployment-overview/).
+For different deployment patterns, see the deployment configurations with regard to the [Advanced Deployment Patterns](../../get-started/deployment-patterns.md).

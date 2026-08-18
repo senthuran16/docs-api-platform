@@ -39,7 +39,7 @@ import collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from links_lib import (  # noqa: E402
     url_base, page_id, slug, harvest_anchors, resolve_candidates,
-    rewrite_target, is_raw_html,
+    rewrite_target, is_raw_html, renders_anchors_clientside,
 )
 
 APPLICABLE = {
@@ -80,10 +80,20 @@ REFUSED = {
 
 
 def anchors_of(path):
-    """Anchor ids the page at `path` publishes. `toc_depth` is not applied here:
-    refusing a fix because an anchor is too deep for the TOC would block a
-    correct path rewrite over a separate, separately-reported defect."""
+    """Anchor ids the page at `path` publishes, or None when they cannot be known.
+
+    `toc_depth` is not applied here: refusing a fix because an anchor is too deep
+    for the TOC would block a correct path rewrite over a separate, separately-
+    reported defect.
+
+    Returns **None** — meaning "unverifiable", not "none found" — for a page whose
+    anchors are built in the browser (an OpenAPI/ReDoc container). Those hold no
+    Markdown headings, so the harvest is empty and every fragment would be refused,
+    blocking path rewrites that are correct. Callers must distinguish None from an
+    empty set; see `renders_anchors_clientside`."""
     txt = open(path, encoding="utf-8", errors="replace").read()
+    if renders_anchors_clientside(txt):
+        return None
     anchors, _deep = harvest_anchors(txt)
     return anchors
 
@@ -243,7 +253,12 @@ def verify(root, entry, tier=None):
         return False, f"resolves to {landed}, but the plan recorded {recorded}"
 
     if frag and landed.endswith(".md"):
-        if frag not in anchors_of(os.path.join(root, landed)):
+        known = anchors_of(os.path.join(root, landed))
+        # None means the page renders its anchors in the browser, so the fragment
+        # is unverifiable rather than wrong. Skip the check — do not pass it — so
+        # the path half of the rewrite lands and the fragment is carried through
+        # untouched. Verifying it would need the OpenAPI spec, not the .md.
+        if known is not None and frag not in known:
             return False, f"anchor #{frag} not found in {landed}"
     return True, ""
 

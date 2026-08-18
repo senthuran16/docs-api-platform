@@ -1,3 +1,18 @@
+---
+title: "Adding a class mediator"
+description: "Extend AbstractMediator in a Java class, add the JAR to the Gateway, and reference it from a class mediator policy attached to an API operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/policies/adding-a-class-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/policies/adding-a-class-mediator.md
+tags:
+  - api-manager
+  - api-gateway
+  - policies
+  - adding-a-class-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Adding a Class Mediator
 
 `Class Mediator` is one specific example of a mediation extension. When creating a class mediator, we are allowed to write a Java class that extends the `org.apache.synapse.mediators.AbstractMediator` class.
@@ -55,7 +70,7 @@ public class SimpleClassMediator extends AbstractMediator {
 
 Then we can export this class as a jar file and add as a library to `<API-M_HOME>/repository/components/lib` directory.
 
-By referring to this class with the fully qualified class name in a class mediator, we can create a new policy. Considering the below file content structure, you can create your own content and save as a `.xml` file. We will make use of this `.xml` file (i.e. policy file) when creating the policy (refer to [Create a Policy](../../api-design-manage/design/api-policies/create-policy/) for further details). Thus created policy can then be attached to either the request flow or response flow of any API operation (refer [Attach Policies](../../api-design-manage/design/api-policies/attach-policy/) for further details).
+By referring to this class with the fully qualified class name in a class mediator, we can create a new policy. Considering the below file content structure, you can create your own content and save as a `.xml` file. We will make use of this `.xml` file (i.e. policy file) when creating the policy (refer to [Create a Policy](../../api-design-manage/design/api-policies/create-policy.md) for further details). Thus created policy can then be attached to either the request flow or response flow of any API operation (refer [Attach Policies](../../api-design-manage/design/api-policies/attach-policy.md) for further details).
 
 !!! example
     ```xml

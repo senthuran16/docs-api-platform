@@ -1,3 +1,18 @@
+---
+title: "Tuning performance"
+description: "Recommended OS, JVM, Carbon, and API-M settings to tune WSO2 API Manager performance, including timeouts and Registry indexing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/deployment-best-practices/tuning-performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/deployment-best-practices/tuning-performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "reference"
+---
+
 # Tuning Performance
 
 This section describes some recommended performance tuning configurations to optimize WSO2 API Manager. It assumes that you have set up the API Manager on Unix/Linux, which is recommended for a production deployment.
@@ -9,7 +24,7 @@ This section describes some recommended performance tuning configurations to opt
     The values that WSO2 discusses here are general recommendations. They might not be the optimal values for the specific hardware configurations in your environment. WSO2 recommends that you carry out load tests on your environment to tune the API Manager accordingly.
 
 !!! note
-    Over time, databases accumulate large volumes of data including invalid access tokens, revoked access tokens, registry transaction-related logs, authorization codes, and user sessions. Therefore, cleaning up outdated and unnecessary data helps maintain optimal database performance by reducing storage overhead, improving query execution times, and ensuring that the system can handle higher loads effectively. WSO2 API Manager provides mechanisms to [manage data growth and improve performance](#configuring-wso2-api-m-to-perform-regular-cleaning).
+    Over time, databases accumulate large volumes of data including invalid access tokens, revoked access tokens, registry transaction-related logs, authorization codes, and user sessions. Therefore, cleaning up outdated and unnecessary data helps maintain optimal database performance by reducing storage overhead, improving query execution times, and ensuring that the system can handle higher loads effectively. WSO2 API Manager provides mechanisms to [manage data growth and improve performance](../setting-up-databases/managing-data-growth-and-improving-performance.md#configuring-wso2-api-m-to-perform-regular-cleaning).
 
 ## OS-level settings
 
@@ -99,7 +114,7 @@ The following diagram shows the communication/network paths that occur when an A
 
 -   **Client call Universal Gateway + Universal Gateway call Backend**
 
-    For backend communication, the API Manager uses PassThrough transport. This is configured in the `<API-M_HOME>/repository/conf/deployment.toml` file. For more information, see [Configuring PassThrough properties](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-httphttps-transport). Add the following section to the `deployment.toml` file to configure the Socket timeout value.
+    For backend communication, the API Manager uses PassThrough transport. This is configured in the `<API-M_HOME>/repository/conf/deployment.toml` file. For more information, see [Configuring PassThrough properties](https://mi.docs.wso2.com/en/latest/install-and-setup/setup/transport-configurations/configuring-transports/#configuring-the-httphttps-transport). Add the following section to the `deployment.toml` file to configure the Socket timeout value.
             ``` java
                 [passthru_http]
                 http.socket.timeout=180000

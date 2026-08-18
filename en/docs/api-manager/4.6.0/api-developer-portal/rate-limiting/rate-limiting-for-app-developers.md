@@ -1,3 +1,18 @@
+---
+title: "Rate limiting for app developers"
+description: "Application-level and subscription-level rate limits in WSO2 API Manager: default tiers, per token quota, burst control, and how limits combine."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/rate-limiting/rate-limiting-for-app-developers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/rate-limiting/rate-limiting-for-app-developers.md
+tags:
+  - api-manager
+  - api-developer-portal
+  - rate-limiting
+  - rate-limiting-for-app-developers
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Rate Limiting for App Developers
 
 Rate limiting controls how many requests your application can make to APIs within a specific time period. This protects backend services from overload and ensures fair resource distribution among all API consumers.
@@ -9,7 +24,7 @@ As an application developer, you encounter rate limiting at two levels: applicat
 Application-level rate limiting applies to all API calls made by your application, regardless of which specific API you're calling. When you create an application in the Developer Portal, you select a rate limiting tier that defines your application's total request capacity.
 
 !!! tip
-    Application level throttle policies are defined by Administrators in the Admin Portal. For information on creating custom application plans, see [Adding a new application-level Rate Limiting tier](../../administer/rate-limiting/manage-application-policies/).
+    Application level throttle policies are defined by Administrators in the Admin Portal. For information on creating custom application plans, see [Adding a new application-level Rate Limiting tier](../../administer/rate-limiting/manage-application-policies.md).
 
 
 ### How Application-Level Limits Work
@@ -18,7 +33,7 @@ An application is a logical collection of one or more APIs. When you create an a
 
 For example, if your application has a **20PerMin** tier and subscribes to three APIs, your application can make a combined total of 20 requests per minute across those three APIs—not 20 requests per API.
 
-For step-by-step instructions on creating an application, see [Creating an Application with Rate Limiting](../../api-developer-portal/rate-limiting/manage-application-rate-limits/#creating-an-application-with-rate-limiting).
+For step-by-step instructions on creating an application, see [Creating an Application with Rate Limiting](manage-application-rate-limits.md#creating-an-application-with-rate-limiting).
 
 ### Default Application Tiers
 
@@ -62,7 +77,7 @@ Each subscription tier specifies how many requests your application can make to 
 
 For example, if you subscribe to an API using the **Bronze** tier (1000 requests per minute), all users of your application share that 1000 request quota for that API.
 
-For step-by-step instructions on subscribing to APIs with business plans, see [Subscribe to an API](../../api-developer-portal/rate-limiting/manage-application-rate-limits/#subscribe-to-an-api).
+For step-by-step instructions on subscribing to APIs with business plans, see [Subscribe to an API](manage-application-rate-limits.md#subscribe-to-an-api).
 
 ### Default Subscription Tiers
 
@@ -115,7 +130,7 @@ As an application developer, you should be aware that these additional restricti
 
 When your application exceeds a rate limit, the API Gateway rejects the request with an HTTP **429 Too Many Requests** response. The response includes details about which limit was exceeded.
 
-For information on throttled responses, see [Handle Rate Limiting Errors](../../api-developer-portal/rate-limiting/handle-rate-limiting-errors/).
+For information on throttled responses, see [Handle Rate Limiting Errors](handle-rate-limiting-errors.md).
 
 ## Additional Considerations
 
@@ -129,6 +144,6 @@ The rate limiting solution in API Manager is designed in a fully asynchronous an
 
 ## See Also
 
-- **Manage your rate limits**: Learn how to view, modify, and optimize your application's rate limiting configuration. See [Manage Application Rate Limits](../../api-developer-portal/rate-limiting/manage-application-rate-limits/).
-- **Handle errors gracefully**: Implement robust error handling for rate limit responses. See [Handle Rate Limiting Errors](../../api-developer-portal/rate-limiting/handle-rate-limiting-errors/).
-- **Reset user quotas**: Learn how to reset individual user quotas when needed. See [Reset Application Throttling Policies](../../api-developer-portal/rate-limiting/resetting-application-throttling-policies/).
+- **Manage your rate limits**: Learn how to view, modify, and optimize your application's rate limiting configuration. See [Manage Application Rate Limits](manage-application-rate-limits.md).
+- **Handle errors gracefully**: Implement robust error handling for rate limit responses. See [Handle Rate Limiting Errors](handle-rate-limiting-errors.md).
+- **Reset user quotas**: Learn how to reset individual user quotas when needed. See [Reset Application Throttling Policies](resetting-application-throttling-policies.md).

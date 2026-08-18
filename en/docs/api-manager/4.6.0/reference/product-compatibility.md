@@ -1,3 +1,17 @@
+---
+title: "Product compatibility"
+description: "Tested operating systems, JDKs, and databases for WSO2 API Manager 4.6.0, with compatible WSO2 products and Identity Server versions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/product-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/product-compatibility.md
+tags:
+  - api-manager
+  - reference
+  - product-compatibility
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-20
+content_type: "reference"
+---
+
 # Product Compatibility
 
 Given below are the compatibility details of the WSO2 API Manager (WSO2 API-M) 4.6.0 runtimes.
@@ -9,6 +23,7 @@ Given below are the compatibility details of the WSO2 API Manager (WSO2 API-M) 4
 
 Given below is the tested compatibility of the API-M runtime of WSO2 API Manager 4.6.0.
 
+<a name="tested-operating-systems"></a>
 #### Tested Operating Systems
 
 As WSO2 API Manager is a Java application, you can generally run it on most operating systems. Listed below are the operating systems that have been tested with the API-M 4.6.0 runtime.
@@ -20,6 +35,8 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 |Ubuntu              | 22.04        |
 |Rocky Linux         | 9.3          |
 |RHEL                | 9            |
+
+<a name="tested-jdks"></a>
 
 #### Tested JDKs
 
@@ -46,11 +63,12 @@ The **WSO2 API-M** runtime is tested with the following databases:
     CREATE DATABASE <APIM_DATABASE_NAME> character set latin1;
     ```
 
+<a name="wso2-product-compatibility-matrix"></a>
 #### WSO2 Product Compatibility Matrix
 
 The following is a list of other WSO2 products and components that have been tested with WSO2 API Manager 4.6.0.
 
-{!includes/compatibility-matrix.md!}
+--8<-- "api-manager/4.6.0/includes/compatibility-matrix.md"
 
 #### Compatible WSO2 Identity Servers (as Key Manager)
 

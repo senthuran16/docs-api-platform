@@ -1,8 +1,23 @@
+---
+title: "Changing the logo and header styles"
+description: "Replace the Developer Portal logo and restyle the header bar with the custom.appBar attributes in userTheme.json."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-the-logo-and-header/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-the-logo-and-header.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Changing the Logo and Header Styles
 
 The header section can be customized to match different design needs by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#global-theming).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme.md#global-theming).
 
 The following is the default look and the configuration. The default header of the API Manager Developer Portal is shown below.
 

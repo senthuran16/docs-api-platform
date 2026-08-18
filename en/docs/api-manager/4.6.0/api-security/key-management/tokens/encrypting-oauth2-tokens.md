@@ -1,3 +1,18 @@
+---
+title: "Encrypting OAuth2 tokens"
+description: "Enable OAuth2 token encryption so access tokens, refresh tokens, consumer secrets, and authorization codes are encrypted with the primary keystore."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/tokens/encrypting-oauth2-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/tokens/encrypting-oauth2-tokens.md
+tags:
+  - api-manager
+  - api-security
+  - key-management
+  - tokens
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Encrypting OAuth2 Tokens 
 
 WSO2 API Manager provides the capability to encrypt OAuth2 tokens (OAuth2 access tokens, refresh tokens, consumer secrets, authorization codes, or any other OAuth2 key) using the primary keystore. The result is encoded in Base64 and stored in the database.
@@ -30,13 +45,13 @@ Follow the steps below to enable OAuth2 token encryption
         "org.wso2.CipherTransformation" = "<Algorithm>"
         ```
     
-3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m/#starting-the-server). 
+3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server). 
 
-4.  Follow the [Generate Application Keys](../../../consume/manage-application/generate-keys/generate-api-keys) guide to create a new application, generate application consumer keys, and to obtain an access token.
+4.  Follow the [Generate Application Keys](../../../api-developer-portal/manage-application/generate-keys/generate-api-keys.md) guide to create a new application, generate application consumer keys, and to obtain an access token.
 
     !!! tip
 
-        -   If you use a [Distributed API Manager setup](../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m) , the changes must be made on both the Developer Portal and Key Manager nodes.
-        -   If you use WSO2 Identity Server [(WSO2 IS) as the Key Manager setup](../../../api-security/key-management/third-party-key-managers/configure-wso2is-connector/) , you need to make changes in both WSO2 IS and WSO2 API Manager.
+        -   If you use a [Distributed API Manager setup](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) , the changes must be made on both the Developer Portal and Key Manager nodes.
+        -   If you use WSO2 Identity Server [(WSO2 IS) as the Key Manager setup](../third-party-key-managers/configure-wso2is-connector.md) , you need to make changes in both WSO2 IS and WSO2 API Manager.
 
 

@@ -1,3 +1,19 @@
+---
+title: "CI/CD-driven API governance"
+description: "Enforce API governance from a CI/CD pipeline using WSO2 APICTL to validate APIs against rulesets before they are promoted."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/governance/api-governance-cicd/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/governance/api-governance-cicd.md
+tags:
+  - api-manager
+  - administer
+  - governance
+  - cicd
+  - apictl
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # CI/CD-Driven API Governance
 
 ## API Governance with WSO2 APICTL
@@ -27,5 +43,5 @@ Integrating this step into your CI/CD pipeline helps ensure that only compliant 
 improving governance and reducing the risk of introducing faulty APIs.
 
 For more information on how to use WSO2 APICTL, refer to the 
-[WSO2 APICTL documentation](../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/).
+[WSO2 APICTL documentation](../../apiops/cli/getting-started-with-wso2-api-controller.md).
 

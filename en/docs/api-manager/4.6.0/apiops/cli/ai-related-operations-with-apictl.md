@@ -1,3 +1,18 @@
+---
+title: "AI related operations with apictl"
+description: "Run apictl ai commands to set the AI token and to upload or delete APIs and API Products in the Marketplace Assistant vector database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/ai-related-operations-with-apictl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/ai-related-operations-with-apictl.md
+tags:
+  - api-manager
+  - apiops
+  - cli
+  - ai-related-operations-with-apictl
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # AI related operations with apictl
 
 To ensure that the Marketplace Assistant is fully informed about all published APIs and API Products, it is essential to update the vector database.
@@ -6,8 +21,8 @@ You can use the **WSO2 API Controller (apictl)** to keep the vector database upt
 First you have to download and initialize the apictl.
 
 1.  Make sure that the WSO2 API-M is started and that the corresponding version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](getting-started-with-wso2-api-controller.md#login-to-an-environment).
 3.  Run the corresponding apictl commands below to delete and upload APIs and API Products from a logged in user's tenant.
 
 ### Set token as a config variable

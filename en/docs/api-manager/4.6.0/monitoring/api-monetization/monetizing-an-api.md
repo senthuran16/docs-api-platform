@@ -1,3 +1,18 @@
+---
+title: "Monetizing an API"
+description: "Monetize APIs with the Stripe billing engine: connect accounts, create paid business plans, send usage data, and manage invoices."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/api-monetization/monetizing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/api-monetization/monetizing-an-api.md
+tags:
+  - api-manager
+  - monitoring
+  - api-monetization
+  - monetizing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Monetizing an API
 
 API Monetization allows organizations to expand their business and generate higher revenue by exposing their services and data via APIs. API Publishers can publish their APIs with competitive business plans to the Developer Portal. Thereafter, API subscribers (e.g., Application Developers) can discover, subscribe, and invoke these monetized APIs, and pay for their API usage based on dynamic or fixed business plans.
@@ -618,7 +633,7 @@ For more information go to, [Using Connect with Standard Accounts](https://strip
 
 2. Create a subscription policy.
 
-    Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../manage-apis/design/rate-limiting/adding-new-throttling-policies#Adding-a-new-subscription---level-throttling-tier).
+    Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../administer/rate-limiting/manage-subscription-policies.md).
 
     !!! note
         When using Stripe as a billing engine it only allows you to create monetization plans for commercial business plans. Therefore, make sure to create a subscription policy that has a paid business plan.
@@ -664,7 +679,7 @@ When a subscriber selects a monetized API tier in the Developer Portal, APIM ini
 
     The subscription is created in APIM with a pending status while payment is being collected.
 
-3. The Developer Portal can be configured to display a **Complete Payment** link that redirects the subscriber to the Stripe-hosted Checkout page. See [Step 4 - Customize the Developer Portal for Stripe payment flows](#step-4---customize-the-developer-portal-for-stripe-payment-flows) for details.
+3. The Developer Portal can be configured to display a **Complete Payment** link that redirects the subscriber to the Stripe-hosted Checkout page. See [Step 4 - Customize the Developer Portal for Stripe payment flows](#step-4-customize-the-developer-portal-for-stripe-payment-flows) for details.
 
     !!! note
         The Checkout link is valid for 24 hours. If the subscriber does not complete payment within that window, the pending subscription is automatically cancelled when Stripe fires a `checkout.session.expired` event.
@@ -690,7 +705,7 @@ The subscriber must be authenticated (via OIDC) to access this endpoint. If no v
 !!! note
     The Checkout link is valid for 24 hours. If the subscriber does not complete payment within that window, Stripe fires a `checkout.session.expired` event and the pending subscription is automatically cancelled.
 
-On the Stripe Checkout page, the subscriber enters their payment details and confirms. For details on how the subscription is activated after payment, see [Step 3 - Subscribe to a monetized API](#step-3---subscribe-to-a-monetized-api).
+On the Stripe Checkout page, the subscriber enters their payment details and confirms. For details on how the subscription is activated after payment, see [Step 3 - Subscribe to a monetized API](#step-3-subscribe-to-a-monetized-api).
 
 #### Redirecting to the Customer Portal
 
@@ -719,7 +734,7 @@ You can use the admin REST API, which is available in WSO2 API Manager, to publi
 
 1. Obtain the consumer key and secret key pair by calling the dynamic client registration endpoint.
 
-    For more information, see [Admin REST API v4.2](../../reference/product-apis/admin-apis/admin-v4/admin-v4/).
+    For more information, see [Admin REST API v4.2](../../reference/product-apis/admin-apis/admin-v4/admin-v4.md).
 
     ```bash
     curl -X POST -H "Authorization: Basic <base64encoded-admin-account-credentials>" \

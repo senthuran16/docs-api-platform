@@ -1,3 +1,18 @@
+---
+title: "Monitoring HTTP access logs"
+description: "Configure HTTP access logs for the servlet transport and for the PassThrough or NIO transports of the API Gateway, including log patterns."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/observability/monitoring-http-access-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/observability/monitoring-http-access-logs.md
+tags:
+  - api-manager
+  - monitoring
+  - observability
+  - monitoring-http-access-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Monitoring HTTP Access Logs
 
 HTTP access logs help you monitor your application's usage with information such as the persons who access it, how many hits it received, what the errors are, etc. This information is useful for troubleshooting errors. 
@@ -268,7 +283,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
                          </div>
                       </li>
                    </ul>
-                   <p>By default, a modified version of the <a href="http://httpd.apache.org/docs/1.3/logs.html#combined">Apache combined log format</a> is enabled in the ESB as shown below. Note that the "X-Forwarded-For" header is appended to the beginning of the usually <strong>combined</strong> log format. This correctly identifies the original node that sent the request (in situations where requests go through a proxy such as a load balancer). The "X-Forwarded-For" header must be present in the incoming request for this to be logged.</p>
+                   <p>By default, a modified version of the <a href="https://httpd.apache.org/docs/current/logs.html#combined">Apache combined log format</a> is enabled in the ESB as shown below. Note that the "X-Forwarded-For" header is appended to the beginning of the usually <strong>combined</strong> log format. This correctly identifies the original node that sent the request (in situations where requests go through a proxy such as a load balancer). The "X-Forwarded-For" header must be present in the incoming request for this to be logged.</p>
                    <div class="code panel pdl" style="border-width: 1px;">
                       <div class="codeContent panelContent pdl">
                          <div class="sourceCode" id="cb6" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
@@ -297,7 +312,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
     "nhttp.is.log.rotatable" = "true"
     ```
     
-7.  Then [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m/).
+7.  Then [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m.md).
 
 8.  Invoke an API in API Gateway. Then, navigate to `<API-M_HOME>/repository/logs/` directory, and you will see a newly created log file called `http_gw.log`, which contains API invocation related access logs.
 

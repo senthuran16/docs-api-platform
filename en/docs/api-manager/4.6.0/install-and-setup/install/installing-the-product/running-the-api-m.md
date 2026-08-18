@@ -1,3 +1,18 @@
+---
+title: "Running the API Manager runtime"
+description: "Start and stop the WSO2 API Manager server, reach the Management Console, Publisher, and Developer Portal, and fix startup errors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installing-the-product/running-the-api-m/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installing-the-product/running-the-api-m.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Running the API Manager Runtime
 
 Follow the steps given below to run the WSO2 API Manager runtime and access its web portals: **Management Console**, **API Publisher**, and the **Developer Portal**.
@@ -7,7 +22,7 @@ Follow the steps given below to run the WSO2 API Manager runtime and access its 
 [Download and install](../../../install-and-setup/install/installing-the-product/installing-api-m-runtime.md) the API Manager server.
 
 !!! note
-    The following steps apply if you are trying out the All-in-one package of WSO2 API Manager. To try out the **Enterprise package**, follow the instructions in [Configure a Distributed API-M Deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/) to setup a simple scalable deployment of WSO2 API Manager.
+    The following steps apply if you are trying out the All-in-one package of WSO2 API Manager. To try out the **Enterprise package**, follow the instructions in [Configure a Distributed API-M Deployment](../../setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) to setup a simple scalable deployment of WSO2 API Manager.
 
 ## Starting the API-M server
 
@@ -66,8 +81,8 @@ Note that the server is running on `localhost` by default. You can use these URL
 !!! Info  
     To change the default hostname/port and to secure the API-M portals, see the following topics:
 
-    - [Changing the API-M hostname](../../../install-and-setup/setup/deployment-best-practices/changing-the-hostname/#changing-the-api-m-hostname)
-    - [Changing the default API-M ports](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/#changing-the-default-api-m-ports)
+    - [Changing the API-M hostname](../../setup/deployment-best-practices/changing-the-hostname.md#changing-the-api-m-hostname)
+    - [Changing the default API-M ports](../../setup/deployment-best-practices/changing-the-default-ports-with-offset.md#changing-the-default-api-m-ports)
     - [Securing API-M Web Portals](../../../install-and-setup/setup/security/securing-api-m-web-portals.md)
 
 To sign in to each web portal:
@@ -132,5 +147,5 @@ To sign in to each web portal:
 
 ## See Also
 
--   [Running API-M as a Windows Service](../../../install-and-setup/install/installing-the-product/installing-api-m-as-a-windows-service/)
--   [Running API-M as a Linux Service](../../../install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service/)
+-   [Running API-M as a Windows Service](installing-api-m-as-a-windows-service.md)
+-   [Running API-M as a Linux Service](installing-api-m-as-a-linux-service.md)

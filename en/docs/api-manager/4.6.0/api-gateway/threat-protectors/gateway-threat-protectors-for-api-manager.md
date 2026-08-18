@@ -1,10 +1,25 @@
+---
+title: "Gateway threat protectors"
+description: "The three Universal Gateway threat protectors, regex, JSON, and XML, and a custom mediation sequence that combines validators in a single policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/threat-protectors/gateway-threat-protectors-for-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/threat-protectors/gateway-threat-protectors-for-api-manager.md
+tags:
+  - api-manager
+  - api-gateway
+  - threat-protectors
+  - gateway-threat-protectors-for-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Gateway Threat Protectors
 
 WSO2 API Manager has three types of threat protectors for the Gateway.
 
--   [Regular Expression Threat Protection for API Gateway](../../api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway/)
--   [JSON Threat Protection for API Gateway](../../api-gateway/threat-protectors/json-threat-protection-for-api-gateway/)
--   [XML Threat Protection for API Gateway](../../api-gateway/threat-protectors/xml-threat-protection-for-api-gateway/)
+-   [Regular Expression Threat Protection for API Gateway](regular-expression-threat-protection-for-api-gateway.md)
+-   [JSON Threat Protection for API Gateway](json-threat-protection-for-api-gateway.md)
+-   [XML Threat Protection for API Gateway](xml-threat-protection-for-api-gateway.md)
 
 ### Combining threat protectors
 
@@ -42,4 +57,4 @@ You can use a combination of the threat protectors given above to validate the m
 ### Add a custom sequence
 
 You can add custom sequences depending on the threats that you need to address. You can create a policy using the custom sequence and attach it to the API. 
-Please refer [API Policies](../../api-design-manage/design/api-policies/overview/) for more information on how to attach a policy to an API
+Please refer [API Policies](../../api-design-manage/design/api-policies/overview.md) for more information on how to attach a policy to an API

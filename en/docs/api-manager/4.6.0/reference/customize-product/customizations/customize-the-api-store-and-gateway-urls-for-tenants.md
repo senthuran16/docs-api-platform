@@ -1,10 +1,25 @@
+---
+title: "Customizing portal and gateway URLs for tenants"
+description: "Map per-tenant custom domains for Developer Portal and gateway URLs, add tenant service providers, and configure the load balancer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/customizations/customize-the-api-store-and-gateway-urls-for-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/customizations/customize-the-api-store-and-gateway-urls-for-tenants.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Customizing the Developer Portal and Gateway URLs for Tenants
 
 The default URL of WSO2 API Manager Developer Portal (`https://<HostName>:9443/devportal`) and the gateway URLs (`http://<HostName>:8280/t/<tenant-domain>` and `https://<HostName>:8243/t/<tenant-domain>`) can be customized per tenant. Following steps illustrate how to configure devportal and gateway custom URLs for a given tenant.
 
 -   [Configure per tenant custom domain mappings](#configure-per-tenant-custom-domain-mappings)
 
--   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-devportal)
+-   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-the-developer-portal)
 
 -   [Configure the load balancer for custom URLs](#configure-the-load-balancer-for-custom-urls)
 
@@ -64,7 +79,7 @@ The default URL of WSO2 API Manager Developer Portal (`https://<HostName>:9443/d
             }
         ```
 
-    ![](../../../assets/img/develop/customizations/create-mapping-file.png)
+    ![Registry Add Resource form with Method set to Create Text content, Name wso2.com, and the tenant customUrl JSON in the Content box](../../../assets/img/develop/customizations/create-mapping-file.png)
 
 ## Configure per tenant service provider creation for the Developer Portal
 
@@ -78,7 +93,7 @@ By default the developer portal is acting as SAAS app, which is shared among all
     "EnablePerTenantServiceProviderCreation": true
     ```
 
-    ![](../../../assets/img/develop/customizations/per-tenant-sp-creation-config.png )
+    ![Admin Portal Advanced Configurations with EnablePerTenantServiceProviderCreation set to true](../../../assets/img/develop/customizations/per-tenant-sp-creation-config.png )
 
 ## Configure the load balancer for custom URLs
 

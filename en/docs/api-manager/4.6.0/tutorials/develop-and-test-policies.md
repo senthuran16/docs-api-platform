@@ -1,3 +1,17 @@
+---
+title: "Develop and test custom policies"
+description: "Develop custom API policies locally with the WSO2 Micro Integrator VS Code extension, validate the XML, then upload them to API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/develop-and-test-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/develop-and-test-policies.md
+tags:
+  - api-manager
+  - tutorials
+  - develop-and-test-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Develop and Test Custom Policies
 
 This guide explains how to develop and test custom policies locally before uploading them to API Manager. You can use the WSO2 Micro Integrator for Visual Studio Code extension to create and validate policy files on your local machine.
@@ -8,7 +22,7 @@ Before you start developing custom policies, ensure you have the following prere
 
 - Visual Studio Code installed on your machine
 - Basic understanding of WSO2 Synapse mediators and XML configuration
-- Familiarity with [policy creation concepts](../api-design-manage/design/api-policies/create-policy/)
+- Familiarity with [policy creation concepts](../api-design-manage/design/api-policies/create-policy.md)
 
 ## Set up your development environment
 
@@ -73,7 +87,7 @@ Custom policies for API Manager are XML-based configurations that use WSO2 Synap
     - Start with a root mediator element or child elements directly.
     - Use valid Synapse mediator syntax.
 
-2. Review the [list of unsupported mediators](../api-design-manage/design/api-policies/create-policy/) to ensure your policy doesn't use restricted mediators:
+2. Review the [list of unsupported mediators](../api-design-manage/design/api-policies/create-policy.md) to ensure your policy doesn't use restricted mediators:
 
     - `Call` mediator in non-blocking mode
     - `Send` mediator
@@ -260,6 +274,6 @@ Use these solutions to resolve common problems when developing policies.
 
 ## See also
 
-- [Create a policy](../api-design-manage/design/api-policies/create-policy/)
-- [Attach a policy](../api-design-manage/design/api-policies/attach-policy/)
-- [API policies overview](../api-design-manage/design/api-policies/overview/)
+- [Create a policy](../api-design-manage/design/api-policies/create-policy.md)
+- [Attach a policy](../api-design-manage/design/api-policies/attach-policy.md)
+- [API policies overview](../api-design-manage/design/api-policies/overview.md)

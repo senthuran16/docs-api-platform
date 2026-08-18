@@ -1,3 +1,18 @@
+---
+title: "Configuring caching"
+description: "Cache types in WSO2 API Manager - Gateway, resource, Key Manager, response, JWT claims, Publisher, Developer Portal - and their settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/advance-configurations/configuring-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/advance-configurations/configuring-caching.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - advance-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "reference"
+---
+
 # Configuring Caching
 
 When an API call hits the Universal Gateway, the Gateway carries out security checks to verify if the token is valid. During these verifications, the Universal Gateway extracts parameters (i.e., access token, API name, and API version) that are passed on to it. As the entire load of the traffic to APIs goes through the Universal Gateway, this verification process needs to be fast and efficient in order to prevent overhead and delays. WSO2 API Manager uses caching for this purpose, where the validation information is cached with the token, API name, and version, and the cache is stored in either the Universal Gateway or the Key Manager server.
@@ -42,7 +57,7 @@ If you need to change the default behavior, you can implement the `org.wso2.carb
 notifier_impl="org.wso2.carbon.apimgt.notification.TokenRevocationNotifier"
 ```
 
-For more information on the above configuration, see the [Config Catalog](../../../reference/config-catalog/#api-m-token-revocation).
+For more information on the above configuration, see the [Config Catalog](../../../reference/config-catalog.md#api-m-token-revocation).
 
 ## Resource cache
 
@@ -71,11 +86,11 @@ The OAuth token is saved in this cache, which is enabled by default. Whenever a 
 
 ## Response cache
 
-For information on how to enable response caching for a given API, see [Response Caching](../../../manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching/).
+For information on how to enable response caching for a given API, see [Response Caching](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching.md).
 
 ## JWT claims cache
 
-For information on how to enable JWT claims caching, see [JWT claims Caching](../../../manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/#expiry-time-of-the-jwt).
+For information on how to enable JWT claims caching, see [JWT claims Caching](../../../api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md#expiry-time-of-the-jwt).
 
 ## Publisher cache
 

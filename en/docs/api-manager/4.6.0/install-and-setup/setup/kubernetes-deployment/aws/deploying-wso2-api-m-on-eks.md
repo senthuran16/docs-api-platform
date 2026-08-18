@@ -1,9 +1,24 @@
+---
+title: "Deploying WSO2 API Manager on AWS EKS"
+description: "Deploy WSO2 API Manager on Amazon EKS with RDS or Aurora databases, ECR images, keystores, Helm charts, and Application Load Balancer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/kubernetes-deployment/aws/deploying-wso2-api-m-on-eks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/kubernetes-deployment/aws/deploying-wso2-api-m-on-eks.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Deploying WSO2 API Manager on AWS EKS
 
 This guide provides a step-by-step approach to deploying WSO2 API Manager on Amazon Elastic Kubernetes Service (EKS). This deployment follows the standard WSO2 Kubernetes architecture, extended to use AWS-specific services such as Amazon RDS/Aurora for databases and Application Load Balancer (ALB) for ingress.
 
 !!! info
-    This deployment aligns with the standard deployment models described in [WSO2 API Manager Deployment Patterns](../../../../install-and-setup/setup/kubernetes-deployment/kubernetes/kubernetes-overview/#deployment-patterns) and [API-M Deployment with All-in-One HA Setup](../../../../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-1-all-in-one-ha/).
+    This deployment aligns with the standard deployment models described in [WSO2 API Manager Deployment Patterns](../kubernetes/kubernetes-overview.md#deployment-patterns) and [API-M Deployment with All-in-One HA Setup](../kubernetes/am-pattern-1-all-in-one-ha.md).
 
 ## Contents
 
@@ -412,11 +427,11 @@ Check:
 
 ## Next Steps
 
-- Set up [Rate Limiting](../../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
-- Enable [Analytics](../../../../monitoring/api-analytics/analytics-overview/)
+- Set up [Rate Limiting](../../../../api-design-manage/design/rate-limiting/assign-business-plans.md)
+- Enable [Analytics](../../../../monitoring/api-analytics/analytics-overview.md)
 
 ## See Also
 
-- [Kubernetes Deployment Overview](../../../../install-and-setup/setup/kubernetes-deployment/kubernetes/kubernetes-overview/)
-- [API-M Deployment with All-in-One HA Setup](../../../../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-1-all-in-one-ha/)
+- [Kubernetes Deployment Overview](../kubernetes/kubernetes-overview.md)
+- [API-M Deployment with All-in-One HA Setup](../kubernetes/am-pattern-1-all-in-one-ha.md)
 - [AWS Load Balancer Controller Documentation](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)

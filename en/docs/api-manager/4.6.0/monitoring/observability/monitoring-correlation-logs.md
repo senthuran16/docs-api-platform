@@ -1,3 +1,18 @@
+---
+title: "Monitoring correlation logs"
+description: "Enable correlation logs at server startup or with the DevOps REST API, then read method, HTTP, and database call logs to find bottlenecks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/observability/monitoring-correlation-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/observability/monitoring-correlation-logs.md
+tags:
+  - api-manager
+  - monitoring
+  - observability
+  - monitoring-correlation-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Monitoring Correlation Logs
 
 Observability in WSO2 API Manager (WSO2 API-M) is really important to debug issues in a short period. WSO2 API-M facilitates observability by logging the following important points of the system with the time taken to achieve them. 
@@ -42,7 +57,7 @@ Enabling observability at the server startup is simple in API Manager. All you n
 ### Enable Correlation Logs using the Devops REST API
 
 Devops REST API can be used to enable / disable correlation logs during the runtime and retrieve the correlation logs configurations. 
-For more instructions, see [WSO2 Devops API v0](../../reference/product-apis/devops-apis/devops-v0/devops-v0/#/paths/~1config~1correlation~1/get).
+For more instructions, see [WSO2 Devops API v0](../../reference/product-apis/devops-apis/devops-v0/devops-v0.md#/paths/~1config~1correlation~1/get).
 
 1. Enable / disable correlation log configurations.
    
@@ -661,11 +676,11 @@ Enable observability with WSO2 API-M and start the WSO2 API-M server as explain
 
 If you don't have an API to access, follow the following links: 
 
-1. [Creating an API](../../manage-apis/design/create-api/create-rest-api/create-a-rest-api)
+1. [Creating an API](../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api.md)
 
-2. [Publish the API](../../manage-apis/deploy-and-publish/publish-on-dev-portal/publish-an-api)
+2. [Publish the API](../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api.md)
 
-3. [Subscribe to the API](../../consume/manage-subscription/subscribe-to-an-api)
+3. [Subscribe to the API](../../api-developer-portal/manage-subscription/subscribe-to-an-api.md)
 
 Use the following command to invoke the API.
 

@@ -8,6 +8,7 @@ from links_lib import (  # noqa: E402
     find_targets, harvest_anchors, strip_noise, url_base, page_id,
     read_toc_depth, read_redirect_maps, redirect_targets,
     non_web_scheme, is_http_typo, resolve_candidates, read_extra_vars,
+    renders_anchors_clientside,
     version_root, build_include_map, MD_LINK, HTML_SRC,
 )
 
@@ -77,6 +78,13 @@ for p in md_files:
     _extra = [PAGE_TEXT[b] for b in INCLUDES_OF.get(p, []) if b in PAGE_TEXT]
     anchors[p], deep_anchors[p] = harvest_anchors(PAGE_TEXT[p], TOC_DEPTH, _extra)
 
+# Pages that are containers for a client-side renderer. Their anchors are built by
+# ReDoc in the browser from the OpenAPI spec, so `anchors[p]` is empty and every
+# fragment aimed at one looks missing. Skipping is the only correct answer: the
+# fragment cannot be verified from the `.md`, and reporting it says a working deep
+# link is broken. `report_links.py` and `fix_links.py` apply the same rule.
+CLIENTSIDE_ANCHORS = {p for p in anchors if renders_anchors_clientside(PAGE_TEXT[p])}
+
 used = set()          # every target that resolved, for the orphan-asset check
 findings = []
 def add(f, sev, code, msg):
@@ -133,7 +141,7 @@ for p in sorted(md_files):
             continue
         if t.startswith("#"):
             frag = urllib.parse.unquote(t[1:])
-            if frag and frag not in anchors.get(p, set()):
+            if frag and p not in CLIENTSIDE_ANCHORS and frag not in anchors.get(p, set()):
                 if frag in deep_anchors.get(p, set()):
                     add(p, "blocking", "ANCHOR_TOO_DEEP",
                         f"`{t}` names a heading deeper than h{TOC_DEPTH}, and `toc_depth: {TOC_DEPTH}` "
@@ -221,7 +229,7 @@ for p in sorted(md_files):
                 add(p, "blocking", code,
                     f"{kind.capitalize()} target does not exist: `{t}`")
             continue
-        if frag and resolved.endswith(".md"):
+        if frag and resolved.endswith(".md") and resolved not in CLIENTSIDE_ANCHORS:
             if frag not in anchors.get(resolved, set()):
                 if frag in deep_anchors.get(resolved, set()):
                     add(p, "blocking", "ANCHOR_TOO_DEEP",

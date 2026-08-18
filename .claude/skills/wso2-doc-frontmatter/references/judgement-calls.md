@@ -84,6 +84,28 @@ honestly, that finding is not ready to fix — leave it and say why.
      decision, not a link fix.
 - **`templated`** — same as `gone`, with a `{{base_path}}` on the front.
 
+## External links
+
+The file-based scripts cannot judge an `http(s)` target. `check_external.py` can —
+run it, and work its findings like any other group.
+
+It calibrates each host before judging that host's links, because a host may refuse
+an automated request whether or not the page exists. Three verdicts:
+
+- **`dead`** — fix it.
+- **`unverifiable`** — the *check* failed, not the link. Never count these as broken;
+  ask the user to open them in a browser.
+- **`ok`** — leave alone.
+
+**Ask the user before changing any `dead` external link.** Where it should point is
+their decision. Ask once, with the options:
+
+1. unlink and keep the text — right when the sentence reads correctly without it;
+2. repoint to a URL they supply — never one you have not verified;
+3. leave it, and record it in the report.
+
+Fix only the version in scope, then name the other versions carrying the same line.
+
 ## Images and screenshots — open them and look
 
  You can read an image, so an

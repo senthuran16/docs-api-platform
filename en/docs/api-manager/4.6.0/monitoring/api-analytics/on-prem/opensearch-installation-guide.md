@@ -1,3 +1,18 @@
+---
+title: "OpenSearch based analytics installation guide"
+description: "Set up OpenSearch based analytics for WSO2 API Manager: configure log publishing, install Fluent Bit, and view the OpenSearch dashboards."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/api-analytics/on-prem/opensearch-installation-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/api-analytics/on-prem/opensearch-installation-guide.md
+tags:
+  - api-manager
+  - monitoring
+  - api-analytics
+  - on-prem
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # OpenSearch Based Analytics Installation Guide
 
 <a href="../../../../assets/img/analytics/opensearch/architecture.png"><img src="../../../../assets/img/analytics/opensearch/architecture.png" width="70%" alt="Deployment diagram"></a>
@@ -199,8 +214,8 @@ Open the `wso2am-4.x.x/repository/conf` directory. To enable logging for a repor
 
 1. To install Fluent Bit, follow one of the guides below based on your operating system.
 
-    - If you are a Linux user, follow this [guide](https://docs.fluentbit.io/manual/installation/linux/ubuntu).
-    - If you are a MacOS user, follow this [guide](https://docs.fluentbit.io/manual/installation/macos).
+    - If you are a Linux user, follow this [guide](https://docs.fluentbit.io/manual/installation/downloads/linux/ubuntu).
+    - If you are a MacOS user, follow this [guide](https://docs.fluentbit.io/manual/installation/downloads/macos).
 
 2. After installing Fluent Bit and OpenSearch, create a Fluent Bit configuration file (fluent-bit.conf) with the following attributes to direct WSO2 APIM metrics logs in the `repository/logs` folder to the OpenSearch cluster.
 

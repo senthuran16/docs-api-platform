@@ -1,3 +1,17 @@
+---
+title: "Governance concepts"
+description: "The core governance concepts in WSO2 API Manager: artifacts, rulesets, policies, and labels, and how they relate to each other."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/governance/governance-concept/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/governance/governance-concept.md
+tags:
+  - api-manager
+  - administer
+  - governance
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-20
+content_type: "concept"
+---
+
 # Governance Concepts
 
 The governance capabilities in WSO2 API Manager builds upon the following core concepts:
@@ -59,7 +73,7 @@ Policies can be configured to take specific actions based on the severity of rul
 
 ## Label  
 
-A **label** is a tag that can be attached to a specific [governance artifact](#Artifact) to categorize them based on specific criteria. 
+A **label** is a tag that can be attached to a specific [governance artifact](#artifact) to categorize them based on specific criteria. 
 
 In the context of API governance, labels help group APIs according to their type, purpose, or any other classification relevant to the organization.  
 
