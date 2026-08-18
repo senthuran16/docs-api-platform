@@ -1,3 +1,18 @@
+---
+title: "Configure WSO2 IS 7.x as a key manager"
+description: "Configure WSO2 Identity Server 7.x as a Key Manager for WSO2 API Manager, covering data model limitations, tenant sharing, and role creation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/third-party-key-managers/configure-wso2is7-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/third-party-key-managers/configure-wso2is7-connector.md
+tags:
+  - api-manager
+  - api-security
+  - key-management
+  - third-party-key-managers
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configure WSO2 IS 7.x as a Key Manager
 
 WSO2 API Manager supports multiple Key Managers. As a result, WSO2 API Manager is prepacked with an inbuilt resident Key Manager, and it has the inbuilt capability of configuring **WSO2 Identity Server 7.x** (WSO2 IS 7.x) as a Key Manager.
@@ -13,8 +28,8 @@ WSO2 API Manager supports multiple Key Managers. As a result, WSO2 API Manager i
 Data models of WSO2 API Manager {{site_version}} and WSO2 Identity Server 7.x are different. Therefore, when using WSO2 API Manager
 {{site_version}} with WSO2 Identity Server 7.x as the key manager,
 
-- **Tenant sharing has to be configured.** Please refer [**Tenant sharing between WSO2 API Manager and WSO2 IS 7.x**](../../../administer/multitenancy/tenant-sharing-with-wso2is7/)
-- To configure WSO2 IS 7.x as default key manager please refer [**Configuring WSO2 IS 7.x as the default key manager**](../../../administer/multitenancy/tenant-sharing-with-wso2is7/#configuring-wso2-is-7x-as-the-default-key-manager).
+- **Tenant sharing has to be configured.** Please refer [**Tenant sharing between WSO2 API Manager and WSO2 IS 7.x**](../../../administer/multitenancy/tenant-sharing-with-wso2is7.md)
+- To configure WSO2 IS 7.x as default key manager please refer [**Configuring WSO2 IS 7.x as the default key manager**](../../../administer/multitenancy/tenant-sharing-with-wso2is7.md#configuring-wso2-is-7x-as-the-default-key-manager).
 
 
 Follow the steps given below to configure WSO2 IS 7.x as a Key Manager component.
@@ -61,7 +76,7 @@ Follow the steps given below to configure WSO2 IS 7.x as a Key Manager component
     !!! Note
         **Before you begin:**
 
-        You need to import the public certificate of the WSO2 Identity Server 7.x to the truststore of the WSO2 API Manager, and vice-versa. For information on importing the certificates, see the [Importing certificates to the truststore](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore) guide.
+        You need to import the public certificate of the WSO2 Identity Server 7.x to the truststore of the WSO2 API Manager, and vice-versa. For information on importing the certificates, see the [Importing certificates to the truststore](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-3-importing-certificates-to-the-truststore) guide.
 
 3. Download [notification.event.handlers-2.0.8.jar](../../../assets/attachments/administer/wso2is.notification.event.handlers-2.0.8.4.jar) and add it to `<IS_HOME>/repository/components/dropins`
 

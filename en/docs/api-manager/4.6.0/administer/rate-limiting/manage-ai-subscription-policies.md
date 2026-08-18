@@ -1,3 +1,18 @@
+---
+title: "Manage AI subscription policies"
+description: "Set token-based quotas for AI APIs in WSO2 API Manager by adding AI API subscription throttling policies to business plans."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/rate-limiting/manage-ai-subscription-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/rate-limiting/manage-ai-subscription-policies.md
+tags:
+  - api-manager
+  - administer
+  - rate-limiting
+  - ai-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Manage AI Subscription Policies
 
 AI APIs use token-based rate limiting policies in subscriptions through business plans. These policies allow for granular control of how AI APIs are used by applications.
@@ -36,5 +51,5 @@ AI API subscription policies can be created and customized based on the followin
      | Unit Time                       | Time within which the number of requests given in the previous field is allowed to the API. This can be defined in minutes, hours.                   |
      | Stop On Quota Reach             | This indicates the action to be taken when a user goes beyond the allocated quota. If the check box is selected, the user's requests are dropped and an error response (HTTP Status code 429) is given. If the check box is cleared, the requests are allowed to pass through.             |
      | Billing Plan                    | This field only makes sense if you have API Monetization enabled. The available **billing plans** are **Free and Commercial**. An API is tagged/labelled as Free or Paid depending on its subscription tiers(e.g., Unlimited, Gold, etc.), which are the tiers selected when creating an API. |
-     | Custom Attributes               | You can choose to display additional information about tiers using custom attributes during custom implementations. The main objective of these fields are to provide more information regarding the tier to Application Developers at the time of API subscription. An example usage of custom attributes is API Monetization. See [Enabling Monetization of APIs-](../../manage-apis/design/api-monetization/monetizing-an-api/) for more information on practical usage of custom attributes in the subscription tier.      |
+     | Custom Attributes               | You can choose to display additional information about tiers using custom attributes during custom implementations. The main objective of these fields are to provide more information regarding the tier to Application Developers at the time of API subscription. An example usage of custom attributes is API Monetization. See [Enabling Monetization of APIs-](../../monitoring/api-monetization/monetizing-an-api.md) for more information on practical usage of custom attributes in the subscription tier.      |
      | Permissions                     | You can allow or deny permission for specific roles. Once permission is denied to a role, the new subscription tier that you add here will not be available to that role in the Developer Portal.   

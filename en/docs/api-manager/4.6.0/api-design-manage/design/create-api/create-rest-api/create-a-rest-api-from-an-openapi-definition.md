@@ -1,3 +1,18 @@
+---
+title: "Create an API from an OpenAPI definition"
+description: "Import an OpenAPI URL, file, or archive in the Publisher Portal to create a REST API, then review its resources, endpoints, and runtime configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create an API from an OpenAPI Definition
 
 An OpenAPI definition is a format that describes REST APIs. 
@@ -28,7 +43,7 @@ Follow the instructions below to create a REST API using an OpenAPI definition f
     <html><div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>
-    <ul><li>You need to upload an archive if you have remote references in your API definition. - <a href="../../../../assets/attachments/design/sample-archive.zip">Sample OpenAPI archive</a></li><li>If it is a single Swagger file without remote references, it can be imported directly, without zipping.</li><li> 
+    <ul><li>You need to upload an archive if you have remote references in your API definition. - <a href="../../../../../assets/attachments/design/sample-archive.zip">Sample OpenAPI archive</a></li><li>If it is a single Swagger file without remote references, it can be imported directly, without zipping.</li><li> 
     When uploading an OpenAPI archive, the master Swagger file should be named as <b>swagger.yaml</b>/<b>swagger.json</b>. 
     </br>If not, the validation will fail at the point of API creation.</li> <li>Referenced files can be named independently.</li>
     <li>When archiving the Swagger files, make sure that it does not have any hidden folders (e.g., <code>__MACOSX</code>).</li></ul>
@@ -240,17 +255,17 @@ The Transport Level Security defines the transport protocol on which the API is 
 
 Now, a REST API from an OpenAPI Definition has been created and configured successfully. 
 
-Next, [deploy the API](../../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/), [test the API](../../../../api-design-manage/design/create-api/create-rest-api/test-a-rest-api/), and finally [publish the API](../../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api/).
+Next, [deploy the API](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md), [test the API](test-a-rest-api.md), and finally [publish the API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
 ## See Also
 
 Learn more on the concepts that you need to know when creating a REST API:
 
--   [Endpoints](../../../../manage-apis/design/endpoints/endpoint-types/)
--   [API Security](../../../../manage-apis/design/api-security/api-authentication/secure-apis-using-oauth2-tokens/)
--   [Rate Limiting](../../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
--   [Life Cycle Management](../../../../manage-apis/design/lifecycle-management/api-lifecycle/)
--   [API Monetization](../../../../manage-apis/design/api-monetization/monetizing-an-api/)
--   [API Visibility](../../../../manage-apis/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/)
--   [API Documentation](../../../../manage-apis/design/api-documentation/add-api-documentation/)
--   [Custom Properties](../../../../manage-apis/design/create-api/adding-custom-properties-to-apis/)
+-   [Endpoints](../../endpoints/endpoint-types.md)
+-   [API Security](../../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
+-   [Rate Limiting](../../rate-limiting/assign-business-plans.md)
+-   [Life Cycle Management](../../lifecycle-management/api-lifecycle.md)
+-   [API Monetization](../../../../monitoring/api-monetization/monetizing-an-api.md)
+-   [API Visibility](../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)
+-   [API Documentation](../../api-documentation/add-api-documentation.md)
+-   [Custom Properties](../adding-custom-properties-to-apis.md)

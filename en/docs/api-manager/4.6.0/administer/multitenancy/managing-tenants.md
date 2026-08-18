@@ -1,3 +1,18 @@
+---
+title: "Managing tenants"
+description: "Add and view tenants from the WSO2 API Manager management console as a super user, and reach each tenant Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/multitenancy/managing-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/multitenancy/managing-tenants.md
+tags:
+  - api-manager
+  - administer
+  - multitenancy
+  - tenants
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Managing Tenants
 
 
@@ -45,7 +60,7 @@ When you create multiple tenants in an API Manager deployment, the API developer
   
          [![](../../assets/img/administer/tenant-naviagtion-bar.png)](../../assets/img/administer/tenant-naviagtion-bar.png)
 
-    -   You can also browse the other tenant developer portals listed in the public developer portal. But, within other tenant developer portals, you can only subscribe to the APIs to which your tenant domain is permitted to subscribe to. At the time an API is created, the API creator can specify which tenants are allowed to subscribe to the API. For information, see [API Subscriptions](../../consume/manage-subscription/subscribe-to-an-api).
+    -   You can also browse the other tenant developer portals listed in the public developer portal. But, within other tenant developer portals, you can only subscribe to the APIs to which your tenant domain is permitted to subscribe to. At the time an API is created, the API creator can specify which tenants are allowed to subscribe to the API. For information, see [API Subscriptions](../../api-developer-portal/manage-subscription/subscribe-to-an-api.md).
 
     !!! info
         A tenant can be deleted through the `TenantMgtAdminService`. Admin service operations can be invoked using a SOAP client such as SOAP UI. Follow the below steps to configure the `TenantMgtAdminService` using SOAP UI.

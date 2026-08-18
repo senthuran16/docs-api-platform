@@ -47,8 +47,23 @@ Tell the person up front roughly how many approvals to expect — step 5 asks on
 non-empty tier, which is usually eight to twelve — so the run does not feel like it
 has stalled.
 
-Deliverables at the end: every page in scope with complete frontmatter, and
-`BROKEN-LINKS-<scope>.md` listing what is left to decide.
+Deliverables at the end: every page in scope with complete frontmatter,
+`BROKEN-LINKS-<scope>.md` listing what is left to decide, and
+`BROKEN-EXTERNAL-<scope>.json` from the external-link check in step 7.
+
+**Make the smallest change that fixes the finding.** This governs every step below.
+
+- **Stay in scope.** Pass `--scope` to every command. A file outside it must not be
+  touched, however obviously wrong it looks — report it instead.
+- **Fix where a link points, not what it says.** Changing link text, headings or
+  prose alters what the page means; that is a content decision, so ask first.
+- **Do not delete content to clear a finding.** A link to a missing page is evidence
+  the page is missing. Removing it destroys the evidence and the finding both. Repoint
+  it, or leave it and report it.
+- **Do not fix a version you were not asked about.** Say which other versions carry
+  the same problem; do not go and fix them.
+- **Leave and report beats guess.** A wrong link that resolves is worse than a broken
+  one, because nothing will ever flag it again.
 
 **Which spec you are working from.** At the start of every run, check for
 `.claude/rules/doc-frontmatter-and-metadata.md` in the target repo:
@@ -172,6 +187,9 @@ fixes and different risk:
 | `gone` | No target anywhere | Was it dropped, missed, or merged? | No — refused |
 | `partial` | Would be mechanical, but the page is an included partial | Needs a decision on how partials link at all | No — refused |
 
+**External links are in no tier** — they are checked separately, by
+`check_external.py` in step 7.
+
 ## 5. Apply the link tiers, one at a time
 
 `scripts/fix_links.py` is the only thing that edits link text, and it takes one
@@ -254,10 +272,18 @@ script refuses entries that do not.
 python3 scripts/fm_audit.py en/docs --scope <version> --gate
 python3 scripts/check_links.py en/docs
 python3 scripts/check_redirects.py en/mkdocs.yml en/docs --gate
+python3 scripts/check_external.py en/docs --scope <scope> \
+    --json BROKEN-EXTERNAL-<scope>.json
 ```
 
 Re-auditing is not optional — it is the only thing that proves the fix worked rather
 than moved the problem.
+
+`check_external.py` makes network calls, so run it here rather than in a merge gate.
+It reports three verdicts: `dead`, `unverifiable` (the check failed, not the link —
+never count these as broken) and `ok`. **Ask the user before changing any `dead`
+external link**, offering: unlink and keep the text, repoint to a URL they supply, or
+leave it and record it. See `references/judgement-calls.md`.
 
 Where the repo can be built, `mkdocs build` is the authoritative check on links. If
 you have the dependencies, run it and reconcile any difference rather than assuming

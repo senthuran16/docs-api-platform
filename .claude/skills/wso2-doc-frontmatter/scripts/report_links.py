@@ -32,7 +32,8 @@ from links_lib import (  # noqa: E402
     find_targets, harvest_anchors, strip_noise, url_base, published, link_to,
     slug, resolve_candidates, version_root as _version_root,
     find_includes, snippet_for, match_anchor, normalise_var,
-    build_include_map, legacy_path, read_toc_depth,
+    build_include_map, legacy_path, read_toc_depth, non_web_scheme,
+    has_uri_scheme, renders_anchors_clientside,
 )
 
 
@@ -126,6 +127,14 @@ def main():
         extra = [page_text[b] for b in includes_of.get(p, []) if b in page_text]
         anchors[p], deep_anchors[p] = harvest_anchors(page_text[p], TOC, extra)
 
+    # Pages whose anchors are built in the browser, not by Markdown — the OpenAPI
+    # reference pages are ReDoc containers. They hold no headings, so `anchors[p]`
+    # is empty for them and EVERY fragment aimed at one would be filed as a
+    # reworded heading. 49 findings repo-wide were sitting in the refused `anchor`
+    # tier for exactly this reason, where nobody could act on them.
+    clientside_anchor_pages = {
+        p for p in md_list if renders_anchors_clientside(page_text[p])}
+
     # ---- which pages are PARTIALS, included into other pages ----
     #
     # A relative link inside a partial is resolved against the url of whatever page
@@ -154,7 +163,7 @@ def main():
         for _k, bt, bhtml in find_targets(btxt):
             if bt.startswith(("mailto:", "tel:", "//", "#", "#!")) or "{{" in bt:
                 continue
-            if re.match(r"^[a-z][a-z0-9+.-]*:", bt):
+            if has_uri_scheme(bt):
                 continue
             bpath = urllib.parse.unquote(bt.partition("#")[0])
             if not bpath or bpath.startswith("/"):
@@ -241,7 +250,14 @@ def main():
                      both sides are reduced to letters and digits.
 
             Anything else is a reworded heading, and only reading the page says which
-            one was meant."""
+            one was meant.
+
+            Nothing is filed when the target builds its anchors client-side: there
+            are no headings to match, the fragment is resolved at runtime from the
+            OpenAPI spec, and there is neither a fix to apply nor a decision to
+            make. Reporting those trained readers to ignore the tier."""
+            if target_file in clientside_anchor_pages:
+                return
             # The heading EXISTS but sits deeper than `toc_depth`, so the build
             # gives it no id and the link goes nowhere. Fixable, and the fix edits
             # the TARGET page rather than this one: an inert `<a name>` above the
@@ -356,6 +372,14 @@ def main():
 
         for kind, t, is_html in raw:
             if t.startswith(("mailto:", "tel:", "//", "#!")):
+                continue
+
+            # Anything carrying a URI scheme is an ADDRESS, not a path on disk.
+            # `check_links.py` has always skipped these; the reporter did not, so
+            # the two disagreed and correct `ldap://10.100.1.100:389` examples in
+            # the user-store pages were filed under `gone`. non_web_scheme()
+            # returns None for HTTP_TYPOS, so `ttps://` stays a `malformed` fix.
+            if non_web_scheme(t):
                 continue
 
             # Malformed syntax, caught before resolution so it isn't mis-filed as a
@@ -631,7 +655,7 @@ def main():
         for kind, t, is_html in find_targets(body):
             if t.startswith(("mailto:", "tel:", "//", "#", "#!")) or "{{" in t:
                 continue
-            if re.match(r"^[a-z][a-z0-9+.-]*:", t):
+            if has_uri_scheme(t):
                 continue
             path, _, frag = t.partition("#")
             path = urllib.parse.unquote(path)

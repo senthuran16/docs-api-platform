@@ -1,3 +1,18 @@
+---
+title: "Upgrade WSO2 API Manager"
+description: "Reasons to upgrade WSO2 API Manager, what has changed between releases, and where to start the upgrade of an existing deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/upgrading-wso2-api-manager/upgrading-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/upgrading-wso2-api-manager/upgrading-api-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - upgrading-wso2-api-manager
+  - upgrading-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Upgrade WSO2 API Manager
 
 This document walks you through the process of upgrading WSO2 API Manager. 
@@ -12,7 +27,7 @@ There are multiple reasons why you would want to upgrade the WSO2 product to the
 
 ## What has changed
 
-Over the course of its lifetime, WSO2 API Manager has changed significantly. To learn what’s new in the WSO2 API Manager 4.5.0 release, see the [About this Release page](../../get-started/about-this-release/).
+Over the course of its lifetime, WSO2 API Manager has changed significantly. To learn what’s new in the WSO2 API Manager 4.5.0 release, see the [About this Release page](../../get-started/about-this-release.md).
 
 <div class="admonition info">
     <p class="admonition-title">Seamless product upgrade from WSO2 API Manager 4.2.0</p>
@@ -20,7 +35,7 @@ Over the course of its lifetime, WSO2 API Manager has changed significantly. To 
 </div>
 
 !!! note
-    From WSO2 API Manager 4.5.0 onwards, we no longer support API-M profiles such as, `-Dprofile=control-plane`, `-Dprofile=gateway-worker` and `-Dprofile=traffic-manager`. Instead, we now have separate distributions namely, **WSO2 API Control Plane**, **WSO2 Universal Gateway** and **WSO2 Traffic Manager** components. For more information please refer the **Key Changes** section in the [About this Release](../../get-started/about-this-release/) page.
+    From WSO2 API Manager 4.5.0 onwards, we no longer support API-M profiles such as, `-Dprofile=control-plane`, `-Dprofile=gateway-worker` and `-Dprofile=traffic-manager`. Instead, we now have separate distributions namely, **WSO2 API Control Plane**, **WSO2 Universal Gateway** and **WSO2 Traffic Manager** components. For more information please refer the **Key Changes** section in the [About this Release](../../get-started/about-this-release.md) page.
 
 ## Get started
 

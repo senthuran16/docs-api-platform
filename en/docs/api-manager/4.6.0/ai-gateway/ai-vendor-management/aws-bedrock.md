@@ -1,3 +1,18 @@
+---
+title: "AWS Bedrock"
+description: "Configure AWS Bedrock as a multi-model AI service provider in the WSO2 API Manager Admin Portal by adding model providers and their models."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/aws-bedrock/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/aws-bedrock.md
+tags:
+  - api-manager
+  - ai-gateway
+  - ai-vendor-management
+  - aws-bedrock
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # AWS Bedrock
 
 AWS Bedrock is a **default AI Service Provider** in WSO2 API Manager which has **Multi Model Provider** support that allows you to manage multiple AI models from various providers. This guide explains how to configure AWS Bedrock by adding model families (providers) and their associated models within the API Manager. For more information about AWS Bedrock, see the [AWS Bedrock Documentation](https://docs.aws.amazon.com/bedrock/).
@@ -43,7 +58,7 @@ The **Model Provider(s)** section allows you to add and configure different AI m
 </table>
 
 !!! Note "Add Multiplde Model Providers and models"
-    Adding multiple models under a provider allows you to use advanced routing strategies such as failover, load balancing, and other traffic management options. You can configure these routing policies when creating AI APIs to control how requests are distributed among the available models. For more details, see [Multi-Model Routing Overview](../../ai-gateway/multi-model-routing/overview/).
+    Adding multiple models under a provider allows you to use advanced routing strategies such as failover, load balancing, and other traffic management options. You can configure these routing policies when creating AI APIs to control how requests are distributed among the available models. For more details, see [Multi-Model Routing Overview](../multi-model-routing/overview.md).
 
 ##### Example Provider Configurations
 

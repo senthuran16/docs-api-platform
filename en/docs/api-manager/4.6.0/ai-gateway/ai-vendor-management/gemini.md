@@ -1,3 +1,18 @@
+---
+title: "Gemini"
+description: "Configure Gemini as an AI service provider in the WSO2 API Manager Admin Portal and manage the Google models available to AI APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/gemini/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/gemini.md
+tags:
+  - api-manager
+  - ai-gateway
+  - ai-vendor-management
+  - gemini
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Gemini
 
 Gemini is a **default AI Service Provider** in WSO2 API Manager that allows you to integrate with Google's advanced language models. For more information about Gemini, see the [Gemini API Documentation](https://ai.google.dev/docs).
@@ -85,7 +100,7 @@ The following configurations can be updated:
 
 - By default, the following models are included: `gemini-2.5-flash-lite`, `gemini-2.5-flash`, and `gemini-2.5-pro`.
 - To add available models supported by Gemini, type the model name and press enter.
-- This enables model-based load balancing and failover capabilities. For more details, see [Multi-Model Routing Overview](../../ai-gateway/multi-model-routing/overview/).
+- This enables model-based load balancing and failover capabilities. For more details, see [Multi-Model Routing Overview](../multi-model-routing/overview.md).
 
 ### Step 3: Save Configuration
 

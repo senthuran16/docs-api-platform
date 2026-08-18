@@ -1,3 +1,18 @@
+---
+title: "Configuring environment specific parameters"
+description: "Generate a deployment directory and define a params file so apictl applies endpoint, certificate, and deployment values per environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/advanced-topics/configuring-environment-specific-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/advanced-topics/configuring-environment-specific-parameters.md
+tags:
+  - api-manager
+  - apiops
+  - cli
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 #  Configuring Environment Specific Parameters
 
 To allow easily configuring environment-specific details when there are multiple environments, **WSO2 API Controller (apictl)** supports an additional parameter file (will be referred to as the "parameters file" in this document) or an additional directory to store these deployment-related artifacts. It is recommended to store the parameters file inside the deployment directory if there are certificates and other details included. However, it can be stored somewhere else when certificates are not specified via this parameters file. 
@@ -328,11 +343,11 @@ You can provide the parameters file using `--params` flag when importing an API.
 -   You can deploy an API project which does not include `deployment_environments.yaml` (working copy of the API or a revision without deployment environments) by specifying the `deploymentEnvironments` fields in the parameters file.
 -   Production/Sandbox backends for each environment can be specified in the parameters file with additional configurations, such as timeouts.
 -   When defining passwords in parameters file, quotes are mandatory if `password` contains special characters.
--   The parameters file supports detecting environment variables during the API import process. You can use the usual notation as described [here](../../../install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/). For example, `url: ${DEV_PROD_URL}`.  If an environment variable is not set, the tool will fail. In addition, the system will also request for a set of required environment variables.
--   To learn about setting up different endpoint types such as HTTP/REST, HTTP/SOAP (with load balancing and failover), Dynamic and AWS Lambda, see [Configuring Different Endpoint Types](../../../install-and-setup/setup/api-controller/advanced-topics/configuring-different-endpoint-types).
--   To learn about setting up different endpoint security types such as Basic, Digest and OAuth 2.0, refer the section [Configuring Different Endpoint Security Types](../../../install-and-setup/setup/api-controller/advanced-topics/configuring-different-endpoint-security-types).
+-   The parameters file supports detecting environment variables during the API import process. You can use the usual notation as described [here](using-dynamic-data-in-api-controller-projects.md). For example, `url: ${DEV_PROD_URL}`.  If an environment variable is not set, the tool will fail. In addition, the system will also request for a set of required environment variables.
+-   To learn about setting up different endpoint types such as HTTP/REST, HTTP/SOAP (with load balancing and failover), Dynamic and AWS Lambda, see [Configuring Different Endpoint Types](configuring-different-endpoint-types.md).
+-   To learn about setting up different endpoint security types such as Basic, Digest and OAuth 2.0, refer the section [Configuring Different Endpoint Security Types](configuring-different-endpoint-security-types.md).
 -   You can define the subscription level policies of an API using the field `policies`. There you can specify one or more subscription level policies that is available in the particular environment where you are importing the API to.
--   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-params-file) to learn how to configure certificates using the parameters file.
+-   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-parameters-file) to learn how to configure certificates using the parameters file.
 
 ## Defining the parameters file for an API Product
 
@@ -667,8 +682,8 @@ You can provide the parameters file using `--params` flag when importing an API 
 -   The parameters file of an API Product does not support the fields `endpoints`, `security` and `certs` like in the parameters file of an API. It only supports the fields `deploymentEnvironments`, `policies`, `mutualSslCerts` and another special field named `dependentAPIs`.
 -   The field `dependentAPIs` can be used to specify the parameters of dependent APIs. The parameters of a particular dependent API of an API Product is similar to the parameters of an API, but there is no use of specifying the `deploymentEnvironments` field under a dependent API. The reason for that is, the deployment environments of the API Product will be considered for dependent APIs as well.
 -   You can deploy an API Product which does not include `deployment_environments.yaml` (working copy of the API Product or a revision without deployment environments) by specifying the `deploymentEnvironments` fields in the parameters file.
--   The parameters file supports detecting environment variables during the API Product import process. You can use the usual notation as described [here](../../../install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/). For example, `url: ${DEV_PROD_URL}`.  If an environment variable is not set, the tool will fail. In addition, the system will also request for a set of required environment variables.
--   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-params-file) to learn how to configure certificates using the parameters file.
+-   The parameters file supports detecting environment variables during the API Product import process. You can use the usual notation as described [here](using-dynamic-data-in-api-controller-projects.md). For example, `url: ${DEV_PROD_URL}`.  If an environment variable is not set, the tool will fail. In addition, the system will also request for a set of required environment variables.
+-   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-parameters-file) to learn how to configure certificates using the parameters file.
 
 ## Handling the certificates using the parameters file
 

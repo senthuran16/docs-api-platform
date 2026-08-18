@@ -1,3 +1,18 @@
+---
+title: "Create a GraphQL API"
+description: "Create a GraphQL API from an SDL schema, and manage security and rate limiting for its query, mutation, and subscription operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-a-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-a-graphql-api.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create a GraphQL API
 
 GraphQL, which has been developed by Facebook, is a data query language for APIs. When using GraphQL, users can explicitly specify as to what data they need from an API. GraphQL APIs are an alternative to REST-based APIs. 
@@ -13,14 +28,14 @@ Follow the instructions below to design a GraphQL API.
 
 ### Create a GraphQL API
 
-{!includes/design/create-graphql-api.md!}
+--8<-- "api-manager/4.6.0/includes/design/create-graphql-api.md"
 
 !!! note
     For more information on the payload, see [GraphQL operations](#graphql-operations).
 
 Now, you have successfully created and configured a GraphQL API. 
 
-Next, let's deploy your API in the [WSO2 API Gateway](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/) and [Publish your API](../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api/).
+Next, let's deploy your API in the [WSO2 API Gateway](../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md) and [Publish your API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
 ### GraphQL operations
 
@@ -63,13 +78,13 @@ Rate limiting is set to unlimited, and thereby disabled by default.
 
 Learn more on the concepts that you need to know when creating a GraphQL API:
 
--   [Endpoints](../../../api-design-manage/design/endpoints/endpoint-types/)
--   [API Security](../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens/)
--   [Rate Limiting](../../../api-design-manage/design/rate-limiting/graphql-api/overview-query-limits-for-graphql/)
--   [Life Cycle Management](../../../api-design-manage/design/lifecycle-management/api-lifecycle/)
--   [API Monetization](../../../api-design-manage/design/api-monetization/monetizing-an-api/)
--   [API Visibility](../../../api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/)
--   [API Documentation](../../../api-design-manage/design/api-documentation/add-api-documentation/)
--   [Custom Properties](../../../api-design-manage/design/create-api/adding-custom-properties-to-apis/)
+-   [Endpoints](../endpoints/endpoint-types.md)
+-   [API Security](../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
+-   [Rate Limiting](../../../api-gateway/rate-limiting/enforce-graphql-query-limits.md)
+-   [Life Cycle Management](../lifecycle-management/api-lifecycle.md)
+-   [API Monetization](../../../monitoring/api-monetization/monetizing-an-api.md)
+-   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)
+-   [API Documentation](../api-documentation/add-api-documentation.md)
+-   [Custom Properties](adding-custom-properties-to-apis.md)
 
-- Try out the tutorial on <a href="../../../../tutorials/create-and-publish-a-graphql-api">Creating and Publishing a GraphQL API</a>.
+- Try out the tutorial on <a href="../../../../tutorials/create-and-publish-a-graphql-api/">Creating and Publishing a GraphQL API</a>.

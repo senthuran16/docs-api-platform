@@ -1,8 +1,23 @@
+---
+title: "Create and publish a WebSocket API"
+description: "Build a command line chat room with rooms and notifications channels: design a WebSocket streaming API, publish it, and use wscat."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/streaming-api/create-and-publish-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/streaming-api/create-and-publish-websocket-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSocket API
 
 This tutorial will guide you to implement a WebSocket based chat application using the WSO2 API Manager.
 Follow the instructions in this tutorial to design and publish API via a WebSocket backend, and thereafter 
-invoke the [WebSocket API](../../manage-apis/design/create-api/create-streaming-api/create-a-websocket-streaming-api) using the **wscat** WebSocket client.
+invoke the [WebSocket API](../../api-design-manage/design/create-api/create-streaming-api/create-a-websocket-streaming-api.md) using the **wscat** WebSocket client.
 
 This will demonstrate a simple command line based chat room which has two channels: **rooms**, and **notifications**.
 
@@ -11,7 +26,7 @@ This will demonstrate a simple command line based chat room which has two channe
 
 ### Step 1 - Design a WebSocket API
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and click **WebSocket API**.
 
@@ -144,7 +159,7 @@ Now, you have created and configured the WebSocket API successfully.
 
 ### Step 4 - Invoke the WebSocket API
 
-1. {!includes/sign-in-devportal.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSocket API. 
 
@@ -304,4 +319,4 @@ You have successfully created and published your first WebSocket API, subscribed
 
 ### Troubleshooting
 
-If you require more detailed logs in the WebSocket API flow in order to troubleshoot and debug an error in your scenario, see [Troubleshooting WebSocket APIs](../../reference/troubleshooting/troubleshooting-websocket-api/).
+If you require more detailed logs in the WebSocket API flow in order to troubleshoot and debug an error in your scenario, see [Troubleshooting WebSocket APIs](../../reference/troubleshooting/troubleshooting-websocket-api.md).

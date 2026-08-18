@@ -1,3 +1,18 @@
+---
+title: "Client credentials grant"
+description: "Enable the client credentials grant for an application and call the Token API to obtain an access token, with or without requesting a scope."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/authentication/grant-types/client-credentials-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/authentication/grant-types/client-credentials-grant.md
+tags:
+  - api-manager
+  - api-security
+  - key-management
+  - authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Client Credentials Grant
 
 Client credentials can be used when the authorization scope is limited to the protected resources belonging to the client. Client credentials are used as an authorization grant when the client requests access to protected resources based on an authorization previously arranged with the authorization server. The client application requests an access token from the authorization server, authenticating the request with its client key and client secret. If the client is successfully authenticated, an access token is returned.
@@ -103,4 +118,4 @@ If you want to **disable the Client Credentials grant type** in the API-M instan
 
 ### Refresh Token grant type - supported or not
 
-The Client Credentials grant type **does not support** the Refresh Token grant type. This grant type does not issue a refresh token which can be used to obtain new access tokens using the [refresh token grant](../../../../api-security/key-management/authentication/grant-types/refresh-token-grant/).
+The Client Credentials grant type **does not support** the Refresh Token grant type. This grant type does not issue a refresh token which can be used to obtain new access tokens using the [refresh token grant](refresh-token-grant.md).

@@ -1,3 +1,18 @@
+---
+title: "Securing APIs with mutual SSL"
+description: "Secure an API with mutual SSL in WSO2 API Manager by uploading client certificates, then invoke it with Postman or through the MTLS header."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/runtime/api-authentication/secure-apis-using-mutual-ssl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/runtime/api-authentication/secure-apis-using-mutual-ssl.md
+tags:
+  - api-manager
+  - api-security
+  - runtime
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Securing APIs with Mutual SSL
 
 In contrast to the usual one-way SSL authentication where a client verifies the identity of the server, in mutual SSL the server validates the identity of the client so that both parties trust each other. This builds a system that has very tight security and avoids any requests made to the client with regard to providing its username/password, as long as the server is aware of the certificates that belong to the client.
@@ -9,7 +24,7 @@ The following section explains as to how the APIs in WSO2 API Manager can be sec
 
 ## Create an API secured with Mutual SSL
 
-1.  [Create an API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/).
+1.  [Create an API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api.md).
 2.  Click **Develop -> API Configurations -> Runtime**.
 3.  Select **Mutual SSL**.
     

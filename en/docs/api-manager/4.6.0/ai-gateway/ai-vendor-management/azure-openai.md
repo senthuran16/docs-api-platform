@@ -1,3 +1,18 @@
+---
+title: "Azure OpenAI"
+description: "Configure Azure OpenAI as an AI service provider in the WSO2 API Manager Admin Portal and manage the models available to AI APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/azure-openai/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/azure-openai.md
+tags:
+  - api-manager
+  - ai-gateway
+  - ai-vendor-management
+  - azure-openai
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Azure OpenAI
 
 Azure OpenAI is a **default AI Service Provider** in WSO2 API Manager that provides access to OpenAI's language models through Azure's infrastructure. For more information about Azure OpenAI, see the [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/).
@@ -85,7 +100,7 @@ The following configurations can be updated:
 
 - By default, the following models are included: `gpt-4o`, `gpt-4o-mini`, and `o3-mini`.
 - To add available models supported by Azure OpenAI, type the model name and press enter. 
-- This enables model-based load balancing and failover capabilities. For more details, see [Multi-Model Routing Overview](../../ai-gateway/multi-model-routing/overview/).
+- This enables model-based load balancing and failover capabilities. For more details, see [Multi-Model Routing Overview](../multi-model-routing/overview.md).
 
 ### Step 3: Save Configuration
 

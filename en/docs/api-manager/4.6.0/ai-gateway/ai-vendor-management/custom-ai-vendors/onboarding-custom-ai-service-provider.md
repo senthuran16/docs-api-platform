@@ -1,3 +1,18 @@
+---
+title: "Creating custom AI service providers"
+description: "Add a custom AI service provider in the Admin Portal: general details, model and token metadata extraction, API definition, and connector type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/custom-ai-vendors/onboarding-custom-ai-service-provider/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/custom-ai-vendors/onboarding-custom-ai-service-provider.md
+tags:
+  - api-manager
+  - ai-gateway
+  - ai-vendor-management
+  - custom-ai-vendors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Creating Custom AI Service Providers
 
 This guide explains how to integrate WSO2 API Manager with custom AI service providers, allowing you to access various AI APIs via API Manager's AI Gateway. It provides step-by-step instructions for configuring any AI service provider to effectively manage and track AI API interactions.
@@ -149,8 +164,8 @@ Before creating a custom AI service provider, ensure you have:
 
 Once your custom AI service provider is configured:
 
-1. **Create AI APIs** using the configured provider - See [Getting Started with AI Gateway](../../../ai-gateway/getting-started-with-ai-gateway/)
-2. **Set up rate limiting** and **policies** specific to your AI service - See [Rate Limiting](../../../ai-gateway/rate-limiting/) and [API Policies](../../../api-design-manage/design/api-policies/overview/)
-3. **Configure monitoring** and **analytics** to track usage - See [API Analytics](../../../monitoring/api-analytics/analytics-overview/)
-4. **Test the integration** with sample requests - See [AI Gateway Overview](../../../ai-gateway/ai-gateway-overview/)
-5. **Deploy to production** and manage access through the API Gateway - See [Deploy an API](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/)
+1. **Create AI APIs** using the configured provider - See [Getting Started with AI Gateway](../../getting-started-with-ai-gateway.md)
+2. **Set up rate limiting** and **policies** specific to your AI service - See [Rate Limiting](../../rate-limiting.md) and [API Policies](../../../api-design-manage/design/api-policies/overview.md)
+3. **Configure monitoring** and **analytics** to track usage - See [API Analytics](../../../monitoring/api-analytics/analytics-overview.md)
+4. **Test the integration** with sample requests - See [AI Gateway Overview](../../ai-gateway-overview.md)
+5. **Deploy to production** and manage access through the API Gateway - See [Deploy an API](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md)

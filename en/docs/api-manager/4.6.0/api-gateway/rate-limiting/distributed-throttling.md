@@ -1,3 +1,18 @@
+---
+title: "Configure distributed throttling for API Manager"
+description: "Connect WSO2 API Manager to a Redis or Valkey cluster in replication mode so Traffic Manager nodes share distributed throttling counters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/rate-limiting/distributed-throttling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-gateway/rate-limiting/distributed-throttling.md
+tags:
+  - api-manager
+  - api-gateway
+  - rate-limiting
+  - distributed-throttling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configure Distributed Throttling for API Manager
 
 In a distributed deployment of WSO2 API Manager with multiple Traffic Manager nodes, it is essential to maintain traffic counts at a global level to ensure all nodes have a consistent view of the current usage. This is achieved by connecting API Manager to a Redis or Valkey cluster, which is used to store and synchronize distributed counters across all Traffic Manager nodes.
@@ -57,9 +72,9 @@ Follow the instructions below to configure the Redis server with WSO2 API Manage
     ```
 #### Step 3 - Start the WSO2 API-M server
 
-For more information, see [Running the API Manager Runtime](../../install-and-setup/install/installing-the-product/running-the-api-m/).
+For more information, see [Running the API Manager Runtime](../../install-and-setup/install/installing-the-product/running-the-api-m.md).
 
 In this setup, every TM node maintains its local counter and an unsynced counter. Instead of sending every increment/decrement to the Redis/Valkey store immediately, changes are accumulated locally. A scheduled background task periodically synchronizes the local counter with the Valkey/Redis store counter to keep the distributed state consistent across nodes. The accuracy of the counter value in each node can be fine tuned by adjusting the configs `sync_interval` and `core_pool_size`.
 
 !!! note
-    If you are using custom rate limiting policies in this setup, please refer [Custom Rate Limiting with Distributed Throttling](../../api-gateway/rate-limiting/implement-custom-throttling/#custom-rate-limiting-with-distributed-throttling).
+    If you are using custom rate limiting policies in this setup, please refer [Custom Rate Limiting with Distributed Throttling](implement-custom-throttling.md#custom-rate-limiting-with-distributed-throttling).

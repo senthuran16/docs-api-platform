@@ -1,7 +1,22 @@
+---
+title: "API revisions"
+description: "What API revisions are, and how to create, deploy, undeploy, delete, and restore one so each gateway serves the state of the API you choose."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-api-revisions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-api-revisions.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # API Revisions
 
-[Publishing](../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api/) displays the 
-API in the Developer Portal, and [deployment](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/) 
+[Publishing](../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md) displays the 
+API in the Developer Portal, and [deployment](../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md) 
 makes the API available for invocation via a Gateway. In previous versions of WSO2 API Manager, API publishing and deployment in Gateways were tightly coupled. In the API life cycle, whenever the publisher promotes an API to the `Published` state, the API will be displayed in the Developer Portal as well as deployed in the specified Gateway environments. The publisher only has two options regarding API deployment: either to deploy the current state of the API in a Gateway or not deploy the API at all.
 
 The Publisher Test Console provides a space to test the API before publishing and deploying an API. However, the Test Console does not provide the option to test the API in an actual Gateway with the runtime configurations. Making such changes to an API without proper testings and especially if the changes are reflected instantly in the Developer Portal and all the serving Gateways, is not a good approach for a production setup.  
@@ -26,7 +41,7 @@ Follow the instructions below to either deploy a new revision or deploy an exist
 
 ### Deploy a new revision
 
-{!includes/design/deploy-revision.md!}
+--8<-- "api-manager/4.6.0/includes/design/deploy-revision.md"
 
 ### Deploy an existing revision
 

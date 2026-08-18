@@ -1,3 +1,18 @@
+---
+title: "API creator, publisher capabilities"
+description: "Monitor API compliance against governance policies as a creator or publisher: label APIs, read the compliance dashboard, and unblock operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/governance/api-governance-api-creator-capabilities/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/governance/api-governance-api-creator-capabilities.md
+tags:
+  - api-manager
+  - api-design-manage
+  - governance
+  - api-governance-api-creator-capabilities
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # API Creator, Publisher Capabilities
 
 WSO2 API Manager enables API creators and publishers to effectively monitor the compliance status of their APIs.
@@ -22,10 +37,10 @@ APIs are evaluated based on governance policies that enforce rulesets to ensure 
 - If a policy is **non-blocking**, API actions can proceed while the **compliance check runs in the background**. The results will be displayed in the compliance dashboard once the evaluation is complete. By default, the background compliance check runs every 2 minutes if a change has been detected.
 
 !!! note
-    To configure blocking policies as an administrator, refer to [Create a New Policy](../../governance/api-governance-admin-capabilities/#create-a-new-policy) in the admin guide.
+    To configure blocking policies as an administrator, refer to [Create a New Policy](../../administer/governance/api-governance-admin-capabilities.md#create-a-new-policy) in the admin guide.
 
 !!! tip "Understand Governance Concepts"
-    To understand the core concepts of governance in WSO2 API Manager, refer to the [Governance Concepts](../../governance/governance-concept) documentation.
+    To understand the core concepts of governance in WSO2 API Manager, refer to the [Governance Concepts](../../administer/governance/governance-concept.md) documentation.
 
 ## Labeling APIs 
 
@@ -64,8 +79,8 @@ Compliance Summary provides a list of donut charts that show policy adhrence sum
 This section provides a breakdown of rule violations for the selected API based on severity level, categorized under each ruleset. Rules in each ruleset validate the following aspects:
 
 - **API Definition** – The OpenAPI or AsyncAPI definition that defines the API contract.
-- **API Metadata** – [API's YAML representation](../../reference/governance/api-yaml-representation/), which includes general details such as name and version, along with API management-specific configurations such as security settings and business plans. You can obtain the API's YAML representation by downloading the API from the API Publisher and opening the `api.yaml` file.
-- **API Documentation** – [API documentation YAML representation](../../reference/governance/api-doc-yaml-representation/)
+- **API Metadata** – [API's YAML representation](../../reference/governance/api-yaml-representation.md), which includes general details such as name and version, along with API management-specific configurations such as security settings and business plans. You can obtain the API's YAML representation by downloading the API from the API Publisher and opening the `api.yaml` file.
+- **API Documentation** – [API documentation YAML representation](../../reference/governance/api-doc-yaml-representation.md)
 
 
 ### **Ruleset Adherence Summary**

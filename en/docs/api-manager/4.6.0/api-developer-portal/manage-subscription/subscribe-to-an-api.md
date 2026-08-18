@@ -1,8 +1,23 @@
+---
+title: "Subscribe to an API"
+description: "Subscribe an application to a published API in the Developer Portal with the key generation wizard, then update the tier or unsubscribe later."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/manage-subscription/subscribe-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/manage-subscription/subscribe-to-an-api.md
+tags:
+  - api-manager
+  - api-developer-portal
+  - manage-subscription
+  - subscribe-to-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Subscribe to an API
 
 You have to **subscribe** to a published API before using it in your applications. The subscription process fulfills the authentication process and provides you with access tokens that you can use to invoke an API. 
 
-The examples here use the `PizzaShackAPI` REST API, which is [created](../../manage-apis/design/create-api/create-rest-api/create-a-rest-api) and [published](../../manage-apis/deploy-and-publish/publish-on-dev-portal/publish-an-api) to Developer Portal in WSO2 API Manager.
+The examples here use the `PizzaShackAPI` REST API, which is [created](../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api.md) and [published](../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api.md) to Developer Portal in WSO2 API Manager.
 
 The following are the two methods available in the Developer Portal to subscribe an API to an application. 
 
@@ -32,7 +47,7 @@ The following are the two methods available in the Developer Portal to subscribe
      
      [![Subscribe to new application process](../../assets/img/learn/key-gen-wizard-subscribe.png)](../../assets/img/learn/key-gen-wizard-subscribe.png)
     
-5. [Generate application keys](../../consume/manage-application/generate-keys/generate-api-keys) (Production or sandbox) by clicking on the **Next** button. 
+5. [Generate application keys](../manage-application/generate-keys/generate-api-keys.md) (Production or sandbox) by clicking on the **Next** button. 
 
      The application keys are generated in this step.
 
@@ -45,11 +60,11 @@ The following are the two methods available in the Developer Portal to subscribe
         [![Edit grant types](../../assets/img/learn/edit-application-grant-types.png)](../../assets/img/learn/edit-application-grant-types.png)
         
     
-6.  Select the access token validity period and [scopes](../../api-security/runtime/authorization/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/) to generate an access token to invoke the API, then click **Next** to continue.
+6.  Select the access token validity period and [scopes](../../api-security/runtime/authorization/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md) to generate an access token to invoke the API, then click **Next** to continue.
     
 7.  Copy the generated access token. 
 
-8. Click **Finish** to complete the wizard or click **Test** to navigate to the [API Console](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console) so that you can invoke and try out the API.
+8. Click **Finish** to complete the wizard or click **Test** to navigate to the [API Console](../invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md) so that you can invoke and try out the API.
 
     [![Copy access token](../../assets/img/learn/key-gen-wizard-access.png)](../../assets/img/learn/key-gen-wizard-access.png)
     
@@ -91,7 +106,7 @@ If you already have an existing application, follow the instructions below to su
     
     ![Subscription_update_completed](../../assets/img/learn/subscription-update-completed.png)
 
-Follow the steps mentioned in [Adding an API Subscription Update Workflow](../../consume/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow) if you need to configure an approval process to update the subscription tier. 
+Follow the steps mentioned in [Adding an API Subscription Update Workflow](advanced-topics/adding-an-api-subscription-tier-update-workflow.md) if you need to configure an approval process to update the subscription tier. 
 
 ## Unsubscribe from an API
 

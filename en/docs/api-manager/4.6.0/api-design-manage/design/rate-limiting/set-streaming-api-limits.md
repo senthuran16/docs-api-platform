@@ -1,3 +1,18 @@
+---
+title: "Set streaming API limits"
+description: "Assign subscription tiers that cap event counts or subscription duration for WebSocket, WebSub, and SSE APIs, and see how events are counted."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/rate-limiting/set-streaming-api-limits/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/rate-limiting/set-streaming-api-limits.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - rate-limiting
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Set Streaming API Limits
 
 Streaming APIs (WebSocket, WebHook/WebSub, and SSE) require different rate limiting approaches than REST APIs. Instead of limiting requests per minute, you control the number of events clients can consume and how long they can maintain connections.
@@ -61,4 +76,4 @@ The following default subscription tiers are available for Streaming APIs:
 
 ## See Also
 
-- For more information on setting Streaming API Limits in Subscription Policies, see [Streaming API Limits in Subscription Policies](../../../administer/rate-limiting/manage-subscription-policies/#streaming-api-limits-in-subscription-policies).
+- For more information on setting Streaming API Limits in Subscription Policies, see [Streaming API Limits in Subscription Policies](../../../administer/rate-limiting/manage-subscription-policies.md#streaming-api-limits-in-subscription-policies).

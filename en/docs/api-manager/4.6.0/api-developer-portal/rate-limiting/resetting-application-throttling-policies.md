@@ -1,3 +1,18 @@
+---
+title: "Reset application throttling policies"
+description: "Reset the application-level rate limiting quota for one end user of your application in the Developer Portal, and find that user's UUID."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/rate-limiting/resetting-application-throttling-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/rate-limiting/resetting-application-throttling-policies.md
+tags:
+  - api-manager
+  - api-developer-portal
+  - rate-limiting
+  - resetting-application-throttling-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Reset Application Throttling Policies
 
 As an application owner, you can reset the application-level rate limiting quota for specific end-users of your application. This allows individual users to continue using your application even after they've exhausted their quota, without waiting for the time window to reset.
@@ -48,16 +63,16 @@ To verify the reset worked, the user should try invoking APIs using the applicat
 
 The username or UUID used by the traffic manager to identify users depends on the OAuth grant type used to obtain access tokens:
 
-- **Client Credentials Grant**: Use the normal username of the application owner. With this grant type, your application accesses APIs on behalf of the client rather than individual users. See [Client Credentials Grant](../../manage-apis/design/api-security/oauth2/grant-types/client-credentials-grant/) for details.
+- **Client Credentials Grant**: Use the normal username of the application owner. With this grant type, your application accesses APIs on behalf of the client rather than individual users. See [Client Credentials Grant](../../api-security/key-management/authentication/grant-types/client-credentials-grant.md) for details.
 
-- **Password Grant** and **Authorization Code Grant**: Use the **UUID** of the end-user, not their username. See [Password Grant](../../manage-apis/design/api-security/oauth2/grant-types/password-grant/) and [Authorization Code Grant](../../manage-apis/design/api-security/oauth2/grant-types/authorization-code-grant/) for details.
+- **Password Grant** and **Authorization Code Grant**: Use the **UUID** of the end-user, not their username. See [Password Grant](../../api-security/key-management/authentication/grant-types/password-grant.md) and [Authorization Code Grant](../../api-security/key-management/authentication/grant-types/authorization-code-grant.md) for details.
 
 ### Finding User UUIDs Using Analytics
 
 You can use log-based analytics solutions to identify user UUIDs:
 
-- [ELK Analytics](../../monitoring/api-analytics/on-prem/elk-installation-guide/)
-- [Datadog Analytics](../../monitoring/api-analytics/on-prem/datadog-installation-guide/)
+- [ELK Analytics](../../monitoring/api-analytics/on-prem/elk-installation-guide.md)
+- [Datadog Analytics](../../monitoring/api-analytics/on-prem/datadog-installation-guide.md)
 
 Each successful API invocation generates a log entry containing details about the API, application, and user. Look for the `userName` field in the logs. For example:
 

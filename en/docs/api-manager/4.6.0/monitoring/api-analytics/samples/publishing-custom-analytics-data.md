@@ -1,5 +1,16 @@
 ---
-title: Publishing Custom Analytics Events Data - API Manager Documentation
+title: "Publishing custom analytics events data"
+description: "Implement an AnalyticsCustomDataProvider class, build it into a JAR, and configure WSO2 API Manager to publish custom analytics event data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/api-analytics/samples/publishing-custom-analytics-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/monitoring/api-analytics/samples/publishing-custom-analytics-data.md
+tags:
+  - api-manager
+  - monitoring
+  - api-analytics
+  - samples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
 ---
 
 # Publishing Custom Analytics Events Data
@@ -14,7 +25,7 @@ This section will cover the steps required to create a sample and configure the 
 
 You have to create a new `Java/Maven project`. 
 
-There is an already [created sample](https://github.com/wso2/samples-apim/tree/master/analytics-custom-data-provider) and if you wish to use that sample instead of developing the sample from scratch, then you can ignore the steps of creating the sample and start from [here](../../../monitoring/api-analytics/samples/publishing-custom-analytics-data/#build-the-project).
+There is an already [created sample](https://github.com/wso2/samples-apim/tree/master/analytics-custom-data-provider) and if you wish to use that sample instead of developing the sample from scratch, then you can ignore the steps of creating the sample and start from [here](publishing-custom-analytics-data.md#build-the-project).
 
 This section will cover how to configure the `pom.xml`, class implementations and building the created sample.
 
@@ -84,6 +95,8 @@ In order to achieve this behavior, create a class implementing the `AnalyticsCus
 
 Implementation of this class should look something similar to [this](https://github.com/wso2/samples-apim/blob/master/analytics-custom-data-provider/src/main/java/org/wso2/carbon/apimgt/gateway/sample/publisher/CustomDataProvider.java).
 
+<a name="build-the-project"></a>
+
 #### Build the Project
 
 Build the project using,
@@ -118,7 +131,7 @@ This configuration will be used when engaging the custom data provider class.
 
 3. Enabling Logs
 
-    To [enable trace logs](../../../monitoring/observability/configuring-logging/#enabling-logs-for-a-component) for the component: `org.wso2.am.analytics.publisher`, edit `log4j2.properties` file located inside `<APIM_HOME>/repository/conf` directory. 
+    To [enable trace logs](../../observability/configuring-logging.md#enabling-logs-for-a-component) for the component: `org.wso2.am.analytics.publisher`, edit `log4j2.properties` file located inside `<APIM_HOME>/repository/conf` directory. 
 
     1. Add new publisher to the loggers list:
 

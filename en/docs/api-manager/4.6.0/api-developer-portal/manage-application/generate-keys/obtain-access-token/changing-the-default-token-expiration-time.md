@@ -1,3 +1,18 @@
+---
+title: "Changing the default token expiration time"
+description: "Change the validity period of application, user, and refresh tokens in WSO2 API Manager globally or per application in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time.md
+tags:
+  - api-manager
+  - api-developer-portal
+  - manage-application
+  - generate-keys
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Changing the Default Token Expiration Time
 
 Follow the instructions below to change the default token expiry time based on your requirements.
@@ -76,4 +91,4 @@ Follow the instructions below to configure the token expiration time at the appl
 
 
 !!! info "More methods to optimize key validation"
-    In addition, see [Configuring Caching](../../../../install-and-setup/setup/advance-configurations/configuring-caching/) for several caching options that you can use to optimize key validation.
+    In addition, see [Configuring Caching](../../../../install-and-setup/setup/advance-configurations/configuring-caching.md) for several caching options that you can use to optimize key validation.

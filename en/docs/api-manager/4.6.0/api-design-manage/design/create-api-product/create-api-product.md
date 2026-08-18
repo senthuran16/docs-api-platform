@@ -1,6 +1,21 @@
+---
+title: "Create an API Product"
+description: "Create an API Product in the Publisher Portal by importing two REST APIs and selecting which of their resources to bundle into one interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api-product/create-api-product/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api-product/create-api-product.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create an API Product
 
-Let's create an API Product named customer leasing that includes resources from the Customer Info API & Leasing API, as discussed in the [previous example](../../../api-design-manage/design/create-api-product/api-product-overview/#how-it-works).
+Let's create an API Product named customer leasing that includes resources from the Customer Info API & Leasing API, as discussed in the [previous example](api-product-overview.md#how-it-works).
 
 1. Sign in to the API Publisher.
 
@@ -9,7 +24,7 @@ Let's create an API Product named customer leasing that includes resources from 
      (e.g., `https://localhost:9443/publisher`). 
 
 2. Create the following two APIs by [importing 
-the attached OpenAPI definition (a.k.a Swagger definition) files](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/).
+the attached OpenAPI definition (a.k.a Swagger definition) files](../create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md).
 
       - Customer Info API - [customer-info-api.yaml](../../../assets/attachments/learn/customer-info-api.yaml) 
 
@@ -156,7 +171,7 @@ the attached OpenAPI definition (a.k.a Swagger definition) files](../../../api-d
 
      (e.g., `https://localhost:9443/devportal`). 
 
-     For more information on how to subscribe to an API, see [Subscribe to an API](../../../api-developer-portal/manage-subscription/subscribe-to-an-api/).
+     For more information on how to subscribe to an API, see [Subscribe to an API](../../../api-developer-portal/manage-subscription/subscribe-to-an-api.md).
     
 !!! note
     To learn about API Product versioning refer [Create a New API Version](../../../api-design-manage/design/api-versioning/create-a-new-api-version.md).

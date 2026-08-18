@@ -1,3 +1,18 @@
+---
+title: "Pattern 6: All-in-One with WSO2 IS as key manager"
+description: "Deploy WSO2 API Manager on Kubernetes with WSO2 Identity Server 7.x as a third-party Key Manager, then register it from the portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-6-all-in-one-is-as-km/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-6-all-in-one-is-as-km.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Pattern 6: All-in-One with WSO2 IS as Key Manager
 
 This pattern deploys WSO2 API Manager as a single All-in-One node with WSO2 Identity Server 7.x acting as a third-party Key Manager. Token issuance and validation are delegated to WSO2 IS, which runs as a separate component in the same Kubernetes cluster.
@@ -153,7 +168,7 @@ In Pattern 6, APIM must trust the IS self-signed certificate. This step extracts
     ```
 
 !!! note
-    The commands above use the default WSO2 keystores which are suitable for evaluation only. For production-level keystore setup, refer to [Configuring Keystores in WSO2 API Manager](../../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/). You must also exchange the public certificates of APIM and IS and import them into each other's truststore — see [Importing certificates to the truststore](https://apim.docs.wso2.com/en/4.6.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore).
+    The commands above use the default WSO2 keystores which are suitable for evaluation only. For production-level keystore setup, refer to [Configuring Keystores in WSO2 API Manager](../../security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md). You must also exchange the public certificates of APIM and IS and import them into each other's truststore — see [Importing certificates to the truststore](../../security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-3-importing-certificates-to-the-truststore).
 
 ### Step 7 — Deploy WSO2 Identity Server { #step-7 }
 
@@ -227,7 +242,7 @@ In Pattern 6, APIM must trust the IS self-signed certificate. This step extracts
 
 APIM must trust the IS self-signed certificate to communicate with IS during Key Manager registration. This step imports the IS certificate into the APIM truststore and creates the `apim-keystore-secret` Kubernetes secret with the final truststore content.
 
-For background, refer to [Importing the Identity Server certificate to WSO2 API Manager](../../../../install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-oidc/#step-1-import-the-identity-server-certificate-to-wso2-api-manager).
+For background, refer to [Importing the Identity Server certificate to WSO2 API Manager](../../sso/configuring-identity-server-as-external-idp-using-oidc.md#step-1-import-the-identity-server-certificate-to-wso2-api-manager).
 
 1. Port-forward the IS service to your local machine and extract the IS public certificate.
 
@@ -509,7 +524,7 @@ wso2:
 
 In [Step 8](#step-8), you created `apim-keystore-secret` containing the default APIM keystores with the IS certificate imported into the truststore. Those are self-signed certificates suitable for evaluation only.
 
-For production-level keystore setup, refer to [Configuring Keystores in WSO2 API Manager](../../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/). Then recreate the secret with your own certificates:
+For production-level keystore setup, refer to [Configuring Keystores in WSO2 API Manager](../../security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md). Then recreate the secret with your own certificates:
 
 ```bash
 kubectl create secret generic apim-keystore-secret \
@@ -518,9 +533,9 @@ kubectl create secret generic apim-keystore-secret \
   -n wso2
 ```
 
-For mutual certificate trust between APIM and IS, import each product's public certificate into the other's truststore. Refer to the [Importing certificates to the truststore](https://apim.docs.wso2.com/en/4.6.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore) guide.
+For mutual certificate trust between APIM and IS, import each product's public certificate into the other's truststore. Refer to the [Importing certificates to the truststore](../../security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-3-importing-certificates-to-the-truststore) guide.
 
-For more details on configuring keystores, see [Configuring Keystores in WSO2 API Manager](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/).
+For more details on configuring keystores, see [Configuring Keystores in WSO2 API Manager](../../security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md).
 
 #### 3.2 Encrypt Secrets
 
@@ -658,7 +673,7 @@ userStore:
 !!! warning
     If you do not need to set any custom properties, remove the `properties` block entirely. An empty `properties` block will cause the deployment to fail.
 
-See [Working with user store properties](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/) for the full list of options.
+See [Working with user store properties](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md) for the full list of options.
 
 ### 6. Deploy with Custom Values { #section-6 }
 

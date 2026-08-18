@@ -1,3 +1,18 @@
+---
+title: "Create a WebSub/WebHook API"
+description: "Create a WebSub or WebHook API in WSO2 API Manager, configure its topics, generate a secret, and register the callback URL with your provider."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create a WebSub/WebHook API
 
 ## Overview
@@ -22,7 +37,7 @@ Follow the instructions below to create a WebHook API using the basic flow:
 
 ### Step 1 - Design a WebSub/Webhook API
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and Click **Webhook API**.
 
@@ -135,11 +150,11 @@ Now, you have successfully created and configured a Streaming API. Next, let's [
 
 ## End-to-end tutorial
 
-Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websub-api">Creating and Publishing a WebSub API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
+Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websub-api/">Creating and Publishing a WebSub API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.6.0/includes/design/stream-more-links.md"
 
-- [Configure an External WebSub Hub](../../../../install-and-setup/setup/advance-configurations/configuring-external-websub-hub/) — delegate hub responsibilities to a dedicated external WebSub hub.
-- [Extend WebSub Topic Matching](../../../../reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching/) — plug in custom topic-matching logic for WebSub APIs.
+- [Configure an External WebSub Hub](../../../../install-and-setup/setup/advance-configurations/configuring-external-websub-hub.md) — delegate hub responsibilities to a dedicated external WebSub hub.
+- [Extend WebSub Topic Matching](../../../../reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching.md) — plug in custom topic-matching logic for WebSub APIs.

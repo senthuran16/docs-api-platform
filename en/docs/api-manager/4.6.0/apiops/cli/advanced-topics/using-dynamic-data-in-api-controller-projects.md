@@ -1,10 +1,25 @@
+---
+title: "Using dynamic data in apictl projects"
+description: "Inject environment variables into the apictl params file and into operation policies so one API project can build for every environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/advanced-topics/using-dynamic-data-in-api-controller-projects/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/apiops/cli/advanced-topics/using-dynamic-data-in-api-controller-projects.md
+tags:
+  - api-manager
+  - apiops
+  - cli
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 #  Using Dynamic Data in apictl Projects
 
 The **WSO2 API Controller (apictl)** can inject dynamic values based on environment variables to various project files. The use of environment variables is a very convenient way of controlling inputs in almost every CI/CD platform.
 
 ## Add dynamic data to environment configurations
 
-To allow easily configuring environment-specific details, by default, the apictl supports an additional parameter file. For more information on using an environment parameter file, see [Configuring Environment Specific Parameters](../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters). 
+To allow easily configuring environment-specific details, by default, the apictl supports an additional parameter file. For more information on using an environment parameter file, see [Configuring Environment Specific Parameters](configuring-environment-specific-parameters.md). 
 
 The file supports detecting environment variables during the API (or API Product) import process. You can use the notation `${DEV_URL}` to specify environment variables to any attribute in this file. 
 

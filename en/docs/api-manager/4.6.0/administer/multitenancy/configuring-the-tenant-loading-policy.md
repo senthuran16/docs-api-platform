@@ -1,3 +1,18 @@
+---
+title: "Configuring the tenant loading policy"
+description: "Choose between lazy and eager loading of tenants in WSO2 API Manager, and configure the policy for your deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/multitenancy/configuring-the-tenant-loading-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/administer/multitenancy/configuring-the-tenant-loading-policy.md
+tags:
+  - api-manager
+  - administer
+  - multitenancy
+  - configuration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-20
+content_type: "how-to"
+---
+
 # Configuring the Tenant Loading Policy
 
 In WSO2 products based on Carbon 4.4.0 or later versions, you have the option of setting the required tenant loading policy by enabling either **Lazy Loading** or **Eager Loading** of tenants.
@@ -25,6 +40,8 @@ Now, see the instructions given below to configure the required tenant loading p
 
 As explained above, Lazy Loading (for tenants) is enabled as the loading policy in WSO2 products, by default. 
 
+<a name="configuring-the-tenant-unloading-time-for-lazy-loading"></a>
+
 #### Configuring the tenant unloading time (for Lazy Loading)
 
 If you have Lazy loading enabled, you can configure the allowed tenant idle time. For example, if you set the idle time to 30 minutes, tenants that are idle for more than 30 minutes will be unloaded automatically in your system. You can configure this value using two methods.
@@ -51,6 +68,8 @@ If you have Lazy loading enabled, you can configure the allowed tenant idle time
 
     3.  Restart the server.
     
+<a name="improved-artifacts-synchronization-for-lazy-loading"></a>
+
 #### Improved artifacts synchronization for Lazy loading
 
 Starting with API Manager version 3.2.0, an in-memory artifacts synchronization mechanism has been introduced, replacing the file-based artifacts management used in earlier versions. This new approach leverages a database to manage artifacts more efficiently.

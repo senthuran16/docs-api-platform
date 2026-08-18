@@ -1,10 +1,25 @@
+---
+title: "Create and publish a server sent events API"
+description: "Design a Server Sent Events API over a memory-monitoring backend, publish it, start the SSE server, and invoke it with cURL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/streaming-api/create-and-publish-sse-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/streaming-api/create-and-publish-sse-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-sse-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Create and Publish a Server Sent Events API
 
-This tutorial will guide you to create a [SSE Streaming API](../../manage-apis/design/create-api/create-streaming-api/create-a-sse-streaming-api) which is connected to a backend that observes your system's memory, and gives you the values in a continuous manner. Follow the instructions in this tutorial to design and publish an API with an SSE backend, and thereafter invoke it using a cURL command.
+This tutorial will guide you to create a [SSE Streaming API](../../api-design-manage/design/create-api/create-streaming-api/create-a-sse-streaming-api.md) which is connected to a backend that observes your system's memory, and gives you the values in a continuous manner. Follow the instructions in this tutorial to design and publish an API with an SSE backend, and thereafter invoke it using a cURL command.
 
 ## Step 1 - Design a SSE API
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and click **SSE API**.
 
@@ -89,7 +104,7 @@ Now, you have created and configured the SSE API successfully.
 
 ## Step 4 - Invoke the SSE API
 
-1. {!includes/sign-in-devportal.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-devportal.md"
 
 2. Click on the SSE API. 
 

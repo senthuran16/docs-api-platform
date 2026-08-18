@@ -1,14 +1,29 @@
+---
+title: "Create a new API version"
+description: "Create another version of an existing API in the Publisher Portal, and choose whether that version becomes the default version of the API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/api-versioning/create-a-new-api-version/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/api-versioning/create-a-new-api-version.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - api-versioning
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create a New API Version
 
 You need to create a new **API version** when you want to change a published API's behavior,
-authentication mechanism, resources, [throttling tiers](../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases/), target audiences, etc. WSO2 does not recommend to modify a published API that has subscribers plugged into it.
+authentication mechanism, resources, [throttling tiers](../rate-limiting/assign-business-plans.md), target audiences, etc. WSO2 does not recommend to modify a published API that has subscribers plugged into it.
 
 After creating a new version, you typically deploy it as a prototype for early promotion.
 A prototype can be used for testing, without a subscription, along with the published versions of the API. After a period of time of using the new version of the API in parallel with the older versions, you can publish the prototyped API and deprecate the older versions.
 
 !!! note
     The example here uses the PizzaShack API, which you created in the
-    [Create a REST API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) section and Published in the [Publish an API](../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api/) section.
+    [Create a REST API](../create-api/create-rest-api/create-a-rest-api.md) section and Published in the [Publish an API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md) section.
 
 Follow the instructions below to create a new version of an existing API:
 
@@ -16,7 +31,7 @@ Follow the instructions below to create a new version of an existing API:
      
      `https://<hostname>:9443/publisher` 
      
-     Create and publish an API. For more information, see [Create a REST API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) and [Publish an API](../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api/).
+     Create and publish an API. For more information, see [Create a REST API](../create-api/create-rest-api/create-a-rest-api.md) and [Publish an API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
 2.  Navigate to the API listing page, and click on the API for which you want to create a new version (e.g., `PizzaShackAPI 2.0.0`). 
                                         
@@ -34,7 +49,7 @@ Follow the instructions below to create a new version of an existing API:
     For API Product versioning create an API Product following [Create an API Product](../../../api-design-manage/design/create-api-product/create-api-product.md). Then follow the above steps as similar to API versioning.
 
 !!! note
-    For more details on the default version, see [Backward Compatibility](../../../api-design-manage/design/api-versioning/backward-compatibility/) section.
+    For more details on the default version, see [Backward Compatibility](backward-compatibility.md) section.
 
 !!! note
     By default, only the latest version of an API is shown in the Developer Portal. If you want to display multiple versions, add/change the following configuration in the `<API-M_HOME>/repository/conf/deployment.toml` file, and restart the server.
@@ -44,5 +59,5 @@ Follow the instructions below to create a new version of an existing API:
     ```
 
 You have created a new version of an API. In the next tutorial, let's learn how to
-[publish the new version and deprecate old API versions](../../../api-design-manage/design/api-versioning/deprecate-the-old-version/).
+[publish the new version and deprecate old API versions](deprecate-the-old-version.md).
 

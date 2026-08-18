@@ -1,3 +1,18 @@
+---
+title: "Pattern 1: All-in-One HA setup"
+description: "Configure Pattern 1 of WSO2 API Manager: two all-in-one nodes with shared databases, artifact synchronization, and rate limiting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Pattern 1: All-in-One HA Setup
 
 This page walks you through how to manually configure WSO2 API Manager (WSO2 API-M) with two active nodes that each has all the components of the API-M together in one instance (all-in-one instance).
@@ -14,9 +29,9 @@ Follow the instructions below to configure and deploy API-M by using an Active-A
     `wso2carbon.jks` is configured with private key and self signed public key pair for all purposes, such as encrypting 
     sensitive information, communicating over SSL etc. 
     
-    In a **production setup**, it is advised to set up several different keystores with separate trust chains for different use cases. For more information, see [Recommendations for setting up keystores in WSO2 products](../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/#recommendations-for-setting-up-keystores).
+    In a **production setup**, it is advised to set up several different keystores with separate trust chains for different use cases. For more information, see [Recommendations for setting up keystores in WSO2 products](../security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md#recommendations-for-setting-up-keystores).
 
-To create an all purpose keystore or multiple keystores for authentication and protection of data, follow the steps in [Creating New Keystores](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/). 
+To create an all purpose keystore or multiple keystores for authentication and protection of data, follow the steps in [Creating New Keystores](../security/configuring-keystores/keystore-basics/creating-new-keystores.md). 
 
 !!! tip
     You should use the same keystore and truststore for SSL in both WSO2 API-M instances.
@@ -45,7 +60,7 @@ in the demiliterized zone (DMZ).
 
 The `WSO2AM_DB` and `WSO2SHARED_DB` databases need to be shared between the two API-M nodes. It is recommended to use an
 industry-standard RDBMS databases for this purpose. For more 
-information on default databases and changing them into RDBMS databases, see [Working with Databases](../../../install-and-setup/setting-up-databases/overview/).
+information on default databases and changing them into RDBMS databases, see [Working with Databases](../setting-up-databases/overview.md).
 
 ??? tip
     If you have configured the apim and shared databases correctly, the `deployment.toml` in `<API-M_HOME>/repository/conf` 
@@ -209,7 +224,7 @@ In this case, let's use `gw.am.wso2.com` as the hostname.
 
     2. Save your changes.
 
-{!includes/design/redis-counter-note.md!}
+--8<-- "api-manager/4.6.0/includes/design/redis-counter-note.md"
 
 ## Step 9 - Optionally, enable distributed cache invalidation
 
@@ -224,7 +239,7 @@ enabled = true
 
 API Manager Analytics is delivered via the API Manager Analytics cloud solution. You need to configure the API Manager Gateway to publish analytics data into the cloud.
 
-See the instructions on [configuring the API Gateway](../../../monitoring/api-analytics/choreo-analytics/getting-started-guide/#step-3-configure-the-gateway) with the cloud-based analytics solution.
+See the instructions on [configuring the API Gateway](../../../monitoring/api-analytics/choreo-analytics/getting-started-guide.md#step-3-configure-the-gateway) with the cloud-based analytics solution.
 
 ## Step 11 - Configure Production Hardening
 
@@ -232,13 +247,13 @@ In a **production setup**, ensure that you have taken into account the respectiv
 (e.g., changing and encrypting the default passwords, configuring JVM security etc.) and other production deployment 
 guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) before deploying WSO2 API-M nodes. 
 
-For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/).
+For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../../..//install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/#common-guidelines-and-checklist/).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md).
 
 ## Step 12 - Start the WSO2 API-M Servers
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m/#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 === "Linux/Mac OS"
     ```bash

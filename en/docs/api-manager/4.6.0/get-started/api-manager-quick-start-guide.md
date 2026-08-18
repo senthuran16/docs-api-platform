@@ -1,3 +1,17 @@
+---
+title: "Quick start guide"
+description: "Create, deploy, and publish your first API in the Publisher Portal, then subscribe to it and invoke it from the WSO2 API Manager Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/get-started/api-manager-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/get-started/api-manager-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - api-manager-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "quickstart"
+---
+
 # Quick Start Guide
 
 New to WSO2 API Manager? No worries; we'll guide you through the basics!
@@ -15,7 +29,7 @@ Choose a deployment option to start WSO2 API Manager All-in-one package. The All
     1. Install [Java SE Development Kit (JDK)](https://adoptium.net/temurin/releases/?arch=any&version=21) version **21** and set the `JAVA_HOME` environment variable.
     
         !!! tip
-            For more information on setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-api-m-runtime/#setting-up-java_home)
+            For more information on setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-api-m-runtime.md#setting-up-java_home)
     
     2. Download WSO2 API-Manager All-in-one package.
     - [Open Source Distribution](https://github.com/wso2/product-apim/releases/tag/v4.6.0)
@@ -39,7 +53,7 @@ Choose a deployment option to start WSO2 API Manager All-in-one package. The All
 
 === "Run on Kubernetes"
 
-    To use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M), follow the steps in [Deploying API-M on Kubernetes using Helm Resources.](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one/#step-1-set-up-basic-configurations)
+    To use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M), follow the steps in [Deploying API-M on Kubernetes using Helm Resources.](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md#quick-start)
 
 ### What you'll build
 

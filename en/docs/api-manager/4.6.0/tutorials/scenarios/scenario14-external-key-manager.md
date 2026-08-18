@@ -1,3 +1,18 @@
+---
+title: "Scenario 14 - external key manager support"
+description: "Configure Keycloak as an external key manager for a tenant, then generate tokens from the Keycloak IdP and invoke an API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario14-external-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario14-external-key-manager.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario14-external-key-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Scenario 14 - External Key Manager Support
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to configure a Key Manager. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview.md).
@@ -16,7 +31,7 @@ For this scenario, we assume Railco has Keycloak IDP as their internal identity 
 
 ## Step 1: Set up Keycloak
 
-Detailed steps on how to configure Keycloak can be found in [WSO2 Documentation](../../administer/key-managers/configure-keycloak-connector/). Additionally, you could refer to the screencast done on this in [here](https://www.youtube.com/watch?v=xuZ6DPhXNX8). Following are the simplified steps for this setup.
+Detailed steps on how to configure Keycloak can be found in [WSO2 Documentation](../../api-security/key-management/third-party-key-managers/configure-keycloak-connector.md). Additionally, you could refer to the screencast done on this in [here](https://www.youtube.com/watch?v=xuZ6DPhXNX8). Following are the simplified steps for this setup.
 
 1. Download Keycloak Server from [https://www.keycloak.org/downloads](https://www.keycloak.org/downloads). At the time of writing this tutorial, keycloak 12.0.4 was used for this.
 2. Extract it to your local setup and navigate to `<keycloak>/bin` and run `./standalone.sh` to start the server.

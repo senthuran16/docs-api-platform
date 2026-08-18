@@ -1,3 +1,18 @@
+---
+title: "Multi-DC deployment patterns - overview"
+description: "Multi-datacenter deployment of WSO2 API Manager: why regions matter, the two supported patterns, their trade-offs, and key components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - multi-dc-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Multi-DC Deployment Patterns - Overview
 
 ## What is Multi-DC Deployment Architecture?
@@ -132,7 +147,7 @@ Sub regions are configured to handle incoming traffic exclusively. These regions
 
 3. **Horizontal Scalability:**
 This documentation provides information on configuring a single main region with a single sub region. However, the deployment can be horizontally scaled as needed by adding multiple sub regions. This approach ensures flexibility and responsiveness to changes in traffic patterns and loads.
-Please note the recommendations mentioned [here](../../../manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/scaling-the-gateway) when scaling the Gateways.
+Please note the recommendations mentioned [here](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/scaling-the-gateway.md) when scaling the Gateways.
 
 Please refer to the [documentation](../../../install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2.md) for detailed information on configuring pattern 2.
 

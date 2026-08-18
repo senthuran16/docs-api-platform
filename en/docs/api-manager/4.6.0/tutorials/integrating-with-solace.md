@@ -1,3 +1,17 @@
+---
+title: "External broker and gateway integration with API Manager"
+description: "Represent a Solace Event API as an API in WSO2 API Manager, then subscribe to it and call the Solace event broker with a token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/integrating-with-solace/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/integrating-with-solace.md
+tags:
+  - api-manager
+  - tutorials
+  - integrating-with-solace
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # External Broker and Gateway Integration with API Manager
 
 Solace is an advanced event broker which efficiently streams events and information across cloud, on-premises, and IoT environments. In this section, you will integrate the Solace gateway environment with API Manager.
@@ -13,7 +27,7 @@ A [**Solace Event API**](https://docs.solace.com/Cloud/Event-Portal/event-portal
 - You must have a valid **Solace API token**. This can be created from Solace PubSub+ Cloud, by going to **User Management** > **Token Management**. To generate this, you need to have a Solace PubSub+ Cloud account with a manager role (or higher).
 - You must have a [**Solace Event API**](https://docs.solace.com/Cloud/Event-Portal/event-portal-designer-event-apis.htm#Creating_an_Event_API) created in [Solace PubSub+ Cloud](https://console.solace.cloud/). An API in WSO2 API Manager will correspond to a **Solace Event API**.
 - The **Solace Event API** must be bundled within a [**Solace Event API Product**](https://docs.solace.com/Cloud/Event-Portal/event-portal-designer-event-api-products.htm#Creating_an_EAP), associated with one or more **Solace Plans**. Note that, this **Solace Event API Product** must bundle only one **Solace Event API** (the one you created above). **Solace Event API Products** that bundle more than one **Solace Event API** will **not** be fetched by WSO2 API Manager.
-- For each **Solace Plan** you are planning to use with **Solace Event APIs**, a corresponding [Subscription Level Policy](../manage-apis/design/rate-limiting/adding-new-throttling-policies/#adding-a-new-subscription-level-rate-limiting-tier) must be created in WSO2 API Manager. The **Subscription Level Policy's** name must be equal to the **Solace Plan's** name, and its **Quota Limits** should be **Event Based (Async API)**. Other values are ignored, therefore you can set only the mandatory values as you wish, in order to successfully create a policy.
+- For each **Solace Plan** you are planning to use with **Solace Event APIs**, a corresponding [Subscription Level Policy](../administer/rate-limiting/manage-subscription-policies.md) must be created in WSO2 API Manager. The **Subscription Level Policy's** name must be equal to the **Solace Plan's** name, and its **Quota Limits** should be **Event Based (Async API)**. Other values are ignored, therefore you can set only the mandatory values as you wish, in order to successfully create a policy.
 
 ### Create an OAuth Profile for a Solace Event Broker Service
 
@@ -59,7 +73,7 @@ A **Solace Event API** corresponds to an API in WSO2 API Manager. Follow the ste
 ## Subscribe to the API
 
 1. Log in to the Developer Portal via `https://<hostname>:9443/devportal`, and provide your username & password.
-2. [Subscribe to the API](../consume/manage-subscription/subscribe-to-an-api) you have created above with an Application. When subscribing, choose the Subscription Level Policy that corresponds to the Solace Plan that you want to use for the API.
+2. [Subscribe to the API](../api-developer-portal/manage-subscription/subscribe-to-an-api.md) you have created above with an Application. When subscribing, choose the Subscription Level Policy that corresponds to the Solace Plan that you want to use for the API.
 3. Obtain a token for the subscribed application.
 
 !!! warning "Warning"

@@ -371,6 +371,46 @@ def is_http_typo(target):
     return bool(m) and m.group(1).lower() in HTTP_TYPOS
 
 
+# Markers of a page that is a container for a client-side renderer rather than
+# Markdown content. Both appear on the OpenAPI reference pages in this repo.
+CLIENTSIDE_ANCHOR_MARKERS = ("templates/redoc.html", "<redoc")
+
+
+def renders_anchors_clientside(text):
+    """Are this page's anchors generated in the BROWSER rather than by Markdown?
+
+    An OpenAPI reference page is a ReDoc container — `template: templates/redoc.html`
+    plus a `<redoc spec-url=...>` element — and ReDoc builds the operation anchors
+    (`#tag/Applications/paths/~1applications~1{applicationId}/put`) at runtime from
+    the spec file. The `.md` holds no headings at all, so harvesting anchors from it
+    returns an empty set and every fragment "fails".
+
+    Treat a fragment on such a page as **unverifiable, not invalid**: skip the
+    anchor check rather than pass or fail it. Failing it reports correct deep links
+    as broken; passing it would claim a guarantee that was never checked. Skipping
+    is what lets the *path* half of a `dir_style` or `renamed` fix be applied while
+    leaving the fragment untouched.
+    """
+    return any(m in text for m in CLIENTSIDE_ANCHOR_MARKERS)
+
+
+def has_uri_scheme(target):
+    """Does `target` carry ANY uri scheme — including http, https and typos?
+
+    Distinct from `non_web_scheme()`, and the difference matters. Use this where
+    the only question is "can this be resolved as a path on disk?", which is
+    false for every scheme. Use `non_web_scheme()` where an http(s) target still
+    has to be classified afterwards (a legacy domain, a mistyped scheme), because
+    that one deliberately returns None for http, https and `HTTP_TYPOS` so the
+    caller keeps handling them.
+
+    Swapping one for the other silently changes what is skipped: narrowing a
+    has-any-scheme guard to non_web_scheme lets external URLs fall through to
+    path resolution and be reported as broken links.
+    """
+    return bool(SCHEME.match(target))
+
+
 # --------------------------------------------------------------- page addresses
 def url_base(rel):
     """Directory the RENDERED page sits in, under `use_directory_urls: true`.

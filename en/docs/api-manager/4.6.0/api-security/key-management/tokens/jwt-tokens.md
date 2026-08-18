@@ -1,3 +1,18 @@
+---
+title: "Secure APIs using JWT (Self contained) access tokens"
+description: "Secure APIs with self-contained signed JWT access tokens: required claims, token generation, and validation of JWTs from external OAuth providers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/tokens/jwt-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/tokens/jwt-tokens.md
+tags:
+  - api-manager
+  - api-security
+  - key-management
+  - tokens
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Secure APIs using JWT (Self Contained) Access Tokens
 
 JSON Web Token (JWT) is an open standard of transmitting information securely between two parties. As the tokens are digitally signed, the information is secured. The authentication and authorization process uses JWT access tokens. It is ideal to use JWT access tokens as API credentials because JWT access tokens can carry claims (data) that are used in order to authenticate and authorize requests.
@@ -299,10 +314,10 @@ When a client application invokes an API that is secured with audience validatio
 
 #### Setup audience validation
  
- 1.  [Sign in to the Publisher](../../../install-and-setup/install/installing-the-product/running-the-api-m/#accessing-the-api-publisher).
+ 1.  [Sign in to the Publisher](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-web-portals).
  `https://<server-host>:9443/publisher         `
  
- 2.  When [creating](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) or updating an API, enable **Audience Validation** in the **Application Level Security** tab under **Develop -> API Configurations -> Runtime**. 
+ 2.  When [creating](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api.md) or updating an API, enable **Audience Validation** in the **Application Level Security** tab under **Develop -> API Configurations -> Runtime**. 
 
  3. Type **Allowed Audience** value or values, and press Enter. 
 

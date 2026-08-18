@@ -1,3 +1,18 @@
+---
+title: "Azure AI foundry"
+description: "Configure Azure AI Foundry as a multi-model AI service provider in the Admin Portal, adding model providers, models, and authentication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/azure-ai-foundry/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/ai-gateway/ai-vendor-management/azure-ai-foundry.md
+tags:
+  - api-manager
+  - ai-gateway
+  - ai-vendor-management
+  - azure-ai-foundry
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Azure AI Foundry
 
 Azure AI Foundry is a **default AI Service Provider** in WSO2 API Manager which has **Multi Model Provider** support that allows you to manage multiple AI models from various providers. This guide explains how to configure Azure AI Foundry by adding model families (providers) and their associated models within the API Manager. For more information about Azure AI Foundry, see the [Azure AI Foundry Documentation](https://learn.microsoft.com/azure/ai-studio/).
@@ -44,7 +59,7 @@ The **Model Provider(s)** section allows you to add and configure different AI m
 </table>
 
 !!! Note "Add Multiple Model Providers and models"
-    Adding multiple models under a provider allows you to use advanced routing strategies such as failover, load balancing, and other traffic management options. You can configure these routing policies when creating AI APIs to control how requests are distributed among the available models. For more details, see [Multi-Model Routing Overview](../../ai-gateway/multi-model-routing/overview/).
+    Adding multiple models under a provider allows you to use advanced routing strategies such as failover, load balancing, and other traffic management options. You can configure these routing policies when creating AI APIs to control how requests are distributed among the available models. For more details, see [Multi-Model Routing Overview](../multi-model-routing/overview.md).
 
 ##### Example Provider Configurations
 
@@ -94,7 +109,7 @@ Once you have saved your changes, the updated Azure AI Foundry configuration wil
 
 ### API Key
 
-The default authentication method uses an Azure AI Foundry API key. Obtain an API key from the Azure AI Foundry portal and configure it as the endpoint security credential in the API Publisher. For step-by-step instructions, see [AI Backend Security](../../ai-gateway/ai-backend-security/).
+The default authentication method uses an Azure AI Foundry API key. Obtain an API key from the Azure AI Foundry portal and configure it as the endpoint security credential in the API Publisher. For step-by-step instructions, see [AI Backend Security](../ai-backend-security.md).
 
 ### Azure Workload Identity (UMI)
 

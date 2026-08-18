@@ -1,3 +1,18 @@
+---
+title: "Deploy WSO2 API Manager on OpenShift"
+description: "Deploy WSO2 API Manager on OpenShift with Helm: build a GID 0 compatible image, set security contexts, and route traffic via NGINX."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/kubernetes-deployment/openshift/openshift-deployment-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/kubernetes-deployment/openshift/openshift-deployment-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Deploy WSO2 API Manager on OpenShift
 
 OpenShift is a Kubernetes distribution with stricter security defaults. The core deployment approach — Helm charts, the same patterns (P0–P5) — is identical to standard Kubernetes. The key difference is that OpenShift ignores the UID defined in the Docker image and injects a random UID at runtime, which requires additional file permission configuration in the image and specific security context settings in the Helm values.
@@ -170,7 +185,7 @@ The All-in-One pattern uses an embedded H2 database by default, which is suitabl
 
 If you are using H2, skip this step and proceed to [Step 7](#step-7).
 
-For production, follow the [Setting Up Databases](../../../../install-and-setup/setup/setting-up-databases/overview/) guide to:
+For production, follow the [Setting Up Databases](../../setting-up-databases/overview.md) guide to:
 
 1. Set up a database instance accessible from your cluster
 2. Obtain the schema scripts for your database type
@@ -205,7 +220,7 @@ The Helm chart mounts a Kubernetes secret named `apim-keystore-secret` as a volu
 
 !!! note
     - Make sure to create the secret inside the namespace which will be used for installing the API Manager.
-    - The commands above use the default WSO2 keystores which are suitable for evaluation only. For production-level keystore setup, refer to [Configuring Keystores in WSO2 API Manager](../../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/).
+    - The commands above use the default WSO2 keystores which are suitable for evaluation only. For production-level keystore setup, refer to [Configuring Keystores in WSO2 API Manager](../../security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md).
 
 ### Step 8 — Deploy the All-in-One { #step-8 }
 

@@ -1,3 +1,18 @@
+---
+title: "Configuring identity server as IDP for SSO"
+description: "Configure WSO2 Identity Server as a SAML 2.0 identity provider and register the Publisher and Developer Portal as service providers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configuring Identity Server as IDP for SSO
 
 !!! info
@@ -13,7 +28,7 @@ The topics below explain the configurations.
   - [Configuring WSO2 API Manager apps as SAML 2.0 SSO service providers](#configuring-wso2-api-manager-apps-as-saml-20-sso-service-providers)
 
 !!! tip
-    In this documentation, MySQL is used as the database to configure WSO2 API Manager with WSO2 Identity Server. For instructions on replacing the default H2 database with MySQL, see [Setting up MySQL](../../../../install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql/#setting-up-mysql).
+    In this documentation, MySQL is used as the database to configure WSO2 API Manager with WSO2 Identity Server. For instructions on replacing the default H2 database with MySQL, see [Setting up MySQL](../../../../install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql.md#setting-up-mysql).
 
 
 ## Configuring WSO2 API Manager as Service Provider for Identity Server

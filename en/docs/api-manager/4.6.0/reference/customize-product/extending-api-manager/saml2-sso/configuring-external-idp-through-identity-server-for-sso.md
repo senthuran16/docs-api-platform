@@ -1,7 +1,22 @@
+---
+title: "Configuring external IDP through identity server for SSO"
+description: "Federate an external SAML2 identity provider through WSO2 Identity Server so Publisher and Developer Portal users sign in with SSO."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configuring External IDP through Identity Server for SSO
 
 !!! note
-    Please follow [Configuring Identity Server as IDP for SSO](../../../../develop/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso) to configure WSO2 Identity Server.
+    Please follow [Configuring Identity Server as IDP for SSO](configuring-identity-server-as-idp-for-sso.md) to configure WSO2 Identity Server.
     This guide will assume you have already followed the above tutorial and configured the Identity Server as IDP for SSO.
 
 1. Add a new Identity Provider in WSO2 Identity Server. For more details on configuring external IDPs in WSO2 IS, see [Adding and Configuring an Identity Provider](https://is.docs.wso2.com/en/5.10.0/learn/adding-and-configuring-an-identity-provider/) .

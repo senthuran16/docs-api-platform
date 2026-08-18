@@ -1,8 +1,23 @@
+---
+title: "Create an AI API"
+description: "Create an AI API for a provider such as OpenAI, Azure OpenAI, or Mistral, add the vendor API key, and configure sandbox and production endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-ai-api/create-an-ai-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-ai-api/create-an-ai-api.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create an AI API
 
 AI APIs enable seamless integration of AI services into applications through the WSO2 API Manager. By using the AI API feature, users can select specific AI vendors that best suit their needs. WSO2 API Manager provides built-in support for leading AI vendors like **OpenAI**, **Azure OpenAI**, and **Mistral**, while also allowing configuration of custom AI vendors to create AI APIs.
 
-This guide will get you started with AI API creation using WSO2 API Manager. Thus created AI API wil be deployed into the AI Gateway. Refer to [AI Gateway](../../../../ai-gateway/overview/) to get a deeper understanding on API Manager's AI Gateway capabilities.
+This guide will get you started with AI API creation using WSO2 API Manager. Thus created AI API wil be deployed into the AI Gateway. Refer to [AI Gateway](../../../../ai-gateway/ai-gateway-overview.md) to get a deeper understanding on API Manager's AI Gateway capabilities.
 
 Follow the instructions below to create an AI API using the basic flow:
 
@@ -109,16 +124,16 @@ Follow the instructions below to create an AI API using the basic flow:
 
     [![API Key Configuration](../../../../assets/img/learn/ai-gateway/ai-api-configure-backend-security.png){: style="width:90%"}](../../../../assets/img/learn/ai-gateway/ai-api-configure-backend-security.png)
 
-Now, you have successfully created an AI API. Next, [deploy the API](../../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/), [test the API](../../../../api-design-manage/design/create-api/create-rest-api/test-a-rest-api/), and finally [publish the API](../../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
+Now, you have successfully created an AI API. Next, [deploy the API](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md), [test the API](../create-rest-api/test-a-rest-api.md), and finally [publish the API](../../../../api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
 ## See Also
 
 Learn more on the concepts that you need to know when creating a REST API:
 
--   [API Security](../../../../api-security/runtime/secure-apis-using-oauth2-tokens/)
--   [Rate Limiting for AI APIs](../../../../ai-gateway/rate-limiting/)
--   [Multi-Model Routing](../../../../ai-gateway/multi-model-routing/overview/)
--   [Life Cycle Management](../../../../api-design-manage/design/lifecycle-management/api-lifecycle/)
--   [API Visibility](../../../../api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/)
--   [API Documentation](../../../../api-design-manage/design/api-documentation/add-api-documentation/)
--   [Custom Properties](../../../../api-design-manage/design/create-api/adding-custom-properties-to-apis/)
+-   [API Security](../../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
+-   [Rate Limiting for AI APIs](../../../../ai-gateway/rate-limiting.md)
+-   [Multi-Model Routing](../../../../ai-gateway/multi-model-routing/overview.md)
+-   [Life Cycle Management](../../lifecycle-management/api-lifecycle.md)
+-   [API Visibility](../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)
+-   [API Documentation](../../api-documentation/add-api-documentation.md)
+-   [Custom Properties](../adding-custom-properties-to-apis.md)

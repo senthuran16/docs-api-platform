@@ -1,3 +1,17 @@
+---
+title: "Develop an integration from a managed API"
+description: "Take the API-first approach: create a managed API, implement the integration in the Micro Integrator, then add the service endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/develop-an-integration-with-a-managed-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/develop-an-integration-with-a-managed-api.md
+tags:
+  - api-manager
+  - tutorials
+  - develop-an-integration-with-a-managed-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Develop an Integration From a Managed API
 
 The top down approach of API first integration provides the capability for API developers to start creating a managed REST API first in WSO2 API Manager. Then the integration developer can use the same API in the WSO2 Integration Studio to develop the integration later on and expose it to WSO2 API Manager. Thereafter, the API consumers can discover the API from the marketplace, subscribe to it, and use it for application development.
@@ -62,7 +76,7 @@ Let’s create an API in WSO2 API Manager.
 
 	 [![Add GET resource](../assets/img/tutorials/querydocter-resource.png)](../assets/img/tutorials/querydocter-resource.png)
 
-5.	You can manage the API the way you want and test out the resource by adding a [Mock Implementation](../manage-apis/design/prototype-api/create-mocked-js-api).
+5.	You can manage the API the way you want and test out the resource by adding a [Mock Implementation](../api-design-manage/design/prototype-api/create-mocked-js-api.md).
 
 ## Step 2 - Develop the integration service
 
@@ -377,7 +391,7 @@ Now let’s add the developed backend service to the API.
 
 ## Step 8 - Deploy the API
 
-Depoly the `HealthcareAPI` REST API in the Gateway. For more information, see [Deploy an API](../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/#deploy-an-api).
+Depoly the `HealthcareAPI` REST API in the Gateway. For more information, see [Deploy an API](../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md#deploy-an-api).
 
 ## Step 9 - Start the backend service
 
@@ -394,7 +408,7 @@ Let's start the back-end hospital service.
 
 ## Step 10 - Subscribe to the API and test it
 
-Subscribe to the `HealthcareAPI` REST API and invoke it. For more information, see [Test a REST API Using the Integrated API Console](../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console).
+Subscribe to the `HealthcareAPI` REST API and invoke it. For more information, see [Test a REST API Using the Integrated API Console](../api-developer-portal/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).
 
 You will get the response message from the Healthcare service, if you send the category as `surgery`:
 

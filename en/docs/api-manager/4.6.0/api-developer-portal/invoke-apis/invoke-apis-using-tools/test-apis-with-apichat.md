@@ -1,3 +1,18 @@
+---
+title: "Test APIs with API chat"
+description: "Test REST APIs with API Chat by describing requests in natural language: register an AI subscription key, configure API Manager, and run scenarios."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat.md
+tags:
+  - api-manager
+  - api-developer-portal
+  - invoke-apis
+  - invoke-apis-using-tools
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Test APIs with API Chat
 
 Testing APIs is an essential step in the API development lifecycle. API Manager simplifies the testing task by allowing you to engage with your APIs using natural language through API Chat. It eliminates manual test scenario creation, payload mocking, etc. It enables easy API communication using human language and requires no coding for handling sequences with multiple resource calls. This makes your API testing efficient and user-friendly.
@@ -8,7 +23,7 @@ Testing APIs is an essential step in the API development lifecycle. API Manager 
 Follow the steps below to test your API with API Chat:
 
 !!! tip
-    If you've previously registered your environment for the [Marketplace Assistant](../../../consume/discover-apis/marketplace-assistant), you can skip Step 1 and 2 by utilizing the same credentials for the API Chat. Otherwise, complete Step 1 and 2 to generate the credentials.
+    If you've previously registered your environment for the [Marketplace Assistant](../../discover-apis/marketplace-assistant.md), you can skip Step 1 and 2 by utilizing the same credentials for the API Chat. Otherwise, complete Step 1 and 2 to generate the credentials.
 
 ## Step 1 - Sign in to AI Subscription Portal
 
@@ -66,7 +81,7 @@ Follow the steps below to test your API with API Chat:
 
 ## Step 4 - Test your APIs
 
-Now we can begin testing APIs. Note that this guide covers the API Chat capabilties using the `PizzaShack` REST API, which was created in [Create a REST API](../../../manage-apis/design/create-api/create-rest-api/create-a-rest-api/).
+Now we can begin testing APIs. Note that this guide covers the API Chat capabilties using the `PizzaShack` REST API, which was created in [Create a REST API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api.md).
 
 1.  Sign in to the WSO2 Developer Portal (`https://<hostname>:9443/devportal`) and click on the API that you need to test (e.g., `PizzaShack`).
 

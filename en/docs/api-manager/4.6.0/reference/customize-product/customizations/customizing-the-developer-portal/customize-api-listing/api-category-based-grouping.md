@@ -1,3 +1,17 @@
+---
+title: "API category based grouping"
+description: "Group APIs with categories: add a category in the Admin Portal, attach it to an API in the Publisher, and list it in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
 
 # API Category based Grouping
 
@@ -9,7 +23,7 @@ Initially, the Admins will define API categories. Thereafter, API providers will
 
 You can add an API category using any of the following methods:
 
-- [Add an API Category using the Admin Portal UI](../../../../../reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/#add-an-api-category-using-the-admin-portal-ui)
+- [Add an API Category using the Admin Portal UI](api-category-based-grouping.md#add-an-api-category-using-the-admin-portal-ui)
 - Add an API Category using the Admin REST API. (You can use the POST resource in the **API Category (Individual)** section [here](../../../../../reference/product-apis/admin-apis/admin-v4/admin-v4.md))
 
 ### Add an API Category using the Admin Portal UI

@@ -1,3 +1,18 @@
+---
+title: "Installation prerequisites"
+description: "Environment compatibility, system and database storage requirements, required applications, and ARM support for the API-M runtime."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installation-prerequisites/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installation-prerequisites.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installation-prerequisites
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "reference"
+---
+
 # Installation Prerequisites
 
 WSO2 API Manager contains multiple runtimes. Before installing the runtimes, be sure that the appropriate prerequisites are fulfilled.
@@ -16,16 +31,16 @@ Databases</p>
 <td>
 <ul>
 <li>
-<p>Install a JDK version that is <a href="../../install-and-setup/setup/reference/product-compatibility/#tested-operating-systems-and-jdks">compatible with this product version</a>.</p>
+<p>Install a JDK version that is <a href="../../../reference/product-compatibility/#tested-jdks">compatible with this product version</a>.</p>
 </li>
-<li><p>All WSO2 Carbon-based products are generally compatible with most common DBMSs. The embedded H2 database is suitable for development, testing, and some production environments. However, for most enterprise production environments, WSO2 recommends that you use an industry-standard RDBMS such as Oracle, PostgreSQL, MySQL, MS SQL, etc. For more information, see <a href="../../../install-and-setup/setup/setting-up-databases/overview/">Working with Databases</a>. Additionally, WSO2 does not recommend the H2 database as a user store.</p>
+<li><p>All WSO2 Carbon-based products are generally compatible with most common DBMSs. The embedded H2 database is suitable for development, testing, and some production environments. However, for most enterprise production environments, WSO2 recommends that you use an industry-standard RDBMS such as Oracle, PostgreSQL, MySQL, MS SQL, etc. For more information, see <a href="../../setup/setting-up-databases/overview/">Working with Databases</a>. Additionally, WSO2 does not recommend the H2 database as a user store.</p>
 </li>
 <li><p>
 It is <b>not recommended to use Apache DS</b> in a production environment due to scalability issues. Instead, use an LDAP like OpenLDAP for user management.</p></li>
 <li><p>On a production deployment, it is recommended that WSO2 products are installed on the latest releases of RedHat Enterprise Linux or Ubuntu Server LTS.</p></li>
 <li>
 <p>For environments that WSO2 products are tested with, see 
-<a href="../../install-and-setup/setup/reference/product-compatibility/#tested-wso2-products">Compatibility of WSO2 Products</a>.</p></li>
+<a href="../../../reference/product-compatibility/#wso2-product-compatibility-matrix">Compatibility of WSO2 Products</a>.</p></li>
 <li><p>
 If you have difficulty in setting up any WSO2 product in a specific platform or database, please <a href="https://wso2.com/subscription/">contact us</a>.</p>
 </li>

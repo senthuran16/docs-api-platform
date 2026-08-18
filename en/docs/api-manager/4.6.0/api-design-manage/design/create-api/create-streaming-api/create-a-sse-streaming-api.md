@@ -1,10 +1,25 @@
+---
+title: "Create a server sent events API"
+description: "Create a Server Sent Events API in WSO2 API Manager to receive one-way events from an SSE backend, and map its topics to backend paths."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-streaming-api/create-a-sse-streaming-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/create-api/create-streaming-api/create-a-sse-streaming-api.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Create a Server Sent Events API
 
 ## Overview
 
 A Server-Sent Events (SSE) API is a streaming API in WSO2 API Manager (WSO2 API-M) that is implemented based on the [SSE](https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events) specification. SSE is an HTTP-based protocol that allows one-way communication similar to WebHooks, from the server to the client. The SSE server transfers events over an already established connection without creating new connections. Therefore, the SSE protocol has a lower delivery latency when compared to typical HTTP. WSO2 API Manager allows API Developers to integrate an SSE backend with an API and to receive events from the backend.
 
-You can create an SSE API from scratch in WSO2 API-M and export the SSE APIs that are created within WSO2 API-M as AsyncAPI definitions. Alternatively, you can also import [existing AsyncAPI definitions to create SSE APIs in WSO2 API-M](../../../../design/create-api/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition).
+You can create an SSE API from scratch in WSO2 API-M and export the SSE APIs that are created within WSO2 API-M as AsyncAPI definitions. Alternatively, you can also import [existing AsyncAPI definitions to create SSE APIs in WSO2 API-M](create-a-streaming-api-from-an-asyncapi-definition.md).
 
 This section guides you through the process of creating an API from scratch, which will expose a SSE backend via WSO2 API Manager. After an SSE API is created, you will be able to add different topics and each topic can be mapped to different paths of the backend and can be used to manage them.
 
@@ -22,7 +37,7 @@ Follow the instructions below to create the API using the basic flow.
 
 ### Step 1 - Design a SSE API
 
-1.  {!includes/sign-in-publisher.md!}
+--8<-- "api-manager/4.6.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and Click **SSE API**.
 
@@ -152,8 +167,8 @@ Now, you have successfully created and configured a Streaming API. Next, let's [
 
 ## End-to-end tutorial
 
-Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-sse-api">Creating and Publishing a SSE API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
+Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-sse-api/">Creating and Publishing a SSE API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.6.0/includes/design/stream-more-links.md"

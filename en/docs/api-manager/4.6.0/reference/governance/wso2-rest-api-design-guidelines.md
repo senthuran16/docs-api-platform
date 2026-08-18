@@ -1,3 +1,18 @@
+---
+title: "WSO2 REST API design guidelines"
+description: "The WSO2 REST API Design Guidelines ruleset: rules for operation IDs, path casing, array schemas, contact details, and descriptions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/governance/wso2-rest-api-design-guidelines/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/governance/wso2-rest-api-design-guidelines.md
+tags:
+  - api-manager
+  - reference
+  - governance
+  - wso2-rest-api-design-guidelines
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-20
+content_type: "reference"
+---
+
 # WSO2 REST API Design Guidelines
 
 A set of guidelines focused on enforcing uniformity in API style, including naming conventions, formatting, and documentation to ensure clarity and maintainability across all APIs.
@@ -24,16 +39,16 @@ A set of guidelines focused on enforcing uniformity in API style, including nami
 | [openapi-tags-alphabetical](#openapi-tags-alphabetical) | Warn | Global tags should be in alphabetical order. |
 | [openapi-tags](#openapi-tags) | Warn | At least one global tag should be specified in the OpenAPI Document. |
 | [operation-description](#operation-description) | Warn | Each operation should have a description. |
-| [operation-operationId](#operation-operationId) | Warn | All operations should have an `operationId`. |
+| [operation-operationId](#operation-operationid) | Warn | All operations should have an `operationId`. |
 | [operation-tags](#operation-tags) | Warn | Each operation should have at least one tag. |
 | [contact-name](#contact-name) | Warn | The `contact` object should have an organization name. |
 | [path-keys-no-trailing-slash](#path-keys-no-trailing-slash) | Warn | Path keys should not end in a forward slash. |
 | [path-not-include-query](#path-not-include-query) | Warn | Paths should not include query string items. |
 | [tag-description](#tag-description) | Warn | Tags at the global level should have a description. |
 | [parameter-description](#parameter-description) | Warn | All `parameter` objects should have a description. |
-| [oas2-anyOf](#oas2-anyOf) | Warn | The `anyOf` keyword is not supported in OAS2. |
-| [oas2-oneOf](#oas2-oneOf) | Warn | The `oneOf` keyword is not supported in OAS2. |
-| [oas3-examples-value-or-externalValue](#oas3-examples-value-or-externalValue) | Warn | The `examples` object should include either `value` or `externalValue`, but not both. |
+| [oas2-anyOf](#oas2-anyof) | Warn | The `anyOf` keyword is not supported in OAS2. |
+| [oas2-oneOf](#oas2-oneof) | Warn | The `oneOf` keyword is not supported in OAS2. |
+| [oas3-examples-value-or-externalValue](#oas3-examples-value-or-externalvalue) | Warn | The `examples` object should include either `value` or `externalValue`, but not both. |
 | [path-parameters-on-path-only](#path-parameters-on-path-only) | Warn | Path parameters should be defined at the path level, not the operation level. |
 | [paths-no-query-params](#paths-no-query-params) | Warn | Paths should not contain query parameters. |
 | [resource-names-plural](#resource-names-plural) | Warn | Resource names should generally be plural. |

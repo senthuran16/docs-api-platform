@@ -1,3 +1,17 @@
+---
+title: "Create and publish a WebSocket API"
+description: "Build a WebSocket chat application: design an API with a WebSocket backend, publish it, and invoke it with the wscat client."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/create-and-publish-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/create-and-publish-websocket-api.md
+tags:
+  - api-manager
+  - tutorials
+  - create-and-publish-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSocket API
 
 This tutorial will guide you to implement a WebSocket based chat application using the WSO2 API Manager.
@@ -7,7 +21,7 @@ invoke it using the **wscat** WebSocket client.
 <html>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For more information on WebSocket APIs, see <a href="../manage-apis/design/create-api/create-a-websocket-api">Create a WebSocket API</a>.</p>
+<p>For more information on WebSocket APIs, see <a href="../../api-design-manage/design/create-api/create-streaming-api/create-a-websocket-streaming-api/">Create a WebSocket API</a>.</p>
 </div> 
 </html>
 
@@ -29,7 +43,7 @@ invoke it using the **wscat** WebSocket client.
       </div>
      </html>
     
-     [![Create WebSocket API menu](../assets/img/learn/design-new-streaming-api.jpg)](../assets/img/learn/design-new-streaming-api.jpg)
+     [![Create WebSocket API menu](../assets/img/design/create-api/streaming-api/design-new-streaming-api.png)](../assets/img/design/create-api/streaming-api/design-new-streaming-api.png)
 
 3.  Enter the details of the new WebSocket API.
 
@@ -92,9 +106,9 @@ invoke it using the **wscat** WebSocket client.
      
          For more information, see the following sections on endpoint related configurations.
 
-         - [Endpoint Timeouts](../manage-apis/design/endpoints/resiliency/endpoint-timeouts)
-         - [Endpoint Suspension](../manage-apis/design/endpoints/resiliency/endpoint-suspension)
-         - [Prevent API Suspension](../manage-apis/design/endpoints/resiliency/prevent-api-suspension)
+         - [Endpoint Timeouts](../api-design-manage/design/endpoints/resiliency/endpoint-timeouts.md)
+         - [Endpoint Suspension](../api-design-manage/design/endpoints/resiliency/endpoint-suspension.md)
+         - [Prevent API Suspension](../api-design-manage/design/endpoints/resiliency/prevent-api-suspension.md)
 
      [![View endpoint details](../assets/img/learn/endpoint-view-of-websocket-api.jpg)](../assets/img/learn/endpoint-view-of-websocket-api.jpg)
 

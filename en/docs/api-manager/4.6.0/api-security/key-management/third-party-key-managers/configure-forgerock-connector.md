@@ -1,3 +1,18 @@
+---
+title: "Configure ForgeRock as a key manager"
+description: "Configure ForgeRock as a third-party Key Manager in WSO2 API Manager: set up the OAuth 2.0 provider and client, then generate application keys."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/third-party-key-managers/configure-forgerock-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-security/key-management/third-party-key-managers/configure-forgerock-connector.md
+tags:
+  - api-manager
+  - api-security
+  - key-management
+  - third-party-key-managers
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configure ForgeRock as a Key Manager
 
 WSO2 API Manager has the capability to support multiple Key Managers at the same time. So with the use of connectors, it is capable of supporting any authorization server as a Key Manager. Additionally, WSO2 API Manager is prepacked with an inbuilt resident Key Manager.
@@ -9,7 +24,7 @@ Follow the instructions given below to configure ForgeRock as a third-party Key 
 ## Before you begin
 
 - Install ForgeRock.
-- [Download and install WSO2 API Manager](../../../install-and-setup/install/installing-the-product/installing-api-m-runtime/).
+- [Download and install WSO2 API Manager](../../../install-and-setup/install/installing-the-product/installing-api-m-runtime.md).
 
 ## Step 1 - Configure ForgeRock
 
@@ -170,7 +185,7 @@ If you want to work with scopes, then you need to assign the relevant scopes to 
 
 Follow the instructions given below to configure WSO2 API Manager to work with the ForgeRock Authorization Server.
 
-1. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m/#starting-the-server).
+1. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
      `<API-M_HOME>` refers to the root folder of the extracted WSO2 API-M distribution.
 

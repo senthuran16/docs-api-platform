@@ -1,3 +1,18 @@
+---
+title: "Scenario overview"
+description: "Union Station scenario tutorials for WSO2 API Manager: Docker setup, tenant and user details, and the list of 14 scenarios."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/tutorials/scenarios/scenario-overview.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Scenario Overview
 
 **Union Station** is a major multimodal railway transportation hub. It is one of the busiest stations in the country and serves thousands of passengers a day. The train shed, platforms, and tracks are owned by **GOGO transit**, and they operate the station. Trains are owned by the companies named **Quantis**, **ColTrain**, and **RailCo**. To provide a digital ecosystem, all four companies are planning to develop their day to day business operations with WSO2 technology. These development ranges from providing different kinds of APIs to external/internal users, providing real time notifications, stream data processing, integrating with partners/external systems etc.
@@ -133,24 +148,24 @@ The Micro Integrator and Streaming Integrator containers that were created when 
     <tr>
         <td>
             <ul>
-                <li><a href="../../../tutorials/scenarios/scenario1-create-rest-api">Scenario 1: Create a REST API from an OpenAPI Definition<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario2-access-control">Scenario 2: Engage Access Control to the API<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario3-implementing-an-api">Scenario 3: Implementing an API<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario4-user-signup-approval-flow">Scenario 4: Signing up a New User<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario5-developer-community-feature">Scenario 5: Getting the Developer Community Involved<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario6-integrating-with-data-sources">Scenario 6: Integrating with Data Sources<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario7-analytics">Scenario 7: Analytics<a></li>
+                <li><a href="../scenario1-create-rest-api/">Scenario 1: Create a REST API from an OpenAPI Definition<a></li>
+                <li><a href="../scenario2-access-control/">Scenario 2: Engage Access Control to the API<a></li>
+                <li><a href="../scenario3-implementing-an-api/">Scenario 3: Implementing an API<a></li>
+                <li><a href="../scenario4-user-signup-approval-flow/">Scenario 4: Signing up a New User<a></li>
+                <li><a href="../scenario5-developer-community-feature/">Scenario 5: Getting the Developer Community Involved<a></li>
+                <li><a href="../scenario6-integrating-with-data-sources/">Scenario 6: Integrating with Data Sources<a></li>
+                <li><a href="../scenario7-analytics/">Scenario 7: Analytics<a></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><a href="../../../tutorials/scenarios/scenario8-rate-limiting">Scenario 8: Rate Limiting<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario9-realtime-data">Scenario 9: Realtime Data with WebSocket API<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario10-notifications-webhooks">Scenario 10: Notifications Using Webhooks<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario11-graphql">Scenario 11: GraphQL Support<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario12-message-delivery">Scenario 12: Gauranteed Message Delivery<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario13-integrate-with-connectors">Scenario 13: Integrate with Services via Connectors<a></li>
-                <li><a href="../../../tutorials/scenarios/scenario14-external-key-manager">Scenario 14: External Key Manager Support<a></li>
+                <li><a href="../scenario8-rate-limiting/">Scenario 8: Rate Limiting<a></li>
+                <li><a href="../scenario9-realtime-data/">Scenario 9: Realtime Data with WebSocket API<a></li>
+                <li><a href="../scenario10-notifications-webhooks/">Scenario 10: Notifications Using Webhooks<a></li>
+                <li><a href="../scenario11-graphql/">Scenario 11: GraphQL Support<a></li>
+                <li><a href="../scenario12-message-delivery/">Scenario 12: Gauranteed Message Delivery<a></li>
+                <li><a href="../scenario13-integrate-with-connectors/">Scenario 13: Integrate with Services via Connectors<a></li>
+                <li><a href="../scenario14-external-key-manager/">Scenario 14: External Key Manager Support<a></li>
             </ul>
         </td>
     </tr>

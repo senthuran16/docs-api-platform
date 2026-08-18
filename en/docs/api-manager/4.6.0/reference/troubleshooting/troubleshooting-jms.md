@@ -1,3 +1,18 @@
+---
+title: "Troubleshooting JMS scenarios"
+description: "Resolve JMS integration failures: missing client libraries, HTTP header conversion, property type mismatches, and blocked threads."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/troubleshooting/troubleshooting-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/troubleshooting/troubleshooting-jms.md
+tags:
+  - api-manager
+  - reference
+  - troubleshooting
+  - troubleshooting-jms
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "troubleshooting"
+---
+
 # Troubleshooting JMS scenarios
 
 The following sections will help you to resolve common problems encountered in JMS integration scenarios with WSO2 Micro Integrator.
@@ -38,7 +53,7 @@ When WSO2 Micro Integrator attempts to forward a message over JMS, there are ins
 This problem occurs when the developer uses the property mediator to manipulate property values set on the message. Certain implementations of JMS have data type restrictions on properties. But the property mediator always sets property values as strings.
 
 The solution is to revise the mediation sequences and avoid manipulating property values containing non-string values. If you want to set a
-non-string property value, write a simple custom mediator. Instructions are given in section [Creating Custom Mediators](../../integrate/develop/customizations/creating-custom-mediators). For an example, to set a property named foo with integer value 12345, use the property mediator as follows and set the type attribute
+non-string property value, write a simple custom mediator. Instructions are given in section [Creating Custom Mediators](https://mi.docs.wso2.com/en/latest/develop/customizations/creating-custom-mediators/). For an example, to set a property named foo with integer value 12345, use the property mediator as follows and set the type attribute
 to INTEGER.  If the type attribute of the property is not specifically set, it will be assigned to String by default.
 
 ```xml

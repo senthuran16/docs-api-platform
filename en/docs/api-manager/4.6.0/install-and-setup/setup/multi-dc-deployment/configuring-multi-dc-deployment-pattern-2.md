@@ -1,3 +1,18 @@
+---
+title: "Multi-DC pattern 2: centralized API management"
+description: "Configure centralized API management with regional data planes: a main region Control Plane plus Gateway and Traffic Manager sub-regions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - multi-dc-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configure Pattern 2: Centralized API Management with Regional Data Planes
 
 <a href="../../../../assets/img/setup-and-install/multi-dc-pattern-2.png"><img src="../../../../assets/img/setup-and-install/multi-dc-pattern-2.png" alt="Multi-DC Pattern 2" width="80%"></a>
@@ -6,7 +21,7 @@
 
 The main region will be similar to the setup in a particular region as Pattern 1. Hence, the configuration will be similar except for the DB replication and event hub communication.
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md!}
+--8<-- "api-manager/4.6.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md"
 
 Since the control plane only resides in the main region, the gateway nodes and the traffic manager nodes in the sub regions should communicate with the main region via the control plane (event hub). Therefore, the following should be exposed to external usage.
 
@@ -38,7 +53,7 @@ Used to establish JMS connection between the sub region components and event hub
 
 ### Step 1: Configure the Gateway nodes
 
-Follow the guideline [here](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/#configure-the-gateway-nodes) to configure the Gateway of the sub-region to connect with the Control Plane of the main region and the traffic manager of the sub-region. Take a note of the hostnames given below when configuring the Gateway node.
+Follow the guideline [here](../distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) to configure the Gateway of the sub-region to connect with the Control Plane of the main region and the traffic manager of the sub-region. Take a note of the hostnames given below when configuring the Gateway node.
 
 #### Connecting the Gateway to the Control Plane node
 
@@ -104,7 +119,7 @@ Follow the guideline [here](../../../install-and-setup/setup/distributed-deploym
 
 ### Step 2: Configure the Traffic Manager nodes
 
-Follow the guideline [here](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/#configure-the-traffic-manager-nodes) to configure the Traffic Manager of the sub-region to connect with the Control Plane of the main region. Take a note of the hostnames given below when configuring the Gateway node.
+Follow the guideline [here](../distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) to configure the Traffic Manager of the sub-region to connect with the Control Plane of the main region. Take a note of the hostnames given below when configuring the Gateway node.
 
 #### Configure the Traffic Manager to communicate with the Control Plane
 

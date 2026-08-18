@@ -1,3 +1,18 @@
+---
+title: "Control API visibility and subscription availability"
+description: "Restrict who sees an API, its documents, and its subscription option on the Developer Portal using role-based visibility settings or the REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Control API Visibility, Subscription Availability and API documentation visibility in the Developer Portal
 
 By default, the APIs created in the API Publisher Portal are visible to anyone (even anonymous users) who visits the Developer Portal. However, API Publishers can control the visibility of APIs using two approaches. API Publishers can select as to which users can view their APIs and which users can subscribe to their APIs.
@@ -24,7 +39,7 @@ Given below is how visibility levels work for users in different roles:
     
      `https://<localhost>:9443/publisher` 
 
-2.  [Create a new API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) or edit an existing API.
+2.  [Create a new API](../create-api/create-rest-api/create-a-rest-api.md) or edit an existing API.
 3.  Go to **Portal Configurations** from the left menu and click **Basic Info**. Then under **Developer Portal Visibility** select the desired visibility option.
         
      [![API visibility Developer Portal dropdown](../../../assets/img/learn/api-visibility-devportal-dropdown.png)](../../../assets/img/learn/api-visibility-devportal-dropdown.png)
@@ -32,7 +47,7 @@ Given below is how visibility levels work for users in different roles:
 4.  Save the API.
 
 ### Control API visibility using the REST API
-You can use the [existing REST API](../../../develop/product-apis/restful-apis/) to control the visibility of the API. Add the following element to the request body, including the relevant visibility,
+You can use the [existing REST API](../../../reference/product-apis/overview.md) to control the visibility of the API. Add the following element to the request body, including the relevant visibility,
 
 `"visibility" : "PUBLIC"        `
 
@@ -100,7 +115,7 @@ The diagram below depicts the relationship between the API's visibility and subs
 
      `https://<localhost>:9443/publisher`
 
-2.  [Create a new API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) or edit an existing API.
+2.  [Create a new API](../create-api/create-rest-api/create-a-rest-api.md) or edit an existing API.
 
 3.  Go to **Portal Configurations** from the left menu and click **Subscriptions**, click the **Subscription Availability** dropdown, and select the desired subscription availability option.
      
@@ -110,7 +125,7 @@ The diagram below depicts the relationship between the API's visibility and subs
 
 ### Control subscription availability using the REST API
 
-You can use the [existing REST API](../../../develop/product-apis/restful-apis/) to control the subscription availability of the API. Add the following element to the request body including the relevant subscription availability.
+You can use the [existing REST API](../../../reference/product-apis/overview.md) to control the subscription availability of the API. Add the following element to the request body including the relevant subscription availability.
 
 `"subscriptionAvailability" : "ALL_TENANTS"        `
 

@@ -1,9 +1,24 @@
+---
+title: "Running API Manager as a Windows service"
+description: "Run the WSO2 API Manager runtime as a Windows service with the YAJSW wrapper, covering wrapper.conf, carbon_home, and console mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-windows-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-windows-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Running API Manager as a Windows Service
 
 !!! note
     **Before you begin:**
 
-    -   See [our compatibility matrix](../../../install-and-setup/ProductCompatibility) to find out if this version of the product is fully tested on your OS.
+    -   See [our compatibility matrix](../../../reference/product-compatibility.md) to find out if this version of the product is fully tested on your OS.
 
 
 ### Prerequisites
@@ -188,7 +203,7 @@ You will now verify that YAJSW is configured correctly for running the WSO2 API 
 
     For example:
 
-    ![](../../../assets/attachments/28717183/29364287.png)
+    ![Windows command prompt running runConsole.bat from the YAJSW bat directory](../../../assets/attachments/28717183/29364287.png)
 
 If the configurations are set properly for YAJSW, you will see console output similar to the following and can now access the WSO2 management console from your web browser via <https://localhost:9443/carbon>.
 

@@ -1,3 +1,18 @@
+---
+title: "Changing the default ports with offset"
+description: "Set a port offset for WSO2 API Manager runtimes in deployment.toml or at startup to avoid port conflicts on a shared machine."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Changing the Default Ports with Offset
 
 When you run multiple runtimes on the same server or virtual machines (VMs), you must change their default ports with an `offset` value to avoid port conflicts. An offset defines the number by which all ports in the runtime (e.g., HTTP/S ports) are increased. 
@@ -8,7 +23,7 @@ There are two ways to set an offset to a port: Update the server configurations,
 
 ## Before you begin
 
-See the complete list of [default ports](../../../install-and-setup/setup/reference/default-product-ports) in all the API Manager components.
+See the complete list of [default ports](../../../reference/default-product-ports.md) in all the API Manager components.
 
 Note that most of the **runtime ports** change automatically based on the offset you specify here.
 
@@ -37,7 +52,7 @@ The default port offset in the WSO2 API-M runtime is `0`. Use one of the followi
         offset=1
         ```
 
-4. [Restart the server](../../../install-and-setup/install/installing-the-product/running-the-api-m/).
+4. [Restart the server](../../install/installing-the-product/running-the-api-m.md).
 
 #### Pass the port offset during server startup
 

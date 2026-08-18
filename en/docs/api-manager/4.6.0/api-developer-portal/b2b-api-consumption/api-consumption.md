@@ -1,3 +1,18 @@
+---
+title: "B2B API consumption"
+description: "Configure organization-based API visibility in WSO2 API Manager: federate an identity server, register organizations, and add organization key managers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/b2b-api-consumption/api-consumption/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-developer-portal/b2b-api-consumption/api-consumption.md
+tags:
+  - api-manager
+  - api-developer-portal
+  - b2b-api-consumption
+  - api-consumption
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # B2B API Consumption
 
 Before this release, WSO2 API Manager operated without a defined organizational structure, maintaining a flat hierarchy. This led to limitations, including a lack of control over API visibility, business-specific subscriptions, and business-level insights. With the introduction of B2B features, you can now achieve a more structured approach.
@@ -11,7 +26,7 @@ Before this release, WSO2 API Manager operated without a defined organizational 
 
 The WSO2 API Manager B2B Organization feature is compatible with any Identity Server that supports organization hierarchies. To utilize the Identity Server's organization hierarchy within API Manager, we need to configure it as a federated identity provider. This documentation uses WSO2 Identity Server 7.1.0 as an example, due to its built-in organization support.
 
-For more information on setting up WSO2 Identity Server 7.1.0, see [Setup WSO2 Identity Server as a federated authenticator](../../manage-apis/design/b2b-api-management/setup-identity-server/)
+For more information on setting up WSO2 Identity Server 7.1.0, see [Setup WSO2 Identity Server as a federated authenticator](setup-identity-server.md)
 
 
 ## Set Up WSO2 API Manager

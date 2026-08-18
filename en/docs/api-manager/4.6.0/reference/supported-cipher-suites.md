@@ -1,8 +1,22 @@
+---
+title: "Supported cipher suites"
+description: "Cipher suites that are secure and functional for TLS 1.2 and TLS 1.3 in WSO2 API Manager, and the weaker suites to avoid."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/supported-cipher-suites/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/supported-cipher-suites.md
+tags:
+  - api-manager
+  - reference
+  - supported-cipher-suites
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "reference"
+---
+
 # Supported Cipher Suites
 
 For a list of cipher suites that are secure and are functional in Tomcat (Tomcat version 9 with the JSSE provider 11) for the TLSv1.2 and TLSv1.3 protocols, see the list of ciphers provided in the [secure configuration generator](https://ssl-config.mozilla.org/#server=tomcat&version=9.0.30&config=intermediate&guideline=5.6), which is provided by the Mozilla Foundation.
 
-For instructions on how to enable the required ciphers and to disable the weak ciphers in API Manager, see [Configuring Transport-Level Security](../install-and-setup/setup/security/configuring-transport-level-security/).
+For instructions on how to enable the required ciphers and to disable the weak ciphers in API Manager, see [Configuring Transport-Level Security](../install-and-setup/setup/security/configuring-transport-level-security.md).
 
 !!! Attention 
 

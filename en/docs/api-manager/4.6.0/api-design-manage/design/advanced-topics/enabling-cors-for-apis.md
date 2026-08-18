@@ -1,3 +1,18 @@
+---
+title: "Enabling CORS for APIs"
+description: "Enable Cross-Origin Resource Sharing globally in deployment.toml or for a single API in the Publisher Portal, and set allowed origins and headers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/advanced-topics/enabling-cors-for-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/design/advanced-topics/enabling-cors-for-apis.md
+tags:
+  - api-manager
+  - api-design-manage
+  - design
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Enabling CORS for APIs
 
 Cross-Origin Resource Sharing (CORS) is a mechanism that allows accessing restricted resources (i.e., fonts, images, scripts, videos, and iframes) from domains outside the domain from which the requesting resource originated. Browsers define the origin as a combination of Scheme (`http://`, `https://`), Host, and Port. By default, web browsers apply the same-origin policy to avoid interactions between different origins. CORS defines a way in which a browser and a server can interact to determine whether or not it is safe to allow the cross-origin requests.
@@ -36,7 +51,7 @@ Follow the instructions below to enable CORS response headers globally. Once thi
 ## Enabling CORS Per API
 
 !!! note
-    You need to enable CORS globally before you enable CORS Per API. Therefore, if you have not enabled CORS globally, follow the instructions in [Enabling CORS Globally](../../../api-design-manage/design/advanced-topics/enabling-cors-for-apis/#enabling-cors-globally) before carrying out the following instructions.
+    You need to enable CORS globally before you enable CORS Per API. Therefore, if you have not enabled CORS globally, follow the instructions in [Enabling CORS Globally](enabling-cors-for-apis.md#enabling-cors-globally) before carrying out the following instructions.
 
 !!! note
     When CORS is enabled globally, it applies to all APIs served by the API Gateway. You can override this global configuration for a specific API by following the instructions below. However, disabling CORS for an individual API does not turn off the global CORS configuration.

@@ -1,12 +1,27 @@
+---
+title: "Publish an API on the Developer Portal"
+description: "Move an API from the CREATED state to PUBLISHED in the Publisher Portal so subscribers can find and subscribe to it on the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/api-design-manage/deploy-and-publish/publish-on-dev-portal/publish-an-api.md
+tags:
+  - api-manager
+  - api-design-manage
+  - deploy-and-publish
+  - publish-on-dev-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Publish an API on the Developer Portal
 
 **API Publishing** is the process of making the API available for subscription. An API in the lifecycle state CREATED will have the  API metadata added to the Developer Portal, but not deployed to the API Gateway. Therefore, it is not visible to subscribers in the Developer Portal. When the API is published the API lifecycle state will be changed to **PUBLISHED**. 
 
 Follow the steps below to publish an API using WSO2 API Manager.
 
-1.  Sign in to the API Publisher `https://<hostname>:9443/publisher` (e.g., `https://localhost:9443/publisher` ). Upon signing in, the list of APIs in the API Publisher is listed. Please refer [create an API guide](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) to create a new API. 
+1.  Sign in to the API Publisher `https://<hostname>:9443/publisher` (e.g., `https://localhost:9443/publisher` ). Upon signing in, the list of APIs in the API Publisher is listed. Please refer [create an API guide](../../design/create-api/create-rest-api/create-a-rest-api.md) to create a new API. 
 
-     The list of APIs in the API Publisher appears. If there are no APIs created, [create an API](../../../api-design-manage/design/create-api/create-rest-api/create-a-rest-api/) before starting.
+     The list of APIs in the API Publisher appears. If there are no APIs created, [create an API](../../design/create-api/create-rest-api/create-a-rest-api.md) before starting.
 
 2.  Click on an API that is in the **CREATED** state.
 
@@ -24,7 +39,7 @@ Follow the steps below to publish an API using WSO2 API Manager.
          ```
           <img src="../../../../assets/img/learn/select-created-api-with-business-info.png" alt="Select API" title="Select API" width="35%" />
          - If you have added a **Business Owner Email** or **Technical Owner Email**, they will be displayed in the API tile when you hover over the **Business Owner** or **Technical Owner** details.
-         - If you are setting the **showMonetizedState** config to be true, monetization icon will be displayed in the API tile as below once you [enabled the monetization](https://apim.docs.wso2.com/en/latest/design/api-monetization/monetizing-an-api/#step-2-enable-monetization) for the API. In order to enable monetization for the API, you need to publish the API.  
+         - If you are setting the **showMonetizedState** config to be true, monetization icon will be displayed in the API tile as below once you [enabled the monetization](../../../monitoring/api-monetization/monetizing-an-api.md#step-2-enable-monetization) for the API. In order to enable monetization for the API, you need to publish the API.  
          <img src="../../../../assets/img/learn/select-created-api-with-monetization.png" alt="Select API" title="Select API" width="35%" />
         
 3.  Click **Lifecycle**.

@@ -1,3 +1,18 @@
+---
+title: "Extending WebSub topic matching"
+description: "Plug custom topic-matching logic into WebSub APIs on the Universal Gateway by implementing and deploying an ExtensionListener."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.6.0/reference/customize-product/extending-api-manager/extending-gateway/extending-websub-topic-matching.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Extending WebSub Topic Matching
 
 When a subscriber sends a request to a WebSub API, the Universal Gateway decides whether the topic the subscriber asked for matches one of the topics defined on the API. Out of the box, this decision is based on two rules:
@@ -193,7 +208,7 @@ The values your matcher exchanges with the Gateway are passed through the reques
 
 ## Verifying the extension
 
-1. Deploy a WebSub API that has at least one topic defined (see [Create a WebSub/WebHook API](../../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api/)).
+1. Deploy a WebSub API that has at least one topic defined (see [Create a WebSub/WebHook API](../../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api.md)).
 2. Enable `DEBUG` logging for your extension package by adding the following to `<API-M_HOME>/repository/conf/log4j2.properties` on the Gateway:
     ```
     logger.custom-websub.name = com.example.apim.websub
@@ -205,6 +220,6 @@ The values your matcher exchanges with the Gateway are passed through the reques
 
 ## See also
 
-- [Configuring an External WebSub Hub](../../../../install-and-setup/setup/advance-configurations/configuring-external-websub-hub/)
-- [Write Custom Handlers](../../../../reference/customize-product/extending-api-manager/extending-gateway/writing-custom-handlers/)
-- [Create a WebSub/WebHook API](../../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api/)
+- [Configuring an External WebSub Hub](../../../../install-and-setup/setup/advance-configurations/configuring-external-websub-hub.md)
+- [Write Custom Handlers](writing-custom-handlers.md)
+- [Create a WebSub/WebHook API](../../../../api-design-manage/design/create-api/create-streaming-api/create-a-websub-streaming-api.md)
