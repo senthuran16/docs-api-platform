@@ -117,7 +117,7 @@ The apictl can export an API as an archive from a lower environment (i.e., dev),
      For more information, see [Login to an Environment](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#login-to-an-environment).
 
     !!! tip
-        A user with `Internal/devops` role or `admin` role are allowed to export APIs. To create a custom user who can export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+        A user with `Internal/devops` role or `admin` role are allowed to export APIs. To create a custom user who can export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#minimal-permissions-and-scopes-required-to-perform-apictl-operations).
 
 2. Export the latest revision of the API from the lower environment using the `export api` command.
 
@@ -219,6 +219,7 @@ The DevOps team can develop this pipeline further to include automated tests, wo
 
 The apictl tool should be installed in the automation servers to begin the process. As the tool supports a variety of platforms, including Linux/Windows and macOS, this can be done easily. 
 
+<a name="a-promoting-apis-in-a-git-repository-to-upper-environments-via-cicd"></a>
 #### a. Promoting APIs in a Git repository to upper environments via CI/CD
 
 The repositories (**Source** and **Deployment**) that you committed the project files in the above step <a href="#Step 5">5</a> need to be cloned into the instance that is executing the CI/CD process. The apictl has inbuilt support for integrating with a Git-based version control system. It gives a unified command `vcs deploy` to deploy any type of project (e.g., APIs, API Products, and Applications).
@@ -453,7 +454,7 @@ Run any of the following apictl commands to get keys for the API/API Product.
 
 !!! info
     - Upon running the above command, the apictl tool will create a default application in the environment, subscribe to the API, and generate keys based on the token type defined in the `<USER_HOME>/.wso2apictl/main-config.yaml`file. 
-    - Using apictl tool the HTTP request timeout, and export directory can be set up and changed. For more information on changing the HTTP request timeout, see [Set HTTP request timeout](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#set-http-request-timeout) and [Set export directory](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md##set-export-directory) accordingly. 
+    - Using apictl tool the HTTP request timeout, and export directory can be set up and changed. For more information on changing the HTTP request timeout, see [Set HTTP request timeout](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#set-http-request-timeout) and [Set export directory](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#set-export-directory) accordingly. 
     - When running the above command, if you have not specified the --version (-v), the tool will consider the version as 1.0.0 by default. If you have specified the version, then that value will be considered.
 
 <a name="Step 8"></a>

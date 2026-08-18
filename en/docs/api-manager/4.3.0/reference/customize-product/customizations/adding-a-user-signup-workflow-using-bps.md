@@ -21,6 +21,7 @@ This section explains how to attach a custom workflow to the user signup operati
         </htd:argument>
     ```
 
+<a name="configuring-the-enterprise-integrator"></a>
 #### Configuring the Enterprise Integrator
 
 !!! note
@@ -95,6 +96,7 @@ This section explains how to attach a custom workflow to the user signup operati
 
     ![Add Human Task to EI](../../../assets/img/learn/add-human-task-signup.png)
 
+<a name="configuring-the-business-process-server"></a>
 #### Configuring the Business Process Server
 
 !!! note
@@ -215,7 +217,7 @@ This section explains how to attach a custom workflow to the user signup operati
 
 4.  Note the message that appears if the BPEL is invoked correctly, saying that the request is successfully submitted.
 
-5.  Log in to the [Admin Portal](`https://localhost:9443/admin`) (`https://<Server-Host>:9443/admin`) of API Manager giving the admin username and password.
+5.  Log in to the [Admin Portal](https://localhost:9443/admin) (`https://<Server-Host>:9443/admin`) of API Manager giving the admin username and password.
 
 6.  Navigate to **Tasks** > **User Creation** and approve the user signup task listed. This will resume the BPEL process and complete the signup process.
 

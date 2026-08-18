@@ -133,7 +133,7 @@ Configure the Gateway to communicate with the Control Plane.
         
         Gateway will publish gateway invocation related events to the TM using the `apim.throttling.url_group`. Traffic managers will receive these events and throttle decisions will be published to gateway. To receive these throttle decisions, gateway has to create a JMS connection using `throttle_decision_endpoints` and listen.
 
-        {!includes/deploy/enable-jms-ssl-for-gw-tm.md!}
+        --8<-- "api-manager/4.3.0/includes/deploy/enable-jms-ssl-for-gw-tm.md"
 
         The same JMS connection will be used to subscribe for events received from the event hub. Gateway will subscribe for API/Application/Subscription and Keymanager operations related events. `service_url` points to the internal API resides in the event hub that is used to pull artifacts and information from the db.
 
@@ -363,7 +363,7 @@ Configure the Control Plane to communicate with the Gateway.
     **Add Event Hub Configurations**:
 
     !!! Info
-            {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+            --8<-- "api-manager/4.3.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     Add event hub configurations only if you have High Availability for the Control Plane. 
 

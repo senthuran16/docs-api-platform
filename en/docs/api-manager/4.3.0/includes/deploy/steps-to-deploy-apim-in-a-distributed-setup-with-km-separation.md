@@ -610,7 +610,7 @@ Follow the steps given below to configure the Control Plane nodes to communicate
     **Add Event Hub Configurations**:
 
     !!! Info
-            {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+            --8<-- "api-manager/4.3.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     === "Control Plane with High Availability"
         ```toml

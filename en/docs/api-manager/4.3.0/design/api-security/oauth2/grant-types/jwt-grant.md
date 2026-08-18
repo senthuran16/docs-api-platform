@@ -62,7 +62,7 @@ Now you have configured a service provider in WSO2 IS that can be used [later](#
 
 ### Step 2 - Configure an Identity Provider and a Service Provider in WSO2 API-M
 
-1. Make sure WSO2 API-M is [up and running](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. Make sure WSO2 API-M is [up and running](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 2. Sign in to the WSO2 API-M Management Console (`https://<API-M_Server_Host>:9443/carbon`)   
 

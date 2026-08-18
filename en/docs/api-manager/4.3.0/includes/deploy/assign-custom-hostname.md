@@ -18,7 +18,7 @@
 
 3.  Click on the API to edit its configurations.
 
-     [![Edit the API](../../../../assets/img/includes/deploy/select-api.png)](../../../../assets/img/includes/deploy/select-api.png)
+     [![Edit the API](../../../assets/img/includes/deploy/select-api.png)](../../../assets/img/includes/deploy/select-api.png)
 
 4.  Click **Deployments**.
 

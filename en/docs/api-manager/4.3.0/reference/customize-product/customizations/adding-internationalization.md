@@ -182,7 +182,7 @@ Follow the instructions below to change the direction of the UI:
     ```
 
     !!! tip
-    Learn more about [Tenant theming](customizing-the-developer-portal/overriding-developer-portal-theme.md#uploading-via-the-admin-portal-tenants-only).
+    Learn more about [Tenant theming](customizing-the-developer-portal/overriding-developer-portal-theme.md#uploading-devportal-theme-via-the-admin-portal-tenants-only).
 
 
 ## Enabling the language switch

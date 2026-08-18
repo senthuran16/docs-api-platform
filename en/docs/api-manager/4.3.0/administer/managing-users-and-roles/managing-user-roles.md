@@ -33,12 +33,12 @@ Follow the instructions below to create the `creator`, `publisher`, and `subscri
 
     !!! warning
 
-            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](`https://localhost:9443/admin`) from **Settings** > **Advanced**.
+            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](https://localhost:9443/admin) from **Settings** > **Advanced**.
 
             By default, the scope-role mapping contains `Internal/creator`, `Internal/publisher`, `Internal/subscriber`, `Internal/analytics`, and `Internal/devops` as the default roles. If there are custom roles defined with API creator, API publisher, admin and API subscriber permissions, those roles have to be configured in the `tenant-conf.json` file under the relevant scopes.
 
 !!! info
-     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](../../administer/managing-users-and-roles/managing-permissions.md#adding-role-based-permissions)
+     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](../../administer/managing-users-and-roles/managing-permissions.md#adding-api-m-specific-scope-assignments)
 
 !!! warning
     As a limitation, when you delete a user and create another with the same username, applications of the previous user will be visible on the Developer Portal applications listing page.
@@ -172,7 +172,7 @@ create_admin_account = true
 
 The following steps guide you through updating the role names after you have used the product for some time.
 
-1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles.md#update-before-the-first-startup-recommended).
+1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles.md#updating-before-the-first-startup-recommended).
 
 2.  Do the following user store level changes for existing users:
 

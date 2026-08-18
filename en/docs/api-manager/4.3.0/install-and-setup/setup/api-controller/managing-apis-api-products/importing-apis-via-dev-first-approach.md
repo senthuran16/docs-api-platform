@@ -404,7 +404,7 @@
 
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import APIs. To create a custom user who can import APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import APIs. To create a custom user who can import APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#minimal-permissions-and-scopes-required-to-perform-apictl-operations).
 
 After editing the mandatory fields in the API Project, you can import the API to an environment using any of the following commands.  
 

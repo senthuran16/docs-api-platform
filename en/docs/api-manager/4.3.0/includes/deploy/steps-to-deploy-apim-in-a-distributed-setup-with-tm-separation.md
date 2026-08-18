@@ -36,6 +36,7 @@ See the instructions on [configuring the API Gateway](../../../../api-analytics/
 
 Let's configure the API-M nodes in the deployment.
 
+<a name="configure-the-gateway-nodes"></a>
 #### Configure the Gateway nodes
 
 Configure the Gateway to communicate with the Control Plane and the Traffic Manager nodes.
@@ -117,7 +118,7 @@ Follow the instructions given below to configure the Gateway node so that it can
     !!! Info
         Rate limiting configurations are used by the Gateway to connect with the Traffic Manager. The Gateway will publish Gateway invocation-related events to the TM using the `apim.throttling.url_group`. Traffic Managers will receive these events and rate limiting decisions will be published to the Gateway. To receive these rate limiting decisions, the Gateway has to create a JMS connection using `throttle_decision_endpoints` and listen.
 
-        {!includes/deploy/enable-jms-ssl-for-gw-tm.md!}
+        --8<-- "api-manager/4.3.0/includes/deploy/enable-jms-ssl-for-gw-tm.md"
 
 3. Add the following configurations to the deployment.toml file to configure the Gateway environment. Change the `gateway_labels` property based on your Gateway environment.
 
@@ -373,7 +374,7 @@ Follow the steps given below to configure the Control Plane nodes to communicate
     **Add Event Hub Configurations**:
 
     !!! Info
-            {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+            --8<-- "api-manager/4.3.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     === "Control Plane with High Availability"
         ```toml
@@ -649,6 +650,7 @@ Follow the steps given below to configure the Control Plane nodes to communicate
     auth_urls = ["ssl://cp.wso2.com:9711"]
     ```
 
+<a name="configure-the-traffic-manager-nodes"></a>
 #### Configure the Traffic Manager Nodes
 
 In a typical distributed deployment, all API-M components (excluding the API-M Gateway) run in the Control Plane. However, you have the option of separating the Traffic Manager from the Control Plane.

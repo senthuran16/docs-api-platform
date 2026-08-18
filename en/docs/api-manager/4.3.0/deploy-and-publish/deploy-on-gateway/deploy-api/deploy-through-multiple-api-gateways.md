@@ -101,7 +101,7 @@ As mentioned above, the **second and the third** instances will serve as the Gat
 
 Carry out the following instructions in the **second** and the **third** instances to configure the Gateway instances so that it can communicate with the Control Plane node:
 
-{!includes/install_setup/configuring_gateway_node.md!}
+--8<-- "api-manager/4.3.0/includes/install_setup/configuring_gateway_node.md"
 
 ## Step 3 - Start the instances
 

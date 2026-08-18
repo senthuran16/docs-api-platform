@@ -10,6 +10,7 @@ The above diagram consists of an API management layer and an integration layer w
 
 The Management Plane is where API creation and API management takes place.  It consists of portals (Publisher, Developer Portal, and Service Catalog) for users to create and manage APIs, implement rate limiting policies, monitor, and monetization, etc. It also provides a set of APIs to interact with external tools like API Controller. The Management Plane includes API Analytics dashboards, displaying various business insights.
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 [![API Publisher](../assets/img/learn/overviewpage-rest-api.jpg)](../assets/img/learn/overviewpage-rest-api.jpg)
@@ -40,6 +41,7 @@ These integration services can be created using WSO2 Integration Studio and a va
 
 The Data Plane is where the created API is exposed to the public consumers and acts as the proxy for API calls. This also provides additional capabilities such as enforcing security, rate limiting etc. 
 
+<a name="api-gateway"></a>
 #### API Gateway
 
 [![API Gateway](../assets/img/learn/gateway-overview.png)](../assets/img/learn/gateway-overview.png)
@@ -73,6 +75,7 @@ The Streaming Integrator allows you to integrate static data sources with stream
  
 The Control Plane is where the API security validation, API key generation, and rate limiting decisions are taken.
   
+<a name="key-manager"></a>
 #### Key Manager
  
 [![Key Manager](../assets/img/get_started/architecture/key-manager-overview.png)](../assets/img/get_started/architecture/key-manager-overview.png)

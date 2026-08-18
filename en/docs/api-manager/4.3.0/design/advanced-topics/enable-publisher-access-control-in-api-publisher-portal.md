@@ -49,7 +49,7 @@ The APIs created in the API Publisher are visible to any user who signs in to th
 
 ## Using the REST API
 
-Use the [existing REST API](../../develop/product-apis/restful-apis.md) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
+Use the [existing REST API](../../reference/product-apis/publisher-apis/publisher-v4/publisher-v4.md) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
 
 ``` 
 "accessControl" : "RESTRICTED",

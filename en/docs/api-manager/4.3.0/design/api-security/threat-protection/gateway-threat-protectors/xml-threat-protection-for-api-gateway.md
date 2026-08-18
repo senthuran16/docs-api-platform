@@ -4,7 +4,7 @@ The XML threat protector in WSO2 API Manager validates the XML payload vulnerabi
 
 -   [Detecting the malformed, vulnerable XML messages through limitations](#Am300XMLThreatProtectionforAPIGateway-detectvulnerability)
 
--   [XML schema validation](#Am300XMLThreatProtectionforAPIGateway-XMLSchemaValidation)
+-   [XML schema validation](#xml-schema-validation)
 
 #### Detecting the malformed, vulnerable XML messages through limitations
 
@@ -114,6 +114,7 @@ Users can enable or disable XML payload limits and schema validation. Some examp
     </tbody>
     </table>
 
+<a name="xml-schema-validation"></a>
 #### XML schema validation
 
 You can define XML schemas per resource to validate each request. For example, to add an XML schema to the resource /userapi/1.0.0/addResource/value follow the steps below.
@@ -124,10 +125,10 @@ You can define XML schemas per resource to validate each request. For example, t
 
 Each request is sanitized through the XML threat protector. API developer can modify each properties according to your requirement.
 
--   [Editing the sequence through registry artifacts](#Am300XMLThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the XML validator policy](#Am300XMLThreatProtectionforAPIGateway-ApplyingtheXMLvalidatorpolicy)
--   [Testing the XML threat protector](#Am300XMLThreatProtectionforAPIGateway-TestingtheXMLthreatprotector)
--   [Testing the schema validation](#Am300XMLThreatProtectionforAPIGateway-Testingtheschemavalidation)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the XML validator policy](#applying-the-xml-validator-policy)
+-   [Testing the XML threat protector](#testing-the-xml-threat-protector)
+-   [Testing the schema validation](#testing-the-schema-validation)
 
 ### Editing the sequence through registry artifacts
 

@@ -641,7 +641,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
 2.  Create a subscription policy.  
      
-     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../design/rate-limiting/adding-new-throttling-policies.md#Adding-a-new-subscription---level-throttling-tier).
+     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-rate-limiting-tier).
 
      <html>
       <div class="admonition note">

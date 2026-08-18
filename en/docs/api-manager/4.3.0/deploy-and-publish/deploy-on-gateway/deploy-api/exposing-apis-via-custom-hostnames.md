@@ -57,20 +57,20 @@ Each Gateway environment definition contains details related to a specific Gatew
     websub_event_receiver_https_endpoint = "https://foods.com:8021"
     ```
 
-3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
       This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
 ### Step 2 - Assign the custom hostname to an API
 
-{!includes/deploy/assign-custom-hostname.md!}
+--8<-- "api-manager/4.3.0/includes/deploy/assign-custom-hostname.md"
 
 [![Deploy API with Virtual Host in the Publisher](../../../assets/img/deploy/deploy-api-with-vhost.png)](../../../assets/img/deploy/deploy-api-with-vhost.png)
 
 
 ### Step 3 - View the custom hostnames
 
-{!includes/deploy/view-custom-hostname.md!}
+--8<-- "api-manager/4.3.0/includes/deploy/view-custom-hostname.md"
 
 [![Virtual host in the Developer Portal](../../../assets/img/deploy/virtual-host-in-devportal.png)](../../../assets/img/deploy/virtual-host-in-devportal.png)
 
@@ -85,7 +85,7 @@ Each Gateway environment definition contains details related to a specific Gatew
 
 #### Option 1: Create a Gateway environment via the Admin Portal
 
-1. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
       This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -183,7 +183,7 @@ Follow the instructions below to use the `deployment.toml` file, which is the ce
     websub_event_receiver_https_endpoint = "https://foods.com:8021"
     ```
 
-3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
       This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -229,12 +229,12 @@ Extract WSO2 API Manager to a new directory. Let's refer to this directory as `A
 
 ### Step 3 - Assign the custom hostname to an API
 
-{!includes/deploy/assign-custom-hostname.md!}
+--8<-- "api-manager/4.3.0/includes/deploy/assign-custom-hostname.md"
 
 [![Deploy API with Virtual Host in the Publisher](../../../assets/img/deploy/deploy-api-with-vhost.png)](../../../assets/img/deploy/deploy-api-with-vhost.png)
 
 ### Step 4 - View the custom hostnames
 
-{!./includes/deploy/view-custom-hostname.md!}
+--8<-- "api-manager/4.3.0/includes/deploy/view-custom-hostname.md"
 
 [![Virtual host in the Developer Portal](../../../assets/img/deploy/virtual-host-in-devportal.png)](../../../assets/img/deploy/virtual-host-in-devportal.png)

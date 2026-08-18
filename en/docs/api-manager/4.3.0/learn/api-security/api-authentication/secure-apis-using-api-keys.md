@@ -117,7 +117,7 @@ You can use any one of the following methods to invoke the API.
 
 - Specify as a query parameter in the API request.
 
-     - `<url_encoded_API_key_value>` - Encode the API key using a URL encoder (e.g., [https://www.urlencoder.org](ttps://www.urlencoder.org)).
+     - `<url_encoded_API_key_value>` - Encode the API key using a URL encoder (e.g., [https://www.urlencoder.org](https://www.urlencoder.org)).
 
      === "Format"
           ``` bash

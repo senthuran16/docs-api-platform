@@ -732,7 +732,7 @@ The output can be one of the following:
 ## Restoring a Siddhi Application via a snapshot
 
 !!! info
-    In order to call this API, you need to have already taken a snapshot of the Siddhi application to be restored. For more information about the API via which the snapshot is taken, see [Taking a snapshot of a Siddhi application](#SiddhiApplicationManagementAPIs-Snapshot).
+    In order to call this API, you need to have already taken a snapshot of the Siddhi application to be restored. For more information about the API via which the snapshot is taken, see [Taking a snapshot of a Siddhi application](#taking-a-snapshot-of-a-siddhi-application).
 
 ### Overview
 

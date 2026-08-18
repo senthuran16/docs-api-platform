@@ -3392,7 +3392,7 @@ nav:
                     - Process Data:
                            - Aggregate Data Incrementally: api-manager/4.3.0/use-cases/examples/streaming-examples/aggregate-data-incrementally.md
                            - Receive Email Alerts: api-manager/4.3.0/use-cases/examples/streaming-examples/alerts-and-thresholds.md
-                           - Receive and Publish Events in Custom CSV Format:  use-cases/examples/streaming-examples/csv-custom-mapping.md
+                           - Receive and Publish Events in Custom CSV Format:  api-manager/4.3.0/use-cases/examples/streaming-examples/csv-custom-mapping.md
                            - Publish and Receive CSV Events via Files: api-manager/4.3.0/use-cases/examples/streaming-examples/csv-default-mapping.md
                            - Preprocess Data Received via TCP: api-manager/4.3.0/use-cases/examples/streaming-examples/data-preprocessing.md
                            - Perform Streaming Learning Using a Clustree Model: api-manager/4.3.0/use-cases/examples/streaming-examples/clus-tree-test-app.md

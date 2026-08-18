@@ -17,6 +17,7 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 |Red Hat Enterprise Linux   | 7.0, 8.7, 9.3   |
 |Rocky Linux              | 9.3    |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **WSO2 API-M** runtime has been tested with the following JDKs:
@@ -44,6 +45,7 @@ The **WSO2 API-M** runtime is tested with the following databases:
     CREATE DATABASE <APIM_DATABASE_NAME> character set latin1;
     ```
 
+<a name="tested-wso2-products"></a>
 #### Tested WSO2 Products
 
 The following is a list of other WSO2 products that have been tested with WSO2 API Manager 4.3.0.
@@ -103,6 +105,7 @@ The **Streaming Integrator** runtime is tested with the following operating syst
 |Ubuntu              |16.04<br/>17.04<br/>18.04|
 |MacOS High Sierra   | |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **Streaming Integrator** runtime is tested with the following JDKS:

@@ -22,8 +22,8 @@ By default, all WSO2 products are configured to use the embedded H2 database. To
 
 The following sections describe how to replace the default H2 database with embedded Derby:
 
--   [Setting up datasource configurations](#ChangingtoEmbeddedDerby-Settingupdatasourceconfigurations)
--   [Creating database tables](#ChangingtoEmbeddedDerby-Creatingdatabasetables)
+-   [Setting up datasource configurations](#setting-up-datasource-configurations)
+-   [Creating database tables](#creating-database-tables)
 
 !!! tip
 Before you begin
@@ -33,8 +33,9 @@ You need to set up the embedded Derby before following the steps to configure yo
 
 ### Setting up datasource configurations
 
-A datasource is used to establish the connection to a database. By default, `WSO2_CARBON_DB` datasource is used to connect to the default H2 database, which stores registry and user management data. After setting up the Embedded Derby database to replace the default H2 database, either [change the default configurations of the `WSO2_CARBON_DB` datasource](#ChangingtoEmbeddedDerby-ChangingthedefaultWSO2_CARBON_DBdatasource) , or [configure a new datasource](#ChangingtoEmbeddedDerby-Configuringnewdatasourcestomanageregistryorusermanagementdata) and point it to the new database as explained below.
+A datasource is used to establish the connection to a database. By default, `WSO2_CARBON_DB` datasource is used to connect to the default H2 database, which stores registry and user management data. After setting up the Embedded Derby database to replace the default H2 database, either [change the default configurations of the `WSO2_CARBON_DB` datasource](#changing-the-default-wso2_carbon_db-datasource) , or [configure a new datasource](#configuring-new-datasources-to-manage-registry-or-user-management-data) and point it to the new database as explained below.
 
+<a name="changing-the-default-wso2_carbon_db-datasource"></a>
 #### Changing the default WSO2\_CARBON\_DB datasource
 
 Follow the steps below to change the type of the default `WSO2_CARBON_DB` datasource.
@@ -153,11 +154,12 @@ Disabling the `ConnectionRollbackOnReturnInterceptor` is only possible with the 
                     </datasource>
         ```
 
+<a name="configuring-new-datasources-to-manage-registry-or-user-management-data"></a>
 #### Configuring new datasources to manage registry or user management data
 
 Follow the steps below to configure new datasources to point to the new database(s) you create to manage registry and/or user management data separately.
 
-1.  Add a new datasource with similar configurations as the [`WSO2_CARBON_DB` datasource](#ChangingtoEmbeddedDerby-ChangingthedefaultWSO2_CARBON_DBdatasource) above to the &lt; `PRODUCT_HOME>/repository/conf/datasources/master-datasources.xml` file. Change its elements with your custom values. For instructions, see [Setting up datasource configurations.](#ChangingtoEmbeddedDerby-Settingupdatasourceconfigurations)
+1.  Add a new datasource with similar configurations as the [`WSO2_CARBON_DB` datasource](#changing-the-default-wso2_carbon_db-datasource) above to the &lt; `PRODUCT_HOME>/repository/conf/datasources/master-datasources.xml` file. Change its elements with your custom values. For instructions, see [Setting up datasource configurations.](#setting-up-datasource-configurations)
 2.  If you are setting up a separate database to store registry-related data, update the following configurations in the &lt; `PRODUCT_HOME>/repository/conf/registry.xml` file.
 
     ``` xml

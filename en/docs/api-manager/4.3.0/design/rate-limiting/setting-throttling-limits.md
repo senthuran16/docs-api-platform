@@ -54,6 +54,7 @@ It is also possible to specify a bandwidth per unit time instead of a number of 
 <p> Note that when you edit an API with active subscribers, certain things like tier changes do not get automatically reflected to the subscribers. For such changes to take effect, the subscribers should resubscribe to the API and regenerate the access token. </p>
 </div>
 
+<a name="burst-control"></a>
 #### **Burst control**
 
 With burst control, you can define tiers with a combination of criteria, for example, a 1000 requests per day and 10 requests per second. Users are then throttled at two layers. Enforcing a rate limit protects the backend from sudden request bursts and controls the usage at a subscription and API level.
@@ -69,7 +70,7 @@ As an example, if we specify a quota policy as 20 requests per minute, it is pos
 
 For each subscription level throttle key, a WS policy is created on demand. The request count is calculated and rate limiting occurs at the node level. 
 
-{!includes/design/redis-counter-note.md!}
+--8<-- "api-manager/4.3.0/includes/design/redis-counter-note.md"
 
 ### Subscription-level Rate Limiting (API subscriber)
 
@@ -86,6 +87,7 @@ Advanced Rate Limiting policies are applied when you are Publishing an API. It c
 -   API level Rate Limiting
 -   Resource level (operational level) Rate Limiting
 
+<a name="api-level-rate-limiting"></a>
 #### API level Rate Limiting
 
 API level policies can be engaged via the resources section of an API in the Publisher portal by selecting **API Level** under **Rate Limiting level** as shown below.
@@ -98,6 +100,7 @@ An API is made up of one or more resources. Each resource handles a particular t
 
 [![Operation level advanced policy](../../assets/img/learn/operation-level-advanced-policy.png){: style="width:60%"}](../../assets/img/learn/operation-level-advanced-policy.png)
 
+<a name="advanced-rate-limiting-tiers"></a>
 #### Advanced Rate Limiting tiers
 
 The default Rate Limiting tiers are as follows:
@@ -130,6 +133,7 @@ The default Rate Limiting levels are as follows:
 
 It is also possible to specify a bandwidth per unit time instead of a number of requests. This can be done through the Admin Portal of API Manager. For information on editing the values of the existing tiers, defining new tiers and specifying a bandwidth per unit time, see [Adding a new application-level rate limiting tier](../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-application-level-rate-limiting-tier).
 
+<a name="burst-control_1"></a>
 #### **Burst control**
 
 With burst control, you can define tiers with a combination of criteria, for example, a 1000 requests per day and 10 requests per second. Users are then throttled at two layers. Enforcing a rate limit protects the backend from sudden request bursts and controls the usage at application and API level.
@@ -140,7 +144,7 @@ As an example, if we specify a quota policy as 20 requests per minute, it is pos
 
 For each application level throttle key, a WS policy is created on demand. The request count is calculated and rate limiting occurs at the node level.
 
-{!includes/design/redis-counter-note.md!}
+--8<-- "api-manager/4.3.0/includes/design/redis-counter-note.md"
 
 <div class="admonition info">
 <p class="admonition-title">Note</p>

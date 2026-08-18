@@ -4,7 +4,7 @@ An all-in-one deployment contains all the API-M components in one runtime instan
 
 - [All-in-One Deployment Overview](#all-in-one-deployment-overview)
   - [Single Node Deployment](#single-node-deployment)
-  - [Active - Active Deployment](#active---active-deployment)
+  - [Active - Active Deployment](#active-active-deployment)
 
 ## Single Node Deployment
 

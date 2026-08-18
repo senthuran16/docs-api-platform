@@ -12,10 +12,10 @@ Follow the instructions below to add a new child entry to a collection.
 
 The following methods are available:
 
--   **[Upload content from file](#AddingaResource-1)**
--   **[Import content from URL](#AddingaResource-2)**
--   **[Create Text content](#AddingaResource-3)**
--   **[Create custom content](#AddingaResource-4)**
+-   **[Upload content from file](#uploading-content-from-file)**
+-   **[Import content from URL](#importing-content-from-url)**
+-   **[Create Text content](#text-content-creation)**
+-   **[Create custom content](#custom-content-creation)**
 
 ![](../../../../../assets/attachments/126562631/126562637.png)
 

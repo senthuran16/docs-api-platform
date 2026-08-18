@@ -6,6 +6,7 @@ The refresh token grant can be used when the current access token is expired or 
     
     This refresh token needs to be kept private, similar to the access token. When using this token, keep in mind that it issues the access token without a user interaction.
 
+<a name="flow"></a>
 #### Flow
 
 After an access token is generated, sometimes you might have to renew the old token due to expiration or security concerns. You can renew an access token using a refresh token, by issuing a REST call to the Token API with the following parameters.
@@ -74,6 +75,7 @@ The above REST response grants you a renewed access token along with a refresh t
 
 After issuing an access token and refresh token, a user or an admin can revoke it in case of theft or a security violation. You can do this by calling the Revoke API using a utility like cURL. The Revoke API's endpoint URL is <https://localhost:9443/oauth2/revoke>.
 
+<a name="option-1"></a>
 #### Option 1
 
 The parameters required to invoke the following API are as follows:
@@ -118,6 +120,7 @@ The parameters required to invoke the following API are as follows:
 < Server: WSO2 Carbon Server
 ```
 
+<a name="option-2"></a>
 #### Option 2
 
 The parameters required to invoke the following API are as follows:
