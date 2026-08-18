@@ -51,6 +51,7 @@ See the instructions on [configuring the API Gateway](../../../../api-analytics/
 
 Let's configure the API-M nodes in the deployment.
 
+<a name="configure-the-gateway-nodes"></a>
 #### Configure the Gateway nodes
 
 Configure the Gateway to communicate with the Control Plane and the Traffic Manager nodes.
@@ -664,6 +665,7 @@ Follow the steps given below to configure the Control Plane nodes to communicate
     auth_urls = ["ssl://cp.wso2.com:9711"]
     ```
 
+<a name="configure-the-traffic-manager-nodes"></a>
 #### Configure the Traffic Manager Nodes
 
 In a typical distributed deployment, all API-M components (excluding the API-M Gateway) run in the Control Plane. However, you have the option of separating the Traffic Manager from the Control Plane.

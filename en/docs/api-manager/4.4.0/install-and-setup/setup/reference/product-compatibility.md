@@ -62,7 +62,7 @@ The **WSO2 API-M** runtime is tested with the following databases:
 The following is a list of other WSO2 products that have been tested with WSO2 API Manager 4.4.0.
 
 - [WSO2 Identity Server 7.0.0 and 6.1.0](https://wso2.com/identity-and-access-management/#)
-- [WSO2 API Platform For Kubernetes(APK) 1.2.0](https://wso2.com/api-platform-for-k8s)
+- [WSO2 API Platform For Kubernetes(APK) 1.2.0](https://apk.docs.wso2.com/en/latest/)
 
 #### Compatible WSO2 Identity Servers (as Key Manager)
 

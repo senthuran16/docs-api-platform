@@ -101,7 +101,7 @@ These features are unsupported and removed from WSO2 API Manager 4.4.0 onwards.
 ## Compatible WSO2 product versions
 
 - WSO2 API Manager 4.4.0 is compatible with WSO2 Identity Server 6.1.0 and 7.0.0
-- WSO2 API Manager 4.4.0 is compatible with WSO2 API Platform for Kubernetes ([APK](https://wso2.com/api-platform-for-k8s/)) version 1.2.0.
+- WSO2 API Manager 4.4.0 is compatible with WSO2 API Platform for Kubernetes ([APK](https://apk.docs.wso2.com/en/latest/)) version 1.2.0.
 
 ## Fixed issues
 
