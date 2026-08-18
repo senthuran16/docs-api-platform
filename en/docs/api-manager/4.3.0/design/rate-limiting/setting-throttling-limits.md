@@ -27,10 +27,10 @@ Let's take a look at the different levels of Rate Limiting:
 -   [Subscription-level Rate Limiting (API subscriber)](#subscription-level-rate-limiting-api-subscriber)
 -   [Advanced Rate Limiting (API publisher)](#advanced-rate-limiting-api-publisher)
     -   [API level Rate Limiting](#api-level-rate-limiting)
-    -   [Resource-level (Operation-level) Rate Limiting](#resource-leveloperation-level-rate-limiting)
+    -   [Resource-level (Operation-level) Rate Limiting](#resource-level-operation-level-rate-limiting)
     -   [Advanced Rate Limiting tiers](#advanced-rate-limiting-tiers)
 -   [Application-level Rate Limiting (application developer)](#application-level-rate-limiting-application-developer)
-    -   [Application-level Rate Limiting tiers](#Settingrate-limitingLimits-Application-levelrate-limitingtiers)
+    -   [Application-level Rate Limiting tiers](#application-level-rate-limiting-tiers)
 
 ### Subscription-level Rate Limiting (API publisher)
 
@@ -94,6 +94,7 @@ API level policies can be engaged via the resources section of an API in the Pub
 
 [![API level advanced policy](../../assets/img/learn/api-level-advanced-policy.png)](../../assets/img/learn/api-level-advanced-policy.png)
 
+<a name="resource-level-operation-level-rate-limiting"></a>
 #### **Resource level (Operation level) Rate Limiting**
 
 An API is made up of one or more resources. Each resource handles a particular type of request and is similar to a method (function) in a larger API. You can use this method when handling a large number of request at resource level such as Financial transactions. For example, Imagine API have two resources and one resource take more request than other you do not need to throttle it in API level in that case you can use this.  Resource-level Rate Limiting tiers are set to HTTP verbs of an API's  resources.  You can apply resource-level Rate Limiting through the **Resources** section of an API as shown below.
@@ -122,6 +123,7 @@ An application is a logical collection of one or more APIs and is required to su
 
 An application is available to a consumer at different levels of service. For example, if you have infrastructure limitations in facilitating more than a certain number of requests to an application at a time, the Rate Limiting tiers can be set accordingly so that the application can have a maximum number of requests within a defined time.
 
+<a name="application-level-rate-limiting-tiers"></a>
 #### Application-level Rate Limiting tiers
 
 The default Rate Limiting levels are as follows:

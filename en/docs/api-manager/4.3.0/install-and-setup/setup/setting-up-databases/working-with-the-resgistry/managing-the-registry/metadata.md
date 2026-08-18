@@ -1,6 +1,6 @@
 # Metadata
 
-**The Metadata panel** allows you to manage resource metadata and revisions using the [Create Checkpoint](#Metadata-Checkpoint) and [View Versions](#Metadata-Versions) options. Each time you create a check point, it is added as a new reversion of the resource. Revisions is a useful way to facilitate Disaster Recovery and Fault Tolerance in the registry. By creating a revision, a user essentially saves a snapshot of the current state of a resource or collection that can be restored at a later date. The registry's checkpoint and restoration mechanisms are similar to that of System Restore of Microsoft Windows.
+**The Metadata panel** allows you to manage resource metadata and revisions using the [Create Checkpoint](#creating-a-checkpoint) and [View Versions](#viewing-versions) options. Each time you create a check point, it is added as a new reversion of the resource. Revisions is a useful way to facilitate Disaster Recovery and Fault Tolerance in the registry. By creating a revision, a user essentially saves a snapshot of the current state of a resource or collection that can be restored at a later date. The registry's checkpoint and restoration mechanisms are similar to that of System Restore of Microsoft Windows.
 
 The **Metadata** panel displays the following properties of the resource or the collection:
 
@@ -15,6 +15,7 @@ The **Metadata** panel displays the following properties of the resource or the 
 For example,
 
 ![](../../../../../assets/attachments/22185146/22514191.png)
+<a name="creating-a-checkpoint"></a>
 #### Creating a checkpoint
 
 To create a checkpoint, click on the **Create Checkpoint** link:
@@ -25,6 +26,7 @@ To create a checkpoint, click on the **Create Checkpoint** link:
 **NOTE** : When checkpoints are created, properties, comments, ratings and tags will also be taken into consideration. If you do not want them to be versioned along with resource content, you can disable it by making changes to the [Static Configuration](https://docs.wso2.com/display/Governance460/Configuration+for+Static+%28One-time%29+and+Auto+Versioning+Resources) . However, these changes need to be done before the server starts for the first time.
 
 
+<a name="viewing-versions"></a>
 #### Viewing Versions
 
 To view the resource versions, click on the **View versions** link:

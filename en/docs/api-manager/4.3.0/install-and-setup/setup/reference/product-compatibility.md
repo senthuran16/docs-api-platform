@@ -6,6 +6,7 @@ Given below are the compatibility details of the WSO2 API Manager (WSO2 API-M) 4
 
 Given below is the tested compatibility of the API-M runtime of WSO2 API Manager 4.3.0.
 
+<a name="tested-operating-systems"></a>
 #### Tested Operating Systems
 
 As WSO2 API Manager is a Java application, you can generally run it on most operating systems. Listed below are the operating systems that have been tested with the API-M 4.3.0 runtime.
@@ -95,6 +96,7 @@ GA or update for:
 
 Given below is the tested compatibility of the Streaming Integrator version 4.2.0.
 
+<a name="tested-operating-systems"></a>
 #### Tested Operating Systems
 
 The **Streaming Integrator** runtime is tested with the following operating systems:

@@ -17,6 +17,7 @@ The Management Plane is where API creation and API management takes place.  It c
 
 WSO2 API Manager’s API Publisher is a state-of-the-art GUI based tool for API development and management. The GUI is designed for API creators to develop, document, secure, test, and version APIs with ease. It’s also able to cater to more API management-related tasks such as publishing APIs, monetizing APIs, and applying rate limiting policies.
 
+<a name="api-developer-portal"></a>
 #### API Developer Portal
 
 [![Developer Portal](../assets/img/get_started/architecture/developer-portal-overview.png)](../assets/img/get_started/architecture/developer-portal-overview.png)
