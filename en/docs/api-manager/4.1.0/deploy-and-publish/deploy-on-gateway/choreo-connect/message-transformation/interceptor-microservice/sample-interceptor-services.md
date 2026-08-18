@@ -11,7 +11,7 @@ respond to it with the HTTP status code `201`. Since the response returned from 
 
 The following diagram describes what the scenario that we are attempting to implement based on the requirements.
 
-<img src="../../../../../assets/img/deploy/mgw/interceptor-example-json-to-xml.png" alt="Interceptor sample JSON to XML" width="880px"/>
+<img src="../../../../../../assets/img/deploy/mgw/interceptor-example-json-to-xml.png" alt="Interceptor sample JSON to XML" width="880px"/>
 
 Since you read the request body in request interceptor, you need to add `request_body` in the `includes` section of Open API Definition of the API.
 The same microservice is used to handle both request and response interception.

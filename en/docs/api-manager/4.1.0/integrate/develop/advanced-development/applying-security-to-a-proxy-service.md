@@ -129,11 +129,11 @@ Create a Soap UI project with the relevant security settings and then send the r
 
      Example: `http://localhost:8280/services/SampleProxy?wsdl`
 
-    <img src="../../../assets/img/integrate/apply-security/soapui/create-soapui-project.jpg" width="600">
+    <img src="../../../../assets/img/integrate/apply-security/soapui/create-soapui-project.jpg" width="600">
 
 2.  Double click on the created SOAP project, click on **WS-Security-Configuration**, **Keystores**, and add the WSO2 keystore.
 
-    <img src="../../../assets/img/integrate/apply-security/soapui/create-keystore.jpg" width="600">
+    <img src="../../../../assets/img/integrate/apply-security/soapui/create-keystore.jpg" width="600">
     
 3.  Enter the keystore password for the keystore configuration.
 
@@ -141,7 +141,7 @@ Create a Soap UI project with the relevant security settings and then send the r
 
      The name can be anything.
 
-    <img src="../../../assets/img/integrate/apply-security/soapui/create-outgoing-wss-configuration.jpg" width="600">
+    <img src="../../../../assets/img/integrate/apply-security/soapui/create-outgoing-wss-configuration.jpg" width="600">
     
 5.  Add the required WSS entries for the created configuration.
    
@@ -149,22 +149,22 @@ Create a Soap UI project with the relevant security settings and then send the r
 
     - **Adding a Signature**  
     
-         <a href="../../../assets/img/integrate/apply-security/soapui/adding-signature-entry.jpg"><img src="../../../assets/img/integrate/apply-security/soapui/adding-signature-entry.jpg" width="60%" alt="Adding a Signature"></a>
+         <a href="../../../../assets/img/integrate/apply-security/soapui/adding-signature-entry.jpg"><img src="../../../../assets/img/integrate/apply-security/soapui/adding-signature-entry.jpg" width="60%" alt="Adding a Signature"></a>
     
     - **Adding a Timestamp**
     
-         <a href="../../../assets/img/integrate/apply-security/soapui/adding-timestamp-entry.jpg"><img src="../../../assets/img/integrate/apply-security/soapui/adding-timestamp-entry.jpg" width="60%" alt="Adding a Timestamp"></a>
+         <a href="../../../../assets/img/integrate/apply-security/soapui/adding-timestamp-entry.jpg"><img src="../../../../assets/img/integrate/apply-security/soapui/adding-timestamp-entry.jpg" width="60%" alt="Adding a Timestamp"></a>
     
     - **Adding an Encryption**
     
-         <a href="../../../assets/img/integrate/apply-security/soapui/adding-encryption-entry.jpg"><img src="../../../assets/img/integrate/apply-security/soapui/adding-encryption-entry.jpg" width="60%" alt="Adding an Encryption"></a>
+         <a href="../../../../assets/img/integrate/apply-security/soapui/adding-encryption-entry.jpg"><img src="../../../../assets/img/integrate/apply-security/soapui/adding-encryption-entry.jpg" width="60%" alt="Adding an Encryption"></a>
     
     !!! Note
         The order of the WS entries matters. So always add the above one after the other. If you are adding only two sections, you need to maintain the order.
         
 6.  Specify the created WS-policy under **Outgoing WSS** at the request **Authorization**.
 
-    <a href="../../../assets/img/integrate/apply-security/soapui/invoking-with-out-policy.jpg"><img src="../../../assets/img/integrate/apply-security/soapui/invoking-with-out-policy.jpg" alt="Specify the created WS-policy"></a>
+    <a href="../../../../assets/img/integrate/apply-security/soapui/invoking-with-out-policy.jpg"><img src="../../../../assets/img/integrate/apply-security/soapui/invoking-with-out-policy.jpg" alt="Specify the created WS-policy"></a>
    
 7.  Invoke the Proxy Service.
 
@@ -178,4 +178,4 @@ Create a Soap UI project with the relevant security settings and then send the r
     - A Confidentiality policy needs all three: Timestamp, Signature and Encryption.
     - You do not need to provide an Outgoing WS-Security Configuration for a Username Token policy. Providing the basic auth configuration is enough.
     
-        <a href="../../../assets/img/integrate/apply-security/soapui/invoking-username-token.jpg"><img src="../../../assets/img/integrate/apply-security/soapui/invoking-username-token.jpg"></a>
+        <a href="../../../../assets/img/integrate/apply-security/soapui/invoking-username-token.jpg"><img src="../../../../assets/img/integrate/apply-security/soapui/invoking-username-token.jpg"></a>

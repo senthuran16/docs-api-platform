@@ -41,8 +41,8 @@ Each of the above files can be found in the locations given below depending on t
 
     You may update the configurations in the following ways, when deploying with Helm Charts and the resources from the [Choreo Connect Helm Chart Git repository](https://github.com/wso2/kubernetes-microgateway/tree/{{choreo_connect.helm_chart.git_tag}}/helm/choreo-connect). 
 
-    - By updating [values.yaml](https://github.com/wso2/kubernetes-microgateway/blob/{{choreo_connect.helm_chart.git_tag}}/helm/choreo-connect/values.yaml). [Click here for the steps.](https://apim.docs.wso2.com/en/latest/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/#step-2-update-the-deployment-configurations)
-    - By using --set with the Helm command. [Click here for an example.](https://apim.docs.wso2.com/en/latest/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/#step-2-install-chart)
+    - By updating [values.yaml](https://github.com/wso2/kubernetes-microgateway/blob/{{choreo_connect.helm_chart.git_tag}}/helm/choreo-connect/values.yaml). [Click here for the steps.](../getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts.md#step-2-update-the-deployment-configurations)
+    - By using --set with the Helm command. [Click here for an example.](../getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts.md#step-2-install-chart)
 
     You can find the [complete list of parameters here](https://github.com/wso2/kubernetes-microgateway/blob/master/helm/choreo-connect/README.md#configuration).
 

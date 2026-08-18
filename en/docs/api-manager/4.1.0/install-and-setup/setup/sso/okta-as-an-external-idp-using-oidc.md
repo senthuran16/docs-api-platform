@@ -211,7 +211,7 @@ Before you begin, make sure you do the following.
          </tr>
          </table>
          
-         <a href="../../../assets/img/learn/okta-apim-add-role-name.png"><img src="../../../assets/img/learn/okta-apim-add-role-name.png" width="50%"/></a>
+         <a href="../../../../assets/img/learn/okta-apim-add-role-name.png"><img src="../../../../assets/img/learn/okta-apim-add-role-name.png" width="50%"/></a>
 
 3. Add scope mapping via the WSO2 API Manager Admin Portal.
 
@@ -523,11 +523,11 @@ Before you begin, make sure you do the following.
      
          You can check if the user logged in has the role `any` and assign the local `okta_role`.
 
-        <a href="../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"/></a>
+        <a href="../../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"/></a>
 
      7. Enable **Just-in-Time Provisioning** for the user to be saved in the API Manager user store.
 
-         <a href="../../../assets/img/learn/okta-apim-role-oidc-jit.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-jit.png" width="600"/></a>
+         <a href="../../../../assets/img/learn/okta-apim-role-oidc-jit.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-jit.png" width="600"/></a>
 
     !!! info
         When Just-In-Time Provisioning is enabled, the user details will be saved in the API Manager user store. User profile details will be updated via the federation following each login event. To preserve the user profile details without any changes, you need to enable `SystemRolesRetainedProvisionHandler`.

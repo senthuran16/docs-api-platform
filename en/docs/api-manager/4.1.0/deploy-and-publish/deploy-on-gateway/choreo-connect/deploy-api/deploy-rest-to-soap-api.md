@@ -6,7 +6,7 @@ This guide will explain you on how to perform the SOAP to REST transformation us
 
 The following diagram illustrates the request flow from client to the backend through WSO2 Micro Integrator and the response flow from backend to client through WSO2 Micro Integrator for this example. The WSO2 Micro Integrator acting as the backend for the Choreo Connect Gateway whereas its handling the `JSON` to `SOAP` message transformation as well as `GET` to `POST` method transformation.
 
-<img src="../../../../assets/img/deploy/mgw/soap-to-rest.png" alt="SOAP to REST request flow" width="650px"/>
+<img src="../../../../../assets/img/deploy/mgw/soap-to-rest.png" alt="SOAP to REST request flow" width="650px"/>
 
 | Numbers | Description                                                 |
 |---------|-------------------------------------------------------------|
@@ -84,7 +84,7 @@ You can use the following steps to configure the **Micro Integrator** to update 
             Also note that this guide assumes, you are using `docker-compose` to run API Manager and Choreo Connect Gateway and **Micro Integrator** is running on the host machine(localhost). Therefore, If you are using another setup, please make sure to set the host & port of the `serviceUrl` accordingly.
         
 2. Configure Micro integrator to automatically publish artifacts to **Service Catalog** in API Manager publisher portal.
-    - Open the server configurations for Embedded Micro Integrator in Integration Studio by clicking on the **Server Configuration(Micro Integrator)** (<a href="../../../../assets/img/integrate/tutorials/common/server-config-64x64.png"><img src="../../../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20"></a>) icon on the upper menu.
+    - Open the server configurations for Embedded Micro Integrator in Integration Studio by clicking on the **Server Configuration(Micro Integrator)** (<a href="../../../../../assets/img/integrate/tutorials/common/server-config-64x64.png"><img src="../../../../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20"></a>) icon on the upper menu.
     - Uncomment the `[[service_catalog]]` section and change the APIM server configurations accordingly.
         ```toml
         [[service_catalog]]
@@ -123,7 +123,7 @@ In this example we are using the [Embedded Micro Integrator](../../../../integra
 Below steps will show you, how to deploy your REST API.
 
 1. Select the Composite Application in the project explorer.
-2. Click the <img src="../../../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette to open the **Run As** dialog box. 
+2. Click the <img src="../../../../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette to open the **Run As** dialog box. 
 3. Select **Run on Micro Integrator** and click **OK**.
 4. Then select the created API artifact under `PhoneVerificationConfigs` and click **Finish**.
 
@@ -172,11 +172,11 @@ You can create the API using the Service Catalog as follows.
 
 1. Sign in to Publisher portal `https://localhost:9444/publisher/` and go to the **Service Catalog** by clicking on the **Services** icon on the left panel.
 
-    <img src="../../../../assets/img/deploy/mgw/apim-service-catalog.png" alt="SOAP to REST request flow" width="650px" height="350px"/>
+    <img src="../../../../../assets/img/deploy/mgw/apim-service-catalog.png" alt="SOAP to REST request flow" width="650px" height="350px"/>
 
 2. Click on the PhoneVerify service and then click on **Create API** in the next window and create the API.
 
-    <img src="../../../../assets/img/deploy/mgw/apim-create-api-using-service-catalog.png" alt="SOAP to REST request flow" width="650px"/>
+    <img src="../../../../../assets/img/deploy/mgw/apim-create-api-using-service-catalog.png" alt="SOAP to REST request flow" width="650px"/>
 
 #### Step 2 - Deploy the API using API Manager Publisher Portal
 

@@ -191,7 +191,7 @@ Follow the instructions below to generate an AsyncAPI Definition via the Streami
 
      Click **Add Async API** to add the generated AsyncAPI definition to the Siddhi application.
 
-     <a href="../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
+     <a href="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
 
 3. Click **Code View** to view the Siddhi application with the AsyncAPI definition that was generated and save it so that it can be deployed on SI server.
 
@@ -298,7 +298,7 @@ Follow the instructions below to publish the API via the WSO2 API Manager Publis
 
     2. Copy the authorization token that appears in here.
 
-         <a href="../../assets/img/learn/generate-access-token-popup.jpg"><img src="../../assets/img/learn/generate-access-token-popup.jpg" width="55%" alt="Authorization token"></a>
+         <a href="../../../assets/img/learn/generate-access-token-popup.jpg"><img src="../../../assets/img/learn/generate-access-token-popup.jpg" width="55%" alt="Authorization token"></a>
 
 4. Try out the operations.
 

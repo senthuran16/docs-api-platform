@@ -4,7 +4,7 @@ API Analytics is delivered via the API Analytics Cloud. Therefore, the API Manag
 
 ## Basic configurations
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.1.0/includes/analytics/configure-synapse-gateway.md"
 
 ## Advanced configurations
 

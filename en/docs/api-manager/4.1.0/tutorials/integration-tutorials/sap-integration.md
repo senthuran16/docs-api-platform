@@ -188,6 +188,7 @@ WSO2 SAP adapter can be used with IDoc, which is a synchronous interface
 used when exchanging data with the SAP system. WSO2 Micro Integrator can be configured
 for [Sending IDocs](#sending-idocs) or [Receiving IDocs](#receiving-idocs) when using the SAP adapter.
 
+<a name="sending-idocs"></a>
 #### Sending IDocs
 
 Follow the instructions below to configure the Micro Integrator as an IDoc
@@ -256,6 +257,7 @@ client using the SAP adapter.
      ```   
     You can now send IDocs using the configured WSO2 SAP adapter.
 
+<a name="receiving-idocs"></a>
 #### Receiving IDocs
 
 Follow the instructions below to configure the Micro Integrator as an IDoc server using the SAP adapter.
@@ -318,6 +320,7 @@ synchronous interface used when exchanging data with the SAP system. The
 Micro Integrator can be configured for [Sending BAPIs](#sending-bapis) or 
 [Receiving BAPIs](#receiving-bapis) when using the SAP adapter.
 
+<a name="sending-bapis"></a>
 #### Sending BAPIs
 
 Follow the instructions below to configure the Micro Integrator as a BAPI
@@ -382,6 +385,7 @@ client using the SAP adapter.
     ./micro-integrator.sh -Djava.library.path=/usr/lib/jvm/jre1.7.0/lib/i386/server/
     ```
         
+<a name="receiving-bapis"></a>
 #### Receiving BAPIs
 
 Follow the instructions below to configure the Micro Integrator as a BAPI server using the SAP adapter.
@@ -440,6 +444,7 @@ Follow the instructions below to configure the Micro Integrator as a BAPI server
 This section describes additional parameters that can be used when
 configuring WSO2 SAP adapter.
 
+<a name="proxy-service-listener-parameters"></a>
 #### Proxy service listener parameters
 
 Following are descriptions of the proxy level listener parameters that

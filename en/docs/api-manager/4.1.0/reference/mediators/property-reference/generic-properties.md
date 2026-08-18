@@ -477,7 +477,7 @@ Generic properties allow you to configure messages as they're processed by the 
 </tr>
 <tr class="odd">
 <td><p><strong>Description</strong></p></td>
-<td><p>If this property is set to <code>              true             </code> , the result of file content processing carried out by the <a href="../smooks-mediator.md">Smooks Mediator</a> will not be loaded into the message context. This is useful in situations where you want to avoid large memory growth/out of heap space issue that may occur when large files processed by the Smooks mediator are reprocessed.</td>
+<td><p>If this property is set to <code>              true             </code> , the result of file content processing carried out by the <a href="../../smooks-mediator/">Smooks Mediator</a> will not be loaded into the message context. This is useful in situations where you want to avoid large memory growth/out of heap space issue that may occur when large files processed by the Smooks mediator are reprocessed.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Example</strong></p></td>
@@ -819,7 +819,7 @@ The following generic properties can be used in the [Property mediator](../prope
 			Description
 		</td>
 		<td>
-			When a message is read from a RabbitMQ message queue, it will be sent to a service running in the backend. If a failure occurs, the Micro Integrator will do a <b>basicReject</b> with the <b>requeue</b> flag set to 'false'. In that case, the user must <a href="../../../integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq.md">configure a Dead Letter Exchange</a> to avoid losing messages. The same concept could be used to <a href="../../../integrate/examples/rabbitmq_examples/retry-delay-failed-msgs-rabbitmq.md">control the number of retries and to delay messages</a>.</br></br>
+			When a message is read from a RabbitMQ message queue, it will be sent to a service running in the backend. If a failure occurs, the Micro Integrator will do a <b>basicReject</b> with the <b>requeue</b> flag set to 'false'. In that case, the user must <a href="../../../../integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq/">configure a Dead Letter Exchange</a> to avoid losing messages. The same concept could be used to <a href="../../../../integrate/examples/rabbitmq_examples/retry-delay-failed-msgs-rabbitmq/">control the number of retries and to delay messages</a>.</br></br>
 			Note that you need to set the SET_ROLLBACK_ONLY property in the fault handler (e.g., the fault sequence). 
 		</td>
 	</tr>

@@ -16,6 +16,7 @@ The following operations allow you to retrieve, create or update work assignment
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-work-assignments"></a>
 #### Retrieving Employee Work Assignments
 We can use GET Employee Work Assignments operation with required parameters to find the work assignment of employees.
 
@@ -211,6 +212,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Assignments/GET-Employee-Work-Assignments.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Assignments/GET-Employee-Work-Assignments.aspx)
 
+<a name="creating-employee-work-assignments"></a>
 #### Creating Employee Work Assignments
 We can use POST Employee Work Assignments operation with required parameters to create work assignments for employees
 
@@ -325,6 +327,7 @@ Dayforce returns 200
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Assignments/POST-Employee-Work-Assignments.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Assignments/POST-Employee-Work-Assignments.aspx)
 
+<a name="updating-employee-work-assignments"></a>
 #### Updating Employee Work Assignments
 We can use PATCH Employee Work Assignments operation with required parameters to update the work assignments of an employee.
 

@@ -14,6 +14,7 @@ The following operations allow you to retrieve time away from work of an employe
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-time-away-from-work"></a>
 #### Retrieving Employee Time Away from Work
 We can use GET Employee Time Away from Work operation with required parameters to get the time spent by employees away from work.
 

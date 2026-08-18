@@ -140,7 +140,7 @@ When changing the password, the new password will be validated against the user 
   
 You can display a list of policy guidelines in the change password page that appears in the Developer Portal.  
   
-<img src="../../../assets/img/learn/change-devportal-password-policy-guideline-display.png" alt="Displaying Developer Portal password policy guidelines" width="700"/>
+<img src="../../../../assets/img/learn/change-devportal-password-policy-guideline-display.png" alt="Displaying Developer Portal password policy guidelines" width="700"/>
   
 1. Enable password changing guidelines in the `settings.js` file.  
 

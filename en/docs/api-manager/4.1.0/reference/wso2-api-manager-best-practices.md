@@ -22,10 +22,12 @@ It's important to have proper names for services and service paths. For example,
 
 Following are some of the guidelines for designing proper API/Resource paths and names. Note that these are not mandatory rules but best practices.
 
+<a name="naming-resources"></a>
 #### Naming Resources
 
 Atomic resources, collection resources, and composite resources should be named as nouns because they represent ‘things’; not ‘actions’. Actions lean more towards verbs as names of resources. Processing-function resources and controller resources should be named as verbs because they represent actions. Function resources and controller resources should not be sub-resources of individual resources.
 
+<a name="naming-complex-resources"></a>
 #### Naming Complex Resources
 
 Use lower case characters only in names. This is because the rules about which URI element names are case sensitive and which are not might cause confusion. If multiple words are used to name a resource, separate the words by dashes (-) or some other separator. Use singular nouns to name atomic resources. Use pluralized names for collections. That is, the name should be the plural noun of the grouped concept (atomic resource or composite resource). Use forward slashes /) to specify hierarchical relations between resources. A forward slash separates the names of the hierarchically structured resources. The parent name precedes the name of its immediate children.
@@ -34,10 +36,12 @@ Use lower case characters only in names. This is because the rules about which U
 
 The version of an API is part of its URI. It is usually given as a pair of integers (separated by a dot) referred to as the major and the minor number of the version, preceded by the lowercase letter "v". For example, a valid version string in the base path is v2.1, indicating the first minor version of the second major version of the corresponding API.
 
+<a name="advantages-of-api-versioning"></a>
 #### Advantages of API Versioning
 
 A proper versioning strategy is helpful for all API users and clients to communicate with APIs easily and effectively. WSO2 API Manager has versioning support. You can copy existing APIs and create new versions of the same APIs. The recommended way to change the functionality of a running API is to create a new version from the existing API. You can then modify the new version, and test the functionalities of the new version before publishing it.
 
+<a name="major-minor-patch-versions"></a>
 #### Major, Minor, Patch Versions
 
 In general, a version number following the semantic versioning concept and have the structure major.minor.patch. The significance, in terms of client impact, increases from left to right. As a best practice, you should support the current major version and at least one previous, major version. In case you release new versions frequently (e.g., every few months), it is recommended to support more previous major versions.

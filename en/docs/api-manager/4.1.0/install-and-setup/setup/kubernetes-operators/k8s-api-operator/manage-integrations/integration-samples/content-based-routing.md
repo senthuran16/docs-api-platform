@@ -16,17 +16,17 @@ Let's use the <b>Content Routing</b> integration template in WSO2 Integration St
 1.  Open WSO2 Integration Studio.
 2.  In the <b>Getting Started</b> view, select the <b>Content Based Routing</b> template.
 
-    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/content-routing-template.jpg">
+    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/content-routing-template.jpg">
 
 3.  Give a project name and click <b>Finish</b>.
 
-    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/content-routing-sample-project.png" width="400" alt="k8s project structure">
+    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/content-routing-sample-project.png" width="400" alt="k8s project structure">
 
 5.  Create a **Kubernetes Project** inside the integration project. 
 
     1.  Right-click the <b>content-routing-sample</b> project, go to **New -> Kubernetes Exporter**:
 
-        <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/k8s-proj.jpg" width="500" alt="Create Kubernetes Project">
+        <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/k8s-proj.jpg" width="500" alt="Create Kubernetes Project">
 
     2.  In the **Kubernetes Exporter Information for K8s EI Operator** dialog box that opens, enter the following details:
 
@@ -102,7 +102,7 @@ Let's use the <b>Content Routing</b> integration template in WSO2 Integration St
 
 Your integration project with the <b>content routing</b> sample is now ready to be deployed in Kubernetes.
 
-<img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/k8s-content-routing-sample-project.png" width="400" alt="k8s project structure">
+<img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/k8s-content-routing-sample-project.png" width="400" alt="k8s project structure">
 
 ## Step 2 - Build and Push the Docker image 
 
@@ -132,11 +132,11 @@ There are two ways to build a Docker image of the integration solution and push 
     1.  Open the **pom.xml** file in the Kubernetes exporter.    
     2.  Ensure that the composite exporter is selected under **Dependencies** and click <b>Build & Push</b>.
 
-        <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/select-dependency-content-routing.png">
+        <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/select-dependency-content-routing.png">
 
     3.  In the dialog box that opens, enter the credentials of your Docker registry to which the image should be pushed.
 
-        <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/docker-registry-credentials.png" width="500" alt="docker registry credentials">
+        <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/docker-registry-credentials.png" width="500" alt="docker registry credentials">
 
     4.  Click <b>Push Image</b>.
 

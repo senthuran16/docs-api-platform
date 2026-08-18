@@ -61,7 +61,7 @@ The project is now initialized. A directory with the name "petstore" has been cr
 
 Start Choreo Connect on Docker Compose by executing the Docker Compose script inside the extracted distribution folder by navigating to `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/` and executing the following command.
 
-{!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 ``` java
 docker-compose up -d

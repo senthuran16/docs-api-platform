@@ -19,7 +19,7 @@ Follow the instructions given in this section to create and configure the requir
 2.  Open **WSO2 Integration Studio**.
 3.  Click **New Integration Project** in the **Getting Started** tab as shown below.
 
-    <img src="../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="90%">
+    <img src="../../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="90%">
 
     This will open the <b>New Integration Project</b> dialog box.
 
@@ -31,7 +31,7 @@ Follow the instructions given in this section to create and configure the requir
 
     You can see the projects listed in the **Project Explorer** as shown below:
 
-    <a href="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/project-explorer-service-catalog.png"><img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/project-explorer-service-catalog.png" width="40%"></a>
+    <a href="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/project-explorer-service-catalog.png"><img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/project-explorer-service-catalog.png" width="40%"></a>
 
     !!! Note
         A **resources** folder is created in the `ProxyServiceSampleConfigs` project. This folder holds the metadata YAML files of the created proxy services. These YAML files will be uploaded to the Service Catalog later in this tutorial.   
@@ -103,7 +103,7 @@ When the **StockQuoteProxy** is created, the following new file is created in th
     </tr>
 </table>
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/metadata-folder-service-catalog.png" width="40%">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/metadata-folder-service-catalog.png" width="40%">
 
 ### Step 2: Configure service metadata
 
@@ -174,7 +174,7 @@ The Micro Integrator contains a client application, which automatically publishe
 
 Let's enable this client for the embedded Micro Integrator of WSO2 Integration Studio.
 
-1.  Click the <b>Embedded Micro Integrator Configuration</b> (<img src="../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20">) icon on the upper menu to open the dialog box.
+1.  Click the <b>Embedded Micro Integrator Configuration</b> (<img src="../../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20">) icon on the upper menu to open the dialog box.
 2.  Uncomment the `[[service_catalog]]` section as shown below and change the APIM server configurations accordingly. 
 
     !!! Tip
@@ -280,15 +280,15 @@ Let's expose the integration service as a managed API.
 
 2.  You can also click the **hamburger** icon on the upper-left and click **Services** to see the available services.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/open-service-catalog.png" alt="open service catalag" width="40%">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/open-service-catalog.png" alt="open service catalag" width="40%">
 
 3.  Open StockQuoteProxy from the above list.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/new-service-api-view.png" alt="API created from service catalog">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/new-service-api-view.png" alt="API created from service catalog">
 
 4.  Click **Create API** in the above screen to open the **Create API** dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/create-api-from-service.png" alt="create api dialog box">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/create-api-from-service.png" alt="create api dialog box">
 
 5.  Specify an API name, context, and version, and then click **Create API**.
 
@@ -297,12 +297,12 @@ Let's expose the integration service as a managed API.
 
 You can now see the new API's overview page.
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-overview.png" alt="new api view">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-overview.png" alt="new api view">
 
 !!! Note
     -   You can use the left-hand navigation to explore the new API.
     -   Click **Endpoints** in the left-hand navigator. You will see that the new API uses the integration service deployed in the Micro Integrator as the endpoint (backend).
-        <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/endpoint-config-of-api.png" alt="endpoint view">
+        <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/endpoint-config-of-api.png" alt="endpoint view">
 
 **Select business plans**
 
@@ -310,11 +310,11 @@ Let's allocate some business plans for the API.
 
 1.  Go to the API overview and click **Business Plan**.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/api-overview-business-plan.png" alt="click to add business plan">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/api-overview-business-plan.png" alt="click to add business plan">
 
 3.  Select at least one business plan for the API and save.
  
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-business-plans.png" alt="add business plans to api">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-business-plans.png" alt="add business plans to api">
 
 **Deploy API in the Gateway**
 
@@ -325,14 +325,14 @@ Let's deploy the API in a gateway environment.
     !!! Tip
         This opens the **Deployment** tab in the left-hand navigator.
     
-    <img src="../../assets/img/integrate/tutorials/service-catalog/api-overview-deployment.png" alt="open the deployment options">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/api-overview-deployment.png" alt="open the deployment options">
 
 2.  Click **Default** to specify the gateway environment and host.
 
     !!! Tip
         This setting deploys the API in Production as well as Sandbox gateways. Find out more about [gateway environments](../../deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways.md).
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-deployment-revision.png" alt="select gateways for the deployment">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-deployment-revision.png" alt="select gateways for the deployment">
 
 3.  **Optionally**, you can add a description.
 
@@ -340,13 +340,13 @@ Let's deploy the API in a gateway environment.
 
 You will now see the deployment as the first revision of the API:
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-gateway-deployment-summary.png" alt="api first revision">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/api-gateway-deployment-summary.png" alt="api first revision">
 
 ### Step 8: Publish the API
 
 Go to the API overview in the **Publisher** portal and click **Publish** for the `StockQuoteProxy` as shown below.
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/api-overview-publish.png">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/api-overview-publish.png">
 
 The API is now available in the **Developer** portal for consumers to access.
 
@@ -361,15 +361,15 @@ Now, let's assume you are an API consumer who wants to use the API. As a consume
 
 2.  Go to the **API** tab. The `StockQuoteProxy` is listed as shown below.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-list.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-list.png">
 
 3.  Select the `StockQuoteProxy` to open the API overview.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-overview.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-overview.png">
 
 4.  Go to the **Subscriptions** tab and subscribe using the **DefaultApplication** as shown below.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-subscription.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-subscription.png">
 
 !!! Tip
     For detailed instructions, see [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api.md).
@@ -400,14 +400,14 @@ When you consume an API from the marketplace, your access to the API is authenti
 1.  Go to the **Subscriptions** tab for the `StockQuoteProxy` in the **Developer** portal.
 2.  Click **PROD KEYS** for the **DefaultApplication**.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/developer-portal-api-generate-keys.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/developer-portal-api-generate-keys.png">
 
 3.  Click **Generate Keys** (at the bottom of this view) to apply a consumer key and secret as shown below.
 
     !!! Note
         The application may already have a consumer key and secret generated. In this case, you can skip this step. 
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/developer-portal-api-consumer-keys.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/developer-portal-api-consumer-keys.png">
 
 4.  Click **Generate Access Token** in the above view to generate the access token.
 
@@ -419,7 +419,7 @@ Now, let's test the use case by sending a simple client request that invokes the
 
 1.  Click **Try Out** for the `StockQuoteProxy` in the **Developer** portal as shown below.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-try-it.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-try-it.png">
 
 2.  Enter the following details.
 
@@ -483,7 +483,7 @@ Now, let's test the use case by sending a simple client request that invokes the
     ```
 5.  Click **Execute**.
 
-    <img src="../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-try-it-execute.png">
+    <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-try-it-execute.png">
 
 You will get the response message from the StockQuoteProxy service:
 

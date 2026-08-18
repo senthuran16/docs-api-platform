@@ -82,6 +82,7 @@ If you provide only the property name without the scope, the default s
     </inSequence>
     ```
     
+<a name="synapse-scope"></a>
 #### Synapse scope
 
 When the scope of a property mediator is `         synapse        ` ,

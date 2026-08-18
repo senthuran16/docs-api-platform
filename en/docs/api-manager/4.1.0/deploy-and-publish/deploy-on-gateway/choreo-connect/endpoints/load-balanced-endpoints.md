@@ -33,7 +33,7 @@ After creating an API in the APIM publisher, select the API you want to apply lo
 
 ### Step 2 - Invoke API Endpoint Via The Choreo Connect
 
-After obtaining a valid JWT token, you can invoke APIs as described [here](../getting-started/quick-start-guide-docker-with-apim.md#step-6-invoke-the-api-via-choreo-connect). 
+After obtaining a valid JWT token, you can invoke APIs as described [here](../getting-started/quick-start-guide-docker-with-apim.md#step-6-invoke-the-api-from-developer-portal). 
 When invoking the API, traffic will route to the load balanced endpoints you defined above.
 
 Example is given below:

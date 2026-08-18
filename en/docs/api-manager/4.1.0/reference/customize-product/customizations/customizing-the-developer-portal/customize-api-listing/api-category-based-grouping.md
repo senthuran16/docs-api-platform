@@ -20,7 +20,7 @@ You can add an API category using any of the following methods:
 
 2. Click **API Category** and then click **API Categories**.
     
-    <img src="../../../../../assets/img/develop/new_api_category_left_tag.png" width="250" alt="API categories menu">
+    <img src="../../../../../../assets/img/develop/new_api_category_left_tag.png" width="250" alt="API categories menu">
     
 3. Click **Add New Category**.
 
@@ -33,7 +33,7 @@ You can add an API category using any of the following methods:
      |  Name          |  Food                  |
      |  Description   |  Fast food related APIs     |
 
-    <img src="../../../../../assets/img/develop/new_add_category.png" width="500" alt="Add API category">
+    <img src="../../../../../../assets/img/develop/new_add_category.png" width="500" alt="Add API category">
 
 5. Click **Save**.
 
@@ -47,7 +47,7 @@ You can add an API category using any of the following methods:
 
 3. Click **Design Configurations**. 
 
-     <img src="../../../../../assets/img/develop/api_categories_dropdown.png" width="250" alt="Add API category">
+     <img src="../../../../../../assets/img/develop/api_categories_dropdown.png" width="250" alt="Add API category">
 
 4. Select the API category.
 

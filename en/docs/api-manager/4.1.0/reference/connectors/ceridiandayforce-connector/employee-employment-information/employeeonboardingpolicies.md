@@ -10,12 +10,13 @@ The following operations allow you to retrieve, create or update onboarding poli
 | ------------- |-------------|
 |[GET Employee Onboarding Policies](#retrieving-employee-onboarding-policies)| Retrieve onboarding policies assigned to an employee. |
 |[POST Employee Onboarding Policies](#creating-employee-onboarding-policies)| Assign onboarding policies to an employee. |
-|[PATCH Employee Onboarding Policies](#updating--employee-onboarding-policies)| Update the onboarding policies assigned to an employee. |
+|[PATCH Employee Onboarding Policies](#updating-employee-onboarding-policies)| Update the onboarding policies assigned to an employee. |
 
 ### Operation details
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-onboarding-policies"></a>
 #### Retrieving Employee Onboarding Policies
 We can use GET Employee addresses operation with required parameters to get the onboarding policies of an employee.
 
@@ -75,6 +76,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Onboarding-Policies/GET-Employee-Onboarding-Policies.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Onboarding-Policies/GET-Employee-Onboarding-Policies.aspx)
 
+<a name="creating-employee-onboarding-policies"></a>
 #### Creating Employee Onboarding Policies
 We can use POST Employee Onboarding Policies operation with required parameters to assign onboarding policies to an employee.
 
@@ -125,6 +127,7 @@ Dayforce returns HTTP Code 200
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Onboarding-Policies/POST-Employee-Onboarding-Policies.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Onboarding-Policies/POST-Employee-Onboarding-Policies.aspx)
 
+<a name="updating-employee-onboarding-policies"></a>
 #### Updating Employee Onboarding Policies
 We can use PATCH Employee addresses operation with required parameters to search and find the required employees.
 

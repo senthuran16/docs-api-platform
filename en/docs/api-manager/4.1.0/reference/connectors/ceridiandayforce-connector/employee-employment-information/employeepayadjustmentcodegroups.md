@@ -14,6 +14,7 @@ The following operations allow you to retrieve, create or update addresses of an
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-pay-adjustment-code-groups"></a>
 #### Retrieving Employee Pay Adjustment Code Groups
 We can use GET Employee Pay Adjustment Code Groups operation with required parameters to get the pay adjustment group of an employee.
 

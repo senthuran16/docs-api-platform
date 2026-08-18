@@ -29,7 +29,7 @@ Follow the instructions below to generate/renew application keys:
     
 5. Copy the generated JWT Access Token that appears so that you can use it in the future.
 
-      <a href="../../../assets/img/learn/jwt-access-token.png" ><img src="../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
+      <a href="../../../../assets/img/learn/jwt-access-token.png" ><img src="../../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
      
      After the keys are generated, you can find the consumer key and consumer secret pair via the application details page.
      

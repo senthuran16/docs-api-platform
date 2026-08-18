@@ -22,7 +22,7 @@ Configure the Advanced Endpoint Configurations as follows:
 
      The Advanced Endpoint Configurations page appears.
 
-    <a href="../../../assets/img/learn/advance-config-dialog.png"><img src="../../../assets/img/learn/advance-config-dialog.png" alt="Advanced endpoint configurations" width="60%"/></a>
+    <a href="../../../../assets/img/learn/advance-config-dialog.png"><img src="../../../../assets/img/learn/advance-config-dialog.png" alt="Advanced endpoint configurations" width="60%"/></a>
 
 The following are Advanced Endpoint Configurations that you can configure for both the production and sandbox endpoints.
 

@@ -94,8 +94,8 @@ The active IdP client is `local` by default.
 
 Following are the IdP Clients available for WSO2 Streaming Integrator:
 
-- [Local IdP Client](#UserManagementviatheIdPClientInterface-LocalIdPClient)
-- [External IdP Client](#UserManagementviatheIdPClientInterface-ExternalIdPClient)
+- [Local IdP Client](#local-idp-client)
+- [External IdP Client](#external-idp-client)
 
 ### Local IdP Client
 

@@ -4,7 +4,7 @@ You can share an API with application developers who are subscribed to the Devel
 
 The following diagram illustrates the process involved when an API Publisher publishes to multiple Developer Portals.
 
-<img src="../../assets/img/learn/publish-to-multiple-developer-portals.png" alt="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" title="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" width="45%" />
+<img src="../../../assets/img/learn/publish-to-multiple-developer-portals.png" alt="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" title="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" width="45%" />
 
 <a name="step8"> </a>
 
@@ -47,7 +47,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
 5.  Navigate to  **Main > Resources > Browse**.
 
-    <img src="../../assets/img/learn/navigate-main-resources.png" alt="Menu option to navigate to the Browse option" title="Menu option to navigate to the Browse option" width="70%" />
+    <img src="../../../assets/img/learn/navigate-main-resources.png" alt="Menu option to navigate to the Browse option" title="Menu option to navigate to the Browse option" width="70%" />
     
      The Registry opens.
 

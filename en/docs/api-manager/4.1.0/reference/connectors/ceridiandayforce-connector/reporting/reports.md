@@ -14,6 +14,7 @@ The following operations allow you to retrieve reports
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-reports"></a>
 #### Retrieving Reports
 We can use GET Reports operation with required parameters to find reports
 

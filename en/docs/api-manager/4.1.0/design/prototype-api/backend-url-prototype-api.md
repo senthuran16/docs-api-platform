@@ -46,7 +46,7 @@ If you did not provide an endpoint in the above step, follow the steps given bel
     !!! note
         For more information, see [Endpoint Types](../endpoints/endpoint-types.md) and the other sections related to the **Endpoints** documentation.
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.1.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 

@@ -28,7 +28,7 @@ Enterprises and companies who want to use Choreo Insights collaboratively can ut
    
 5. Click **Invite**.
 
-     <a href="../assets/img/observe/invite-dialogue-box.png"><img src="../assets/img/observe/invite-dialogue-box.png" title="Invite dialog box" width="380"/></a>
+     <a href="../../assets/img/observe/invite-dialogue-box.png"><img src="../../assets/img/observe/invite-dialogue-box.png" title="Invite dialog box" width="380"/></a>
 
      After the invitation is successfully submitted, the invitee will receive an email. After the invitee clicks on the activation link, he/she will be added to the respective organization.
 

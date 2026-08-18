@@ -76,7 +76,7 @@ Following steps illustrate how you can enable a custom handler for a selected se
  
  4. Add `custom_authentication=true` as an [additional property](../../../../design/create-api/adding-custom-properties-to-apis.md) for those APIs which you need to enable the custom handler.
  
-    <a href="../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
+    <a href="../../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
            title="Add Custom Property" width="80%" /></a>
            
 5.  Publish the API to gateway, and you will notice that the custom handler has been enabled for APIs which are configured with the custom property.

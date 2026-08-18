@@ -17,7 +17,7 @@ First enable the approve workflow executor for application creation.
 
 2. Click **Main** --> **Resources** --> **Browse**.
 
-    <a href="../../../assets/img/learn/wf-extensions-browse.png"><img src="../../../assets/img/learn/wf-extensions-browse.png" width="250" height="100"/></a>
+    <a href="../../../../assets/img/learn/wf-extensions-browse.png"><img src="../../../../assets/img/learn/wf-extensions-browse.png" width="250" height="100"/></a>
     
 3.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, click on `Edit as text` to edit the file, disable the Simple Workflow Executor, and enable **Approval Workflow Executor** for application creation.
 

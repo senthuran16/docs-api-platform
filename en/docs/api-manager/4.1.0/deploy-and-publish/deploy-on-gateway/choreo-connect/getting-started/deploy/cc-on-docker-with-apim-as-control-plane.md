@@ -52,7 +52,7 @@ In the `[controlPlane]` section,
 
 Now, let's start Choreo Connect. Navigate to `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect` and execute the following command.
 
-{!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 ``` bash
 docker-compose up -d
@@ -60,4 +60,4 @@ docker-compose up -d
 
 ## Step 4 - Deploy the sample API via WSO2 API Manager
 
-Follow the instructions in [create and publish an API from API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-from-api-manager).
+Follow the instructions in [create and publish an API from API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-via-api-manager).

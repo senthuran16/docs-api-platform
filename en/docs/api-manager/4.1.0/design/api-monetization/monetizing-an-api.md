@@ -535,7 +535,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
      These configurations are required only if you intend to create dynamic plans (usage-based plans) where consumers are charged based on the usage of the API. In such situations, you need analytics to record and retrieve the usage of the monetized APIs. 
     
-    1. Enable analytics. Refer [this guide](https://apim.docs.wso2.com/en/latest/api-analytics/getting-started-guide/#step-2-register-your-environment) for more info.
+    1. Enable analytics. Refer [this guide](../../api-analytics/getting-started-guide.md#step-2-register-your-environment) for more info.
     
         ``` java tab="Format"
          [apim.analytics]
@@ -573,7 +573,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
          ```
 
        4. Optionally, configure WSO2 API Manager to work with Choreo Analytics.
-           1. Enable analytics by referring to this [guide](https://apim.docs.wso2.com/en/latest/api-analytics/getting-started-guide/#step-2-register-your-environment).
+           1. Enable analytics by referring to this [guide](../../api-analytics/getting-started-guide.md#step-2-register-your-environment).
           
         !!! note
             analytics_access_token was generated in the **step a**.
@@ -802,7 +802,7 @@ The Application Developers who are subscribed to a dynamic business plan can sig
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
     </body>
      </html>
 
@@ -828,7 +828,7 @@ The API Publisher can access the billing information related to each of the subs
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
     </body>
      </html>
 

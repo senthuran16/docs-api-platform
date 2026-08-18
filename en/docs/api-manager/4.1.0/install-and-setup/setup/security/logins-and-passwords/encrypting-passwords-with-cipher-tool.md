@@ -11,10 +11,10 @@ In any WSO2 product that is based on Carbon 4.4.0 or a later version, the Ciphe
 
 Follow the topics given below for instructions.
 
--   [Before you begin](#EncryptingPasswordswithCipherTool-Beforeyoubegin)
--   [Encrypting passwords using the automated process](#EncryptingPasswordswithCipherTool-automatedEncryptingpasswordsusingtheautomatedprocess)
--   [Encrypting passwords manually](#EncryptingPasswordswithCipherTool-manual_processEncryptingpasswordsmanually)
--   [Changing encrypted passwords](#EncryptingPasswordswithCipherTool-changing_encrypted_passwordsChangingencryptedpasswords)
+-   [Before you begin](#before-you-begin)
+-   [Encrypting passwords using the automated process](#encrypting-passwords-using-the-automated-process)
+-   [Encrypting passwords manually](#encrypting-passwords-manually)
+-   [Changing encrypted passwords](#changing-encrypted-passwords)
 
 ### Before you begin
 
@@ -22,7 +22,7 @@ If you are using Windows, you need to have **Ant** ( <http://ant.apache.org/> ) 
 
 ### Encrypting passwords using the automated process
 
-This automated process can only be used for passwords that can be given as an XPath. If you cannot give an XPath for the password that you want to encrypt, you must use the [manual encryption process](#EncryptingPasswordswithCipherTool-manual_process) explained in the next section.
+This automated process can only be used for passwords that can be given as an XPath. If you cannot give an XPath for the password that you want to encrypt, you must use the [manual encryption process](#encrypting-passwords-manually) explained in the next section.
 
 Follow the steps given below to have passwords encrypted using the automated process:
 
@@ -208,7 +208,7 @@ Follow the steps given below to have passwords encrypted using the automated pro
 
 ### Encrypting passwords manually
 
-This manual process can be used for encrypting any password in a configuration file. However, if you want to encrypt any elements that cannot use an XPath to specify the location in a configuration file, you must use manual encryption. It is not possible to use the [automated encryption process](#EncryptingPasswordswithCipherTool-automated) if an XPath is not specified for the element.
+This manual process can be used for encrypting any password in a configuration file. However, if you want to encrypt any elements that cannot use an XPath to specify the location in a configuration file, you must use manual encryption. It is not possible to use the [automated encryption process](#encrypting-passwords-using-the-automated-process) if an XPath is not specified for the element.
 
 For example, consider the `log4j.properties` file given below, which does not use XPath notations. As shown below, the password of the `LOGEVENT` appender is set to `admin` :
 
@@ -224,7 +224,7 @@ For example, consider the `log4j.properties` file given below, which does not us
     log4j.appender.LOGEVENT.maxTolerableConsecutiveFailure=20
 ```
 
-Since we cannot use the [automated process](#EncryptingPasswordswithCipherTool-automated) to encrypt the `admin` password shown above, follow the steps given below to encrypt it manually.
+Since we cannot use the [automated process](#encrypting-passwords-using-the-automated-process) to encrypt the `admin` password shown above, follow the steps given below to encrypt it manually.
 
 1.  Download and install a WSO2 product.
 2.  Open a command prompt and go to the `<PRODUCT_HOME>/bin` directory, where the cipher tool scripts (for Windows and Linux) are stored.
@@ -236,7 +236,7 @@ Since we cannot use the [automated process](#EncryptingPasswordswithCipherTool-a
     -   On Windows: `./ciphertool.bat -Dconfigure`
 
         !!! note
-    If you are using the cipher tool for the first time, this command will first initialize the tool for your product. The tool will then encrypt any plain text passwords that are specified in the `cipher-text.properties` file. See the [automated encryption process](#EncryptingPasswordswithCipherTool-automated) for more information.
+    If you are using the cipher tool for the first time, this command will first initialize the tool for your product. The tool will then encrypt any plain text passwords that are specified in the `cipher-text.properties` file. See the [automated encryption process](#encrypting-passwords-using-the-automated-process) for more information.
 
 
 4.  Now, you can start encrypting the admin password manually. Execute the Cipher tool using the relevant command for your OS:
@@ -346,7 +346,7 @@ To change any password which we have encrypted already, follow the below steps:
     -   On Windows: `./ciphertool.bat -Dchange`
 
         !!! note
-    If you are using the cipher tool for the first time, this command will first initialize the tool for your product. The tool will then encrypt any plain text passwords that are specified in the `cipher-text.properties` file for [automatic encryption](#EncryptingPasswordswithCipherTool-automated).
+    If you are using the cipher tool for the first time, this command will first initialize the tool for your product. The tool will then encrypt any plain text passwords that are specified in the `cipher-text.properties` file for [automatic encryption](#encrypting-passwords-using-the-automated-process).
 
 
 4.  It will prompt for the primary keystore password. Enter the keystore password (which is "wso2carbon" for the default keystore).

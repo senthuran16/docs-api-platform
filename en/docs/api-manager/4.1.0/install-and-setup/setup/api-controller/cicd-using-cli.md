@@ -217,6 +217,7 @@ The DevOps team can develop this pipeline further to include automated tests, wo
 
 The apictl tool should be installed in the automation servers to begin the process. As the tool supports a variety of platforms, including Linux/Windows and macOS, this can be done easily. 
 
+<a name="a-promoting-apis-in-a-git-repository-to-upper-environments-via-cicd"></a>
 #### a. Promoting APIs in a Git repository to upper environments via CI/CD
 
 The repositories (**Source** and **Deployment**) that you committed the project files in the above step <a href="#Step 5">5</a> need to be cloned into the instance that is executing the CI/CD process. The apictl has inbuilt support for integrating with a Git-based version control system. It gives a unified command `vcs deploy` to deploy any type of project (e.g., APIs, API Products, and Applications).

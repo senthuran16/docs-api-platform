@@ -53,7 +53,7 @@ To access the Async API View, open a Siddhi application that meets the criterion
 
      Click **Add Async API** to add the generated AsyncAPI definition to the Siddhi application.
 
-     <a href="../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
+     <a href="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
 
 5. Click **Code View** to view the Siddhi application with the AsyncAPI definition that was generated and to edit it if required.
 

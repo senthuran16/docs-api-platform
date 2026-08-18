@@ -7,8 +7,8 @@ Choreo Connect uses OPA’s policy evaluation REST API interface to communicate 
 !!! tip
     You can deploy OPA server as a sidecar with Choreo Connect Runtime (Enforcer and Router) in a Kubernetes deployment, if you want to improve communication between Enforcer and OPA server.
 
-<a href="../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png">
-    <img src="../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png" alt="Choreo Connect OPA request flow" width="60%"/>
+<a href="../../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png">
+    <img src="../../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png" alt="Choreo Connect OPA request flow" width="60%"/>
 </a>
 
 | Numbers | Description                                                                                                                                         |

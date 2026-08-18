@@ -199,7 +199,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **File Explorer**
 
-    The file explorer. This is also available in the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The file explorer. This is also available in the [Side Panel](#side-panel).
 
 - **Extension Installer**
 
@@ -215,7 +215,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
     -   Feed Simulation
 
     For detailed information about event simulation, see [Simulating Events](testing-a-siddhi-application.md#simulating-events).
-    The event simulator can also be accessed from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The event simulator can also be accessed from the [Side Panel](#side-panel).
 
 - **Error Store Explorer**
 
@@ -259,7 +259,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **Console**
 
-    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#side-panel).
 
 - **Sample Event Generator**
 

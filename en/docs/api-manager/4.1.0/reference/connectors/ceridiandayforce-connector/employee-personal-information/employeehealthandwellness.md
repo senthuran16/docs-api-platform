@@ -14,6 +14,7 @@ The following operations allow you to retrieve tobacco use status of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-health-and-wellness"></a>
 #### Retrieving Employee Health and Wellness
 We can use GET Employee Health and Wellness operation with required parameters to search and find the required employee's tobacco use status.
 

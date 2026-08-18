@@ -2,7 +2,7 @@
 
 The Developer Portal provides community features that help API Consumers collaborate and communicate with the API Publisher and build up constructive conversations. You can actively use the following community features to build and nurture an active community of users for the APIs available in the Developer Portal.
 
-- [Rate an API](#rate-an-API)
+- [Rate an API](#rate-an-api)
 - [Comment and reply to an API](#comment-and-reply-to-an-api)
 - [Share API link on social media](#share-api-link-on-social-media)
 - [Access GitHub and Slack URLs](#access-github-and-slack-urls)

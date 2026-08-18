@@ -14,7 +14,7 @@ Explained below are the default databases which will be used within API Manager.
 
 The following image shows the default databases and the data that are stored in each database.
 
-<a href="../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
+<a href="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
 
 See how these databases are used when you [run API-M servers as separate profiles](../distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md) in a distributed deployment.
 

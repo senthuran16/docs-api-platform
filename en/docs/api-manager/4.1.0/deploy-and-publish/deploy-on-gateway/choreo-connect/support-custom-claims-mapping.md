@@ -17,7 +17,8 @@ The following instructions are based on the [above example](#example). Let's cha
 
 If the key of the remote claim is different from the custom claim, you can configure claim mapping as follows:
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Add the following configuration under the `enforcer.jwtTokenConfig` tag.
 

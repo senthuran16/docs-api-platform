@@ -14,6 +14,7 @@ The following operations allow you to retrieve employment type of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-employment-types"></a>
 #### Retrieving Employee Employment Types
 We can use GET Employee Employment Types operation with required parameters to get the employment type of an employee.
 

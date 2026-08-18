@@ -19,7 +19,7 @@ Connectors can be added to integration flows in WSO2 Integration Studio, which i
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md" 
 
 Now the connector is added to the palette.
 
@@ -89,8 +89,8 @@ Alternatively, you can copy and paste the below Synapse configuration in to the 
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/creatio-test.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/creatio-test.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -100,7 +100,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}   
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"   
 
 ## Testing
 

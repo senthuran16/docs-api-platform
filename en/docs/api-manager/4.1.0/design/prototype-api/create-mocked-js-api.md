@@ -163,7 +163,7 @@ Follow the instructions below to add a mock implementation to the API:
 
      [![Save inline scripts](../../assets/img/learn/create-api-prototype-click-save.png)](../../assets/img/learn/create-api-prototype-click-save.png)
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.1.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 

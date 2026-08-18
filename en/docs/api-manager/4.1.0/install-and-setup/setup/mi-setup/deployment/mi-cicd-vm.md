@@ -74,6 +74,7 @@ There are two kinds of jobs in Jenkins that we need to maintain. One for the Int
 16. You can repeat steps 13, 14 and 15 for the Staging and Prod environment.
 
 
+<a name="setting-up-jenkins-server"></a>
 ##### Setting up Jenkins Server
 
 1. Docker scripts for setting up a Jenkins environment are provided here. This will spin up a preconfigured Docker image. By default, 4 Jenkins jobs will be created. One project for the Integration project and three more for the environment descriptor repositories (dev, staging, prod). 
@@ -110,6 +111,7 @@ There are two kinds of jobs in Jenkins that we need to maintain. One for the Int
 9. After installing Jenkins, the jobs can be accessed via `http://localhost:8080/`
 
 
+<a name="setting-up-nexus-server"></a>
 ##### Setting up Nexus Server
 
 1. Docker scripts for setting up a Nexus environment are provided here. This will spin up a preconfigured Docker image. This Nexus container will be used to host the Carbon applications for different versions. The default repository is named as ‘Integration’
@@ -136,6 +138,7 @@ There are two kinds of jobs in Jenkins that we need to maintain. One for the Int
 
 7. After installing nexus, the repository browser can be accessed via `http://localhost:8081/` . 
 
+<a name="setting-up-synapse-unit-testing-server"></a>
 ##### Setting up Synapse Unit testing server
 
 If you have written Synapse unit tests for your Integration project, you can run them during the Jenkins build.

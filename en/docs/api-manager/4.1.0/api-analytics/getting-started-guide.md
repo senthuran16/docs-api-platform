@@ -78,7 +78,7 @@ If your system connects to the service through a proxy server/firewall, you need
 
 ### API Gateway
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.1.0/includes/analytics/configure-synapse-gateway.md"
 
 ## Step 4 - View the Analytics Dashboards
 

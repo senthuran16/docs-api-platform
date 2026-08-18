@@ -6,7 +6,7 @@ Message routing is one of the most fundamental requirements when integrating sys
 
 The following image depicts a form of message routing where a message is routed through the Micro Integrator to the appropriate service. In this case, the Switch/Send mediator can be used.
 
-<img src="../../assets/img/integrate/use-cases-overview/message-routing.png" title="Message Routing" width="500" alt="Message Routing"/>
+<img src="../../../assets/img/integrate/use-cases-overview/message-routing.png" title="Message Routing" width="500" alt="Message Routing"/>
 
 <!--
 ![message routing](../../assets/img/integrate/use-cases-overview/message-routing-new.png)
@@ -18,7 +18,7 @@ The following image depicts a form of message routing where a message is routed 
 			<b>Tutorials</b></br>
 			<ul>
 				<li>
-					Try the end-to-end use case on <a href="../../tutorials/integration-tutorials/routing-requests-based-on-message-content.md">message routing</a>
+					Try the end-to-end use case on <a href="../../../tutorials/integration-tutorials/routing-requests-based-on-message-content/">message routing</a>
 				</li>
 			</ul>
 		</td>
@@ -47,7 +47,7 @@ The integration of systems that communicate in various message formats is a comm
 
 The following image depicts a typical message transformation scenario using the Transform mediator. 
 
-<img src="../../assets/img/integrate/use-cases-overview/message-transformation.png" title="Message Transformation" width="600" alt="Message Transformation"/>
+<img src="../../../assets/img/integrate/use-cases-overview/message-transformation.png" title="Message Transformation" width="600" alt="Message Transformation"/>
 
 <!--
 ![message transformation](../../assets/img/integrate/use-cases-overview/message-transformation-new.png) 
@@ -58,7 +58,7 @@ The following image depicts a typical message transformation scenario using the 
 			<b>Tutorials</b></br>
 			<ul>
 				<li>
-					Try the end-to-end use case on <a href="../../tutorials/integration-tutorials/transforming-message-content.md">message transformation</a>
+					Try the end-to-end use case on <a href="../../../tutorials/integration-tutorials/transforming-message-content/">message transformation</a>
 				</li>
 			</ul>
 		</td>

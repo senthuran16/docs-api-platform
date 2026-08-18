@@ -4,7 +4,7 @@ The backend endpoint can be unavailable for a short period of time due to variou
 
 ## Endpoint Level Retry Policy
 
-You can define a Retry Policy for an endpoint in the `x-wso2-production-endpoint` and/or `x-wso2-sandbox-endpoint` OpenAPI extension of the API's OpenAPI definition, based on the endpoint type (i.e., production or sandbox), when [deploying an API **via the apictl (CLI Tool)**](../../deploy-api/deploy-rest-api-in-choreo-connect.md#choreo-connect-as-a-standalone-gateway/).
+You can define a Retry Policy for an endpoint in the `x-wso2-production-endpoint` and/or `x-wso2-sandbox-endpoint` OpenAPI extension of the API's OpenAPI definition, based on the endpoint type (i.e., production or sandbox), when [deploying an API **via the apictl (CLI Tool)**](../../deploy-api/deploy-rest-api-in-choreo-connect.md#via-apictl-for-standalone-mode).
 
 **Example:**
 
@@ -56,7 +56,8 @@ For more information, see [x-envoy-max-retries]({{envoy_path}}/configuration/htt
 !!! note
     The Global Level Retry Policy Configurations are **applicable only when Endpoint Level Retry Policies are defined**. 
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Use the following configurations to define the Global Level Retry Policy.
 

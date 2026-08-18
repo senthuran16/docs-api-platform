@@ -106,7 +106,7 @@ Similarly, add the Identity Server as an identity provider configurations in `ht
 
 3.  Select **Add** under the **Identity Providers** menu.
 
-     <img src="../../../../assets/img/learn/extensions/saml2-sso/add-idp.png" width="350px">
+     <img src="../../../../../assets/img/learn/extensions/saml2-sso/add-idp.png" width="350px">
     
 4. Upload the public certificate of Identity Server under **Identity Provider Public Certificate**.
 

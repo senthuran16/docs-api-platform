@@ -80,6 +80,7 @@ These will be generated inside a folder with the Project Name.
     !!!Info
         Please note that according to current scripts, when you change only the config map, the change won’t get reflected in the running pod. To do a proper deployment you may need to use tools like [kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/).
 
+<a name="setting-up-jenkins-server"></a>
 #### Setting up Jenkins server
 
 1. Docker scripts for setting up a Jenkins environment are provided here. This will spin up a preconfigured Docker image. By default, 4 Jenkins jobs will be created. One project for the Integration project and three more for the environment descriptor repositories (dev, staging, prod). 
@@ -114,6 +115,7 @@ These will be generated inside a folder with the Project Name.
 
 9. After installing Jenkins, the jobs can be accessed via [http://localhost:8080/](http://localhost:8081/)
 
+<a name="setting-up-synapse-unit-testing-server"></a>
 #### Setting up Synapse Unit testing server
 
 If you have written Synapse unit tests for your Integration project, you can run them during the Jenkins build.

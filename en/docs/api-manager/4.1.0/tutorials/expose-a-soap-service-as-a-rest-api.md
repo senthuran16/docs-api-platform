@@ -78,7 +78,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
 
      The generated JSON Web Token (JWT) appears in the popup. Make sure to copy it.
      <html>
-     <img src="../assets/img/learn/generate-access-token-popup.jpg" height="400" width="580">
+     <img src="../../assets/img/learn/generate-access-token-popup.jpg" height="400" width="580">
      </html>
 
     Let's invoke the API.

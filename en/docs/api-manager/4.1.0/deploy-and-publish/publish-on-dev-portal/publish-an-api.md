@@ -10,7 +10,7 @@ Follow the steps below to publish an API using WSO2 API Manager.
 
 2.  Click on an API that is in the **CREATED** state.
 
-     <img src="../../assets/img/learn/select-created-api.png" alt="Select API" title="Select API" width="35%" />
+     <img src="../../../assets/img/learn/select-created-api.png" alt="Select API" title="Select API" width="35%" />
 
 3.  Click **Lifecycle**.
 

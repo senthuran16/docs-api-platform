@@ -114,7 +114,7 @@ Using the apictl command line tool, users can generate apictl projects as follow
 apictl init project-1 --oas <Path_to_OpenAPI_File>
 ```
 
-Step by step guide includes in [here](deploy-api/deploy-rest-api-in-choreo-connect.md#choreo-connect-as-a-standalone-gateway).
+Step by step guide includes in [here](deploy-api/deploy-rest-api-in-choreo-connect.md#via-apictl-for-standalone-mode).
 
 ### Choreo Connect with WSO2 API Manager 4.1.0
 

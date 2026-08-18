@@ -47,8 +47,8 @@ Follow the instructions below to create a REST API using the basic flow:
 
 6. Go to **Develop**, **Portal Configurations**, and click **Basic Info**.
 
-     <a href="../../../assets/img/learn/click-basic-info.png">
-     <img src="../../../assets/img/learn/click-basic-info.png" width="20%"></a>
+     <a href="../../../../assets/img/learn/click-basic-info.png">
+     <img src="../../../../assets/img/learn/click-basic-info.png" width="20%"></a>
 
      1. Configure the API design configurations.
 
@@ -56,7 +56,7 @@ Follow the instructions below to create a REST API using the basic flow:
 
          <html><div class="admonition note">
          <p class="admonition-title">Note</p>
-         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
+         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal/'>Publisher Access Control</a>** and public **<a href='../../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/'> 
          Developer Portal visibility</a>**.</p>
          <p>
          </div>

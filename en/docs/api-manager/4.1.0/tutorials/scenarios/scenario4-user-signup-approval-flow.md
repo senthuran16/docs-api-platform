@@ -8,7 +8,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 Quantis allows external users to access their APIs. To take the full benefit out of these APIs, they have decided to open the registration to outside users since it can be a burden to enter all the details for every single user/consumer. Therefore, they request an approval workflow for user registration in such a way that the users will be registered to the system when a user with administrative privileges approves their registration after a manual validation of the user.  By allowing external parties to register to their system under a supervision, Quantis expects higher revenue in future.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario4.png" title="Signup Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario4.png" title="Signup Description" width="630"/>
 
 ## Step 1: Set up the self-signup workflow
 

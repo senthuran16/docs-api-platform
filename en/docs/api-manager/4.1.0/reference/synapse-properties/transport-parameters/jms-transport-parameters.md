@@ -5,7 +5,7 @@ When you implement an integration use case that requires a JMS connection, you c
 !!! Info
     The Micro Integrator can listen to a JMS instance or send messages to a JMS instance only if the JMS transport listener and sender are enabled and configured at the server level. Read about the [JMS transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md#configuring-the-jms-transport).
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.1.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) for instructions.
 

@@ -14,6 +14,7 @@ The following operations allow you to retrieve hr incidents of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-hr-incidents"></a>
 #### Retrieving Employee HR Incidents
 We can use GET Employee HR Incidents operation with required parameters to search and find the hr incidents related to an employee.
 

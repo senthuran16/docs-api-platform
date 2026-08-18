@@ -39,7 +39,8 @@ Follow the instructions below to create a WebSocket API using the basic flow:
 
              In the above configuration, the offset is `100`. `9190` was obtained by adding `100` to the default port `9090`.
 
-1.  {!includes/sign-in-publisher.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and Click **WebSocket API**.
 
@@ -178,4 +179,4 @@ Once you create and publish a WebSocket API, you can also <a href="../../../../d
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.1.0/includes/design/stream-more-links.md"

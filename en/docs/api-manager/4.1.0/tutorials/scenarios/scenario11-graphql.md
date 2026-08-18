@@ -8,7 +8,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 Quantis is more focused on providing more capability to the developer community. They expect the developer community to build their own mobile applications and web apps to use their APIs. To make this process much easier, Quantis wants to expose GraphQL API to the public.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario11.png" title="GraphQL Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario11.png" title="GraphQL Description" width="630"/>
 
 ## Step 1: Create a GraphQL API
 

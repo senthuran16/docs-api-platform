@@ -131,7 +131,7 @@ First, enable the application creation workflow.
 
 2. Click **Main** --> **Resources** --> **Browse**.
 
-    <a href="../../../assets/img/learn/add-application-wf-browse.png"><img src="../../../assets/img/learn/add-application-wf-browse.png" width="250" height="100"/></a>
+    <a href="../../../../assets/img/learn/add-application-wf-browse.png"><img src="../../../../assets/img/learn/add-application-wf-browse.png" width="250" height="100"/></a>
     
 2.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, disable the Simple Workflow Executor, and enable **WS Workflow Executor**. In addition, specify the service endpoint where the workflow engine is hosted and the credentials required to access the said service via basic authentication (i.e., username/password based authentication).
 

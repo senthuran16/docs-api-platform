@@ -21,7 +21,7 @@ interceptor for the resource defined.
 
 The following diagram illustrates the request flow from the client to the backend through the request interceptor service and the response flow from the backend to the client through the response interceptor service.
 
-<img src="../../../../assets/img/deploy/mgw/interceptors-overview.png" alt="Choreo Connect Interceptors request flow" width="650px"/>
+<img src="../../../../../assets/img/deploy/mgw/interceptors-overview.png" alt="Choreo Connect Interceptors request flow" width="650px"/>
 
 | Numbers | Description                                                                                                                                                                                                  |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

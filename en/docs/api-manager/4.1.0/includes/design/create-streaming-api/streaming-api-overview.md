@@ -49,7 +49,7 @@ The [Streaming Integrator component](../../../../streaming/streaming-overview/) 
 
 The WebSocket and SSE Streaming APIs require a persistent connection between the client and the API Gateway. This enables the server to stream events continually, with idle times in the middle if required, through a single connection, thereby eliminating the overhead of creating new connections. Thereby, the WebSocket and SSE protocols allow publishers to maintain persistent communication channels with receivers. However, WebSub Streaming APIs do not require to have a persistent connection. Instead, the WebSub APIs make an HTTP call when required.
 
-When you create a WebSocket API, WebSub API/ WebHook API, or SSE API, it links an existing streaming backend API implementation to the <a href="../../../../get-started/architecture/#api-publisher">API Publisher,</a> so that you can manage and monitor your [API's lifecycle](../../../../design/lifecycle-management/api-lifecycle), documentation, security, community, and subscriptions. 
+When you create a WebSocket API, WebSub API/ WebHook API, or SSE API, it links an existing streaming backend API implementation to the <a href="../../../../get-started/apim-architecture/#api-publisher">API Publisher,</a> so that you can manage and monitor your [API's lifecycle](../../../../design/lifecycle-management/api-lifecycle), documentation, security, community, and subscriptions. 
 
 You can define Streaming APIs using [AsyncAPI](https://www.asyncapi.com/) definitions. Therefore, alternatively, you can also **[create a Streaming API, which supports any one of the above protocols, using an AsyncAPI definition.](../../../../use-cases/streaming-usecase/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition)**
 
@@ -74,4 +74,4 @@ A scope acts as a limiting factor on what Streaming API topics can be accessed u
      - [Create a Streaming API from an AsyncAPI Definition](../../../../use-cases/streaming-usecase/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition)
 - [Test a WebSub/WebHook API](../../../../use-cases/streaming-usecase/create-streaming-api/test-a-websub-api)
 - [Learn how to expose a stream as a managed API](../../../../use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog/).
-- [Learn how you can use a third-party Streaming Provider as opposed to WSO2 Streaming Integrator, which is used by default, to create a Streaming API](../../../../get-started/quick-start-guide/streaming-qsg).
+- [Learn how you can use a third-party Streaming Provider as opposed to WSO2 Streaming Integrator, which is used by default, to create a Streaming API](../../../../get-started/streaming-quick-start-guide).

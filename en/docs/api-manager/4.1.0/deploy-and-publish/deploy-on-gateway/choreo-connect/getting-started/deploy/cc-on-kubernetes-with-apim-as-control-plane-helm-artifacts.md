@@ -24,7 +24,7 @@ Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 AP
     -   Install [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/). 
         - Note: Helm resources for WSO2 product deployment patterns are compatible with the [`nginx-ingress-controller-v1.1.3`](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.1.3) release.
 
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/k8s-setup-note.md"
 
 ## Deploy API Manager as Control Plane
 
@@ -318,4 +318,4 @@ The JWKS endpoint of the API Manager has the external facing hostname by default
 - Publisher Portal:  `https://am.wso2.com/publisher/`
 - Developer Portal:  `https://am.wso2.com/devportal/`
 
-Follow the instructions in [create and publish an API via API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-from-api-manager) using the above URLs to access each of the portals.
+Follow the instructions in [create and publish an API via API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-via-api-manager) using the above URLs to access each of the portals.

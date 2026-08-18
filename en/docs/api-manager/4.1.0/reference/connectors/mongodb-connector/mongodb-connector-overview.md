@@ -8,7 +8,7 @@ To download the MongoDB Connector, go to the [connector store](https://store.wso
 
 It is always recommended to download the latest version of the connector.
 
-<img src="../../../assets/img/integrate/connectors/mongodb-connector-store.png" title="MongoDB Connector Store" width="200" alt="MongoDB Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/mongodb-connector-store.png" title="MongoDB Connector Store" width="200" alt="MongoDB Connector Store"/>
 
 ## Compatibility
 

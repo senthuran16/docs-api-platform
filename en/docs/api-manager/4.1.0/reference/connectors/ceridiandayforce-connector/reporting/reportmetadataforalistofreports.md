@@ -14,6 +14,7 @@ The following operations allow you to retrieve Report Metadata for a list of rep
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-report-metadata-for-a-list-of-reports"></a>
 #### Retrieving Report Metadata for a list of reports
 We can use GET Report Metadata for a list of reports operation with required parameters to find Report Metadata for a list of reports.
 

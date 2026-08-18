@@ -14,6 +14,7 @@ The following operations allow you to retrieve details of a document
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-document-details"></a>
 #### Retrieving Document Details
 We can use GET Document Details operation with required parameters to retrieve details about a document.
 

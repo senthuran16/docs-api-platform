@@ -58,8 +58,8 @@ All the apictl projects in the directory will be deployed during the startup.
 
 
 ##  Step 5 - Invoke the API
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.1.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.

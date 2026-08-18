@@ -14,6 +14,7 @@ The following operations allow you to retrieve User Pay Adjustment Code Groups o
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-user-pay-adjustment-code-groups"></a>
 #### Retrieving User Pay Adjustment Code Groups
 We can use GET User Pay Adjustment Code Groups operation with required parameters to search and find the required employees.
 

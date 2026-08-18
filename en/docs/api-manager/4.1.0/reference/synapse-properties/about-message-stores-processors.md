@@ -11,13 +11,13 @@ Multiple message processors can use the same message store. For example, in a cl
 
 ## List of Message Stores
 
-- <a href="message-stores/jms-msg-store-properties.md">JMS Message Store</a>
-- <a href="message-stores/jdbc-msg-store-properties.md">JDBC Message Store</a>
-- <a href="message-stores/rabbitmq-msg-store-properties.md">RabbitMQ Message Store</a>
-- <a href="message-stores/resequence-msg-store-properties.md">Resequence Message Store</a>
-- <a href="message-stores/wso2mb-msg-store-properties.md">WSO2 MB Message Store</a>
-- <a href="message-stores/in-memory-msg-store-properties.md">In-Memory Message Store</a>
-- <a href="message-stores/custom-msg-store-properties.md">Custom Message Store</a>
+- <a href="../message-stores/jms-msg-store-properties/">JMS Message Store</a>
+- <a href="../message-stores/jdbc-msg-store-properties/">JDBC Message Store</a>
+- <a href="../message-stores/rabbitmq-msg-store-properties/">RabbitMQ Message Store</a>
+- <a href="../message-stores/resequence-msg-store-properties/">Resequence Message Store</a>
+- <a href="../message-stores/wso2mb-msg-store-properties/">WSO2 MB Message Store</a>
+- <a href="../message-stores/in-memory-msg-store-properties/">In-Memory Message Store</a>
+- <a href="../message-stores/custom-msg-store-properties/">Custom Message Store</a>
 
 <!--
 
@@ -99,9 +99,9 @@ Multiple message processors can use the same message store. For example, in a cl
 
 ## List of Message Processors
 
-- <a href="message-processors/msg-sampling-processor-properties.md">Message Sampling Processor</a>
-- <a href="message-processors/msg-sched-forwarding-processor-properties.md">Scheduled Message Forwarding Processor</a>
-- <a href="message-processors/msg-sched-failover-forwarding-processor-properties.md">Scheduled Failover Message Forwarding Processor</a>
+- <a href="../message-processors/msg-sampling-processor-properties/">Message Sampling Processor</a>
+- <a href="../message-processors/msg-sched-forwarding-processor-properties/">Scheduled Message Forwarding Processor</a>
+- <a href="../message-processors/msg-sched-failover-forwarding-processor-properties/">Scheduled Failover Message Forwarding Processor</a>
 
 <!--
 <table>

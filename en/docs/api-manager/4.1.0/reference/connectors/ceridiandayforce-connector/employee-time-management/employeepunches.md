@@ -14,6 +14,7 @@ The following operations allow you to retrieve work  shift data of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-punches"></a>
 #### Retrieving Employee Punches
 We can use GET Employee Punches operation with required parameters to get work shift data of an employee.
 

@@ -21,7 +21,7 @@ You can easily download them from the [Micro Integrator Dashboard](../../mi-obse
 1.  Sign in to the dashboard. 
 2.  Click <b>Log Files</b> as shown below to view the complete list.
 
-    <img alt="download log files" src="../../../assets/img/integrate/monitoring-dashboard/log-files-dashboard.png" width="80%">
+    <img alt="download log files" src="../../../../assets/img/integrate/monitoring-dashboard/log-files-dashboard.png" width="80%">
 
 3.  User the <b>Search</b> option to find a specific log file.
 4.  Click the log file to download.

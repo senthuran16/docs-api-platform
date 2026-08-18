@@ -12,7 +12,8 @@ Follow the instructions below to create a Streaming API using an AsyncAPI defini
 
 ## Step 1 - Design a Streaming API
 
-1. {!includes/sign-in-publisher.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-publisher.md"
 
 2. Click **CREATE API** and then click **Import AsyncAPI Definition**.
 
@@ -97,4 +98,4 @@ Next, publish the API, for more information, see [Publish an API](../../../../de
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.1.0/includes/design/stream-more-links.md"

@@ -16,6 +16,7 @@ The following operations allow you to retrieve, create or update addresses of an
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-addresses"></a>
 #### Retrieving Employee Addresses
 We can use GET Employee addresses operation with required parameters to search and find the required employee's address.
 
@@ -94,6 +95,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Addresses/GET-Employee-Addresses.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Addresses/GET-Employee-Addresses.aspx)
 
+<a name="create-employee-address"></a>
 #### Create Employee Address
 
 We can use POST Employee Addresses operation with required parameters to create address of an employee in Dayforce.
@@ -164,6 +166,7 @@ There is no response body for this method
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Addresses/POST-Employee-Addresses.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Addresses/POST-Employee-Addresses.aspx)
 
+<a name="update-employee-address"></a>
 #### Update Employee Address
 
 We can use PATCH employee addresses operation to update the address of an existing employee.

@@ -1129,6 +1129,7 @@ IEA${element_separator}${payload.UniversalTransaction.Interchange_Control_Traile
 </UniversalTransaction>
 ```
 
+<a name="build-and-run"></a>
 #### Build and run
 
 1. [Set up WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio.md).

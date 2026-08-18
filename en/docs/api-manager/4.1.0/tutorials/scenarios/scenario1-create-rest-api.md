@@ -12,7 +12,7 @@ By exposing this API through WSO2 API Manager, Coltrain expects to get the full 
 
 WSO2 API manager provides capability to import OAS definitions and create the API using that. 
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario1.png" title="Import OAS definition to API-M" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario1.png" title="Import OAS definition to API-M" width="630"/>
     
 ## Step 1: Testing the backend
 

@@ -40,7 +40,7 @@ You can create the required databases for the API-M deployment on a separate ser
 
 The following diagram depicts how the databases are shared between WSO2 IS and WSO2 API-M.
 
-<a href="../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
+<a href="../../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
 
 -   **WSO2SHARED_DB** - This database contains the registry and user management data. 
 

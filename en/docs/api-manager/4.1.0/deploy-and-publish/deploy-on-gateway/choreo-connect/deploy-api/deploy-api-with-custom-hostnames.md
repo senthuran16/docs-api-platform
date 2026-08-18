@@ -62,7 +62,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 
@@ -146,7 +146,7 @@ data:
 
 ### Step 2 - Deploy the API
 
-Follow the all steps up to **Deploy API** in the [Deploy an API via apictl documentation](deploy-rest-api-in-choreo-connect.md#choreo-connect-as-a-standalone-gateway).
+Follow the all steps up to **Deploy API** in the [Deploy an API via apictl documentation](deploy-rest-api-in-choreo-connect.md#via-apictl-for-standalone-mode).
 
 Let's invoke the API.
 
@@ -160,7 +160,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 

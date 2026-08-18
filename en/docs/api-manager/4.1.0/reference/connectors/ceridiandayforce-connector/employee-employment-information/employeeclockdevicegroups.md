@@ -14,6 +14,7 @@ The following operation allows you to retrieve an employee's clock device group
 
 This section provides more details on the operation.
 
+<a name="retrieving-employee-clock-device-groups"></a>
 #### Retrieving Employee Clock Device Groups
 We can use GET Employee Clock Device Groups operation with required parameters to search and find the required employee's clock device group.
 

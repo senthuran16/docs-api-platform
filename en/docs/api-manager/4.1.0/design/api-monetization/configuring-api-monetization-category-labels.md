@@ -34,4 +34,4 @@ When the above `EnableMonetization` property is set to true for the respective t
 ![](../../assets/attachments/103333418/103333420.png)
 **Related links**
 
-For more information on Monetization of APIs, see [Enabling Monetization of APIs-](https://apim.docs.wso2.com/en/latest/design/api-monetization/monetizing-an-api/#monetize-an-api) .
+For more information on Monetization of APIs, see [Enabling Monetization of APIs-](monetizing-an-api.md#monetize-an-api) .

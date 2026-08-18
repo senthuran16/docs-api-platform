@@ -13,34 +13,34 @@ For example, messages that are received via HTTP may need to be sent to a JMS qu
 			<b>Examples</b>
 			<ul>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_jms_to_http.md">Switching from JMS to HTTP/S</a>
+					<a href="../../examples/protocol-switching/switching_from_jms_to_http/">Switching from JMS to HTTP/S</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_https_to_jms.md">Switching from HTTP/S to JMS</a>
+					<a href="../../examples/protocol-switching/switching_from_https_to_jms/">Switching from HTTP/S to JMS</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_ftp_listener_to_mail_sender.md">Switching from FTP Listener to Mail Sender</a>
+					<a href="../../examples/protocol-switching/switching_from_ftp_listener_to_mail_sender/">Switching from FTP Listener to Mail Sender</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_http_to_fix.md">Switching from HTTP to FIX</a>
+					<a href="../../examples/protocol-switching/switching_from_http_to_fix/">Switching from HTTP to FIX</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_fix_to_http.md">Switching from FIX to HTTP</a>
+					<a href="../../examples/protocol-switching/switching_from_fix_to_http/">Switching from FIX to HTTP</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_fix_to_amqp.md">Switching from FIX to AMQP</a>
+					<a href="../../examples/protocol-switching/switching_from_fix_to_amqp/">Switching from FIX to AMQP</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_between_fix_versions.md">Switching between FIX Versions</a>
+					<a href="../../examples/protocol-switching/switching_between_fix_versions/">Switching between FIX Versions</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_tcp_to_https.md">Switching from TCP to HTTP/S</a>
+					<a href="../../examples/protocol-switching/switching_from_tcp_to_https/">Switching from TCP to HTTP/S</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_from_udp_to_https.md">Switching from UDP to HTTP/S</a>
+					<a href="../../examples/protocol-switching/switching_from_udp_to_https/">Switching from UDP to HTTP/S</a>
 				</li>
 				<li>
-					<a href="../examples/protocol-switching/switching_between_http_and_msmq.md">Switching between HTTP to MSMQ</a>
+					<a href="../../examples/protocol-switching/switching_between_http_and_msmq/">Switching between HTTP to MSMQ</a>
 				</li>
 			</ul>
 		</td>

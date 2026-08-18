@@ -7,20 +7,20 @@ This is the welcome page of the analytics portal. This page gives you a quick ov
   page can be used as a dashboard to view the current system status.
  
 ### Total Traffic Widget
-<img src="../../assets/img/analytics/overview/overview-page-total-traffic.png" title="overview page total traffic" width="380"/>  
+<img src="../../../assets/img/analytics/overview/overview-page-total-traffic.png" title="overview page total traffic" width="380"/>  
 
 Total traffic widget displays the total traffic your selected environment received during the selected time range
 . This includes both successful requests and error requests. If you want to further investigate the traffic, see [Viewing API Analytics on Traffic]({{base_path}}/api-analytics/viewing/analytics-pages-traffic).
  
 ### Latency Widget
-<img src="../../assets/img/analytics/overview/overview-page-latency.png" title="overview page latency" width="380"/>
+<img src="../../../assets/img/analytics/overview/overview-page-latency.png" title="overview page latency" width="380"/>
 
 Latency widget displays the 95th percentile of all API latencies in your selected environment for the selected time
  period. You can use this widget to know whether the whole system operates under given SLAs. This metric
  gives the first indication of slow APIs. To investigate further, see [Viewing API Analytics on Latency]({{base_path}}/api-analytics/viewing/analytics-pages-latency).
   
 ## Error Rate Widget
-<img src="../../assets/img/analytics/overview/overview-page-error-rate.png" title="overview page error rate" width="380"/>
+<img src="../../../assets/img/analytics/overview/overview-page-error-rate.png" title="overview page error rate" width="380"/>
 
 This widget displays the average error rate (error count/total request count) in your selected environment for
  the selected time period. You can use this widget as an indicator to know the health of the system. If the error

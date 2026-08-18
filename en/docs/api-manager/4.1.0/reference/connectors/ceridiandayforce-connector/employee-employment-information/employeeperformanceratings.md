@@ -14,6 +14,7 @@ The following operations allow you to retrieve, create or update performance rat
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-performance-ratings"></a>
 #### Retrieving Employee Performance Ratings
 We can use GET Employee Performance Ratings operation with required parameters to search and find the performance review of required employees.
 

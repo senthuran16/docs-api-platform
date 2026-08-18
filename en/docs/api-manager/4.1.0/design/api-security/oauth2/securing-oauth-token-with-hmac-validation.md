@@ -2,10 +2,11 @@
 
 Implementing security measures in order to prevent the possible attacks is a need in using enterprise software. Keyed-Hash Message Authentication Code (HMAC) validation is such measure which involved a cryptographic hash function and used to verify both the data integrity and authentication of a Message as with any Message Authentication code. In this tutorial you will use the HMAC to validate the OAuth tokens created in WSO2 API Manager and WSO2 Identity Server.
 
--   [Preventing miss-use of OAuth Tokens](#SecuringOAuthTokenwithHMACValidation-Preventingmiss-useofOAuthTokens)
--   [WSO2 IS Extension - OAuth Token Generator Extension](#SecuringOAuthTokenwithHMACValidation-WSO2ISExtension-OAuthTokenGeneratorExtension)
--   [WSO2 API Manager extension - HMAC and timestamp verification handler](#SecuringOAuthTokenwithHMACValidation-WSO2APIManagerextension-HMACandtimestampverificationhandler)
+-   [Preventing miss-use of OAuth Tokens](#preventing-miss-use-of-oauth-tokens)
+-   [WSO2 IS Extension - OAuth Token Generator Extension](#wso2-is-extension-oauth-token-generator-extension)
+-   [WSO2 API Manager extension - HMAC and timestamp verification handler](#wso2-api-manager-extension-hmac-and-timestamp-verification-handler)
 
+<a name="preventing-miss-use-of-oauth-tokens"></a>
 #### Preventing miss-use of OAuth Tokens
 
 In API Manager, the main use case of HMAC is preventing miss-use of expired OAuth tokens or randomly generated OAuth tokens. Stolen or randomly generated tokens can be used to employ DOS/DDOS attacks effectively.
@@ -13,6 +14,7 @@ In API Manager, the main use case of HMAC is preventing miss-use of expired OAut
 If an attacker uses random tokens to send API requests, API Manager will try to verify the token and it will hit through the critical path of verification. This is a costly transaction and it can cause high latencies and instability in API Manager clusters. Implementation of this particular solution is done using extensions developed for standard extension points of WSO2 API Manager and WSO2 Identity Server.
 
 ![](../../../assets/attachments/103334788/103334789.png)
+<a name="wso2-is-extension-oauth-token-generator-extension"></a>
 #### **WSO2 IS Extension - OAuth Token Generator Extension**
 
 Add the following configuration to the `<APIM_HOME>/repository/conf/deployment.toml` in order to enable Keyed-Hash Message Authentication Code (HMAC) validation via the HMAC OAuth handler.
@@ -45,6 +47,7 @@ Part III — HMAC calculation of (‘Part I’ + ‘.’ + ‘Part II’)
 
 Example : ba13cf7473cfbde970ae6e8b60973f64.0000015fc1ebabde.67830f2f2886256eb80faa9dab85c3d2c9be7db1
 
+<a name="wso2-api-manager-extension-hmac-and-timestamp-verification-handler"></a>
 #### WSO2 API Manager extension -  HMAC and timestamp verification handler
 
 You can engage this handler by adding following entry before **\#foreach($handler in $handlers)** line of **velocity\_template.xml** file located in &lt;AM\_HOME&gt;/repository/resources/api\_templates/ directory.

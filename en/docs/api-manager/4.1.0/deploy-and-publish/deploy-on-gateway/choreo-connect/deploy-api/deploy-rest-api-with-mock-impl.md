@@ -12,7 +12,7 @@ Pick a method given below to start creating an API with a Mock Implementation.
 ### Mock Implementation with OpenAPI examples
 
 !!! abstract
-    {!includes/design/add-oas-example.md!}
+    --8<-- "api-manager/4.1.0/includes/design/add-oas-example.md"
     
 ## Via WSO2 API Manager Publisher Portal
 ### Step 1 - Create a REST API
@@ -92,7 +92,7 @@ Invoke the API the using the commands given in the [Invoke the API](#invoke-the-
 
 ## Invoke the API
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
 
 Use the command given below to get the default response for the resource `/pet/findByStatus`.
 

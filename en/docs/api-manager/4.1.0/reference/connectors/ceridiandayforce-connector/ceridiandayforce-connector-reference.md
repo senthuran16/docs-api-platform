@@ -1,6 +1,6 @@
 # Configuring Ceridian Dayforce REST Operations
 
-[[Prerequisites]](#Prerequisites) [[Initializing the connector]](#initializing-the-connector)
+[[Prerequisites]](#prerequisites) [[Initializing the connector]](#initializing-the-connector)
 
 ## Prerequisites
 

@@ -24,8 +24,8 @@ In this example, it will be assumed that WSO2 IS and WSO2 API-M are up and runni
 
 2. Click **Main** --> **Service Providers** --> **Add**.
 
-     <a href="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/add-service-provider-menu.png" >
-     <img src="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/add-service-provider-menu.png" alt="Add Service Provider Menu" title="Add Service Provider Menu" width="30%" />
+     <a href="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/add-service-provider-menu.png" >
+     <img src="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/add-service-provider-menu.png" alt="Add Service Provider Menu" title="Add Service Provider Menu" width="30%" />
      </a>
 
 3.  Enter the name of the service provider and click **Register**.
@@ -42,7 +42,7 @@ In this example, it will be assumed that WSO2 IS and WSO2 API-M are up and runni
     
      If you do not have a **Callback Url**, you can clear the **Code** and **Implicit** authorization grant types and add the OAuth2 client.
     
-     <a href="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/register-oauth-app.png" ><img src="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/register-oauth-app.png" alt="Register OAuth app" 
+     <a href="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/register-oauth-app.png" ><img src="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/register-oauth-app.png" alt="Register OAuth app" 
           title="Register Oauth app"/></a>  
     
     Now you have successfully created an OAuth2 client and generated a consumer key and consumer secret for it. 
@@ -75,7 +75,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
         [![Provisioned App Validation](../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/provisioned-app-validation.png)](../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/provisioned-app-validation.png)
 
-3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 4.  Sign in to the Developer Portal.
 
@@ -100,7 +100,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
 8.  Paste the consumer key and consumer secret pair, which you derived in [Step 2 - (5) Creating an external OAuth client](#step5).
 
-     <a href="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" ><img src="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" alt="update-keys" title="update-keys" width="80%" /></a>
+     <a href="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" ><img src="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" alt="update-keys" title="update-keys" width="80%" /></a>
 
 9. Click **Provide**.
 

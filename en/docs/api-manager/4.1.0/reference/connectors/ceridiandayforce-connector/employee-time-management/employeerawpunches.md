@@ -15,6 +15,7 @@ The following operations allow you to retrieve, create raw punches of an employe
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-raw-punches"></a>
 #### Retrieving Employee Raw Punches
 We can use GET Employee Raw Punches operation with required parameters to retrieve raw punches of employees.
 
@@ -141,6 +142,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Time-Management/GET-Employee-Raw-Punches.aspx](https://developers.dayforce.com/Build/API-Explorer/Time-Management/GET-Employee-Raw-Punches.aspx)
 
+<a name="creating-employee-raw-punches"></a>
 #### Creating Employee Raw Punches
 We can use POST Employee Raw Punches operation with required parameters to create raw punches for employees.
 

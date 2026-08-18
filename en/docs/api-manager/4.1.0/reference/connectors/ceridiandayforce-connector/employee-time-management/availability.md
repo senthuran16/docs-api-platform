@@ -14,6 +14,7 @@ The following operations allow you to retrieve the availability of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-availability"></a>
 #### Retrieving Employee Availability
 We can use GET Availability operation with required parameters to search and find availability of required employees.
 

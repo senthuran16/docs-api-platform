@@ -24,7 +24,7 @@ Follow the instructions below to configure analytics with Choreo:
 3. Open the `docker-compose.yaml` file, which based on your setup is located in the `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect` or `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim` directory.
 
     !!! info
-        You can configure Choreo Connect to publish Analytics to the Choreo cloud via the [standalone mode](getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#step-3-start-choreo-connect) or via the [with Control Plane mode](getting-started/quick-start-guide-docker-with-apim.md#step-3-start-choreo-connect-and-api-manager).
+        You can configure Choreo Connect to publish Analytics to the Choreo cloud via the [standalone mode](getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#step-3-start-choreo-connect) or via the [with Control Plane mode](getting-started/quick-start-guide-docker-with-apim.md#step-2-start-choreo-connect-and-api-manager).
 
 4. Locate the environment variables section under the `enforcer` and change the following variables.
 
@@ -35,7 +35,7 @@ Follow the instructions below to configure analytics with Choreo:
         analytics_authToken=<your-on-prem-key>
     ```
 
-5. Enable analytics before starting Choreo Connect. First of all, navigate to the configuration file location. {!includes/deploy/cc-configuration-file.md!}
+5. Enable analytics before starting Choreo Connect. First of all, navigate to the configuration file location. --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
     1. Locate the [Analytics](configurations/analytics-configurations.md) section.
     
@@ -74,11 +74,11 @@ Follow the instructions below to generate some traffic in order to be able to vi
 
 1. Deploy your API.
     
-     [Deploy your API in API Manager](deploy-api/deploy-rest-api-in-choreo-connect.md#step-3-deploy-the-api-in-api-manager) based on your setup.
+     [Deploy your API in API Manager](deploy-api/deploy-rest-api-in-choreo-connect.md#step-2-deploy-the-api-in-api-manager) based on your setup.
 
 2. Invoke the API a few times.
 
-     For more information, see [Invoke the API](deploy-api/deploy-rest-api-in-choreo-connect.md#step-4-invoke-the-api).
+     For more information, see [Invoke the API](deploy-api/deploy-rest-api-in-choreo-connect.md#step-3-invoke-the-api).
 
 3. Go to <a href="https://console.choreo.dev/insights">Choreo Insights</a> to view the statistics. 
 
@@ -113,7 +113,8 @@ Follow the instructions below to compile the reporter implementation as a JAR fi
 
 #### Step 1.2 - Configure the config.toml file
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
     
 2. Change the analytics section based on the following configurations.
 

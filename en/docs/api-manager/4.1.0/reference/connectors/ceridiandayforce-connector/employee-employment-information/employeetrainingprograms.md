@@ -14,6 +14,7 @@ The following operations allow you to retrieve training programs of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-training-programs"></a>
 #### Retrieving Employee Training Programs
 We can use GET Employee Training Programs operation with required parameters to get the training programs related to an employee.
 

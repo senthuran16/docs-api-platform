@@ -21,7 +21,7 @@ Develop a REST API artifact using WSO2 Integration Studio. This is your integrat
 
 When you create a REST API artifact from WSO2 Integration Studio, a **resources** folder with metadata files is created as shown below. This metadata is used by the API management runtime to generate the API proxy for the service.
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
 
 Update the metadata for your service as explained below.
 

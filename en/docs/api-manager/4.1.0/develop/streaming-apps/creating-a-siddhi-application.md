@@ -152,25 +152,25 @@ To create a Siddhi application via the source view of the Streaming Integrator T
                        <ol>
                           <li>
                              <p>Click the <strong>Operator Finder</strong> icon to open the Operator Finder.</p>
-                             <p><img src="../../assets/img/streaming/creating-siddhi-applications/operator-finder.png" /></p>
+                             <p><img src="../../../assets/img/streaming/creating-siddhi-applications/operator-finder.png" /></p>
                           </li>
                           <li>
                              <p>Move the cursor to the location in the Siddhi application where you want to add the source.<br />
-                                <img src="../../assets/img/streaming/creating-siddhi-applications/move-cursor.png" />
+                                <img src="../../../assets/img/streaming/creating-siddhi-applications/move-cursor.png" />
                              </p>
                           </li>
                           <li>
                              <p>Search for the required transport type. Once it appears in the search results, click the <strong>Add to Source</strong> icon on it.<br />
-                                <img src="../../assets/img/streaming/creating-siddhi-applications/search-and-add-extension.png"/>
+                                <img src="../../../assets/img/streaming/creating-siddhi-applications/search-and-add-extension.png"/>
                              </p>
                           </li>
                           <li>
                              <p>Similarly, search for the mapping type you want to include in the source configuration, and add it.</p>
-                             <p><img src="../../assets/img/streaming/creating-siddhi-applications/search-and-add-map-extension.png"></p>
+                             <p><img src="../../../assets/img/streaming/creating-siddhi-applications/search-and-add-map-extension.png"></p>
                           </li>
                           <li>
                              <p>The source annotation is now displayed as follows. You can add the other properties as required, and save your changes.<br />
-                                <img src="../../assets/img/streaming/creating-siddhi-applications/selected-extensions.png">
+                                <img src="../../../assets/img/streaming/creating-siddhi-applications/selected-extensions.png">
                              </p>
                           </li>
                        </ol>

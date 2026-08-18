@@ -24,7 +24,7 @@ Follow the instructions below to generate and download client-side SDKs via the 
 
       This downloads the ZIP archive of the SDK.
 
-      <a href="../../assets/img/learn/download-sdk.png"><img src="../../assets/img/learn/download-sdk.png" alt="Download SDK" title="Download SDK" width="60%" /></a>    
+      <a href="../../../assets/img/learn/download-sdk.png"><img src="../../../assets/img/learn/download-sdk.png" alt="Download SDK" title="Download SDK" width="60%" /></a>    
     
 ##  Configuring supported languages for SDK generation
 

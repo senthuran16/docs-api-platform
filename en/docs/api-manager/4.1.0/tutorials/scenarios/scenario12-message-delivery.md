@@ -12,7 +12,7 @@ Store and forward messaging pattern is used to ensure guaranteed delivery of mes
 
 This will be implemented with Message Store and Message Processor in Micro Integrator. Whenever the catering system is down, the messages will be stored in the Message Store. When the system becomes available again, the stored messages will be sent to the Catering system.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario12.png" alt="Guaranteed Message Delivery" title="Guaranteed Message Delivery" width="60%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario12.png" alt="Guaranteed Message Delivery" title="Guaranteed Message Delivery" width="60%" />
 
 If you look at the `docker-compose.yml` file, you can see that ``CATERING_SERVICE_EP`` is defined as `http://www.urldoesnotexist.com` under mi-runtime service. If you send a request to this endpoint, it will fail and the message will be stored in the Message Store database.
 

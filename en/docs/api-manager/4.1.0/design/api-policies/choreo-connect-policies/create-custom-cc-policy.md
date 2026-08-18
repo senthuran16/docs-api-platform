@@ -67,7 +67,7 @@ Choreo Connect supports the following operations and the policies supporting the
             <li>includes (this require a comma separated string, which describes what should be included in the request body of the interceptor service)</li>
         </ul></td>
     <td>Request Response</td>
-    <td>Call an interceptor service in request or response flow. For more information, visit <a href="../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview.md">Message Mediation</a>.</td>
+    <td>Call an interceptor service in request or response flow. For more information, visit <a href="../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview/">Message Mediation</a>.</td>
  </tr>
  <tr>
     <td>OPA</td>

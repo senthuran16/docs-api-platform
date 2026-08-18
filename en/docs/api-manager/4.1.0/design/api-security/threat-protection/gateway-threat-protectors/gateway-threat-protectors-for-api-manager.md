@@ -47,8 +47,8 @@ You can add custom sequences depending on the threats that you need to address. 
 2.  Go to **Runtime Configurations** Tab of the relevant API.
 3.  Click **Message Mediation** under **Request**.
       
-      <a href="../../../../assets/img/learn/request-message-mediation.png"><img src="../../../../assets/img/learn/request-message-mediation.png" width="70%"></a>
+      <a href="../../../../../assets/img/learn/request-message-mediation.png"><img src="../../../../../assets/img/learn/request-message-mediation.png" width="70%"></a>
 
 4.  Select and upload your custom sequence.
    
-      <a href="../../../../assets/img/learn/add-custom-mediation-policy.png"><img src="../../../../assets/img/learn/add-custom-mediation-policy.png" width="70%"></a>
+      <a href="../../../../../assets/img/learn/add-custom-mediation-policy.png"><img src="../../../../../assets/img/learn/add-custom-mediation-policy.png" width="70%"></a>

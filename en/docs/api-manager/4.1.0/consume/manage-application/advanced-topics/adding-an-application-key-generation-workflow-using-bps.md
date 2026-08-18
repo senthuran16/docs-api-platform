@@ -203,7 +203,7 @@ First, enable the application registration workflow.
 
 2. Click **Main** --> **Resources** --> **Browse**.
 
-     <a href="../../../assets/img/learn/add-application-wf-browse.png"><img src="../../../assets/img/learn/add-application-wf-browse.png" width="250" height="100"/></a>
+     <a href="../../../../assets/img/learn/add-application-wf-browse.png"><img src="../../../../assets/img/learn/add-application-wf-browse.png" width="250" height="100"/></a>
 
 2.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, disable the Simple Workflow Executor and enable WS Workflow Executor as described in the tip provided at the start of this documentation if you haven't done so already.
 

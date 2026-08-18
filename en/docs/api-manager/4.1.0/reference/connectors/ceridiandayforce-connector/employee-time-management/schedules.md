@@ -14,6 +14,7 @@ The following operations allow you to retrieve schedules of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-schedules"></a>
 #### Retrieving Employee Schedules
 We can use GET Schedules operation with required parameters to find the schedules of employees.
 

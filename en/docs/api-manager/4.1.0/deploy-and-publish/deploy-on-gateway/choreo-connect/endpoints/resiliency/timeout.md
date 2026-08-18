@@ -13,7 +13,7 @@ Timeouts can be defined at two levels.
 
 ## Endpoint Level Upstream Timeouts
 
-You can define the Endpoint Level Upstream Timeout in the `x-wso2-production-endpoint` and/or `x-wso2-sandbox-endpoint` OpenAPI extension of the API's OpenAPI definition, based on the endpoint type (i.e., production or sandbox), when [deploying an API **via the apictl (CLI Tool)**](../../deploy-api/deploy-rest-api-in-choreo-connect.md#choreo-connect-as-a-standalone-gateway/).
+You can define the Endpoint Level Upstream Timeout in the `x-wso2-production-endpoint` and/or `x-wso2-sandbox-endpoint` OpenAPI extension of the API's OpenAPI definition, based on the endpoint type (i.e., production or sandbox), when [deploying an API **via the apictl (CLI Tool)**](../../deploy-api/deploy-rest-api-in-choreo-connect.md#via-apictl-for-standalone-mode).
 
 ``` bash tab="Production Endpoint"
 x-wso2-production-endpoints:
@@ -67,7 +67,8 @@ The following is a list of the Global Level Timeouts that you can set in Choreo 
 
 Follow the instructions below to define Global Level Timeouts:
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Use the following configurations to define the Global Level Timeouts.
 

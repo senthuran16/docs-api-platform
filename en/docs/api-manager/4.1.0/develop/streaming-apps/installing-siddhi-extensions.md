@@ -127,6 +127,7 @@ The configuration of an extension is a JSON object that looks as follows:
 
 `<extension_name>` which is the key of this JSON object, is the uniquely identifiable name of the extension. The extension is described under [`extension`](#extension).
 
+<a name="extension"></a>
 #### `extension`
 
 This _object_ contains information about the extension, denoted by the following properties.

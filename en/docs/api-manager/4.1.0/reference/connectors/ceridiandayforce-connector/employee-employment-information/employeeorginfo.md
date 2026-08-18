@@ -14,6 +14,7 @@ The following operations allow you to retrieve organizational information of an 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-org-info"></a>
 #### Retrieving Employee Org Info
 We can use GET Employee Org Info operation with required parameters to search and find the organizational info of a required employees.
 

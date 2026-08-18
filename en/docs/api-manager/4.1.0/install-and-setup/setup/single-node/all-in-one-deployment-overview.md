@@ -4,13 +4,13 @@ An all-in-one deployment contains all the API-M components in one runtime instan
 
 - [All-in-One Deployment Overview](#all-in-one-deployment-overview)
   - [Single Node Deployment](#single-node-deployment)
-  - [Active - Active Deployment](#active---active-deployment)
+  - [Active - Active Deployment](#active-active-deployment)
 
 ## Single Node Deployment
 
 In this setup, API traffic is served by one all-in-one instance of WSO2 API Manager.
 
-<a href="../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
+<a href="../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
 
 | Pros 	| Cons 	|
 |---	|---	|
@@ -29,7 +29,7 @@ In this setup, API traffic is served by one all-in-one instance of WSO2 API Mana
 
 In this setup, API traffic is served by two single node (all-in-one) instances of WSO2 API Manager.
 
-<a href="../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active apim deployment" width="60%"></a>
+<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active apim deployment" width="60%"></a>
 
 | Pros   | Cons |
 |--------|------|

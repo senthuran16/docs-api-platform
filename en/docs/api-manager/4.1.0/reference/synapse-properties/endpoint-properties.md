@@ -62,7 +62,7 @@ You can configure the following endpoint types.
   <tr>
     <td>HTTP Endpoint</td>
     <td>
-      Allows you to define REST endpoints using <b>URI templates</b> similar to the REST API. The URI templates allow a RESTful URI to contain variables that can be populated during mediation runtime using <a href="../mediators/property-mediator.md">property</a> values with the <code>uri.var.</code> prefix. An HTTP endpoint can also define the particular HTTP method to use in the RESTful invocation.
+      Allows you to define REST endpoints using <b>URI templates</b> similar to the REST API. The URI templates allow a RESTful URI to contain variables that can be populated during mediation runtime using <a href="../../mediators/property-mediator/">property</a> values with the <code>uri.var.</code> prefix. An HTTP endpoint can also define the particular HTTP method to use in the RESTful invocation.
     </td>
   </tr>
   <tr>
@@ -246,7 +246,7 @@ Listed below are the basic properties that used to [define an endpoint artifact]
     <tr>
         <td>Trace Enabled</td>
         <td>
-            This enables tracing for the endpoint. You can <a href="../../integrate/develop/endpoint-trace-logs.md">use trace logs to debug</a> mediation errors.
+            This enables tracing for the endpoint. You can <a href="../../../integrate/develop/endpoint-trace-logs/">use trace logs to debug</a> mediation errors.
         </td>
     </tr>
     <tr>
@@ -777,6 +777,7 @@ The following is an HTTP endpoint configured with the password grant type.
 </endpoint>
 ```
 
+<a name="send-additional-parameters-in-the-oauth-request-body"></a>
 #### Send additional parameters in the OAuth request body
 
 By default the `grant_type`, `client_id`, and `client_secret` parameters are sent in the OAuth request body. To send additional parameters you can define them as a list of parameters under the `requestParameters` tag as shown in the example below.
@@ -801,6 +802,7 @@ By default the `grant_type`, `client_id`, and `client_secret` parameters are sen
 </endpoint>
 ```
 
+<a name="define-dynamic-expressions"></a>
 #### Define dynamic expressions
 
 You can use dynamic values for OAuth configurations such as XPATH, JSON expressions or vault-lookup to get data from a secure vault. Make sure you define the elements within curly brackets.

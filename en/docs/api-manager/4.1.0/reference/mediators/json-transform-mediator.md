@@ -6,7 +6,7 @@ Those configurations are applied globally and you cannot have independent config
 With JSON Transform mediator you can define the properties inside the mediation and control the transformation independently. 
 Also you can have a JSON schema to correct the payload if there are inconsistencies in the transformation.
 
-<img src="../../assets/img/integrate/mediators/json-transform-concept.png"/>
+<img src="../../../assets/img/integrate/mediators/json-transform-concept.png"/>
 
 !!! Info
     The JSON Transform mediator is a [content aware](about-mediators.md#classification-of-mediators) mediator.
@@ -51,7 +51,7 @@ Apart from defining a schema, you can also add properties to control XML to JSON
 <tbody>
 <tr class="odd">
 <td><strong>Schema</strong></td>
-<td><p>The name of the property that needs to be overridden in the sequence. The <b>JSON Transform mediator</b> supports only the parameters related to XML to JSON conversion. The list of properties that are supported can be found <a href="../../integrate/examples/json_examples/json-examples.md#xml-to-json-transformation-parameters">here</a>.</p>
+<td><p>The name of the property that needs to be overridden in the sequence. The <b>JSON Transform mediator</b> supports only the parameters related to XML to JSON conversion. The list of properties that are supported can be found <a href="../../../integrate/examples/json_examples/json-examples/#xml-to-json-transformation-parameters">here</a>.</p>
 </td>
 </tr>
 <tr class="even">

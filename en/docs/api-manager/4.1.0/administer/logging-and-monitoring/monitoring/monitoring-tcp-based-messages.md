@@ -59,18 +59,18 @@ TCPMon is primarily used for message monitoring. Additionally, TCPMon can also 
 
 TCPMon can also be used as a request sender for Web services. The request SOAP message can be pasted on the send screen and sent directly to the server.
 
-<a href="../../../assets/img/administer/tcpmon_screen4.png"><img src="../../../assets/img/administer/tcpmon_screen4.png" alt="TCPMon sending requests" name="TCPMon sending requests" width="520"></a>
+<a href="../../../../assets/img/administer/tcpmon_screen4.png"><img src="../../../../assets/img/administer/tcpmon_screen4.png" alt="TCPMon sending requests" name="TCPMon sending requests" width="520"></a>
 
 #### As a Proxy
 
 TCPMon can act as a proxy. To start it in proxy mode, select the Proxy option. When acting as a proxy, TCPMon only needs the listener port to be configured.
 
-<a href="../../../assets/img/administer/tcpmon_screen5.png"><img src="../../../assets/img/administer/tcpmon_screen5.png" alt="TCPMon proxy" name="TCPMon proxy" width="280"></a>
+<a href="../../../../assets/img/administer/tcpmon_screen5.png"><img src="../../../../assets/img/administer/tcpmon_screen5.png" alt="TCPMon proxy" name="TCPMon proxy" width="280"></a>
 
 #### Advanced Settings
 
 TCPMon can simulate a slow connection, in which case the delay and the bytes to be dropped can be configured. This is useful when testing Web services.
 
-<a href="../../../assets/img/administer/tcpmon_screen6.png"><img src="../../../assets/img/administer/tcpmon_screen6.png" alt="TCPMon advanced settings" name="TCPMon advanced settings" width="280"></a>
+<a href="../../../../assets/img/administer/tcpmon_screen6.png"><img src="../../../../assets/img/administer/tcpmon_screen6.png" alt="TCPMon advanced settings" name="TCPMon advanced settings" width="280"></a>
 
 Also, if HTTP proxy support is required, that can also be set on the admin screen.

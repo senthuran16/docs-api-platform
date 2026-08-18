@@ -235,7 +235,7 @@ Given below are the main steps your will follow when you deploy integration solu
 When the integration is successfully deployed, it should create the `hello-world` integration, `hello-world-deployment`, `hello-world-service`, and `ei-operator-ingress` as follows:
 
 !!! Tip
-    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#Disable-ingress-controller-creation).
+    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#disable-ingress-controller-creation).
 
 ```bash
 kubectl get integration
@@ -426,7 +426,7 @@ Follow the steps given below:
     ```
 
 !!! Tip
-    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#Disable-ingress-controller-creation).
+    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#disable-ingress-controller-creation).
 
 
 ## Update existing integration deployments

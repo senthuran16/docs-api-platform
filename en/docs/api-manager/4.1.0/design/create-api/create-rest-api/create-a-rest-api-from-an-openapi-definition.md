@@ -28,7 +28,7 @@ Follow the instructions below to create a REST API using an OpenAPI definition f
     <html><div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>
-    <ul><li>You need to upload an archive if you have remote references in your API definition. - <a href="../../../assets/attachments/design/sample-archive.zip">Sample OpenAPI archive</a></li><li>If it is a single Swagger file without remote references, it can be imported directly, without zipping.</li><li> 
+    <ul><li>You need to upload an archive if you have remote references in your API definition. - <a href="../../../../assets/attachments/design/sample-archive.zip">Sample OpenAPI archive</a></li><li>If it is a single Swagger file without remote references, it can be imported directly, without zipping.</li><li> 
     When uploading an OpenAPI archive, the master Swagger file should be named as <b>swagger.yaml</b>/<b>swagger.json</b>. 
     </br>If not, the validation will fail at the point of API creation.</li> <li>Referenced files can be named independently.</li>
     <li>When archiving the Swagger files, make sure that it does not have any hidden folders (e.g., <code>__MACOSX</code>).</li></ul>
@@ -157,7 +157,7 @@ You will notice that all the API resources are created automatically when the Op
      | Sandbox endpoint    | Let's only work with the production endpoint for this sample. Therefore, deselect the sandbox endpoint option. |
 
      <html>
-     <img src="../../../assets/img/learn/endpoint-menu.png" width="200">
+     <img src="../../../../assets/img/learn/endpoint-menu.png" width="200">
      </html>
 
 3. Click **Save** to save the changes.
@@ -173,9 +173,9 @@ Click **API Configurations** and click **Runtime** to navigate to the Runtime Co
      
 The Transport Level Security defines the transport protocol on which the API is exposed.
 
-<a href="../../../assets/img/learn/runtime-config-menu.png"><img src="../../../assets/img/learn/runtime-config-menu.png" width="20%"></a>
+<a href="../../../../assets/img/learn/runtime-config-menu.png"><img src="../../../../assets/img/learn/runtime-config-menu.png" width="20%"></a>
 
-<a href="../../../assets/img/learn/transport-level-security-pet-store.png"><img src="../../../assets/img/learn/transport-level-security-pet-store.png" width="90%">
+<a href="../../../../assets/img/learn/transport-level-security-pet-store.png"><img src="../../../../assets/img/learn/transport-level-security-pet-store.png" width="90%">
 </a>
 
 <html><div class="admonition note">
@@ -199,8 +199,8 @@ The Transport Level Security defines the transport protocol on which the API is 
 
 1. Click **Portal Configurations** and click **Subscriptions** to navigate to the Business Plans page.
 
-     <a href="../../../assets/img/learn/subscriptions-menu.png">
-     <img src="../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu" width="20%">
+     <a href="../../../../assets/img/learn/subscriptions-menu.png">
+     <img src="../../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu" width="20%">
      </a>
 
 2. Select **Gold** and **Silver** as the Business Plans.

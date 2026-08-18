@@ -86,7 +86,7 @@ Let’s assume that you want to enable the Gateway Token Cache. The relevant con
 
 Let's check the `default.json` file and look for the default value set for `apim.cache.gateway_token.enable`
 
-<a href="../assets/img/reference/default-json.png"><img src="../assets/img/reference/default-json.png" width=500></a>
+<a href="../../assets/img/reference/default-json.png"><img src="../../assets/img/reference/default-json.png" width=500></a>
 
 It is set to `true`, which means, by default, the Gateway token cache is enabled.
 Therefore, you do not need to add any configuration in the `deployment.toml` file.

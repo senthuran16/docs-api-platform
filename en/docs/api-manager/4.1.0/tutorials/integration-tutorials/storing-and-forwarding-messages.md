@@ -20,11 +20,11 @@ An Integration project is a maven multi module project, which will contain all t
 1.  Open **WSO2 Integration Studio**.
 2.  Click **New Integration Project** in the **Getting Started** tab as shown below. 
 
-    <img src="../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
+    <img src="../../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
 
     This will open the <b>New Integration Project</b> dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
+    <img src="../../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
 
 3.  Enter `SampleServices` as the project name and select the following check boxes to create the required modules.
     -   **Create ESB Configs**
@@ -97,7 +97,7 @@ You will now see the projects listed in the **Project Explorer**.
     </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/119132155/119132164.png">
+    <img src="../../../assets/img/integrate/tutorials/119132155/119132164.png">
 
 #### Create the Message Store
 
@@ -329,7 +329,7 @@ Let's update the REST API so that the client request is forwarded to the message
          <td>
             <div class="content-wrapper">
               <p>Follow the steps given below to specify the expression value:</p>
-              <img src="../../assets/img/integrate/tutorials/119132155/expression-value.png">
+              <img src="../../../assets/img/integrate/tutorials/119132155/expression-value.png">
             <ol>
                 <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                 <li>
@@ -469,7 +469,7 @@ Let's send a request to the API resource. You can use the embedded <b>HTTP Clien
      </table>
 
      <br/><br/>
-     <video src="../../assets/vids/surgery-reserve.webm" width="720" height="480" controls></video>
+     <video src="../../../assets/vids/surgery-reserve.webm" width="720" height="480" controls></video>
      <br/><br/>
      
 If you want to send the client request from your terminal:

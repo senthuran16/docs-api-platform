@@ -56,7 +56,7 @@ You will be running three servers (Analytics server, MI Analytics portal, and th
     1.  Go to the WSO2 Enterprise Integrator <a href="https://wso2.com/integration/">product page</a>, click <b>TRY IT NOW</b>, and then go to the <b>Other Resources</b> section.
     2.  Click <b>Integration Analytics</b> to download the distribution.
 
-        <img src="../assets/img/integrate/observability/download-ei-analytics.png" width="50%" alt="Integration Analytics download menu">
+        <img src="../../assets/img/integrate/observability/download-ei-analytics.png" width="50%" alt="Integration Analytics download menu">
 
     !!! Info
         The location of your Analytics installation will be referred to as `<MI_ANALYTICS_HOME>`.
@@ -123,7 +123,7 @@ Follow the steps below to enable statistics and tracing for the **REST API** ar
 1.  Select `HealthcareAPI` in the canvas of WSO2 Integration Studio to open the **Properties** tab.
 2.  Select **Statistics Enabled** and (if required) **Trace Enabled** as shown below.
 
-    <img src="../assets/img/integrate/mi-analytics/restapi-properties.png" alt="rest api properties" width="500">
+    <img src="../../assets/img/integrate/mi-analytics/restapi-properties.png" alt="rest api properties" width="500">
 
 #### Endpoint artifacts
 
@@ -137,6 +137,7 @@ Follow the steps below to enable statistics for the **endpoint** artifacts:
 
 You can send events to multiple Analytics servers either by sending the same event to many Analytics servers or by load balancing events among a set of servers. This handles the failover problem. When events are load balanced within a set of servers and if one receiver cannot be reached, events are automatically sent to the other available and active Analytics servers.
 
+<a name="load-balancing-across-a-group-of-servers"></a>
 #### Load balancing across a group of servers 
 
 To configure this setup, configure the Analytics receiver URL specified in the Micro Integrator as a comma-separated list of Analytics servers. 

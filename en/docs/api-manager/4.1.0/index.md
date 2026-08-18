@@ -94,12 +94,12 @@
             </p>
             <a href='get-started/key-concepts'><h4>Understand the Concepts</h4></a>
         </div>
-        <div class="linkSet2 last" onclick="location.href='get-started/architecture';">
+        <div class="linkSet2 last" onclick="location.href='get-started/apim-architecture.md';">
             <h3>Architecture</h3>
             <p>
                 The WSO2 API Manager consists of a management plane, a data plane, and a control plane, along with multiple developer-friendly tools to help you work with the various components.
             </p>
-            <a href='get-started/architecture'><h4>View Architecture</h4></a>
+            <a href='get-started/apim-architecture.md'><h4>View Architecture</h4></a>
         </div>
     </div>
     <div class="section04">

@@ -20,9 +20,9 @@ The active IdP client is `local` by default.
 
 Following are the IdP Clients available for WS)2 Streaming Integrator:
 
-- [Local IdP Client](#UserManagementviatheIdPClientInterface-LocalIdPClient)
+- [Local IdP Client](#local-idp-client)
 
-- [External IdP Client](#UserManagementviatheIdPClientInterface-ExternalIdPClient)
+- [External IdP Client](#external-idp-client)
 
 ## Local IdP Client
 

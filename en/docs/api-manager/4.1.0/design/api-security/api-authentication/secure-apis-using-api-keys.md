@@ -10,7 +10,7 @@ When an API is invoked specifying an API key as the authentication method, the A
 - Subscription validation
 
 !!! info
-     API keys, generated within the WSO2 API Manager developer portal without direct key manager communication, cannot be directly forwarded to the backend through the API Gateway for API requests. To grant backends access to user, application specific attributes during API calls, enable backend JWT generation. For detailed instructions on how to enable and utilize backend JWT generation for passing end-user attributes to the backend via the API Gateway, refer to [Passing End-User Attributes to the Backend via API Gateway]({{basepath}}/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/).
+     API keys, generated within the WSO2 API Manager developer portal without direct key manager communication, cannot be directly forwarded to the backend through the API Gateway for API requests. To grant backends access to user, application specific attributes during API calls, enable backend JWT generation. For detailed instructions on how to enable and utilize backend JWT generation for passing end-user attributes to the backend via the API Gateway, refer to [Passing End-User Attributes to the Backend via API Gateway](../../../deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md).
 
 ## Prerequisites for API keys
 
@@ -54,11 +54,11 @@ Follow the instructions below to use API key Authentication in WSO2 API Manager.
 
 Create, publish and deploy an API that is secured with the API key security scheme as the application-level security. Let's work with the sample app for this purpose.
 
-{!includes/design/create-publish-api.md!}
+--8<-- "api-manager/4.1.0/includes/design/create-publish-api.md"
 
 ### Step 2 - Generate the API Key
 
-{!includes/design/generate-api-key.md!}
+--8<-- "api-manager/4.1.0/includes/design/generate-api-key.md"
 
 ### Step 3 - Invoke the API
 
@@ -169,4 +169,4 @@ After issuing an API key for an application, it can be used by anyone to invoke 
 
 WSO2 API Manager allows API keys to be restricted based on two approaches.
 
-{!includes/design/additional-api-key.md!}
+--8<-- "api-manager/4.1.0/includes/design/additional-api-key.md"

@@ -13,7 +13,7 @@ See the topics given below.
 1.  Right-click the **Composite Application Project** in the project explorer and
     then click **Generate Docker Image**.  
 
-    <img src="../../assets/img/integrate/create_project/open-docker_image_generation_wizard.png" width="500">
+    <img src="../../../assets/img/integrate/create_project/open-docker_image_generation_wizard.png" width="500">
     
 2.  In the **Generate Docker Image Wizard** that opens, select one from the following three options and proceed. 
     

@@ -68,6 +68,7 @@ Log growth in [Carbon Logs](configuring-logging.md#configuring-carbon-logs) can 
 
         You can change the `appender.CARBON_LOGFILE.strategy.action.condition.age` parameter to accept files that are as old or older than the specified duration.
 
+<a name="managing-the-growth-of-audit-log-files"></a>
 #### Managing the growth of audit log files
 
 -   Rollover based on a time period can be configured by changing `appender.AUDIT_LOGFILE.policies.time.interval` value in days (Default value is 1 day).

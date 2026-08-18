@@ -2,7 +2,7 @@
 
 This page walks you through how to manually configure WSO2 API Manager (WSO2 API-M) with two active nodes that each has all the components of the API-M together in one instance (all-in-one instance).
 
-<a href="../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../assets/img/setup-and-install/active-active-apim-deployment.png" width="70%" alt="active-active apim deployment"></a>
+<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" width="70%" alt="active-active apim deployment"></a>
 
 Follow the instructions below to configure and deploy API-M by using an Active-Active deployment:
 
@@ -194,7 +194,7 @@ In this case, let's use `gw.am.wso2.com` as the hostname.
 
     2.  Save your changes.
 
-{!includes/design/redis-counter-note.md!}
+--8<-- "api-manager/4.1.0/includes/design/redis-counter-note.md"
 
 ## Step 8 - Optionally, enable distributed cache invalidation
 
@@ -223,7 +223,7 @@ For more information on other production deployment guidelines, see [Production 
 
 ## Step 11 - Start the WSO2 API-M Servers
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 ```tab="Linux/Mac OS"
 cd <API-M_HOME>/bin/

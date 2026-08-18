@@ -10,7 +10,7 @@ Let's deploy an API in Choreo Connect running on Kubernetes as a Standalone Gate
         - Minimum Memory : 2GB
     3.  Deploy an ingress controller - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/) for this sample.
 
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/k8s-setup-note.md"
 
 ## Step 1 - Setup Choreo Connect in Kubernetes
 
@@ -20,7 +20,7 @@ Let's deploy an API in Choreo Connect running on Kubernetes as a Standalone Gate
 
 2.  Apply the Kubernetes configurations for Choreo Connect using the kubectl tool.
 
-     {!includes/deploy/cc-tryout-in-arm64-k8s-note.md!}
+     --8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-k8s-note.md"
 
      ```bash
      kubectl apply -f <CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect

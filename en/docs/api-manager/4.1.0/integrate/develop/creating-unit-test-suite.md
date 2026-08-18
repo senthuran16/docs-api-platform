@@ -202,7 +202,7 @@ If you encounter errors with the unit testing framework, you can debug the frame
     !!! Tip 
         This enables <b>maven debug</b> for the testing framework.
 
-    <img src="../../assets/img/integrate/create_project/synapse_unit_test/debug-unit-testing.png" alt="troubleshooting unit testing">
+    <img src="../../../assets/img/integrate/create_project/synapse_unit_test/debug-unit-testing.png" alt="troubleshooting unit testing">
 
 4. Click <b>Apply</b> and then click <b>Run</b>.
 

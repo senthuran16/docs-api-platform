@@ -16,7 +16,7 @@ removed from the queue. If processing fails, the message can either be
 **requeued or routed to a Dead Letter Queue (DLQ)** depending on the
 configuration.
 
-<img src="../../../assets/img/integrate/rabbitmq/rabbitmq-dead-letter-exchange.png">
+<img src="../../../../assets/img/integrate/rabbitmq/rabbitmq-dead-letter-exchange.png">
 
 ------------------------------------------------------------------------
 

@@ -16,6 +16,7 @@ The following operations allow you to retrieve, create or update emergency conta
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-emergency-contact"></a>
 #### Retrieving Employee Emergency Contact
 We can use GET Employee Emergency Contacts operation with required parameters to retrieve the emergency contact information of an employee.
 
@@ -110,6 +111,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Emergency-Contacts/GET-Employee-Emergency-Contacts.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Emergency-Contacts/GET-Employee-Emergency-Contacts.aspx)
 
+<a name="creating-employee-emergency-contact"></a>
 #### Creating Employee Emergency Contact
 We can use POST Employee Emergency Contacts operation with required parameters to create the required employee's emergency contact information.
 
@@ -195,6 +197,7 @@ This method returns a HTTP code 200 and no response body
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Emergency-Contacts/POST-Employee-Emergency-Contacts.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Emergency-Contacts/POST-Employee-Emergency-Contacts.aspx)
 
+<a name="updating-employee-emergency-contact"></a>
 #### Updating Employee Emergency Contact
 We can use PATCH Employee Emergency Contacts operation with required parameters to update the emergency contact information  of existing employees.
 

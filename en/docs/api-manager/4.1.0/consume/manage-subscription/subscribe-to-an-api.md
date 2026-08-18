@@ -22,7 +22,7 @@ The following are the two methods available in the Developer Portal to subscribe
  
 2.  Click **SUBSCRIPTION & KEY GENERATION WIZARD** to start the key generation wizard.
 
-    <a href="../../assets/img/learn/key-generation-wizard.png" ><img src="../../assets/img/learn/key-generation-wizard.png" alt="Key Gen Wizard" title="Key Gen Wizard" /></a>
+    <a href="../../../assets/img/learn/key-generation-wizard.png" ><img src="../../../assets/img/learn/key-generation-wizard.png" alt="Key Gen Wizard" title="Key Gen Wizard" /></a>
 
 3.  Enter the application details in the **Create application** process and click **Next** to continue.
 
@@ -63,7 +63,7 @@ If you already have an existing application, follow the instructions below to su
         
 2.  Click **SUBSCRIBE TO AN APPLICATION**.
 
-     <a href="../../assets/img/learn/from-existing-app.png" ><img src="../../assets/img/learn/from-existing-app.png" alt="Subscribe to new app" title="Subscribe to new app" /></a>
+     <a href="../../../assets/img/learn/from-existing-app.png" ><img src="../../../assets/img/learn/from-existing-app.png" alt="Subscribe to new app" title="Subscribe to new app" /></a>
     
 3.  Select the application, the throttling policy, and click **Subscribe**.
 

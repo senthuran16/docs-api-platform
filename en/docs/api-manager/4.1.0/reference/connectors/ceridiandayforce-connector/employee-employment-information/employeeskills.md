@@ -14,6 +14,7 @@ The following operations allow you to retrieve the skills of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-skills"></a>
 #### Retrieving Employee Skills
 We can use GET Employee Skills operation with required parameters to get the skills of an employee.
 

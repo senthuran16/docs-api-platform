@@ -14,6 +14,7 @@ The following operation allows you to retrieve an employee's clock device group
 
 This section provides more details on the operation.
 
+<a name="retrieving-employee-compensation-summary"></a>
 #### Retrieving Employee Compensation Summary
 We can use GET Employee Compensation Summary operation with required parameters to search and find the required employee's compensation summary.
 

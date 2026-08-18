@@ -18,7 +18,7 @@ validated before they are run in an actual production environment.
 To validate a Siddhi application, follow the procedure below:
 
 1.  Start and access the Streaming Integrator Tooling. For detailed
-    instructions, see [Starting Streaming Integrator Tooling](streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    instructions, see [Starting Streaming Integrator Tooling](streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
 
 2.  In this example, let's use an existing sample as an example. Click
     on the **ReceiveAndCount** sample to open it.
@@ -47,7 +47,7 @@ You can run a Siddhi application to verify whether the logic
 you have written is correct. To start a Siddhi application, follow the procedure below:
 
 1.  Start and access the Streaming Integrator Tooling. For detailed
-    instructions, see [Starting Stream Integration Tooling](streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    instructions, see [Starting Stream Integration Tooling](streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
     
 2.  For this example, click the **existing** sample **ReceiveAndCount**. It opens in a new untitled tab.
 

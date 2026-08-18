@@ -206,7 +206,7 @@ Follow the instructions below to generate an AsyncAPI Definition via the Streami
 
      Click **Add Async API** to add the generated AsyncAPI definition to the Siddhi application.
 
-     <a href="../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
+     <a href="../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
 
 5. Click **Code View** to view the Siddhi application with the AsyncAPI definition that was generated and save it so that it can be deployed on SI server.
 
@@ -257,7 +257,7 @@ Access the streaming service via the **API Publisher** as follows:
 
 2. You can also click the **hamburger** icon on the upper-left and click **Services** to see the available services.
 
-     <a href="../assets/img/streaming/qsg/streaming-service-catalog.png"><img src="../assets/img/streaming/qsg/streaming-service-catalog.png" width="40%"></a>
+     <a href="../../assets/img/streaming/qsg/streaming-service-catalog.png"><img src="../../assets/img/streaming/qsg/streaming-service-catalog.png" width="40%"></a>
 
 3. See that the `SweetProductionApplication` is listed as a service.
 
@@ -269,7 +269,7 @@ Access the streaming service via the **API Publisher** as follows:
 
      This opens the **Create API** dialog box with the API details that are generated based on the service.
 
-     <a href="../assets/img/streaming/qsg/create-api-from-streaming-service.png"><img src="../assets/img/streaming/qsg/create-api-from-streaming-service.png" width="80%"></a>
+     <a href="../../assets/img/streaming/qsg/create-api-from-streaming-service.png"><img src="../../assets/img/streaming/qsg/create-api-from-streaming-service.png" width="80%"></a>
 
 3. Update the API name, context, and version if required, and click **Create API**. 
 
@@ -299,7 +299,7 @@ Access the streaming service via the **API Publisher** as follows:
 
      This creates a subscription to the API using the `DefaultApplication`.
 
-     <a href="../assets/img/streaming/qsg/streaming-api-subscribe.png"><img src="../assets/img/streaming/qsg/streaming-api-subscribe.png" size="70%"></a>
+     <a href="../../assets/img/streaming/qsg/streaming-api-subscribe.png"><img src="../../assets/img/streaming/qsg/streaming-api-subscribe.png" size="70%"></a>
 
 5. Click **PROD KEYS** to generate keys for the application and click **GENERATE  KEYS**.
 

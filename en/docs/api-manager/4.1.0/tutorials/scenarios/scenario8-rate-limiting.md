@@ -8,7 +8,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 While analyzing the traffic patterns and data, the GOGO DevOps team noticed that their backend is receiving a high number of requests and due to these high demand, their latency numbers also increased. The DevOps team did some performance tests on their user info backend and identified that their backend service can handle a maximum of 1000 TPS. So GOGO management decided to introduce rate limiting to manage their free users.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario8.png" title="Rate Limiting Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario8.png" title="Rate Limiting Description" width="630"/>
 
 ## Step 1: Apply a rate limiting policy.
 

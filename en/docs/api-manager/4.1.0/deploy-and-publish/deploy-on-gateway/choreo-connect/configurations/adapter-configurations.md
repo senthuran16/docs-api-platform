@@ -4,7 +4,8 @@ This document describes all the configuration parameters that are used in Choreo
 
 ## Instructions for use
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Select the configuration sections, parameters, and values that are required for your use and add them as required. You can click ***view sample*** in each of the sections in this page to get the toml format. 
 See the example .toml file given below.

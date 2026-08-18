@@ -13,7 +13,7 @@ Follow the instructions below to design a GraphQL API.
 
 ### Create a GraphQL API
 
-{!includes/design/create-graphql-api.md!}
+--8<-- "api-manager/4.1.0/includes/design/create-graphql-api.md"
 
 !!! note
     For more information on the payload, see [GraphQL operations](#graphql-operations).
@@ -26,6 +26,7 @@ Next, let's deploy your API in the [WSO2 API Gateway](../../deploy-and-publish/d
 
 The following sub-sections explain as to how authorization, security, and throttling affect API operations.
 
+<a name="authorization-for-graphql-operations"></a>
 #### Authorization for GraphQL operations
 A scope acts as a limiting factor on what API resources can be accessed using an access token and thereby defines the authorization aspect for API requests.
 
@@ -48,6 +49,7 @@ Security can be enabled or disabled for GraphQL operations. Security is enabled 
   
     The API request takes into consideration the security configurations of all the operations that belong to the API. When a query has security enabled for one of the operations that belong to a specific API, then security is automatically applied for all the operations. Therefore, in such cases, users have to use their credentials when invoking that respective API.
 
+<a name="rate-limiting-for-graphql-operations"></a>
 #### Rate limiting for GraphQL operations
 Rate limiting is set to unlimited, and thereby disabled by default. 
 
@@ -72,4 +74,4 @@ Learn more on the concepts that you need to know when creating a GraphQL API:
 -   [API Documentation](../api-documentation/add-api-documentation.md)
 -   [Custom Properties](adding-custom-properties-to-apis.md)
 
-- Try out the tutorial on <a href="../../tutorials/create-and-publish-a-graphql-api.md">Creating and Publishing a GraphQL API</a>.
+- Try out the tutorial on <a href="../../../tutorials/create-and-publish-a-graphql-api/">Creating and Publishing a GraphQL API</a>.

@@ -14,6 +14,7 @@ The following operations allow you to retrieve Document Management Security Grou
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-document-management-security-groups"></a>
 #### Retrieving Document Management Security Groups
 We can use GET Document Management Security Groups operation with required parameters to search and find the required employees.
 

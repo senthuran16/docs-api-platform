@@ -102,7 +102,7 @@ in sequence.
 
 -   Select `xml_validator` from the drop-down menu for Common Policies.
 
-    <a href="../../../../assets/img/learn/mediation-xml-validator.png"><img src="../../../../assets/img/learn/mediation-xml-validator.png" width="70%" alt="Select XML validator from the drop-down menu"></a> 
+    <a href="../../../../../assets/img/learn/mediation-xml-validator.png"><img src="../../../../../assets/img/learn/mediation-xml-validator.png" width="70%" alt="Select XML validator from the drop-down menu"></a> 
 
     
 -   Scroll down the page and click **Save** to save the changes.

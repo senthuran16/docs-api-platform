@@ -627,7 +627,7 @@ You can <b>dynamically</b> update the log level for a specific logger by using t
 1.  Sign in to the [Micro Integrator dashboard](../../mi-observe/working-with-monitoring-dashboard.md).
 2.  Click <b>Log Configs</b> on the left-hand navigator to open the <b>Logging Management</b> window.
 
-    <img alt="change log level from dashboard" src="../../../assets/img/integrate/monitoring-dashboard/change-log-level-dashboard.png">
+    <img alt="change log level from dashboard" src="../../../../assets/img/integrate/monitoring-dashboard/change-log-level-dashboard.png">
 
 3.  Use the <b>Search</b> option to find the required logger, and change the log level as shown above.
 

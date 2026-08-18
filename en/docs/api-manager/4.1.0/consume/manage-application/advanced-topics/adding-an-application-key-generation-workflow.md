@@ -16,7 +16,7 @@ First, enable the application registration workflow.
 
 2. Click **Main** --> **Resources** --> **Browse**.
 
-     <a href="../../../assets/img/learn/wf-extensions-browse.png"><img src="../../../assets/img/learn/wf-extensions-browse.png" width="250" height="100"/></a>
+     <a href="../../../../assets/img/learn/wf-extensions-browse.png"><img src="../../../../assets/img/learn/wf-extensions-browse.png" width="250" height="100"/></a>
 
 3.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, disable the Simple Workflow Executor and enable **Approval Workflow Executor**  for application registration key generation. You can enable Approve workflow executor for Product keys or Sandbox keys or both by disabling the simple workflow executor and enable approval workflow executor for the ones you need. Please note that this workflow is not applicable for API keys generation.
 

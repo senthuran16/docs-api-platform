@@ -18,15 +18,15 @@ Follow the steps given below.
 1.  Open WSO2 Integration Studio.
 2.  In the <b>Getting Started</b> view, click <b>New Integration Project</b>
 
-    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/getting-started-integration-proj.jpg">
+    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/getting-started-integration-proj.jpg">
 
 3.  In the <b>New Integration Project</b> dialog box, give a name for the integration project and select the following check boxes: <b>Create ESB Configs</b>, <b>Create Composite Exporter</b>, and <b>Create Kubernetes Exporter</b>.
 
-    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/esb-config.png" width="500" alt="Create ESB Config Project">
+    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/esb-config.png" width="500" alt="Create ESB Config Project">
 
 4.  Click <b>Next</b> and enter the following details for your <b>Kubernetes Exporter</b>.
 
-    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/integration-proj-k8s.png" width="500" alt="Create Kubernetes Project">
+    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/integration-proj-k8s.png" width="500" alt="Create Kubernetes Project">
 
     <table>
             <tr>
@@ -99,7 +99,7 @@ Follow the steps given below.
 
     1.  Right-click <b>ESB Config</b> in the project explorer, go to **New -> Proxy Service** and create a custom proxy service named `JmsSenderListener`. 
 
-        <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/custom-proxy-service-jms.jpg" width="500" alt="Create ESB Config Project">
+        <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/custom-proxy-service-jms.jpg" width="500" alt="Create ESB Config Project">
 
     2.  You can then use the **Source View** to copy the following configuration.
 
@@ -175,7 +175,7 @@ Follow the steps given below.
 
 Finally, the created Maven Multi Module project should look as follows:
 
-<img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/jms_example_project.png" width="400" alt="Hello World Project">
+<img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/jms_example_project.png" width="400" alt="Hello World Project">
 
 ## Step 2 - Update JMS configurations
 
@@ -266,11 +266,11 @@ There are two ways to build a Docker image of the integration solution and push 
     1.  Open the **pom.xml** file in the Kubernetes exporter.    
     2.  Ensure that the composite exporter is selected under **Dependencies** and click <b>Build & Push</b>.
 
-        <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/select-dependency-jms-example.png">
+        <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/select-dependency-jms-example.png">
 
     3.  In the dialog box that opens, enter the credentials of your Docker registry to which the image should be pushed.
 
-        <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/docker-registry-credentials.png" width="500" alt="docker registry credentials">
+        <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/docker-registry-credentials.png" width="500" alt="docker registry credentials">
 
     4.  Click <b>Push Image</b>.
 

@@ -50,7 +50,7 @@ Let's start Choreo Connect with a WSO2 API Manager instance which will be acting
     docker ps | grep choreo-connect-
     ```
 
-    {!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 ### Step 3 - Create and publish an API via API Manager
 
@@ -91,11 +91,11 @@ Let's start Choreo Connect with a WSO2 API Manager instance which will be acting
 
 1. Open **Try Out** from the left menu bar.
 
-    <a href="../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png"><img src="../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png" width="20%" alt="Try out menu option in the left panel"></a>
+    <a href="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png"><img src="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png" width="20%" alt="Try out menu option in the left panel"></a>
 
 2. In the Try Out page, you will find an Internal Key that has already been generated for you. You can click the button **Generate Key** whenever you need a new token.
 
-    <a href="../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png"><img src="../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png" width="80%" alt="Generate key"></a>
+    <a href="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png"><img src="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png" width="80%" alt="Generate key"></a>
 
     !!! tip
 
@@ -103,9 +103,9 @@ Let's start Choreo Connect with a WSO2 API Manager instance which will be acting
 
 3. Select one of the listed HTTP methods. Click **Try it out** and then click **Execute** to invoke the API.
 
-    <a href="../../../../assets/img/deploy/mgw/expanded-get-resource.png"><img src="../../../../assets/img/deploy/mgw/expanded-get-resource.png" width="80%" alt="Try it out"></a>
+    <a href="../../../../../assets/img/deploy/mgw/expanded-get-resource.png"><img src="../../../../../assets/img/deploy/mgw/expanded-get-resource.png" width="80%" alt="Try it out"></a>
 
-    <a href="../../../../assets/img/deploy/mgw/try-api.png"><img src="../../../../assets/img/deploy/mgw/try-api.png" width="80%" alt="Execute"></a>
+    <a href="../../../../../assets/img/deploy/mgw/try-api.png"><img src="../../../../../assets/img/deploy/mgw/try-api.png" width="80%" alt="Execute"></a>
 
 **That's it!** You have successfully invoked an API deployed in Choreo Connect. 
 

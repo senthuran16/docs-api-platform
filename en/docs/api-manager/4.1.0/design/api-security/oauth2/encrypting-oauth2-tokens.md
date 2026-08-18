@@ -30,7 +30,7 @@ Follow the steps below to enable OAuth2 token encryption
         "org.wso2.CipherTransformation" = "<Algorithm>"
         ```
     
-3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server). 
+3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server). 
 
 4.  Follow the [Generate Application Keys](../../../consume/manage-application/generate-keys/generate-api-keys.md) guide to create a new application, generate application consumer keys, and to obtain an access token.
 

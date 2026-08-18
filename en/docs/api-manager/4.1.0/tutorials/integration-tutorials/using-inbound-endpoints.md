@@ -26,7 +26,7 @@ Set up WSO2 Integration Studio as follows:
     project directory will appear with the artifacts as shown below.
     Note the 'HealthcareAPI' that is already included.
 
-    <img src="../../assets/img/integrate/tutorials/inbound-project-explorer.png" width="400">
+    <img src="../../../assets/img/integrate/tutorials/inbound-project-explorer.png" width="400">
 
 2.  Right-click on **SampleServicesConfigs** and navigate to **New -> Inbound
     Endpoint**. Select **Create A New Inbound Endpoint** and click
@@ -53,7 +53,7 @@ Set up WSO2 Integration Studio as follows:
         </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/using-inbound-endpoint/create-inbound-dialog-box.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/using-inbound-endpoint/create-inbound-dialog-box.png" width="500">
 
 4.  Go to the **Properties** tab in the **Design** view and enter the following:
 
@@ -76,7 +76,7 @@ Set up WSO2 Integration Studio as follows:
         </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/using-inbound-endpoint/configure-inbound-endpoint.png">
+    <img src="../../../assets/img/integrate/tutorials/using-inbound-endpoint/configure-inbound-endpoint.png">
 
 The endpoint will now get mapped to any URL that matches the above pattern provided. You will be exposing the health care API on a new port through this inbound endpoint.
 
@@ -143,7 +143,7 @@ Let's send a message to the **healthcare** REST API (through the inbound endpoin
      </table>
      
      <br/><br/>
-     <video src="../../assets/vids/query-doctor-surgery.webm" width="720" height="480" controls></video>
+     <video src="../../../assets/vids/query-doctor-surgery.webm" width="720" height="480" controls></video>
      <br/><br/>
 
 If you want to send the client request from your terminal:

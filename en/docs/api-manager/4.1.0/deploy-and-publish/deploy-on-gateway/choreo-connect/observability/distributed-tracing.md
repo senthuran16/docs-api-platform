@@ -41,7 +41,8 @@ When using **Jaeger** for tracing, the format is same as for **Zipkin** to publi
     COLLECTOR_ZIPKIN_HOST_PORT=9411
     ```
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.  
     ```toml
@@ -69,7 +70,8 @@ You will be able to browse through the request traces and expand each trace to v
 
 Follow these steps to configure WSO2 Choreo Connect with Zipkin.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 
@@ -105,7 +107,8 @@ Follow these steps to configure WSO2 Choreo Connect with Azure Application Insig
     ```
     InstrumentationKey=ab71943f-xxxx-xxxx-xxxx-fb2eb69ae11d;IngestionEndpoint=https://region.applicationinsights.azure.com/
     ```
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 

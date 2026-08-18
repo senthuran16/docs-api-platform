@@ -14,6 +14,7 @@ The following operations allow you to retrieve ethnicity information of an emplo
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-ethnicities"></a>
 #### Retrieving Employee Ethnicities
 We can use GET Employee Ethnicities operation with required parameters to search and find the ethnicity required employees.
 

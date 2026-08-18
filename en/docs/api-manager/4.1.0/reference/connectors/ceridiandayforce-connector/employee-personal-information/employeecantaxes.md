@@ -16,6 +16,7 @@ The following operations allow you to retrieve tax details of a Canadian employe
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-canadian-employee-federal-taxes"></a>
 #### Retrieving Canadian Employee Federal Taxes
 We can use GET Employee CAN Federal Taxes operation with required parameters to retrieve federal taxes of a Canadian employee.
 
@@ -74,6 +75,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-Federal-Taxes/GET-Employee-CAN-Federal-Taxes.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-Federal-Taxes/GET-Employee-CAN-Federal-Taxes.aspx)
 
+<a name="retrieving-canadian-employee-state-taxes"></a>
 #### Retrieving Canadian Employee State Taxes
 We can use GET Employee CAN State Taxes operation with required parameters to retrieve the state taxes of Canadian employee.
 
@@ -136,6 +138,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-State-Taxes/GET-Employee-CAN-State-Taxes.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-State-Taxes/GET-Employee-CAN-State-Taxes.aspx)
 
+<a name="retrieving-canadian-employee-tax-statuses"></a>
 #### Retrieving Canadian Employee Tax Statuses
 We can use GET Employee CAN Employee Tax Statuses operation with required parameters to retrieve tax filing statuses of Canadian employees.
 

@@ -11,7 +11,8 @@ Rate Limiting in Choreo Connect works with API Manager (Traffic Manager).
 
 Follow the instructions below to enable Distributed Rate Limiting:
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Use the following configurations to enable Distributed Rate Limiting.
 
@@ -131,7 +132,8 @@ There can be situations where certain APIs require more granular level of Rate L
 
 Conditional Rate Limiting is done via the Advanced Rate Limiting policies in API Manager.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Add/enable the following configurations to enable the required condition type for Rate Limiting.
 

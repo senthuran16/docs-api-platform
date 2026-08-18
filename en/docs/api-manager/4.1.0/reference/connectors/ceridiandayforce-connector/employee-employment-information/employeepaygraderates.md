@@ -14,6 +14,7 @@ The following operations allow you to retrieve pay rates of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-pay-grade-rates"></a>
 #### Retrieving Employee Pay Grade Rates
 We can use GET Employee Pay Grade Rates operation with required parameters to find the pay rates of an employee.
 

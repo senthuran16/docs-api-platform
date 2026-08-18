@@ -9,7 +9,7 @@ sending a message out from Micro Integrator, a **message formatter** is used to 
 the outgoing stream from the message. As with message builders, the
 message formatter is selected based on the message's content type. Given below is the typical workflow:
 
-<a href=""><img src="../../../../assets/img/integrate/message-builders-formatters.png"></a>
+<a href=""><img src="../../../../../assets/img/integrate/message-builders-formatters.png"></a>
 
 You can use the messageType property to change the message's content
 type as it flows through the Micro Integrator. For example, if the incoming message is in

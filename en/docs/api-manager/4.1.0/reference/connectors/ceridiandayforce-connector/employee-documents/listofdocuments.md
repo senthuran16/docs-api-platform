@@ -14,6 +14,7 @@ The following operations allow you to retrieve list of documents attached to an 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-a-list-of-documents"></a>
 #### Retrieving a List of Documents
 We can use GET a List of Documents operation with required parameters to get the list of documents related to an employee.
 

@@ -42,7 +42,7 @@ Given below are the API-M nodes you can have in a distributed deployment.
     </tr>
 </table>
 
-<a href="../../../assets/img/setup-and-install/deployment-tm.png"><img src="../../../assets/img/setup-and-install/deployment-tm.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/deployment-tm.png"><img src="../../../../assets/img/setup-and-install/deployment-tm.png" width="100%"></a>
 
 ## Step 1 - Install WSO2 API-M
 

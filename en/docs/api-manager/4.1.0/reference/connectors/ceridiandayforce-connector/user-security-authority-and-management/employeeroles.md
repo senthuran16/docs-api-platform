@@ -16,6 +16,7 @@ The following operations allow you to retrieve, create or update roles of an emp
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-roles"></a>
 #### Retrieving Employee Roles
 We can use GET Employee Roles operation with required parameters to search and find the roles of a required employees.
 
@@ -76,6 +77,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Roles/GET-Employee-Roles.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Roles/GET-Employee-Roles.aspx)
 
+<a name="creating-employee-roles"></a>
 #### Creating Employee Roles
 We can use POST Employee Roles operation with required parameters to assign roles to an employee.
 
@@ -126,6 +128,7 @@ Dayforce returns HTTP Code 200
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Roles/POST-Employee-Roles.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Roles/POST-Employee-Roles.aspx)
 
+<a name="updating-employee-roles"></a>
 #### Updating Employee Roles
 We can use PATCH Employee Roles operation with required parameters to update the roles of an employee
 

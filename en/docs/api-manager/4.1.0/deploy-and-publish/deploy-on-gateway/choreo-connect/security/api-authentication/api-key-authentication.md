@@ -106,7 +106,7 @@ curl -k -X GET "https://localhost:9095/petstore/v1/pet/1" -H  "accept: applicati
 
 Choreo Connect API Key Authentication supports restrictions for IP address and HTTP referrer. 
 
-{!includes/design/additional-api-key.md!}
+--8<-- "api-manager/4.1.0/includes/design/additional-api-key.md"
 
 ## Configurations related to API Key
 

@@ -49,8 +49,8 @@ See the [Micro Integrator Dashboard documentation](../../../../observe/mi-observ
 
 Select <b>Users</b> in the left-hand navigator to view the list of existing users.
 
-<img src="../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-1.png">
+<img src="../../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-1.png">
 
 Click <b>Add User</b> to create new users. Note that you can assign admin privileges during user creation.
 
-<img src="../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-2.png">
+<img src="../../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-2.png">

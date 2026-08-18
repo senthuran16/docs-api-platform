@@ -156,11 +156,11 @@ You have added a new application-level rate limiting policy.
 
      **Request bandwidth based quota limits**
 
-     <a href="../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png"><img src="../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png" width="70%" alt="Request bandwidth based quota limits"></a>
+     <a href="../../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png"><img src="../../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png" width="70%" alt="Request bandwidth based quota limits"></a>
 
      **Event Based (AsyncAPI) quota limits**
 
-     <a href="../../assets/img/design/rate-limiting/event-based-quota-limits.png"><img src="../../assets/img/design/rate-limiting/event-based-quota-limits.png" width="70%" alt="Event Based (AsyncAPI) quota limits"></a>
+     <a href="../../../assets/img/design/rate-limiting/event-based-quota-limits.png"><img src="../../../assets/img/design/rate-limiting/event-based-quota-limits.png" width="70%" alt="Event Based (AsyncAPI) quota limits"></a>
 
     !!! note
         - Event Based (Async API) - These configurations are applicable to all the Streaming APIs (WebSocket, SSE, and WebHook (WebSub) APIs).

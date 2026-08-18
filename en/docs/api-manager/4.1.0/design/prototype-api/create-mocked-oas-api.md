@@ -69,7 +69,7 @@ Follow the instructions below to enable mock response generation based on the Op
 11. Click **Save** to enable mock implementation with OAS examples.
 
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.1.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 
@@ -102,7 +102,7 @@ Follow the instructions below to enable mock response generation based on the Op
 ## Mock Implementation with OpenAPI examples
 
 !!! abstract
-    {!includes/design/add-oas-example.md!}
+    --8<-- "api-manager/4.1.0/includes/design/add-oas-example.md"
 ## See also
 
 - [Deploy a REST API with a Mock Implementation in Choreo Connect](../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl.md)    

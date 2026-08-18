@@ -14,6 +14,7 @@ The following operations allow you to retrieve job postings
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-job-postings"></a>
 #### Retrieving Job Postings
 We can use GET Job Postings operation with required parameters to search for job postings
 
