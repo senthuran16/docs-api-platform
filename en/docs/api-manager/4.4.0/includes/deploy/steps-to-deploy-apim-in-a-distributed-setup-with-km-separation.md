@@ -1,3 +1,18 @@
+---
+title: "Deploy API Manager with key manager separation"
+description: "Steps to deploy WSO2 API Manager in a distributed setup with the key manager on a separate node."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation.md
+tags:
+  - api-manager
+  - includes
+  - deploy
+  - steps-to-deploy-apim-in-a-distributed-setup-with-km-separation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
+
 ### Step 1 - Install WSO2 API-M
 
 To install and set up the API-M servers:
@@ -15,7 +30,7 @@ For information, see [Installing and Configuring the Databases](../../../../inst
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M. 
 
-For more information, see [Production Deployment Guidelines](../../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines/#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/).
 
 ### Step 4 - Create and import SSL certificates
 
@@ -593,7 +608,7 @@ Follow the steps given below to configure the Control Plane nodes to communicate
     **Add Event Hub Configurations**:
 
     !!! Info
-            {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+            --8<-- "api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     === "Control Plane with High Availability"
         ```toml

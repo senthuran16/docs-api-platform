@@ -1,6 +1,6 @@
 ---
 title: "Understanding the Distributed Deployment of WSO2 API-M"
-description: "Overview of WSO2 API Manager's distributed deployment architecture: the API Control Plane, Universal Gateway, and Traffic Manager distributions, their components, database usage, and the simple scalable deployment patterns with and without Key Manager separation."
+description: "Overview of API Manager's distributed architecture: the Control Plane, Universal Gateway, and Traffic Manager, their components and database usage."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md
 tags:

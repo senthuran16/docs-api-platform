@@ -1,6 +1,6 @@
 ---
 title: "Best Practices for Working with Endpoints"
-description: "Recommended practices for configuring backend endpoints in API Manager, including using named endpoints, setting socket and endpoint timeout values correctly, and choosing between HTTP endpoints and REST APIs for RESTful integrations."
+description: "Recommended practices for configuring backend endpoints in API Manager, including named endpoints, timeout settings, and choosing HTTP over REST APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/best-practices-endpoints/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/best-practices-endpoints.md
 tags:
@@ -14,7 +14,7 @@ content_type: "reference"
 
 # Best practices for working with endpoints
 
-- Do not use anonymous endpoints. Always use [named endpoints](../reference/synapse-properties/endpoint-properties.md). As anynymous endpoints have auto-generated names in the synapse
+- Do not use anonymous endpoints. Always use [named endpoints](https://mi.docs.wso2.com/en/latest/reference/synapse-properties/endpoint-properties/) in the WSO2 Micro Integrator documentation. As anynymous endpoints have auto-generated names in the synapse
   configuration, it is difficult to identify which endpoint is causing
   the error in case of an error.
 
@@ -48,7 +48,7 @@ content_type: "reference"
   <td><code>[transport.http] 
   socket_timeout = 180000                
   </code></td>
-  <td>The socket timeout of the <a href="../../install-and-setup/setup/mi-setup/transport_configurations/">Passthrough</a> http/https transport sender and listener. You can find the <a href="../../install-and-setup/setup/mi-setup/transport_configurations/">passthru-http.properties</a> file in the <code>&lt;EI_HOME&gt;/conf</code> directory.</td>
+  <td>The socket timeout of the <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/transport-configurations/">Passthrough</a> http/https transport sender and listener, in the WSO2 Micro Integrator documentation. You can find the <code>passthru-http.properties</code> file in the <code>&lt;EI_HOME&gt;/conf</code> directory.</td>
   <td><code>deployment.toml</code></td>
   <td>180000</td>
   <td>180000</td>
@@ -118,16 +118,16 @@ content_type: "reference"
   immediately and subsequent messages to that endpoint get rejected
   without being sent to the backend service. This might not be the
   expected behaviour in every use case. Therefore, it is important to
-  perform [endpoint error handling](../reference/synapse-properties/endpoint-properties.md#endpoint-error-handling-properties)
+  perform [endpoint error handling](https://mi.docs.wso2.com/en/latest/reference/synapse-properties/endpoint-properties/) in the WSO2 Micro Integrator documentation
   based on the use case.
 
-- Use the [HTTP endpoint](../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md)
+- Use the [HTTP endpoint](https://mi.docs.wso2.com/en/latest/install-and-setup/setup/transport-configurations/configuring-transports/) in the WSO2 Micro Integrator documentation
   for RESTful service invocations. The HTTP endpoint is especially
   designed to make RESTful service integration easy. For example, it
   supports `url-templates` , which is an option
   to set the http method.
 
-- For RESTful service integration, use either [REST APIs](../reference/synapse-properties/rest-api-properties.md)
+- For RESTful service integration, use either [REST APIs](https://mi.docs.wso2.com/en/latest/reference/synapse-properties/rest-api-properties/) in the WSO2 Micro Integrator documentation
   or HTTP endpoints. You can use REST APIs to expose an integration
   solution as a RESTful service, and use HTTP endpoints to logically
   represent a RESTful backend service.

@@ -1,6 +1,6 @@
 ---
 title: "Create an AI API"
-description: "Create an AI API in WSO2 API Manager by selecting a built-in AI vendor such as OpenAI, Mistral, or Azure AI, obtaining its API key, and configuring the sandbox and production endpoint authorization."
+description: "Create an AI API by selecting a built-in vendor such as OpenAI, Mistral, or Azure AI and configuring endpoint authorization."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-ai-api/create-an-ai-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-ai-api/create-an-ai-api.md
 tags:

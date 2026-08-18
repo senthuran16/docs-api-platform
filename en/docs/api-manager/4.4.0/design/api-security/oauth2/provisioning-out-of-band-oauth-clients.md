@@ -1,6 +1,6 @@
 ---
 title: "Provisioning Out-of-Band OAuth2 Clients"
-description: "Associate an OAuth2 client created outside the Developer Portal, such as one registered directly in WSO2 Identity Server or a third-party key manager, with an application in WSO2 API Manager."
+description: "Associate an OAuth2 client created outside the Developer Portal, such as one in WSO2 Identity Server, with an application."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/provisioning-out-of-band-oauth-clients/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/provisioning-out-of-band-oauth-clients.md
 tags:
@@ -86,7 +86,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
         enable_provisioned_app_validation = false
         ```
 
-3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 4.  Sign in to the Developer Portal.
 

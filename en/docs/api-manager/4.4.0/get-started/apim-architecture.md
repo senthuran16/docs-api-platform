@@ -1,6 +1,6 @@
 ---
 title: "API Manager Architecture and Key Components"
-description: "High-level architecture of WSO2 API Manager, covering the API Control Plane (Publisher, Developer Portal, Service Catalog, Key Manager, Analytics), the Data Plane gateways, the Traffic Manager, and developer tooling."
+description: "High-level architecture of WSO2 API Manager: the API Control Plane, Data Plane gateways, Traffic Manager, and developer tooling."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/get-started/apim-architecture/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/get-started/apim-architecture.md
 tags:
@@ -24,6 +24,7 @@ The above diagram consists of an API management layer and an integration layer w
 
 The Management Plane is where API creation and API management takes place.  It consists of portals (Publisher, Developer Portal, and Service Catalog) for users to create and manage APIs, implement rate limiting policies, monitor, and monetization, etc. It also provides a set of APIs to interact with external tools like API Controller. The Management Plane includes API Analytics dashboards, displaying various business insights.
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 [![API Publisher](../assets/img/learn/overviewpage-rest-api.jpg)](../assets/img/learn/overviewpage-rest-api.jpg)
@@ -54,6 +55,7 @@ These integration services can be created using WSO2 Integration Studio and a va
 
 The Data Plane is where the created API is exposed to the public consumers and acts as the proxy for API calls. This also provides additional capabilities such as enforcing security, rate limiting etc. 
 
+<a name="api-gateway"></a>
 #### API Gateway
 
 [![API Gateway](../assets/img/learn/gateway-overview.png)](../assets/img/learn/gateway-overview.png)
@@ -68,6 +70,7 @@ Once the token is validated, the API Gateway acts upon the API request before se
  
 The Control Plane is where the API security validation, API key generation, and rate limiting decisions are taken.
   
+<a name="key-manager"></a>
 #### Key Manager
  
 [![Key Manager](../assets/img/get_started/architecture/key-manager-overview.png)](../assets/img/get_started/architecture/key-manager-overview.png)

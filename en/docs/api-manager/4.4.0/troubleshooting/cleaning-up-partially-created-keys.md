@@ -1,6 +1,6 @@
 ---
 title: "Clean Up Partially Created Application Keys"
-description: "Fix stale OAuth application data left in WSO2 API Manager when key generation or deletion fails partway through, using the Clean Up button in the application details page."
+description: "Fix stale OAuth application data left in WSO2 API Manager after a failed key generation or deletion using the application's Clean Up button."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/cleaning-up-partially-created-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/cleaning-up-partially-created-keys.md
 tags:

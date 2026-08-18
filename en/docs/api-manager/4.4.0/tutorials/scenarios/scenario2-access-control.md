@@ -1,6 +1,6 @@
 ---
 title: "Tutorial Scenario 2: Access Control for APIs"
-description: "Restrict Developer Portal visibility of an API to a specific role and enforce OAuth2 scope-based access control on individual API resources, then verify the behavior with tokens issued for two different users."
+description: "Restrict Developer Portal visibility of an API to a role and enforce OAuth2 scope-based access control on its resources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario2-access-control/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario2-access-control.md
 tags:

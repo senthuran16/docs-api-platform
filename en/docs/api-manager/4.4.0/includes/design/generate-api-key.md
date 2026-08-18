@@ -1,3 +1,17 @@
+---
+title: "Generate an API key"
+description: "Subscribe to an API, select a throttling policy, and generate an API key from the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/generate-api-key/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/generate-api-key.md
+tags:
+  - api-manager
+  - includes
+  - design
+  - generate-api-key
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
 
 1. Sign in to the Developer Portal.  
     
@@ -18,15 +32,15 @@
 
 5. Click **Subscribe**.
 
-     [![Subscribe to the API](../../../../assets/img/learn/subscribe-to-api.png)](../../assets/img/learn/subscribe-to-api.png)
+     [![Subscribe to the API](../../../../assets/img/learn/subscribe-to-api.png)](../../../assets/img/learn/subscribe-to-api.png)
 
 6. Click **MANAGE APP**, corresponding to the application that you used to subscribe to the API.
 
-     [![View list of credentials](../../../../assets/img/learn/view-credentials-manage-app.png)](../../assets/img/learn/view-credentials-manage-app.png)
+     [![View list of credentials](../../../../assets/img/learn/view-credentials-manage-app.png)](../../../assets/img/learn/view-credentials-manage-app.png)
 
 7. Click **API KEY** and click **GENERATE KEY**.
 
-     [![Generate API key](../../../../assets/img/learn/generate-api-key.png){: style="width:80%"}](../../assets/img/learn/generate-api-key.png)
+     [![Generate API key](../../../../assets/img/learn/generate-api-key.png){: style="width:80%"}](../../../assets/img/learn/generate-api-key.png)
 
 8. Optionally, define a validity period for the token.
 
@@ -38,4 +52,4 @@
      
 9.  Copy the API key.
 
-     [![Copy API key](../../../../assets/img/learn/copy-api-key.png){: style="width:60%"}](../../assets/img/learn/copy-api-key.png)
+     [![Copy API key](../../../../assets/img/learn/copy-api-key.png){: style="width:60%"}](../../../assets/img/learn/copy-api-key.png)

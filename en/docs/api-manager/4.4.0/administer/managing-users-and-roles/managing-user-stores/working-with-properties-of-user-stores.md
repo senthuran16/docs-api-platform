@@ -1,6 +1,6 @@
 ---
 title: "Properties of User Stores"
-description: "Reference of the key configuration properties for primary user stores, including connection, username/role search, regex validation, group, and JDBC/LDAP-specific properties."
+description: "Reference the key configuration properties for primary user stores, including connection, search, validation, and JDBC/LDAP settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md
 tags:

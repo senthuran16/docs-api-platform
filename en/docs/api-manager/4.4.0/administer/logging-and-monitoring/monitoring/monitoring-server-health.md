@@ -1,6 +1,6 @@
 ---
 title: "Monitor Server Health"
-description: "Deploy and configure the Carbon Health Check API in WSO2 API Manager to monitor data source connections and user store status, add custom health checkers, and interpret health check error responses."
+description: "Deploy the Carbon Health Check API in WSO2 API Manager to monitor data source and user store status and add custom health checkers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/logging-and-monitoring/monitoring/monitoring-server-health/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/logging-and-monitoring/monitoring/monitoring-server-health.md
 tags:

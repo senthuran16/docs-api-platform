@@ -1,6 +1,6 @@
 ---
 title: "Common Runtime and Configuration Artifacts"
-description: "Reference list of the persistent runtime and configuration artifact directories used in a WSO2 API Manager deployment, including which ones can be shared across nodes."
+description: "Reference list of the persistent runtime and configuration artifact directories used in an API Manager deployment, and which can be shared."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/reference/common-runtime-and-configuration-artifacts/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/reference/common-runtime-and-configuration-artifacts.md
 tags:

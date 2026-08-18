@@ -1,6 +1,6 @@
 ---
 title: "Publish an API Through Multiple API Gateways"
-description: "Set up a Control Plane instance and separate production and sandbox Gateway node instances in WSO2 API Manager, then deploy and publish a single API across multiple Gateway environments from one Developer Portal."
+description: "Set up a Control Plane and separate production and sandbox Gateway instances to deploy and publish an API across multiple Gateways."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md
 tags:
@@ -115,7 +115,7 @@ As mentioned above, the **second and the third** instances will serve as the Gat
 
 Carry out the following instructions in the **second** and the **third** instances to configure the Gateway instances so that it can communicate with the Control Plane node:
 
-{!includes/install_setup/configuring_gateway_node.md!}
+--8<-- "api-manager/4.4.0/includes/install_setup/configuring_gateway_node.md"
 
 ## Step 3 - Start the instances
 

@@ -1,6 +1,6 @@
 ---
 title: "Create a WebSocket API"
-description: "Design a WebSocket API in the API Publisher Portal by defining its name, context, version, and WebSocket endpoint, and optionally publish it with a business plan."
+description: "Design a WebSocket API in the API Publisher by defining its name, context, version, and endpoint, then optionally publish it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-a-websocket-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-a-websocket-api.md
 tags:

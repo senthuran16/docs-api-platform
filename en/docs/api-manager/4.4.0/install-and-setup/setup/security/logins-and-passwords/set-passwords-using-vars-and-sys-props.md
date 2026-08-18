@@ -1,6 +1,6 @@
 ---
-title: "Set Passwords Using Environment Variables or System Properties"
-description: "Configure API Manager to resolve super admin, keystore, and truststore passwords from environment variables ($env{}) or system properties ($sys{}) in deployment.toml instead of hardcoding them."
+title: "Set passwords via env vars or system properties"
+description: "Configure API Manager to resolve super admin, keystore, and truststore passwords from environment variables or system properties."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/set-passwords-using-vars-and-sys-props/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/set-passwords-using-vars-and-sys-props.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Styling the API and Application Details Info Section"
-description: "Customize the look and feel of the API Details Info and Application Details Info sections of the Developer Portal by editing the infoBar attributes in defaultTheme.js/userTheme.json."
+description: "Customize the API and Application Details Info sections of the Developer Portal by editing infoBar attributes in defaultTheme.js or userTheme.json."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section.md
 tags:

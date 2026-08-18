@@ -1,6 +1,6 @@
 ---
 title: "API Endpoint Types"
-description: "Reference of the backend endpoint types supported by WSO2 API Manager, including HTTP/REST, HTTP/SOAP, service, failover group, load balance, dynamic, mock implementation, and AWS Lambda endpoints."
+description: "Reference of backend endpoint types: HTTP/REST, HTTP/SOAP, service, failover group, load balance, dynamic, mock, and AWS Lambda."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-types/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-types.md
 tags:

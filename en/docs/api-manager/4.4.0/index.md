@@ -1,16 +1,16 @@
 ---
-template: templates/no-navbars.html
 title: "WSO2 API Manager 4.4.0 Documentation"
-description: "Home page for WSO2 API Manager 4.4.0 documentation, with links to a quick start guide, key concepts, architecture, and tutorials covering API creation, access control, analytics, rate limiting, and streaming APIs."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/index/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/index.md
+description: "Home page for WSO2 API Manager 4.4.0 docs, linking to the quick start guide, key concepts, architecture, and tutorials."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0.md
 tags:
   - api-manager
   - getting-started
   - tutorials
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
+template: templates/no-navbars.html
 ---
 
 <style>

@@ -1,6 +1,6 @@
 ---
 title: "Secure APIs Using JWT (Self-Contained) Access Tokens"
-description: "Configure WSO2 API Manager to use self-contained, signed JWT OAuth2.0 access tokens as API credentials, generate and invoke APIs with JWTs, and validate JWTs issued by external OAuth providers."
+description: "Use self-contained, signed JWT OAuth2 access tokens as API credentials: generate, invoke APIs with, and validate external JWTs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/access-token-types/jwt-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/access-token-types/jwt-tokens.md
 tags:
@@ -313,7 +313,7 @@ When a client application invokes an API that is secured with audience validatio
 
 #### Setup audience validation
  
- 1.  [Sign in to the Publisher](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-api-publisher).
+ 1.  [Sign in to the Publisher](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-web-portals).
  `https://<server-host>:9443/publisher         `
  
  2.  When [creating](../../../../design/create-api/create-rest-api/create-a-rest-api.md) or updating an API, enable **Audience Validation** in the **Application Level Security** tab under **Develop -> API Configurations -> Runtime**. 

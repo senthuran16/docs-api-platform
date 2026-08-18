@@ -1,6 +1,6 @@
 ---
 title: "Add New Rate Limiting Policies"
-description: "Add advanced, application-level, and subscription-level rate limiting policies in the Admin Portal, including conditional groups, header/query param/JWT claim conditions, and quota settings."
+description: "Add advanced, application-level, and subscription-level rate limiting policies in the Admin Portal, including conditional groups."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/adding-new-throttling-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/adding-new-throttling-policies.md
 tags:
@@ -96,7 +96,7 @@ You can add advanced rate limiting policies to both APIs and resources.
     
     [![Add advanced policy page](../../assets/img/learn/new-header-condition-regex.png){:style="width:45%"}](../../assets/img/learn/new-header-condition-regex.png)
 
-    [![Add advanced policy page](../../assets/img/learn/new-jwt-condition-regex.png){:style="width:45%"}](../../assets/img/learn/anew-jwt-condition-regex.png)
+    [![Add advanced policy page](../../assets/img/learn/new-jwt-condition-regex.png){:style="width:45%"}](../../assets/img/learn/new-jwt-condition-regex.png)
 
     <div class="admonition info">
     <p class="admonition-title">Note</p>

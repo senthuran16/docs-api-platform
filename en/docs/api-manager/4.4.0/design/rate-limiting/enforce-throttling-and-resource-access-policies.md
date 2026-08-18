@@ -1,6 +1,6 @@
 ---
 title: "Enforce Rate Limiting and Resource Access Policies"
-description: "Tutorial that subscribes the PizzaShack API on the Bronze rate limiting tier, generates an access token, invokes the API from the Try Out console, and shows the rate limiting error returned once the quota is exceeded."
+description: "Subscribe the PizzaShack API to the Bronze tier, generate a token, invoke it from Try Out, and see the rate limiting error."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/enforce-throttling-and-resource-access-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/enforce-throttling-and-resource-access-policies.md
 tags:

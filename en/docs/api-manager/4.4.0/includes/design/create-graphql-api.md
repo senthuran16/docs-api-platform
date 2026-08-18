@@ -1,3 +1,17 @@
+---
+title: "Start the GraphQL sample backend"
+description: "Clone and start the WSO2 API Manager GraphQL sample backend server used in the GraphQL tutorial."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/create-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/create-graphql-api.md
+tags:
+  - api-manager
+  - includes
+  - design
+  - create-graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
 
 ### Step 1 - Start the GraphQL backend server
 
@@ -155,7 +169,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
                    <div class="admonition note">
                    <p class="admonition-title">Note</p>
                    <p> 
-                   <ul><li>The role that you enter <b>should be a valid role that already exists in WSO2 API Manager</b>. Make sure to assign the role to the user. </li><li>For more information, see <a href="../../../administer/managing-users-and-roles/managing-users/">Adding Users</a> and <a href="../../../administer/managing-users-and-roles/managing-user-roles/">Adding User Roles</a>.</li></ul>
+                   <ul><li>The role that you enter <b>should be a valid role that already exists in WSO2 API Manager</b>. Make sure to assign the role to the user. </li><li>For more information, see <a href="/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-users/">Adding Users</a> and <a href="/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-roles/">Adding User Roles</a>.</li></ul>
                    </p>
                    </div>
                   

@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Deployment Pattern 0: All-in-One Setup"
-description: "Deploy WSO2 API Manager on Kubernetes as a single all-in-one node using Helm charts, suited for low-traffic environments without high availability, covering ingress, keystore mounting, secret encryption, image/database configuration, and accessing the management consoles."
+description: "Deploy API Manager on Kubernetes as a single all-in-one node using Helm charts, for low-traffic environments without high availability."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/kubernetes-deployment/am-pattern-0-all-in-one/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/kubernetes-deployment/am-pattern-0-all-in-one.md
 tags:
@@ -19,14 +19,14 @@ This deployment consists of a single API-M node with a single API-M runtime. You
 <a href="../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/single-node-apim-deployment.png" width="70%" alt="single-node api-m deployment"></a>
 
 !!! info
-    For advanced details on the deployment pattern, please refer to the official [documentation](kubernetes-deployment-overview.md).
+    For advanced details on the deployment pattern, please refer to the official [documentation](kubernetes-overview.md).
 
 ## Contents
 
-- [API-M Deployment with All-in-One Setup](#pattern-0-api-m-deployment-with-all-in-one-setup)
+- [API-M Deployment with All-in-One Setup](#api-m-deployment-with-all-in-one-setup)
   - [Contents](#contents)
   - [Prerequisites](#prerequisites)
-  - [Step 1 - Set Up Basic Configurations](#step-1---set-up-basic-configurations)
+  - [Step 1 - Set Up Basic Configurations](#step-1-set-up-basic-configurations)
   - [Minimal Configuration](#minimal-configuration)
   - [Configuration](#configuration)
     - [1. General Configuration of Helm Charts](#1-general-configuration-of-helm-charts)
@@ -99,6 +99,7 @@ The helm charts for the API Manager deployment are available in the [WSO2 Helm C
     <RELEASE_NAME>-<CHART_NAME>-<RESOURCE_NAME>
     ```
 
+<a name="11-add-ingress-controller"></a>
 #### 1.1 Add Ingress Controller
 
 The recommendation is to use [**NGINX Ingress Controller**](https://kubernetes.github.io/ingress-nginx/deploy/) suitable for your cloud environment or local deployment. Some sample annotations that could be used with the ingress resources are as follows.
@@ -127,6 +128,7 @@ The recommendation is to use [**NGINX Ingress Controller**](https://kubernetes.g
     kubectl create secret tls my-tls-secret --key <private key filename> --cert <certificate filename>
     ```
 
+<a name="12-mount-keystore-and-truststore"></a>
 #### 1.2 Mount Keystore and Truststore
 
 - If you are not including the keystore and truststore into the docker image, you can mount them using a Kubernetes secret. Following steps shows how to mount the keystore and truststore using a Kubernetes secret.
@@ -143,13 +145,14 @@ In addition to the primary, internal keystores and truststore files, you can als
 > For advanced details with regards to managing custom Java keystores and truststores in a container based WSO2 product deployment
   please refer to the [official WSO2 container guide](https://github.com/wso2/container-guide/blob/master/deploy/Managing_Keystores_And_Truststores.md).
 
+<a name="13-encrypting-secrets"></a>
 #### 1.3 Encrypting Secrets
 
 - If you need to use cipher tool to encrypt the passwords in the secret, first you need to encrypt the passwords using the cipher tool. The cipher tool can be found in the bin directory of the product pack. The following command can be used to encrypt the password.
   ```
   sh cipher-tool.sh -Dconfigure
   ```
-- Also the apictl can be used to encrypt password as well. Reference can be found in [following](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/api-controller/encrypting-secrets-with-ctl/).
+- Also the apictl can be used to encrypt password as well. Reference can be found in [following](../api-controller/encrypting-secrets-with-ctl.md).
 - Then the encrypted values should be filled in the relevant fields of values.yaml.
 - Since internal keystore password is required to resolve the encrypted value in runtime, we need to store the value in the cloud provider's secret manager. You can use the cloud provider's secret store to store the password of the internal keystore. The following section can be used to add the cloud provider's credentials to fetch the internal keystore password. Configuration for aws can be at as below. 
   ```yaml
@@ -163,6 +166,7 @@ In addition to the primary, internal keystores and truststore files, you can als
 
 
 
+<a name="14-configure-docker-image-and-databases"></a>
 #### 1.4 Configure Docker Image and Databases
 
   - Add the following configurations to reflect the docker image created previously in the helm chart.
@@ -205,6 +209,7 @@ In addition to the primary, internal keystores and truststore files, you can als
       adminPassword: ""
     ```
   
+<a name="15-configure-ssl-in-service-exposure"></a>
 #### 1.5 Configure SSL in Service Exposure
 
 !!! info "SSL Configuration Best Practices"
@@ -217,9 +222,10 @@ In addition to the primary, internal keystores and truststore files, you can als
 
 This section covers the specific configurations relevant to the All-in-One deployment pattern.
 
+<a name="21-configure-multiple-gateways"></a>
 #### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md)
 ```yaml
 gateway:
     # -- APIM Gateway environments
@@ -251,9 +257,10 @@ gateway:
       websubHostname: "websub.wso2.com"
 ```
 
+<a name="22-configure-user-store-properties"></a>
 #### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md):
 
 ```yaml
     userStore:
@@ -267,8 +274,9 @@ You can configure user store properties as described in this [documentation](htt
 !!! warning "Configuration Note"
     If you do not want to configure any of these properties, you must remove the `properties` block from the YAML file to prevent deployment issues.
 
-For a complete list of available user store properties and their descriptions, refer to the [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/).
+For a complete list of available user store properties and their descriptions, refer to the [documentation](../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md).
 
+<a name="24-configure-jwks-url"></a>
 #### 2.4 Configure JWKS URL
 By default, for the super tenant, the Resident Key Manager's JWKS URL is set to `https://<HOSTNAME>:9443/oauth2/jwks`. If you are using a virtual host like `am.wso2.com` that is not globally routable, this URL will be incorrect. You can configure the correct JWKS URL for the super tenant using the Helm chart as shown below:
 
@@ -280,6 +288,7 @@ wso2:
         oauth2JWKSUrl: "https://localhost:9443/oauth2/jwks"
 ```
 
+<a name="25-deploy-all-in-one"></a>
 #### 2.5 Deploy All-in-One
 
 After configuring all the necessary parameters, you can deploy the All-in-One pattern using Helm:

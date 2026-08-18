@@ -1,6 +1,6 @@
 ---
 title: "Integrating with the Solace Event Broker"
-description: "Tutorial on integrating the Solace event broker with WSO2 API Manager: configuring the Solace gateway environment, importing an AsyncAPI definition, deploying, subscribing to, and invoking a Solace API."
+description: "Integrate the Solace event broker with WSO2 API Manager: configure the gateway environment and invoke a Solace API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/integrating-with-solace/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/integrating-with-solace.md
 tags:

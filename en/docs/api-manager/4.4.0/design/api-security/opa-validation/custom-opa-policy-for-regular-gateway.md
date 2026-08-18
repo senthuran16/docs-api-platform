@@ -1,6 +1,6 @@
 ---
 title: "Create a Custom OPA Policy for the Regular Gateway"
-description: "Implement a custom OPA Request Generator in Java, package it as a JAR, and register it in the OPA policy definition to control the request payload sent to the OPA server on the regular gateway."
+description: "Implement a custom OPA Request Generator in Java and register it to control the payload sent to the OPA server on the regular gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/opa-validation/custom-opa-policy-for-regular-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/opa-validation/custom-opa-policy-for-regular-gateway.md
 tags:
@@ -11,7 +11,6 @@ author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
 content_type: "how-to"
 ---
-
 
 # Custom OPA Policy for Regular gateway
 

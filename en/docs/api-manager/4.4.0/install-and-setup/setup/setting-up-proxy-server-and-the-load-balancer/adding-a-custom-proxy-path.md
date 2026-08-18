@@ -1,6 +1,6 @@
 ---
 title: "Access API Manager Through a Custom Proxy Path"
-description: "Configure an Nginx reverse proxy with a custom proxy context path in front of API Manager, and update deployment.toml and the web app settings.json files to match."
+description: "Configure an Nginx reverse proxy with a custom proxy context path in front of API Manager, and update deployment.toml and web app settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path.md
 tags:

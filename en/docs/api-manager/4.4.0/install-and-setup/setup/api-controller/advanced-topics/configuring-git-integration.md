@@ -1,6 +1,6 @@
 ---
 title: "Configuring Git Integration for API Controller"
-description: "Configure WSO2 API Controller (apictl) Git integration: enable project deletion detection during vcs deploy and externalize the vcs_config.yaml state file for container-based build systems."
+description: "Configure apictl Git integration: enable project deletion detection during vcs deploy and externalize the vcs_config.yaml state file for CI builds."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/configuring-git-integration/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/configuring-git-integration.md
 tags:

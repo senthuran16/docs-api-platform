@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish a WebSocket API"
-description: "Design, publish, and invoke a WebSocket Streaming API in WSO2 API Manager by building a command line chat application with rooms and notifications topics, tested using the wscat client."
+description: "Build a command-line chat application with rooms and notifications topics as a WebSocket Streaming API, tested with wscat."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/streaming-api/create-and-publish-websocket-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/streaming-api/create-and-publish-websocket-api.md
 tags:
@@ -25,7 +25,7 @@ This will demonstrate a simple command line based chat room which has two channe
 
 ### Step 1 - Design a WebSocket API
 
-1.  {!includes/sign-in-publisher.md!}
+1.  --8<-- "api-manager/4.4.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and click **WebSocket API**.
 
@@ -158,7 +158,7 @@ Now, you have created and configured the WebSocket API successfully.
 
 ### Step 4 - Invoke the WebSocket API
 
-1. {!includes/sign-in-devportal.md!}
+1. --8<-- "api-manager/4.4.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSocket API. 
 

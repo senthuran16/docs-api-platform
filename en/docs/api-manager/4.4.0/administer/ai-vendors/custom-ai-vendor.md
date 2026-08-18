@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom AI Vendor"
-description: "Add and configure a custom AI vendor in the WSO2 API Manager admin portal: provide vendor details, map AI model and token-usage fields from the payload, header, or query parameter, upload its OpenAPI definition, and set the connector type."
+description: "Add a custom AI vendor in the WSO2 API Manager admin portal by mapping model and token-usage fields and uploading its OpenAPI definition."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/ai-vendors/custom-ai-vendor/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/ai-vendors/custom-ai-vendor.md
 tags:
@@ -63,7 +63,7 @@ This step involves configuring the extraction of key information from request/ r
 [![Add AI Vendor General Details](../../assets/img/administer/custom-ai-vendor/custom-ai-vendor-general-details-llm-configurations.png)](../../assets/img/administer/custom-ai-vendor/custom-ai-vendor-general-details-llm-configurations.png)
 
 1. If the data is in the request payload, specify the appropriate **JSON path** to extract the values.
-[![AI Vendor General Details - Payload](../../assets/img/administer/custom-ai-vendor/custom-ai-vendor-general-details-llm-configurations-payload.png)](../../assets/img/administer/custom-ai-vendor/ccustom-ai-vendor-general-details-llm-configurations-payload.png)
+[![AI Vendor General Details - Payload](../../assets/img/administer/custom-ai-vendor/custom-ai-vendor-general-details-llm-configurations-payload.png)](../../assets/img/administer/custom-ai-vendor/custom-ai-vendor-general-details-llm-configurations-payload.png)
 
 !!! example "Mistral AI Response Payload"
     Below outlines the structure of a sample Mistral AI response payload and provides details on how specific fields can be extracted using JSON paths.

@@ -1,6 +1,6 @@
 ---
 title: "Configure Endpoint Timeouts"
-description: "Configure suspension, timeout, and connection timeout settings for production and sandbox endpoints in the API Publisher Portal's Advanced Endpoint Configurations."
+description: "Configure suspension, timeout, and connection timeout settings for production and sandbox endpoints in the Publisher Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/resiliency/endpoint-timeouts/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/resiliency/endpoint-timeouts.md
 tags:
@@ -116,4 +116,4 @@ The following are Advanced Endpoint Configurations that you can configure for bo
     </tbody>
 </table>
 
-For more information on endpoints and how to add, edit, or delete them, see [Endpoint Properties](../../../reference/synapse-properties/endpoint-properties.md).
+For more information on endpoints and how to add, edit, or delete them, see [Endpoint Properties](https://mi.docs.wso2.com/en/latest/reference/synapse-properties/endpoint-properties/) in the WSO2 Micro Integrator documentation.

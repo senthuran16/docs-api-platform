@@ -1,6 +1,6 @@
 ---
-title: "Configure Multi-DC Pattern 2: Centralized Control Plane with Regional Data Planes"
-description: "Configure a multi-data-center deployment using Pattern 2, with a centralized control plane in the main region and Gateway and Traffic Manager nodes in each sub-region connecting back to it."
+title: "Configure multi-DC pattern 2: centralized control plane"
+description: "Configure a multi-data-center deployment using Pattern 2, with a centralized control plane and Gateway and Traffic Manager nodes per sub-region."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2.md
 tags:
@@ -20,7 +20,7 @@ content_type: "how-to"
 
 The main region will be similar to the setup in a particular region as Pattern 1. Hence, the configuration will be similar except for the DB replication and event hub communication.
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md!}
+--8<-- "api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md"
 
 Since the control plane only resides in the main region, the gateway nodes and the traffic manager nodes in the sub regions should communicate with the main region via the control plane (event hub). Therefore, the following should be exposed to external usage.
 

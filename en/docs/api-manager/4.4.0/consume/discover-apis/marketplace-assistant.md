@@ -1,6 +1,6 @@
 ---
 title: "Get Started with the Marketplace Assistant"
-description: "Register for the AI Subscription Portal, configure the on-premise token in deployment.toml, and sync your APIs to start using the AI-powered Marketplace Assistant in the developer portal."
+description: "Register for the AI Subscription Portal and sync your APIs to start using the AI-powered Marketplace Assistant in the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/discover-apis/marketplace-assistant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/discover-apis/marketplace-assistant.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Configuring an Active-Active Deployment"
-description: "Manually configure WSO2 API Manager with two all-in-one active nodes sharing SSL certificates, databases, a synchronized file system, load balancer, gateway URLs, and rate limiting for an active-active deployment."
+description: "Manually configure API Manager with two all-in-one active nodes sharing SSL certificates, databases, a load balancer, and rate limiting."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md
 tags:
@@ -59,7 +59,7 @@ in the demiliterized zone (DMZ).
 
 The `WSO2AM_DB` and `WSO2SHARED_DB` databases need to be shared between the two API-M nodes. It is recommended to use an
 industry-standard RDBMS databases for this purpose. For more 
-information on default databases and changing them into RDBMS databases, see [Working with Databases](../../../install-and-setup/setting-up-databases/overview.md).
+information on default databases and changing them into RDBMS databases, see [Working with Databases](../setting-up-databases/overview.md).
 
 ??? tip
     If you have configured the apim and shared databases correctly, the `deployment.toml` in `<API-M_HOME>/repository/conf` 
@@ -209,7 +209,7 @@ In this case, let's use `gw.am.wso2.com` as the hostname.
 
     2. Save your changes.
 
-{!includes/design/redis-counter-note.md!}
+--8<-- "api-manager/4.4.0/includes/design/redis-counter-note.md"
 
 ## Step 8 - Optionally, enable distributed cache invalidation
 
@@ -234,11 +234,11 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../../../install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md).
 
 ## Step 11 - Start the WSO2 API-M Servers
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 === "Linux/Mac OS"
     ```bash

@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Deployment Pattern 1: All-in-One HA Setup"
-description: "Deploy a highly available WSO2 API Manager cluster on Kubernetes using Helm charts with multiple all-in-one nodes and an external database, covering custom Docker image builds, database setup, ingress, keystore mounting, secret encryption, and accessing the management consoles."
+description: "Deploy a highly available API Manager cluster on Kubernetes using Helm charts with multiple all-in-one nodes and an external database."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/kubernetes-deployment/am-pattern-1-all-in-one-ha/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/kubernetes-deployment/am-pattern-1-all-in-one-ha.md
 tags:
@@ -19,16 +19,16 @@ This deployment consists of a highly available API-M cluster with multiple nodes
 <a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" width="70%" alt="active-active apim deployment"></a>
 
 !!! info
-    For advanced details on this deployment pattern, please refer to the official [documentation](kubernetes-deployment-overview.md).
+    For advanced details on this deployment pattern, please refer to the official [documentation](kubernetes-overview.md).
 
 ## Contents
 
 - [API-M Deployment with All-in-One HA Setup](#pattern-1-api-m-deployment-with-all-in-one-ha-setup)
   - [Contents](#contents)
   - [Prerequisites](#prerequisites)
-    - [Step 1 - Set Up Basic Configurations](#step-1---set-up-basic-configurations)
-    - [Step 2 - Build Docker Images](#step-2---build-docker-images)
-    - [Step 3 - Configure Database](#step-3---configure-database)
+    - [Step 1 - Set Up Basic Configurations](#step-1-set-up-basic-configurations)
+    - [Step 2 - Build Docker Images](#step-2-build-docker-images)
+    - [Step 3 - Configure Database](#step-3-configure-database)
   - [Minimal Configuration](#minimal-configuration)
   - [Configuration](#configuration)
     - [1. General Configuration of Helm Charts](#1-general-configuration-of-helm-charts)
@@ -133,7 +133,7 @@ If you want to quickly try out WSO2 API Manager on Kubernetes with minimal confi
     - Default keystore and truststore
     - Basic settings for a highly available deployment
 
-    **Note:** This deployment requires separate databases. Follow the steps in [Step 2 - Build Docker Images](#step-2---build-docker-images) to build the Docker images with JDBC drivers, and [Step 3 - Configure Database](#step-3---configure-database) to set up the database.
+    **Note:** This deployment requires separate databases. Follow the steps in [Step 2 - Build Docker Images](#step-2-build-docker-images) to build the Docker images with JDBC drivers, and [Step 3 - Configure Database](#step-3-configure-database) to set up the database.
 
 Deploy API Manager with minimal configuration using the following commands:
 
@@ -160,6 +160,7 @@ The Helm charts for the API Manager deployment are available in the [WSO2 Helm C
 - The Helm naming convention for APIM follows a simple pattern. The following format is used for naming the resources:
 ```<RELEASE_NAME>-<CHART_NAME>-<RESOURCE_NAME>```
 
+<a name="11-add-ingress-controller"></a>
 #### 1.1 Add Ingress Controller
 
 It is recommended to use the [**NGINX Ingress Controller**](https://kubernetes.github.io/ingress-nginx/deploy/) suitable for your cloud environment or local deployment. Some sample annotations that could be used with the ingress resources are as follows:
@@ -188,6 +189,7 @@ It is recommended to use the [**NGINX Ingress Controller**](https://kubernetes.g
     kubectl create secret tls my-tls-secret --key <private key filename> --cert <certificate filename>
     ```
 
+<a name="12-mount-keystore-and-truststore"></a>
 #### 1.2 Mount Keystore and Truststore
 
 - If you are not including the keystore and truststore in the Docker image, you can mount them using a Kubernetes secret. The following steps show how to mount the keystore and truststore using a Kubernetes secret.
@@ -204,13 +206,14 @@ It is recommended to use the [**NGINX Ingress Controller**](https://kubernetes.g
 > For advanced details regarding managing custom Java keystores and truststores in a container-based WSO2 product deployment,
   please refer to the [official WSO2 container guide](https://github.com/wso2/container-guide/blob/master/deploy/Managing_Keystores_And_Truststores.md).
 
+<a name="13-encrypting-secrets"></a>
 #### 1.3 Encrypting Secrets
 
 - If you need to use the cipher tool to encrypt the passwords in the secret, first encrypt the passwords using the cipher tool. The cipher tool can be found in the `bin` directory of the product pack. The following command can be used to encrypt the password:
   ```
   sh cipher-tool.sh -Dconfigure
   ```
-- The `apictl` can also be used to encrypt passwords. Reference can be found in the [documentation](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/api-controller/encrypting-secrets-with-ctl/).
+- The `apictl` can also be used to encrypt passwords. Reference can be found in the [documentation](../api-controller/encrypting-secrets-with-ctl.md).
 - Then, the encrypted values should be filled in the relevant fields of `values.yaml`.
 - Since the internal keystore password is required to resolve the encrypted value at runtime, you need to store the value in the cloud provider's secret manager. You can use the cloud provider's secret store to store the password of the internal keystore. The following section can be used to add the cloud provider's credentials to fetch the internal keystore password. Configuration for AWS can be as below:
   ```yaml
@@ -222,6 +225,7 @@ It is recommended to use the [**NGINX Ingress Controller**](https://kubernetes.g
   ```
   > Please note that currently AWS, Azure, and GCP Secrets Managers are only supported for this.
 
+<a name="14-configure-docker-image-and-databases"></a>
 #### 1.4 Configure Docker Image and Databases
 
   - Add the following configurations to reflect the Docker image created previously in the Helm chart:
@@ -267,6 +271,7 @@ It is recommended to use the [**NGINX Ingress Controller**](https://kubernetes.g
       adminPassword: ""
     ```
   
+<a name="15-configure-ssl-in-service-exposure"></a>
 #### 1.5 Configure SSL in Service Exposure
 
 For WSO2 recommended best practices in configuring SSL when exposing the internal product services outside of the Kubernetes cluster,
@@ -274,9 +279,10 @@ please refer to the [official WSO2 container guide](https://github.com/wso2/cont
 
 ### 2. All-in-One Configurations
 
+<a name="21-configure-multiple-gateways"></a>
 #### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md)
 ```yaml
     gateway:
         # -- APIM Gateway environments
@@ -308,9 +314,10 @@ If you need to distribute the Gateway load, you can configure multiple API Gatew
           websubHostname: "websub.wso2.com"
 ```
 
+<a name="22-configure-user-store-properties"></a>
 #### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md):
 
 ```yaml
     userStore:
@@ -324,6 +331,7 @@ You can configure user store properties as described in this [documentation](htt
 !!! warning Important
     If you do not want to configure any of the above properties, you must remove the `properties` block from the YAML file.
 
+<a name="24-configure-jwks-url"></a>
 #### 2.4 Configure JWKS URL
 
 By default, for the super tenant, the Resident Key Manager's JWKS URL is set to `https://<HOSTNAME>:9443/oauth2/jwks`. If you are using a virtual host like `am.wso2.com` that is not globally routable, this URL will be incorrect. You can configure the correct JWKS URL for the super tenant using the Helm chart as shown below:
@@ -336,6 +344,7 @@ wso2:
         oauth2JWKSUrl: "https://localhost:9443/oauth2/jwks"
 ```
 
+<a name="25-deploy-all-in-one"></a>
 #### 2.5 Deploy All-in-One
 
 Now deploy the Helm chart using the following command after creating a namespace for the deployment. Replace `<release-name>` and `<namespace>` with appropriate values. Replace `<helm-chart-path>` with the path to the Helm deployment.

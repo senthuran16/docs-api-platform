@@ -1,3 +1,18 @@
+---
+title: "Enable TLS for Gateway to Traffic Manager JMS"
+description: "Enable TLS/SSL for JMS communications between the Gateway and Traffic Manager, and secure the broker connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-gw-tm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-gw-tm.md
+tags:
+  - api-manager
+  - includes
+  - deploy
+  - enable-jms-ssl-for-gw-tm
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
+
 **Enabling TLS/SSL for Gateway to Traffic Manager JMS communications**
 
         If required, you can enable TLS/SSL for the JMS communications happening between the Gateway and Traffic Manager nodes. 

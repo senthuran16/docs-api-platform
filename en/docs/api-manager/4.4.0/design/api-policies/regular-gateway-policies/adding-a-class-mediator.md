@@ -1,6 +1,6 @@
 ---
 title: "Adding a Class Mediator"
-description: "Write a custom Java class mediator by extending the Synapse AbstractMediator class, package it as a policy, and attach it to an API's request or response flow."
+description: "Write a custom Java class mediator by extending the Synapse AbstractMediator class, package it as a policy, and attach it to an API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/regular-gateway-policies/adding-a-class-mediator/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/regular-gateway-policies/adding-a-class-mediator.md
 tags:

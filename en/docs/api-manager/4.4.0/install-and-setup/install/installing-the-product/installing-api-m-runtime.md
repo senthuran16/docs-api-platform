@@ -1,6 +1,6 @@
 ---
 title: "Installing the API Manager Runtime"
-description: "Download and extract the WSO2 API Manager runtime distribution, set the JAVA_HOME environment variable on Linux, Solaris, and Windows, and configure additional system properties."
+description: "Download and extract the WSO2 API Manager runtime distribution and set the JAVA_HOME environment variable on Linux, Solaris, and Windows."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/installing-the-product/installing-api-m-runtime/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/installing-the-product/installing-api-m-runtime.md
 tags:

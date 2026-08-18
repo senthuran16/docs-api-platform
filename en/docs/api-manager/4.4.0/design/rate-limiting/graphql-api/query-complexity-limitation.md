@@ -1,6 +1,6 @@
 ---
 title: "GraphQL Query Complexity Limitation"
-description: "Configure GraphQL query complexity limitation in WSO2 API Manager: assign complexity values to schema fields, set a max complexity value in a subscription policy, and block overly complex queries at runtime."
+description: "Configure GraphQL query complexity limitation: assign field complexity values, set a max value, and block overly complex queries."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/graphql-api/query-complexity-limitation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/graphql-api/query-complexity-limitation.md
 tags:

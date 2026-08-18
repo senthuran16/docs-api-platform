@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish a Server-Sent Events (SSE) API"
-description: "Design, publish, and invoke a Server-Sent Events (SSE) streaming API in WSO2 API Manager, then test it against a sample backend that streams continuous memory-usage events."
+description: "Design, publish, and invoke a Server-Sent Events (SSE) streaming API against a backend that streams memory-usage events."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/streaming-api/create-and-publish-sse-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/streaming-api/create-and-publish-sse-api.md
 tags:
@@ -18,7 +18,7 @@ This tutorial will guide you to create a [SSE Streaming API](../../design/create
 
 ## Step 1 - Design a SSE API
 
-1.  {!includes/sign-in-publisher.md!}
+1.  --8<-- "api-manager/4.4.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and click **SSE API**.
 
@@ -103,7 +103,7 @@ Now, you have created and configured the SSE API successfully.
 
 ## Step 4 - Invoke the SSE API
 
-1. {!includes/sign-in-devportal.md!}
+1. --8<-- "api-manager/4.4.0/includes/sign-in-devportal.md"
 
 2. Click on the SSE API. 
 

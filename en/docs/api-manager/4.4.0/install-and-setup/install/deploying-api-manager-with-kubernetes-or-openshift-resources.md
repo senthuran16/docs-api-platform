@@ -1,6 +1,6 @@
 ---
 title: "Deploying API Manager on Kubernetes Using Helm Resources"
-description: "Use the wso2/helm-apim Git repository to deploy WSO2 API Manager on Kubernetes or OpenShift with Helm: clone the resources, configure the values.yaml, install the release, and access the Management Console through the NGINX Ingress Controller."
+description: "Deploy WSO2 API Manager on Kubernetes or OpenShift using the wso2/helm-apim Git repository: clone resources, configure values.yaml, and install the release."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/deploying-api-manager-with-kubernetes-or-openshift-resources/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/deploying-api-manager-with-kubernetes-or-openshift-resources.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Performance Test Results for GraphQL APIs"
-description: "Performance benchmark results for WSO2 API Manager serving GraphQL APIs, measuring throughput, response time, percentile latencies, and GC throughput across varying concurrent users and query operation counts using a Netty backend."
+description: "Performance benchmark results for API Manager serving GraphQL APIs, measuring throughput, latency, and GC throughput across concurrent user loads."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/performance-tests-results-graphql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/performance-tests-results-graphql.md
 tags:

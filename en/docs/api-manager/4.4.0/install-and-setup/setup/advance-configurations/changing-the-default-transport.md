@@ -1,6 +1,6 @@
 ---
 title: "Changing the Default Transport"
-description: "Configure the PassThrough HTTP/S transport for WSO2 API Manager, including transport receiver and sender parameters and connection throttling settings in deployment.toml."
+description: "Configure the PassThrough HTTP/S transport in WSO2 API Manager, including receiver and sender parameters and connection throttling in deployment.toml."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/advance-configurations/changing-the-default-transport/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/advance-configurations/changing-the-default-transport.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Integrate Moesif Analytics with WSO2 API Manager"
-description: "Set up a Moesif account and application, then configure the deployment.toml apim.analytics settings in WSO2 API Manager to publish apim_event_response and apim_event_faulty analytics events to a Moesif dashboard."
+description: "Set up a Moesif account, then configure WSO2 API Manager's analytics settings to publish response and fault events to a Moesif dashboard."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/moesif-analytics/moesif-integration-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/moesif-analytics/moesif-integration-guide.md
 tags:

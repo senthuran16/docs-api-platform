@@ -1,6 +1,6 @@
 ---
 title: "Monitoring with OpenTracing"
-description: "Enable distributed tracing for WSO2 API Manager using OpenTracing, including configuring Jaeger, Zipkin, and log tracers, and implementing a custom tracer such as Elastic APM."
+description: "Enable distributed tracing for WSO2 API Manager using OpenTracing, including Jaeger, Zipkin, and log tracers and a custom Elastic APM tracer."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/traces/monitoring-with-opentracing/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/traces/monitoring-with-opentracing.md
 tags:

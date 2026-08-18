@@ -1,6 +1,6 @@
 ---
 title: "Deploy an API"
-description: "Deploy an API revision to a selected API Gateway environment via the Publisher Portal so it can be invoked, and undeploy an API to remove it from a Gateway environment."
+description: "Deploy an API revision to a selected Gateway environment via the Publisher Portal so it can be invoked, or undeploy it to remove it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md
 tags:
@@ -23,4 +23,4 @@ content_type: "how-to"
 
 **Undeploying an API**  will remove the API from the API Gateway Environment.
 
-{!includes/design/deploy-revision.md!}
+--8<-- "api-manager/4.4.0/includes/design/deploy-revision.md"

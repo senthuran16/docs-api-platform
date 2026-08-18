@@ -1,6 +1,6 @@
 ---
 title: "Configure the Crypto Provider"
-description: "Switch WSO2 API Manager's cryptographic provider between the default Bouncy Castle and FIPS 140-2 compliant Bouncy Castle FIPS using the fips.sh/fips.bat script."
+description: "Switch WSO2 API Manager's crypto provider between the default Bouncy Castle and FIPS 140-2 compliant Bouncy Castle FIPS using the fips.sh/fips.bat script."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/advance-configurations/configuring-the-crypto-provider/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/advance-configurations/configuring-the-crypto-provider.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Configure Okta as an External IdP Using SAML"
-description: "Connect Okta as a third-party SAML2 Identity Provider to WSO2 API Manager, configure role and claim mappings, and enable Just-in-Time provisioning for Publisher and Developer Portal sign-in."
+description: "Connect Okta as a third-party SAML2 Identity Provider to API Manager, configuring role mappings and Just-in-Time provisioning."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml.md
 tags:

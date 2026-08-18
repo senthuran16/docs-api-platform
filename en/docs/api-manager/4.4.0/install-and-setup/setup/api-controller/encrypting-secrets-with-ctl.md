@@ -1,6 +1,6 @@
 ---
 title: "Encrypting Secrets with apictl"
-description: "Use WSO2 API Controller (apictl) to initialize a JKS key store and encrypt plain-text secrets for export as environment variables, system properties, Docker secrets, or Kubernetes secrets."
+description: "Use apictl to initialize a JKS key store and encrypt plain-text secrets for export as environment variables, system properties, or Kubernetes secrets."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/encrypting-secrets-with-ctl/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/encrypting-secrets-with-ctl.md
 tags:
@@ -14,7 +14,7 @@ content_type: "how-to"
 
 # Encrypting Secrets with apictl
 
-**WSO2 API Controller (apictl)** allows you to encrypt a plain-text secret. You can use this feature to export secrets as environment variables, system properties, Docker secrets, or Kubernetes secrets. For more information on using dynamic secrets refer [Dynamic secrets](../../../install-and-setup/setup/mi-setup/security/encrypting_plain_text.md#dynamic-secrets).
+**WSO2 API Controller (apictl)** allows you to encrypt a plain-text secret. You can use this feature to export secrets as environment variables, system properties, Docker secrets, or Kubernetes secrets. For more information on using dynamic secrets refer [Dynamic secrets](https://mi.docs.wso2.com/en/latest/install-and-setup/setup/security/encrypting-plain-text/) in the WSO2 Micro Integrator documentation.
 
 
 ## Initialize apictl with a key store

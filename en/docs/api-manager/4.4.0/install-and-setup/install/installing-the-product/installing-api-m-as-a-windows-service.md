@@ -17,7 +17,7 @@ content_type: "how-to"
 !!! note
     **Before you begin:**
 
-    -   See [our compatibility matrix](../../../install-and-setup/ProductCompatibility.md) to find out if this version of the product is fully tested on your OS.
+    -   See [our compatibility matrix](../../setup/reference/product-compatibility.md) to find out if this version of the product is fully tested on your OS.
 
 
 ### Prerequisites

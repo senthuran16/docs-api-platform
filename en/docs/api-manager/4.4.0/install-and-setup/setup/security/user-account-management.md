@@ -1,6 +1,6 @@
 ---
 title: "User Account Management"
-description: "Configure password recovery email, lock and unlock Developer Portal, Publisher, and Admin Portal user accounts, set password policies, and disable anonymous Developer Portal access in WSO2 API Manager."
+description: "Configure password recovery email, lock and unlock user accounts, set password policies, and disable anonymous Developer Portal access."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/user-account-management/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/user-account-management.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Scenario Tutorials Overview"
-description: "Overview and setup guide for the Union Station scenario tutorial series, a Docker Compose based sample environment for trying out API Manager, Micro Integrator, and Streaming Integrator across a multi-tenant railway ecosystem."
+description: "Setup guide for the Union Station scenario tutorials, a Docker Compose sample environment covering API Manager, MI, and SI."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - multi-tenancy
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Scenario Overview

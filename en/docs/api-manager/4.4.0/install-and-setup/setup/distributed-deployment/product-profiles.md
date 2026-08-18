@@ -1,6 +1,6 @@
 ---
 title: "Running the WSO2 API Manager Product Profiles"
-description: "Reference for the API-M product profiles (Gateway, Control Plane, Traffic Manager, Key Manager) used in a distributed deployment, including startup commands and the two methods for optimizing a profile before or while starting the server."
+description: "Reference for the API Manager product profiles—Gateway, Control Plane, Traffic Manager, Key Manager—used in a distributed deployment."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/product-profiles/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/product-profiles.md
 tags:

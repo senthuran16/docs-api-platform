@@ -1,6 +1,6 @@
 ---
 title: "Managing Users for Admin Portal"
-description: "Create a restricted user role and role-permission mapping in WSO2 API Manager so a user can sign in to the Admin Portal without being granted the full admin role."
+description: "Create a restricted role and role-permission mapping in WSO2 API Manager so a user can sign in to the Admin Portal without full admin access."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-users-for-admin-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-users-for-admin-portal.md
 tags:

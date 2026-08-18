@@ -1,6 +1,6 @@
 ---
 title: "Building a CI/CD Pipeline for APIs Using WSO2 API Controller"
-description: "Build an automated CI/CD pipeline for API deployment using WSO2 API Controller (apictl) with GitHub, JFrog Artifactory, and Jenkins to promote APIs across environments."
+description: "Build an automated CI/CD pipeline for API deployment using apictl with GitHub, JFrog Artifactory, and Jenkins to promote APIs across environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline.md
 tags:

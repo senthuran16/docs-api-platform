@@ -1,6 +1,6 @@
 ---
-title: "Distributed Deployment with Key Manager Separated from the Control Plane"
-description: "Configure a distributed WSO2 API Manager deployment where the Key Manager component runs on its own node, separate from the Control Plane (Traffic Manager, Publisher, and Developer Portal) and Gateway Worker nodes."
+title: "Distributed deployment with the Key Manager separated"
+description: "Configure a distributed API Manager deployment with the Key Manager on its own node, separate from the Control Plane and Gateway nodes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated.md
 tags:
@@ -58,6 +58,6 @@ Given below are the API-M nodes you can have in a distributed deployment.
 
 <a href="../../../../assets/img/setup-and-install/deployment-km.png"><img src="../../../../assets/img/setup-and-install/deployment-km.png" width="100%"></a>
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation.md!}
+--8<-- "api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation.md"
 
 For more information on starting API-M profiles, see [API-M Profiles](../../../install-and-setup/setup/distributed-deployment/product-profiles.md).

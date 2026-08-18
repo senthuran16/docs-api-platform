@@ -1,6 +1,6 @@
 ---
 title: "Monitoring Audit Logs in WSO2 API Manager"
-description: "Configure and review audit logs in WSO2 API Manager, including the default log4j2 appender settings and the set of Publisher and Developer Portal actions, such as sign-in, API and application lifecycle changes, and subscriptions, that get recorded."
+description: "Review audit logs in WSO2 API Manager, including default log4j2 appender settings and the Publisher and Developer Portal actions logged."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/monitoring-audit-logs/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/monitoring-audit-logs.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Configure Auth0 as a Key Manager"
-description: "Integrate WSO2 API Manager with Auth0 as a third-party key manager, covering Auth0 application setup, key manager connector configuration, and generating OAuth keys through the Developer Portal."
+description: "Integrate WSO2 API Manager with Auth0 as a third-party key manager, covering Auth0 setup, connector configuration, and OAuth key generation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-auth0-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-auth0-connector.md
 tags:

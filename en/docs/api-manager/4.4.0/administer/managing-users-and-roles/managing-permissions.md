@@ -1,6 +1,6 @@
 ---
 title: "Manage Role-Based Permissions"
-description: "Understand super tenant and tenant-level role-based permissions in WSO2 API Manager, and configure API-M specific scope assignments and role-scope mappings for default and custom roles."
+description: "Understand super tenant and tenant-level role-based permissions in WSO2 API Manager and configure scope-to-role mappings for roles."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-permissions/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-permissions.md
 tags:
@@ -71,7 +71,7 @@ You will be able to log in to the management console of the product with the **a
 ## Description of role-based permissions
 
 !!! note
-    Note that the descriptions given in this document only explain how permissions control access to operations available on the [Management Console](``https://localhost:9443/carbon``) (`https://<hostname>:9443/carbon`). In addition, not that all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
+    Note that the descriptions given in this document only explain how permissions control access to operations available on the [Management Console](https://localhost:9443/carbon) (`https://<hostname>:9443/carbon`). In addition, not that all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
 
 ### Log-in permissions
 
@@ -135,14 +135,14 @@ The following table describes the permissions at **Tenant** level. These are als
 <td>Admin</td>
 <td>When the <strong>Admin</strong> permission node is selected, features including the following menus are enabled in the management console:
 <ul><li>
-<strong>Identity/User Stores:</strong> This permission allows users to add new user stores and manage them with the management console. Note that only secondary user stores can be added using this option. See the topic on <a href="../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a> for more details.<br />
+<strong>Identity/User Stores:</strong> This permission allows users to add new user stores and manage them with the management console. Note that only secondary user stores can be added using this option. See the topic on <a href="../managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a> for more details.<br />
 </li><li><strong>Identity/Identity Providers:</strong> For more information, see <a href="https://is.docs.wso2.com/en/5.10.0/learn/adding-and-configuring-an-identity-provider"> working with identity providers</a>.
 </li><li>
 <p>Additionally, all permissions listed under <strong>Admin</strong> in the permissions navigator are selected automatically.</p></li></ul></td>
 </tr>
 <tr class="even">
 <td>Admin/Manage/Identity/User Store Management</td>
-<td>This permission enables the <strong>Identity/User Stores</strong> option in the <strong>Main</strong> menu. This option allows users to add new user stores. For more details on User Store Management, see <a href="../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a></td>
+<td>This permission enables the <strong>Identity/User Stores</strong> option in the <strong>Main</strong> menu. This option allows users to add new user stores. For more details on User Store Management, see <a href="../managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a></td>
 </tr>
 <tr class="odd">
 <td>Admin/Manage/Identity/Claim</td>

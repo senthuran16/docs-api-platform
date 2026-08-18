@@ -1,6 +1,6 @@
 ---
 title: "Password Grant"
-description: "Generate OAuth2 access tokens using the resource owner password credentials grant: encode client credentials, invoke the Token API, and optionally disable the password grant type."
+description: "Generate OAuth2 access tokens with the resource owner password grant: encode credentials, invoke the Token API, or disable the grant."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/grant-types/password-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/grant-types/password-grant.md
 tags:
@@ -28,9 +28,9 @@ The diagram below illustrates the resource owner password credentials grant flow
 
 #### Prerequisites
 
--   A valid user account in the API Developer Portal. You can self sign up if it is [enabled by an admin](../../../../consume/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md).
+-   A valid user account in the API Developer Portal. You can self sign up if it is [enabled by an admin](../../../../reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md).
 -   A valid consumer key and consumer secret pair. Initially, these keys must be generated through the API Developer Portal by clicking **GENERATE KEYS** on the **Production Keys** tab of the application.
--   A running API Gateway instance (typically an API Manager instance should be running). For instructions on API Gateway, see [Components](../../../../getting-started/basic-architecture.md#api-gateway).
+-   A running API Gateway instance (typically an API Manager instance should be running). For instructions on API Gateway, see [Components](../../../../get-started/apim-architecture.md#api-gateway).
 
 -   If the Key Manager is on a different server than the API Gateway, change the server URL (host and ports) of the Key Manager accordingly by adding following configuration in `<APIM_HOME>/repository/conf/deployment.toml` file.
 

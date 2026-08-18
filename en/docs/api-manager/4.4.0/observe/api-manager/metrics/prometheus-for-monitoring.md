@@ -1,6 +1,6 @@
 ---
 title: "Monitor WSO2 API Manager Metrics with Prometheus"
-description: "Configure the Prometheus JMX exporter Java agent and a Prometheus server to scrape and visualize WSO2 API Manager's JMX-exposed statistics as Prometheus metrics."
+description: "Configure the Prometheus JMX exporter agent and a Prometheus server to scrape WSO2 API Manager's JMX-exposed statistics as metrics."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/metrics/prometheus-for-monitoring/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/metrics/prometheus-for-monitoring.md
 tags:

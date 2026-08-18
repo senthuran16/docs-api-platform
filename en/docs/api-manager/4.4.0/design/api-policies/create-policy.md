@@ -1,6 +1,6 @@
 ---
 title: "Create an API Policy"
-description: "Create common (global) and API-specific policies in the WSO2 API Publisher, including uploading the Synapse policy template file and defining policy attributes."
+description: "Create common (global) and API-specific policies in the API Publisher, including uploading a Synapse policy template and setting attributes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/create-policy/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/create-policy.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Change the Default Token Expiration Time"
-description: "Change the default expiration time of application access tokens, user access tokens, and refresh tokens at the global level via deployment.toml, or override the validity period per application in the Developer Portal."
+description: "Change the default expiration time of application, user, and refresh tokens globally via deployment.toml, or override it per application."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time.md
 tags:

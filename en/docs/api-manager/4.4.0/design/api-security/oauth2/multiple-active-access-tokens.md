@@ -1,6 +1,6 @@
 ---
 title: "Configure Multiple Active Access Tokens"
-description: "Configure WSO2 API Manager to allow multiple active JWT access tokens for the same consumer key, user, and scope combination by overriding the default token renewal and revocation behavior."
+description: "Allow multiple active JWT access tokens for the same consumer key, user, and scope by overriding default renewal/revocation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/multiple-active-access-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/multiple-active-access-tokens.md
 tags:

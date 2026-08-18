@@ -1,6 +1,6 @@
 ---
 title: "Style the Developer Portal Logo and Header"
-description: "Customize the Developer Portal's logo and header appearance by editing the userTheme.json file: set the logo image, dimensions, background color, background image, and search bar styling."
+description: "Customize the Developer Portal logo and header in userTheme.json: set the logo image, dimensions, background, and search bar styling."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-the-logo-and-header/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-the-logo-and-header.md
 tags:

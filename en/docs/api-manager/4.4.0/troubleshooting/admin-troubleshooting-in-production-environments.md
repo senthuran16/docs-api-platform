@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot Admin Issues in Production Environments"
-description: "Diagnose production issues in WSO2 API Manager by analyzing Java thread dumps and stack traces, capturing system state with Carbondump, viewing process threads in Solaris, and checking Hazelcast cluster health."
+description: "Diagnose production issues in WSO2 API Manager using Java thread dumps, Carbondump, Solaris process threads, and Hazelcast cluster checks."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/admin-troubleshooting-in-production-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/admin-troubleshooting-in-production-environments.md
 tags:

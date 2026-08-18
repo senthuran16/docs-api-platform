@@ -1,3 +1,18 @@
+---
+title: "Enable TLS for event hub JMS"
+description: "Enable TLS/SSL for the event hub's JMS communications and configure its secure broker connections."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-eventhub/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-eventhub.md
+tags:
+  - api-manager
+  - includes
+  - deploy
+  - enable-jms-ssl-for-eventhub
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
+
 **Enabling TLS/SSL for event hub JMS communications**
 
         If required, you can enable TLS/SSL for the JMS communications of event hub. Update your event hub configurations to include the following for this purpose.

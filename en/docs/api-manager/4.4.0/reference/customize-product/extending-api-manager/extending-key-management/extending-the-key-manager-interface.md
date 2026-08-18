@@ -1,6 +1,6 @@
 ---
 title: "Extending the Key Manager Interface"
-description: "Reference for the KeyManager interface methods in WSO2 API Manager, used to implement a custom Key Manager Connector for a third-party OAuth2 Authorization Server."
+description: "Reference for the KeyManager interface methods, used to implement a custom Key Manager Connector for a third-party OAuth2 Authorization Server."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-key-management/extending-the-key-manager-interface/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-key-management/extending-the-key-manager-interface.md
 tags:

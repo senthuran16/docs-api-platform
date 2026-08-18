@@ -1,6 +1,6 @@
 ---
 title: "Configure WSO2 IS as a Key Manager"
-description: "Configure WSO2 Identity Server (versions before 7.x) as a Key Manager for WSO2 API Manager, including the IS connector setup and the Key Manager configuration fields in the Admin Portal."
+description: "Configure WSO2 Identity Server versions before 7.x as a key manager for WSO2 API Manager using the IS connector and Admin Portal settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-wso2is-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-wso2is-connector.md
 tags:

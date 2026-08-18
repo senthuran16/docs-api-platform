@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Observability Overview"
-description: "Overview of the observability solutions offered by WSO2 API Manager across the API Manager, Integration, and Streaming servers, built on the pillars of logs, metrics, and tracing."
+description: "Learn about WSO2 API Manager's observability solutions across the API Manager, Integration, and Streaming servers: logs, metrics, tracing."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/observe-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/observe-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - monitoring
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Observability Overview

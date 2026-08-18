@@ -1,6 +1,6 @@
 ---
 title: "Kerberos OAuth2 Grant"
-description: "Exchange a Kerberos ticket for an OAuth2 token in WSO2 API Manager: understand the Kerberos OAuth2 grant flow and configure the grant using the Identity Server as Key Manager."
+description: "Exchange a Kerberos ticket for an OAuth2 token, and configure the grant using the Identity Server as Key Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/grant-types/kerberos-oauth2-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/grant-types/kerberos-oauth2-grant.md
 tags:

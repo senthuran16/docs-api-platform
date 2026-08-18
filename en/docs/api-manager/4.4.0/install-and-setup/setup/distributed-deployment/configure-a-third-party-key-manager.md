@@ -1,6 +1,6 @@
 ---
 title: "Configure a Third-Party Key Manager"
-description: "Understand the role of the Key Manager component in a distributed API Manager deployment and how to plug in a third-party OAuth authorization server in place of the default Key Manager."
+description: "Understand the Key Manager component's role in a distributed deployment and how to plug in a third-party OAuth authorization server in its place."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/configure-a-third-party-key-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/configure-a-third-party-key-manager.md
 tags:

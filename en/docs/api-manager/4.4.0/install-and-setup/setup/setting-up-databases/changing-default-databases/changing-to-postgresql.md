@@ -1,6 +1,6 @@
 ---
 title: "Changing to PostgreSQL"
-description: "Replace the default embedded H2 database with PostgreSQL in WSO2 API Manager: set up the database and users, install JDBC drivers, run the db scripts, and configure the shared, apim, and carbon datasources in deployment.toml."
+description: "Replace the default H2 database with PostgreSQL in API Manager: set up the database and users, install drivers, and configure datasources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql.md
 tags:
@@ -218,7 +218,7 @@ Follow the instructions below to change the type of the default datasource.
 1. Restart the server.
 
     !!! note
-        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
+        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
 
     !!! info
         **Changing WSO2CARBON_DB to PostgreSQL**

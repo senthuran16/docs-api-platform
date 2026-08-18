@@ -32,12 +32,7 @@ from the message. As with message builders, the message formatter is selected ba
 
 
 !!! info
-    Also see the following sections in the documentation. The integration runtime is used to implement the API Gateway through which API messages are transformed:
-
-    -   [Accessing content from JSON payloads](../../../integrate/examples/json_examples/json-examples.md#accessing-content-from-json-payloads)
-    -   [Logging JSON payloads](../../../integrate/examples/json_examples/json-examples.md#logging-json-payloads)
-    -   [Constructing and transforming JSON payloads](../../../integrate/examples/json_examples/json-examples.md#constructing-and-transforming-json-payloads)
-    -   [Troubleshooting, debugging, and logging](../../../integrate/examples/json_examples/json-examples.md#troubleshooting-debugging-and-logging)
+    For more JSON payload examples — accessing content from JSON payloads, logging JSON payloads, constructing and transforming JSON payloads, and troubleshooting — see the WSO2 Micro Integrator documentation at [mi.docs.wso2.com](https://mi.docs.wso2.com/en/latest/), which implements the API Gateway mediation used to transform API messages.
 
 ### JSON message builders and formatters
 
@@ -466,7 +461,7 @@ The response payload will look like this:
 
 Note that we have used the Property mediator to mark the outgoing payload to be formatted as JSON. For more information 
 about the Property Mediator, see the 
-[Property Mediator](../../../reference/mediators/property-mediator.md) page.
+[Property Mediator](https://mi.docs.wso2.com/en/latest/reference/mediators/property-mediator/) page in the WSO2 Micro Integrator documentation.
 
 ``` xml
 <property name="messageType" value="application/json" scope="axis2"/>

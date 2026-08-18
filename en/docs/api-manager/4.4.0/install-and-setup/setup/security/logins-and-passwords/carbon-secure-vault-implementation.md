@@ -1,6 +1,6 @@
 ---
 title: "Customize the Carbon Secure Vault Implementation"
-description: "Implement a custom Secure Vault configuration for a Carbon-based API Manager product by replacing the default Secret Repository and Secret Callback Handler used to encrypt plain text passwords."
+description: "Implement a custom Secure Vault configuration for a Carbon-based API Manager product by replacing the default Secret Repository and Callback Handler."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation.md
 tags:

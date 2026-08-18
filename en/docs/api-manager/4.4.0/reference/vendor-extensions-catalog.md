@@ -1,6 +1,6 @@
 ---
 title: "Vendor Specific Extensions Catalog"
-description: "Reference catalog of WSO2 API Manager's vendor-specific OpenAPI extensions (x-auth-type, x-throttling-tier, x-wso2-cors, x-wso2-endpoints, and more) with syntax and examples for each."
+description: "Reference catalog of API Manager's vendor-specific OpenAPI extensions like x-auth-type and x-throttling-tier, with syntax and examples."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/vendor-extensions-catalog/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/vendor-extensions-catalog.md
 tags:
@@ -14,7 +14,7 @@ content_type: "reference"
 
 # Vendor Specific Extensions
  
-WSO2 API Manager utilizes the vendor extensions support in [Open API specification](#https://swagger.io/docs/specification/openapi-extensions/), to store operations such as throttling, against each API.
+WSO2 API Manager utilizes the vendor extensions support in [Open API specification](https://swagger.io/docs/specification/openapi-extensions/), to store operations such as throttling, against each API.
 As per the current implementation, following extensions are supported by API Manager:
 
   - [x-auth-type](#x-auth-type)
@@ -49,7 +49,7 @@ x-auth-type could be any of the following values:
 !!! danger "Deprecated feature"
     The Application and Application User separation used in API-M 2.x is deprecated from API-M 3.x and later. Security for the resources is `enabled` or `disabled`(Application and Application User in API definition is treated as security enabled).
 
-    Therefore, it is recommended to use scopes to restrict the API resource invocation. For instructions on how to do this, see [Fine Grained Access Control with OAuth Scopes](../learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md#fine-grained-access-control-with-oauth-scopes)
+    Therefore, it is recommended to use scopes to restrict the API resource invocation. For instructions on how to do this, see [Fine Grained Access Control with OAuth Scopes](../design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md#fine-grained-access-control-with-oauth-scopes)
 
 The following example applies Application User authentication type to the given API resource:
        ```

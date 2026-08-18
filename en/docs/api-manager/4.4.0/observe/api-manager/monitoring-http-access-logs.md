@@ -1,6 +1,6 @@
 ---
 title: "Monitoring HTTP Access Logs"
-description: "Configure HTTP access logs in WSO2 API Manager for both the HTTP servlet transport and the PassThrough/NIO transports in the API Gateway, using deployment.toml, log4j2.properties, and access-log.properties."
+description: "Configure HTTP access logs for both the servlet transport and the Gateway's PassThrough/NIO transports in WSO2 API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/monitoring-http-access-logs/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/observe/api-manager/monitoring-http-access-logs.md
 tags:

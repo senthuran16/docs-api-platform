@@ -1,6 +1,6 @@
 ---
 title: "JSON Schema Validator"
-description: "Enable and use the JSON Schema Validator in WSO2 API Manager to validate request and response payloads against the schema defined in the API's swagger.json, blocking invalid requests with a 400 and invalid responses with a 500."
+description: "Enable the JSON Schema Validator to validate request/response payloads against an API's swagger.json, blocking invalid ones."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/api-request-response-schema-validation/json-schema-validator/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/api-request-response-schema-validation/json-schema-validator.md
 tags:

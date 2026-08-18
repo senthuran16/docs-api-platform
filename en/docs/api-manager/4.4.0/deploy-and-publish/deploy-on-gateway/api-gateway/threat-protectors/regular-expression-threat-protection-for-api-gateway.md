@@ -1,6 +1,6 @@
 ---
 title: "Regular Expression Threat Protection for the API Gateway"
-description: "Configure the regex threat protector policy in API Manager to block SQL injection, XPath injection, and script injection attacks using predefined and custom regular expression patterns."
+description: "Configure the regex threat protector to block SQL injection, XPath injection, and script injection using regular expression patterns."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway.md
 tags:

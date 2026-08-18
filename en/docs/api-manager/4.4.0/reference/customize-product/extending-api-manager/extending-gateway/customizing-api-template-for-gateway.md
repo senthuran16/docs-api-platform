@@ -1,6 +1,6 @@
 ---
 title: "Customize the API Template for the Gateway"
-description: "Modify the Velocity-based API template (velocity_template.xml) that generates an API's Synapse configuration, including how to conditionally engage custom handlers based on API properties and the available template variables."
+description: "Modify the Velocity-based API template that generates an API's Synapse configuration, including conditionally engaging custom handlers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-gateway/customizing-api-template-for-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-gateway/customizing-api-template-for-gateway.md
 tags:

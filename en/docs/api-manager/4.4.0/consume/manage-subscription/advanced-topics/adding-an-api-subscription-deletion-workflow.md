@@ -1,6 +1,6 @@
 ---
 title: "Add an API Subscription Deletion Workflow"
-description: "Engage the subscription deletion approval workflow executor in API Manager so an admin must approve or reject subscription deletion requests before they take effect."
+description: "Engage the subscription deletion approval workflow so an admin must approve or reject subscription deletion requests first."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-deletion-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-deletion-workflow.md
 tags:

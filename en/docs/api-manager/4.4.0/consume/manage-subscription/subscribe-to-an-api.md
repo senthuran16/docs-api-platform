@@ -1,6 +1,6 @@
 ---
 title: "Subscribe to an API"
-description: "Subscribe to a published API from the Developer Portal using the Subscription and Key Generation Wizard or an existing application, then update the subscription tier or unsubscribe."
+description: "Subscribe to a published API from the Developer Portal using the Subscription and Key Generation Wizard or an existing application."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-subscription/subscribe-to-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-subscription/subscribe-to-an-api.md
 tags:

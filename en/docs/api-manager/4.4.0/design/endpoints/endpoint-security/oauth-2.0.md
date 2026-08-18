@@ -1,6 +1,6 @@
 ---
 title: "Secure Endpoint with OAuth 2.0"
-description: "Configure OAuth 2.0 endpoint security for a backend in WSO2 API Manager, including Client Credentials and Resource Owner Password grant types, Redis-based token caching, and OAuth token management behavior."
+description: "Configure OAuth 2.0 endpoint security for a backend, including Client Credentials and Password grants and Redis token caching."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-security/oauth-2.0/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-security/oauth-2.0.md
 tags:
@@ -38,7 +38,7 @@ Follow the instructions below to use OAuth 2.0 as the endpoint authorization typ
 
 2. Click the Endpoint Security symbol that corresponds to the endpoint that you want to secure with OAuth 2.0.
 
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 
 3. Click on OAuth 2.0 from the drop-down menu.
 

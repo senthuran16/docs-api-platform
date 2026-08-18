@@ -1,6 +1,6 @@
 ---
 title: "Fine-Grained Access Control with OAuth2 Scopes"
-description: "Restrict access to API resources by role using shared and local OAuth2 scopes in WSO2 API Manager, including scope creation, attaching scopes to resources, defining scopes in the API definition, and obtaining scoped access tokens."
+description: "Restrict API resource access by role using shared and local OAuth2 scopes: create, attach, define, and obtain scoped tokens."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md
 tags:

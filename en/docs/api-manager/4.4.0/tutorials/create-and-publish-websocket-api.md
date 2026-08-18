@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish a WebSocket API"
-description: "Design and publish a WebSocket API in WSO2 API Manager with a WebSocket backend, subscribe to it from the Developer Portal, and invoke it using the wscat client."
+description: "Design and publish a WebSocket API in WSO2 API Manager, then invoke it using the wscat WebSocket client."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/create-and-publish-websocket-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/create-and-publish-websocket-api.md
 tags:

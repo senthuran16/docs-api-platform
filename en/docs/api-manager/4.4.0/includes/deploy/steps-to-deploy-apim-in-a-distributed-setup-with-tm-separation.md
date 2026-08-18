@@ -1,3 +1,18 @@
+---
+title: "Deploy API Manager with traffic manager separation"
+description: "Steps to deploy WSO2 API Manager in a distributed setup with the traffic manager on a separate node."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md
+tags:
+  - api-manager
+  - includes
+  - deploy
+  - steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
+
 ### Step 1 - Install WSO2 API-M
 
 To install and set up the API-M servers:
@@ -15,7 +30,7 @@ For information, see [Installing and Configuring the Databases](../../../../inst
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M. 
 
-For more information, see [Production Deployment Guidelines](../../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines/#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/).
 
 ### Step 4 - Create and import SSL certificates
 
@@ -117,7 +132,7 @@ Follow the instructions given below to configure the Gateway node so that it can
     !!! Info
         Rate limiting configurations are used by the Gateway to connect with the Traffic Manager. The Gateway will publish Gateway invocation-related events to the TM using the `apim.throttling.url_group`. Traffic Managers will receive these events and rate limiting decisions will be published to the Gateway. To receive these rate limiting decisions, the Gateway has to create a JMS connection using `throttle_decision_endpoints` and listen.
 
-        {!includes/deploy/enable-jms-ssl-for-gw-tm.md!}
+        --8<-- "api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-gw-tm.md"
 
 3. Add the following configurations to the deployment.toml file to configure the Gateway environment. Change the `gateway_labels` property based on your Gateway environment.
 
@@ -373,7 +388,7 @@ Follow the steps given below to configure the Control Plane nodes to communicate
     **Add Event Hub Configurations**:
 
     !!! Info
-            {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+            --8<-- "api-manager/4.4.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     === "Control Plane with High Availability"
         ```toml

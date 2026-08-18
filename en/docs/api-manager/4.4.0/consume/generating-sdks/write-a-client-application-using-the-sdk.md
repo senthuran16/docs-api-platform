@@ -1,6 +1,6 @@
 ---
 title: "Write a Client Application Using the SDK"
-description: "Build a Java client application using a generated API SDK: unzip and build the SDK with Maven, set up the API client with an access token, and invoke API resources, including a renewable-token variant using an interceptor."
+description: "Build a Java client application using a generated API SDK: build it with Maven, set up the client with an access token, and invoke API resources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/generating-sdks/write-a-client-application-using-the-sdk/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/generating-sdks/write-a-client-application-using-the-sdk.md
 tags:
@@ -154,7 +154,7 @@ content_type: "tutorial"
 
     <div class="admonition warning">
         <p class="admonition-title">Warning</p>
-        <p>You need an access token to invoke the API. It is important to have a valid subscription before using the SDK, to obtain an access token. Note that the obtained access token has an [expiration time](/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time).</p>
+        <p>You need an access token to invoke the API. It is important to have a valid subscription before using the SDK, to obtain an access token. Note that the obtained access token has an [expiration time](../manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time.md).</p>
     </div>
     
 9.  Set the base path to the API client.

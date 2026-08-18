@@ -1,6 +1,6 @@
 ---
 title: "Migrating Applications to Different Environments"
-description: "Use WSO2 API Controller (apictl) to export applications from one environment and import them into another, including options for preserving or changing the application owner and skipping subscriptions or keys."
+description: "Use apictl to export applications from one environment and import them into another, preserving or changing the owner and skipping subscriptions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/managing-applications/migrating-applications-to-different-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/managing-applications/migrating-applications-to-different-environments.md
 tags:
@@ -24,7 +24,7 @@ content_type: "how-to"
        For more information, see [Add an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#add-an-environment).
     
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export Applications. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export Applications. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#minimal-permissions-and-scopes-required-to-perform-apictl-operations).
 
 ## Manage the application lifecycle
 

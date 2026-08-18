@@ -1,6 +1,6 @@
 ---
 title: "Publishing Custom Analytics Data"
-description: "Implement an AnalyticsCustomDataProvider class to add custom properties to the analytics event schema, then configure the API Manager gateway to publish this custom data."
+description: "Implement an AnalyticsCustomDataProvider class to add custom properties to the analytics event schema and publish them from the gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/samples/publishing-custom-analytics-data/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/samples/publishing-custom-analytics-data.md
 tags:
@@ -11,7 +11,6 @@ author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
 content_type: "how-to"
 ---
-
 
 # Publishing Custom Analytics Events Data
 
@@ -95,6 +94,7 @@ In order to achieve this behavior, create a class implementing the `AnalyticsCus
 
 Implementation of this class should look something similar to [this](https://github.com/wso2/samples-apim/blob/master/analytics-custom-data-provider/src/main/java/org/wso2/carbon/apimgt/gateway/sample/publisher/CustomDataProvider.java).
 
+<a name="build-the-project"></a>
 #### Build the Project
 
 Build the project using,

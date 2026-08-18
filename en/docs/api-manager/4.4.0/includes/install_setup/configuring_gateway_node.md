@@ -1,3 +1,17 @@
+---
+title: "Configure the Gateway node"
+description: "Configure a Gateway node's deployment.toml to connect it to the Control Plane key manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/install_setup/configuring_gateway_node/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/install_setup/configuring_gateway_node.md
+tags:
+  - api-manager
+  - includes
+  - install_setup
+  - configuring_gateway_node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
 
 1.  Open the `<API-M_HOME>/repository/conf/deployment.toml` file of the Gateway node.
 

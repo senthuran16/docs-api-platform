@@ -1,6 +1,6 @@
 ---
 title: "Creating New Keystores"
-description: "Create Java keystores for WSO2 API Manager using an existing CA-signed certificate or a new self-signed certificate, and import CA-signed certificates into the keystore and truststore."
+description: "Create Java keystores for API Manager using an existing CA-signed certificate or a new self-signed certificate, and import certificates."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md
 tags:

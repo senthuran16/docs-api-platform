@@ -1,3 +1,17 @@
+---
+title: "Configure the Synapse Gateway for analytics"
+description: "Configure the Synapse Gateway's deployment.toml to publish analytics data to the analytics cloud via Choreo."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/analytics/configure-synapse-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/analytics/configure-synapse-gateway.md
+tags:
+  - api-manager
+  - includes
+  - analytics
+  - configure-synapse-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "how-to"
+---
 
 Follow the instructions below to publish analytics data to the analytics cloud via the API Gateway:
 
@@ -13,7 +27,7 @@ Follow the instructions below to publish analytics data to the analytics cloud v
       <div class="admonition note">
       <p class="admonition-title">Note</p>
       <ul><li><p>This is the basic configuration that you need to publish analytics data to the analytics cloud.</p></li>
-      <li>If you need to change the following default values of the Worker Thread Count, Queue Size or Client Flushing Delay, see the <a href="../../../api-analytics/gateways/configure-synapse-gateway/#advanced-configurations">Advanced configurations</a>.
+      <li>If you need to change the following default values of the Worker Thread Count, Queue Size or Client Flushing Delay, update them in the same <code>[apim.analytics]</code> config segment:
       <table>
       <tr>
       <th><b>Parameter</b></th>

@@ -1,6 +1,6 @@
 ---
 title: "Add an API State Change Workflow"
-description: "Engage the Approval Workflow Executor in WSO2 API Manager so that API lifecycle state changes, such as publishing or blocking an API, require admin approval before taking effect."
+description: "Engage the Approval Workflow Executor so API lifecycle changes, like publishing or blocking an API, require admin approval first."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/advanced-topics/adding-an-api-state-change-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/advanced-topics/adding-an-api-state-change-workflow.md
 tags:

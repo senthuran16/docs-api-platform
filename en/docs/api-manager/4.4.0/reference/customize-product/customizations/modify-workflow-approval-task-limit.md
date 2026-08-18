@@ -1,6 +1,6 @@
 ---
 title: "Modify Workflow Approval Task Limit"
-description: "Increase the default 25-task limit on pending workflow approval tasks shown in the Admin Portal by editing the workflows limit parameter in the admin webapp's settings.json file."
+description: "Increase the default 25-task limit on pending workflow approvals shown in the Admin Portal by editing settings.json in the admin webapp."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/modify-workflow-approval-task-limit/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/modify-workflow-approval-task-limit.md
 tags:

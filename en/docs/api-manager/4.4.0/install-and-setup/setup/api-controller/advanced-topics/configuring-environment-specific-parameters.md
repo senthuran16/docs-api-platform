@@ -1,6 +1,6 @@
 ---
 title: "Configuring Environment-Specific Parameters"
-description: "Use WSO2 API Controller (apictl) to generate a deployment directory and define a params.yaml file for overriding endpoints, security, certificates, deployment environments, and subscription policies per environment when importing APIs and API Products."
+description: "Use apictl to generate a deployment directory and a params.yaml file that overrides endpoints, security, and policies per environment when importing APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md
 tags:
@@ -346,7 +346,7 @@ You can provide the parameters file using `--params` flag when importing an API.
 -   To learn about setting up different endpoint types such as HTTP/REST, HTTP/SOAP (with load balancing and failover), Dynamic and AWS Lambda, see [Configuring Different Endpoint Types](../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-different-endpoint-types.md).
 -   To learn about setting up different endpoint security types such as Basic, Digest and OAuth 2.0, refer the section [Configuring Different Endpoint Security Types](../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-different-endpoint-security-types.md).
 -   You can define the subscription level policies of an API using the field `policies`. There you can specify one or more subscription level policies that is available in the particular environment where you are importing the API to.
--   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-params-file) to learn how to configure certificates using the parameters file.
+-   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-parameters-file) to learn how to configure certificates using the parameters file.
 
 ## Defining the parameters file for an API Product
 
@@ -682,7 +682,7 @@ You can provide the parameters file using `--params` flag when importing an API 
 -   The field `dependentAPIs` can be used to specify the parameters of dependent APIs. The parameters of a particular dependent API of an API Product is similar to the parameters of an API, but there is no use of specifying the `deploymentEnvironments` field under a dependent API. The reason for that is, the deployment environments of the API Product will be considered for dependent APIs as well.
 -   You can deploy an API Product which does not include `deployment_environments.yaml` (working copy of the API Product or a revision without deployment environments) by specifying the `deploymentEnvironments` fields in the parameters file.
 -   The parameters file supports detecting environment variables during the API Product import process. You can use the usual notation as described [here](../../../../install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects.md). For example, `url: ${DEV_PROD_URL}`.  If an environment variable is not set, the tool will fail. In addition, the system will also request for a set of required environment variables.
--   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-params-file) to learn how to configure certificates using the parameters file.
+-   Refer the section [Handling the certificates using the parameters file](#handling-the-certificates-using-the-parameters-file) to learn how to configure certificates using the parameters file.
 
 ## Handling the certificates using the parameters file
 

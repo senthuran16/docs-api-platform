@@ -1,6 +1,6 @@
 ---
 title: "Changing to IBM DB2"
-description: "Set up an IBM DB2 database, configure its JDBC driver, run the DB2 scripts, and update deployment.toml datasources to replace the default H2 database in WSO2 API Manager."
+description: "Set up an IBM DB2 database, configure its JDBC driver, run the DB2 scripts, and update deployment.toml datasources in API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2.md
 tags:
@@ -196,7 +196,7 @@ Follow the instructions below to change the type of the default datasource.
 1.  Restart the server.
 
     !!! note
-        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
+        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
 
     !!! info
         **Changing WSO2CARBON_DB to IBM DB2**

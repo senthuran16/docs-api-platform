@@ -30,6 +30,7 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 |Ubuntu              | 22.04 |
 |Rocky Linux              | 9.3    |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **WSO2 API-M** runtime has been tested with the following JDKs:
@@ -55,6 +56,7 @@ The **WSO2 API-M** runtime is tested with the following databases:
     CREATE DATABASE <APIM_DATABASE_NAME> character set latin1;
     ```
 
+<a name="tested-wso2-products"></a>
 #### Tested WSO2 Products
 
 The following is a list of other WSO2 products that have been tested with WSO2 API Manager 4.4.0.

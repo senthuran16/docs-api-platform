@@ -1,6 +1,6 @@
 ---
 title: "Maintain Separate Production and Sandbox Gateways"
-description: "Configure a hybrid Universal Gateway or separate production and sandbox Universal Gateways in deployment.toml, and set up multi-region Gateway environments in WSO2 API Manager."
+description: "Configure a hybrid or separate production and sandbox Universal Gateway, and set up multi-region Gateway environments in API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways.md
 tags:
@@ -24,6 +24,7 @@ This is the default scenario. Because this Gateway instance handles both product
 
 [![Hybrid Gateway](../../../assets/img/learn/hybrid-gw.png)](../../../assets/img/learn/hybrid-gw.png)
 
+<a name="multiple-gateways-to-handle-production-and-sandbox-requests-separately"></a>
 #### Multiple Gateways to handle production and sandbox requests separately
 
 Having a single Gateway instance to pass through both types of requests can negatively impact the performance of the production server. To avoid this, you can set up separate API Gateways. The production API Gateway handles requests that are made using PRODUCTION type tokens and the sandbox API Gateway handles requests that are made using SANDBOX type tokens.
