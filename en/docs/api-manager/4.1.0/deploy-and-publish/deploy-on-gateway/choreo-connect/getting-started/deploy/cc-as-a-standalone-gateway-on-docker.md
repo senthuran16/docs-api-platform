@@ -10,7 +10,7 @@ Let's deploy an API in Choreo Connect running on Docker Compose as a Standalone 
 
 1. Download and install apictl
 
-    apictl is a CLI tool that can be used to deploy and undeploy APIs in the Choreo Connect clusters. Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool) to setup apictl in your development environment.
+    apictl is a CLI tool that can be used to deploy and undeploy APIs in the Choreo Connect clusters. Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl) to setup apictl in your development environment.
 
 2. Download and extract the Choreo Connect distribution .zip file
 

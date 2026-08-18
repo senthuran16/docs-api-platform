@@ -203,7 +203,7 @@ Go to the **Lifecycle** page from the left side panel and click on **Publish** b
 You can use WSO2 API Controller (apictl) to deploy the created REST API in Choreo Connect Gateway. The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token.
 
 !!! Info "Before you begin"
-    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview.md#choreo-connect-deployment-options). 
+    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview.md#choreo-connect-deployment-options). 
 
 The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token.
 

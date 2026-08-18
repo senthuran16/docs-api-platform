@@ -209,7 +209,7 @@ x-wso2-transports:
 The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token, for our `PhoneVerify` example.
 
 !!! Info "Before you begin"
-    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview.md#choreo-connect-deployment-options). 
+    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview.md#choreo-connect-deployment-options). 
 
 
 ### Step 1 - Initialize the apictl project

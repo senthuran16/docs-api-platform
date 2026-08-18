@@ -41,7 +41,7 @@ Let's create our first project with the name "petstore" based on the [OpenAPI de
 1. Download and install apictl
 
     apictl is a CLI tool that can be used to deploy and undeploy APIs in the Choreo Connect clusters.
-    Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool)
+    Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl)
     to set up the apictl in your development environment.
     
 2. Now let's create our first API project to deploy on Choreo Connect that is set up on Kubernetes

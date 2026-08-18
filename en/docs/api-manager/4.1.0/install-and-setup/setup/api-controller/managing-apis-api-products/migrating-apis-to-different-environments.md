@@ -478,7 +478,7 @@ mentioned gateway environments. If the **deployment environments are not provide
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for APIs, see [Defining the params file for an API](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api).
+    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for APIs, see [Defining the params file for an API](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api).
     
     **Add dynamic data to environment configs**
 
