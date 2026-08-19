@@ -199,7 +199,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **File Explorer**
 
-    The file explorer. This is also available in the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The file explorer. This is also available in the [Side Panel](#side-panel).
 
 - **Extension Installer**
 
@@ -215,7 +215,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
     -   Feed Simulation
 
     For detailed information about event simulation, see [Simulating Events](../../develop/streaming-apps/testing-a-siddhi-application.md#simulating-events).
-    The event simulator can also be accessed from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The event simulator can also be accessed from the [Side Panel](#side-panel).
 
 - **Error Store Explorer**
 
@@ -247,7 +247,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
             !!!info
                 Note that only mapping errors can be corrected before replaying.
 
-            ![Correct and Replay Event](../../assets/img/streaming/handling-requests/correct-and-replay-event.png)
+            ![Correct and Replay Event](../../assets/img/streaming/streaming-integrator-studio-overview/correct-and-replay-event.png)
 
     - **Discard events**: To discard all the erroneous events for the selected Siddhi application, click **Discard All**. To discard a specific erroneous event, click **Discard** for the relevant event.
 
@@ -259,7 +259,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **Console**
 
-    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#side-panel).
 
 - **Sample Event Generator**
 
@@ -320,7 +320,7 @@ Simulation can be carried out in two ways:
 -   Single Simulation
 -   Feed Simulation
 
-For detailed information about event simulation, see [Simulating Events](_Simulating_Events_).
+For detailed information about event simulation, see [Simulating Events](testing-a-siddhi-application.md#simulating-events).
 
 ### Output Console
 

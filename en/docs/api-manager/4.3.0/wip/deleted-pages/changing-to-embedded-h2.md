@@ -29,8 +29,8 @@ WSO2 currently ships H2 database engine version h2_1.4.199.\* and its related H2
 ## Changing the Carbon database to Embedded H2
 The following sections describe how to replace the default H2 database with Embedded H2:
 
--   [Setting up datasource configurations](#ChangingtoEmbeddedH2-Settingupdatasourceconfigurations)
--   [Creating database tables](#ChangingtoEmbeddedH2-Creatingdatabasetables)
+-   [Setting up datasource configurations](#setting-up-datasource-configurations)
+-   [Creating database tables](#creating-database-tables)
 
 !!! tip
     Before you begin,
@@ -44,7 +44,7 @@ The following sections describe how to replace the default H2 database with Embe
 
 ### Setting up datasource configurations
 
-A datasource is used to establish the connection to a database. By default, `WSO2_CARBON_DB` datasource is used to connect to the default  H2 database, which stores registry and user management data. After setting up the Embedded H2 database to replace the default H2 database, either [change the default configurations of the WSO2_CARBON_DB datasource](#ChangingtoEmbeddedH2-Changingthedefaultdatabase), or [configure a new datasource](#ChangingtoEmbeddedH2-Configuringnewdatasourcestomanageregistryorusermanagementdata) to point it to the new database as explained below.
+A datasource is used to establish the connection to a database. By default, `WSO2_CARBON_DB` datasource is used to connect to the default  H2 database, which stores registry and user management data. After setting up the Embedded H2 database to replace the default H2 database, either [change the default configurations of the WSO2_CARBON_DB datasource](#ChangingtoEmbeddedH2-Changingthedefaultdatabase), or [configure a new datasource](#configuring-new-datasources-to-manage-registry-or-user-management-data) to point it to the new database as explained below.
 
 #### Changing the default WSO2\_CARBON\_DB datasource
 
@@ -178,6 +178,7 @@ When a database connection is returned to the pool, by default  the product rol
         pool_options.rollbackOnReturn=true
         ```
 
+<a name="configuring-new-datasources-to-manage-registry-or-user-management-data"></a>
 #### Configuring new datasources to manage registry or user management data
 
 Follow the instructions below to configure new datasources to point to the new database(s) you create to manage registry and/or user management data separately.

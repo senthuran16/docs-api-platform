@@ -10,12 +10,14 @@ The above diagram consists of an API management layer and an integration layer w
 
 The Management Plane is where API creation and API management takes place.  It consists of portals (Publisher, Developer Portal, and Service Catalog) for users to create and manage APIs, implement rate limiting policies, monitor, and monetization, etc. It also provides a set of APIs to interact with external tools like API Controller. The Management Plane includes API Analytics dashboards, displaying various business insights.
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 [![API Publisher](../assets/img/learn/overviewpage-rest-api.jpg)](../assets/img/learn/overviewpage-rest-api.jpg)
 
 WSO2 API Manager’s API Publisher is a state-of-the-art GUI based tool for API development and management. The GUI is designed for API creators to develop, document, secure, test, and version APIs with ease. It’s also able to cater to more API management-related tasks such as publishing APIs, monetizing APIs, and applying rate limiting policies.
 
+<a name="api-developer-portal"></a>
 #### API Developer Portal
 
 [![Developer Portal](../assets/img/get_started/architecture/developer-portal-overview.png)](../assets/img/get_started/architecture/developer-portal-overview.png)
@@ -40,6 +42,7 @@ These integration services can be created using WSO2 Integration Studio and a va
 
 The Data Plane is where the created API is exposed to the public consumers and acts as the proxy for API calls. This also provides additional capabilities such as enforcing security, rate limiting etc. 
 
+<a name="api-gateway"></a>
 #### API Gateway
 
 [![API Gateway](../assets/img/learn/gateway-overview.png)](../assets/img/learn/gateway-overview.png)
@@ -73,6 +76,7 @@ The Streaming Integrator allows you to integrate static data sources with stream
  
 The Control Plane is where the API security validation, API key generation, and rate limiting decisions are taken.
   
+<a name="key-manager"></a>
 #### Key Manager
  
 [![Key Manager](../assets/img/get_started/architecture/key-manager-overview.png)](../assets/img/get_started/architecture/key-manager-overview.png)

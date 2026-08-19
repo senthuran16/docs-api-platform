@@ -4,10 +4,10 @@ Roles contain permissions for users to manage the server. They can be reused and
 
 The following roles that are typically used in many enterprises are used throughout this documentation. You can also define different user roles depending on your requirements.
 
--   <a name="admin-role">**admin:**</a> The API management provider who hosts and manages the [API Gateway](../../get-started/overview.md#api-gateway) and is responsible for creating users in the system, assigning them roles, managing databases, security, etc. The Admin role is also used to access the WSO2 Admin Portal (`https://<APIM_Host>:<APIM_Port>/admin`), where you can define workflow tasks, throttling policies, analytics configurations, etc. The Admin role is available by default with the credentials admin/admin. By default, this role contains all the permissions (including super admin permissions) in the permission tree.
--   <a name="creator-role">**creator:**</a> A creator is typically a person in a technical role who understands the technical aspects of the API (interfaces, documentation, versions, etc.) and uses the [API publisher](../../get-started/overview.md#api-publisher) to provision APIs into the Developer Portal. The creator uses the Developer Portal to consult ratings and feedback provided by API users. The creator can add APIs to the Developer Portal but cannot manage their lifecycle. Governance permission gives a creator permission to govern, manage, and configure the API artifacts.
+-   <a name="admin-role">**admin:**</a> The API management provider who hosts and manages the [API Gateway](../../get-started/apim-architecture.md#api-gateway) and is responsible for creating users in the system, assigning them roles, managing databases, security, etc. The Admin role is also used to access the WSO2 Admin Portal (`https://<APIM_Host>:<APIM_Port>/admin`), where you can define workflow tasks, throttling policies, analytics configurations, etc. The Admin role is available by default with the credentials admin/admin. By default, this role contains all the permissions (including super admin permissions) in the permission tree.
+-   <a name="creator-role">**creator:**</a> A creator is typically a person in a technical role who understands the technical aspects of the API (interfaces, documentation, versions, etc.) and uses the [API publisher](../../get-started/apim-architecture.md#api-publisher) to provision APIs into the Developer Portal. The creator uses the Developer Portal to consult ratings and feedback provided by API users. The creator can add APIs to the Developer Portal but cannot manage their lifecycle. Governance permission gives a creator permission to govern, manage, and configure the API artifacts.
 -   <a name="publisher-role">**publisher:**</a> A person in a managerial role and overlooks a set of APIs across the enterprise and controls the API lifecycle, subscriptions, and monetization aspects. The publisher is also interested in usage patterns for APIs and has access to all API statistics.
--   <a name="subscriber-role">**subscriber:**</a> Users or Application Developers who search the [Developer Portal](../../get-started/overview.md#developer-portal) to discover APIs and use them. They read the documentation and forums, rates/comments on the APIs, subscribes to APIs, obtain access tokens, and invokes the APIs.
+-   <a name="subscriber-role">**subscriber:**</a> Users or Application Developers who search the [Developer Portal](../../get-started/apim-architecture.md#api-developer-portal) to discover APIs and use them. They read the documentation and forums, rates/comments on the APIs, subscribes to APIs, obtain access tokens, and invokes the APIs.
 
 Follow the instructions below to create the `creator`, `publisher`, and `subscriber` roles in the API Manager for sample purposes.
 
@@ -33,12 +33,12 @@ Follow the instructions below to create the `creator`, `publisher`, and `subscri
 
     !!! warning
 
-            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](`https://localhost:9443/admin`) from **Settings** > **Advanced**.
+            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](https://localhost:9443/admin) from **Settings** > **Advanced**.
 
             By default, the scope-role mapping contains `Internal/creator`, `Internal/publisher`, `Internal/subscriber`, `Internal/analytics`, and `Internal/devops` as the default roles. If there are custom roles defined with API creator, API publisher, admin and API subscriber permissions, those roles have to be configured in the `tenant-conf.json` file under the relevant scopes.
 
 !!! info
-     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](../../administer/managing-users-and-roles/managing-permissions.md#adding-role-based-permissions)
+     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](../../administer/managing-users-and-roles/managing-permissions.md#adding-api-m-specific-scope-assignments)
 
 !!! warning
     As a limitation, when you delete a user and create another with the same username, applications of the previous user will be visible on the Developer Portal applications listing page.
@@ -172,7 +172,7 @@ create_admin_account = true
 
 The following steps guide you through updating the role names after you have used the product for some time.
 
-1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles.md#update-before-the-first-startup-recommended).
+1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles.md#updating-before-the-first-startup-recommended).
 
 2.  Do the following user store level changes for existing users:
 

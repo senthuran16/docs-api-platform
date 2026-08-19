@@ -18,7 +18,8 @@ More information:
 
 Follow the instructions below to discover the integration services:
 
-1.  {!includes/sign-in-publisher.md!}
+1.  
+    --8<-- "api-manager/4.3.0/includes/sign-in-publisher.md"
 
 2.  Click **Services**.
 

@@ -297,7 +297,7 @@ To implement continuous integration and continuous deployment pipelines for APIs
     </tr>
     <tr>
         <th>
-            <a href="../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach/">Building a CI/CD Pipeline for APIs using Jenkins</a>
+            <a href="../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline/">Building a CI/CD Pipeline for APIs using Jenkins</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for APIs using Jenkins and the API Controller (apictl).
@@ -414,7 +414,7 @@ To install and run the Streaming Integrator, see the following topics.
     </tr>
     <tr>
         <th>
-            <a href="../../install-and-setup/install/installing-the-product/installing-si-as-a-windows-service/">Running the Streaming Integrator as a Windows Service</a>
+            <a href="../../install-and-setup/install/installing-the-product/installing-si-as-windows-service/">Running the Streaming Integrator as a Windows Service</a>
         </th>
         <td>
             Explains how to install and run the Streaming Integrator as a Windows service.

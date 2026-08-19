@@ -7,9 +7,9 @@ Figure 2: Config and governance partitions in the remote Governance Registry ins
 
 Configuration steps are given in the following sections.
 
--   [Creating the Database](#ConfigandGovernancePartitionsinaRemoteRegistry-Database)
--   [Configuring Governance Registry as the Remote Registry Instance](#ConfigandGovernancePartitionsinaRemoteRegistry-RemoteRegistry)
--   [Configuring Carbon Server Nodes](#ConfigandGovernancePartitionsinaRemoteRegistry-CarbonServerNodes)
+-   [Creating the Database](#creating-the-database)
+-   [Configuring Governance Registry as the Remote Registry Instance](#configuring-governance-registry-as-the-remote-registry-instance)
+-   [Configuring Carbon Server Nodes](#configuring-server-nodes)
 
 ### Creating the database
 

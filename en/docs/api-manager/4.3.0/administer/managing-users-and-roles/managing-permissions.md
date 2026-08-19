@@ -57,7 +57,7 @@ You will be able to log in to the management console of the product with the **a
 ## Description of role-based permissions
 
 !!! note
-    Note that the descriptions given in this document only explain how permissions control access to operations available on the [Management Console](``https://localhost:9443/carbon``) (`https://<hostname>:9443/carbon`). In addition, not that all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
+    Note that the descriptions given in this document only explain how permissions control access to operations available on the [Management Console](https://localhost:9443/carbon) (`https://<hostname>:9443/carbon`). In addition, not that all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
 
 ### Log-in permissions
 

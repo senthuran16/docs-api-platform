@@ -32,6 +32,7 @@ In a multi-tenanted API Manager setup, self-signup to the Developer Portal works
 
     ![Self registration disabled](../../../../assets/img/learn/self-signup-disabled.png)
 
+<a name="enabling-self-signup"></a>
 #### Enabling Self Signup
 
 

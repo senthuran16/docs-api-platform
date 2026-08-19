@@ -93,7 +93,7 @@ in the following ways:
     ```
 
     For more information about definig datasources, see [Configuring
-    Datasources](_Configuring_Datasources_) .
+    Datasources](configuring-data-sources.md) .
 
 The following database types are currently supported for WSO2 SP.
 
@@ -113,10 +113,10 @@ should be completed:
 - The relevant JDBC Driver must be downloaded and the jar must be put in the `<SI_HOME>/lib` directory.
 
 
-- [RDBMS](#DefiningTablesforPhysicalStores-RDBMS)
-- [Apache HBase](#DefiningTablesforPhysicalStores-ApacheHBase)
-- [Apache Solr](#DefiningTablesforPhysicalStores-ApacheSolr)
-- [MongoDB](#DefiningTablesforPhysicalStores-MongoDB)
+- [RDBMS](#rdbms)
+- [Apache HBase](#apache-hbase)
+- [Apache Solr](#apache-solr)
+- [MongoDB](#mongodb)
 
   
 

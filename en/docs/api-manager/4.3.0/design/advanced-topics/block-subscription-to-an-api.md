@@ -16,16 +16,16 @@ Blocking can be done at two levels:
   <html>
   <div class="admonition warning">
   <p class="admonition-title">Warning</p>
-  <p>When <a href="../../../getting-started/overview/#api-gateway">API Gateway</a> caching is enabled (it is enabled by default), even after blocking a subscription, consumers might still be able to access APIs until the cache expires, which happens approximately every 15 minutes. Likewise, the API Gateway cache applies even when an API is unblocked.</p>
+  <p>When <a href="../../../get-started/apim-architecture/#api-gateway">API Gateway</a> caching is enabled (it is enabled by default), even after blocking a subscription, consumers might still be able to access APIs until the cache expires, which happens approximately every 15 minutes. Likewise, the API Gateway cache applies even when an API is unblocked.</p>
   </div> 
   
   <div class="admonition note">
   <p class="admonition-title">Note</p>
   <p>See the following topics for the descriptions on the concepts that you need to know when you block subscriptions to an API:
   <ul>
-    <li><a href="../../../getting-started/key-concepts/#application">Applications</a></li>
-    <li><a href="../../../getting-started/key-concepts/#rate-limits">Rate Limiting</a></li>
-    <li> <a href="../../../getting-started/key-concepts/#access-token">Access tokens</a></li></ul>
+    <li><a href="../../../get-started/key-concepts/#application">Applications</a></li>
+    <li><a href="../../../get-started/key-concepts/#rate-limits">Rate Limiting</a></li>
+    <li> <a href="../../../get-started/key-concepts/#access-token">Access tokens</a></li></ul>
     </p>
   </div> 
   </html>
@@ -128,7 +128,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition warning">
          <p class="admonition-title">Warning</p>
-         <p>When [Gateway caching](../../get-started/overview.md#api-gateway) is enabled, which is the case by default, the subscription blocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is blocked, then the API will be blocked immediately.</p>
+         <p>When [Gateway caching](../../get-started/apim-architecture.md#api-gateway) is enabled, which is the case by default, the subscription blocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is blocked, then the API will be blocked immediately.</p>
          </div>
          </html>
 
@@ -170,7 +170,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition warning">
          <p class="admonition-title">Warning</p>
-         <p>When [Gateway caching](../../get-started/overview.md#api-gateway) is enabled, which is the case by default, the subscription unblocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is unblocked, then the API will be unblocked immediately.</p>
+         <p>When [Gateway caching](../../get-started/apim-architecture.md#api-gateway) is enabled, which is the case by default, the subscription unblocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is unblocked, then the API will be unblocked immediately.</p>
          </div>
          </html>
 

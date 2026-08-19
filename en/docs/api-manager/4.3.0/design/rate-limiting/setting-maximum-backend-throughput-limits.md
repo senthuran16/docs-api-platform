@@ -2,7 +2,7 @@
 
 You can define the maximum backend throughput setting to limit the total number of calls a particular API in API Manager is allowed to make to the backend. While the [other rate limiting levels](../../design/rate-limiting/setting-throttling-limits.md) define the quota the API invoker gets, they do not ensure that the backend is protected from overuse. The maximum backend throughput configuration limits the quota the backend can handle. The request count is calculated and rate limiting occurs at the node level. 
 
-{!includes/design/redis-counter-note.md!}
+--8<-- "api-manager/4.3.0/includes/design/redis-counter-note.md"
 
 Follow the instructions below to set a maximum backend throughput for a given API:
 

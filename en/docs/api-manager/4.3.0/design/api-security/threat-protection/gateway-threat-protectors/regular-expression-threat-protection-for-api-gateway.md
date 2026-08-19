@@ -50,9 +50,9 @@ We recommend the following patterns for blacklisting.
 </tbody>
 </table>
 
--   [Editing the sequence through registry artifacts](#Am300RegularExpressionThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the Regular Expression Policy](#Am300RegularExpressionThreatProtectionforAPIGateway-ApplyingtheRegularExpressionPolicy)
--   [Testing the regex threat protector](#Am300RegularExpressionThreatProtectionforAPIGateway-Testingtheregexthreatprotector)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the Regular Expression Policy](#applying-the-regular-expression-policy)
+-   [Testing the regex threat protector](#testing-the-regex-threat-protector)
 
 ### Editing the sequence through registry artifacts
 
