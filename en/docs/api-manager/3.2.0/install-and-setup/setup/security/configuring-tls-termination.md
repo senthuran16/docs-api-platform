@@ -6,8 +6,8 @@ When you work with Carbon servers, this will allow you to access admin services 
 
 Given below are the steps you need to follow:
 
--   [Step 1: Configuring the load balancer with TLS termination](#ConfiguringTLSTermination-Step1:ConfiguringtheloadbalancerwithTLStermination)
--   [Step 2: Enabling RemoteIpValve for Carbon servers](#ConfiguringTLSTermination-Step2:EnablingRemoteIpValveforCarbonservers)
+-   [Step 1: Configuring the load balancer with TLS termination](#step-1-configuring-the-load-balancer-with-tls-termination)
+-   [Step 2: Enabling RemoteIpValve for Carbon servers](#step-2-enabling-remoteipvalve-for-carbon-servers)
 
 ### Step 1: Configuring the load balancer with TLS termination
 

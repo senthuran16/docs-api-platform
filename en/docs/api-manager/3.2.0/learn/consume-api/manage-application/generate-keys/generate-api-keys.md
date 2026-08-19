@@ -35,7 +35,7 @@ Follow the instructions below to generate/renew application keys:
      
 
 !!! tip
-    When you generate access tokens for APIs that are protected by scopes, you can select the respective [scopes](../../../../learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/) and thereafter, generate the token for it.
+    When you generate access tokens for APIs that are protected by scopes, you can select the respective [scopes](../../../api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md) and thereafter, generate the token for it.
   
 ## Generate application keys using Okta Key Manager
 

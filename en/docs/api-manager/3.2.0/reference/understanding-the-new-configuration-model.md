@@ -6,7 +6,7 @@ The new configuration model, which is based on the TOML format, was introduced i
 
 However, with the new WSO2 configuration model, all configuration files have been merged to make the configuration process easier. Therefore, the `<API-M_HOME>/repository/conf/deployment.toml` file is the single source used to configure and tune the various features in WSO2 API Manager.
 
-For more information on the configuration parameters that can be used in the `deployment.toml` file, see the [Configuration Catalog](../reference/config-catalog).
+For more information on the configuration parameters that can be used in the `deployment.toml` file, see the [Configuration Catalog](config-catalog.md).
 
 The following section explains the mapping between WSO2 API Manager's old configuration files and the new `deployment.toml` file.
 

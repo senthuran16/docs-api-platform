@@ -242,7 +242,7 @@ npm run build:prod
 Following examples will let you get familiar with the codebase.
 
 !!! note
-    React component overriding is implemented via a custom webpack loader. There are some improvements and bug fixes that went into this customer loader after the product release. If the API-M product is not a WUM updated pack, you can still apply these fixes by replacing the [loader.js from the github repo](https://github.com/wso2/carbon-apimgt/blob/master/features/apimgt/org.wso2.carbon.apimgt.publisher.feature/src/main/resources/publisher/loader.js). 
+    React component overriding is implemented via a custom webpack loader. There are some improvements and bug fixes that went into this customer loader after the product release. If the API-M product is not a WUM updated pack, you can still apply these fixes by replacing the [loader.js from the github repo](https://github.com/wso2/carbon-apimgt/blob/6.7.x/features/apimgt/org.wso2.carbon.apimgt.publisher.feature/src/main/resources/publisher/loader.js). 
 
     You can simply override the file of any of the webapps (publisher, devportal, admin). We recommend you to apply this fix before trying out the following samples.
 

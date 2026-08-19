@@ -86,6 +86,7 @@ You can start an API Manager profile in the following methods, based on your req
     4. Developer Portal
     5. Gateway
     
+<a name="method-1-optimizing-before-starting-the-server"></a>
 #### Method 1- Optimizing before starting the server
 
 !!! note
@@ -156,6 +157,7 @@ Create an optimized distribution for a particular API-M profile.
     <PRODUCT_HOME>/bin/wso2server.bat -Dprofile=api-publisher
     ```    
 
+<a name="method-2-optimizing-while-starting-the-server"></a>
 #### Method 2 - Optimizing while starting the server
 
 !!! note

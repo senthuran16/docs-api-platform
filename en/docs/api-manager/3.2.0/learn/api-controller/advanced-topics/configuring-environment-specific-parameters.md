@@ -131,7 +131,7 @@ The following code snippet contains sample configuration of the parameter file.
     ```
 
 !!! warning
-    [Configuring OAuth 2.0 Endpoint Security](../../../learn/api-controller/advanced-topics/configuring-different-endpoint-security-types/#configuring-oauth-20-endpoint-security) using the parameters file has been introduced via an U2/WUM update and is effective from 8th October 2021 (2021-10-08).  
+    [Configuring OAuth 2.0 Endpoint Security](configuring-different-endpoint-security-types.md#configuring-oauth-20-endpoint-security) using the parameters file has been introduced via an U2/WUM update and is effective from 8th October 2021 (2021-10-08).  
     
     For more information on how to update using U2, see [Updates 2.0 Documentation](https://updates.docs.wso2.com/en/latest/updates/overview/). For more information on how to update using WUM, see the documentation [Using WSO2 Update Manager](https://docs.wso2.com/display/updates100/Using+WSO2+Update+Manager).
 
@@ -147,5 +147,5 @@ Instead of the default `api_params.yaml`, you can provide a custom parameter fil
     -   Quotes are mandatory if `password` contains special characters.
     -   Certificates (Endpoint certificates and MutualSSL certificates) for each URL can be configured in the parameter file. For certificates, a valid path to the certificate file is required. 
     -   The parameter file supports detecting environment variables during the API import process. You can use the usual notation. For example, `url: $DEV_PROD_URL`.  If an environment variable is not set, the tool will fail. In addition, the system will also request for a set of required environment variables.
-    - To learn about setting up different endpoint types such as HTTP/REST, HTTP/SOAP (with load balancing and failover), Dynamic and AWS Lambda, refer the section [Configuring Different Endpoint Types](../../../learn/api-controller/advanced-topics/configuring-different-endpoint-types).
-    -   To learn about setting up different endpoint security types such as Basic, Digest and OAuth 2.0, refer the section [Configuring Different Endpoint Security Types](../../../learn/api-controller/advanced-topics/configuring-different-endpoint-security-types).
+    - To learn about setting up different endpoint types such as HTTP/REST, HTTP/SOAP (with load balancing and failover), Dynamic and AWS Lambda, refer the section [Configuring Different Endpoint Types](configuring-different-endpoint-types.md).
+    -   To learn about setting up different endpoint security types such as Basic, Digest and OAuth 2.0, refer the section [Configuring Different Endpoint Security Types](configuring-different-endpoint-security-types.md).

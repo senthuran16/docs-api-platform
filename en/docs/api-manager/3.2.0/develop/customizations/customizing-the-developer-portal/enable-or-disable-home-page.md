@@ -2,7 +2,7 @@
 
 It is a common requirement to have a Landing Page if the developer portal is required to present corporate branding. The default Landing Page is the API listing page. But when we enable the Home Page, there will be an additional Landing Page. It can be customized based on the design requirements by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#global-theming).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme.md#global-theming).
    
 ### The Home Page has Four Sections
 1. Carousel
@@ -168,4 +168,4 @@ The `defaultTheme.js` file has all the parameters defining the look and feel of 
 
 2. Refresh the Developer Portal to view the changes.
 
-The Landing Page provides a headstart for developers who try to rebrand the developer portal for their needs. If the requirements are much complicated, then you need to override the relevant components. The steps to override only specific react components can be found [here](../../../develop/customizations/advanced-ui-customization/).
+The Landing Page provides a headstart for developers who try to rebrand the developer portal for their needs. If the requirements are much complicated, then you need to override the relevant components. The steps to override only specific react components can be found [here](../advanced-ui-customization.md).

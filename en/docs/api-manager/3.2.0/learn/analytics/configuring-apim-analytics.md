@@ -15,7 +15,7 @@ Follow the instructions below if you wish to set up API-M Analytics for quick de
 
      WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/).
 
-     For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/install/installation-prerequisites).
+     For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/install/installation-prerequisites.md).
 
      [![apim download page](../../assets/img/learn/apim-download-page.png)](../../assets/img/learn/apim-download-page.png)
 
@@ -89,13 +89,13 @@ Follow the instructions below if you wish to set up API-M Analytics for a produc
      - [Step 4.1 - Configure the Analytics Worker](#step-41-configure-the-analytics-worker)
      - [Step 4.2 - Configure the Analytics Dashboard](#step-42-configure-the-analytics-dashboard)
 - [Step 5 - Include third-party libraries and database drivers](#step-5-include-third-party-libraries-and-database-drivers)
-- [Step 6 - Configure the keystores](#step-6-configure-keystores)
-- [Step 7 - Configure the User-Agent Parser](#step-7-configure-user-agent-parser)
+- [Step 6 - Configure the keystores](#step-6-configure-the-keystores)
+- [Step 7 - Configure the User-Agent Parser](#step-7-configure-the-user-agent-parser)
 
 ### Step 1 - Download and install WSO2 API-M
 
  Download and install WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). Click **DOWNLOAD** and go to **INSTALLATION OPTIONS**.
- <br/>For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/install/installation-prerequisites).
+ <br/>For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/install/installation-prerequisites.md).
 
 ### Step 2 - Download and install WSO2 API-M Analytics
 
@@ -270,9 +270,10 @@ Follow the instructions below to do the required configurations for WSO2 API-M t
         ALTER DATABASE <DB-NAME> COLLATE SQL_Latin1_General_CP1_CS_AS ;
         ```
 
-  - The Worker supports an [Active-Active](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-active) deployment and an [Active-Passive](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive) deployment.
+  - The Worker supports an [Active-Active](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-active.md) deployment and an [Active-Passive](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive.md) deployment.
   - As the dashboard is used only to render the data there is no active-active or active-passive concept. However, based on the High-availability (HA) requirement it can be configured as Active-Active or Active-Passive by defining the `loadbalance` configuration.
 
+<a name="step-41-configure-the-analytics-worker"></a>
 #### Step 4.1 - Configure the Analytics Worker
 
   1. Open the `<API-M_ANALYTICS_HOME>/conf/worker/deployment.yaml` file.
@@ -317,6 +318,7 @@ Follow the instructions below to do the required configurations for WSO2 API-M t
     1. Copy each files in `<EXTRACTED_DIR>/dashboards` to `<ANALYTICS_HOME>/wso2/dashboard/resources/dashboards` directory replacing the existing files.
     2. Start the server.
 
+<a name="step-42-configure-the-analytics-dashboard"></a>
 #### Step 4.2 - Configure the Analytics Dashboard
 
   1. Open the `<API-M_ANALYTICS_HOME>/conf/dashboard/deployment.yaml` file.
@@ -461,9 +463,9 @@ If the library is -
 In the SSL handshake between the API Manager and the API Manager Analytics servers, the client (i.e., API Manager) needs to verify the certificate presented by the server (i.e., API Manager Analytics). For this purpose, the client stores the trusted certificate of the server in the `client-truststore.jks` keystore.
 
 - If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager.
-- To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores](../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-1-generating-a-ca-signed-certificate).
+- To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores](../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-1-generating-a-ca-signed-certificate).
 
-For more information, see [Configuring Keystores in API-M Analytics](../../learn/analytics/configuring-keystores-in-apim-analytics/#configuring-keystores-in-api-m-analytics).
+For more information, see [Configuring Keystores in API-M Analytics](configuring-keystores-in-apim-analytics.md#configuring-keystores-in-api-m-analytics).
 
 ### Step 7 - Configure the User-Agent Parser
 

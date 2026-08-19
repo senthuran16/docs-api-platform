@@ -9,8 +9,8 @@ Initially, the Admins will define API categories. Thereafter, API providers will
 
 You can add an API category using any of the following methods:
 
-- [Add an API Category using the Admin Portal UI](../../../../develop/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/#add-an-api-category-using-the-admin-portal-ui)
-- Add an API Category using the Admin REST API. (You can use the POST resource in the **API Category (Individual)** section [here](../../../../develop/product-apis/admin-apis/admin-v1/admin-v1))
+- [Add an API Category using the Admin Portal UI](api-category-based-grouping.md#add-an-api-category-using-the-admin-portal-ui)
+- Add an API Category using the Admin REST API. (You can use the POST resource in the **API Category (Individual)** section [here](../../../product-apis/admin-apis/admin-v1/admin-v1.md))
 
 ### Add an API Category using the Admin Portal UI
 

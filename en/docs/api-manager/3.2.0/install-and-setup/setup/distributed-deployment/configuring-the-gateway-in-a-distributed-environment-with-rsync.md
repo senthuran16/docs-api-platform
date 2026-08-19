@@ -19,7 +19,7 @@ Note that the configurations in this topic are done based on the following patte
 
 ### Step 1 - Configure the load balancer
 
-For more information, see [Configuring the Proxy Server and the Load Balancer](../../configuring-the-proxy-server-and-the-load-balancer/).
+For more information, see [Configuring the Proxy Server and the Load Balancer](../setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md).
 
 ### Step 2 - Configure the Gateway Manager
 

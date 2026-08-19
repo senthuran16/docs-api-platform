@@ -1,13 +1,13 @@
 # Subscribing for Alerts
 
-You can subscribe to events as a system administrator or as a API publisher/subscriber. These users can subscribe to any of the alert types listed in the **Manage Alert Subscriptions** page specific to them. For more information about different types of alerts and their importance, see [Alert Types](../../learn/analytics/alert-types/).
+You can subscribe to events as a system administrator or as a API publisher/subscriber. These users can subscribe to any of the alert types listed in the **Manage Alert Subscriptions** page specific to them. For more information about different types of alerts and their importance, see [Alert Types](alert-types.md).
 
 !!! info
     Before you begin, make sure that you have done the following
     
-    - Configure Analytics for API Manager. For instructions, see [Configuring APIM Analytics](../../learn/analytics/configuring-apim-analytics/).
-    - Enable alerts in API-M Analytics. For instructions, see [Enable alerts](../../learn/analytics/configuring-alerts/#enable-alerts).
-    - Configure the sender email address in in API-M Analytics. For instructions, see [Configure sender email alerts](../../learn/analytics/configuring-alerts/#configure-sender-email-alerts).
+    - Configure Analytics for API Manager. For instructions, see [Configuring APIM Analytics](configuring-apim-analytics.md).
+    - Enable alerts in API-M Analytics. For instructions, see [Enable alerts](configuring-alerts.md#enable-alerts).
+    - Configure the sender email address in in API-M Analytics. For instructions, see [Configure sender email alerts](configuring-alerts.md#configure-sender-email-alerts).
 
 ### Subscribe to alerts
 

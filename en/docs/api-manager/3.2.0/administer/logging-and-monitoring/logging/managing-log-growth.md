@@ -9,9 +9,10 @@ Log4j2 supports two main log rotation options.
 
 By default wso2 supports rollover based on a time period. This interval is by default one day. The log4j-based logging mechanism uses appenders to append all the log messages into a file, then at the end of the log rotation period, a new file will be created with the appended logs and archived. The name of the archived log file will always contain the date on which the file is archived.
 
+<a name="managing-the-growth-of-carbon-logs"></a>
 #### Managing the growth of Carbon logs
 
-Log growth in [Carbon logs](../../../administer/product-administration/monitoring/logging/setting-up-logging/#configuring-carbon-logs) can be managed by following configurations in `<APIM_HOME>/repository/conf/log4j2.properties` file.
+Log growth in [Carbon logs](setting-up-logging.md#configuring-carbon-logs) can be managed by following configurations in `<APIM_HOME>/repository/conf/log4j2.properties` file.
 
 
 -   Rollover based on a time period can be configured by changing `appender.CARBON_LOGFILE.policies.time.interval` value in days(Default value is 1 day).
@@ -68,6 +69,7 @@ Log growth in [Carbon logs](../../../administer/product-administration/monitorin
 
         You can change the `appender.CARBON_LOGFILE.strategy.action.condition.age` parameter to accept files that are as old or older than the specified duration.
 
+<a name="managing-the-growth-of-audit-log-files"></a>
 #### Managing the growth of audit log files
 
 -   Rollover based on a time period can be configured by changing `appender.AUDIT_LOGFILE.policies.time.interval` value in days(Default value is 1 day).

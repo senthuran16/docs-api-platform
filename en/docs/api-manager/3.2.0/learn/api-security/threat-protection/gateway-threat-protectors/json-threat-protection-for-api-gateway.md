@@ -2,9 +2,9 @@
 
 The JSON threat protector in WSO2 API Manager validates the request body of the JSON message based on pre-configured to thwart payload attacks.
 
--   [Editing the sequence through registry artifacts](#Am300JSONThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the JSON validator policy](#Am300JSONThreatProtectionforAPIGateway-ApplyingtheJSONvalidatorpolicy)
--   [Testing the JSON threat protector](#Am300JSONThreatProtectionforAPIGateway-TestingtheJSONthreatprotector)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the JSON validator policy](#applying-the-json-validator-policy)
+-   [Testing the JSON threat protector](#testing-the-json-threat-protector)
 
 #### Detecting vulnerabilities before parsing the message
 
@@ -63,10 +63,14 @@ You can edit the sequence to set the property values accoring to your requiremen
 
 Note that this exceeds the JSON property count
 
+<a name="2fabe5e92ef64a3a999bb756d894221e"></a>
+
 ``` java
     The request message:
     curl -X POST "https://localhost:8243/jsonpolicy/1.0.0/addpayload" -H "accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer b227d70b-ca56-3439-8698-ffb90345e1b5" -d "{ \"glossary\": \"value\" \"GlossSee\": \"markup\" }"
 ```
+
+<a name="6da49ce3d2cf4091a885d78334d2513e"></a>
 
 ``` java
     <am:fault xmlns:am="http://wso2.org/apimanager">

@@ -26,7 +26,7 @@ Follow the instructions below to enable notifications for new API versions:
     | signature              | Signature of the sender account.
                                                                                 |
 
-    For more information, see [Enable Notifications](../../../reference/config-catalog/#enable-notifications).
+    For more information, see [Enable Notifications](../../../reference/config-catalog.md#enable-notifications).
 
 2.  Sign in to the Management Console.
 

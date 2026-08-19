@@ -37,7 +37,7 @@ Following is the default configuration for carbon logs and the default values ca
      DELETE_EVENT_LOGFILE, TRANSACTION_LOGFILE
      ```
    
-   The log growth of carbon logs can be managed by the configurations discussed in [Managing log growth](../../../administer/product-administration/monitoring/logging/managing-log-growth) guide.
+   The log growth of carbon logs can be managed by the configurations discussed in [Managing log growth](managing-log-growth.md) guide.
 
 ###Enable Logs for a Tenant
 
@@ -96,7 +96,7 @@ Please follow below steps to enable logs for a given service component available
 ### Enable logs for a component via the UI
 
 !!! note
-    You need to get the [latest product updates for your product](../../../administer/updating-wso2-api-manager/) to use this feature in the current version of WSO2 API-M. This feature is available as a product update in WSO2 API-M 3.2.0 from March 3, 2022 onwards.
+    You need to get the [latest product updates for your product](../../updating-wso2-api-manager.md) to use this feature in the current version of WSO2 API-M. This feature is available as a product update in WSO2 API-M 3.2.0 from March 3, 2022 onwards.
 
     !!! warning
         Note that you can deploy updates in a production environment only if you have a valid subscription with WSO2. Read more about [WSO2 Updates](https://wso2.com/updates).
@@ -258,8 +258,8 @@ Following is a sample of gateway wire log for an API request.
     If synapse-wire logs are enabled during high load, outgoing traffic between the gateway and the backend will not be printed in the `wso2carbon.log` file. This happens when the backend connection is keep alive. As we are maintaining connections in a connection pool, the same connections will be reused in keep alive mode irrespective of the changes done in the `log4j2.properties` file.
 
 ##HTTP Access Logs
-HTTP requests/responses are logged in access logs to monitor the activities related to an application's usage. Please see [Monitoring HTTP Access Logs](../../../administer/product-administration/monitoring/logging/monitoring-http-access-logs/) for instructions on how to configure and use HTTP access logs in WSO2 API Manager.
+HTTP requests/responses are logged in access logs to monitor the activities related to an application's usage. Please see [Monitoring HTTP Access Logs](monitoring-http-access-logs.md) for instructions on how to configure and use HTTP access logs in WSO2 API Manager.
 
 ##Audit Logs
-Audit logs are used for tracking the sequence of actions that affect a particular task carried out on the server. Please see [Monitoring Audit Logs](../../../administer/product-administration/monitoring/logging/monitoring-audit-logs/) for instructions on how to configure and use audit logs in WSO2 API Manager.
+Audit logs are used for tracking the sequence of actions that affect a particular task carried out on the server. Please see [Monitoring Audit Logs](monitoring-audit-logs.md) for instructions on how to configure and use audit logs in WSO2 API Manager.
 

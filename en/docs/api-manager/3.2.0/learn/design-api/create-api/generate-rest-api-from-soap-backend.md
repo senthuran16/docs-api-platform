@@ -8,7 +8,7 @@ Follow the instructions below to generate REST APIs in WSO2 API Manager for an e
 
    <html><div class="admonition note">
       <p class="admonition-title">Before you begin</p>
-      <p>Make sure that you have a valid WSDL URL from the SOAP backend. For more information, see <a href="../../../learn/design-api/create-api/generate-rest-api-from-soap-backend/#compatibility">Compatibility</a>.</p>
+      <p>Make sure that you have a valid WSDL URL from the SOAP backend. For more information, see <a href="#compatibility">Compatibility</a>.</p>
       </div>
     </html>
 

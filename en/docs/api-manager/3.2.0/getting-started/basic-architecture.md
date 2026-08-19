@@ -8,12 +8,14 @@ The Management Plane is where API creation and API management takes place.  It c
 
 ### Components
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 [![API Publisher](../assets/img/learn/overviewpage-rest-api.jpg)](../assets/img/learn/overviewpage-rest-api.jpg)
 
 WSO2 API Manager’s API Publisher is a state-of-the-art GUI based tool for API development and management. The GUI is designed for API creators to develop, document, secure, test, and version APIs with ease. It’s also able to cater to more API management-related tasks such as publishing APIs, monetizing APIs, and applying rate limiting policies.
 
+<a name="api-developer-portal"></a>
 #### API Developer Portal
 
 [![Developer Portal](../assets/img/get_started/developer-portal-overview.png)](../assets/img/get_started/developer-portal-overview.png)
@@ -24,7 +26,7 @@ The Developer Portal is a state-of-the-art web interface that allows API publish
 
 [![API Analytics](../assets/img/get_started/analytics.png)](../assets/img/get_started/analytics.png)
 
-Monitoring and analytics of APIs deployed on WSO2 API Manager are provided by the WSO2 API Manager Analytics component. This component includes different types of dashboards to provide more detailed different statistical views of your APIs. Furthermore, you can secure your system by configuring alerts and notifications on pre-determined events to identify any unusual behaviors in near real-time.  For more information, see [Working with Analytics](../learn/analytics/configuring-apim-analytics).
+Monitoring and analytics of APIs deployed on WSO2 API Manager are provided by the WSO2 API Manager Analytics component. This component includes different types of dashboards to provide more detailed different statistical views of your APIs. Furthermore, you can secure your system by configuring alerts and notifications on pre-determined events to identify any unusual behaviors in near real-time.  For more information, see [Working with Analytics](../learn/analytics/configuring-apim-analytics.md).
 
 
 ## Data Plane
@@ -33,6 +35,7 @@ The Data Plane is where the created API is exposed to the public consumers and a
 
 ### Components
 
+<a name="api-gateway"></a>
 #### API Gateway
 
 [![API Gateway](../assets/img/learn/gateway-overview.png)](../assets/img/learn/gateway-overview.png)
@@ -49,6 +52,7 @@ The API Gateway does the JWT token validation by validating the signature, issue
  
 ### Components
  
+<a name="key-manager"></a>
 #### Key Manager
  
  [![Key Manager](../assets/img/get_started/key-manager-overview.png)](../assets/img/get_started/key-manager-overview.png)
@@ -69,4 +73,4 @@ The Traffic Manager helps users to regulate API traffic, make APIs and applicati
 
 In addition to the above, the Traffic Manager also helps to keep the API Gateway's in-memory map, which is used for key validation, up-to-date via a JMS topic. The Traffic Manager publishes artifact (API/application) update events that are received from the API Publisher and API Developer Portal to a JMS topic. The API Gateway receives these events via the JMS topic and updates its in-memory map.
 
-For more information, see [Working with Throttling](../learn/rate-limiting/introducing-throttling-use-cases).
+For more information, see [Working with Throttling](../learn/rate-limiting/introducing-throttling-use-cases.md).

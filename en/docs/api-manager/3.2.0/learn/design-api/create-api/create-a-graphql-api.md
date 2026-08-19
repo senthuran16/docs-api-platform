@@ -170,7 +170,7 @@ Follow the instructions below to design a GraphQL API
                 </p>
                 </div>
                   
-                Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users](../../../administer/product-administration/managing-users-and-roles/adding-users) and [Adding User Roles](../../../administer/product-administration/managing-users-and-roles/adding-user-roles).
+                Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users](../../../administer/managing-users-and-roles/managing-users.md) and [Adding User Roles](../../../administer/managing-users-and-roles/managing-user-roles.md).
                
 
                 [![Create a scope](../../../assets/img/learn/create-scope.png)](../../../assets/img/learn/create-scope.png)
@@ -201,7 +201,7 @@ Follow the instructions below to design a GraphQL API
 
                  [![Scope list](../../../assets/img/learn/scope-list.png)](../../../assets/img/learn/scope-list.png)
 
-Now, you have successfully created and configured a GraphQL API. Next, let's [Publish your API](../../../learn/design-api/publish-api/publish-an-api).
+Now, you have successfully created and configured a GraphQL API. Next, let's [Publish your API](../publish-api/publish-an-api.md).
 
 ### GraphQL operations
 
@@ -244,5 +244,5 @@ Rate limiting is set to unlimited, and thereby disabled by default.
 <div class="admonition note">
 <p class="admonition-title">What's Next?</p>
 
-<p>Learn more by trying out the tutorial on <a href="../../../learn/tutorials/create-and-publish-a-graphql-api">Creating and Publishing a GrapQL API</a>.</p>
+<p>Learn more by trying out the tutorial on <a href="../../../tutorials/create-and-publish-a-graphql-api/">Creating and Publishing a GrapQL API</a>.</p>
 </div> 

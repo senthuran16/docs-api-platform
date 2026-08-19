@@ -1,6 +1,6 @@
 #  Creating Custom Users to Perform API Controller Operations
 
-To perform tasks using the API Controller, a particular user must have required permissions and scopes. From API Manager 3.2.0 onwards, a new role named `Internal/devops` has been introduced who has the ability to perform all the API Controller related operations. You just need to create a new user (Refer [Adding a new User](../../../administer/managing-users-and-roles/managing-users/#adding-a-new-user) to learn about adding new users), assign the role `Internal/devops` and use that user to perform the API Controller operations.
+To perform tasks using the API Controller, a particular user must have required permissions and scopes. From API Manager 3.2.0 onwards, a new role named `Internal/devops` has been introduced who has the ability to perform all the API Controller related operations. You just need to create a new user (Refer [Adding a new User](../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user) to learn about adding new users), assign the role `Internal/devops` and use that user to perform the API Controller operations.
 
 ## Minimal Permissions and Scopes Required to Perform API Controller Operations
 
@@ -9,8 +9,8 @@ Further, you can create your own custom user with a custom role to perform speci
 !!! info
     **Steps to create a custom user with a custom role for your need** 
 
-    - As shown in [Create user roles](../../../administer/managing-users-and-roles/managing-user-roles/#create-user-roles) section, you can create your own custom user role by assigning permissions and scopes that are required to perform a particular set of API Controller operations by referring the table below.
-    - Then, create a user as explained in [Adding a new User](../../../administer/managing-users-and-roles/managing-users/#adding-a-new-user), by assigning the custom role that you created in the above step, to that user.
+    - As shown in [Create user roles](../../../administer/managing-users-and-roles/managing-user-roles.md#create-user-roles) section, you can create your own custom user role by assigning permissions and scopes that are required to perform a particular set of API Controller operations by referring the table below.
+    - Then, create a user as explained in [Adding a new User](../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user), by assigning the custom role that you created in the above step, to that user.
     - Now you can login to the API Controller (using `apictl login <env-name>` command) and perform the particular set of operations as per your need.
 
 <table>

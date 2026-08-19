@@ -41,7 +41,7 @@ After the custom properties have been added, you can [search for APIs using cust
 
 ### Add custom properties via the REST API
 
-Use the [existing REST API](../../../develop/product-apis/restful-apis/) to add a new API and in order to add the API with custom properties make sure to add the following element to the request body including the relevant properties.
+Use the [existing REST API](../../../wip/restful-apis.md) to add a new API and in order to add the API with custom properties make sure to add the following element to the request body including the relevant properties.
 
 `"additionalProperties : {"environment": "preprod", "secured": "true"}`
 
@@ -50,7 +50,7 @@ Use the [existing REST API](../../../develop/product-apis/restful-apis/) to add 
 ### Display custom properties on API overview page
 
 !!! warning
-    This feature is only available with the **WUM** updates and is effective from 7th December 2020 (2020-12-07). For more information on updating WSO2 API Manager, see [Updating WSO2 Products](../../../administer/updating-wso2-api-manager/)
+    This feature is only available with the **WUM** updates and is effective from 7th December 2020 (2020-12-07). For more information on updating WSO2 API Manager, see [Updating WSO2 Products](../../../administer/updating-wso2-api-manager.md)
 
 1. Click **Properties** and click **ADD NEW PROPERTY**.
 

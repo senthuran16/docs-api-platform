@@ -19,7 +19,7 @@ The default URL of WSO2 API Manager Developer Portal is `https://<HostName>:9443
 
     ![](../../assets/img/develop/customizations/browse-registry.png)
 
-3.  Navigate to the `/_system/governance` registry path and create `customurl/api-cloud/<tenant-domain>/urlMapping` directory structure in the registry, as shown in the following diagram. Replace the `<tenant-domain>` placeholder with the domain name of the tenant you want to customize the devportal and gateway URLs. For details on how to create and manage multiple tenants, see [Managing Tenants](../../administer/multitenancy/managing-tenants).
+3.  Navigate to the `/_system/governance` registry path and create `customurl/api-cloud/<tenant-domain>/urlMapping` directory structure in the registry, as shown in the following diagram. Replace the `<tenant-domain>` placeholder with the domain name of the tenant you want to customize the devportal and gateway URLs. For details on how to create and manage multiple tenants, see [Managing Tenants](../../administer/multitenancy/managing-tenants.md).
     
     ![](../../assets/img/develop/customizations/mapping-file-directory-structure.png)
 

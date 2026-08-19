@@ -133,7 +133,7 @@ Follow the instructions below to change the default permissions that are set for
 
 ## Permission level and user role mapping
 
-As described above the permission level of a logged-in user is decided based on the assigned scopes for that user. The logged-in user possesses a user role, and scopes are mapped to that user role. You can find the mapping between default scopes and default user roles in the [role mapping table](../../administer/managing-users-and-roles/managing-user-roles/#adding-role-mappings).
+As described above the permission level of a logged-in user is decided based on the assigned scopes for that user. The logged-in user possesses a user role, and scopes are mapped to that user role. You can find the mapping between default scopes and default user roles in the [role mapping table](../../administer/managing-users-and-roles/managing-user-roles.md#adding-role-mappings).
 
 The following table illustrates the default mapping between the permission level for each analytics dashboard and user role. You can refer to this table when assigning a role to a user in order to provide the required permissions. 
 
@@ -168,7 +168,7 @@ Further, you can add custom scopes for WSO2 API Manager Analytics. Follow the in
     !!! important "Custom scope and role mapping via the Management Console "
         After adding a new role to the existing scope in the `<API-M_HOME>/repository/resources/tenant-conf.json` file do the following before restarting the server.
 
-        1.  Open the [Management Console](`https://localhost:9443/carbon`) (`https://<hostname>:9443/carbon`).
+        1.  Open the [Management Console](https://localhost:9443/carbon) (`https://<hostname>:9443/carbon`).
         2.  Navigate to `/ _system/config/apimgt/applicationdata/tenant-conf.json`
         3.  Replicate adding the role again, as shown in the example below.
 

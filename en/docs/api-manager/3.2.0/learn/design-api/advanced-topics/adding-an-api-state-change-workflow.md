@@ -1,6 +1,6 @@
 # Adding an API State Change Workflow
 
-This section let's see how to add a simple approval workflow to control the API state changes in WSO2 API Manager. Before you begin, see [Workflow Extensions](../../../develop/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine/) to get more information on the different types of workflow executors, and also to get a better understanding on the API states, see [API Lifecycle](../../../getting-started/key-concepts#api-lifecycle).
+This section let's see how to add a simple approval workflow to control the API state changes in WSO2 API Manager. Before you begin, see [Workflow Extensions](../../../develop/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine.md) to get more information on the different types of workflow executors, and also to get a better understanding on the API states, see [API Lifecycle](../../../getting-started/key-concepts.md#api-lifecycle).
 
 ## Engaging the Approval Workflow Executor in API Manager
 
@@ -40,7 +40,7 @@ This section let's see how to add a simple approval workflow to control the API 
 
      1. Sign in to the API Publisher (`https://<Server-Host>:9443/publisher`) and publish an API. 
 
-     For more information, see [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/) and [Publish an API](../../../learn/design-api/publish-api/publish-an-api/).
+     For more information, see [Create a REST API](../create-api/create-a-rest-api.md) and [Publish an API](../publish-api/publish-an-api.md).
 
      2. Click **Lifecycle**.
 

@@ -1,7 +1,7 @@
 # Configuring External IDP through Identity Server for SSO
 
 !!! note
-    Please follow [Configuring Identity Server as IDP for SSO](../../../develop/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso) to configure WSO2 Identity Server.
+    Please follow [Configuring Identity Server as IDP for SSO](configuring-identity-server-as-idp-for-sso.md) to configure WSO2 Identity Server.
     This guide will assume you have already followed the above tutorial and configured the Identity Server as IDP for SSO.
 
 !!! info

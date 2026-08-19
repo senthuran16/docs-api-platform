@@ -265,4 +265,4 @@ By default, the claim mapping is done in a one-to-one manner. But, if the mappin
 
 ### Scope validation
 
-By default, the WSO2 API Manager validates the scopes coming in the `scope` claim of the JWT. If the JWT contains the scopes in a different claim, users can map that claim into the `scope` claim as per [Transform JWT Claims](#transform-jwt-claims) section.
+By default, the WSO2 API Manager validates the scopes coming in the `scope` claim of the JWT. If the JWT contains the scopes in a different claim, users can map that claim into the `scope` claim as per [Transform JWT Claims](#jwt-claim-transformation) section.

@@ -35,7 +35,7 @@ Follow the instructions below to prevent or turn off API suspension:
 
 5.  Click **Save** and re-publish the API.
 
-     For more details on creating and publishing an API, see [Create an API](../../../../learn/design-api/create-api/create-a-rest-api) and [Publish an API](../../../../learn/design-api/publish-api/publish-an-api).
+     For more details on creating and publishing an API, see [Create an API](../../create-api/create-a-rest-api.md) and [Publish an API](../../publish-api/publish-an-api.md).
 
 !!! info
     To avoid backend endpoint suspension:
@@ -68,4 +68,4 @@ Follow the instructions below to prevent or turn off API suspension:
         </endpoint>
         ```
 
-For more details on configuring different timeouts, see [Timeout configurations for an API call](../../../../install-and-setup/setup/deployment-best-practices/tuning-performance/) in the Performance Tuning guide.
+For more details on configuring different timeouts, see [Timeout configurations for an API call](../../../../install-and-setup/setup/deployment-best-practices/tuning-performance.md) in the Performance Tuning guide.

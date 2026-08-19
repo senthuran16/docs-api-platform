@@ -50,7 +50,7 @@ There are two approaches to configure a secondary user store. It can be configur
     </tbody>
     </table>
 
-    You can also populate this drop-down list with custom user store manager implementations by adding them to the server. For information on implementing a custom user store manager, see [Writing a Custom User Store Manager](../../../administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager).
+    You can also populate this drop-down list with custom user store manager implementations by adding them to the server. For information on implementing a custom user store manager, see [Writing a Custom User Store Manager](writing-a-custom-user-store-manager.md).
 
     For samples, see [Sample Custom User Store Manager](https://github.com/wso2/product-is/tree/v5.10.0/modules/samples/user-mgt/sample-custom-user-store-manager) in the WSO2 Identity Server product repository.
 

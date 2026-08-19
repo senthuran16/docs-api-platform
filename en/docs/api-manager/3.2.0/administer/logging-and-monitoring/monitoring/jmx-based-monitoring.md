@@ -101,7 +101,7 @@ Once the product server is started, you can start the jConsole tool as follows:
      2.  Enter values for the **Username** and **Password** fields to log in. If you are logging in as the administrator, you can use the same administrator account that is used to log in to the product's management console: admin/admin.
 
         !!! info
-            Make sure that the user ID you are using for JMX monitoring is assigned a role that has the **Server Admin** permission. See [Configuring Roles](../../../administer/product-administration/managing-users-and-roles/managing-user-roles) for further information about configuring roles assigned to users. Any user assigned to the **admin** role can log in to JMX.
+            Make sure that the user ID you are using for JMX monitoring is assigned a role that has the **Server Admin** permission. See [Configuring Roles](../../managing-users-and-roles/managing-user-roles.md) for further information about configuring roles assigned to users. Any user assigned to the **admin** role can log in to JMX.
 
 
 4.  Click **Connect** to open the **Java Monitoring & Management Console**. The following tabs will be available:
@@ -232,11 +232,11 @@ Operations available in the **Statistics** MBean:
 
 ### Using the DataSource MBean
 
-If you have [JMX enabled for a datasource connected to the product](#JMX-BasedMonitoring-EnablingJMXforadatasource), you can monitor the performance of the datasource using this MBean. The **DataSource** MBean will be listed as shown below.
+If you have [JMX enabled for a datasource connected to the product](#enabling-jmx-for-a-datasource), you can monitor the performance of the datasource using this MBean. The **DataSource** MBean will be listed as shown below.
 
 [![Datasource mbean](../../../assets/img/administer/datasource-mbean.png)](../../../assets/img/administer/datasource-mbean.png)
 
-**Example:** If you have JMX enabled for the default Carbon datasource in the `master-datasources.xml.` file, the [JDBC connection pool parameters](http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) that are configured for the Carbon datasource will be listed as attributes as shown below. See the [performance tuning guide](../../../install-and-setup/perfromance-tuning-and-test-results/tuning-performance) for instructions on how these parameters are configured for a datasource.
+**Example:** If you have JMX enabled for the default Carbon datasource in the `master-datasources.xml.` file, the [JDBC connection pool parameters](http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) that are configured for the Carbon datasource will be listed as attributes as shown below. See the [performance tuning guide](../../../install-and-setup/setup/deployment-best-practices/tuning-performance.md) for instructions on how these parameters are configured for a datasource.
 
 [![Attributes mbeans](../../../assets/img/administer/attributes-mbeans.png)](../../../assets/img/administer/attributes-mbeans.png)
 

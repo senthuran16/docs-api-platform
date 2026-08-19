@@ -11,10 +11,10 @@ In this example, let's use WSO2 IS configured as a third-party Key Manager. An O
 
 ## Step 1 - Configure a third-party key manager
 
-Follow the steps in [Configure WSO2 IS as a Key Manager](../../../administer/key-managers/configure-wso2is-connector) to setup WSO2 IS as a third-party key manager.
+Follow the steps in [Configure WSO2 IS as a Key Manager](../../../administer/key-managers/configure-wso2is-connector.md) to setup WSO2 IS as a third-party key manager.
 
 !!! note
-     You can use any Key Manager mentioned under [Multiple Third-party Key Manager support](../../../administer/key-managers/overview/) and configure it as a third-party key manager.
+     You can use any Key Manager mentioned under [Multiple Third-party Key Manager support](../../../administer/key-managers/overview.md) and configure it as a third-party key manager.
 
 In this example, it will be assumed that WSO2 IS and WSO2 API-M are up and running in `https://<Server Host>:9444` and `https://<Server Host>:9443` respectively.
 
@@ -72,7 +72,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
         enable_provisioned_app_validation = false
         ```
 
-3.  [Start the server](../../../install-and-setup/installation-guide/running-the-product/#starting-the-server).
+3.  [Start the server](../../../install-and-setup/install/running-the-product.md#starting-the-server).
 
 4.  Sign in to the Developer Portal.
 
@@ -80,7 +80,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
 5.  Create an application. 
      
-     For more information, see [Create Application](../../../learn/consume-api/manage-application/create-application).
+     For more information, see [Create Application](../../consume-api/manage-application/create-application.md).
     
 6.  Click on the respective application to view the credential details.
     
@@ -105,10 +105,10 @@ Now you have successfully mapped an out-of-band OAuth client to an application.
 
 ## Step 4 - Invoke an API
 
-1. [Subscribe to an API](../../../learn/consume-api/manage-subscription/subscribe-to-an-api) via this application.
+1. [Subscribe to an API](../../consume-api/manage-subscription/subscribe-to-an-api.md) via this application.
 
 2. Obtain an access token for it.
    
-    You cannot obtain an access token from the Developer Portal for the provisioned applications. You need to use the command line (cURL). For more information, see [Obtain Access Token](../../../learn/consume-api/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens).
+    You cannot obtain an access token from the Developer Portal for the provisioned applications. You need to use the command line (cURL). For more information, see [Obtain Access Token](../../consume-api/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens.md).
 
-3. [Invoke the API](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console).
+3. [Invoke the API](../../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).

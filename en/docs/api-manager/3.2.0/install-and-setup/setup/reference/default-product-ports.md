@@ -1,6 +1,6 @@
 # Default Product Ports
 
-This page describes the default ports that are used for each WSO2 product when the [port offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/#configuring-the-port-offset) is 0.
+This page describes the default ports that are used for each WSO2 product when the [port offset](../deployment-best-practices/changing-the-default-ports-with-offset.md#configuring-the-port-offset) is 0.
 
 !!! Attention
     **Note** that it is recommended to disable the HTTP transport in an API Manager production setup. Using the `Bearer` token over HTTP is a violation of the OAuth specification and can lead to security vulnerabilities.
