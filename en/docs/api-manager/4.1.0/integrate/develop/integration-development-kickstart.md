@@ -215,7 +215,7 @@ go to **New** → **REST API** to open the **API Artifact Creation Options** dia
 
 2. Invoke the GrandOak Endpoint:
 
-    The **Call** mediator is used to invoke a back-end service. In [Step 2](#step-2-create-endpoints), we have already created an Endpoint to represent the GrandOak endpoint.
+    The **Call** mediator is used to invoke a back-end service. In [Step 2](#create-endpoints), we have already created an Endpoint to represent the GrandOak endpoint.
 
     Drag the Call mediator from the mediator palette into one branch of the Clone mediator. 
 

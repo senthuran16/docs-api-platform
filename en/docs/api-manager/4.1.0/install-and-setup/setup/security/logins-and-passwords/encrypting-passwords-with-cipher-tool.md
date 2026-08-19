@@ -253,7 +253,7 @@ Since we cannot use the [automated process](#encrypting-passwords-using-the-auto
     ```
 
         !!! info
-    Note that in certain configuration files, the password that requires encryption may not be specified as a single value as it is in the log4j.properties file. For example, the jndi.properties file used in WSO2 ESB contains the password in the connection URL. In such cases, you need to encrypt the entire connection URL as explained [here](#EncryptingPasswordswithCipherTool-encrypting_jndi) .
+    Note that in certain configuration files, the password that requires encryption may not be specified as a single value as it is in the log4j.properties file. For example, the jndi.properties file used in WSO2 ESB contains the password in the connection URL. In such cases, you need to encrypt the entire connection URL as explained [here](#encrypting-passwords-manually) .
 
 
 7.  You will receive the encrypted value. For example:
@@ -307,7 +307,7 @@ Since we cannot use the [automated process](#encrypting-passwords-using-the-auto
     mutualSSLManagerEnabled=false
 ```
 
-Another example of a configuration file that uses passwords without an XPath notation is the jndi.properties file. This file is used in WSO2 Enterprise Service Bus (WSO2 ESB) for the purpose of connecting to a message broker. You can read more about this functionality from [here](https://docs.wso2.com/display/ESB490/Configure+with+WSO2+Message+Broker) . As shown below, this file contains a password value (admin) in the connection URL ( <amqp://admin:admin@clientID/carbon?brokerlist=> ' <tcp://localhost:5673> '). To encrypt this password, you can follow the same manual process [explained above](#EncryptingPasswordswithCipherTool-encrypting_log4j) . However, you must encrypt the entire connection URL ( <amqp://admin:admin@clientID/carbon?brokerlist=> ' <tcp://localhost:5673> ') and not just the password value given in the URL.
+Another example of a configuration file that uses passwords without an XPath notation is the jndi.properties file. This file is used in WSO2 Enterprise Service Bus (WSO2 ESB) for the purpose of connecting to a message broker. You can read more about this functionality from [here](https://docs.wso2.com/display/ESB490/Configure+with+WSO2+Message+Broker) . As shown below, this file contains a password value (admin) in the connection URL ( <amqp://admin:admin@clientID/carbon?brokerlist=> ' <tcp://localhost:5673> '). To encrypt this password, you can follow the same manual process [explained above](#encrypting-passwords-manually) . However, you must encrypt the entire connection URL ( <amqp://admin:admin@clientID/carbon?brokerlist=> ' <tcp://localhost:5673> ') and not just the password value given in the URL.
 
 ``` java
     # register some connection factories

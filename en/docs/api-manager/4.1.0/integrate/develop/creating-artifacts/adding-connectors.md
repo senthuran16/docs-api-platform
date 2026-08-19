@@ -48,5 +48,5 @@ Follow the steps below to remove connectors from WSO2 Integration Studio:
 
 ## Tutorials
 
--	See the tutorial on [Connecting Web APIs/Cloud Services](../../../tutorials/integration-tutorials/using-the-gmail-connector.md#importing-the-email-connector-into-wso2-integration-studi)
+-	See the tutorial on [Connecting Web APIs/Cloud Services](../../../tutorials/integration-tutorials/using-the-gmail-connector.md#importing-the-email-connector-into-wso2-integration-studio)
      

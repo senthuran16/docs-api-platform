@@ -168,6 +168,7 @@ The source watcher needs to be authenticated with the Git repository to fetch th
 
 __________________________________________
 
+<a name="using-username-and-access-token"></a>
 #### **Using the Username and Access Token**
 
 To authenticate the repository with basic HTTP authentication, the username and access token should be set in the `username` and `accessToken` fields. The password can also be set in the `accessToken` field. It is recommended to use the personal access token for authentication. For public repositories (in GitHub), the `username` and `accessToken` fields can be kept empty.
@@ -222,6 +223,7 @@ To authenticate the repository with basic HTTP authentication, the username and 
 
 __________________________________________
 
+<a name="using-ssh-key-file"></a>
 #### **Using the SSH Key file**
 
 To authenticate the repository with SSH key, the SSH private key file path should be set in the `SSHKeyFile` field. 

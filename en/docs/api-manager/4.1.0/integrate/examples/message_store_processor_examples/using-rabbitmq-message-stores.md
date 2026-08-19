@@ -4,7 +4,7 @@ In this example, the client sends requests to a **proxy service**, which stores 
 
 ### Synapse configurations
 
-Following are the artifact configurations that we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-1) this example.
+Following are the artifact configurations that we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
 
 ```xml tab="Message Store"
 <?xml version="1.0" encoding="UTF-8"?>

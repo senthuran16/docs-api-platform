@@ -46,7 +46,7 @@ icon on the upper menu and add the jar to select libraries section.
           class
          </td>
          <td>
-          Name of the custom class you implemented in <a href="#step-1-developing-a-custom-inbound-endpoint">step 1</a>.
+          Name of the custom class you implemented in <a href="#step-1-developing-the-custom-inbound-endpoint">step 1</a>.
          </td>
       </tr>
       <tr>

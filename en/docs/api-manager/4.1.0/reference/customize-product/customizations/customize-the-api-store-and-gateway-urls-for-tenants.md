@@ -4,7 +4,7 @@ The default URL of WSO2 API Manager Developer Portal (`https://<HostName>:9443/d
 
 -   [Configure per tenant custom domain mappings](#configure-per-tenant-custom-domain-mappings)
 
--   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-devportal)
+-   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-the-developer-portal)
 
 -   [Configure the load balancer for custom URLs](#configure-the-load-balancer-for-custom-urls)
 

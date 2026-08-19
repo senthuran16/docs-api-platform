@@ -14,6 +14,7 @@ The following operations allow you to retrieve courses of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-courses-of-employee"></a>
 #### Retrieving Employee Courses
 We can use GET Employee Courses operation with required parameters to search and find the courses associated with employees.
 

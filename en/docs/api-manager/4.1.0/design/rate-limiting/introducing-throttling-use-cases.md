@@ -102,7 +102,7 @@ The following diagram shows how throttle policies are applied at different level
 
 [![rate limiting levels](../../assets/img/learn/throttling-levels.png)](../../assets/img/learn/throttling-levels.png)
 
-If [advanced rate limiting](#advanced-throttling-policies-api-publisher) policies are added and engaged to a specific API or API resource, it will also be applied here. i.e. Requests will be allowed/rejected based on the conditions specified in advanced rate limiting policies as well.
+If [advanced rate limiting](#advanced-rate-limiting-policies-api-publisher) policies are added and engaged to a specific API or API resource, it will also be applied here. i.e. Requests will be allowed/rejected based on the conditions specified in advanced rate limiting policies as well.
 
 !!!note
     **Understanding Throttling Slippage**

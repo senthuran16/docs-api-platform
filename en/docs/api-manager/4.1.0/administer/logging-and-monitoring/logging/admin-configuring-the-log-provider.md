@@ -14,7 +14,7 @@ This `org.wso2.carbon.logging.service.provider.api.LogProvider` interface is use
 
 The `LogProvider` interface has the following methods:
 
--`init(LoggingConfig loggingConfig)` - Initialize the log provider by reading the properties defined in the [logging configuration](#ConfiguringtheLogProvider-ConfigureLogProvidersinCarbonProducts) file. This will be called immediately after creating a new instance of LogProvider.
+-`init(LoggingConfig loggingConfig)` - Initialize the log provider by reading the properties defined in the [logging configuration](#configuring-carbon-to-plug-the-log-provider) file. This will be called immediately after creating a new instance of LogProvider.
 -   getApplicationNames(String tenantDomain, String serverKey) - Return list of all application names deployed under provided tenant domain and server key.
 -   getSystemLogs() - Return a list of system LogEvents.
 -   getAllLogs(String tenantDomain, String serverKey) - Return list of all the logs available under given domain and server key
@@ -29,7 +29,7 @@ The `org.wso2.carbon.logging.service.provider.api.LogFileProvider` interface is 
 
 The `LogFileProvider` interface has the following methods:
 
--   init(LoggingConfig loggingConfig)-  Initialize the file log provider by reading the properties defined in the [logging configuration](#ConfiguringtheLogProvider-ConfigureLogProvidersinCarbonproducts) file. This will be called immediately after creating a new instance of LogFileProvider.
+-   init(LoggingConfig loggingConfig)-  Initialize the file log provider by reading the properties defined in the [logging configuration](#configuring-carbon-to-plug-the-log-provider) file. This will be called immediately after creating a new instance of LogFileProvider.
 -   getLogFileInfoList(String tenantDomain, String serviceName) - Return information about the log files, which is available under given tenant domain and serviceName. For example, info about logs: log name, log date, log size.
 -   downloadLogFile(String logFile, String tenantDomain, String serviceName) - Download the file.
 

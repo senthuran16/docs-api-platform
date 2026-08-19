@@ -4,7 +4,7 @@ A user store is a repository that stores user credentials (user names and passwo
 
 ## Users in the Micro Integrator
 
-Find out about [user credentials in the Micro Integrator](managing_users.md#users-credentials-in-the-mi).
+Find out about [user credentials in the Micro Integrator](managing_users.md#user-credentials-in-the-mi).
 
 ## File-based user store (Default)
 

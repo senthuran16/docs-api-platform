@@ -170,6 +170,7 @@ Let's create an HTTP endpoint to represent the Hospital Service.
 
 4.  Click **Finish**
 
+<a name="importing-the-email-connector-into-wso2-integration-studio"></a>
 #### Importing the Email Connector into WSO2 Integration Studio
 
 1. Right click on **Sample Services Configs** module in the Project Explorer and select **Add or Remove Connector/Module**.

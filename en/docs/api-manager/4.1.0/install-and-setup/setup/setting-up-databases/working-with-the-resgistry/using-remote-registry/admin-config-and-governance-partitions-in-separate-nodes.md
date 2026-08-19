@@ -7,8 +7,8 @@ Figure 4: Config and governance partitions in separate registry instances .
 
 Configuration steps are given in the following sections.
 
--   [Creating the Database](#ConfigandGovernancePartitionsinSeparateNodes-Database)
--   [Configuring the Remote Registry Instances](#ConfigandGovernancePartitionsinSeparateNodes-RemoteRegistry)
+-   [Creating the Database](#creating-the-database)
+-   [Configuring the Remote Registry Instances](#configuring-the-remote-registry-instances)
 -   Configuring Foo Product Cluster
 -   Configuring Bar Product Cluster
 

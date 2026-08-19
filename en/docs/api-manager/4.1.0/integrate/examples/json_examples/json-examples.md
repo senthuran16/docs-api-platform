@@ -1042,7 +1042,7 @@ descriptions:
 </tr>
 <tr class="odd">
 <td><code>             synapse.commons.enableXmlNilReadWrite            </code></td>
-<td>Handles how <a href="#WorkingwithJSONMessagePayloads-EmptyXMLelementswiththe&#39;nil&#39;attribute">empty XML elements with the 'nil' attribute</a> are converted to JSON.</td>
+<td>Handles how <a href="#empty-xml-elements-with-the-nil-attribute">empty XML elements with the 'nil' attribute</a> are converted to JSON.</td>
 <td><code>             false            </code></td>
 </tr>
 <tr class="even">

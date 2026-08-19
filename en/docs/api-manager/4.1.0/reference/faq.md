@@ -16,7 +16,7 @@ It is completely supported from evaluation to production. For more details, see 
 
 ### What are the default ports opened in the API Manager?
 
-For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports.md#api-manager).
+For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports.md#api-m-ports).
 
 ### What are the technologies used underneath WSO2 API Manager?
 
@@ -95,7 +95,7 @@ To enable using your email (e.g., `admin@wso2.com`) as your username when deploy
 username="admin!wso2.com!carbon.super"
 ```
 
-For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setting-up-an-e-mail-login).
+For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login).
 
 ------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@
 
 You can set up a Kubernetes (K8s) cluster for the Micro Integrator using one of the following deployment options.
 
-- [Using the Kubernetes Operator](#using-the-kubernetes-operator)
+- [Using the Kubernetes Operator](#using-the-k8s-operator)
 
 - [Using Helm resources](#using-helm-resources)
 

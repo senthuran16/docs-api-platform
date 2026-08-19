@@ -92,7 +92,7 @@ Before passing end user attributes, you need to enable and configure the JWT imp
      enable = true
      ```
 
-     For more information, see [JWT generation configuration details](#jwt-generation-configuration-details).
+     For more information, see [JWT generation configuration details](#backend-jwt-generator-configuration-details).
 
 3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 

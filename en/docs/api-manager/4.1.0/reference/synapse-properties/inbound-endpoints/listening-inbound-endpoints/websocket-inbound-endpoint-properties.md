@@ -81,7 +81,7 @@ The following properties are required when [creating a WebSocket inbound endpoin
 
 ### Required Properties (for Secured WebSocket)
 
-In addition to the [common WebSocket inbound properties](#common-websocket-inbound-required-properties) listed above, the following properties are required when [creating a **secured** WebSocket inbound endpoint](../../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md).
+In addition to the [common WebSocket inbound properties](#required-properties) listed above, the following properties are required when [creating a **secured** WebSocket inbound endpoint](../../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md).
 
 <table>
   <tr>

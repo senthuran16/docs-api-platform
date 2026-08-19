@@ -55,7 +55,7 @@ Follow the instructions below to set up and configure the databases for the WSO2
     !!! warning
         If you have already created and set up the database (`WSO2_SHARED_DB`) for WSO2 API Manager, you only need to configure the data source configurations in the WSO2 IS node for it to connect with the required databases and act as the Key Manager.
 
-     <a name="#step3-2"></a>
+     <a name="step3-2"></a>
 
 2. Share `WSO2_SHARED_DB`with WSO2 IS.
 

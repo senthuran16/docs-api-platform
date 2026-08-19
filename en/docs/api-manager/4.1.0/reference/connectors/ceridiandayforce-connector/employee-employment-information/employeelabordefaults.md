@@ -14,6 +14,7 @@ The following operations allow you to retrieve the default labour of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-labour-defaults"></a>
 #### Retrieving Employee Labor Defaults
 We can use GET Employee Labor Defaults operation with required parameters to search and find the default labour of an employee.
 

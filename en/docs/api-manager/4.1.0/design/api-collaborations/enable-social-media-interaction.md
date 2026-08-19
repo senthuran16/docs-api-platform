@@ -4,7 +4,7 @@ By default, the community links option is **disabled** (hidden). As a result, th
 
 In addition, the GitHub and Slack channel URLs will not appear in the Developer Portal unless the administrators have defined these URLs via the Publisher.
 
-- [Enable sharing API links on social media](#enable-sharing-api-links-on-social-media)
+- [Enable sharing API links on social media](#enable-sharing-api-link-on-social-media)
 - [Add GitHub and Slack channel URLs to an API](#add-github-and-slack-channel-urls-to-an-api)
 
 ## Enable sharing API link on social media

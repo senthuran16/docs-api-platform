@@ -114,4 +114,4 @@ paths:
 
 ### Step 2 - Deploy the API project and invoke the API with failover endpoints
 
-After defining an API in the OpenAPI definition file, deploy it in Choreo Connect as described in the [Choreo Connect Deployed on Docker with WSO2 API Controller Guide](../getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#step-1-download-and-setup-choreo-connect-distribution-zip-and-apictl-command-line-tool).
+After defining an API in the OpenAPI definition file, deploy it in Choreo Connect as described in the [Choreo Connect Deployed on Docker with WSO2 API Controller Guide](../getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#step-1-download-and-setup-the-choreo-connect-distribution-and-apictl).

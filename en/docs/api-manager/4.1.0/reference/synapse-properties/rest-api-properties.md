@@ -66,7 +66,7 @@ The following properties are optional properties you can configure when [creatin
 
 ### REST API Resource Properties
 
-When you [creating a REST API artifact](../../integrate/develop/creating-artifacts/creating-an-api.md), you need to configure the API resource. Listed below are the properties you can configure when [defining an API resource](../../integrate/develop/creating-artifacts/creating-an-api.md#step-3-update-api-resource-properties).
+When you [creating a REST API artifact](../../integrate/develop/creating-artifacts/creating-an-api.md), you need to configure the API resource. Listed below are the properties you can configure when [defining an API resource](../../integrate/develop/creating-artifacts/creating-an-api.md#updating-properties).
 
 <table>
     <tr>

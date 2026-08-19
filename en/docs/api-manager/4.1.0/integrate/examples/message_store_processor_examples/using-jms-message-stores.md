@@ -220,7 +220,7 @@ See the descriptions of the above configurations:
   <tr>
     <td>Message Processor</td>
     <td>
-      Create a message forwarding processor using the below configuration. Message forwarding processor consumes the messages stored in the message store. Compared to [Example 1](#example-1), this has an additional parameter **message.processor.reply.sequence** to point to a sequence to handle the response message. 
+      Create a message forwarding processor using the below configuration. Message forwarding processor consumes the messages stored in the message store. Compared to [Example 1](#example-1-store-and-forward-jms-messages), this has an additional parameter **message.processor.reply.sequence** to point to a sequence to handle the response message. 
     </td>
   </tr>
 </table>

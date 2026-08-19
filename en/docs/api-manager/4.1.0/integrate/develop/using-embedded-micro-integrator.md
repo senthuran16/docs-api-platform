@@ -51,7 +51,7 @@ In the upper section, update the server configuration file (`deployment.toml` fi
 
 If you have secrets in the `deployment.toml` file, you can encrypt them using the <b>Cipher Tool</b>. 
 
-1.  Open the [<b>Embedded Micro Integrator Configuration</b>](#update-embedded-server-configs-and-libraries) dialog box. 
+1.  Open the [<b>Embedded Micro Integrator Configuration</b>](#update-embedded-server-configurations-and-libraries) dialog box. 
 2.  Update the static secrets in the `deployment.toml` file as explained in [encrypting server secrets](../../install-and-setup/setup/mi-setup/security/encrypting_plain_text.md).
 3.  Click <b>Encrypt Secrets</b>.
 	

@@ -68,7 +68,7 @@ To export the `SweetFactoryApp` Siddhi application as a Docker artifact, follow 
     Click **Next** without templating any value of the Siddhi application.
 
     !!!info
-        For detailed information about templating the values of a Siddhi Application, see [Exporting Siddhi Apps for Docker Image](../../develop/streaming-apps/exporting-siddhi-applications.md#exporting-siddhi-apps-for-docker-image).
+        For detailed information about templating the values of a Siddhi Application, see [Exporting Siddhi Apps for Docker Image](../../develop/streaming-apps/exporting-siddhi-applications.md#exporting-siddhi-applications-as-a-docker-image).
     
 5. In **Step 3**, you can update configurations of the Streaming Integrator.
     

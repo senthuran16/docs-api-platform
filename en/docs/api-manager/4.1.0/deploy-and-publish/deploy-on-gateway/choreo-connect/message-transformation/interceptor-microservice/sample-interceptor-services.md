@@ -30,7 +30,7 @@ x-wso2-response-interceptor:
 You can find the implementation of the interceptor service in the [Choreo Connect GitHub Repository](https://github.com/wso2/product-microgateway).
 Clone the repository and change to the cloned path.
 
-1. Start the Choreo-Connect Docker compose setup if you have not started it yet. For instructions, see [Deploying Choreo Connect as a Standalone Gateway on Docker](../../getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#quick-start-guide-docker).
+1. Start the Choreo-Connect Docker compose setup if you have not started it yet. For instructions, see [Deploying Choreo Connect as a Standalone Gateway on Docker](../../getting-started/quick-start-guide-docker-with-apim.md).
 
 2. Find the sample interceptor implementations in the directory [samples/interceptors](https://github.com/wso2/product-microgateway/tree/main/samples/interceptors#readme).
    You can find implementations for following languages.

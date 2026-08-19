@@ -337,7 +337,7 @@ Let's start the API Manager runtime before starting the Micro Integrator.
 
 ### Step 6 - Build and run the service
 
-Let's deploy the [packaged artifacts](#step-3-package-the-artifacts) in the embedded Micro Integrator:
+Let's deploy the [packaged artifacts](#step-4-package-the-artifacts) in the embedded Micro Integrator:
 
 !!! Info
     When you do this step: 

@@ -180,7 +180,7 @@ Expand the **Docker Exporter** in the project explorer. See that the following f
 
 Before you begin:
 
--   Create your integration artifacts in an [ESB Config sub project](create-integration-project.md#sub-projects) and package the artifacts in a [Composite Exporter](packaging-artifacts.md#sub-projects). For example, see the HelloWorld sample given below.
+-   Create your integration artifacts in an [ESB Config sub project](create-integration-project.md#sub-projects) and package the artifacts in a [Composite Exporter](create-integration-project.md#sub-projects). For example, see the HelloWorld sample given below.
 
     <img alt="Integration artifacts for Docker" src="../../../assets/img/integrate/create_project/docker_k8s_project/integration-projects-for-docker.png" width="300">
 
