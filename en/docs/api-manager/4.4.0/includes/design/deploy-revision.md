@@ -1,17 +1,3 @@
----
-title: "Deploy a new API revision"
-description: "Deploy a new revision of an API to a Gateway environment from the Publisher Portal's Deployments page."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/deploy-revision/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/deploy-revision.md
-tags:
-  - api-manager
-  - includes
-  - design
-  - deploy-revision
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 Follow the instructions below to deploy a new revision for an API:
 

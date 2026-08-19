@@ -1,17 +1,3 @@
----
-title: "More streaming API resources"
-description: "Links to streaming API concepts: endpoints, security, rate limiting, lifecycle, monetization, and testing."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/stream-more-links/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/stream-more-links.md
-tags:
-  - api-manager
-  - includes
-  - design
-  - stream-more-links
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "concept"
----
 
 - Learn more on the concepts that you need to know when creating a Streaming API:
 

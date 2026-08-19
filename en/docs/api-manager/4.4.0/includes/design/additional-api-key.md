@@ -1,17 +1,3 @@
----
-title: "Restrict an API key by IP or referrer"
-description: "Generate a Developer Portal API key restricted by IP address, IP address range, or HTTP referrer."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/additional-api-key/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/additional-api-key.md
-tags:
-  - api-manager
-  - includes
-  - design
-  - additional-api-key
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 #### 1) IP address restriction
 
@@ -28,7 +14,7 @@ in the following formats.
 
 2. Select `IP Addresses`, add the IP addresses in the text input as shown below, and generate the key.
 
-   [![IP Restricted API key](../../../../assets/img/learn/ip-api-key.png)](../../../assets/img/learn/ip-api-key.png)
+   [![IP Restricted API key](../../../assets/img/learn/ip-api-key.png)](../../../assets/img/learn/ip-api-key.png)
 
 #### 2) HTTP referrer restriction
 
@@ -44,4 +30,4 @@ When the HTTP referrer restriction has been enabled, only the specific HTTP refe
 
 2. Select `HTTP Referrers (Web Sites)` and add the referrers in the text input as shown below and generate the key.
 
-   [![HTTP Referer Restricted API key](../../../../assets/img/learn/http-referer-api-key.png)](../../../assets/img/learn/http-referer-api-key.png)
+   [![HTTP Referer Restricted API key](../../../assets/img/learn/http-referer-api-key.png)](../../../assets/img/learn/http-referer-api-key.png)

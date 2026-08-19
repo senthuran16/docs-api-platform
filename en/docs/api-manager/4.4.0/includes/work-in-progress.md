@@ -1,16 +1,3 @@
----
-title: "Work in progress"
-description: "Placeholder notice shown on API Manager documentation pages whose content is not yet available."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/work-in-progress/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/work-in-progress.md
-tags:
-  - api-manager
-  - includes
-  - work-in-progress
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "concept"
----
 
 ![Work In Progress](../assets/img/work-in-progress.png){: style="width:60%"}
 

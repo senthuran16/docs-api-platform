@@ -1,17 +1,3 @@
----
-title: "How backend JWT works"
-description: "Explains how the Gateway sends end-user attributes to the backend service as a signed JWT header."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/backend-jwt-intro/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/backend-jwt-intro.md
-tags:
-  - api-manager
-  - includes
-  - deploy
-  - backend-jwt-intro
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "concept"
----
 
 There can be scenarios where a backend service needs to make different decisions or respond with different data, depending on the application end-user that consumes an API. To achieve this the backend service needs to have access to the respective end-user's data at the time an API call takes place.
 

@@ -1,17 +1,3 @@
----
-title: "Deploy API Manager with traffic manager separation"
-description: "Steps to deploy WSO2 API Manager in a distributed setup with the traffic manager on a separate node."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md
-tags:
-  - api-manager
-  - includes
-  - deploy
-  - steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 ### Step 1 - Install WSO2 API-M
 

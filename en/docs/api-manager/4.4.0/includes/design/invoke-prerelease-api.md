@@ -1,17 +1,3 @@
----
-title: "Deploy, test, and publish a prototype API"
-description: "Deploy an API to the Gateway, test it via the Publisher, and publish it as a prototype with business plans."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/invoke-prerelease-api/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/invoke-prerelease-api.md
-tags:
-  - api-manager
-  - includes
-  - design
-  - invoke-prerelease-api
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 ## Step 3 - Deploy the API
 

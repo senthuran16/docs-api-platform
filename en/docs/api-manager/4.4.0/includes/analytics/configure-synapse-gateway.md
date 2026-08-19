@@ -1,17 +1,3 @@
----
-title: "Configure the Synapse Gateway for analytics"
-description: "Configure the Synapse Gateway's deployment.toml to publish analytics data to the analytics cloud via Choreo."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/analytics/configure-synapse-gateway/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/analytics/configure-synapse-gateway.md
-tags:
-  - api-manager
-  - includes
-  - analytics
-  - configure-synapse-gateway
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 Follow the instructions below to publish analytics data to the analytics cloud via the API Gateway:
 

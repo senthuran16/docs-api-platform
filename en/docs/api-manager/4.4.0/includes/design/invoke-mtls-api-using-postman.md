@@ -1,17 +1,3 @@
----
-title: "Invoke a mutual SSL API using Postman"
-description: "Import a client certificate and private key into Postman to invoke an API secured with Mutual SSL."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/invoke-mtls-api-using-postman/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/design/invoke-mtls-api-using-postman.md
-tags:
-  - api-manager
-  - includes
-  - design
-  - invoke-mtls-api-using-postman
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 ### Invoke an API secured with Mutual SSL using Postman
 
@@ -22,11 +8,11 @@ Import the certificate and private key to Postman.
 
 1. Navigate to the certificates tab in Postman settings.
     
-     [![Add the certificate to Postman](../../../../assets/img/learn/add-certificate-to-postman.png)](../../../assets/img/learn/add-certificate-to-postman.png)
+     [![Add the certificate to Postman](../../../assets/img/learn/add-certificate-to-postman.png)](../../../assets/img/learn/add-certificate-to-postman.png)
     
 2. Add the certificate and private key.
 
-     [![Provide certificate and private key](../../../../assets/img/learn/provide-crt-and-private-key.png)](../../../assets/img/learn/provide-crt-and-private-key.png)
+     [![Provide certificate and private key](../../../assets/img/learn/provide-crt-and-private-key.png)](../../../assets/img/learn/provide-crt-and-private-key.png)
     
 3.  Invoke the API from Postman.
 

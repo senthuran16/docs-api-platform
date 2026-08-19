@@ -1,17 +1,3 @@
----
-title: "Deploy an API to a custom hostname"
-description: "Deploy an API revision to a Gateway environment and virtual host to assign it a custom hostname."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/assign-custom-hostname/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/deploy/assign-custom-hostname.md
-tags:
-  - api-manager
-  - includes
-  - deploy
-  - assign-custom-hostname
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "how-to"
----
 
 <html>
 <div class="admonition note">

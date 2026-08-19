@@ -1,17 +1,3 @@
----
-title: "Enable publishing to the service catalog"
-description: "Configure the API Manager port offset and the Streaming Integrator's service catalog settings to enable publishing AsyncAPI definitions."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/streaming/enable-publishing/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/includes/streaming/enable-publishing.md
-tags:
-  - api-manager
-  - includes
-  - streaming
-  - enable-publishing
-author: WSO2 API Platform Documentation Team
-last_updated: 2026-08-17
-content_type: "how-to"
----
 
 Follow the instructions below to enable publishing the AsyncAPI definition to the service catalog in WSO2 API Manager:
 
