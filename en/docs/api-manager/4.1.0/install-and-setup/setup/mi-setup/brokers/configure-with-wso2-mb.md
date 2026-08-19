@@ -65,9 +65,9 @@ Given below is an overview of how some common security concepts are implemented 
 | Security Concept                                        | How it is Implemented in EI-Broker                      |
 |---------------------------------------------------------|---------------------------------------------------------|
 | [Authentication](#ConfigurewiththeBrokerProfile-AuthMB) | Andes Authenticator connected entities to authenticate. |
-| [Authorization](#ConfigurewiththeBrokerProfile-AuthrMB) | Creation and use of role-based permissions.             |
+| [Authorization](#authorization) | Creation and use of role-based permissions.             |
 | Availability                                            | Clustering using Apache Zookeeper.                      |
-| [Integrity](#ConfigurewiththeBrokerProfile-InMB)        | Message-level encryption using WS-Security.             |
+| [Integrity](#integrity)        | Message-level encryption using WS-Security.             |
 
 Let's see how each concept in the table above is implemented in WSO2 MB.
 

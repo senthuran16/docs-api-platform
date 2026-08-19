@@ -159,17 +159,17 @@ The **Edit** menu includes the following options.
 
 -   **Reformat Code**
     Click this to reformat the Siddhi queries in the Siddhi
-    application that you are currently creating/editing in the [source view](#StreamProcessorStudioOverview-SourceView).
+    application that you are currently creating/editing in the [source view](creating-a-siddhi-application.md#creating-a-siddhi-application-in-the-source-view).
 
     !!! info
-        This menu option is only visible when you are working in the [source view](#StreamProcessorStudioOverview-SourceView).
+        This menu option is only visible when you are working in the [source view](creating-a-siddhi-application.md#creating-a-siddhi-application-in-the-source-view).
 
 -   **Auto-Align** <br/>
     Click this to horizontally align all the Siddhi components in a
-    Siddhi application that you are creating/editing in the [design view](#StreamProcessorStudioOverview-DesignView).
+    Siddhi application that you are creating/editing in the [design view](working-with-the-design-view.md).
 
     !!! info
-        This menu option is only visible when you are working in the [design view](#StreamProcessorStudioOverview-DesignView).
+        This menu option is only visible when you are working in the [design view](working-with-the-design-view.md).
 
 #### Run menu Items
 
@@ -183,7 +183,7 @@ The **Run** menu includes the following options.
     saved Siddhi applications can be run.
 
     !!! info
-        This menu option is enabled only when a Siddhi application is being created/edited in the [source view](#StreamProcessorStudioOverview-SourceView).
+        This menu option is enabled only when a Siddhi application is being created/edited in the [source view](creating-a-siddhi-application.md#creating-a-siddhi-application-in-the-source-view).
 
 
 -   **Stop**

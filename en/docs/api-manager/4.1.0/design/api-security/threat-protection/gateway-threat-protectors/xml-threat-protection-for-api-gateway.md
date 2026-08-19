@@ -6,6 +6,7 @@ The XML threat protector in WSO2 API Manager validates the XML payload vulnerabi
 
 -   [XML schema validation](#xml-schema-validation)
 
+<a name="detecting-the-malformed-vulnerable-xml-messages-through-limitations"></a>
 #### Detecting the malformed, vulnerable XML messages through limitations
 
 The xml\_validator sequence specifies the properties to be limited in the payload. A sample xml\_validator sequence is given below.

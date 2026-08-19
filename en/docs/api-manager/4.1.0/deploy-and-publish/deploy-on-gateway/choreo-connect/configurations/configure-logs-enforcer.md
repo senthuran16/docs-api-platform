@@ -65,7 +65,7 @@ This section shows you how to configure appenders individually. Log4j2 allows lo
     These appenders are configured by default to use for destinations mentined above. If you want to modify any of the configurations related to that, you can modify them according to log configurations defined in [log4j2 documentation](https://logging.apache.org/log4j/2.x/manual/appenders.html#).
 
 !!! Note
-    If the output destination is in another environment (such as a cloud storage), you need to [use custom log appenders](#https://logging.apache.org/log4j/2.x/manual/appenders.html).
+    If the output destination is in another environment (such as a cloud storage), you need to [use custom log appenders](https://logging.apache.org/log4j/2.x/manual/appenders.html).
 
 ### Configuring Log4j2 Loggers
 
@@ -85,13 +85,13 @@ The logger element must have a **name** attribute specified. It may also have a 
 
 In summary, in following steps yu can specify a logger.
 
-1. Add the logger in the `log4j2.properties` or `log4j2-configmap.yaml` file, [based on your Choreo Connect deployment](#filepaths) to the list of loggers by referring the logger name:
+1. Add the logger in the `log4j2.properties` or `log4j2-configmap.yaml` file, [based on your Choreo Connect deployment](configure-logs-overview.md#log4j2_properties) to the list of loggers by referring the logger name:
 
     ```properties
     loggers = mgw-enforcer, io-swagger-v3, mgw-enforcer-interceptors, <your_logger_name>, 
     ```
 
-2. Add the logger in the `log4j2.properties` or `log4j2-configmap.yaml` file, [based on your Choreo Connect deployment](#filepaths) as you need:
+2. Add the logger in the `log4j2.properties` or `log4j2-configmap.yaml` file, [based on your Choreo Connect deployment](configure-logs-overview.md#log4j2_properties) as you need:
 
     ```properties
     logger.<your_logger_name>.name = <Component_name>
@@ -109,7 +109,7 @@ In summary, in following steps yu can specify a logger.
     ```
 
 !!! Note
-    You can find more details on log4j2 appenders, loggers, and its attributes from the official documentation of [log4j2](#https://logging.apache.org/log4j/2.x/). 
+    You can find more details on log4j2 appenders, loggers, and its attributes from the official documentation of [log4j2](https://logging.apache.org/log4j/2.x/). 
 
 ## Enforcer Access Logs
 

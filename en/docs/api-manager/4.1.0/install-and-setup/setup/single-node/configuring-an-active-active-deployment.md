@@ -219,7 +219,7 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist/).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
 
 ## Step 11 - Start the WSO2 API-M Servers
 

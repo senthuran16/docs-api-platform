@@ -36,7 +36,7 @@ The following table lists out the available projects that can be associated with
         <th>Description</th>
     </tr>
     <tr>
-        <td>ESB Configs</td>
+        <td><a name="esb-config-project"></a>ESB Configs</td>
         <td>This project stores the ESB artifacts that are used when defining a mediation flow. This includes addition of any synapse artifacts to your integration project that enables features of a typical ESB.</br>
         <img src="../../../assets/img/integrate/new-project/synapse-engine.png" title="Synapse Engine" width="300" alt="Synapse Engine"/>
         </br>
@@ -62,7 +62,7 @@ The following table lists out the available projects that can be associated with
         </td>
     </tr>
     <tr>
-        <td>Registry Resources</td>
+        <td><a name="registry-resource-project"></a>Registry Resources</td>
         <td>Create this project if you want to create registry resources for your mediation flow. You can later use these registry artifacts when you define your mediation sequences in the ESB config project.
         </br>
         The registry has three components: local, config, and governance. Registry resources and metadata can be added into each component in the registry.

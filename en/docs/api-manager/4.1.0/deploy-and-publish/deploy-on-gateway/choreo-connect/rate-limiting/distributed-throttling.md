@@ -151,7 +151,7 @@ Conditional Rate Limiting is done via the Advanced Rate Limiting policies in API
 
 3. Define the Advance Throttle Policy containing the required conditions in WSO2 API Manager. 
      
-     For more information, see [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-throttling-policy).
+     For more information, see [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-rate-limiting-policy).
 
 4. Create an API in API Publisher and assign the created Advanced Throttling policy to the API. 
    
@@ -164,4 +164,4 @@ Conditional Rate Limiting is done via the Advanced Rate Limiting policies in API
 ## See also
 
 - [Rate limiting with API-M as the Control Plane](../concepts/cc-rate-limiting.md)
-- [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-throttling-policy)
+- [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-rate-limiting-policy)

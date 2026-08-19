@@ -9,9 +9,9 @@ Follow the given steps to configure a read-write LDAP as the primary user store:
     Hence in this guide it is assumed that WSO2 Identity Server 5.11.0 is up and running with the port offset = 1.
 
 
--   [Step 1: Setting up the read-write LDAP user store manager](#ConfiguringaRead-WriteLDAPUserStore-Step1:Settinguptheread-writeLDAPuserstoremanager)
--   [Step 2: Updating the system administrator](#ConfiguringaRead-WriteLDAPUserStore-Step2:Updatingthesystemadministrator)
--   [Step 3: Starting the server](#ConfiguringaRead-WriteLDAPUserStore-Step3:Startingtheserver)
+-   [Step 1: Setting up the read-write LDAP user store manager](#step-1-setting-up-the-read-write-ldap-user-store-manager)
+-   [Step 2: Updating the system administrator](#step-2-updating-the-system-administrator)
+-   [Step 3: Starting the server](#step-3-starting-the-server)
 
 ### Step 1: Setting up the read-write LDAP user store manager
 
