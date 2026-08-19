@@ -1,0 +1,924 @@
+{
+ "scope": "api-manager/3.1.0",
+ "docs_root": "en/docs",
+ "counts": {
+  "templated_fixable": 0,
+  "templated": 0,
+  "malformed": 0,
+  "dir_style": 0,
+  "depth": 0,
+  "renamed": 0,
+  "case": 0,
+  "include": 0,
+  "gone": 114,
+  "stale": 0,
+  "anchor": 32,
+  "anchor_case": 0,
+  "anchor_legacy": 0,
+  "anchor_punct": 0,
+  "templated_typo": 0,
+  "partial": 0,
+  "partial_fixable": 0,
+  "stale_mapped": 0,
+  "anchor_deep": 0
+ },
+ "tiers": {
+  "templated_fixable": [],
+  "templated": [],
+  "malformed": [],
+  "dir_style": [],
+  "depth": [],
+  "renamed": [],
+  "case": [],
+  "include": [],
+  "gone": [
+   {
+    "file": "api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md",
+    "link": "_Message_Monitoring_with_TCPMon_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md",
+    "link": "../../../assets/attachments/45946410/46206514.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md",
+    "link": "../../../assets/attachments/45946410/46206513.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md",
+    "link": "../../../assets/attachments/45946410/46206512.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-permissions.md",
+    "link": "../../../../administer/product-administration/monitoring/monitoring-performance-statistics",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-user-roles.md",
+    "link": "../../administer/product-administration/managing-users-and-roles/managing-user-roles/#update-before-the-first-startup-recommended",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store.md",
+    "link": "properties-used-in-a-read-only-ldap-user-store-managers",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/understanding-the-user-realm.md",
+    "link": "../../../assets/attachments/126562314/126562315.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/multitenancy/adding-new-tenants.md",
+    "link": "../../assets/attachments/126562777/126562778.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/multitenancy/adding-new-tenants.md",
+    "link": "../../assets/attachments/126562777/126562781.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/administer/multitenancy/adding-new-tenants.md",
+    "link": "../../assets/attachments/126562777/126562782.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/customizations/adding-a-user-signup-workflow.md",
+    "link": "/learn/consume-api/customizations/adding-a-user-signup-workflow/#configuring-the-business-process-server",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/customizations/adding-a-user-signup-workflow.md",
+    "link": "/learn/consume-api/customizations/adding-a-user-signup-workflow/#configuring-the-enterprise-integrator",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md",
+    "link": "../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/#add-an-api-category-using-the-admin-portal-ui",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md",
+    "link": "../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/#add-an-api-category-using-the-admin-rest-api",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md",
+    "link": "../../../assets/attachments/learn/sample-theme.zip",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers.md",
+    "link": "../../../extensions/adding-mediation-extensions",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers.md",
+    "link": "../../../analytics/analyzing-the-log-overview",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers.md",
+    "link": "../../../extensions/adding-mediation-extensions",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/extending-api-manager/extending-key-management/extending-key-validation.md",
+    "link": "_Extending_Scope_Validation_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/extending-api-manager/extending-workflows/configuring-workflows-for-tenants.md",
+    "link": "../../../assets/img/learn/application-creation-pending-request.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/getting-started/guide-devportal-v0.16.md",
+    "link": "../../../develop/product-apis/devportal-apis/devportal-v1/guide/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/getting-started/guide-publisher-v0.16.md",
+    "link": "../../../develop/product-apis/publisher-apis/publisher-v1/guide/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/wso2-admin-services.md",
+    "link": "../assets/attachments/develop/org.wso2.carbon.sample.admin.service.invoker.zip",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/getting-started/overview.md",
+    "link": "../assets/attachments/103327648/126556775.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service.md",
+    "link": "../../../../install-and-setup/ProductCompatibility",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service.md",
+    "link": "../../../../install-and-setup/ProductCompatibility",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service.md",
+    "link": "../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-linux-or-os-x.md",
+    "link": "../../../../install-and-setup/ProductCompatibility",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris.md",
+    "link": "../../../../install-and-setup/ProductCompatibility",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris.md",
+    "link": "../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md",
+    "link": "../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles\n/#product-profiles",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/configuring-database-and-the-file-system-state-persistence.md",
+    "link": "_Configuring_Datasources_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync.md",
+    "link": "../distributed-deployment-of-the-gateway/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync.md",
+    "link": "../../configuring-rsync-for-deployment-synchronization/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync.md",
+    "link": "../working-with-hazelcast-clustering/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
+    "link": "../../../install-and-setup/ProductCompatibility/#compatible-wso2-identity-server-as-the-key-managers",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
+    "link": "../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-3-importing-certificates-to-the-truststore",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/security/configuring-transport-level-security.md",
+    "link": "../../../assets/attachments/TestSSLServer.jar",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md",
+    "link": "../../../../learn/consume-api/customizations/log-in-to-the-api-store-using-social-media/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry.md",
+    "link": "../../../../assets/attachments/126562657/126562660.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry.md",
+    "link": "../../../../assets/attachments/126562657/126562659.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry.md",
+    "link": "../../../../assets/attachments/126562657/126562658.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md",
+    "link": "../../../../../assets/attachments/126562631/126562638.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md",
+    "link": "../../../../../assets/attachments/126562631/126562637.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md",
+    "link": "../../../../../assets/attachments/126562631/126562635.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md",
+    "link": "../../../../../assets/attachments/126562631/126562633.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md",
+    "link": "../../../../../assets/attachments/126562631/126562632.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md",
+    "link": "../../../../../assets/attachments/126562631/126562636.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/editing-collections-using-the-entries-panel.md",
+    "link": "../../../../../assets/attachments/126562643/126562644.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation.md",
+    "link": "../../../../../assets/attachments/126562639/126562641.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation.md",
+    "link": "../../../../../assets/attachments/126562639/126562640.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation.md",
+    "link": "../../../../../assets/attachments/126562639/126562642.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata.md",
+    "link": "../../../../../assets/attachments/22185146/22514191.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata.md",
+    "link": "../../../../../assets/attachments/126562605/126562606.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata.md",
+    "link": "../../../../../assets/attachments/126562605/126562611.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata.md",
+    "link": "../../../../../assets/attachments/22185146/22514195.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/properties.md",
+    "link": "../../../../../assets/attachments/126562613/126562618.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/properties.md",
+    "link": "../../../../../assets/attachments/126562613/126562617.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/role-permissions.md",
+    "link": "../../../../../assets/attachments/126562645/126562646.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/role-permissions.md",
+    "link": "../../../../../assets/attachments/126562645/126562647.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/role-permissions.md",
+    "link": "../../../../../assets/attachments/126562645/126562648.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-all-partitions-in-a-single-server.md",
+    "link": "../../../../../assets/attachments/21037149/21331970.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-a-remote-registry.md",
+    "link": "../../../../../assets/attachments/21037149/21331972.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-a-remote-registry.md",
+    "link": "../../../../../assets/attachments/21037149/21332021.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-a-remote-registry.md",
+    "link": "../../../../../assets/attachments/21037149/21332022.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-separate-nodes.md",
+    "link": "../../../../../assets/attachments/126562675/126562676.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-governance-partition-in-a-remote-registry.md",
+    "link": "../../../../../assets/attachments/126562673/126562674.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path.md",
+    "link": "../../../assets/attachments/126562770/126562773.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md",
+    "link": "../../../install-and-setup/deploying-wso2-api-manager/configuring-rsync-for-deployment-synchronization",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md",
+    "link": "../../../install-and-setup/deploying-wso2-api-manager/configuring-rsync-for-deployment-synchronization",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/single-node/configuring-apim-analytics.md",
+    "link": "../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-1-generating-a-ca-signed-certificate",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/single-node/deploying-api-manager-using-single-node-instances.md",
+    "link": "../../../assets/attachments/103334465/103334466.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/single-node/deploying-api-manager-using-single-node-instances.md",
+    "link": "../../../assets/attachments/103334465/103334467.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/sso/configuring-sso-for-admin-portal-using-saml.md",
+    "link": "stepc",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set.md",
+    "link": "../../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set.md",
+    "link": "../../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics.md",
+    "link": "../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md",
+    "link": "../../assets/attachments/learn/monetization/org.wso2.apim.monetization.impl-1.1.1.jar",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/api-authentication/secure-apis-using-api-keys.md",
+    "link": "ttps://www.urlencoder.org",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/configuring-api-security-audit.md",
+    "link": "auditreports",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/oauth2/grant-types/kerberos-oauth2-grant.md",
+    "link": "../../../../assets/attachments/kerberos-grant-1.0.0.jar",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/oauth2/grant-types/kerberos-oauth2-grant.md",
+    "link": "../../../../assets/img/learn/learnoauth-sp-clientid-clientsecret.png",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/oauth2/grant-types/saml-extension-grant.md",
+    "link": "../../../../assets/attachments/learn/saml2-assertion-creator.zip",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/design-api/advanced-topics/adding-an-api-state-change-workflow.md",
+    "link": "../../../administer/product-administration/managing-users-and-roles/admin-managing-users-roles-and-permissions",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/design-api/create-api/create-a-graphql-api.md",
+    "link": "../../../administer/product-administration/managing-users-and-roles/adding-users",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/design-api/create-api/create-a-graphql-api.md",
+    "link": "../../../administer/product-administration/managing-users-and-roles/adding-user-roles",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/design-api/create-api/create-a-rest-api-from-a-swagger-definition.md",
+    "link": "../../../learn/design-api/publish-api/publish-an-ap",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/tutorials/create-and-publish-a-graphql-api.md",
+    "link": "../../administer/product-administration/managing-users-and-roles/adding-users/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/tutorials/create-and-publish-a-graphql-api.md",
+    "link": "../../administer/product-administration/managing-users-and-roles/adding-user-roles/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/samples/api-rate-monetization-sample.md",
+    "link": "../../assets/attachments/reference-sample-subscription-tiers",
+    "kind": "image",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/deleted-pages/changing-to-embedded-h2.md",
+    "link": "../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-embedded-h2/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/deleted-pages/changing-to-embedded-h2.md",
+    "link": "../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-embedded-h2/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Configuring_Caching_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Key_Concepts_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Enabling_CORS_for_APIs_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Adding_Mediation_Extensions_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Add_SSL_Certificates_for_Endpoints_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Deploy_and_Test_Mock_APIs_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Rate_Limiting_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Create_and_Publish_an_API_from_a_Swagger_Definition_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Create_a_Mock_API_with_an_Inline_Script_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Create_a_WebSocket_API_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Create_and_Publish_a_SOAP_API_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Endpoints_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/need-to-update/create-and-publish-an-api.md",
+    "link": "_Invoke_an_API_using_the_Integrated_API_Console_",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   }
+  ],
+  "stale": [],
+  "anchor": [
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "link": "#option1-format",
+    "target_file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "anchor": "option1-format"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "link": "#option1-example",
+    "target_file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "anchor": "option1-example"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "link": "#option1-response",
+    "target_file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "anchor": "option1-response"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "link": "#option2-format",
+    "target_file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "anchor": "option2-format"
+   },
+   {
+    "file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "link": "#option2-example",
+    "target_file": "api-manager/3.1.0/develop/product-apis/token-api.md",
+    "anchor": "option2-example"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md",
+    "link": "#cc08b6aaf09742a7b6389db09f3e3b36",
+    "target_file": "api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md",
+    "anchor": "cc08b6aaf09742a7b6389db09f3e3b36"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md",
+    "link": "#944559bca1c0464fa8a12ec742f9cd07",
+    "target_file": "api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md",
+    "anchor": "944559bca1c0464fa8a12ec742f9cd07"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
+    "link": "#Linux-Mac",
+    "target_file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
+    "anchor": "Linux-Mac"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
+    "link": "#windows",
+    "target_file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
+    "anchor": "windows"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md",
+    "link": "#recovering-a-password",
+    "target_file": "api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md",
+    "anchor": "recovering-a-password"
+   },
+   {
+    "file": "api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md",
+    "link": "#login-in-via-multiple-user-attributes-in-developer-portal",
+    "target_file": "api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md",
+    "anchor": "login-in-via-multiple-user-attributes-in-developer-portal"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md",
+    "link": "#connectID",
+    "target_file": "api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md",
+    "anchor": "connectID"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md",
+    "link": "#connectID",
+    "target_file": "api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md",
+    "anchor": "connectID"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway.md",
+    "link": "#2fabe5e92ef64a3a999bb756d894221e",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway.md",
+    "anchor": "2fabe5e92ef64a3a999bb756d894221e"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway.md",
+    "link": "#6da49ce3d2cf4091a885d78334d2513e",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway.md",
+    "anchor": "6da49ce3d2cf4091a885d78334d2513e"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/regular-expression-threat-protection-for-api-gateway.md",
+    "link": "#10673ba9a16d49dcaf1b6a073de9cf4d",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/regular-expression-threat-protection-for-api-gateway.md",
+    "anchor": "10673ba9a16d49dcaf1b6a073de9cf4d"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/regular-expression-threat-protection-for-api-gateway.md",
+    "link": "#90b129a29c8c4b74869eb1676bb3f705",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/regular-expression-threat-protection-for-api-gateway.md",
+    "anchor": "90b129a29c8c4b74869eb1676bb3f705"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#b95bd611fb2144d0940b193f34addf5b",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "b95bd611fb2144d0940b193f34addf5b"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#70c795c618f04f2cb9983858b263298d",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "70c795c618f04f2cb9983858b263298d"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#389c50828aa24292b0657e037c09c635",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "389c50828aa24292b0657e037c09c635"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#159d32ca825c41a480037880ce2e6413",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "159d32ca825c41a480037880ce2e6413"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#45b87273c80b44ffb18a3f8fe4f5b8f6",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "45b87273c80b44ffb18a3f8fe4f5b8f6"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#194a5a4652e94e609d80ba175c16b449",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "194a5a4652e94e609d80ba175c16b449"
+   },
+   {
+    "file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "link": "#db80409dd4d941dc972837213bc340e5",
+    "target_file": "api-manager/3.1.0/learn/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md",
+    "anchor": "db80409dd4d941dc972837213bc340e5"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/faq.md",
+    "link": "#FAQ-Keystorepassword",
+    "target_file": "api-manager/3.1.0/reference/faq.md",
+    "anchor": "FAQ-Keystorepassword"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/faq.md",
+    "link": "#FAQ-Step1-CreateaselfsignedJavaKeyStorefileandincludeyourdomainastheCN",
+    "target_file": "api-manager/3.1.0/reference/faq.md",
+    "anchor": "FAQ-Step1-CreateaselfsignedJavaKeyStorefileandincludeyourdomainastheCN"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "link": "#curl-mobile",
+    "target_file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "anchor": "curl-mobile"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "link": "#curl-mobile-output",
+    "target_file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "anchor": "curl-mobile-output"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "link": "#curl-mobile",
+    "target_file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "anchor": "curl-mobile"
+   },
+   {
+    "file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "link": "#curl-mobile-output",
+    "target_file": "api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md",
+    "anchor": "curl-mobile-output"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/deleted-pages/changing-to-embedded-h2.md",
+    "link": "#ChangingtoEmbeddedH2-Changingthedefaultdatabase",
+    "target_file": "api-manager/3.1.0/wip/deleted-pages/changing-to-embedded-h2.md",
+    "anchor": "ChangingtoEmbeddedH2-Changingthedefaultdatabase"
+   },
+   {
+    "file": "api-manager/3.1.0/wip/deleted-pages/changing-to-embedded-h2.md",
+    "link": "#changing-the-default-wso295carbon95db-datasource",
+    "target_file": "api-manager/3.1.0/wip/deleted-pages/changing-to-embedded-h2.md",
+    "anchor": "changing-the-default-wso295carbon95db-datasource"
+   }
+  ],
+  "anchor_case": [],
+  "anchor_legacy": [],
+  "anchor_punct": [],
+  "templated_typo": [],
+  "partial": [],
+  "partial_fixable": [],
+  "stale_mapped": [],
+  "anchor_deep": []
+ }
+}
