@@ -81,7 +81,7 @@ This section explains as to how you can attach a custom workflow to the **applic
 
 
         !!! note
-            MySQL is used to configure the datasources in this documentation. You can configure this based on the database that you are using. For more information, see the [Working with Database](../../../../install-and-setup/setting-up-databases/overview/).
+            MySQL is used to configure the datasources in this documentation. You can configure this based on the database that you are using. For more information, see the [Working with Database](../../../../install-and-setup/setup/setting-up-databases/overview.md).
 
 
         b. Change the datasource to point the WSO2UM\_DB by changing the realm configuration in the `<API-M_HOME>/repository/conf/user-mgt.xml` file as shown below.
@@ -116,7 +116,7 @@ This section explains as to how you can attach a custom workflow to the **applic
 ## Step 1 - Configure the Business Process server
 
 1.  Download [WSO2 Enterprise Integrator](https://wso2.com/enterprise-integrator/6.5.0).
-2.  Set an offset of 2 to the default EI port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset/).
+2.  Set an offset of 2 to the default EI port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md).
 
     ``` java
     <Offset>2</Offset>
@@ -234,7 +234,7 @@ First, enable the application registration workflow.
 3.  Sign in to the API Developer Portal (<https://localhost:9443/devportal>) as a Developer Portal user and open the application with which you subscribed to the API.
 
     !!! note
-        If you do not have an API already created and an Application subscribed to it, follow [Create a REST API](../../../../learn/design-api/create-api/create-a-rest-api/), [Publish an API](../../../../learn/design-api/publish-api/publish-an-api/), and [Subscribe to an API](../../../../learn/consume-api/manage-subscription/subscribe-to-an-api) to create an API and subscribe to it.
+        If you do not have an API already created and an Application subscribed to it, follow [Create a REST API](../../../design-api/create-api/create-a-rest-api.md), [Publish an API](../../../design-api/publish-api/publish-an-api.md), and [Subscribe to an API](../../manage-subscription/subscribe-to-an-api.md) to create an API and subscribe to it.
 
 
 4.  Click **Applications**, **Production Keys**, and **Generate Keys**.

@@ -65,7 +65,7 @@ prompted with the following dialog box.
     
 15. Log in to the **API Publisher Portal**. 
 
-16. Click **CREATE API** and then design a new REST API to create an API by following the steps in [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/).
+16. Click **CREATE API** and then design a new REST API to create an API by following the steps in [Create a REST API](../../design-api/create-api/create-a-rest-api.md).
 
 17. Go to the created API and from the Left Menu, go to **Runtime Configurations**.
 

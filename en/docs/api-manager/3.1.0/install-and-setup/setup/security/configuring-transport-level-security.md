@@ -21,9 +21,9 @@ To prevent these types of security attacks, it is encouraged to disable the weak
     [transport.https.sslHostConfig.properties]
     ciphers="TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSVF"
     ```
-     See the list of [supported cipher suites](../../../install-and-setup/setup/reference/supported-cipher-suites/).
+     See the list of [supported cipher suites](../reference/supported-cipher-suites.md).
 
-4.  [Start the server](../../../install-and-setup/install/running-the-product/#starting-the-server).
+4.  [Start the server](../../install/running-the-product.md#starting-the-server).
 
 5.  To verify that the configurations are all set correctly, download and run the [TestSSLServer.jar](../../../assets/attachments/TestSSLServer.jar).
 
@@ -36,13 +36,13 @@ To prevent these types of security attacks, it is encouraged to disable the weak
 
         -   The "Supported cipher suites" section in the output does not contain any EXPORT ciphers.
 
-        -   When you use the supported cipher suites listed [here](../../../install-and-setup/setup/reference/supported-cipher-suites/), the BEAST attack status will be shown as vulnerable. Note that this is a client-side vulnerability caused by the TLSv1 protocol. You can make the BEAST status protected by removing TLSv1, which will make clients with TLSv1 unusable. Therefore, it is recommended tofixed this from the client side.
+        -   When you use the supported cipher suites listed [here](../reference/supported-cipher-suites.md), the BEAST attack status will be shown as vulnerable. Note that this is a client-side vulnerability caused by the TLSv1 protocol. You can make the BEAST status protected by removing TLSv1, which will make clients with TLSv1 unusable. Therefore, it is recommended tofixed this from the client side.
 
 !!! info
     From **Firefox** 39.0 onwards, the browser does not allow to access Web sites that support DHE with keys less than 1023 bits (not just DHE\_EXPORT). 768/1024 bits are considered to be too small and vulnerable to attacks if the hacker has enough computing resources.
     
 !!! tip
-    -   To use AES-256, the Java JCE Unlimited Strength Jurisdiction Policy files need to be installed. Download them from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](index), if your java installation does not have it installed.
+    -   To use AES-256, the Java JCE Unlimited Strength Jurisdiction Policy files need to be installed. Download them from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](../../../index.md), if your java installation does not have it installed.
 
 #### Configuring Passthrough transport-level ciphers and TLS versions
 
@@ -86,4 +86,4 @@ By default, all WSO2 products pass "WSO2 Carbon Server" as the server value in H
     ```
 
 !!! info
-    See the [Security Guidelines for Production Deployment](../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/) for the full list of security-related recommendations for WSO2 products.
+    See the [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md) for the full list of security-related recommendations for WSO2 products.

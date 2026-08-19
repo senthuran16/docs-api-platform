@@ -10,7 +10,7 @@ operate on per access token basis
 
 
 
-The API Manager comes with a pre-created default application, which allows unlimited access by default. You can also [create](#create-a-new-applications) your own.
+The API Manager comes with a pre-created default application, which allows unlimited access by default. You can also [create](#create-a-new-application) your own.
 
 ## Create a new application
 

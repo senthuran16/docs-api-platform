@@ -4,9 +4,9 @@ The Gateway of an API Manager deployment is responsible for the main business fu
 
 ![](../../assets/attachments/103335234/103335235.png)
 
--   [The handlers](#MessageFlowintheAPIManagerGateway-Thehandlers)
--   [Mediation extensions](#MessageFlowintheAPIManagerGateway-Mediationextensions)
--   [In sequence and out sequence](#MessageFlowintheAPIManagerGateway-Insequenceandoutsequence)
+-   [The handlers](#the-handlers)
+-   [Mediation extensions](#mediation-extensions)
+-   [In sequence and out sequence](#in-sequence-and-out-sequence)
 
 ### The handlers
 

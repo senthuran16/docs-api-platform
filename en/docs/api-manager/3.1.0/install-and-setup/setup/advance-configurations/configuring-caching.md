@@ -96,6 +96,7 @@ The following caches are available:
 -   [Key cache](#key-cache)
 -   [OAuth cache](#oauth-cache)
 
+<a name="key-cache"></a>
 #### Key cache
 
 In a typical API Manager deployment, the Gateway is deployed in a DMZ while the Key Manager is in MZ. By default, caching is enabled at the Gateway. To avoid caching token-related information in a leniently secured zone, you can store the cache on the Key Manager side. If you do, for each and every API call that hits the API Gateway, the Gateway issues a Web service call to the Key Manager server. If the cache entry is available in the Key Manager server, it is returned to the Gateway. Else, the database is checked for the validity of the token.
@@ -131,13 +132,14 @@ You can configure the key cache by editing the following elements in the `<APIM_
 </tbody>
 </table>
 
+<a name="oauth-cache"></a>
 #### OAuth cache
 
 The OAuth token is saved in this cache, which is enabled by default. Whenever a new OAuth token is generated, it is saved in this cache to prevent constant database calls. Unless an OAuth expires or is revoked, the same token is sent back for the same user. Therefore, you do not need to change this cached token most of the time.
 
 ### Response cache
 
-Please refer [Response Caching](../../../learn/api-gateway/response-caching/) to see how to enable response caching for a given API.
+Please refer [Response Caching](../../../learn/api-gateway/response-caching.md) to see how to enable response caching for a given API.
 
 ### Developer Portal cache
 

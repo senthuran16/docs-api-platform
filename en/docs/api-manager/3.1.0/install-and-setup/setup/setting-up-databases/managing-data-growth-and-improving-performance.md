@@ -91,6 +91,7 @@ This will remove the old and invalid tokens, sessions and auth codes, which cann
     -   [**MySQL**](#schedule-task-for-mysql)
     -   [**SQL Server**](#schedule-task-for-sql-server)
  
+<a name="schedule-task-for-mysql"></a>
 ####Schedule task for MySQL
 ``` sql
 USE 'WSO2AM_DB';
@@ -104,6 +105,7 @@ CREATE EVENT 'cleanup_tokens_event'
 SET GLOBAL event_scheduler = ON;
 
 ```
+<a name="schedule-task-for-sql-server"></a>
 ####Schedule task for SQL Server
 
 ``` sql

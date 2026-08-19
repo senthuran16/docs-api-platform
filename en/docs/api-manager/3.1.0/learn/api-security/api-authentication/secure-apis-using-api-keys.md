@@ -177,7 +177,7 @@ Follow the instructions below to configure a custom Keystore to sign the API Key
  
 1. Add the custom Keystore into the `<API-M_HOME>/repository/resources/security` directory.
 
-2. Export the public certificate from the custom Keystore and import that into the client trust store as described in [Importing the public certificate into the client truststore](../../../learn/api-security/api-authentication/secure-apis-using-api-keys/#importing-the-public-certificate-into-the-client-trust-store).
+2. Export the public certificate from the custom Keystore and import that into the client trust store as described in [Importing the public certificate into the client truststore](secure-apis-using-api-keys.md#importing-the-public-certificate-into-the-client-trust-store).
  
 3. Add the custom Keystore configuration in the `<API-M_HOME>/repository/conf/deployment.toml` file as follows:
     
@@ -209,7 +209,7 @@ Follow the instructions below to configure a custom Keystore to sign the API Key
      api_key_keystore = "KeySignKeyStore"
      ```
 
-5. Configure the alias name value as described in [Changing the alias name in the JWT](../../../learn/api-security/api-authentication/secure-apis-using-api-keys/#changing-the-alias-name-in-the-jwt).
+5. Configure the alias name value as described in [Changing the alias name in the JWT](secure-apis-using-api-keys.md#changing-the-alias-name-in-the-jwt).
 
 ### API key restriction for IP address and HTTP referrer
 

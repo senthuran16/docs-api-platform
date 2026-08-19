@@ -5,7 +5,7 @@ This section covers the following topics:
 -   [Changing the super admin credentials](#changing-the-super-admin-credentials)
 -   [Recovering a password](#recovering-a-password)
 -   [Login in via multiple user attributes in API Developer-portal](#login-in-via-multiple-user-attributes-in-developer-portal)
--   [Setting up an e-mail login](#login-in-via-multiple-user-attributes-in-developer-portal)
+-   [Setting up an e-mail login](#setting-up-an-e-mail-login)
 -   [Setting up a social media login](#setting-up-a-social-media-login)
 
 ### Changing the super admin credentials

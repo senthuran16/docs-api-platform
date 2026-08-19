@@ -1,16 +1,16 @@
 # Configuring Alerts
     
-WSO2 API Manager analytics-based alerts are disabled by default. Once you [enable alerts](../../../learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts/#enable-alerts), you can customize and configure the analytics-based alerts using the features listed below.
+WSO2 API Manager analytics-based alerts are disabled by default. Once you [enable alerts](configuring-alerts.md#enable-alerts), you can customize and configure the analytics-based alerts using the features listed below.
 
 -   Configure sender email alerts
 -   Configure alerts as business rules
 -   Configure alerts via the Publisher
 -   Configure alerts via the Developer Portal
 
-Once you have configured alerts, you can subscribe to alerts to receive email notifications. For instructions, see [Subscribing for Alerts](../../../learn/analytics/managing-alerts-with-real-time-analytics/subscribing-for-alerts/).
+Once you have configured alerts, you can subscribe to alerts to receive email notifications. For instructions, see [Subscribing for Alerts](subscribing-for-alerts.md).
 
 !!! note
-     Before you begin, make sure that you have configured Analytics for API Manager. For instructions, see [Configuring APIM Analytics](../../../learn/analytics/configuring-apim-analytics/).
+     Before you begin, make sure that you have configured Analytics for API Manager. For instructions, see [Configuring APIM Analytics](../configuring-apim-analytics.md).
 
 ### Enable alerts
 
@@ -130,12 +130,13 @@ You can configure alerts as a business rule by using the features listed below.
 
 Follow the instructions below to manage alerts via the Publisher:
 
-- [Create an abnormal response time alert](../../../learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts/#create-an-abnormal-response-time-alert/)
-- [Create an abnormal backend time alert](../../../learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts/#create-an-abnormal-backend-time-alert/)
+- [Create an abnormal response time alert](#create-an-abnormal-response-time-alert)
+- [Create an abnormal backend time alert](#create-an-abnormal-backend-time-alert)
 
 !!! info
      You can not disable Health Availability related alerts, because they are enabled by default. However, you can enable and disable the email alerts that correspond to the Health Availability alerts.
 
+<a name="create-an-abnormal-response-time-alert"></a>
 #### Create an abnormal response time alert
 
 1. Sign in to the API Publisher with the username and password of a user with the required permission.
@@ -165,6 +166,7 @@ Follow the instructions below to manage alerts via the Publisher:
     
 Immediately after the response period of the API exceeds the above defined time period an alert gets triggered, such alerts could be treated as an indication of a slow WSO2 API Manager runtime or a slow backend.
 
+<a name="create-an-abnormal-backend-time-alert"></a>
 #### Create an abnormal backend time alert
 
 1.  Sign in to the API Publisher with the username and password of a user with the required permission.
@@ -197,11 +199,12 @@ Immediately after the backend time of the API exceeds the above defined time per
 
 Follow the instructions below to manage alert types via the Developer Portal:
 
-- [Create an abnormal requests per minute alert](../../../learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts/#create-an-abnormal-requests-per-minute-alert/)
+- [Create an abnormal requests per minute alert](#create-an-abnormal-requests-per-minute-alert)
 
 !!! info
      You can not disable Abnormal Resource Access Alerts, Unseen Source IP Access Alerts and Tier Crossing Alerts, because they are enabled by default. However, you can enable and disable the email alerts that correspond to the latter mentioned alerts.
      
+<a name="create-an-abnormal-requests-per-minute-alert"></a>
 #### Create an abnormal requests per minute alert
 
 1.  Sign in to the API Developer Portal with the username and password of a user with the required permission.

@@ -7,7 +7,7 @@ To perform tasks using the API Controller, a particular user must have required 
 1. Create a role named `custom_role` with `API Create`, `API Publish` and `API Subscribe` permissions (along with `Login` permission) and assign it to a user.
 
     !!! tip
-        Refer [Managing Users and Roles](../../../administer/product-administration/managing-users-and-roles/introduction-to-user-management/) to learn how to create a user role with permissions and assign it to a user.
+        Refer [Managing Users and Roles](../../../administer/managing-users-and-roles/introduction-to-user-management.md) to learn how to create a user role with permissions and assign it to a user.
 
 2.  Assigning the required scopes for the `custom_role` can be done using 2 methods.
 

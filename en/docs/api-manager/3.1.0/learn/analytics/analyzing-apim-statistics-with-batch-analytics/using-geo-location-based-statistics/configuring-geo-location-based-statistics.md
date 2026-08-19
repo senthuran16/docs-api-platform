@@ -6,7 +6,7 @@
 !!! info
     In order to generate Geolocation based statistics, you need to pass an `x-forwarded-for` header with the relevant IP in the API request.
 
-1.  Use the Geo Location dataset that you created [here](../../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set/) when configuring geo location based statistics.
+1.  Use the Geo Location dataset that you created [here](creating-geo-location-data-set.md) when configuring geo location based statistics.
 2.  Create a database with name `GEO_LOCATION_DATA` and create tables in it by executing one of the following scripts. 
 
     | [mysql.sql](../../../../assets/attachments/learn/analytics/geo-location/mysql.sql) | [mssql.sql](../../../../assets/attachments/learn/analytics/geo-location/mssql.sql) | [oracle.sql](../../../../assets/attachments/learn/analytics/geo-location/oracle.sql) | [postgresql.sql](../../../../assets/attachments/learn/analytics/geo-location/postgresql.sql) | [db2.sql](../../../../assets/attachments/learn/analytics/geo-location/db2.sql) |
@@ -73,7 +73,7 @@
 
     !!! info
         If the JDBC driver is not an OSGI bundle, then it should be converted to OSGI (using jartobundle.sh) before placing it in the
-        `<API-M_ANALYTICS_HOME>/lib` directory. For detailed instructions, see [Adding Third Party Non OSGi Libraries](../../../../learn/analytics/adding-third-party-non-osgi-libraries/).
+        `<API-M_ANALYTICS_HOME>/lib` directory. For detailed instructions, see [Adding Third Party Non OSGi Libraries](../../adding-third-party-non-osgi-libraries.md).
 
         e.g., `sh API-M_ANALYTICS_HOME/bin/jartobundle.sh ojdbc6.jar API-M_ANALYTICS_HOME/lib/`
 

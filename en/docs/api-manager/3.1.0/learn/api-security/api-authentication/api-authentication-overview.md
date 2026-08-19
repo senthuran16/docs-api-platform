@@ -2,17 +2,17 @@ API authentication is a way of protecting API access from unidentified or anonym
 
 WSO2 API offers following authentication mechanisms to secure your API from unauthenticated access.
 
-[Securing APIs using OAuth2 Access Tokens](../../../learn/api-security/api-authentication/secure-apis-using-oauth2-tokens)
+[Securing APIs using OAuth2 Access Tokens](secure-apis-using-oauth2-tokens.md)
 
-   - [JWT(Self Contained) Access Tokens](../../../learn/api-security/oauth2/access-token-types/jwt-tokens)
+   - [JWT(Self Contained) Access Tokens](../oauth2/access-token-types/jwt-tokens.md)
     
-   - [Opaque(Reference) Access Tokens](../../../learn/api-security/oauth2/access-token-types/opaque-tokens)
+   - [Opaque(Reference) Access Tokens](../oauth2/access-token-types/opaque-tokens.md)
 
-[Secure APIs Using API Keys](../../../learn/api-security/api-authentication/secure-apis-using-api-keys)
+[Secure APIs Using API Keys](secure-apis-using-api-keys.md)
 
-[Secure APIs Using Mutual SSL](../../../learn/api-security/api-authentication/secure-apis-using-mutual-ssl)
+[Secure APIs Using Mutual SSL](secure-apis-using-mutual-ssl.md)
 
-[Secure APIs Using Basic Authentication](../../../learn/api-security/api-authentication/secure-apis-using-basic-authentication)
+[Secure APIs Using Basic Authentication](secure-apis-using-basic-authentication.md)
 
 
 

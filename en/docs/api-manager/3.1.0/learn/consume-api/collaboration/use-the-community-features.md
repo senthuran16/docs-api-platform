@@ -7,10 +7,12 @@ Let's see what community features are available in the Developer Portal:
 -   [Use the search facility](#use-the-search-facility)
 -   [Rate and comment](#rate-and-comment)
 
+<a name="use-the-search-facility"></a>
 #### Use the search facility
 
 You can search for APIs in the API Publisher or Developer Portal. To check more details refer [API Search page](../discover-apis/search.md).
 
+<a name="rate-and-comment"></a>
 #### Rate and comment
 
 Rates and comments give useful insights to potential API consumers on the quality and usefulness of an API. You can rate and comment on each API version.

@@ -2,7 +2,7 @@
 
 The "API Details Info" section which is shown below can be customized according to your design needs by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#devportal).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme.md#devportal).
 
 [![styling api details info section](../../../assets/img/learn/styling-api-details-info-section1.png)](../../../assets/img/learn/styling-api-details-info-section1.png)
 
@@ -68,7 +68,7 @@ const Configurations = {
 | listGridSelectedColor | string | Define the color of a selected icon (Grid/List) view of the API listing page. |
 | tagChipBackground | string | Change the background color of the tags. |
 
-You can handle most of the use cases with regard to rebranding using these configurations. However, if you need to make a change that is not supported by the defaultTheme.js file, then you need to override the relevant React component. For more information, see [Advanced Customization](../../../develop/customizations/customizing-the-developer-portal/advanced-customization/) for more information.
+You can handle most of the use cases with regard to rebranding using these configurations. However, if you need to make a change that is not supported by the defaultTheme.js file, then you need to override the relevant React component. For more information, see [Advanced Customization](advanced-customization.md) for more information.
 
 ### Known issues and workarounds
 

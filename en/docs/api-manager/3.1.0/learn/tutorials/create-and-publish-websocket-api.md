@@ -90,9 +90,9 @@ Follow the instructions in this tutorial to design and publish API with a WebSoc
      
          For more information, see the following sections on endpoint related configurations.
 
-         - [Endpoint Timeouts](../../learn/design-api/endpoints/resiliency/endpoint-timeouts)
-         - [Endpoint Suspension](../../learn/design-api/endpoints/resiliency/endpoint-suspension)
-         - [Prevent API Suspension](../../learn/design-api/endpoints/resiliency/prevent-api-suspension)
+         - [Endpoint Timeouts](../design-api/endpoints/resiliency/endpoint-timeouts.md)
+         - [Endpoint Suspension](../design-api/endpoints/resiliency/endpoint-suspension.md)
+         - [Prevent API Suspension](../design-api/endpoints/resiliency/prevent-api-suspension.md)
 
      [![View endpoint details](../../assets/img/learn/endpoint-view-of-websocket-api.jpg)](../../assets/img/learn/endpoint-view-of-websocket-api.jpg)
 

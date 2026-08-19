@@ -39,6 +39,7 @@ Ex: Enable landing page. **defaultTheme.json** ( Teant theming ).
 ```
 ### Tenant Theming 
 
+<a name="uploading-devportal-theme-via-the-admin-portal-tenants-only"></a>
 #### Uploading Devportal theme via the Admin Portal (Tenants Only)
 
 **If you do not have access to the file system** , you can upload the Devportal theme via the Admin Portal as shown below:

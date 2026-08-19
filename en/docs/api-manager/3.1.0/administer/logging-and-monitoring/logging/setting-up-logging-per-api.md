@@ -4,7 +4,7 @@ template: templates/swagger.html
 # Setting up logging per API in API Manager
 
 !!! note
-    You need to get the [latest product updates for your product](../../../administer/updating-wso2-api-manager/) to use this feature in the current version of WSO2 API-M. This feature is available as a product update in WSO2 API-M 3.1.0 from September 19, 2020 onwards.
+    You need to get the [latest product updates for your product](../../updating-wso2-api-manager.md) to use this feature in the current version of WSO2 API-M. This feature is available as a product update in WSO2 API-M 3.1.0 from September 19, 2020 onwards.
 
     !!! warning
         Note that you can deploy updates in a production environment only if you have a valid subscription with WSO2. Read more about [WSO2 Updates](https://wso2.com/updates).

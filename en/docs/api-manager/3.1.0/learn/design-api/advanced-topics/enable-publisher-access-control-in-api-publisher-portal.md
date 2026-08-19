@@ -2,16 +2,16 @@
 
 The APIs created in the API Publisher are visible to any user who signs in to the API Publisher, by default. However, WSO2 API Manager allows API creators to restrict the visibility of their APIs within the API Publisher if required. API creators can set the Publisher Access control option to restrict API view and modify actions to a set of users, based on their roles. You can enable Publisher Access Control in API Publisher using one of the following methods:
 
-- [Using the API Publisher](../../../learn/design-api/advanced-topics/enable-publisher-access-control-in-api-publisher-portal/#using-the-api-publisher)
-- [Using the REST API](../../../learn/design-api/advanced-topics/enable-publisher-access-control-in-api-publisher-portal/#using-the-rest-api)
+- [Using the API Publisher](enable-publisher-access-control-in-api-publisher-portal.md#using-the-api-publisher)
+- [Using the REST API](enable-publisher-access-control-in-api-publisher-portal.md#using-the-rest-api)
 
 ## Using the API Publisher
 
 1.  Sign in to API Publisher as an API Creator. 
 
-     For more information on User Roles, see [Managing Users and Roles](../../../administer/product-administration/managing-users-and-roles/managing-user-roles/).
+     For more information on User Roles, see [Managing Users and Roles](../../../administer/managing-users-and-roles/managing-user-roles.md).
 
-2.  [Create a new API](../../../learn/design-api/create-api/create-a-rest-api/). 
+2.  [Create a new API](../create-api/create-a-rest-api.md). 
 
 3. Click **Design Configurations**. 
 
@@ -42,7 +42,7 @@ The APIs created in the API Publisher are visible to any user who signs in to th
 
 ## Using the REST API
 
-Use the [existing REST API](../../../develop/product-apis/restful-apis/) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
+Use the [existing REST API](../../../develop/product-apis/restful-apis.md) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
 
 ``` 
 "accessControl" : "RESTRICTED",

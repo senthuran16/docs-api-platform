@@ -75,7 +75,7 @@ Attaching a custom workflow to API subscription enables you to add throttling ti
 
 7.  Select **Add** under the **Human Tasks** menu and upload the `<API-M_HOME>/business-processes/subscription-creation/HumanTask/SubscriptionsApprovalTask-1.0.0.zip` file to EI. This is the human task archived file.
 
-For instructions on how to customize workflow extensions, see [Customizing a Workflow Extension](../../../../develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension/)
+For instructions on how to customize workflow extensions, see [Customizing a Workflow Extension](../../../../develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension.md)
 
 ## Configuring WSO2 BPS
 

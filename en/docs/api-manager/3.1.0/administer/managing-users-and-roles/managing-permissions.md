@@ -31,7 +31,7 @@ By default, every WSO2 product comes with the following Users, Roles and Permiss
             <Password>admin</Password>
         </AdminUser>
         ```
-        These properties can be customized by configuring the `<PRODUCT_HOME>/repository/conf/deployment.toml` file. For more information, see [Configuring the System Administrator](../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-the-system-administrator) 
+        These properties can be customized by configuring the `<PRODUCT_HOME>/repository/conf/deployment.toml` file. For more information, see [Configuring the System Administrator](managing-user-stores/configuring-the-system-administrator.md) 
 
     -   The **admin** role has all the permissions in the system enabled by default. Therefore, this is a super tenant, with all permissions enabled.
 
@@ -50,14 +50,14 @@ In addition to the above, the following roles exist by default.
 2.  Internal/publisher
 3.  Internal/subscriber
 
-For more information about managing roles, see [Managing User Roles](../../administer/product-administration/managing-users-and-roles/managing-user-roles)
+For more information about managing roles, see [Managing User Roles](managing-user-roles.md)
 
 You will be able to log in to the management console of the product with the **admin** user defined in the `user-mgt.xml` file. You can then create new users and roles and configure permissions for the roles using the management console. However, note that you cannot modify the permissions of the **admin** role. The possibility of managing users, roles and permissions is granted by the **User Management** permission. For more information, see [Configuring the User Realm](https://is.docs.wso2.com/en/5.10.0/setup/configuring-the-realm/) .
 
 ## Description of role-based permissions
 
 !!! note
-    Note that the descriptions given in this document only explains how permissions control access to operations available on the [Management Console](``https://localhost:9443/carbon``) (`https://<hostname>:9443/carbon`). Also, not all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
+    Note that the descriptions given in this document only explains how permissions control access to operations available on the [Management Console](https://localhost:9443/carbon) (`https://<hostname>:9443/carbon`). Also, not all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
 
 ### Log-in Permissions
 
@@ -83,14 +83,14 @@ The following table describes the permissions at **Super Tenant** level. These a
 <tbody>
 <tr class="odd">
 <td><strong>Management</strong> permissions: </br>
-<img src="../../../../../assets/img/administer/manage-permissions.png" /></td>
+<img src="../../../assets/img/administer/manage-permissions.png" /></td>
 <td><p>The <strong>Super Admin/Manage</strong> permissions are used for adding new tenants and monitoring them.</p>
 <p><strong>- Modify/Tenants</strong> permission enables the <strong>Add New Tenant</strong> option in the <strong>Configure/Multitenancy</strong> menu of the management console, which allows users to add new tenants.<br />
 <strong>- Monitor/Tenants</strong> permission enables the <strong>View Tenants</strong> option in the <strong>Configure/Multitenancy</strong> menu of the management console.</p></td>
 </tr>
 <tr class="even">
 <td><strong>Server Admin</strong> permissions:<br />
-<img src="../../../../../assets/img/administer/server-admin-permissions.png" /></td>
+<img src="../../../assets/img/administer/server-admin-permissions.png" /></td>
 <td>Selecting the <strong>Server Admin</strong> permission enables the <strong>Manage/Shutdown/Restart</strong> option in the <strong>Main</strong> menu of the management console.</td>
 </tr>
 </tbody>
@@ -120,13 +120,13 @@ The following table describes the permissions at **Tenant** level. These are als
 <tr class="odd">
 <td>Admin</td>
 <td><p>When the <strong>Admin</strong> permission node is selected, features including the following menus are enabled in the management console:</p>
-<p><strong>- Identity/User Stores:</strong> This permission allows users to add new user stores and manage them with the management console. Note that only secondary user stores can be added using this option. See the topic on <a href="../../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a> for more details.<br />
+<p><strong>- Identity/User Stores:</strong> This permission allows users to add new user stores and manage them with the management console. Note that only secondary user stores can be added using this option. See the topic on <a href="../managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a> for more details.<br />
 <strong>- Identity/Identity Providers:</strong> See the topic on <a href="https://is.docs.wso2.com/en/5.10.0/learn/adding-and-configuring-an-identity-provider">working with identity providers</a> for details on how to use this option.</p>
 <p>- Additionally, all permissions listed under <strong>Admin</strong> in the permissions navigator are selected automatically.</p></td>
 </tr>
 <tr class="even">
 <td>Admin/Manage/Identity/User Store Management</td>
-<td>This permission enables the <strong>Identity/User Stores</strong> option in the <strong>Main</strong> menu. This option allows users to add new user stores. For more details on User Store Management, see <a href="../../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a></td>
+<td>This permission enables the <strong>Identity/User Stores</strong> option in the <strong>Main</strong> menu. This option allows users to add new user stores. For more details on User Store Management, see <a href="../managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a></td>
 </tr>
 <tr class="odd">
 <td>Admin/Manage/Identity/Claim</td>

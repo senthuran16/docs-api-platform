@@ -12,6 +12,7 @@ This section guides you through the following areas:
 
 IP whitelisting is a way of configuring a filter to extract a particular set of known IP addresses to grant access to API requests which are received from those IPs only. This can be achieved by creating and Advanced Throttling policy and attaching it to the required API.
 
+<a name="creating-the-advanced-throttling-policy"></a>
 ##### Creating the Advanced Throttling policy
 
 1.  Login to the admin portal of WSO2 API Manager (https://&lt;ip\_address&gt;:9443/admin).
@@ -50,6 +51,7 @@ IP whitelisting is a way of configuring a filter to extract a particular set of 
        
     You have now successfully created the policy. Now we should engage this policy to an API.
 
+<a name="engage-the-policy-with-an-api"></a>
 ##### Engage the policy with an API
 
 1.  Login to API Publisher https://:9443/publisher.
@@ -94,6 +96,7 @@ Select the item to black list, enter a value and click **Blacklist** .
 
 ![](../../assets/img/learn/blacklist-condition-status.png)
 
+<a name="blacklisting-phoneverification-api"></a>
 ##### Blacklisting PhoneVerification API
 
 As described above you can blacklist requests for APIs, by Applications, to IP Addresses and for Users. Let's see how we can blacklist the requests for an API.

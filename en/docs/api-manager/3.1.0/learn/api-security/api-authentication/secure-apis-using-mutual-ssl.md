@@ -6,7 +6,7 @@ This section explains as to how APIs in WSO2 API Manager can be secured using mu
 
 ## Create an API Secured with Mutual SSL
 
-1.  [Create an API](../../../learn/design-api/create-api/create-a-rest-api).
+1.  [Create an API](../../design-api/create-api/create-a-rest-api.md).
 2.  Click **Runtime Configurations**.
 3.  Select **Mutual SSL**.
     [![](../../../assets/img/learn/enable-mutual-ssl.png)](../../../assets/img/learn/enable-mutual-ssl.png)

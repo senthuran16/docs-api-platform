@@ -6,19 +6,19 @@
 The **Single Sign-On with SAML 2.0** feature in the API Manager is implemented according to the SAML 2.0 browser-based SSO support that is facilitated by WSO2 Identity Server (WSO2 IS). This feature is available in any WSO2 IS version from 4.1.0 onwards. **WSO2 IS 5.10.0** is used in this guide. WSO2 Identity Server acts as an identity service provider of systems enabled with single sign-on, while the Web applications act as SSO service providers. Using this feature, you can configure SSO with SAML 2.0 across the API Publisher and Developer Portal. After configuring, you can access the Developer Portal or API Publisher in a single authentication attempt.
 
 !!! tip
-    In this documentation, MySQL is used as the database to configure WSO2 API Manager with WSO2 Identity Server. For instructions on replacing the default H2 database with MySQL, see [Setting up MySQL](../../../install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql/#setting-up-mysql).
+    In this documentation, MySQL is used as the database to configure WSO2 API Manager with WSO2 Identity Server. For instructions on replacing the default H2 database with MySQL, see [Setting up MySQL](../../../install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql.md#setting-up-mysql).
 
 ## Step 1 - Share the user store
 
 1. Configure your user store(s) (if you have not done so already).
 
-     Follow the instructions in [Configuring User Stores](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/introduction-to-userstores/).
+     Follow the instructions in [Configuring User Stores](../../../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md).
 
 2. Point both WSO2 IS and WSO2 API Manager to your user stores(s). 
 
      This is required to make sure that a user who tries to sign in to the Developer Portal or the Publisher is authorized. When users try to sign in to either of the applications, they are redirected to the configured identity provider (WSO2 IS in this case) where they need to provide their login credentials to be authenticated.
 
-     In addition to this, the user should also be authorized by the system to enable [Role-based Permissions](../../../administer/product-administration/managing-users-and-roles/managing-permissions/). 
+     In addition to this, the user should also be authorized by the system to enable [Role-based Permissions](../../../administer/managing-users-and-roles/managing-permissions.md). 
 
      Therefore, for the purpose of authorization, WSO2 IS and WSO2 API Manager needs to have a shared user store and user management database (by default, this is the H2 database in the `<API-M_HOME>/repository/conf/user-mgt.xml` file) where the user's role and permissions are stored.
 

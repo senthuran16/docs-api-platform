@@ -8,7 +8,7 @@ Let's see how to use the API Console in the Developer Portal to invoke an API.
     You can only try out HTTPS based APIs via the API Console because the Developer Portal runs on HTTPS.
 
 
-The examples here use the `PizzaShack` REST API, which was created in [Create a REST API](../../../../learn/design-api/create-api/create-a-rest-api/) .
+The examples here use the `PizzaShack` REST API, which was created in [Create a REST API](../../../design-api/create-api/create-a-rest-api.md) .
 
 1.  Sign in to the WSO2 Develeoper Portal (`https://<hostname>:9443/devportal`) and click an API (e.g., `PizzaShack` ).
 
@@ -23,7 +23,7 @@ The examples here use the `PizzaShack` REST API, which was created in [Create a 
     !!! tip
         **Production and Sandbox Tokens**
 
-        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more details, see [Maintaining Separate Production and Sandbox Gateways](../../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways/#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
+        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more details, see [Maintaining Separate Production and Sandbox Gateways](../../../api-gateway/maintaining-separate-production-and-sandbox-gateways.md#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
 
     !!! tip
         **JWT vs Oauth tokens**

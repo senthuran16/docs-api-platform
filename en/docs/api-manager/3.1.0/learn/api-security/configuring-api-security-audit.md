@@ -73,7 +73,7 @@ You need to add the API Token and Collection ID properties inside the configurat
 #### Enable Audit API for a single tenant
 
 !!! tip
-    For more information on creating a tenant, see [Managing Tenants](../../administer/product-administration/multitenancy/introduction-to-multitenancy/).
+    For more information on creating a tenant, see [Managing Tenants](../../administer/multitenancy/introduction-to-multitenancy.md).
 
 1.  Navigate to the Management Console [https://localhost:9443/carbon](https://localhost:9443/carbon) and sign in with your tenant credentials.
 
@@ -129,7 +129,7 @@ You need to add the API Token and Collection ID properties inside the configurat
 
      [![sample audit report](../../assets/img/learn/sample-audit-report.png)](../../assets/img/learn/sample-audit-report.png)
 
-     For more information on the details provided in the report, see [Audit report sections](#auditreports)
+     For more information on the details provided in the report, see [Audit report sections](#audit-report-sections)
 
 <a href="auditreports"></a>
 

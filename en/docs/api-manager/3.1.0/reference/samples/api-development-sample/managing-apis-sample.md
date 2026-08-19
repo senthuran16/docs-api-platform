@@ -2,11 +2,11 @@
 
 This sample scenario elaborates as to how you can manage public vs. partner vs. private APIs with WSO2 API Manager.
 
--   [Use case](#ManagingAPIsSample-Usecase)
--   [Business story](#ManagingAPIsSample-Businessstory)
--   [Running the sample](#ManagingAPIsSample-Runningthesample)
--   [User credentials](#ManagingAPIsSample-Usercredentials)
--   [Implementing the scenario](#ManagingAPIsSample-Implementingthescenario)
+-   [Use case](#use-case)
+-   [Business story](#business-story)
+-   [Running the sample](#running-the-sample)
+-   [User credentials](#user-credentials)
+-   [Implementing the scenario](#implementing-the-scenario)
 
 ### Use case
 

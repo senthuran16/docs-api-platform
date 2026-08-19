@@ -9,7 +9,7 @@ The WebSocket protocol is designed to achieve the following:
 -   Be backward compatible with the pre-WebSocket world by starting up as an HTTP connection before switching to WebSocket frames.
 
 A WebSocket API allows an API creator to expose a WebSocket backend as an API to offer services via a WebSocket protocol while providing 
-[OAuth security](../../../learn/api-security/api-authentication/secure-apis-using-oauth2-tokens), [Throttling](../../../learn/rate-limiting/introducing-throttling-use-cases/), [Analytics](../../../learn/analytics/overview-of-api-analytics/), etc.
+[OAuth security](../../api-security/api-authentication/secure-apis-using-oauth2-tokens.md), [Throttling](../../rate-limiting/introducing-throttling-use-cases.md), [Analytics](../../analytics/overview-of-api-analytics.md), etc.
 
 Follow the instructions below to design a WebSocket API.
 
@@ -92,13 +92,13 @@ Follow the instructions below to design a WebSocket API.
      
          For more information, see the following sections on endpoint related configurations.
 
-         - [Endpoint Timeouts](../../../learn/design-api/endpoints/resiliency/endpoint-timeouts)
-         - [Endpoint Suspension](../../../learn/design-api/endpoints/resiliency/endpoint-suspension)
-         - [Prevent API Suspension](../../../learn/design-api/endpoints/resiliency/prevent-api-suspension)
+         - [Endpoint Timeouts](../endpoints/resiliency/endpoint-timeouts.md)
+         - [Endpoint Suspension](../endpoints/resiliency/endpoint-suspension.md)
+         - [Prevent API Suspension](../endpoints/resiliency/prevent-api-suspension.md)
 
     [![View endpoint details](../../../assets/img/learn/endpoint-view-of-websocket-api.jpg)](../../../assets/img/learn/endpoint-view-of-websocket-api.jpg)
 
-Now, you have successfully created and configured a WebSocket API. Next, let's [Publish your API](../../../learn/design-api/publish-api/publish-an-api).
+Now, you have successfully created and configured a WebSocket API. Next, let's [Publish your API](../publish-api/publish-an-api.md).
 
 <div class="admonition note">
 <p class="admonition-title">What's Next?</p>

@@ -34,7 +34,7 @@ The following are Advanced Endpoint Configurations that you can configure for bo
                     <p>If you want to configure the suspension of an endpoint, you can use the **Endpoint Suspension State** section to define the error codes, maximum suspension time, and suspension factors.</p>
                     <ul><li>
                     <p><strong>Error Codes:</strong> The error codes that are associated with suspended endpoints. If the backend endpoint receives the selected error codes, the endpoint will be marked as
-                    suspended. Specify the [transport error codes](../../../../troubleshooting/error-handling) to define when the endpoint suspension should be triggered. You can select a single error code or multiple error codes.</p>
+                    suspended. Specify the [transport error codes](../../../../troubleshooting/error-handling.md) to define when the endpoint suspension should be triggered. You can select a single error code or multiple error codes.</p>
                     </li><li>
                     <p><strong>Initial duration:</strong> The time duration for which the endpoint will be suspended when one or more suspend error codes are received from the endpoint for the first time.</p>
                         <div class="admonition note">

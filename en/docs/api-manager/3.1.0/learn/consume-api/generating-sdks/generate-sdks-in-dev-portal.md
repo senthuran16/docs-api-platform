@@ -41,4 +41,4 @@ Follow the instructions below to configure the languages available for SDK gener
     supported_languages = ["android", "java", "csharp", "dart", "flash", "groovy", "javascript"]
     ```
     
-3.  [Restart the server](../../../install-and-setup/installation-guide/running-the-product/) to apply the configuration changes.
+3.  [Restart the server](../../../install-and-setup/install/running-the-product.md) to apply the configuration changes.

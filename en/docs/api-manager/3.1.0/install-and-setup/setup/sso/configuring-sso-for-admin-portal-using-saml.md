@@ -19,7 +19,7 @@ This document explains how to connect WSO2 Identity Server as a third-party Iden
 
 1. Configure the user store(s) (if you have not done so already).
 
-    Follow the instructions in [Configuring User Stores](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/introduction-to-userstores/).
+    Follow the instructions in [Configuring User Stores](../../../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md).
 
     Let's use JDBC userstore (MySQL) and share it between WSO2 Identity Server and WSO2 API Manager.
 

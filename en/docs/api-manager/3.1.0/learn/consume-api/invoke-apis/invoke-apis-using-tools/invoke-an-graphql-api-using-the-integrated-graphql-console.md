@@ -12,7 +12,7 @@ Let's see how to use the GraphQL Console in the Store to invoke an GraphQL API.
     You can only try out HTTPS based APIs via the GraphQL Console because the API Store runs on HTTPS.
 
 
-The examples here use the `StarWarsAPI` GraphQL API, which was created in [Create a GraphQL API](../../../../learn/design-api/create-api/create-a-graphql-api/) .
+The examples here use the `StarWarsAPI` GraphQL API, which was created in [Create a GraphQL API](../../../design-api/create-api/create-a-graphql-api.md) .
 
 1.  Sign in to the WSO2 Develeoper Portal (`https://<hostname>:9443/devportal`) and click an API (e.g., `StarWarsAPI` ).
 
@@ -27,7 +27,7 @@ The examples here use the `StarWarsAPI` GraphQL API, which was created in [Creat
     !!! tip
         **Production and Sandbox Tokens**
 
-        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more details, see [Maintaining Separate Production and Sandbox Gateways](../../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways/#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
+        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more details, see [Maintaining Separate Production and Sandbox Gateways](../../../api-gateway/maintaining-separate-production-and-sandbox-gateways.md#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
 
     !!! tip
         **JWT vs Oauth tokens**

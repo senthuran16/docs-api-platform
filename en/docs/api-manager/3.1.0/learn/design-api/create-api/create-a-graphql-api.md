@@ -193,7 +193,7 @@ Follow the instructions below to design a GraphQL API
 
                  [![Scope list](../../../assets/img/learn/scope-list.png)](../../../assets/img/learn/scope-list.png)
 
-Now, you have successfully created and configured a GraphQL API. Next, let's [Publish your API](../../../learn/design-api/publish-api/publish-an-api).
+Now, you have successfully created and configured a GraphQL API. Next, let's [Publish your API](../publish-api/publish-an-api.md).
 
 ### GraphQL operations
 

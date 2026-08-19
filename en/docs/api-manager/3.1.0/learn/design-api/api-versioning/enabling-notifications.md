@@ -23,7 +23,7 @@ Follow the instructions below to enable notifications for new API versions:
     | username               | The email address used to authenticate the mail server. This can be the same email address as the `from_address`. |
     | password               | Password used to authenticate the mail server.                                                                            |
 
-    For more informaton, see [Enable Notifications](../../../reference/config-catalog/#enable-notifications).
+    For more informaton, see [Enable Notifications](../../../reference/config-catalog.md#enable-notifications).
 
 2.  Sign in to the Management Console.
 

@@ -23,7 +23,7 @@ Follow the instructions below if you wish to set up API-M Analytics for quick de
     
 2.  Download and install WSO2 API-M Analytics.
     To download WSO2 API-M Analytics go to the [WSO2 API Manager page](https://wso2.com/api-management/install/), click **Download** to expand the installation options.Navigate to the **Other Resources** section, and click **Analytics**. 
-    As the process of installing API-M Analytics is identical to installing WSO2 Streaming Integrator 1.0.0 (WSO2 SI), for more information you can refer to the [WSO2 SI documentation](#https://ei.docs.wso2.com/en/next/streaming-integrator/setup/installing-si-in-vm/).
+    As the process of installing API-M Analytics is identical to installing WSO2 Streaming Integrator 1.0.0 (WSO2 SI), for more information you can refer to the [WSO2 SI documentation](https://ei.docs.wso2.com/en/next/streaming-integrator/setup/installing-si-in-vm/).
 
     ![](../../../assets/img/learn/analytics-download-page.png)
     
@@ -85,6 +85,7 @@ Follow the instructions below if you wish to set up API-M Analytics for a produc
 -   [Step 5 - Configure APIM IdP Client](#step-5-configure-apim-idp-client)
 -   [Step 6 - Configure keystores](#step-6-configure-keystores)
 
+<a name="step-1-download-and-install-wso2-api-m"></a>
 #### Step 1 - Download and install WSO2 API-M
 
  Download and install WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). Click **DOWNLOAD** and go to **INSTALLATION OPTIONS**.
@@ -92,13 +93,15 @@ Follow the instructions below if you wish to set up API-M Analytics for a produc
     
  ![](../../../assets/img/learn/apim-download-page.png)
     
+<a name="step-2-download-and-install-wso2-api-m-analytics"></a>
 #### Step 2 - Download and install WSO2 API-M Analytics
 
 To download WSO2 API-M Analytics go to the [WSO2 API Manager page](https://wso2.com/api-management/install/), click **Download** to expand the installation options.Navigate to the **Other Resources** section, and click **Analytics**. 
-<br/>As the process of installing API-M Analytics is identical to installing WSO2 Streaming Integrator 1.0.0 (WSO2 SI), for more information you can refer to the [WSO2 SI documentation](#https://ei.docs.wso2.com/en/next/streaming-integrator/setup/installing-si-in-vm/).
+<br/>As the process of installing API-M Analytics is identical to installing WSO2 Streaming Integrator 1.0.0 (WSO2 SI), for more information you can refer to the [WSO2 SI documentation](https://ei.docs.wso2.com/en/next/streaming-integrator/setup/installing-si-in-vm/).
 
   ![](../../../assets/img/learn/analytics-download-page.png)
     
+<a name="step-3-configure-wso2-api-manager-to-publish-statistics"></a>
 #### Step 3 - Configure WSO2 API Manager to publish statistics
 
 Follow the instructions below to do the required configurations for WSO2 API-M to publish statistics in the WSO2 API-M Analytics server.
@@ -225,6 +228,7 @@ Please note that if the <code>username</code> and <code>password</code> are unco
 
 Save the changes.
 
+<a name="step-4-configure-databases"></a>
 #### Step 4 - Configure databases
 
 Configuring databases allow you to persist data relating to APIs, process them and analyze. Follow the procedure below to configure databases. 
@@ -291,8 +295,9 @@ Configuring databases allow you to persist data relating to APIs, process them a
 !!! Info
       **Do the following to integrate third party products when configuring databases.**
       <br/>WSO2 API Manager Analytics is a OSGi-based product. Therefore, when you integrate third party products such as Oracle with WSO2 API-M Analytics, you need to check whether the libraries you need to add are OSGi based. If they are not, you need to convert them to OSGi bundles before adding them to the `<API-M_ANALYTICS_HOME>/lib` directory.
-      For detailed instructions, see [Adding Third Party Non OSGi Libraries](../../../learn/analytics/adding-third-party-non-osgi-libraries/).
+      For detailed instructions, see [Adding Third Party Non OSGi Libraries](../../../learn/analytics/adding-third-party-non-osgi-libraries.md).
 
+<a name="step-5-configure-apim-idp-client"></a>
 #### Step 5 - Configure APIM IdP Client
 
 APIM IdP Client authenticates users by interacting with the identity provider of API Manager via OAuth2. The APIM Manager user store is used to provide the access to APIM Analytics as well. WSO2 APIM Analytics server authenticates by requesting an access token from the identity provider in API Manager using the authentication code grant type. This APIM IdP client enables SSO(Single Sign On). 
@@ -346,10 +351,11 @@ auth.configs:
 | `externalLogoutUrl`| https://localhost:9443/oidc/logout | The URL via which you can log out from the external IDP provider(API Manager) side in the SSO. This should be pointed to the API Manager Publisher node url.|
 
 
+<a name="step-6-configure-keystores"></a>
 #### Step 6 - Configure keystores
 
 In the SSL handshake between the API Manager and API Manager Analytics servers, the client (i.e. API Manager) needs to verify the certificate presented by the server (i.e. API Manager Analytics). For this purpose, the client stores the trusted certificate of the server in the `client-truststore.jks` keystore.
 
 If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores](../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-1-generating-a-ca-signed-certificate) in the Administration Guide.
 
-For more information follow [Configuring Keystores in APIM Analytics](../../../learn/analytics/configuring-keystores-in-apim-analytics/).
+For more information follow [Configuring Keystores in APIM Analytics](../../../learn/analytics/configuring-keystores-in-apim-analytics.md).

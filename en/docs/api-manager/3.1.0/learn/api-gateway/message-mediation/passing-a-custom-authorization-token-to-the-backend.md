@@ -26,7 +26,7 @@ Here's a summary:
         </sequence>
         ```
 
-2.  Log in to the **API Publisher**, create a new REST API with the information given in the table below by following the instructions in [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/).
+2.  Log in to the **API Publisher**, create a new REST API with the information given in the table below by following the instructions in [Create a REST API](../../design-api/create-api/create-a-rest-api.md).
 
     | Field         | Sample value         |
     |---------------|----------------------|
@@ -46,7 +46,7 @@ sequence that you created earlier and click **Save** .
 5. Go **Developer Portal**, subscribe and obtain a token to invoke the published API. 
 
     !!! tip
-        Follow the instructions in [here](../../../learn/consume-api/manage-application/generate-keys/generate-api-keys/#generate-application-keys) to generate an application access token.  
+        Follow the instructions in [here](../../consume-api/manage-application/generate-keys/generate-api-keys.md#generate-application-keys) to generate an application access token.  
 
 6. Install any REST client in your machine. We use [cURL](http://curl.haxx.se/download.html) here.
 

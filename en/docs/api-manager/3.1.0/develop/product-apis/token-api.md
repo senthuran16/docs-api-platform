@@ -110,11 +110,12 @@ When a user access token expires, the user can try regenerating the token.
 
 The OAuth2 component in WSO2 API Manager (WSO2 API-M) has two implementations that you can use to handle token persistence in the database, which are namely synchronous and asynchronous token persistence. The following sections guide you through the difference between these two approaches and how to configure them in a production environment.
 
--   [Synchronous token persistence (When PoolSize = 0)](#TokenAPI-Synchronoustokenpersistence(WhenPoolSize=0))
--   [Asynchronous token persistence (When PoolSize &gt; 0)](#TokenAPI-Asynchronoustokenpersistence(WhenPoolSize%3E0))
+-   [Synchronous token persistence (When PoolSize = 0)](#synchronous-token-persistence-when-poolsize-0)
+-   [Asynchronous token persistence (When PoolSize &gt; 0)](#asynchronous-token-persistence-poolsize-gt-0)
 
 The Synchronous or Asynchronous  behavior is governed by the `PoolSize` property under `SessionDataPersist` element in the `identity.xml` file.
 
+<a name="synchronous-token-persistence-when-poolsize-0"></a>
 #### Synchronous token persistence (When PoolSize = 0)
 
 ![](../../assets/attachments/103335249/103335250.png)
@@ -130,9 +131,10 @@ The flow of synchronous token persistence is as follows:
         !!! tip
     Enabling synchronous token persistence
 
-    To enable synchronous token persistence, follow the steps in the [Enabling Authentication Session Persistence](_Enabling_Authentication_Session_Persistence_) tutorial and **set the `<poolsize>` property to 0** .
+    To enable synchronous token persistence, follow the steps in the [Enabling Authentication Session Persistence](../enabling-authentication-session-persistence.md) tutorial and **set the `<poolsize>` property to 0** .
 
 
+<a name="asynchronous-token-persistence-poolsize-gt-0"></a>
 #### Asynchronous token persistence (When PoolSize &gt; 0)
 
 ![](../../assets/attachments/103335249/103335251.png)
@@ -150,7 +152,7 @@ The flow of asynchronous token persistence is as follows:
         !!! tip
     Enabling asynchronous token persistence
 
-    To enable asynchronous token persistence, follow the steps in the [Enabling Authentication Session Persistence](_Enabling_Authentication_Session_Persistence_) tutorial and **set the `<poolsize>` property to a value higher than 0** . The value provided for the `<poolsize>` property determines the number of threads in the thread pool that are used to consume the token persisting queue.
+    To enable asynchronous token persistence, follow the steps in the [Enabling Authentication Session Persistence](../enabling-authentication-session-persistence.md) tutorial and **set the `<poolsize>` property to a value higher than 0** . The value provided for the `<poolsize>` property determines the number of threads in the thread pool that are used to consume the token persisting queue.
 
 !!! info
 The main difference between synchronous and asynchronous token persistence is that the OAuth2 component in the synchronous token persistence implementation waits for the access token to be persisted in the database before returning it to the client.
@@ -160,10 +162,11 @@ The main difference between synchronous and asynchronous token persistence is th
 
 This section explains the recovery flow triggered in WSO2 API Manager for exceptional cases that may occur in a production environment caused by the client application mishandling the `CON_APP_KEY` constraint that is explained below.
 
--   [CON\_APP\_KEY constraint](#TokenAPI-CON_APP_KEYconstraint)
--   [Asynchronous token persistence](#TokenAPI-Asynchronoustokenpersistence)
--   [Synchronous token persistence](#TokenAPI-Synchronoustokenpersistence)
+-   [CON\_APP\_KEY constraint](#con_app_key-constraint)
+-   [Asynchronous token persistence](#asynchronous-token-persistence)
+-   [Synchronous token persistence](#synchronous-token-persistence)
 
+<a name="con_app_key-constraint"></a>
 ##### CON\_APP\_KEY constraint
 
 `CONSTRAINT CON_APP_KEY UNIQUE (CONSUMER_KEY, AUTHZ_USER,USER_TYPE,TOKEN_STATE,TOKEN_STATE_ID,TOKEN_SCOPE)`
@@ -175,6 +178,7 @@ As seen in the code snippet above for a given set of consumer key, user, and sco
 The above scenario is unlikely, because in practice an application is usually designed to handle this situation using scopes, or in the case of a multi-threaded client, there is usually a separate thread to acquire access tokens so that other threads can retrieve from it.
 
 
+<a name="asynchronous-token-persistence"></a>
 ##### Asynchronous token persistence
 
 **Flow**
@@ -201,6 +205,7 @@ To handle this situation, WSO2 API Manager has a recovery flow for token persist
 **Tip:** If the client application is not designed to handle the `CONN_APP_KEY` constraint violation using scopes, you can avoid the situation described above and avoid any invalid tokens by using synchronous token persistence. To do this, set the `<PoolSize>` property in the `<API-M_HOME>/repository/conf/identity/identity.xml` file to 0.
 
 
+<a name="synchronous-token-persistence"></a>
 ##### Synchronous token persistence
 
 **Flow**

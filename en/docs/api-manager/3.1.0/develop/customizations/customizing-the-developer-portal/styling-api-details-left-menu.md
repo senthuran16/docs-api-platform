@@ -2,7 +2,7 @@
 
 The API details left menu can be customized to match with your design needs by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#devportal).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme.md#devportal).
 
  ![styling api details left menu](../../../assets/img/learn/styling-api-details-left-menu1.png) 
 

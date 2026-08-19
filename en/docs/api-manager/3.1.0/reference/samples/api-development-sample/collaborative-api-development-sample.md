@@ -2,11 +2,11 @@
 
 This sample scenario elaborates as to how you can develop APIs in a collaborative manner while maintaining different levels of ownership and permissions.
 
--   [Use case](#CollaborativeAPIDevelopmentSample-Usecase)
--   [Business story](#CollaborativeAPIDevelopmentSample-Businessstory)
--   [Running the sample](#CollaborativeAPIDevelopmentSample-Runningthesample)
--   [User credentials](#CollaborativeAPIDevelopmentSample-Usercredentials)
--   [Implement the scenario](#CollaborativeAPIDevelopmentSample-Implementthescenario)
+-   [Use case](#use-case)
+-   [Business story](#business-story)
+-   [Running the sample](#running-the-sample)
+-   [User credentials](#user-credentials)
+-   [Implement the scenario](#implement-the-scenario)
 
 ### Use case
 

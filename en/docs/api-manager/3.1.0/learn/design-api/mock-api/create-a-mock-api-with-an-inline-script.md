@@ -181,7 +181,7 @@ You have successfully created an API with an inline script, deployed it as a pro
 
 An API can also be prototyped by moving the API to the `PROTOTYPED` state by changing the API lifecycle state and providing the prototype endpoints.
 
-For more information, see the [Deploy and Test Prototype APIs](../../../learn/design-api/mock-api/deploy-and-test-mock-apis) tutorial.
+For more information, see the [Deploy and Test Prototype APIs](deploy-and-test-mock-apis.md) tutorial.
 
 <div class="admonition info">
 <p class="admonition-title">Related Guides</p>

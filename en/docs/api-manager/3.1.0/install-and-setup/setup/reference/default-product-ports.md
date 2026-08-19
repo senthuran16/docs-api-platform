@@ -1,6 +1,6 @@
 # Default Product Ports
 
-This page describes the default ports that are used for each WSO2 product when the [port offset](_Changing_the_Default_Ports_with_Offset_) is 0.
+This page describes the default ports that are used for each WSO2 product when the [port offset](../deployment-best-practices/changing-the-default-ports-with-offset.md) is 0.
 
 !!! warning
     **Note** that it is recommended to disable the HTTP transport in an API Manager production setup. Using the `Bearer` token over HTTP is a violation of the OAuth specification and can lead to security vulnerabilities.
@@ -9,12 +9,14 @@ This page describes the default ports that are used for each WSO2 product when t
 -   [Product-specific ports](#product-specific-ports)
 -   [Disabling HTTP Transports](#disabling-http-transports)
 
+<a name="common-ports"></a>
 #### Common ports
 
 The following ports are common to all WSO2 products that provide the given feature. Some features are bundled in the WSO2 Carbon platform itself and therefore are available in all WSO2 products by default.
 
 [Common ports](#common-ports) | [Management console ports](#management-console-ports) | [LDAP server ports](#ldap-server-ports) | [KDC ports](#kdc-ports) | [JMX monitoring ports](#jmx-monitoring-ports) | [Clustering ports](#clustering-ports) | [Random ports](#random-ports)
 
+<a name="management-console-ports"></a>
 #### Management console ports
 
 WSO2 products that provide a management console use the following servlet transport ports:
@@ -27,16 +29,19 @@ WSO2 API Manager (WSO2 APIM) uses the following ports to access the management c
 -   9443 - HTTPS servlet transport for the **APIM** runtime (the default URL of the management console is https://localhost:9443/carbon )
 -   9444 - Used for the **APIM-Analytics** management console
 
+<a name="ldap-server-ports"></a>
 #### LDAP server ports
 
 Provided by default in the WSO2 Carbon platform.
 
 -   10389 - Used in WSO2 products that provide an embedded LDAP server
 
+<a name="kdc-ports"></a>
 #### KDC ports
 
 -   8000 - Used to expose the Kerberos key distribution center server
 
+<a name="jmx-monitoring-ports"></a>
 #### JMX monitoring ports
 
 WSO2 Carbon platform uses TCP ports to monitor a running Carbon instance using a JMX client such as JConsole. By default, JMX is enabled in all products. You can disable it by adding following configuration to `<PRODUCT_HOME>/repository/conf/deployment.toml` file.
@@ -49,6 +54,7 @@ WSO2 Carbon platform uses TCP ports to monitor a running Carbon instance using a
 -   11111 - RMIRegistry port. Used to monitor Carbon remotely
 -   9999 - RMIServer port. Used along with the RMIRegistry port when Carbon is monitored from a JMX client that is behind a firewall
 
+<a name="clustering-ports"></a>
 #### Clustering ports
 
 To cluster any running Carbon instance, either one of the following ports must be opened.
@@ -56,6 +62,7 @@ To cluster any running Carbon instance, either one of the following ports must b
 -   45564 - Opened if the membership scheme is multicast
 -   4000 - Opened if the membership scheme is wka
 
+<a name="random-ports"></a>
 #### Random ports
 
 Certain ports are randomly opened during server startup. This is due to specific properties and configurations that become effective when the product is started. Note that the IDs of these random ports will change every time the server is started.
@@ -69,6 +76,7 @@ Some products open additional ports.
 
 [API Manager](#api-manager) | [BPS](#bps) | [Data Analytics Server](#data-analytics-server) | [Complex Event Processor](#complex-event-processor) | [Elastic Load Balancer](#elastic-load-balancer) | [ESB](#esb) | [Enterprise Integrator](#enterprise-integrator) | [Identity Server](#identity-server) | [Message Broker](#message-broker) | [Machine Learner](#machine-learner) | [Storage Server](#storage-server) | [Enterprise Mobility Manager](#enterprise-mobility-manager) | [IoT Server](#iot-server)
 
+<a name="api-manager"></a>
 ##### API Manager
 
 -   5672 - Used by the internal Message Broker.
@@ -84,10 +92,12 @@ Some products open additional ports.
     If you change the default API Manager ports with a port offset, most of its ports will be changed automatically according to the offset except a few exceptions described in the [APIM Manager documentation]../../../reference/guides/changing-the-default-ports-with-offset/) .
 
 
+<a name="bps"></a>
 ##### BPS
 
 -   2199 - RMI registry port (datasources provider port)
 
+<a name="data-analytics-server"></a>
 ##### Data Analytics Server
 
 Given below are the specific ports used by WSO2 DAS.
@@ -138,6 +148,7 @@ Default port configurations for these modes are as follows.
     | spark.worker.port       | 11000       |
     | spark.worker.webui.port | 11500       |
 
+<a name="complex-event-processor"></a>
 ##### Complex Event Processor
 
 -   9160 - Cassandra port on which Thrift listens to clients
@@ -145,10 +156,12 @@ Default port configurations for these modes are as follows.
 -   7611 - Thrift TCP port to receive events from clients to CEP
 -   11224 - Thrift TCP port for HA management of CEP
 
+<a name="elastic-load-balancer"></a>
 ##### Elastic Load Balancer
 
 -   8280, 8243 - NIO/PT transport ports
 
+<a name="esb"></a>
 ##### ESB
 
 Non-blocking HTTP/S transport ports: Used to accept message mediation requests. If you want to send a request to an API or a proxy service for example, you must use these ports. ESB\_HOME}/repository/conf/axis2/axis2.xml file.
@@ -156,6 +169,7 @@ Non-blocking HTTP/S transport ports: Used to accept message mediation requests. 
 -   8243 - Passthrough or NIO HTTPS transport
 -   8280 - Passthrough or NIO HTTP transport
 
+<a name="enterprise-integrator"></a>
 ##### Enterprise Integrator
 
 ###### Integration runtime ports
@@ -192,11 +206,13 @@ EI-Broker uses the following JMS ports to communicate with external clients over
 -   8836 - Port for listening for messages on TCP/SSL when the MQTT Transport is used.
 -   7614 - The port for Apache Thrift Server.
 
+<a name="identity-server"></a>
 ##### Identity Server
 
 -   8000 - KDCServerPort. Port which KDC (Kerberos Key Distribution Center) server runs
 -   10500 - ThriftEntitlementReceivePort
 
+<a name="message-broker"></a>
 ##### Message Broker
 
 Message Broker uses the following JMS ports to communicate with external clients over the JMS transport.
@@ -207,12 +223,14 @@ Message Broker uses the following JMS ports to communicate with external clients
 -   8833 - Port for listening for messages on TCP/SSL when the MQTT Transport is used.
 -   7611 - The port for Apache Thrift Server.
 
+<a name="machine-learner"></a>
 ##### Machine Learner
 
 -   7077 - The default port for Apache Spark.
 -   54321 - The default port for H2O.
 -   4040 - The default port for Spark UI.
 
+<a name="storage-server"></a>
 ##### Storage Server
 
 Cassandra:
@@ -232,6 +250,7 @@ HDFS:
 -   50075 - Data node HTTP server port
 -   50020 - Data node IPC server port
 
+<a name="enterprise-mobility-manager"></a>
 ##### Enterprise Mobility Manager
 
 The following ports need to be opened for Android and iOS devices so that it can connect to Google Cloud Messaging (GCM)/Firebase Cloud Messaging (FCM) and APNS (Apple Push Notification Service) and enroll to WSO2 EMM.
@@ -257,6 +276,7 @@ API Manager:
 -   10397 - Thrift client and server ports
 -   8280, 8243 - NIO/PT transport ports
 
+<a name="iot-server"></a>
 ##### IoT Server
 
 The following ports need to be opened for WSO2 IoT Server, and Android and iOS devices so that it can connect to Google Cloud Messaging (GCM)/Firebase Cloud Messaging (FCM) and APNS (Apple Push Notification Service), and enroll to WSO2 IoT Server.

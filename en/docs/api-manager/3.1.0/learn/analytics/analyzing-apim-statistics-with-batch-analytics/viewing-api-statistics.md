@@ -2,13 +2,13 @@
 
 API statistics related to both the API Publisher and the Developer Portal can be viewed using the **dashboard** runtime of the API-M Analytics server.
 
-For instructions on how to set up Analytics, see [Configuring APIM Analytics](../../../learn/analytics/configuring-apim-analytics). 
+For instructions on how to set up Analytics, see [Configuring APIM Analytics](../configuring-apim-analytics.md). 
 Once Analytics is set up, follow the instructions below to view statistics relevant to API Publisher and Developer Portal.
 
-First, [invoke a few APIs](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console) to generate traffic and see the statistics.
+First, [invoke a few APIs](../../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md) to generate traffic and see the statistics.
 
 !!! note
-      The following widgets on the API Manager statistical dashboards, display real runtime statistics even when Analytics is not set up (as described in [Configuring APIM Analytics](../../../learn/analytics/configuring-apim-analytics)).
+      The following widgets on the API Manager statistical dashboards, display real runtime statistics even when Analytics is not set up (as described in [Configuring APIM Analytics](../configuring-apim-analytics.md)).
       
       **Publisher Dashboard**
       
@@ -47,7 +47,7 @@ The sections below explain how to access the statistical dashboards:
 
 + Click on the card of any desired dashboard to view that particular dashboard.
 + By using APIM Admin dashboard, administrators can generate a monthly API usage report. For more
- information see [Monthly API Usage Report](../../../learn/analytics/monthly-api-usage-report).
+ information see [Monthly API Usage Report](../monthly-api-usage-report.md).
 + Admin Portal Statistics can be viewed from the admin app.
     
 Please refer below sub sections for more details about each dashboard.
@@ -60,7 +60,7 @@ Please refer below sub sections for more details about each dashboard.
 
 !!! info
       Unlike the previous releases of API-M Analytics dashboards, Publisher statistics dashboard can be viewed by any user having Analytics role, Creator role or Publisher role.
-      And these permissions can be changed as per your preferences by going to **Settings** options of the dashboard. More information can be found at [Managing Analytics Dashboard Permissions](../../../learn/analytics/managing-dashboard-permissions/) page.
+      And these permissions can be changed as per your preferences by going to **Settings** options of the dashboard. More information can be found at [Managing Analytics Dashboard Permissions](../managing-dashboard-permissions.md) page.
       
  API Publisher dashboard has 8 main pages namely **Overview**, **API and Application Statistics**, **Developer Statistics**, **Usage Summary**, **Devices**, **API Proxy Performance**, **Faults**, and **Geo Map**.
  
@@ -114,9 +114,9 @@ This widget displays the total number of API subscriptions crated by the subscri
 This widget displays a percentage of API availability for the logged in users's tenant.
 
 !!! Note
-      In order to view statistics of **API Availability** widget, it is required to enable alerts as described in [Configuring Alerts](../../../learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts).
+      In order to view statistics of **API Availability** widget, it is required to enable alerts as described in [Configuring Alerts](../managing-alerts-with-real-time-analytics/configuring-alerts.md).
       
-  The availability of APIs statistics is directly related to the [Availability of APIs (health monitoring)](../../../learn/analytics/managing-alerts-with-real-time-analytics/alert-types/#availability-of-apis-api-health-monitoring) alert type. 
+  The availability of APIs statistics is directly related to the [Availability of APIs (health monitoring)](../managing-alerts-with-real-time-analytics/alert-types.md#availability-of-apis-api-health-monitoring) alert type. 
   
 <html>
 <body>
@@ -356,7 +356,7 @@ Results of this widget also can be filtered based on API Creator ( either All or
 </html>
 
 !!! note
-    The above User-Agent and Platform information are extracted from the User-Agent header of the API requests. To customize the information to be extracted follow [Configuring User-Agent Parser](../../../learn/analytics/configuring-apim-analytics/#step-7-configure-user-agent-parser).
+    The above User-Agent and Platform information are extracted from the User-Agent header of the API requests. To customize the information to be extracted follow [Configuring User-Agent Parser](../configuring-apim-analytics.md#step-7-configure-user-agent-parser).
 
 ### API Proxy Performance
 
@@ -422,7 +422,7 @@ For more information, see [Using Geolocation Based Statistics](../../../learn/an
 
 !!! info
       The Developer Portal Statistics Dashboard can be viewed by admin users and users who have the `internal/subscriber ` role. By default, the dashboard cannot be viewed by users having the `internal/analytics` role.
-      However, these permissions can be changed based on your preferences using the **Settings** option in the dashboard. For more information, see [Managing Analytics Dashboard Permissions](../../../learn/analytics/managing-dashboard-permissions/) page.
+      However, these permissions can be changed based on your preferences using the **Settings** option in the dashboard. For more information, see [Managing Analytics Dashboard Permissions](../managing-dashboard-permissions.md) page.
 
 
 Log into the analytics-dashboard application and access developer portal statistics ( ex: [https://localhost:9643/analytics-dashboard/dashboards/apimdevportal](https://localhost:9643/analytics-dashboard/dashboards/apimdevportal) ) dashboard from there.
@@ -458,7 +458,7 @@ You also can limit the number of users that needs to be listed by changing the l
 
 The statistics for this widget takes the number of users shared across each application in to consideration. 
 
-To enable application sharing among users within the same organization, see [Sharing Applications](../../../learn/consume-api/manage-application/sharing-applications/sharing-applications/).
+To enable application sharing among users within the same organization, see [Sharing Applications](../../consume-api/manage-application/sharing-applications/sharing-applications.md).
 
 <html>
 <body>
@@ -497,6 +497,7 @@ This widget displays the number of invocations made for each API by each applica
 Log in to the Admin Portal ( `https://localhost:9443/admin` ). 
 API Availability is the only statistical view that exists in the Admin Portal. Admin users can view API Availability statistics by navigating to **ANALYTICS &gt; API AVAILABILITY** .
 
+<a name="availability-of-apis"></a>
 #### Availability of APIs
 
 The status of the APIs (all API versions) represented in a tabular view.
@@ -525,11 +526,11 @@ The status of the APIs (all API versions) represented in a tabular view.
 </div>
 </html>
 
-<html><p><strong>Limited</strong> - If an API receives an alert due to one of the reasons indicated in [Availability of APIs (health monitoring)](../../../learn/analytics/managing-alerts-with-real-time-analytics/alert-types/#availability-of-apis-api-health-monitoring), the API status changes to <strong>Limited</strong> .</p></html>
+<html><p><strong>Limited</strong> - If an API receives an alert due to one of the reasons indicated in [Availability of APIs (health monitoring)](../managing-alerts-with-real-time-analytics/alert-types.md#availability-of-apis-api-health-monitoring), the API status changes to <strong>Limited</strong> .</p></html>
 
 <html><div class="admonition info">
 <p class="admonition-title">Note</p>
-<p>For more information on how to view the generated alerts, see [Viewing Alerts](../../../learn/analytics/managing-alerts-with-real-time-analytics/viewing-alerts/)</p>
+<p>For more information on how to view the generated alerts, see [Viewing Alerts](../managing-alerts-with-real-time-analytics/viewing-alerts.md)</p>
 </div>
 </html>
 
@@ -539,7 +540,7 @@ The status of the APIs (all API versions) represented in a tabular view.
 </table>
 </html>
 
-The availability of APIs statistics is directly related to the [Availability of APIs (health monitoring)](../../../learn/analytics/managing-alerts-with-real-time-analytics/alert-types/#availability-of-apis-api-health-monitoring) alert type.
+The availability of APIs statistics is directly related to the [Availability of APIs (health monitoring)](../managing-alerts-with-real-time-analytics/alert-types.md#availability-of-apis-api-health-monitoring) alert type.
 
 ## Date Range Picker
 

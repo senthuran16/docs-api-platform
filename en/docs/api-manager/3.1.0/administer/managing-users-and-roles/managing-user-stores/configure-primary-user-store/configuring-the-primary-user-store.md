@@ -59,12 +59,12 @@ type = "database_unique_id"
 
 Follow the links given below to setup the required type of primary user store.
 
--   [Configuring a JDBC User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store/)
--   [Configuring a Read-Only LDAP User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store/)
--   [Configuring a Read-Write Active Directory User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store/)
--   [Configuring a Read-Write LDAP User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/)
+-   [Configuring a JDBC User Store](configuring-a-jdbc-user-store.md)
+-   [Configuring a Read-Only LDAP User Store](configuring-a-read-only-ldap-user-store.md)
+-   [Configuring a Read-Write Active Directory User Store](configuring-a-read-write-active-directory-user-store.md)
+-   [Configuring a Read-Write LDAP User Store](configuring-a-read-write-ldap-user-store.md)
 
 !!! note
     You can create a simple custom user store manager for WSO2 API Manager.
-    See [Writing a custom user store manager](../../../../administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager).
+    See [Writing a custom user store manager](../writing-a-custom-user-store-manager.md).
     

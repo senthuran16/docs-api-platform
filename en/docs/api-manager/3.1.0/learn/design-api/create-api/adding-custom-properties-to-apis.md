@@ -41,7 +41,7 @@ After the custom properties have been added, you can [search for APIs using cust
 
 ### Add custom properties via the REST API
 
-Use the [existing REST API](../../../develop/product-apis/restful-apis/) to add a new API and in order to add the API with custom properties make sure to add the following element to the request body including the relevant properties.
+Use the [existing REST API](../../../develop/product-apis/restful-apis.md) to add a new API and in order to add the API with custom properties make sure to add the following element to the request body including the relevant properties.
 
 `"additionalProperties : {"environment": "preprod", "secured": "true"}`
 
