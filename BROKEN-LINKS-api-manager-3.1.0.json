@@ -10,7 +10,7 @@
   "renamed": 0,
   "case": 0,
   "include": 0,
-  "gone": 114,
+  "gone": 83,
   "stale": 0,
   "anchor": 32,
   "anchor_case": 0,
@@ -63,18 +63,6 @@
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
-    "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-user-roles.md",
-    "link": "../../administer/product-administration/managing-users-and-roles/managing-user-roles/#update-before-the-first-startup-recommended",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store.md",
-    "link": "properties-used-in-a-read-only-ldap-user-store-managers",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
     "file": "api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/understanding-the-user-realm.md",
     "link": "../../../assets/attachments/126562314/126562315.png",
     "kind": "image",
@@ -96,30 +84,6 @@
     "file": "api-manager/3.1.0/administer/multitenancy/adding-new-tenants.md",
     "link": "../../assets/attachments/126562777/126562782.png",
     "kind": "image",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/develop/customizations/adding-a-user-signup-workflow.md",
-    "link": "/learn/consume-api/customizations/adding-a-user-signup-workflow/#configuring-the-business-process-server",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/develop/customizations/adding-a-user-signup-workflow.md",
-    "link": "/learn/consume-api/customizations/adding-a-user-signup-workflow/#configuring-the-enterprise-integrator",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md",
-    "link": "../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/#add-an-api-category-using-the-admin-portal-ui",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md",
-    "link": "../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/#add-an-api-category-using-the-admin-rest-api",
-    "kind": "link",
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
@@ -159,18 +123,6 @@
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
-    "file": "api-manager/3.1.0/develop/product-apis/getting-started/guide-devportal-v0.16.md",
-    "link": "../../../develop/product-apis/devportal-apis/devportal-v1/guide/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/develop/product-apis/getting-started/guide-publisher-v0.16.md",
-    "link": "../../../develop/product-apis/publisher-apis/publisher-v1/guide/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
     "file": "api-manager/3.1.0/develop/wso2-admin-services.md",
     "link": "../assets/attachments/develop/org.wso2.carbon.sample.admin.service.invoker.zip",
     "kind": "link",
@@ -180,48 +132,6 @@
     "file": "api-manager/3.1.0/getting-started/overview.md",
     "link": "../assets/attachments/103327648/126556775.png",
     "kind": "image",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service.md",
-    "link": "../../../../install-and-setup/ProductCompatibility",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service.md",
-    "link": "../../../../install-and-setup/ProductCompatibility",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service.md",
-    "link": "../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-linux-or-os-x.md",
-    "link": "../../../../install-and-setup/ProductCompatibility",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris.md",
-    "link": "../../../../install-and-setup/ProductCompatibility",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris.md",
-    "link": "../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md",
-    "link": "../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles\n/#product-profiles",
-    "kind": "link",
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
@@ -249,26 +159,8 @@
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
-    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
-    "link": "../../../install-and-setup/ProductCompatibility/#compatible-wso2-identity-server-as-the-key-managers",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md",
-    "link": "../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-3-importing-certificates-to-the-truststore",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
     "file": "api-manager/3.1.0/install-and-setup/setup/security/configuring-transport-level-security.md",
     "link": "../../../assets/attachments/TestSSLServer.jar",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md",
-    "link": "../../../../learn/consume-api/customizations/log-in-to-the-api-store-using-social-media/",
     "kind": "link",
     "note": "no file of this name exists anywhere under the docs root"
    },
@@ -459,12 +351,6 @@
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
-    "file": "api-manager/3.1.0/install-and-setup/setup/single-node/configuring-apim-analytics.md",
-    "link": "../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-1-generating-a-ca-signed-certificate",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
     "file": "api-manager/3.1.0/install-and-setup/setup/single-node/deploying-api-manager-using-single-node-instances.md",
     "link": "../../../assets/attachments/103334465/103334466.png",
     "kind": "image",
@@ -477,44 +363,8 @@
     "note": "no file of this name exists anywhere under the docs root"
    },
    {
-    "file": "api-manager/3.1.0/install-and-setup/setup/sso/configuring-sso-for-admin-portal-using-saml.md",
-    "link": "stepc",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set.md",
-    "link": "../../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set.md",
-    "link": "../../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics.md",
-    "link": "../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
     "file": "api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md",
     "link": "../../assets/attachments/learn/monetization/org.wso2.apim.monetization.impl-1.1.1.jar",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/api-security/api-authentication/secure-apis-using-api-keys.md",
-    "link": "ttps://www.urlencoder.org",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/api-security/configuring-api-security-audit.md",
-    "link": "auditreports",
     "kind": "link",
     "note": "no file of this name exists anywhere under the docs root"
    },
@@ -540,42 +390,6 @@
     "file": "api-manager/3.1.0/learn/design-api/advanced-topics/adding-an-api-state-change-workflow.md",
     "link": "../../../administer/product-administration/managing-users-and-roles/admin-managing-users-roles-and-permissions",
     "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/design-api/create-api/create-a-graphql-api.md",
-    "link": "../../../administer/product-administration/managing-users-and-roles/adding-users",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/design-api/create-api/create-a-graphql-api.md",
-    "link": "../../../administer/product-administration/managing-users-and-roles/adding-user-roles",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/design-api/create-api/create-a-rest-api-from-a-swagger-definition.md",
-    "link": "../../../learn/design-api/publish-api/publish-an-ap",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/tutorials/create-and-publish-a-graphql-api.md",
-    "link": "../../administer/product-administration/managing-users-and-roles/adding-users/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/learn/tutorials/create-and-publish-a-graphql-api.md",
-    "link": "../../administer/product-administration/managing-users-and-roles/adding-user-roles/",
-    "kind": "link",
-    "note": "no file of this name exists anywhere under the docs root"
-   },
-   {
-    "file": "api-manager/3.1.0/reference/samples/api-rate-monetization-sample.md",
-    "link": "../../assets/attachments/reference-sample-subscription-tiers",
-    "kind": "image",
     "note": "no file of this name exists anywhere under the docs root"
    },
    {

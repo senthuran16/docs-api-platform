@@ -46,7 +46,7 @@ This document explains how to connect WSO2 Identity Server as a third-party Iden
         password = "${password}"
         ```
 
-    4.  Share the userstore with API Manager by adding the same configuration, which was defined in <a href="stepc">Step C</a>) in the `deployment.toml` file, which is in the `<API-M_HOME>/repository/conf` directory.
+    4.  Share the userstore with API Manager by adding the same configuration, which was defined in <a href="#stepc">Step C</a>) in the `deployment.toml` file, which is in the `<API-M_HOME>/repository/conf` directory.
 
     5.  Copy the JDBC driver JAR file into the `<PRODUCT_HOME>/repository/components/lib` directory of both servers.
 

@@ -168,7 +168,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
                   </p>
                   </div>
                   
-                  Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users](../../administer/product-administration/managing-users-and-roles/adding-users/) and [Adding User Roles](../../administer/product-administration/managing-users-and-roles/adding-user-roles/).
+                  Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users](../../administer/managing-users-and-roles/managing-users.md) and [Adding User Roles](../../administer/managing-users-and-roles/managing-user-roles.md).
 
                   [![Create a scope](../../assets/img/learn/create-scope.png)](../../assets/img/learn/create-scope.png)
 

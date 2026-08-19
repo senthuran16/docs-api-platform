@@ -239,7 +239,7 @@ Follow the given steps to configure a read-only LDAP/AD as the primary user stor
     </UserManager>
     ```
 
-Apart from above properties WSO2 API Manager also supports advanced LDAP configurations. For descriptions on each of the advanced properties used in the `<API-M_HOME>/repository/conf/deployment.toml` file , see [Properties used in Read-only LDAP user store managers](properties-used-in-a-read-only-ldap-user-store-managers). 
+Apart from above properties WSO2 API Manager also supports advanced LDAP configurations. For descriptions on each of the advanced properties used in the `<API-M_HOME>/repository/conf/deployment.toml` file , see [Properties used in Read-only LDAP user store managers](#properties-used-in-a-read-only-ldap-user-store-manager). 
 
 ### Step 2 - Update the system administrator
 

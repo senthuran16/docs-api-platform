@@ -21,10 +21,11 @@ This section explains how to attach a custom workflow to the user signup operati
         </htd:argument>
     ```
 
+<a name="configuring-the-enterprise-integrator"></a>
 #### Configuring the Enterprise Integrator
 
 !!! note
-    Follow this sub section, only if you will be using the **Entreprise Integrator(EI)** for the business process tasks. If not please refer the sub section for [Configuring the Business Process Server.](/learn/consume-api/customizations/adding-a-user-signup-workflow/#configuring-the-business-process-server)
+    Follow this sub section, only if you will be using the **Entreprise Integrator(EI)** for the business process tasks. If not please refer the sub section for [Configuring the Business Process Server.](#configuring-the-business-process-server)
 
 1.  Download [WSO2 Enterprise Integrator](https://wso2.com/integration).
 
@@ -95,10 +96,11 @@ This section explains how to attach a custom workflow to the user signup operati
 
     ![Add Human Task to EI](../../assets/img/learn/add-human-task-signup.png)
 
+<a name="configuring-the-business-process-server"></a>
 #### Configuring the Business Process Server
 
 !!! note
-    Follow this sub section, only if you will be using the **Business Process Server(BPS)** for the business process tasks. If not please refer the sub section for [Configuring the Entreprise Integrator.](/learn/consume-api/customizations/adding-a-user-signup-workflow/#configuring-the-enterprise-integrator)
+    Follow this sub section, only if you will be using the **Business Process Server(BPS)** for the business process tasks. If not please refer the sub section for [Configuring the Entreprise Integrator.](#configuring-the-enterprise-integrator)
 
 1.  Download [WSO2 Business Process Server](http://wso2.com/products/business-process-server/) .
 

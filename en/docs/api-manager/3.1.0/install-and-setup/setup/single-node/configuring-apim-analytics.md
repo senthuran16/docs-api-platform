@@ -356,6 +356,6 @@ auth.configs:
 
 In the SSL handshake between the API Manager and API Manager Analytics servers, the client (i.e. API Manager) needs to verify the certificate presented by the server (i.e. API Manager Analytics). For this purpose, the client stores the trusted certificate of the server in the `client-truststore.jks` keystore.
 
-If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores](../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-1-generating-a-ca-signed-certificate) in the Administration Guide.
+If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores](../security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-1-generating-a-ca-signed-certificate) in the Administration Guide.
 
 For more information follow [Configuring Keystores in APIM Analytics](../../../learn/analytics/configuring-keystores-in-apim-analytics.md).

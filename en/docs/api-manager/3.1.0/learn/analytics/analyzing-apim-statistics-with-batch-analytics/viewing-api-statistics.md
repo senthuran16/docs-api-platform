@@ -408,7 +408,7 @@ This widget displays a percentage of throttled out request counts for each API a
 
 Geolocation based statistics are used to carryout detailed monitoring of geographic locations. 
 You need to pass an x-forwarded-for header with the relevant IP in the API request in order to generate Geolocation based statistics. 
-For more information, see [Using Geolocation Based Statistics](../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geolocation-based-statistics/).
+For more information, see [Using Geolocation Based Statistics](using-geo-location-based-statistics/configuring-geo-location-based-statistics.md).
 
 <html>
 <body>

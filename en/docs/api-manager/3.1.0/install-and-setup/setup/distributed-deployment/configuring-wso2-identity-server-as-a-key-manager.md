@@ -8,7 +8,7 @@ Please follow the steps below to configure a prepackaged WSO2 Identity Server as
     The **prepackaged WSO2 Identity Server as a Key Manager 5.10.0** is pre-configured to connect with WSO2 API Manager out of the box. Therefore, it is different from the vanilla form of a WSO2 Identity Server 5.10.0 distribution. The prepackaged WSO2 Identity Server as a Key Manager 5.10.0 is compatible with WSO2 API Manager 3.1.0 and supports in-place updates via [WUM](https://wso2.com/updates).
 
 !!! warning
-    Before you begin check the product compatibility for [WSO2 IS as Key Manager](../../../install-and-setup/ProductCompatibility/#compatible-wso2-identity-server-as-the-key-managers).
+    Before you begin check the product compatibility for [WSO2 IS as Key Manager](../reference/product-compatibility.md#compatible-wso2-identity-server-as-the-key-managers).
 
 ### Step 1 - Download the prepackaged WSO2 IS as a Key Manager (WSO2 IS-KM)
 
@@ -305,7 +305,7 @@ Follow the steps below to configure the API gateway(s) (WSO2 API Manager nodes) 
         To overcome this issue, follow the steps below.
         
           1. Create self-signed certificates for WSO2 API-M and WSO2 IS hostnames.
-          2. [Import the public certs](../../../administer/product-security/General/UsingAsymmetricEncryption/admin-creating-new-keystores/#step-3-importing-certificates-to-the-truststore) of WSO2 API-M to the `trust-store.jks` of WSO2 IS and vice versa. 
+          2. [Import the public certs](../security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-3-importing-certificates-to-the-truststore) of WSO2 API-M to the `trust-store.jks` of WSO2 IS and vice versa. 
 
     !!! Important
 

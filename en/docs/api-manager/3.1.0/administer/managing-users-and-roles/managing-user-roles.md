@@ -234,6 +234,7 @@ This will update all scope mappings in tenant-conf.json with Internal/creator as
         If the role is in an external user store to which you are connected in read-only mode, you will be able to view the existing roles but not edit or delete them. However, you can still create new editable roles.
 
 
+<a name="update-before-the-first-startup-recommended"></a>
 #### Update before the first startup (recommended)
 
 The default role name of the Administrator, (`admin`) can be changed before starting WSO2 API Manager by editing `<API-M_HOME>/repository/conf/deployment.toml` file. For more information on configuring the system administrator, see [Configuring the System Administrator](managing-user-stores/configuring-the-system-administrator.md).
@@ -252,7 +253,7 @@ create_admin_account = true
 
 If you have already updated the role names before the first startup of the product, these steps are not necessary. The following steps guide you through updating the role names after you have used the product for some time.
 
-1.  Make the configuration changes indicated in [the above section](../../administer/product-administration/managing-users-and-roles/managing-user-roles/#update-before-the-first-startup-recommended).
+1.  Make the configuration changes indicated in [the above section](#update-before-the-first-startup-recommended).
 
 2.  Do the following user store level changes for existing users:
 

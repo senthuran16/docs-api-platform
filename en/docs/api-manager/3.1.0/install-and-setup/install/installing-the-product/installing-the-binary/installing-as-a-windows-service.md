@@ -3,7 +3,7 @@
 !!! note
     **Before you begin:**
 
-    -   See [our compatibility matrix](../../../../install-and-setup/ProductCompatibility) to find out if this version of the product is fully tested on your OS.
+    -   See [our compatibility matrix](../../../../install-and-setup/setup/reference/product-compatibility.md) to find out if this version of the product is fully tested on your OS.
 
 
 ### Prerequisites
@@ -20,7 +20,7 @@ The configuration file used for wrapping Java Applications by YAJSW is `wrapper.
 
 !!! info
     
-    If you want to set additional properties from an external registry at runtime, store sensitive information like usernames and passwords for connecting to the registry in a properties file and secure it with [secure vault](../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation).
+    If you want to set additional properties from an external registry at runtime, store sensitive information like usernames and passwords for connecting to the registry in a properties file and secure it with [secure vault](../../../../install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation.md).
 
 !!! note
     

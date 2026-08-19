@@ -117,6 +117,6 @@ Follow the instructions below to create a REST API using a Open API definition f
    ![](../../../assets/img/learn/add-bussiness-plans-for-pet-store-api.jpg)
 
 
-Now, a REST API from open API Definition has been created and configured successfully. Refer [Publish API](../../../learn/design-api/publish-api/publish-an-ap) to get details of publishing API.
+Now, a REST API from open API Definition has been created and configured successfully. Refer [Publish API](../publish-api/publish-an-api.md) to get details of publishing API.
 
 

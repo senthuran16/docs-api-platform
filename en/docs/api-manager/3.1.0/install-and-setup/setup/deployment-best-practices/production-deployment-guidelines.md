@@ -249,8 +249,7 @@ These configurations has to be set properly for the management console to be acc
 When a WSO2 product starts, it starts all components, features and related artifacts bundled with it. Multi-profile 
 support allows you to run the product on a selected profile so that only the features specific to that profile along 
 with common features start up with the server. For more on product-profiles please refer 
-[Product Profiles](../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles
-/#product-profiles).
+[Product Profiles](../distributed-deployment/product-profiles.md#product-profiles).
 
 ### Stopping the Server
 
