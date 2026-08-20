@@ -1,3 +1,18 @@
+---
+title: "Extending the key validation interface"
+description: "Extend the JWTValidator and KeyValidationHandler interfaces to change how WSO2 API Manager validates access tokens on an API call."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/extending-api-manager/extending-key-management/extending-key-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/extending-api-manager/extending-key-management/extending-key-validation.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-key-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Extending the Key Validation Interface
 
 Previously, in WSO2 API Manager (WSO2 API-M) the Key Manager was loosely coupled with other components and the users could [plug in different OAuth2 providers](../../../install-and-setup/setup/distributed-deployment/configure-a-third-party-key-manager.md) for the purpose of key validation. However, now, the Key Manager call that was used in the key validation process at runtime has been removed altogether and the default token type has been set to JWT (JSON Web Token). Now, the JWT Token validation takes place at the Gateway itself and the subsequent subscription validation also takes place in the Gateway as the required meta-information is available in the Gateway memory. 

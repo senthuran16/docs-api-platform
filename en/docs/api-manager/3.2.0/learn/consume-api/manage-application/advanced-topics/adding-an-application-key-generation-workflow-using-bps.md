@@ -1,3 +1,18 @@
+---
+title: "Adding an application key generation workflow"
+description: "Attach a custom application registration workflow using the Business Process Server, and engage the WS workflow executor."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-key-generation-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-key-generation-workflow-using-bps.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an Application Key Generation Workflow
 
 This section explains as to how you can attach a custom workflow to the **application registration** operation in the API Manager. 

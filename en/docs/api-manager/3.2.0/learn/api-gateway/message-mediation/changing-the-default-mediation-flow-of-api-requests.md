@@ -1,3 +1,18 @@
+---
+title: "Changing the default mediation flow of API requests"
+description: "Extend the in, out, and fault mediation flows of the API Gateway with per-API policies, common policies, or global extensions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing the Default Mediation Flow of API Requests
 
 The API Gateway has a default mediation flow for the API invocation requests that it receives. There are three main mediation

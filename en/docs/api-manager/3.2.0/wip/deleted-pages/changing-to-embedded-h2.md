@@ -1,3 +1,18 @@
+---
+title: "Setting up embedded H2"
+description: "Replace the default H2 database with a separate embedded H2 database and datasources. Not recommended for production use."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/deleted-pages/changing-to-embedded-h2/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/deleted-pages/changing-to-embedded-h2.md
+tags:
+  - api-manager
+  - wip
+  - deleted-pages
+  - changing-to-embedded-h2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up Embedded H2
 
 The following sections describe how to set up an embedded H2 database to replace the default H2 database in your WSO2 product.

@@ -1,3 +1,17 @@
+---
+title: "Working with audit logs"
+description: "What WSO2 API Manager writes to audit logs, including the Publisher and Developer Portal actions recorded and the fields in each entry."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/working-with-audit-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/working-with-audit-logs.md
+tags:
+  - api-manager
+  - develop
+  - working-with-audit-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Working with Audit Logs
 
 Auditing is a primary requirement when it comes to monitoring production servers. For examples, DevOps need to have a clear mechanism for identifying who did what, and to filter possible system violations or breaches.

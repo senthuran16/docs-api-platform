@@ -1,3 +1,18 @@
+---
+title: "WSO2 API Manager deployment patterns"
+description: "Five deployment patterns for WSO2 API Manager, from a single all-in-one node to a fully distributed setup and external gateways."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-patterns/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-patterns.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-patterns
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # WSO2 API Manager Deployment Patterns
 
 

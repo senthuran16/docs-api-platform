@@ -1,3 +1,18 @@
+---
+title: "Securing APIs using OAuth2 access tokens"
+description: "Secure APIs with OAuth 2.0 access tokens, customize the authorization header per tenant or API, and pass it on to the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/api-authentication/secure-apis-using-oauth2-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/api-authentication/secure-apis-using-oauth2-tokens.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Securing APIs using OAuth2 Access Tokens
 
 APIs published on WSO2 API Gateway can be secured by OAuth 2.0, which is the de facto standard for access delegation in the REST API world. Any client application invoking an OAuth2 secured API needs to have a valid subscription to that particular API and present a valid OAuth2.0 Access Token when invoking it. For more information on how to subscribe to an application to an API and generate credentials for it, see [Subscribe to an API](../../consume-api/manage-subscription/subscribe-to-an-api.md).

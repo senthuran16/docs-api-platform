@@ -1,3 +1,18 @@
+---
+title: "Configure Auth0 as a key manager"
+description: "Integrate Auth0 as a third-party Key Manager in WSO2 API Manager to manage OAuth clients and tokens, then generate keys against it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/key-managers/configure-auth0-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/key-managers/configure-auth0-connector.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - configure-auth0-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Configure Auth0 as a Key Manager
 
 It is possible to integrate the WSO2 API Manager with an external Identity and Access Management server (IAM) using the Auth0 OAuth Authorization Server to manage the OAuth clients and tokens that are required by WSO2 API Manager. WSO2 API Manager has inbuilt support to consume APIs exposed by Auth0 OAuth.

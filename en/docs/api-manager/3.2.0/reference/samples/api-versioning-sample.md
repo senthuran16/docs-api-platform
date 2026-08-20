@@ -1,3 +1,18 @@
+---
+title: "API versioning sample"
+description: "A sample scenario for API versioning, covering how existing users of an API are affected when it is changed or removed."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-versioning-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-versioning-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-versioning-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # API Versioning Sample
 
 ### Use case

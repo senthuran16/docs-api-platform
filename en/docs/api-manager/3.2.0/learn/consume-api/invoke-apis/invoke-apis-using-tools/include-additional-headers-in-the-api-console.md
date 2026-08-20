@@ -1,3 +1,18 @@
+---
+title: "Include additional headers in the API console"
+description: "Allow additional headers such as userId in the Swagger API Console by listing them under the apim.cors section of deployment.toml."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - invoke-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Include Additional Headers in the API Console
 
 

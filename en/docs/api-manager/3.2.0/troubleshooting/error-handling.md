@@ -1,3 +1,17 @@
+---
+title: "Error handling"
+description: "The error codes returned by API handlers, sequences, and transports, and how to define custom error messages and status codes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/troubleshooting/error-handling.md
+tags:
+  - api-manager
+  - troubleshooting
+  - error-handling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Error Handling
 
 When errors/exceptions occur in the system, the API Manager throws

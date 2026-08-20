@@ -1,3 +1,18 @@
+---
+title: "Configuring APIM analytics"
+description: "Configure analytics for WSO2 API Manager with the Streaming Integrator, covering the databases, the IdP client, and the keystores."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/single-node/configuring-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/single-node/configuring-apim-analytics.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring APIM Analytics
 
 This section explains how to configure analytics for WSO2 API Manager (WSO2 API-M). The API Manager integrates with the [WSO2 Streaming Integrator](https://wso2.com/integration/streaming-integrator) to provide reports, statistics and graphs on the APIs deployed in WSO2 API Manager. You can then configure alerts to monitor these APIs and detect unusual activity, manage locations via geo location statistics and carry out detailed analysis of the logs. WSO2 API Manager has an enhanced distribution of Analytics to cater to API Manager specific scenarios which is used here to configure APIM Analytics.

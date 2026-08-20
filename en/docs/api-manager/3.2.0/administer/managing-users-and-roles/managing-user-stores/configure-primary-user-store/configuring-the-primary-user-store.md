@@ -1,3 +1,18 @@
+---
+title: "Configuring the primary user store"
+description: "How the primary user store works in WSO2 API Manager, and what changes when you replace the default JDBC store with LDAP or Active Directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "concept"
+---
+
 # Configuring the Primary User Store
 
 This documentation explains the process of setting up a primary user store for your system.

@@ -1,3 +1,18 @@
+---
+title: "Adding an API subscription tier update workflow"
+description: "Engage the approval workflow executor so a subscription tier change waits in TIER_UPDATE_PENDING until it is approved."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-subscription
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an API Subscription Tier Update Workflow
 
 [Subscription Tier update](../subscribe-to-an-api.md) will provide the capability to change the subscription tier of an already existing subscription. Attaching a custom workflow to the API subscription update, enables an admin to approve/reject the subscription tier change request made for an active subscription. Note that only an admin is able to approve/reject a subscription tier change request.

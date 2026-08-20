@@ -1,3 +1,18 @@
+---
+title: "Enabling PrivateJet mode to deploy APIs"
+description: "Enable PrivateJet mode with the Kubernetes API Operator so a microservice is deployed behind its own dedicated API gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/kubernetes-operators/k8s-api-operator/enabling-privatejet-mode-to-deploy-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/kubernetes-operators/k8s-api-operator/enabling-privatejet-mode-to-deploy-apis.md
+tags:
+  - api-manager
+  - learn
+  - kubernetes-operators
+  - k8s-api-operator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Enabling PrivateJet Mode to Deploy APIs
 
 In an age where more and more applications are adopting the microservice architecture, it is obvious that container-orchestration systems such as Kubernetes have gained popularity due to the attractive functionalities they offer to simplify a number of complex management tasks.

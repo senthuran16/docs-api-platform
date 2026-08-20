@@ -1,3 +1,18 @@
+---
+title: "Test a REST API"
+description: "Run functional tests on an API from the Publisher Test Console, checking mediation policies and request handling at design time."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/create-api/test-a-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/create-api/test-a-rest-api.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Test a REST API
 
 **Testing APIs** is trying out the APIs at the publisher itself and make sure whether the functionalities and behaviours are  met before publishing to the gateway for subscribers to access.

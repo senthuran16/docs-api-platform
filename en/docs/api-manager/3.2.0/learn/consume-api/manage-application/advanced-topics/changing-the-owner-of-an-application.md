@@ -1,3 +1,18 @@
+---
+title: "Changing the owner of an application"
+description: "Transfer ownership of an application to another user in the organization, so the new owner can edit or delete it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/advanced-topics/changing-the-owner-of-an-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/advanced-topics/changing-the-owner-of-an-application.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing the Owner of an Application
 
 If required, you can transfer the ownership of your application to another user in your organization. Thereby, when transferring ownership, the new owner will have the required permission to delete or edit the respective application.

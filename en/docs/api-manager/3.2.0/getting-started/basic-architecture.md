@@ -1,3 +1,17 @@
+---
+title: "Basic architecture and key components"
+description: "The management, data, and control planes of WSO2 API Manager, and the components in each: Publisher, Developer Portal, Gateway, Key Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/getting-started/basic-architecture/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/getting-started/basic-architecture.md
+tags:
+  - api-manager
+  - getting-started
+  - basic-architecture
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Basic Architecture and Key Components
 
 [![Basic Architecture](../assets/img/get_started/basic-architecture.png)](../assets/img/get_started/basic-architecture.png)

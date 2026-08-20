@@ -1,3 +1,18 @@
+---
+title: "Add a new search keyword"
+description: "Add a new search keyword for API documentation by writing a custom Apache Solr indexer and registering it in registry.xml."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/api-documentation/search-documentation/add-new-search-keyword/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/api-documentation/search-documentation/add-new-search-keyword.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - api-documentation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Add a New Search Keyword
 
 WSO2 API Manager has [Apache Solr](https://lucene.apache.org/solr/) based indexing for API documentation content. It provides both the API Publisher and Developer Portal a full-text search facility to search through the API documentation, and find the documents and related APIs. The search syntax is `doc:keyword`. The search criteria looks for the keyword in any word/phrase in the documentation content and returns both the matching documents and associated APIs.

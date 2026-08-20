@@ -1,3 +1,18 @@
+---
+title: "Access tokens per device"
+description: "Generate a unique access token per device for the same user and application, using OAuth 2.0 scopes to keep them separate."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/generate-keys/obtain-access-token/access-tokens-per-device/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/generate-keys/obtain-access-token/access-tokens-per-device.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Access Tokens Per Device
 
 WSO2 API Manager returns the same token repeatedly if a valid token exists for the requesting Application, on behalf of the user. However, the latter mentioned scenario becomes an issue if the same user is using the same Application in two devices (e.g., If you have two instances of the same Application running on your iPhone and iPad, and your iPhone already has a token on behalf of you, your iPad will get the same token if you requested for it within the same validity period. Therefore, if one of your devices revoke this token (e.g., revoke on logout), the token that you obtained for your other device becomes invalid as the devices use the identical tokens.

@@ -1,3 +1,18 @@
+---
+title: "Mitigating cross site request forgery attacks"
+description: "How CSRF attacks affect WSO2 products, and how to mitigate them by securing web applications and Jaggery applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/product-security/mitigating-cross-site-request-forgery-attackes/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/product-security/mitigating-cross-site-request-forgery-attackes.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - mitigating-cross-site-request-forgery-attackes
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Mitigating Cross Site Request Forgery Attacks
 
 The following sections describe the impact of the Cross Site Request Forgery (CSRF) attack and how to mitigate it.

@@ -1,3 +1,18 @@
+---
+title: "Secure endpoint with Basic Auth"
+description: "Secure an API backend endpoint with basic authentication, supplying a username and password with each request to the endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/endpoints/endpoint-security/basic-auth/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/endpoints/endpoint-security/basic-auth.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Secure Endpoint with Basic Auth
 
 A secured endpoint is when there are access-protected resources. You have to specify the username and the password when a request is sent to a secured endpoint. The endpoint authentication mechanism can either be Basic Authentication or Digest Authentication. They differ on how the credentials are communicated and how access is granted by the backend server.

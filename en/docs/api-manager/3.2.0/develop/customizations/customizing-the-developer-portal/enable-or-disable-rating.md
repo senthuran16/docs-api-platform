@@ -1,3 +1,18 @@
+---
+title: "Enable or disable rating"
+description: "Disable or re-enable the star rating shown on Developer Portal APIs by configuring the defaultTheme.js file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/customizations/customizing-the-developer-portal/enable-or-disable-rating/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/customizations/customizing-the-developer-portal/enable-or-disable-rating.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enable or Disable Rating
 
 The star rating is enabled by default. You can disable the star rating by configuring the `defaultTheme.js` file.

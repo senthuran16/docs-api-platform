@@ -1,3 +1,18 @@
+---
+title: "Create and publish a GraphQL API"
+description: "Design, publish, and invoke a GraphQL API in WSO2 API Manager, trying out both query and subscription operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/tutorials/create-and-publish-a-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/tutorials/create-and-publish-a-graphql-api.md
+tags:
+  - api-manager
+  - learn
+  - tutorials
+  - create-and-publish-a-graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Create and Publish a GraphQL API
 
 Follow the instructions in this tutorial to design, publish, and invoke a GraphQL API.

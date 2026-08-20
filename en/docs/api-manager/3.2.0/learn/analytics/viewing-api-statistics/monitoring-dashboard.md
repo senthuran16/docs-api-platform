@@ -1,3 +1,18 @@
+---
+title: "Monitoring dashboard"
+description: "The widgets on the Monitoring dashboard for API error and latency analysis, covering 4xx, 5xx, faulty, and throttled responses."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/monitoring-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/monitoring-dashboard.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - viewing-api-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Monitoring dashboard
 
 ## Overview

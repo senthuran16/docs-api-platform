@@ -1,3 +1,18 @@
+---
+title: "API analytics"
+description: "The widgets on the API Analytics dashboard: usage summary, overall API usage, usage by application, backend and resource usage, top users."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/api-analytics-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/api-analytics-dashboard.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - viewing-api-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # API Analytics
 
 The API Analytics Dashboard provides business insights on APIs enabling users to take proactive actions to improve profitability and the quality of the service provided. This dashboard focuses on API developers who wish to see the analytics related to their APIs. The API Analytics Dashboard will reveal the analytics data of APIs only if the user who has logged in has the required permission to view such data.   

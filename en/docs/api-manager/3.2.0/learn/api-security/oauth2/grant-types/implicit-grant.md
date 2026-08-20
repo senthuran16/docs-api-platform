@@ -1,3 +1,18 @@
+---
+title: "Implicit grant"
+description: "How the implicit grant issues tokens to browser and mobile apps. Deprecated in API Manager 3.2.0 and removed in later releases."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/grant-types/implicit-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/grant-types/implicit-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Implicit Grant
 
 !!! note

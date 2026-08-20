@@ -1,3 +1,18 @@
+---
+title: "Migrate API Products to different environments"
+description: "Export and import API Products, with or without their dependent APIs, between WSO2 API Manager environments using apictl."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/migrating-api-products-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/migrating-api-products-to-different-environments.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - migrating-api-products-to-different-environments
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Migrating API Products (with or without dependent APIs) to Different Environments
 
 WSO2 API Controller, **apictl** allows you to maintain multiple environments running on the same WSO2 API-M version. This allows you to import and export API Products between your environments. For example, if you have an API Product running in the development environment, you can export it and import it to the production environment. Thereby, API Products do not have to be created from scratch in different environments.

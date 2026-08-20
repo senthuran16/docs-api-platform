@@ -1,3 +1,18 @@
+---
+title: "Adding an API state change workflow"
+description: "Engage the approval workflow executor so API lifecycle state changes must be approved, with the advanced configurations available."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/advanced-topics/adding-an-api-state-change-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/advanced-topics/adding-an-api-state-change-workflow.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an API State Change Workflow
 
 This section let's see how to add a simple approval workflow to control the API state changes in WSO2 API Manager. Before you begin, see [Workflow Extensions](../../../develop/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine.md) to get more information on the different types of workflow executors, and also to get a better understanding on the API states, see [API Lifecycle](../../../getting-started/key-concepts.md#api-lifecycle).

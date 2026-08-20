@@ -1,3 +1,18 @@
+---
+title: "Monetizing an API"
+description: "Monetize an API with a billing engine: configure Stripe and API-M Analytics, create a subscription policy, and monitor usage."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-monetization/monetizing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-monetization/monetizing-an-api.md
+tags:
+  - api-manager
+  - learn
+  - api-monetization
+  - monetizing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monetizing an API
 
 API Monetization allows organizations to expand their business and generate higher revenue by exposing their services and data via APIs. API Publishers can publish their APIs with competitive business plans to the Developer Portal. Thereafter, API subscribers (e.g., Application Developers) can discover, subscribe, and invoke these monetized APIs, and pay for their API usage based on dynamic or fixed business plans.

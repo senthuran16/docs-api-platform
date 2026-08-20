@@ -1,3 +1,18 @@
+---
+title: "Overview of API analytics"
+description: "The API-M Analytics dashboards available to publishers, developers, and DevOps, how to reach them, and how they can be customized."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/overview-of-api-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/overview-of-api-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - overview-of-api-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Overview of API Analytics
 
 APIs are widely used in Business Integrations and are becoming a key part of driving an Organization's Business strategy. Ensuring the proper functioning of the APIs, getting feedback on the performance and deriving business insights from APIs are becoming equally important. WSO2 API Manager Analytics does this by integrating with WSO2 API Manager to provide statistics, reports, and graphs on the APIs deployed in WSO2 API Manager. It further allows configuring Alerts to notify about unusual behaviors and error conditions in near real-time.

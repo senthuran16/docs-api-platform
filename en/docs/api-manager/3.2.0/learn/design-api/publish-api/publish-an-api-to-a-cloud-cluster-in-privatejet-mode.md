@@ -1,3 +1,18 @@
+---
+title: "Publish an API to a cloud cluster in PrivateJet mode"
+description: "Publish an API to a Kubernetes cloud cluster in PrivateJet mode, where the microservice gets its own dedicated gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/publish-api/publish-an-api-to-a-cloud-cluster-in-privatejet-mode/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/publish-api/publish-an-api-to-a-cloud-cluster-in-privatejet-mode.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - publish-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish an API to a Cloud Cluster in PrivateJet Mode
 
 In an age where more and more applications are adopting the microservice architecture, it is obvious that container-orchestration systems such as Kubernetes have gained popularity due to the attractive functionalities they offer to simplify a number of complex management tasks.

@@ -1,3 +1,18 @@
+---
+title: "Token expiration"
+description: "Change the access token expiration time from the 60 minute default, and account for time stamp skew between server clocks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/token-expiration/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/token-expiration.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Token Expiration
 
 ### Configuring the token expiration time

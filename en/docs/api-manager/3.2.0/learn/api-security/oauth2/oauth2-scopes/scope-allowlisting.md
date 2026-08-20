@@ -1,3 +1,18 @@
+---
+title: "Scope allowlisting"
+description: "Allowlist scopes such as openid that cannot be associated with roles, by adding them as allowed_scopes in deployment.toml."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/oauth2-scopes/scope-allowlisting/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/oauth2-scopes/scope-allowlisting.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Scope Allowlisting
 
 A scope is not always used for controlling access to a resource. You can also use it to simply mark an access token. There are scopes that cannot be associated to roles (e.g., openid, device\_). Such scopes do not have to have roles associated with them. Skipping role validation for scopes is called scope allowlisting.

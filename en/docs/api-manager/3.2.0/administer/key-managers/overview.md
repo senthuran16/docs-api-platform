@@ -1,3 +1,18 @@
+---
+title: "Multiple key manager support in WSO2 API Manager"
+description: "How WSO2 API Manager supports multiple Key Managers per API, how token validation works, and how admins configure authorization servers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/key-managers/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/key-managers/overview.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Multiple Key Manager Support in WSO2 API Manager
 
 WSO2 API Manager provides an admin functionality for admins/tenant admins to configure different authorization servers as Key Managers.

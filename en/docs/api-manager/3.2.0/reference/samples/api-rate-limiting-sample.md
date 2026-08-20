@@ -1,3 +1,18 @@
+---
+title: "API rate limiting sample"
+description: "A sample scenario for API rate limiting in WSO2 API Manager, with the business use cases and how to run the sample data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-rate-limiting-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-rate-limiting-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-rate-limiting-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "tutorial"
+---
+
 # API Rate Limiting Sample
 
 ### Usecase

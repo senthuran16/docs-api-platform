@@ -1,3 +1,18 @@
+---
+title: "Database upgrade guide"
+description: "General steps for upgrading a Carbon 4.4.6 based product to Carbon 4.4.7, covering prerequisites, downtime, and configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/guides/database-upgrade-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/guides/database-upgrade-guide.md
+tags:
+  - api-manager
+  - reference
+  - guides
+  - database-upgrade-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Database Upgrade Guide
 
 This page takes you through the general steps for upgrading product versions based on Carbon 4.4.6 to Carbon 4.4.7.

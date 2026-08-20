@@ -1,3 +1,18 @@
+---
+title: "Changing the default token expiration time"
+description: "Change the default expiration time of application, user, and refresh tokens, which applies to newly created applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing the Default Token Expiration Time
 
 Follow the instructions below to change the default token expiry time based on your requirements.

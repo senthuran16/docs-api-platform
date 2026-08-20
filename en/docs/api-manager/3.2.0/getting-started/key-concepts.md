@@ -1,3 +1,17 @@
+---
+title: "Key concepts"
+description: "Definitions of the core WSO2 API Manager terms: API, API product, application, access token, API lifecycle, visibility, and rate limits."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/getting-started/key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/getting-started/key-concepts.md
+tags:
+  - api-manager
+  - getting-started
+  - key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Key Concepts
 
 | **Concept**                            | **Description**                                                  |

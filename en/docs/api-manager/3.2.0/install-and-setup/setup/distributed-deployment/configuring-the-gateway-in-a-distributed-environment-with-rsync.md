@@ -1,3 +1,18 @@
+---
+title: "Configure the distributed gateway with rsync"
+description: "Set up a Gateway Manager and Gateway Workers with rsync synchronization, a load balancer, and optional Hazelcast clustering."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring the Gateway in a Distributed Environment with rsync
 
 !!! note

@@ -1,3 +1,18 @@
+---
+title: "Monitoring HTTP access logs"
+description: "Configure HTTP access logs for the servlet and PassThrough transports in the API Gateway, and set the access log pattern format."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/monitoring-http-access-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/monitoring-http-access-logs.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring HTTP Access Logs
 
 HTTP access logs help you monitor your application's usage with information such as the persons who access it, how many hits it received, what the errors are, etc. This information is useful for troubleshooting errors. 

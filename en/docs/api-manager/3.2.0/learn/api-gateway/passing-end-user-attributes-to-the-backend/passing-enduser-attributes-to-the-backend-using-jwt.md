@@ -1,3 +1,18 @@
+---
+title: "Passing enduser attributes to the backend using JWT"
+description: "Pass end user claims to the backend in a JWT, change its encoding and expiry, and customize how the token and its claims are generated."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/passing-end-user-attributes-to-the-backend/passing-enduser-attributes-to-the-backend-using-jwt/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/passing-end-user-attributes-to-the-backend/passing-enduser-attributes-to-the-backend-using-jwt.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - passing-end-user-attributes-to-the-backend
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Passing Enduser Attributes to the Backend Using JWT
 
 **JSON Web Token (JWT)** is used to represent claims that are transferred between two parties, such as the end-user and the backend.

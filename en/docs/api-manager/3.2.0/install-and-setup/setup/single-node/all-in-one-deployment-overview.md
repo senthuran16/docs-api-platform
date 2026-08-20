@@ -1,3 +1,18 @@
+---
+title: "All-in-One deployment overview"
+description: "When to run WSO2 API Manager as an all-in-one instance instead of separate components, comparing single node and active-active setups."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/single-node/all-in-one-deployment-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/single-node/all-in-one-deployment-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # All-in-One Deployment Overview
 
 In a typical production deployment, API Manager is deployed as components (Publisher, Developer Portal, Gateway, 

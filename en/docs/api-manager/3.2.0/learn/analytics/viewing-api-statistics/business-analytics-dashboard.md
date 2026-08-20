@@ -1,3 +1,18 @@
+---
+title: "Business analytics"
+description: "The widgets on the Business Analytics dashboard, covering top API usage, performance, throttled APIs, and faults over the past 30 days."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/business-analytics-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/business-analytics-dashboard.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - viewing-api-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Business Analytics
 The business analytics dashboard provides business insights on APIs. This enables businesses to take proactive action to improve the profitability and the quality of the service provided.
 

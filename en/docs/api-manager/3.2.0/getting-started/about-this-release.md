@@ -1,3 +1,17 @@
+---
+title: "About this release"
+description: "New features, changes, improvements, and deprecated functionality in WSO2 API Manager 3.2.0 and WSO2 API-M Analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/getting-started/about-this-release/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/getting-started/about-this-release.md
+tags:
+  - api-manager
+  - getting-started
+  - about-this-release
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "release-notes"
+---
+
 # About this Release
 
 WSO2 API Manager is a platform for creating, managing, consuming, and monitoring APIs. It employs proven SOA best practices to solve a wide range of API management challenges such as API provisioning, API governance, API security, and API monitoring. It combines some of the most powerful and mature components of the WSO2's state-of-the-art Carbon platform to deliver a smooth and end-to-end API management experience while catering to both API publisher and API consumer requirements.

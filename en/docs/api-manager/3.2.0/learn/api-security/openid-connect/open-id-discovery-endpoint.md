@@ -1,3 +1,18 @@
+---
+title: "OpenID connect discovery"
+description: "The OpenID Connect discovery endpoint in WSO2 API Manager, used to find a user's OpenID provider and its OAuth 2.0 endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/openid-connect/open-id-discovery-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/openid-connect/open-id-discovery-endpoint.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - openid-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # OpenID Connect Discovery
 
 WSO2 API Manager supports OpenID Connect Discovery to discover an end user's OpenID provider, and also to obtain information required to interact with the OpenID provider, including its OAuth 2.0 endpoint locations, by exposing an API in the Gateway.

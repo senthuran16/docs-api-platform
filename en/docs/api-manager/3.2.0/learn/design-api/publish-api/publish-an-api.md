@@ -1,3 +1,18 @@
+---
+title: "Publish an API"
+description: "Publish an API from the WSO2 API Manager Publisher portal so it becomes visible and subscribable in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/publish-api/publish-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/publish-api/publish-an-api.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - publish-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish an API
 
 **API Publishing** is the process of making the API visible in the Developer Portal and available for subscription. An API in the lifecycle state CREATED will have the  API metadata added to the Developer Portal, but not deployed to the API Gateway. Therefore, it is not visible to subscribers in the Developer Portal. When the API is published, it gets deployed on the API Gateway, and the API lifecycle state will be changed to **PUBLISHED**. 

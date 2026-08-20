@@ -1,3 +1,18 @@
+---
+title: "Hashing OAuth2 access tokens"
+description: "Enable OAuth2 token hashing so access tokens, refresh tokens, consumer secrets, and authorization codes survive a database breach."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/hashing-oauth-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/hashing-oauth-keys.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Hashing OAuth2 Access Tokens
 
 

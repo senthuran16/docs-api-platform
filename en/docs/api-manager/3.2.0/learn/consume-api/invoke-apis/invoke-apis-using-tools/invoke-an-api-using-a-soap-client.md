@@ -1,3 +1,18 @@
+---
+title: "Invoke an API using a SOAP client"
+description: "Invoke a WSO2 API Manager API from a SOAP client such as SOAP UI, using the PhoneVerification API as the worked example."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - invoke-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Invoke an API using a SOAP Client
 
 You can use any SOAP client to **invoke an API** . We use the SOAP UI in this example.

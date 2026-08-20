@@ -1,3 +1,18 @@
+---
+title: "Creating geo location data set"
+description: "Create the geolocation dataset used by geolocation based statistics, and prepare the database entries with the update scripts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analyzing-apim-statistics-with-batch-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating Geo Location Data Set
 
 Follow the procedure below in order to create a Geo Location dataset to use when [Configuring Geolocation Based Statistics](configuring-geo-location-based-statistics.md).

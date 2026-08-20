@@ -1,3 +1,18 @@
+---
+title: "Securing APIs deployed in cloud clusters"
+description: "How APIs deployed in cloud clusters with the k8s-api-operator are secured with JWT authentication, and the alternatives available."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/api-authentication/securing-apis-deployed-in-cloud-clusters/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/api-authentication/securing-apis-deployed-in-cloud-clusters.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Securing APIs deployed in cloud clusters
 
 By default the APIs deployed in cloud clusters with k8s-api-operator are secured with JWT authentication. Hence the APIs deployed in privateJet mode are secured with JWT authentication.

@@ -1,3 +1,18 @@
+---
+title: "Write a client application using the SDK"
+description: "Unzip a downloaded SDK such as PizzaShackAPI_1.0.0_java.zip and write a client application that calls the API with it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/generating-sdks/write-a-client-application-using-the-sdk/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/generating-sdks/write-a-client-application-using-the-sdk.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - generating-sdks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Write a Client Application Using the SDK
 
 1.  Follow the steps in the [Quick Start Guide](../../../getting-started/quick-start-guide.md), to deploy the sample API, subscribe and generate keys.

@@ -1,3 +1,17 @@
+---
+title: "Troubleshooting in production environments"
+description: "Troubleshoot a production WSO2 deployment: analyze a stack trace, capture system state, view threads, and check cluster health."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/troubleshooting/admin-troubleshooting-in-production-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/troubleshooting/admin-troubleshooting-in-production-environments.md
+tags:
+  - api-manager
+  - troubleshooting
+  - admin-troubleshooting-in-production-environments
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "troubleshooting"
+---
+
 # Troubleshooting in Production Environments
 
 The following sections provide information on how to troubleshoot various problems that may arise for deployment in production environments.

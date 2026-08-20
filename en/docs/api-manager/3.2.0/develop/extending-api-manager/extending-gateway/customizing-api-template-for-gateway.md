@@ -1,3 +1,18 @@
+---
+title: "Customizing API template"
+description: "Customize the API template that generates each API's synapse configuration in the Gateway, and engage a custom handler per API property."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/extending-api-manager/extending-gateway/customizing-api-template-for-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/extending-api-manager/extending-gateway/customizing-api-template-for-gateway.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Customizing API Template
 
 When an API is [published](../../../learn/design-api/publish-api/publish-an-api.md), corresponding synapse configuration of the API is generated and deployed in `<APIM_HOME>repository/deployment/server/synapse-configs/default/api/` location of the gateway in `<provider_name>--<API_name>_v<API_version>.xml` file format(eg: admin--PizzaShackAPI_v1.0.0.xml). 

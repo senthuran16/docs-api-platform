@@ -1,3 +1,18 @@
+---
+title: "JSON threat protection for the API Gateway"
+description: "Apply the JSON threat protector with a json_validator sequence to limit request body properties and thwart payload attacks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Am300JSON Threat Protection for API Gateway
 
 The JSON threat protector in WSO2 API Manager validates the request body of the JSON message based on pre-configured to thwart payload attacks.

@@ -1,3 +1,18 @@
+---
+title: "Writing custom handlers"
+description: "Write a custom handler for the API Gateway synapse configuration, and engage it so it runs in the message flow of an API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Writing Custom Handlers
 
 This section introduces handlers and using an example, explains how to write a custom handler:

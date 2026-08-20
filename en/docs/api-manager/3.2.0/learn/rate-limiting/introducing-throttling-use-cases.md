@@ -1,3 +1,18 @@
+---
+title: "Introducing throttling Use-Cases"
+description: "Why throttling is applied at the backend, Gateway, and application levels, and which role sets each kind of limit."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/rate-limiting/introducing-throttling-use-cases/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/rate-limiting/introducing-throttling-use-cases.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - introducing-throttling-use-cases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Introducing Throttling Use-Cases
 
 Throttling allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:

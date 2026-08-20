@@ -1,3 +1,18 @@
+---
+title: "Managing endpoint certificates"
+description: "Add a backend certificate to the Gateway client truststore for endpoints secured with self-signed certificates, and delete it later."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/endpoints/certificates/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/endpoints/certificates.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing Endpoint Certificates
 
 If your API backend is secured with a self-signed certificate (or a certificate which is not signed by a CA) you need to import the backend certificate to the API manager (Gateway) client-truststore and restart the server. This feature enables you to upload the backend certificate through API Publisher while creating or editing your API **without restarting the server**. 

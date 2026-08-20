@@ -1,3 +1,18 @@
+---
+title: "Configure analytics workers as Active-Passive"
+description: "Configure API-M Analytics workers as an active-passive minimum HA cluster, where the passive node takes over without losing data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configure Analytics Workers as Active-Passive
 
 Minimum high availability (HA) deployment mainly focused on providing high availability which guarantees no data loss if the system suffer any failing due to several unforeseeable reasons. One of the main advantage of this is it uses minimum amount of infrastructure resources possible. Thus deployment pattern comprise of only two Streaming integration servers.

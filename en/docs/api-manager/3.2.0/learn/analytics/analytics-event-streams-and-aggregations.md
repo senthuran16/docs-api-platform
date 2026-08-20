@@ -1,3 +1,18 @@
+---
+title: "Analytics event streams and aggregations"
+description: "The event streams API Manager publishes for requests, faults, and throttling, and the aggregate tables Analytics builds from them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/analytics-event-streams-and-aggregations/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/analytics-event-streams-and-aggregations.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analytics-event-streams-and-aggregations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Analytics Event Streams and Aggregations
 
 ## Introduction

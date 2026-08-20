@@ -1,3 +1,18 @@
+---
+title: "Configuring WSO2 identity server as a key manager"
+description: "Install WSO2 Identity Server 5.10.0, configure its databases, and connect it to WSO2 API Manager as the global Key Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring WSO2 Identity Server as a Key Manager
 
 Follow the instructions below to configure WSO2 Identity Server (WSO2 IS) as the Key Manager of the WSO2 API Manager (WSO2 API-M) deployment globally.

@@ -1,3 +1,18 @@
+---
+title: "Create and publish an API"
+description: "Concepts to know before creating an API, and the Publisher portal steps for creating and publishing one. Work in progress page."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/need-to-update/create-and-publish-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/need-to-update/create-and-publish-an-api.md
+tags:
+  - api-manager
+  - wip
+  - need-to-update
+  - create-and-publish-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create and Publish an API
 
 **API creation** is the process of linking an existing backend API implementation to the [API Publisher](../../getting-started/key-concepts.md) so that you can manage and monitor the [API's lifecycle](../../getting-started/key-concepts.md) , documentation, security, community, and subscriptions. Alternatively, you can provide the API implementation in-line in the [API Publisher](../../getting-started/key-concepts.md) itself.

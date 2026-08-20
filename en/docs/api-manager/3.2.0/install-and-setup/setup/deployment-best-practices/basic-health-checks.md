@@ -1,3 +1,18 @@
+---
+title: "Basic health checks"
+description: "The health check APIs and ports exposed by each API Manager and API-M Analytics profile, for checking node health in a distributed setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-best-practices/basic-health-checks/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-best-practices/basic-health-checks.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Basic Health Checks
 
 Both API Manager and APIM Analytics support basic health checking by exposing health check APIs for available profiles.

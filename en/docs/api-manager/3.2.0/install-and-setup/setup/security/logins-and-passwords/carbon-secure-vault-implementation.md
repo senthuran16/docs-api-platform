@@ -1,3 +1,18 @@
+---
+title: "Customizing secure Vault"
+description: "Customize Secure Vault in WSO2 products by replacing the default secret repository and secret callback handler implementations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Customizing Secure Vault
 
 WSO2 products are shipped with a Secure Vault implementation, which is a modified version of Synapse Secure Vault. This allows you to store encrypted passwords that are mapped to aliases instead of the actual passwords.

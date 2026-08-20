@@ -1,3 +1,17 @@
+---
+title: "Configuration catalog"
+description: "Configuration parameters used in an all-in-one WSO2 API Manager deployment. Work in progress draft of the configuration catalog."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/config_introduction/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/config_introduction.md
+tags:
+  - api-manager
+  - wip
+  - config_introduction
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Configuration Catalog
 This document describes all the configuration parameters that are used in WSO2 API Manager in a all-in-one deployment. 
 
