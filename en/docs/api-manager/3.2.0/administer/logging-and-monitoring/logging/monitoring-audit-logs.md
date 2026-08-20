@@ -1,3 +1,18 @@
+---
+title: "Monitoring audit logs"
+description: "What WSO2 API Manager records in audit logs, including the Publisher and Developer Portal actions logged and the fields each entry holds."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/monitoring-audit-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/monitoring-audit-logs.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Monitoring Audit Logs
 
 Auditing is a primary requirement when it comes to monitoring production servers. For examples, DevOps need to have a clear mechanism for identifying who did what, and to filter possible system violations or breaches.

@@ -1,3 +1,18 @@
+---
+title: "Subscribe to an API"
+description: "Subscribe to a published API with a new or existing application, update the subscription tier, and unsubscribe when finished."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-subscription/subscribe-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-subscription/subscribe-to-an-api.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-subscription
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Subscribe to an API
 
 You have to **subscribe** to a published API before using it in your applications. The subscription process fulfills the authentication process and provides you with access tokens that you can use to invoke an API. 

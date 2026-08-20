@@ -1,3 +1,18 @@
+---
+title: "Product startup options"
+description: "The options available when starting a WSO2 product, and the system properties you can pass to the startup scripts in the bin directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/admin-product-startup-options/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/admin-product-startup-options.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - admin-product-startup-options
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Product Startup Options
 
 Given below are the options that are available when starting a WSO2 product. The product startup scripts are stored in the `<PRODUCT_HOME>/bin/` directory. When you execute the startup script, you can pass a system property by appending it next to the start-up script as shown below.

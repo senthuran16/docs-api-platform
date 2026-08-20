@@ -1,3 +1,18 @@
+---
+title: "Securing APIs by auditing API definitions"
+description: "Audit an API's OpenAPI definition with the 42Crunch security platform, and read the audit report sections and severity levels."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/configuring-api-security-audit/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/configuring-api-security-audit.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - configuring-api-security-audit
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Securing APIs by Auditing API Definitions
 
 API Security has become an important concern in recent times as organizations are more cautious about exposing raw, sensitive data via APIs. Therefore, it is important that APIs adhere to the OpenAPI Specification (OAS) to ensure API security.

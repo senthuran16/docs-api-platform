@@ -1,3 +1,18 @@
+---
+title: "Managing user roles"
+description: "Create, edit, and delete user roles in WSO2 API Manager, add role mappings, and update the roles a running deployment already uses."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/managing-users-and-roles/managing-user-roles/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/managing-users-and-roles/managing-user-roles.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing User Roles
 
 Roles contain permissions for users to manage the server. They can be reused and they eliminate the overhead of granting permissions to users individually.

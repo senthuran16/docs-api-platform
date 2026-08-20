@@ -1,3 +1,18 @@
+---
+title: "Setting up embedded derby"
+description: "Replace the default H2 database with an embedded Derby database, set up the datasource configurations, and create the tables."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/deleted-pages/changing-to-embedded-derby/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/deleted-pages/changing-to-embedded-derby.md
+tags:
+  - api-manager
+  - wip
+  - deleted-pages
+  - changing-to-embedded-derby
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up Embedded Derby
 
 The following section describes how to set up an IBM DB2 database to replace the default H2 database in your WSO2 product:

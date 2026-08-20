@@ -1,3 +1,18 @@
+---
+title: "Configuring geo location based statistics"
+description: "Configure the GEO_LOCATION_DATA database and pass the x-forwarded-for header so API Manager Analytics reports geolocation statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geo-location-based-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/configuring-geo-location-based-statistics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analyzing-apim-statistics-with-batch-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Geo Location Based Statistics
 
 !!! note

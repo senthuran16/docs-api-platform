@@ -1,3 +1,18 @@
+---
+title: "Expose a SOAP service as a REST API"
+description: "Bridge an existing SOAP or WSDL based service to REST through WSO2 API Manager, without a full migration of the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/create-api/expose-a-soap-service-as-a-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/create-api/expose-a-soap-service-as-a-rest-api.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Expose a SOAP Service as a REST API
 
 WSO2 API Manager supports the management of an existing SOAP and WSDL based services exposing as REST APIs.

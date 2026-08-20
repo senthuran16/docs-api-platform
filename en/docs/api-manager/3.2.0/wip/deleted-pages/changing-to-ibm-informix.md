@@ -1,3 +1,18 @@
+---
+title: "Changing to IBM informix"
+description: "Replace the embedded H2 database with IBM Informix for user management and registry data, including drivers and the datasource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/deleted-pages/changing-to-ibm-informix/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/deleted-pages/changing-to-ibm-informix.md
+tags:
+  - api-manager
+  - wip
+  - deleted-pages
+  - changing-to-ibm-informix
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing to IBM Informix
 
 By default, WSO2 API Manager uses the embedded H2 database as the database for storing user management and registry data. Given below are the steps you need to follow in order to use IBM Informix for this purpose.

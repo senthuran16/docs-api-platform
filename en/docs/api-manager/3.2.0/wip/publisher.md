@@ -1,6 +1,18 @@
 ---
+title: "Publisher REST API (work in progress)"
+description: "Try out the Publisher REST API against a local instance of WSO2 API Manager. This page is work in progress."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/publisher/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/wip/publisher.md
+tags:
+  - api-manager
+  - wip
+  - publisher
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 ??? Note "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager. 
      

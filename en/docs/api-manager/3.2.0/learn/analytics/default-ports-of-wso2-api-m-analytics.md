@@ -1,3 +1,18 @@
+---
+title: "Default ports of WSO2 API-M analytics"
+description: "The specific ports used by WSO2 API-M Analytics, listed for firewall configuration and for avoiding conflicts with other products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/default-ports-of-wso2-api-m-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/default-ports-of-wso2-api-m-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - default-ports-of-wso2-api-m-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Default Ports of WSO2 API-M Analytics
 
 Given below are the specific ports used by WSO2 API-M Analytics.

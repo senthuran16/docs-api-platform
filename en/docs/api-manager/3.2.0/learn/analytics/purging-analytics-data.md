@@ -1,3 +1,18 @@
+---
+title: "Purging analytics data"
+description: "Purge historical data from WSO2 API Manager Analytics tables, and which tables must be left alone to keep summarized data intact."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/purging-analytics-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/purging-analytics-data.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - purging-analytics-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Purging Analytics Data
 
 Data purging is an option to remove historical data in WSO2 API Manager Analytics. This is important because it is not possible to delete tables or table data in WSO2 API Manager Analytics. By purging data, you can achieve high performance in data analysis without removing analyzed summary data.

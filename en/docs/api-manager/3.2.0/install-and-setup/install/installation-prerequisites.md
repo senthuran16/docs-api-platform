@@ -1,3 +1,18 @@
+---
+title: "Installation prerequisites"
+description: "System requirements, environment compatibility, database storage needs, and required applications to install before WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/installation-prerequisites/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/installation-prerequisites.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installation-prerequisites
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Installation Prerequisites
 
 Before installing WSO2 API Manager, make sure that the appropriate prerequisites are available. Verify that the computer has a supported operating system and development platforms before starting the installation.

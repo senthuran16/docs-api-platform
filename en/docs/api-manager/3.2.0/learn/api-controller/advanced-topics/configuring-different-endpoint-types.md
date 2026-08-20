@@ -1,3 +1,18 @@
+---
+title: "Configuring different endpoint types"
+description: "The four endpoint types API Manager supports in apictl api_params.yaml: HTTP/REST and HTTP/SOAP, with load balancing and failover."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/configuring-different-endpoint-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/configuring-different-endpoint-types.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 #  Configuring Different Endpoint Types
 
 When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. (Please refer [Configuring Environment Specific Parameters](configuring-environment-specific-parameters.md) for more information). You can specify different types of endpoints in this file, as discussed in this section.

@@ -1,3 +1,18 @@
+---
+title: "API governance sample"
+description: "A sample scenario for API governance, showing old and new APIs in their lifecycle states and how to run the sample data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-governance-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-governance-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-governance-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "tutorial"
+---
+
 # API Governance Sample
 
 ### Usecase

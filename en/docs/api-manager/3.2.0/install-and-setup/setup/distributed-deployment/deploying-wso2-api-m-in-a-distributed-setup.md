@@ -1,3 +1,18 @@
+---
+title: "Deploying WSO2 API-M in a distributed setup"
+description: "Deploy the Key Manager, Gateway, Publisher, Developer Portal, and Traffic Manager as separate nodes, with databases and certificates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploying WSO2 API-M in a Distributed Setup
 
 Follow the instructions below to deploy WSO2 API Manager's five main components (Key Manager, Gateway, Publisher, Developer Portal, and Traffic Manager) in a distributed environment.

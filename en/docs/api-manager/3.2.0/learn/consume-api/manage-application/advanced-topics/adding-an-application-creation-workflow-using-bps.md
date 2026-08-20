@@ -1,3 +1,18 @@
+---
+title: "Adding an application creation workflow"
+description: "Attach a custom application creation workflow using the Business Process Server, and engage the WS workflow executor in API-M."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-creation-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-creation-workflow-using-bps.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an Application Creation Workflow
 
 This section explains as to how you can attach a custom workflow to the application creation operation in WSO2 API Manager (WSO2 API-M).

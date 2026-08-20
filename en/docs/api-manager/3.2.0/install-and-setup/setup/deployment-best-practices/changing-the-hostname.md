@@ -1,3 +1,18 @@
+---
+title: "Changing the hostname"
+description: "Set the hostname of a WSO2 server explicitly instead of relying on the Java API, so service endpoint references resolve correctly."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-best-practices/changing-the-hostname/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-best-practices/changing-the-hostname.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing the Hostname
 
 By default, WSO2 products identify the hostname of the current machine through the Java API. However, this value sometimes yields erroneous results on some environments. Therefore, users are recommended to configure the hostname. The following procedure explains how to change the hostname and management hostname of WSO2 API Manager (WSO2 API-M) as required for your production environment.

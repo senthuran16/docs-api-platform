@@ -1,3 +1,18 @@
+---
+title: "Deploy and test prototype APIs"
+description: "Deploy an API or a new API version as a prototype for early testing, then publish the prototyped API to the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/mock-api/deploy-and-test-mock-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/mock-api/deploy-and-test-mock-apis.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - mock-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploy and Test Prototype APIs
 
 You would need to create an API prototype for the purpose of early promotion and testing. You can deploy a new API or a new version of an existing API as a prototype. It gives subscribers an early implementation of the API that they can try out without a subscription or monetization, and in-turn the subscribers can provide feedback to improve the API. After a period of time, the publishers can make changes that the users request and publish the API.

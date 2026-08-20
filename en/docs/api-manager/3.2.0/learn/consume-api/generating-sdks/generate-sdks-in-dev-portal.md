@@ -1,3 +1,18 @@
+---
+title: "Generate SDKs in the Developer Portal"
+description: "Generate and download a client-side SDK for an API from the Developer Portal, and configure which languages are supported."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/generating-sdks/generate-sdks-in-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/generating-sdks/generate-sdks-in-dev-portal.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - generating-sdks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Generate SDKs in the Developer Portal
 
 A Software Development Kit (SDK) is a set of software development tools that allows you to create applications for a specific platform. If an API consumer wants to create an application, they can generate a client-side SDK for a supported language/framework and use it to write a software application to consume the subscribed APIs. 

@@ -1,3 +1,18 @@
+---
+title: "Synchronizing artifacts in a gateway cluster"
+description: "The three artifact synchronization mechanisms for an API-M Gateway cluster, and how to configure the inbuilt synchronizer with labels."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/synchronizing-artifacts-in-a-gateway-cluster/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/distributed-deployment/synchronizing-artifacts-in-a-gateway-cluster.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Synchronizing Artifacts in a Gateway Cluster
 
 In an API-M Gateway cluster, artifact synchronization is critical to maintain consistency among the nodes. WSO2 API-M provides three mechanisms for artifact synchronization.

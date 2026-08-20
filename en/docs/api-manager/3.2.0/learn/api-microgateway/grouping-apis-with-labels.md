@@ -1,3 +1,18 @@
+---
+title: "Grouping APIs with microgateway labels"
+description: "Create a Microgateway label, assign it to APIs, and view the labels, so a group of APIs can be exported to a Microgateway distribution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-microgateway/grouping-apis-with-labels/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-microgateway/grouping-apis-with-labels.md
+tags:
+  - api-manager
+  - learn
+  - api-microgateway
+  - grouping-apis-with-labels
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Grouping APIs with Microgateway Labels
 
 If required, you can create a [WSO2 API Microgateway](https://wso2.com/api-management/api-microgateway/) distribution for a group of APIs. Therefore, if you need to group APIs in order to import it later into the WSO2 Microgateway, you need to create a Microgateway label and add the label to the respective APIs that belong to the group.

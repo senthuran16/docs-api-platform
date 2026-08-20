@@ -1,3 +1,18 @@
+---
+title: "Recover password"
+description: "Recover a forgotten Developer Portal password, which needs an email server configured before the recovery mail can be sent."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/user-account-management/recover-password/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/user-account-management/recover-password.md
+tags:
+  - api-manager
+  - learn
+  - user-account-management
+  - recover-password
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Recover Password
 
 !!! note

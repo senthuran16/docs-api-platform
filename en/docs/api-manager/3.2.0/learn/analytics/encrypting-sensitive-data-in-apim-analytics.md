@@ -1,3 +1,18 @@
+---
+title: "Encrypting sensitive data in API-M analytics"
+description: "Encrypt access tokens, passwords, and other sensitive values in the API-M Analytics deployment configuration with the Cipher tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/encrypting-sensitive-data-in-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/encrypting-sensitive-data-in-apim-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - encrypting-sensitive-data-in-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Encrypting Sensitive Data in API-M Analytics
 
 The WSO2 API-M analytics comes with an inbuilt Cipher tool to encrypt sensitive data (e.g., access tokens, passwords, etc.) in  the deployment configuration file. This tool works in conjunction with [WSO2 Secure Vault](https://github.com/wso2/carbon-secvault/blob/master/README.md) to replace sensitive data that is in plain text with an alias. 

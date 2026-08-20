@@ -1,3 +1,18 @@
+---
+title: "Installing on solaris"
+description: "Install WSO2 API Manager on Solaris, install the required applications, and set JAVA_HOME and the system properties it needs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing on Solaris
 
 !!! note

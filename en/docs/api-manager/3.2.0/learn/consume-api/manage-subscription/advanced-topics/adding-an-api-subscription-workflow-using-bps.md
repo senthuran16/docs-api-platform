@@ -1,3 +1,18 @@
+---
+title: "Adding an API subscription workflow"
+description: "Attach a custom API subscription workflow so admins can assign throttling tiers that consumers cannot choose themselves."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-subscription/advanced-topics/adding-an-api-subscription-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/consume-api/manage-subscription/advanced-topics/adding-an-api-subscription-workflow-using-bps.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-subscription
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Adding an API Subscription Workflow
 
 This section explains how to attach a custom workflow to the API subscription operation in the API Manager. First, see [Workflow Extensions](_Managing_Workflow_Extensions_) for information on different types of workflows executors.

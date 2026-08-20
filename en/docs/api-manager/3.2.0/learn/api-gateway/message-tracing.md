@@ -1,3 +1,18 @@
+---
+title: "Message tracing"
+description: "Configure message tracing to follow each transaction through the Gateway. Deprecated in API Manager 3.2.0 and removed from 4.0.0."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/message-tracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/message-tracing.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-tracing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Message Tracing
 
 !!! Info "Deprecated feature"

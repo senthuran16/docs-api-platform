@@ -1,3 +1,18 @@
+---
+title: "Create and publish a WebSocket API"
+description: "Design and publish an API with a WebSocket backend, then invoke it using the wscat WebSocket client."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/tutorials/create-and-publish-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/tutorials/create-and-publish-websocket-api.md
+tags:
+  - api-manager
+  - learn
+  - tutorials
+  - create-and-publish-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSocket API
 
 Follow the instructions in this tutorial to design and publish API with a WebSocket backend, and thereafter invoke it using the **wscat** WebSocket client.

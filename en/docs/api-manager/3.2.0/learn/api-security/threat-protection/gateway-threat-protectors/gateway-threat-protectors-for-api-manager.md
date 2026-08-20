@@ -1,3 +1,18 @@
+---
+title: "Gateway threat protectors"
+description: "The three Gateway threat protectors in WSO2 API Manager, and how to combine them in a custom sequence to validate messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "concept"
+---
+
 # Gateway Threat Protectors
 
 WSO2 API Manager has three types of threat protectors for the Gateway.

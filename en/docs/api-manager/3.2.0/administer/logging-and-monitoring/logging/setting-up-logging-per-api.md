@@ -1,6 +1,19 @@
 ---
+title: "Set up logging per API"
+description: "Enable per-API request logging in WSO2 API Manager at four levels, and choose which APIs and log levels to capture."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/setting-up-logging-per-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/setting-up-logging-per-api.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
 template: templates/swagger.html
 ---
+
 # Setting Up Logging Per API in API Manager
 
 In a production environment, having the feasibility to monitor the HTTP message flow for a given API is important in identifying issues in the HTTP message flow.

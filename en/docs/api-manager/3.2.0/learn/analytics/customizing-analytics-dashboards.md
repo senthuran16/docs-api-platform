@@ -1,3 +1,18 @@
+---
+title: "Customizing the analytics dashboards"
+description: "Copy one of the five default API-M Analytics dashboards to change its layout or add custom widgets, since the defaults cannot be edited."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/customizing-analytics-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/customizing-analytics-dashboards.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - customizing-analytics-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 # Customizing the Analytics Dashboards
 
 WSO2 API Manager Analytics has five different dashboards that are namely, API Analytics, Application Analytics, Business Analytics, Monitoring, and Reports.

@@ -1,3 +1,18 @@
+---
+title: "Common runtime and configuration artifacts"
+description: "The persistent runtime and configuration artifacts used by WSO2 API Manager and API-M Analytics, and which storage each one needs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/reference/common-runtime-and-configuration-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/reference/common-runtime-and-configuration-artifacts.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Common Runtime and Configuration Artifacts
 
 The following are the artifacts used commonly in a WSO2 API Manager and API Manager Analytics deployment.

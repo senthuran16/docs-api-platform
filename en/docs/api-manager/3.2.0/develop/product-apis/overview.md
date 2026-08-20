@@ -1,3 +1,18 @@
+---
+title: "RESTful APIs"
+description: "The REST APIs exposed by the API Publisher, Developer Portal, Admin Portal, and Gateway, and which versions of each are available."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/product-apis/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/develop/product-apis/overview.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # RESTful APIs
 
 The following topics list the APIs exposed from the API Publisher, Developer Portal, Admin Portal and Gateway, which you can use to create and manage APIs. You can consume APIs directly through their UIs or, an external REST client like cURL.

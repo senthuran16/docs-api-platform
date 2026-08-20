@@ -1,3 +1,18 @@
+---
+title: "Token persistence"
+description: "How OAuth2 token persistence differs between JWT and opaque tokens, and the recovery flow when persistence fails in production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/token-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/oauth2/token-persistence.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Token Persistence
 
 This guide describes OAuth2 token persistence and the possible approaches you can follow for token persistence in a production environment. 

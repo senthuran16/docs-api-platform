@@ -1,3 +1,18 @@
+---
+title: "Introduction to multitenancy"
+description: "How multitenancy works in WSO2 API Manager: tenant isolation, resource sharing, tenant loading, request dispatching, and scaling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/multitenancy/introduction-to-multitenancy/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/multitenancy/introduction-to-multitenancy.md
+tags:
+  - api-manager
+  - administer
+  - multitenancy
+  - introduction-to-multitenancy
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "concept"
+---
+
 # Introduction to Multitenancy
 
 The goal of multitenancy is to maximize resource sharing by allowing multiple users (tenants) to log in and use a single server/cluster at the same time, in a tenant-isolated manner. That is, each user is given the experience of using his/her own server, rather than a shared environment. Multitenancy ensures optimal performance of the system's resources such as memory and hardware and also secures each tenant's personal data.

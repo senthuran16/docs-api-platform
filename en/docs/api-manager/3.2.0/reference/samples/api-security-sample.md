@@ -1,3 +1,18 @@
+---
+title: "API security sample"
+description: "A sample scenario for API security, where public price details and restricted salary details are exposed through separate APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-security-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/samples/api-security-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-security-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # API Security Sample
 
 ### Usecase

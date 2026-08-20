@@ -1,3 +1,18 @@
+---
+title: "Alert types"
+description: "The analytics alert types WSO2 API Manager supports, from abnormal response time and request counts to API availability monitoring."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/alert-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/alert-types.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - alert-types
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Alert Types
 
 WSO2 APIM currently supports the following alert types.

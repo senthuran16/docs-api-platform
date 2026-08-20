@@ -1,3 +1,18 @@
+---
+title: "Building a jenkins CI/CD pipeline for dev first approach"
+description: "Build a Jenkins CI/CD pipeline for the dev first approach: write the OpenAPI spec, initialize an API project, and commit it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - building-jenkins-ci-cd-pipeline-for-dev-first-approach
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Building a Jenkins CI/CD Pipeline for Dev First Approach
 
 By using a developer-first approach, an organization can adopt to have minimal interaction between the API developer 

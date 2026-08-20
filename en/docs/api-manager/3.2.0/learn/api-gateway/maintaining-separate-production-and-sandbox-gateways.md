@@ -1,3 +1,18 @@
+---
+title: "Maintaining separate production and sandbox gateways"
+description: "Run one Gateway for both production and sandbox traffic or separate Gateways for each, and route APIs to them with Gateway labels."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/maintaining-separate-production-and-sandbox-gateways/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-gateway/maintaining-separate-production-and-sandbox-gateways.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - maintaining-separate-production-and-sandbox-gateways
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Maintaining Separate Production and Sandbox Gateways
 
 With WSO2 API Manager, you can maintain a production and a sandbox endpoint for a given API. The production endpoint is the actual location of the API, whereas the sandbox endpoint points to its testing/pre-production environment.

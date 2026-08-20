@@ -1,3 +1,17 @@
+---
+title: "Accessibility compliance"
+description: "How WSO2 API Manager addresses accessibility requirements, including Section 508 and the ICT standards and guidelines."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/accessibility-compliance/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/accessibility-compliance.md
+tags:
+  - api-manager
+  - reference
+  - accessibility-compliance
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Accessibility Compliance
 
 According to WHO over 2 billion people, about 37.5% of the world's population, have some form of disability. 

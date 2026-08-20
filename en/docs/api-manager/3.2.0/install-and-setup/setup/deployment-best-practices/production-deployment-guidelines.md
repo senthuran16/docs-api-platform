@@ -1,3 +1,18 @@
+---
+title: "Production deployment guidelines"
+description: "Recommended settings for running WSO2 API Manager in production under moderate load, from prerequisites and installation to tuning and backup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Production Deployment Guidelines
 
 The requirements for deploying WSO2 products can change based on the deployment scenario and pattern. The 

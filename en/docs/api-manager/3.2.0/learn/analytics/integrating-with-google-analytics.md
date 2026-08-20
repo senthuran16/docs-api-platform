@@ -1,3 +1,18 @@
+---
+title: "Integrating with google analytics"
+description: "Feed WSO2 API Manager runtime statistics of API invocations into Google Analytics for summarization and display."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/integrating-with-google-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/integrating-with-google-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - integrating-with-google-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Integrating with Google Analytics
 
 You can configure the API Manager to track runtime statistics of API invocations through [Google Analytics](http://www.google.com/analytics). Google Analytics is a service that allows you to track visits to a website and generate detailed statistics on them.

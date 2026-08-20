@@ -1,3 +1,17 @@
+---
+title: "Understanding the new configuration model"
+description: "How the TOML based configuration model introduced in API Manager 3.0.0 works, including j2 templates, default.json, and arrays."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/understanding-the-new-configuration-model/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/reference/understanding-the-new-configuration-model.md
+tags:
+  - api-manager
+  - reference
+  - understanding-the-new-configuration-model
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Understanding the New Configuration Model
 
 ## Overview

@@ -1,3 +1,17 @@
+---
+title: "Troubleshoot the invalid callback error"
+description: "Fix the Registered callback does not match with the provided url error when signing in to the Publisher or Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/troubleshooting/troubleshooting-invalid-callback-error/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/troubleshooting/troubleshooting-invalid-callback-error.md
+tags:
+  - api-manager
+  - troubleshooting
+  - troubleshooting-invalid-callback-error
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "troubleshooting"
+---
+
 #Troubleshooting 'Registered callback does not match with the provided url' error
 
 The **Registered callback does not match with the provided url** error can be encountered during the API Publisher(`https://<hostname>:9443/publisher`) and API Dev portal(`https://<hostname>:9443/devportal`) login attempts, in a case where the hostname of the API Manager has been changed after accessing the Dev Portal or Publisher apps via different hostnames. 

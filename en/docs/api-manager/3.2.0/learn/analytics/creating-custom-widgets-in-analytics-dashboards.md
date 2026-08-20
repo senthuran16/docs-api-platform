@@ -1,3 +1,18 @@
+---
+title: "Create custom widgets in analytics dashboards"
+description: "Build a custom ReactJS widget for the analytics dashboards, define its database configuration, and create a traffic chart with it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/creating-custom-widgets-in-analytics-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/creating-custom-widgets-in-analytics-dashboards.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - creating-custom-widgets-in-analytics-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-23
+content_type: "how-to"
+---
+
 #Creating Custom Widgets
 
 In addition to already available widgets in the analytics dashboards, you can implement your own custom widget and use them across the dashboards.

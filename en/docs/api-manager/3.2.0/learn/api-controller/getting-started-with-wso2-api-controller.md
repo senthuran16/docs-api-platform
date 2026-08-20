@@ -1,3 +1,18 @@
+---
+title: "Getting started with WSO2 API controller"
+description: "Download and initialize the apictl API Controller, set its mode and proxy variables, and add or remove API Manager environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/getting-started-with-wso2-api-controller/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/getting-started-with-wso2-api-controller.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - getting-started-with-wso2-api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Getting Started with WSO2 API Controller
 
 WSO2 API Controller(CTL) is a command-line tool for managing API Manager environments, listing APIs, API products and applications, creating API projects, importing and exporting APIs, API products and applications, generating tokens for APIs and API products for testing purposes, etc.  

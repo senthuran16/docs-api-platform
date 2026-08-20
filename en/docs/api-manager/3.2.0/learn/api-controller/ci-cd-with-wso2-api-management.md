@@ -1,3 +1,18 @@
+---
+title: "CI/CD with WSO2 API Manager"
+description: "Automate API promotion across environments with WSO2 API Controller, using either Publisher based or dev first based CI/CD."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/ci-cd-with-wso2-api-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/ci-cd-with-wso2-api-management.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - ci-cd-with-wso2-api-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # CI/CD with WSO2 API Manager
 
 APIs have become a defacto for connecting apps, services, and data. An organization can have multiple environments, such as development, testing, QA, staging, and production, each with its own instance of API Managers. Therefore, the APIs need to be available in each environment after developers specify the required conditions. Manually promoting APIs between environments is a tedious, error-prone, and time-consuming task. This drastically reduces an organization’s productivity.

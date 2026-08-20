@@ -1,3 +1,18 @@
+---
+title: "Installing as a Linux service"
+description: "Set CARBON_HOME and run WSO2 API Manager as a Linux service using a startup script so the server starts with the machine."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing as a Linux Service
 
 !!! warning

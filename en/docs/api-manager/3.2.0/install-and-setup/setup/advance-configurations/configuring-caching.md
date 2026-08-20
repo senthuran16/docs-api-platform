@@ -1,3 +1,18 @@
+---
+title: "Configuring caching"
+description: "Configure the API Gateway, resource, Key Manager, OAuth, response, and JWT claims caches in WSO2 API Manager, and clear the Gateway cache."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/advance-configurations/configuring-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/advance-configurations/configuring-caching.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - advance-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Caching
 
 When an API call hits the API Gateway, the Gateway carries out security checks to verify if the token is valid. During these verifications, the API Gateway extracts parameters (i.e., access token, API name, and API version) that are passed on to it. As the entire load of the traffic to APIs goes through the API Gateway, this verification process needs to be fast and efficient in order to prevent overhead and delays. WSO2 API Manager uses caching for this purpose, where the validation information is cached with the token, API name, and version, and the cache is stored in either the API Gateway or the Key Manager server.

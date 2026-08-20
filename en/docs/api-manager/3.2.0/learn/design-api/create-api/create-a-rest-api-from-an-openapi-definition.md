@@ -1,3 +1,18 @@
+---
+title: "Create an API from an open API definition"
+description: "Create a REST API in the Publisher from an existing OpenAPI definition, then set its resources, endpoints, and runtime configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/create-api/create-a-rest-api-from-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/design-api/create-api/create-a-rest-api-from-an-openapi-definition.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create an API from an Open API Definition
 
 An OpenAPI definition is a format that describes REST APIs. 

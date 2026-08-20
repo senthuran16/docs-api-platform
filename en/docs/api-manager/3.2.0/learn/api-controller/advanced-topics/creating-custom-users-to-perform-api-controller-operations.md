@@ -1,3 +1,18 @@
+---
+title: "Creating custom users to perform API controller operations"
+description: "The permissions and scopes an API Controller user needs, including the Internal/devops role and how to build your own custom role."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 #  Creating Custom Users to Perform API Controller Operations
 
 To perform tasks using the API Controller, a particular user must have required permissions and scopes. From API Manager 3.2.0 onwards, a new role named `Internal/devops` has been introduced who has the ability to perform all the API Controller related operations. You just need to create a new user (Refer [Adding a new User](../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user) to learn about adding new users), assign the role `Internal/devops` and use that user to perform the API Controller operations.

@@ -1,3 +1,18 @@
+---
+title: "Configuring Git integration"
+description: "Deploy API Controller projects straight from a Git repository, enable project deletion, and externalize the VCS configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/configuring-git-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/configuring-git-integration.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 #  Configuring Git Integration
 
 API Controller natively supports identifying APIs or any other types of projects in a Git repository and seamlessly deploying the changes of the projects to a given API Manager environment. This topic is regarding some of the configurations that you can use to optimize the Git integration functionality.

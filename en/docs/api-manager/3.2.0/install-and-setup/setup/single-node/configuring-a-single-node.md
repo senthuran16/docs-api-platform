@@ -1,3 +1,18 @@
+---
+title: "Configuring a single Node"
+description: "Configure and deploy WSO2 API Manager as one standalone instance: certificate, load balancer, databases, gateway URLs, and analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/single-node/configuring-a-single-node/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/single-node/configuring-a-single-node.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Single Node
 
 This page walks you through how to manually configure and deploy WSO2 API Manager in a single standalone instance, without using a distributed or HA deployment patterns. 

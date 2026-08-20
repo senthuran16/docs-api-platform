@@ -1,3 +1,18 @@
+---
+title: "Bot detection"
+description: "Enable bot detection in WSO2 API Manager, receive email notifications for suspicious traffic, and view the data in the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/threat-protection/bot-detection/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-security/threat-protection/bot-detection.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Bot Detection
 
 There is a possibility that hackers may invoke services without any proper authentication by using tools such as port scanning.  Therefore, WSO2 API Manager(WSO2 API-M) provides a bot detection mechanism in place.

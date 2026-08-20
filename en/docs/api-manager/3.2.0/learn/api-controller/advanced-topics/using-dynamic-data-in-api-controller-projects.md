@@ -1,3 +1,18 @@
+---
+title: "Using dynamic data in API controller projects"
+description: "Inject environment variables into API Controller project files, environment configs, and definitions for use in CI/CD pipelines."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 #  Using Dynamic Data in API Controller Projects
 
 The API Controller (CTL) can inject dynamic values based on environment variables to various project files. The use of environment variables is a very convenient way of controlling inputs in almost every CI/CD platform.

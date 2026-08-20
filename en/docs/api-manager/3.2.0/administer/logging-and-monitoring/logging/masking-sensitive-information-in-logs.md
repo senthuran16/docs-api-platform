@@ -1,3 +1,18 @@
+---
+title: "Masking sensitive information in logs"
+description: "Enable log masking in WSO2 API Manager and define patterns in the masking pattern file to keep sensitive data out of log files."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/masking-sensitive-information-in-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/logging/masking-sensitive-information-in-logs.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Masking Sensitive Information in Logs
 
 There can be business sensitive information that are added to logs in the WSO2 product console and/or WSO2 Carbon log files. When these logs are analyzed, the information is exposed to those who check this.

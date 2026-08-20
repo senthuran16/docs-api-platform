@@ -1,3 +1,18 @@
+---
+title: "JMX monitoring"
+description: "The JMX MBeans exposed by WSO2 API Manager for connections, latency, threading, and transports, for monitoring with JConsole."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/monitoring/jmx-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/administer/logging-and-monitoring/monitoring/jmx-monitoring.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # JMX Monitoring
 
 Java Management Extensions (JMX) is a technology that lets you implement management interfaces for Java applications. **JConsole** is a JMX-compliant monitoring tool, which comes with the Java Development Kit (JDK) 1.5 or later versions. Therefore, when you use a WSO2 product, JMX is enabled by default, which allows you to monitor the product using JConsole.

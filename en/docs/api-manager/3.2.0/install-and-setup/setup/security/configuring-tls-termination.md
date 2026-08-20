@@ -1,3 +1,18 @@
+---
+title: "Configuring TLS termination"
+description: "Terminate SSL at the load balancer for Carbon servers, and enable RemoteIpValve so the server still sees the original client details."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/security/configuring-tls-termination/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/security/configuring-tls-termination.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring TLS Termination
 
 When you have Carbon servers fronted by a load balancer, you have the option of terminating SSL for HTTPS requests. This means that the load balancer will be decrypting incoming HTTPS messages and forwarding them to the Carbon servers as HTTP. This is useful when you want to reduce the load on your Carbon servers due to encryption. To achieve this, the load balancer should be configured with TLS termination and the Tomcat RemoteIpValve should be enabled for Carbon servers.

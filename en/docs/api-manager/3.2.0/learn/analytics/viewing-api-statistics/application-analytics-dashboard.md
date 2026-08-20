@@ -1,3 +1,18 @@
+---
+title: "Application analytics"
+description: "The widgets on the Application Analytics dashboard, covering faulty invocations, top users, and resource and API usage per application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/application-analytics-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/viewing-api-statistics/application-analytics-dashboard.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - viewing-api-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Application analytics
 
 !!! info

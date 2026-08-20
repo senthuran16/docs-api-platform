@@ -1,3 +1,18 @@
+---
+title: "Enabling WSO2 API-M analytics features"
+description: "Enable the WSO2 API-M Analytics features, which are powered by WSO2 Stream Processor and are disabled in the default distribution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/enabling-wso2-api-m-analytics-features/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/analytics/enabling-wso2-api-m-analytics-features.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - enabling-wso2-api-m-analytics-features
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "how-to"
+---
+
 # Enabling WSO2 API-M Analytics Features
 
 WSO2 API Manager Analytics is powered by WSO2 Stream Processor .These features are disabled by default.

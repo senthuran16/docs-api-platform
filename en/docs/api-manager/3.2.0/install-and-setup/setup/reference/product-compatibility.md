@@ -1,3 +1,18 @@
+---
+title: "Product compatibility"
+description: "Tested operating systems, JDKs, database systems, web browsers, and WSO2 products for WSO2 API Manager and API-M Analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/reference/product-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/install-and-setup/setup/reference/product-compatibility.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-22
+content_type: "reference"
+---
+
 # Product Compatibility
 
 <div class="admonition note">

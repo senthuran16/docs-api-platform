@@ -1,3 +1,18 @@
+---
+title: "GraphQL query depth limitation"
+description: "Limit how deeply a GraphQL query can nest, so circular schema relationships cannot make a query grow without bounds."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/rate-limiting/graphql-api/query-depth-limitation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.2.0/learn/rate-limiting/graphql-api/query-depth-limitation.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 Since GraphQL schemas often have circular relationships, the depth can grow without bounds. 
 An example of such a query is as follows:
 
