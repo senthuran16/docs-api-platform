@@ -1,3 +1,18 @@
+---
+title: "Advanced configurations"
+description: "Configure CORS allowed origins for the Publisher, Developer Portal, and Gateway REST APIs of WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/advanced-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/advanced-configurations.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - advanced-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
+---
+
 # Advanced Configurations
 
 The following sections explain the advanced configurations with regard to WSO2 API Manager REST APIs.

@@ -1,3 +1,18 @@
+---
+title: "Enabling or disabling self signup"
+description: "Enable self signup to the Developer Portal for tenants by editing the sign-up-config.xml registry resource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enabling or Disabling Self Signup
 
 <a name="enabling-self-signup"></a>

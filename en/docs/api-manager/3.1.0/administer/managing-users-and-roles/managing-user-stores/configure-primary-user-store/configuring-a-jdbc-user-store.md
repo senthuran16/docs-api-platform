@@ -1,3 +1,18 @@
+---
+title: "Configuring a JDBC user store"
+description: "Configure a JDBC user store manager, datasources, and system administrator as the primary user store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a JDBC User Store
 
 User management functionality is provided by default in WSO2 API Manager and it can be configured via the `<API-M_HOME>/repository/conf/deployment.toml` file. The instructions given below explain how to configure JDBC as a user store.

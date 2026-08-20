@@ -1,3 +1,18 @@
+---
+title: "Configuring APIM analytics"
+description: "Install and configure WSO2 API-M Analytics for quick demos or a production standard setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/configuring-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/configuring-apim-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - configuring-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring APIM Analytics
 
 WSO2 API Manager Analytics provides reports, statistics, and graphs on the APIs deployed in WSO2 API Manager. You can configure alerts to monitor these APIs and detect unusual activity, manage locations via Geo-location statistics, and carry out a detailed analysis of the logs. WSO2 API Manager has an enhanced distribution of Analytics to cater to the API Manager specific scenarios that are used here to configure API-M Analytics.

@@ -1,3 +1,18 @@
+---
+title: "Overview of the API Gateway"
+description: "Learn how the WSO2 API Gateway processes requests, enforces security and throttling policies, and routes calls to backends."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/overview-of-the-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/overview-of-the-api-gateway.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - overview-of-the-api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Overview of the API Gateway
 
 [![API-M overview](../../assets/img/learn/apim-overview.png)](../../assets/img/learn/apim-overview.png)

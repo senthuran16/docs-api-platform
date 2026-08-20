@@ -1,6 +1,19 @@
 ---
+title: "Setting up logging per API"
+description: "Enable request and response logging for a specific API at the Gateway using the API logging REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/setting-up-logging-per-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/setting-up-logging-per-api.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
 template: templates/swagger.html
 ---
+
 # Setting up logging per API in API Manager
 
 !!! note

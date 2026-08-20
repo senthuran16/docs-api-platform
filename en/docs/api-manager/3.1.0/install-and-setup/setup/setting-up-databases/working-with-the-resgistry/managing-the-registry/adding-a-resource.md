@@ -1,3 +1,18 @@
+---
+title: "Adding a resource"
+description: "Add a resource to a registry collection by uploading a file, importing a URL, or creating text or custom content."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding a Resource
 
 You can add a resource to a certain collection for more convenient usage of the Registry.

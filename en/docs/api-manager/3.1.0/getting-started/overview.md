@@ -1,3 +1,17 @@
+---
+title: "Overview"
+description: "Introduces WSO2 API Manager's components, key features, and basic architecture for end-to-end API management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/overview.md
+tags:
+  - api-manager
+  - getting-started
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Overview
 
 WSO2 API Manager is a fully open-source solution for end to end API Management in the cloud, on-prem or in hybrid environments. It comes with an [Apache Software License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) which makes it **free to use**. It allows API developers to design, publish, and manage the lifecycle of APIs and API product managers to create API products from one or more APIs. It hosts an application developer portal which helps in building and managing a developer community for your APIs. Its cloud-native API gateway is used for securing, routing, controlling and monitoring your API traffic in a scalable manner.

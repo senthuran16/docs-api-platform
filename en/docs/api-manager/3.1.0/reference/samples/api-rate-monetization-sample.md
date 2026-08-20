@@ -1,3 +1,18 @@
+---
+title: "API rate monetization sample"
+description: "Demonstrates how to define subscription tiers and connect to a billing engine to monetize APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-rate-monetization-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-rate-monetization-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-rate-monetization-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # API Rate Monetization Sample
 
 ### Usecase

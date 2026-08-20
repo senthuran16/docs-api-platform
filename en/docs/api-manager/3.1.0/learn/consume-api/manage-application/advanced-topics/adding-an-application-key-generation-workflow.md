@@ -1,3 +1,18 @@
+---
+title: "Adding an application key generation workflow"
+description: "Attach a custom workflow to production and sandbox key generation for application registration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-key-generation-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-key-generation-workflow.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an Application Key Generation Workflow
 
 This section explains as to how you can attach a custom workflow to the **application registration** operation in the API Manager. 

@@ -1,3 +1,18 @@
+---
+title: "Publish to multiple external Developer Portals"
+description: "Publish an API to Developer Portals of other tenants so their subscribers can view and browse it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/publish-api/publish-to-multiple-external-api-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/publish-api/publish-to-multiple-external-api-stores.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - publish-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish to Multiple External Developer Portals
 
 You can share an API with application developers who are subscribed to the Developer Portals of other tenants. Thereby, this allows you to advertise your APIs to a wider community. Subscribers of other tenant developer portals can view and browse your APIs; however, the users must visit your (the original publisher's) Developer Portal to subscribe to the APIs.

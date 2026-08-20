@@ -1,3 +1,18 @@
+---
+title: "Monitoring TCP-based messages"
+description: "Use the TCPMon utility to start, monitor, and debug TCP-based message conversations in web services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring TCP-Based Messages
 
 Users can view and monitor the messages passed along a TCP-based conversation using the TCPMon utility. Therefore, this is a convenient tool, particularly useful for debugging when you develop Web services. TCPMon is an Apache project distributed under [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html) .

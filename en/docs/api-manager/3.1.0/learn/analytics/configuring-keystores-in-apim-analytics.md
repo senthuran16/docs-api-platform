@@ -1,3 +1,18 @@
+---
+title: "Configuring keystores in API-M analytics"
+description: "Configure keystores for the Databridge, HTTP transport, and Secure Vault in the API-M Analytics dashboard profile."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/configuring-keystores-in-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/configuring-keystores-in-apim-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - configuring-keystores-in-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Keystores in API-M Analytics
 
 WSO2 products use asymmetric cryptography by default for authentication and data encryption. In asymmetric cryptography, keystores (with key pairs and certificates) are created and stored for the product. Keystore is a repository where private keys and certificates can be stored. It is possible to have multiple keystores so that the keys used for different use cases are kept unique. For more information about keystores and its concepts, see [About Asymmetric Cryptography](../../install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md).

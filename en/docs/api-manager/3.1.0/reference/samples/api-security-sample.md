@@ -1,3 +1,18 @@
+---
+title: "API security sample"
+description: "Demonstrates how to secure, authenticate, and audit API access across internal, partner, and public consumers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-security-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-security-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-security-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "tutorial"
+---
+
 # API Security Sample
 
 ### Usecase

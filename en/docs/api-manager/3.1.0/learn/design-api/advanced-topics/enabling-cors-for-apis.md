@@ -1,3 +1,18 @@
+---
+title: "Enabling CORS for APIs"
+description: "Enable Cross-Origin Resource Sharing globally or for individual APIs, and configure CORS response headers in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/advanced-topics/enabling-cors-for-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/advanced-topics/enabling-cors-for-apis.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enabling CORS for APIs
 
 Cross-Origin Resource Sharing (CORS) is a mechanism that allows accessing restricted resources (i.e., fonts, images, scripts, videos, and iframes) from domains outside the domain from which the requesting resource originated. By default, web browsers apply the same-origin policy to avoid interactions between different origins. CORS defines a way in which a browser and a server can interact to determine whether or not it is safe to allow the cross-origin requests.

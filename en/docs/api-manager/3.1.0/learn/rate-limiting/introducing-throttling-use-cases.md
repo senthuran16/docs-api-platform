@@ -1,3 +1,18 @@
+---
+title: "Introducing throttling Use-Cases"
+description: "Understand the use cases for throttling, including security, infrastructure protection, and monetization."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/introducing-throttling-use-cases/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/introducing-throttling-use-cases.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - introducing-throttling-use-cases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Introducing Throttling Use-Cases
 
 Throttling allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:

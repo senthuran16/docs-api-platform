@@ -1,3 +1,18 @@
+---
+title: "Publish the new version and deprecate old versions"
+description: "Publish a new API version and deprecate older versions to move subscribers to the latest release."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/api-versioning/deprecate-the-old-version/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/api-versioning/deprecate-the-old-version.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - api-versioning
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish the New Version and Deprecate Old Versions
 
 When you publish a new version of an API, you have to maintain the old versions of the API until all the subscribers move to the new version. However, it would be best if you encourage subscribers to use the latest version. For this use case, you can use '**Deprecate old versions after publishing the API**' option when publishing the new version.

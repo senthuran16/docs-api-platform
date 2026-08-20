@@ -1,3 +1,18 @@
+---
+title: "Identity management for the API Developer Portal"
+description: "Enable password recovery, account locking, and password policies for the API Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/identity-management-for-the-api-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/identity-management-for-the-api-dev-portal.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Identity Management for the API Developer Portal
 
 Identity management for the API developer portal includes the following features.

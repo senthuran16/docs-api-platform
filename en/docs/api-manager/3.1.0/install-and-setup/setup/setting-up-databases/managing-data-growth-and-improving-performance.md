@@ -1,3 +1,18 @@
+---
+title: "Managing data growth and improving performance"
+description: "Use regular and deep cleaning methods to remove accumulated runtime data and prevent database performance degradation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/managing-data-growth-and-improving-performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/managing-data-growth-and-improving-performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing Data Growth and Improving Performance
 
 The WSO2 API Manager when in use, will store metadata and runtime data in its connected databases. For e.g., APIs, applications, subscriptions and tokens created by users will be stored. Metadata related to applications and APIs are not been written to the databases frequently. However since runtime data depends on different attributes such as the number of users, number of connected applications, and the usage patterns, having a considerable load on the system will result in runtime data accumulating slowly over time. This will result in high data growth of the tables and in return negatively impact the systems performance. 

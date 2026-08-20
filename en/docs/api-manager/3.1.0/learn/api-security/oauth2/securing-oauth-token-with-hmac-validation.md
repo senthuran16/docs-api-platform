@@ -1,3 +1,18 @@
+---
+title: "Securing OAuth token with HMAC validation"
+description: "Secure OAuth tokens with HMAC validation to prevent misuse of expired or randomly generated tokens."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/securing-oauth-token-with-hmac-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/securing-oauth-token-with-hmac-validation.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Securing OAuth Token with HMAC Validation
 
 Implementing security measures in order to prevent the possible attacks is a need in using enterprise software. Keyed-Hash Message Authentication Code (HMAC) validation is such measure which involved a cryptographic hash function and used to verify both the data integrity and authentication of a Message as with any Message Authentication code. In this tutorial you will use the HMAC to validate the OAuth tokens created in WSO2 API Manager and and WSO2 Identity Server.

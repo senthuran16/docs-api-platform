@@ -1,6 +1,19 @@
 ---
+title: "Developer Portal API v0.16"
+description: "Interactive REST API reference for the WSO2 API Manager Developer Portal API version 0.16."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/devportal-apis/devportal-v0.16/devportal-v0.16/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/devportal-apis/devportal-v0.16/devportal-v0.16.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - devportal-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 !!! warning
     - The **Developer Portal v0.16 REST APIs will be deprecated in the next WSO2 API Manager release**. 
     - **[WSO2 recommends that you use the Developer Portal v1 REST APIs](../devportal-v1/devportal-v1.md)** as it is up to date and has support for the latest WSO2 API Manager 3.1.0 features.

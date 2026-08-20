@@ -1,3 +1,18 @@
+---
+title: "Blacklisting and whitelisting requests"
+description: "Configure IP whitelisting and blacklisting policies to control which requests can access an API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/blacklisting-whitelisting/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/blacklisting-whitelisting.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - blacklisting-whitelisting
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Blacklisting and Whitelisting Requests
 
 This section guides you through the following areas:

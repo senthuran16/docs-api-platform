@@ -1,3 +1,18 @@
+---
+title: "Default product ports"
+description: "Reference the default ports used by WSO2 API Manager components when the port offset is 0."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/reference/default-product-ports/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/reference/default-product-ports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Default Product Ports
 
 This page describes the default ports that are used for each WSO2 product when the [port offset](../deployment-best-practices/changing-the-default-ports-with-offset.md) is 0.

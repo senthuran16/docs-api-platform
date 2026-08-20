@@ -1,3 +1,18 @@
+---
+title: "Installing via the installer"
+description: "Download, install, locate the home directory, and uninstall WSO2 API Manager using the product installer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-via-the-installer/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-via-the-installer.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing via the Installer
 
 The following sections explain as to how to to use the WSO2 API Manager installer.

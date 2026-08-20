@@ -1,3 +1,18 @@
+---
+title: "WSO2 API Manager deployment patterns"
+description: "Compare single-node, distributed, and hybrid WSO2 API Manager deployment patterns to choose the right topology for your throughput needs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/deployment-patterns/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/deployment-patterns.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-patterns
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # WSO2 API Manager Deployment Patterns
 
 

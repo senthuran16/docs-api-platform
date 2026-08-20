@@ -1,3 +1,18 @@
+---
+title: "Getting started"
+description: "Walks through obtaining an access token and invoking the Publisher REST API v0.16 with sample curl commands."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/getting-started/guide-publisher-v0.16/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/getting-started/guide-publisher-v0.16.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Getting Started
 
 !!! warning

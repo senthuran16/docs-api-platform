@@ -1,3 +1,17 @@
+---
+title: "Federating OAuth applications"
+description: "Configure WSO2 API Manager to federate OAuth application authentication to an external identity provider."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/advanced-topics/federating-oauth-applications/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/advanced-topics/federating-oauth-applications.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
 
 In the following document we will be explaining how to federate the OAuth applications using an external indentity provider.
 

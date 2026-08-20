@@ -1,3 +1,18 @@
+---
+title: "CI/CD with WSO2 API Manager"
+description: "Design CI/CD pipelines for promoting APIs across environments using apictl, the API Publisher, or a dev-first approach."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/ci-cd-with-wso2-api-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/ci-cd-with-wso2-api-management.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - ci-cd-with-wso2-api-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # CI/CD with WSO2 API Manager
 
 APIs have become a defacto for connecting apps, services, and data. An organization can have multiple environments, such 

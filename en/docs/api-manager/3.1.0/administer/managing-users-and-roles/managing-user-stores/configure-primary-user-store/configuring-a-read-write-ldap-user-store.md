@@ -1,3 +1,18 @@
+---
+title: "Configuring a Read-Write LDAP user store"
+description: "Configure a read-write LDAP server as the primary user store for WSO2 API Manager, including admin user updates and server restarts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Read-Write LDAP User Store
 
 WSO2 API Manager provides the user management functionality by default, and it can be configured in the 

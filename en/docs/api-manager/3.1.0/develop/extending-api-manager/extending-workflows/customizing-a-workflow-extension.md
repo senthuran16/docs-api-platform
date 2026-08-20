@@ -1,3 +1,18 @@
+---
+title: "Customizing a workflow extension"
+description: "Build a custom WorkflowExecutor class, such as an email-sending subscription workflow, and deploy it to API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-workflows
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Customizing a Workflow Extension
 
 Each workflow executor in the WSO2 API Manager is inherited from the **`org.wso2.carbon.apimgt.impl.workflow.WorkflowExecutor`** abstract class, which has the following abstract methods:

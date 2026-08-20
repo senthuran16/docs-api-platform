@@ -1,3 +1,18 @@
+---
+title: "Styling API details info section"
+description: "Customize colors, height, and icons of the API and application details info section via defaultTheme.js."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/styling-api-details-info-section/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/styling-api-details-info-section.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Styling API Details Info Section
 
 The "API Details Info" section which is shown below can be customized according to your design needs by configuring the `defaultTheme.js` file.

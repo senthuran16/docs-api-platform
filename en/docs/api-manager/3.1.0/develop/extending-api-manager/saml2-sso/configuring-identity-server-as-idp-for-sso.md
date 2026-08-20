@@ -1,3 +1,18 @@
+---
+title: "Configuring Identity Server as IDP for SSO"
+description: "Configure WSO2 Identity Server as the SAML2 SSO identity provider for the API Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - saml2-sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Identity Server as IDP for SSO
 
 !!! info

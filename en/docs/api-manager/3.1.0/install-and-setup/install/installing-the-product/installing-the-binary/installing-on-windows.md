@@ -1,3 +1,18 @@
+---
+title: "Installing on Windows"
+description: "Explains how to install WSO2 API Manager, set up snappy-java, and configure JAVA_HOME on Windows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-windows/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-windows.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing on Windows
 
 !!! note

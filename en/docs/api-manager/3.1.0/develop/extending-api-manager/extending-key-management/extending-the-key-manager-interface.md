@@ -1,3 +1,18 @@
+---
+title: "Extending the key manager interface"
+description: "Implement the KeyManager interface to plug a custom OAuth2 authorization server into API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-key-management/extending-the-key-manager-interface/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-key-management/extending-the-key-manager-interface.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-key-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Extending the Key Manager Interface
 
 ### Purpose of the Key Manager

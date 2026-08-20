@@ -1,3 +1,18 @@
+---
+title: "Collaborative API development sample"
+description: "Walks through a sample scenario for developing APIs collaboratively across business units with different ownership levels."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-development-sample/collaborative-api-development-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-development-sample/collaborative-api-development-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-development-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Collaborative API Development Sample
 
 This sample scenario elaborates as to how you can develop APIs in a collaborative manner while maintaining different levels of ownership and permissions.

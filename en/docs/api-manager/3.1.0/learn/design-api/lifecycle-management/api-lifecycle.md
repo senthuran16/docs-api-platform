@@ -1,3 +1,18 @@
+---
+title: "API lifecycle"
+description: "Learn the API lifecycle states in WSO2 API Manager, from CREATED and PUBLISHED through DEPRECATED and RETIRED."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/lifecycle-management/api-lifecycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/lifecycle-management/api-lifecycle.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - lifecycle-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # API Lifecycle
 
 The API lifecycle is one of the key factors in API management. An API lifecycle has predefined states. These states represent the stages that an API has in the process of starting to develop an API until it's retirement. WSO2 API Manager related APIs has a lifecycle that contains six stages which allows you to identify in which state that the API is currently in.

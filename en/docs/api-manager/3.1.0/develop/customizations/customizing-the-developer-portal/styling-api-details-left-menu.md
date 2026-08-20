@@ -1,3 +1,16 @@
+---
+title: "Styling the API details left menu"
+description: "Configure defaultTheme.js attributes to reposition, resize, and recolor the Developer Portal's API details left menu."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/styling-api-details-left-menu/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/styling-api-details-left-menu.md
+tags:
+  - theming
+  - branding
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Styling API Details Left Menu
 
 The API details left menu can be customized to match with your design needs by configuring the `defaultTheme.js` file.

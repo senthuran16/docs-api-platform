@@ -1,3 +1,18 @@
+---
+title: "Invoke a GraphQL API using the integrated GraphQL console"
+description: "Subscribe to a GraphQL API and run queries against it using the integrated GraphiQL console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - invoke-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Invoke an GraphQL API using the Integrated GraphQL Console
 
 WSO2 API Manager(WSO2 API-M) has an integrated GraphiQL UI for the GraphQL APIs.

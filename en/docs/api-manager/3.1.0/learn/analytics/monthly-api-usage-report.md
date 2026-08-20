@@ -1,3 +1,18 @@
+---
+title: "Monthly API usage report"
+description: "Generate and customize a downloadable PDF report of monthly API usage from the APIM Admin analytics dashboard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/monthly-api-usage-report/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/monthly-api-usage-report.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - monthly-api-usage-report
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Monthly API Usage Report
 PDF reporting is useful for an organization if reports of API analytics data need to be sent to various stakeholders. This is supported via the Monthly API Usage Report widget which can be accessed through the **APIM Admin** dashboard.
 

@@ -1,3 +1,18 @@
+---
+title: "Token revocation"
+description: "Revoke OAuth2 access and refresh tokens using the Revoke API to handle theft or security violations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/token-revocation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/token-revocation.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Token Revocation
 
 ## Revoking access tokens

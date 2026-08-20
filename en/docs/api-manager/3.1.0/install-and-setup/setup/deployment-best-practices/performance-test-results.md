@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Review WSO2 API Manager throughput, response time, and GC performance test results and comparisons."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/performance-test-results/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/deployment-best-practices/performance-test-results.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
+---
+
 # Performance Test Results
 
 ## Summary

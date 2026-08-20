@@ -1,3 +1,18 @@
+---
+title: "Adding new throttling policies"
+description: "Add advanced, application-level, and subscription-level throttling policies through the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/adding-new-throttling-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/adding-new-throttling-policies.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - adding-new-throttling-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Adding New Throttling Policies
 
 WSO2 API Manager admins can add new throttling policies and define extra properties to the throttling policies. To get started, click on the level of throttling that you want to add a new policy to:

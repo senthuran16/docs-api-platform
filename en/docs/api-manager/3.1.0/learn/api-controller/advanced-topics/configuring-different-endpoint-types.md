@@ -1,3 +1,18 @@
+---
+title: "Configuring different endpoint types"
+description: "Configure REST, SOAP, dynamic, and AWS Lambda endpoint types for apictl environments using api_params.yaml."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/advanced-topics/configuring-different-endpoint-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/advanced-topics/configuring-different-endpoint-types.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 #  Configuring Different Endpoint Types
 
 When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. (Please refer [Configuring Environment Specific Parameters](configuring-environment-specific-parameters.md) for more information). You can specify different types of endpoints in this file, as discussed in this section.

@@ -1,3 +1,18 @@
+---
+title: "Publish through multiple API gateways"
+description: "Configure multiple API Gateway environments in API Manager to publish APIs to a single Developer Portal for load distribution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/publish-api/publish-through-multiple-api-gateways/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/publish-api/publish-through-multiple-api-gateways.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - publish-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Publish Through Multiple API Gateways
 
 If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. This helps you to distribute the API Gateway load to multiple nodes and also gives you some logical separation (e.g., production vs. sandbox) between the APIs in the Developer Portal. When you publish an API through multiple Gateway environments, the APIs in the API Developer Portal will have different server hosts and ports.

@@ -1,3 +1,18 @@
+---
+title: "Alert types"
+description: "Reference the alert types supported by WSO2 API Manager analytics, including their triggers and indications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/alert-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/alert-types.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-alerts-with-real-time-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Alert Types
 
 WSO2 APIM currently supports the following alert types.

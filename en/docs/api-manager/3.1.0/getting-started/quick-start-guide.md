@@ -1,3 +1,17 @@
+---
+title: "Quick start guide"
+description: "Walks through creating, publishing, subscribing to, and invoking a sample API using the Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/quick-start-guide.md
+tags:
+  - api-manager
+  - getting-started
+  - quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Quick Start Guide
 
 ## Design Your First API

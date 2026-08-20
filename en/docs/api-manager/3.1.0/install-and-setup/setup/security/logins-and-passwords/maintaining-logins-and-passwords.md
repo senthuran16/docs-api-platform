@@ -1,3 +1,18 @@
+---
+title: "Maintaining logins and passwords"
+description: "Change super admin credentials, recover passwords, and set up email or social media logins."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Maintaining Logins and Passwords
 
 This section covers the following topics:

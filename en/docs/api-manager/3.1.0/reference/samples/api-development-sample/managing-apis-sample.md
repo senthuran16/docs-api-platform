@@ -1,3 +1,18 @@
+---
+title: "Managing APIs sample"
+description: "Walks through a sample scenario for managing public, partner, and private APIs with WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-development-sample/managing-apis-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-development-sample/managing-apis-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-development-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Managing APIs Sample
 
 This sample scenario elaborates as to how you can manage public vs. partner vs. private APIs with WSO2 API Manager.

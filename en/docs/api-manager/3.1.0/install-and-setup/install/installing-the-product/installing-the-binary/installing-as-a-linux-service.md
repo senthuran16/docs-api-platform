@@ -1,3 +1,18 @@
+---
+title: "Installing as a Linux service"
+description: "Run WSO2 API Manager as a Linux service by creating a startup script that starts, stops, and restarts the server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing as a Linux Service
 
 !!! warning

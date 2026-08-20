@@ -1,6 +1,19 @@
 ---
+title: "Publisher API v0.16"
+description: "Browse the interactive REST API reference for the WSO2 API Manager Publisher API version 0.16, now deprecated in favor of v1."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/publisher-apis/publisher-v0.16/publisher-v0.16/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/publisher-apis/publisher-v0.16/publisher-v0.16.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - publisher-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 !!! warning
     - The **Publisher v0.16 REST APIs will be deprecated in the next WSO2 API Manager release**. 
     - **[WSO2 recommends that you use the Publisher v1 REST APIs](../publisher-v1/publisher-v1.md)** as it up to date and has support for the latest WSO2 API Manager 3.1.0 features.

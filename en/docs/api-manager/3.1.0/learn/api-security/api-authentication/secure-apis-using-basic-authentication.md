@@ -1,3 +1,18 @@
+---
+title: "Securing APIs with basic authentication"
+description: "Enable basic authentication on an API and combine it with OAuth2, mutual SSL, or API key schemes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/secure-apis-using-basic-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/secure-apis-using-basic-authentication.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 #Securing APIs with Basic Authentication
 
 Basic authentication is a simple HTTP authentication scheme in which the request will contain an authorization header with a valid  base64 encoded username and password. The WSO2 API Manager is able to authenticate requests using Basic and OAuth2 authentication 

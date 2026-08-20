@@ -1,3 +1,18 @@
+---
+title: "Setting throttling limits"
+description: "Learn how API, application, resource, and subscription-level throttling tiers combine to set a final rate limit."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/setting-throttling-limits/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/setting-throttling-limits.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - setting-throttling-limits
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Setting Throttling Limits
 
 Throttling allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:

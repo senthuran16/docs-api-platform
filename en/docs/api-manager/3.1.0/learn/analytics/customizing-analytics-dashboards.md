@@ -1,3 +1,18 @@
+---
+title: "Customizing analytics dashboards"
+description: "Duplicate and customize a default API-M Analytics dashboard without modifying the original."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/customizing-analytics-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/customizing-analytics-dashboards.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - customizing-analytics-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Customizing Analytics Dashboards
 
 WSO2 API Manager Analytics provides three types of dashboards: API-M Admin, API-M Developer Portal, and API-M Publisher.

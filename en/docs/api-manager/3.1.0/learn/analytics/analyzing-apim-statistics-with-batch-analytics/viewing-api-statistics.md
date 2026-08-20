@@ -1,3 +1,18 @@
+---
+title: "Viewing API statistics"
+description: "Access and interpret the Publisher, Developer Portal, and Admin Portal statistical dashboards in API-M Analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analyzing-apim-statistics-with-batch-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Viewing API Statistics
 
 API statistics related to both the API Publisher and the Developer Portal can be viewed using the **dashboard** runtime of the API-M Analytics server.

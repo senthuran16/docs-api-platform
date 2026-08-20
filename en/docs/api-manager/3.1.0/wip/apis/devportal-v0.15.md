@@ -1,6 +1,19 @@
 ---
+title: "Developer portal API v0.15 reference"
+description: "Try out the WSO2 API Manager Developer Portal REST API v0.15 operations interactively using the embedded Swagger UI."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/apis/devportal-v0.15/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/apis/devportal-v0.15.md
+tags:
+  - api-manager
+  - wip
+  - apis
+  - devportal-v0.15
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 ??? Note "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager. 
      

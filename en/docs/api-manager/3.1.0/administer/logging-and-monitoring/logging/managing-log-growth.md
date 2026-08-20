@@ -1,3 +1,18 @@
+---
+title: "Managing log growth"
+description: "Configure time-based or size-based log4j2 rollover policies to control Carbon and audit log file growth."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/managing-log-growth/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/managing-log-growth.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing log growth
 
 See the following content on managing the growth of [Carbon logs](#managing-the-growth-of-carbon-logs) and [Audit logs](#managing-the-growth-of-audit-log-files) :

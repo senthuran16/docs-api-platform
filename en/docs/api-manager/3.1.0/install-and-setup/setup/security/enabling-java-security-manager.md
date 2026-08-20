@@ -1,3 +1,18 @@
+---
+title: "Enabling Java security manager"
+description: "Enable the Java Security Manager and sign JARs with a keystore to restrict untrusted code in WSO2 products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/enabling-java-security-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/enabling-java-security-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enabling Java Security Manager
 
 The Java Security Manager is used to define various security policies that prevent untrusted code from manipulating your system. Enabling the Java Security Manager for WSO2 products activates the Java permissions that are in the `<API-M_HOME>/repository/conf/sec.policy` file. You modify this file to change the Java security permissions as required.

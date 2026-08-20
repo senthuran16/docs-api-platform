@@ -1,3 +1,18 @@
+---
+title: "Configuring WSO2 identity server as a key manager"
+description: "Configure a prepackaged WSO2 Identity Server as the Key Manager for a WSO2 API Manager deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring WSO2 Identity Server as a Key Manager
 
 Please follow the steps below to configure a prepackaged WSO2 Identity Server as  Key Manager for your WSO2 API Manager deployment. 

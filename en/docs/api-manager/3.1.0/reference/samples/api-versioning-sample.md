@@ -1,3 +1,18 @@
+---
+title: "API versioning sample"
+description: "Demonstrates how to version an API, run old and new versions concurrently, and notify subscribers of changes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-versioning-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-versioning-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-versioning-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "tutorial"
+---
+
 # API Versioning Sample
 
 ### Use case

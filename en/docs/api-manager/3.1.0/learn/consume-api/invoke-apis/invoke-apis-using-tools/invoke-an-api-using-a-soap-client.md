@@ -1,3 +1,18 @@
+---
+title: "Invoke an API using a SOAP client"
+description: "Subscribe to a SOAP-backed API in the Developer Portal, generate an access token, and invoke the API from SOAP UI as a client."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - invoke-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Invoke an API using a SOAP Client
 
 You can use any SOAP client to **invoke an API** . We use the SOAP UI in this example.

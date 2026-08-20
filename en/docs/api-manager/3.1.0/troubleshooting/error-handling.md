@@ -1,3 +1,16 @@
+---
+title: "Error handling"
+description: "Customize the format of XML-based error responses returned by API Manager for authorization, throttling, and other errors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/troubleshooting/error-handling.md
+tags:
+  - error-codes
+  - xml
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Error Handling
 
 When errors/exceptions occur in the system, the API Manager throws

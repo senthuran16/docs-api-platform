@@ -1,3 +1,18 @@
+---
+title: "Set passwords using variables and system properties"
+description: "Set passwords for system users, keystores, and truststores using environment variables or system properties instead of hardcoding them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/set-passwords-using-vars-and-sys-props/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/set-passwords-using-vars-and-sys-props.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 #Set Passwords using Environment Variables/System Properties
 
 The instructions on this page explain how you can set the passwords of system users, keystores and trustores etc using system properties and environment variable, rather than hardcoding them in configuration file itself. 

@@ -1,3 +1,18 @@
+---
+title: "Running the product"
+description: "Start and stop the API Manager server, access its web portals, and restrict management console access."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/running-the-product/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/running-the-product.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - running-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Running the Product
 
 To run WSO2 products, you start the product server at the command line. You can then run the Management Console to configure and manage the product.

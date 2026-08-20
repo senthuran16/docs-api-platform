@@ -1,3 +1,18 @@
+---
+title: "Configuring Okta as an external IdP using SAML"
+description: "Connect Okta as an external identity provider to WSO2 API Manager over SAML 2.0 and map Okta roles to API Manager permissions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 In the following document we will explain how to connect OKTA as a third party Identity provier to WSO2 API-Manager. Before we start first make sure you have all the pre-requisites mentioned below.
 
 ### Pre-requisites

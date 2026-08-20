@@ -1,3 +1,17 @@
+---
+title: "Adding a custom proxy path"
+description: "Configure custom proxy paths so multiple WSO2 products can be hosted under a single domain via a reverse proxy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-proxy-server-and-the-load-balancer
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
 
 Adding a custom proxy path is useful when you have a proxy server fronting your Carbon server. In this scenario, the "custom proxy path" is used for mapping a proxy url with the actual url of your Carbon server, which allows clients to access the Carbon server with the proxy url.
 

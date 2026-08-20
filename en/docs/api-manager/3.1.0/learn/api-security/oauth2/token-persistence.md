@@ -1,3 +1,18 @@
+---
+title: "Token persistence"
+description: "Compare synchronous and asynchronous OAuth2 token persistence and configure each in production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/token-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/token-persistence.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Token Persistence
 
 This guide describes OAuth2 token persistence and the possible approaches you can follow for token persistence in a production environment. The OAuth2 component in WSO2 API Manager(WSO2 API-M) has two implementations you can use to handle token persistence in the database, which are namely synchronous and asynchronous token persistence. 

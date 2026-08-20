@@ -1,3 +1,17 @@
+---
+title: "Scope mapping"
+description: "Update internal REST API scope-to-role bindings and map role names using the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/scope-role-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/scope-role-mapping.md
+tags:
+  - api-manager
+  - wip
+  - scope-role-mapping
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Scope Mapping
 
 Internal REST API scopes and their role mappings are stored in the `tenant-conf.json` file. In earlier versions of WSO2 API Manager, users had to manually update the `tenant-conf.json` file in order to modify the scope to role mappings. From API Manager 3.1.0

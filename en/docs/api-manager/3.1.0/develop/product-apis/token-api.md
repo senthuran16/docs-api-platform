@@ -1,3 +1,18 @@
+---
+title: "Token API"
+description: "Explains how to generate, renew, and revoke OAuth2 access tokens using the API Manager Token API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/token-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/token-api.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - token-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Token API
 
 Users need access tokens to invoke APIs subscribed under an application. Access tokens are passed in the HTTP header when invoking APIs. The API Manager provides a Token API that you can use to generate and renew user and application access tokens. The response of the Token API is a JSON message. You extract the token from the JSON and pass it with an HTTP Authorization header to access the API.

@@ -1,3 +1,18 @@
+---
+title: "Development of developer optimized APIs sample"
+description: "Demonstrates how to use SDKs and custom sequences to optimize API output for different client types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-development-sample/development-of-developer-optimized-apis-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-development-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Development of Developer Optimized APIs Sample
 
 This sample scenario elaborates as to how you can use WSO2 API Manager to develop developer optimized APIs.

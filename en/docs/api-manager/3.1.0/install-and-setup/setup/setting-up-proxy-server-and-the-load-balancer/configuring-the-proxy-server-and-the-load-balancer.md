@@ -1,3 +1,18 @@
+---
+title: "Configuring the proxy server and the load balancer"
+description: "Configure a load balancer and reverse proxy to map external traffic to WSO2 API Manager ports and URLs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-proxy-server-and-the-load-balancer
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Configuring the Proxy Server and the Load Balancer
 
 A load balancer or reverse proxy is required to map external traffic with ports and URLs that WSO2 API Manager (WSO2 API-M) uses internally. Follow the instructions below to configure load balancing together with reverse proxying.

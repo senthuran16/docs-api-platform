@@ -1,3 +1,18 @@
+---
+title: "Configuring alerts"
+description: "Enable and configure analytics-based alerts, including sender email settings, business rules, and portals."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/configuring-alerts.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-alerts-with-real-time-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Alerts
     
 WSO2 API Manager analytics-based alerts are disabled by default. Once you [enable alerts](configuring-alerts.md#enable-alerts), you can customize and configure the analytics-based alerts using the features listed below.

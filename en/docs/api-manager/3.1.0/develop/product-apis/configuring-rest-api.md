@@ -1,3 +1,18 @@
+---
+title: "Configuring the REST API"
+description: "Configure REST API scopes and default roles to control access to Publisher, Developer Portal, and Admin REST APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/configuring-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/configuring-rest-api.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - configuring-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Configuring the REST API
 
 This section explains how to configure the API Manager REST APIs:

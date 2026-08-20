@@ -1,3 +1,18 @@
+---
+title: "Customizing login pages for Developer Portal and publisher"
+description: "Customize SAML2 SSO, OAuth, and OpenID login pages for the Developer Portal and Publisher authentication endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-login-pages-for-dev-portal-and-publisher/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-login-pages-for-dev-portal-and-publisher.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-login-pages-for-dev-portal-and-publisher
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Customizing Login Pages for Developer Portal and Publisher
 
 Custom pages for logging into the server are available for SAML2 SSO, OAuth and OpenID. This section guides you through this customization.
