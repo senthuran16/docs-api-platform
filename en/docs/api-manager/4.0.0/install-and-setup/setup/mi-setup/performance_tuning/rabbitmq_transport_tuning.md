@@ -1,3 +1,18 @@
+---
+title: "Tuning the RabbitMQ transport"
+description: "Tune the RabbitMQ transport of the Micro Integrator, including increasing the connection pool size, for better performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/performance_tuning/rabbitmq_transport_tuning/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/performance_tuning/rabbitmq_transport_tuning.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Tuning the RabbitMQ Transport
 
 See the following topics to tune the RabbitMQ transport:

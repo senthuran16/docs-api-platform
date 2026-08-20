@@ -1,3 +1,18 @@
+---
+title: "Salesforce inbound endpoint reference"
+description: "Reference for the configuration parameters used to set up the Salesforce inbound endpoint for streaming data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/salesforce-connectors/sf-inbound-endpoint-reference-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/salesforce-connectors/sf-inbound-endpoint-reference-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Salesforce Inbound Endpoint Reference
 
 The following configurations allow you to configure Salesforce Inbound Endpoint for your scenario. 

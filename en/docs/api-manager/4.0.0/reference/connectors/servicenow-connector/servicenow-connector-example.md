@@ -1,3 +1,18 @@
+---
+title: "ServiceNow connector example"
+description: "Configure a sample API that uses the ServiceNow connector to create and retrieve incident records in a table."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/servicenow-connector/servicenow-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/servicenow-connector/servicenow-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - servicenow-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # ServiceNow Connector Example
 
 The WSO2 ServiceNow connector allows you to access the ServiceNow REST API from an integration sequence. Using ServiceNow connector you can work with Aggregate API, Import Set API and Table API in ServiceNow. You can further read about ServiceNow REST APIs from [here](https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI).
@@ -24,11 +39,11 @@ Please follow the steps mentioned in the [Setting up ServiceNow Instance](settin
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.0.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. First let's create postRecord sequence and ReadRecord sequences. Right click on the created Integration Project and select, -> **New** -> **Sequence** to create the Sequence. 
 
-    <a href="../../../assets/img/integrate/connectors/add-sequence.jpg"><img src="../../../assets/img/integrate/connectors/add-sequence.jpg" title="Adding a Sequence" width="800" alt="Adding a Sequence"/></a>
+    <a href="../../../../assets/img/integrate/connectors/add-sequence.jpg"><img src="../../../../assets/img/integrate/connectors/add-sequence.jpg" title="Adding a Sequence" width="800" alt="Adding a Sequence"/></a>
 
 2. Provide the Sequence name as PostRecord. You can go to the source view of the XML configuration file of the API and copy the following configuration. 
     ```xml
@@ -99,14 +114,14 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 
     ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/servicenow.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/servicenow.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -116,7 +131,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

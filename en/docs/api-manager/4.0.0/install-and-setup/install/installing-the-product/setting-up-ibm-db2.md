@@ -1,3 +1,18 @@
+---
+title: "Setting up an IBM DB2"
+description: "Set up an IBM DB2 database for the Micro Integrator Dashboard, including prerequisites and database creation steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-ibm-db2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-ibm-db2.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up an IBM DB2
 
 Follow the steps given below to set up the required IBM databases for your Micro Integrator (MI) Dashboard.

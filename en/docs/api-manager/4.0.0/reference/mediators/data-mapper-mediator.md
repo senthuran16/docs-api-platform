@@ -1,3 +1,18 @@
+---
+title: "Data mapper mediator"
+description: "Reference for the Data Mapper mediator, which converts and transforms message data between XML, JSON, and CSV formats."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/data-mapper-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/data-mapper-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - data-mapper-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Data Mapper Mediator
 
 Data Mapper mediator is a data mapping solution that can be integrated

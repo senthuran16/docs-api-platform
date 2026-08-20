@@ -1,3 +1,18 @@
+---
+title: "Secure endpoint with OAuth 2.0"
+description: "Secure an API endpoint with OAuth 2.0 by configuring an authorization grant type so the client obtains an access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/endpoints/endpoint-security/oauth-2.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/endpoints/endpoint-security/oauth-2.0.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure Endpoint with OAuth 2.0
 
 A secured endpoint is when you have access-protected resources. WSO2 API Manager supports Basic Authentication, Digest Authentication, and OAuth 2.0. They differ on how the credentials are communicated and how access is granted by the backend server.
@@ -24,7 +39,7 @@ Follow the instructions below to use OAuth 2.0 as the endpoint authorization typ
 
 2. Click the Endpoint Security symbol that corresponds to the endpoint that you want to secure with OAuth 2.0.
 
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 
 3. Click on OAuth 2.0 from the drop-down menu.
 

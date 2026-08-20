@@ -1,3 +1,18 @@
+---
+title: "Receiving XML events via WebSocket"
+description: "Configure a Siddhi application that receives XML events over WebSocket transport and logs them to the console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-web-socket-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-web-socket-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving XML Events via WebSocket
 
 ## Purpose:

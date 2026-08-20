@@ -1,3 +1,18 @@
+---
+title: "Receiving custom key value events via SNMP"
+description: "Configure a Siddhi application that receives key-value events from an SNMP agent using custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/snmp-get-request-app/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/snmp-get-request-app.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Custom Key Value Events via SNMP
 
 ## Purpose:

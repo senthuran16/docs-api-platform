@@ -1,3 +1,18 @@
+---
+title: "Mediating HL7 messages"
+description: "Build a proxy service that uses the HL7 transport to exchange HL7 messages with an HL7 server and transform them to and from XML."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/hl7-examples/hl7_proxy_service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/hl7-examples/hl7_proxy_service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - hl7-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mediating HL7 Messages
 
 You can create a proxy service that uses the HL7 transport to connect to an HL7 server. This proxy service will receive HL7-client connections and send them to the HL7 server. It can also receive XML messages over HTTP/HTTPS and transform them into HL7 before sending them to the server, and it will transform the HL7 responses back into XML.

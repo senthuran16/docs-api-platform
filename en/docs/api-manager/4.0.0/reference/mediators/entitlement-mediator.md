@@ -1,3 +1,18 @@
+---
+title: "Entitlement mediator"
+description: "Reference for the Entitlement mediator, which evaluates user actions against an XACML policy using a policy decision point."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/entitlement-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/entitlement-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - entitlement-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Entitlement Mediator
 
 The **Entitlement Mediator** intercepts requests and evaluates the actions performed by a user against an [eXtensible Access Control Markup Language (XACML)](http://en.wikipedia.org/wiki/XACML) policy. This supports XACML 2.0 and 3.0. WSO2 Identity Server can be used as the XACML Policy Decision Point (PDP) where the policy is set, and the Micro Integrator serves as the XACML Policy Enforcement Point (PEP) where the policy is enforced.
@@ -89,7 +104,7 @@ You will now define the sequences you want to run for the entitlement results.
 
 ### Advanced Callback Properties
 
-The abstract EntitlementCallbackHandler class supports the following properties for getting the XACML subject (user name), specifying the action, and setting the service name. The various implementations of this class (UTEntitlementCallbackHandler, X509EntitlementCallbackHandler, etc.) can use some or all of these properties. You implement these properties by adding [Property mediators](property-Mediator.md) before the Entitlement mediator in the sequence.
+The abstract EntitlementCallbackHandler class supports the following properties for getting the XACML subject (user name), specifying the action, and setting the service name. The various implementations of this class (UTEntitlementCallbackHandler, X509EntitlementCallbackHandler, etc.) can use some or all of these properties. You implement these properties by adding [Property mediators](property-mediator.md) before the Entitlement mediator in the sequence.
 
 The default UTEntitlementCallbackHandler looks for a property called
 `         username        ` in the Axis2 message context, which it uses
@@ -130,10 +145,10 @@ the default handlers.
 
 In the following example, the WSO2 Identity Server (with log in URL `https://localhost:9443/services`) is see to authenticate the user invoking the secured backend service.
 
-If the authorization test performed on a request sent to this URL fails, the [Fault mediator](fault-Mediator.md) converts the request into a fault
-message giving `         Unauthorized        ` as the reason for the request to be rejected and `         XACML Authorization Failed        ` as the detail. Then the [Respond mediator](respond-Mediator.md) sends the converted message back to the client.
+If the authorization test performed on a request sent to this URL fails, the [Fault mediator](fault-mediator.md) converts the request into a fault
+message giving `         Unauthorized        ` as the reason for the request to be rejected and `         XACML Authorization Failed        ` as the detail. Then the [Respond mediator](respond-mediator.md) sends the converted message back to the client.
 
-If the user is successfully authenticated, the request is sent using the [Send Mediator](send-Mediator.md) to the endpoint with the
+If the user is successfully authenticated, the request is sent using the [Send Mediator](send-mediator.md) to the endpoint with the
 `http://localhost:8281/services/echo"/` URL.
 
 ```

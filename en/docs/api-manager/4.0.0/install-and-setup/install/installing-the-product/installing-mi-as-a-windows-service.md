@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator as a Windows service"
+description: "Download the Micro Integrator distribution and configure it to run as a Windows service on your system."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-mi-as-a-windows-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-mi-as-a-windows-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Micro Integrator as a Windows Service
 
 Follow the instructions given below to run the Micro Integrator as a Windows service.

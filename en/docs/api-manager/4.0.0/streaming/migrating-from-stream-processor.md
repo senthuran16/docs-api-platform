@@ -1,3 +1,17 @@
+---
+title: "Migrating from WSO2 stream processor"
+description: "Migrate an existing WSO2 Stream Processor setup to WSO2 Streaming Integrator, which performs the same functions plus more."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/migrating-from-stream-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/migrating-from-stream-processor.md
+tags:
+  - api-manager
+  - streaming
+  - migrating-from-stream-processor
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Migrating from WSO2 Stream Processor
 
 WSO2 Streaming Integrator (WSO2 SI) performs all functions that are also performed by [WSO2 Stream Processor](https://docs.wso2.com/display/SP440/Stream+Processor+Documentation) (WSO2 SP). It also has additional features to trigger integration flows in order to take action in response to results derived after analyzing data.

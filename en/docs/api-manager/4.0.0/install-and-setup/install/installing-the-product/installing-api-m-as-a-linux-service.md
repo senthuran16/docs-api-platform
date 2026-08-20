@@ -1,3 +1,18 @@
+---
+title: "Running API Manager as a Linux service"
+description: "Register and run WSO2 API Manager as a Linux service, with separate instructions for Red Hat based distributions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running API Manager as a Linux Service
 
 !!! warning

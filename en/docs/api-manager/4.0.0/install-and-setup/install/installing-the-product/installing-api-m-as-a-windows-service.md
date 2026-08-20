@@ -1,3 +1,18 @@
+---
+title: "Running API Manager as a Windows service"
+description: "Configure and run WSO2 API Manager as a Windows service after checking the product's OS compatibility."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-windows-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-windows-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running API Manager as a Windows Service
 
 !!! note

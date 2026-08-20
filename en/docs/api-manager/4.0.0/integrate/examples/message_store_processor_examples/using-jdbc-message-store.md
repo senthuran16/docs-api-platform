@@ -1,3 +1,18 @@
+---
+title: "Using the JDBC message store"
+description: "Configure a JDBC message store so a proxy service stores messages in a database for a forwarding processor to consume."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-jdbc-message-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-jdbc-message-store.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the JDBC Message Store
 In this sample, the client sends requests to a proxy service. The proxy service stores the messages in a JDBC message store. The back-end service is invoked by a message forwarding processor, which picks the messages stored in the JDBC message store.
 

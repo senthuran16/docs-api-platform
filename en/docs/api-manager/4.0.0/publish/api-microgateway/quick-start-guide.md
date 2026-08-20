@@ -1,3 +1,18 @@
+---
+title: "Quick start guide"
+description: "Set up WSO2 API Microgateway and APICTL, then create, deploy, and invoke your first API project."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/publish/api-microgateway/quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/publish/api-microgateway/quick-start-guide.md
+tags:
+  - api-manager
+  - publish
+  - api-microgateway
+  - quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide
 
 ## Design Your First API

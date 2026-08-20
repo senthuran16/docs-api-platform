@@ -1,3 +1,18 @@
+---
+title: "Google Pub/Sub connector reference"
+description: "Configure Google Pub/Sub connector operations for publishing and consuming messages through Google Cloud Pub/Sub."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-pubsub-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Google Pub/Sub Connector Reference
 
 The following operations allow you to work with the Google Pub/Sub Connector. Click an operation name to see parameter details and samples on how to use it.

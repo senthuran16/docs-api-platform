@@ -1,3 +1,18 @@
+---
+title: "Managing dashboards"
+description: "Organize, view, and delete the Grafana dashboards that WSO2 Streaming Integrator imports for statistics monitoring."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/streaming-integrator/managing-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/streaming-integrator/managing-dashboards.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - managing-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing Dashboards
 
 WSO2 Streaming Integrator uses Grafana to host and view its pre-configured dashboards that are designed to view statistics relating to its performance as well as streaming activities. The pre-configured dashboards are imported to Grafana as JSON files. Once they are imported, you can organize them in folders, view them, and/or delete them.

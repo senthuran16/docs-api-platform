@@ -1,3 +1,18 @@
+---
+title: "Creating an ETL application via SI tooling"
+description: "Build an ETL Siddhi application without writing code by using the ETL Flow wizard in Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/creating-etl-application-via-tooling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/creating-etl-application-via-tooling.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - creating-etl-application-via-tooling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating an ETL Application via SI Tooling
 
 ## Introduction
@@ -262,4 +277,4 @@ If you open the `/Users/foo/productions.csv` file, the `Chocalate, 100.0` record
 !!! info "What's Next?"
     Once you develop an ETL application, you may need to carry out following tasks:<br/><br/>   
     - **Error Handling**: To understand how to handle errors that may occur when carrying out ETL operations, try the [Managing Streaming Data with Errors tutorial](handling-requests-with-errors.md).<br/><br/>     
-    - **Monitoring ETL Statistics**: For instructions to set up pre-configured dashboards provided with WSO2 Streaming Integrator and visualize statistics related to your ETL flows, see [Monitoring ETL Statistics with Grafana]({{base_path}}/admin/viewing-dashboards).
+    - **Monitoring ETL Statistics**: For instructions to set up pre-configured dashboards provided with WSO2 Streaming Integrator and visualize statistics related to your ETL flows, see [Monitoring ETL Statistics with Grafana](../../observe/streaming-integrator/viewing-etl-flows).

@@ -1,3 +1,18 @@
+---
+title: "Endpoint timeouts"
+description: "Configure production and sandbox endpoint timeout durations using the Advanced Endpoint Configurations in the API Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/endpoints/resiliency/endpoint-timeouts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/endpoints/resiliency/endpoint-timeouts.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - resiliency
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Endpoint Timeouts
 
 WSO2 API Manager allows you to control the production and sandbox endpoints using the Advanced Endpoint Configurations.
@@ -22,7 +37,7 @@ Configure the Advanced Endpoint Configurations as follows:
 
      The Advanced Endpoint Configurations page appears.
 
-    <a href="../../../assets/img/learn/advance-config-dialog.png"><img src="../../../assets/img/learn/advance-config-dialog.png" alt="Advanced endpoint configurations" width="60%"/></a>
+    <a href="../../../../assets/img/learn/advance-config-dialog.png"><img src="../../../../assets/img/learn/advance-config-dialog.png" alt="Advanced endpoint configurations" width="60%"/></a>
 
 The following are Advanced Endpoint Configurations that you can configure for both the production and sandbox endpoints.
 
@@ -35,7 +50,7 @@ The following are Advanced Endpoint Configurations that you can configure for bo
                     <p>If you want to configure the suspension of an endpoint, you can use the <b>Endpoint Suspension State</b> section to define the error codes, maximum suspension time, and suspension factors.</p>
                     <ul><li>
                     <p><strong>Error Codes:</strong> The error codes that are associated with suspended endpoints. If the backend endpoint receives the selected error codes, the endpoint will be marked as
-                    suspended. Specify the <a href="../../../troubleshooting/error-handling.md#transport-error-codes">transport error codes</a> to define when the endpoint suspension should be triggered. You can select a single error code or multiple error codes.</p>
+                    suspended. Specify the <a href="../../../../troubleshooting/error-handling.md#transport-error-codes">transport error codes</a> to define when the endpoint suspension should be triggered. You can select a single error code or multiple error codes.</p>
                     </li><li>
                     <p><strong>Initial duration:</strong> The time duration for which the endpoint will be suspended when one or more suspend error codes are received from the endpoint for the first time.</p>
                         <div class="admonition note">

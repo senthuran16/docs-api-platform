@@ -1,3 +1,18 @@
+---
+title: "ISO8583 connector reference"
+description: "Configure the ISO8583 connector's init operation to establish a connection to an ISO8583 test server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/iso8583-connector/iso8583-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/iso8583-connector/iso8583-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # ISO8583 Connector Reference
 
 The following operations allow you to work with the ISO8583 Connector. Click an operation name to see parameter details and samples on how to use it.

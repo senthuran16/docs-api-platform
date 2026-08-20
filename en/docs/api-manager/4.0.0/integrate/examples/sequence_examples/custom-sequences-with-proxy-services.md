@@ -1,3 +1,18 @@
+---
+title: "Reusing sequences"
+description: "Reuse mediation sequences across multiple proxy services to process incoming and outgoing messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/sequence_examples/custom-sequences-with-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/sequence_examples/custom-sequences-with-proxy-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - sequence_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Reusing Sequences
 This example demonstrates how to reuse sequences in the Micro Integrator.
 

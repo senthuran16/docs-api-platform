@@ -1,3 +1,18 @@
+---
+title: "Adding a Non-Blocking send operation"
+description: "Configure a non-blocking Send mediator to transfer large files to a VFS endpoint without blocking the mediation thread."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/api-gateway/message-mediation/adding-a-non-blocking-send-operation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/api-gateway/message-mediation/adding-a-non-blocking-send-operation.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding a Non-Blocking Send Operation
 
 In this example, the Send mediator in a proxy service using the VFS transport is transferring a file to a VFS endpoint. 

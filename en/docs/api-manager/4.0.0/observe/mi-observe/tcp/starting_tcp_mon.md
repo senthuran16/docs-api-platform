@@ -1,3 +1,18 @@
+---
+title: "Starting TCPMon"
+description: "Start the TCPMon utility from the Micro Integrator distribution on Windows, Linux, macOS, or CentOS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/mi-observe/tcp/starting_tcp_mon/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/mi-observe/tcp/starting_tcp_mon.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - tcp
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Starting TCPMon
 
 TCPMon is available in the `         MI_HOME/bin        `

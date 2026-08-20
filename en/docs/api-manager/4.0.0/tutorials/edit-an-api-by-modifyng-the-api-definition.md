@@ -1,3 +1,17 @@
+---
+title: "Edit an API by modifying the API definition"
+description: "Use the integrated Swagger Editor in the API Publisher to directly edit an API's OpenAPI definition and add new resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/edit-an-api-by-modifyng-the-api-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/edit-an-api-by-modifyng-the-api-definition.md
+tags:
+  - api-manager
+  - tutorials
+  - edit-an-api-by-modifyng-the-api-definition
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Edit an API by modifying the API Definition
  
 WSO2 API Manager has an integrated Swagger Editor, which is part of the Swagger project.

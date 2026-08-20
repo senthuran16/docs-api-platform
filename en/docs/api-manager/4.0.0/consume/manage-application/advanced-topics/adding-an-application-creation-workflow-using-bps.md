@@ -1,3 +1,18 @@
+---
+title: "Adding an application creation workflow"
+description: "Attach a custom approval workflow to application creation in WSO2 API Manager using WSO2 Enterprise Integrator's Business Process Server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow-using-bps.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding an Application Creation Workflow
 
 This section explains as to how you can attach a custom workflow to the application creation operation in WSO2 API Manager (WSO2 API-M).
@@ -131,7 +146,7 @@ First, enable the application creation workflow.
 
 2. Click **Main** --> **Resources** --> **Browse**.
 
-    <a href="../../../assets/img/learn/add-application-wf-browse.png"><img src="../../../assets/img/learn/add-application-wf-browse.png" width="250" height="100"/></a>
+    <a href="../../../../assets/img/learn/add-application-wf-browse.png"><img src="../../../../assets/img/learn/add-application-wf-browse.png" width="250" height="100"/></a>
     
 2.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, disable the Simple Workflow Executor, and enable **WS Workflow Executor**. In addition, specify the service endpoint where the workflow engine is hosted and the credentials required to access the said service via basic authentication (i.e., username/password based authentication).
 

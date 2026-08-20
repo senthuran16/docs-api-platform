@@ -1,3 +1,18 @@
+---
+title: "Connecting to apache artemis"
+description: "Configure WSO2 Micro Integrator to send and receive messages by connecting its JMS transport to an Apache Artemis broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-apache-artemis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-apache-artemis.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to Apache Artemis
 
 This section describes how to configure WSO2 Micro Integrator to connect with Apache Artemis (version 2.6.1).

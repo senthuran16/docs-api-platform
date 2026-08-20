@@ -1,3 +1,18 @@
+---
+title: "Changing to Oracle RAC"
+description: "Replace the default H2 database with Oracle RAC for WSO2 API Manager's user management and registry data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-oracle-rac/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-oracle-rac.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing to Oracle RAC
 
 By default, WSO2 API Manager uses the embedded H2 database as the database for storing user management and registry data. Given below are the instructions you need to follow in order to use Oracle RAC for this purpose.

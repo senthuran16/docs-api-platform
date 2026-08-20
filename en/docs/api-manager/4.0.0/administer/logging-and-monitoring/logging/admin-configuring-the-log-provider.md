@@ -1,3 +1,18 @@
+---
+title: "Configuring the log provider"
+description: "Implement and configure the LogProvider and LogFileProvider interfaces to view and download logs through the management console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/administer/logging-and-monitoring/logging/admin-configuring-the-log-provider/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/administer/logging-and-monitoring/logging/admin-configuring-the-log-provider.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring the Log Provider
 
 Logs of a system can be stored in many ways. For example, they can be stored in a file system, an SQL server such as MySQL, a no-sql server like Cassandra, etc. According to the default configurations in a Carbon product, the logs are stored in the `<PRODUCT_HOME>/repository/logs/` directory as `.log` files.
@@ -7,9 +22,9 @@ To [view and download the logs](https://docs.wso2.com/display/ADMIN44x/View+and+
 !!! Warning
     Note that WSO2 API Manager 3.0.0, 3.1.0, 3.2.0, and 4.0.0 are affected by the **Log4j2 zero-day** vulnerability, which has been reported to WSO2 on 10th December 2021. You can mitigate this vulnerability in your product by following our [instructions and guidelines](https://docs.wso2.com/pages/viewpage.action?pageId=180948677).
 
--   [Implementing the LogProvider interface](#ConfiguringtheLogProvider-ImplementingtheLogProviderinterface)
--   [Implementing the LogFileProvider interface](#ConfiguringtheLogProvider-ImplementingtheLogFileProviderinterface)
--   [Configuring Carbon to plug the log provider](#ConfiguringtheLogProvider-ConfiguringCarbontoplugthelogprovider)
+-   [Implementing the LogProvider interface](#implementing-the-logprovider-interface)
+-   [Implementing the LogFileProvider interface](#implementing-the-logfileprovider-interface)
+-   [Configuring Carbon to plug the log provider](#configuring-carbon-to-plug-the-log-provider)
 
 ### Implementing the LogProvider interface
 
@@ -17,7 +32,7 @@ This `org.wso2.carbon.logging.service.provider.api.LogProvider` interface is use
 
 The `LogProvider` interface has the following methods:
 
--`init(LoggingConfig loggingConfig)` - Initialize the log provider by reading the properties defined in the [logging configuration](#ConfiguringtheLogProvider-ConfigureLogProvidersinCarbonProducts) file. This will be called immediately after creating a new instance of LogProvider.
+-`init(LoggingConfig loggingConfig)` - Initialize the log provider by reading the properties defined in the [logging configuration](#configuring-carbon-to-plug-the-log-provider) file. This will be called immediately after creating a new instance of LogProvider.
 -   getApplicationNames(String tenantDomain, String serverKey) - Return list of all application names deployed under provided tenant domain and server key.
 -   getSystemLogs() - Return a list of system LogEvents.
 -   getAllLogs(String tenantDomain, String serverKey) - Return list of all the logs available under given domain and server key
@@ -32,7 +47,7 @@ The `org.wso2.carbon.logging.service.provider.api.LogFileProvider` interface is 
 
 The `LogFileProvider` interface has the following methods:
 
--   init(LoggingConfig loggingConfig)-  Initialize the file log provider by reading the properties defined in the [logging configuration](#ConfiguringtheLogProvider-ConfigureLogProvidersinCarbonproducts) file. This will be called immediately after creating a new instance of LogFileProvider.
+-   init(LoggingConfig loggingConfig)-  Initialize the file log provider by reading the properties defined in the [logging configuration](#configuring-carbon-to-plug-the-log-provider) file. This will be called immediately after creating a new instance of LogFileProvider.
 -   getLogFileInfoList(String tenantDomain, String serviceName) - Return information about the log files, which is available under given tenant domain and serviceName. For example, info about logs: log name, log date, log size.
 -   downloadLogFile(String logFile, String tenantDomain, String serviceName) - Download the file.
 

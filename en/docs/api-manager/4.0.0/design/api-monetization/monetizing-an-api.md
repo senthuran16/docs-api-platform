@@ -1,3 +1,18 @@
+---
+title: "Monetizing an API"
+description: "Configure the Stripe billing engine and WSO2 API Manager to monetize an API, collect payments, and publish usage data for metered billing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-monetization/monetizing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-monetization/monetizing-an-api.md
+tags:
+  - api-manager
+  - design
+  - api-monetization
+  - monetizing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monetizing an API
 
 API Monetization allows organizations to expand their business and generate higher revenue by exposing their services and data via APIs. API Publishers can publish their APIs with competitive business plans to the Developer Portal. Thereafter, API subscribers (e.g., Application Developers) can discover, subscribe, and invoke these monetized APIs, and pay for their API usage based on dynamic or fixed business plans.
@@ -646,7 +661,7 @@ Let's use the
      <head>
      </head>
      <body>
-     <img src="../../assets/img/learn/subscription-commercial-tier.png" alt="Subscription to a paid business plan" title="Paid business plan" width="400" />
+     <img src="../../../assets/img/learn/subscription-commercial-tier.png" alt="Subscription to a paid business plan" title="Paid business plan" width="400" />
      </body>
      </html>
 
@@ -798,7 +813,7 @@ The Application Developers who are subscribed to a dynamic business plan can sig
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
     </body>
      </html>
 
@@ -824,7 +839,7 @@ The API Publisher can access the billing information related to each of the subs
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
     </body>
      </html>
 

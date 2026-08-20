@@ -1,3 +1,18 @@
+---
+title: "Running the API-M profiles"
+description: "Start WSO2 API Manager on the Gateway, Control Plane, or Traffic Manager profile to run only the components needed for that node."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/product-profiles/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/product-profiles.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the API-M Profiles
 
 When the API-M server is started, all components, features, and related artifacts bundled with it are started. Multi-profile support allows you to run the product on a selected profile so that only the features specific to that profile along with common features startup with the server.

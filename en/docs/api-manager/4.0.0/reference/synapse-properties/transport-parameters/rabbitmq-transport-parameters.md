@@ -1,3 +1,18 @@
+---
+title: "RabbitMQ parameters"
+description: "Reference for the RabbitMQ transport parameters you can configure in a proxy service artifact for a RabbitMQ connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # RabbitMQ Parameters
 
 When you implement an integration use case that requires a RabbitMQ connection, you can use the following RabbitMQ parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.
@@ -7,7 +22,7 @@ When you implement an integration use case that requires a RabbitMQ connection, 
 
 ## Service-Level Parameters (Receiving Messages)
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.0.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) for instructions.
 
@@ -245,7 +260,7 @@ In your integration solution, the following RabbitMQ send parameters can be spec
 
     Double-click the **Address Endpoint** artifact to open the **Properties** tab and enter the address URL with RabbitMQ parameters.
 
-    <img src="../../../assets/img/integrate/create_artifacts/new_endpoint/address-endpoint-url.png" width="800">
+    <img src="../../../../assets/img/integrate/create_artifacts/new_endpoint/address-endpoint-url.png" width="800">
 
 -   Source view of an address endpoint:
 

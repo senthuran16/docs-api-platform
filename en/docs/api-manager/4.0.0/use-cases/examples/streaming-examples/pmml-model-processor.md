@@ -1,3 +1,18 @@
+---
+title: "Making predictions via PMML model"
+description: "Configure a Siddhi application that uses a pretrained PMML model to predict raw materials needed from production events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/pmml-model-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/pmml-model-processor.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Making Predictions via PMML Model
 
 ## Purpose:

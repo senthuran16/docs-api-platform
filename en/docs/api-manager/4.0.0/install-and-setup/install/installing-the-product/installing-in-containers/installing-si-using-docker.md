@@ -1,3 +1,18 @@
+---
+title: "Installing streaming integrator using Docker"
+description: "Install and run WSO2 Streaming Integrator using Docker after meeting the required system requirements."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-in-containers/installing-si-using-docker/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-in-containers/installing-si-using-docker.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing Streaming Integrator Using Docker
 
 !!!tip "Before you begin:"

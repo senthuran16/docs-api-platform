@@ -1,5 +1,15 @@
 ---
-title: Role-based Access Control for API Analytics - WSO2 API Manager 4.0.0
+title: "Role-based access control for API Analytics"
+description: "Manage role-based access control for API Analytics by inviting users to your organization and assigning Admin or Developer roles."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/role-based-access-control/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/role-based-access-control.md
+tags:
+  - api-manager
+  - api-analytics
+  - role-based-access-control
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Role-based Access Control for API Analytics
@@ -32,7 +42,7 @@ Enterprises and companies who want to use Choreo Insights collaboratively can ut
    
 5. Click **Invite**.
 
-     <a href="../assets/img/observe/invite-dialogue-box.png"><img src="../assets/img/observe/invite-dialogue-box.png" title="Invite dialog box" width="380"/></a>
+     <a href="../../assets/img/observe/invite-dialogue-box.png"><img src="../../assets/img/observe/invite-dialogue-box.png" title="Invite dialog box" width="380"/></a>
 
      After the invitation is successfully submitted, the invitee will receive an email. After the invitee clicks on the activation link, he/she will be added to the respective organization.
 

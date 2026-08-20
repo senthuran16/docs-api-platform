@@ -1,9 +1,24 @@
+---
+title: "Load balanced endpoints"
+description: "Enable load balanced endpoints in the Publisher so API traffic is distributed across backends using round-robin routing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/load-balanced-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/load-balanced-endpoints.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Load Balanced Endpoints
 
 When you use Load Balanced API Endpoints, the traffic that comes to the resource is routed to the mentioned endpoint addresses based on the round-robin algorithm. You can enable load balancing capabilities when working with Choreo Connect (CC) in the following two modes.
 
-- [Load Balanced Endpoints With WSO2 API Manager](load-balanced-endpoints.md#load-balanced-endpoints-with-apim)
-- [Load Balanced Endpoints With APICTL (WSO2 API Controller)](load-balanced-endpoints.md#load-balanced-endpoints-with-apictl)
+- [Load Balanced Endpoints With WSO2 API Manager](load-balanced-endpoints.md#choreo-connect-with-wso2-api-manager-as-a-control-plane)
+- [Load Balanced Endpoints With APICTL (WSO2 API Controller)](load-balanced-endpoints.md#choreo-connect-as-a-standalone-gateway)
 
 ## Choreo Connect with WSO2 API Manager as a Control Plane
 
@@ -115,4 +130,4 @@ paths:
 
 ### Step 2 - Deploy the API Project And Invoke With Load Balanced Endpoints
 
-After defining API in the OpenAPI definition file, you can deploy it and invoke as explained [here]({{base_path}}/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-api-controller/#step-1-download-and-setup-choreo-connect-distribution-zip-and-apictl-command-line-tool).
+After defining API in the OpenAPI definition file, you can deploy it and invoke as explained [here](../getting-started/deploy/cc-as-a-standalone-gateway-on-docker#step-1-download-and-setup-choreo-connect-distribution-zip-and-apictl-command-line-tool).

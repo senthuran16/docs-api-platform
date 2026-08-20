@@ -1,3 +1,18 @@
+---
+title: "Using Kubernetes secrets in synapse configurations"
+description: "Explains how to generate Kubernetes secrets and inject them into pods for use in synapse configurations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/creating-artifacts/using_k8s_secrets/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/creating-artifacts/using_k8s_secrets.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Kubernetes Secrets in Synapse Configurations
 
 WSO2 Micro Integrator comes with a built-in secret repository as a part of its secure vault implementation by default. In addition to this, the Micro Integrator also provides built-in support for Docker secrets and Kubernetes secrets for your containerized deployments.
@@ -77,6 +92,6 @@ Once the secrets are added to the environment, you need to enable <b>secure vaul
 1. Open your Integration Project in WSO2 Integration Studio, which contains all the integration artifacts and the Kubernetes Exporter.
 2. Open the `pom.xml` of the Kubernetes Exporter module and select the <b>Enable Cipher Tool</b> check box as show below.
 
-    <img src="../../../assets/img/integrate/k8s_deployment/enable-cipher-tool-in-k8s.png">
+    <img src="../../../../assets/img/integrate/k8s_deployment/enable-cipher-tool-in-k8s.png">
 
 3.  When you build the Docker image from your Kubernetes exporter, the secrets will get enabled in the environment.

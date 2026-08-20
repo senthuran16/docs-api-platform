@@ -1,3 +1,18 @@
+---
+title: "Drop mediator"
+description: "Reference for the Drop mediator, which stops processing of the current message so it is not passed to later mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/drop-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/drop-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - drop-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Drop Mediator
 
 The **Drop Mediator** stops the processing of the current message. This mediator is useful for ensuring that the message is sent only once and

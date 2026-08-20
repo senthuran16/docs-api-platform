@@ -1,3 +1,18 @@
+---
+title: "Test a REST API"
+description: "Use the Publisher's integrated test console to try out an API's resources and verify its functionality before publishing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/test-a-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/test-a-rest-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Test a REST API
 
 Testing APIs refers to the process of trying out the APIs in the Publisher itself to make sure that the APIs meet the required functionalities and behavior.
@@ -9,7 +24,8 @@ Follow the instructions below to use the Publisher test console to test an API:
 !!! note
     Create the `PizzaShack` REST API or an API of your choice before following the instructions below. For more information, see [Create a REST API.](create-a-rest-api.md).
 
-1.  {!includes/sign-in-publisher.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/sign-in-publisher.md"
 
      The list of APIs that are available in the Publisher appears.
 
@@ -24,7 +40,7 @@ Follow the instructions below to use the Publisher test console to test an API:
      <ul> The API can be tested in any lifecycle state, and can be used in any state except for the "retired" state. Even in the "block" state you can still try it out, but you will get a 503 (service unavailable) response.</ul></div>
      </html>
 
-     <a href="../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png"><img src="../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png" width="20%" alt="Try out menu option in the left panel"></a>
+     <a href="../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png"><img src="../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png" width="20%" alt="Try out menu option in the left panel"></a>
 
 4.  You can generate the internal key by clicking on the **Generate Key** button to invoke and test the PizzaShack API.
 
@@ -34,7 +50,7 @@ Follow the instructions below to use the Publisher test console to test an API:
           <ul>If the API Publishers have a token or key, then they can paste it in the UI and invoke the API using that key.</ul>
           </div>
        </html>
-      <a href="../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png"><img src="../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png" width="80%" alt="Generate key"></a>
+      <a href="../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png"><img src="../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png" width="80%" alt="Generate key"></a>
 
 5.  Expand the **GET**  method, click **Try it out**, and click **Execute**.
 

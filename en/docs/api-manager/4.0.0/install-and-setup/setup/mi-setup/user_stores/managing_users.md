@@ -1,3 +1,18 @@
+---
+title: "Managing users"
+description: "Learn about user credentials and authentication and authorization options for managing users in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/user_stores/managing_users/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/user_stores/managing_users.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Managing Users
 
 See the topics given below to understand **user management** in the Micro Integrator.
@@ -49,8 +64,8 @@ See the [Micro Integrator Dashboard documentation](../../../../observe/mi-observ
 
 Select <b>Users</b> in the left-hand navigator to view the list of existing users.
 
-<img src="../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-1.png">
+<img src="../../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-1.png">
 
 Click <b>Add User</b> to create new users. Note that you can assign admin privileges during user creation.
 
-<img src="../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-2.png">
+<img src="../../../../../assets/img/integrate/monitoring-dashboard/dashboard-users-2.png">

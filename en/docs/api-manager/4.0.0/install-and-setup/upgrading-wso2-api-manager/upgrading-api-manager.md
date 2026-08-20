@@ -1,3 +1,18 @@
+---
+title: "Upgrading WSO2 API Manager"
+description: "Explains why and how to upgrade WSO2 API Manager, including support ticket options for migration assistance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/upgrading-wso2-api-manager/upgrading-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/upgrading-wso2-api-manager/upgrading-api-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - upgrading-wso2-api-manager
+  - upgrading-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Upgrading WSO2 API Manager
 
 This document walks you through the process of upgrading WSO2 API Manager. 

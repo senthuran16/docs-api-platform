@@ -1,3 +1,18 @@
+---
+title: "Monitoring API-Level logs"
+description: "Explains how to configure log4j2 to create a dedicated per-API log file for monitoring a REST API in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/monitoring-api-level-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/monitoring-api-level-logs.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - monitoring-api-level-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring API-Level Logs
 
 The advantage of having per-API log files is that it is very easy to analyze/monitor what went wrong in a particular REST API defined in WSO2 Micro Integrator by looking at the log files. The API log is an additional log file, which will contain a copy of the logs to a particular REST API.

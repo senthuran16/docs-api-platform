@@ -1,3 +1,18 @@
+---
+title: "Tracing and handling errors"
+description: "Explains how to enable the endpoint trace attribute to log detailed trace information for messages sent to an endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/endpoint-trace-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/endpoint-trace-logs.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - endpoint-trace-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Tracing and handling errors
 
 Endpoints have a `trace` attribute, which turns on detailed trace information for messages being sent to the endpoint.

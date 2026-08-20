@@ -1,6 +1,20 @@
+---
+title: "Vendor specific extensions"
+description: "Reference catalog of WSO2 API Manager's vendor-specific OpenAPI extensions, such as x-auth-type and x-throttling-tier, with examples."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/vendor-extensions-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/vendor-extensions-catalog.md
+tags:
+  - api-manager
+  - reference
+  - vendor-extensions-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Vendor Specific Extensions
  
-WSO2 API Manager utilizes the vendor extensions support in [Open API specification](#https://swagger.io/docs/specification/openapi-extensions/), to store operations such as throttling, against each API.
+WSO2 API Manager utilizes the vendor extensions support in [Open API specification](https://swagger.io/docs/specification/openapi-extensions/), to store operations such as throttling, against each API.
 As per the current implementation, following extensions are supported by API Manager:
  
 - [x-auth-type](#x-auth-type)
@@ -10,7 +24,7 @@ As per the current implementation, following extensions are supported by API Man
 - [x-wso2-production-endpoints](#x-wso2-production-endpoints)
 - [x-wso2-sandbox-endpoints](#x-wso2-sandbox-endpoints)
 - [x-wso2-endpoints](#x-wso2-endpoints)
-- [x-wso2-basePath](#x-wso2-basePath)
+- [x-wso2-basePath](#x-wso2-basepath)
 - [x-wso2-transports](#x-wso2-transports)
 - [x-scopes-bindings](#x-scopes-bindings)
 - [x-scopes-mappings](#x-scopes-mappings)

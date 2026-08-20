@@ -1,3 +1,18 @@
+---
+title: "Message store and message processor for guaranteed delivery"
+description: "Implement a store-and-forward messaging scenario for guaranteed delivery using a RabbitMQ message store and processor."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/store-forward-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/store-forward-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Message store and message processor for guaranteed delivery
 
 This sample demonstrates how a <b>store and forward</b> messaging scenario can be implemented using the RabbitMQ
@@ -7,7 +22,7 @@ This messaging pattern ensures guaranteed message delivery. That is, because req
 
 As shown below, when a client sends a message, the <b>message store</b> artifact in the Micro Integrator will route the messages to the RabbitMQ broker. The <b>message processor</b> artifact in the Micro Integrator will then process the message from the broker and send it to the back-end service.
 
-<img src="../../../assets/img/integrate/rabbitmq/rabbitmq-store-and-forward.png"> 
+<img src="../../../../assets/img/integrate/rabbitmq/rabbitmq-store-and-forward.png"> 
 
 ## Synapse configurations
 

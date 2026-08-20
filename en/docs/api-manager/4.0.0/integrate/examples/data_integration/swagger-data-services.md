@@ -1,3 +1,18 @@
+---
+title: "Using Swagger documents of RESTful data services"
+description: "Demonstrates how to access and publish a custom Swagger definition for a RESTful data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/swagger-data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/swagger-data-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Swagger Documents of RESTful Data Services
 
 When RESTful resources are added to the data service, the Micro Integrator generates a corresponding swagger 3.0 (OpenApi) definition automatically. You can access this Swagger document by suffixing the service URL with `?swagger.json` or `?swagger.yaml` as shown below.

@@ -1,3 +1,18 @@
+---
+title: "Publishing Key-value events via JMS"
+description: "Configure a Siddhi application to send sweet production events over JMS transport in XML format."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/publish-jms-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/publish-jms-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing Key-value events via JMS
 
 ## Purpose:

@@ -1,3 +1,18 @@
+---
+title: "Working with employee schedules"
+description: "Retrieve an employee's configured work schedules for each day within a defined period using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-time-management/schedules/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-time-management/schedules.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Schedules
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve schedules of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-schedules"></a>
 #### Retrieving Employee Schedules
 We can use GET Schedules operation with required parameters to find the schedules of employees.
 

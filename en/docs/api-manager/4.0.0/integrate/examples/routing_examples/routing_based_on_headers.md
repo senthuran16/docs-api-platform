@@ -1,3 +1,18 @@
+---
+title: "Routing based on message headers"
+description: "Route a request message to different mediation sequences based on the value of a message header."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/routing_examples/routing_based_on_headers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/routing_examples/routing_based_on_headers.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - routing_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Routing Based on Message Headers
 
 This example scenario uses an inventory of stocks as the back-end service. A proxy service is configured in the Micro Integrator to use separate mediation sequences for processing request messages with different **message headers**. 

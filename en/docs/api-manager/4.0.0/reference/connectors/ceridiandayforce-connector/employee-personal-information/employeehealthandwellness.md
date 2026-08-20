@@ -1,3 +1,18 @@
+---
+title: "Working with employee health and wellness"
+description: "Retrieve an employee's tobacco use status using the GET Employee Health and Wellness operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeehealthandwellness/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeehealthandwellness.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Health and Wellness
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve tobacco use status of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-health-and-wellness"></a>
 #### Retrieving Employee Health and Wellness
 We can use GET Employee Health and Wellness operation with required parameters to search and find the required employee's tobacco use status.
 

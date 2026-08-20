@@ -1,3 +1,18 @@
+---
+title: "Publishing aggregated events to the amazon AWS S3 bucket"
+description: "Example Siddhi application that aggregates stock quote events and publishes them to an Amazon AWS S3 bucket using the S3 sink extension."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/amazon-s3-sink-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/amazon-s3-sink-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing Aggregated Events to the Amazon AWS S3 Bucket
 
 ## Purpose:

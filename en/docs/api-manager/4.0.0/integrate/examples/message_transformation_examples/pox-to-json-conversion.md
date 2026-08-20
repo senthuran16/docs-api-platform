@@ -1,16 +1,31 @@
+---
+title: "Converting POX messages to JSON"
+description: "Convert POX messages to JSON using the messageType property and other transformation methods in a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_transformation_examples/pox-to-json-conversion/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_transformation_examples/pox-to-json-conversion.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_transformation_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Converting POX Messages to JSON 
 
 The following examples explain different methods of converting POX messages to JSON using the Micro Integrator.
 
 ## Using the messageType property
 
-Let's convert a POX message to JSON using the [messageType property](../../../reference/mediators/property-reference/generic-Properties.md#messagetype).
+Let's convert a POX message to JSON using the [messageType property](../../../reference/mediators/property-reference/generic-properties.md#messagetype).
 
 ### Synapse configuration
 Following is a sample proxy service configuration that we can use to implement this scenario. 
 
 !!! Tip
-    Note that after the [messageType property](../../../reference/mediators/property-reference/generic-Properties.md#messagetype) completes the message convertion, we are using the [Respond mediator](../../../reference/mediators/respond-mediator.md) to return the converted message back to the JSON client.
+    Note that after the [messageType property](../../../reference/mediators/property-reference/generic-properties.md#messagetype) completes the message convertion, we are using the [Respond mediator](../../../reference/mediators/respond-mediator.md) to return the converted message back to the JSON client.
 
 See the instructions on how to [build and run](#build-and-run-example-1) this example.
 

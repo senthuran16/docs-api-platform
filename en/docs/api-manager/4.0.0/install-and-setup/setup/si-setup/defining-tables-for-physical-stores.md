@@ -1,3 +1,18 @@
+---
+title: "Defining tables for physical stores"
+description: "Define data tables backed by physical databases using the @store annotation in Streaming Integrator Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/defining-tables-for-physical-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/defining-tables-for-physical-stores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Defining Tables for Physical Stores
 
 This section explains how to define data tables to store data handled by
@@ -113,10 +128,10 @@ should be completed:
 - The relevant JDBC Driver must be downloaded and the jar must be put in the `<SI_HOME>/lib` directory.
 
 
-- [RDBMS](#DefiningTablesforPhysicalStores-RDBMS)
-- [Apache HBase](#DefiningTablesforPhysicalStores-ApacheHBase)
-- [Apache Solr](#DefiningTablesforPhysicalStores-ApacheSolr)
-- [MongoDB](#DefiningTablesforPhysicalStores-MongoDB)
+- [RDBMS](#rdbms)
+- [Apache HBase](#apache-hbase)
+- [Apache Solr](#apache-solr)
+- [MongoDB](#mongodb)
 
   
 

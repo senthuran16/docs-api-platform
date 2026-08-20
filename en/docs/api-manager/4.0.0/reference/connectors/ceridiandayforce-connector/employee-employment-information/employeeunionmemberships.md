@@ -1,3 +1,18 @@
+---
+title: "Working with employee union memberships"
+description: "Retrieve an employee's union membership information using the GET Employee Union Memberships operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeunionmemberships/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeunionmemberships.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Union Memberships
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)

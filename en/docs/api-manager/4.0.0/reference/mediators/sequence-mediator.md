@@ -1,3 +1,18 @@
+---
+title: "Sequence mediator"
+description: "Reference for the Sequence mediator, which invokes an already defined named sequence of mediators within a message flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/sequence-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/sequence-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - sequence-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Sequence Mediator
 
 The **Sequence Mediator** refers to an already defined sequence element,
@@ -64,7 +79,7 @@ The parameters available to configure the Sequence mediator are as follows.
 
 ## Examples
 
-In this example, the following sequence named `         StoreSend        ` is saved in the Configuration registry. It includes a [Store Mediator](store-Mediator.md) to store the request in a message store named `         JMSMS        ` and a [Send Mediator](send-Mediator.md) to send it to an endpoint afterwards.
+In this example, the following sequence named `         StoreSend        ` is saved in the Configuration registry. It includes a [Store Mediator](store-mediator.md) to store the request in a message store named `         JMSMS        ` and a [Send Mediator](send-mediator.md) to send it to an endpoint afterwards.
 
 ``` xml
 <sequence xmlns="http://ws.apache.org/ns/synapse" name="conf:/StoreSend">
@@ -77,7 +92,7 @@ In this example, the following sequence named `         StoreSend        ` is sa
 </sequence>
 ```
 
-The Sequence mediator configuration can be as follows to invoke the `StoreSend` sequence after using a [PayloadFactory mediator](payloadFactory-Mediator.md) to transform the contents of the request.
+The Sequence mediator configuration can be as follows to invoke the `StoreSend` sequence after using a [PayloadFactory mediator](payloadfactory-mediator.md) to transform the contents of the request.
 
 ``` 
 <inSequence xmlns="http://ws.apache.org/ns/synapse">

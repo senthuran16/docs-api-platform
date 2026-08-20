@@ -1,3 +1,18 @@
+---
+title: "Using the HL7 inbound endpoint (with auto ack)"
+description: "Configure the HL7 inbound endpoint with automatic acknowledgment using the Minimal Lower Layer Protocol."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-hl7-protocol-auto-ack/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-hl7-protocol-auto-ack.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the HL7 Inbound Endpoint (with Auto Ack)
 The HL7 inbound endpoint implementation is fully asynchronous and is based on the Minimal Lower Layer Protocol(MLLP) implemented on top of event driven I/O.
 

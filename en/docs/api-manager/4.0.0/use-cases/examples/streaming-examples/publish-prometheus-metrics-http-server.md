@@ -1,3 +1,18 @@
+---
+title: "Exposing consumed events as Prometheus metrics via HTTP"
+description: "Configure a Siddhi application that uses siddhi-io-prometheus to publish consumed events as Prometheus metrics over HTTP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/publish-prometheus-metrics-http-server/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/publish-prometheus-metrics-http-server.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing Consumed Events to Prometheus Metrics and Exposing then via HTTP
 
 ## Purpose:

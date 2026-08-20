@@ -1,10 +1,25 @@
+---
+title: "Publish unacked messages to dead letter exchange"
+description: "Route undelivered messages to the RabbitMQ Dead Letter Exchange to guarantee message delivery from a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publish unacked messages to Dead Letter Exchange
 
 This sample demonstrates how WSO2 Micro Integrator can ensure guaranteed delivery of messages by using the <b>Dead Letter Exchange (DLX)</b> of RabbitMQ.
 
 As shown below, a proxy service in the Micro Integrator consumes messages from the RabbitMQ broker and sends it to the endpoint. If the message delivery fails, the Micro Integrator will route the message to the dead letter exchange of RabbitMQ.
 
-<img src="../../../assets/img/integrate/rabbitmq/rabbitmq-dead-letter-exchange.png">
+<img src="../../../../assets/img/integrate/rabbitmq/rabbitmq-dead-letter-exchange.png">
 
 ## Synapse configurations
 

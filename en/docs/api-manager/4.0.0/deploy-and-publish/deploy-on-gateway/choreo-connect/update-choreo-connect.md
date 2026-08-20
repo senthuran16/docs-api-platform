@@ -1,3 +1,18 @@
+---
+title: "Update Choreo connect"
+description: "Use WSO2's private Docker registry to obtain updated Choreo Connect component images that include bug fixes and improvements with a subscription."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/update-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/update-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Update Choreo Connect
 
 Choreo Connect components are available as public Docker images in [WSO2](https://hub.docker.com/u/wso2) organization in the Docker hub and you will be able to find images corresponding to [Choreo Connect releases](https://github.com/wso2/product-microgateway/releases) from the linked repository.
@@ -19,7 +34,7 @@ The Docker images related to Choreo Connect updates reside in [WSO2 private Dock
     <tbody>
         <tr>
             <td>
-                <a href="getting-started/choreo-connect-overview.md#router">Router</a>
+                <a href="../getting-started/choreo-connect-overview.md#router">Router</a>
             </td>
             <td>
                 <code>choreo-connect-router:{WSO2_PRODUCT_VERSION}.{UPDATE_LEVEL}</code>
@@ -30,7 +45,7 @@ The Docker images related to Choreo Connect updates reside in [WSO2 private Dock
         </tr>
         <tr>
             <td>
-                <a href="getting-started/choreo-connect-overview.md#enforcer">Enforcer</a>
+                <a href="../getting-started/choreo-connect-overview.md#enforcer">Enforcer</a>
             </td>
             <td>
                 <code>choreo-connect-enforcer:{WSO2_PRODUCT_VERSION}.{UPDATE_LEVEL}</code>
@@ -41,7 +56,7 @@ The Docker images related to Choreo Connect updates reside in [WSO2 private Dock
         </tr>
         <tr>
             <td>
-                <a href="getting-started/choreo-connect-overview.md#adapter">Adapter</a>
+                <a href="../getting-started/choreo-connect-overview.md#adapter">Adapter</a>
             </td>
             <td>
                 <code>choreo-connect-enforcer:{WSO2_PRODUCT_VERSION}.{UPDATE_LEVEL}</code>

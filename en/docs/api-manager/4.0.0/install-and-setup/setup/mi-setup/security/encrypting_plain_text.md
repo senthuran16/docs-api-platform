@@ -1,3 +1,18 @@
+---
+title: "Encrypting secrets using WSO2 secure Vault"
+description: "Encrypt plain-text secrets in Micro Integrator configurations using the built-in Cipher Tool and secure vault implementation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/encrypting_plain_text/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/encrypting_plain_text.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Encrypting Secrets using WSO2 Secure Vault
 
 WSO2 Micro Integrator can use secrets with static origins as well as dynamic origins in configurations. This applies to secrets in server-level configurations as well as configurations within integration solutions (synapse configurations).
@@ -74,7 +89,7 @@ In a <b>Kubernetes environment</b>, you don't need to manually run the Cipher to
 1. Open your Integration Project in WSO2 Integration Studio, which contains all the integration artifacts and the Kubernetes Exporter.
 2. Open the `pom.xml` of the Kubernetes Exporter module and select the <b>Enable Cipher Tool</b> check box as show below.
 
-    <img src="../../../../assets/img/integrate/k8s_deployment/enable-cipher-tool-in-k8s.png">
+    <img src="../../../../../assets/img/integrate/k8s_deployment/enable-cipher-tool-in-k8s.png">
 
 3.  When you build the Docker image from your Kubernetes exporter, the secrets will get encrypted and enabled in the environment.
 

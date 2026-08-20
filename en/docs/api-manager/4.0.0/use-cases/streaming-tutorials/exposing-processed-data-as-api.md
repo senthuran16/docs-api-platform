@@ -1,3 +1,18 @@
+---
+title: "Siddhi query API"
+description: "Use the Siddhi query API to perform essential operations such as creating, testing, and querying Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/exposing-processed-data-as-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/exposing-processed-data-as-api.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - exposing-processed-data-as-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Siddhi Query API
 
 ## Introduction
@@ -262,9 +277,9 @@ In the previous section, you took a snapshot of the `CountProductions` Siddhi ap
     ```
    Note that the current productions count is `920`.
 
-3. Now you can invoke the Siddhi Query API to restore the snapshot that you obtained in step 10 of the [Taking a snapshot of a Siddhi Application](#Taking-a-snapshot-of-a-Siddhi-Application) section of this tutorial.
+3. Now you can invoke the Siddhi Query API to restore the snapshot that you obtained in step 10 of the [Taking a snapshot of a Siddhi Application](#step-1-take-a-snapshot-of-a-siddhi-application) section of this tutorial.
 
-    In this example, the revision number obtained is `1566293390654__CountProductions` (see step 10 in [Taking a snapshot of a Siddhi Application](#Taking-a-snapshot-of-a-Siddhi-Application) section.). When restoring the state, use the exact revision number that you obtained.
+    In this example, the revision number obtained is `1566293390654__CountProductions` (see step 10 in [Taking a snapshot of a Siddhi Application](#step-1-take-a-snapshot-of-a-siddhi-application) section.). When restoring the state, use the exact revision number that you obtained.
 
     Execute following command on the command line:
     ```

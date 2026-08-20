@@ -1,3 +1,18 @@
+---
+title: "Detecting repeatedly redelivered messages"
+description: "Detect and reroute repeatedly redelivered JMS messages using the JMSXDeliveryCount property in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/detecting-repeatedly-redelivered-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/detecting-repeatedly-redelivered-messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Detecting Repeatedly Redelivered Messages
 
 In JMS 2.0, it is mandatory for JMS providers to set the `JMSXDeliveryCount` property, which allows an application that receive a message to determine how many times the message is redelivered.

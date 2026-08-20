@@ -1,3 +1,18 @@
+---
+title: "Task scheduling using a simple trigger"
+description: "Schedule a task with a simple trigger that periodically injects a message directly to a backend endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/scheduled-tasks/task-scheduling-simple-trigger/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/scheduled-tasks/task-scheduling-simple-trigger.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - scheduled-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Task Scheduling using a Simple Trigger
 This example demonstrates the concept of tasks and how a simple trigger works. Here the `MessageInjector` class is used, which injects a specified message to the Micro Integrator environment. You can write your own task class implementing the `org.apache.synapse.startup.Task` interface and implement the `execute` method to run the task.
 

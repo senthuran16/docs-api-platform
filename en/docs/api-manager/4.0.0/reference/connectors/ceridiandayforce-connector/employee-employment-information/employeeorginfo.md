@@ -1,3 +1,18 @@
+---
+title: "Working with employee org info"
+description: "Reference of the operation used to retrieve an employee's organizational hierarchy with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeorginfo/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeorginfo.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Org Info
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve organizational information of an 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-org-info"></a>
 #### Retrieving Employee Org Info
 We can use GET Employee Org Info operation with required parameters to search and find the organizational info of a required employees.
 

@@ -1,3 +1,18 @@
+---
+title: "Choreo Connect on Kubernetes with APIM as control plane"
+description: "Deploy Choreo Connect on Kubernetes using YAML artifacts with WSO2 API Manager as the Control Plane."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect on Kubernetes With WSO2 API Manager as a Control Plane
 
 Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 API Manager as the Control Plane.
@@ -10,7 +25,7 @@ Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 AP
       - Minimum Memory : 3GB
 3.  Deploy an ingress controller - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/) for this sample.
 
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/k8s-setup-note.md"
 
 ## Objectives
 
@@ -27,7 +42,7 @@ Let's get started...
 
 2.  Add the Kubernetes configurations for Choreo Connect and API Manager using the kubectl tool.
 
-    {!includes/deploy/cc-tryout-in-arm64-k8s-note.md!}
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-tryout-in-arm64-k8s-note.md"
 
     ```bash
     kubectl apply -f <CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect-with-apim/apim
@@ -53,5 +68,5 @@ Let's get started...
  - Developer Portal:  [https://apim.wso2.com/devportal/](https://apim.wso2.com/devportal/)
 
 
-    Follow the instructions in [create and publish an API via API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-from-api-manager).
+    Follow the instructions in [create and publish an API via API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-via-api-manager).
 

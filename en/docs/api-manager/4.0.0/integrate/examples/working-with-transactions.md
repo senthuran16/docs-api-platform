@@ -1,3 +1,18 @@
+---
+title: "Working with transactions"
+description: "Learn how the Micro Integrator handles distributed and JMS transactions with the transaction mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/working-with-transactions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/working-with-transactions.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - working-with-transactions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Working with Transactions
 
 !!! Warning

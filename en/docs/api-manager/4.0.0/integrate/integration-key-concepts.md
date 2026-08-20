@@ -1,3 +1,17 @@
+---
+title: "Integration key concepts"
+description: "Learn the key concepts of the Micro Integrator, including message entry points, mediators, sequences, stores, and templates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/integration-key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/integration-key-concepts.md
+tags:
+  - api-manager
+  - integrate
+  - integration-key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Integration Key Concepts
 
 Listed below are the key concepts of WSO2 Micro Integrator.

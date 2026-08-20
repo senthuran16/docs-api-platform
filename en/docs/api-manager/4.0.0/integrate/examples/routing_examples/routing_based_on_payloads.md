@@ -1,3 +1,18 @@
+---
+title: "Routing based on message payloads"
+description: "Route a request message to different mediation sequences based on the content of the message payload."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/routing_examples/routing_based_on_payloads/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/routing_examples/routing_based_on_payloads.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - routing_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Routing Based on Message Payloads
 
 This example scenario uses a back-end service with two stock quote inventories (IBM and MSFT). A proxy service is configured in the Micro Integrator to use separate mediation sequences for processing request messages with different **payloads**. 

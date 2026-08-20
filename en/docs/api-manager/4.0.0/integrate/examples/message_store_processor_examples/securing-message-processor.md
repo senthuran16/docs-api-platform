@@ -1,3 +1,18 @@
+---
+title: "Securing the message forwarding processor"
+description: "Apply a WS-Security policy to secure the message forwarding processor's connection to a backend endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/securing-message-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/securing-message-processor.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing the Message Forwarding Processor
 This example demonstrates a use case where security policies are applied to the [message forwarding processor](using-message-forwarding-processor.md).
 

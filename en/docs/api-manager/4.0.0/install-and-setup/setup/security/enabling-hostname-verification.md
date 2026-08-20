@@ -1,3 +1,18 @@
+---
+title: "Enabling hostname verification"
+description: "Enable hostname verification for WSO2 API Manager to validate hostnames against the product's SSL certificate in production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/enabling-hostname-verification/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/enabling-hostname-verification.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling Hostname Verification
 
 If hostname verification is disabled for your product, the hostnames (that are accessed by a particular client) will not be verified against the hostnames specified in the product's SSL certificate. If hostname verification is enabled, you will be able to configure how hostnames are filtered during the verification process.

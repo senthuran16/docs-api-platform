@@ -1,3 +1,18 @@
+---
+title: "Step 4: run the siddhi application"
+description: "Install the required Siddhi extensions and run the SweetFactoryApp Siddhi application on the Streaming Integrator server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/test-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/test-siddhi-application.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - test-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 4: Run the Siddhi Application
 
 In this step, let's run the `SweetFactoryApp` Siddhi application that you created, tested and deployed.

@@ -1,3 +1,18 @@
+---
+title: "ServiceNow connector reference"
+description: "Reference for the servicenow.init operation and parameters used to configure the ServiceNow connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/servicenow-connector/servicenow-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/servicenow-connector/servicenow-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - servicenow-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # ServiceNow Connector Reference
 
 The following operations allow you to work with the ServiceNow Connector. Click an operation name to see parameter details and samples on how to use it.

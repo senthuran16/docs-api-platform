@@ -1,9 +1,24 @@
+---
+title: "Axis2 properties"
+description: "Reference for Axis2 properties that configure the web services engine, usable with the Property and Property Group mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-reference/axis2-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-reference/axis2-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Axis2 Properties
 
 !!! Info
-	The following are Axis2 properties that can be used with the [Property mediator](../property-Mediator.md) and the [Property Group mediator](../property-Group-Mediator.md).
+	The following are Axis2 properties that can be used with the [Property mediator](../property-mediator.md) and the [Property Group mediator](../property-group-mediator.md).
 
-Axis2 properties allow you to configure the web services engine in WSO2 Micro Integrator, such as specifying how to cache JMS objects, setting the minimum and maximum threads for consuming messages, and forcing outgoing HTTP/S messages to use HTTP 1.0. You can access some of these properties by using the [Property mediator](../property-Mediator.md) with the scope set to `axis2` or `axis2-client` as shown below.
+Axis2 properties allow you to configure the web services engine in WSO2 Micro Integrator, such as specifying how to cache JMS objects, setting the minimum and maximum threads for consuming messages, and forcing outgoing HTTP/S messages to use HTTP 1.0. You can access some of these properties by using the [Property mediator](../property-mediator.md) with the scope set to `axis2` or `axis2-client` as shown below.
 
 ## CacheLevel
 
@@ -177,7 +192,7 @@ Axis2 properties allow you to configure the web services engine in WSO2 Micro In
 </tr>
 <tr class="odd">
 <td><p><strong>Description</strong></p></td>
-<td><p>The maximum number of threads that can be added for message consuming. See <a href="axis2-properties.md#concurrentconsumers">ConcurrentConsumers</a> .</p></td>
+<td><p>The maximum number of threads that can be added for message consuming. See <a href="../axis2-properties.md#concurrentconsumers">ConcurrentConsumers</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Example</strong></p></td>

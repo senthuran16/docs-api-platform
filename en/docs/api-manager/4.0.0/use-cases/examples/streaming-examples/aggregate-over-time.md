@@ -1,3 +1,18 @@
+---
+title: "Aggregating data over time"
+description: "Example Siddhi application that simulates random events and calculates running aggregates over a sliding time window."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/aggregate-over-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/aggregate-over-time.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Aggregating Data Over Time
 
 ## Purpose:

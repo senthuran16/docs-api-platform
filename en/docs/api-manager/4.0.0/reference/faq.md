@@ -1,3 +1,17 @@
+---
+title: "FAQ"
+description: "Answers frequently asked questions about WSO2 API Manager licensing, support, ports, and architecture."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/faq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/faq.md
+tags:
+  - api-manager
+  - reference
+  - faq
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "faq"
+---
+
 # FAQ
 
 ## About WSO2 API Manager
@@ -16,7 +30,7 @@ It is completely supported from evaluation to production. For more details, see 
 
 ### What are the default ports opened in the API Manager?
 
-For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports.md#api-manager).
+For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports.md#api-m-ports).
 
 ### What are the technologies used underneath WSO2 API Manager?
 
@@ -72,7 +86,7 @@ Even though the API Manager bundles all components together, you can select whic
 
 ### What are the different deployment patterns and clustering configurations of the API Manager?
 
-See [Deploying WSO2 API Manager]({{base_path}}/install-and-setup/setup/deployment-patterns/).
+See [Deploying WSO2 API Manager](../install-and-setup/setup/deployment-overview).
 
 ### What are the container technologies that are supported in API Manager?
 
@@ -103,7 +117,7 @@ username="admin!wso2.com!carbon.super"
 password="$ref{super_admin.password}"
 ```
 
-For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setting-up-an-e-mail-login).
+For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login).
 
 ------------------------------------------------------------------------
 
@@ -193,7 +207,7 @@ This should be done in the backend services in the Application Server or WSO2 ES
 
 ### How can I enable self signup to the Developer Portal ?
 
-See [how to enable self signup]({{base_path}}/consume/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/).
+See [how to enable self signup](customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup).
 
 ### How can I disable self signup to the Developer Portal ? I want to engage my own approval mechanism.
 
@@ -423,7 +437,7 @@ There might be multiple configuration context objects created per API invocation
 The Gateway Failures UI error occurs when the `service_url`, `username`, `password` and/or `https_endpoint/http_endpoint` is incorrect. This can be rectified by checking and correcting the gateway configurations under `[[apim.gateway.environment]]` in the `<API-M_HOME>/repository/conf/deployment.toml` file.
 
 !!! tip
-    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways]({{base_path}}/learn/design-api/publish-api/publish-through-multiple-api-gateways) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
+    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
 
 
 ### How can I capture the state of a system?

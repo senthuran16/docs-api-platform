@@ -1,3 +1,18 @@
+---
+title: "MongoDB connector reference"
+description: "Reference for the MongoDB connector's connection configurations and operations for working with a MongoDB database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/mongodb-connector/mongodb-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/mongodb-connector/mongodb-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - mongodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # MongoDB Connector Reference
 
 The following operations allow you to work with the MongoDB Connector.
@@ -15,7 +30,7 @@ The MongoDB connector can be used to deal with two types of connections:
 
 There are different connection configurations that can be used for the above protocols. They contain a common set of configurations and some additional configurations specific to the protocol.
 
-<img src="../../../assets/img/integrate/connectors/mongodb-conn-9.png" title="Types of MongoDB connections" width="800" alt="Types of MongoDB connections"/>
+<img src="../../../../assets/img/integrate/connectors/mongodb-conn-9.png" title="Types of MongoDB connections" width="800" alt="Types of MongoDB connections"/>
 
 The supported connection URI types and connection options are listed in the [MongoDB Connection String](https://docs.mongodb.com/manual/reference/connection-string/) documentation.
 

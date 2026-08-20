@@ -1,3 +1,18 @@
+---
+title: "Switching from JMS to HTTP(S)"
+description: "Configure a proxy service that receives messages over JMS and forwards them to a backend using HTTP(S)."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_jms_to_http/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_jms_to_http.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from JMS to HTTP(S)
 
 This example demonstrates how the Micro Integrator receives a messages over the JMS transport and forwards it over an HTTP/S transport. In this sample, the client sends a request message to the proxy service exposed in JMS. The Micro Integrator forwards this message to the HTTP endpoint and returns the reply back to the client through a JMS temporary queue.

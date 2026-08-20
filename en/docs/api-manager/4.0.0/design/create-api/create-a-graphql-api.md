@@ -1,3 +1,18 @@
+---
+title: "Create a GraphQL API"
+description: "Create and configure a GraphQL API in WSO2 API Manager using an SDL schema, and manage security and rate limiting per operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-a-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-a-graphql-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-a-graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create a GraphQL API
 
 GraphQL, which has been developed by Facebook, is a data query language for APIs. When using GraphQL, users can explicitly specify as to what data they need from an API. GraphQL APIs are an alternative to REST-based APIs. 
@@ -24,7 +39,7 @@ Follow the instructions below to design a GraphQL API.
 2. Click **CREATE API** and then click **I Have a GraphQL SDL schema**.
 
      <html>
-     <img src="../../assets/img/learn/create-graphql-schema-option.png" alt="Create GraphQL schema option" title="Create GraphQL schema option" width="600"/>
+     <img src="../../../assets/img/learn/create-graphql-schema-option.png" alt="Create GraphQL schema option" title="Create GraphQL schema option" width="600"/>
      </html>
 
 
@@ -248,4 +263,4 @@ Learn more on the concepts that you need to know when creating a GraphQL API:
 -   [API Documentation](../api-documentation/add-api-documentation.md)
 -   [Custom Properties](adding-custom-properties-to-apis.md)
 
-- Try out the tutorial on <a href="../../tutorials/create-and-publish-a-graphql-api.md">Creating and Publishing a GraphQL API</a>.
+- Try out the tutorial on <a href="../../../tutorials/create-and-publish-a-graphql-api.md">Creating and Publishing a GraphQL API</a>.

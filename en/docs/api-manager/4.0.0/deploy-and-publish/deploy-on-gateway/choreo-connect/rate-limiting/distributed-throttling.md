@@ -1,3 +1,18 @@
+---
+title: "Distributed rate limiting"
+description: "Enable Distributed Rate Limiting in Choreo Connect so multiple instances share throttling counters with API Manager's Traffic Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/rate-limiting/distributed-throttling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/rate-limiting/distributed-throttling.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Distributed Rate Limiting
 
 You can enable Distributed Rate Limiting in Choreo Connect using Choreo Connect with WSO2 API Manager as a Control Plane.
@@ -11,7 +26,8 @@ Rate Limiting in Choreo Connect works with API Manager (Traffic Manager).
 
 Follow the instructions below to enable Distributed Rate Limiting:
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 2. Use the following configurations to enable Distributed Rate Limiting.
 
@@ -128,7 +144,8 @@ There can be situations where certain APIs require more granular level of Rate L
 
 Conditional Rate Limiting is done via the Advanced Rate Limiting policies in API Manager.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 2. Add/enable the following configurations to enable the required condition type for Rate Limiting.
 
@@ -146,7 +163,7 @@ Conditional Rate Limiting is done via the Advanced Rate Limiting policies in API
 
 3. Define the Advance Throttle Policy containing the required conditions in WSO2 API Manager. 
      
-     For more information, see [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-throttling-policy).
+     For more information, see [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-rate-limiting-policy).
 
 4. Create an API in API Publisher and assign the created Advanced Throttling policy to the API. 
    
@@ -159,4 +176,4 @@ Conditional Rate Limiting is done via the Advanced Rate Limiting policies in API
 ## See also
 
 - [Rate limiting with API-M as the Control Plane](../concepts/cc-rate-limiting.md)
-- [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-throttling-policy)
+- [Adding New Rate Limiting Policies](../../../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-advanced-rate-limiting-policy)

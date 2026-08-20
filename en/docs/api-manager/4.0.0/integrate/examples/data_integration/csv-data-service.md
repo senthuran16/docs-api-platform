@@ -1,3 +1,18 @@
+---
+title: "Exposing an CSV datasource"
+description: "Demonstrates how to expose data from a CSV file as a read-only data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/csv-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/csv-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing an CSV Datasource
 
 This example demonstrates how CSV data can be exposed as a data service.

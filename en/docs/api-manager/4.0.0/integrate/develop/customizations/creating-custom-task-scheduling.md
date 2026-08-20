@@ -1,3 +1,18 @@
+---
+title: "Customizing task scheduling"
+description: "Explains how to write a custom task-handling Java class to schedule tasks with specific requirements in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/customizations/creating-custom-task-scheduling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/customizations/creating-custom-task-scheduling.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing Task Scheduling
 
 When you create a task using the default task implementation, the task can inject messages to a proxy service, or to a sequence. If you have a specific task-handling requirement, you can write your own task-handling implementation by creating a custom Java Class that implements the `org.apache.synapse.startup.Task` interface.

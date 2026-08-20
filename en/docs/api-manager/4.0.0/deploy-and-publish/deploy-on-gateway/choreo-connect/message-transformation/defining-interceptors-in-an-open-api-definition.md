@@ -1,3 +1,18 @@
+---
+title: "Defining interceptors in an OpenAPI definition"
+description: "Reference the OpenAPI vendor extensions used to define request and response flow interceptors at the API and resource levels."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/defining-interceptors-in-an-open-api-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/defining-interceptors-in-an-open-api-definition.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Defining Interceptors in an OpenAPI Definition
 
 You can define interceptors on an API level (per API) and on a resource level (per resource).

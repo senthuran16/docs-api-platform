@@ -1,3 +1,18 @@
+---
+title: "File processing"
+description: "Learn how the Micro Integrator reads, writes, and processes files over protocols such as FTP, SFTP, and SMB."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/integration-use-case/file-processing-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/integration-use-case/file-processing-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - file-processing-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # File Processing
 
 In many business domains, there are different use cases related to managing files. Also, there are file-based legacy systems that are tightly coupled with other systems. These files contain huge amounts of data, which requires a big effort for manual processing. It is not scalable with an increase in system load. This leads us to the requirement of automating the processing of files. The WSO2 Micro Integrator enables the following file processing capabilities:
@@ -20,7 +35,7 @@ In many business domains, there are different use cases related to managing file
 			<b>Tutorials</b></br>
 			<ul>
 				<li>
-					Try the end-to-end use case on <a href="../../tutorials/integration-tutorials/file-processing.md">file processing</a>
+					Try the end-to-end use case on <a href="../../../tutorials/integration-tutorials/file-processing.md">file processing</a>
 				</li>
 			</ul>
 		</td>
@@ -28,13 +43,13 @@ In many business domains, there are different use cases related to managing file
 			<b>Examples</b>
 			<ul>
 				<li>
-					<a href="../examples/file-processing/vfs-transport-examples.md">VFS Transport
+					<a href="../../examples/file-processing/vfs-transport-examples.md">VFS Transport
 				</li>
 				<li>
-					<a href="../examples/file-processing/Accessing_Windows_Share_Using_VFS_Transport.md">Accessing a Windows Share using VFS</a>
+					<a href="../../examples/file-processing/accessing_windows_share_using_vfs_transport/">Accessing a Windows Share using VFS</a>
 				</li>
 				<li>
-					<a href="../examples/file-processing/mailto-transport-examples.md">Using the MailTo Transport</a>
+					<a href="../../examples/file-processing/mailto-transport-examples.md">Using the MailTo Transport</a>
 				</li>
 			</ul>
 		</td>

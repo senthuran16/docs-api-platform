@@ -1,3 +1,18 @@
+---
+title: "Transforming data"
+description: "Transform streaming data formats and values in WSO2 Streaming Integrator using Siddhi extensions and custom scripts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/transforming-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/transforming-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - transforming-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Transforming Data
 
 The Streaming Integrator allows you to perform a wide range of transformations to the input data received. A main type of transformation supported is transforming a message from one format to another. In addition, you can perform a range of mathematical, regex, string, unit conversion, map, json, etc., transformations via [Siddhi Extensions](https://siddhi.io/en/v5.1/docs/extensions/). You can also write a custom script to perform an required transformation of data.

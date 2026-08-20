@@ -1,3 +1,18 @@
+---
+title: "Single Node deployment"
+description: "Learn how to deploy the Streaming Integrator as a single node, including achieving resilient deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-deployment/deploying-si-as-a-single-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-deployment/deploying-si-as-a-single-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Single Node Deployment
 
 You can deploy the WSO2 Streaming Integrator as a single node deployment to achieve most of the use cases that commonly arise

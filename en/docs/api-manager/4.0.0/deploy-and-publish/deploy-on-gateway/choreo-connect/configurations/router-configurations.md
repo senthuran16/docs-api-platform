@@ -1,10 +1,26 @@
+---
+title: "Choreo connect router configuration catalog"
+description: "Reference all configuration parameters available for the Choreo Connect Router component in the config.toml file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/router-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/router-configurations.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Choreo Connect Router Configuration Catalog
 
 This document describes all the configuration parameters that are used in WSO2 Choreo Connect Router.
 
 ## Instructions for use
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 2. Select the configuration sections, parameters, and values that are required for your use and add them as required. You can click ***view sample*** in each of the sections in this page to get the toml format.
 

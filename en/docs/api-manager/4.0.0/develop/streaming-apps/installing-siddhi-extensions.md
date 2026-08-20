@@ -1,3 +1,18 @@
+---
+title: "Installing siddhi extensions"
+description: "Install or uninstall Siddhi extensions within the Streaming Integrator Tooling using the Extension Installer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/installing-siddhi-extensions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/installing-siddhi-extensions.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - installing-siddhi-extensions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing Siddhi Extensions
 
 Streaming Integrator Tooling uses Siddhi extensions to connect with various data sources. Siddhi extensions can be installed or uninstalled using the Extension Installer.
@@ -34,7 +49,7 @@ To access the Extension installer and find the extensions you need to install/un
     !!!info
         The status of the extension can be one of the following.<br/><br/>
         - **Installed**<br/>This indicates that the extension is completely installed. The installation includes the JAR of the extension itself as well as all its dependencies (if any).<br/><br/>
-        - **Not-Installed**<br/>This indicates that the extension has not been installed. The JAR of the extension itself has not been installed. Dependencies (if any) may be already installed due to shared dependencies. For more information about shared dependencies, see step 2 of [Un-installing an extension](#un-installing-an-extension).<br/><br/>
+        - **Not-Installed**<br/>This indicates that the extension has not been installed. The JAR of the extension itself has not been installed. Dependencies (if any) may be already installed due to shared dependencies. For more information about shared dependencies, see step 2 of [Un-installing an extension](#uninstalling-an-extension).<br/><br/>
         - **Partially-Installed**<br/>This indicates that the JAR of the extension itself has been installed, but one or more dependencies of the extension still need to be installed.<br/> If these extensions need to be manually installed, it is indicated by an information icon next to the status. For more information, see [Manually installable dependencies](#manually-installable-dependencies).<br/><br/>
         - **Restart-Required**<br/>This indicates that you need to restart Streaming Integrator Tooling in order to complete the installation/un-installation of the extension.
 
@@ -127,6 +142,7 @@ The configuration of an extension is a JSON object that looks as follows:
 
 `<extension_name>` which is the key of this JSON object, is the uniquely identifiable name of the extension. The extension is described under [`extension`](#extension).
 
+<a name="extension"></a>
 #### `extension`
 
 This _object_ contains information about the extension, denoted by the following properties.

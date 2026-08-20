@@ -1,3 +1,18 @@
+---
+title: "User management via the IdP client interface"
+description: "Switch between local and external Identity Provider clients for user management in the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/user-management-via-the-idp-client-interface/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/user-management-via-the-idp-client-interface.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # User Management via the IdP Client Interface
 
 In WSO2 Streaming Integrator, user management is carried out through the
@@ -20,9 +35,9 @@ The active IdP client is `local` by default.
 
 Following are the IdP Clients available for WS)2 Streaming Integrator:
 
-- [Local IdP Client](#UserManagementviatheIdPClientInterface-LocalIdPClient)
+- [Local IdP Client](#local-idp-client)
 
-- [External IdP Client](#UserManagementviatheIdPClientInterface-ExternalIdPClient)
+- [External IdP Client](#external-idp-client)
 
 ## Local IdP Client
 

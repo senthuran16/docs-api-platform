@@ -1,10 +1,25 @@
+---
+title: "Using the RabbitMQ message store"
+description: "Configure a RabbitMQ message store so a proxy service stores messages for a forwarding processor to deliver to a backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-rabbitmq-message-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-rabbitmq-message-stores.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the RabbitMQ Message Store
 
 In this example, the client sends requests to a **proxy service**, which stores the messages in a **RabbitMQ message store**. The **message forwarding processor** then picks the stored messages from the RabbitMQ message store and invokes the back-end service.
 
 ### Synapse configurations
 
-Following are the artifact configurations that we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-1) this example.
+Following are the artifact configurations that we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
 
 ```xml tab="Message Store"
 <?xml version="1.0" encoding="UTF-8"?>

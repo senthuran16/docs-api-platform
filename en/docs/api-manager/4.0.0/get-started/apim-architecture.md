@@ -1,3 +1,17 @@
+---
+title: "Architecture and key components"
+description: "Learn the high-level architecture of WSO2 API Manager, including the Management Plane and its API management and integration components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/apim-architecture/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/apim-architecture.md
+tags:
+  - api-manager
+  - get-started
+  - apim-architecture
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Architecture and Key Components
 
 The diagram below is a high-level snapshot of WSO2 API Manager and the various components that it comprises of. 
@@ -10,6 +24,7 @@ The API Manager consists of an API management layer and an integration layer whe
 
 The Management Plane is where API creation and API management takes place.  It consists of portals (Publisher, Developer Portal, and Service Catalog) for users to create and manage APIs, implement rate limiting policies, monitor, and monetization, etc. It also provides a set of APIs to interact with external tools like API Controller. The Management Plane includes API Analytics dashboards, displaying various business insights.
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 [![API Publisher](../assets/img/learn/overviewpage-rest-api.jpg)](../assets/img/learn/overviewpage-rest-api.jpg)
@@ -52,7 +67,7 @@ Once the token is validated, the API Gateway acts upon the API request before se
 
 #### Choreo Connect
 
-<a href="../assets/img/deploy/mgw/choreo-connect-basic-architecture.png"><img src="../assets/img/deploy/mgw/choreo-connect-basic-architecture.png" width="600" alt="auth0 token validation"></a>
+<a href="../../assets/img/deploy/mgw/choreo-connect-basic-architecture.png"><img src="../../assets/img/deploy/mgw/choreo-connect-basic-architecture.png" width="600" alt="auth0 token validation"></a>
 
 Choreo Connect (the API Microgateway) is a cloud-native, open-source, and developer-centric API Gateway. It provides first-class support for Kubernetes while facilitating an array of API management quality of services (QoS), such as message security, rate-limiting, observability, and message mediation. Choreo Connect can be run in the cloud, on-premises, or in a hybrid environment, as long as it supports Kubernetes.
 
@@ -62,7 +77,7 @@ Choreo Connect comprises three components: Router, Enforcer, and Adapter. The Ro
 
 The Micro Integrator of WSO2 API Manager is lightweight and container friendly. This allows you to leverage the comprehensive enterprise messaging capabilities of the Micro Integrator in your decentralized, cloud-native integrations.
 
-<img src="../assets/img/integrate/intro/mi-microservices-architecture.png" alt="decentralized micro services" name="decentralized microservices" width="700">
+<img src="../../assets/img/integrate/intro/mi-microservices-architecture.png" alt="decentralized micro services" name="decentralized microservices" width="700">
 
 As shown above, if your organization is running on a decentralized, cloud-native, integration architecture where microservices are used for integrating the various APIs, events, and systems, WSO2 Micro Integrator can easily function as your **Integration** (micro) services and **API** (micro) services.
 
@@ -72,7 +87,7 @@ Micro Integrator is an event-driven, standards-based messaging engine that can w
 
 The [Streaming Integrator](../streaming/streaming-overview.md) component of WSO2 API Manager is a streaming data processing server that integrates streaming data and takes action based on streaming data. The streaming integration capabilities of WSO2 API Manager are delivered via this runtime. This is a cloud-native, lightweight component that understands, captures, analyzes, processes, and acts upon streaming data and events in real-time. It utilizes the SQL-like query language ‘Siddhi’ to implement the solution.
 
-<img src="../assets/img/integrate/intro/streaming-integrator.png" alt="Streaming Integrator" name="Streaming Integrator" width="600">
+<img src="../../assets/img/integrate/intro/streaming-integrator.png" alt="Streaming Integrator" name="Streaming Integrator" width="600">
 
 The Streaming Integrator allows you to integrate static data sources with streaming data sources. Thus, it enables various types of applications (e.g., files, cloud based applications, data stores, and streaming applications) to access streaming data and also exposes their output in a streaming manner. This is useful for performing ETL (Extract, Transform, Load) operations, capturing change data (i.e., CDC operations), and stream processing.
 
@@ -80,6 +95,7 @@ The Streaming Integrator allows you to integrate static data sources with stream
  
 The Control Plane is where the API security validation, API key generation, and rate limiting decisions are taken.
   
+<a name="key-manager"></a>
 #### Key Manager
  
 [![Key Manager](../assets/img/get_started/architecture/key-manager-overview.png)](../assets/img/get_started/architecture/key-manager-overview.png)
@@ -110,7 +126,7 @@ There are multiple developer-friendly tools that can be used to help you work wi
 
 The WSO2 API Manager and the Micro Integrator are coupled with [WSO2 Integration Studio](../integrate/develop/wso2-integration-studio.md); a comprehensive graphical integration flow designer for building integrations using a simple drag-and-drop functionality.
 
-<img src="../assets/img/integrate/intro/integration-studio.png" alt="Integration Studio" name="Integration Studio">
+<img src="../../assets/img/integrate/intro/integration-studio.png" alt="Integration Studio" name="Integration Studio">
 
 WSO2 Integration Studio is your development environment for designing, developing, debugging, and testing integration solutions. As an integration developer, you can execute all the phases of the development lifecycle using this tool. When your integration solutions are production-ready, you can easily push the artifacts to your continuous integration/continuous deployment pipeline and also register them as services in the service catalog.
 

@@ -1,3 +1,18 @@
+---
+title: "Create a REST API"
+description: "Create a REST API by linking a backend implementation to the API Publisher to manage its lifecycle, security, and subscriptions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/create-a-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/create-a-rest-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create a REST API
 
 **API creation** is the process of linking an existing backend API implementation to the [API Publisher](../../../get-started/apim-architecture.md#api-publisher), so that you can manage and monitor the [API's lifecycle](../../lifecycle-management/api-lifecycle.md), documentation, security, community, and subscriptions. Alternatively, you can provide the API implementation in-line in the [API Publisher](../../../get-started/apim-architecture.md#api-publisher) itself.
@@ -47,8 +62,8 @@ Follow the instructions below to create a REST API using the basic flow:
 
 6. Go to **Develop**, **Portal Configurations**, and click **Basic Info**.
 
-     <a href="../../../assets/img/learn/click-basic-info.png">
-     <img src="../../../assets/img/learn/click-basic-info.png" width="20%"></a>
+     <a href="../../../../assets/img/learn/click-basic-info.png">
+     <img src="../../../../assets/img/learn/click-basic-info.png" width="20%"></a>
 
      1. Configure the API design configurations.
 
@@ -56,7 +71,7 @@ Follow the instructions below to create a REST API using the basic flow:
 
          <html><div class="admonition note">
          <p class="admonition-title">Note</p>
-         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
+         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
          Developer Portal visibility</a>**.</p>
          <p>
          </div>

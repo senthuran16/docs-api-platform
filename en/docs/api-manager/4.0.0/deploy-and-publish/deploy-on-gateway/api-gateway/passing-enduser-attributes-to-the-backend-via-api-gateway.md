@@ -1,6 +1,21 @@
+---
+title: "Passing end user attributes to the backend"
+description: "Configure backend JWT encoding and JWKS-based signature validation to pass end-user attributes from the Gateway to the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Passing End User Attributes to the Backend
 
-{!./includes/deploy/backend-jwt-intro.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/backend-jwt-intro.md"
 
 ## Changing the JWT encoding to Base64URL encoding
 
@@ -33,15 +48,15 @@ Before passing end user attributes, you need to enable and configure the JWT imp
 
 2. Enable and configure the JWT implementation.
 
-     For more information, see [JWT generation configuration details](#jwt-generation-configuration-details).
+     For more information, see [JWT generation configuration details](#backend-jwt-generator-configuration-details).
 
-3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
       This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
 ## Enabling a customized backend JWT generator
 
-{!./includes/deploy/backend-jwt-note.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/backend-jwt-note.md"
 
 ### Customizing the JWT Generation completely
 
@@ -108,7 +123,7 @@ Follow the instructions below if you want to pass additional attributes to the b
 
 4.  Set the `apim.jwt.enable` element to **true** in the `deployment.toml` file.
 
-5.  [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+5.  [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
      This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -165,7 +180,7 @@ claims_extractor_impl="org.wso2.carbon.test.CustomClaimRetriever"
 ....
 ```
 
-4. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+4. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
       This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -222,7 +237,7 @@ If you need to change the way that JWT is generated in the Gateway, such as by a
 
 ## Backend JWT generator configuration details
 
-{!./includes/deploy/backend-jwt-gw-note.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/backend-jwt-gw-note.md"
 
 <table>
 <thead>

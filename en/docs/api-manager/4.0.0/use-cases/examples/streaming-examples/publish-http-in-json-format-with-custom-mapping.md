@@ -1,3 +1,18 @@
+---
+title: "Sending custom JSON events via HTTP"
+description: "Configure a Siddhi application to send sweet production events over HTTP in JSON format using custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/publish-http-in-json-format-with-custom-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/publish-http-in-json-format-with-custom-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Sending Custom JSON Events via HTTP
 
 ## Purpose

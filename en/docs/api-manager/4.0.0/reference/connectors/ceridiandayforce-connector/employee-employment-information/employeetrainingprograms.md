@@ -1,3 +1,18 @@
+---
+title: "Working with employee training programs"
+description: "Retrieve the training programs attached to an employee using the GET Employee Training Programs operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeetrainingprograms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeetrainingprograms.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Training Programs
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve training programs of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-training-programs"></a>
 #### Retrieving Employee Training Programs
 We can use GET Employee Training Programs operation with required parameters to get the training programs related to an employee.
 

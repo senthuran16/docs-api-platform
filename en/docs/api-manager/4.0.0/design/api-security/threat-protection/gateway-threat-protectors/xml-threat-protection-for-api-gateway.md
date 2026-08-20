@@ -1,11 +1,27 @@
+---
+title: "Am300XML threat protection for API Gateway"
+description: "Configure the XML threat protector's xml_validator sequence and schema validation to detect malformed or vulnerable XML payloads."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/threat-protection/gateway-threat-protectors/xml-threat-protection-for-api-gateway.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Am300XML Threat Protection for API Gateway
 
 The XML threat protector in WSO2 API Manager validates the XML payload vulnerabilities based on the pre-configured limits. It uses following methodologies to thwart the gateway from XML based attacks.
 
--   [Detecting the malformed, vulnerable XML messages through limitations](#Am300XMLThreatProtectionforAPIGateway-detectvulnerability)
+-   [Detecting the malformed, vulnerable XML messages through limitations](#detecting-the-malformed-vulnerable-xml-messages-through-limitations)
 
--   [XML schema validation](#Am300XMLThreatProtectionforAPIGateway-XMLSchemaValidation)
+-   [XML schema validation](#xml-schema-validation)
 
+<a name="detecting-the-malformed-vulnerable-xml-messages-through-limitations"></a>
 #### Detecting the malformed, vulnerable XML messages through limitations
 
 The xml\_validator sequence specifies the properties to be limited in the payload. A sample xml\_validator sequence is given below.
@@ -114,6 +130,7 @@ Users can enable or disable XML payload limits and schema validation. Some examp
     </tbody>
     </table>
 
+<a name="xml-schema-validation"></a>
 #### XML schema validation
 
 You can define XML schemas per resource to validate each request. For example, to add an XML schema to the resource /userapi/1.0.0/addResource/value follow the steps below.
@@ -124,10 +141,10 @@ You can define XML schemas per resource to validate each request. For example, t
 
 Each request is sanitized through the XML threat protector. API developer can modify each properties according to your requirement.
 
--   [Editing the sequence through registry artifacts](#Am300XMLThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the XML validator policy](#Am300XMLThreatProtectionforAPIGateway-ApplyingtheXMLvalidatorpolicy)
--   [Testing the XML threat protector](#Am300XMLThreatProtectionforAPIGateway-TestingtheXMLthreatprotector)
--   [Testing the schema validation](#Am300XMLThreatProtectionforAPIGateway-Testingtheschemavalidation)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the XML validator policy](#applying-the-xml-validator-policy)
+-   [Testing the XML threat protector](#testing-the-xml-threat-protector)
+-   [Testing the schema validation](#testing-the-schema-validation)
 
 ### Editing the sequence through registry artifacts
 

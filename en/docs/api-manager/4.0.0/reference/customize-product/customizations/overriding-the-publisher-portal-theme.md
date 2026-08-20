@@ -1,3 +1,18 @@
+---
+title: "Overriding the Publisher Portal theme"
+description: "Explains how to override the Publisher Portal theme using userThemes.js or by overriding React components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/customizations/overriding-the-publisher-portal-theme/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/customizations/overriding-the-publisher-portal-theme.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overriding the Publisher Portal Theme
 
 There are mainly 2 ways to customize and override the publisher portal theme. 

@@ -1,3 +1,18 @@
+---
+title: "Choreo connect supported features"
+description: "Reference the WSO2 API Manager features that Choreo Connect supports, including security, rate limiting, and mediation capabilities."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/supported-features/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/supported-features.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Choreo Connect Supported Features
 
 Choreo Connect's most recent version (v{{choreo_connect.version}}) does not support all of WSO2 API Manager's (WSO2 API-M) functionalities. In contrast to the default API Gateway, Choreo Connect (the API Microgateway) only offers a fraction of WSO2 API Manager product functionalities. 

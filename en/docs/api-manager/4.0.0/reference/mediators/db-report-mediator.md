@@ -1,3 +1,18 @@
+---
+title: "DB report mediator"
+description: "Reference for the DB Report mediator syntax used to write message data to a database using an insert SQL statement."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/db-report-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/db-report-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - db-report-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # DB Report Mediator
 
 The **DB Report Mediator** is similar to the [DBLookup Mediator](dblookup-mediator.md). The difference between the two mediators is that the DB Report mediator writes information to a database using the specified insert SQL statement.
@@ -124,7 +139,7 @@ Specifying the value as -1 allows unlimited transactions. Change the value accor
 <li>The DBReport mediator configuration must be preceded by a Transaction Mediator configuration with <code>                   new                  </code> as the transaction action.</li>
 <li>The DBReport mediator configuration must be followed by a Transaction Mediator configuration with <code>commit</code> as the transaction action.</li>
 </ul>
-<p>For detailed information about configuring Transaction mediators, see <a href="transaction-mediator.md">Transaction Mediator</a> .</p>
+<p>For detailed information about configuring Transaction mediators, see <a href="../transaction-mediator.md">Transaction Mediator</a> .</p>
 </div></td>
 </tr>
 <tr class="even">

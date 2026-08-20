@@ -1,3 +1,18 @@
+---
+title: "Configuration overview"
+description: "Reference for the K8s API Operator's ConfigMap and secret settings covering the API Controller, API Manager, and API Microgateway components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/configuration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/configuration-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuration Overview
 
 The configurations of the K8s API Operator are stored in K8s secrets and configmaps. Users are able to change the

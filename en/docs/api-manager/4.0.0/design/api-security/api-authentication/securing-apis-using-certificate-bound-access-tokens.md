@@ -1,3 +1,18 @@
+---
+title: "Securing APIs with certificate bound access tokens"
+description: "Configure API Manager to validate certificate bound (Holder of Key) JWT access tokens and invoke a secured API using mutual TLS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/api-authentication/securing-apis-using-certificate-bound-access-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/api-authentication/securing-apis-using-certificate-bound-access-tokens.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing APIs with Certificate Bound Access Tokens
 
 While OAuth 2.0 relies on bearer tokens for securing access to protected resources, bearer tokens require Transport Layer Security between an OAuth client and the resource server when presenting the access token to get access to a resource. In this security model, it is crucial to prevent access token leakage. Therefore, access token storage and transfer have to be done with care.

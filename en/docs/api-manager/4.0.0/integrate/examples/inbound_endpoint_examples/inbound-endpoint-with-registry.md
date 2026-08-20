@@ -1,3 +1,18 @@
+---
+title: "Using inbound endpoints with the registry"
+description: "Configure inbound endpoint parameter values as registry entries so the same configuration works across environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-with-registry/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-with-registry.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Inbound Endpoints with the Registry
 Other than specifying parameter values inline, you can also
 specify parameter values as registry entries. The advantage of

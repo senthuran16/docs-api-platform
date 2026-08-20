@@ -1,3 +1,18 @@
+---
+title: "Data service call mediator"
+description: "Reference for the Data Service Call mediator syntax and parameters used to invoke data service operations directly."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/dss-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/dss-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - dss-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Data Service Call Mediator
 
 The **Data Service Call Mediator** is used to invoke data service operations. It automatically creates a payload and sets up the necessary headers to invoke the data service. Also, it improves the performance by directly calling the data service (without HTTP transport).

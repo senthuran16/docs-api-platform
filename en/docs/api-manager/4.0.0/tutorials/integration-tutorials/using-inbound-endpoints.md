@@ -1,3 +1,18 @@
+---
+title: "Using inbound endpoints"
+description: "Use an Inbound Endpoint to expose an already defined REST API through a different port in WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/using-inbound-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/using-inbound-endpoints.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Using Inbound Endpoints
 
 ## What you'll build
@@ -26,7 +41,7 @@ Set up WSO2 Integration Studio as follows:
     project directory will appear with the artifacts as shown below.
     Note the 'HealthcareAPI' that is already included.
 
-    <img src="../../assets/img/integrate/tutorials/inbound-project-explorer.png" width="400">
+    <img src="../../../assets/img/integrate/tutorials/inbound-project-explorer.png" width="400">
 
 2.  Right-click on **SampleServicesConfigs** and navigate to **New -> Inbound
     Endpoint**. Select **Create A New Inbound Endpoint** and click
@@ -53,7 +68,7 @@ Set up WSO2 Integration Studio as follows:
         </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/using-inbound-endpoint/create-inbound-dialog-box.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/using-inbound-endpoint/create-inbound-dialog-box.png" width="500">
 
 4.  Go to the **Properties** tab in the **Design** view and enter the following:
 
@@ -76,7 +91,7 @@ Set up WSO2 Integration Studio as follows:
         </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/using-inbound-endpoint/configure-inbound-endpoint.png">
+    <img src="../../../assets/img/integrate/tutorials/using-inbound-endpoint/configure-inbound-endpoint.png">
 
 The endpoint will now get mapped to any URL that matches the above pattern provided. You will be exposing the health care API on a new port through this inbound endpoint.
 
@@ -129,9 +144,9 @@ Let's send a message to the **healthcare** REST API (through the inbound endpoin
     !!! Tip
         If you don't see the <b>HTTP Client</b> pane, go to <b>Window -> Show View - Other</b> and select <b>HTTP Client</b> to enable the client pane.
 
-    <img src="../../assets/img/integrate/tutorials/common/http4e-client-empty.png" width="800">
+    <img src="../../../assets/img/integrate/tutorials/common/http4e-client-empty.png" width="800">
     
-2. Enter the request information as given below and click the <b>Send</b> icon (<img src="../../assets/img/integrate/tutorials/common/play-head-icon.png" width="20">).
+2. Enter the request information as given below and click the <b>Send</b> icon (<img src="../../../assets/img/integrate/tutorials/common/play-head-icon.png" width="20">).
     
     <table>
         <tr>

@@ -1,3 +1,18 @@
+---
+title: "Datasource parameters"
+description: "Reference for the RDBMS datasource connection parameters used to configure how a data service connects to its datasource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/data-services/datasource-configuration-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/data-services/datasource-configuration-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Datasource Parameters
 
 The datasource configuration in a data service specifies how the service connects to the datasource. The datasource connection parameters you can use depends on the type of datasource you are exposing.

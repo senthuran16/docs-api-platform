@@ -1,3 +1,18 @@
+---
+title: "Managing user roles"
+description: "Create the creator, publisher, and subscriber user roles in WSO2 API Manager and map scope assignments to them via the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/administer/managing-users-and-roles/managing-user-roles/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/administer/managing-users-and-roles/managing-user-roles.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing User Roles
 
 Roles contain permissions for users to manage the server. They can be reused and they eliminate the overhead of granting permissions to users individually.
@@ -33,12 +48,12 @@ Follow the instructions below to create the `creator`, `publisher`, and `subscri
 
     !!! warning
 
-            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Management Console](`https://localhost:9443/carbon`) from **Resources** > **Browse**.
+            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Management Console](https://localhost:9443/carbon) from **Resources** > **Browse**.
 
             By default, the scope-role mapping contains `Internal/creator`, `Internal/publisher`, `Internal/subscriber`, `Internal/analytics`, and `Internal/devops` as the default roles. If there are custom roles defined with API creator, API publisher, admin and API subscriber permissions, those roles have to be configured in the `tenant-conf.json` file under the relevant scopes.
 
 !!! info
-     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](managing-permissions.md#adding-role-based-permissions)
+     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](managing-permissions.md#adding-api-m-specific-scope-assignments)
 
 !!! info "Application Roles"
     When a user creates an application and generates application keys, a role is created automatically in the following format.
@@ -187,7 +202,7 @@ create_admin_account = true
 
 The following steps guide you through updating the role names after you have used the product for some time.
 
-1.  Make the configuration changes indicated in [the above section](managing-user-roles.md#update-before-the-first-startup-recommended).
+1.  Make the configuration changes indicated in [the above section](managing-user-roles.md#updating-before-the-first-startup-recommended).
 
 2. Do the following user store level changes for existing users:
 

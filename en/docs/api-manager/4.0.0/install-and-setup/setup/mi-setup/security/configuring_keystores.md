@@ -1,3 +1,18 @@
+---
+title: "Configuring keystores for the Micro Integrator"
+description: "Configure keystores for the Micro Integrator, including the default keystore, encryption keys, and separating the internal keystore."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/configuring_keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/configuring_keystores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Keystores for the Micro Integrator
 
 Follow the instructions given below to configure [keystores for the Micro Integrator](../../../../reference/mi-security-reference/using_keystores.md).

@@ -1,3 +1,18 @@
+---
+title: "Configuring Log4j2 properties"
+description: "Configure Log4j2 logging properties for the Choreo Connect Enforcer, including file locations for different deployment types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-log4j2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-log4j2.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Log4j2 Properties
 
 !!! Warning

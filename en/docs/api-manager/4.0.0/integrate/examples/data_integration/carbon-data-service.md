@@ -1,3 +1,18 @@
+---
+title: "Exposing a carbon datasource as a data service"
+description: "Demonstrates how to expose a persistent carbon datasource created in the Micro Integrator as a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/carbon-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/carbon-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a Carbon Datasource as a Data Service
 
 A Carbon datasource is an RDBMS or a custom datasource created using the

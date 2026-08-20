@@ -1,3 +1,18 @@
+---
+title: "AmazonSQS inbound endpoint example"
+description: "Example of configuring the AmazonSQS inbound endpoint in WSO2 Integration Studio to consume messages from a queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # AmazonSQS Inbound Endpoint Example
 
 The AmazonSQS Inbound Endpoint allows you to connect to Amazon and consume messages form an Amazon SQS queue. The messages are then injected into the mediation engine for further processing and mediation.
@@ -16,11 +31,11 @@ Following diagram shows the overall solution we are going to build. The Simple Q
 
 1. Download [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/). Create an **Integration Project** as below. 
    
-   <img src="../../../assets/img/integrate/connectors/integration-project.png" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" />
+   <img src="../../../../assets/img/integrate/connectors/integration-project.png" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" />
 
 2. Right click on **Created Integration Project** -> **New** -> **Inbound Endpoint** -> **Create A New Inbound Endpoint** -> **Inbound Endpoint Creation Type**and select as **custom** -> Click **Next**.
    
-   <img src="../../../assets/img/integrate/connectors/smpp-inboundep-create-new-ie.png" title="Creating inbound endpoint" width="400" alt="Creating inbound endpoint" style="border:1px solid black"/>
+   <img src="../../../../assets/img/integrate/connectors/smpp-inboundep-create-new-ie.png" title="Creating inbound endpoint" width="400" alt="Creating inbound endpoint" style="border:1px solid black"/>
 
 3. Click on **Inbound Endpoint** in design view and under `properties` tab, update class name to `org.wso2.carbon.inbound.amazonsqs.AmazonSQSPollingConsumer`. 
 
@@ -70,7 +85,7 @@ Following diagram shows the overall solution we are going to build. The Simple Q
 **CApp (Carbon Application)** is the deployable artefact on the integration runtime. Let us see how we can export integration logic we developed into a CApp. To export the `Solution Project` as a CApp, a `Composite Application Project` needs to be created. Usually, when a solution project is created, this project is automatically created by Integration Studio. If not, you can specifically create it by navigating to  **File** -> **New** -> **Other** -> **WSO2** -> **Distribution** -> **Composite Application Project**. 
 
 1. Right click on Composite Application Project and click on **Export Composite Application Project**.</br> 
-  <img src="../../../assets/img/integrate/connectors/capp-project1.jpg" title="Export as a Carbon Application" width="300" alt="Export as a Carbon Application" />
+  <img src="../../../../assets/img/integrate/connectors/capp-project1.jpg" title="Export as a Carbon Application" width="300" alt="Export as a Carbon Application" />
 
 2. Select an **Export Destination** where you want to save the .car file. 
 
@@ -83,7 +98,7 @@ Following diagram shows the overall solution we are going to build. The Simple Q
   
 2. Copy the exported carbon application to the **<PRODUCT-HOME>/repository/deployment/server/carbonapps** folder. 
 
-3. [Start the integration server](../../../get-started/integration-quick-start-guide.md#start-the-micro-integrator). 
+3. [Start the integration server](../../../get-started/integration-quick-start-guide.md#step-2-running-the-integration-artifacts). 
 
 ## Testing  
 

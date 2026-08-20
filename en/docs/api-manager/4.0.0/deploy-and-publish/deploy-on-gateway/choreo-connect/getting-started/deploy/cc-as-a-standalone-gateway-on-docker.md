@@ -1,3 +1,18 @@
+---
+title: "Deploying Choreo Connect as a standalone gateway on Docker"
+description: "Deploy Choreo Connect as a standalone Gateway on Docker Compose and deploy an API to it using apictl."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect as a Standalone Gateway on Docker Compose
 
 Let's deploy an API, using WSO2 API Controller (apictl), on Choreo Connect, which running on Docker Compose as a Standalone Gateway.
@@ -11,7 +26,7 @@ Install and set up [Docker](https://www.docker.com).
 ### Step 1.1 - Download and install APICTL
 
 APICTL is a CLI tool which can be used to deploy undeploy APIs into Choreo Connect clusters.
-Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool)
+Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl)
 to setup the APICTL in your development environment.
 
 ### Step 1.2 - Download and extract Choreo Connect distribution .zip file
@@ -65,7 +80,7 @@ The project is now initialized. A directory with the name "petstore" has been cr
 
 Start Choreo Connect on Docker Compose by executing the Docker Compose script inside the `CHOREO-CONNECT_HOME`. Navigate to `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/` and execute the following command.
 
-{!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 ``` java
 docker-compose up -d

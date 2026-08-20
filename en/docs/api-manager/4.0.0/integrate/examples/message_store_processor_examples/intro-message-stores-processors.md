@@ -1,3 +1,18 @@
+---
+title: "Introduction to message stores"
+description: "Configure a proxy service to store incoming messages in a message store using the store mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/intro-message-stores-processors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/intro-message-stores-processors.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Introduction to Message Stores
 This sample demonstrates the basic functionality of a [message store](../../../reference/synapse-properties/about-message-stores-processors.md).
 

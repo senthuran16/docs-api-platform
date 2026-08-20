@@ -1,3 +1,18 @@
+---
+title: "Using the JMS message store"
+description: "Configure a JMS message store so a proxy service stores messages for a forwarding processor to deliver to a backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-jms-message-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-jms-message-stores.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the JMS Message Store
 See the examples given below.
 
@@ -220,7 +235,7 @@ See the descriptions of the above configurations:
   <tr>
     <td>Message Processor</td>
     <td>
-      Create a message forwarding processor using the below configuration. Message forwarding processor consumes the messages stored in the message store. Compared to [Example 1](#example-1), this has an additional parameter **message.processor.reply.sequence** to point to a sequence to handle the response message. 
+      Create a message forwarding processor using the below configuration. Message forwarding processor consumes the messages stored in the message store. Compared to [Example 1](#example-1-store-and-forward-jms-messages), this has an additional parameter **message.processor.reply.sequence** to point to a sequence to handle the response message. 
     </td>
   </tr>
 </table>

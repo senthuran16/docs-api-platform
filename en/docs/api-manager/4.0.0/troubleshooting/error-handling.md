@@ -1,3 +1,17 @@
+---
+title: "Error handling"
+description: "Change the default fault sequences that WSO2 API Manager uses to format JSON error responses returned to clients."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/troubleshooting/error-handling.md
+tags:
+  - api-manager
+  - troubleshooting
+  - error-handling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Error Handling
 
 When errors/exceptions occur in the system, the API Manager throws XML-based error responses to the client by default. To change the format of these error responses, you change the relevant XML file in the `<API-M_HOME>/repository/deployment/server/synapse-configs/default/sequences` directory. The directory includes multiple XML files, named after the type of errors that occur. You must select the correct file.
@@ -130,7 +144,7 @@ Given below are some error codes and their meanings.
 <tr class="even">
 <td><code>900905</code></td>
 <td><p>Incorrect access token type is provided</p></td>
-<td><p>The access token type used is not supported when invoking the API. The supported access token types are application and user accesses tokens. See <a href="../get-started/key-concepts.md#access-token">Access Tokens</a>.</p></td>
+<td><p>The access token type used is not supported when invoking the API. The supported access token types are application and user accesses tokens. See <a href="../../get-started/key-concepts.md#access-token">Access Tokens</a>.</p></td>
 <td>Invoke an API with application token, where the resource only allows application user tokens</td>
 </tr>
 <tr class="odd">

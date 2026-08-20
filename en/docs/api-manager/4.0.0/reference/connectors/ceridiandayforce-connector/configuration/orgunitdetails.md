@@ -1,3 +1,18 @@
+---
+title: "Working with org unit details"
+description: "Reference of the operation used to retrieve details of a specific organization unit with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/configuration/orgunitdetails/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/configuration/orgunitdetails.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Org Unit Details
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve details of a specific Org Unit
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-org-unit-details"></a>
 #### Retrieving Org Unit Details
 We can use GET Org Unit Details operation with required parameters to find details of a selected org unit
 

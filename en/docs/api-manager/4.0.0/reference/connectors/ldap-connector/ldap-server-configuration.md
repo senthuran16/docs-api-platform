@@ -1,3 +1,18 @@
+---
+title: "LDAP connector reference"
+description: "Configure the LDAP connector's init operation to establish a connection to an LDAP server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ldap-connector/ldap-server-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ldap-connector/ldap-server-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ldap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # LDAP Connector Reference
 
 To use the LDAP connector, add the `<ldap.init>` element in your configuration before carrying out any other LDAP operations. 

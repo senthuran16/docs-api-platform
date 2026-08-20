@@ -1,3 +1,18 @@
+---
+title: "Configure a distributed deployment with TM separate from CP"
+description: "Deploy WSO2 API Manager as a distributed setup with the Traffic Manager separated from the Gateway and Control Plane nodes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-tm-separated/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-tm-separated.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Distributed API-M Deployment with Traffic Manager Separated from the Control Plane
 
 The WSO2 API-M server can be deployed as an [all-in-one deployment](../single-node/all-in-one-deployment-overview.md) or as a distributed deployment. In the distributed setup, the [API-M server profiles](product-profiles.md) are deployed as separate API-M nodes. 
@@ -42,7 +57,7 @@ Given below are the API-M nodes you can have in a distributed deployment.
     </tr>
 </table>
 
-<a href="../../../assets/img/setup-and-install/deployment-tm.png"><img src="../../../assets/img/setup-and-install/deployment-tm.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/deployment-tm.png"><img src="../../../../assets/img/setup-and-install/deployment-tm.png" width="100%"></a>
 
 ## Step 1 - Install WSO2 API-M
 
@@ -61,7 +76,7 @@ For information, see [Installing and Configuring the Databases](../setting-up-da
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M. 
 
-For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
 
 ## Step 4 - Create and import SSL certificates
 

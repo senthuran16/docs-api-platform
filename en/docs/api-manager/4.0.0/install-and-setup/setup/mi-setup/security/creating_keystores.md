@@ -1,3 +1,18 @@
+---
+title: "Creating new keystores"
+description: "Create new keystores for the Micro Integrator using a self-signed certificate or an existing CA-signed certificate."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/creating_keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/creating_keystores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating New keystores
 
 There are two ways to create new [keystores for the Micro Integrator](../../../../reference/mi-security-reference/using_keystores.md): 

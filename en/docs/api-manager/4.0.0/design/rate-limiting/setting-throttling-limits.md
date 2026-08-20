@@ -1,3 +1,18 @@
+---
+title: "Setting limits for rate limiting"
+description: "Learn how rate limiting can be defined at the API, application, resource, and subscription levels in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/rate-limiting/setting-throttling-limits/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/rate-limiting/setting-throttling-limits.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - setting-throttling-limits
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Setting Limits for Rate Limiting
 
 Rate Limiting allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:
@@ -27,10 +42,10 @@ Let's take a look at the different levels of Rate Limiting:
 -   [Subscription-level Rate Limiting (API subscriber)](#subscription-level-rate-limiting-api-subscriber)
 -   [Advanced Rate Limiting (API publisher)](#advanced-rate-limiting-api-publisher)
     -   [API level Rate Limiting](#api-level-rate-limiting)
-    -   [Resource-level (Operation-level) Rate Limiting](#resource-leveloperation-level-rate-limiting)
+    -   [Resource-level (Operation-level) Rate Limiting](#resource-level-operation-level-rate-limiting)
     -   [Advanced Rate Limiting tiers](#advanced-rate-limiting-tiers)
 -   [Application-level Rate Limiting (application developer)](#application-level-rate-limiting-application-developer)
-    -   [Application-level Rate Limiting tiers](#Settingrate-limitingLimits-Application-levelrate-limitingtiers)
+    -   [Application-level Rate Limiting tiers](#application-level-rate-limiting-tiers)
 
 ### Subscription-level Rate Limiting (API publisher)
 
@@ -55,6 +70,7 @@ It is also possible to specify a bandwidth per unit time instead of a number of 
 </div>
 
 
+<a name="burst-control"></a>
 #### **Burst control**
 
 With burst control, you can define tiers with a combination of, for example, a 1000 requests per day and 10 requests per second. Users are then throttled at two layers. Enforcing a rate limit protects the backend from sudden request bursts and controls the usage at a subscription and API level.
@@ -86,18 +102,21 @@ Advanced Rate Limiting policies are applied when you are Publishing an API. It c
 -   API level Rate Limiting
 -   Resource level (operational level) Rate Limiting
 
+<a name="api-level-rate-limiting"></a>
 #### API level Rate Limiting
 
 API level policies can be engaged via the resources section of an API in the Publisher portal by selecting **API Level** under **Rate Limiting level** as shown below.
 
 [![API level advanced policy](../../assets/img/learn/api-level-advanced-policy.png)](../../assets/img/learn/api-level-advanced-policy.png)
 
+<a name="resource-level-operation-level-rate-limiting"></a>
 #### **Resource level (Operation level) Rate Limiting**
 
 An API is made up of one or more resources. Each resource handles a particular type of request and is similar to a method (function) in a larger API. You can use this method when handling a large number of request at resource level such as Financial transactions. For example, Imagine API have two resources and one resource take more request than other you do not need to throttle it in API level in that case you can use this.  Resource-level Rate Limiting tiers are set to HTTP verbs of an API's  resources.  You can apply resource-level Rate Limiting through the **Resources** section of an API as shown below.
 
 [![Operation level advanced policy](../../assets/img/learn/operation-level-advanced-policy.png){: style="width:70%"}](../../assets/img/learn/operation-level-advanced-policy.png)
 
+<a name="advanced-rate-limiting-tiers"></a>
 #### Advanced Rate Limiting tiers
 
 The default Rate Limiting tiers are as follows:
@@ -107,7 +126,7 @@ The default Rate Limiting tiers are as follows:
 -   **50KPerMin** : 50,000 requests per minute
 -   **Unlimited:** Allows unlimited access (you can disable the Unlimited tier by editing the `enable_unlimited_tier element` under `[apim.throttling]` in the `<API-M_HOME>/repository/conf/deployment.toml` file.)
 
-It is also possible to specify a bandwidth per unit time instead of a number of requests. This can be defined via the API Manager Admin Portal. For information on editing the values of the existing tiers, defining new tiers, and specifying a bandwidth per unit time, see [Adding a new advanced Rate Limiting policy](adding-new-throttling-policies.md#adding-a-new-advanced-throttling-policy).
+It is also possible to specify a bandwidth per unit time instead of a number of requests. This can be defined via the API Manager Admin Portal. For information on editing the values of the existing tiers, defining new tiers, and specifying a bandwidth per unit time, see [Adding a new advanced Rate Limiting policy](adding-new-throttling-policies.md#adding-a-new-advanced-rate-limiting-policy).
 
 ### Application-level Rate Limiting (application developer)
 
@@ -119,6 +138,7 @@ An application is a logical collection of one or more APIs and is required to su
 
 An application is available to a consumer at different levels of service. For example, if you have infrastructure limitations in facilitating more than a certain number of requests to an application at a time, the Rate Limiting tiers can be set accordingly so that the application can have a maximum number of requests within a defined time.
 
+<a name="application-level-rate-limiting-tiers"></a>
 #### Application-level Rate Limiting tiers
 
 The default Rate Limiting levels are as follows:
@@ -128,7 +148,7 @@ The default Rate Limiting levels are as follows:
 -   **50PerMin** : 50 requests per minute
 -   **Unlimited:** Unlimited access. The **Default Application**, which is provided out of the box has the tier set to Unlimited.
 
-It is also possible to specify a bandwidth per unit time instead of a number of requests. This can be done through the Admin Portal of API Manager. For information on editing the values of the existing tiers, defining new tiers and specifying a bandwidth per unit time, see [Adding a new application-level Rate Limiting tier](adding-new-throttling-policies.md#adding-a-new-application-level-throttling-tier).
+It is also possible to specify a bandwidth per unit time instead of a number of requests. This can be done through the Admin Portal of API Manager. For information on editing the values of the existing tiers, defining new tiers and specifying a bandwidth per unit time, see [Adding a new application-level Rate Limiting tier](adding-new-throttling-policies.md#adding-a-new-application-level-rate-limiting-tier).
 
 <div class="admonition info">
 <p class="admonition-title">Note</p>

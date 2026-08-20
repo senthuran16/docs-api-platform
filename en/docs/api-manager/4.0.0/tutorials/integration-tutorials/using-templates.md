@@ -1,3 +1,18 @@
+---
+title: "Reusing mediation sequences"
+description: "Create a Sequence Template and reuse it in multiple places of a Micro Integrator mediation flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/using-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/using-templates.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-templates
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Reusing Mediation Sequences
 
 ## What you'll build
@@ -20,11 +35,11 @@ An Integration project is a maven multi module project, which will contain all t
 1.  Open **WSO2 Integration Studio**.
 2.  Click **New Integration Project** in the **Getting Started** tab as shown below. 
 
-    <img src="../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
+    <img src="../../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
 
     This will open the <b>New Integration Project</b> dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
+    <img src="../../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
 
 3.  Enter `SampleServices` as the project name and select the following check boxes to create the required modules.
     -   **Create ESB Configs**
@@ -97,7 +112,7 @@ You will now see the projects listed in the **Project Explorer**.
     </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/119132155/119132164.png">
+    <img src="../../../assets/img/integrate/tutorials/119132155/119132164.png">
 
 #### Create Endpoints
 
@@ -170,7 +185,7 @@ Let's create three different HTTP endpoints for the above services.
       </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/119132155/119132166.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/119132155/119132166.png" width="500">
 
 4.  Click **Finish**.
 5.  Similarly, create the HTTP endpoints for the other two hospital services using the URI Templates given below:
@@ -197,14 +212,14 @@ Let's create three different HTTP endpoints for the above services.
         </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/using-templates/create-sequence-temp-dialog-box.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/using-templates/create-sequence-temp-dialog-box.png" width="500">
 
 4.  The template artifact will open in the canvas as shown below.
 
 5.  Open the **Properties** tab of the sequence template by clicking on
     the canvas (outside the sequence box).  
 
-6.  Click the <img src="../../assets/img/integrate/tutorials/plus-icon.png" width="20"> icon
+6.  Click the <img src="../../../assets/img/integrate/tutorials/plus-icon.png" width="20"> icon
     to start adding parameters .
 
     ![](../../assets/img/integrate/tutorials/sequence-canvas-2.png) 
@@ -235,7 +250,7 @@ Let's create three different HTTP endpoints for the above services.
         </tr>
     </table>
 
-10. Click the <img src="../../assets/img/integrate/tutorials/plus-icon.png" width="20"> icon
+10. Click the <img src="../../../assets/img/integrate/tutorials/plus-icon.png" width="20"> icon
     to start defining a property. Then add the following details for the
     property:
 
@@ -332,7 +347,7 @@ You can now start configuring the API resource.
          <td>
             <div class="content-wrapper">
               <p>Follow the steps given below to specify the expression value:</p>
-              <img src="../../assets/img/integrate/tutorials/119132155/expression-value.png">
+              <img src="../../../assets/img/integrate/tutorials/119132155/expression-value.png">
             <ol>
                 <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                 <li>
@@ -350,11 +365,11 @@ You can now start configuring the API resource.
 3.  Add a **Switch** mediator from the **Mediator** palette just after the Property Mediator.
 4.  Right-click the Switch mediator you just added and select **Add/Remove Case** to add the number of cases you want to specify.  
 
-    <img src="../../assets/img/integrate/tutorials/119132155/119132163.png">
+    <img src="../../../assets/img/integrate/tutorials/119132155/119132163.png">
 
     We have three different hospital endpoints, which corresponds to three switch cases. Enter 3 for **Number of branches** and click **OK**.  
 
-    <img src="../../assets/img/integrate/tutorials/119132155/switch-cases-dialog.png">
+    <img src="../../../assets/img/integrate/tutorials/119132155/switch-cases-dialog.png">
 
 5.  With the Switch mediator selected, go to the **Properties** tab and give the following details:
     <table>
@@ -406,7 +421,7 @@ You can now start configuring the API resource.
 7.  Open the **Properties** tab of the **Call Template** mediator and
     select ' HospitalRoutingSeq' from the list of available templates.
 
-8.  Click the <img src="../../assets/img/integrate/tutorials/plus-icon.png" width="20"> icon
+8.  Click the <img src="../../../assets/img/integrate/tutorials/plus-icon.png" width="20"> icon
     to start adding parameters. Enter the following parameter details
     and click **Finish** .
 
@@ -489,9 +504,9 @@ Let's send a simple request to invoke the service. You can use the embedded <b>H
     !!! Tip
         If you don't see the <b>HTTP Client</b> pane, go to <b>Window -> Show View - Other</b> and select <b>HTTP Client</b> to enable the client pane.
 
-    <img src="../../assets/img/integrate/tutorials/common/http4e-client-empty.png" width="800">
+    <img src="../../../assets/img/integrate/tutorials/common/http4e-client-empty.png" width="800">
     
-2. Enter the request information as given below and click the <b>Send</b> icon (<img src="../../assets/img/integrate/tutorials/common/play-head-icon.png" width="20">).
+2. Enter the request information as given below and click the <b>Send</b> icon (<img src="../../../assets/img/integrate/tutorials/common/play-head-icon.png" width="20">).
     
     <table>
         <tr>

@@ -1,3 +1,18 @@
+---
+title: "Deploying a WebSocket API in Choreo connect"
+description: "Deploy a WebSocket API to Choreo Connect via the WSO2 API Manager Publisher Portal or apictl for standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-websocket-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-websocket-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a WebSocket API in Choreo Connect
 
 You can deploy a WebSocket type API in Choreo Connect using [Choreo Connect with WSO2 API Manager as a Control Plane](#choreo-connect-with-wso2-api-manager-as-a-control-plane).

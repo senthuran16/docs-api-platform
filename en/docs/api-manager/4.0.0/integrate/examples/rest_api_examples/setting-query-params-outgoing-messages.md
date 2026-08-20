@@ -1,3 +1,18 @@
+---
+title: "Setting query parameters on outgoing messages"
+description: "Set query parameter values from an incoming REST request on the outgoing message sent to a backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/setting-query-params-outgoing-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/setting-query-params-outgoing-messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting Query Parameters on Outgoing Messages
 
 REST clients use query parameters to provide inputs for the relevant operation. These query parameters may be required to carry out the back-end operations either in a REST service or a proxy service.

@@ -1,3 +1,18 @@
+---
+title: "User management"
+description: "Learn about user management features in WSO2 Streaming Integrator, including user stores and external IdP integration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/user-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/user-management.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # User Management
 
 !!! info
@@ -94,8 +109,8 @@ The active IdP client is `local` by default.
 
 Following are the IdP Clients available for WSO2 Streaming Integrator:
 
-- [Local IdP Client](#UserManagementviatheIdPClientInterface-LocalIdPClient)
-- [External IdP Client](#UserManagementviatheIdPClientInterface-ExternalIdPClient)
+- [Local IdP Client](#local-idp-client)
+- [External IdP Client](#external-idp-client)
 
 ### Local IdP Client
 

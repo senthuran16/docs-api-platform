@@ -1,3 +1,18 @@
+---
+title: "Accessing a Windows share using VFS"
+description: "Demonstrates using the VFS transport in the Micro Integrator to access files on a Windows share."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/file-processing/accessing_windows_share_using_vfs_transport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/file-processing/accessing_windows_share_using_vfs_transport.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Accessing a Windows Share using VFS
 
 This example demonstrates how the [VFS transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md) in WSO2 Micro Integrator can be used to access a windows share.

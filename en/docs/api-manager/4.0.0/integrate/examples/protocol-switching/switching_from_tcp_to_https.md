@@ -1,3 +1,18 @@
+---
+title: "Switching from TCP to HTTP/S"
+description: "Configure a proxy service that receives SOAP messages over TCP and forwards them to a backend over HTTP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_tcp_to_https/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_tcp_to_https.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from TCP to HTTP/S
 
 This example demonstrates how WSO2 Micro Integrator receives SOAP messages over TCP and forwards them over HTTP.

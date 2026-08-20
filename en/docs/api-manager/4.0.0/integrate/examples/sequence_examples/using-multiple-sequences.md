@@ -1,3 +1,18 @@
+---
+title: "Breaking complex flows into multiple sequences"
+description: "Break a complex mediation flow into multiple reusable sequences instead of a single main sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/sequence_examples/using-multiple-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/sequence_examples/using-multiple-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - sequence_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Breaking Complex Flows into Multiple Sequences
 This sample demonstrates how a complex sequence can be separated into a set of simpler sequences. In this sample, you will send a simple request to a back-end service (Stock Quote service) and receive a response. If you look at the sample's XML configuration, you will see how this mediation is performed by several sequence definitions instead of one main sequence.
 

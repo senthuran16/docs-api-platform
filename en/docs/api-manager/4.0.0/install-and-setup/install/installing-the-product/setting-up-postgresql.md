@@ -1,3 +1,18 @@
+---
+title: "Setting up a PostgreSQL database"
+description: "Set up a PostgreSQL database and login role for the Micro Integrator Dashboard using the provided database scripts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-postgresql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-postgresql.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up a PostgreSQL Database
 
 Follow the steps given below to set up the required Postgre databases for your Micro Integrator (MI) Dashboard.

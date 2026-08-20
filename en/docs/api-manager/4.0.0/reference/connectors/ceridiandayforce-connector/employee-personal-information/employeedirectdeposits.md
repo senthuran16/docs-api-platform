@@ -1,3 +1,18 @@
+---
+title: "Working with employee direct deposits"
+description: "Retrieve an employee's direct deposit information using the GET Employee Direct Deposits operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeedirectdeposits/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeedirectdeposits.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Direct Deposits
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve direct deposit information of an 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-direct-deposit"></a>
 #### Retrieving Employee Direct Deposit
 We can use GET Employee Direct Deposits operation with required parameters to search and find the required employee's direct deposit information.
 

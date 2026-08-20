@@ -1,3 +1,18 @@
+---
+title: "Configuring data sources"
+description: "Configure data sources for the Streaming Integrator server and tooling runtimes in the deployment.yaml file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-data-sources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-data-sources.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Data Sources
 
 In the Streaming Integrator, there are datasources specific to both the Streaming Integrator server and Streaming Integrator Tooling. The data sources of

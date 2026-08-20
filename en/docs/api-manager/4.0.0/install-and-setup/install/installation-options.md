@@ -1,3 +1,18 @@
+---
+title: "Installation options"
+description: "Review the installation options available for API Manager and Micro Integrator, including Kubernetes, Docker, Ansible, and Puppet."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installation-options/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installation-options.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installation-options
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Installation Options
 
 API Manager and Micro Integrator provide a wide range of installation options for deployments.

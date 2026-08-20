@@ -1,3 +1,17 @@
+---
+title: "Micro Integrator dashboard configuration catalog"
+description: "Reference of the deployment.toml configuration parameters used to configure the Micro Integrator Dashboard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/config-catalog-mi-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/config-catalog-mi-dashboard.md
+tags:
+  - api-manager
+  - reference
+  - config-catalog-mi-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Micro Integrator Dashboard Configuration Catalog
 
 All the server-level configurations of your Micro Integrator Dashboard can be applied using a single configuration file, which is the `deployment.toml` file (stored in the `MI_DASHBOARD_HOME/conf` directory).

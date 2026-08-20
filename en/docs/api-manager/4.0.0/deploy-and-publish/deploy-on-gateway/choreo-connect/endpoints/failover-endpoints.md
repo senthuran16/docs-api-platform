@@ -1,3 +1,18 @@
+---
+title: "Failover endpoints"
+description: "Enable failover endpoints in the Publisher so API traffic reroutes to a backup endpoint when the primary one fails."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/failover-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/failover-endpoints.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Failover Endpoints
 
 When you use Failover Endpoints, even though a failure may occur in a given API Endpoint it provides users with an uninterrupted API invocation experience. When failover is enabled, the traffic that comes to the relevant resource is always routed to the first endpoint. Thereafter, the traffic is routed to second endpoint only if the first endpoint is not available.

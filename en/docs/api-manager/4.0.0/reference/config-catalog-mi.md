@@ -1,3 +1,17 @@
+---
+title: "Integration server configurations"
+description: "Reference of the deployment.toml configuration parameters used to configure a Micro Integrator instance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/config-catalog-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/config-catalog-mi.md
+tags:
+  - api-manager
+  - reference
+  - config-catalog-mi
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Integration Server Configurations
 
 All the server-level configurations of your Micro Integrator instance can be applied using a single configuration file, which is the `deployment.toml` file (stored in the `MI_HOME/conf` directory).
@@ -58,7 +72,7 @@ enable_swa=false
                             <code>[server]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the deployment parameters that are used for identifying a Micro Integrator server node. You need to update these values when you deploy <a href="../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei.md">WSO2 Micro Integrator</a>. The required and optional parameters for this configuration are listed below.
+                                This configuration header is required for configuring the deployment parameters that are used for identifying a Micro Integrator server node. You need to update these values when you deploy <a href="../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei.md">WSO2 Micro Integrator</a>. The required and optional parameters for this configuration are listed below.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -493,7 +507,7 @@ key_password = "wso2carbon"</code></pre>
                             <code>[keystore.primary]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the parameters that connect the Micro Integrator to the <a href="../install-and-setup/setup/mi-setup/security/configuring_keystores.md#changing-the-default-primary-keystore">primary keystore</a>. This keystore is used for SSL handshaking (when the server communicates with another server) and for encrypting plain text information in configuration files. By default, this keystore is also used for encrypted data in internal datastores, unless you have configured a <a href="#internal-keystore">separate keystore</a> for internal data encryption.
+                                This configuration header is required for configuring the parameters that connect the Micro Integrator to the <a href="../../install-and-setup/setup/mi-setup/security/configuring_keystores.md#changing-the-default-primary-keystore">primary keystore</a>. This keystore is used for SSL handshaking (when the server communicates with another server) and for encrypting plain text information in configuration files. By default, this keystore is also used for encrypted data in internal datastores, unless you have configured a <a href="#internal-keystore">separate keystore</a> for internal data encryption.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -631,7 +645,7 @@ key_password = "wso2carbon"</code></pre>
                             <code>[keystore.internal]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the parameters that connect the Micro Integrator to the keystore used for encrypting/decrypting data in internal data stores. You may sometimes choose to configure a separate keystore for this purpose because the primary keystore needs to renew certificates frequently. However, for encrypting information in internal data stores, the keystore certificates should not be changed frequently because the data that is already encrypted will become unusable every time the certificate changes. Read more about <a href="../install-and-setup/setup/mi-setup/security/configuring_keystores.md#separating-the-internal-keystore">configuring the internal keystore</a>.
+                                This configuration header is required for configuring the parameters that connect the Micro Integrator to the keystore used for encrypting/decrypting data in internal data stores. You may sometimes choose to configure a separate keystore for this purpose because the primary keystore needs to renew certificates frequently. However, for encrypting information in internal data stores, the keystore certificates should not be changed frequently because the data that is already encrypted will become unusable every time the certificate changes. Read more about <a href="../../install-and-setup/setup/mi-setup/security/configuring_keystores.md#separating-the-internal-keystore">configuring the internal keystore</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -824,7 +838,7 @@ alias="symmetric.key.value"</code></pre>
                             <code>[truststore]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the parameters that connect the Micro Integrator to the keystore file (trust store) that is used to store the digital certificates that the server trusts for SSL communication. Read more about <a href="../install-and-setup/setup/mi-setup/security/configuring_keystores.md#optional-changing-the-default-truststore">configuring the truststore</a>.
+                                This configuration header is required for configuring the parameters that connect the Micro Integrator to the keystore file (trust store) that is used to store the digital certificates that the server trusts for SSL communication. Read more about <a href="../../install-and-setup/setup/mi-setup/security/configuring_keystores.md#optional-changing-the-default-truststore">configuring the truststore</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -948,7 +962,7 @@ user.password = "pwd-2"
                             <code>[internal_apis.file_user_store]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for disabling the default file-based user store of the Micro Integrator's Management API. Read more about <a href='../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md'>configuring user stores</a>.
+                                This configuration header is required for disabling the default file-based user store of the Micro Integrator's Management API. Read more about <a href='../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md'>configuring user stores</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -978,7 +992,7 @@ user.password = "pwd-2"
                             <code>[[internal_apis.users]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for defining the user name and password for the Management API. Reuse this header when you want to add more users. The user credentials are stored in the default file-based user store of the Management API. Read more about <a href='../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md'>configuring user stores</a>.
+                                This configuration header is required for defining the user name and password for the Management API. Reuse this header when you want to add more users. The user credentials are stored in the default file-based user store of the Management API. Read more about <a href='../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md'>configuring user stores</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -1086,7 +1100,7 @@ connection_retry_delay = "120000"
                             <code>[user_store]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for conencting the Micro Integrator to an <a href='../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md'>external user store</a>.
+                                This configuration header is required for conencting the Micro Integrator to an <a href='../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md'>external user store</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -1756,7 +1770,7 @@ pool_options.testOnBorrow = true</code></pre>
                             <code>[[datasource]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for connecting to a database from the Micro Integrator. Databases are only required if you are connecting the Micro Integrator to an <a href='../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md#configuring-an-rdbms-user-store'>RDBMS user store</a>.
+                                This configuration header is required for connecting to a database from the Micro Integrator. Databases are only required if you are connecting the Micro Integrator to an <a href='../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md#configuring-an-rdbms-user-store'>RDBMS user store</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -3066,7 +3080,7 @@ application_binary =  "org.apache.axis2.format.BinaryFormatter"</code></pre>
                             <code>[message_formatters]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>message formatting</a> implementation that is used for formatting messages that are sent out of the Micro Integrator in <b>non-blocking</b> mode. If you are using the Micro Integrator in <b>blocking</b> mode, see the <a href='#message-formatter-blocking-mode'>message formatter configurations for blocking mode</a>.
+                                This configuration header is required for configuring the <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>message formatting</a> implementation that is used for formatting messages that are sent out of the Micro Integrator in <b>non-blocking</b> mode. If you are using the Micro Integrator in <b>blocking</b> mode, see the <a href='#message-formatters-blocking-mode'>message formatter configurations for blocking mode</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -3456,7 +3470,7 @@ class = "org.apache.axis2.json.JSONBadgerfishOMBuilder"</code></pre>
                             <code>[[blocking.custom_message_builders]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the custom message builder implementation class and the selected content types to which the builder should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-builder-non-blocking-mode'>same list of parameters</a> that are available for custom message builders in non-blocking mode.
+                                This configuration header is required for configuring the custom message builder implementation class and the selected content types to which the builder should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-builders-non-blocking-mode'>same list of parameters</a> that are available for custom message builders in non-blocking mode.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -3570,7 +3584,7 @@ class = "org.apache.axis2.json.JSONBadgerfishMessageFormatter"</code></pre>
                             <code>[[blocking.custom_message_formatters]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the custom message formatter implementation class and the selected content types to which the formatter should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-formatter-non-blocking-mode'>same list of parameters</a> that are available for custom message formatters in non-blocking mode.
+                                This configuration header is required for configuring the custom message formatter implementation class and the selected content types to which the formatter should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-formatters-non-blocking-mode'>same list of parameters</a> that are available for custom message formatters in non-blocking mode.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -8125,7 +8139,7 @@ parameter.truststore_password = "$ref{truststore.password}"</code></pre>
                             <code>[[transport.rabbitmq.listener]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required if you are configuring WSO2 Micro Integrator to receive messages from a RabbitMQ client. Read more about <a href='../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md'>connecting the Micro Integrator with RabbitMQ</a>.
+                                This configuration header is required if you are configuring WSO2 Micro Integrator to receive messages from a RabbitMQ client. Read more about <a href='../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md'>connecting the Micro Integrator with RabbitMQ</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -8829,7 +8843,7 @@ parameter.connection_pool_size = 10</code></pre>
                             <code>[transport.rabbitmq]</code>
                             
                             <p>
-                                This configuration header is required for enabling the RabbitMQ listener in the Micro Integrator. Read more about <a href='../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md'>connecting the Micro Integrator with RabbitMQ</a>.
+                                This configuration header is required for enabling the RabbitMQ listener in the Micro Integrator. Read more about <a href='../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md'>connecting the Micro Integrator with RabbitMQ</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -8859,7 +8873,7 @@ parameter.connection_pool_size = 10</code></pre>
                             <code>[[transport.rabbitmq.sender]]</code>
                             
                             <p>
-                                This configuration header is optional when you have the RabbitMQ sender enabled ([transport.rabbitmq]. Read more about <a href='../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md'>connecting the Micro Integrator with RabbitMQ</a>.
+                                This configuration header is optional when you have the RabbitMQ sender enabled ([transport.rabbitmq]. Read more about <a href='../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md'>connecting the Micro Integrator with RabbitMQ</a>.
                             </p>
                         </div>
                         <div class="params-wrap">

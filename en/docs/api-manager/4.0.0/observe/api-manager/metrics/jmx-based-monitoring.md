@@ -1,5 +1,15 @@
 ---
-title: JMX-Based Monitoring - WSO2 API Manager 4.0.0
+title: "JMX-Based Monitoring - WSO2 API Manager 4.0.0"
+description: "Enable, configure, and disable JMX for WSO2 API Manager, then monitor the server and datasources using the JConsole tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/metrics/jmx-based-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/metrics/jmx-based-monitoring.md
+tags:
+  - api-manager
+  - observe
+  - metrics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # JMX-Based Monitoring

@@ -1,3 +1,18 @@
+---
+title: "Endpoints"
+description: "Explains endpoint concepts and classifications used to define external destinations for messages in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - endpoint-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Endpoints
 ## Introduction
 
@@ -11,7 +26,7 @@ Endpoints are independent of transports, which allows you to use the same endpoi
 
 ### Named Endpoints
 
-A named endpoint can be any one of the [listed endpoints](#list-of-endpoints). You can reuse these endpoints by referencing them in another endpoint by name using the `key` attribute. For example, if you have an [address endpoint](#address_endpoint) named `foo`, you can reference the `foo` endpoint in an [indirect](#indirect-and-resolving-endpoints) using the `key` attribute: `<endpoint key="foo">`
+A named endpoint can be any one of the [listed endpoints](#list-of-endpoints). You can reuse these endpoints by referencing them in another endpoint by name using the `key` attribute. For example, if you have an [address endpoint](#address_endpoint) named `foo`, you can reference the `foo` endpoint in an [indirect](#indirect-endpoints) using the `key` attribute: `<endpoint key="foo">`
 
 ### Indirect Endpoints
 
@@ -62,7 +77,7 @@ You can configure the following endpoint types.
   <tr>
     <td>HTTP Endpoint</td>
     <td>
-      Allows you to define REST endpoints using <b>URI templates</b> similar to the REST API. The URI templates allow a RESTful URI to contain variables that can be populated during mediation runtime using <a href="../mediators/property-Mediator.md">property</a> values with the <code>uri.var.</code> prefix. An HTTP endpoint can also define the particular HTTP method to use in the RESTful invocation.
+      Allows you to define REST endpoints using <b>URI templates</b> similar to the REST API. The URI templates allow a RESTful URI to contain variables that can be populated during mediation runtime using <a href="../../mediators/property-mediator.md">property</a> values with the <code>uri.var.</code> prefix. An HTTP endpoint can also define the particular HTTP method to use in the RESTful invocation.
     </td>
   </tr>
   <tr>
@@ -246,7 +261,7 @@ Listed below are the basic properties that used to [define an endpoint artifact]
     <tr>
         <td>Trace Enabled</td>
         <td>
-            This enables tracing for the endpoint. You can <a href="../../integrate/develop/endpoint-trace-logs.md">use trace logs to debug</a> mediation errors.
+            This enables tracing for the endpoint. You can <a href="../../../integrate/develop/endpoint-trace-logs.md">use trace logs to debug</a> mediation errors.
         </td>
     </tr>
     <tr>

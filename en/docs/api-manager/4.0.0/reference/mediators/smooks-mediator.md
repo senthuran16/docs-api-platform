@@ -1,3 +1,18 @@
+---
+title: "Smooks mediator"
+description: "Reference for the Smooks mediator syntax and parameters used to apply lightweight transformations to XML messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/smooks-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/smooks-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - smooks-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Smooks Mediator
 
 The **Smooks Mediator** can be used to apply lightweight transformations on messages in an efficient manner. Smooks is a powerful framework for

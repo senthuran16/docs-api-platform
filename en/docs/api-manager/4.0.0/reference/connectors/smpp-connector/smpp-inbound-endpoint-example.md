@@ -1,3 +1,18 @@
+---
+title: "SMPP inbound endpoint example"
+description: "Configure a sample integration that uses the SMPP inbound endpoint to consume messages from an SMSC."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/smpp-connector/smpp-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/smpp-connector/smpp-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - smpp-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # SMPP Inbound Endpoint Example
 
 The SMPP inbound endpoint allows you to consume messages from SMSC. The WSO2 SMPP inbound endpoint acts as a message consumer. It creates a connection with the SMSC, then listens over a port to consume only SMS messages from the SMSC and injects the messages to the integration sequence. It will receive alert notifications or will notify when a data short message accepted.
@@ -10,17 +25,17 @@ The SMPP inbound endpoint is listening to the Short Message service center for c
 
 Following diagram shows the overall solution we are going to build. The SMSC will generate or receive messages from the outside, while the SMPP inbound endpoint will consume messages based on the updates.
 
-<img src="../../../assets/img/integrate/connectors/smpp-inboundep-example.png" title="SMPP Inbound Endpoint" width="800" alt="SMPP Inbound Endpoint"/>
+<img src="../../../../assets/img/integrate/connectors/smpp-inboundep-example.png" title="SMPP Inbound Endpoint" width="800" alt="SMPP Inbound Endpoint"/>
 
 ## Configure inbound endpoint using WSO2 Integration Studio
 
 1. Download [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/). Create an **Integration Project** as below. 
    
-   <img src="../../../assets/img/integrate/connectors/integration-project.png" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" />
+   <img src="../../../../assets/img/integrate/connectors/integration-project.png" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" />
 
 2. Right click on **Created Integration Project** -> **New** -> **Inbound Endpoint** -> **Create A New Inbound Endpoint** -> **Inbound Endpoint Creation Type**and select as **custom** -> Click **Next**.
    
-   <img src="../../../assets/img/integrate/connectors/smpp-inboundep-create-new-ie.png" title="Creating inbound endpoint" width="400" alt="Creating inbound endpoint" style="border:1px solid black"/>
+   <img src="../../../../assets/img/integrate/connectors/smpp-inboundep-create-new-ie.png" title="Creating inbound endpoint" width="400" alt="Creating inbound endpoint" style="border:1px solid black"/>
 
 3. Click on **Inbound Endpoint** in design view and under `properties` tab, update class name to `org.wso2.carbon.inbound.smpp.SMPPListeningConsumer`. 
 
@@ -93,7 +108,7 @@ Following diagram shows the overall solution we are going to build. The SMSC wil
 **CApp (Carbon Application)** is the deployable artefact on the integration runtime. Let us see how we can export integration logic we developed into a CApp. To export the `Solution Project` as a CApp, a `Composite Application Project` needs to be created. Usually, when a solution project is created, this project is automatically created by Integration Studio. If not, you can specifically create it by navigating to  **File** -> **New** -> **Other** -> **WSO2** -> **Distribution** -> **Composite Application Project**. 
 
 1. Right click on Composite Application Project and click on **Export Composite Application Project**.</br> 
-  <img src="../../../assets/img/integrate/connectors/capp-project1.jpg" title="Export as a Carbon Application" width="300" alt="Export as a Carbon Application" />
+  <img src="../../../../assets/img/integrate/connectors/capp-project1.jpg" title="Export as a Carbon Application" width="300" alt="Export as a Carbon Application" />
 
 2. Select an **Export Destination** where you want to save the .car file. 
 
@@ -103,8 +118,8 @@ Following diagram shows the overall solution we are going to build. The SMSC wil
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/smpp-inbound-endpoint.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/smpp-inbound-endpoint.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -118,7 +133,7 @@ You can download the ZIP file and extract the contents to get the project code.
    
 3. Copy the exported carbon application to the **<PRODUCT-HOME>/repository/deployment/server/carbonapps** folder. 
 
-4. [Start the integration server](../../../get-started/integration-quick-start-guide.md#start-the-micro-integrator). 
+4. [Start the integration server](../../../get-started/integration-quick-start-guide.md#step-2-running-the-integration-artifacts). 
 
 ## Testing  
 

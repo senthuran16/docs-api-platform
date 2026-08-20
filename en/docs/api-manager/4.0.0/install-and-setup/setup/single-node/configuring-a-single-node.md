@@ -1,20 +1,35 @@
+---
+title: "Configuring a single Node"
+description: "Walks through manually configuring and deploying WSO2 API Manager as a single standalone all-in-one node."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/single-node/configuring-a-single-node/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/single-node/configuring-a-single-node.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Single Node
 
 This page walks you through how to manually configure and deploy WSO2 API Manager in a single standalone instance, without using a distributed or HA deployment patterns. 
 
-<a href="../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment"></a>
+<a href="../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment"></a>
 
 Follow the instructions below to configure and deploy API-M using a single node:
 
 - [Configuring a Single Node](#configuring-a-single-node)
-  - [Step 1 - Create a SSL Certificate](#step-1---create-a-ssl-certificate)
-  - [Step 2 - Configure the Load Balancer](#step-2---configure-the-load-balancer)
-  - [Step 3 - Configure the Databases](#step-3---configure-the-databases)
-  - [Step 4 - Configure Gateway URLs to Expose APIs](#step-4---configure-gateway-urls-to-expose-apis)
-  - [Step 5 - Configure Dev Portal URL in Publisher](#step-5---configure-dev-portal-url-in-publisher)
-  - [Step 6 - Configure API-M Analytics](#step-6---configure-api-m-analytics)
-  - [Step 7 - Configure Production Hardening](#step-7---configure-production-hardening)
-  - [Step 8 - Start the WSO2 API-M server](#step-8---start-the-wso2-api-m-server)
+  - [Step 1 - Create a SSL Certificate](#step-1-create-a-ssl-certificate)
+  - [Step 2 - Configure the Load Balancer](#step-2-configure-the-load-balancer)
+  - [Step 3 - Configure the Databases](#step-3-configure-the-databases)
+  - [Step 4 - Configure Gateway URLs to Expose APIs](#step-4-configure-gateway-urls-to-expose-apis)
+  - [Step 5 - Configure Dev Portal URL in Publisher](#step-5-configure-dev-portal-url-in-publisher)
+  - [Step 6 - Configure API-M Analytics](#step-6-configure-api-m-analytics)
+  - [Step 7 - Configure Production Hardening](#step-7-configure-production-hardening)
+  - [Step 8 - Start the WSO2 API-M server](#step-8-start-the-wso2-api-m-server)
 
 ----------------------------
 
@@ -120,14 +135,14 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
   
 ## Step 8 - Start the WSO2 API-M server
 
 If you want to deploy WSO2 API-M using a hybrid single node deployment, where WSO2 Identity Server is used as the Key Manager while the rest of the WSO2 API-M components are all in one node, configure and start the Key Manager (e.g., configure and start WSO2 Identity Server as the Key Manager) before starting the WSO2 API-M server.
 
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 ```tab="Linux/Mac OS"
 cd <API-M_HOME>/bin/

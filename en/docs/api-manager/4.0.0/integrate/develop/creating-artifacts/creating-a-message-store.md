@@ -1,3 +1,18 @@
+---
+title: "Creating a message store"
+description: "Provides steps to create a message store artifact, such as JMS, JDBC, or RabbitMQ, in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/creating-artifacts/creating-a-message-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/creating-artifacts/creating-a-message-store.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Message Store
 
 Follow the instructions given below to create a new [Message Store](../../../reference/synapse-properties/about-message-stores-processors.md) artifact in WSO2 Integration Studio.
@@ -6,17 +21,17 @@ Follow the instructions given below to create a new [Message Store](../../../ref
 
 ### Creating the Message Store artifact
 
-1.	Right-click the [ESB Config project](../create-integration-project.md#esb-config-project) and go to **New → Message Store** to open the **New Message Store Artifact** dialog box.
+1.	Right-click the [ESB Config project](../create-integration-project.md#sub-projects) and go to **New → Message Store** to open the **New Message Store Artifact** dialog box.
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_store/select-message-store.png" width="600">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/select-message-store.png" width="600">
 
 2.	Select the **Create a new message-store artifact** option and click **Next**.
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_store/new-message-store-wizard-1.png" width="500">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/new-message-store-wizard-1.png" width="500">
 
 3.	Enter a unique name for the message store, and then select the type of message store you are creating.
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_store/new-message-store-wizard-2.png" width="500">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/new-message-store-wizard-2.png" width="500">
 
 	See the links given below for descriptions of message store properties for each store type:
 
@@ -44,11 +59,11 @@ To add a message store to the integration sequence, use the [Store Mediator](../
 1.	Open to the **Design View** of your [mediation sequence](../../../reference/synapse-properties/sequence-properties.md).
 2.	Drag the [Store Mediator](../../../reference/mediators/store-mediator.md) from the **Palette** and drop it to the relevant position in the [mediation sequence](../../../reference/synapse-properties/sequence-properties.md):
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_store/message-store-graphical-editor.png" width="700">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/message-store-graphical-editor.png" width="700">
 
 3.	Double-click the **Store Mediator** to open the **Properties** tab:
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_store/message-store-properties.png" width="700">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/message-store-properties.png" width="700">
 
 4.	Select your message store artifact from the list in the **Available Message Stores** field as shown above.
 
@@ -58,7 +73,7 @@ The message store is now linked to your integration sequence.
 
 Open the new message store artifact from the project explorer. You can use the **Form** view or the **Source** view to update message store properties.
 
-<img src="../../../assets/img/integrate/create_artifacts/new_message_store/message-store-form-view.png" width="700">
+<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/message-store-form-view.png" width="700">
 
 ## Examples
 

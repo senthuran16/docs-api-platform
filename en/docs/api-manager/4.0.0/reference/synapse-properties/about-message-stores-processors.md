@@ -1,3 +1,18 @@
+---
+title: "About message stores and processors"
+description: "Explains how message stores and message processors work together to temporarily store and forward messages to a destination."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/about-message-stores-processors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/about-message-stores-processors.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - about-message-stores-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # About Message Stores and Processors
 
 A **Message Store** is used by a mediation sequence to temporarily store messages before they are delivered to their destination. This approach is useful for serving traffic to back-end services that can only accept messages at a given rate, whereas incoming traffic arrives at different rates. 
@@ -11,13 +26,13 @@ Multiple message processors can use the same message store. For example, in a cl
 
 ## List of Message Stores
 
-- <a href="message-stores/jms-msg-store-properties.md">JMS Message Store</a>
-- <a href="message-stores/jdbc-msg-store-properties.md">JDBC Message Store</a>
-- <a href="message-stores/rabbitmq-msg-store-properties.md">RabbitMQ Message Store</a>
-- <a href="message-stores/resequence-msg-store-properties.md">Resequence Message Store</a>
-- <a href="message-stores/wso2mb-msg-store-properties.md">WSO2 MB Message Store</a>
-- <a href="message-stores/in-memory-msg-store-properties.md">In-Memory Message Store</a>
-- <a href="message-stores/custom-msg-store-properties.md">Custom Message Store</a>
+- <a href="../message-stores/jms-msg-store-properties.md">JMS Message Store</a>
+- <a href="../message-stores/jdbc-msg-store-properties.md">JDBC Message Store</a>
+- <a href="../message-stores/rabbitmq-msg-store-properties.md">RabbitMQ Message Store</a>
+- <a href="../message-stores/resequence-msg-store-properties.md">Resequence Message Store</a>
+- <a href="../message-stores/wso2mb-msg-store-properties.md">WSO2 MB Message Store</a>
+- <a href="../message-stores/in-memory-msg-store-properties.md">In-Memory Message Store</a>
+- <a href="../message-stores/custom-msg-store-properties.md">Custom Message Store</a>
 
 <!--
 
@@ -99,9 +114,9 @@ Multiple message processors can use the same message store. For example, in a cl
 
 ## List of Message Processors
 
-- <a href="message-processors/msg-sampling-processor-properties.md">Message Sampling Processor</a>
-- <a href="message-processors/msg-sched-forwarding-processor-properties.md">Scheduled Message Forwarding Processor</a>
-- <a href="message-processors/msg-sched-failover-forwarding-processor-properties.md">Scheduled Failover Message Forwarding Processor</a>
+- <a href="../message-processors/msg-sampling-processor-properties.md">Message Sampling Processor</a>
+- <a href="../message-processors/msg-sched-forwarding-processor-properties.md">Scheduled Message Forwarding Processor</a>
+- <a href="../message-processors/msg-sched-failover-forwarding-processor-properties.md">Scheduled Failover Message Forwarding Processor</a>
 
 <!--
 <table>

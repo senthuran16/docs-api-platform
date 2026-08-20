@@ -1,3 +1,18 @@
+---
+title: "Deploy a REST API in Choreo Connect using apictl"
+description: "Deploy a REST API to Choreo Connect using the WSO2 API Controller (apictl) command-line tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-via-apictl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-via-apictl.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a REST API in Choreo Connect Using WSO2 API Controller
 
 Follow the instructions below to use the WSO2 API Controller (apictl), which is the CLI Tool, to deploy a REST type API in Choreo Connect:
@@ -5,7 +20,7 @@ Follow the instructions below to use the WSO2 API Controller (apictl), which is 
 !!! info
     **Before you begin**
 
-    This guide assumes that you already have a Choreo Connect instance that is up and running. If not, checkout the [Using Choreo Connect Deployed on Docker with WSO2 API Controller Guide]({{base_path}}/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-api-controller) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../getting-started/choreo-connect-overview.md). 
+    This guide assumes that you already have a Choreo Connect instance that is up and running. If not, checkout the [Using Choreo Connect Deployed on Docker with WSO2 API Controller Guide](../getting-started/deploy/cc-as-a-standalone-gateway-on-docker) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../getting-started/choreo-connect-overview.md). 
 
 ## Step 1 - Download and initialize apictl 
 
@@ -75,8 +90,8 @@ apictl mg deploy api -f <path_to_the_API_project_just_created>/petstore -e dev -
     - [Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway.md)
 
 ##  Step 6 - Invoke the API
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.0.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.

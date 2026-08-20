@@ -1,3 +1,18 @@
+---
+title: "Deploying a Streaming Integrator HA cluster in AWS ECS"
+description: "Run the Streaming Integrator as a minimum high availability cluster of two nodes on AWS Elastic Container Service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster-in-aws-ecs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster-in-aws-ecs.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying the Streaming Integrator as a Minimum HA Cluster in AWS ECS
 
 ## Introduction
@@ -310,7 +325,7 @@ To create a Amazon RDS (Relational Database Service) for the purpose of persisti
 
         4. Under **Settings**, enter details as instructed within the user interface.
 
-            ![RD Instance Settings](../../../assets/img/streaming/si-as-minimum-ha-cluster-in-aws-ecs/RD-instance-settings.png)
+            ![RD Instance Settings](../../../assets/img/streaming/si-as-minimum-ha-cluster-in-aws-ecs/rd-instance-settings.png)
 
         5. Under **Connectivity**, expand the **Additional connectivity configuration**. Under **Publicly accessible**, select **Yes**. This allows you to connect and create the database, and then check on the database values later.
 

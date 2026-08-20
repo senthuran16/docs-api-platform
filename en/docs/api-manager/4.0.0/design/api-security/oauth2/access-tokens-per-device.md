@@ -1,3 +1,18 @@
+---
+title: "duplicate\\_Access tokens per device"
+description: "Generate a unique OAuth2 access token per device for the same application and user by prefixing scopes with device_ in the token request."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/access-tokens-per-device/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/access-tokens-per-device.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # duplicate\_Access Tokens Per Device
 
 ### Generating access tokens per device

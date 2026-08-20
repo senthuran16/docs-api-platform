@@ -1,3 +1,18 @@
+---
+title: "Setting up a MySQL database"
+description: "Set up a MySQL server and database for the Micro Integrator Dashboard, including installation and database creation steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-mysql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-mysql.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up a MySQL Database
 
 Follow the steps given below to set up the required MySQL databases for your Micro Integrator (MI) Dashboard.

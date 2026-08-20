@@ -1,3 +1,18 @@
+---
+title: "Adding an application key generation workflow"
+description: "Engage a custom approval workflow executor to control production and sandbox key generation requests for applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding an Application Key Generation Workflow
 
 This section explains as to how you can attach a simple approval workflow to the **application registration** operation in the API Manager. 
@@ -16,7 +31,7 @@ First, enable the application registration workflow.
 
 2. Click **Main** --> **Resources** --> **Browse**.
 
-     <a href="../../../assets/img/learn/wf-extensions-browse.png"><img src="../../../assets/img/learn/wf-extensions-browse.png" width="250" height="100"/></a>
+     <a href="../../../../assets/img/learn/wf-extensions-browse.png"><img src="../../../../assets/img/learn/wf-extensions-browse.png" width="250" height="100"/></a>
 
 3.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, disable the Simple Workflow Executor and enable **Approval Workflow Executor**  for application registration key generation. You can enable Approve workflow executor for Product keys or Sandbox keys or both by disabling the simple workflow executor and enable approval workflow executor for the ones you need. Please note that this workflow is not applicable for API keys generation.
 

@@ -1,3 +1,18 @@
+---
+title: "Specifying delivery delay on messages"
+description: "Configure a JMS 2.0 delivery delay so a message is not delivered to the consumer until a specified time elapses."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/specifying-a-delivery-delay-on-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/specifying-a-delivery-delay-on-messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Specifying Delivery Delay on Messages
 
 In a normal message flow, JMS messages that are sent by the JMS producer to the JMS broker are forwarded to the respective JMS consumer without any delay.

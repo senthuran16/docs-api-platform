@@ -1,3 +1,18 @@
+---
+title: "Working with employee locations"
+description: "Retrieve, create, and update the locations and authority types an employee manages using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeelocations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeelocations.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Locations
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update locations of an
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-locations"></a>
 #### Retrieving Employee Locations
 We can use GET Employee Locations operation with required parameters to search and find location of an employee.
 
@@ -88,6 +104,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Locations/GET-Employee-Locations.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Locations/GET-Employee-Locations.aspx)
 
+<a name="creating-employee-locations"></a>
 #### Creating Employee Locations
 We can use POST Employee Locations operation with required parameters to create employee locations.
 
@@ -150,6 +167,7 @@ Dayforce returns HTTP Code 200
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Locations/POST-Employee-Locations.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Locations/POST-Employee-Locations.aspx)
 
+<a name="updating-employee-locations"></a>
 #### Updating Employee Locations
 We can use PATCH Employee Locations operation with required parameters to update the locations of employees.
 

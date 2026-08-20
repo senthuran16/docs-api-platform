@@ -1,3 +1,18 @@
+---
+title: "Filter mediator"
+description: "Reference for the Filter mediator, which filters messages based on an XPath, JSONPath, or regular expression condition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/filter-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/filter-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - filter-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Filter Mediator
 
 The **Filter Mediator** can be used for filtering messages based on an

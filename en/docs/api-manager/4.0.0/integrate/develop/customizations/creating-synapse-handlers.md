@@ -1,3 +1,18 @@
+---
+title: "Synapse handlers"
+description: "Explains what a synapse handler is and how to write one to process requests in specific message flows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/customizations/creating-synapse-handlers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/customizations/creating-synapse-handlers.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Synapse Handlers
 
 This section gives an introduction to what a handler is and describes how you can write a synapse handler by walking you through a basic example.

@@ -1,3 +1,18 @@
+---
+title: "Jira connector example"
+description: "Configure the Jira connector to create a new issue and retrieve it from a Jira Cloud account."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/jira-connector/jira-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/jira-connector/jira-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - jira-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Jira Connector Example
 
 The Jira REST API enables you to interact with Jira programmatically. The WSO2 JIRA Connector allows you to access the REST resources available in Jira Cloud [API Version v2](https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/) from an integration sequence.
@@ -8,7 +23,7 @@ This example explains how to use the JIRA Connector to create an issue and read 
 
 You will use two HTTP API resources, which are `createIssue` and `getIssue`.
 
-<img src="../../../assets/img/integrate/connectors/jira.png" title="Calling insert operation" width="800" alt="Calling insert operation"/>
+<img src="../../../../assets/img/integrate/connectors/jira.png" title="Calling insert operation" width="800" alt="Calling insert operation"/>
 
 * `/createIssue `: The user sends the request payload with the issue details (the project info, summary, description and the issue type).  This request is sent to the integration runtime by invoking the Jira API. It creates the issue in the corresponding Jira account.
 
@@ -20,12 +35,12 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.0.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API. 
-   <img src="../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
+   <img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 2. Provide the API name as `jiraAPI` and the API context as `/jira`. You can go to the source view of the XML configuration file of the API and copy the following configuration.
 
@@ -66,21 +81,21 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 </api>
 ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/jira-connector.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/jira-connector.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 ## Deployment
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

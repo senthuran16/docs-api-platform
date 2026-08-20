@@ -1,3 +1,18 @@
+---
+title: "File processing"
+description: "Pick a file from a folder, insert its records into a database, email its content, log it, and move it to another directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/file-processing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/file-processing.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # File processing
 
 ## What you'll build
@@ -45,7 +60,7 @@ Create an integration project with the following modules: **ESB Configs** and **
 
 1.  Open **WSO2 Integration Studio**.
 2.  Click **New Integration Project** in the **Getting Started** tab as shown below. 
-    ![](../../assets/img/new-project/new-integration-project.png)
+    ![](../../assets/img/integrate/new-project/new-integration-project.png)
 
 3.  Enter `FileProcessingService` as the project name.
 4.  Click **Finish**. The created project is saved in the **Project Explorer**.
@@ -217,6 +232,7 @@ connect to the database to insert data.
 
 2.  Edit the sequence and define the e-mail address to which the notification should be sent.
 
+<a name="create-the-smooks-configuration"></a>
 #### Create the Smooks configuration
 
 Create a smooks configuration file (for example `smooks-config.xml`) as shown below and save it to a location on your computer. 
@@ -250,9 +266,9 @@ Package the artifacts in your composite application module to be able to deploy 
 
 ### Step 4: Configure the Micro Integrator server
 
-1.  Click the <b>Embedded Micro Integrator Configuration</b> (<img src="../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20">) icon on the upper menu to open the dialog box.
+1.  Click the <b>Embedded Micro Integrator Configuration</b> (<img src="../../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20">) icon on the upper menu to open the dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/file-processing/embedded-server-configs.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/file-processing/embedded-server-configs.png" width="500">
 
 2.  Add the following server configurations (to the `deployment.toml` file) using the upper section in the dialog box.
 
@@ -279,7 +295,7 @@ Package the artifacts in your composite application module to be able to deploy 
         text_xml = "org.apache.axis2.transport.http.ApplicationXMLFormatter"
         ```
 
-3.  Click the (<img src="../../assets/img/integrate/tutorials/common/plus-icon.png" width="20">) icon in the lower section and add the following drivers and libraries. 
+3.  Click the (<img src="../../../assets/img/integrate/tutorials/common/plus-icon.png" width="20">) icon in the lower section and add the following drivers and libraries. 
     -   [MySQL database driver](https://github.com/wso2-docs/WSO2_EI/blob/master/Integration-Tutorial-Artifacts/Integration-Tutorial-Artifacts-EI7.1.0/EI7.1.0-file-processing-tutorial-JARS/mysql-connector-java-5.1.10-bin.jar).
     -   [CSV smooks library](https://github.com/wso2-docs/WSO2_EI/blob/master/Integration-Tutorial-Artifacts/Integration-Tutorial-Artifacts-EI7.1.0/EI7.1.0-file-processing-tutorial-JARS/milyn-smooks-csv-1.2.4.jar).
 

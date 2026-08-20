@@ -1,3 +1,18 @@
+---
+title: "Rejecting revoked tokens"
+description: "Revoke an access token or API key and verify that Choreo Connect rejects subsequent invocations using the revoked credential."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/rejecting-revoked-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/rejecting-revoked-tokens.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Rejecting Revoked Tokens
 
 After issuing an access token or an API Key, a user or admin can revoke it due to any reason. This must be done especially if it has been compromised. If a revoked token is used to invoke an API, Choreo Connect will reject the invocation by returning an Unauthenticated Error response.

@@ -1,3 +1,18 @@
+---
+title: "Using keystores"
+description: "Explains how keystores and truststores are used for asymmetric encryption to authenticate and protect data in WSO2 products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mi-security-reference/using_keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mi-security-reference/using_keystores.md
+tags:
+  - api-manager
+  - reference
+  - mi-security-reference
+  - using_keystores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Using Keystores
 
 WSO2 products use asymmetric encryption by default for the

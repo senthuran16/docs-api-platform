@@ -1,3 +1,18 @@
+---
+title: "Performance test results for router with one CPU"
+description: "Reference Choreo Connect Router performance test results for a REST API when the Router is allocated one CPU."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/router-with-one-cpu-for-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/router-with-one-cpu-for-rest-api.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Test Results for Router with One CPU
 
 These test results were obtained considering a Choreo Connect deployment with default values. Therefore the concurrency level used for the tests was two. Below table shows resource allocations for the Choreo Connect components.
@@ -51,7 +66,7 @@ These test results were obtained considering a Choreo Connect deployment with de
 ## Throughput (requests/sec) vs. concurrent users
 The following graph illustrates the throughput against the number of concurrent users.
 
-<a href="../../../../assets/img/deploy/mgw/performance-test/throughput-100-1cpu.png"><img src="../../../../assets/img/deploy/mgw/performance-test/throughput-100-1cpu.png" width="90%" ></a>
+<a href="../../../../../assets/img/deploy/mgw/performance-test/throughput-100-1cpu.png"><img src="../../../../../assets/img/deploy/mgw/performance-test/throughput-100-1cpu.png" width="90%" ></a>
 
 **Key observations:**
 
@@ -61,7 +76,7 @@ The following graph illustrates the throughput against the number of concurrent 
 
 Backend delay is assigned as zero milliseconds when obtaining test results. The below graph shows how response time varied for different concurrent user counts. Also, the same graph shows the impact of the payload size considering the same two parameters.
 
-<a href="../../../../assets/img/deploy/mgw/performance-test/response-100-1cpu.png"><img src="../../../../assets/img/deploy/mgw/performance-test/response-100-1cpu.png" width="90%" ></a>
+<a href="../../../../../assets/img/deploy/mgw/performance-test/response-100-1cpu.png"><img src="../../../../../assets/img/deploy/mgw/performance-test/response-100-1cpu.png" width="90%" ></a>
 
 **Key observations:**
 
@@ -71,6 +86,6 @@ Backend delay is assigned as zero milliseconds when obtaining test results. The 
 
 Below graphs show 90th, 95th, and 99th Response Time percentiles for 0ms backend delay. This is useful to measure the percentage of requests that exceeded the response time value for a given percentile. A percentile can also tell the percentage of requests completed below the particular response time value.
 
-<a href="../../../../assets/img/deploy/mgw/performance-test/percentiles-100-1cpu.png"><img src="../../../../assets/img/deploy/mgw/performance-test/percentiles-100-1cpu.png" width="90%" ></a>
+<a href="../../../../../assets/img/deploy/mgw/performance-test/percentiles-100-1cpu.png"><img src="../../../../../assets/img/deploy/mgw/performance-test/percentiles-100-1cpu.png" width="90%" ></a>
 
 Test scenario results in CSV format are available [here](https://raw.githubusercontent.com/wso2/product-microgateway/main/performance/benchmarks/cpus-1/summary.csv).

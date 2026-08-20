@@ -1,3 +1,18 @@
+---
+title: "Kafka connector example"
+description: "Configure the Kafka connector to publish messages to a Kafka broker via a topic using the publishMessages operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/kafka-connector-producer-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/kafka-connector-producer-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Kafka Connector Example
 
 Given below is a sample scenario that demonstrates how to send messages to a Kafka broker via Kafka topics. The publishMessages operation allows you to publish messages to the Kafka brokers via Kafka topics.
@@ -10,7 +25,7 @@ API has the context `/publishMessages`. It will publish messages via the topic t
 
 The following diagram illustrates all the required functionality of the Kafka service that you are going to build.
 
-<a href="../../../assets/img/integrate/connectors/kafkaconnectorpublishmessage.png"><img src="../../../assets/img/integrate/connectors/kafkaconnectorpublishmessage.png" title="KafkaConnector" width="800" alt="KafkaConnector"/></a>
+<a href="../../../../assets/img/integrate/connectors/kafkaconnectorpublishmessage.png"><img src="../../../../assets/img/integrate/connectors/kafkaconnectorpublishmessage.png" title="KafkaConnector" width="800" alt="KafkaConnector"/></a>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -22,11 +37,11 @@ Before you begin, set up Kafka by following the instructions in [Setting up Kafk
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 5. Create a new Kafka connection by selecting a particular operation.
 
-    <a href="../../../assets/img/integrate/connectors/filecon10.png"><img src="../../../assets/img/integrate/connectors/filecon10.png" title="working directory" width="800" alt="working directory"/></a>
+    <a href="../../../../assets/img/integrate/connectors/filecon10.png"><img src="../../../../assets/img/integrate/connectors/filecon10.png" title="working directory" width="800" alt="working directory"/></a>
 
 
 1. Right click on the created Integration Project and select **New** -> **Rest API** to create the REST API.
@@ -49,21 +64,21 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     ```
 Now we can export the imported connector and the API into a single CAR application. The CAR application needs to be deployed during server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/kafka-connector.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/kafka-connector.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 ## Deployment
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/deploy-capp.md"
     
 ## Testing
 

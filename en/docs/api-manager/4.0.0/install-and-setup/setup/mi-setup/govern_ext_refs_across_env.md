@@ -1,3 +1,18 @@
+---
+title: "Governing external references across environments"
+description: "Manage environment-dependent endpoint references in Micro Integrator artifacts so proxy services do not need edits per environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/govern_ext_refs_across_env/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/govern_ext_refs_across_env.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Governing External References Across Environments
 
 Some artifacts must change based on the environment where the application is deployed. For example, when you deploy WSO2 Micro Integrator application to Dev, QA, and Production environments,

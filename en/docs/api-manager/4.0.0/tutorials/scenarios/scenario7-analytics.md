@@ -1,3 +1,18 @@
+---
+title: "Scenario 7 - analytics"
+description: "Tutorial on how to set up and view usage analytics for an API published through WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/scenarios/scenario7-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/scenarios/scenario7-analytics.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario7-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 7 - Analytics
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to set up and view analytics for an API. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).
@@ -10,7 +25,7 @@ GOGO Transit has identified a new business opportunity; since the train arrival 
 
 Choreo API-M Analytics can be used to fulfill the stats and analytics needs of the API Manager. It is a cloud analytics offering for the Choreo API Manager and On-Prem API Manager deployments. 
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario7.png" title="Analytics Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario7.png" title="Analytics Description" width="630"/>
 
 ## Step 1: Set up analytics
 

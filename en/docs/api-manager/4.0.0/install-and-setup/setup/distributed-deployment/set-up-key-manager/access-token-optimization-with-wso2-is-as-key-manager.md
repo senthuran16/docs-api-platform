@@ -1,3 +1,18 @@
+---
+title: "Access token optimization with WSO2 IS as key manager"
+description: "Understand how API Manager subscribes to indirect token revocation events from WSO2 Identity Server to invalidate optimized JWT tokens."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/set-up-key-manager/access-token-optimization-with-wso2-is-as-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/set-up-key-manager/access-token-optimization-with-wso2-is-as-key-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Access Token Optimization with WSO2 IS as Key Manager
 
 WSO2 API Manager (API-M) 4.0, from update level 363 onwards, introduces a feature to handle indirect token revocations when WSO2 Identity Server (IS) is configured as the Key Manager and JWT access token persistence is optimized.
@@ -189,7 +204,7 @@ You need to execute the following database scripts on the API Manager database (
 
 ### Step 2: Enable Revoked Token Event Validation
 
-To enable this feature, you need to add the following configuration to the deployment.toml file of your WSO2 API Manager instance. Refer [Configuration Catalog](../../../../reference/config-catalog.md#jwt-token-persistence-optimization-configurations)
+To enable this feature, you need to add the following configuration to the deployment.toml file of your WSO2 API Manager instance. Refer [Configuration Catalog](../../../../reference/config-catalog.md#api-m-key-manager-related-configurations)
 
 ``` toml
 [apim.key_manager]

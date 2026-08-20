@@ -1,3 +1,18 @@
+---
+title: "Receiving events via HTTP transport"
+description: "Configure a Siddhi application that receives events over HTTP transport and counts all events that arrive."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-and-count/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-and-count.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Events via HTTP Transport
 
 ## Purpose:

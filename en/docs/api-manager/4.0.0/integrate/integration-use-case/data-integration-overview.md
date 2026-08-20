@@ -1,3 +1,18 @@
+---
+title: "Data integration"
+description: "Learn how the Micro Integrator exposes datasources as data services and find related tutorials and examples."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/integration-use-case/data-integration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/integration-use-case/data-integration-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - data-integration-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Data Integration
 
 Data integration is an important part of an integration process. For example, consider a typical integration process that is managed using the Micro Integrator: Data stored in various, disparate datasources are required in order to complete the integration use case. 
@@ -10,7 +25,7 @@ The data services functionality that is embedded in the Micro Integrator can dec
 			<b>Tutorials</b></br>
 			<ul>
 				<li>
-					Try the end-to-end use case on <a href="../../tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource.md">data integration</a>
+					Try the end-to-end use case on <a href="../../../tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource.md">data integration</a>
 				</li>
 			</ul>
 		</td>
@@ -18,28 +33,28 @@ The data services functionality that is embedded in the Micro Integrator can dec
 			<b>Examples</b></br>
 			<ul>
 				<li>
-					<a href="../examples/data_integration/rdbms-data-service.md">Exposing an RDBMS Datasource</a>
+					<a href="../../examples/data_integration/rdbms-data-service.md">Exposing an RDBMS Datasource</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/json-with-data-service.md">Exposing Data in JSON Format</a>
+					<a href="../../examples/data_integration/json-with-data-service.md">Exposing Data in JSON Format</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/odata-service.md">Using and OData Service</a>
+					<a href="../../examples/data_integration/odata-service.md">Using and OData Service</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/nested-queries-in-data-service.md">Using Nested Data Queries</a>
+					<a href="../../examples/data_integration/nested-queries-in-data-service.md">Using Nested Data Queries</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/batch-requesting.md">Batch Requesting</a>
+					<a href="../../examples/data_integration/batch-requesting.md">Batch Requesting</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/request-box.md">Invoking Multiple Operations via Request Box</a>
+					<a href="../../examples/data_integration/request-box.md">Invoking Multiple Operations via Request Box</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/distributed-trans-data-service.md">Using Distributed Transactions in Data Services</a>
+					<a href="../../examples/data_integration/distributed-trans-data-service.md">Using Distributed Transactions in Data Services</a>
 				</li>
 				<li>
-					<a href="../examples/data_integration/data-input-validator.md">Validating Data Input</a>
+					<a href="../../examples/data_integration/data-input-validator.md">Validating Data Input</a>
 				</li>
 			</ul>
 		</td>

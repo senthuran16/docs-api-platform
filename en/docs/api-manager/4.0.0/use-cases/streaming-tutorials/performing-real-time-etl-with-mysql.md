@@ -1,3 +1,18 @@
+---
+title: "Performing Real-time change data capture with MySQL"
+description: "Perform real-time change data capture from a MySQL database using listening and polling modes in Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/performing-real-time-etl-with-mysql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/performing-real-time-etl-with-mysql.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - performing-real-time-etl-with-mysql
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Performing Real-time Change Data Capture with MySQL
 
 ## Introduction

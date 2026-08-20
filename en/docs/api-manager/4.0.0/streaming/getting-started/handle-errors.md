@@ -1,3 +1,18 @@
+---
+title: "Step 6: handle errors"
+description: "Configure an error store so that events with errors from a Siddhi application can be viewed, corrected, and replayed."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/handle-errors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/handle-errors.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - handle-errors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 6: Handle Errors
 
 The events handled by Siddhi applications can result in errors due to multiple reasons such as errors in the transport, mapping errors, etc. WSO2 Streaming Integrator allows you to specify how you want such errors to be managed if they occur It provides an error store in which you can store events with errors so that you can later view them, correct the error (i.e., if they are mapping errors) and replay them. For the different types of actions you can take to manage errors, see the [Error Handling Guide](../../use-cases/streaming-usecase/handling-errors.md).

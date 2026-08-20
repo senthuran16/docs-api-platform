@@ -1,5 +1,15 @@
 ---
-title: Configuring Alerts for API Analytics - WSO2 API Manager 4.0.0
+title: "Configure alerts for API Analytics"
+description: "Learn about configuring alerts for API Analytics to proactively monitor your API ecosystem and take corrective measures."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/configure-alerts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/configure-alerts.md
+tags:
+  - api-manager
+  - api-analytics
+  - configure-alerts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Configuring Alerts for API Analytics

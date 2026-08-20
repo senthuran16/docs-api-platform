@@ -1,3 +1,18 @@
+---
+title: "Product compatibility"
+description: "Reference the tested operating systems, JDKs, and other compatibility details for WSO2 API Manager 4.0.0 runtimes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/reference/product-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/reference/product-compatibility.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Product Compatibility
 
 Given below are the compatibility details of the WSO2 API Manager (WSO2 API-M) 4.0.0 runtimes.
@@ -19,6 +34,7 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 |CentOS              |7.4, 7.5    |
 |Rocky Linux   |9.3  |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **WSO2 API-M** runtime has been tested with the following JDKs:
@@ -56,6 +72,7 @@ The **WSO2 API-M** runtime is tested with the following databases:
 </tr>
 </table>
 
+<a name="tested-wso2-products"></a>
 #### Tested WSO2 Products
 
 The following is a list of other WSO2 products that have been tested with WSO2 API Manager 4.0.0.

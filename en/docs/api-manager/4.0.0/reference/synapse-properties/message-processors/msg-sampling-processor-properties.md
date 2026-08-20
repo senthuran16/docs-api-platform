@@ -1,6 +1,21 @@
+---
+title: "Message sampling processor properties"
+description: "Reference for the properties used to configure a Message Sampling Processor that forwards messages at a preset interval."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/message-processors/msg-sampling-processor-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/message-processors/msg-sampling-processor-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Message Sampling Processor Properties
 ## Introduction
-The message sampling processor consumes messages in a <a href="#list-of-message-stores">message store</a> and sends them to a configured <a href="../sequence-properties.md">sequence</a>. This process happens at a preconfigured interval. This message processor does not ensure reliable messaging.
+The message sampling processor consumes messages in a <a href="#list-of-message-stores">message store</a> and sends them to a configured <a href="../../sequence-properties.md">sequence</a>. This process happens at a preconfigured interval. This message processor does not ensure reliable messaging.
 
 ## Properties
 

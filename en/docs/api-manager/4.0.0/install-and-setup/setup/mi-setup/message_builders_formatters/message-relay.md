@@ -1,3 +1,18 @@
+---
+title: "Message relay"
+description: "Enable Message Relay in WSO2 Micro Integrator to pass messages through without building or processing them, for higher throughput."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-relay/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-relay.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Message Relay
 
 **Message Relay** enables WSO2 Micro Integrator to pass messages along without building or processing them

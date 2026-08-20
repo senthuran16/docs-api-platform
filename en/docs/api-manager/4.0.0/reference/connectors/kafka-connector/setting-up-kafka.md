@@ -1,3 +1,18 @@
+---
+title: "Setting up Kafka"
+description: "Install the required libraries and Apache Kafka to prepare the environment for the Kafka connector and inbound endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/setting-up-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/setting-up-kafka.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up Kafka
 
 To use the Kafka connector, download and install [Apache Kafka](http://kafka.apache.org/downloads.html). Before you start configuring the Kafka you also need the integration runtime and we refer to that location as <PRODUCT_HOME>.

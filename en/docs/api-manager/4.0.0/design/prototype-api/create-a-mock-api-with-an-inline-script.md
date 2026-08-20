@@ -1,3 +1,18 @@
+---
+title: "Create a prototype API with an inline mock script"
+description: "Create a prototype API with inline JavaScript-generated mock payloads and test it using the API Console in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/prototype-api/create-a-mock-api-with-an-inline-script/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/prototype-api/create-a-mock-api-with-an-inline-script.md
+tags:
+  - api-manager
+  - design
+  - prototype-api
+  - create-a-mock-api-with-an-inline-script
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Prototype API with Mock Payload Generated Inline Scripts
 
 The prototype implementation in WSO2 API Manager gives users the ability to prototype APIs with inline scripts for testing purposes and as an early promotion. This allows subscribers to try out and test APIs without subscriptions or monetizations, allowing them to provide feedback to improve APIs. Publishers can use this to make changes to the APIs requested by users. The WSO2 API Manager prototype implementation allows you to generate a mock payload based on an API definition. You can prototype an API using the inbuilt JavaScript engine without having to manually write the JavaScript implementation for each resource.
@@ -10,21 +25,21 @@ For this let's use the following OpenAPI URL: `https://petstore3.swagger.io/api/
 
 1. Click **CREATE API** and click **Import Open API**.
 
-    <a href="../../assets/img/learn/create-api-existing-rest-api-link.png"><img src="../../assets/img/learn/create-api-existing-rest-api-link.png" alt="importing open api"></a>
+    <a href="../../../assets/img/learn/create-api-existing-rest-api-link.png"><img src="../../../assets/img/learn/create-api-existing-rest-api-link.png" alt="importing open api"></a>
 
 2. Upload the OpenAPI URL or OpenAPI File and click **Next**.
 
-    <a href="../../assets/img/learn/create-api-using-openapi-url-filled.png"><img src="../../assets/img/learn/create-api-using-openapi-url-filled.png" alt="create api form for existing api"></a>
+    <a href="../../../assets/img/learn/create-api-using-openapi-url-filled.png"><img src="../../../assets/img/learn/create-api-using-openapi-url-filled.png" alt="create api form for existing api"></a>
     
 3. Provide the API name, context, and version. Thereafter, click **Create**.
 
-    <a href="../../assets/img/learn/create-api-form-swagger-petstore-filled.png"><img src="../../assets/img/learn/create-api-form-swagger-petstore-filled.png" alt="provide api details"></a>
+    <a href="../../../assets/img/learn/create-api-form-swagger-petstore-filled.png"><img src="../../../assets/img/learn/create-api-form-swagger-petstore-filled.png" alt="provide api details"></a>
          
     Now you will be directed to the API overview page.
 
 4. Click **Endpoints** to navigate to the Endpoints page and select **Prototype Implementation** as the endpoint type.
 
-    <a href="../../assets/img/learn/create-api-prototype-endpoint-add-swagger-petstore.png"><img src="../../assets/img/learn/create-api-prototype-endpoint-add-swagger-petstore.png" alt="select prototype implementation"></a>
+    <a href="../../../assets/img/learn/create-api-prototype-endpoint-add-swagger-petstore.png"><img src="../../../assets/img/learn/create-api-prototype-endpoint-add-swagger-petstore.png" alt="select prototype implementation"></a>
 
 5. Click and expand any of the methods that contain a sample/mock payload to view the inline script that has been generated.
 
@@ -127,7 +142,7 @@ For this let's use the following OpenAPI URL: `https://petstore3.swagger.io/api/
       
 7. Click **SAVE** to save the API.
 
-     <a href="../../assets/img/learn/create-api-prototype-click-save.png"><img src="../../assets/img/learn/create-api-prototype-click-save.png" alt="save inline scripts page"></a>
+     <a href="../../../assets/img/learn/create-api-prototype-click-save.png"><img src="../../../assets/img/learn/create-api-prototype-click-save.png" alt="save inline scripts page"></a>
 
 ## Step 2 - Deploy the API as a prototype
 
@@ -135,7 +150,7 @@ For this let's use the following OpenAPI URL: `https://petstore3.swagger.io/api/
 
 2. Click **Deploy as a Prototype** to deploy the API as a prototype.
 
-    <a href="../../assets/img/learn/create-api-prototype-lc-page-petstore.png"><img src="../../assets/img/learn/create-api-prototype-lc-page-petstore.png" alt="deploy as prototype"></a>
+    <a href="../../../assets/img/learn/create-api-prototype-lc-page-petstore.png"><img src="../../../assets/img/learn/create-api-prototype-lc-page-petstore.png" alt="deploy as prototype"></a>
 
 ## Step 3 - Invoke the API
 
@@ -143,7 +158,7 @@ For this let's use the following OpenAPI URL: `https://petstore3.swagger.io/api/
 
 2. Click **Try Out** to navigate to the API Console.
 
-     <a href="../../assets/img/learn/create-api-prototype-dev-portal-overview-petstore.png"><img src="../../assets/img/learn/create-api-prototype-dev-portal-overview-petstore.png" alt="try out prototype"></a>
+     <a href="../../../assets/img/learn/create-api-prototype-dev-portal-overview-petstore.png"><img src="../../../assets/img/learn/create-api-prototype-dev-portal-overview-petstore.png" alt="try out prototype"></a>
 
 3. Expand any method and click **Try it out**.
 
@@ -184,15 +199,15 @@ For more information, see the [Deploy and Test Prototype APIs](deploy-and-test-m
     <ul>
     <li>Create and Publish an API
 <ul>
-          <li> <a href="../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md">Create and Publish an API</a></li>
+          <li> <a href="../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md">Create and Publish an API</a></li>
 
-          <li> <a href="../create-api/create-rest-api/create-a-rest-api.md">Create and Publish an API</a> </li>
+          <li> <a href="../../create-api/create-rest-api/create-a-rest-api.md">Create and Publish an API</a> </li>
     </ul>
     <li>
-    <a href="../create-api/create-a-websocket-api.md">Create a WebSocket API </a>
+    <a href="../../create-api/create-a-websocket-api.md">Create a WebSocket API </a>
 </li>
 <li>
-    <a href="../create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md">Create an API from an OpenAPI definition</a></li>
+    <a href="../../create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md">Create an API from an OpenAPI definition</a></li>
   </p>
   </div>
 

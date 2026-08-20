@@ -1,3 +1,18 @@
+---
+title: "Identifying Sub-sequences in input sequences"
+description: "Configure a Siddhi application that uses a regex function to find matching sub-sequences within an input sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/regex-execution-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/regex-execution-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Identifying Sub-sequences in Input Sequences
 
 ## Purpose:

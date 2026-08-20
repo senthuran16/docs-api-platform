@@ -1,3 +1,18 @@
+---
+title: "Setting up a microsoft SQL database"
+description: "Set up a Microsoft SQL Server database for the Micro Integrator Dashboard by creating the database and required tables."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-mssql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/setting-up-mssql.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up a Microsoft SQL Database
 
 Follow the steps given below to set up the required MSSQL databases for your Micro Integrator (MI) Dashboard.

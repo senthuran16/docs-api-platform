@@ -1,3 +1,18 @@
+---
+title: "Create and publish a WebSub/WebHook API"
+description: "Tutorial to design, publish, and test a WebSub/WebHook API in API Manager that listens for GitHub issue creation events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/streaming-api/create-and-publish-websub-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/streaming-api/create-and-publish-websub-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-websub-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSub/WebHook API
 
 This tutorial will guide you to create a [WebHook API](../../use-cases/streaming-usecase/create-streaming-api/create-a-websub-streaming-api.md) which will listen to the issues created in GitHub and send you 
@@ -8,7 +23,8 @@ The tutorial demonstrates a simple WebSub/WebHook API that monitors your GitHub 
 
 ### Step 1 - Design a WebSub/WebHook API
 
-1.  {!includes/sign-in-publisher.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and Click **WebHook API**.
 
@@ -73,7 +89,7 @@ The tutorial demonstrates a simple WebSub/WebHook API that monitors your GitHub 
      
       3. Click **Generate** to generate a secret.
 
-           <a href="../../assets/img/tutorials/streaming-api/websub-api-generate-secret.png"><img src="../../assets/img/tutorials/streaming-api/websub-api-generate-secret.png" width="80%" alt="WebSub API Generate Secret"></a>
+           <a href="../../../assets/img/tutorials/streaming-api/websub-api-generate-secret.png"><img src="../../../assets/img/tutorials/streaming-api/websub-api-generate-secret.png" width="80%" alt="WebSub API Generate Secret"></a>
 
       4. Copy the generated secret. 
       
@@ -87,7 +103,7 @@ The tutorial demonstrates a simple WebSub/WebHook API that monitors your GitHub 
 
       2. Select **AsyncWHGold** and click on **Save**.
 
-           <a href="../../assets/img/tutorials/streaming-api/websub-api-subscriptions.png"><img src="../../assets/img/tutorials/streaming-api/websub-api-subscriptions.png" width="80%" alt="Subscriptions of Websub API"></a>
+           <a href="../../../assets/img/tutorials/streaming-api/websub-api-subscriptions.png"><img src="../../../assets/img/tutorials/streaming-api/websub-api-subscriptions.png" width="80%" alt="Subscriptions of Websub API"></a>
 
 Now, you have created and configured the WebSub API (WebHook API) successfully.
 
@@ -193,7 +209,7 @@ A public URL should be forwarded to `localhost:9021`, so that your local server 
 
 6. Select **Production and Sandbox**, choose **localhost** as the VHost, and click on **Deploy**.
 
-      <a href="../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png"><img src="../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png" width="80%" alt="Deploy New Revision"></a>
+      <a href="../../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png"><img src="../../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png" width="80%" alt="Deploy New Revision"></a>
 
 ### Step 5 - Create a Callback URL
 
@@ -217,7 +233,8 @@ A public URL should be forwarded to `localhost:9021`, so that your local server 
 
 ### Step 6 - Invoke the WebSub/WebHook API
 
-1. {!includes/sign-in-devportal.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSub/WebHook API. 
 

@@ -1,3 +1,18 @@
+---
+title: "Choreo Connect on Docker with APIM as control plane"
+description: "Deploy Choreo Connect on Docker Compose with WSO2 API Manager as the Control Plane and deploy an API through the Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect on Docker Compose With WSO2 API Manager as a Control Plane
 
 Let's deploy an API on Choreo Connect, which running on Docker Compose, with WSO2 API Manager as the Control Plane.
@@ -53,7 +68,7 @@ In the `[controlPlane]` section,
 
 Now, let's start Choreo Connect. Navigate to `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect` and execute the following command.
 
-{!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 ``` bash
 docker-compose up -d
@@ -61,4 +76,4 @@ docker-compose up -d
 
 ## Step 4 - Deploy the sample API via WSO2 API Manager
 
-Follow the instructions in [create and publish an API from API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-from-api-manager).
+Follow the instructions in [create and publish an API from API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-via-api-manager).

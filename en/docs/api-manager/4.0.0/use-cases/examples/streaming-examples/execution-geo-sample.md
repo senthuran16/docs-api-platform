@@ -1,3 +1,18 @@
+---
+title: "Processing geo data"
+description: "Example Siddhi application that retrieves longitude and latitude coordinates based on provided location details."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/execution-geo-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/execution-geo-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Processing Geo Data
 
 ## Purpose:

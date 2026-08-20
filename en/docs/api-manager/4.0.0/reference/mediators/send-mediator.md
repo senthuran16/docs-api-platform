@@ -1,3 +1,18 @@
+---
+title: "Send mediator"
+description: "Reference for the Send mediator, which sends messages out of Synapse to an endpoint and correlates the reply message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/send-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/send-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - send-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Send Mediator
 
 The **Send Mediator** is used to send messages out of Synapse to an endpoint. The Send Mediator also copies any message context properties from the current message context to the reply message received on the execution of the send operation, so that the response could be correlated back to the request. Messages may be correlated by WS-A MessageID, or even simple custom text labels.

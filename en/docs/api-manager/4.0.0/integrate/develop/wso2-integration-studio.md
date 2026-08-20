@@ -1,3 +1,18 @@
+---
+title: "Quick tour - WSO2 integration studio"
+description: "Introduces the WSO2 Integration Studio workbench and the Getting Started view for creating integration projects."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Quick Tour - WSO2 Integration Studio
 
 WSO2 Integration Studio is your development environment for designing, developing, debugging, and testing integration solutions. As an integration developer, you can execute all the phases of the development lifecycle using this tool. When your integration solutions are production-ready, you can easily push the artifacts to your continuous integration/continuous deployment pipeline.
@@ -10,11 +25,11 @@ WSO2 Integration Studio is your development environment for designing, developin
 
 When you open WSO2 Integration Studio, you will see the **Getting Started** view in the tool's workbench. 
 
-<img src="../../assets/img/integrate/workbench/getting-started-view.jpg" width="800">
+<img src="../../../assets/img/integrate/workbench/getting-started-view.jpg" width="800">
 
-You can also click the <img src="../../assets/img/integrate/workbench/icon-getting-started-workbench.png" width="20"> icon at the top-right of the workbench to open the **Project Explorer** alongside the **Getting Started** tab as shown below.
+You can also click the <img src="../../../assets/img/integrate/workbench/icon-getting-started-workbench.png" width="20"> icon at the top-right of the workbench to open the **Project Explorer** alongside the **Getting Started** tab as shown below.
 
-<img src="../../assets/img/integrate/workbench/workbench-getting-started.jpg" width="800">
+<img src="../../../assets/img/integrate/workbench/workbench-getting-started.jpg" width="800">
 
 To get started, you need to first create the required project directories. Alternatively, you can use an integration sample, which will generate the required projects and files for a specific use case.
 
@@ -25,7 +40,7 @@ To get started, you need to first create the required project directories. Alter
         </th>
         <td>
             <p>Use the links on the <b>Getting Started</b> view to create the required projects. These project directories are saved to your workspace and they can later be accessed from the <a href="#project-explorer">Project Explorer</a> view of WSO2 Integration Studio.</p>
-            <img src="../../assets/img/integrate/workbench/getting-started-view.jpg" width="800">
+            <img src="../../../assets/img/integrate/workbench/getting-started-view.jpg" width="800">
         </td>
     </tr>
     <tr id="templates">
@@ -36,7 +51,7 @@ To get started, you need to first create the required project directories. Alter
             <p>
                 The <b>Getting Started</b> view lists a set of sample projects and integration artifacts that represent common integration scenarios. You can use these to explore WSO2 Micro Integrator and to try out common integration use cases. The <a href="#sample-guide">sample guide</a> will provide instructions on how to run the samples.
             </p>
-            <img src="../../assets/img/integrate/workbench/getting-started-templates.jpg" width="800">
+            <img src="../../../assets/img/integrate/workbench/getting-started-templates.jpg" width="800">
         </td>
     </tr>
     <tr id="template-guide">
@@ -47,20 +62,20 @@ To get started, you need to first create the required project directories. Alter
             <p>
                 The sample guide is a <b>Help</b> pane, which provides documentation on how to use the <a href="#templates">integration sample scenarios</a>. You can follow the instructions given in the guides to deploy and test each sample scenario.
             </p>
-            <img src="../../assets/img/integrate/workbench/workbench-template-guide.png" width="200">
+            <img src="../../../assets/img/integrate/workbench/workbench-template-guide.png" width="200">
         </td>
     </tr>
 </table>
 
 Once you have created the required set of projects and artifacts, you can start working with the project directories and artifact editors shown below.
 
-<img src="../../assets/img/integrate/workbench/workbench-working-project.jpg" width="800">
+<img src="../../../assets/img/integrate/workbench/workbench-working-project.jpg" width="800">
 
 ## Project Explorer
 
 The project explorer provides a view of all the project directories created for your integration solution. Shown below is the project explorer of a working project.
 
-<img src="../../assets/img/integrate/workbench/workbench-project-explorer.png" width="300">
+<img src="../../../assets/img/integrate/workbench/workbench-project-explorer.png" width="300">
 
 ## Graphical Editor
 
@@ -68,25 +83,25 @@ The graphical editor of WSO2 Integration Studio is a drag-and-drop editor for de
 
 Once you open the graphical editor, the **Palette** to your left lists all the integration artifacts that you can use. You can drag the required artifacts to the canvas on your right and design your integration flow. The parameters for each artifact can be configured using the [Properties](#properties) view.
 
-<img src="../../assets/img/integrate/workbench/graphical-editor.png" width="800">
+<img src="../../../assets/img/integrate/workbench/graphical-editor.png" width="800">
 
 ## Source Editor
 
 When you open any integration artifact from the project explorer, you will have a source editor in addition to the graphical editor. This editor allows you to write or edit your integration solution using the source code (synapse).
 
-<img src="../../assets/img/integrate/workbench/source-editor.png" width="800">
+<img src="../../../assets/img/integrate/workbench/source-editor.png" width="800">
 
 ## Swagger Editor
 
 The swagger editor is available when you create a REST API. This is in addition to the graphical editor and the source editor. The swagger editor can be used to write or edit your integration solution using the swagger definition. The Swagger UI allows you to visualize and interact with the REST API.
 
-<img src="../../assets/img/integrate/workbench/swagger-editor.png" width="800">
+<img src="../../../assets/img/integrate/workbench/swagger-editor.png" width="800">
 
 ## Properties
 
 The properties view allows you to configure the properties and parameters that define the integration artifacts in your integration flow. When you double-click an artifact in the graphical editor, the **Properties** view for that artifact will open. Alternatively, you can right-click the artifact and click **Show Properties** to open this view.
 
-<img src="../../assets/img/integrate/workbench/workbench-properties.png" width="800">
+<img src="../../../assets/img/integrate/workbench/workbench-properties.png" width="800">
 
 ## Console
 
@@ -96,13 +111,13 @@ The Console view displays a variety of console types depending on the type of de
 -   **Stacktrace Console**: Well-formatted Java stack trace with hyperlinks to specific source code locations.
 -   **CVS Console**: Displays output from CVS operations.
 
-<img src="../../assets/img/integrate/workbench/workbench-console.jpg" width="800">
+<img src="../../../assets/img/integrate/workbench/workbench-console.jpg" width="800">
 
 ## HTTP Client
 
 An embedded RESTful HTTP client is shipped with WSO2 Integration Studio to support testing. Once you have deployed your integration solutions in the Micro Integrator server, you can invoke the solutions using this client within WSO2 Integration Studio.
 
-<img src="../../assets/img/integrate/workbench/http4e-client-empty.png" width="800">
+<img src="../../../assets/img/integrate/workbench/http4e-client-empty.png" width="800">
 
 ## Embedded Micro Integrator
 
@@ -110,7 +125,7 @@ WSO2 Integration Studio is shipped with an embedded Micro Integrator server, whi
 
 Find out more about [using the embedded Micro Integrator](using-embedded-micro-integrator.md).
 
-<img src="../../assets/img/integrate/create_project/testing_export_run.png" width="500">
+<img src="../../../assets/img/integrate/create_project/testing_export_run.png" width="500">
 
 ## Inbuilt Debugging Capabilities
 
@@ -118,7 +133,7 @@ WSO2 Integration Studio is shipped with mediation debugging capabilities, which 
 
 You need to select your integration project in the project explorer and go to **Run -> Debug** as shown below. Find out more about [mediation debugging](debugging-mediation.md).
 
-<img src="../../assets/img/integrate/workbench/debugging-capabilities.png" width="500">
+<img src="../../../assets/img/integrate/workbench/debugging-capabilities.png" width="500">
 
 ## Outline
 
@@ -130,7 +145,7 @@ outline are editor-specific. For example, in a Java source file,
 the structural elements are classes, fields, and methods. The contents
 of the toolbar are also editor-specific.
 
-<img src="../../assets/img/integrate/workbench/workbench-outline.png">
+<img src="../../../assets/img/integrate/workbench/workbench-outline.png">
 
 ## What's Next?
 

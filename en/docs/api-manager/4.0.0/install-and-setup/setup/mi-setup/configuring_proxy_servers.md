@@ -1,3 +1,18 @@
+---
+title: "Working with proxy servers"
+description: "Configure WSO2 Micro Integrator to route blocking and non-blocking HTTP service calls through a proxy server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/configuring_proxy_servers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/configuring_proxy_servers.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Working with Proxy Servers
 
 When using WSO2 Micro Integrator, there can be scenarios where you need to configure the Micro Integrator to route
@@ -75,7 +90,7 @@ bypass_hosts = [""]
     When you define a profile, it is mandatory to specify the `target_hosts`, `proxy_host` and `proxy_port` parameters for each profile. 
 
 !!! note
-    Secured HTTP proxy profiles can be configured by following <a href="../../../reference/config-catalog-mi.md#http-secured-proxy-profile">this documentation</a>.
+    Secured HTTP proxy profiles can be configured by following <a href="../../../../reference/config-catalog-mi.md#http-secured-proxy-profile">this documentation</a>.
 
 When you configure a proxy profile, following are details of the parameters that you need to define in a `<profile>` :
 

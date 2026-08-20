@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator dashboard"
+description: "Run the WSO2 Micro Integrator runtime together with its monitoring Dashboard after completing prerequisite setup steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Micro Integrator Dashboard
 
 Follow the steps given below to run the WSO2 Micro Integrator runtime and its monitoring Dashboard.
@@ -164,7 +179,7 @@ Once you have [started the dashboard server](#starting-the-dashboard-server):
             <td>
                 The user name to sign in.</br></br>
                 <b>Note</b>: This should be a valid username that is saved in the Micro Integrator server's user store. By default, the 'admin' user name is configured in the default user store.</br></br> 
-                See <a href="../../setup/mi-setup/user_stores/setting_up_a_userstore.md">configuring user stores</a> for information.
+                See <a href="../../../setup/mi-setup/user_stores/setting_up_a_userstore.md">configuring user stores</a> for information.
             </td>
         </tr>
         <tr>

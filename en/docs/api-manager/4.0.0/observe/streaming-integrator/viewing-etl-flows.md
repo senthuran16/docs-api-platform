@@ -1,5 +1,16 @@
 ---
-title: Viewing ETL Flow Statistics - WSO2 API Manager 4.0.0
+title: "Viewing ETL Flow Statistics - WSO2 API Manager 4.0.0"
+description: "Navigate the Grafana dashboards set up for monitoring ETL flows and analyze WSO2 Streaming Integrator statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/streaming-integrator/viewing-etl-flows/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/streaming-integrator/viewing-etl-flows.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - viewing-etl-flows
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Viewing ETL Flow Statistics

@@ -1,5 +1,15 @@
 ---
-title: Monitoring Audit Logs - WSO2 API Manager 4.0.0
+title: "Monitoring Audit Logs - WSO2 API Manager 4.0.0"
+description: "Configure and understand the audit logs that WSO2 API Manager writes to the audit.log file via log4j2 settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/monitoring-audit-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/monitoring-audit-logs.md
+tags:
+  - api-manager
+  - observe
+  - monitoring-audit-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Monitoring Audit Logs

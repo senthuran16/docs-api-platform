@@ -1,5 +1,15 @@
 ---
-title: API Analytics Getting Started Guide - WSO2 API Manager 4.0.0
+title: "API Analytics Getting Started Guide - WSO2 API Manager 4.0.0"
+description: "Get started with API Analytics by signing in to Choreo and registering your on-premises environment to enable analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/getting-started-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/getting-started-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - getting-started-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
 ---
 
 # API Analytics Getting Started Guide
@@ -82,7 +92,7 @@ If your system connects to the service through a proxy server/firewall, you need
 
 ### API Gateway
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.0.0/includes/analytics/configure-synapse-gateway.md"
 
 ## Step 4 - View the Analytics Dashboards
 

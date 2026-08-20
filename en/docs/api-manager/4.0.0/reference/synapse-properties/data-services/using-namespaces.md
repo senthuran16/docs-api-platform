@@ -1,3 +1,18 @@
+---
+title: "Using namespaces"
+description: "Explains how namespaces are defined and inherited at different levels of a data service to avoid conflicting element names."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/data-services/using-namespaces/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/data-services/using-namespaces.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Using Namespaces
 
 Data services are implemented using XML, which means that there can be

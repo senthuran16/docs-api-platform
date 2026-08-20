@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - API management"
+description: "Follow a step-by-step guide to create, publish, and invoke an API using the WSO2 API Manager Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/api-manager-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/api-manager-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - api-manager-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide - API Management
 
 This section is a step-by-step guide to create, publish, and invoke an API using the **WSO2 API Manager (WSO2 API-M)** Publisher and Developer Portal.
@@ -34,7 +48,7 @@ This section is a step-by-step guide to create, publish, and invoke an API using
 
 In this sample scenario, you implement a full lifecycle of an API using WSO2 API Manager.
 
-<a href="../assets/img/get_started/apim-qsg-diagram.png"><img src="../assets/img/get_started/apim-qsg-diagram.png" width="60%"></a>
+<a href="../../assets/img/get_started/apim-qsg-diagram.png"><img src="../../assets/img/get_started/apim-qsg-diagram.png" width="60%"></a>
 
 1. Creating and publishing an API via the Publisher Portal of WSO2 API-M.
 2. Deploy the API in a Gateway environment.
@@ -376,7 +390,7 @@ API Products, and Applications across WSO2 API-M environments and to perform CI/
      
      
     !!! info
-        For more information on generating keys using apictl, see [Get keys for an API/API Product](../install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management.md#g-get-keys-for-an-apiapi-product).
+        For more information on generating keys using apictl, see [Get keys for an API/API Product](../install-and-setup/setup/api-controller/cicd-using-cli.md#step-7-get-keys-for-an-apiapi-product).
 
 2. Invoke the API.
 
@@ -397,8 +411,8 @@ API Products, and Applications across WSO2 API-M environments and to perform CI/
     !!!note
         Alternatively, you can consume the API as explained in the following sections using the WSO2 API-M Developer Portal.
         
-         - [Subscribe to the API via the Developer Portal and generate keys](#subscribe)
-         - [Invoke the API with the generated keys](#invoke)
+         - [Subscribe to the API via the Developer Portal and generate keys](#step-2-subscribe-to-the-api)
+         - [Invoke the API with the generated keys](#step-3-invoke-the-api)
 
     [![PetStore response](../assets/img/get_started/qsg-petstore-response.png)](../assets/img/get_started/qsg-petstore-response.png)
    

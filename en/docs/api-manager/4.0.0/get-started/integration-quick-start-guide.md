@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - integration"
+description: "Run a simple integration use case locally with WSO2 Micro Integrator to get started with integration development."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/integration-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/integration-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - integration-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide - Integration
 
 Let's get started with WSO2 Micro Integrator by running a simple integration use case in your local environment. 
@@ -25,7 +39,7 @@ This is a simple service orchestration scenario. The scenario is about a basic h
 
 Most healthcare centers have a system that is used to make doctor appointments. To check the availability of the doctors for a particular time, users typically need to visit the hospitals or use each and every online system that is dedicated to a particular healthcare center. Here, we are making it easier for patients by orchestrating those isolated systems for each healthcare provider and exposing a single interface to the users.
 
-<a href="../assets/img/integrate/quick-start-guide/mi-quick-start-guide.png"><img src="../assets/img/integrate/quick-start-guide/mi-quick-start-guide.png" width="1600" height="600"></a>
+<a href="../../assets/img/integrate/quick-start-guide/mi-quick-start-guide.png"><img src="../../assets/img/integrate/quick-start-guide/mi-quick-start-guide.png" width="1600" height="600"></a>
 
 
     !!! Tip
@@ -77,7 +91,7 @@ The following project files and executable back-end services are available in th
 
 - **HealthcareIntegrationProject/HealthcareIntegrationProjectConfigs**: This is the ESB Config module with the integration artifacts for the healthcare service. This service consists of the following REST API:
 
-      <img src="../assets/img/integrate/quick-start-guide/qsg-api.png">
+      <img src="../../assets/img/integrate/quick-start-guide/qsg-api.png">
 
       <details>
                 <summary>HealthcareAPI.xml</summary>
@@ -315,7 +329,7 @@ The REST API you deployed in the Micro Integrator is an **integration service** 
 
     2. Select the **Services** from the menu.
     
-        <img src="../assets/img/integrate/quick-start-guide/select-services.png" width="500">
+        <img src="../../assets/img/integrate/quick-start-guide/select-services.png" width="500">
         
     3. See that the `HealthcareAPI` is listed as a service.
 `   `
@@ -327,13 +341,13 @@ The REST API you deployed in the Micro Integrator is an **integration service** 
 
      This opens the **Create API** dialog box with the API details that are generated based on the service.
 
-    <a href="../assets/img/integrate/quick-start-guide/create-api-from-healthcare-service.png"><img src="../assets/img/integrate/quick-start-guide/create-api-from-healthcare-service.png" width="800" alt="create api dialog box"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/create-api-from-healthcare-service.png"><img src="../../assets/img/integrate/quick-start-guide/create-api-from-healthcare-service.png" width="800" alt="create api dialog box"></a>
 
 3.  Update the API name, context, and version if required, and click **Create API**. 
 
     The overview page of the API that you just created appears. 
 
-    <a href="../assets/img/integrate/quick-start-guide/new-healthcareapi-view.png"><img src="../assets/img/integrate/quick-start-guide/new-healthcareapi-view.png" alt="apis list"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/new-healthcareapi-view.png"><img src="../../assets/img/integrate/quick-start-guide/new-healthcareapi-view.png" alt="apis list"></a>
 
 4.  Navigate to **Develop -> API Configurations -> Endpoints** from the left menu. You will see that **HTTP/REST Endpoint** is already selected and the production endpoint is already provided .
 
@@ -349,7 +363,7 @@ The REST API you deployed in the Micro Integrator is an **integration service** 
 
 2. Navigate to **Lifecycle** and click **Publish** to publish the API in the Gateway environment.
 
-    <a href="../assets/img/integrate/quick-start-guide/healthcareapi-lifecycle.png"><img src="../assets/img/integrate/quick-start-guide/healthcareapi-lifecycle.png"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/healthcareapi-lifecycle.png"><img src="../../assets/img/integrate/quick-start-guide/healthcareapi-lifecycle.png"></a>
     
     If the API is published successfully, the lifecycle state will shift to **PUBLISHED**. 
 
@@ -357,7 +371,7 @@ The REST API you deployed in the Micro Integrator is an **integration service** 
 
 1. Navigate to  the **Developer Portal** by clicking on the `View In Dev Portal` at the top menu.
 
-    <a href="../assets/img/integrate/quick-start-guide/view-in-dev-portal.png"><img src="../assets/img/integrate/quick-start-guide/view-in-dev-portal.png"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/view-in-dev-portal.png"><img src="../../assets/img/integrate/quick-start-guide/view-in-dev-portal.png"></a>
 
 2. Sign in using the default username/password `admin/admin`. You will be redirected to the **APIs**.
 
@@ -365,15 +379,15 @@ The REST API you deployed in the Micro Integrator is an **integration service** 
 
 4. Click `Try Out`. This will create a subscription to the API using `Default Application`.
 
-    <a href="../assets/img/integrate/quick-start-guide/devportal-tryout.png"><img src="../assets/img/integrate/quick-start-guide/devportal-tryout.png" size="800"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/devportal-tryout.png"><img src="../../assets/img/integrate/quick-start-guide/devportal-tryout.png" size="800"></a>
 
 5. Click `GET TEST KEY` to get a test token to invoke the API.
 
-    <a href="../assets/img/integrate/quick-start-guide/devportal-get-test-key.png"><img src="../assets/img/integrate/quick-start-guide/devportal-get-test-key.png" size="800"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/devportal-get-test-key.png"><img src="../../assets/img/integrate/quick-start-guide/devportal-get-test-key.png" size="800"></a>
 
 6. Click **GET** resource `/doctor​/{doctorType}`. Click on **Try It Out** at   the right side. Use  `Ophthalmologist` as the doctorType. And then click on **Execute**.
 
-    <a href="../assets/img/integrate/quick-start-guide/devportal-invoke.png"><img src="../assets/img/integrate/quick-start-guide/devportal-invoke.png" size="800"></a>
+    <a href="../../assets/img/integrate/quick-start-guide/devportal-invoke.png"><img src="../../assets/img/integrate/quick-start-guide/devportal-invoke.png" size="800"></a>
 
    
 ## What's next?

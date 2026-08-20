@@ -1,3 +1,18 @@
+---
+title: "Configuring business rules deployment"
+description: "Configure a Streaming Integrator node to use specific business rule templates for deploying Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-business-rules-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-business-rules-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 ## Configuring Business Rules Deployment
 
 The Business Rules Manager derives business rules from the rule templates within template groups. Each rule template has a UUID(Universally Unique Identifier) for the purpose of uniquely identifying it.

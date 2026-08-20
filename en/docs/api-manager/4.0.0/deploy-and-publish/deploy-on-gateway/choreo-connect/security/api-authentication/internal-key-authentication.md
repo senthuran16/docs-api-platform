@@ -1,3 +1,18 @@
+---
+title: "Internal key authentication"
+description: "Generate and use an Internal Key from the API Manager Publisher Try Out page to test an API deployed on Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Internal Key Authentication
 
 This authentication can be used to test APIs that are created in the API Manager Publisher right after deploying the API and even before publishing. An Internal Key can be generated from the API Manager Publisher Try Out page and can be used for both of the modes given below.
@@ -11,11 +26,11 @@ Follow the instructions in the guide [Deploying a REST API in Choreo Connect](..
 ### Step 2 - Generate an Internal Key from API-M Publisher
 1. Navigate to **Try Out** from the left menu bar in API-M Publisher.
 
-    <a href="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png"><img src="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png" width="20%" alt="Try out menu option in the left panel"></a>
+    <a href="../../../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png"><img src="../../../../../../assets/img/design/create-api/test-api/publisher-testconsole-leftpane.png" width="20%" alt="Try out menu option in the left panel"></a>
 
 2. In the Try Out page, you will find an Internal Key that has already been generated for you. You can click the button **Generate Key** whenever you need a new token.
 
-    <a href="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png"><img src="../../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png" width="80%" alt="Generate key"></a>
+    <a href="../../../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png"><img src="../../../../../../assets/img/design/create-api/test-api/publisher-testconsole-generatekey.png" width="80%" alt="Generate key"></a>
 
     !!! important
         This token must be included in the header `Internal-Key` when invoking the API. The header name used for Internal Key can be updated using the following config.

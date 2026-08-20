@@ -1,5 +1,16 @@
 ---
-title: Configure the API Gateway - WSO2 API Manager 4.0.0
+title: "Configure the API Gateway - WSO2 API Manager 4.0.0"
+description: "Configure the API Manager Gateway to publish analytics data to the API Analytics Cloud, including thread count and queue size tuning."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/gateways/configure-synapse-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/gateways/configure-synapse-gateway.md
+tags:
+  - api-manager
+  - api-analytics
+  - gateways
+  - configure-synapse-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Configure the API Gateway
@@ -8,7 +19,7 @@ API Analytics is delivered via the API Analytics Cloud. Therefore, the API Manag
 
 ## Basic configurations
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.0.0/includes/analytics/configure-synapse-gateway.md"
 
 ## Advanced configurations
 

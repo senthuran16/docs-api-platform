@@ -1,3 +1,18 @@
+---
+title: "Configuring database and file system state persistence"
+description: "Configure database or file system state persistence to prevent data loss in the Streaming Integrator after a failure."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-database-and-file-system-state-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-database-and-file-system-state-persistence.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Database and File System State Persistence
 
 This section explains how to prevent the loss of data that can result
@@ -61,7 +76,7 @@ To configure periodic data persistence, update the
 </tr>
 <tr class="odd">
 <td><code>config &gt; datasource</code></td>
-<td>The datasource to be used in persisting the state. The provided datasource should be properly defined in the deployment.yaml. For detailed instructions of how to configure a datasource, see <a href="configuring-data-sources.md">Configuring Datasources</a> .</td>
+<td>The datasource to be used in persisting the state. The provided datasource should be properly defined in the deployment.yaml. For detailed instructions of how to configure a datasource, see <a href="../configuring-data-sources.md">Configuring Datasources</a> .</td>
 <td><pre><code>WSO2_PERSISTENCE_DB (Datasource with this name should be defined in wso2.datasources)</code></pre></td>
 </tr>
 <tr class="even">

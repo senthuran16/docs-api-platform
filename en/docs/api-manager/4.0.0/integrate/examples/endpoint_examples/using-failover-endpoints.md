@@ -1,3 +1,18 @@
+---
+title: "Using failover endpoints"
+description: "Demonstrates configuring failover endpoints, including failover with a single address endpoint, to handle message failures."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/endpoint_examples/using-failover-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/endpoint_examples/using-failover-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Failover Endpoints
 ## Example 1: Failover with one address endpoint
 
@@ -180,7 +195,7 @@ Multiple address endpoints are used in this example.
 Create the artifacts:
 
 1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio.md).
-2. [Create an ESB Solution project](../../develop/create-integration-project.md#esb-config-project).
+2. [Create an ESB Solution project](../../develop/create-integration-project.md#sub-projects).
 3. [Create the REST API](../../develop/creating-artifacts/creating-an-api.md) with the configurations given above.
 4. [Deploy the artifacts]({{base_path}}/integrate/develop/deploy-and-run) in your Micro Integrator.
 

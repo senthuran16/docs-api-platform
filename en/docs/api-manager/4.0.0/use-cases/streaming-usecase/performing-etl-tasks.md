@@ -1,3 +1,18 @@
+---
+title: "Performing ETL operations"
+description: "Perform real-time ETL operations in WSO2 Streaming Integrator by extracting, transforming, and loading data from multiple sources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/performing-etl-tasks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/performing-etl-tasks.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - performing-etl-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Performing ETL Operations
 
 ETL (Extract Transform Load) is a form of data processing that involves **extracting** data from one or multiple sources (typically from multiple sources), **transforming data** to generate the required output, and then **loading** that output to one or more destinations to make it available for further processing.
@@ -196,7 +211,7 @@ update or insert into StockRecords
 ## Scalability
 
 When there are rapid changes and growths in business, it is necessary to scale ETL applications in an agile manner to support it. WSO2 Streaming Integrator supports the need for scalability via the Siddhi logic. 
-This can be observed in the previous examples where the `ManagingStocksApp` Siddhi application which only captured purchase records in the [Performing ETL in real time section](#performing-ETL-in-real-time) and with only two files and one database table (`SugarSupply.csv` file, `FlourSupply.csv` file and `PurchaseRecords` database table) in the ETL flow was scaled to perform stock updates by incorporating another file and a database (i.e., `MaterialDispatches.csv` file and `StockRecords` database table) to the ETL flow.
+This can be observed in the previous examples where the `ManagingStocksApp` Siddhi application which only captured purchase records in the [Performing ETL in real time section](#performing-etl-in-real-time) and with only two files and one database table (`SugarSupply.csv` file, `FlourSupply.csv` file and `PurchaseRecords` database table) in the ETL flow was scaled to perform stock updates by incorporating another file and a database (i.e., `MaterialDispatches.csv` file and `StockRecords` database table) to the ETL flow.
 
 ![Extended ETL Flow](../../assets/img/streaming/performing-etl-operations/extended-etl-flow.png)
 
@@ -238,7 +253,7 @@ To learn how to design an ETL application via the Wizard view, see the [Creating
 
 WSO2 Streaming Integrator provides nine pre-configured dashboards to visualize the overall ETLS statistics for your Streaming Integrator deployment, as well as the ETL statistics per Siddhi application and per ETL-related Siddhi extension type (i.e., CDC statistics, file statistics and RDBMS statistics).
 
-You can set up the pre-configured dashboards in Grafana. For instructions to set up these dashboards and visualize your ETL statistics, see [Monitoring ETL Statistics with Grafana]({{base_path}}/admin/viewing-dashboards).
+You can set up the pre-configured dashboards in Grafana. For instructions to set up these dashboards and visualize your ETL statistics, see [Monitoring ETL Statistics with Grafana](../../observe/streaming-integrator/viewing-etl-flows).
 
 ## Processing high volumes of data at high speed
 

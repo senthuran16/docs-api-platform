@@ -1,3 +1,18 @@
+---
+title: "Managing integrations with apictl"
+description: "Use apictl to log in to a Micro Integrator instance and monitor Synapse artifacts and perform management tasks from the command line."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing Integrations with apictl
 
 WSO2 API Controller, **apictl** allows you to monitor the Synapse artifacts (deployed in a specified Micro Integrator server) and perform various management and administration tasks from the command line.

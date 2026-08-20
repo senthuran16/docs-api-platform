@@ -1,3 +1,18 @@
+---
+title: "Developing streaming integrator solutions"
+description: "Get an overview of the four-step development flow for building a solution with the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/developing-streaming-integration-solutions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/developing-streaming-integration-solutions.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - developing-streaming-integration-solutions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Developing Streaming Integrator Solutions
 
 This section provides an overview of the development flow in the Streaming Integrator.

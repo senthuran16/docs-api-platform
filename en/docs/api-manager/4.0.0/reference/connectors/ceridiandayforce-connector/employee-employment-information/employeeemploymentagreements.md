@@ -1,3 +1,18 @@
+---
+title: "Working with employee employment agreements"
+description: "Reference of the operations used to retrieve, create, and update an employee's employment agreements with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeemploymentagreements/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeemploymentagreements.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Employment Agreements
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -8,14 +23,15 @@ The following operations allow you to retrieve, create or update employment agre
 
 | Operation | Description |
 | ------------- |-------------|
-|[GET Employee Employment Agreements](#retrieving-employee-employment-agreement)| Retrieve the employment agreement information of an employee. |
-|[POST Employee Employment Agreements](#creating-employee-employment-agreement)| Create the employment agreement information of an employee. |
-|[PATCH Employee Employment Agreements](#updating-employee-employment-agreement)| Update the employment agreement information of an employee. |
+|[GET Employee Employment Agreements](#retrieving-employee-employment-agreements)| Retrieve the employment agreement information of an employee. |
+|[POST Employee Employment Agreements](#creating-employee-employment-agreements)| Create the employment agreement information of an employee. |
+|[PATCH Employee Employment Agreements](#updating-employee-employment-agreements)| Update the employment agreement information of an employee. |
 
 ### Operation details
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-employment-agreements"></a>
 #### Retrieving Employee Employment Agreements
 We can use GET Employee Contacts operation with required parameters to retrieve the employment agreement information of an employee.
 
@@ -101,6 +117,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Agreements/GET-Employee-Employment-Agreements.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Agreements/GET-Employee-Employment-Agreements.aspx)
 
+<a name="creating-employee-employment-agreements"></a>
 #### Creating Employee Employment Agreements
 We can use POST Employee Employment Agreements operation with required parameters to create the required employee's employment agreement information.
 
@@ -177,6 +194,7 @@ This method returns a HTTP code 200 and no response body
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Agreements/POST-Employee-Employment-Agreements.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Agreements/POST-Employee-Employment-Agreements.aspx)
 
+<a name="updating-employee-employment-agreements"></a>
 #### Updating Employee Employment Agreements
 We can use PATCH Employee Employment Agreements operation with required parameters to update the employment agreement information of existing employees.
 

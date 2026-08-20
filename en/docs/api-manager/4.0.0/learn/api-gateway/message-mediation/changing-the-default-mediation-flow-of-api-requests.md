@@ -1,3 +1,18 @@
+---
+title: "Changing the default mediation flow of API requests"
+description: "Create and apply custom per-API or global mediation policies to extend the API Gateway's default in, out, and fault flows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Default Mediation Flow of API Requests
 
 The API Gateway has a default mediation flow for the API invocation requests that it receives. There are three main mediation flows as in, out and fault. You can extend these default mediation flows to do additional custom mediation for the messages in the API Gateway. This can be done by a policy provided as a synapse mediation sequence. You create a custom mediation policy either manually or using a tool such as the WSO2 Integration Studio, and then engage it per API or globally to all APIs of a specific tenant. 
@@ -38,7 +53,7 @@ Follow the below steps to upload the above sequence as a custom mediation policy
 
 1. You can copy the above mediation sequence into an **XML** file.
 2.  Log in to the **API Publisher Portal**.
-3.  Create a REST API by following the instructions in [Create a REST API]({{base_path}}/learn/design-api/create-api/create-a-rest-api/).
+3.  Create a REST API by following the instructions in [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api).
 4.  Go to the created API and from the Left Menu, go to **Runtime Configurations**.
 5.  Click [![](../../../assets/img/learn/api-gateway/message-mediation/edit-button.png)](../../../assets/img/learn/api-gateway/message-mediation/edit-button.png) button in the **Message Mediation** section.  
 *You can do this for Request, Response and/or Fault message flows.*     
@@ -123,7 +138,7 @@ The above sequence prints a log message in the wso2carbon logs whenever the `Twi
 ### Creating and Uploading using WSO2 Integration Studio
 
 You can design the custom mediation policy using the tooling support provided by WSO2 Integration Studio and directly upload it
-to the registry in WSO2 API Manager. Visit [Creating and Uploading using WSO2 Integration Studio]({{base_path}}/learn/api-gateway/message-mediation/creating-and-uploading-using-integration-studio).
+to the registry in WSO2 API Manager. Visit [Creating and Uploading using WSO2 Integration Studio](../../../deploy-and-publish/deploy-on-gateway/api-gateway/message-mediation/creating-and-uploading-using-integration-studio).
 
 ## Creating Global Extensions
 

@@ -1,5 +1,15 @@
 ---
-title: Monitoring with OpenTracing - WSO2 API Manager 4.0.0
+title: "Monitoring with OpenTracing - WSO2 API Manager 4.0.0"
+description: "Enable distributed tracing for WSO2 API Manager with OpenTracing, exporting traces to Jaeger, Zipkin, or a log file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/traces/monitoring-with-opentracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/traces/monitoring-with-opentracing.md
+tags:
+  - api-manager
+  - observe
+  - traces
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Monitoring with OpenTracing

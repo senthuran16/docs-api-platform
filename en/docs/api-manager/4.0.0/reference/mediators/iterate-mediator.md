@@ -1,9 +1,24 @@
+---
+title: "Iterate mediator"
+description: "Reference for the Iterate mediator, which splits a message into multiple messages derived from the parent message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/iterate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/iterate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - iterate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Iterate Mediator
 
 The **Iterate Mediator** implements the [Splitter enterprise integration
 pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/splitter/)
 and splits the message into a number of different messages derived from
-the parent message. The Iterate mediator is similar to the [Clone mediator](clone-Mediator.md). The difference between the two mediators
+the parent message. The Iterate mediator is similar to the [Clone mediator](clone-mediator.md). The difference between the two mediators
 is, the Iterate mediator splits a message into different parts, whereas the Clone mediator makes multiple identical copies of the message.
 
 !!! Info

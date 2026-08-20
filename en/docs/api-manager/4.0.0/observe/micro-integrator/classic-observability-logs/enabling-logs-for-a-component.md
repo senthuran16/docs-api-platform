@@ -1,5 +1,16 @@
 ---
-title: Enabling Logs for a Component - WSO2 API Manager 4.0.0
+title: "Enabling Logs for a Component - WSO2 API Manager 4.0.0"
+description: "Enable logs for a specific Micro Integrator component using the dashboard or the command-line interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Enabling Logs for a Component
@@ -22,7 +33,7 @@ There are two ways to enable logs for a component: using the Micro Integrator [d
 2.  Click <b>Log Configs</b> on the left-hand navigator to open the <b>Logging Management</b> window.
 3.  Go to the <b>Add Loggers</b> tab and define the new logger.
 
-     <a href="../../../assets/img/integrate/monitoring-dashboard/add-logger.png"><img alt="add new loggers using dashboard" src="../../../assets/img/integrate/monitoring-dashboard/add-logger.png" width="80%"></a>
+     <a href="../../../../assets/img/integrate/monitoring-dashboard/add-logger.png"><img alt="add new loggers using dashboard" src="../../../../assets/img/integrate/monitoring-dashboard/add-logger.png" width="80%"></a>
 
     <table>
         <tr>
@@ -46,7 +57,7 @@ There are two ways to enable logs for a component: using the Micro Integrator [d
                 Log Level
             </th>
             <td>
-                Specify the <a href="configuring-log4j2-properties.md#updating-the-log4j2-log-level">log level</a>.
+                Specify the <a href="../configuring-log4j2-properties.md#updating-the-log4j2-log-level">log level</a>.
             </td>
         </tr>
     </table>

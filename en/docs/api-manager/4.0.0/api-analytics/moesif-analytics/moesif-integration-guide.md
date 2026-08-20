@@ -1,3 +1,18 @@
+---
+title: "Moesif analytics integration guide"
+description: "Integrate WSO2 API Manager with Moesif by creating a Moesif application and configuring deployment.toml to publish API analytics data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/moesif-analytics/moesif-integration-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/moesif-analytics/moesif-integration-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - moesif-analytics
+  - moesif-integration-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Moesif Analytics Integration Guide
 
 This guide outlines the steps required to integrate **Moesif Analytics** with **WSO2 API Manager**. The integration enables you to collect and publish API analytics data to the **Moesif dashboard**, providing insights into API usage, traffic trends, and error tracking.
@@ -6,7 +21,7 @@ This guide outlines the steps required to integrate **Moesif Analytics** with **
     Moesif Analytics integration is supported starting from WSO2 API Manager 4.0.0 Update Level 377 and onwards. Ensure that you are using a compatible update level of WSO2 API Manager 4.0.0.
     Refer to this [guide](../../administer/updating-wso2-api-manager.md) to update your WSO2 API Manager to the required or latest update level.
 
-<a href="../../assets/img/analytics/moesif/moesif-data-flow.png"><img src="../../assets/img/analytics/moesif/moesif-data-flow.png" alt="Moesif integration diagram"></a>
+<a href="../../../assets/img/analytics/moesif/moesif-data-flow.png"><img src="../../../assets/img/analytics/moesif/moesif-data-flow.png" alt="Moesif integration diagram"></a>
 
 ### Analytics Data Flow
 
@@ -180,4 +195,4 @@ moesifKey = "MOESIF_APPLICATION_ID"
 
 Users can create a variety of dashboards in Moesif using the analytics data published from the WSO2 API Gateway. The sample dashboard below illustrates API usage segmented by different users.
 
-<a href="../../assets/img/analytics/moesif/sample-dashboard-img.png"><img src="../../assets/img/analytics/moesif/sample-dashboard-img.png" alt="Sample Moesif dashboard diagram"></a>
+<a href="../../../assets/img/analytics/moesif/sample-dashboard-img.png"><img src="../../../assets/img/analytics/moesif/sample-dashboard-img.png" alt="Sample Moesif dashboard diagram"></a>

@@ -1,3 +1,18 @@
+---
+title: "Kafka inbound endpoint reference"
+description: "Configure the mandatory and optional parameters required to set up the Kafka Inbound Endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/kafka-inbound-endpoint-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/kafka-inbound-endpoint-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Kafka Inbound Endpoint Reference
 
 ## Mandatory parameters for Kafka Inbound Endpoint

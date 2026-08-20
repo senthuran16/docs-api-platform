@@ -1,3 +1,18 @@
+---
+title: "Exposing Non-HTTP services as RESTful APIs"
+description: "Expose a non-HTTP endpoint, such as a JMS topic, as a RESTful API by removing the REST_URL_POSTFIX property."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/configuring-non-http-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/configuring-non-http-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing Non-HTTP Services as RESTful APIs
 This example demonstrates how the WSO2 Micro Integrator forwards messages to non-HTTP endpoints.
 

@@ -1,3 +1,18 @@
+---
+title: "Revoked tokens"
+description: "Understand how Choreo Connect detects revoked JWT tokens before expiry using real-time and persistent notification methods."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/revoked-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/revoked-tokens.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Revoked Tokens
 
 Choreo Connect is required to be notified when a token is revoked by the Security Token Service (STS).

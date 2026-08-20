@@ -1,5 +1,16 @@
 ---
-title: JMX Monitoring - WSO2 API Manager 4.0.0
+title: "JMX Monitoring - WSO2 API Manager 4.0.0"
+description: "Configure and use JConsole to monitor the Micro Integrator MBeans exposed through Java Management Extensions (JMX)."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-metrics/jmx-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-metrics/jmx-monitoring.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-metrics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # JMX Monitoring

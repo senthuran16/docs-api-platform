@@ -1,3 +1,18 @@
+---
+title: "Step 1: download streaming integrator and dependencies"
+description: "Download and install the Streaming Integrator and its dependencies before trying out a streaming integration scenario."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/download-install-and-start-si/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/download-install-and-start-si.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - download-install-and-start-si
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 1: Download Streaming Integrator and Dependencies
 
 First, you are required to download the Streaming Integrator and the other software needed for the scenario you are trying out. To do this, follow the topics below.

@@ -1,3 +1,18 @@
+---
+title: "Jira connector reference"
+description: "Configure Jira Connector operations for connecting to and authenticating with a Jira server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/jira-connector/jira-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/jira-connector/jira-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - jira-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Jira Connector Reference
 
 The following operations allow you to work with the Jira Connector. Click an operation name to see parameter details and samples on how to use it.

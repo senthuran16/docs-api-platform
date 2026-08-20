@@ -1,3 +1,18 @@
+---
+title: "Choreo connect as a standalone gateway"
+description: "Understand how Choreo Connect operates as a standalone Gateway without API Manager, using apictl and OpenAPI vendor extensions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Choreo Connect as a Standalone Gateway
 
 Choreo Connect can be used as a **standalone** Gateway without the API Manager as the Control Plane. Choreo Connect is considered to be in *standalone mode* when `control-plane` is disabled in the [config](../configurations/control-plane-configurations.md#instructions-for-use). In standalone mode, 
@@ -104,7 +119,7 @@ Choreo Connect supports the following OpenAPI Extensions. You can use these exte
    | `x-wso2-auth-header`              | Specify the authorization header for the API to which either bearer or basic token is sent                             | Optional → API level only                |
 
 !!! note
-    -   If you want to expose an API or a resource without security, you can use the `x-wso2-disable-security` extension. You can find more information about this extension from [here](../security/api-authentication/disabling-security.md#disabling-security).
+    -   If you want to expose an API or a resource without security, you can use the `x-wso2-disable-security` extension. You can find more information about this extension from [here](../security/api-authentication/disabling-security.md#by-updating-the-openapi-definition).
     -  Choreo Connect also supports the `"x-auth-type": "None"` option to disable the security. This extension has a different functionality when run with WSO2 API Manager and can have the following values which are not supported in standalone mode.
         -   Application & Application User
         -   Application

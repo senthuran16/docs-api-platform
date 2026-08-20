@@ -1,3 +1,18 @@
+---
+title: "Add service-level transport parameters"
+description: "Add service-level transport parameters to a proxy service using the Properties tab in WSO2 Integration Studio's Design View."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/pull/proxy-service-add-properties-pull/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - pull
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 To add service-level transport parameters to a proxy service:
 
 1.  Open your proxy service artifact in **WSO2 Integration Studio**.
