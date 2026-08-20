@@ -1,6 +1,6 @@
 ---
 title: "Word Count Guardrail"
-description: "Configure the Word Count Guardrail mediator in WSO2 API Manager to validate JSON payload content by word count against minimum and maximum thresholds using JSON Path expressions."
+description: "Configure the Word Count Guardrail mediator to validate JSON payload content by word count against min/max thresholds using JSON Path expressions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/word-count-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/word-count-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

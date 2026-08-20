@@ -1,6 +1,6 @@
 ---
 title: "API Manager FAQ"
-description: "Answers to frequently asked questions about WSO2 API Manager covering general product information, installation and startup, deployment patterns, functionality, authentication and security, and common troubleshooting scenarios."
+description: "Answers to frequently asked questions about WSO2 API Manager covering installation, deployment, security, and troubleshooting."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/faq/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/faq.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - faq
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -30,7 +30,7 @@ It is completely supported from evaluation to production. For more details, see 
 
 ### What are the default ports opened in the API Manager?
 
-For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports.md#api-manager).
+For a list of all default ports available, see [Default Ports of WSO2 Products](../install-and-setup/setup/reference/default-product-ports.md#api-m-ports).
 
 ### What are the technologies used underneath WSO2 API Manager?
 
@@ -82,7 +82,7 @@ The memory allocation settings are stored in the `<API-M_HOME>/bin/api-manager.s
 
 ### What are the different deployment patterns and clustering configurations of the API Manager?
 
-See [Deploying WSO2 API Manager](../install-and-setup/setup/deployment-patterns.md).
+See [Deploying WSO2 API Manager](../install-and-setup/setup/deployment-overview).
 
 ### What are the container technologies that are supported in API Manager?
 
@@ -105,7 +105,7 @@ To enable using your email (e.g., `admin@wso2.com`) as your username when deploy
 username="admin!wso2.com!carbon.super"
 ```
 
-For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setting-up-an-e-mail-login).
+For more details, see [Setting up an e-mail login](../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login).
 
 ------------------------------------------------------------------------
 
@@ -264,7 +264,7 @@ password = "<![CDATA[your-password]]>"
 
 ### How can I protect my product server from security attacks caused by weak ciphers?
 
-You can protect your server from attacks such as the Logjam attack (Man-in-the-Middle attack) by disabling weak ciphers. For more details, see [Disable weak ciphers]({{base}}/install-and-setup/setup/security/configuring-transport-level-security/#disabling-weak-ciphers) in the WSO2 Admin Guide.
+You can protect your server from attacks such as the Logjam attack (Man-in-the-Middle attack) by disabling weak ciphers. For more details, see [Disable weak ciphers](../install-and-setup/setup/security/configuring-transport-level-security#disabling-weak-ciphers) in the WSO2 Admin Guide.
 
 ### How can I distinguish between expired and invalid tokens in an authentication failure scenario?
 
@@ -445,7 +445,7 @@ There might be multiple configuration context objects created per API invocation
 The Gateway Failures UI error occurs when the `service_url`, `username`, `password` and/or `https_endpoint/http_endpoint` is incorrect. This can be rectified by checking and correcting the gateway configurations under `[[apim.gateway.environment]]` in the `<API-M_HOME>/repository/conf/deployment.toml` file.
 
 !!! tip
-    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../learn/design-api/publish-api/publish-through-multiple-api-gateways.md) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
+    If you are using the API-M instance you used as the first instance in the [Publish through Multiple API Gateways](../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways) tutorial, you may receive the above error when trying out other tutorials. This is because you updated the environments configurations in that pack by adding two API Gateway environments under the `[[apim.gateway.environment]]` element,  and modifying the default configuration. To overcome this error, revert the default `[[apim.gateway.environment]]` configuration.
 
 
 ### How can I capture the state of a system?

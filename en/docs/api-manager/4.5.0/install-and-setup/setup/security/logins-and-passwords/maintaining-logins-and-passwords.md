@@ -1,6 +1,6 @@
 ---
 title: "Maintain Logins and Passwords"
-description: "Change the super admin credentials in deployment.toml, set up e-mail login with tenant domain usernames, and configure social media login for the Developer Portal."
+description: "Change the super admin credentials in deployment.toml, set up e-mail login, and configure social media login for the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - security
   - sso
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

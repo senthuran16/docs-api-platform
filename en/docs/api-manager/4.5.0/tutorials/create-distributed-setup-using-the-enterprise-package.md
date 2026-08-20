@@ -1,6 +1,6 @@
 ---
-title: "Set Up a Distributed Deployment Using the APIM Enterprise Package"
-description: "Use Docker Compose to set up a distributed WSO2 API Manager environment with separate API Control Plane, Traffic Manager, and Universal Gateway components from the APIM Enterprise Package."
+title: "Set up a distributed deployment with the Enterprise Package"
+description: "Use Docker Compose to set up a distributed API Manager environment with separate Control Plane, Traffic Manager, and Gateway components."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/create-distributed-setup-using-the-enterprise-package/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/create-distributed-setup-using-the-enterprise-package.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - distributed-deployment
   - docker
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

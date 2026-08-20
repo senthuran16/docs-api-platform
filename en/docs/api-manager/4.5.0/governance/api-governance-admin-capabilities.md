@@ -8,7 +8,7 @@ tags:
   - governance
   - compliance
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -49,6 +49,7 @@ After providing the required information, click on the **Create** button to crea
   <img src="../../assets/img/governance/ruleset_create.png" alt="APIM Governance Ruleset Create" width="60%"/>
 </a>
 
+<a name="writing-your-own-ruleset"></a>
 #### Writing Your Own Ruleset
 
 Please refer to the [WSO2 Rule Validator Documentation](../governance/rule-validator/rule-validator.md) to understand the ruleset format and how to write your own ruleset.
@@ -84,6 +85,7 @@ The **Policies** section in the **API Manager Admin Portal** provides a list of 
   <img src="../../assets/img/governance/policy_view.png" alt="APIM Governance Ruleset Create"/>
 </a>
 
+<a name="create-a-new-policy"></a>
 #### Create a new Policy
 
 To create a new policy, click the **Create Policy** button and provide the following details:  
@@ -140,6 +142,7 @@ This widget gives a summary of the policies deployed in the system with a breakd
 
 This widget provides a summary of the compliance status of APIs with a breakdown of the number of APIs that are compliant, non-compliant, pending compliant results, and not applied to any policies.
 
+<a name="api-compliance-details"></a>
 #### **API Compliance Details**
 
 This widget provides a detailed overview of an API's compliance status, including compliance level of associated policies.  
@@ -150,7 +153,7 @@ This widget offers a detailed overview of each policy's compliance, including th
 
 #### API-Specific Compliance View
 
-By clicking on each API listed in [API Compliance Details](###api-compliance-details) widget, an API compliance page will be displayed. This page provides a detailed view of the API's compliance status, including a breakdown of the compliance status for each policy attached to the API.
+By clicking on each API listed in [API Compliance Details](#api-compliance-details) widget, an API compliance page will be displayed. This page provides a detailed view of the API's compliance status, including a breakdown of the compliance status for each policy attached to the API.
 
 ## Configuration Options
 

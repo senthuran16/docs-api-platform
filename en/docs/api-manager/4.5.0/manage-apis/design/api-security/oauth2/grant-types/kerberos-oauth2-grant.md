@@ -1,6 +1,6 @@
 ---
 title: "Kerberos OAuth2 Grant"
-description: "Exchange a Kerberos ticket for an OAuth2 token in WSO2 API Manager: understand the Kerberos OAuth2 grant flow and configure the grant using the Identity Server as Key Manager."
+description: "Exchange a Kerberos ticket for an OAuth2 token: understand the Kerberos OAuth2 grant flow and configure the grant with the Identity Server as Key Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/grant-types/kerberos-oauth2-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/grant-types/kerberos-oauth2-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -110,7 +110,7 @@ Follow the instructions below to configure Kerberos Grant using the Identity Se
     
     3. Click **Identity Server as a Key Manager Pack** under **OTHER RESOURCES**.
 
-2.  Download the [Kerberos grant.jar](../../../../../assets/attachments/kerberos-grant-1.0.0.jar.md) file.
+2.  Download the [Kerberos grant.jar](../../../../../assets/attachments/kerberos-grant-1.0.0.jar) file.
 3.  Copy the JAR into the `<IS-KM_HOME>/repository/components/lib` directory.
 4.  To enable the **Kerberos grant**, add the following entry to the
     `deployment.toml` file in the `<IS-KM_HOME>/repository/conf/` folder.

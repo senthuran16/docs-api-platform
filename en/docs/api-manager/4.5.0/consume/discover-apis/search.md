@@ -1,6 +1,6 @@
 ---
 title: "Search for APIs"
-description: "Search for APIs in the API Publisher or Developer Portal using unified search or attribute-based search clauses such as name, provider, version, context, status, tag, and API category."
+description: "Search for APIs in the API Publisher or Developer Portal using unified search or attribute clauses like name, provider, and version."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/discover-apis/search/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/discover-apis/search.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - api-discovery
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

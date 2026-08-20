@@ -1,6 +1,6 @@
 ---
 title: "Monitoring Audit Logs"
-description: "Configure and interpret audit logs in WSO2 API Manager, including the log4j2 audit appender settings and sample log formats for Publisher and Developer Portal actions."
+description: "Configure and interpret audit logs, including the log4j2 audit appender settings and sample log formats for Publisher and Developer Portal actions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/logs/monitoring-audit-logs/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/logs/monitoring-audit-logs.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

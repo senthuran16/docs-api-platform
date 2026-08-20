@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Deployment Overview"
-description: "Compare WSO2 API Manager deployment options on VMs, Kubernetes, and OpenShift, and review the seven supported deployment patterns from all-in-one to fully distributed setups."
+description: "Compare WSO2 API Manager deployment options on VMs, Kubernetes, and OpenShift, and review the supported patterns from all-in-one to fully distributed."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/deployment-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/deployment-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - deployment
   - kubernetes
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # WSO2 API Manager Deployment Overview
@@ -120,7 +120,7 @@ For comprehensive instructions, refer to the [K8s Deployment Guide](../setup/kub
     - [Deploy on VM](../setup/single-node/configuring-a-single-node.md)
     - [Deploy on Kubernetes](../setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md)
 
-<a href="../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
+<a href="../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
 
 ### Pattern 1: API-M Deployment with All-in-One HA Setup
 - **Description**: High availability deployment with multiple API Manager nodes in active-active configuration
@@ -130,7 +130,7 @@ For comprehensive instructions, refer to the [K8s Deployment Guide](../setup/kub
     - [Deploy on VM](../setup/single-node/configuring-an-active-active-deployment.md)
     - [Deploy on Kubernetes](../setup/kubernetes-deployment/kubernetes/am-pattern-1-all-in-one-ha.md)
 
-<a href="../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active api-m deployment" width="60%"></a>
+<a href="../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active api-m deployment" width="60%"></a>
 
 ### Pattern 2: API-M Deployment with Simple Scalable Setup
 - **Description**: Deployment with separate gateway nodes and a control plane
@@ -140,7 +140,7 @@ For comprehensive instructions, refer to the [K8s Deployment Guide](../setup/kub
     - [Deploy on VM](../setup/distributed-deployment/deploying-wso2-api-m-in-a-simple-scalable-setup.md)
     - [Deploy on Kubernetes](../setup/kubernetes-deployment/kubernetes/am-pattern-2-all-in-one-gw.md)
 
-<a href="../../assets/img/setup-and-install/simple-distributed.png"><img src="../../assets/img/setup-and-install/simple-distributed.png" alt="simple scalable api-m deployment" width="60%"></a>
+<a href="../../../assets/img/setup-and-install/simple-distributed.png"><img src="../../../assets/img/setup-and-install/simple-distributed.png" alt="simple scalable api-m deployment" width="60%"></a>
 
 ### Pattern 3: Distributed API-M Deployment with Gateway and Traffic Manager Separated from the Control Plane *(Recommended)*
 - **Description**: Distributed deployment with separate API Control Plane, Traffic Manager, and Gateway components
@@ -150,7 +150,7 @@ For comprehensive instructions, refer to the [K8s Deployment Guide](../setup/kub
     - [Deploy on VM](../setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md)
     - [Deploy on Kubernetes](../setup/kubernetes-deployment/kubernetes/am-pattern-3-acp-tm-gw.md)
 
-<a href="../../assets/img/setup-and-install/distributed-deployment-tm.png"><img src="../../assets/img/setup-and-install/distributed-deployment-tm.png" alt="simple scalable api-m deployment" width="60%"></a>
+<a href="../../../assets/img/setup-and-install/distributed-deployment-tm.png"><img src="../../../assets/img/setup-and-install/distributed-deployment-tm.png" alt="simple scalable api-m deployment" width="60%"></a>
 
 ### Pattern 4: API-M Deployment with Fully Distributed Setup
 - **Description**: Fully distributed deployment with separate Key Manager component
@@ -160,7 +160,7 @@ For comprehensive instructions, refer to the [K8s Deployment Guide](../setup/kub
     - [Deploy on VM](../setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated.md)
     - [Deploy on Kubernetes](../setup/kubernetes-deployment/kubernetes/am-pattern-4-acp-tm-gw-km.md)
 
-<a href="../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../assets/img/setup-and-install/distributed-deployment-km.png" alt="fully distributed deployment" width="60%"></a>
+<a href="../../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../../assets/img/setup-and-install/distributed-deployment-km.png" alt="fully distributed deployment" width="60%"></a>
 
 ### Pattern 5: API-M Deployment with Simple Scalable Setup with Key Manager Separated
 - **Description**: Deployment with separate Gateway and Key Manager components
@@ -169,7 +169,7 @@ For comprehensive instructions, refer to the [K8s Deployment Guide](../setup/kub
 - **Guides**: 
     - [Deploy on Kubernetes](../setup/kubernetes-deployment/kubernetes/am-pattern-5-all-in-one-gw-km.md)
 
-<a href="../../assets/img/setup-and-install/deployment-cp-gw-km.png"><img src="../../assets/img/setup-and-install/deployment-cp-gw-km.png" alt="Simple Scalable Deployment with Key Manager Seperation" width="60%"></a>
+<a href="../../../assets/img/setup-and-install/deployment-cp-gw-km.png"><img src="../../../assets/img/setup-and-install/deployment-cp-gw-km.png" alt="Simple Scalable Deployment with Key Manager Seperation" width="60%"></a>
 
 ### Pattern 6: API-M Deployment with IS as Key Manager
 - **Description**: Deployment with WSO2 Identity Server (IS) as the Key Manager

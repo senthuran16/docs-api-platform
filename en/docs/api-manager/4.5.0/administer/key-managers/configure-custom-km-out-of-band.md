@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom Key Manager for Out-of-Band Provisioning"
-description: "Register an external OAuth authorization server such as Amazon Cognito, Auth0, or Azure AD as a Custom Key Manager in WSO2 API Manager using Out-of-Band provisioning mode."
+description: "Register an external OAuth authorization server like Amazon Cognito, Auth0, or Azure AD as a Custom Key Manager using Out-of-Band provisioning mode."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-custom-km-out-of-band/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-custom-km-out-of-band.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

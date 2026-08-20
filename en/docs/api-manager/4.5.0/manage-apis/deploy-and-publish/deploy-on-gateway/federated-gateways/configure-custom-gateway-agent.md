@@ -8,7 +8,7 @@ tags:
   - federated-gateways
   - gateway-agent
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

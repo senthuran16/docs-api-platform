@@ -1,6 +1,6 @@
 ---
 title: "Encrypt OAuth2 Tokens"
-description: "Enable symmetric encryption of OAuth2 access tokens, refresh tokens, consumer secrets, and authorization codes in WSO2 API Manager by configuring enable_token_encryption in deployment.toml."
+description: "Enable symmetric encryption of OAuth2 access tokens, refresh tokens, and consumer secrets by configuring enable_token_encryption in deployment.toml."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/encrypting-oauth2-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/encrypting-oauth2-tokens.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - api-security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -44,7 +44,7 @@ Follow the steps below to enable OAuth2 token encryption
         "org.wso2.CipherTransformation" = "<Algorithm>"
         ```
     
-3.  [Start the server](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server). 
+3.  [Start the server](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server). 
 
 4.  Follow the [Generate Application Keys](../../../../consume/manage-application/generate-keys/generate-api-keys.md) guide to create a new application, generate application consumer keys, and to obtain an access token.
 

@@ -1,6 +1,6 @@
 ---
 title: "Introducing Rate Limiting Use Cases"
-description: "Explains why rate limiting matters for backend services, gateway-hosted APIs, and consuming applications, covering maximum backend throughput, subscription tiers, burst control, advanced rate limiting policies, and per-token quotas in API Manager."
+description: "Understand why rate limiting matters for backend services, gateway-hosted APIs, and consuming applications in API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/introducing-throttling-use-cases/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/introducing-throttling-use-cases.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - throttling
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -49,13 +49,13 @@ To prevent your backend system from getting overloaded, the limits enforced by t
 
 #### Subscription tiers: API Publisher
 
-When an API Publisher publishes an API to be consumed by applications, they can choose to make the API available over different limits. For example, the **Gold** tier allows an application to access the API at 5000 requests per minute while a **Silver** tier allows an application to access the API at 2000 requests per minute. For information on how to define a rate limiting tier to an API, see [API-level rate limiting (API publisher)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#subscription-level-throttling-api-publisher).
+When an API Publisher publishes an API to be consumed by applications, they can choose to make the API available over different limits. For example, the **Gold** tier allows an application to access the API at 5000 requests per minute while a **Silver** tier allows an application to access the API at 2000 requests per minute. For information on how to define a rate limiting tier to an API, see [API-level rate limiting (API publisher)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#subscription-level-rate-limiting-api-publisher).
 
-The subscription tiers are used to gain monetary value for the API; you can charge more from app developers who require larger quotas of your API’s functionality and lesser from developers who require less. The limits can be enforced either by the number of requests over time (5000 req/min) or the amount of data bandwidth over time (500 mb/hour). The limits enforced by subscription tiers are applied across all users of the application that use that particular API and can be considered as a shared quota among all users of an application that access that API. When using a cluster of Gateway nodes, the counters maintained while evaluating the subscription tiers are shared across all nodes. For information on how to define a subscription tier to an API, see [Subscription-level rate limiting (API publisher)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#subscription-level-throttling-api-subscriber).
+The subscription tiers are used to gain monetary value for the API; you can charge more from app developers who require larger quotas of your API’s functionality and lesser from developers who require less. The limits can be enforced either by the number of requests over time (5000 req/min) or the amount of data bandwidth over time (500 mb/hour). The limits enforced by subscription tiers are applied across all users of the application that use that particular API and can be considered as a shared quota among all users of an application that access that API. When using a cluster of Gateway nodes, the counters maintained while evaluating the subscription tiers are shared across all nodes. For information on how to define a subscription tier to an API, see [Subscription-level rate limiting (API publisher)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#subscription-level-rate-limiting-api-subscriber).
 
 **Burst Control**
 
-Burst control limits are enforced for subscription tiers in order to distribute the load across the specified time period. For example, if you have a subscription tier that allows you to send 1000 requests per hour, you can ensure that a particular application does not consume the full quota of 1000 requests within the first 2 minutes by setting a burst control limit within the subscription tier allowing only a maximum of 25 requests per minute. Therefore, the time periods set for burst control limits must always be smaller than the time period specified for its corresponding subscription tier. Burst control limits can be set only to control the number of requests for a given period of time and does not allow you to control the data bandwidth for a given time period. The burst control limits are enforced for each individual Gateway node. Although the request counters are replicated across the cluster, since burst control time periods are usually quite small, the replication frequency can be quite high compared to the burst rate of incoming requests. Therefore, it is safe to assume that the burst control values are applied on a per-node basis. For information on how to define burst control limits, see [Rate limiting (burst control)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#rate-limiting-burst-control).
+Burst control limits are enforced for subscription tiers in order to distribute the load across the specified time period. For example, if you have a subscription tier that allows you to send 1000 requests per hour, you can ensure that a particular application does not consume the full quota of 1000 requests within the first 2 minutes by setting a burst control limit within the subscription tier allowing only a maximum of 25 requests per minute. Therefore, the time periods set for burst control limits must always be smaller than the time period specified for its corresponding subscription tier. Burst control limits can be set only to control the number of requests for a given period of time and does not allow you to control the data bandwidth for a given time period. The burst control limits are enforced for each individual Gateway node. Although the request counters are replicated across the cluster, since burst control time periods are usually quite small, the replication frequency can be quite high compared to the burst rate of incoming requests. Therefore, it is safe to assume that the burst control values are applied on a per-node basis. For information on how to define burst control limits, see [Rate limiting (burst control)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#burst-control).
 
 ### Advanced rate limiting policies: API Publisher
 
@@ -108,7 +108,7 @@ For more information on how to define advanced throttling policies, see [Adding 
 
 #### Per token quota: Application Developer
 
-When an application developer subscribes their application to an API, they select a tier (limit) for their application to invoke the API. This limit applies across all users of the application when accessing the particular API. To ensure that a fair distribution of the quota is available among all the users, it is important to consider setting a per user quota for the application, since a user is identified by a token (in OAuth2.0, this limit is known as the per token quota). It is important to note that the limit enforced by this setting applies to a single user (token) accessing all APIs of the application. The counters maintained when evaluating a per token quota are shared across all nodes in the Gateway cluster. For information on how to define a rate limiting tier to an application, see [Application-level rate limiting (application developer)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#application-level-throttling-application-developer).
+When an application developer subscribes their application to an API, they select a tier (limit) for their application to invoke the API. This limit applies across all users of the application when accessing the particular API. To ensure that a fair distribution of the quota is available among all the users, it is important to consider setting a per user quota for the application, since a user is identified by a token (in OAuth2.0, this limit is known as the per token quota). It is important to note that the limit enforced by this setting applies to a single user (token) accessing all APIs of the application. The counters maintained when evaluating a per token quota are shared across all nodes in the Gateway cluster. For information on how to define a rate limiting tier to an application, see [Application-level rate limiting (application developer)](../../../manage-apis/design/rate-limiting/setting-throttling-limits.md#application-level-rate-limiting-application-developer).
 
 
 The following diagram shows how throttle policies are applied at different levels.
@@ -116,7 +116,7 @@ The following diagram shows how throttle policies are applied at different level
 
 [![rate limiting levels](../../../assets/img/learn/throttling-levels.png)](../../../assets/img/learn/throttling-levels.png)
 
-If [advanced rate limiting](#advanced-throttling-policies-api-publisher) policies are added and engaged to a specific API or API resource, it will also be applied here. i.e. Requests will be allowed/rejected based on the conditions specified in advanced rate limiting policies as well.
+If [advanced rate limiting](#advanced-rate-limiting-policies-api-publisher) policies are added and engaged to a specific API or API resource, it will also be applied here. i.e. Requests will be allowed/rejected based on the conditions specified in advanced rate limiting policies as well.
 
 !!!note
     **Understanding Throttling Slippage**

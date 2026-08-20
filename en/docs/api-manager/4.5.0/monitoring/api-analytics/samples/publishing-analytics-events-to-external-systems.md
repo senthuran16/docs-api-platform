@@ -1,6 +1,6 @@
 ---
 title: "Publishing Analytics Events to External Systems"
-description: "Create and deploy a custom event publisher to send WSO2 API Manager analytics data to an external system, and visualize the published events using the ELK stack."
+description: "Create and deploy a custom event publisher to send API Manager analytics data to an external system, and visualize the events using the ELK stack."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/samples/publishing-analytics-events-to-external-systems/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/samples/publishing-analytics-events-to-external-systems.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - analytics
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

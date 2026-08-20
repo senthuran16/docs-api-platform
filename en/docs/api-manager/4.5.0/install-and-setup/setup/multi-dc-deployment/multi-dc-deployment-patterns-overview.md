@@ -1,6 +1,6 @@
 ---
 title: "Multi-DC Deployment Patterns Overview"
-description: "Compares WSO2 API Manager's two multi-datacenter deployment patterns—geo-regional synchronized deployment with replicated databases versus centralized control plane with regional data planes—and how to choose between them."
+description: "Compare WSO2 API Manager's two multi-data-center deployment patterns and learn how to choose the right one for your organization."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - multi-dc-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Multi-DC Deployment Patterns - Overview
@@ -85,7 +85,7 @@ Let’s take a look at the deployment architecture of the two patterns.
 
 Pattern 1 in a multi-datacenter (multi-DC) deployment of WSO2 API Manager involves the creation of multiple distributed setups connected by replicated databases and control planes (event hubs) across different regions. This configuration is designed to maximize high availability and ensure fault tolerance.
 
-<a href="../../../assets/img/setup-and-install/multi-dc-pattern-1.png"><img src="../../../assets/img/setup-and-install/multi-dc-pattern-1.png" alt="Multi-DC Pattern 1" width="80%"></a>
+<a href="../../../../assets/img/setup-and-install/multi-dc-pattern-1.png"><img src="../../../../assets/img/setup-and-install/multi-dc-pattern-1.png" alt="Multi-DC Pattern 1" width="80%"></a>
 
 !!! Note
     WSO2 API Manager has been tested for DB replication only with MSSQL, Oracle and PostgreSQL DBs.
@@ -125,7 +125,7 @@ Please refer to the [documentation](../../../install-and-setup/setup/multi-dc-de
 
 In Pattern 2 of a multi-datacenter (multi-DC) deployment of WSO2 API Manager, the architecture is designed with a clear division of roles. Specifically, one region acts as the central control point for the entire multi-DC deployment and is referred to as the "main region." Other regions, which are dedicated to handling incoming traffic and scaling needs, are known as the "sub regions."
 
-<a href="../../../assets/img/setup-and-install/multi-dc-pattern-2.png"><img src="../../../assets/img/setup-and-install/multi-dc-pattern-2.png" alt="Multi-DC Pattern 2" width="80%"></a>
+<a href="../../../../assets/img/setup-and-install/multi-dc-pattern-2.png"><img src="../../../../assets/img/setup-and-install/multi-dc-pattern-2.png" alt="Multi-DC Pattern 2" width="80%"></a>
 
 ### Advantages
 

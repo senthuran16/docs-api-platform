@@ -1,6 +1,6 @@
 ---
 title: "Configure a Read-Write Active Directory User Store"
-description: "Configure an external Active Directory as the primary read-write user store for WSO2 API Manager, including deployment.toml properties, admin user setup, and the full list of supported user store properties."
+description: "Configure an external Active Directory as the primary read-write user store for WSO2 API Manager, including deployment.toml properties and admin setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - active-directory
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

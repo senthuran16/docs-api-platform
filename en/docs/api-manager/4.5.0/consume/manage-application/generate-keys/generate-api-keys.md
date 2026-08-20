@@ -1,6 +1,6 @@
 ---
 title: "Generate Application Keys"
-description: "Generate and renew OAuth2 application keys (consumer key, consumer secret, and access token) from the Developer Portal, including PKCE-enabled flows and key generation using Okta or Keycloak as the key manager."
+description: "Generate and renew OAuth2 application keys from the Developer Portal, including PKCE-enabled flows and Okta or Keycloak key managers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/generate-keys/generate-api-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/generate-keys/generate-api-keys.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -43,7 +43,7 @@ Follow the instructions below to generate/renew application keys:
     
 5. Copy the generated JWT Access Token that appears so that you can use it in the future.
 
-      <a href="../../../assets/img/learn/jwt-access-token.png" ><img src="../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
+      <a href="../../../../assets/img/learn/jwt-access-token.png" ><img src="../../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
      
      After the keys are generated, you can find the consumer key and consumer secret pair via the application details page.
      

@@ -1,6 +1,6 @@
 ---
 title: "Create a GraphQL API Using Introspection"
-description: "Create a GraphQL API in WSO2 API Manager by pointing to an existing unprotected GraphQL endpoint and letting introspection auto-generate the operations and schema definition."
+description: "Create a GraphQL API by pointing to an existing unprotected GraphQL endpoint and letting introspection auto-generate its operations and schema definition."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-graphql-api/create-a-graphql-api-using-introspection/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-graphql-api/create-a-graphql-api-using-introspection.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - graphql
   - api-design
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

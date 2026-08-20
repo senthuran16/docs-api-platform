@@ -1,6 +1,6 @@
 ---
 title: "Federate OAuth Applications with an External IdP"
-description: "Configure API Manager to federate OAuth application token generation to an external identity provider, such as Okta, by editing the default.xml service provider configuration."
+description: "Federate OAuth application token generation to an external identity provider such as Okta by editing the default.xml service provider configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-authentication/advanced-topics/federating-oauth-applications/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-authentication/advanced-topics/federating-oauth-applications.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - sso
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

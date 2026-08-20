@@ -1,6 +1,6 @@
 ---
 title: "Sentence Count Guardrail"
-description: "Configure the Sentence Count Guardrail mediator for WSO2 API Manager Universal Gateway to validate JSON payloads against minimum and maximum sentence count thresholds using JSON Path expressions."
+description: "Configure the Sentence Count Guardrail mediator to validate JSON payloads against min/max sentence count thresholds using JSON Path expressions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/sentence-count-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/sentence-count-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

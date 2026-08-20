@@ -1,6 +1,6 @@
 ---
 title: "Configure the Proxy Server and the Load Balancer"
-description: "Configure NGINX as a reverse proxy and load balancer in front of WSO2 API Manager for single-node, active-active, and HA deployments, and set the proxy host, port, and dynamic callback origin in the product."
+description: "Configure NGINX as a reverse proxy and load balancer in front of WSO2 API Manager for single-node, active-active, and HA deployments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - load-balancing
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

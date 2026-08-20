@@ -1,6 +1,6 @@
 ---
-title: "Pattern 3: Distributed Deployment with Gateway and Traffic Manager Separated from the Control Plane"
-description: "Deploy WSO2 API Manager 4.5.0 on Kubernetes using Helm charts in a distributed pattern that separates the Universal Gateway and Traffic Manager from the API Control Plane, including Docker image building, database setup, and Gateway API or NGINX Ingress configuration."
+title: "Pattern 3: Gateway and Traffic Manager separated"
+description: "Deploy WSO2 API Manager 4.5.0 on Kubernetes with the Gateway and Traffic Manager separated from the Control Plane using Helm charts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-3-acp-tm-gw/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-3-acp-tm-gw.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This is the standard distributed deployment for API Manager. The default configuration consists of two API control planes, two Traffic Managers, and two Universal Gateways. This is a production-ready deployment pattern.
 
-<a href="../../../../assets/img/setup-and-install/distributed-deployment-tm.png"><img src="../../../../assets/img/setup-and-install/distributed-deployment-tm.png" alt="simple scalable api-m deployment" width="60%"></a>
+<a href="../../../../../assets/img/setup-and-install/distributed-deployment-tm.png"><img src="../../../../../assets/img/setup-and-install/distributed-deployment-tm.png" alt="simple scalable api-m deployment" width="60%"></a>
 
 !!! info
     For advanced details on the deployment pattern, please refer to the official
@@ -24,7 +24,7 @@ This is the standard distributed deployment for API Manager. The default configu
 
 ## Contents
 
-- [Pattern 3: API-M Deployment with Traffic Manager Separation](#pattern-3-api-m-deployment-with-traffic-manager-separation)
+- [Pattern 3: API-M Deployment with Traffic Manager Separation](#pattern-3-distributed-api-m-deployment-with-gateway-and-traffic-manager-separated-from-the-control-plane)
   - [Contents](#contents)
   - [About this Document](#about-this-document)
   - [Prerequisites](#prerequisites)
@@ -524,7 +524,7 @@ For further guidance, refer [Encrypting Secrets with apictl](../../../../install
 
 ### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways)
 ```yaml
     gateway:
         # -- APIM Gateway environments
@@ -558,7 +558,7 @@ If you need to distribute the Gateway load that comes in, you can configure mult
 
 ### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores):
 
 ```yaml
     userStore:
@@ -572,7 +572,7 @@ You can configure user store properties as described in this [documentation](htt
 !!! warning "Configuration Note"
     If you do not want to configure any of these properties, you must remove the `properties` block from the YAML file to prevent deployment issues.
 
-For a complete list of available user store properties and their descriptions, refer to the [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/).
+For a complete list of available user store properties and their descriptions, refer to the [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores).
 
 ### 2.3 Configure JWKS URL
 By default, for the super tenant, the Resident Key Manager's JWKS URL is set to `https://<HOSTNAME>:9443/oauth2/jwks`. If you are using a virtual host like `am.wso2.com` that is not globally routable, this URL will be incorrect. You can configure the correct JWKS URL for the super tenant using the Helm chart as shown below:

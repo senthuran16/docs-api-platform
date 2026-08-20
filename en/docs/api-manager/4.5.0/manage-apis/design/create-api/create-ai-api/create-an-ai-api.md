@@ -1,6 +1,6 @@
 ---
 title: "Create an AI API"
-description: "Create an AI/LLM API in WSO2 API Manager by selecting a built-in AI vendor such as OpenAI, Azure OpenAI, or Mistral, configuring backend endpoint API keys, and deploying it to the AI Gateway."
+description: "Create an AI/LLM API by selecting a built-in AI vendor such as OpenAI, Azure OpenAI, or Mistral, and deploying it to the AI Gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-ai-api/create-an-ai-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-ai-api/create-an-ai-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -34,7 +34,7 @@ Follow the instructions below to create an AI API using the basic flow:
 
     <div class="admonition tip">
         <p class="admonition-title">Tip</p>
-        <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default vendors, you can add custom AI vendors by following the <a href='../../../../ai-gateway/ai-vendor-management/custom-ai-vendors/overview.md'>custom AI vendor integration</a> documentation.</p>
+        <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default vendors, you can add custom AI vendors by following the <a href='../../../../../ai-gateway/ai-vendor-management/custom-ai-vendors/overview.md'>custom AI vendor integration</a> documentation.</p>
     </div>
 
 4. Fill in the AI API details and click **Create**.

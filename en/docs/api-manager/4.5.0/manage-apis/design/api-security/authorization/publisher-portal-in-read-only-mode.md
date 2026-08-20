@@ -1,6 +1,6 @@
 ---
 title: "Access the Publisher Portal in Read-only Mode"
-description: "Create a read-only user with the internal/observer role and scopes apim:api_view and apim:publisher_settings to view API, API Product, and analytics details in the Publisher portal without edit access."
+description: "Create a read-only user with the internal/observer role to view API, API Product, and analytics details in the Publisher portal without edit access."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/authorization/publisher-portal-in-read-only-mode/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/authorization/publisher-portal-in-read-only-mode.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - authorization
   - publisher-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

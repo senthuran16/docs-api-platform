@@ -1,6 +1,6 @@
 ---
 title: "About Asymmetric Cryptography"
-description: "Understand how WSO2 API Manager uses asymmetric cryptography, keystores, and truststores for authentication and data protection, including the default keystore/truststore shipped with the product."
+description: "Understand how WSO2 API Manager uses asymmetric cryptography, keystores, and truststores for authentication and data protection."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - keystores
   - certificate-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

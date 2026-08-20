@@ -1,6 +1,6 @@
 ---
 title: "Set Up Datadog-Based Analytics for API Manager"
-description: "Configure API Manager to write analytics events to a log file, ingest them with the Datadog Agent, and build a log pipeline, facets, measures, and dashboards in Datadog."
+description: "Configure API Manager to write analytics events to a log file, ingest them with the Datadog Agent, and build a log pipeline and dashboards in Datadog."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/on-prem/datadog-installation-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/on-prem/datadog-installation-guide.md
 tags:
@@ -8,13 +8,13 @@ tags:
   - observability
   - on-premise-analytics
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
 # DataDog Based Analytics Solution For API Manager
 
-<a href="../../../assets/img/analytics/datadog/architecture.png"><img src="../../../assets/img/analytics/datadog/architecture.png" width="70%" alt="Deployment diagram"></a>
+<a href="../../../../assets/img/analytics/datadog/architecture.png"><img src="../../../../assets/img/analytics/datadog/architecture.png" width="70%" alt="Deployment diagram"></a>
 
 ### Deployment
 

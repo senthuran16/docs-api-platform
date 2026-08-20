@@ -1,6 +1,6 @@
 ---
 title: "Pattern 4: Fully Distributed Kubernetes Deployment"
-description: "Deploy WSO2 API Manager 4.5.0 on Kubernetes using the fully distributed pattern with separate API Control Plane, Traffic Manager, Universal Gateway, and Key Manager Helm charts for a scalable, production-ready setup."
+description: "Deploy WSO2 API Manager 4.5.0 on Kubernetes in a fully distributed pattern with separate Control Plane, Traffic Manager, Gateway, and Key Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-4-acp-tm-gw-km/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-4-acp-tm-gw-km.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This is the fully distributed deployment for API Manager. The default configuration consists of two API Control Planes, two Traffic Managers, two Universal Gateways, and two Key Managers. This is the most scalable and production-ready deployment pattern.
 
-<a href="../../../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../../../assets/img/setup-and-install/distributed-deployment-km.png" alt="fully distributed deployment" width="60%"></a>
+<a href="../../../../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../../../../assets/img/setup-and-install/distributed-deployment-km.png" alt="fully distributed deployment" width="60%"></a>
 
 !!! info
     For advanced details on the deployment pattern, please refer to the official [documentation](../../../../install-and-setup/setup/deployment-overview.md).
@@ -535,7 +535,7 @@ For further guidance, refer [Encrypting Secrets with apictl](../../../../install
 
 ### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways)
 ```yaml
     gateway:
         # -- APIM Gateway environments
@@ -569,7 +569,7 @@ If you need to distribute the Gateway load that comes in, you can configure mult
 
 ### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores):
 
 ```yaml
     userStore:
@@ -583,7 +583,7 @@ You can configure user store properties as described in this [documentation](htt
 !!! warning "Configuration Note"
     If you do not want to configure any of these properties, you must remove the `properties` block from the YAML file to prevent deployment issues.
 
-For a complete list of available user store properties and their descriptions, refer to the [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/).
+For a complete list of available user store properties and their descriptions, refer to the [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores).
 
 ### 2.3 Configure JWKS URL
 

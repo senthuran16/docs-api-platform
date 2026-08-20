@@ -1,5 +1,5 @@
 ---
-title: "Pattern 6: API-M Deployment with IS as Key Manager on Kubernetes"
+title: "Pattern 6: API-M deployment with IS as Key Manager"
 description: "Deploy a single-node WSO2 API Manager instance on Kubernetes with WSO2 Identity Server 7.x configured as a third-party key manager, using Helm charts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-6-all-in-one-is-as-km/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-6-all-in-one-is-as-km.md
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -98,7 +98,7 @@ This section explains how to configure WSO2 Identity Server 7.x as a Key Manager
 
 !!! info
     Before you begin:
-    You need to import the public certificate of the WSO2 Identity Server 7.x to the truststore of the WSO2 API Manager, and vice-versa. For information on importing the certificates, see the [Importing certificates to the truststore](https://apim.docs.wso2.com/en/4.5.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore) guide.
+    You need to import the public certificate of the WSO2 Identity Server 7.x to the truststore of the WSO2 API Manager, and vice-versa. For information on importing the certificates, see the [Importing certificates to the truststore](../../security/configuring-keystores/keystore-basics/creating-new-keystores#step-3-importing-certificates-to-the-truststore) guide.
 
 To configure WSO2 Identity Server 7.x to work as a Key Manager with WSO2 API Manager, you need to apply the following configurations:
 

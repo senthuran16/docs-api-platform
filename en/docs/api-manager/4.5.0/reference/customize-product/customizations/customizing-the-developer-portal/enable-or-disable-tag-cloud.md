@@ -1,6 +1,6 @@
 ---
 title: "Enable or Disable Tag Cloud in the Developer Portal"
-description: "Configure the custom.tagCloud.active attribute in userTheme.json to enable or disable the tag cloud, and set colorOptions and leftMenu styling for the Developer Portal."
+description: "Configure the custom.tagCloud.active attribute in userTheme.json to enable or disable and style the Developer Portal tag cloud."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/customizing-the-developer-portal/enable-or-disable-tag-cloud/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/customizing-the-developer-portal/enable-or-disable-tag-cloud.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

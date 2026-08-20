@@ -1,6 +1,6 @@
 ---
 title: "Secure Endpoint with Digest Auth"
-description: "Configure Digest Authentication for a production or sandbox endpoint in API Publisher, and see how the Authorization header is constructed using MD5 hashing and nonce values."
+description: "Configure Digest Authentication for a production or sandbox endpoint in the Publisher, and see how the Authorization header uses MD5 hashing and nonce values."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/endpoints/endpoint-security/digest-auth/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/endpoints/endpoint-security/digest-auth.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - endpoint-security
   - digest-auth
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

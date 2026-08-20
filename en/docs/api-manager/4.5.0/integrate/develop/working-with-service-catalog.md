@@ -1,6 +1,6 @@
 ---
 title: "Publish Integrations to API Manager"
-description: "Publish a REST API artifact developed in WSO2 Integration Studio from the Micro Integrator runtime to the API Manager layer using the Service Catalog client, so it can be created, deployed, and published as a managed API."
+description: "Publish a REST API artifact from the Micro Integrator runtime to WSO2 API Manager using the Service Catalog so it can be managed."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/integrate/develop/working-with-service-catalog/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/integrate/develop/working-with-service-catalog.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - service-catalog
   - micro-integrator
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -29,13 +29,13 @@ Develop a REST API artifact using WSO2 Integration Studio. This is your integrat
     For instructions on creating a new integration service, use the following documentation: 
 
     -   [Developing your First Integration Service](../../integrate/develop/integration-development-kickstart.md).
-    -   [Integration Tutorials](../../tutorials/tutorials-overview.md#integration-tutorials).
+    -   [Integration Tutorials](../../tutorials/tutorials-overview.md#scenario-tutorials).
 
 ## Step 1 - Update the service metadata
 
 When you create a REST API artifact from WSO2 Integration Studio, a **resources** folder with metadata files is created as shown below. This metadata is used by the API management runtime to generate the API proxy for the service.
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
 
 Update the metadata for your service as explained below.
 

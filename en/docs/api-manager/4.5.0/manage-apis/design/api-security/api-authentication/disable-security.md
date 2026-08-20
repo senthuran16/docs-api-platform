@@ -1,6 +1,6 @@
 ---
 title: "Disable Security for APIs"
-description: "Disable OAuth 2.0 security in WSO2 API Manager for a single API resource or for all resources of an API, typically for testing purposes without an access token."
+description: "Disable OAuth 2.0 security for a single API resource or for all resources of an API, typically to test the API without an access token."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-authentication/disable-security/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-authentication/disable-security.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-security
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

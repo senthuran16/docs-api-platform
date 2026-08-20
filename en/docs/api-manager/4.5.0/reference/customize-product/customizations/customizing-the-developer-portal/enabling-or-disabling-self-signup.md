@@ -1,6 +1,6 @@
 ---
 title: "Enable or Disable Self Signup to the Developer Portal"
-description: "Disable or re-enable self-signup registration for a tenant's Developer Portal in API Manager by updating identity provider self-registration settings and the SelfSignUp configuration."
+description: "Disable or re-enable self-signup registration for a tenant's Developer Portal by updating identity provider settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -46,6 +46,7 @@ In a multi-tenanted API Manager setup, self-signup to the Developer Portal works
 
     ![Self registration disabled](../../../../assets/img/learn/self-signup-disabled.png)
 
+<a name="enabling-self-signup"></a>
 #### Enabling Self Signup
 
 

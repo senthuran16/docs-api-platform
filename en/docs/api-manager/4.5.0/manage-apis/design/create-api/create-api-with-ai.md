@@ -1,6 +1,6 @@
 ---
 title: "Create an API with the API Design Assistant"
-description: "Use the AI-powered API Design Assistant to generate REST, GraphQL, and Async API specifications from natural language, then refine and create the API in the Publisher Portal."
+description: "Use the AI-powered API Design Assistant to generate REST, GraphQL, and Async API specifications from natural language."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-api-with-ai/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-api-with-ai.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai
   - api-design
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

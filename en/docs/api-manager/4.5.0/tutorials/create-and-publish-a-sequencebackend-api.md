@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish an API with a Sequence as a Backend"
-description: "Create a REST API in the Publisher Portal that uses a sequence as its backend, uploading mediation logic sequences to the Sequence Backend endpoint for the sandbox and production key types."
+description: "Create a REST API in the Publisher Portal that uses a sequence as its backend, uploading mediation logic for sandbox and production keys."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/create-and-publish-a-sequencebackend-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/create-and-publish-a-sequencebackend-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - mediation
   - endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

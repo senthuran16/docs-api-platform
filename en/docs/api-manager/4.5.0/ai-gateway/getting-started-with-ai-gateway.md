@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with AI Gateway"
-description: "Create an OpenAI-based AI/LLM API in WSO2 API Manager's AI Gateway, configure backend security, then deploy, publish, and invoke the API through the Developer Portal."
+description: "Create an OpenAI-based AI API in WSO2 API Manager's AI Gateway, configure backend security, then deploy, publish, and invoke it via the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/getting-started-with-ai-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/getting-started-with-ai-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - quickstart
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 
@@ -35,7 +35,7 @@ AI Gateway gives you the ability to create AI APIs, which serve as a bridge betw
 
     <div class="admonition tip">
     <p class="admonition-title">Tip</p>
-    <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default vendors, you can add custom AI vendors by following the <a href='../ai-gateway/ai-vendor-management/custom-ai-vendors/overview.md'>custom AI vendor integration</a> documentation.</p>
+    <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default vendors, you can add custom AI vendors by following the <a href='../ai-vendor-management/custom-ai-vendors/overview.md'>custom AI vendor integration</a> documentation.</p>
     </div>
 
 4. Fill in the AI API details and click **Create**.

@@ -1,6 +1,6 @@
 ---
 title: "Scenario 13: Integrate with Services via Connectors"
-description: "Tutorial on using WSO2 Micro Integrator connectors and an Inbound Endpoint to pick up a CSV file dropped in a directory and send its contents as an email through the Email connector."
+description: "Tutorial on using Micro Integrator connectors and an Inbound Endpoint to pick up a CSV file and email its contents."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/scenarios/scenario13-integrate-with-connectors/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/scenarios/scenario13-integrate-with-connectors.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - micro-integrator
   - connectors
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -24,7 +24,7 @@ RailCo is maintaining a Railway yard for their routine maintenance checkups for 
 
 When you integrate the systems in your organization, it is also necessary to integrate with third-party systems and its capabilities to enhance your services. WSO2 Micro Integrator uses Connectors for the purpose of referring to the APIs of third-party systems.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario13.png" alt="Integrating with Connectors" title="Integrating with Connectors" width="60%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario13.png" alt="Integrating with Connectors" title="Integrating with Connectors" width="60%" />
 
 To develop the service you can use Integration Studio, where you can import and package the connector with the Composite application. To listen for a file, you can use an Inbound Endpoint, which will be listening to a particular location which you provide. Once a file is added to that location it will pick up the file and process it. Inbound Endpoints support various protocols such as HTTP, JMS, RabbitMQ, WebSocket etc, 
 
@@ -32,7 +32,7 @@ While developing you can try it out in the Embedded Micro Integrator inside the 
 
 ## Step 1: Create and setup the service
 
-<img src="../../assets/img/tutorials/scenarios/integration_studio_connectors.png" alt="Integration Studio" title="Integration Studio" width="70%" />
+<img src="../../../assets/img/tutorials/scenarios/integration_studio_connectors.png" alt="Integration Studio" title="Integration Studio" width="70%" />
 
 Here, for simplicity, the service is already created and exported as a Composite Application along with the connector. Before adding the service to the system, you need to do the following.
 

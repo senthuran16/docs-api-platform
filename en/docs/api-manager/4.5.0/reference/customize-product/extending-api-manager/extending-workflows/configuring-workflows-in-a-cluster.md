@@ -1,6 +1,6 @@
 ---
 title: "Configure Workflows in a Clustered Deployment"
-description: "Configure workflow management in a clustered API Manager setup by pointing the Admin Portal, BPEL, and Human Task WSDL endpoints across separate Developer Portal, Publisher, Gateway, and Key Manager nodes."
+description: "Configure workflow management in a clustered API Manager setup by pointing the Admin Portal, BPEL, and Human Task endpoints across nodes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-workflows-in-a-cluster/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-workflows-in-a-cluster.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - workflows
   - clustering
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

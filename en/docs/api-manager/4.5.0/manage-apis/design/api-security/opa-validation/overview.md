@@ -1,6 +1,6 @@
 ---
 title: "Validate Requests with Open Policy Agent (OPA)"
-description: "Use Open Policy Agent (OPA) to validate API requests at the WSO2 API Manager Gateway: attach the OPA validation policy in the Publisher Portal, configure the OPA server connection, and define Rego policies using the default request and response payload formats."
+description: "Use Open Policy Agent (OPA) to validate API requests at the Gateway: attach the OPA policy in the Publisher Portal and define Rego policies."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/opa-validation/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/opa-validation/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - api-security
   - opa
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Validate Request with Open Policy Agent (OPA)
@@ -22,8 +22,8 @@ A policy for Open Policy Agent can be though as a set of rules and policy engine
 
 WSO2 API Manager uses this unique policy engine to evaluate the requests that the Gateway receives and decides the fate of the request.
 
-<a href="../../../../assets/img/design/security/opa/opa-policy-architecture.png">
-    <img src="../../../../assets/img/design/security/opa/opa-policy-architecture.png" alt="OPA Architecture"/>
+<a href="../../../../../assets/img/design/security/opa/opa-policy-architecture.png">
+    <img src="../../../../../assets/img/design/security/opa/opa-policy-architecture.png" alt="OPA Architecture"/>
 </a>
 
 ## How to use OPA for request validation?
@@ -47,8 +47,8 @@ Once OPA engine is deployed, you have to attach the policy to the operations tha
 5. Fill the configurations as per your deployment and save the page.
 6. Create a new revision from these changes and deploy it to the Gateway.
 
-<a href="../../../../assets/img/design/security/opa/opa-policy-selection.png">
-    <img src="../../../../assets/img/design/security/opa/opa-policy-selection.png" alt="Select the OPA Policy"/>
+<a href="../../../../../assets/img/design/security/opa/opa-policy-selection.png">
+    <img src="../../../../../assets/img/design/security/opa/opa-policy-selection.png" alt="Select the OPA Policy"/>
 </a>
 
 Configurations for the policy is as follows.
@@ -64,8 +64,8 @@ Configurations for the policy is as follows.
 | Max Open Connections  | **Optional** Maximum number of open HTTP connections between the gateway and OPA server.                                                                                                                                                                               | `500`                                  |
 | Connection Timeout    | **Optional** Connection timeout in seconds.                                                                                                                                                                                                                            | `30`                                   |
 
-<a href="../../../../assets/img/design/security/opa/configure-opa-policy.png">
-    <img src="../../../../assets/img/design/security/opa/configure-opa-policy.png" alt="Configure OPA policy"/>
+<a href="../../../../../assets/img/design/security/opa/configure-opa-policy.png">
+    <img src="../../../../../assets/img/design/security/opa/configure-opa-policy.png" alt="Configure OPA policy"/>
 </a>
 
 ## Defining Policies in the OPA Server
@@ -91,7 +91,7 @@ You can define your own policy enforcement logic in OPA by using the values prov
 By default, each Gateway uses a default Request Generator to generate the request payload to the OPA server. You can configure your policies in OPA server based on the following request format.
 
 !!! Info
-    You can have your own **Request Generator Implementation** - you can do so by implementing the interface **OPARequestGenerator**. [Custom OPA Policy with Custom Request Generator](#custom-opa-policy-with-custom-request-generator) in this document describes this in more detail.
+    You can have your own **Request Generator Implementation** - you can do so by implementing the interface **OPARequestGenerator**. [Custom OPA Policy with Custom Request Generator](#customize-the-opa-request-payload-and-response-validation) in this document describes this in more detail.
 
 === "Format"
     ```json
@@ -158,7 +158,7 @@ By default, each Gateway uses a default Request Generator to generate the reques
 Similar to the request generation, the default request generator class validates the response from OPA. When using the default implementation, you have to write your OPA policies using the following response format when queried with the `allow` policy.
 
 !!! note
-    If required, you can have your own **Response Valiation Implementation** by implementing the interface **OPARequestGenerator**. For more information, see [Custom OPA Policy with Custom Request Generator](#custom-opa-policy-with-custom-request-generator).
+    If required, you can have your own **Response Valiation Implementation** by implementing the interface **OPARequestGenerator**. For more information, see [Custom OPA Policy with Custom Request Generator](#customize-the-opa-request-payload-and-response-validation).
 
 === "Format"
     ```json

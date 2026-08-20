@@ -1,6 +1,6 @@
 ---
 title: "Client Credentials Grant"
-description: "Configure and use the OAuth2 Client Credentials grant type in WSO2 API Manager: enable the grant, generate consumer key and secret, and invoke the Token API to obtain access tokens with or without a scope."
+description: "Configure and use the OAuth2 Client Credentials grant: enable the grant, generate a consumer key and secret, and invoke the Token API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/grant-types/client-credentials-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/grant-types/client-credentials-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "API Analytics Overview"
-description: "Overview of the API Manager analytics architecture, covering inbound, outbound, and AI analytics data, and the supported analytics platforms: Choreo, ELK, DataDog, and OpenSearch."
+description: "Overview of the API Manager analytics architecture, covering inbound, outbound, and AI analytics data and the supported analytics platforms."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/analytics-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/analytics-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - analytics
   - observability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # API Analytics Overview
@@ -18,8 +18,8 @@ API Manager analytics provides insights into API usage, performance, and other k
 
 ## Architecture
 
-<a href="../../assets/img/analytics/analytics-architecture.png" >
-  <img src="../../assets/img/analytics/analytics-architecture.png" width="60%" alt="APIM Analytics Architecture"/>
+<a href="../../../assets/img/analytics/analytics-architecture.png" >
+  <img src="../../../assets/img/analytics/analytics-architecture.png" width="60%" alt="APIM Analytics Architecture"/>
 </a>
 
 Analytics architecture consists of the following components

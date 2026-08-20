@@ -1,6 +1,6 @@
 ---
 title: "Configure a JDBC User Store"
-description: "Configure a JDBC user store as the primary user store for WSO2 API Manager using deployment.toml, including user store manager, admin user, datasource, and JDBC driver setup."
+description: "Configure a JDBC user store as the primary user store for WSO2 API Manager via deployment.toml, including datasource and JDBC driver setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

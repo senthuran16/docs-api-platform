@@ -1,6 +1,6 @@
 ---
 title: "JSON Threat Protection for API Gateway"
-description: "Configure the JSON threat protector in WSO2 API Manager to limit property count, string length, array size, key length, and JSON depth in request payloads, guarding against JSON-based payload attacks."
+description: "Configure the JSON threat protector to limit property count, string length, array size, and JSON depth in request payloads."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/json-threat-protection-for-api-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/json-threat-protection-for-api-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - threat-protection
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -65,7 +65,7 @@ in sequence.
 3. As required, drag and drop the **JSON Validator** from the Policy List tab into Request Flow.
 4. Provide the required parameters for JSON validation.
 
-    <a href="../../../../../assets/img/learn/mediation-json-validator.png"><img src="../../../../../assets/img/learn/mediation-json-validator.png" width="70%" alt="Drag and drop the JSON Validator from the policy list"></a> 
+    <a href="../../../../../../assets/img/learn/mediation-json-validator.png"><img src="../../../../../../assets/img/learn/mediation-json-validator.png" width="70%" alt="Drag and drop the JSON Validator from the policy list"></a> 
     
 4. Scroll down the page and click **Save** to save the changes (click **Save and Deploy** and deploy the API for the changes to take effect in the gateways).
 

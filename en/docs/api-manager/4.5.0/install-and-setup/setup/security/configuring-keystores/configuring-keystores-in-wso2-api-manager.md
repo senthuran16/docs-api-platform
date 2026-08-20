@@ -1,6 +1,6 @@
 ---
 title: "Configuring Keystores in WSO2 API Manager"
-description: "Configure the primary, secondary (TLS), internal, and custom keystores in WSO2 API Manager by editing deployment.toml, including keystore password rules and recommendations for production setups."
+description: "Configure the primary, secondary, and internal keystores in WSO2 API Manager through deployment.toml, with recommendations for production setups."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - keystores
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

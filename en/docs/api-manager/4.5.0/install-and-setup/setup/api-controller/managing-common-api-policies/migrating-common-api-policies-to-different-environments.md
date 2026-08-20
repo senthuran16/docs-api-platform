@@ -1,6 +1,6 @@
 ---
 title: "Migrate Common API Policies Between Environments"
-description: "Use WSO2 API Controller (apictl) to export a Common API Policy as a ZIP archive from one environment and import it into another, such as moving a policy from development to production."
+description: "Use apictl to export a Common API Policy as a ZIP archive from one environment and import it into another, such as moving it to production."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/managing-common-api-policies/migrating-common-api-policies-to-different-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/managing-common-api-policies/migrating-common-api-policies-to-different-environments.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - common-api-policies
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -25,7 +25,7 @@ content_type: "how-to"
     For more information, visit [Add an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#add-an-environment).
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export Common API Policies. To create a custom user who can import/export Common API Policies, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export Common API Policies. To create a custom user who can import/export Common API Policies, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#minimal-permissions-and-scopes-required-to-perform-apictl-operations).
 
 ### Export a Common API Policy
 

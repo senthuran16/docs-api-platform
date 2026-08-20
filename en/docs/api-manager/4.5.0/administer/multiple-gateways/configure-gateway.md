@@ -8,7 +8,7 @@ tags:
   - multiple-gateways
   - virtual-hosts
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -18,7 +18,7 @@ Each Gateway environment definition contains details related to a specific Gatew
 
 ## Option 1: Create a Gateway environment via the Admin Portal
 
-1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -48,8 +48,8 @@ Each Gateway environment definition contains details related to a specific Gatew
 
     3. Optionally, click **Advanced Settings** to add an HTTP(S) context and custom ports.
 
-         <a href="../../assets/img/deploy/vhost-advanced-settings.png">
-             <img src="../../assets/img/deploy/vhost-advanced-settings.png" alt="Advanced VHost settings"
+         <a href="../../../assets/img/deploy/vhost-advanced-settings.png">
+             <img src="../../../assets/img/deploy/vhost-advanced-settings.png" alt="Advanced VHost settings"
              title="Advanced VHost settings" width="500px" />
          </a>
        
@@ -111,6 +111,6 @@ Follow the instructions below to use the `deployment.toml` file, which is the ce
     websub_event_receiver_https_endpoint = "https://foods.com:8021"
    ```
 
-3. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.

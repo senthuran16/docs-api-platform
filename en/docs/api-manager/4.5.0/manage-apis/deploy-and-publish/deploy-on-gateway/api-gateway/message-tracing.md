@@ -1,6 +1,6 @@
 ---
 title: "Configure Message Tracing"
-description: "Configure the deprecated Message Tracer feature on the API Manager Gateway to log message flow details, including content and direction, for debugging and auditing in development environments."
+description: "Configure the deprecated Message Tracer feature on the Gateway to log message flow details for debugging in development environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/message-tracing/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/message-tracing.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-gateway
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

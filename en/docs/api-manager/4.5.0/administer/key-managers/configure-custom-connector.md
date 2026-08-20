@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom Key Manager Connector"
-description: "Write, build, and deploy a custom Key Manager connector for WSO2 API Manager, then register it as a Key Manager in the Admin Portal to integrate an external OAuth Authorization Server."
+description: "Write, build, and deploy a custom Key Manager connector for WSO2 API Manager, then register it as a Key Manager in the Admin Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-custom-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-custom-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -160,7 +160,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **General Details** - This section of the form includes the basic information of the Key Manager. 
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form1.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form1.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form1.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form1.png" width="70%" alt="Configure the Key Manager form"></a>
 
 
           <table>
@@ -190,7 +190,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Key Manager Type** - Provide the external identity provider that you use here and also the API invocation method.
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form2.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form2.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form2.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form2.png" width="70%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -214,7 +214,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Key Manager Endpoints** - Configure the endpoints associated with the external Key Manager that you are connecting to.
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form3.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form3.png" width="90%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form3.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form3.png" width="90%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -277,7 +277,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Claim URI** - Configure the claim URIs that associate the claims in the external Key Manager to the consumer key and scopes.
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form4.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form4.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form4.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form4.png" width="70%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -301,7 +301,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Grant Type** - The grant type is the way in which the external Key Manager communicates with API Manager.
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form5.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form5.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form5.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form5.png" width="70%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -320,7 +320,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Certificates** - 
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form6.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form6.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form6.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form6.png" width="70%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -348,7 +348,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Connector Configurations** - 
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form7.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form7.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form7.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form7.png" width="70%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -400,7 +400,7 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 
           **Advanced Configurations** - 
 
-          <a href="../../assets/img/administer/custom-keymanager/external-keymanager-form8.png"><img src="../../assets/img/administer/custom-keymanager/external-keymanager-form8.png" width="70%" alt="Configure the Key Manager form"></a>
+          <a href="../../../assets/img/administer/custom-keymanager/external-keymanager-form8.png"><img src="../../../assets/img/administer/custom-keymanager/external-keymanager-form8.png" width="70%" alt="Configure the Key Manager form"></a>
 
           <table>
           <tr class="header">
@@ -486,10 +486,10 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
 4. Select the Key Manager.
 
       - If you select the **Direct Token** radio button, you see the following screen:
-        <a href="../../assets/img/administer/custom-keymanager/dev-portal-direct.png"><img src="../../assets/img/administer/custom-keymanager/dev-portal-direct.png" width="70%" alt="Direct Token"></a>
+        <a href="../../../assets/img/administer/custom-keymanager/dev-portal-direct.png"><img src="../../../assets/img/administer/custom-keymanager/dev-portal-direct.png" width="70%" alt="Direct Token"></a>
 
       - If you select the **Exchange Token** radio button, you see the following screen:
-        <a href="../../assets/img/administer/custom-keymanager/dev-portal-exchange.png"><img src="../../assets/img/administer/custom-keymanager/dev-portal-exchange.png" width="70%" alt="Direct Token"></a>
+        <a href="../../../assets/img/administer/custom-keymanager/dev-portal-exchange.png"><img src="../../../assets/img/administer/custom-keymanager/dev-portal-exchange.png" width="70%" alt="Direct Token"></a>
 
         You need to generate and provide the token of the external Key Manager you are using here.
 

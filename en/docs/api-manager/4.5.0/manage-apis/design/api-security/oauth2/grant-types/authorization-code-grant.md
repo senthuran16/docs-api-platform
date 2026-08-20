@@ -1,6 +1,6 @@
 ---
 title: "Authorization Code Grant"
-description: "Use the OAuth2 Authorization Code grant type in WSO2 API Manager: understand the redirection-based flow, invoke the Authorization and Token APIs, and try the grant with the sample playground webapp."
+description: "Use the OAuth2 Authorization Code grant type: understand the redirection-based flow and invoke the Authorization and Token APIs to obtain an access token."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/grant-types/authorization-code-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/oauth2/grant-types/authorization-code-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

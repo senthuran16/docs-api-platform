@@ -1,6 +1,6 @@
 ---
 title: "Multiple Key Manager Support Overview"
-description: "Overview of how WSO2 API Manager supports configuring multiple authorization servers as Key Managers, including Key Manager registration, token validation flow, and role-based Key Manager restrictions."
+description: "Explains how WSO2 API Manager configures multiple authorization servers as Key Managers, covering registration, token validation, and access restriction."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Multiple Key Manager Support in WSO2 API Manager

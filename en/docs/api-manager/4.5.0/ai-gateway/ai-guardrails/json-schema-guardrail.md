@@ -1,6 +1,6 @@
 ---
 title: "JSON Schema Guardrail"
-description: "Configure the JSON Schema Guardrail mediation policy in WSO2 API Manager to validate JSON payloads against a user-defined JSON Schema on AI API request and response flows."
+description: "Configure the JSON Schema Guardrail policy to validate JSON payloads against a user-defined JSON Schema on AI API request and response flows."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/json-schema-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/json-schema-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

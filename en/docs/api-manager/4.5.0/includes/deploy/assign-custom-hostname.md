@@ -18,13 +18,13 @@
 
 3.  Click on the API to edit its configurations.
 
-     [![Edit the API](../../../../../assets/img/includes/deploy/select-api.png)](../../../../../assets/img/includes/deploy/select-api.png)
+     [![Edit the API](/api-platform/docs/api-manager/4.5.0/assets/img/includes/deploy/select-api.png)](/api-platform/docs/api-manager/4.5.0/assets/img/includes/deploy/select-api.png)
 
 4.  Click **Deployments**.
 
 5.  Select the newly created Gateway environment, Virtual Host (foods.com), and a Revision.
 
-     [Create a new revision](../../../../../manage-apis/design/create-api/create-api-revisions.md) if no revisions exist.
+     [Create a new revision](/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-api-revisions/) if no revisions exist.
 
 6. Click **Deploy** to attach the Virtual Host to the Pizzashack API.
    

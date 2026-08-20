@@ -1,6 +1,6 @@
 ---
 title: "OpenSearch Based Analytics Installation Guide"
-description: "Set up on-premise API analytics for WSO2 API Manager by configuring API Manager to log metrics, then installing OpenSearch, OpenSearch Dashboards, and Fluent Bit to ship and visualize that data."
+description: "Set up on-premise API analytics by configuring API Manager to log metrics, then installing OpenSearch and Fluent Bit to ship the data."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/on-prem/opensearch-installation-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/on-prem/opensearch-installation-guide.md
 tags:
@@ -8,13 +8,13 @@ tags:
   - observability
   - opensearch
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
 # OpenSearch Based Analytics Installation Guide
 
-<a href="../../../assets/img/analytics/opensearch/architecture.png"><img src="../../../assets/img/analytics/opensearch/architecture.png" width="70%" alt="Deployment diagram"></a>
+<a href="../../../../assets/img/analytics/opensearch/architecture.png"><img src="../../../../assets/img/analytics/opensearch/architecture.png" width="70%" alt="Deployment diagram"></a>
 
 ### Analytics Data flow
 
@@ -338,5 +338,5 @@ Create a parser configuration file (parsers.conf) with the following configurati
     ```
 
 5. Download the artifact file from below.<br />
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Artifacts](../../../assets/img/analytics/cloud/opensearch-analytics-dashboards.ndjson.md)
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Artifacts](../../../assets/img/analytics/cloud/opensearch-analytics-dashboards.ndjson)
 6. Navigate to **Dashboard Management** > **Saved Objects** and click on **Import**. Add the downloaded artifact file as an import object, and import.

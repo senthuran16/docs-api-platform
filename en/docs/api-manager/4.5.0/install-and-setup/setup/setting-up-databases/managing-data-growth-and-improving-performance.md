@@ -1,6 +1,6 @@
 ---
 title: "Managing Data Growth and Improving Performance"
-description: "Clean up accumulated runtime data such as unused OAuth2 tokens, sessions, and Registry records in WSO2 API Manager using regular cleanup and deep cleanup stored procedures to prevent database growth from degrading performance."
+description: "Clean up accumulated OAuth2 tokens, sessions, and Registry records in WSO2 API Manager using regular and deep cleanup to maintain performance."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/managing-data-growth-and-improving-performance/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/managing-data-growth-and-improving-performance.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - database
   - performance
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -106,9 +106,10 @@ This will remove the old and invalid tokens, sessions, and Auth codes, which can
 
      You can also schedule a cleanup task that will automatically run after a given period of time as shown in the examples below:
 
-    -   [**MySQL**](#schedule-task-for-mysql)
-    -   [**SQL Server**](#schedule-task-for-sql-server)
+    -   [**MySQL**](#schedule-a-cleanup-task-for-mysql)
+    -   [**SQL Server**](#schedule-a-cleanup-task-for-sql-server)
  
+    <a name="schedule-a-cleanup-task-for-mysql"></a>
     #### Schedule a cleanup task for MySQL
     ``` sql
     USE 'WSO2AM_DB';
@@ -122,6 +123,7 @@ This will remove the old and invalid tokens, sessions, and Auth codes, which can
     SET GLOBAL event_scheduler = ON;
 
     ```
+    <a name="schedule-a-cleanup-task-for-sql-server"></a>
     #### Schedule a cleanup task for SQL Server
 
     ``` sql

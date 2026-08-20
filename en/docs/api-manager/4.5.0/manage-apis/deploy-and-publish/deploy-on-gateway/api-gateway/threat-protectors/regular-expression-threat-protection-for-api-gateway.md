@@ -1,6 +1,6 @@
 ---
 title: "Regular Expression Threat Protection for the API Gateway"
-description: "Configure the regex threat protector policy in API Manager to block SQL injection, XPath injection, and script injection attacks using predefined and custom regular expression patterns."
+description: "Configure the regex threat protector policy to block SQL, XPath, and script injection attacks using predefined or custom patterns."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - threat-protection
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -104,7 +104,7 @@ regex\_policy in sequence.
 2. Go to **Policies** under the **API Configuration** sub-section from the left hand panel.
 3. As required, drag and drop the **Regex Policy** from the Policy List tab into Request Flow.
 
-    <a href="../../../../../assets/img/learn/mediation-regex-policy.png"><img src="../../../../../assets/img/learn/mediation-regex-policy.png" width="70%" alt="Drag and drop the Regex Policy from the policy list"></a> 
+    <a href="../../../../../../assets/img/learn/mediation-regex-policy.png"><img src="../../../../../../assets/img/learn/mediation-regex-policy.png" width="70%" alt="Drag and drop the Regex Policy from the policy list"></a> 
     
 4. Scroll down the page and click **Save** to save the changes (click **Save and Deploy** and deploy the API for the changes to take effect in the gateways).
 

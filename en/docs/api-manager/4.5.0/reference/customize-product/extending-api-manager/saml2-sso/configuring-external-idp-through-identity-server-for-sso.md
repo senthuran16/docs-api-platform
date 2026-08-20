@@ -1,6 +1,6 @@
 ---
 title: "Configure an External IdP through Identity Server for SSO"
-description: "Configure an external identity provider federated through WSO2 Identity Server for SAML2 single sign-on to API Manager, including JIT provisioning, role mapping, and claim configuration."
+description: "Configure an external identity provider federated through WSO2 Identity Server for SAML2 single sign-on to API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - sso
   - saml2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

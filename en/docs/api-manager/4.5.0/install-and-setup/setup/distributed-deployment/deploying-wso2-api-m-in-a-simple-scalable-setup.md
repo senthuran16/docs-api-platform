@@ -1,6 +1,6 @@
 ---
 title: "Deploying WSO2 API-M in a Simple Scalable Setup"
-description: "Configure a distributed WSO2 API-M deployment with separate All-in-One and Universal Gateway nodes, including database setup, SSL certificates, event hub/throttling configuration, and high availability."
+description: "Configure a distributed WSO2 API-M deployment with separate All-in-One and Universal Gateway nodes, including databases, SSL, and event hub setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-simple-scalable-setup/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-simple-scalable-setup.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -48,7 +48,7 @@ Given below are the API-M nodes you can have in a distributed deployment by defa
     </tr>
 </table>
 
-<a href="../../../assets/img/setup-and-install/simple-distributed.png"><img src="../../../assets/img/setup-and-install/simple-distributed.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/simple-distributed.png"><img src="../../../../assets/img/setup-and-install/simple-distributed.png" width="100%"></a>
 
 ### Step 1 - Install WSO2 API-M
 
@@ -66,7 +66,7 @@ For information, see [Installing and Configuring the Databases](../../../../inst
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M.
 
-For more information, see [Production Deployment Guidelines](../../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines/#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines#production-deployment-checklist).
 
 ### Step 4 - Create and import SSL certificates
 

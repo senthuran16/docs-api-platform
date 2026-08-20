@@ -1,6 +1,6 @@
 ---
 title: "Test a REST API Using the Integrated API Console"
-description: "Use the WSO2 API Manager Developer Portal's built-in API Console to subscribe to an API, generate an OAuth2 access token or test key, and invoke a REST API to view its response."
+description: "Use the Developer Portal's built-in API Console to subscribe to an API, generate an access token, and invoke a REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

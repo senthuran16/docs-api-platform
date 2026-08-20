@@ -1,6 +1,6 @@
 ---
 title: "Performance Test Results for Token Persistence"
-description: "Benchmark results comparing token endpoint throughput and CPU/IOPS usage in WSO2 API Manager with and without token persistence, across Client Credentials, Password, and Refresh grant types."
+description: "Review benchmark results comparing token endpoint throughput and CPU/IOPS usage with and without token persistence across several OAuth2 grant types."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/deployment-best-practices/performance-test-results-token-persistence/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/deployment-best-practices/performance-test-results-token-persistence.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - token-persistence
   - performance-testing
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -104,15 +104,15 @@ The following graphs show the CPU usage of API Manager instance over time for di
 
 **Client Credentials Grant**
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/token/cc_cpu.png" alt="CPU vs time for Client Credentials" width="750"/>
+<img src="../../../../assets/img/setup-and-install/performance-test-results/token/cc_cpu.png" alt="CPU vs time for Client Credentials" width="750"/>
 
 **Password Grant**
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/token/pwd_cpu.png" alt="CPU vs time for Password" width="750"/>
+<img src="../../../../assets/img/setup-and-install/performance-test-results/token/pwd_cpu.png" alt="CPU vs time for Password" width="750"/>
 
 **Refresh Grant**
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/token/refresh_cpu.png" alt="CPU vs time for Refresh" width="750"/>
+<img src="../../../../assets/img/setup-and-install/performance-test-results/token/refresh_cpu.png" alt="CPU vs time for Refresh" width="750"/>
 
 The following graphs depict the variance of the CPU usage of the database over time for different grant types.
 
@@ -120,19 +120,19 @@ The following graphs depict the variance of the CPU usage of the database over t
 
 CPU Usage                  |  Total IOPS   
 :-------------------------:|:----------------------:
-[![DB CPU vs time for Client Credentials](../../../assets/img/setup-and-install/performance-test-results/token/cc_db_cpu.png)](../../../assets/img/setup-and-install/performance-test-results/token/cc__db_cpu.png)  |  [![DB IOPS vs time for Client Credentials](../../../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)](../../../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)
+[![DB CPU vs time for Client Credentials](../../../assets/img/setup-and-install/performance-test-results/token/cc_db_cpu.png)](../../../assets/img/setup-and-install/performance-test-results/token/cc_db_cpu.png)  |  [![DB IOPS vs time for Client Credentials](../../../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)](../../../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)
 
 **Password Grant**
 
 CPU Usage                  |  Total IOPS   
 :-------------------------:|:----------------------:
-[![DB CPU vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/pwd_db_cpu.png)](../../../assets/img/setup-and-install/performance-test-results/token/pwd__db_cpu.png)  |  [![DB IOPS vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)](../../../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)
+[![DB CPU vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/pwd_db_cpu.png)](../../../assets/img/setup-and-install/performance-test-results/token/pwd_db_cpu.png)  |  [![DB IOPS vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)](../../../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)
 
 **Refresh Grant**
 
 CPU Usage                  |  Total IOPS   
 :-------------------------:|:----------------------:
-[![DB CPU vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/refresh_db_cpu.png)](../../../assets/img/setup-and-install/performance-test-results/token/refresh__db_cpu.png)  |  [![DB IOPS vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)](../../../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)
+[![DB CPU vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/refresh_db_cpu.png)](../../../assets/img/setup-and-install/performance-test-results/token/refresh_db_cpu.png)  |  [![DB IOPS vs time for Password](../../../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)](../../../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)
 
 !!! note
     The above data clearly shows a significant reduction in database load (CPU and IOPS) for each grant type when token persistence optimization is enabled. In summary, enabling token persistence optimization can enhance system performance, especially in scenarios where the database is a limiting factor.

@@ -1,6 +1,6 @@
 ---
 title: "Customize the API Template for the Gateway"
-description: "Modify the Velocity-based API template (velocity_template.xml) that generates an API's Synapse configuration, including how to conditionally engage custom handlers based on API properties and the available template variables."
+description: "Modify the Velocity-based API template that generates an API's Synapse configuration, including engaging custom handlers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-gateway/customizing-api-template-for-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-gateway/customizing-api-template-for-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - gateway-extensions
   - custom-handlers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -90,7 +90,7 @@ Following steps illustrate how you can enable a custom handler for a selected se
  
  4. Add `custom_authentication=true` as an [additional property](../../../../manage-apis/design/create-api/adding-custom-properties-to-apis.md) for those APIs which you need to enable the custom handler.
  
-    <a href="../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
+    <a href="../../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
            title="Add Custom Property" width="80%" /></a>
            
 5.  Publish the API to gateway, and you will notice that the custom handler has been enabled for APIs which are configured with the custom property.

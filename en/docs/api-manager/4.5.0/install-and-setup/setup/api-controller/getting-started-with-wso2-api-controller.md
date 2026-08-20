@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with WSO2 API Controller (apictl)"
-description: "Download, initialize, and configure apictl, the command-line tool for moving APIs, API Products, and Applications across API Manager and Micro Integrator environments."
+description: "Download, initialize, and configure apictl, the command-line tool for moving APIs, API Products, and Applications across environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - cli
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 

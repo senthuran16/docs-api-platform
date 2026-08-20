@@ -1,6 +1,6 @@
 ---
 title: "Overview of Access Tokens"
-description: "Learn how consumer-key and consumer-secret credentials relate to access tokens in WSO2 API Manager, and the difference between application access tokens and user access tokens."
+description: "Learn how consumer-key and consumer-secret credentials relate to access tokens, and the difference between application and user tokens."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

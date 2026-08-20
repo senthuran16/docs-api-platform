@@ -1,6 +1,6 @@
 ---
 title: "Adding an Application Creation Workflow"
-description: "Attach an approval workflow to application creation in API Manager by engaging the Approval Workflow Executor, so application requests must be approved or rejected from the Admin Portal before becoming active."
+description: "Attach an approval workflow to application creation so requests must be approved or rejected from the Admin Portal before activation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - workflows
   - application-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -31,7 +31,7 @@ First enable the approve workflow executor for application creation.
 
 2. Click **Main** --> **Registry** --> **Browse**.
 
-    <a href="../../../assets/img/learn/navigate-main-resources.png"><img src="../../../assets/img/learn/navigate-main-resources.png" width="250" height="100"/></a>
+    <a href="../../../../assets/img/learn/navigate-main-resources.png"><img src="../../../../assets/img/learn/navigate-main-resources.png" width="250" height="100"/></a>
     
 3.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, click on `Edit as text` to edit the file, disable the Simple Workflow Executor, and enable **Approval Workflow Executor** for application creation.
 

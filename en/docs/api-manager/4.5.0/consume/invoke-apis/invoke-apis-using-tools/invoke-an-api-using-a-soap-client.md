@@ -1,6 +1,6 @@
 ---
 title: "Invoke an API Using a SOAP Client"
-description: "Subscribe to a SOAP-based API, generate an OAuth2 access token, and invoke it from SOAP UI by setting the WSDL, Authorization header, and endpoint using the PhoneVerification API as an example."
+description: "Subscribe to a SOAP-based API, generate an OAuth2 access token, and invoke it from SOAP UI using the PhoneVerification API as an example."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - soap
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Configure Message Builders and Formatters"
-description: "Configure the default and custom message builders and formatters used by the WSO2 API Manager Gateway to process incoming payloads and build outgoing message streams based on content type."
+description: "Configure the message builders and formatters the API Gateway uses to process incoming payloads and build outgoing message streams based on content type."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/configuring-message-builders-formatters/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/configuring-message-builders-formatters.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - gateway-policies
   - message-mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -167,7 +167,7 @@ The default message builder or message formatter for a given content type can be
         application_binary = "org.apache.axis2.format.BinaryFormatter"
         ```
 
-3. Save the changes and [restart the server](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server) to get the changes applied.
+3. Save the changes and [restart the server](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server) to get the changes applied.
 
 
 ## Custom message builders and formatters

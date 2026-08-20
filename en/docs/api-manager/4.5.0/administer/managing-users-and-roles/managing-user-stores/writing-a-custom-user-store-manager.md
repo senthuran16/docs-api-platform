@@ -1,6 +1,6 @@
 ---
 title: "Write a Custom User Store Manager"
-description: "Implement a custom user store manager for WSO2 API Manager by overriding AbstractUserStoreManager methods, then deploy and configure it as a JDBC-backed primary or secondary user store."
+description: "Implement a custom user store manager for WSO2 API Manager by overriding AbstractUserStoreManager methods, then deploy it as a JDBC-backed user store."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

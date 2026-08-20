@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Controller (apictl) CLI Reference"
-description: "Command reference for apictl, the WSO2 API Manager CLI tool: install and log in, then use commands such as add, get, import, export, delete, bundle, k8s, aws, vcs, mi, and secret to manage APIs, API Products, and Applications across environments."
+description: "Command reference for apictl, the WSO2 API Manager CLI tool used to manage APIs, API Products, and Applications across environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/apictl/wso2-api-controller/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/apictl/wso2-api-controller.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - apictl
   - cli-reference
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

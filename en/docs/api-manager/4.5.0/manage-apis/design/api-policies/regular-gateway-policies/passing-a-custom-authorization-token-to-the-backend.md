@@ -1,6 +1,6 @@
 ---
 title: "Passing a Custom Authorization Token to the Backend"
-description: "Write a mediation sequence that swaps a custom token from a Custom header into the Authorization header before an API request reaches the backend, using a sample backend and cURL to verify the exchange."
+description: "Write a mediation sequence that swaps a custom token from a Custom header into the Authorization header before the request reaches the backend."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/passing-a-custom-authorization-token-to-the-backend/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/passing-a-custom-authorization-token-to-the-backend.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - gateway-policies
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

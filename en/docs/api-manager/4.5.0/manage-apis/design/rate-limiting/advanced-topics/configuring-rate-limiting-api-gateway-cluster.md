@@ -1,6 +1,6 @@
 ---
 title: "Configure Rate Limiting for an API Gateway Cluster"
-description: "Configure a distributed Redis cluster with WSO2 API Manager to synchronize burst control and backend rate limiting counters across Gateway nodes, using asynchronous or async-sync hybrid mode."
+description: "Configure a distributed Redis cluster with API Manager to synchronize burst control and backend rate limiting counters across Gateway nodes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/advanced-topics/configuring-rate-limiting-api-gateway-cluster/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/advanced-topics/configuring-rate-limiting-api-gateway-cluster.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - clustering
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,9 +16,7 @@ content_type: "how-to"
 
 Typically, you need to have more than one Gateway node in your WSO2 API Manager (WSO2 API-M) deployment when either
 having an all-in-one setup in a high availability (HA) deployment (i.e., 2 nodes) or when having a distributed setup
-with multiple Gateways. In such scenarios, for [Burst Control](../../../../index.md
-/manage-apis/design/rate-limiting/setting-throttling-limits/#burst-control) and [Backend Rate Limiting](../../../../index.md
-/manage-apis/design/rate-limiting/setting-maximum-backend-throughput-limits) to work properly, it requires maintaining
+with multiple Gateways. In such scenarios, for [Burst Control](../setting-throttling-limits#burst-control) and [Backend Rate Limiting](../setting-maximum-backend-throughput-limits) to work properly, it requires maintaining
 distributed request counters across all gateway nodes.
 
 WSO2 API-M supports the facility to maintain these counters in a distributed Redis cluster. You can simply connect
@@ -184,6 +182,4 @@ Please note that the above set of configurations are the minimum required config
 For more information, see [Running the API Manager Runtime](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md).
 If there is a cluster of gateway nodes, start all of them.
 
-Once configurations are done, you can follow the docs for [Burst Control](../../../../index.md
-/manage-apis/design/rate-limiting/setting-throttling-limits/#burst-control) and [Backend Rate Limiting](../../../../index.md
-/manage-apis/design/rate-limiting/setting-maximum-backend-throughput-limits) and test the functionality with the Hybrid Mode enabled. 
+Once configurations are done, you can follow the docs for [Burst Control](../setting-throttling-limits#burst-control) and [Backend Rate Limiting](../setting-maximum-backend-throughput-limits) and test the functionality with the Hybrid Mode enabled. 

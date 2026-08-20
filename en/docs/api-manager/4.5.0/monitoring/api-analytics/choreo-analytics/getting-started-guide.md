@@ -1,6 +1,6 @@
 ---
 title: "Get Started with Choreo Based API Analytics"
-description: "Sign in to Choreo, register your on-premise environment, configure the API Gateway to publish analytics data to the Choreo Analytics Cloud, and view API Insights dashboards."
+description: "Sign in to Choreo, register your on-premise environment, configure the Gateway to publish analytics data to the Choreo Analytics Cloud, and view API Insights."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/choreo-analytics/getting-started-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/api-analytics/choreo-analytics/getting-started-guide.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - choreo-analytics
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 

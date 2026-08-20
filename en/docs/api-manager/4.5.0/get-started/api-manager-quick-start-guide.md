@@ -8,7 +8,7 @@ tags:
   - quickstart
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 
@@ -59,7 +59,7 @@ Choose a deployment option to start WSO2 API Manager All-in-one package. The All
 
 In this sample scenario, you'll implement the full lifecycle of an API using WSO2 API Manager.
 
-<a href="../assets/img/get_started/apim-qsg-diagram.png"><img src="../assets/img/get_started/apim-qsg-diagram.png" width="60%"></a>
+<a href="../../assets/img/get_started/apim-qsg-diagram.png"><img src="../../assets/img/get_started/apim-qsg-diagram.png" width="60%"></a>
 
 Here are the steps that we are going to follow:
 

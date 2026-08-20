@@ -1,6 +1,6 @@
 ---
 title: "Configuring Identity Server as IdP for SSO"
-description: "Configure WSO2 Identity Server as a SAML 2.0 SSO identity provider for API Manager, registering the API Publisher, Developer Portal, and Admin Portal as SAML service providers."
+description: "Configure WSO2 Identity Server as a SAML 2.0 SSO identity provider for the API Publisher, Developer Portal, and Admin Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - sso
   - saml2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -133,7 +133,7 @@ Similarly, add the Identity Server as an identity provider configurations in `ht
 
 3.  Select **Add** under the **Identity Providers** menu.
 
-     <img src="../../../../assets/img/learn/extensions/saml2-sso/add-idp.png" width="350px">
+     <img src="../../../../../assets/img/learn/extensions/saml2-sso/add-idp.png" width="350px">
     
 4. Upload the public certificate of Identity Server under **Identity Provider Public Certificate**.
 

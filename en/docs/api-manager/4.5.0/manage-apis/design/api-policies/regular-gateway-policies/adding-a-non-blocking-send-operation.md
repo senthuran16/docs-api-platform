@@ -1,6 +1,6 @@
 ---
 title: "Add a Non-Blocking Send Operation"
-description: "Create a custom Synapse policy that removes the ClientApiNonBlocking property so a VFS Send mediator transfers large files in a single thread, avoiding out-of-memory failures."
+description: "Create a Synapse policy that removes the ClientApiNonBlocking property so a VFS Send mediator transfers large files in a single thread."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/adding-a-non-blocking-send-operation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/adding-a-non-blocking-send-operation.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - gateway-policies
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

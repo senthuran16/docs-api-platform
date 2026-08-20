@@ -1,6 +1,6 @@
 ---
 title: "Deploy API Manager on Kubernetes Using Helm Resources"
-description: "Deploy WSO2 API Manager on a Kubernetes cluster using the wso2/helm-apim Helm resources, configure values.yaml, install with Helm, and access the Management Console through NGINX Ingress."
+description: "Deploy WSO2 API Manager on Kubernetes using Helm resources, configure values.yaml, and access the Management Console via NGINX Ingress."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/install/deploying-api-manager-with-kubernetes-resources/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/install/deploying-api-manager-with-kubernetes-resources.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - helm
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

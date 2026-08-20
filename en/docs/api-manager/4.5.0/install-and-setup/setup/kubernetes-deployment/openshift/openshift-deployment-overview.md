@@ -1,6 +1,6 @@
 ---
 title: "Deploy WSO2 API Manager on OpenShift"
-description: "Prepare OpenShift-compatible Docker images, configure security context settings in values.yaml, and deploy WSO2 API Manager on OpenShift Container Platform using Helm charts in all-in-one or distributed patterns."
+description: "Prepare OpenShift-compatible Docker images and security settings, then deploy WSO2 API Manager on OpenShift using Helm charts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/openshift/openshift-deployment-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/openshift/openshift-deployment-overview.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - openshift
   - kubernetes
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -19,22 +19,22 @@ This guide provides comprehensive instructions for deploying WSO2 API Manager on
 !!! info "OpenShift-Specific Configuration"
     This guide covers the following OpenShift-specific requirements:
     
-    - [Preparing Docker images for OpenShift compatibility](#step-1---preparing-the-docker-images)
-    - [Configuring security context settings in `values.yaml`](#step-4---configure-openshift-specific-settings-in-valuesyaml)
-    - [Applying proper permissions for container execution](#step-1---preparing-the-docker-images)
+    - [Preparing Docker images for OpenShift compatibility](#step-1-preparing-the-docker-images)
+    - [Configuring security context settings in `values.yaml`](#step-4-configure-openshift-specific-settings-in-valuesyaml)
+    - [Applying proper permissions for container execution](#step-1-preparing-the-docker-images)
 
 For an all-in-one deployment, following this guide is sufficient. If you need a distributed deployment, please refer to the [Deployment Patterns guide](../kubernetes/kubernetes-deployment-overview.md) and apply the additional configurations mentioned in this document on top of the provided `default_values.yaml` files.
 
 ## Contents
 
-- [WSO2 API Manager: Deployment on OpenShift](#wso2-api-manager-deployment-on-openshift)
+- [WSO2 API Manager: Deployment on OpenShift](#deploy-wso2-api-manager-on-openshift)
   - [Contents](#contents)
   - [Prerequisites](#prerequisites)
   - [Deployment Steps](#deployment-steps)
-    - [Step 1 - Preparing the Docker Images](#step-1---preparing-the-docker-images)
-    - [Step 2 - Login to the OpenShift Cluster](#step-2---login-to-the-openshift-cluster)
-    - [Step 3 - Create Secrets and Clone Helm Charts](#step-3---create-secrets-and-clone-helm-charts)
-    - [Step 4 - Configure OpenShift-Specific Settings in values.yaml](#step-4---configure-openshift-specific-settings-in-valuesyaml)
+    - [Step 1 - Preparing the Docker Images](#step-1-preparing-the-docker-images)
+    - [Step 2 - Login to the OpenShift Cluster](#step-2-login-to-the-openshift-cluster)
+    - [Step 3 - Create Secrets and Clone Helm Charts](#step-3-create-secrets-and-clone-helm-charts)
+    - [Step 4 - Configure OpenShift-Specific Settings in values.yaml](#step-4-configure-openshift-specific-settings-in-valuesyaml)
   - [All-in-One Deployment](#all-in-one-deployment)
   - [Distributed Deployment](#distributed-deployment)
 
@@ -365,7 +365,7 @@ For each component in your selected pattern:
     Each component requires the same OpenShift-specific configurations:
 
     1. **Custom Docker Images**: Build OpenShift-compatible images for each component
-    2. **Security Context**: Apply the same openshift specific settings as described in [Step 4](#step-4---configure-openshift-specific-settings-in-valuesyaml)
+    2. **Security Context**: Apply the same openshift specific settings as described in [Step 4](#step-4-configure-openshift-specific-settings-in-valuesyaml)
     3. **Database Connections**: Configure the database connections for each component
     4. **Service and Route Configuration**: Configure services and routes appropriate for OpenShift
 

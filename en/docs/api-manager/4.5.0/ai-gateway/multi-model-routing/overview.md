@@ -1,6 +1,6 @@
 ---
 title: "Multi-Model Routing Overview"
-description: "Overview of Multi-Model Routing in WSO2 API Manager: configure load balancing and failover strategies across AI models using Model Round Robin, Weighted Round Robin, and Failover policies."
+description: "Overview of Multi-Model Routing in WSO2 API Manager: load balancing and failover strategies across AI models using Round Robin and Failover policies."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/multi-model-routing/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/multi-model-routing/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - ai-gateway
   - multi-model-routing
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Multi-Model Routing

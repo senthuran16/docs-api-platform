@@ -1,6 +1,6 @@
 ---
 title: "Integrating with Solace Event Broker"
-description: "Integrate a Solace Event API with WSO2 API Manager: configure an OAuth profile for the Solace event broker, import the Solace Event API as an API, subscribe to it, and invoke the broker using a Developer Portal-issued token."
+description: "Integrate a Solace Event API with API Manager: configure an OAuth profile, import the event API, subscribe, and invoke it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/integrating-with-solace/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/integrating-with-solace.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - solace
   - asyncapi
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Enable Role-Based Access Control Using XACML"
-description: "Integrate an external XACML entitlement server (WSO2 Identity Server) with WSO2 API Manager to enforce role-based access control on APIs using entitlement policies and the entitlement mediator."
+description: "Integrate an external XACML entitlement server, such as WSO2 Identity Server, with API Manager to enforce role-based access control on APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/authorization/role-based-access-control-using-xacml/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/authorization/role-based-access-control-using-xacml.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - xacml
   - authorization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -44,7 +44,7 @@ Based on the requirement, a single API is exposed to add or retrieve order info
         By default, in API Manager JDBCUserStore is enabled. When you are moving to the ReadWriteLDAPUserStore, make sure you have commented the configuration of JDBCUserStore and keep only one user store configuration `<API-M_HOME>/repository/conf/user-mgt.xml` in both nodes.
 
     !!! tip
-        In an actual deployment, both these servers can [share the user store](../../../../reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md#sharing-the-user-store) of your organization.
+        In an actual deployment, both these servers can [share the user store](../../../../reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md) of your organization.
 
 2.  Start the WSO2 API Manager server and log in to the Management Console. Create user information with the following permission structure.
 

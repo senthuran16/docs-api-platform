@@ -1,6 +1,6 @@
 ---
 title: "Changing to IBM DB2"
-description: "Set up an IBM DB2 database, configure its JDBC driver, run the DB2 scripts, and update deployment.toml datasources to replace the default H2 database in WSO2 API Manager."
+description: "Set up an IBM DB2 database and JDBC driver, run the DB2 scripts, and update deployment.toml to replace the default H2 database."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - databases
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

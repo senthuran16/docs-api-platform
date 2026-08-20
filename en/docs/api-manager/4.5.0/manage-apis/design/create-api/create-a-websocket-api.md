@@ -1,6 +1,6 @@
 ---
 title: "Create a WebSocket API"
-description: "Design a WebSocket API in the API Publisher Portal by defining its name, context, version, and WebSocket endpoint, and optionally publish it with a business plan."
+description: "Design a WebSocket API in the Publisher Portal by defining its name, context, version, and endpoint, then optionally publish it with a business plan."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-a-websocket-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-a-websocket-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - websocket-api
   - api-design
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -23,7 +23,7 @@ The WebSocket protocol is designed to achieve the following:
 -   Be backward compatible with the pre-WebSocket world by starting up as an HTTP connection before switching to WebSocket frames.
 
 A WebSocket API allows an API creator to expose a WebSocket backend as an API to offer services via a WebSocket protocol while providing 
-[OAuth security](../../../manage-apis/design/api-security/api-authentication/secure-apis-using-oauth2-tokens.md), [Throttling](../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases.md), [Analytics](../../../observe/api-manager-analytics/overview-of-api-analytics.md), etc.
+[OAuth security](../../../manage-apis/design/api-security/api-authentication/secure-apis-using-oauth2-tokens.md), [Throttling](../../../manage-apis/design/rate-limiting/introducing-throttling-use-cases.md), [Analytics](../../../monitoring/api-analytics/analytics-overview), etc.
 
 Follow the instructions below to design a WebSocket API.
 
@@ -117,6 +117,6 @@ Now, you have successfully created and configured a WebSocket API. Next, let's [
 <div class="admonition note">
 <p class="admonition-title">What's Next?</p>
 
-<p>Learn more by trying out the tutorial on <a href="../../../tutorials/create-and-publish-websocket-api.md">Creating and Publishing a WebSocket API</a>.</p>
+<p>Learn more by trying out the tutorial on <a href="../../../../tutorials/create-and-publish-websocket-api.md">Creating and Publishing a WebSocket API</a>.</p>
 </div>
 

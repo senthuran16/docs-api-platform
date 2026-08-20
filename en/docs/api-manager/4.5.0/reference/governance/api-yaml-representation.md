@@ -1,6 +1,6 @@
 ---
 title: "API YAML Representation Reference"
-description: "Reference for the fields in the api.yaml file used by WSO2 API Manager to represent an API, covering top-level metadata, security, throttling, CORS, WebSub, endpoint, and operation-level configuration."
+description: "Reference for the fields in the api.yaml file used by API Manager to represent an API's metadata, security, and configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/governance/api-yaml-representation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/governance/api-yaml-representation.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - governance
   - api-configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

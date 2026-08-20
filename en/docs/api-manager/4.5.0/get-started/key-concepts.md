@@ -1,6 +1,6 @@
 ---
 title: "Key Concepts"
-description: "Glossary of core WSO2 API Manager concepts, covering APIs, API products, applications, access tokens, rate limits, workflows, mediation policies, and the API publisher, creator, subscriber, and admin roles."
+description: "Defines core WSO2 API Manager concepts: APIs, API products, applications, access tokens, rate limits, workflows, and user roles."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/get-started/key-concepts/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/get-started/key-concepts.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - get-started
   - terminology
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

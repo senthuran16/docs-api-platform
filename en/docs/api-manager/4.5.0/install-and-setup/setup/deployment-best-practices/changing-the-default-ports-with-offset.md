@@ -1,6 +1,6 @@
 ---
 title: "Changing the Default Ports with Offset"
-description: "Configure a port offset for WSO2 API Manager runtimes to avoid port conflicts when running multiple product instances on the same server, via deployment.toml or the -DportOffset startup flag."
+description: "Configure a port offset for WSO2 API Manager runtimes to avoid port conflicts when running multiple product instances on one server."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment
   - server-configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

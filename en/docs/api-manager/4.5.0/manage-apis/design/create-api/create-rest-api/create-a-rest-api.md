@@ -1,6 +1,6 @@
 ---
 title: "Create a REST API"
-description: "Create a REST API in WSO2 API Publisher by linking a backend implementation, configuring API details, resources, security, and runtime settings using the basic creation flow."
+description: "Create a REST API in the API Publisher by linking a backend implementation and configuring API details, resources, security, and runtime settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-rest-api/create-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-rest-api/create-a-rest-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-design
   - rest-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -61,8 +61,8 @@ Follow the instructions below to create a REST API using the basic flow:
 
 6. Go to **Develop**, **Portal Configurations**, and click **Basic Info**.
 
-     <a href="../../../../assets/img/learn/click-basic-info.png">
-     <img src="../../../../assets/img/learn/click-basic-info.png" width="20%"></a>
+     <a href="../../../../../assets/img/learn/click-basic-info.png">
+     <img src="../../../../../assets/img/learn/click-basic-info.png" width="20%"></a>
 
      1. Configure the API design configurations.
 
@@ -70,7 +70,7 @@ Follow the instructions below to create a REST API using the basic flow:
 
          <html><div class="admonition note">
          <p class="admonition-title">Note</p>
-         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../../../manage-apis/design/advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../../../manage-apis/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
+         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
          Developer Portal visibility</a>**.</p>
          <p>
          </div>
@@ -178,8 +178,8 @@ Follow the instructions below to create a REST API using the basic flow:
     4. Click on **Edit** from the toolbar.
         </br>
         <div style="text-align: left;">
-            <a href="../../../../assets/img/design/create-api/linter-observe/linter-observe1.png">
-                 <img src="../../../../assets/img/design/create-api/linter-observe/linter-observe1.png" alt="API configuration toolbar" width="600" height="377">
+            <a href="../../../../../assets/img/design/create-api/linter-observe/linter-observe1.png">
+                 <img src="../../../../../assets/img/design/create-api/linter-observe/linter-observe1.png" alt="API configuration toolbar" width="600" height="377">
             </a>
         </div>
 
@@ -187,8 +187,8 @@ Follow the instructions below to create a REST API using the basic flow:
 
     6. You will see the Linter error corresponding to the new rule you enforced.
         <div style="text-align: left;">
-            <a href="../../../../assets/img/design/create-api/linter-observe/linter-observe2.png">
-                <img src="../../../../assets/img/design/create-api/linter-observe/linter-observe2.png" alt="Linter error" width="600" height="377">
+            <a href="../../../../../assets/img/design/create-api/linter-observe/linter-observe2.png">
+                <img src="../../../../../assets/img/design/create-api/linter-observe/linter-observe2.png" alt="Linter error" width="600" height="377">
             </a>
         </div>
 

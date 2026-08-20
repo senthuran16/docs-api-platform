@@ -1,6 +1,6 @@
 ---
 title: "Secure APIs Using API Keys"
-description: "Secure an API with the API key authentication scheme in WSO2 API Manager: generate a self-contained JWT API key from the Developer Portal, validate it at the gateway, invoke APIs with it, and restrict keys by IP address or HTTP referrer."
+description: "Secure an API with the API key scheme: generate a JWT API key from the Developer Portal, validate it at the gateway, and restrict keys by IP or referrer."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-authentication/secure-apis-using-api-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-authentication/secure-apis-using-api-keys.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-authentication
   - api-keys
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -24,7 +24,7 @@ When an API is invoked specifying an API key as the authentication method, the A
 - Subscription validation
 
 !!! info
-     API keys, generated within the WSO2 API Manager developer portal without direct key manager communication, cannot be directly forwarded to the backend through the API Gateway for API requests. To grant backends access to user, application specific attributes during API calls, enable backend JWT generation. For detailed instructions on how to enable and utilize backend JWT generation for passing end-user attributes to the backend via the API Gateway, refer to [Passing End-User Attributes to the Backend via API Gateway]({{basepath}}/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/).
+     API keys, generated within the WSO2 API Manager developer portal without direct key manager communication, cannot be directly forwarded to the backend through the API Gateway for API requests. To grant backends access to user, application specific attributes during API calls, enable backend JWT generation. For detailed instructions on how to enable and utilize backend JWT generation for passing end-user attributes to the backend via the API Gateway, refer to [Passing End-User Attributes to the Backend via API Gateway](../../../deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway).
 
 ## Prerequisites for API keys
 

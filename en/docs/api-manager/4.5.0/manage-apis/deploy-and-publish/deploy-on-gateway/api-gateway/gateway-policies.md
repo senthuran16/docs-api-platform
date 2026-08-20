@@ -1,6 +1,6 @@
 ---
 title: "Create and Deploy Gateway Policies"
-description: "Create global-level gateway policies in the WSO2 API Publisher by dragging and dropping common policies onto request/response flows, then deploy or undeploy them to specific gateway environments."
+description: "Create global gateway policies in the API Publisher by dragging common policies onto request/response flows, then deploy them to environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/gateway-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/gateway-policies.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - gateway-policies
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

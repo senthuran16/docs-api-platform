@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot JMS Scenarios"
-description: "Diagnose and resolve common JMS integration issues in WSO2 Micro Integrator, including client library exceptions, HTTP header conversion errors, property data type mismatches, thread exhaustion, destination lookup failures, and blocked threads during backend outages."
+description: "Diagnose and resolve common JMS integration issues in WSO2 Micro Integrator, including header conversion errors and thread exhaustion."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/troubleshooting/troubleshooting-jms/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/troubleshooting/troubleshooting-jms.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - jms
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "troubleshooting"
 ---
 
