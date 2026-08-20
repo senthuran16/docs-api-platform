@@ -1,3 +1,18 @@
+---
+title: "Integrating data stores in streaming integration"
+description: "Perform CRUD operations against data stores in a streaming integration flow using WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/integrating-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/integrating-stores.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - integrating-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Integrating Data Stores in Streaming Integration
 
 ## Introduction
@@ -750,7 +765,7 @@ To delete records in the `StockTable` table via streams, follow the steps below:
        
 ### Perform CRUD operations via REST API
 
-In this section, let's perform CRUD operations via the [Store API](../../develop/streaming-apps/store-apis/)
+In this section, let's perform CRUD operations via the [Store API](../../develop/streaming-apps/store-apis)
 
 #### Insert records
 

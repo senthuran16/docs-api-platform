@@ -1,3 +1,18 @@
+---
+title: "Switching between FIX versions"
+description: "Configure a proxy service that accepts FIX 4.0 input and forwards it to a FIX 4.1 acceptor endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_between_fix_versions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_between_fix_versions.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching between FIX Versions
 
 This sample demonstrates how you can use WSO2 Micro Integrator to accept FIX input via the FIX transport layer and dispatch to another FIX acceptor that accept messages in a different FIX version. Here you will see how the Micro Integrator receives FIX 4.0 messages and simply forwards it to the FIX 4.1 endpoint.

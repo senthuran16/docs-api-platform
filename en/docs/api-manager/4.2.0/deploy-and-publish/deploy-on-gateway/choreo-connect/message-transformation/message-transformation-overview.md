@@ -1,3 +1,18 @@
+---
+title: "Message transformation"
+description: "Understand how request and response interceptor microservices carry out message transformation and mediation in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Message Transformation
 
 You can use interceptors in Choreo Connect to carry out transformations and mediation on the requests and responses.
@@ -34,8 +49,8 @@ The following diagram illustrates the request flow from the client to the backen
 
 Adding an interceptor requires the following two steps.
 
-1. [Implement an interceptor microservice adhering to the Interceptor OpenAPI Definition](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-microservice/).
-2. [Refer to the interceptor service from the client-facing API definition to engage with it in the request/response flow](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/defining-interceptors-in-an-open-api-definition/).
+1. [Implement an interceptor microservice adhering to the Interceptor OpenAPI Definition](interceptor-microservice/interceptor-microservice).
+2. [Refer to the interceptor service from the client-facing API definition to engage with it in the request/response flow](defining-interceptors-in-an-open-api-definition).
 
 !!! info
     The following are not supported during request/response **body manipulation**.

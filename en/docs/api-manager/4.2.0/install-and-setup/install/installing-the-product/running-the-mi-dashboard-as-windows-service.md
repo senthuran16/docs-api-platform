@@ -1,10 +1,25 @@
+---
+title: "Running the Micro Integrator dashboard as a Windows service"
+description: "Run the Micro Integrator Dashboard as a Windows service after setting up the Micro Integrator runtime and Dashboard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard-as-windows-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard-as-windows-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Micro Integrator Dashboard as a Windows Service
 
 Follow the instructions given below to run the Micro Integrator Dashboard as a Windows service.
 
 ## Prerequisites
 
-- Setup Micro Integrator runtime and Dashboard according to the instructions given [here](../../../install-and-setup/install/installing-the-product/running-the-mi-dashboard/#before-you-begin).
+- Setup Micro Integrator runtime and Dashboard according to the instructions given [here](running-the-mi-dashboard#before-you-begin).
 
 - Point the `wso2mi_dashboard_home` environment variable to the `MI_DASHBOARD_HOME` directory.
 

@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - API management"
+description: "Follow a step-by-step guide to create, publish, and invoke an API using the WSO2 API Manager Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/api-manager-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/api-manager-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - api-manager-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide - API Management
 
 This section is a step-by-step guide to create, publish, and invoke an API using the **WSO2 API Manager (WSO2 API-M)** Publisher and Developer Portal.
@@ -8,7 +22,7 @@ Follow the instructions below to start WSO2 APIM-M.
 
 1. Install [Oracle Java SE Development Kit (JDK)](http://java.sun.com/javase/downloads/#java17) version 17 and set the `JAVA_HOME` environment variable.
      
-     For more information on setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-api-m-runtime/).
+     For more information on setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-api-m-runtime).
 
 2. [Download version 4.2.0 of WSO2 API-M](https://wso2.com/api-management/).
 
@@ -240,7 +254,7 @@ API Products, and Applications across WSO2 API-M environments and to perform CI/
 
 Follow the instructions below to setup WSO2 API Controller.
 
-1. [Make sure that you run WSO2 API Manager (WSO2 API-M) 4.2.0](../get-started/api-manager-quick-start-guide/#before-you-begin).
+1. [Make sure that you run WSO2 API Manager (WSO2 API-M) 4.2.0](api-manager-quick-start-guide#before-you-begin).
 
 2. Download the apictl.
 
@@ -269,7 +283,7 @@ Follow the instructions below to setup WSO2 API Controller.
      
     !!! note
         - In the following command it is assumed that WSO2 API-M is run locally (localhost) using the default ports.
-        - For more information on adding environments using different flag combinations, see [Add an environment](../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#add-an-environment).
+        - For more information on adding environments using different flag combinations, see [Add an environment](../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#add-an-environment).
     
     ``` bash
     ./apictl add env dev \
@@ -385,7 +399,7 @@ Follow the instructions below to invoke an API via WSO2 API Controller.
      
      
     !!! info
-        For more information on generating keys using apictl, see [Get keys for an API/API Product](../install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management/#g-get-keys-for-an-apiapi-product).
+        For more information on generating keys using apictl, see [Get keys for an API/API Product](../install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management#g-get-keys-for-an-apiapi-product).
 
 2. Invoke the API.
 

@@ -1,3 +1,18 @@
+---
+title: "Setting up the BigQuery environment"
+description: "Create a Google Cloud Platform account and obtain OAuth 2.0 credentials required to use the BigQuery connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/bigquery-connector/bigquery-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/bigquery-connector/bigquery-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - bigquery-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the BigQuery Environment  
 
 The BigQuery connector allows you to access the [BigQuery REST API](https://cloud.google.com/bigquery/docs/reference/rest) from an integration sequence.
@@ -28,7 +43,7 @@ Follow the steps below to generate user credentials.
 
 5. Add [https://www.google.com](https://www.google.com) as the redirect URI (you can add any URI that you need as redirect URI) under **Authorized redirect URIs**, and then click **Create**. This displays the **client ID** and **client secret**.
 
-    <img src="/assets/img/integrate/connectors/biguery-authorization-redirect-URI.png" title="Authorization-redirect-URI" width="600" alt="Authorization-redirect-URI"/> 
+    <img src="../../../../assets/img/integrate/connectors/biguery-authorization-redirect-URI.png" title="Authorization-redirect-URI" width="600" alt="Authorization-redirect-URI"/> 
    
 6. Make a note of the **client ID** and **client secret** that is displayed, and then **click OK**.   
    
@@ -132,4 +147,4 @@ Follow the steps below to generate user credentials.
 
     <img src="../../../../assets/img/integrate/connectors/bigquery-create-table2.png" title="Bigquery create Table step2" width="600" alt="Bigquery create Table step2"/> 
 
-For more information about these operations, please refer to the [BigQuery connector reference guide](../../../reference/connectors/bigquery-connector/bigquery-connector-reference/).
+For more information about these operations, please refer to the [BigQuery connector reference guide](bigquery-connector-reference).

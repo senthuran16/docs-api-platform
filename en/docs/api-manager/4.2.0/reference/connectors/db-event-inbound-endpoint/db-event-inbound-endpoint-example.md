@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint example"
+description: "Configure the DB Event Inbound Endpoint to listen for data changes in a MySQL table and trigger events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # DB Event Inbound Endpoint Example 
 
 Following are the main features of the event generator. 
@@ -7,7 +22,7 @@ Following are the main features of the event generator.
 
 ## What you'll build
 
-In this example let us see how to configure `DB-event Inbound Endpoint` so that it can listen to data changes done to a `MySQL` table. Out of the features mentioned above feature no:1 is used here. Please refer to [reference guide](../../../reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config/) if you need to use other features. 
+In this example let us see how to configure `DB-event Inbound Endpoint` so that it can listen to data changes done to a `MySQL` table. Out of the features mentioned above feature no:1 is used here. Please refer to [reference guide](db-event-inbound-endpoint-config) if you need to use other features. 
 
 In an enterprise system, a relational database table is used to store customer information. Customers' information is added by an external system to the database which is not in enterprise's control. As soon as a new customer is inserted, the system need to pick up and process its data. The integration runtime is used here to listen to DB changes and invoke the relevant processes. It can invoke backend APIs or place data into a message bus after required data transformations. However, for simplicity of this example, we will just log the message. You can extend the sample as required using WSO2 mediators. 
 
@@ -140,4 +155,4 @@ Now the integration runtime will start listening to the data changes of `CDC_CUS
 
 ## What's Next
 
-* To customize this example for your own scenario, see [DB Event Inbound Endpoint Configuration](../../../reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config/) documentation for all configuration options of the endpoint.
+* To customize this example for your own scenario, see [DB Event Inbound Endpoint Configuration](db-event-inbound-endpoint-config) documentation for all configuration options of the endpoint.

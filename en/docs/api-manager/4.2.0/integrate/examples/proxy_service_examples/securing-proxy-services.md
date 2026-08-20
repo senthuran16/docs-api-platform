@@ -1,3 +1,18 @@
+---
+title: "Securing a proxy service"
+description: "Secure a proxy service with WS-Security signing and encryption enforced through a WS policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/proxy_service_examples/securing-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/proxy_service_examples/securing-proxy-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing a Proxy Service
 This sample demonstrates how you can use WS-Security signing and encryption with proxy services through a WS policy.
 
@@ -45,10 +60,10 @@ This sample security policy file validates username token and admin role is allo
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) and [security policy](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) and [security policy](../../develop/creating-artifacts/registry/creating-local-registry-entries) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 
@@ -67,7 +82,7 @@ Set up the back-end service:
         axis2server.bat
         ```
 
-Be sure to [configure a user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/) for the Micro Integrator and add the required users and roles.
+Be sure to [configure a user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore) for the Micro Integrator and add the required users and roles.
 
 Set up the SOAP client:
 

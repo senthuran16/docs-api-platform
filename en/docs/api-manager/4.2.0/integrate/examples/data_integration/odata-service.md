@@ -1,3 +1,18 @@
+---
+title: "Using an OData service"
+description: "Demonstrates how to expose an RDBMS as an OData service to enable CRUD operations without manually defining them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/odata-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/odata-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using an OData Service
 
 This example demonstrates how an RDBMS can be exposed as an OData service. When OData is enabled, you do not need to manually define CRUD operations. Therefore, OData services are an easy way to enable CRUD operations for a data service.
@@ -50,16 +65,16 @@ Given below is the data service configuration you need to build. See the instruc
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.
 2.  Download the JDBC driver for MySQL from [here](http://dev.mysql.com/downloads/connector/j/) and copy it to the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/lib/` (for MacOS) or 
 `MI_TOOLING_HOME/runtime/microesb/lib/` (for Windows) directory. 
 
     !!! Note
         If the driver class does not exist in the relevant folders when you create the datasource, you will get an exception such as `Cannot load JDBC driver class com.mysql.jdbc.Driver`.
         
-3. [Create a Data Service project](../../../integrate/develop/create-data-services-configs).
-4. [Create the data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+3. [Create a Data Service project](../../develop/create-data-services-configs).
+4. [Create the data service](../../develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Open a command prompt execute the following CURL commands using CRUD operations:
 

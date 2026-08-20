@@ -1,3 +1,18 @@
+---
+title: "Enable social media interaction"
+description: "Enable API Consumers to share API links on Facebook, Twitter, and Reddit, and add GitHub and Slack channel URLs via the Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-collaborations/enable-social-media-interaction/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-collaborations/enable-social-media-interaction.md
+tags:
+  - api-manager
+  - design
+  - api-collaborations
+  - enable-social-media-interaction
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enable Social Media Interaction
 
 By default, the community links option is **disabled** (hidden). As a result, the sharable Developer Portal links of the APIs for Facebook, Twitter, and Reddit will not appear in the Developer Portal by default. Instead, the administrators have to enable the social media sharing option if they wish to allow API Consumers to use this feature.
@@ -6,11 +21,11 @@ In addition, the GitHub and Slack channel URLs will not appear in the Developer 
 
 - [Enable Social Media Interaction](#enable-social-media-interaction)
   - [Enable sharing API link on social media](#enable-sharing-api-link-on-social-media)
-    - [Step 1 - Enable the community links option](#step-1---enable-the-community-links-option)
-    - [Step 2 - Verify the changes](#step-2---verify-the-changes)
+    - [Step 1 - Enable the community links option](#step-1-enable-the-community-links-option)
+    - [Step 2 - Verify the changes](#step-2-verify-the-changes)
   - [Add GitHub and Slack channel URLs to an API](#add-github-and-slack-channel-urls-to-an-api)
-    - [Step 1 - Define your GitHub and Slack channel URLs](#step-1---define-your-github-and-slack-channel-urls)
-    - [Step 2 - Verify the changes](#step-2---verify-the-changes-1)
+    - [Step 1 - Define your GitHub and Slack channel URLs](#step-1-define-your-github-and-slack-channel-urls)
+    - [Step 2 - Verify the changes](#step-2-verify-the-changes_1)
 
 ## Enable sharing API link on social media
 

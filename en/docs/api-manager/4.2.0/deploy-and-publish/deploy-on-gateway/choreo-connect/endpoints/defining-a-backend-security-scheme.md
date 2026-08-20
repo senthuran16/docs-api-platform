@@ -1,3 +1,18 @@
+---
+title: "Defining a backend security scheme"
+description: "Reference the OpenAPI vendor extension and environment variable options for sending backend basic authentication credentials."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-a-backend-security-scheme/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-a-backend-security-scheme.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Defining a Backend Security Scheme
 
 ## Set backend credentials via the OpenAPI file - Basic Auth
@@ -28,10 +43,10 @@ When running the Choreo Connect, you can provide the username, password as Adapt
 
 | **Deployment** | **Mode**| **File name** | **Directory** |
 |----------------|---------|---------------|---------------|
-| Docker Compose |[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)| `docker-composer.yaml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/` |
-| Docker Compose |[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/) | `docker-composer.yaml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim/` |
-| Kubernetes |[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)| `adapter-deployment.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect/` |
-| Kubernetes |[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)| `adapter-deployment.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect-with-apim/` |
+| Docker Compose |[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)| `docker-composer.yaml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/` |
+| Docker Compose |[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane) | `docker-composer.yaml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim/` |
+| Kubernetes |[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)| `adapter-deployment.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect/` |
+| Kubernetes |[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)| `adapter-deployment.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect-with-apim/` |
 
 
 !!! note 

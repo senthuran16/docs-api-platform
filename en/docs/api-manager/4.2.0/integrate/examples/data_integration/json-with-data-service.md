@@ -1,3 +1,18 @@
+---
+title: "Exposing data in JSON format"
+description: "Demonstrates how to expose RDBMS data in JSON format by mapping a data service query output to a JSON template."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/json-with-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/json-with-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing Data in JSON Format
 
 You can send and receive JSON messages by default via WSO2 Micro Integrator. See the topics given below to
@@ -175,22 +190,22 @@ Alternatively, you can use one of the following JSON templates for the response 
 
     All JSON responses are returned as an array.
     
--   If you want to write a nested query using JSON, see the example on [nested queries](../../../integrate/examples/data_integration/nested-queries-in-data-service).
+-   If you want to write a nested query using JSON, see the example on [nested queries](nested-queries-in-data-service).
 
 ## Build and run
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.
 2.  Download the JDBC driver for MySQL from [here](http://dev.mysql.com/downloads/connector/j/) and copy it to the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/lib/` (for MacOS) or 
 `MI_TOOLING_HOME/runtime/microesb/lib/` (for Windows) directory. 
 
     !!! Note
         If the driver class does not exist in the relevant folders when you create the datasource, you will get an exception such as `Cannot load JDBC driver class com.mysql.jdbc.Driver`.
         
-3. [Create a Data Service project](../../../integrate/develop/create-data-services-configs).
-4. [Create the data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator. 
+3. [Create a Data Service project](../../develop/create-data-services-configs).
+4. [Create the data service](../../develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator. 
 
 ### GET data in JSON
 

@@ -1,3 +1,18 @@
+---
+title: "Capturing MySQL inserts via CDC"
+description: "Example that captures MySQL insert, update, and delete change events using Siddhi change data capture in listening mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/cdc-with-listening-mode/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/cdc-with-listening-mode.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Capturing MySQL Inserts via CDC
 
 ## Purpose:

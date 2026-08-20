@@ -1,3 +1,18 @@
+---
+title: "Documentum connector example"
+description: "Configure the Documentum connector to create a folder and retrieve cabinet details from a Documentum repository."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/documentum/documentum-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/documentum/documentum-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - documentum
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Documentum Connector Example
 
 Documentum Connector can be used to perform operations on OpenText Documentum Enterprise content management system.
@@ -32,7 +47,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 Now the connector is added to the palette.
 
@@ -81,7 +96,7 @@ You can see the newly added connector in the design palette.
 
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 Now the exported CApp can be deployed in the integration runtime so that we can run it and test.
 
@@ -100,7 +115,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}   
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

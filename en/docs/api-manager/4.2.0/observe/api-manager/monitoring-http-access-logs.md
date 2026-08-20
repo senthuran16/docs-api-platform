@@ -1,3 +1,17 @@
+---
+title: "Monitoring HTTP access logs"
+description: "Configure HTTP access logs for both the HTTP servlet transport and the PassThrough or NIO gateway transports in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/monitoring-http-access-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/monitoring-http-access-logs.md
+tags:
+  - api-manager
+  - observe
+  - monitoring-http-access-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring HTTP Access Logs
 
 HTTP access logs help you monitor your application's usage with information such as the persons who access it, how many hits it received, what the errors are, etc. This information is useful for troubleshooting errors. 
@@ -297,7 +311,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
     "nhttp.is.log.rotatable" = "true"
     ```
     
-7.  Then [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m/).
+7.  Then [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m).
 
 8.  Invoke an API in API Gateway. Then, navigate to `<API-M_HOME>/repository/logs/` directory, and you will see a newly created log file called `http_gw.log`, which contains API invocation related access logs.
 

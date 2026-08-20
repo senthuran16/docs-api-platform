@@ -1,3 +1,18 @@
+---
+title: "Integrating Micro Integrator with WSO2 streaming integrator"
+description: "Publish events from an integration flow to a Siddhi application deployed in WSO2 Streaming Integrator over HTTP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/integrating-mi-with-si/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/integrating-mi-with-si.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - integrating-mi-with-si
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Integrating Micro Integrator with WSO2 Streaming Integrator
 
 You can publish events from the integration flow to WSO2 Streaming Integrator using an http or http-service source configured in a Siddhi application deployed in Streaming Integrator server. The http or http-service source receive POST requests via HTTP and HTTPS protocols in a format such as text, XML, or JSON. In the case of http-service source, it will send responses via its corresponding http-service-response sink correlated through a unique `source.id`.   
@@ -83,10 +98,10 @@ Following is the sample rest API configuration that we can use to implement this
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an ESB Solution project](../../integrate/develop/create-integration-project/#esb-config-project).
-3. [Create the rest API](../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../integrate/develop/using-remote-micro-integrator/) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../develop/installing-wso2-integration-studio).
+2. [Create an ESB Solution project](../develop/create-integration-project#sub-projects).
+3. [Create the rest API](../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../develop/using-remote-micro-integrator) in your Micro Integrator.
 
 Invoke the sample API:
 

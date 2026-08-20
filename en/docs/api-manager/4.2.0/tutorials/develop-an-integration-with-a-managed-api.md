@@ -1,3 +1,17 @@
+---
+title: "Develop an integration from a managed API"
+description: "Tutorial on the API-first approach: create a REST API in API Manager, build the backend in Integration Studio, and connect it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/develop-an-integration-with-a-managed-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/develop-an-integration-with-a-managed-api.md
+tags:
+  - api-manager
+  - tutorials
+  - develop-an-integration-with-a-managed-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Develop an Integration From a Managed API
 
 The top down approach of API first integration provides the capability for API developers to start creating a managed REST API first in WSO2 API Manager. Then the integration developer can use the same API in the WSO2 Integration Studio to develop the integration later on and expose it to WSO2 API Manager. Thereafter, the API consumers can discover the API from the marketplace, subscribe to it, and use it for application development.
@@ -377,7 +391,7 @@ Now let’s add the developed backend service to the API.
 
 ## Step 8 - Deploy the API
 
-Depoly the `HealthcareAPI` REST API in the Gateway. For more information, see [Deploy an API](../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/#deploy-an-api).
+Depoly the `HealthcareAPI` REST API in the Gateway. For more information, see [Deploy an API](../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api#deploy-an-api).
 
 ## Step 9 - Start the backend service
 

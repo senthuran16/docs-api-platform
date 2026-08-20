@@ -1,6 +1,21 @@
+---
+title: "Choreo connect as a standalone gateway"
+description: "Understand how Choreo Connect operates as a standalone Gateway without API Manager, using apictl and OpenAPI vendor extensions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Choreo Connect as a Standalone Gateway
 
-Choreo Connect can be used as a **standalone** Gateway without the API Manager as the Control Plane. Choreo Connect is considered to be in *standalone mode* when `control-plane` is disabled in the [config](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/control-plane-configurations/#instructions-for-use). In standalone mode, 
+Choreo Connect can be used as a **standalone** Gateway without the API Manager as the Control Plane. Choreo Connect is considered to be in *standalone mode* when `control-plane` is disabled in the [config](../configurations/control-plane-configurations#instructions-for-use). In standalone mode, 
 
 - APIs can be deployed via apictl (CLI Tool). 
 - apictl can be used to create API projects based on an OpenAPI definition. 
@@ -23,7 +38,7 @@ Not all properties required for an API Gateway can be defined in the OpenAPI spe
 
 and many other Gateway specific features per API or per resource right within the OpenAPI Specification. Choreo Connect utilizes OpenAPI Specification's vendor extensions for this purpose.
 
-The list of vendor extensions Choreo Connect introduces can be found [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/#openapi-extensions). 
+The list of vendor extensions Choreo Connect introduces can be found [here](as-a-standalone-gateway#openapi-extensions). 
 
 ### Defining base path and backend URLs
 
@@ -57,14 +72,14 @@ The value for `x-wso2-basePath` will be used as the base path there onwards. The
     Therefore, editing the last part of the servers URL(`/v1`) will also change the base path. Yet, if you use the extension `x-wso2-basePath`, the base path will not change when you update the **servers**. 
 
 !!! tip
-    Also, you can define endpoint configurations globally using the `x-wso2-endpoints` extension as explained [here](../../../../reference/vendor-extensions-catalog/#x-wso2-endpoints). Then, endpoints available under the `x-wso2-endpoints` can be used with `x-wso2-production-endpoints`. For a detailed example, see the [detailed sample for endpoint definitions.](https://github.com/wso2/product-microgateway/blob/main/samples/openAPI-definitions/endpoint_by_reference_sample.yaml).
+    Also, you can define endpoint configurations globally using the `x-wso2-endpoints` extension as explained [here](../../../../reference/vendor-extensions-catalog#x-wso2-endpoints). Then, endpoints available under the `x-wso2-endpoints` can be used with `x-wso2-production-endpoints`. For a detailed example, see the [detailed sample for endpoint definitions.](https://github.com/wso2/product-microgateway/blob/main/samples/openAPI-definitions/endpoint_by_reference_sample.yaml).
 
 
 
 ## Updating the API
 
 !!! tip
-    APIs can be updated as long as Choreo Connect is not meant to be run as an Immutable Gateway. To learn more about running Choreo Connect as an Immutable Gateway, click [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-apis-as-immutable-gateway/).
+    APIs can be updated as long as Choreo Connect is not meant to be run as an Immutable Gateway. To learn more about running Choreo Connect as an Immutable Gateway, click [here](../deploy-api/deploy-apis-as-immutable-gateway).
         
 ### Step 1 - Update the relevant definition file inside the existing API project
 
@@ -104,7 +119,7 @@ Choreo Connect supports the following OpenAPI Extensions. You can use these exte
    | `x-wso2-auth-header`              | Specify the authorization header for the API to which either bearer or basic token is sent                             | Optional → API level only                |
 
 !!! note
-    -   If you want to expose an API or a resource without security, you can use the `x-wso2-disable-security` extension. You can find more information about this extension from [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/disabling-security/#disabling-security).
+    -   If you want to expose an API or a resource without security, you can use the `x-wso2-disable-security` extension. You can find more information about this extension from [here](../security/api-authentication/disabling-security#disabling-security-for-apis).
     -  Choreo Connect also supports the `"x-auth-type": "None"` option to disable the security. This extension has a different functionality when run with WSO2 API Manager and can have the following values which are not supported in standalone mode.
         -   Application & Application User
         -   Application
@@ -119,6 +134,6 @@ To authorize an API request with the self-contained JWT token under an issuer wi
 
 ## See Also
 
-- [Subscription Validation](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/subscription-validation/)
-- [Token Caching](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configure-caching/)
+- [Subscription Validation](subscription-validation)
+- [Token Caching](../configure-caching)
 

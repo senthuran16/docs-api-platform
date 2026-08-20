@@ -1,9 +1,24 @@
+---
+title: "Loopback mediator"
+description: "Reference for the Loopback mediator, which moves a message from the in-flow request path directly to the out-flow response path."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/loopback-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/loopback-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - loopback-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Loopback Mediator
 
 The **Loopback Mediator** moves messages from the in flow (request path) to the out flow (response path). All the configuration included in the in sequence that appears after the Loopback mediator is skipped.
 
 !!! Info
-    - The Loopback mediator is a [content-unaware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    - The Loopback mediator is a [content-unaware](about-mediators#classification-of-mediators) mediator.
     - The messages that have already been passed from the In sequence to the Out sequence cannot be moved to the Out sequence again via the Loopback mediator. 
 
 ## Syntax
@@ -20,7 +35,7 @@ As with other mediators, after adding the Loopback mediator to a sequence, you c
 
 ## Example
 
-This example is a main sequence configuration with two [PayloadFactory mediators](../../reference/mediators/payloadfactory-mediator). Assume you only want to use the
+This example is a main sequence configuration with two [PayloadFactory mediators](payloadfactory-mediator). Assume you only want to use the
 first factory but need to keep the second factory in the configuration for future reference. The Loopback mediator is added after the first
 PayloadFactory mediator configuration to skip the second PayloadFactory mediator configuration. This configuration will cause the message to be processed
 with the first payload factory and then immediately move to the out flow, skipping the second payload factory in the in flow.

@@ -1,3 +1,18 @@
+---
+title: "Managing Choreo connect"
+description: "Use apictl as a developer CLI tool to add environments and deploy, list, and undeploy APIs on Choreo Connect without the API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing Choreo Connect
 
 **WSO2 API Controller (apictl)** can be used as a developer CLI tool for Choreo Connect. It enables interacting with one or more Choreo Connect environments without having to perform the following tasks via the WSO2 API Manager (WSO2 API-M).
@@ -11,9 +26,9 @@
 
     -  Download the Choreo Connect distribution from the [github release page's](https://github.com/wso2/product-microgateway/releases) and follow the Quick Start Guide attached with the release.
 
-    -  Make sure the apictl is downloaded and initialized, if not follow the steps in [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl). Following the guide upto [Check the version of the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#check-the-version-of-the-apictl) will be sufficient to continue. 
+    -  Make sure the apictl is downloaded and initialized, if not follow the steps in [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl). Following the guide upto [Check the version of the apictl](../getting-started-with-wso2-api-controller#check-the-version-of-the-apictl) will be sufficient to continue. 
 
-    -  Remember to add the cert of Choreo Connect into `/home/<your-pc-username>/.wso2apictl/certs` to communicate via https (to avoid having to use insecure mode with -k or --insecure). Click [here](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#import-ssl-certificates-for-secure-http-communication-with-wso2-api-m) for more information.
+    -  Remember to add the cert of Choreo Connect into `/home/<your-pc-username>/.wso2apictl/certs` to communicate via https (to avoid having to use insecure mode with -k or --insecure). Click [here](../getting-started-with-wso2-api-controller#import-ssl-certificates-for-secure-http-communication-with-wso2-api-m) for more information.
 
 
 ## Add a Choreo Connect Environment
@@ -101,7 +116,7 @@ Log in will get an access token from the Choreo Connect adapter and store it for
 
 ## Deploy an API
 
-In order to deploy, let us first create an API project. Follow the steps in [Initialize an API Project](../../../../install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach/#initialize-an-api-project) to create an API project using **apictl**.
+In order to deploy, let us first create an API project. Follow the steps in [Initialize an API Project](../managing-apis-api-products/importing-apis-via-dev-first-approach#initialize-an-api-project) to create an API project using **apictl**.
 
 An API project can be deployed to a Choreo Connect using the following commands.
 

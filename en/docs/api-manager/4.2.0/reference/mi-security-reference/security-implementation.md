@@ -1,3 +1,18 @@
+---
+title: "WS-Security implementations"
+description: "Explains WS-Security implementations and predefined security scenarios supported for securing Micro Integrator web services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mi-security-reference/security-implementation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mi-security-reference/security-implementation.md
+tags:
+  - api-manager
+  - reference
+  - mi-security-reference
+  - security-implementation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # WS-Security Implementations
 
 Web services security, or to be more precise, SOAP message security
@@ -24,7 +39,7 @@ See the following resources on how to apply WS security to integration artifacts
 -	[Securing a REST API](../../integrate/develop/advanced-development/applying-security-to-an-api)
 
 !!! Note
-	An [external user store](../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/) should be configured for the Micro Integrator in order to use these security implementation.
+	An [external user store](../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore) should be configured for the Micro Integrator in order to use these security implementation.
 
 ## Security scenarios
 

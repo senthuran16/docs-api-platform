@@ -1,3 +1,18 @@
+---
+title: "Switch mediator"
+description: "Reference for the Switch mediator, an XPath or JSONPath filter that routes messages based on matching case values."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/switch-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/switch-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - switch-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Switch Mediator
 
 The **Switch Mediator** is an XPath or JSONPath filter. The XPath or JSONPath is evaluated and returns a string. This string is matched against the regular expression in each switch case mediator, in the specified order. If a matching case is found, it will be executed, and the remaining switch case mediators are not processed. If none of the case statements are matching, and a default case is specified, the default will be executed.
@@ -61,7 +76,7 @@ The parameters available to configure the Switch mediator are as follows.
 
 ## Examples
 
-In this example the [Property mediator](../../reference/mediators/property-Mediator) sets the local property named `         symbol        ` on the current message depending on the evaluation of the string. It will get the text of symbol element and match it against the values `         MSFT        ` and `         IBM        ` . If the text does not match either of these symbols, the default case will be executed.
+In this example the [Property mediator](../../reference/mediators/property-mediator) sets the local property named `         symbol        ` on the current message depending on the evaluation of the string. It will get the text of symbol element and match it against the values `         MSFT        ` and `         IBM        ` . If the text does not match either of these symbols, the default case will be executed.
 
 ``` java
 <switch source="//m0:getQuote/m0:request/m0:symbol" xmlns:m0="http://services.samples/xsd">

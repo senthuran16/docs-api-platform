@@ -1,3 +1,18 @@
+---
+title: "Endpoint error handling"
+description: "Explains how to configure endpoint-level error handling in the Micro Integrator to avoid lost messages after transport errors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/endpoint-error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/endpoint-error-handling.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Endpoint Error Handling
 
 The last step of message processing inside WSO2 Micro Integrator
@@ -85,10 +100,10 @@ suspensions.
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the REST API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the REST API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Invoke the sample API by executing the following command:
 
@@ -130,7 +145,7 @@ to reference and read the timeout value. Using this timeout values can
 be configured without having to change the endpoint configuration.
 
 !!! Info
-    You also have the option of defining a dynamic timeout for the endpoint as a [local entry](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries).
+    You also have the option of defining a dynamic timeout for the endpoint as a [local entry](../../develop/creating-artifacts/registry/creating-local-registry-entries).
     ```xml
     <localEntry key="timeout"><![CDATA[20000]]>
        <description/>
@@ -141,10 +156,10 @@ be configured without having to change the endpoint configuration.
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the REST API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the REST API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 ## Example 3: Dynamic endpoint failover management
 Let's look at a sample configuration where you have a dynamic URL with failover management for
@@ -216,10 +231,10 @@ Follow any of the options given below to re-enable an endpoint that is suspended
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the REST API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the REST API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

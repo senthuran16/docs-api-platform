@@ -1,3 +1,18 @@
+---
+title: "Scalable deployment"
+description: "Learn about scalable high availability deployment options for the Streaming Integrator based on Siddhi statefulness."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-deployment/deploying-si-as-a-scalable-cluster/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-deployment/deploying-si-as-a-scalable-cluster.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Scalable Deployment
 
 Scalable high availability deployment predominantly focuses on scaling the system according to the load or the TPS of
@@ -14,7 +29,7 @@ The deployment options for a scalable streaming integrator depends on the statel
 The following topics provide detailed descriptions of two approaches.
 
 !!! tip "System Requirements"
-    For system requirements for this deployment, see [Installing the Streaming Integrator in a Virtual Machine](../../../install-and-setup/install/installing-the-product/installing-si).
+    For system requirements for this deployment, see [Installing the Streaming Integrator in a Virtual Machine](../../install/installing-the-product/installing-si).
 
 ## Stateless scalable high availability (HA) deployment
 

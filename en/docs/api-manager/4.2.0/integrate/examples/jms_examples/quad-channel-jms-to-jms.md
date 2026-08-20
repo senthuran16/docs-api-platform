@@ -1,3 +1,18 @@
+---
+title: "Quad-channel JMS-to-JMS invocations"
+description: "Configure quad-channel JMS-to-JMS synchronous invocations using a proxy service and reply destinations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/quad-channel-jms-to-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/quad-channel-jms-to-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 __# JMS Synchronous Invocations: Quad Channel JMS-to-JMS
 
 The example demonstrates how WSO2 Micro Integrator handles quad-channel JMS synchronous invocations.
@@ -94,14 +109,14 @@ The Synapse artifacts used are explained below.
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the broker:
 
-1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-jms-transport) with your Micro Integrator instance. Let's use Active MQ for this example.
+1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-jms-transport) with your Micro Integrator instance. Let's use Active MQ for this example.
 2.  Start the broker.
 3.  Start the Micro Integrator (after starting the broker).
 

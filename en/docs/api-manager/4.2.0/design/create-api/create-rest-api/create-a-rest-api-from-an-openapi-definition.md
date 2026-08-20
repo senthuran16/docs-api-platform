@@ -1,3 +1,18 @@
+---
+title: "Create an API from an OpenAPI definition"
+description: "Create a REST API in the Publisher Portal by importing an existing OpenAPI definition using the basic creation flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create an API from an OpenAPI Definition
 
 An OpenAPI definition is a format that describes REST APIs. 
@@ -238,18 +253,18 @@ The Transport Level Security defines the transport protocol on which the API is 
 
 Now, a REST API from an OpenAPI Definition has been created and configured successfully. 
 
-Next, [deploy the API](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/), [test the API](../../../design/create-api/create-rest-api/test-a-rest-api/), and finally [publish the API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api).
+Next, [deploy the API](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api), [test the API](test-a-rest-api), and finally [publish the API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api).
 
 ## See Also
 
 Learn more on the concepts that you need to know when creating a REST API:
 
--   [Endpoints](../../../design/endpoints/endpoint-types/)
--   [API Security](../../../design/api-security/api-authentication/secure-apis-using-oauth2-tokens/)
--   [Rate Limiting](../../../design/rate-limiting/introducing-throttling-use-cases/)
--   [Life Cycle Management](../../../design/lifecycle-management/api-lifecycle/)
--   [API Monetization](../../../design/api-monetization/monetizing-an-api/)
--   [API Visibility](../../../design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/)
--   [API Documentation](../../../design/api-documentation/add-api-documentation/)
--   [Custom Properties](../../../design/create-api/adding-custom-properties-to-apis/)
--   [Template Patterns](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/template-patterns-for-choreo-connect/) - You can use these template patterns when defining OpenAPI (Swagger) definitions for APIs deployed on Choreo Connect.
+-   [Endpoints](../../endpoints/endpoint-types)
+-   [API Security](../../api-security/api-authentication/secure-apis-using-oauth2-tokens)
+-   [Rate Limiting](../../rate-limiting/introducing-throttling-use-cases)
+-   [Life Cycle Management](../../lifecycle-management/api-lifecycle)
+-   [API Monetization](../../api-monetization/monetizing-an-api)
+-   [API Visibility](../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal)
+-   [API Documentation](../../api-documentation/add-api-documentation)
+-   [Custom Properties](../adding-custom-properties-to-apis)
+-   [Template Patterns](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/template-patterns-for-choreo-connect) - You can use these template patterns when defining OpenAPI (Swagger) definitions for APIs deployed on Choreo Connect.

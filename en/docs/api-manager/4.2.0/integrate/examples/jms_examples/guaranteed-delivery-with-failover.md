@@ -1,3 +1,18 @@
+---
+title: "Guaranteed delivery with failover"
+description: "Set up guaranteed message delivery using a failover message store and scheduled failover forwarding processor."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/guaranteed-delivery-with-failover/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/guaranteed-delivery-with-failover.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Guaranteed Delivery with Failover
 
 WSO2 Micro Integrator ensures guaranteed delivery with the failover message store and scheduled failover message forwarding processor. The topics in the following section describe how you can setup guaranteed message delivery with failover configurations.
@@ -132,14 +147,14 @@ The synapse configurations used above are as follows:
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), [message stores](../../../integrate/develop/creating-artifacts/creating-a-message-store), and [message processors](../../../integrate/develop/creating-artifacts/creating-a-message-processor) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), [message stores](../../develop/creating-artifacts/creating-a-message-store), and [message processors](../../develop/creating-artifacts/creating-a-message-processor) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the broker:
 
-1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-jms-transport) with your Micro Integrator instance. Let's use Active MQ for this example.
+1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-jms-transport) with your Micro Integrator instance. Let's use Active MQ for this example.
 2.  Start the broker.
 3.  Start the Micro Integrator (after starting the broker).
 

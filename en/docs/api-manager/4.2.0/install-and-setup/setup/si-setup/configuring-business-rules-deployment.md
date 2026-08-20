@@ -1,3 +1,18 @@
+---
+title: "Configuring business rules deployment"
+description: "Configure a Streaming Integrator node to use specific business rule templates for deploying Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/configuring-business-rules-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/configuring-business-rules-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 ## Configuring Business Rules Deployment
 
 The Business Rules Manager derives business rules from the rule templates within template groups. Each rule template has a UUID(Universally Unique Identifier) for the purpose of uniquely identifying it.
@@ -42,7 +57,7 @@ To configure a Streaming Integrator node to use specific rules templates, follow
     ```
    
     !!! tip
-        If required, you can enter a specific rule template under multiple nodes as shown below. Before doing so, ensure the you have selected **Many** for the **Instance Count** field of the template. For more information, see [Creating a Business Rules Template](../../../use-cases/streaming-tutorials/creating-business-rules-templates/#creating-a-business-rules-template).<br/><br/>
+        If required, you can enter a specific rule template under multiple nodes as shown below. Before doing so, ensure the you have selected **Many** for the **Instance Count** field of the template. For more information, see [Creating a Business Rules Template](../../../use-cases/streaming-tutorials/creating-business-rules-templates#creating-a-business-rules-template).<br/><br/>
         ```yaml
           deployment_configs:
               - <NODE1_HOST_NAME>:<NODE1_PORT>:

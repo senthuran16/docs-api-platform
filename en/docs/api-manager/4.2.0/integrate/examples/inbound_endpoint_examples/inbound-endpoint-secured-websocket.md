@@ -1,3 +1,18 @@
+---
+title: "Using the secure WebSocket inbound endpoint"
+description: "Configure the secure WebSocket inbound endpoint to read and transform WebSocket frame content using subprotocols."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Secure WebSocket Inbound Endpoint
 
 If you need to read and transform the content of WebSocket frames, the
@@ -95,7 +110,7 @@ Specify the `websocket.accept.contenType` property to inform the WebSocket sende
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
 
     !!! Note
         The Websocket sender functionality of the Micro Integrator is disabled by default. To enable the transport, open the `deployment.toml` file from the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/conf/` directory and add the following: 
@@ -105,9 +120,9 @@ Create the artifacts:
         sender.enable = true
         ```
         
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../../integrate/develop/creating-an-inbound-endpoint) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Starting the WebSocket client:
 

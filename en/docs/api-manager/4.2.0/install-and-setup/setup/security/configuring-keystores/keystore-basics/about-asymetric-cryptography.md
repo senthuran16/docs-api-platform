@@ -1,3 +1,18 @@
+---
+title: "About asymmetric cryptography"
+description: "Learn how asymmetric cryptography, keystores, and truststores are used to authenticate and protect data in WSO2 products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # About Asymmetric Cryptography
 
 All WSO2 products including WSO2 API Manager use asymmetric cryptography by default for the authentication and protection of data. In asymmetric cryptography, keystores (with private keys and public key certificates) and truststores (with only public key certificates) are created and stored for a product. It is possible to have multiple keystores so that the keys used for different use cases are kept unique. The following topics explain more details on keystores and truststores, and how they are used in WSO2 products.
@@ -38,5 +53,5 @@ All WSO2 products including WSO2 API Manager are by default shipped with a keyst
 
 !!! note
     The default keystore that is shipped with WSO2 API Manager (wso2carbon.jks) is by default configured for all of the above purposes. However, in a production environment, it is advised to set up several different keystores with separate trust chains for the above use cases.
-    Go through the [Recommendations for setting up keystores](../../../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/#recommendations-for-setting-up-keystores) for more information.
+    Go through the [Recommendations for setting up keystores](../configuring-keystores-in-wso2-api-manager#recommendations-for-setting-up-keystores) for more information.
 

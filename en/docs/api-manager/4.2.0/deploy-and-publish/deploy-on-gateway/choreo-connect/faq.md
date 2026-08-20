@@ -1,3 +1,18 @@
+---
+title: "Frequently asked questions (FAQs)"
+description: "Find answers to common questions about WSO2 Choreo Connect, its architecture, deployment, and differences from other gateways."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/faq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/faq.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "faq"
+---
+
 # Frequently Asked Questions (FAQs)
 
 ## About WSO2 Choreo Connect
@@ -16,11 +31,11 @@ The main components of WSO2 Choreo Connect are listed below along with the prima
 
 #### What are the differences between WSO2 API Manager Synapse Gateway and Choreo Connect?
 
-WSO2 Choreo Connect is a lightweight, decentralized API gateway designed for microservices-related applications whereas WSO2 Synapse Gateway is primarily designed for monolithic applications. For more information, refer [Deploying APIs in API Gateway vs Choreo Connect](../../../deploy-and-publish/deploy-on-gateway/deploying-apis-in-api-gateway-vs-choreo-connect/)
+WSO2 Choreo Connect is a lightweight, decentralized API gateway designed for microservices-related applications whereas WSO2 Synapse Gateway is primarily designed for monolithic applications. For more information, refer [Deploying APIs in API Gateway vs Choreo Connect](../deploying-apis-in-api-gateway-vs-choreo-connect)
 
 #### What are the differences between WSO2 API Microgateway (Ballerina MGW) and WSO2 Choreo Connect?
 
-Earlier versions of the Choreo Connect were named as WSO2 API Microgateway (Ballerina MGW) and it was a completely different implementation done using the Ballerina programming language. The final version of API Microgateway is 3.X.X and it is compatible with WSO2 API Manager 3.0 series only. With the release of WSO2 API Manager 4.0.0, Choreo Connect 1.0.0 released as the new version of API Microgateway. Refer to the [migration guide](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/migration-guide-from-ballerina-api-microgateway/) for more information. 
+Earlier versions of the Choreo Connect were named as WSO2 API Microgateway (Ballerina MGW) and it was a completely different implementation done using the Ballerina programming language. The final version of API Microgateway is 3.X.X and it is compatible with WSO2 API Manager 3.0 series only. With the release of WSO2 API Manager 4.0.0, Choreo Connect 1.0.0 released as the new version of API Microgateway. Refer to the [migration guide](migration-guide-from-ballerina-api-microgateway) for more information. 
 
 #### What is the open source license of WSO2 Choreo Connect?
 
@@ -34,11 +49,11 @@ It is completely supported from evaluation to production. For more details, see 
 
 #### What are the minimum requirements needed to run WSO2 Choreo Connect?
 
-Refer to the [installation prerequisites section](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/installation-prerequisites/).
+Refer to the [installation prerequisites section](getting-started/deploy/installation-prerequisites).
 
 #### How to deploy WSO2 Choreo Connect in production?
 
-It is recommended to use the helm charts based deployment option for production. Refer to the [helm charts based deployment guide](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/) for more information.
+It is recommended to use the helm charts based deployment option for production. Refer to the [helm charts based deployment guide](getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts) for more information.
 
 #### Can I run Choreo Connect using Docker Compose?
 
@@ -61,10 +76,10 @@ Use `kubectl describe pod` to find the root cause. Allocate more resources if yo
 
 #### What are the different deployment patterns available for WSO2 Choreo Connect?
 
-* [Choreo Connect standalone Gateway mode with apictl](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)
-    * [Deploy APIs as Immutable Gateway](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-apis-as-immutable-gateway/)
-    * [Git integration with source watcher](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration/)
-* [Choreo Connect with API-M as a Control Plane](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)
+* [Choreo Connect standalone Gateway mode with apictl](concepts/as-a-standalone-gateway)
+    * [Deploy APIs as Immutable Gateway](deploy-api/deploy-apis-as-immutable-gateway)
+    * [Git integration with source watcher](git-integration)
+* [Choreo Connect with API-M as a Control Plane](concepts/apim-as-control-plane)
 
 #### Is it possible to scale different components of WSO2 Choreo Connect separately ?
 
@@ -100,29 +115,29 @@ REST, SOAP, GraphQL, WebSocket
 
 #### I want to do a custom validation for all the API requests in addition to the default validations. How can I do that?
 
-You can write a [custom filter](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/custom-filters/) in the Enforcer component or use a separate [interceptor service](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-microservice/). Also, you can perform custom request validation using the [Open Policy Agent (OPA)](../../../design/api-security/opa-validation/custom-opa-policy-for-choreo-connect/).
+You can write a [custom filter](extensions/custom-filters) in the Enforcer component or use a separate [interceptor service](message-transformation/interceptor-microservice/interceptor-microservice). Also, you can perform custom request validation using the [Open Policy Agent (OPA)](../../../design/api-security/opa-validation/custom-opa-policy-for-choreo-connect).
 
 #### Can I perform API request/response transformations?
 
-Yes, use a separate [interceptor service](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-microservice/). Also API policies can be used to perform simple transformations like adding/removing headers, rewriting paths, adding query params, changing HTTP methods, etc.
+Yes, use a separate [interceptor service](message-transformation/interceptor-microservice/interceptor-microservice). Also API policies can be used to perform simple transformations like adding/removing headers, rewriting paths, adding query params, changing HTTP methods, etc.
 
 ## Security
 
 #### What are the different methods available for API authentication?
 
-Choreo Connect supports several API authentication mechanisms including OAuth 2.0. Refer to the [API authentication documentation](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/api-authentication/) for more information.
+Choreo Connect supports several API authentication mechanisms including OAuth 2.0. Refer to the [API authentication documentation](security/api-authentication/api-authentication) for more information.
 
 #### Can I use a custom authorization header?
 
-Yes, you can configure a custom authorization header name in Choreo Connect. Refer to [Custom Authorization Header](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/use-a-custom-authorization-header/) for more information.
+Yes, you can configure a custom authorization header name in Choreo Connect. Refer to [Custom Authorization Header](security/use-a-custom-authorization-header) for more information.
 
 #### Can I disable API security for a specific API deployed in WSO2 Choreo Connect?
 
-Yes, security can be disabled at API, resource and operation level. Refer to [Disabling Security](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/disabling-security/) for more information.
+Yes, security can be disabled at API, resource and operation level. Refer to [Disabling Security](security/api-authentication/disabling-security) for more information.
 
 #### What are the different methods of API authorization supported by WSO2 Choreo Connect?
 
-Scope validation, subscription validation, custom claims mapping and Open Policy Agent (OPA) validation. Refer to [API Authorization](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/scope-validation/) for more information.
+Scope validation, subscription validation, custom claims mapping and Open Policy Agent (OPA) validation. Refer to [API Authorization](security/api-authorization/scope-validation) for more information.
 
 ## Troubleshooting
 
@@ -132,19 +147,19 @@ It could be due to an invalid CORS configuration in the Router component. Also, 
 
 #### How can I enable debug logs?
 
-Debug and trace logs can be enabled separately for each of the components. Refer to [Enable Debug Logs](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/adding-debug-logs/) for more information.
+Debug and trace logs can be enabled separately for each of the components. Refer to [Enable Debug Logs](troubleshooting/adding-debug-logs) for more information.
 
 #### How can I print logs in different formats?
 
-You can change the log format only in the Adapter and Enforcer. Currently, Choreo Connect supports plain text format (default) and JSON formatted logs only. Refer to the [Logs configuration](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview/) for more information.
+You can change the log format only in the Adapter and Enforcer. Currently, Choreo Connect supports plain text format (default) and JSON formatted logs only. Refer to the [Logs configuration](configurations/configure-logs-overview) for more information.
 
 #### How can I inspect HTTP headers and payloads related to a request?
 
-Enable Router trace logs. Refer to the [Router logs configuration](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/) for more information. 
+Enable Router trace logs. Refer to the [Router logs configuration](configurations/configure-logs-router) for more information. 
 
 #### Where can I get more information about the error codes?
 
-Refer to [Error handling](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/error-handling/) for information regarding the error codes.
+Refer to [Error handling](troubleshooting/error-handling) for information regarding the error codes.
 
 #### Why am I getting an Unclassified Validation Failure with 500 HTTP status code?
 

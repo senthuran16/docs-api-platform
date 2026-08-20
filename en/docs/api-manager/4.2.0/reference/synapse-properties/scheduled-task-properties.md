@@ -1,3 +1,18 @@
+---
+title: "Scheduled tasks"
+description: "Reference for the properties used when creating a scheduled task that periodically injects messages in Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/scheduled-task-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/scheduled-task-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - scheduled-task-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Scheduled Tasks
 ## Introduction
 

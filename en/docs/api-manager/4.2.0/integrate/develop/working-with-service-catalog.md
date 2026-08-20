@@ -1,3 +1,18 @@
+---
+title: "Publishing integrations to the API Manager"
+description: "Explains how to publish a REST API artifact from the Micro Integrator to the API Manager runtime as a managed API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/working-with-service-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/working-with-service-catalog.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - working-with-service-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing Integrations to the API Manager
 
 A REST API artifact you create from WSO2 Integration Studio is exposed to consumers when you run it on the Micro Integrator runtime. If you want to control and manage this API, and also expose it to an API marketplace where it becomes discoverable to a wider community of consumers, you need to publish this REST API to the API management layer (API-M runtime) of the product.
@@ -14,8 +29,8 @@ Develop a REST API artifact using WSO2 Integration Studio. This is your integrat
 !!! Tip
     For instructions on creating a new integration service, use the following documentation: 
 
-    -   [Developing your First Integration Service](../../integrate/develop/integration-development-kickstart).
-    -   [Integration Tutorials](../../tutorials/tutorials-overview/#integration-tutorials).
+    -   [Developing your First Integration Service](integration-development-kickstart).
+    -   [Integration Tutorials](../../tutorials/tutorials-overview#integration-tutorials).
 
 ## Step 1 - Update the service metadata
 
@@ -65,7 +80,7 @@ Update the metadata for your service as explained below.
 </table>
 
 !!! Tip
-    See the [Service Catalog API documentation](../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1/) for more information on the metadata in the YAML file.
+    See the [Service Catalog API documentation](../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1) for more information on the metadata in the YAML file.
 
 ## Step 2 - Configure the Micro Integrator server
 
@@ -79,7 +94,7 @@ username = "admin"
 password = "admin"
 ```
 
-See the descriptions of the [service catalog parameters](../../reference/config-catalog-mi/#service-catalog-client).
+See the descriptions of the [service catalog parameters](../../reference/config-catalog-mi#service-catalog-client).
 
 ## Step 3 - Start the servers
 

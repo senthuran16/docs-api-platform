@@ -1,3 +1,18 @@
+---
+title: "Configuring keystores for the Micro Integrator"
+description: "Configure keystores for the Micro Integrator, including the default keystore, encryption keys, and separating the internal keystore."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/configuring_keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/configuring_keystores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Keystores for the Micro Integrator
 
 Follow the instructions given below to configure [keystores for the Micro Integrator](../../../../reference/mi-security-reference/using_keystores).
@@ -21,7 +36,7 @@ The **default trust store** contains the certificates of reputed CAs that can va
 
 If you want to change the [default primary keystore](#the-default-keystore-configuration) that is shipped with the product, follow the steps given below.
 
-1. [Create a new keystore](../../../../install-and-setup/setup/mi-setup/security/creating_keystores). 
+1. [Create a new keystore](creating_keystores). 
 
     !!! Note
         CA-signed certificates are recommended for this keystore because it is used for communicating with external parties.
@@ -63,7 +78,7 @@ If you want to change the [default primary keystore](#the-default-keystore-confi
 
     Find more details about [keystore parameters](../../../../reference/config-catalog-mi).
     
-3. [Import the required CA-signed certificates](../../../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate) to the key store.
+3. [Import the required CA-signed certificates](importing_ssl_certificate) to the key store.
 
 ## Separating the internal keystore
 By default, the [primary keystore](#the-default-keystore-configuration) is used for internal **data encryption** (encrypting data in internal data stores and configuration files) as well as for **signing messages** that are communicated with external parties.
@@ -75,7 +90,7 @@ By default, the [primary keystore](#the-default-keystore-configuration) is used 
 
 Follow the steps given below to separate the keystore that is used for encrypting data in internal data stores.
 
-1. [Create a new keystore](../../../../install-and-setup/setup/mi-setup/security/creating_keystores). 
+1. [Create a new keystore](creating_keystores). 
 
     !!! Note
         CA-signed certificates are recommended for this keystore because it is used for communicating with external parties.
@@ -114,12 +129,12 @@ Follow the steps given below to separate the keystore that is used for encryptin
         alias="wso2carbon"
         key_password="wso2carbon"
         ```
-    Find more details about [internal keystore parameters](../../../../reference/config-catalog-mi/#internal-keystore).
+    Find more details about [internal keystore parameters](../../../../reference/config-catalog-mi#internal-keystore).
             
 ## Optional: Changing the default truststore
 If you want to change the [default truststore](#the-default-keystore-configuration) that is shipped with the product, follow the steps given below.
 
-1. [Create a new keystore](../../../../install-and-setup/setup/mi-setup/security/creating_keystores). 
+1. [Create a new keystore](creating_keystores). 
 
     !!! Note
         CA-signed certificates are recommended for this keystore because it is used for communicating with external parties.
@@ -159,4 +174,4 @@ If you want to change the [default truststore](#the-default-keystore-configurati
         algorithm="AES"
         ```
             
-3. [Import the required certificates](../../../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate#importing-ssl-certificates-to-a-truststore) to the truststore.
+3. [Import the required certificates](importing_ssl_certificate#importing-ssl-certificates-to-a-truststore) to the truststore.

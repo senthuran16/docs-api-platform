@@ -1,3 +1,18 @@
+---
+title: "Microsoft Azure storage connector reference"
+description: "Configure Microsoft Azure Storage connector version 2.x operations, including account key and client credential authentication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Microsoft Azure Storage Connector Reference
 
 The following operations allow you to work with the Microsoft Azure Storage Connector. Click an operation name to see parameter details and samples on how to use it.
@@ -456,4 +471,4 @@ To use the Microsoft Azure Storage connector, add the element in your configurat
 | 700708 | MS_AZURE_BLOB:FILE_PERMISSION_ERROR |
 | 700709 | MS_AZURE_BLOB:GENERAL_ERROR |
 
-In addition to the above `ERROR_DETAIL` property will contain detail information about the error. For more information refer [Using Fault Sequences](../../../../integrate/examples/sequence_examples/using-fault-sequences/).
+In addition to the above `ERROR_DETAIL` property will contain detail information about the error. For more information refer [Using Fault Sequences](../../../../integrate/examples/sequence_examples/using-fault-sequences).

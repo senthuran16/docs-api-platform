@@ -1,3 +1,18 @@
+---
+title: "Email connector reference"
+description: "Configure Email Connector operations for connecting to and interacting with a mail server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/email-connector/email-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/email-connector/email-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - email-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Email Connector Reference
 
 The following operations allow you to work with the Email Connector. Click an operation name to see parameter details and samples on how to use it.
@@ -681,4 +696,4 @@ The following is a sample proxy service that illustrates how to connect to the E
 </proxy>         
 ```
 
-**Note**: For more information on how this works in an actual scenario, see [Email Connector Example](../../../reference/connectors/email-connector/email-connector-example/).
+**Note**: For more information on how this works in an actual scenario, see [Email Connector Example](email-connector-example).

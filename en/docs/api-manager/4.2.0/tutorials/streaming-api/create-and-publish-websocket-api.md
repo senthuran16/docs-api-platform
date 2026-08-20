@@ -1,3 +1,18 @@
+---
+title: "Create and publish a WebSocket API"
+description: "Design and publish an API with a WebSocket backend that implements a two-channel chat room, then invoke it with the wscat client."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/streaming-api/create-and-publish-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/streaming-api/create-and-publish-websocket-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSocket API
 
 This tutorial will guide you to implement a WebSocket based chat application using the WSO2 API Manager.
@@ -11,7 +26,8 @@ This will demonstrate a simple command line based chat room which has two channe
 
 ### Step 1 - Design a WebSocket API
 
-1.  {!includes/sign-in-publisher.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and click **WebSocket API**.
 
@@ -144,7 +160,8 @@ Now, you have created and configured the WebSocket API successfully.
 
 ### Step 4 - Invoke the WebSocket API
 
-1. {!includes/sign-in-devportal.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSocket API. 
 
@@ -304,4 +321,4 @@ You have successfully created and published your first WebSocket API, subscribed
 
 ### Troubleshooting
 
-If you require more detailed logs in the WebSocket API flow in order to troubleshoot and debug an error in your scenario, see [Troubleshooting WebSocket APIs](../../troubleshooting/troubleshooting-websocket-api/).
+If you require more detailed logs in the WebSocket API flow in order to troubleshoot and debug an error in your scenario, see [Troubleshooting WebSocket APIs](../../troubleshooting/troubleshooting-websocket-api).

@@ -1,3 +1,18 @@
+---
+title: "Directory structure of WSO2 products"
+description: "Describes the Carbon-based directory structure shared by WSO2 products, covering the purpose of each folder and file path."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/guides/directory-structure-of-wso2-products/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/guides/directory-structure-of-wso2-products.md
+tags:
+  - api-manager
+  - reference
+  - guides
+  - directory-structure-of-wso2-products
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Directory Structure of WSO2 Products
 
 All WSO2 products are built on top of the Carbon platform. The directory structure described below is the structure that is inherited by all Carbon-based WSO2 products. However, note that each product may contain folders and files that are specific to the product, in addition to what is described below.

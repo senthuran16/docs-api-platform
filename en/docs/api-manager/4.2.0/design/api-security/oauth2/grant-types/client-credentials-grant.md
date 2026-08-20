@@ -1,3 +1,18 @@
+---
+title: "Client credentials grant"
+description: "Configure and use the OAuth2 Client Credentials grant: enable the grant, generate a consumer key and secret, and invoke the Token API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/client-credentials-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/client-credentials-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Client Credentials Grant
 
 Client credentials can be used when the authorization scope is limited to the protected resources belonging to the client. Client credentials are used as an authorization grant when the client requests access to protected resources based on an authorization previously arranged with the authorization server. The client application requests an access token from the authorization server, authenticating the request with its client key and client secret. If the client is successfully authenticated, an access token is returned.
@@ -6,7 +21,7 @@ For a detailed explanation on this grant type, go to the [WSO2 IS documentation]
 
 ## Flow
 
-The client can request an access token using only its client credentials with this grant type. It is similar to the [resource owner password credentials grant](../../../../design/api-security/oauth2/grant-types/password-grant) type, except in this case, only the client’s credentials are used to authenticate a request for an access token.
+The client can request an access token using only its client credentials with this grant type. It is similar to the [resource owner password credentials grant](password-grant) type, except in this case, only the client’s credentials are used to authenticate a request for an access token.
 
 [![OAuth Client Credentials](../../../../assets/img/learn/oauth-client-credentials-diagram.png){: style="width:60%"}](../../../../assets/img/learn/oauth-client-credentials-diagram.png)
 
@@ -103,4 +118,4 @@ If you want to **disable the Client Credentials grant type** in the API-M instan
 
 ### Refresh Token grant type - supported or not
 
-The Client Credentials grant type **does not support** the Refresh Token grant type. This grant type does not issue a refresh token which can be used to obtain new access tokens using the [refresh token grant](../../../../learn/api-security/oauth2/grant-types/refresh-token-grant/).
+The Client Credentials grant type **does not support** the Refresh Token grant type. This grant type does not issue a refresh token which can be used to obtain new access tokens using the [refresh token grant](refresh-token-grant).

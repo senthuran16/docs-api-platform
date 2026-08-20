@@ -1,3 +1,18 @@
+---
+title: "Connecting to JBossMQ"
+description: "Configure WSO2 Micro Integrator's JMS transport to connect with JBossMQ, the default JMS provider in JBoss Application Server 4.2."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-jbossmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-jbossmq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to JBossMQ
 
 This section describes how to configure WSO2 Micro Integrator to connect with [JBossMQ](https://developer.jboss.org/docs/DOC-10525). The default JMS provider in JBoss Application Server 4.2. JBossMQ was replaced by [JBoss Messaging](http://www.jboss.org/jbossmessaging) in JBoss Application Server 5.0.
@@ -25,6 +40,6 @@ To configure the JMS transport with JBossMQ:
     parameter.'java.naming.factory.url.pkgs' = "org.jnp.interfaces:org.jboss.naming"
     ```
     !!! Info
-        For details on the JMS configuration parameters used in the code segments above, see [JMS connection factory parameters](../../../../reference/config-catalog-mi/#jms-transport-listener-non-blocking-mode).
+        For details on the JMS configuration parameters used in the code segments above, see [JMS connection factory parameters](../../../../reference/config-catalog-mi#jms-transport-listener-non-blocking-mode).
 
 4.  Start WSO2 Micro Integrator and ensure that the logs print messages indicating that the JMS listener and sender are started, and that the JMS transport is initialized.

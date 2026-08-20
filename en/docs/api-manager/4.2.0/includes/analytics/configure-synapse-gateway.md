@@ -13,7 +13,7 @@ Follow the instructions below to publish analytics data to the analytics cloud v
       <div class="admonition note">
       <p class="admonition-title">Note</p>
       <ul><li><p>This is the basic configuration that you need to publish analytics data to the analytics cloud.</p></li>
-      <li>If you need to change the following default values of the Worker Thread Count, Queue Size or Client Flushing Delay, see the [Advanced configurations](/api-analytics/choreo-analytics/getting-started-guide).  .
+      <li>If you need to change the following default values of the Worker Thread Count, Queue Size or Client Flushing Delay, see the [Advanced configurations](/api-platform/docs/api-manager/4.2.0/api-analytics/choreo-analytics/getting-started-guide/).  .
       <table>
       <tr>
       <th><b>Parameter</b></th>

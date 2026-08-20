@@ -1,9 +1,24 @@
+---
+title: "Disabling security for APIs"
+description: "Disable OAuth 2.0 security for a single API resource or for all resources of an API, typically to test the API without an access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/disable-security/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/disable-security.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Disabling Security for APIs
 
 WSO2 API Manager enables OAuth 2.0 security for APIs by default. Therefore, all APIs must be invoked with an access token. You can get an access token in the following ways.
 
-- [Get an internal test key from Publisher](../../../design/create-api/create-rest-api/test-a-rest-api/)
-- [Get an access token for a subscription from Developer Portal](../../../consume/consume-api-overview/)
+- [Get an internal test key from Publisher](../../create-api/create-rest-api/test-a-rest-api)
+- [Get an access token for a subscription from Developer Portal](../../../consume/consume-api-overview)
 
 For testing purposes, you can eliminate the need of an access token by disabling security for the entire API or a specific resource.
 

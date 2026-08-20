@@ -1,10 +1,25 @@
+---
+title: "Using the RabbitMQ message store"
+description: "Configure a RabbitMQ message store so a proxy service stores messages for a forwarding processor to deliver to a backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_store_processor_examples/using-rabbitmq-message-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_store_processor_examples/using-rabbitmq-message-stores.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the RabbitMQ Message Store
 
 In this example, the client sends requests to a **proxy service**, which stores the messages in a **RabbitMQ message store**. The **message forwarding processor** then picks the stored messages from the RabbitMQ message store and invokes the back-end service.
 
 ### Synapse configurations
 
-Following are the artifact configurations that we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-1) this example.
+Following are the artifact configurations that we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
 
 === "Message Store"
     ```xml
@@ -90,10 +105,10 @@ See the descriptions of the above configurations:
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), [endpoint](../../../integrate/develop/creating-artifacts/creating-endpoints), and [message processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), [endpoint](../../develop/creating-artifacts/creating-endpoints), and [message processor](../../develop/creating-artifacts/creating-a-message-processor) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

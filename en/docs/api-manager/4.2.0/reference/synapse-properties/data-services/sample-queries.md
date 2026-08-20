@@ -1,3 +1,18 @@
+---
+title: "Sample queries"
+description: "Provides sample complex query definitions for defining an RDBMS data service, including calling stored functions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/data-services/sample-queries/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/data-services/sample-queries.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Sample Queries
 
 Listed below are some complex <b>query</b> definitions that you may require when defining an RDBMS data service.

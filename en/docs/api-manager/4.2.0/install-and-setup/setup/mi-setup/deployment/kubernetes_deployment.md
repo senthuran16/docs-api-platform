@@ -1,8 +1,23 @@
+---
+title: "Deploying the Micro Integrator on Kubernetes"
+description: "Compares deployment options for setting up WSO2 Micro Integrator on Kubernetes using the K8s Operator, Helm resources, or pure Kubernetes resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/kubernetes_deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/kubernetes_deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Deploying the Micro Integrator on Kubernetes
 
 You can set up a Kubernetes (K8s) cluster for the Micro Integrator using one of the following deployment options.
 
-- [Using the Kubernetes Operator](#using-the-kubernetes-operator)
+- [Using the Kubernetes Operator](#using-the-k8s-operator)
 
 - [Using Helm resources](#using-helm-resources)
 
@@ -29,13 +44,13 @@ Take the following into consideration when deciding on whether to use the Kubern
 
 The API operator for Kubernetes provides first-class support for Micro Integrator deployments in the Kubernetes ecosystem. It uses the `Integration` custom resource (`integration_cr.yaml` file) that is available in the Kubernetes module, which is exported from WSO2 Integration Studio, and deploys the integration in your Kubernetes environment.
 
--   For instructions, see [deploying integrations on Kubernetes using the Operator](../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments).
+-   For instructions, see [deploying integrations on Kubernetes using the Operator](../../kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments).
 
 ### Using Helm resources
 
 WSO2 releases Helm resources for all product deployments. You can get the [Helm resources for the Micro Integrator](https://github.com/wso2/kubernetes-mi/) and set up a Micro Integrator deployment on Kubernetes.
 
--   For instructions, see [deploying integrations on Kubernetes using Helm resources](../../../../install-and-setup/setup/mi-setup/deployment/deploying-micro-integrator-with-helm).
+-   For instructions, see [deploying integrations on Kubernetes using Helm resources](deploying-micro-integrator-with-helm).
 
 ### Using pure Kubernetes resources
 

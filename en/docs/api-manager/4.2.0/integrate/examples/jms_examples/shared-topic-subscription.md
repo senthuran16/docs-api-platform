@@ -1,3 +1,18 @@
+---
+title: "Shared topic subscription"
+description: "Configure the Micro Integrator as a shared topic listener that shares JMS 2.0 topic messages across consumers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/shared-topic-subscription/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/shared-topic-subscription.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Shared Topic Subscription
 
 With JMS 1.1, a subscription on a topic is not permitted to have more than one consumer at a time. That is, if multiple JMS
@@ -101,14 +116,14 @@ See the descriptions of the above configurations:
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), [registry artifact](../../../integrate/develop/creating-artifacts/creating-registry-resources), [scheduled task](../../../integrate/develop/creating-artifacts/creating-scheduled-task), and [sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), [registry artifact](../../develop/creating-artifacts/creating-registry-resources), [scheduled task](../../develop/creating-artifacts/creating-scheduled-task), and [sequences](../../develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the broker:
 
-1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-jms-transport) with your Micro Integrator instance. Let's use HornetQ for this example.
+1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-jms-transport) with your Micro Integrator instance. Let's use HornetQ for this example.
     
     -   Be sure to create a sample topic by editing the `HORNET_HOME/config/stand-alone/non-clustered/hornetq-jms.xml` file as follows:
         ```xml  

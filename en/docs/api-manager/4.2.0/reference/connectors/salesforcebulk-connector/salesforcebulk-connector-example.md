@@ -1,3 +1,18 @@
+---
+title: "Salesforce bulk connector example"
+description: "Configure a sample API that uses the SalesforceBulk connector to insert employee records and check batch status."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforcebulk-connector/salesforcebulk-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforcebulk-connector/salesforcebulk-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforcebulk-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce Bulk Connector Example
 
 The Salesforce Bulk Connector allows you to access the [Salesforce Bulk REST API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) from an integration sequence. SalesforceBulk is a RESTful API that allows you to quickly load large sets of your organization's data into Salesforce or delete large sets of your organization's data from Salesforce. You can use SalesforceBulk to query, insert, update, upsert or delete a large number of records asynchronously, by submitting the records in batches. Salesforce can process these batches in the background.
@@ -28,7 +43,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
@@ -42,7 +57,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
     
 1. Initialize the connector.
     
-    1. Follow these steps to [generate the Access Tokens for Salesforce](../../../includes/reference/connectors/salesforce-connectors/sf-access-token-generation/) and obtain the Client Id, Client Secret, Access Token, and Refresh Token.
+    1. Follow these steps to [generate the Access Tokens for Salesforce](../../../includes/reference/connectors/salesforce-connectors/sf-access-token-generation) and obtain the Client Id, Client Secret, Access Token, and Refresh Token.
     
     2. Navigate into the **Palette** pane and select the graphical operations icons listed under **Salesforcebulk Connector** section. Then drag and drop the `init` operation into the Design pane.
         
@@ -71,7 +86,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
     
         <img src="../../../../assets/img/integrate/connectors/salesforcebulk-drag-and-drop-createjob.png" title="Drag and drop creatJobe operation" width="60%" alt="Drag and drop createJob operations"/>
     
-    3. To get the input values into the API, we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
+    3. To get the input values into the API, we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
     
         <img src="../../../../assets/img/integrate/connectors/salesforcebulk-api-drag-and-drop-property-mediator.png" title="Add property mediators" width="60%" alt="Add property mediators"/>
 
@@ -89,7 +104,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
         
 3. Set up the fileconnector operation.
 
-    1. Setup the `fileconnector.read` configurations. In this operation we are going to read the CSV file content by using the [WSO2 File Connector](../../../reference/connectors/file-connector/file-connector-overview).
+    1. Setup the `fileconnector.read` configurations. In this operation we are going to read the CSV file content by using the [WSO2 File Connector](../file-connector/file-connector-overview).
     
         - **contentType** : Content type of the files processed by the connector.
         - **source** : The location of the file. This can be a file on the local physical file system or a file on an FTP server. 
@@ -103,7 +118,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
             
         <img src="../../../../assets/img/integrate/connectors/salesforcebulk-drag-and-drop-file-read.png" title="Drag and drop file read operation" width="70%" alt="Drag and drop file read operations"/>
             
-    3. To get the input values in to the API we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as steps given in section 2.3 the `createJob` operation.   .
+    3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as steps given in section 2.3 the `createJob` operation.   .
                    
     4. Add the property mediator to capture the `source` value.  The source is location of the file. This can be a file on the local physical file system or a file on an FTP server.   
            
@@ -128,7 +143,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
                       
          <img src="../../../../assets/img/integrate/connectors/salesforcebulk-drag-and-drop-addbatch.png" title="Drag and drop addBatch operation" width="70%" alt="Drag and drop addBatch operations"/>
     
-    3. To get the input values in to the API we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as steps given in section 2.3 the `createJob` operation.   .
+    3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as steps given in section 2.3 the `createJob` operation.   .
                        
     4. Add the property mediator to capture the `jobId` value.      
                
@@ -138,13 +153,13 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
            
         <img src="../../../../assets/img/integrate/connectors/salesforcebulk-api-property-mediator-jobid-property1-value1.png" title="Add values to capture jobid value" width="600" alt="Add values to capture jobid value"/>
                
-    5. To extract the `objects` from the file read operation, we used [data mapper](../../../reference/mediators/data-mapper-mediator). It will grab the CSV file content and insert in to the `addBatch` operation.
+    5. To extract the `objects` from the file read operation, we used [data mapper](../../mediators/data-mapper-mediator). It will grab the CSV file content and insert in to the `addBatch` operation.
     
         <img src="../../../../assets/img/integrate/connectors/salesforcebulk-drag-and-drop-datamapper.png" title="Drag and drop data mapper operation" width="70%" alt="Drag and drop data mapper operations"/>
     
 5. Forward the backend response to the API caller.
     
-    When you are invoking the created resource, the request of the message is going through the `/insertEmployeeBulkRecords` resource. Finally, it is passed to the [Respond mediator](../../../reference/mediators/respond-mediator/). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
+    When you are invoking the created resource, the request of the message is going through the `/insertEmployeeBulkRecords` resource. Finally, it is passed to the [Respond mediator](../../mediators/respond-mediator). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
     
     1. Drag and drop **respond mediator** to the **Design view**. 
     
@@ -187,7 +202,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
 
 3. Forward the backend response to the API caller.
     
-    When you are invoking the created resource, the request of the message is going through the `/insertEmployeeBulkRecords` resource. Finally, it is passed to the [Respond mediator](../../../reference/mediators/respond-mediator/). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
+    When you are invoking the created resource, the request of the message is going through the `/insertEmployeeBulkRecords` resource. Finally, it is passed to the [Respond mediator](../../mediators/respond-mediator). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
     
     1. Drag and drop **respond mediator** to the **Design view**. 
            
@@ -268,7 +283,7 @@ Now follow the steps below to add configurations to the `insertEmployeeBulkRecor
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="/assets/attachments/connectors/salesforcebulk-connector.zip">
+<a href="../../../../assets/attachments/connectors/salesforcebulk-connector.zip">
     <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
@@ -279,7 +294,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -338,4 +353,4 @@ Invoke the API as shown below using the curl command. Curl application can be do
 
 ## What's Next
 
-- To customize this example for your own scenario, see [Salesforce bulk Connector Configuration](../../../reference/connectors/salesforce-connectors/salesforcebulk-reference/) documentation for all operation details of the connector.
+- To customize this example for your own scenario, see [Salesforce bulk Connector Configuration](../salesforce-connectors/salesforcebulk-reference) documentation for all operation details of the connector.

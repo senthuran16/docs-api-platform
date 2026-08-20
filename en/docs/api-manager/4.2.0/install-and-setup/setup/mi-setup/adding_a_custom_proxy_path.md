@@ -1,3 +1,18 @@
+---
+title: "Adding a custom proxy path"
+description: "Configure a custom proxy path so clients can access a WSO2 product server through a reverse proxy URL fronting the server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/adding_a_custom_proxy_path/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/adding_a_custom_proxy_path.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding a Custom Proxy Path
 
 !!! Warning

@@ -1,3 +1,18 @@
+---
+title: "Creating local registry entries"
+description: "Explains how to create local registry entries as inline text, inline XML, or source URLs for use in mediation flows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/registry/creating-local-registry-entries/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/registry/creating-local-registry-entries.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating Local Registry Entries
 
 The **local registry** acts as a memory registry where you can store static content as a key-value pair. This could be a static text specified as **inline text**, static XML specified as an **inline XML** fragment, or a URL (using the `src` attribute).
@@ -28,7 +43,7 @@ This is useful for the type of static content often found in XSLT files, WSDL fi
 
 Follow these steps to create a new local entry.
 
-1.  Right-click the [ESB Config project](../../../../integrate/develop/create-integration-project/#esb-config-project) and go to **New → Local Entry** to open the **New Local Entry** dialog box.
+1.  Right-click the [ESB Config project](../../create-integration-project#sub-projects) and go to **New → Local Entry** to open the **New Local Entry** dialog box.
 
     <img src="../../../../../assets/img/integrate/create_artifacts/new_local_entry/select-local-entry.jpg">
 
@@ -91,4 +106,4 @@ reference the local entry as follows:
 
 ## Examples
 
-- [Sequences and Endpoints as Local Registry Entries](../../../../integrate/examples/registry_examples/local-registry-entries)
+- [Sequences and Endpoints as Local Registry Entries](../../../examples/registry_examples/local-registry-entries)

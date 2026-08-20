@@ -1,3 +1,18 @@
+---
+title: "ForEach mediator"
+description: "Reference for the ForEach mediator, which splits a message into parts based on an XPath or JSONPath expression and processes each sequentially."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/foreach-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/foreach-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - foreach-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # ForEach Mediator
 
 The ForEach mediator requires an XPath/JSONPath expression and a sequence (inline or referred). It splits the message into a number of different messages
@@ -17,7 +32,7 @@ The ForEach mediator creates the following properties during mediation.
 | FOREACH_COUNTER           | This contains the count of the messages processed. The message count increases during each iteration. |
 
 !!! Note
-    [Iterate Mediator](../../reference/mediators/iterate-Mediator) is quite similar to the ForEach
+    [Iterate Mediator](../../reference/mediators/iterate-mediator) is quite similar to the ForEach
     mediator. You can use complex XPath expressions to conditionally select
     elements to iterate over in both mediators. Following are the main
     difference between ForEach and Iterate mediators:
@@ -33,8 +48,8 @@ The ForEach mediator creates the following properties during mediation.
         parent element of the message.
     -   In Iterate you need to send the split messages to an endpoint to
         continue the message flow. However, ForEach does not allow using
-        [Call](../../reference/mediators/call-Mediator), [Send](../../reference/mediators/send-Mediator) and
-        [Callout](../../reference/mediators/callout-Mediator) mediators in the sequence.
+        [Call](../../reference/mediators/call-mediator), [Send](../../reference/mediators/send-mediator) and
+        [Callout](../../reference/mediators/callout-mediator) mediators in the sequence.
     -   ForEach does not split the message flow, unlike Iterate Mediator. It
         guarantees to execute in the same thread until all iterations are
         complete.
@@ -98,7 +113,7 @@ The parameters available to configure the ForEach mediator are as follows.
 In this configuration, the `         "//m0:getQuote/m0:request"        `
 XPath and `         "json-eval($.getQuote.request)"        ` JSONPath expression evaluates the split messages to be derived from the
 parent message. Then the split messages pass through a sequence which
-includes a [Log mediator](../../reference/mediators/log-Mediator) with the log level set to
+includes a [Log mediator](../../reference/mediators/log-mediator) with the log level set to
 `         full        ` .
 
 === "Using a XPath expression"

@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect standalone on Kubernetes with Helm"
+description: "Deploy Choreo Connect as a standalone Gateway on Kubernetes using Helm charts, then deploy an API to it using apictl."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes-helm-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes-helm-artifacts.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect as a Standalone Gateway on Kubernetes - Helm Artifacts
 
 Let's deploy an API using WSO2 API Controller (apictl) on Choreo Connect, which is running on Kubernetes as a Standalone Gateway. You can select one of the options to install Choreo Connect with Helm Chart.
@@ -25,7 +40,7 @@ Let's deploy an API using WSO2 API Controller (apictl) on Choreo Connect, which 
         Note: Helm resources for WSO2 product deployment patterns are compatible with the [`nginx-0.30.0`](https://github.com/kubernetes/ingress-nginx/releases/tag/nginx-0.30.0) release.
 
     
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/k8s-setup-note.md"
     
 
 ## Option 1: Install Chart from WSO2 Helm Chart Repository
@@ -214,5 +229,5 @@ Follow the steps given below.
 
 ## Deploy and Invoke Sample API
 
-Follow the Steps 2, 3, 4 in [Deploying Choreo Connect as a Standalone Gateway on Kubernetes](https://apim.docs.wso2.com/en/latest/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes/#step-2-initialize-an-api-project)
+Follow the Steps 2, 3, 4 in [Deploying Choreo Connect as a Standalone Gateway on Kubernetes](cc-as-a-standalone-gateway-on-kubernetes#step-2-initialize-an-api-project)
 to deploy and invoke the sample API.

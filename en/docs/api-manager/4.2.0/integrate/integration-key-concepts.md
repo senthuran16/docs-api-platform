@@ -1,3 +1,17 @@
+---
+title: "Integration key concepts"
+description: "Learn the key concepts of the Micro Integrator, including message entry points, mediators, sequences, stores, and templates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/integration-key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/integration-key-concepts.md
+tags:
+  - api-manager
+  - integrate
+  - integration-key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Integration Key Concepts
 
 Listed below are the key concepts of WSO2 Micro Integrator.
@@ -126,7 +140,7 @@ A registry is simply a content store and a metadata repository.
 Various resources such as XSLT scripts, WSDLs, and configuration files can be stored in a registry and referred to by a key, which is a path similar to a UNIX file path. 
 The WSO2 Micro Integrator uses a [file-based registry](../install-and-setup/setup/mi-setup/deployment/file_based_registry) that is configured by default. 
 When you develop your integration artifacts, you can also define and 
-use a [local registry](../integrate/develop/creating-artifacts/registry/creating-local-registry-entries).
+use a [local registry](develop/creating-artifacts/registry/creating-local-registry-entries).
 
 ### Message Builders and Formatters
 

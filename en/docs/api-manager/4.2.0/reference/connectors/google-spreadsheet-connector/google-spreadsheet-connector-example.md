@@ -1,3 +1,18 @@
+---
+title: "Google spreadsheet connector example"
+description: "Configure the Google Spreadsheet connector to create a spreadsheet, write data to it, and read and edit it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-spreadsheet-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Google Spreadsheet Connector Example
 
 The Google Sheets API lets users to read and modify any aspect of a spreadsheet. The WSO2 Google Spreadsheet Connector allows you to access the Google Spreadsheet [API Version v4](https://developers.google.com/sheets/api/guides/concepts) from an integration sequence. It allows users to read/write any aspect of the spreadsheet via the spreadsheets collection. It has the ability to do spreadsheet operations and spreadsheet data operations. 
@@ -27,11 +42,11 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
-1. Follow these steps to [Configure Google Sheets API](../../../reference/connectors/google-spreadsheet-connector/get-credentials-for-google-spreadsheet/) and obtain the Client Id, Client Secret, Access Token, and Refresh Token.  
+1. Follow these steps to [Configure Google Sheets API](get-credentials-for-google-spreadsheet) and obtain the Client Id, Client Secret, Access Token, and Refresh Token.  
 
 2. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API. 
     <img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
@@ -47,7 +62,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     - range - It provides the sheet name and the range that data need to be inserted. 
     - values - Data to be inserted.
 
-6. The above four parameters are saved to a property group. Drag and drop the Property Group mediator onto the canvas in the design view and do as shown below. For further reference, you can read about the [Property Group mediator](../../../reference/mediators/property-group-mediator). You can add set of properties as below. 
+6. The above four parameters are saved to a property group. Drag and drop the Property Group mediator onto the canvas in the design view and do as shown below. For further reference, you can read about the [Property Group mediator](../../mediators/property-group-mediator). You can add set of properties as below. 
 
     <img src="../../../../assets/img/integrate/connectors/sheetcon1.png" title="Adding a property into a property group" width="800" alt="Adding a property"/>
 
@@ -216,7 +231,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 
 ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 
 ## Get the project
@@ -234,7 +249,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -390,4 +405,4 @@ The spreadsheet should be edited within the above specified cell range.
 
 ## What's Next
 
-* To customize this example for your own scenario, see [Google Spreadsheet Connector Configuration](../../../reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-config/) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [Google Spreadsheet Connector Configuration](google-spreadsheet-connector-config) documentation for all operation details of the connector.

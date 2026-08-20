@@ -1,3 +1,18 @@
+---
+title: "Jira connector example"
+description: "Configure the Jira connector to create a new issue and retrieve it from a Jira Cloud account."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/jira-connector/jira-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/jira-connector/jira-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - jira-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Jira Connector Example
 
 The Jira REST API enables you to interact with Jira programmatically. The WSO2 JIRA Connector allows you to access the REST resources available in Jira Cloud [API Version v2](https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/) from an integration sequence.
@@ -20,7 +35,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
@@ -66,7 +81,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 </api>
 ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -80,7 +95,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -339,5 +354,5 @@ Follow these steps to deploy the exported CApp in the integration runtime.
 
 ## What's Next
 
-* You can deploy and run your project on Docker or Kubernetes. See the instructions in [Deploying your Integrations on Containers](../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments/).
-* To customize this example for your own scenario, see [Jira Connector Configuration](../../../reference/connectors/jira-connector/jira-connector-config) documentation for all operation details of the connector.
+* You can deploy and run your project on Docker or Kubernetes. See the instructions in [Deploying your Integrations on Containers](../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments).
+* To customize this example for your own scenario, see [Jira Connector Configuration](jira-connector-config) documentation for all operation details of the connector.

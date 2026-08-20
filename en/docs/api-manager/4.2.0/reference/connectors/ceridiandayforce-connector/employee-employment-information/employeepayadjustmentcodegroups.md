@@ -1,3 +1,18 @@
+---
+title: "Working with employee pay adjustment code groups"
+description: "Reference of the operation used to retrieve an employee's pay adjustment code groups with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeepayadjustmentcodegroups/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeepayadjustmentcodegroups.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Pay Adjustment Code Groups
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve, create or update addresses of an
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-pay-adjustment-code-groups"></a>
 #### Retrieving Employee Pay Adjustment Code Groups
 We can use GET Employee Pay Adjustment Code Groups operation with required parameters to get the pay adjustment group of an employee.
 

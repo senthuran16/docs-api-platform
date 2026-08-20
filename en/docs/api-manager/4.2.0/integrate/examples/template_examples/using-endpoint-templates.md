@@ -1,3 +1,18 @@
+---
+title: "Using endpoint templates"
+description: "Define an endpoint template to generalize multiple address endpoints that differ only in a few parameter values."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/template_examples/using-endpoint-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/template_examples/using-endpoint-templates.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - template_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Endpoint Templates
 
 For example, let's say we have two address endpoints with the following hypothetical configurations:
@@ -127,10 +142,10 @@ In this example, the endpoint template is configured to invoke the endpoints bas
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [REST API](../../../integrate/develop/creating-artifacts/creating-an-api) and [endpoint template](../../../integrate/develop/creating-artifacts/creating-endpoint-templates) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [REST API](../../develop/creating-artifacts/creating-an-api) and [endpoint template](../../develop/creating-artifacts/creating-endpoint-templates) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 ### Invoke the API
 1. Using REST client:

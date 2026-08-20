@@ -1,3 +1,18 @@
+---
+title: "Creating endpoint templates"
+description: "Provides steps to create address, default, HTTP, or WSDL endpoint templates in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-endpoint-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-endpoint-templates.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating Endpoint Templates
 
 Follow the instructions given below to create a new **Endpoint Template** in WSO2 Integration Studio.
@@ -6,7 +21,7 @@ Follow the instructions given below to create a new **Endpoint Template** in WSO
 
 ### Creating the Endpoint Template artifact
 
-1.  Right-click the [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) and go to **New → Template** to open the **New Template Artifact** dialog box.
+1.  Right-click the [ESB Config project](../create-integration-project#sub-projects) and go to **New → Template** to open the **New Template Artifact** dialog box.
 
     <img src="../../../../assets/img/integrate/create_artifacts/new_template/select-template.png">
 
@@ -23,7 +38,7 @@ Follow the instructions given below to create a new **Endpoint Template** in WSO
     - <b>HTTP Endpoint Template</b>
     - <b>WSDL Endpoint Template</b>
 
-    Specify values for the [required parameter](../../../reference/synapse-properties/template-properties/#endpoint-template-properties) for the selected endpoint type.
+    Specify values for the [required parameter](../../../reference/synapse-properties/template-properties#endpoint-template-properties) for the selected endpoint type.
 
 5.  Do one of the following to save the artifact:
 
@@ -72,4 +87,4 @@ When you have an Endpoint template defined, you can use a **Template Endpoint** 
 
 ## Examples
 
-- [Using Endpoint Templates](../../../integrate/examples/template_examples/using-endpoint-templates)
+- [Using Endpoint Templates](../../examples/template_examples/using-endpoint-templates)

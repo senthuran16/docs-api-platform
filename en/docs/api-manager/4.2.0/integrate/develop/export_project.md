@@ -1,8 +1,23 @@
+---
+title: "Exporting a project"
+description: "Provides steps to export a project from the WSO2 Integration Studio workspace as an archive file or file system."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/export_project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/export_project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - export_project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exporting a Project
 
-With WSO2 Integration Studio, you can export projects from your workspace and later [import them](../../integrate/develop/importing-projects).
+With WSO2 Integration Studio, you can export projects from your workspace and later [import them](importing-projects).
 
-For example, consider the following [**Maven Multi Module** project](../../integrate/develop/create-integration-project) in your project explorer. This is a project solution that includes several project types.
+For example, consider the following [**Maven Multi Module** project](create-integration-project) in your project explorer. This is a project solution that includes several project types.
 
 <img src="../../../assets/img/integrate/create_project/proj_explorer_mmm_proj_2.png" width="300">
 

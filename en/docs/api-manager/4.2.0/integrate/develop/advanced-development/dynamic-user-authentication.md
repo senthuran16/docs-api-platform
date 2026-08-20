@@ -1,3 +1,18 @@
+---
+title: "Dynamic user authentication"
+description: "Explains how to dynamically authenticate database users for each data service call using static or programmatic mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/dynamic-user-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/dynamic-user-authentication.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Dynamic User Authentication
 
 Dynamic user authentication allows you to authenticate database users

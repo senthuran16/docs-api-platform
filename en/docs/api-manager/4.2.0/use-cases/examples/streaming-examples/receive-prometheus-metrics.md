@@ -1,3 +1,18 @@
+---
+title: "Receiving Prometheus metrics"
+description: "Configure a Siddhi application that uses prometheus-source to retrieve metrics exported at an HTTP endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/receive-prometheus-metrics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/receive-prometheus-metrics.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Prometheus Metrics
 
 ## Purpose:

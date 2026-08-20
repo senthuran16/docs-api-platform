@@ -1,3 +1,18 @@
+---
+title: "Switch from FIX to HTTP"
+description: "Configure a proxy service that receives FIX messages and forwards them to a backend service over HTTP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_fix_to_http/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_fix_to_http.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switch from FIX to HTTP
 
 This example demonstrates how WSO2 Micro Integrator receives messages through FIX and forwards them through HTTP.
@@ -65,15 +80,15 @@ FIX_XSLT:
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
 3. Add the above XSLT as a registry resource.
-4. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
 5. Download the FIX transport resources from [here](https://github.com/wso2-docs/WSO2_EI/tree/master/FIX-transport-resources) and change the `{file_path}` of the proxy with the downloaded location.
 6. Change the `{reg_path}` with the XSLT registry location. 
-6. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+6. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
-[Enable the FIX transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-fix-transport) and start the Micro-Integrator.
+[Enable the FIX transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-fix-transport) and start the Micro-Integrator.
 
 Set up the back-end service:
 

@@ -1,3 +1,18 @@
+---
+title: "Receiving messages from a google Pub/Sub topic"
+description: "Configure a Siddhi application that consumes text-format events from a Google Cloud Pub/Sub topic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/receive-google-pubsub-messages-in-text-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/receive-google-pubsub-messages-in-text-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Messages from a Google Pub/Sub Topic
 
 ## Purpose:

@@ -1,9 +1,24 @@
+---
+title: "Prometheus metric support"
+description: "Configure Prometheus metrics collection for the Adapter, Enforcer, and Router components of Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/prometheus-metric-support/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/prometheus-metric-support.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Prometheus Metric Support
 
 With the integration of Prometheus metrics, monitoring the performance and health of Choreo Connect router, adapter, and enforcer components has never been easier. This enhanced observability empowers users to proactively identify and address issues for smoother operations.
 
 !!! attention "Update Level 2"
-    This feature is available only as an update, after Update level 1.2.0.2 (released on 13 September 2023) and further. For more information regarding Choreo Connect updates, see [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/update-choreo-connect/).
+    This feature is available only as an update, after Update level 1.2.0.2 (released on 13 September 2023) and further. For more information regarding Choreo Connect updates, see [here](../update-choreo-connect).
 
 ## Configure Prometheus Metrics
 

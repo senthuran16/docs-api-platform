@@ -1,3 +1,18 @@
+---
+title: "Creating a registry resource"
+description: "Provides steps to create a registry resource from a template, file system import, or registry checkout in Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-registry-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-registry-resources.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Registry Resource
 
 Initially, your Registry resources project will contain only a `pom` file. You can create any number of registry resources inside that project.
@@ -96,6 +111,6 @@ Specify the location to save the registry resource and click **Finish**.
 
 ## Editing a Registry Resource
 
-You may need to change the details you entered for a registry resource, for example, the registry path. You can edit such information using the **Registry Resource Editor**. To open this editor, right-click the [Registry Resource project](../../../integrate/develop/create-integration-project/#registry-resource-project) and click **Registry Resource Editor**.
+You may need to change the details you entered for a registry resource, for example, the registry path. You can edit such information using the **Registry Resource Editor**. To open this editor, right-click the [Registry Resource project](../create-integration-project#sub-projects) and click **Registry Resource Editor**.
 
 This editor lists all the registry resources that you have defined in that project and it will list the **Registry Path to Deploy** information per resource.

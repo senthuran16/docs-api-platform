@@ -1,3 +1,17 @@
+---
+title: "Configuring XSLT mediation with xalan"
+description: "Fix the 'Could not find function: ends-with' error that occurs when Xalan is used instead of Saxon for XSLT transformation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/configuring-xslt-mediation-with-xalan/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/configuring-xslt-mediation-with-xalan.md
+tags:
+  - api-manager
+  - troubleshooting
+  - configuring-xslt-mediation-with-xalan
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "troubleshooting"
+---
+
 # Configuring XSLT Mediation with Xalan
 
 When Xalan is selected instead of Saxon for the XSLT message transformation, it does not support the `ends-with{% raw %}(){% endraw %}` function that was used in the XSLT transformation.

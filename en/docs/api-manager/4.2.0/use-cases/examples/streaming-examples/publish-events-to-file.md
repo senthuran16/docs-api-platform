@@ -1,3 +1,18 @@
+---
+title: "Publishing JSON events to files"
+description: "Configure a Siddhi application that publishes sweet production data events to files in JSON format on the file system."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/publish-events-to-file/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/publish-events-to-file.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing JSON Events to Files
 
 ## Purpose:

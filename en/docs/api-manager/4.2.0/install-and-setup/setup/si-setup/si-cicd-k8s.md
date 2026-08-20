@@ -1,3 +1,17 @@
+---
+title: "CI/CD for Streaming Integrator on Kubernetes"
+description: "Set up a Kubernetes-based CI/CD pipeline for deploying and rolling back Streaming Integrator Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/si-cicd-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/si-cicd-k8s.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
 
 [![K8s based CI/CD for Streaming Integrator](../../../assets/img/deploy/si-cicd-k8s.png)](../../../assets/img/deploy/mi-cicd-k8s.png)
 
@@ -14,8 +28,8 @@
 
 ### Kubernetes artifacts
 Sample Kubernetes artifacts for a stateless deployment are provided below.
-This deployment can be scaled horizontally as an [Active-Active deployment](../../../install-and-setup/setup/si-deployment/deploying-si-as-an-active-active-deployment).
-You can find more deployment patterns [here](../../../install-and-setup/setup/si-deployment/deployment-guide/).
+This deployment can be scaled horizontally as an [Active-Active deployment](../si-deployment/deploying-si-as-an-active-active-deployment).
+You can find more deployment patterns [here](../si-deployment/deployment-guide).
 You can extend the below YAML files to introduce other components. (e.g., configMaps, Ingress, etc.)
 
 === "Deployment"
@@ -129,9 +143,9 @@ You can extend the below YAML files to introduce other components. (e.g., config
 
 1. Clone the [samples-apim](https://github.com/wso2/samples-apim/) repository.
 
-2. [Create Siddhi apps using Streaming Integrator tooling](../../../get-started/streaming-quick-start-guide/). You can use the tool to run and test the applications.
+2. [Create Siddhi apps using Streaming Integrator tooling](../../../get-started/streaming-quick-start-guide). You can use the tool to run and test the applications.
 
-3. Once the application is developed, you can create the Docker image and push them by using [“Export For Docker”](../../../develop/streaming-apps/exporting-siddhi-applications/#exporting-siddhi-applications-as-a-docker-image).
+3. Once the application is developed, you can create the Docker image and push them by using [“Export For Docker”](../../../develop/streaming-apps/exporting-siddhi-applications#exporting-siddhi-applications-as-a-docker-image).
 
 
     !!! note
@@ -166,6 +180,7 @@ You can extend the below YAML files to introduce other components. (e.g., config
 10. Verify that the new changes are available in the Dev environment.
 11. You can repeat steps 8, 9 and 10 for the Staging and Prod environment.
 
+<a name="setting-up-jenkins-server"></a>
 #### Setting up Jenkins server
 
 1. Docker scripts for setting up a Jenkins environment are provided inside `samples-apim/si-cicd`. This will spin up a preconfigured Docker image. By default, 3 Jenkins jobs will be created. One each for the environment descriptor branches (dev, staging, prod).

@@ -1,3 +1,18 @@
+---
+title: "Connecting to multiple brokers"
+description: "Configure WSO2 Micro Integrator to listen to multiple message broker types, such as ActiveMQ and WSO2 MB, at the same time."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-multiple-brokers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-multiple-brokers.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to Multiple Brokers
 
 If your system uses more than one broker, you need to add multiple broker configurations to the deployment.toml file (stored in the `MI_HOME/conf` directory. In such situations, each transport receiver should have a separate name.

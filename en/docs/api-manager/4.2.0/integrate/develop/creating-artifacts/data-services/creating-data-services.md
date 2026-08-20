@@ -1,3 +1,18 @@
+---
+title: "Creating a data service"
+description: "Provides steps to create a data service artifact, including using a sample template, in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/data-services/creating-data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/data-services/creating-data-services.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Data Service
 
 Follow the instructions given below to create a new data service artifact.
@@ -334,7 +349,7 @@ When generating a data service, the server takes its table structure according t
 datasource and automatically creates the SELECT, INSERT, UPDATE, and DELETE operations.
 
 1. 	Create a datasource project and add a datasource in the current workspace. You can 
-	refer [Creating a Datasource](../../../../integrate/develop/creating-artifacts/data-services/creating-datasources) for more information.
+	refer [Creating a Datasource](creating-datasources) for more information.
 
 2.	In the **New Data Service** wizard that opens, select **Generate Data Service from Datasource** and click **Next**.
 	  <a href="../../../../../assets/img/integrate/tutorials/data_services/generate_dataservice.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/generate_dataservice.png" width="700"></a>

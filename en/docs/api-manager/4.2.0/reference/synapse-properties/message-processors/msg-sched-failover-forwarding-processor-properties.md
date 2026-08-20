@@ -1,3 +1,18 @@
+---
+title: "Scheduled failover message forwarding processor"
+description: "Reference for the properties used to configure a Scheduled Failover Message Forwarding Processor for reliable delivery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-processors/msg-sched-failover-forwarding-processor-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-processors/msg-sched-failover-forwarding-processor-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Scheduled Failover Message Forwarding Processor
 ## Introduction
 The scheduled failover message forwarding processor ensures reliable message delivery. This helps ensure guaranteed message delivery even when there is a failure in the message store.</br></br>
@@ -9,7 +24,7 @@ See the topics given below for the list of properties that can be configured for
 
 ### Required Properties
 
-Following are the required parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor/):
+Following are the required parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor):
 
 <table>
    <tr>
@@ -44,7 +59,7 @@ Following are the required parameters you can set when [adding a Scheduled Messa
 
 ### Optional Properties
 
-Following are the additional parameters you can set when [adding a Scheduled Failover Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor/):
+Following are the additional parameters you can set when [adding a Scheduled Failover Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor):
 
 <table>
    <thead>

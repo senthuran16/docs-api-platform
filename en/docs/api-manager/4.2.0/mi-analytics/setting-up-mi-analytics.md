@@ -1,3 +1,17 @@
+---
+title: "Set up MI analytics"
+description: "Set up the deprecated MI Analytics server and portal to process and display Micro Integrator statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/setting-up-mi-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/setting-up-mi-analytics.md
+tags:
+  - api-manager
+  - mi-analytics
+  - setting-up-mi-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Set up MI Analytics
 
 !!! note
@@ -144,6 +158,7 @@ Follow the steps below to enable statistics for the **endpoint** artifacts:
 
 You can send events to multiple Analytics servers either by sending the same event to many Analytics servers or by load balancing events among a set of servers. This handles the failover problem. When events are load balanced within a set of servers and if one receiver cannot be reached, events are automatically sent to the other available and active Analytics servers.
 
+<a name="load-balancing-across-a-group-of-servers"></a>
 #### Load balancing across a group of servers 
 
 To configure this setup, configure the Analytics receiver URL specified in the Micro Integrator as a comma-separated list of Analytics servers. 
@@ -253,4 +268,4 @@ ei_analytics.password = "admin"
 
 ## What's Next?
 
-If you have successfully set up your analytics deployment, see the instructions on [using the analytics portal](../observe/mi-observe/using-the-analytics-dashboard).
+If you have successfully set up your analytics deployment, see the instructions on [using the analytics portal](using-the-analytics-dashboard).

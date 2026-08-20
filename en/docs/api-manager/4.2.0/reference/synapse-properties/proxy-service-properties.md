@@ -1,19 +1,34 @@
+---
+title: "Proxy services"
+description: "Reference for the properties used when creating a proxy service, a virtual service that mediates and forwards messages to a backend endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/proxy-service-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/proxy-service-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - proxy-service-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Proxy Services
 ## Introduction
 
 Proxy services are virtual services that receive messages and optionally process them before forwarding them to a service at a given endpoint. This approach allows you to perform necessary transformations and introduce additional functionality without changing your existing service. 
 
-Just as [REST APIs](../../reference/synapse-properties/rest-api-properties) and [Inbound Endpoints](../../reference/synapse-properties/inbound-endpoints/about-inbound-endpoints), the proxy service uses [mediators](../../reference/mediators/about-mediators) and [sequences](../../reference/synapse-properties/sequence-properties) to define the mediation logic for processing messages. You can also enabling WS-Security to a proxy service, so that it serves as a security gateway to your actual services. The [In](../../reference/synapse-properties/sequence-properties/#inout-sequences) sequence handles incoming requests and sends them to the back-end service, and the [Out](../../reference/synapse-properties/sequence-properties/#inout-sequences) sequence handles the responses from the back-end service and sends them to the requesting client. You can also define a [fault sequence](../../reference/synapse-properties/sequence-properties#fault-sequences) to handle any errors that may occur while mediating a message through a resource.
+Just as [REST APIs](rest-api-properties) and [Inbound Endpoints](inbound-endpoints/about-inbound-endpoints), the proxy service uses [mediators](../mediators/about-mediators) and [sequences](../../reference/synapse-properties/sequence-properties) to define the mediation logic for processing messages. You can also enabling WS-Security to a proxy service, so that it serves as a security gateway to your actual services. The [In](../../reference/synapse-properties/sequence-properties/#inout-sequences) sequence handles incoming requests and sends them to the back-end service, and the [Out](../../reference/synapse-properties/sequence-properties/#inout-sequences) sequence handles the responses from the back-end service and sends them to the requesting client. You can also define a [fault sequence](../../reference/synapse-properties/sequence-properties#fault-sequences) to handle any errors that may occur while mediating a message through a resource.
 
 Any available transport can be used to receive and send messages from the proxy services. A proxy service is externally visible and can be accessed using a URL similar to a normal web service address.
 
 ## Properties
 
-See the topics given below for the list of properties that can be configured when [creating a proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service/).
+See the topics given below for the list of properties that can be configured when [creating a proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service).
 
 ### General Properties
 
-Listed below are the main properties that are required when [creating a proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service/) of any type.
+Listed below are the main properties that are required when [creating a proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service) of any type.
 
 <table>
   <tr>
@@ -46,7 +61,7 @@ Listed below are the main properties that are required when [creating a proxy se
 
 ### Logging Properties
 
-The following properties are required when [creating a logging proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service/):
+The following properties are required when [creating a logging proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service):
 
 <table>
   <tr>
@@ -97,7 +112,7 @@ The following properties are required when [creating a logging proxy service](..
 
 ### WSDL Properties
 
-The following properties are required when [creating a WSDL-based proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service/):
+The following properties are required when [creating a WSDL-based proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service):
 
 <table>
   <tr>
@@ -138,7 +153,7 @@ The following properties are required when [creating a WSDL-based proxy service]
 
 ### Transformer Proxy Properties
 
-The following properties are required when [creating a transformer proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service/):
+The following properties are required when [creating a transformer proxy service](../../integrate/develop/creating-artifacts/creating-a-proxy-service):
 
 <table>
   <tr>
@@ -177,14 +192,14 @@ The following properties are required when [creating a transformer proxy service
 
 - See the list of transport parameters you can configure at service level for a proxy service:
 
-    - [JMS properties](../../reference/synapse-properties/transport-parameters/jms-transport-parameters)
-    - [MailTo properties](../../reference/synapse-properties/transport-parameters/mailto-transport-parameters)
-    - [MQTT properties](../../reference/synapse-properties/transport-parameters/mqtt-transport-parameters)
-    - [RabbitMQ properties](../../reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters)
-    - [VFS properties](../../reference/synapse-properties/transport-parameters/vfs-transport-parameters)
-    - [Fix properties](../../reference/synapse-properties/transport-parameters/fix-transport-parameters)
+    - [JMS properties](transport-parameters/jms-transport-parameters)
+    - [MailTo properties](transport-parameters/mailto-transport-parameters)
+    - [MQTT properties](transport-parameters/mqtt-transport-parameters)
+    - [RabbitMQ properties](transport-parameters/rabbitmq-transport-parameters)
+    - [VFS properties](transport-parameters/vfs-transport-parameters)
+    - [Fix properties](transport-parameters/fix-transport-parameters)
 
-  - You can also configure the following service-level property to expose an [Inbound Endpoint](../../reference/synapse-properties/inbound-endpoints/about-inbound-endpoints) through a proxy service:
+  - You can also configure the following service-level property to expose an [Inbound Endpoint](inbound-endpoints/about-inbound-endpoints) through a proxy service:
   <table>
      <tr>
         <th>Service Parameter</th>

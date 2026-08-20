@@ -1,3 +1,18 @@
+---
+title: "Add custom filters"
+description: "Implement and add a custom Java filter to the Choreo Connect Enforcer to extend request processing for all deployed APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/custom-filters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/custom-filters.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Add Custom Filters
 Filters is a set of execution points in the request flow that intercept the request before it goes to the 
 backend service. They are engaged while the request is processed within the enforcer. The defined set of filters 
@@ -113,7 +128,7 @@ the Authentication Filter.
 `docker-compose/resources/enforcer/dropins` directory.)
 
     !!! note 
-         If you use Choreo Connect with Helm Charts, please refer to the documentation in [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/#mount-files-into-the-dropins-directory-optional) to add a JAR file into the dropins directory.
+         If you use Choreo Connect with Helm Charts, please refer to the documentation in [here](../production-deployment-guideline#mount-files-into-the-dropins-directory-optional) to add a JAR file into the dropins directory.
 
 
 7. Deploy the Choreo Connect distribution and the filter would be engaged during runtime.

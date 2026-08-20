@@ -1,3 +1,18 @@
+---
+title: "Detecting repeatedly redelivered messages"
+description: "Detect and reroute repeatedly redelivered JMS messages using the JMSXDeliveryCount property in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/detecting-repeatedly-redelivered-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/detecting-repeatedly-redelivered-messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Detecting Repeatedly Redelivered Messages
 
 In JMS 2.0, it is mandatory for JMS providers to set the `JMSXDeliveryCount` property, which allows an application that receive a message to determine how many times the message is redelivered.
@@ -110,14 +125,14 @@ See the descriptions of the above configurations:
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [inbound endpoint](../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint), [registry artifact](../../../integrate/develop/creating-artifacts/creating-registry-resources), [scheduled task](../../../integrate/develop/creating-artifacts/creating-scheduled-task), and [sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint), [registry artifact](../../develop/creating-artifacts/creating-registry-resources), [scheduled task](../../develop/creating-artifacts/creating-scheduled-task), and [sequences](../../develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the broker:
 
-1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-jms-transport) with your Micro Integrator instance. Let's use HornetQ for this example.
+1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-jms-transport) with your Micro Integrator instance. Let's use HornetQ for this example.
 2.  Start HornetQ with the following command:             
     -   On **Windows**: HORNETQ_HOME\bin\run.bat --run
     -   On **MacOS/Linux/Solaris**: sh HORNETQ_HOME/bin/run.sh

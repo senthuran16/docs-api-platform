@@ -1,3 +1,18 @@
+---
+title: "Setting up the ServiceNow instance"
+description: "Sign up for ServiceNow, request a developer instance, and obtain the credentials needed for the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/servicenow-connector/settingup-servicenow-instance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/servicenow-connector/settingup-servicenow-instance.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - servicenow-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the ServiceNow Instance
 
 The ServiceNow connector allows you to access the ServiceNow REST API from an integration sequence. To use the REST API, we need to have a [ServiceNow](https://www.servicenow.com/) account. 

@@ -1,3 +1,18 @@
+---
+title: "Installing WSO2 integration studio"
+description: "Lists the installation prerequisites and steps for installing and running WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/installing-wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/installing-wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - installing-wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing WSO2 Integration Studio
 
 WSO2 Integration Studio provides a comprehensive development experience for building integration solutions.
@@ -66,6 +81,6 @@ MacOS security settings as described below.
 
 ## What's next?
 
--   Take a [quick tour](../../integrate/develop/wso2-integration-studio) of the WSO2 Integration Studio interface.
--   [Build a simple integration use case](../../integrate/develop/integration-development-kickstart) to get familiar with the development workflow. 
--   Build [integration use cases](../../integrate/integration-overview) with WSO2 Integration Studio.
+-   Take a [quick tour](wso2-integration-studio) of the WSO2 Integration Studio interface.
+-   [Build a simple integration use case](integration-development-kickstart) to get familiar with the development workflow. 
+-   Build [integration use cases](../integration-overview) with WSO2 Integration Studio.

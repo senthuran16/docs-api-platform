@@ -1,16 +1,31 @@
+---
+title: "Converting POX messages to JSON"
+description: "Convert POX messages to JSON using the messageType property and other transformation methods in a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_transformation_examples/pox-to-json-conversion/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_transformation_examples/pox-to-json-conversion.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_transformation_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Converting POX Messages to JSON 
 
 The following examples explain different methods of converting POX messages to JSON using the Micro Integrator.
 
 ## Using the messageType property
 
-Let's convert a POX message to JSON using the [messageType property](../../../reference/mediators/property-reference/generic-Properties#messagetype).
+Let's convert a POX message to JSON using the [messageType property](../../../reference/mediators/property-reference/generic-properties#messagetype).
 
 ### Synapse configuration
 Following is a sample proxy service configuration that we can use to implement this scenario. 
 
 !!! Tip
-    Note that after the [messageType property](../../../reference/mediators/property-reference/generic-Properties#messagetype) completes the message convertion, we are using the [Respond mediator](../../../reference/mediators/respond-mediator) to return the converted message back to the JSON client.
+    Note that after the [messageType property](../../../reference/mediators/property-reference/generic-properties#messagetype) completes the message convertion, we are using the [Respond mediator](../../../reference/mediators/respond-mediator) to return the converted message back to the JSON client.
 
 See the instructions on how to [build and run](#build-and-run-example-1) this example.
 
@@ -36,10 +51,10 @@ See the instructions on how to [build and run](#build-and-run-example-1) this ex
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Invoke the proxy service:
 
@@ -154,10 +169,10 @@ See the instructions on how to [build and run](#build-and-run-example-2) this ex
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Invoke the proxy service:
 

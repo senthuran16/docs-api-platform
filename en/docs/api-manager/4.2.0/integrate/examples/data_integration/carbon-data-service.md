@@ -1,3 +1,18 @@
+---
+title: "Exposing a carbon datasource as a data service"
+description: "Demonstrates how to expose a persistent carbon datasource created in the Micro Integrator as a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/carbon-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/carbon-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a Carbon Datasource as a Data Service
 
 A Carbon datasource is an RDBMS or a custom datasource created using the
@@ -64,16 +79,16 @@ Given below is the data service configuration you need to build. See the instruc
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
 2.  Download the JDBC driver for MySQL from [here](http://dev.mysql.com/downloads/connector/j/) and copy it to the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/lib/` (for MacOS) or 
 `MI_TOOLING_HOME/runtime/microesb/lib/` (for Windows) directory. 
 
     !!! Note
         If the driver class does not exist in the relevant folders when you create the datasource, you will get an exception such as `Cannot load JDBC driver class com.mysql.jdbc.Driver`.
         
-3. [Create a Datasource project](../../../integrate/develop/create-datasources) and then [create a datasource](../../../integrate/develop/creating-artifacts/data-services/creating-datasources).
-4. [Create a Data Service project](../../../integrate/develop/create-data-services-configs) and then [create the data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator. 
+3. [Create a Datasource project](../../develop/create-datasources) and then [create a datasource](../../develop/creating-artifacts/data-services/creating-datasources).
+4. [Create a Data Service project](../../develop/create-data-services-configs) and then [create the data service](../../develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator. 
 
 The service can be invoked in REST-style via curl (
 [http://curl.haxx.se](http://curl.haxx.se/) ). Shown below is the curl

@@ -1,3 +1,18 @@
+---
+title: "Working with employee pay grade rates"
+description: "Retrieve an employee's pay grade rates related to their position rate policies using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeepaygraderates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeepaygraderates.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Pay Grade Rates
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve pay rates of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-pay-grade-rates"></a>
 #### Retrieving Employee Pay Grade Rates
 We can use GET Employee Pay Grade Rates operation with required parameters to find the pay rates of an employee.
 

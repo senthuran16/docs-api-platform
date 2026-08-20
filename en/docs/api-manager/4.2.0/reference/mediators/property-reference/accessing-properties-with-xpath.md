@@ -1,3 +1,18 @@
+---
+title: "Accessing properties with XPath"
+description: "Reference for the custom XPath extension functions and variables the Micro Integrator provides for accessing message properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/accessing-properties-with-xpath/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/accessing-properties-with-xpath.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Accessing Properties with XPath
 
 The WSO2 Micro Integrator supports standard XPath functions and variables through its underlying XPath engine. It supports XPath 1.0 by default where as the support for XPath 2.0 can be introduced by adding the following property in <MI_HOME>/conf/deployment.toml.
@@ -38,7 +53,7 @@ Syntax:
 
 ### get-property() function
 
-The `get-property()` function allows any XPath expression used in a configuration to look up information from the current message context. Using the [Property mediator](../../../reference/mediators/property-Mediator), you can retrieve properties from the message context and header.
+The `get-property()` function allows any XPath expression used in a configuration to look up information from the current message context. Using the [Property mediator](../../../reference/mediators/property-mediator), you can retrieve properties from the message context and header.
 
 The syntax of the function takes the following format.
 
@@ -55,7 +70,7 @@ If you provide only the property name without the scope, the default s
     When the result of an XPath evaluation results in a single XML node, the
     evaluator will return the text content of this node by default
     (equivalent of doing /root/body/node/text()). If you want to retrieve
-    the node itself, you can configure the [Enrich mediator](../../../reference/mediators/enrich-Mediator) as shown
+    the node itself, you can configure the [Enrich mediator](../../../reference/mediators/enrich-mediator) as shown
     in the following example.
     ``` xml
     <inSequence>
@@ -104,7 +119,7 @@ scope.
 | OperationName   | Operation name corresponding to the message. A proxy service with a WSDL can have different operations. If the WSDL is not defined, ESB defines fixed operations. |
 
   
-To access a property with the `         synapses        ` cope inside the `         mediate()        ` method of a mediator, you can include the following configuration in a custom mediator created using the [Class mediator](../../../reference/mediators/class-Mediator):
+To access a property with the `         synapses        ` cope inside the `         mediate()        ` method of a mediator, you can include the following configuration in a custom mediator created using the [Class mediator](../../../reference/mediators/class-mediator):
 
 ``` java
 public boolean mediate(org.apache.synapse.MessageContext mc) {  
@@ -127,7 +142,7 @@ using the following syntax.
 Syntax:  
 `         get-property('axis2', String propertyName)        `
 
-To access a property with the `axis2` scope inside the `mediate()` method of a mediator, you can include the following configuration in a custom mediator created using the [Class mediator](../../../reference/mediators/class-Mediator):
+To access a property with the `axis2` scope inside the `mediate()` method of a mediator, you can include the following configuration in a custom mediator created using the [Class mediator](../../../reference/mediators/class-mediator):
 
 ``` java
 public boolean mediate(org.apache.synapse.MessageContext mc) {  
@@ -147,7 +162,7 @@ This is similar to the `         synapse                          `
 scope. The difference is that it can be accessed inside the
 `         mediate()        ` method of a mediator by including one of
 the following configurations in a custom mediator, created using the
-[Class mediator](../../../reference/mediators/class-Mediator) :
+[Class mediator](../../../reference/mediators/class-mediator) :
 
 ``` java
 public boolean mediate(org.apache.synapse.MessageContext mc) {  
@@ -216,7 +231,7 @@ given property with the `         operation        ` scope only exists
 in a single request and can be accessed by a single resource. The
 properties in this scope are passed to the error handler when the
 `         FORCE_ERROR_ON_SOAP_FAULT        ` property is set to
-`         true        ` . See `FORCE_ERROR_ON_SOAP_FAULT` section in [Generic Properties](../../../reference/mediators/property-reference/generic-properties/) for more information.
+`         true        ` . See `FORCE_ERROR_ON_SOAP_FAULT` section in [Generic Properties](generic-properties) for more information.
 
 Syntax:  
 `         get-property('operation', String propertyName)        `
@@ -290,7 +305,7 @@ below.
 
 **Example of $header usage** :
 
-1.  Deploy the following proxy service using instructions in [Creating a Proxy Service](../../../develop/creating-artifacts/creating-a-proxy-service).  
+1.  Deploy the following proxy service using instructions in [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service).  
       
     Note the property, `           <property xmlns:wsa="                                                  http://www.w3.org/2005/08/addressing                                               " name="stockprop" expression="$header/wsa:To"/>          ` in the configuration. It is used to log the value of **wsa:To**
     header of the SOAP request.
@@ -339,7 +354,7 @@ example below.
 
 **Example of $axis2 usage** :
 
-1.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../develop/creating-artifacts/creating-a-proxy-service).  
+1.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service).  
       
     Note the property, `           <property name="stockprop" expression="$axis2:REST_URL_POSTFIX"/>          ` in the configuration which is used to log the REST_URL_POSTFIX
     value of the request message.
@@ -394,7 +409,7 @@ This example sends a request to a sample proxy service, and sets the
 target endpoint to a non-existent endpoint reference key. It causes a
 mediation fault, which triggers the fault sequence.
 
-1.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../develop/creating-artifacts/creating-a-proxy-service).  
+1.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service).  
       
     Note the property, `<property name="stockerrorprop" expression="$ctx:ERROR\_MESSAGE"/\>` in the fault sequence configuration. It is used to log the error message that occurs due to a  mediation fault.
 
@@ -437,7 +452,7 @@ name="stockerrorprop" expression="$ctx:ERROR\_MESSAGE"/\> is equivalent
 to \<property name="stockerrorprop"
 expression="get-property('ERROR\_MESSAGE')"/\>.  
   
-Similarly, you can use $ctx prefix with [Generic Properties](../../../reference/mediators/property-reference/generic-properties/) .
+Similarly, you can use $ctx prefix with [Generic Properties](generic-properties) .
 
 ### $trp
 
@@ -449,7 +464,7 @@ regarded as the same. We have discussed an example below.
 
 **Example of $trp usage:**
 
-1.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../develop/creating-artifacts/creating-a-proxy-service).  
+1.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service).  
       
     Note the property, \<property name="stockprop"
     expression="$trp:Content-Type"/\> in the configuration, which is
@@ -492,7 +507,7 @@ In this example, the property definition, \<property name="stockprop"
 expression="$trp:Content-Type"/\> is equivalent to \<property
 name="stockprop"
 expression="get-property('transport','Content-Type')"/\>. Similarly, you
-can use $trp prefix with [HTTP Transport Properties](../../../reference/mediators/property-reference/http-transport-properties) .
+can use $trp prefix with [HTTP Transport Properties](http-transport-properties) .
 
 ### $url
 
@@ -500,7 +515,7 @@ The prefix used to get the URI element of a request URL.
 
 **Example of $url usage:**
 
-1.  Create a REST API with the following configuration using instructions given in page [Working with APIs](../../../develop/creating-artifacts/creating-an-api.md).
+1.  Create a REST API with the following configuration using instructions given in page [Working with APIs](../../../integrate/develop/creating-artifacts/creating-an-api).
 
     ``` xml
     <api xmlns="http://ws.apache.org/ns/synapse" name="Editing" context="/editing">
@@ -533,11 +548,11 @@ The prefix used to get the URI element of a request URL.
 
 The prefix used to refer to a particular parameter value passed
 externally by an invoker such as the [Call Template
-Mediator](../../../reference/mediators/call-template-mediator/) .
+Mediator](../call-template-mediator) .
 
 **Example of $func usage:**
 
-1.  Add a sequence template with the following configuration. See [Adding a New Sequence Template](../../../develop/creating-artifacts/creating-reusable-sequences) for detailed instructions.
+1.  Add a sequence template with the following configuration. See [Adding a New Sequence Template](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) for detailed instructions.
 
     ``` xml
     <template xmlns="http://ws.apache.org/ns/synapse" name="HelloWordLogger">
@@ -549,7 +564,7 @@ Mediator](../../../reference/mediators/call-template-mediator/) .
     </template>
     ```
 
-2.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../develop/creating-artifacts/creating-a-proxy-service).
+2.  Deploy the following proxy service. For instructions, see [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service).
 
     ``` xml
     <proxy xmlns="http://ws.apache.org/ns/synapse"

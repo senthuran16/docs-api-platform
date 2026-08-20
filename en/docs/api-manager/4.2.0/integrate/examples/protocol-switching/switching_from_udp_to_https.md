@@ -1,3 +1,18 @@
+---
+title: "Switching from UDP to HTTP/S"
+description: "Configure a proxy service that receives SOAP messages over UDP and forwards them to a backend over HTTP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_udp_to_https/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_udp_to_https.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from UDP to HTTP/S
 
 This example demonstrates how WSO2 Micro Integrator receives SOAP messages over UDP and forwards them over HTTP.
@@ -30,11 +45,11 @@ Following are the integration artifacts (proxy service) that we can used to impl
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../../integrate/develop/creating-artifacts/creating-registry-resources) (change the registry path of the proxy accordingly). 
-4. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../develop/creating-artifacts/creating-registry-resources) (change the registry path of the proxy accordingly). 
+4. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 
@@ -54,7 +69,7 @@ https://github.com/wso2-docs/WSO2_EI/blob/master/Back-End-Service/axis2Server.zi
         axis2server.bat
         ```
 
-[Enable the UDP transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-udp-transport) and start the Micro-Integrator.
+[Enable the UDP transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-udp-transport) and start the Micro-Integrator.
 
 Send the following message via UDP to the UDP listener port (9999).
 ```xml

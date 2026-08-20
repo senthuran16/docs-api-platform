@@ -1,3 +1,18 @@
+---
+title: "Switch from FIX to AMQP"
+description: "Configure a proxy service that receives FIX messages and forwards them to a backend over AMQP using JMS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_fix_to_amqp/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_fix_to_amqp.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switch from FIX to AMQP
 
 This example demonstrates how WSO2 Micro Integrator receives messages through FIX and forwards them through AMQP.
@@ -31,13 +46,13 @@ Following are the integration artifacts (proxy service) that we can used to impl
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
 4. Download the FIX transport resources from [here](https://github.com/wso2-docs/WSO2_EI/tree/master/FIX-transport-resources) and change the `{file_path}` of the proxy with the downloaded location.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
-[Enable the FIX transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-fix-transport) and start the Micro-Integrator.
+[Enable the FIX transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-fix-transport) and start the Micro-Integrator.
 
 Run the quickfixj **Banzai** sample application.
 

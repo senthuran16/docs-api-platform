@@ -1,19 +1,34 @@
+---
+title: "Configuring timeouts in Choreo connect"
+description: "Reference the endpoint level and global level timeout settings that control how long Choreo Connect waits for backend responses."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuring Timeouts in Choreo Connect
 
 You can use timeouts to gracefully handle connections that take an unusual amount of time to respond. Timeouts mainly ensure that the client gets a success or an error response within the specified amount of time, and thereby the client does not hang indefinitely. Timeouts also enable both the client and the backend to free its resources, allocated for the connection, within the time gap defined.
 
 Timeouts can be defined at two levels.
 
-- [Endpoint Level](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout/#endpoint-level-upstream-timeouts) 
+- [Endpoint Level](timeout#endpoint-level-upstream-timeouts) 
     - Only upstream timeouts can be defined at this level
     - Must be explicitly defined
-- [Global Level](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout/#global-level-timeouts)
+- [Global Level](timeout#global-level-timeouts)
     - Multiple types of timeouts including upstream timeout can be defined
     - If not specified, default values are assigned 
 
 ## Endpoint Level Upstream Timeouts
 
-You can define the Endpoint Level Upstream Timeout in the `x-wso2-production-endpoint` and/or `x-wso2-sandbox-endpoint` OpenAPI extension of the API's OpenAPI definition, based on the endpoint type (i.e., production or sandbox), when [deploying an API **via the apictl (CLI Tool)**](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/#choreo-connect-as-a-standalone-gateway/).
+You can define the Endpoint Level Upstream Timeout in the `x-wso2-production-endpoint` and/or `x-wso2-sandbox-endpoint` OpenAPI extension of the API's OpenAPI definition, based on the endpoint type (i.e., production or sandbox), when [deploying an API **via the apictl (CLI Tool)**](../../deploy-api/deploy-rest-api-in-choreo-connect#via-apictl-for-standalone-mode).
 
 === "Production Endpoint"
     ``` bash
@@ -69,7 +84,8 @@ The following is a list of the Global Level Timeouts that you can set in Choreo 
 
 Follow the instructions below to define Global Level Timeouts:
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
 2. Use the following configurations to define the Global Level Timeouts.
 
@@ -103,7 +119,7 @@ clusterTimeoutInSeconds = 20
 | maxRouteTimeoutInSeconds | Maximum value accepted as the Endpoint Level Upstream Timeout. If a larger Route Timeout value is set at the endpoint level using the `timeoutInMillis` configuration, the `maxRouteTimeoutInSeconds` value will override the latter mentioned Endpoint Level Upstream Timeout value. |
 | routeIdleTimeoutInSeconds | The backend (upstream) connection idle timeout. The amount of time the request’s stream may be idle. |
 
-For more information with regard to the latter mentioned configurations with regard to the Global Level Timeouts, see [Router](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/router-configurations/#router), [Connection Timeout](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/router-configurations/#connection-timeout), and [Upstream Timeout](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/router-configurations/#upstream-timeout).
+For more information with regard to the latter mentioned configurations with regard to the Global Level Timeouts, see [Router](../../configurations/router-configurations#router), [Connection Timeout](../../configurations/router-configurations#connection-timeout), and [Upstream Timeout](../../configurations/router-configurations#upstream-timeout).
 
 !!! Info
 
@@ -121,5 +137,5 @@ For more information with regard to the latter mentioned configurations with reg
 
 ## See Also
 
-- [Circuit Breakers](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/circuit-breakers)
+- [Circuit Breakers](circuit-breakers)
 

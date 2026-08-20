@@ -1,3 +1,18 @@
+---
+title: "Gmail connector overview"
+description: "Learn how the Gmail connector sends, reads, and manages emails and drafts through the Gmail REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/gmail-connector/gmail-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/gmail-connector/gmail-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Gmail Connector Overview
 
 Gmail is a free, Web-based e-mail service provided by Google. It allows you to send, read, and delete emails through the Gmail REST API. Furthermore, it provides the ability to read, trash, untrash, and delete threads, create, update, and delete drafts, get the Gmail profile, and access the mailbox history as well, while handling OAuth 2.0 authentication.
@@ -16,11 +31,11 @@ For older versions, see the details in the connector store.
 
 ## Gmail Connector documentation
 
-* **[Creating the Client ID and Client Secret](../../../reference/connectors/gmail-connector/configuring-gmail-api/)**: You need to first create Gmail credentials for the connector to use in order to interact with Gmail.
+* **[Creating the Client ID and Client Secret](configuring-gmail-api)**: You need to first create Gmail credentials for the connector to use in order to interact with Gmail.
 
-* **[Gmail Connector Example](../../../reference/connectors/gmail-connector/gmail-connector-example/)**: This example demonstrates a scenario where a customer feedback Gmail account of a company can be easily managed using the WSO2 Gmail Connector. 
+* **[Gmail Connector Example](gmail-connector-example)**: This example demonstrates a scenario where a customer feedback Gmail account of a company can be easily managed using the WSO2 Gmail Connector. 
 
-* **[Gmail Connector Reference](../../../reference/connectors/gmail-connector/gmail-connector-config/)**: This documentation provides a reference guide for the Gmail Connector.
+* **[Gmail Connector Reference](gmail-connector-config)**: This documentation provides a reference guide for the Gmail Connector.
 
 ## How to contribute
 

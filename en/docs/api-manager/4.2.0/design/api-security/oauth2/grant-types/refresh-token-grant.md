@@ -1,3 +1,18 @@
+---
+title: "Refresh token grant"
+description: "Use the OAuth2 refresh token grant to renew an expired access token via the Token API, and revoke refresh tokens using the Revoke API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/refresh-token-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/refresh-token-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Refresh Token Grant
 
 The refresh token grant can be used when the current access token is expired or when a new access token is needed. With this grant type, the refresh token acts as a credential and is issued to the client by the authorization server. Issuing a refresh token is optional and if the authorization server issues a refresh token, it is included when issuing an access token. WSO2 Identity Server issues refresh tokens for all other grant types other than the **implicit and client credentials grant types**, as recommended by the OAuth 2.0 specification.
@@ -6,6 +21,7 @@ The refresh token grant can be used when the current access token is expired or 
     
     This refresh token needs to be kept private, similar to the access token. When using this token, keep in mind that it issues the access token without a user interaction.
 
+<a name="flow"></a>
 #### Flow
 
 After an access token is generated, sometimes you might have to renew the old token due to expiration or security concerns. You can renew an access token using a refresh token, by issuing a REST call to the Token API with the following parameters.
@@ -74,6 +90,7 @@ The above REST response grants you a renewed access token along with a refresh t
 
 After issuing an access token and refresh token, a user or an admin can revoke it in case of theft or a security violation. You can do this by calling the Revoke API using a utility like cURL. The Revoke API's endpoint URL is `https://localhost:9443/oauth2/revoke`.
 
+<a name="option-1"></a>
 #### Option 1
 
 The parameters required to invoke the following API are as follows:
@@ -118,6 +135,7 @@ The parameters required to invoke the following API are as follows:
 < Server: WSO2 Carbon Server
 ```
 
+<a name="option-2"></a>
 #### Option 2
 
 The parameters required to invoke the following API are as follows:

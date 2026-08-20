@@ -1,3 +1,18 @@
+---
+title: "Switching from FTP listener to mail sender"
+description: "Configure a proxy service that receives messages via the FTP transport listener and forwards them by email."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_ftp_listener_to_mail_sender/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_ftp_listener_to_mail_sender.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from FTP Listener to Mail Sender
 
 This example demonstrates how WSO2 Micro Integrator receives messages through the FTP transport listener and forwards the messages through the mail transport sender.
@@ -40,12 +55,12 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../../integrate/develop/creating-artifacts/creating-registry-resources) (change the registry path of the proxy accordingly). 
-4. Create the proxy service with the [VFS configurations parameters given above](../../../reference/config-catalog/#vfs-transport).
-5. Configure [MailTo transport sender](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-mailto-transport).
-6. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator and start the Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../develop/creating-artifacts/creating-registry-resources) (change the registry path of the proxy accordingly). 
+4. Create the proxy service with the [VFS configurations parameters given above](../../../reference/config-catalog#vfs-transport).
+5. Configure [MailTo transport sender](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-mailto-transport).
+6. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator and start the Micro Integrator.
 
 Set up the back-end service.
 

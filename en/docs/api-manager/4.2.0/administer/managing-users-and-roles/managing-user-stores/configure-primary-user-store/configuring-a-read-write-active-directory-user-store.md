@@ -1,3 +1,18 @@
+---
+title: "Configure a read-write Active Directory user store"
+description: "Configure an external read-write Active Directory as the primary user store in WSO2 API Manager via deployment.toml properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 #Configuring a Read-Write Active Directory User Store
 
 Follow the given steps to configure an external Active Directory as the primary user store:
@@ -126,7 +141,7 @@ Given below is a sample configuration for the external read/write user store in 
 !!! note
     When working with Active Directory;
 
-    -   It is best to enable the `GetAllRolesOfUserEnabled` property in the `AuthorizationManager` as follows. See the documentation on [configuring the Authorization Manager](../../../../administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager) for more information.
+    -   It is best to enable the `GetAllRolesOfUserEnabled` property in the `AuthorizationManager` as follows. See the documentation on [configuring the Authorization Manager](../configuring-the-authorization-manager) for more information.
 
         ``` xml
         <AuthorizationManager class="org.wso2.carbon.user.core.authorization.JDBCAuthorizationManager">
@@ -200,7 +215,7 @@ Given below is a sample configuration for the external read/write user store in 
         
 ### Step 2: Updating the system administrator
 
-The **admin** user is the super tenant that will be able to manage all other users, roles and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the Active Directory user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the user store. For more information on setting up the [system administrator](../../../../administer/managing-users-and-roles/managing-user-stores/configuring-the-system-administrator) and the [authorization manager](../../../..//administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager) .
+The **admin** user is the super tenant that will be able to manage all other users, roles and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the Active Directory user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the user store. For more information on setting up the [system administrator](../configuring-the-system-administrator) and the [authorization manager](../configuring-the-authorization-manager) .
 
 -   These two alternative configurations can be done as explained below.
 

@@ -1,14 +1,29 @@
+---
+title: "Creating Kubernetes exporter"
+description: "Provides steps to create a Kubernetes exporter project for deploying integration solutions to a Kubernetes environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/create-kubernetes-project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/create-kubernetes-project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-kubernetes-project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating Kubernetes Exporter
 
 Create a Kubernetes Exporter if you want to deploy your integration solutions in a Kubernetes environment. 
 
-The Kubernetes Exporter allows you to package multiple [integration modules](../../integrate/develop/create-integration-project) into a single Docker image. Also, a file named **integration_cr.yaml** is generated, which can be used to carry out Kubernetes deployments based on the [API K8s Operator](../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments/).
+The Kubernetes Exporter allows you to package multiple [integration modules](create-integration-project) into a single Docker image. Also, a file named **integration_cr.yaml** is generated, which can be used to carry out Kubernetes deployments based on the [API K8s Operator](../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments).
 
 ## Creating the Kubernetes project
 
 Follow the steps given below.   
 
-1. [Create a new integration project](../../integrate/develop/create-integration-project) and create a Kubernetes Exporter project by doing one of the following.
+1. [Create a new integration project](create-integration-project) and create a Kubernetes Exporter project by doing one of the following.
 
     1. As part of creating an integration project, you can select the **Kubernetes Exporter** check box.
 
@@ -226,7 +241,7 @@ Expand the **Kubernetes Exporter** in the project explorer. See that the followi
 
 Before you begin:
 
--   Create your integration artifacts in an [ESB Config sub project](../../integrate/develop/create-integration-project/#sub-projects) and package the artifacts in a [Composite Exporter](../../integrate/develop/packaging-artifacts). For example, see the HelloWorld sample given below.
+-   Create your integration artifacts in an [ESB Config sub project](create-integration-project#sub-projects) and package the artifacts in a [Composite Exporter](packaging-artifacts). For example, see the HelloWorld sample given below.
 
     <img alt="Integration artifacts for Docker" src="../../../assets/img/integrate/create_project/docker_k8s_project/integration-projects-for-k8s.png" width="300">
 

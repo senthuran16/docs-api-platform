@@ -1,3 +1,18 @@
+---
+title: "Configuring logs"
+description: "Configure Log4j2 loggers, appenders, and layouts in the Micro Integrator's log4j2.properties file to control server-side logging."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuring Logs
 
 ## Introduction
@@ -208,7 +223,7 @@ This logger generates logs for APIs deployed in the Micro Integrator. It refers 
     logger.API_LOG.name=API_LOGGER.TestAPI
     ```
 
-    See the instructions on [monitoring per-API logs](../../../integrate/develop/monitoring-api-level-logs/).
+    See the instructions on [monitoring per-API logs](../../../integrate/develop/monitoring-api-level-logs).
 
 === "API_LOGGER"
       ```xml
@@ -315,7 +330,7 @@ If required, you can change the default HTTP header (which is 'activity_id'), wh
 correlation_header_name="<correlation_id>"
 ```
 
-Once you have configured this logger, see the instructions on [monitoring correlation logs](../../../observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs).
+Once you have configured this logger, see the instructions on [monitoring correlation logs](monitoring-correlation-logs).
 
 ### Message Tracing Logs
 
@@ -641,7 +656,7 @@ You can <b>dynamically</b> update the log level for a specific logger by using t
 
 ### Viewing logs via the dashboard
 
-1.  Sign in to the [Micro Integrator dashboard](../../../observe/mi-observe/working-with-monitoring-dashboard).
+1.  Sign in to the [Micro Integrator dashboard](../../mi-observe/working-with-monitoring-dashboard).
 2.  Click <b>Log Configs</b> on the left-hand navigator to open the <b>Logging Management</b> window.
 
     <img alt="change log level from dashboard" src="../../../../assets/img/integrate/monitoring-dashboard/change-log-level-dashboard.png">
@@ -770,5 +785,5 @@ However, since WSO2 Micro Integrator works in an OSGi environment, such Log4j2 e
 
 ## What's Next?
 
-Once you have configured the logs, you can start [using the logs](../../../observe/micro-integrator/classic-observability-logs/monitoring-logs).
+Once you have configured the logs, you can start [using the logs](monitoring-logs).
 

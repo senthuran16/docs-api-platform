@@ -1,3 +1,18 @@
+---
+title: "OAuth2 grant types"
+description: "Links to the OAuth2 grant types WSO2 API Manager supports for acquiring access tokens, including password, client credentials, and JWT grants."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/overview.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 #OAuth2 Grant Types
 
 
@@ -5,11 +20,11 @@ In OAuth2, the term **Grant Type** refers to the way for a client application to
 
 WSO2 API Manager supports following grant types including the basic grant types offered by OAuth2 framework. 
 
-- [Password Grant](../../../../design/api-security/oauth2/grant-types/password-grant)
-- [Client Credentials Grant](../../../../design/api-security/oauth2/grant-types/client-credentials-grant)
-- [Authorization Code Grant](../../../../design/api-security/oauth2/grant-types/authorization-code-grant)
-- [Refresh Token Grant](../../../../design/api-security/oauth2/grant-types/refresh-token-grant)
-- [JWT Grant](../../../../design/api-security/oauth2/grant-types/jwt-grant)
-- [SAML Extension Grant](../../../../design/api-security/oauth2/grant-types/saml-extension-grant)
-- [Kerberos OAuth2 Grant](../../../../design/api-security/oauth2/grant-types/kerberos-oauth2-grant) 
-- [NTLM Grant](../../../../design/api-security/oauth2/grant-types/ntlm-grant)
+- [Password Grant](password-grant)
+- [Client Credentials Grant](client-credentials-grant)
+- [Authorization Code Grant](authorization-code-grant)
+- [Refresh Token Grant](refresh-token-grant)
+- [JWT Grant](jwt-grant)
+- [SAML Extension Grant](saml-extension-grant)
+- [Kerberos OAuth2 Grant](kerberos-oauth2-grant) 
+- [NTLM Grant](ntlm-grant)

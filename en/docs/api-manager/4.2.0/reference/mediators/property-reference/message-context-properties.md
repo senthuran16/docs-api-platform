@@ -1,12 +1,27 @@
+---
+title: "Synapse message context properties"
+description: "Reference for Synapse message context properties that expose message information such as date, format, and operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/message-context-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/message-context-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Synapse Message Context Properties
 
 !!! Info
-	The following are message context properties that can be used with the [Property mediator](../../../reference/mediators/property-Mediator) and the [Property Group mediator](../../../reference/mediators/property-Group-Mediator).
+	The following are message context properties that can be used with the [Property mediator](../../../reference/mediators/property-mediator) and the [Property Group mediator](../../../reference/mediators/property-group-mediator).
 
 The Synapse message context properties allow you to get information
 about the message, such as the date/time it was sent, the message
 format, and the message operation. You can use the
-`         get-property()        ` function in the [Property mediator](../../../reference/mediators/property-Mediator) with the scope set to
+`         get-property()        ` function in the [Property mediator](../../../reference/mediators/property-mediator) with the scope set to
 `         Synapse        ` to retrieve these properties.
 
 ## SYSTEM_DATE

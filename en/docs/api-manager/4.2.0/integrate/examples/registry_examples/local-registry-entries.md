@@ -1,3 +1,18 @@
+---
+title: "Sequences and endpoints as local registry entries"
+description: "Fetch sequences and endpoints referenced by a proxy service from local registry entries instead of inline configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/registry_examples/local-registry-entries/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/registry_examples/local-registry-entries.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - registry_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Sequences and Endpoints as Local Registry Entries
 This sample demonstrates how sequences and endpoints can be fetched from a local registry.
 
@@ -47,11 +62,11 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create sequence `stockquote` and endpoint `simple` as [local entries](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) with the configurations given above.
-4. Also, create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) `MainProxy` with the configuration given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create sequence `stockquote` and endpoint `simple` as [local entries](../../develop/creating-artifacts/registry/creating-local-registry-entries) with the configurations given above.
+4. Also, create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) `MainProxy` with the configuration given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

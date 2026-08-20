@@ -1,3 +1,18 @@
+---
+title: "Creating a new connector"
+description: "Walks through writing a new connector, using a Google Books example, when existing connectors do not meet a requirement."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/customizations/creating-new-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/customizations/creating-new-connector.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a New Connector
 
 You can write a new connector for a specific requirement that cannot be addressed via any of the existing connectors that can be downloaded from the [connector store](https://store.wso2.com/store/pages/top-assets).
@@ -93,13 +108,13 @@ Now, let's look at how you can use the new connector in a mediation sequence.
 
 ### Step 1: Adding the connector to your mediation sequence
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an ESB Config project](../../../integrate/develop/create-integration-project) and [import the connector](../../../integrate/develop/creating-artifacts/adding-connectors/#importing-connectors) to your project.
+1. [Set up WSO2 Integration Studio](../installing-wso2-integration-studio).
+2. [Create an ESB Config project](../create-integration-project) and [import the connector](../creating-artifacts/adding-connectors#importing-connectors) to your project.
 
     !!! Tip
         Be sure to select the new `googleBooks-connector-1.0.0.zip` file from your `org.wso2.carbon.esb.connector.googlebooks/target` directory.
 
-3. [Create a custom proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) named **googlebooks_listVolume**. In the **Design View**, you will note that the new connector is added to the tool palette.
+3. [Create a custom proxy service](../creating-artifacts/creating-a-proxy-service) named **googlebooks_listVolume**. In the **Design View**, you will note that the new connector is added to the tool palette.
     <img src="../../../../assets/img/integrate/create_artifacts/new-connector-pallet.png" width="500">
 
 4. Now, update the proxy service as shown below. You will be defining a mediation logic using the **Property** mediator, the new **googleBooks** connector, and the **Respond** mediator:
@@ -130,7 +145,7 @@ You need to package the new connector file and the proxy service separately.
 
 1. Create a **Connector Exporter project** and add the connector.
 
-    See the instructions on [packaging a new connector file](../../../integrate/develop/creating-artifacts/adding-connectors/#packaging-connectors).
+    See the instructions on [packaging a new connector file](../creating-artifacts/adding-connectors#packaging-connectors).
 
 2. Create a new **Composite Application project** and add the proxy service as well as the connector as dependencies.
 
@@ -139,7 +154,7 @@ You need to package the new connector file and the proxy service separately.
 
     <img src="../../../../assets/img/integrate/create_artifacts/new-capp-project-with-depenencies.png" width="500">
 
-    See the instructions on [packaging ESB artifacts](../../../integrate/develop/packaging-artifacts/#creating-a-new-composite-application).
+    See the instructions on [packaging ESB artifacts](../packaging-artifacts#creating-a-new-composite-application).
 
 ### Step 3: Deploying the artifacts
 

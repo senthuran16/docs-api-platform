@@ -1,10 +1,25 @@
+---
+title: "Step 4: run the siddhi application"
+description: "Install the required Siddhi extensions and run the SweetFactoryApp Siddhi application on the Streaming Integrator server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/test-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/test-siddhi-application.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - test-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 4: Run the Siddhi Application
 
 In this step, let's run the `SweetFactoryApp` Siddhi application that you created, tested and deployed.
 
 ## Installing the required extensions
 
-In [Step 2: Create the Siddhi Application](../../streaming/getting-started/create-the-siddhi-application), you installed the `cdc-mysql` Siddhi extension in Streaming Integrator Tooling to test the `SweetFacoryApp` Siddhi application. Now let's install it in the Streaming Integrator server so that you can run the same Siddhi application there.
+In [Step 2: Create the Siddhi Application](create-the-siddhi-application), you installed the `cdc-mysql` Siddhi extension in Streaming Integrator Tooling to test the `SweetFacoryApp` Siddhi application. Now let's install it in the Streaming Integrator server so that you can run the same Siddhi application there.
 
 1. Start the Streaming Integrator server by navigating to the `<SI_HOME>/bin` directory from the CLI, and issuing the appropriate command based on your operating system:</br>
    
@@ -31,4 +46,4 @@ Then open the `/Users/foo/productioninserts.csv` file. The following record shou
 ![Updated File](../../assets/img/streaming/quick-start-guide-101/updated-file.png)
     
 !!! tip "What's Next?"
-    Now you can try extending the `SweetFactoryApp` Siddhi application to perform more streaming integration activities. To try this, proceed to [Step 5: Update the Siddhi Application](../../streaming/getting-started/update-the-siddhi-application/).
+    Now you can try extending the `SweetFactoryApp` Siddhi application to perform more streaming integration activities. To try this, proceed to [Step 5: Update the Siddhi Application](update-the-siddhi-application).

@@ -1,3 +1,18 @@
+---
+title: "Creating a proxy service"
+description: "Provides steps to create a proxy service artifact from a template in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-a-proxy-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-a-proxy-service.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Proxy Service
 
 Follow the instructions given below to create a new [Proxy Service](../../../reference/synapse-properties/proxy-service-properties) artifact in WSO2 Integration Studio.
@@ -128,7 +143,7 @@ Click the **Source** tab to view the XML-based synapse configuration (source cod
 
 ## Examples
 
--   [Using a Simple Proxy Service](../../../integrate/examples/proxy_service_examples/introduction-to-proxy-services)
--   [Publishing a Custom WSDL](../../../integrate/examples/proxy_service_examples/publishing-a-custom-wsdl)
--   [Exposing a Proxy Service via Inbound Endpoint](../../../integrate/examples/proxy_service_examples/exposing-proxy-via-inbound)
--   [Securing Proxy Services](../../../integrate/examples/proxy_service_examples/securing-proxy-services)
+-   [Using a Simple Proxy Service](../../examples/proxy_service_examples/introduction-to-proxy-services)
+-   [Publishing a Custom WSDL](../../examples/proxy_service_examples/publishing-a-custom-wsdl)
+-   [Exposing a Proxy Service via Inbound Endpoint](../../examples/proxy_service_examples/exposing-proxy-via-inbound)
+-   [Securing Proxy Services](../../examples/proxy_service_examples/securing-proxy-services)

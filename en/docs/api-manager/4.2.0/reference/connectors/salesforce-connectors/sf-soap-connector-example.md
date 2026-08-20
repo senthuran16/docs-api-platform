@@ -1,3 +1,18 @@
+---
+title: "Salesforce SOAP connector example"
+description: "Configure a sample that uses the Salesforce SOAP connector to create an account and query records with SOQL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-soap-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-soap-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce SOAP Connector Example
 
 The Salesforce SOAP Connector allows you to work with records in Salesforce, a web-based service that allows organizations to manage contact relationship management (CRM) data. You can use the Salesforce connector to create, query, retrieve, update, and delete records in your organization's Salesforce data. The connector uses the [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm?search_text=SOAP%20API%20Developer%20Guide) to interact with Salesforce.
@@ -33,7 +48,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
@@ -74,7 +89,7 @@ Now follow the steps below to add configurations to the resource.
     
          <img src="../../../../assets/img/integrate/connectors/salesforcesoap-drag-and-drop-create.png" title="Drag and drop create operation" width="80%" alt="Drag and drop create operations"/>
     
-    3. To get the input values in to the API we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown bellow.
+    3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown bellow.
     
          <img src="../../../../assets/img/integrate/connectors/salesforce-api-drag-and-drop-property-mediator.png" title="Add property mediators" width="70%" alt="Add property mediators"/>
 
@@ -90,13 +105,13 @@ Now follow the steps below to add configurations to the resource.
    
          <img src="../../../../assets/img/integrate/connectors/salesforcesoap-api-property-mediator-property1-value1.png" title="Add values to capture sObjectName value" width="80%" alt="Add values to capture sObjectName value"/>
     
-    5. Add the [payload factory](../../../reference/mediators/payloadfactory-mediator) mediator to capture the sObject content.
+    5. Add the [payload factory](../../mediators/payloadfactory-mediator) mediator to capture the sObject content.
           
          <img src="../../../../assets/img/integrate/connectors/salesforcesoap-payloadfactory-mediator-property1-value1.png" title="Add values to capture sObject value" width="80%" alt="Add values to capture sObjec value"/>
     
     6. Forward the backend response to the API caller.
         
-         When you are invoking the created resource, the request of the message is going through the `/createRecords` resource. Finally, it is passed to the [Respond mediator](../../../reference/mediators/respond-mediator/). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
+         When you are invoking the created resource, the request of the message is going through the `/createRecords` resource. Finally, it is passed to the [Respond mediator](../../mediators/respond-mediator). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
         
          Drag and drop **respond mediator** to the **Design view**. 
         
@@ -123,7 +138,7 @@ Now follow the steps below to add configurations to the resource.
         
          <img src="../../../../assets/img/integrate/connectors/salesforcesoap-drag-and-drop-query.png" title="Drag and drop create operation" width="80%" alt="Drag and drop query operations"/>
         
-    3. To get the input values in to the API we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
+    3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
         
     4. Add the property mediator to capture the sObject `queryString` value. In this example we are going to create a new Account object using the POST method.
      
@@ -135,7 +150,7 @@ Now follow the steps below to add configurations to the resource.
 
     5. Forward the backend response to the API caller.
             
-         When you are invoking the created resource, the request of the message is going through the `/createRecords` resource. Finally, it is passed to the [Respond mediator](../../../reference/mediators/respond-mediator/). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
+         When you are invoking the created resource, the request of the message is going through the `/createRecords` resource. Finally, it is passed to the [Respond mediator](../../mediators/respond-mediator). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
             
          Drag and drop **respond mediator** to the **Design view**. 
            
@@ -211,7 +226,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -263,4 +278,4 @@ Invoke the API as shown below using the curl command. Curl Application can be do
 
 ## What's Next
 
-* To customize this example for your own scenario, see [Salesforce SOAP Connector Configuration](../../../reference/connectors/salesforce-connectors/sf-soap-connector-config/) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [Salesforce SOAP Connector Configuration](sf-soap-connector-config) documentation for all operation details of the connector.

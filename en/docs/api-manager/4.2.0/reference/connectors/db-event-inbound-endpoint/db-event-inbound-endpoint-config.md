@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint reference"
+description: "Configure the DB Event Inbound Endpoint parameters for listening to database row changes and triggering events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # DB Event Inbound Endpoint Reference
 
 The following configurations allow you to configure DB Event Inbound Endpoint for your scenario. 

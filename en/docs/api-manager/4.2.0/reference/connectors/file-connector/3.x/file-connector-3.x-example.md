@@ -1,3 +1,18 @@
+---
+title: "File connector example"
+description: "Configure File Connector version 3 to create a file in the local file system and read its content."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/file-connector/3.x/file-connector-3.x-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/file-connector/3.x/file-connector-3.x-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # File Connector Example
 
 File Connector can be used to perform operations in the local file system as well as in a remote server such as FTP and SFTP. 
@@ -22,12 +37,12 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API. 
-    <img src="/assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
+    <img src="../../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 2. Provide the API name as File Connector and the API context as `/fileconnector`.
 
@@ -38,7 +53,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     - filePath - location that the file is going to be created.
     - inputContent - what needs to be written to the file. 
 
-5. The above two parameters are saved to properties. Drag and drop the Property Mediator onto the canvas in the design view and do as shown below. For further reference, you can read about the [Property mediator](../../../../reference/mediators/property-mediator/).
+5. The above two parameters are saved to properties. Drag and drop the Property Mediator onto the canvas in the design view and do as shown below. For further reference, you can read about the [Property mediator](../../../mediators/property-mediator).
     <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon-1.png" title="Adding a property" width="800" alt="Adding a property"/>
 
 6. Add the another Property Mediator to get the InputContent value copied. Do the same as in the above step. 
@@ -122,7 +137,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 
     ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 
 ## Get the project
@@ -137,7 +152,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -181,4 +196,4 @@ This is a test file.
 
 ## What's Next
 
-* To customize this example for your own scenario, see [File Connector Configuration](../../../../reference/connectors/file-connector/3.x/file-connector-3.x-config) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [File Connector Configuration](file-connector-3.x-config) documentation for all operation details of the connector.

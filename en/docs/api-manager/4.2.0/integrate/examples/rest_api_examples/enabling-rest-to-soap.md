@@ -1,3 +1,18 @@
+---
+title: "Exposing a SOAP endpoint as a RESTful API"
+description: "Expose a SOAP backend service as a RESTful API by transforming REST requests into SOAP calls."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/enabling-rest-to-soap/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/enabling-rest-to-soap.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a SOAP Endpoint as a RESTful API
     
 This example demonstrates how you can expose a SOAP service over REST using an API in WSO2 Micro Integrator.
@@ -64,10 +79,10 @@ In the second resource, we have defined the URL mapping as "/order/\*". Since th
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the rest API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the rest API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

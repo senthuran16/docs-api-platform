@@ -1,3 +1,18 @@
+---
+title: "Deploying a REST API in Choreo connect"
+description: "Deploy a REST API to Choreo Connect via the WSO2 API Manager Publisher Portal or apictl for standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a REST API in Choreo Connect
 
 You can deploy a REST API in the following ways depending on the Choreo Connect **mode** you have chosen.
@@ -5,8 +20,8 @@ You can deploy a REST API in the following ways depending on the Choreo Connect 
 
 |**Mode**         | **Method**    |
 |--------------|-----------|
-|[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
-|[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
+|[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
+|[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
 
 
 ## Via WSO2 API Manager Publisher Portal
@@ -17,16 +32,16 @@ Follow the instructions below to deploy a REST API in a Choreo Connect instance 
 
     This guide assumes that you already have a Choreo Connect instance configured to run with API Manager. If not,
 
-    - To start Choreo Connect with an existing API Manager instance, follow the steps mentioned in the [Using Choreo Connect Deployed on Docker with WSO2 API Manager Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane)
+    - To start Choreo Connect with an existing API Manager instance, follow the steps mentioned in the [Using Choreo Connect Deployed on Docker with WSO2 API Manager Guide](../getting-started/deploy/cc-on-docker-with-apim-as-control-plane)
 
-    - To start a complete deployment setup that includes a WSO2 API Manager instance and a Choreo Connect instance already configured to work with API Manager, follow the steps in the [Quick Start Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim).
+    - To start a complete deployment setup that includes a WSO2 API Manager instance and a Choreo Connect instance already configured to work with API Manager, follow the steps in the [Quick Start Guide](../getting-started/quick-start-guide-docker-with-apim).
 
 ### Step 1 - Create an API in API Manager
 
 Create a REST type API using one of the following methods:
 
-- [Create a REST API via the WSO2 API Manager Publsiher Portal](../../../../design/create-api/create-rest-api/create-a-rest-api/)
-- [Import a REST API to WSO2 API Manager using WSO2 API Controller (apiclt)](../../../../install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach/)
+- [Create a REST API via the WSO2 API Manager Publsiher Portal](../../../../design/create-api/create-rest-api/create-a-rest-api)
+- [Import a REST API to WSO2 API Manager using WSO2 API Controller (apiclt)](../../../../install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach)
      
      You need to initially initialize the API project and thereafter import the API project in order to be able to import the API to WSO2 API Manager using the apiclt.
 
@@ -34,9 +49,9 @@ For this example, let's create an API via the WSO2 API Manager Publsiher Portal.
 
 ### Step 2 - Deploy the API in API Manager
 
- The guide [here](../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api) will explain how you could easily deploy the API you just created.
+ The guide [here](../../deploy-api/deploy-an-api) will explain how you could easily deploy the API you just created.
 
-That's it! To invoke the API follow the steps [here](#step-4-invoke-the-api).
+That's it! To invoke the API follow the steps [here](#step-3-invoke-the-api).
 
 !!! info
 
@@ -50,11 +65,11 @@ That's it! To invoke the API follow the steps [here](#step-4-invoke-the-api).
 
 ###  Step 3 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.2.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.2.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
-Refer to [Generate a Test JWT](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt) for more details.
+Refer to [Generate a Test JWT](../security/generate-a-test-jwt) for more details.
 
 ## Via apictl for Standalone Mode
 
@@ -62,7 +77,7 @@ Follow the instructions below to deploy a REST API via WSO2 API Controller (apic
 
 !!! info "Before you begin"
 
-    This guide assumes that you already have a Choreo Connect instance that is up and running. If not, checkout the [Using Choreo Connect Deployed on Docker with WSO2 API Controller Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview). 
+    This guide assumes that you already have a Choreo Connect instance that is up and running. If not, checkout the [Using Choreo Connect Deployed on Docker with WSO2 API Controller Guide](../getting-started/deploy/cc-as-a-standalone-gateway-on-docker) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../getting-started/choreo-connect-overview). 
 
 ### Step 1 - Download apictl and Set the Path Variable 
 
@@ -84,17 +99,17 @@ Let's create your first project "petstore" using an OpenAPI definition. The foll
 apictl init petstore --oas https://petstore.swagger.io/v2/swagger.json
 ```
 
-{! ./includes/deploy/cc-deploy-api-standalone-mode.md !}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-deploy-api-standalone-mode.md"
 
 ###  Step 6 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.2.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.2.0/includes/invoke-api-with-jwt.md"
 
 !!! info 
 
     Refer to the following content to learn more,
 
     - [Managing Choreo Connect with apictl](../../../../install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl)
-    - [Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway)
-    - [Generate a Test JWT](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt)
+    - [Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)
+    - [Generate a Test JWT](../security/generate-a-test-jwt)

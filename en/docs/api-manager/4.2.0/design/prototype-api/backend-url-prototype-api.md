@@ -1,3 +1,18 @@
+---
+title: "Expose an existing backend implementation as a prototype API"
+description: "Create a prototype API backed by an actual working backend URL and publish it to the Developer Portal as pre-released."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/prototype-api/backend-url-prototype-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/prototype-api/backend-url-prototype-api.md
+tags:
+  - api-manager
+  - design
+  - prototype-api
+  - backend-url-prototype-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Expose an Existing Backend Implementation as a Prototype API
 
 This allows you to create a prototype API with an actual working backend URL and publish the API to the Developer Portal as a Pre-Released API.
@@ -6,11 +21,11 @@ This allows you to create a prototype API with an actual working backend URL and
 
 Note the following when creating an interface for the API:
 
-- [Create any type of interface for the Prototype API](../../design/design-api-overview/#create-an-api). 
+- [Create any type of interface for the Prototype API](../design-api-overview#create-an-api). 
 - You can create either a new API or a new version of an existing API for this purpose.
 - Fill the **Endpoint** field with the actual backend URL. For example, `https://petstore3.swagger.io/api/v3`
 
-For this example, let's follow [steps 1 to 5 in the Create a REST API from an OpenAPI Definition - basic flow guide](../../design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/#create-an-api-using-the-basic-flow) to create the basic structure of the API interface using the following details.
+For this example, let's follow [steps 1 to 5 in the Create a REST API from an OpenAPI Definition - basic flow guide](../create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition#create-an-api-using-the-basic-flow) to create the basic structure of the API interface using the following details.
 
 | **Field**    | **Value**                        |
 |----------|-------------------------------------|
@@ -44,15 +59,15 @@ If you did not provide an endpoint in the above step, follow the steps given bel
      3. Click **Save** to save the Endpoint configurations in the API.
    
     !!! note
-        For more information, see [Endpoint Types](../../design/endpoints/endpoint-types/) and the other sections related to the **Endpoints** documentation.
+        For more information, see [Endpoint Types](../endpoints/endpoint-types) and the other sections related to the **Endpoints** documentation.
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.2.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 
 1. Click **View in Dev Portal** to navigate to the Developer Portal.
 
     !!! note 
-        If you have enabled security for the prototype API, follow the [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api/) guide to subscribe and obtain an access token to invoke the prototype API.
+        If you have enabled security for the prototype API, follow the [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api) guide to subscribe and obtain an access token to invoke the prototype API.
 
 2. Click **Try Out** to navigate to the API Console and invoke the API as for a regular API.

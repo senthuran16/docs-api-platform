@@ -1,3 +1,18 @@
+---
+title: "Generate SDKs in the Developer Portal"
+description: "Generate and download client-side SDKs for a subscribed API from the Developer Portal and configure the supported SDK languages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/generating-sdks/generate-sdks-in-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/generating-sdks/generate-sdks-in-dev-portal.md
+tags:
+  - api-manager
+  - consume
+  - generating-sdks
+  - generate-sdks-in-dev-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Generate SDKs in the Developer Portal
 
 A Software Development Kit (SDK) is a set of software development tools that allows you to create applications for a specific platform. If an API consumer wants to create an application, they can generate a client-side SDK for a supported language/framework and use it to write a software application to consume the subscribed APIs. 
@@ -42,11 +57,11 @@ Follow the instructions below to configure the languages available for SDK gener
 
     ```
     
-3.  [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m/) to apply the configuration changes.
+3.  [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m) to apply the configuration changes.
 
 !!! Important
     If you are enabling **Python** as a supported SDK generation language, ensure the following dependency is added.
 
     1.  Download the [`rgxgen-1.4.jar`](https://repo1.maven.org/maven2/com/github/curious-odd-man/rgxgen/1.4/rgxgen-1.4.jar) file.  
     2.  Copy the JAR file to the `<APIM_HOME>/repository/components/lib/` directory.  
-    3.  [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m/).
+    3.  [Restart the server](../../install-and-setup/install/installing-the-product/running-the-api-m).

@@ -1,3 +1,18 @@
+---
+title: "Sample 1: target endpoint"
+description: "Deploy a sample backend with the TargetEndpoint custom resource on Kubernetes and apply API management to it using the K8s API Operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-apis/api-samples/sample-1-target-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-apis/api-samples/sample-1-target-endpoint.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Sample 1: Target Endpoint
 
 Let's deploy a backend using Target Endpoint resource on your Kubernetes environment and apply API management.
@@ -7,7 +22,7 @@ Let's deploy a backend using Target Endpoint resource on your Kubernetes environ
  -  Install a [Kubernetes](https://kubernetes.io/docs/setup/) cluster and **v1.14+** client. Alternatively,
     you can [run Kubernetes locally via Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/).
  -  Install [Docker](https://docs.docker.com/).
- -  Install the [Kubernetes API Operator](../../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/install).
+ -  Install the [Kubernetes API Operator](../../install).
  -  Setup Choreo Connect 
     1.  Download the Choreo Connect v0.9.0 from
         [GitHub release page's](https://github.com/wso2/product-microgateway/releases/tag/v0.9.0) assets and extract them

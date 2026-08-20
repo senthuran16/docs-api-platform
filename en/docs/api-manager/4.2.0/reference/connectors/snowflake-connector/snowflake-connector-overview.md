@@ -1,3 +1,18 @@
+---
+title: "Snowflake connector overview"
+description: "Overview of the Snowflake connector, its compatibility, and links to example and reference documentation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/snowflake-connector/snowflake-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/snowflake-connector/snowflake-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - snowflake-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Snowflake Connector Overview
 
 The Snowflake Connector enables you to utilize a complete range of Snowflake operations using WSO2 MI. It provides functionalities to execute a set of standard Snowflake DDL, DML, and query commands.
@@ -12,9 +27,9 @@ To see the available Snowflake connector, navigate to the [connector store](http
 
 ## Snowflake Connector documentation
 
-* **[Snowflake Connector Example](../../../reference/connectors/snowflake-connector/snowflake-connector-example/)**: This example explains how to use Snowflake Connector to perform DDL, DML and query commands. 
+* **[Snowflake Connector Example](snowflake-connector-example)**: This example explains how to use Snowflake Connector to perform DDL, DML and query commands. 
 
-* **[Snowflake Connector Reference](../../../reference/connectors/snowflake-connector/snowflake-connector-reference/)**: This documentation provides a reference guide for the Snowflake Connector.
+* **[Snowflake Connector Reference](snowflake-connector-reference)**: This documentation provides a reference guide for the Snowflake Connector.
 
 ## How to contribute
 

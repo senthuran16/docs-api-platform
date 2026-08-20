@@ -1,3 +1,18 @@
+---
+title: "Configuring the primary user store"
+description: "Explains the supported primary user store types in WSO2 API Manager and links to the setup instructions for each type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Configuring the Primary User Store
 
 This documentation explains the process of setting up a primary user store for your system.
@@ -59,7 +74,7 @@ This can be defined in the `[user_store]` section of the `<APIM_HOME>/repository
 
 Follow the links given below to setup the required type of primary user store.
 
--   [Configuring a JDBC User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store)
--   [Configuring a Read-Only LDAP User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store)
--   [Configuring a Read-Write Active Directory User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store)
--   [Configuring a Read-Write LDAP User Store](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store)
+-   [Configuring a JDBC User Store](configuring-a-jdbc-user-store)
+-   [Configuring a Read-Only LDAP User Store](configuring-a-read-only-ldap-user-store)
+-   [Configuring a Read-Write Active Directory User Store](configuring-a-read-write-active-directory-user-store)
+-   [Configuring a Read-Write LDAP User Store](configuring-a-read-write-ldap-user-store)

@@ -1,3 +1,18 @@
+---
+title: "Configuring reCaptcha for single sign on"
+description: "Configure reCaptcha for the Single Sign-On flow in WSO2 API Manager to mitigate brute force login attacks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring reCaptcha for Single Sign On
 
 This section guides you through configuring reCaptcha for the Single Sign
@@ -12,7 +27,7 @@ attacks, by configuring reCaptcha.
 
 1.  Set up reCaptcha with the WSO2 API Manager. For instructions on
     how to do this and more information about reCaptcha, see [Setting Up
-    ReCaptcha](../../../../install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha).
+    ReCaptcha](setting-up-recaptcha).
 2.  Start the API Manager. Sign in to the Management Console (`https://<APIM_Host>:<APIM_Port>/carbon`).
 3.  Click **List** under **Identity Providers** in the **Main**
     tab.

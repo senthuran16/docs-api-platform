@@ -1,11 +1,26 @@
+---
+title: "JMS parameters"
+description: "Reference for the JMS transport parameters you can configure in a proxy service artifact for a JMS connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/transport-parameters/jms-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/transport-parameters/jms-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # JMS Parameters
 
 When you implement an integration use case that requires a JMS connection, you can use the following JMS parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) artifact.
 
 !!! Info
-    The Micro Integrator can listen to a JMS instance or send messages to a JMS instance only if the JMS transport listener and sender are enabled and configured at the server level. Read about the [JMS transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-jms-transport).
+    The Micro Integrator can listen to a JMS instance or send messages to a JMS instance only if the JMS transport listener and sender are enabled and configured at the server level. Read about the [JMS transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-jms-transport).
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.2.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) for instructions.
 
@@ -63,7 +78,7 @@ See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/cre
 The JMS connection factory parameters can be specified at the server level or the service level. Given below are the complete list of connection factory parameters (with a comparison of service-level and server-level parameter names).
 
 !!! Tip
-    To define the parameters at the server level, you need to update the **JMS configurations** in the `deployment.toml` file. See the [configuration catalog](../../../reference/config-catalog) for details on how to apply server configurations.
+    To define the parameters at the server level, you need to update the **JMS configurations** in the `deployment.toml` file. See the [configuration catalog](../../config-catalog) for details on how to apply server configurations.
 
 <table>
       <tr>

@@ -1,3 +1,18 @@
+---
+title: "Routing messages to a dynamic list of recipients"
+description: "Demonstrates message routing to a dynamic list of recipient endpoints using a synapse configuration example."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-dynamic-recepient-list-endpoints-1/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-dynamic-recepient-list-endpoints-1.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Routing Messages to a Dynamic List of Recipients
 This example demonstrates message routing to a set of dynamic endpoints.
 

@@ -1,3 +1,18 @@
+---
+title: "Exposing an integration SOAP service as a managed API"
+description: "Create a Proxy Service for a SOAP backend, publish its WSDL to the Service Catalog, and expose it as a SOAP Pass-Through API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - service-catalog-tutorial-for-proxy-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Exposing an Integration SOAP Service as a Managed API
 
 Managed APIs refer to the APIs that are managed using WSO2 API Manager, namely REST APIs, GraphQL APIs, SOAP APIs, and Streaming APIs. This guide explains how to create a Proxy Service (SOAP backend) for the integration solution, generate relevant metadata for the corresponding Proxy service, publish the WSDL definition in the WSO2 API Manager Service Catalog and then creating a **SOAP Pass-Through API**.
@@ -162,7 +177,7 @@ Let's update the metadata of the integration service.
     </table>
 
     !!! Tip
-        See the [Service Catalog API documentation](../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1/) for more information on the metadata in the YAML file.
+        See the [Service Catalog API documentation](../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1) for more information on the metadata in the YAML file.
 
 3.  <b>Important</b>: Be sure to change the `serviceUrl` from HTTPS to HTTP. This is required because the StockQuoteProxy is not secured.
 
@@ -207,7 +222,7 @@ Let's enable this client for the embedded Micro Integrator of WSO2 Integration S
     2.  Click **Encrypt Secrets**. 
     
     !!! Tip
-        See [Encrypt static (embedded) server secrets](../../integrate/develop/using-embedded-micro-integrator/#encrypt-static-embedded-server-secrets) for details.
+        See [Encrypt static (embedded) server secrets](../../integrate/develop/using-embedded-micro-integrator#encrypt-static-embedded-server-secrets) for details.
 
 4.  Save the configurations.
 
@@ -222,7 +237,7 @@ Let's enable this client for the embedded Micro Integrator of WSO2 Integration S
     ```
 
     !!! Tip
-        See the instructions on [injecting environment variables to the embedded Micro Integrator](../../integrate/develop/using-embedded-micro-integrator/#injecting-environment-variables-to-embedded-micro-integrator).
+        See the instructions on [injecting environment variables to the embedded Micro Integrator](../../integrate/develop/using-embedded-micro-integrator#injecting-environment-variables-to-embedded-micro-integrator).
 
 ### Step 4: Package the artifacts
 
@@ -246,7 +261,7 @@ Let's start the API Manager runtime before starting the Micro Integrator.
 
 ### Step 6: Build and run the service
 
-Let's deploy the [packaged artifacts](#step-3-package-the-artifacts) in the embedded Micro Integrator:
+Let's deploy the [packaged artifacts](#step-4-package-the-artifacts) in the embedded Micro Integrator:
 
 !!! Info
     When you do this step: 
@@ -372,7 +387,7 @@ Now, let's assume you are an API consumer who wants to use the API. As a consume
     <img src="../../../assets/img/integrate/tutorials/service-catalog/expose-soap-service/developer-portal-api-subscription.png">
 
 !!! Tip
-    For detailed instructions, see [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api/).
+    For detailed instructions, see [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api).
 
 ### Step 10: Use the SOAP Pass-Through API
 
@@ -522,4 +537,4 @@ INFO - LogMediator Message = "You have successfully invoked the StockQuoteProxy"
 ```
 
 !!! Tip
-    For detailed instructions see [Invoke an API using the Integrated API Console](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/).
+    For detailed instructions see [Invoke an API using the Integrated API Console](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console).

@@ -1,3 +1,18 @@
+---
+title: "Developing integration solutions"
+description: "Links to topics on developing, building, and testing integration solutions using WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/intro-integration-development/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/intro-integration-development.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - intro-integration-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Developing Integration Solutions
 
 The contents on this page will walk you through the topics related to developing integration solutions using WSO2 Integration Studio.
@@ -154,7 +169,7 @@ To start developing integration solutions, you need to first <a href="../../../i
                         <a href="../../../integrate/develop/customizations/creating-custom-mediators/">Custom Mediator</a>
                     </li>
                     <li>
-                        <a href="../../../integrate/develop/customizations/creating-custom-Inbound-endpoint/">Custom Inbound Endpoint</a>
+                        <a href="../customizations/creating-custom-inbound-endpoint/">Custom Inbound Endpoint</a>
                     </li>
                     <li>
                         <a href="../../../integrate/develop/customizations/creating-new-connector/">Custom Connector</a>
@@ -337,7 +352,7 @@ It is recommended to use a <b>CICD pipeline</b> to deploy your tested integratio
     </tr>
     <tr>
         <td>
-            <b><a href="../../../integrate/integration-overview/#tutorials">Tutorials</a></b>
+            <b><a href="../../../integrate/integration-overview/#integration-tutorials">Tutorials</a></b>
         </td>
         <td>
             Develop and try out each integration use case end-to-end.
@@ -345,7 +360,7 @@ It is recommended to use a <b>CICD pipeline</b> to deploy your tested integratio
     </tr>
     <tr>
         <td>
-            <b><a href="../../../integrate/integration-overview/#examples">Examples</a></b>
+            <b><a href="../../../integrate/integration-overview/#integration-examples">Examples</a></b>
         </td>
         <td>
             Try out specific integration scenarios by running the samples.

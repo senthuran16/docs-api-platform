@@ -1,3 +1,18 @@
+---
+title: "Using Okta as an external IDP with SAML"
+description: "Provides steps to connect Okta as a third-party identity provider to WSO2 API Manager using SAML."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Okta as an External IDP with SAML 
 
 Follow the instructions below to connect Okta as a third party Identity Provider to WSO2 API Manager.
@@ -63,7 +78,7 @@ Before you begin, make sure you do the following.
 
 9.  Enter the user attributes shown in the image below. Click **Save**.
 
-    [![Add new attributes](../../../assets/img/learn/okta-add-new-attribute-details.png)](/assets/img/learn/okta-add-new-attribute-details.png) 
+    [![Add new attributes](../../../assets/img/learn/okta-add-new-attribute-details.png)](../../../assets/img/learn/okta-add-new-attribute-details.png) 
 
 10.   Follow the steps below to edit the user profile.
 
@@ -95,11 +110,11 @@ Before you begin, make sure you do the following.
 
     3. Assign the following permissions to the role and save the role.
 
-        [![](/assets/img/learn/okta-apim-add-role-permissions3.png)](/assets/img/learn/okta-apim-add-role-permissions3.png)
+        [![](../../../assets/img/learn/okta-apim-add-role-permissions3.png)](../../../assets/img/learn/okta-apim-add-role-permissions3.png)
         
-        [![](/assets/img/learn/okta-apim-add-role-permissions2.png)](/assets/img/learn/okta-apim-add-role-permissions2.png)
+        [![](../../../assets/img/learn/okta-apim-add-role-permissions2.png)](../../../assets/img/learn/okta-apim-add-role-permissions2.png)
         
-        [![](/assets/img/learn/okta-apim-add-role-permissions1.png)](/assets/img/learn/okta-apim-add-role-permissions1.png)
+        [![](../../../assets/img/learn/okta-apim-add-role-permissions1.png)](../../../assets/img/learn/okta-apim-add-role-permissions1.png)
 
 3. Log in to `https://localhost:9443/admin`. 
 

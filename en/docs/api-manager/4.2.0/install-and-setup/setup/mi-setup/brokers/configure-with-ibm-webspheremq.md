@@ -1,3 +1,18 @@
+---
+title: "Connecting to IBM WebSphere MQ"
+description: "Configure WSO2 Micro Integrator's JMS transport to connect with IBM WebSphere MQ, including queue manager and channel setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-ibm-webspheremq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-ibm-webspheremq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to IBM WebSphere MQ
 
 The WSO2 JMS transport can be configured with IBM® WebSphere® MQ. The
@@ -73,7 +88,7 @@ following topics cover the configuration steps.
     **Destination** to open the **New Destination** wizard. In order to
     map the destination to the local queue you created in step 7 of the
     [Creating queue manager, queue and channel in IBM WebSphere
-    MQ](#ConfigurewithIBMWebSphereMQ-Qmanager) section, enter the same
+    MQ](#creating-queue-manager-queue-and-channel-in-ibm-websphere-mq) section, enter the same
     queue name ( `          LocalQueue1         ` in this example) in
     the **Name** field. Select `          Queue         ` for the
     **Type** field. Select `          ESBQManager         ` as the queue
@@ -290,7 +305,7 @@ Follow the instructions below to build and install IBM WebSphere MQ client JAR f
 7.  Copy the `<wmq-client>/target/wmq-client-8.0.0.4.jar`
     file to the `MI_HOME/dropins` directory.
 8.  Download the [`jta.jar` file from the maven repository](https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.jar), and copy it to the `MI_HOME/lib` directory.
-9. [Regenerate the `.bindings` file](#ConfigurewithIBMWebSphereMQ-generate) with the `Provider Version : 8` property (if 
+9. [Regenerate the `.bindings` file](#generating-the-bindings-file) with the `Provider Version : 8` property (if 
 you already generated one before), and replace the existing `.bindings` file (if you have one) with the new `
 .bindings` file you generated.
 

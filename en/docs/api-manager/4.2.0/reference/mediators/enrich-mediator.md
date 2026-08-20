@@ -1,9 +1,24 @@
+---
+title: "Enrich mediator"
+description: "Reference for the Enrich mediator syntax and parameters used to process and modify a message using source and target configurations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/enrich-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/enrich-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - enrich-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Enrich Mediator
 
 The **Enrich Mediator** can process a message based on a given source configuration and then perform the specified action on the message by using the target configuration. It gets an `         OMElement        ` using the configuration specified in the source and then modifies the message by putting it on the current message using the configuration in the target.
 
 !!! Info
-    The Enrich mediator is a [content-aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The Enrich mediator is a [content-aware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 
@@ -29,7 +44,7 @@ The following properties are available:
     -   **Custom** - Custom XPath value.
     -   **Envelope** - Envelope of the original message used for enriching.
     -   **Body** - Body of the original message used for enriching.
-    -   **Property** - Specifies a property. For information on how you can use the Property mediator to specify properties, see [Property Mediator](../../reference/mediators/property-Mediator).
+    -   **Property** - Specifies a property. For information on how you can use the Property mediator to specify properties, see [Property Mediator](../../reference/mediators/property-mediator).
     -   **Key** - Specifies that the target type is key. Specifically used to rename an existing key name in JSON payloads. *(Supported for JSON only)*.
 -   **XPath Expression** - This field is used to specify the custom XPath value if you selected **custom** for the **Type** field.
 
@@ -67,7 +82,7 @@ The following properties are available:
     
 ### Example 1: Setting the property symbol
     
-In this example, you are setting the property symbol. Later, you can log it using the [Log Mediator](../../reference/mediators/log-Mediator) .
+In this example, you are setting the property symbol. Later, you can log it using the [Log Mediator](../../reference/mediators/log-mediator) .
     
 ``` java
 <enrich xmlns="http://ws.apache.org/ns/synapse">
@@ -111,7 +126,7 @@ In this example, you add a child property named Lamborghini to a property named 
   
 ### Example 3: Adding a SOAPEnvelope type object as a property to a message
     
-In this example, you add the SOAP envelope in a SOAP request as a property to a message. The Enrich mediator is useful in this scenario since adding the property directly using the [Property mediator](../../reference/mediators/property-Mediator) results in the `          SOAPEnvelope         ` object being created as an `          OM         ` type object. The `          OM         ` type object created cannot be converted back to a `          SOAPEnvelope         ` object.
+In this example, you add the SOAP envelope in a SOAP request as a property to a message. The Enrich mediator is useful in this scenario since adding the property directly using the [Property mediator](../../reference/mediators/property-mediator) results in the `          SOAPEnvelope         ` object being created as an `          OM         ` type object. The `          OM         ` type object created cannot be converted back to a `          SOAPEnvelope         ` object.
     
 ```
 <enrich> 

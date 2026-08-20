@@ -1,3 +1,18 @@
+---
+title: "Importing APIs from AWS API Gateway to WSO2 API Manager"
+description: "Use apictl to import an API from AWS API Gateway into WSO2 API Manager and publish it on the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/publish-on-dev-portal/publish-aws-apis-in-the-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/publish-on-dev-portal/publish-aws-apis-in-the-dev-portal.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - publish-on-dev-portal
+  - publish-aws-apis-in-the-dev-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Importing APIs from AWS API Gateway to WSO2 API Manager  
 
 You can publish an API that exists in the AWS API Gateway, on the WSO2 API Manager (WSO2 API-M) Developer Portal. These APIs will not be deployed into the WSO2 API Gateway and will not be managed by the WSO2 API Gateway.
@@ -22,7 +37,7 @@ You can publish an API that exists in the AWS API Gateway, on the WSO2 API Manag
 
 5. **Start the WSO2 API-M server**.
    
-     The WSO2 API-M server needs to be up and running to import the API project to WSO2 API-M successfully. For more information, see [installing WSO2 API-M](../../install-and-setup/install-and-setup-overview/#installing).
+     The WSO2 API-M server needs to be up and running to import the API project to WSO2 API-M successfully. For more information, see [installing WSO2 API-M](../../install-and-setup/install-and-setup-overview#installing).
 
 6. **An active internet connection**.
     

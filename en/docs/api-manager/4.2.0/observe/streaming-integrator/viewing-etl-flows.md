@@ -1,8 +1,23 @@
+---
+title: "Viewing ETL flow statistics"
+description: "Navigate the Grafana dashboards set up for monitoring ETL flows and analyze WSO2 Streaming Integrator statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/streaming-integrator/viewing-etl-flows/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/streaming-integrator/viewing-etl-flows.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - viewing-etl-flows
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing ETL Flow Statistics
 
 !!! note "Before you begin:"
-    - Follow the instructions in the [getting started guide](../../observe/streaming-integrator/setting-up-si-statistics-dashboards) to enable the WSO2 Streaming Integrator to publish statistics in the Grafana dashboard.
-    - [Organize the dashboards in folders](../../observe/streaming-integrator/managing-dashboards).
+    - Follow the instructions in the [getting started guide](setting-up-si-statistics-dashboards) to enable the WSO2 Streaming Integrator to publish statistics in the Grafana dashboard.
+    - [Organize the dashboards in folders](managing-dashboards).
 
 Follow the instructions below to navigate through the Grafana dashboards, which you set up for monitoring the ETL flows in WSO2 Streaming Integrator and to analyze statistics:
 

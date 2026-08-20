@@ -1,3 +1,18 @@
+---
+title: "Setting up a microsoft SQL database"
+description: "Set up a Microsoft SQL Server database, including enabling TCP/IP, for use with WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/databases/setting-up-mssql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/databases/setting-up-mssql.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up a Microsoft SQL Database
 
 Follow the steps given below to set up the required MSSQL databases for your Micro Integrator.
@@ -108,6 +123,6 @@ Open the `deployment.toml` file in the `<MI_HOME>/conf` directory and add the fo
 	update_interval = 2
 	```
 
-{!includes/integration/pull-content-user-store-db-id.md!}
+--8<-- "api-manager/4.2.0/includes/integration/pull-content-user-store-db-id.md"
 
-See the descriptions of [database connection parameters](../../../../reference/config-catalog-mi/#database-connection).
+See the descriptions of [database connection parameters](../../../../reference/config-catalog-mi#database-connection).

@@ -1,3 +1,18 @@
+---
+title: "Choreo based analytics getting started guide"
+description: "Sign in to Choreo, register your on-premises environment, and configure the Gateway to get started with Choreo-based API Analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/api-analytics/choreo-analytics/getting-started-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/api-analytics/choreo-analytics/getting-started-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - choreo-analytics
+  - getting-started-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Choreo Based Analytics Getting Started Guide
 
 API Manager offers analytics as a cloud service. Therefore, you need to register with the analytics cloud in order to use API Manager Analytics. Follow the instructions below to get started with analytics:
@@ -24,7 +39,7 @@ Follow the instructions below to register your on-premise environment:
 
 2. If you are a member of multiple organizations, select the appropriate organization from the top left-hand corner. 
    
-     For more information on handling users with role-based access control in organizations, see [Role-based Access Control for API Analytics](../../api-analytics/choreo-analytics/role-based-access-control).
+     For more information on handling users with role-based access control in organizations, see [Role-based Access Control for API Analytics](role-based-access-control).
 
      [![Org Selector](../../assets/img/observe/organization-selector.png)](../../assets/img/observe/organization-selector.png)
 
@@ -80,7 +95,7 @@ If your system connects to the service through a proxy server/firewall, you need
 
 ### Basic configurations
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.2.0/includes/analytics/configure-synapse-gateway.md"
 
 ### Advanced configurations
 
@@ -145,4 +160,4 @@ For more detailed information on the Choreo Insights dashboards and their usage,
 
 ## What's Next?
 
-Enterprises and companies who want to use the Choreo Insights collaboratively can utilize the organization concept in Choreo. For more information, see [Role-based Access Control for API Analytics](../../api-analytics/choreo-analytics/role-based-access-control).
+Enterprises and companies who want to use the Choreo Insights collaboratively can utilize the organization concept in Choreo. For more information, see [Role-based Access Control for API Analytics](role-based-access-control).

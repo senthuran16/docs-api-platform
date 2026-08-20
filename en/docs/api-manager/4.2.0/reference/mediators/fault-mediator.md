@@ -1,7 +1,22 @@
+---
+title: "Fault mediator"
+description: "Reference for the Fault mediator syntax and parameters used to transform the current message into a SOAP or POX fault."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/fault-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/fault-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - fault-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Fault Mediator
 
 The **Fault Mediator** (also called the **Makefault Mediator**) transforms the current message into a fault message. However, this
-mediator does not send the converted message. The [Send Mediator](../../reference/mediators/send-mediator) needs to be invoked to send a fault message
+mediator does not send the converted message. The [Send Mediator](send-mediator) needs to be invoked to send a fault message
 created via the Fault mediator. The fault message's `         To        ` header is set to the `         Fault-To        ` of the original message (if such a header exists in the original message). You can create the fault message as a SOAP 1.1, SOAP 1.2, or plain-old XML (POX) fault.
 
 For more information on faults and errors, see [Error Handling](../../troubleshooting/error-handling).

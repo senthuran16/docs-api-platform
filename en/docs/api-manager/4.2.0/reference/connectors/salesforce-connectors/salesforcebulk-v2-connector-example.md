@@ -1,3 +1,18 @@
+---
+title: "Salesforce bulk v2.0 connector example"
+description: "Configure a sample that uses the Salesforce Bulk v2.0 connector to insert, query, and manage bulk job records."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/salesforcebulk-v2-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/salesforcebulk-v2-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce Bulk v2.0 Connector Example
 
 The **Salesforce Bulk v2.0 Connector** provides seamless integration with the [Salesforce Bulk v2.0 REST API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm), enabling easy and efficient handling of large volumes of data. The SalesforceBulk API operates on a RESTful architecture, offering a fast and reliable method to load or delete vast amounts of data from your organization's Salesforce account. With SalesforceBulk, you can perform asynchronous operations like querying, inserting, updating, upserting, or deleting a considerable number of records by submitting them in batches. These batches can be processed by Salesforce in the background, ensuring minimal disruption to your workflow.
@@ -24,7 +39,7 @@ You can use the following resources to achieve your requirements.
     - Close the job to denote that the upload is completed.
 2. `/createJobAndUploadFile` : 
     - Create a new bulk ingest job for insert operation.
-    - Read a CSV file using [File Connector](../../../reference/connectors/file-connector/file-connector-overview/).
+    - Read a CSV file using [File Connector](../file-connector/file-connector-overview).
     - Upload the CSV content read from the file.
     - Close the job to denote that the upload is completed.
 3. `/getJobInfo` : 
@@ -66,7 +81,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
 1. Open WSO2 Integration Studio and create an **Integration Project**.
-   <a href="https://apim.docs.wso2.com/en/4.1.0/assets/img/integrate/new-project/new-integration-project.png"><img src="https://apim.docs.wso2.com/en/4.1.0/assets/img/integrate/new-project/new-integration-project.png" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" /></a>
+   <a href="../../../../assets/img/integrate/new-project/new-integration-project.png"><img src="../../../../assets/img/integrate/new-project/new-integration-project.png" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" /></a>
 
 2. Right-click the project that you created and click on **Add or Remove Connector** -> **Add Connector**. You will get directed to the WSO2 Connector Store.
 
@@ -185,8 +200,8 @@ Lets add the operations to the resources in `Salesforce` API
         <property expression="json-eval($.id)" name="jobId" scope="default" type="STRING"/>
       ```
 
-  3. Drag and drop `read` operation from **[File_Connector](../../../reference/connectors/file-connector/file-connector-config/#operations)** section.
-      1. Prior to this step, you must configure the **File Connector**. For setup instructions, please refer to the [File Connector Documentation](../../../reference/connectors/file-connector/file-connector-overview/).
+  3. Drag and drop `read` operation from **[File_Connector](../file-connector/file-connector-config#operations)** section.
+      1. Prior to this step, you must configure the **File Connector**. For setup instructions, please refer to the [File Connector Documentation](../file-connector/file-connector-overview).
       2. Create a File Connection and select it.
       3. In the `Basic` section, enter the file path.
       4. In the `Operation Result` section, select `Add Result To` as "Message Property",
@@ -289,7 +304,7 @@ Lets add the operations to the resources in `Salesforce` API
         ``` 
 
 
-  3.  Drag and drop `write` operation from **[File_Connector](../../../reference/connectors/file-connector/file-connector-config/#operations)** section.
+  3.  Drag and drop `write` operation from **[File_Connector](../file-connector/file-connector-config#operations)** section.
       1. In the `General` section of the properties, select the File Connection configuration you created.
       2. In the `Basic` section, enter the file path.
 
@@ -790,4 +805,4 @@ Let's test the API. Start the MI and deploy the API.
 
 ## What's Next
 
-- To customize this example for your own scenario, see [Salesforce bulk V2 Connector Configuration](../../../reference/connectors/salesforce-connectors/salesforcebulk-v2-reference/) documentation for all operation details of the connector.
+- To customize this example for your own scenario, see [Salesforce bulk V2 Connector Configuration](salesforcebulk-v2-reference) documentation for all operation details of the connector.

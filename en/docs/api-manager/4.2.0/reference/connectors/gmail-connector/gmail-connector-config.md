@@ -1,3 +1,18 @@
+---
+title: "Gmail connector reference"
+description: "Configure Gmail Connector operations for accessing the Gmail REST API using OAuth2 authentication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/gmail-connector/gmail-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/gmail-connector/gmail-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Gmail Connector Reference
 
 The following operations allow you to work with the Gmail Connector. Click an operation name to see parameter details and samples on how to use it.

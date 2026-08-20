@@ -1,3 +1,18 @@
+---
+title: "Using keystores"
+description: "Explains how keystores and truststores are used for asymmetric encryption to authenticate and protect data in WSO2 products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mi-security-reference/using_keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mi-security-reference/using_keystores.md
+tags:
+  - api-manager
+  - reference
+  - mi-security-reference
+  - using_keystores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Using Keystores
 
 WSO2 products use asymmetric encryption by default for the
@@ -93,4 +108,4 @@ certificates. These certificates can be either of the following:
 * [Create new keystores](../../install-and-setup/setup/mi-setup/security/creating_keystores)
 * [Import new SSL certificates to keystores](../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate)
 * [Renewing existing SSL certificates in keystores](../../install-and-setup/setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore)
-* [Product deployment guidelines](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/)
+* [Product deployment guidelines](../../install-and-setup/setup/deployment-best-practices/production-deployment-guidelines)

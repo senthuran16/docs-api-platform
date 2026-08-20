@@ -1,3 +1,18 @@
+---
+title: "Applying security to a proxy service"
+description: "Provides steps to apply security to a proxy service using a WS-Policy resource in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/applying-security-to-a-proxy-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/applying-security-to-a-proxy-service.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Applying Security to a Proxy Service
 
 Follow the instructions below to apply security to a proxy service via WSO2 Integration Studio:
@@ -10,7 +25,7 @@ Be sure to [configure a user store](../../../install-and-setup/setup/mi-setup/us
 
 Follow the instructions given below to create a **WS-Policy** resource in your registry project. This will be your security policy file.
 
-1. Create a [registry resource project](../../../integrate/develop/create-integration-project/#registry-resource-project).
+1. Create a [registry resource project](../create-integration-project#sub-projects).
 
 2. Right-click on the registry resource project in the left navigation panel, click **New**, and then click **Registry Resource**. 
     
@@ -92,8 +107,8 @@ Either define the user roles inline or retrieve the user roles from the server.
 
      You can do either one of the following actions for this purpose.
 
-    - [Create a new proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service)
-    - [Import an existing proxy service](../../../integrate/develop/importing-artifacts)
+    - [Create a new proxy service](../creating-artifacts/creating-a-proxy-service)
+    - [Import an existing proxy service](../importing-artifacts)
 
 2.  Double-click the proxy service on the project explorer to open the file and click on the service on design view.
 
@@ -113,11 +128,11 @@ Either define the user roles inline or retrieve the user roles from the server.
 
 ## Step 3 - Package the artifacts
 
-[Package the artifacts into a composite application project](../../../integrate/develop/packaging-artifacts).
+[Package the artifacts into a composite application project](../packaging-artifacts).
 
 ## Step 4 - Build and run the artifacts
 
-[Deploy the artifacts](../../../integrate/develop/deploy-artifacts).
+[Deploy the artifacts](../deploy-artifacts).
 
 ## Step 5 - Testing the service
 

@@ -1,3 +1,18 @@
+---
+title: "Salesforce connectors overview"
+description: "Overview of the available Salesforce connectors and links to their configuration, example, and reference documentation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Salesforce Connectors Overview
 
 Salesforce is a Customer Relationship Management (CRM) solution that helps bridge the gap between customers and enterprises. This enables you to integrate with Salesforce and perform various actions with ease. This is done using connectors that interact with available Salesforce APIs. 
@@ -18,11 +33,11 @@ The Salesforce connector allows you to work with records in Salesforce. You can 
 
 The **Salesforce REST Connector** uses the [Salesforce REST API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) to interact with Salesforce. This connector is more useful when sending JSON requests. The Salesforce REST Connector allows you to work with records in Salesforce, a web-based service that allows organizations to manage Customer Relationship Management (CRM) data. You can use the Salesforce connector to create, query, retrieve, update, and delete records in your organization's Salesforce data.
 
-* **[Salesforce Access Token Generation](../../../includes/reference/connectors/salesforce-connectors/sf-access-token-generation/)**: This section includes how to obtain the OAuth2 tokens from Salesforce REST API.
+* **[Salesforce Access Token Generation](../../../includes/reference/connectors/salesforce-connectors/sf-access-token-generation)**: This section includes how to obtain the OAuth2 tokens from Salesforce REST API.
 
-* **[Salesforce Rest API Connector Example](../../../reference/connectors/salesforce-connectors/sf-rest-connector-example/)**: This example explains how to use the Salesforce client to connect with the Salesforce instance and perform the **create** and **retrieve** operations.
+* **[Salesforce Rest API Connector Example](sf-rest-connector-example)**: This example explains how to use the Salesforce client to connect with the Salesforce instance and perform the **create** and **retrieve** operations.
 
-* **[Salesforce Rest API Connector Reference](../../../reference/connectors/salesforce-connectors/sf-rest-connector-config-v2/)**: This documentation provides a reference guide for the Salesforce REST API operations.
+* **[Salesforce Rest API Connector Reference](sf-rest-connector-config-v2)**: This documentation provides a reference guide for the Salesforce REST API operations.
   
 The following table lists out compatibility information for Salesforce REST Connector.
 
@@ -40,11 +55,11 @@ The Salesforce Bulk connector allows you to access the [Salesforce Bulk REST API
 
 **Salesforce Inbound Endpoint**  uses the [Salesforce streaming API](https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/intro_stream.htm) to receive notifications. This is bundled with and can be obtained from the Salesforce connector available in the store. The Salesforce Inbound Endpoint receives notifications based on the changes that happen to Salesforce data with respect to an SOQL (Salesforce Object Query Language) query you define, in a secured and scalable way.
 
-* **[Setting up the PushTopic in Salesforce](../../../reference/connectors/salesforce-connectors/sf-inbound-endpoint-configuration/)**: This documentation explains how to set up the Salesforce environment to connect with WSO2 Salesforce Inbound Endpoint. 
+* **[Setting up the PushTopic in Salesforce](sf-inbound-endpoint-configuration)**: This documentation explains how to set up the Salesforce environment to connect with WSO2 Salesforce Inbound Endpoint. 
 
-* **[Salesforce Inbound Endpoint Example](../../../reference/connectors/salesforce-connectors/sf-inbound-endpoint-example/)**: This example explains how Salesforce Inbound Endpoint acts as a message consumer. The integration runtime of WSO2 is a listening inbound endpoint that can consume messages from Salesforce. 
+* **[Salesforce Inbound Endpoint Example](sf-inbound-endpoint-example)**: This example explains how Salesforce Inbound Endpoint acts as a message consumer. The integration runtime of WSO2 is a listening inbound endpoint that can consume messages from Salesforce. 
 
-* **[Salesforce Inbound Endpoint Reference](../../../reference/connectors/salesforce-connectors/sf-inbound-endpoint-reference-configuration/)**: This documentation provides a reference guide for the Salesforce Inbound Endpoint.
+* **[Salesforce Inbound Endpoint Reference](sf-inbound-endpoint-reference-configuration)**: This documentation provides a reference guide for the Salesforce Inbound Endpoint.
 
 The following table lists out compatibility information for the Salesforce Inbound Endpoint Connector.
 

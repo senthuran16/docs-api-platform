@@ -1,3 +1,18 @@
+---
+title: "Breaking complex flows into multiple sequences"
+description: "Break a complex mediation flow into multiple reusable sequences instead of a single main sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/sequence_examples/using-multiple-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/sequence_examples/using-multiple-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - sequence_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Breaking Complex Flows into Multiple Sequences
 This sample demonstrates how a complex sequence can be separated into a set of simpler sequences. In this sample, you will send a simple request to a back-end service (Stock Quote service) and receive a response. If you look at the sample's XML configuration, you will see how this mediation is performed by several sequence definitions instead of one main sequence.
 
@@ -185,10 +200,10 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), the [mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences), and the [REST API ](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), the [mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences), and the [REST API ](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

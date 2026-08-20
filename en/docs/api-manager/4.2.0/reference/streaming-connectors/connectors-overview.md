@@ -1,10 +1,25 @@
+---
+title: "Streaming integrator connectors overview"
+description: "Explains the Siddhi extension architecture used by the Streaming Integrator to extend its functionality with additional libraries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/streaming-connectors/connectors-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/streaming-connectors/connectors-overview.md
+tags:
+  - api-manager
+  - reference
+  - streaming-connectors
+  - connectors-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Streaming Integrator Connectors Overview
 
 WSO2 Streaming Integrator is powered by Siddhi. Siddhi supports an extension architecture to enhance its functionality by incorporating other libraries in a seamless manner.
 
 ## Purpose
 
-Streaming Integration use cases may require a wide range of functionalities. Extensions are supported because it is not possible to have all this functionality within the Siddhi core. If the functionality covered by the supported extensions have gaps when addressing the requirements of your use cases, you can [write a custom extension](../../reference/streaming-connectors/writing-custom-siddhi-extensions).
+Streaming Integration use cases may require a wide range of functionalities. Extensions are supported because it is not possible to have all this functionality within the Siddhi core. If the functionality covered by the supported extensions have gaps when addressing the requirements of your use cases, you can [write a custom extension](writing-custom-siddhi-extensions).
 
 All extensions have a namespace. This is used to identify the relevant extensions together, and to let you specifically call the extension.
 
@@ -142,5 +157,5 @@ For the complete list of pre-written Siddhi extensions that are currently availa
 
 ## Further References
 
-- For instructions to download and install a Siddhi extension, see [Downloading and Installing Siddhi Extensions](../../reference/streaming-connectors/downloading-and-installing-siddhi-extensions/).
-- If you want to install/uninstall one or more Siddhi extensions in Streaming Integrator Tooling, see [Installing Siddhi Extensions](../../develop/streaming-apps/installing-siddhi-extensions/).
+- For instructions to download and install a Siddhi extension, see [Downloading and Installing Siddhi Extensions](downloading-and-installing-siddhi-extensions).
+- If you want to install/uninstall one or more Siddhi extensions in Streaming Integrator Tooling, see [Installing Siddhi Extensions](../../develop/streaming-apps/installing-siddhi-extensions).

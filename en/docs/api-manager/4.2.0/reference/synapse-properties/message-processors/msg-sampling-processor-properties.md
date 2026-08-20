@@ -1,3 +1,18 @@
+---
+title: "Message sampling processor properties"
+description: "Reference for the properties used to configure a Message Sampling Processor that forwards messages at a preset interval."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-processors/msg-sampling-processor-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-processors/msg-sampling-processor-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Message Sampling Processor Properties
 ## Introduction
 The message sampling processor consumes messages in a <a href="#list-of-message-stores">message store</a> and sends them to a configured <a href="../../../../reference/synapse-properties/sequence-properties">sequence</a>. This process happens at a preconfigured interval. This message processor does not ensure reliable messaging.
@@ -8,7 +23,7 @@ See the topics given below for the list of properties that can be configured for
 
 ### Required Properties
 
-Following are the required parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor/):
+Following are the required parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor):
 
 <table>
 	<tr>
@@ -43,7 +58,7 @@ Following are the required parameters you can set when [adding a Scheduled Messa
 
 ### Optional Properties
 
-Following are the additional parameters you can set when [adding a message sampling processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor/):
+Following are the additional parameters you can set when [adding a message sampling processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor):
 
 <table>
    <thead>

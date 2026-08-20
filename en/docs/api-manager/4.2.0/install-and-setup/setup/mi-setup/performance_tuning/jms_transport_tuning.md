@@ -1,3 +1,18 @@
+---
+title: "Tuning the JMS transport"
+description: "Tune the JMS transport of the Micro Integrator, including increasing the maximum number of JMS proxies, for better performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/performance_tuning/jms_transport_tuning/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/performance_tuning/jms_transport_tuning.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Tuning the JMS Transport
 
 The Java Message Service (JMS) transport of the WSO2 Micro Integrator allows you to easily send and receive messages to queues and topics of any JMS service that implements the JMS specification. The following sections describe how you can tune the JMS transport of the Micro Integrator for better performance.
@@ -65,7 +80,7 @@ To adjust the values of these properties, you can modify the server startup scri
 
 ## Tuning the JMS Listener
 
-To increase the JMS listener performance, add the following parameters to the [JMS listener configuration](../../../../reference/config-catalog-mi/#jms-transport-listener) in the `deployment.toml` file (stored in the `MI_HOME/conf`):
+To increase the JMS listener performance, add the following parameters to the [JMS listener configuration](../../../../reference/config-catalog-mi#jms-transport-listener) in the `deployment.toml` file (stored in the `MI_HOME/conf`):
 
 ```toml
 [[transport.jms.listener]]
@@ -120,7 +135,7 @@ parameter.max_concurrent_consumer = 50
 
 ## Tuning the JMS Sender
 
-To increase the JMS sender performance, add the following parameters to the [JMS listener configuration](../../../../reference/config-catalog-mi/#jms-transport-sender) in the `deployment.toml` file (stored in the `MI_HOME/conf`):
+To increase the JMS sender performance, add the following parameters to the [JMS listener configuration](../../../../reference/config-catalog-mi#jms-transport-sender) in the `deployment.toml` file (stored in the `MI_HOME/conf`):
 
 ```toml
 [[transport.jms.sender]]

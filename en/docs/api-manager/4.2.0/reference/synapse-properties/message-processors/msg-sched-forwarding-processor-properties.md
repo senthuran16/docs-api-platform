@@ -1,3 +1,18 @@
+---
+title: "Scheduled message forwarding processor"
+description: "Reference for the properties used to configure a Scheduled Message Forwarding Processor that delivers messages to an endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-processors/msg-sched-forwarding-processor-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-processors/msg-sched-forwarding-processor-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Scheduled Message Forwarding Processor 
 ## Introduction
 The scheduled message forwarding processor consumes messages in a message store and sends them to an <a href="../../../../reference/synapse-properties/endpoint-properties">endpoint</a>. If a message is successfully delivered to the endpoint, the processor deletes the message from the message store. In case of a failure, it will retry after a specified interval.
@@ -8,7 +23,7 @@ See the topics given below for the list of properties that can be configured for
 
 ### Required Properties
 
-Following are the required parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor/):
+Following are the required parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor):
 
 <table>
    <tr>
@@ -43,7 +58,7 @@ Following are the required parameters you can set when [adding a Scheduled Messa
 
 ### Optional Properties
 
-Following are the optional parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor/):
+Following are the optional parameters you can set when [adding a Scheduled Message Forwarding Processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor):
 
 <table>
    <thead>

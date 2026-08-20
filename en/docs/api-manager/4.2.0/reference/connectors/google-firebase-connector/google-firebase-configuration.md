@@ -1,3 +1,18 @@
+---
+title: "Google firebase connector reference"
+description: "Configure the Google Firebase connector's init operation using credentials from a Firebase service account."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-firebase-connector/google-firebase-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-firebase-connector/google-firebase-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-firebase-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Google Firebase Connector Reference
 
 ## Initializing Google Firebase Connector

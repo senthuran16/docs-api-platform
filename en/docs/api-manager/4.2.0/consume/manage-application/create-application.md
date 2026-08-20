@@ -1,3 +1,18 @@
+---
+title: "Create applications"
+description: "Create a new application in the Developer Portal to subscribe to APIs, generate consumer keys, and manage access tokens."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/create-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/create-application.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - create-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create Applications
 
 An application is a logical representation of a physical application such as a mobile app, webapp, device, etc. If an application needs to consume an API, it should subscribe to the required API over a selected business plan, which determined the usage quota the application is allowed. A single application can have multiple API subscriptions. Each application has a consumer key and consumer secret pair. The requests to the subscribed APIs are authenticated via the tokens generated using the latter mentioned security credentials.
@@ -8,7 +23,7 @@ Applications allow you to:
 -   Subscribe multiple times to a single API with different Service Level Agreements (SLAs)/business plans which 
 operate on per access token basis.
 
-WSO2 API Manager comes with a pre-created default application, which allows unlimited access by default. Default application creation can be disabled by adding the configuration `"DisableDefaultApplicationCreation" : true` in to the `Advanced Configurations` under `Settings` of the `admin` portal. You can also [create](../../consume/manage-application/create-application/#create-a-new-application) your own.
+WSO2 API Manager comes with a pre-created default application, which allows unlimited access by default. Default application creation can be disabled by adding the configuration `"DisableDefaultApplicationCreation" : true` in to the `Advanced Configurations` under `Settings` of the `admin` portal. You can also [create](create-application#create-a-new-application) your own.
 
 ## Create a new application
 

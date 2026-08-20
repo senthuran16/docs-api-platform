@@ -1,6 +1,21 @@
+---
+title: "FastXSLT mediator"
+description: "Reference for the FastXSLT mediator, which applies XSLT transformations to a message stream for faster performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/fastxslt-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/fastxslt-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - fastxslt-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # FastXSLT Mediator
 
-The **FastXSLT Mediator** is similar to the [XSLT mediator](../../reference/mediators/xslt-mediator), but it uses the [Streaming XPath Parser](https://wso2.com/library/articles/2013/01/streaming-xpath-parser-wso2-esb/) and applies the XSLT transformation to the message stream instead of to the XML message payload. The result is a faster transformation, but you cannot specify the source, properties, features, or resources as you can with the XSLT mediator. Therefore, the FastXSLT mediator is intended to be used to gain performance in cases where the original message remains unmodified. Any pre-processing performed on the message payload will not be visible to the FastXSLT mediator, because the transformation logic is applied on the original message stream instead of the message payload. In cases where the message payload needs to be pre-processed, use the XSLT mediator instead of the FastXSLT mediator.
+The **FastXSLT Mediator** is similar to the [XSLT mediator](xslt-mediator), but it uses the [Streaming XPath Parser](https://wso2.com/library/articles/2013/01/streaming-xpath-parser-wso2-esb/) and applies the XSLT transformation to the message stream instead of to the XML message payload. The result is a faster transformation, but you cannot specify the source, properties, features, or resources as you can with the XSLT mediator. Therefore, the FastXSLT mediator is intended to be used to gain performance in cases where the original message remains unmodified. Any pre-processing performed on the message payload will not be visible to the FastXSLT mediator, because the transformation logic is applied on the original message stream instead of the message payload. In cases where the message payload needs to be pre-processed, use the XSLT mediator instead of the FastXSLT mediator.
 
 !!! Note
     The streaming XPath parser used in the Fast XSLT mediator does not support Xpath functions specified with the prefix " fn: ". Examples are " `         fn:contains        ` ", " `         fn:count        ` ", and " `         fn:concat        ` ".

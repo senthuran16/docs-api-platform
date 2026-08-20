@@ -1,3 +1,18 @@
+---
+title: "Using the JDBC message store"
+description: "Configure a JDBC message store so a proxy service stores messages in a database for a forwarding processor to consume."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_store_processor_examples/using-jdbc-message-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_store_processor_examples/using-jdbc-message-store.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the JDBC Message Store
 In this sample, the client sends requests to a proxy service. The proxy service stores the messages in a JDBC message store. The back-end service is invoked by a message forwarding processor, which picks the messages stored in the JDBC message store.
 
@@ -93,10 +108,10 @@ The WSDL URI needs to be updated with the path to the `sample_proxy_1.wsdl` file
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), [message store](../../../integrate/develop/creating-artifacts/creating-a-message-store), [message processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor), and [endpoint](../../../integrate/develop/creating-artifacts/creating-endpoints) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), [message store](../../develop/creating-artifacts/creating-a-message-store), [message processor](../../develop/creating-artifacts/creating-a-message-processor), and [endpoint](../../develop/creating-artifacts/creating-endpoints) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

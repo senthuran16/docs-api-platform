@@ -1,3 +1,18 @@
+---
+title: "Kafka connector example"
+description: "Configure the Kafka connector to publish messages to a Kafka broker via a topic using the publishMessages operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/kafka-connector-producer-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/kafka-connector-producer-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Kafka Connector Example
 
 Given below is a sample scenario that demonstrates how to send messages to a Kafka broker via Kafka topics. The publishMessages operation allows you to publish messages to the Kafka brokers via Kafka topics.
@@ -16,13 +31,13 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 ## Set up Kafka
 
-Before you begin, set up Kafka by following the instructions in [Setting up Kafka](../../../reference/connectors/kafka-connector/setting-up-kafka/).
+Before you begin, set up Kafka by following the instructions in [Setting up Kafka](setting-up-kafka).
 
 ## Configure the connector in WSO2 Integration Studio
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 5. Create a new Kafka connection by selecting a particular operation.
 
@@ -49,7 +64,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     ```
 Now we can export the imported connector and the API into a single CAR application. The CAR application needs to be deployed during server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -63,7 +78,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
     
 ## Testing
 
@@ -102,4 +117,4 @@ This demonstrates how the Kafka connector publishes messages to the Kafka broker
    
 ## What's next
 
-* To customize this example for your own scenario, see [Kafka Connector Configuration](../../../reference/connectors/kafka-connector/kafka-connector-config/) documentation.
+* To customize this example for your own scenario, see [Kafka Connector Configuration](kafka-connector-config) documentation.

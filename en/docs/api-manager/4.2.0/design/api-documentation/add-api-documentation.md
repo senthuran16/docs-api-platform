@@ -1,3 +1,18 @@
+---
+title: "Add API documentation"
+description: "Add in-line, URL, file, and Markdown documentation to an API in the WSO2 API Publisher, and control API document visibility in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-documentation/add-api-documentation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-documentation/add-api-documentation.md
+tags:
+  - api-manager
+  - design
+  - api-documentation
+  - add-api-documentation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Add API Documentation
 
 **API documentation** helps API subscribers to understand the functionality of the API and API publishers to market their APIs better and sustain competition. Using the API Publisher, you can add different types of documentation from various sources. All documents created in the API Publisher have unique URLs to help improve SEO support.
@@ -243,7 +258,7 @@ Document visibility levels can be one of the following options:
 1.  Sign in to the API Publisher as an API creator using the following URL: 
      `https://<localhost>:9443/publisher`
 
-2.  [Create a new API](../../design/create-api/create-rest-api/create-a-rest-api/) or edit an existing API.
+2.  [Create a new API](../create-api/create-rest-api/create-a-rest-api) or edit an existing API.
 
 3.  In the **Documents** tab, Click **Add New Document**, to see a new drop-down list added to select visibility from.
      [ ![API document visibility selector](../../assets/img/learn/api-doc-visibility-selector.png)](../../assets/img/learn/api-doc-visibility-selector.png)

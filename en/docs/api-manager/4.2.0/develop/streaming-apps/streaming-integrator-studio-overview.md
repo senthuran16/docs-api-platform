@@ -1,3 +1,18 @@
+---
+title: "Streaming integrator tooling overview"
+description: "Learn about the Streaming Integrator Tooling and its four interfaces for developing Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/streaming-integrator-studio-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/streaming-integrator-studio-overview.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - streaming-integrator-studio-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Streaming Integrator Tooling Overview
 
 The Streaming Integrator Tooling is a developer tool that is shipped with the Streaming Integrator to develop Siddhi applications. It provides four interfaces to develop Siddhi applications.
@@ -15,7 +30,7 @@ The Streaming Integrator Tooling is a developer tool that is shipped with the St
 
          For more information, see [Creating an ETL Application via SI Tooling tutorial](../../use-cases/streaming-tutorials/creating-etl-application-via-tooling).
 
--   **Async API View**: This interface allows you to generate an asynchronous API definition from a Siddhi application that includes a source/sink of the `websocket-server`, `webhooks` or `sse` type. Once an API definition is generated, you can also edit it in this interface. It displays the API definition in code format in the left panel, and as a form in the right panel. For more information about accessing this view and creating/editing an asynchronous API definition in this view, see [Generating and Viewing Asynchronous API Definitions](../../develop/streaming-apps/working-with-the-async-api-view)
+-   **Async API View**: This interface allows you to generate an asynchronous API definition from a Siddhi application that includes a source/sink of the `websocket-server`, `webhooks` or `sse` type. Once an API definition is generated, you can also edit it in this interface. It displays the API definition in code format in the left panel, and as a form in the right panel. For more information about accessing this view and creating/editing an asynchronous API definition in this view, see [Generating and Viewing Asynchronous API Definitions](working-with-the-async-api-view)
 
 Once a Siddhi application is created, you can simulate events via the
 Streaming Integrator Tooling to test whether it works as expected.
@@ -199,11 +214,11 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **File Explorer**
 
-    The file explorer. This is also available in the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The file explorer. This is also available in the [Side Panel](#side-panel).
 
 - **Extension Installer**
 
-    This opens the **Extension Installer** dialog box (shown below) where you can search for the required extension and install/uninstall it by clicking **Install** or **Uninstall** as appropriate. Once you install/uninstall an extension, you need to restart the Streaming Integrator Tooling. For detailed instructions, see [Installing Siddhi Extensions](../../develop/streaming-apps/installing-siddhi-extensions).
+    This opens the **Extension Installer** dialog box (shown below) where you can search for the required extension and install/uninstall it by clicking **Install** or **Uninstall** as appropriate. Once you install/uninstall an extension, you need to restart the Streaming Integrator Tooling. For detailed instructions, see [Installing Siddhi Extensions](installing-siddhi-extensions).
 
      ![Extension Installer](../../assets/img/streaming/streaming-integrator-studio-overview/extension-installer.png)
 
@@ -214,8 +229,8 @@ The **Tools** menu provides access to the following tools that are shipped with 
     -   Single Simulation
     -   Feed Simulation
 
-    For detailed information about event simulation, see [Simulating Events](../../develop/streaming-apps/testing-a-siddhi-application/#simulating-events).
-    The event simulator can also be accessed from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    For detailed information about event simulation, see [Simulating Events](testing-a-siddhi-application#simulating-events).
+    The event simulator can also be accessed from the [Side Panel](#side-panel).
 
 - **Error Store Explorer**
 
@@ -259,7 +274,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **Console**
 
-    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#side-panel).
 
 - **Sample Event Generator**
 
@@ -276,7 +291,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
     manipulate the store in which that Siddhi Application saves data.
     You can enter queries that can update record, insert/update records,
     retrieve records and delete records. For more information about
-    actions you can carry out for stores, see [Store APIs](../../develop/streaming-apps/store-apis).
+    actions you can carry out for stores, see [Store APIs](store-apis).
 
 - **Tour Guide**
 
@@ -287,7 +302,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 #### Deploy menu items
 
 The **Deploy** menu has the following option to select one or more Siddhi applications and deploy them to one or more
-Streaming Integrator servers. For more information, see [Deploying Siddhi Applications](../../develop/streaming-apps/deploying-streaming-applications).
+Streaming Integrator servers. For more information, see [Deploying Siddhi Applications](deploying-streaming-applications).
 
 ![Deploy menu](../../assets/img/streaming/streaming-integrator-studio-overview/deploy-menu.png)
 
@@ -298,10 +313,10 @@ The **Export** menu has the following options that allow you to export Siddhi ap
 ![Export menu](../../assets/img/streaming/streaming-integrator-studio-overview/export-menu.png)
 
 - **For Docker**
-    This opens the **Export Siddhi Apps for Docker image** wizard. For more information, see [Running the Streaming Integrator with Docker](../../use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes/#running-the-streaming-integrator-with-docker).
+    This opens the **Export Siddhi Apps for Docker image** wizard. For more information, see [Running the Streaming Integrator with Docker](../../use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes#running-the-streaming-integrator-with-docker).
 
 - **For Kubernetes**
-    This opens the **Export Siddhi Apps For Kubernetes CRD** wizard. For more information, see [Running the Streaming Integrator with Kubernetes](../../use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes/#running-the-streaming-integrator-with-kubernetes).
+    This opens the **Export Siddhi Apps For Kubernetes CRD** wizard. For more information, see [Running the Streaming Integrator with Kubernetes](../../use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes#running-the-streaming-integrator-with-kubernetes).
 
 ## Side Panel
 
@@ -320,7 +335,7 @@ Simulation can be carried out in two ways:
 -   Single Simulation
 -   Feed Simulation
 
-For detailed information about event simulation, see [Simulating Events](../../develop/streaming-apps/testing-a-siddhi-application/#simulating-events).
+For detailed information about event simulation, see [Simulating Events](testing-a-siddhi-application#simulating-events).
 
 ### Output Console
 
@@ -338,7 +353,7 @@ that you want to use in your Siddhi applications.
 -   For the complete list of Siddhi extensions that you can search for
     via the Operator Finder, see [Siddhi Extensions](http://siddhi-io.github.io/siddhi/extensions/).
 -   For detailed instructions to find and use a Siddhi extension via the
-    Operator Finder demonstrated with an example, see [Creating a Siddhi Application](../../develop/streaming-apps/creating-a-siddhi-application).
+    Operator Finder demonstrated with an example, see [Creating a Siddhi Application](creating-a-siddhi-application).
 
 ### Template Variables
 

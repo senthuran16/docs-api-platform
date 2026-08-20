@@ -1,3 +1,18 @@
+---
+title: "Amazon lambda connector overview"
+description: "Overview of the Amazon Lambda connector, which lets you access the AWS Lambda REST API from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon Lambda Connector Overview
 
 AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second.
@@ -18,9 +33,9 @@ For older versions, see the details in the connector store.
 
 ## Amazon Lambda Connector documentation
 
-* **[Amazon Lambda Connector Example](../../../reference/connectors/amazonlambda-connector/amazonlambda-connector-example/)**: This example demonstrates how to use Amazon Lambda Connector to use `createFunction` operation. 
+* **[Amazon Lambda Connector Example](amazonlambda-connector-example)**: This example demonstrates how to use Amazon Lambda Connector to use `createFunction` operation. 
 
-* **[Amazon Lambda Connector Reference](../../../reference/connectors/amazonlambda-connector/amazonlambda-connector-config/)**: This documentation provides a reference guide for the Amazon Lambda Connector.
+* **[Amazon Lambda Connector Reference](amazonlambda-connector-config)**: This documentation provides a reference guide for the Amazon Lambda Connector.
 
 ## How to contribute
 

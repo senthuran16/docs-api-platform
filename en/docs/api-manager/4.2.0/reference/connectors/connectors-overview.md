@@ -1,3 +1,18 @@
+---
+title: "Connectors overview"
+description: "Learn what integration connectors are, the cloud, technology, and database connector types, and how they work."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/connectors-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/connectors-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - connectors-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Connectors Overview
 
 Integration Connectors are extensions to the integration runtime of WSO2 (compatible with EI 6.x, EI 7.x, and also APIM 4.0.0). They allow you to interact with SaaS applications on the cloud, databases, and popular B2B protocols. 
@@ -67,7 +82,7 @@ Using connectors provide the following advantages:
 
 ## How to use connectors
 
-When configuring the integration logic, you need to use WSO2 Integration Studio. When ready, you can export the project along with dependency connectors to the integration runtime. See [documentation on adding connectors](../../integrate/develop/creating-artifacts/adding-connectors/) for more information.
+When configuring the integration logic, you need to use WSO2 Integration Studio. When ready, you can export the project along with dependency connectors to the integration runtime. See [documentation on adding connectors](../../integrate/develop/creating-artifacts/adding-connectors) for more information.
 
 See the following video for a quick look at how to use connectors.
 

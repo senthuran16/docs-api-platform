@@ -1,10 +1,25 @@
+---
+title: "Cache mediator"
+description: "Reference for the Cache mediator syntax and parameters used to detect and respond to duplicate incoming messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/cache-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/cache-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - cache-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Cache Mediator
 
 When a message enters a message flow, the Cache mediator checks whether the incoming message is similar to a previous message that was received
-within a specified period of time. This is done by evaluating the hash value of incoming messages. If a similar message was identified before, the Cache mediator executes the `         onCacheHit        ` sequence (if specified), fetches the cached response, and prepares the Micro Integrator to send the response. The `         onCacheHit        ` sequence can send back the response message using the [Respond Mediator](../../reference/mediators/respond-mediator). If the `         onCacheHit        ` sequence is not specified, the cached response is sent back to the requester and the message is not passed on. If a similar message has not been seen before, then the message is passed on.
+within a specified period of time. This is done by evaluating the hash value of incoming messages. If a similar message was identified before, the Cache mediator executes the `         onCacheHit        ` sequence (if specified), fetches the cached response, and prepares the Micro Integrator to send the response. The `         onCacheHit        ` sequence can send back the response message using the [Respond Mediator](respond-mediator). If the `         onCacheHit        ` sequence is not specified, the cached response is sent back to the requester and the message is not passed on. If a similar message has not been seen before, then the message is passed on.
 
 !!! Info
-    - The Cache mediator is a [content-aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    - The Cache mediator is a [content-aware](about-mediators#classification-of-mediators) mediator.
     - The Cache mediator supports only local caching. It does not support distributed caching.
 
 ## Syntax

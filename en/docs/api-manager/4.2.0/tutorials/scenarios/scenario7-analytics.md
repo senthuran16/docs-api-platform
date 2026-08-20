@@ -1,6 +1,21 @@
+---
+title: "Scenario 7 - analytics"
+description: "Tutorial on how to set up and view usage analytics for an API published through WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario7-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario7-analytics.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario7-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 7 - Analytics
 
-This is a tutorial that is part of a series and can be used as a standalone tutorial on how to set up and view analytics for an API. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview).
+This is a tutorial that is part of a series and can be used as a standalone tutorial on how to set up and view analytics for an API. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview).
 
 **_Time to Complete : 5 minutes_**
 
@@ -15,7 +30,7 @@ Choreo API-M Analytics can be used to fulfill the stats and analytics needs of t
 ## Step 1: Set up analytics
 
 !!! info "Before you begin..."
-    You need to be a registered user to follow the steps below. Refer the [Analytics Getting Started Guide](../../api-analytics/getting-started-guide/) for instructions.
+    You need to be a registered user to follow the steps below. Refer the [Analytics Getting Started Guide](../../api-analytics/choreo-analytics/getting-started-guide) for instructions.
 
 To configure analytics, 
 
@@ -59,4 +74,4 @@ Go to [Choreo Insights](https://console.choreo.dev/insights) to view statistics.
 
 ## What's next
 
-Try out the next scenario in the series, [Rate Limiting](../../tutorials/scenarios/scenario8-rate-limiting).
+Try out the next scenario in the series, [Rate Limiting](scenario8-rate-limiting).

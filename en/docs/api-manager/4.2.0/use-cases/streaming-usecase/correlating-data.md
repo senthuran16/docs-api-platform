@@ -1,3 +1,18 @@
+---
+title: "Correlating data"
+description: "Detect patterns and trends in streaming data using Siddhi patterns and sequences in WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/correlating-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/correlating-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - correlating-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Correlating Data
 
 The streaming integrator can correlate data in order to detect patterns and trends in streaming data. Correlating can be done via patterns as well as sequences.
@@ -48,7 +63,7 @@ In the `Calculate Shelf Life` query, `every e1 = ProductionStream -> e2 = SalesT
 
 To try out the Siddhi application given in the sample above, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file, add the following content to it and save.
 
@@ -122,7 +137,7 @@ insert into LowStockLevelAlertStream;
 
 To try out the Siddhi application given in the sample above, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file, add the following content to it and save.
 
@@ -201,7 +216,7 @@ In the `Detect Wastage` query, the `from` clause detects a pattern where the sal
 
 To try out the Siddhi application given in the sample above, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file, add the following content to it and save.
 
@@ -273,7 +288,7 @@ The above Siddhi application compares  three events (i.e., e1, e2 and e3) that o
 
 To try out the Siddhi application given in the sample above, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file, add the following content to it and save.
 
@@ -334,7 +349,7 @@ The above Siddhi application matches every event in the `ProductionStream` strea
 
 To try out the Siddhi application given in the sample above, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file, add the following content to it and save.
 

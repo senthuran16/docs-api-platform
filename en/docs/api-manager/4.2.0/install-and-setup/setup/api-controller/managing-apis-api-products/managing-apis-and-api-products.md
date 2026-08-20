@@ -1,17 +1,32 @@
+---
+title: "Managing APIs and API Products"
+description: "Use apictl commands to add, get, delete, change the status of, undeploy revisions of, and set log levels for APIs and API Products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing APIs and API Products
 
 ## Add APIs or API Products in an environment
 
 You can add APIs and API Products via the Publisher Portal.
-However, **WSO2 API Controller (apictl)** allows you to create and deploy APIs without using the Publisher Portal. For more information on adding APIs, see [Importing APIs Via Dev First Approach](../../../../install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach).
+However, **WSO2 API Controller (apictl)** allows you to create and deploy APIs without using the Publisher Portal. For more information on adding APIs, see [Importing APIs Via Dev First Approach](importing-apis-via-dev-first-approach).
 
 ## Get APIs or API Products in an environment
 
 Follow the instructions below to display a list of APIs or API Products in an environment using apictl:
 
 1.  Make sure that the WSO2 API Manager (WSO2 API-M) 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-     For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+     For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to get (list) APIs or API Products in an environment.
 
     1. Get APIs in an environment.
@@ -75,7 +90,7 @@ Follow the instructions below to display a list of APIs or API Products in an en
                 be returned as a result.
 
             !!!note
-                Output of the `get apis` and `get api-products` commands can be formatted with Go Templates. For more information on formatting the get commands, see [Formatting the outputs of get commands](../../../../install-and-setup/setup/api-controller/advanced-topics/formatting-the-output-of-get-command).
+                Output of the `get apis` and `get api-products` commands can be formatted with Go Templates. For more information on formatting the get commands, see [Formatting the outputs of get commands](../advanced-topics/formatting-the-output-of-get-command).
 
             !!!note
                 `apictl list apis` command has been deprecated from apictl 4.0.0 onwards. Instead use `apictl get apis` as shown above. 
@@ -133,8 +148,8 @@ Follow the instructions below to display a list of APIs or API Products in an en
 Follow the instructions below to display a list of revisions created for an API or API Product in an environment using apictl:
 
 1.  Make sure that the WSO2 API-M 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-     For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+     For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to get (list) revisions for the required API or API Product in an
  environment.
 
@@ -240,15 +255,15 @@ Follow the instructions below to display a list of revisions created for an API 
                 gateway environment. Without the ```query``` flag, revisions will be displayed irrespective of the deployment.
             
             !!!note
-                Output of the `get api-revisions` and `get api-product-revisions` commands can be formatted with Go Templates. For more information on formatting the get commands, see [Formatting the outputs of get commands](../../../../install-and-setup/setup/api-controller/advanced-topics/formatting-the-output-of-get-command).                
+                Output of the `get api-revisions` and `get api-product-revisions` commands can be formatted with Go Templates. For more information on formatting the get commands, see [Formatting the outputs of get commands](../advanced-topics/formatting-the-output-of-get-command).                
 
 ## Delete an API or API Product in an environment
 
 Follow the instructions below to delete an API or Application in an environment using apictl:
 
 1.  Make sure that the WSO2 API-M 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to delete an API or an API Product in an environment.
 
     1. Delete an API in an environment.
@@ -339,8 +354,8 @@ For more information, see [Download and Initialize the apictl](../../../../insta
 Follow the instructions below to change the status of an API or API Product in an environment using apictl:
 
 1.  Make sure that the WSO2 API-M 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to change the status of an API or API Product in an environment.
 
     1. Change status of an API in an environment.
@@ -437,8 +452,8 @@ For more information, see [Download and Initialize the apictl](../../../../insta
 Follow the instructions below to undeploy a revision of an API from a selected gateway environment using apictl:
 
 1.  Make sure that the WSO2 API-M 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to undeploy the revision from a gateway environment.
 
     1. Undeploy a revision of an API from gateway environments.
@@ -538,8 +553,8 @@ For more information, see [Download and Initialize the apictl](../../../../insta
 Follow the instructions below to get the logging details of APIs or an API in an environment using apictl:
 
 1.  Make sure that the WSO2 API-M 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to get the logging details of APIs or an API in an environment.
 
     1. Get the logging details of APIs or an API in an environment.
@@ -604,8 +619,8 @@ For more information, see [Download and Initialize the apictl](../../../../insta
 Follow the instructions below to add/change/remove the log level of an API in an environment using apictl:
 
 1.  Make sure that the WSO2 API-M 4.2.0 version is started and that the 4.2.7 version of apictl is set up.   
-For more information, see [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
-2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#login-to-an-environment).
+For more information, see [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
+2.  Log in to the WSO2 API-M in the environment by following the instructions in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
 3.  Run the corresponding apictl command below to set the log level of an API in an environment.
 
     1. Set the log level of an API in an environment.

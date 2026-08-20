@@ -1,3 +1,18 @@
+---
+title: "Setting up the microsoft Dynamics365 environment with Azure"
+description: "Configure Azure Active Directory and Dynamics 365 to authenticate the Microsoft Dynamics 365 connector via Azure apps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-dynamics365-connector/microsoft-dynamics365-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-dynamics365-connector/microsoft-dynamics365-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-dynamics365-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the Microsoft Dynamics365 Environment with Azure
 
 The Microsoft Dynamics 365 (Microsoft Dynamics CRM) Connector allows you to access the [Microsoft Dynamics 365 Web API](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)?redirectedfrom=MSDN) through the WSO2 integration runtime. The Microsoft Dynamics CRM system (now known as Microsoft Dynamics 365) is a standalone CRM product from Microsoft that provides sales, marketing, and service management capabilities only via individual modules.
@@ -93,23 +108,23 @@ Dynamics 365 authentication is recommended only through Azure AD (for online ins
     
     2. Log in to the created **Dynamics 365 account**. Click the **Admin** icon.
     
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics365-admin-icon.png" title="Dynamics365 admin center" width="800" alt="Dynamics365 admin center"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics365-admin-icon.png" title="Dynamics365 admin center" width="800" alt="Dynamics365 admin center"/>
     
     3. Click **Show all** from the dropdown in the left corner scroll bar.
     
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics365-show-all.png" title="Dynamics365 show all" width="800" alt="Dynamics365 show all"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics365-show-all.png" title="Dynamics365 show all" width="800" alt="Dynamics365 show all"/>
        
     4. Click **All admin centers** and click **Dynamics 365** icon. It will navigate to the **Power Platform admin center**.
 
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics365-all-admin-center.png" title="Dynamics365 all admin center" width="800" alt="Dynamics365 all admin center"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics365-all-admin-center.png" title="Dynamics365 all admin center" width="800" alt="Dynamics365 all admin center"/>
 
     5. Select the created environment and click **Open environment**.
     
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics365-select-environment.png" title="Dynamics365 select environment" width="800" alt="Dynamics365 select environment"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics365-select-environment.png" title="Dynamics365 select environment" width="800" alt="Dynamics365 select environment"/>
        
     6. Navigate to **Settings**.
     
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics365-settings.png" title="Dynamics365 settings" width="800" alt="Dynamics365 settings"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics365-settings.png" title="Dynamics365 settings" width="800" alt="Dynamics365 settings"/>
        
     7. Click **Security** -> **Users**.   
         
@@ -117,18 +132,18 @@ Dynamics 365 authentication is recommended only through Azure AD (for online ins
     
     8. Choose **Application Users** in the view filter.Select -> **New**.
     
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics365-filter-application-user.png" title="Filter application users" width="800" alt="Filter application users"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics365-filter-application-user.png" title="Filter application users" width="800" alt="Filter application users"/>
     
     9. In the **Application User** form, enter the required information.      
      
-       <img src="../../../../assets/img/integrate/connectors/MSdynamics-new-application-user.png" title="Dynamics365 new application user" width="800" alt="Dynamics365 new application user"/>
+       <img src="../../../../assets/img/integrate/connectors/msdynamics-new-application-user.png" title="Dynamics365 new application user" width="800" alt="Dynamics365 new application user"/>
 
        The user name information must not match a user that exists in the Azure Active Directory.
        In the **Application ID** field, enter the application ID of the app you registered earlier in the Azure AD.
        
     10. If all goes well, after selecting SAVE, the Application ID URI and Azure AD Object Id fields will auto-populate with correct values. 
     
-        <img src="../../../../assets/img/integrate/connectors/MSdynamics365-created-application-user.png" title="Dynamics365 created application user" width="800" alt="Dynamics365 created application user"/> 
+        <img src="../../../../assets/img/integrate/connectors/msdynamics365-created-application-user.png" title="Dynamics365 created application user" width="800" alt="Dynamics365 created application user"/> 
     
     11. Before exiting the user form, choose MANAGE ROLES and assign a security role to this application user so that the application user can access the desired organization data.
    
@@ -153,7 +168,7 @@ Please note you need to replace the <tenant_id> with an actual value from your r
 
 Make a request using Postman as below.
 
-<img src="../../../../assets/img/integrate/connectors/MSdynamics365-access-token.png" title="Obtaining access token" width="800" alt="Obtaining access token"/>
+<img src="../../../../assets/img/integrate/connectors/msdynamics365-access-token.png" title="Obtaining access token" width="800" alt="Obtaining access token"/>
 
 You need to copy and save the following parameter values to proceed with configuring the WSO2 Microsoft Dynamics 365 Connector.
 

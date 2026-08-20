@@ -1,3 +1,17 @@
+---
+title: "ELK dashboards for Micro Integrator"
+description: "Reference the ELK dashboards available for Micro Integrator, covering overall, API, and endpoint request statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/mi-elk-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/mi-elk-dashboards.md
+tags:
+  - api-manager
+  - mi-analytics
+  - mi-elk-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # ELK Dashboards for Micro Integrator
 
 ## Dashboards

@@ -1,3 +1,18 @@
+---
+title: "Store APIs"
+description: "Reference the Store APIs used to query records stored in the Siddhi store of the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/store-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/store-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - store-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Store APIs
 
 ## Query records in Siddhi store

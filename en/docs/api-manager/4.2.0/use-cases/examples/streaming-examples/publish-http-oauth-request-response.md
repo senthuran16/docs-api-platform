@@ -1,3 +1,18 @@
+---
+title: "Publishing HTTP events via an OAuth-protected endpoint"
+description: "Configure a Siddhi application that sends an HTTP event to an OAuth-protected endpoint and captures its response."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/publish-http-oauth-request-response/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/publish-http-oauth-request-response.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing HTTP Events via an OAuth-protected Endpoint
 
 ## Purpose:

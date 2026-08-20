@@ -1,3 +1,18 @@
+---
+title: "Setting up the ceridian dayforce environment"
+description: "Sign up for a Ceridian Dayforce developer account and obtain the test credentials needed to use the Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the Ceridian Dayforce Environment
 
 The Dayforce Connector allows you to access the REST API of [Ceridian Dayforce HCM](https://www.ceridian.com/products/dayforce), which lets you store your human capital information and retrieve them back when needed. 

@@ -1,3 +1,18 @@
+---
+title: "Choreo connect overview"
+description: "Understand the Router, Enforcer, and Adapter components that make up the Choreo Connect API Gateway architecture."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Choreo Connect Overview
 
 Choreo Connect (the API Microgateway) is a cloud-native, decentralized, lightweight API Gateway designed especially for microservices. Choreo Connect provides API security, rate-limiting, load-balancing, observability and many other API management related quality of services (QoS) while maintaining a high throughput and a low latency.
@@ -42,10 +57,10 @@ Each component has its private-public key pair and truststore. In the case of th
 
     | **Deployment** | **Mode**| **File name** | **Directory** |
     |----------------|---------|---------------|---------------|
-    | Docker Compose |[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)| `config.toml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/conf/` |
-    | Docker Compose |[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/) | `config.toml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim/conf/` |
-    | Kubernetes |[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)| `config-toml-configmap.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect/` |
-    | Kubernetes |[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)| `config-toml-configmap.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect-with-apim/` |
+    | Docker Compose |[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)| `config.toml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/conf/` |
+    | Docker Compose |[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane) | `config.toml` | `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim/conf/` |
+    | Kubernetes |[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)| `config-toml-configmap.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect/` |
+    | Kubernetes |[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)| `config-toml-configmap.yaml` | `<CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect-with-apim/` |
 
 ```toml
 [adapter.keystore]
@@ -60,11 +75,11 @@ location = "/home/wso2/security/truststore"
 
 You can use Choreo Connect mainly in the following two modes.
 
-- [Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane)
+- [Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)
      
      By enabling the Control Plane Event Hub in the Choreo Connect configuration file, the APIs deployed in WSO2 API Manager will automatically be available in Choreo Connect. When using this mode, you can either create an API via WSO2 API Manager or you can import an API to WSO2 API Manager using the API Controller (apictl), which is a command line tool.
 
-- [Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway)
+- [Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)
 
      If you have not started using WSO2 API Manager yet, or you want to try out Choreo Connect as a Standalone Gateway, simply use the CLI tool apictl to directly deploy APIs to the Choreo Connect Adapter.
 
@@ -78,6 +93,6 @@ When a client makes an API request, it is sent to the Router. The Router then fo
 
 ## See also
 
-- [Supported Features](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/supported-features/)
-- [Quick Start Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/)
-- [Deployment Options](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/)
+- [Supported Features](supported-features)
+- [Quick Start Guide](quick-start-guide-docker-with-apim)
+- [Deployment Options](deploy/cc-deploy-overview)

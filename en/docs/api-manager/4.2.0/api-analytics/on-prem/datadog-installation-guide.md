@@ -1,3 +1,18 @@
+---
+title: "DataDog based analytics solution for API Manager"
+description: "Configure WSO2 API Manager and the Datadog agent to publish and visualize API analytics from the apim_metrics.log file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/api-analytics/on-prem/datadog-installation-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/api-analytics/on-prem/datadog-installation-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - on-prem
+  - datadog-installation-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # DataDog Based Analytics Solution For API Manager
 
 <a href="../../../assets/img/analytics/datadog/architecture.png"><img src="../../../assets/img/analytics/datadog/architecture.png" width="70%" alt="Deployment diagram"></a>

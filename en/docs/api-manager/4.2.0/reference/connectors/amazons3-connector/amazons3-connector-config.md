@@ -1,3 +1,18 @@
+---
+title: "Setting up the amazon S3 environment"
+description: "Sign up for AWS and obtain the access key and credentials needed to use the Amazon S3 connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazons3-connector/amazons3-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazons3-connector/amazons3-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazons3-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the Amazon S3 Environment
 
 To use the AmazonS3 service, you must have an AWS account. If you don't already have an account, you are prompted to create one when you sign up. You're not charged for any AWS services that you sign up for unless you use them.

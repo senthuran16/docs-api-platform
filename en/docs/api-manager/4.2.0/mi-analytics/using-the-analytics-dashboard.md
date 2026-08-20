@@ -1,3 +1,17 @@
+---
+title: "Access the MI analytics portal"
+description: "Start the MI Analytics servers and use the deprecated Analytics Portal to monitor Micro Integrator statistics and traces."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/using-the-analytics-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/using-the-analytics-dashboard.md
+tags:
+  - api-manager
+  - mi-analytics
+  - using-the-analytics-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Access the MI Analytics Portal
 
 !!! note
@@ -22,7 +36,7 @@ You can monitor the following statistics and more through the MI Analytics Porta
 
 ## Before you begin
 
--   Set up the [MI Analytics deployment](../install-and-setup/setup/mi-setup/observability/setting-up-classic-observability-deployment).
+-   Set up the [MI Analytics deployment](setting-up-mi-analytics).
 
 -   Note the following server directory in your deployment.
 
@@ -44,7 +58,7 @@ Let's start the servers in the given order.
 ### Step 1.1 - Start the Analytics Server
 
 !!! Note
-    Be sure to start the **Analytics** server before [starting the Micro Integrator](#starting-the-micro-integrator).
+    Be sure to start the **Analytics** server before [starting the Micro Integrator](#step-12-start-the-micro-integrator).
 
 1.  Open a terminal and navigate to the `<MI_ANALYTICS_HOME>/bin` directory.
 2.  Start the Analytics server by executing the following command:
@@ -61,7 +75,7 @@ Let's start the servers in the given order.
 
 ### Step 1.2 - Start the Micro Integrator
 
-Once you have [started the Analytics Server](#starting-the-analytics-server), you can [start the Micro Integrator](../install-and-setup/install/installing-the-product/installing-mi/).
+Once you have [started the Analytics Server](#step-11-start-the-analytics-server), you can [start the Micro Integrator](../install-and-setup/install/installing-the-product/installing-mi).
 
 ### Step 1.3 - Start the Analytics Portal
 

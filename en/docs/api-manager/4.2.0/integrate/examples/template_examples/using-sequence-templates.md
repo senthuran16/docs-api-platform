@@ -1,3 +1,18 @@
+---
+title: "Using sequence templates"
+description: "Call a sequence template with the Call Template mediator to pass parameter values into a reusable sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/template_examples/using-sequence-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/template_examples/using-sequence-templates.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - template_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Sequence Templates
 
 !!! Info
@@ -61,7 +76,7 @@ Instead of printing our "hello" message for each and every language inside the s
 
 ### Synapse configuration
 
-Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
+Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-1) this example.
 
 === "Sequence template"
     ```xml
@@ -153,10 +168,10 @@ sequence.
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) and [sequence template](../../../integrate/develop/creating-artifacts/creating-sequence-templates) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) and [sequence template](../../develop/creating-artifacts/creating-sequence-templates) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 You can test this out with the following payload sent to the proxy via `http://localhost:8290/services/HelloProxy`:
 
@@ -170,7 +185,7 @@ You can test this out with the following payload sent to the proxy via `http://l
 
 ## Example 2: Mandatory parameters and default values
 
-Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
+Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-2) this example.
 
 ### Synapse configuration
 
@@ -208,10 +223,10 @@ In this example, the sequence template is configured to log the greeting message
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [REST API](../../../integrate/develop/creating-artifacts/creating-an-api) and [sequence template](../../../integrate/develop/creating-artifacts/creating-sequence-templates) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [REST API](../../develop/creating-artifacts/creating-an-api) and [sequence template](../../develop/creating-artifacts/creating-sequence-templates) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Invoke this REST API using the HTTP client in WSO2 Integration Studio. 
 See that the default greeting message (`Welcome`) is logged on the console.

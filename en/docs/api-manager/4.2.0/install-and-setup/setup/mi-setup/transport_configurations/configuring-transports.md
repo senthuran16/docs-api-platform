@@ -1,3 +1,18 @@
+---
+title: "Configuring transports"
+description: "Configure the HTTP/S, JMS, VFS, and other transports supported by the Micro Integrator for sending and receiving messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Configuring Transports
 
 A transport protocol is responsible for carrying messages that are in a specific format. WSO2 Micro Integrator supports all the widely used transports including HTTP/S, JMS, VFS, as well as domain-specific transports like FIX. Each transport provides a receiver implementation for receiving messages, and a sender implementation for sending messages.
@@ -8,8 +23,8 @@ The HTTP and HTTPS Pass-Through transports are enabled by default in the Micro I
 
 See the following sections for a complete list of HTTP/HTTPS parameter.
 
-- [HTTP/S Transport (non-blocking mode)](../../../../reference/config-catalog-mi/#https-transport-non-blocking-mode)
-- [HTTP/S Transport (blocking mode)](../../../../reference/config-catalog-mi/#https-transport-blocking-mode)
+- [HTTP/S Transport (non-blocking mode)](../../../../reference/config-catalog-mi#https-transport-non-blocking-mode)
+- [HTTP/S Transport (blocking mode)](../../../../reference/config-catalog-mi#https-transport-blocking-mode)
 
 ### Number of HTTP Listeners
 
@@ -104,7 +119,7 @@ listener.parameter.PreferredCiphers = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,T
 ```
 
 !!! Note
-    To check the above configuration changes related to SSL. Download [testsslserver.jar](https://apim.docs.wso2.com/en/4.2.0/assets/attachments/admin/testsslserver-jar.zip) and test with the following command.
+    To check the above configuration changes related to SSL. Download [testsslserver.jar](../../../../assets/attachments/admin/testsslserver-jar.zip) and test with the following command.
 
     $ java -jar testsslserver.jar localhost 8253
 
@@ -401,7 +416,7 @@ The MailTo transport listener implementation can be configured by setting the pa
 
     The MailTo transport listener is enabled by default. For more information, see [About MailTo Transport](../../../../reference/synapse-properties/transport-parameters/mailto-transport-parameters).
 
-    See the [complete list of MailTo parameters](../../../../reference/config-catalog-mi/#mail-transport-listener-non-blocking-mode).
+    See the [complete list of MailTo parameters](../../../../reference/config-catalog-mi#mail-transport-listener-non-blocking-mode).
 
 - Configuring the MailTo sender
 
@@ -461,19 +476,19 @@ To enable the JMS transport sender and listener in the Micro Integrator, you nee
 
 See the following topics for instructions on how to configure the Micro Integrator with different types of brokers:
 
--	[Connecting to ActiveMQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-activemq)
--	[Connecting to Apache Artemis](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-apache-artemis)
--	[Connecting to HornetQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-hornetq)
--	[Connecting to IBM WebSphere App Server](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-ibm-websphere-app-server)
--	[Connecting to IBM WebSphere MQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-ibm-webspheremq)
--	[Connecting to JBossMQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-jbossmq)
--	[Connecting to MSMQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-msmq)
--	[Connecting to RabbitMQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq)
--	[Connecting to SwiftMQ](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-swiftmq)
--	[Connecting to Tibco EMS](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-tibco-ems)
--	[Connecting to Oracle Weblogic](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-weblogic)
--	[Connecting to WSO2 MB](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-wso2-mb)
--	[Connecting to Multiple Brokers](../../../../install-and-setup/setup/mi-setup/brokers/configure-with-multiple-brokers)
+-	[Connecting to ActiveMQ](../brokers/configure-with-activemq)
+-	[Connecting to Apache Artemis](../brokers/configure-with-apache-artemis)
+-	[Connecting to HornetQ](../brokers/configure-with-hornetq)
+-	[Connecting to IBM WebSphere App Server](../brokers/configure-with-ibm-websphere-app-server)
+-	[Connecting to IBM WebSphere MQ](../brokers/configure-with-ibm-webspheremq)
+-	[Connecting to JBossMQ](../brokers/configure-with-jbossmq)
+-	[Connecting to MSMQ](../brokers/configure-with-msmq)
+-	[Connecting to RabbitMQ](../brokers/configure-with-rabbitmq)
+-	[Connecting to SwiftMQ](../brokers/configure-with-swiftmq)
+-	[Connecting to Tibco EMS](../brokers/configure-with-tibco-ems)
+-	[Connecting to Oracle Weblogic](../brokers/configure-with-weblogic)
+-	[Connecting to WSO2 MB](../brokers/configure-with-wso2-mb)
+-	[Connecting to Multiple Brokers](../brokers/configure-with-multiple-brokers)
 
 
 ## Configuring the Multi-HTTPS transport

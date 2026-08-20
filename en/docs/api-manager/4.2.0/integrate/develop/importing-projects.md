@@ -1,3 +1,18 @@
+---
+title: "Importing projects"
+description: "Provides steps to import an existing integration project file into the WSO2 Integration Studio workspace."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/importing-projects/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/importing-projects.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - importing-projects
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Importing projects
 
 If you have an already created Integration project file, you can import it to

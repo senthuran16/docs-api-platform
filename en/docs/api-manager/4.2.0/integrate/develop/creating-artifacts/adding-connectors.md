@@ -1,3 +1,18 @@
+---
+title: "Adding connectors"
+description: "Explains how to import and enable connectors in WSO2 Integration Studio for use in mediation sequences and proxy services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/adding-connectors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/adding-connectors.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding Connectors
 
 You can develop configurations with connectors, and deploy the configurations and connectors as composite application archive (CAR) files in WSO2 Micro Integrator using WSO2 Integration Studio.
@@ -19,7 +34,7 @@ See the topics given below.
 
 Follow the steps below to import connectors into WSO2 Integration Studio:
 
-1.  If you have already created an [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project), right click the ESB Config project where you want to use the connector and click **Add or Remove Connector/Module**.
+1.  If you have already created an [ESB Config project](../create-integration-project#sub-projects), right click the ESB Config project where you want to use the connector and click **Add or Remove Connector/Module**.
 2.  On the wizard that appears, select **Add Connector/module** and click **Next**.
     -   If you have not downloaded the connector, search on the required connector in **WSO2 Connector Store** view, and click on the download icon to import the connector into the workspace. Then, click on **Finish**.
     -   If you have already downloaded the connectors, select the **Add from File System** option and browse to the connector file from the file system. Click **Finish**. The connector is imported into the workspace and available for use with all the projects in the workspace.
@@ -36,7 +51,7 @@ Follow the steps below to create a composite application archive (CAR) file cont
 5.  Select **Add Connector/module** and click **Next**. Then, click on the **Workspace** option. This will list down the connectors that have been imported into WSO2 Integration Studio.
 6.  Select the connector and click **OK** and then click **Finish**.
 
-You can export this connector file as a CAR file just as other ESB artifacts. See [exporting artifacts](../../../integrate/develop/exporting-artifacts) for instructions.
+You can export this connector file as a CAR file just as other ESB artifacts. See [exporting artifacts](../exporting-artifacts) for instructions.
 
 ### Removing Connectors
 
@@ -48,4 +63,4 @@ Follow the steps below to remove connectors from WSO2 Integration Studio:
 
 ## Tutorials
 
--	See the tutorial on [Connecting Web APIs/Cloud Services](../../../tutorials/integration-tutorials/using-the-gmail-connector/#importing-the-email-connector-into-wso2-integration-studio).
+-	See the tutorial on [Connecting Web APIs/Cloud Services](../../../tutorials/integration-tutorials/using-the-gmail-connector#importing-the-email-connector-into-wso2-integration-studio).

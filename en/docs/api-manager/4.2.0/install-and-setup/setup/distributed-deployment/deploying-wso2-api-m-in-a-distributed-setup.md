@@ -1,6 +1,21 @@
+---
+title: "Deploy with Gateway and Control Plane separated"
+description: "Deploy WSO2 API Manager as a distributed setup with separate Gateway Worker and Control Plane nodes for high availability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Distributed API-M Deployment with Gateway and Control Plane
 
-The WSO2 API-M server can be deployed as an [all-in-one deployment](../../../install-and-setup/setup/single-node/all-in-one-deployment-overview) or as a distributed deployment. In the distributed setup, the [API-M server profiles](../../../install-and-setup/setup/distributed-deployment/product-profiles) are deployed as separate API-M nodes. 
+The WSO2 API-M server can be deployed as an [all-in-one deployment](../single-node/all-in-one-deployment-overview) or as a distributed deployment. In the distributed setup, the [API-M server profiles](product-profiles) are deployed as separate API-M nodes. 
 
 Given below are the API-M nodes you can have in a distributed deployment by default.
 
@@ -47,28 +62,28 @@ To install and set up the API-M servers:
 
 You can create the required databases for the API-M deployment in a separate server and point to the databases from the respective nodes. 
 
-For information, see [Installing and Configuring the Databases](../../../install-and-setup/setup/setting-up-databases/overview/).
+For information, see [Installing and Configuring the Databases](../setting-up-databases/overview).
 
 ## Step 3 - Configure your deployment with production hardening
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M. 
 
-For more information, see [Production Deployment Guidelines](../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines/#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines#production-deployment-checklist).
 
 ## Step 4 - Create and import SSL certificates
 
 Create an SSL certificate for each of the WSO2 API-M nodes and import them to the keystore and the truststore. This ensures that hostname mismatch issues in the certificates will not occur. 
 
 !!! Note
-    The same primary keystore should be used for all API Manager instances to decrypt the registry resources. For more information, see [Configuring the Primary Keystore](../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/#configuring-the-primary-keystore).
+    The same primary keystore should be used for all API Manager instances to decrypt the registry resources. For more information, see [Configuring the Primary Keystore](../security/configuring-keystores/configuring-keystores-in-wso2-api-manager#configuring-the-primary-keystore).
 
-For more information, see [Creating SSL Certificates](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/).
+For more information, see [Creating SSL Certificates](../security/configuring-keystores/keystore-basics/creating-new-keystores).
 
 ## Step 5 - Configure API-M Analytics
 
 API Manager Analytics is delivered via the API Manager Analytics cloud solution. You need to configure the API Manager Gateway to publish analytics data to the cloud.
 
-See the instructions on [configuring the API Gateway](../../../api-analytics/choreo-analytics/getting-started-guide/) with the cloud-based analytics solution.
+See the instructions on [configuring the API Gateway](../../../api-analytics/choreo-analytics/getting-started-guide) with the cloud-based analytics solution.
 
 ## Step 6 - Configure and start the profiles
 
@@ -133,7 +148,7 @@ Configure the Gateway to communicate with the Control Plane.
         
         Gateway will publish gateway invocation related events to the TM using the `apim.throttling.url_group`. Traffic managers will receive these events and throttle decisions will be published to gateway. To receive these throttle decisions, gateway has to create a JMS connection using `throttle_decision_endpoints` and listen.
 
-        {!includes/deploy/enable-jms-ssl-for-gw-tm.md!}
+        --8<-- "api-manager/4.2.0/includes/deploy/enable-jms-ssl-for-gw-tm.md"
 
         The same JMS connection will be used to subscribe for events received from the event hub. Gateway will subscribe for API/Application/Subscription and Keymanager operations related events. `service_url` points to the internal API resides in the event hub that is used to pull artifacts and information from the db.
 
@@ -147,9 +162,9 @@ Configure the Gateway to communicate with the Control Plane.
     !!! Info
         Once an API is deployed/undeployed, Control Plane will send a deploy/undeploy event to the gateways. Using this configuration, the Gateway will filter out its relevant deploy/undeploy events and retrieve the artifacts.
 
-4. Enable JSON Web Token (JWT) if required. For instructions, see [Generating JSON Web Token](../../../deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/).
+4. Enable JSON Web Token (JWT) if required. For instructions, see [Generating JSON Web Token](../../../deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway).
 
-5. Add the public certificate of the private key (that is used for signing the tokens) to the truststore under the "gateway_certificate_alias" alias. For instructions, see [Create and import SSL certificates](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/).
+5. Add the public certificate of the private key (that is used for signing the tokens) to the truststore under the "gateway_certificate_alias" alias. For instructions, see [Create and import SSL certificates](../security/configuring-keystores/keystore-basics/creating-new-keystores).
 
     !!! Note
         This is not applicable if you use the default certificates, which are the certificates that are shipped with the product itself.
@@ -158,7 +173,7 @@ Configure the Gateway to communicate with the Control Plane.
 
     1. Create a copy of the API-M Gateway node that you just configured. This is the second node of the API-M Gateway cluster.
 
-    2. Configure a load balancer fronting the two Gateway nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer](../../../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/).
+    2. Configure a load balancer fronting the two Gateway nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer](../setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer).
 
 
         !!! Note
@@ -356,14 +371,14 @@ Configure the Control Plane to communicate with the Gateway.
         ```
 
     !!! Info
-        This configuration is used for deploying APIs to the Gateway and for connecting the Developer Portal component to the Gateway if the Gateway is shared across tenants. If the Gateway is not used in multiple tenants, you can create a [Gateway Environment using the Admin Portal](../../../deploy-and-publish/deploy-on-gateway/deploy-api/exposing-apis-via-custom-hostnames/#using-a-new-gateway-environment-to-expose-apis-via-custom-hostnames).  
+        This configuration is used for deploying APIs to the Gateway and for connecting the Developer Portal component to the Gateway if the Gateway is shared across tenants. If the Gateway is not used in multiple tenants, you can create a [Gateway Environment using the Admin Portal](../../../deploy-and-publish/deploy-on-gateway/deploy-api/exposing-apis-via-custom-hostnames#using-a-new-gateway-environment-to-expose-apis-via-custom-hostnames).  
 
         Note that in the above configurations, `service_url` points to the `9443` port of the Gateway node, while `http_endpoint` and `https_endpoint` points to the `http` and `https nio ports` (8280 and 8243).
 
     **Add Event Hub Configurations**:
 
     !!! Info
-            {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+            --8<-- "api-manager/4.2.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     Add event hub configurations only if you have High Availability for the Control Plane. 
 
@@ -441,7 +456,7 @@ Configure the Control Plane to communicate with the Gateway.
 
     1. Create a copy of the API-M Control Plane node that you just configured. This is the second node of the API-M Control Plane cluster.
 
-    2. Configure a load balancer fronting the two Control Plane nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer](../../../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/).
+    2. Configure a load balancer fronting the two Control Plane nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer](../setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer).
 
 !!! Note
     To set an appropriate delay for the heartbeat value when connections remain idle for extended periods, include the following configuration. This controls the frequency of the internal heartbeat sent by the underlying Qpid broker component:
@@ -663,4 +678,4 @@ Once you have successfully configured all the API-M nodes in the deployment, you
         api-manager.bat --run -Dprofile=control-plane
         ```
 
-For more information on starting API-M profiles, see [API-M Profiles](../../../install-and-setup/setup/distributed-deployment/product-profiles).
+For more information on starting API-M profiles, see [API-M Profiles](product-profiles).

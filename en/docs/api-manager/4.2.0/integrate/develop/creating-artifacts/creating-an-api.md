@@ -1,3 +1,18 @@
+---
+title: "Creating a REST API"
+description: "Provides steps to create a REST API artifact in WSO2 Integration Studio, from scratch or from an existing definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-an-api.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a REST API
 
 Follow the instructions given below to create a new [REST API](../../../reference/synapse-properties/rest-api-properties) artifact in WSO2 Integration Studio.
@@ -364,7 +379,7 @@ The service's metadata is used by the API management runtime to generate the API
 </table>
 
 !!! Tip
-    See the [Service Catalog API documentation](../../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1/) for more information on the metadata in the YAML file.
+    See the [Service Catalog API documentation](../../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1) for more information on the metadata in the YAML file.
 
 ### Updating properties
 
@@ -374,7 +389,7 @@ To update API-level properties from the **Design** view:
 
     <img src="../../../../assets/img/integrate/create_artifacts/new_api/api-properties.png" width="700">
 
-2.  See the complete list of [optional REST API properties](../../../reference/synapse-properties/rest-api-properties/#rest-api-properties-optional) you can configure.
+2.  See the complete list of [optional REST API properties](../../../reference/synapse-properties/rest-api-properties#rest-api-properties-optional) you can configure.
 
 To update API resource properties from the **Design** view:
 
@@ -382,7 +397,7 @@ To update API resource properties from the **Design** view:
 
     <img src="../../../../assets/img/integrate/create_artifacts/new_api/api-resource-properties.png" width="700">
 
-2.  See the complete list of [API Resource properties](../../../reference/synapse-properties/rest-api-properties/#rest-api-resource-properties) you can configure.
+2.  See the complete list of [API Resource properties](../../../reference/synapse-properties/rest-api-properties#rest-api-resource-properties) you can configure.
 
 ### Using the Source View
 
@@ -401,12 +416,12 @@ Click the **Swagger Editor** tab to view the Swagger definition of your API. You
 
 ## Examples
 
--   [Using a Simple Rest API](../../../integrate/examples/rest_api_examples/introduction-rest-api)
--   [Working with Query Parameters](../../../integrate/examples/rest_api_examples/setting-query-params-outgoing-messages)
--   [Exposing a SOAP Endpoint as a RESTful API](../../../integrate/examples/rest_api_examples/enabling-rest-to-soap)
--   [Exposing Non-HTTP Services as RESTful APIs](../../../integrate/examples/rest_api_examples/configuring-non-http-endpoints)
--   [Handling Non Matching Resources](../../../integrate/examples/rest_api_examples/handling-non-matching-resources)
--   [Handling HTTP Status Codes](../../../integrate/examples/rest_api_examples/setting-https-status-codes)
--   [Manipulating Content Types](../../../integrate/examples/rest_api_examples/transforming-content-type)
--   [Securing a REST API](../../../integrate/examples/rest_api_examples/securing-rest-apis)
--   [Special Cases](../../../integrate/examples/rest_api_examples/special-cases)
+-   [Using a Simple Rest API](../../examples/rest_api_examples/introduction-rest-api)
+-   [Working with Query Parameters](../../examples/rest_api_examples/setting-query-params-outgoing-messages)
+-   [Exposing a SOAP Endpoint as a RESTful API](../../examples/rest_api_examples/enabling-rest-to-soap)
+-   [Exposing Non-HTTP Services as RESTful APIs](../../examples/rest_api_examples/configuring-non-http-endpoints)
+-   [Handling Non Matching Resources](../../examples/rest_api_examples/handling-non-matching-resources)
+-   [Handling HTTP Status Codes](../../examples/rest_api_examples/setting-https-status-codes)
+-   [Manipulating Content Types](../../examples/rest_api_examples/transforming-content-type)
+-   [Securing a REST API](../../examples/rest_api_examples/securing-rest-apis)
+-   [Special Cases](../../examples/rest_api_examples/special-cases)

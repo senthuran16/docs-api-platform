@@ -1,3 +1,18 @@
+---
+title: "Data services"
+description: "Explains how data services expose data stored in heterogeneous systems as SOAP-based or RESTful services in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/data-services.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Data Services 
 
 The data in your organization can be a complex pool of information that is stored in heterogeneous systems (such as an RDBMS). Data services are created for the purpose of decoupling the data from its infrastructure. In other words, when you create a data service in WSO2 Micro Integrator, the data that is stored in a storage system (such as the RDBMS) can be exposed in the form of a service. This allows users (that may be any application or system) to access the data without interacting with the original source of the data. Data services are, thereby, a convenient interface for interacting with the database layer in your organization.

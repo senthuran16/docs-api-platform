@@ -1,3 +1,18 @@
+---
+title: "OAuth mediator"
+description: "Reference for the OAuth mediator, which authenticates RESTful service requests against WSO2 Identity Server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/oauth-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/oauth-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - oauth-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # OAuth Mediator
 
 The **OAuth Mediator** supports 2 forms of OAuth. It bypasses the RESTful requests and authenticates users against WSO2 Identity Server.
@@ -34,7 +49,7 @@ registered in the WSO2 Identity Server and accessed via the
 `         http://ws.apache.org/ns/synapse        ` URL. The username
 used to log into the WSO2 Identity Server is `         foo        ` and
 the password is `         bar        ` . Both the user name and the
-password should be registered in the Identity Server. The [Property mediator](../../reference/mediators/property-mediator) adds a property named
+password should be registered in the Identity Server. The [Property mediator](property-mediator) adds a property named
 `         scope        ` to the synapse message context. The value of
 this property will be used by the OAuth mediator to send the OAuth
 request.

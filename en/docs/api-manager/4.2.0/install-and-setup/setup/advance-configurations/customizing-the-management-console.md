@@ -1,3 +1,18 @@
+---
+title: "Customizing the management console"
+description: "Customize the WSO2 API Manager Management Console user interface layers to match your organization's requirements."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/advance-configurations/customizing-the-management-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/advance-configurations/customizing-the-management-console.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - advance-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing the Management Console
 
 The User Interface of the Management Console (

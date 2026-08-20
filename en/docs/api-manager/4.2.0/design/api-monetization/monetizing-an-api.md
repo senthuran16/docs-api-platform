@@ -1,3 +1,18 @@
+---
+title: "Monetizing an API"
+description: "Configure the Stripe billing engine and WSO2 API Manager to monetize an API, collect payments, and publish usage data for metered billing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-monetization/monetizing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-monetization/monetizing-an-api.md
+tags:
+  - api-manager
+  - design
+  - api-monetization
+  - monetizing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monetizing an API
 
 API Monetization allows organizations to expand their business and generate higher revenue by exposing their services and data via APIs. API Publishers can publish their APIs with competitive business plans to the Developer Portal. Thereafter, API subscribers (e.g., Application Developers) can discover, subscribe, and invoke these monetized APIs, and pay for their API usage based on dynamic or fixed business plans.
@@ -534,7 +549,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
      These configurations are required only if you intend to create dynamic plans (usage-based plans) where consumers are charged based on the usage of the API. In such situations, you need analytics to record and retrieve the usage of the monetized APIs. 
 
     !!! note
-        For instructions on configuring API Manager with ELK Analytics, see [Monetization Support via Elasticsearch](../../design/api-monetization/monetizing-an-api/#monetization-support-via-elasticsearch)
+        For instructions on configuring API Manager with ELK Analytics, see [Monetization Support via Elasticsearch](monetizing-an-api#monetization-support-via-elasticsearch)
                                                                                                                           
     1. Enable analytics.
     
@@ -644,7 +659,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
 2.  Create a subscription policy.  
      
-     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../design/rate-limiting/adding-new-throttling-policies#Adding-a-new-subscription---level-throttling-tier).
+     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../rate-limiting/adding-new-throttling-policies#adding-a-new-subscription-level-rate-limiting-tier).
 
      <html>
       <div class="admonition note">
@@ -728,7 +743,7 @@ You can use the admin REST API, which is available in WSO2 API Manager, to publi
 
 1.  Obtain the consumer key and secret key pair by calling the dynamic client registration endpoint.  
      
-     For more information, see [Admin REST API v4.0](../../reference/product-apis/admin-apis/admin-v4/admin-v4/).
+     For more information, see [Admin REST API v4.0](../../reference/product-apis/admin-apis/admin-v4/admin-v4).
 
     ``` java
     curl -X POST -H "Authorization: Basic <base64encoded-admin-account-credentials>" -H "Content-Type: application/json" -d @payload.json https://localhost:9443/client-registration/v0.17/register

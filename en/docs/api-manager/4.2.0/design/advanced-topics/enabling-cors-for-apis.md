@@ -1,3 +1,18 @@
+---
+title: "Enabling CORS for APIs"
+description: "Enable Cross-Origin Resource Sharing in API Manager globally through deployment.toml or per API using Publisher runtime settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/advanced-topics/enabling-cors-for-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/advanced-topics/enabling-cors-for-apis.md
+tags:
+  - api-manager
+  - design
+  - advanced-topics
+  - enabling-cors-for-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling CORS for APIs
 
 Cross-Origin Resource Sharing (CORS) is a mechanism that allows accessing restricted resources (i.e., fonts, images, scripts, videos, and iframes) from domains outside the domain from which the requesting resource originated. Browsers define the origin as a combination of Scheme (`http://`, `https://`), Host, and Port. By default, web browsers apply the same-origin policy to avoid interactions between different origins. CORS defines a way in which a browser and a server can interact to determine whether or not it is safe to allow the cross-origin requests.
@@ -36,10 +51,10 @@ Follow the instructions below to enable CORS response headers globally. Once thi
 ## Enabling CORS Per API
 
 !!! note
-    You need to enable CORS globally before you enable CORS Per API. Therefore, if you have not enabled CORS globally, follow the instructions in [Enabling CORS Globally](../../design/advanced-topics/enabling-cors-for-apis/#enabling-cors-globally) before carrying out the following instructions.
+    You need to enable CORS globally before you enable CORS Per API. Therefore, if you have not enabled CORS globally, follow the instructions in [Enabling CORS Globally](enabling-cors-for-apis#enabling-cors-globally) before carrying out the following instructions.
 
 
-1.  Sign in to API Publisher and [create a new API](../../design/create-api/create-rest-api/create-a-rest-api).
+1.  Sign in to API Publisher and [create a new API](../create-api/create-rest-api/create-a-rest-api).
 
 2.  Go to **API Configurations** from the left menu and click **Runtime**.
 

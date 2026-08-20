@@ -1,3 +1,18 @@
+---
+title: "Utility module overview"
+description: "Overview of the Utility Module's math, string, and UUID functions and its compatibility with product versions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/utility-module/utility-module-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/utility-module/utility-module-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - utility-module
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Utility Module Overview
 
 The Utility Module allows you to do the following.
@@ -24,7 +39,7 @@ For older versions, see the details in the Connector Store.
 
 ## Utility Module documentation
 
-* **[Utility Module Reference](../../../reference/connectors/utility-module/utility-module-config/)**: This documentation provides a reference guide for the Utility Module.
+* **[Utility Module Reference](utility-module-config)**: This documentation provides a reference guide for the Utility Module.
 
 ## How to contribute
 

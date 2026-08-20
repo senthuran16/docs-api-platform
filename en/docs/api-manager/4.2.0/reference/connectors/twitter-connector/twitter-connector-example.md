@@ -1,3 +1,18 @@
+---
+title: "Twitter API connector example"
+description: "Configure a sample project that uses the Twitter connector to create a tweet through the Twitter API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/twitter-connector/twitter-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/twitter-connector/twitter-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - twitter-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Twitter API Connector Example
 
 This example explains how to use the Twitter client to connect with the Twitter platform and perform operations. The connector uses the [Twitter API](https://developer.twitter.com/en/docs/twitter-api) to interact with Twitter.
@@ -18,12 +33,12 @@ The user calls the Twitter REST API. It invokes the **createTweet** sequence and
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 2. Right-click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API. 
     <img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
-3. Follow these steps to [configure the Twitter API](../../../reference/connectors/twitter-connector/twitter-connector-credentials/) and obtain the Client Id, Access Token and Refresh Token. 
+3. Follow these steps to [configure the Twitter API](twitter-connector-credentials) and obtain the Client Id, Access Token and Refresh Token. 
 
 4. Provide the API name as **createTweet**. You can go to the source view of the XML configuration file of the API and copy the following configuration. 
 ```xml
@@ -57,7 +72,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 ```
 
 5. Follow these steps to export the artifacts. 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -71,11 +86,11 @@ You can download the ZIP file and extract the contents to get the project code.
 ## Deployment
 
 !!! attention
-        Before deploying you will have to configure runtime. If you have not followed the [Configuring Integration Runtime](../../../reference/connectors/twitter-connector/twitter-connector-configuration/) guide, please follow it before deploying the CApp.
+        Before deploying you will have to configure runtime. If you have not followed the [Configuring Integration Runtime](twitter-connector-configuration) guide, please follow it before deploying the CApp.
 
 Follow these steps to deploy the exported CApp in the integration runtime.<br>
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 Invoke the API as shown below using the curl command. Curl Application can be downloaded from [here](https://curl.haxx.se/download.html).
@@ -110,4 +125,4 @@ A response simillar to following will be received.
 
 ## What's Next
 
-* To explore further the Twitter connector operations, see [Twitter Connector Reference](../../../reference/connectors/twitter-connector/twitter-connector-reference/) documentation.
+* To explore further the Twitter connector operations, see [Twitter Connector Reference](twitter-connector-reference) documentation.

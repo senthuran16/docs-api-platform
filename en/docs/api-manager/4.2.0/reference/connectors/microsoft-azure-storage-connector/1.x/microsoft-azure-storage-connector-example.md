@@ -1,3 +1,18 @@
+---
+title: "Microsoft Azure storage connector example"
+description: "Configure the Microsoft Azure Storage connector version 1.x to create containers and manage blob data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/1.x/microsoft-azure-storage-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/1.x/microsoft-azure-storage-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Microsoft Azure Storage Connector Example
 
 Given below is a sample scenario that demonstrates how to work with container and blob operations using the WSO2 Microsoft Azure Storage Connector.
@@ -24,9 +39,9 @@ All seven operations are exposed via an API. The API with the context `/resource
 * `/deletecontainer` : Remove created container in the Microsoft Azure Storage account.
 * `/listmetadata` : Retrieve the metadata from a file (blob) stored in the Microsoft Azure Storage container.
 
-For more information about these operations, please refer to the [Microsoft Azure Storage connector reference guide](../../../../reference/connectors/microsoft-azure-storage-connector/1.x/microsoft-azure-storage-reference).
+For more information about these operations, please refer to the [Microsoft Azure Storage connector reference guide](microsoft-azure-storage-reference).
 
-> **Note**: Before invoking the API, you need to create a **Storage Account** in **Microsoft Azure Storage account**. See [Azure Storage Configuration](../../../../reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/) documentation for more information.
+> **Note**: Before invoking the API, you need to create a **Storage Account** in **Microsoft Azure Storage account**. See [Azure Storage Configuration](../microsoft-azure-storage-configuration) documentation for more information.
 
 The following diagram shows the overall solution. The user creates a container, stores some text or binary employee data (blob) into the container or the blob metadata, and then receives it back. To invoke each operation, the user uses the same API. 
 
@@ -38,7 +53,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the ESB Solution Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API.
 
@@ -202,7 +217,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime. 
    
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -219,7 +234,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

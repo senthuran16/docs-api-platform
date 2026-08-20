@@ -1,3 +1,18 @@
+---
+title: "Changing the endpoint of a deployed proxy service"
+description: "Describes how to change the endpoint reference of a deployed proxy service without modifying its own configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/changing-the-endpoint-of-deployed-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/changing-the-endpoint-of-deployed-service.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Endpoint of a Deployed Proxy Service
 
 The below sections describe how you can change the endpoint reference of

@@ -1,3 +1,18 @@
+---
+title: "Performing regression tasks via an imported tensorflow model"
+description: "Configure a Siddhi application that imports a pretrained TensorFlow model to perform a regression task."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/tensor-flow-test-app/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/tensor-flow-test-app.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Performing Regression Tasks via an Imported Tensorflow Model
 
 ## Purpose

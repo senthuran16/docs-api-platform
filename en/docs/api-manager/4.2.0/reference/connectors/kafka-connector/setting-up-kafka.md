@@ -1,3 +1,18 @@
+---
+title: "Setting up Kafka"
+description: "Install the required libraries and Apache Kafka to prepare the environment for the Kafka connector and inbound endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/setting-up-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/setting-up-kafka.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up Kafka
 
 ## For Kafka inbound endpoint
@@ -51,7 +66,7 @@ From the `<KAFKA_HOME>` directory, run the following command to start the Kafka 
 bin/kafka-server-start.sh config/server.properties
 ```
 
-Now that you have connected to Kafka, you can start publishing and consuming messages using the Kafka brokers. For more information, see [Publishing Messages using Kafka](../../../reference/connectors/kafka-connector/kafka-connector-producer-example/) and [Consuming Messages using Kafka](../../../reference/connectors/kafka-connector/kafka-inbound-endpoint-example/).
+Now that you have connected to Kafka, you can start publishing and consuming messages using the Kafka brokers. For more information, see [Publishing Messages using Kafka](kafka-connector-producer-example) and [Consuming Messages using Kafka](kafka-inbound-endpoint-example).
 
 ## For connector version 3.1.x and below
 
@@ -88,4 +103,4 @@ From the <KAFKA_HOME> directory, run the following command to start the Kafka se
 bin/kafka-server-start.sh config/server.properties
 ```
 
-Now that you have connected to Kafka, you can start publishing and consuming messages using the Kafka brokers. For more information, see [Publishing Messages using Kafka](../../../reference/connectors/kafka-connector/kafka-connector-producer-example/) and [Consuming Messages using Kafka](../../../reference/connectors/kafka-connector/kafka-inbound-endpoint-example/).
+Now that you have connected to Kafka, you can start publishing and consuming messages using the Kafka brokers. For more information, see [Publishing Messages using Kafka](kafka-connector-producer-example) and [Consuming Messages using Kafka](kafka-inbound-endpoint-example).

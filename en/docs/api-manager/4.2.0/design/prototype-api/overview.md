@@ -1,3 +1,18 @@
+---
+title: "Prototyped APIs (Pre-Released APIs)"
+description: "Learn how Prototyped (Pre-Released) APIs let publishers share a work-in-progress API and gather subscriber feedback before release."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/prototype-api/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/prototype-api/overview.md
+tags:
+  - api-manager
+  - design
+  - prototype-api
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Prototyped APIs (Pre-Released APIs)
 
 Prototyped APIs (Pre-Released APIs) give publishers the ability to make an API available in the Developer Portal while indicating that it still is a work in progress. Subscribers can try out these APIs and provide feedback for improvements. Additionally, Pre-Released APIs provide mocking capabilities that enables receiving direct responses from the gateway even without a backend.
@@ -20,6 +35,6 @@ WSO2 API Manager allows prototyping an API at two different stages.
 
 For more information on prototyping an API, see the following links.
 
-- [Mock responses based on the OpenAPI specification with API Gateway](../../design/prototype-api/create-mocked-js-api/)    
-- [Mock responses based on the OpenAPI specification with Choreo Connect](../../design/prototype-api/create-mocked-oas-api/)    
-- [Expose an existing backend implementation as a Pre-Released API](../../design/prototype-api/backend-url-prototype-api/) (This is supported by both the Gateways, namely API Gateway and Choreo Connect)
+- [Mock responses based on the OpenAPI specification with API Gateway](create-mocked-js-api)    
+- [Mock responses based on the OpenAPI specification with Choreo Connect](create-mocked-oas-api)    
+- [Expose an existing backend implementation as a Pre-Released API](backend-url-prototype-api) (This is supported by both the Gateways, namely API Gateway and Choreo Connect)

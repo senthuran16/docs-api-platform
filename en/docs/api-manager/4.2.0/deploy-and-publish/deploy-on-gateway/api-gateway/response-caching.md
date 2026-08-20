@@ -1,3 +1,18 @@
+---
+title: "Response caching"
+description: "Enable response caching for an API using the cache mediator, tune cache mediator properties, and invalidate cached responses via JMX."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 #Response caching
 
 The API Manager uses [WSO2 ESB's cache mediator](https://wso2docs.atlassian.net/wiki/spaces/EI650/pages/35554177/Cache+Mediator) to cache response messages for each API. Caching improves performance, because the backend server does not have to process the same data for a request multiple times. You need to set an appropriate timeout period to offset the risk of stale data in the cache.
@@ -8,7 +23,7 @@ You need to enable response caching when creating a new API or editing an existi
 
 Please follow below steps to enable response caching for an API.
 
-1.  [Create an API](../../../design/create-api/create-rest-api/create-a-rest-api/).
+1.  [Create an API](../../../design/create-api/create-rest-api/create-a-rest-api).
 
 2.  Navigate to the **Runtime** tab under **API Configurations** where you find the response caching configuration. Then turn on Response caching and give a timeout value. This enables the default response caching settings.
 

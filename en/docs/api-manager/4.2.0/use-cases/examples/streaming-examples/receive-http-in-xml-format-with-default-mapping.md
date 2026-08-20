@@ -1,3 +1,18 @@
+---
+title: "Receiving XML events via HTTP"
+description: "Configure a Siddhi application that receives XML events over HTTP transport using default mapping and logs them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/receive-http-in-xml-format-with-default-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/receive-http-in-xml-format-with-default-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving XML Events via HTTP
 
 ## Purpose:

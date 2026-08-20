@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - streaming integration"
+description: "Run a simple streaming use case locally with WSO2 Streaming Integrator to get started with streaming integration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/streaming-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/streaming-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - streaming-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide - Streaming Integration
 
 Let's get started with WSO2 Streaming Integrator(SI) by running a simple streaming use case in your local environment. 
@@ -6,7 +20,7 @@ Let's get started with WSO2 Streaming Integrator(SI) by running a simple streami
 
 1. Install [Oracle Java SE Development Kit (JDK)](http://java.sun.com/javase/downloads/index.jsp) version 11 and set the `JAVA_HOME` environment variable.
 
-     For more information on setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-si/).
+     For more information on setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-si).
 
 2. Download the [Streaming Integrator and Streaming Integrator Tooling distributions](https://wso2.com/integration/streaming-integrator/) and extract them to a location of your choice. 
 
@@ -216,7 +230,7 @@ Follow the instructions below to generate an AsyncAPI Definition via the Streami
 !!! Note
      **Before you begin:**
 
-     - You need to import the public certificate of the API Manager to the truststore of the Streaming Integrator. For information on importing the certificates, see the [Importing certificates to the truststore](../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore) guide.
+     - You need to import the public certificate of the API Manager to the truststore of the Streaming Integrator. For information on importing the certificates, see the [Importing certificates to the truststore](../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores#step-3-importing-certificates-to-the-truststore) guide.
 
      - For testing purposes, you can skip the above and simply copy the keystore and the truststore of WSO2 APIM (`wso2carbon.jks` and `client-truststore.jks` files located in the `<WSO2_APIM_HOME>/repository/resources/security/` directory) to the `resources/security` directory of **both** SI and SI Tooling.
      - Restart SI and SI Tooling.

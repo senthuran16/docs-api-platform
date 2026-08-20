@@ -1,3 +1,18 @@
+---
+title: "Working with org units"
+description: "Reference of the operations used to retrieve, create, and update organization units with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/configuration/orgunits/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/configuration/orgunits.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Org Units
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update organization un
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-org-units"></a>
 #### Retrieving Org Units
 We can use GET Org Units operation with required parameters to retrieve a list of org units
 
@@ -632,6 +648,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Configuration/Organization-Data/Org-Units/GET-Org-Units.aspx](https://developers.dayforce.com/Build/API-Explorer/Configuration/Organization-Data/Org-Units/GET-Org-Units.aspx)
 
+<a name="creating-org-units"></a>
 #### Creating Org Units
 We can use POST Org Units operation with required parameters to create a new org unit
 
@@ -688,6 +705,7 @@ Dayforce returns HTTP Code 200
 
 [https://developers.dayforce.com/Build/API-Explorer/Configuration/Organization-Data/Org-Units/POST-Org-Units.aspx](https://developers.dayforce.com/Build/API-Explorer/Configuration/Organization-Data/Org-Units/POST-Org-Units.aspx)
 
+<a name="updating-org-units"></a>
 #### Updating Org Units
 We can use PATCH Org Units operation with required parameters to update an existing org unit
 

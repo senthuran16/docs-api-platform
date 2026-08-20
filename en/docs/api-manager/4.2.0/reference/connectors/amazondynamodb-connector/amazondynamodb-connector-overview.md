@@ -1,3 +1,18 @@
+---
+title: "Amazon DynamoDB connector overview"
+description: "Overview of the Amazon DynamoDB connector, which lets an integration sequence access the Amazon DynamoDB REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazondynamodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon DynamoDB Connector Overview
 
 Amazon DynamoDB Connector allows you to access the [Amazon DynamoDB REST API](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html) from an integration sequence.
@@ -18,9 +33,9 @@ For older versions, see the details in the connector store.
 
 ## Amazon DynamoDB Connector documentation
 
-* **[Amazon DynamoDB Connector Example](../../../reference/connectors/amazondynamodb-connector/amazondynamodb-connector-example/)**: This example explains how to perform various `table` and `items` operations with Amazon DynamoDB. 
+* **[Amazon DynamoDB Connector Example](amazondynamodb-connector-example)**: This example explains how to perform various `table` and `items` operations with Amazon DynamoDB. 
 
-* **[Amazon DynamoDB Connector Reference](../../../reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration/)**: This documentation provides a reference guide for the Amazon DynamoDB Connector.
+* **[Amazon DynamoDB Connector Reference](amazondynamodb-connector-configuration)**: This documentation provides a reference guide for the Amazon DynamoDB Connector.
 
 ## How to contribute
 

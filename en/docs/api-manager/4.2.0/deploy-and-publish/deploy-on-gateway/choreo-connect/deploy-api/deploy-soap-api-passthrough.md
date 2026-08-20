@@ -1,3 +1,18 @@
+---
+title: "Deploying a SOAP API in Choreo connect"
+description: "Deploy a SOAP pass-through API on Choreo Connect via the WSO2 API Manager Publisher Portal or apictl for standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-soap-api-passthrough/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-soap-api-passthrough.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a SOAP API in Choreo Connect
 
 Choreo Connect supports the deployment of existing SOAP and WSDL based services exposed via the Gateway. The organizations that have SOAP/WSDL based services can easily proxy their existing services, while providing key features like API Security, rate limiting, observability, etc. without the cost of a major migration. 
@@ -7,8 +22,8 @@ You can deploy a SOAP API (SOAP to SOAP Pass-Through) in the following ways depe
 
 |**Mode**         | **Method**    |
 |--------------|-----------|
-|[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
-|[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
+|[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
+|[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
 
 
 !!! Note
@@ -22,9 +37,9 @@ Follow the instructions below to deploy a SOAP API in a Choreo Connect instance 
 
     This guide assumes that you already have a Choreo Connect instance configured to run with API Manager. If not,
 
-    - To start Choreo Connect with an existing API Manager instance, follow the steps mentioned in the [Using Choreo Connect Deployed on Docker with WSO2 API Manager Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane).
+    - To start Choreo Connect with an existing API Manager instance, follow the steps mentioned in the [Using Choreo Connect Deployed on Docker with WSO2 API Manager Guide](../getting-started/deploy/cc-on-docker-with-apim-as-control-plane).
 
-    - To start a complete deployment setup that includes a WSO2 API Manager instance and a Choreo Connect instance already configured to work with API Manager, follow the steps in the [Quick Start Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim).
+    - To start a complete deployment setup that includes a WSO2 API Manager instance and a Choreo Connect instance already configured to work with API Manager, follow the steps in the [Quick Start Guide](../getting-started/quick-start-guide-docker-with-apim).
 
 ### Step 1 - Create a SOAP API using API Manager Publisher Portal
 
@@ -44,14 +59,14 @@ Create a SOAP API Pass-Through using the WSDL definition of your SOAP service by
     | Endpoint| http://ws.cdyne.com/phoneverify/phoneverify.asmx|
 
 !!! Info
-    You may find more details on the above steps from [Create a SOAP API Pass-through using WSO2 API Manager Publisher Portal.](../../../../design/create-api/create-rest-api/expose-a-soap-service-as-a-rest-api/#expose-a-soap-service-as-a-rest-api)
+    You may find more details on the above steps from [Create a SOAP API Pass-through using WSO2 API Manager Publisher Portal.](../../../../design/create-api/create-rest-api/expose-a-soap-service-as-a-rest-api#expose-a-soap-service-as-a-rest-api)
 
 
 ### Step 2 - Deploy the SOAP API using API Manager Publisher Portal
 
 From the Publisher Portal, navigate to the API created in the above step and deploy the API from the **Deployments** section.
 
-Follow [Deploy an API](../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/) guide to find more details on deploying an API.
+Follow [Deploy an API](../../deploy-api/deploy-an-api) guide to find more details on deploying an API.
 
 
 ### Step 3 - Publish & Invoke the API
@@ -103,18 +118,18 @@ To invoke the API through WSO2 API Manager, you can follow the steps below.
 !!! Note
     For more information on the above steps, go through the following documentation. 
 
-    - [Publish API](../../../../deploy-and-publish/publish-on-dev-portal/publish-an-api/).
-    - [Invoke API](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/#step-4-invoke-the-api-from-publisher).
+    - [Publish API](../../../publish-on-dev-portal/publish-an-api).
+    - [Invoke API](../getting-started/quick-start-guide-docker-with-apim#step-5-invoke-the-api-from-publisher).
 
 
 !!! tip
     If you want to invoke the using a test key API without publishing, you may follow the methods below.
         
-    1. Via WSO2 API Manager Publisher Portal - [Test a REST API](../../../../design/create-api/create-rest-api/test-a-rest-api/)
-    2. Generating a Enforcer test key - [Enforcer Test Key Authentication](https://apim.docs.wso2.com/en/latest/deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt/)
+    1. Via WSO2 API Manager Publisher Portal - [Test a REST API](../../../../design/create-api/create-rest-api/test-a-rest-api)
+    2. Generating a Enforcer test key - [Enforcer Test Key Authentication](../security/generate-a-test-jwt)
 
 !!! tip
-    In the above documentation, we explained the testing of SOAP APIs using `cURL` commands and WSO2 API Manager UI. If you want to test your SOAP API using a SOAP client like SOAP UI, you can read on [Test an API Using a SOAP Client](../../../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client/).
+    In the above documentation, we explained the testing of SOAP APIs using `cURL` commands and WSO2 API Manager UI. If you want to test your SOAP API using a SOAP client like SOAP UI, you can read on [Test an API Using a SOAP Client](../../../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client).
 
 
 ## Via apictl for Standalone Mode
@@ -206,7 +221,7 @@ x-wso2-transports:
 The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token, for our `PhoneVerify` example.
 
 !!! Info "Before you begin"
-    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-ctl-tool) `apictl` and Choreo Connect is up and running in [standalone mode](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/#choreo-connect-deployment-options). 
+    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#download-and-initialize-the-apictl) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview#choreo-connect-deployment-options). 
 
 
 ### Step 1 - Initialize the apictl project
@@ -274,7 +289,7 @@ Execute the following commands to get your API project deployed in Choreo Connec
     ```
 
 !!! Note
-    More details on the above commands can be found in the [Managing Choreo Connect](../../../../install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl/) page under CI/CD documentation.
+    More details on the above commands can be found in the [Managing Choreo Connect](../../../../install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl) page under CI/CD documentation.
 
 ### Step 4 - Invoke the API
 
@@ -287,7 +302,7 @@ TOKEN=$(curl -X POST "https://localhost:9095/testkey" -H "Authorization: Basic Y
 ```
 
 !!! Info
-    Refer [Enforcer Test Key Authentication](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt/) to learn more on test key generation.
+    Refer [Enforcer Test Key Authentication](../security/generate-a-test-jwt) to learn more on test key generation.
 
 Execute the following cURL command to invoke the API using the access token.
 
@@ -353,4 +368,4 @@ soapErrorInXMLEnabled = true
   
 
 ## What's Next
-As in the case for normal REST APIs, SOAP APIs will also support the basic features like Rate Limiting, Security, API Insights and Observability, etc. You can find more details in [Supported Features](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/supported-features/#supported-features) and respective pages.
+As in the case for normal REST APIs, SOAP APIs will also support the basic features like Rate Limiting, Security, API Insights and Observability, etc. You can find more details in [Supported Features](../getting-started/supported-features#supported-features) and respective pages.

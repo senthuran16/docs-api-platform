@@ -1,3 +1,18 @@
+---
+title: "Working with employee addresses"
+description: "Retrieve, create, and update UK employee work contracts representing contracted work duration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeworkcontracts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeworkcontracts.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Addresses
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update work contracts 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-work-contracts"></a>
 #### Retrieving Employee Work Contracts
 We can use GET Employee Work Contracts operation with required parameters to get the work contracts of employees.
 
@@ -75,6 +91,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Contracts/GET-Employee-Work-Contracts.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Contracts/GET-Employee-Work-Contracts.aspx)
 
+<a name="creating-employee-work-contracts"></a>
 #### Creating Employee Work Contracts
 We can use POST Employee Work Contracts operation with required parameters to create work contracts for employees.
 
@@ -125,6 +142,7 @@ Dayforce returns 200
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Contracts/POST-Employee-Work-Contracts.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Work-Contracts/POST-Employee-Work-Contracts.aspx)
 
+<a name="updating-employee-work-contracts"></a>
 #### Updating Employee Work Contracts
 We can use PATCH Employee Work Contracts operation with required parameters to update the work contracts of employees
 

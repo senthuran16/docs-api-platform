@@ -1,3 +1,18 @@
+---
+title: "Deploying a WebSocket API in Choreo connect"
+description: "Deploy a WebSocket API to Choreo Connect via the WSO2 API Manager Publisher Portal or apictl for standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-websocket-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-websocket-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a WebSocket API in Choreo Connect
 
 You can deploy a WebSocket API in the following ways depending on the Choreo Connect **mode** you have chosen.
@@ -5,8 +20,8 @@ You can deploy a WebSocket API in the following ways depending on the Choreo Con
 
 |**Mode**         | **Method**    |
 |--------------|-----------|
-|[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
-|[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
+|[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
+|[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
 
 
 !!! tip "Characteristics of WebSocket APIs Deployed in Choreo Connect"
@@ -28,12 +43,12 @@ Follow the instructions below to deploy a WebSocket type Streaming API to Choreo
 
 !!! info "Before you begin"
 
-    This guide assumes that you already have a Choreo Connect instance configured to run with API Manager. If not, checkout the [Quick Start Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview).
+    This guide assumes that you already have a Choreo Connect instance configured to run with API Manager. If not, checkout the [Quick Start Guide](../getting-started/quick-start-guide-docker-with-apim) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../getting-started/choreo-connect-overview).
 
 
 ### Step 1 - Create a WebSocket API in API Manager
 
-1. Create a WebSocket API by following the steps in [Create a WebSocket API](../../../../design/create-api/create-streaming-api/create-a-websocket-streaming-api/).
+1. Create a WebSocket API by following the steps in [Create a WebSocket API](../../../../design/create-api/create-streaming-api/create-a-websocket-streaming-api).
 
 2. By default, a WebSocket API is protected by OAuth2 in Choreo Connect. Make sure to switch on security for the API via Publisher and **Save**.
 
@@ -41,13 +56,13 @@ Follow the instructions below to deploy a WebSocket type Streaming API to Choreo
 
 ### Step 2 - Deploy and publish the API
 
-1. Deploy the API in Choreo Connect by navigating to the **Deployments** page from the left menu. For more information, see [Deploy API](../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/).
+1. Deploy the API in Choreo Connect by navigating to the **Deployments** page from the left menu. For more information, see [Deploy API](../../deploy-api/deploy-an-api).
 2. Publish the API from the **Lifecycle** page.
 
 ### Step 3 - Generate an Access Token to invoke the API
 
 !!! tip 
-    To generate a temporary test key to invoke the API, follow the steps [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt/)
+    To generate a temporary test key to invoke the API, follow the steps [here](../security/generate-a-test-jwt)
 
 1. Click **View in Dev Portal** at the top right corner to open Developer Portal in another browser tab.
 
@@ -90,11 +105,11 @@ Create a WebSocket API following the exact steps in [Create a WebSocket API in A
 
 After creating the API and making the necessary changes, click **Download API** in the top right corner. The downloaded .zip file can be deployed via apictl using the next few commands.
 
-{! ./includes/deploy/cc-deploy-api-standalone-mode.md !}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-deploy-api-standalone-mode.md"
 
 ### Step 6 - Generate an access token
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.2.0/includes/obtain-jwt.md"
 
 ### Step 7 - Invoke the API
 

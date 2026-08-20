@@ -1,3 +1,18 @@
+---
+title: "File connector example"
+description: "Configure the File Connector to write employee messages to local files and read them back as XML."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/file-connector/file-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/file-connector/file-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # File Connector Example
 
 File Connector can be used to perform operations in the local file system as well as in a remote server such as FTP and SFTP. 
@@ -18,7 +33,7 @@ A check is done to see if the CSV file (with the same information) exists in the
 The connector then reads the same CSV file and converts the information back to XML and responds to the client.
 
 <!--
-If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
+If you do not want to configure this yourself, you can simply [get the project](#exporting-integration-logic-as-a-capp) and run it.
 -->
 
 ## Setting up the environment
@@ -32,7 +47,7 @@ Create a folder in your local file system with read and write access. This will 
 
 Follow these steps to set up the Integration Project and the Connector Exporter. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
@@ -172,7 +187,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter.
 
     3.  Add the fault sequence to the API resource as its fault sequence. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 <!--
 ## Get the project
@@ -188,7 +203,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -246,8 +261,8 @@ Follow these steps to deploy the exported CApp in the integration runtime.
 
 4.  If you invoke the API again with a different set of employees, the new employees will get appended to the same file. The response you receive will include all the employees that were added from both messages.
 
-In this example, the File connector was used to create a file, write to a file, and to read a file. By blending these capabilities together with other powerful message manipulation features of WSO2, it is possible to define a working scenario in minutes. The File connector has many more functionalities. Refer the [File Connector reference guide](../../../reference/connectors/file-connector/file-connector-config/) for more information. 
+In this example, the File connector was used to create a file, write to a file, and to read a file. By blending these capabilities together with other powerful message manipulation features of WSO2, it is possible to define a working scenario in minutes. The File connector has many more functionalities. Refer the [File Connector reference guide](file-connector-config) for more information. 
 
 ## What's Next
 
-* To customize this example for your own scenario, see [File Connector Configuration](../../../reference/connectors/file-connector/file-connector-config/) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [File Connector Configuration](file-connector-config) documentation for all operation details of the connector.

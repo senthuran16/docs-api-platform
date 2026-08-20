@@ -1,3 +1,18 @@
+---
+title: "Multiple key manager support in WSO2 API Manager"
+description: "Explains how WSO2 API Manager supports multiple key managers, how key manager registration and token validation work across the Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/key-managers/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/key-managers/overview.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Multiple Key Manager Support in WSO2 API Manager
 
 WSO2 API Manager provides an admin functionality for admins/tenant admins to configure different authorization servers as Key Managers.
@@ -29,14 +44,14 @@ Finally if the backend JWT generation is enabled, it generates the JWT.
 
 ## Configuring Key Managers with WSO2 API-M
 
-- [Configure WSO2 IS as a Key Manager](../../administer/key-managers/configure-wso2is-connector/)
+- [Configure WSO2 IS as a Key Manager](configure-wso2is-connector)
 
-- [Configure Keycloak as a Key Manager](../../administer/key-managers/configure-keycloak-connector/)
+- [Configure Keycloak as a Key Manager](configure-keycloak-connector)
 
-- [Configure Okta as a Key Manager](../../administer/key-managers/configure-okta-connector/)
+- [Configure Okta as a Key Manager](configure-okta-connector)
 
-- [Configure Auth0 as a Key Manager](../../administer/key-managers/configure-auth0-connector/)
+- [Configure Auth0 as a Key Manager](configure-auth0-connector)
 
-- [Configure PingFederate as a Key Manager](../../administer/key-managers/configure-pingfederate-connector/)
+- [Configure PingFederate as a Key Manager](configure-pingfederate-connector)
 
-- [Configure ForgeRock as a Key Manager](../../administer/key-managers/configure-forgerock-connector/)
+- [Configure ForgeRock as a Key Manager](configure-forgerock-connector)

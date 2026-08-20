@@ -1,19 +1,34 @@
+---
+title: "Enable debug and trace logs in Choreo Connect"
+description: "Enable debug and access logs in the Choreo Connect Adapter, Enforcer, and Router components to troubleshoot request processing issues."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/adding-debug-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/adding-debug-logs.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 ## Enable Debug and Trace Logs
 
 It is possible to troubleshoot Choreo Connect using debug logs and trace logs. Debug logs can be enabled in all three components and access logs can be enabled at the Router and Enforcer to trace requests from the Router to the Enforcer. The following sections will guide you through how to enable debug and access logs in each component.
 
 ### Adapter
 
-Set the log level as `DEBG` in the `log_config.toml` as described in [Adapter log configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter/#adapter-log-configurations) to enable debug logs in the Adapter.
+Set the log level as `DEBG` in the `log_config.toml` as described in [Adapter log configurations](../configurations/configure-logs-adapter#adapter-log-configurations) to enable debug logs in the Adapter.
 
-If you need debug logs to be only enabled in package level, set the log level as `DEBG` only in the relavant [package level configuration](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter/#adapter-package-level-configurations).
+If you need debug logs to be only enabled in package level, set the log level as `DEBG` only in the relavant [package level configuration](../configurations/configure-logs-adapter#adapter-package-level-configurations).
 
 ### Enforcer
 
-Configure `log4j2.properties` file and make the value of `rootLogger.level` as `DEBUG` will enable debug logs as well as access logs in enforcer. Refer [enforcer log configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#enforcer-log-configurations) for more details.
+Configure `log4j2.properties` file and make the value of `rootLogger.level` as `DEBUG` will enable debug logs as well as access logs in enforcer. Refer [enforcer log configurations](../configurations/configure-logs-enforcer#enforcer-log-configurations) for more details.
 
 !!! Note
-    If you want to enable debug logs and access logs seperately, you need to define a new logger. For more information refer to [Configuring Log4j2 Loggers](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#configuring-log4j2-loggers).
+    If you want to enable debug logs and access logs seperately, you need to define a new logger. For more information refer to [Configuring Log4j2 Loggers](../configurations/configure-logs-enforcer#configuring-log4j2-loggers).
 
 The access log format will be as follows. It will print the server time, trace Id from Envoy, gRPC service method, gRPC status code, and response time according to the above configuration.
 
@@ -23,11 +38,11 @@ The access log format will be as follows. It will print the server time, trace I
 
 ### Router
 
-Perform the relavant configurations in the `log_config.toml` according to the instructions given in [Router Access Logging](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/#router-access-logging).
+Perform the relavant configurations in the `log_config.toml` according to the instructions given in [Router Access Logging](../configurations/configure-logs-router#router-access-logging).
 
-In order to enable debug logs, follow the instructions provided in [Router Debug Logs](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/#router-debug-logs).
+In order to enable debug logs, follow the instructions provided in [Router Debug Logs](../configurations/configure-logs-router#router-debug-logs).
 
-To enable wire logs, follow the instructions provided in [Router Wire Logs](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/#router-wire-logs).
+To enable wire logs, follow the instructions provided in [Router Wire Logs](../configurations/configure-logs-router#router-wire-logs).
 
 ## Admin portal
 

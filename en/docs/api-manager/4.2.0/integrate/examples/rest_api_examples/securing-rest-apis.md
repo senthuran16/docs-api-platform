@@ -1,8 +1,23 @@
+---
+title: "Securing REST APIs"
+description: "Secure a REST API resource with the basic auth handler so requests require valid user credentials."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/securing-rest-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/securing-rest-apis.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing REST APIs
-In most of the real-world use cases of REST, when a consumer attempts to access a privileged resource, access will be denied unless the consumer's credentials are provided in an Authorization header. By default, the Micro Integrator validates the credentials of the consumer (that is provided in the Authorization header) against the credentials of users that are registered in the [user store connected to the server](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/). 
+In most of the real-world use cases of REST, when a consumer attempts to access a privileged resource, access will be denied unless the consumer's credentials are provided in an Authorization header. By default, the Micro Integrator validates the credentials of the consumer (that is provided in the Authorization header) against the credentials of users that are registered in the [user store connected to the server](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore). 
 
 !!! Info
-    The Micro Integrator uses a <b>Basic Auth handler</b> for this purpose. If required, you can use a custom basic auth handler or other security implementations. Find out more about [applying security to REST APIs](../../../integrate/develop/advanced-development/applying-security-to-an-api).
+    The Micro Integrator uses a <b>Basic Auth handler</b> for this purpose. If required, you can use a custom basic auth handler or other security implementations. Find out more about [applying security to REST APIs](../../develop/advanced-development/applying-security-to-an-api).
 
 ## Synapse configuration
 
@@ -56,10 +71,10 @@ See the REST API given below for an example of how the default basic auth handle
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the rest API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the rest API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 [Configure an external user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore).
 

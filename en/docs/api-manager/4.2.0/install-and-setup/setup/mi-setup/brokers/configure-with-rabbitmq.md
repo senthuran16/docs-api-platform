@@ -1,13 +1,28 @@
+---
+title: "Connecting to RabbitMQ"
+description: "Enable and configure the RabbitMQ listener and sender in WSO2 Micro Integrator, including optional SSL settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to RabbitMQ
 
 This section describes how to configure WSO2 Micro Integrator to connect with RabbitMQ.
 
 !!! Tip
-	See the complete list of server-level configurations for the [RabbitMQ Listener](../../../../reference/config-catalog-mi/#rabbitmq-listener) and [RabbitMQ Sender](../../../../reference/config-catalog-mi/#rabbitmq-sender) in the `deployment.toml` file (stored in the `MI_HOME/conf` directory).
+	See the complete list of server-level configurations for the [RabbitMQ Listener](../../../../reference/config-catalog-mi#rabbitmq-listener) and [RabbitMQ Sender](../../../../reference/config-catalog-mi#rabbitmq-sender) in the `deployment.toml` file (stored in the `MI_HOME/conf` directory).
 
 ## Setting up RabbitMQ
 
-Please refer [RabbitMQ Deployment](../../../../install-and-setup/setup/mi-setup/brokers/deploy-rabbitmq) 
+Please refer [RabbitMQ Deployment](deploy-rabbitmq) 
 
 ## Enabling the RabbitMQ Listener
 

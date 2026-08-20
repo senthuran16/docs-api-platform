@@ -1,3 +1,18 @@
+---
+title: "Google spreadsheet connector overview"
+description: "Learn how the Google Spreadsheet connector reads and writes spreadsheet data through the Google Sheets API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-spreadsheet-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Google Spreadsheet Connector Overview
 
 The Google Sheets API lets users to read and modify any aspect of a spreadsheet. The WSO2 Google Spreadsheet Connector allows you to access the [Google Spreadsheet API Version v4](https://developers.google.com/sheets/api/guides/concepts) through an integration sequence. It allows users to read/write any aspect of the spreadsheet via the spreadsheets collection.
@@ -16,11 +31,11 @@ For older versions, see the details in the connector store.
 
 ## Google Spreadsheet Connector documentation
 
-* **[Get Credentials for Google Spreadsheet](../../../reference/connectors/google-spreadsheet-connector/get-credentials-for-google-spreadsheet/)**: You need to obtain the Access Token, Client Id, Client Secret, and Refresh Token in order to integrate with Google Spreadsheet. 
+* **[Get Credentials for Google Spreadsheet](get-credentials-for-google-spreadsheet)**: You need to obtain the Access Token, Client Id, Client Secret, and Refresh Token in order to integrate with Google Spreadsheet. 
 
-* **[Google Spreadsheet Connector Example](../../../reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-example/)**: This example explains how to use Google Spreadsheet Connector to create a Google spreadsheet, write data to it, and read it. 
+* **[Google Spreadsheet Connector Example](google-spreadsheet-connector-example)**: This example explains how to use Google Spreadsheet Connector to create a Google spreadsheet, write data to it, and read it. 
 
-* **[Google Spreadsheet Connector Reference](../../../reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-config/)**: This documentation provides a reference guide for the Google Spreadsheet Connector.
+* **[Google Spreadsheet Connector Reference](google-spreadsheet-connector-config)**: This documentation provides a reference guide for the Google Spreadsheet Connector.
 
 ## How to contribute
 

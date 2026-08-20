@@ -1,3 +1,18 @@
+---
+title: "Sharing applications"
+description: "Enable application sharing so users in the same organization group can view each other's applications and subscriptions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/sharing-applications/sharing-applications/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/sharing-applications/sharing-applications.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - sharing-applications
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Sharing Applications
 
 WSO2 API Manager provides the facility for users to share their applications and subscriptions with a specific logical group or groups such as an organization. As a result of application sharing, users in the group can view such shared applications.
@@ -7,7 +22,7 @@ WSO2 API Manager considers the organization name you enter when signing up to th
 Only the application owner is capable of editing and deleting the application in the shared group.
 
 !!! Note
-    If there is a requirement to edit or delete an application using a different user (for example, due to a reason such as where the application owner has already left the organization etc.), you can achieve this by [transferring the ownership of the application to that user who will be the new application owner](../../../consume/manage-application/advanced-topics/changing-the-owner-of-an-application/).
+    If there is a requirement to edit or delete an application using a different user (for example, due to a reason such as where the application owner has already left the organization etc.), you can achieve this by [transferring the ownership of the application to that user who will be the new application owner](../advanced-topics/changing-the-owner-of-an-application).
 
 WSO2 API Manager also provides the flexibility to change this default authentication implementation.
 

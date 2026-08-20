@@ -1,3 +1,18 @@
+---
+title: "File connector reference"
+description: "Configure File Connector version 3 operations for working with local and remote file systems."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/file-connector/3.x/file-connector-3.x-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/file-connector/3.x/file-connector-3.x-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # File Connector Reference
 
 The following operations allow you to work with the File Connector version 3. Click an operation name to see parameter details and samples on how to use it.
@@ -1592,4 +1607,4 @@ The following is a sample proxy service that illustrates how to connect to the F
 </proxy>         
 ```
 
-**Note**: For more information on how this works in an actual scenario, see [File Connector Example](../../../../reference/connectors/file-connector/3.x/file-connector-3.x-example).
+**Note**: For more information on how this works in an actual scenario, see [File Connector Example](file-connector-3.x-example).

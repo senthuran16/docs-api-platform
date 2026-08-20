@@ -1,3 +1,18 @@
+---
+title: "Using the HTTP inbound endpoint"
+description: "Configure the HTTP inbound endpoint to act as a dynamic HTTP listener that mediates messages without restarting the server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-http-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-http-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the HTTP Inbound Endpoint
 This sample demonstrates how an HTTP inbound endpoint can act as a
 dynamic http listener. Many http listeners can be added without
@@ -41,10 +56,10 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create a [mediation sequence](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint) with configurations given in the above example.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create a [mediation sequence](../../develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint) with configurations given in the above example.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

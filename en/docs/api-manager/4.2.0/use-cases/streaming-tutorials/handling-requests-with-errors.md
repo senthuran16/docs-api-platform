@@ -1,8 +1,23 @@
+---
+title: "Managing streaming data with errors"
+description: "Configure WSO2 Streaming Integrator to direct erroneous streaming events into a MySQL store for error handling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/handling-requests-with-errors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/handling-requests-with-errors.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - handling-requests-with-errors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Managing Streaming Data with Errors
 
 ## Introduction
 
-In this tutorial, let's learn how you can handle streaming data that has errors (e.g., events that do not have values for certain attributes). WSO2 Streaming Integrator allows you to log such events, direct them to a separate stream or store them in a data store. If these errors occur at the time of publishing (e.g., due to a connection error), WSO2 SI also provides the option to wait and then resume to publish once the connection is stable again. For detailed information about different ways to handle errors, see the [Handling Errors guide](../../streaming/getting-started/handle-errors/).
+In this tutorial, let's learn how you can handle streaming data that has errors (e.g., events that do not have values for certain attributes). WSO2 Streaming Integrator allows you to log such events, direct them to a separate stream or store them in a data store. If these errors occur at the time of publishing (e.g., due to a connection error), WSO2 SI also provides the option to wait and then resume to publish once the connection is stable again. For detailed information about different ways to handle errors, see the [Handling Errors guide](../../streaming/getting-started/handle-errors).
 
 In this scenario, you are handling erroneous events by directing them to a MySQL store.
 

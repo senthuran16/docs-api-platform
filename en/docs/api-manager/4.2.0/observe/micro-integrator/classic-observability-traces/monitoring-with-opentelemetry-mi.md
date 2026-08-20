@@ -1,3 +1,18 @@
+---
+title: "Monitoring with OpenTelemetry"
+description: "Enable distributed tracing for WSO2 Micro Integrator with OpenTelemetry, exporting traces to Jaeger, Zipkin, a log file, or OTLP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-traces/monitoring-with-opentelemetry-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-traces/monitoring-with-opentelemetry-mi.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-traces
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring with OpenTelemetry
 
 Tracing a message in MI is important to debug, observe, and identify possible bottlenecks in a message path. This is known as distributed tracing. OpenTelemetry allows you to enable distributed tracing for WSO2 MI.

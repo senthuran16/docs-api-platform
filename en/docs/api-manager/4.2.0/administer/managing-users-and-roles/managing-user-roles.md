@@ -1,3 +1,18 @@
+---
+title: "Managing user roles"
+description: "Create the creator, publisher, and subscriber user roles in WSO2 API Manager and map scope assignments to them via the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-roles/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-roles.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing User Roles
 
 Roles contain permissions for users to manage the server. They can be reused and they eliminate the overhead of granting permissions to users individually.
@@ -26,19 +41,19 @@ Follow the instructions below to create the `creator`, `publisher`, and `subscri
 
     ![Enter role details](../../assets/img/administer/enter-role-details.png)
     
-    In the Domain list, specify the user store where you want to create this role. This list includes the primary user store and any other secondary user stores that are configured for your product. For information on how user stores (which are repositories storing information about users and roles) are set up and configured, see [Configuring User Stores](../../administer/product-administration/managing-users-and-roles/managing-user-stores/introduction-to-userstores). Enter a unique name for this role (`creator`) and click **Finish**.
+    In the Domain list, specify the user store where you want to create this role. This list includes the primary user store and any other secondary user stores that are configured for your product. For information on how user stores (which are repositories storing information about users and roles) are set up and configured, see [Configuring User Stores](managing-user-stores/introduction-to-userstores). Enter a unique name for this role (`creator`) and click **Finish**.
 
     !!! tip
-            The **Domain** drop-down list contains all user stores configured in the system. By default, only the PRIMARY user store is configured. To configure secondary user stores, see [Configuring Secondary User Stores](../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/).
+            The **Domain** drop-down list contains all user stores configured in the system. By default, only the PRIMARY user store is configured. To configure secondary user stores, see [Configuring Secondary User Stores](managing-user-stores/configuring-secondary-user-stores).
 
     !!! warning
 
-            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](`https://localhost:9443/admin`) from **Settings** > **Advanced**.
+            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](https://localhost:9443/admin) from **Settings** > **Advanced**.
 
             By default, the scope-role mapping contains `Internal/creator`, `Internal/publisher`, `Internal/subscriber`, `Internal/analytics`, and `Internal/devops` as the default roles. If there are custom roles defined with API creator, API publisher, admin and API subscriber permissions, those roles have to be configured in the `tenant-conf.json` file under the relevant scopes.
 
 !!! info
-     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](../../administer/product-administration/managing-users-and-roles/managing-permissions/#adding-role-based-permissions)
+     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](managing-permissions#role-based-permissions)
 
 !!! warning
     As a limitation, when you delete a user and create another with the same username, applications of the previous user will be visible on the Developer Portal applications listing page.
@@ -188,7 +203,7 @@ This will update all the scope mappings in the `tenant-conf.json` file with the 
 
 ### Updating before the first startup (recommended)
 
-The default role name of the Administrator, (`admin`) can be changed before starting WSO2 API Manager by editing `<API-M_HOME>/repository/conf/deployment.toml` file. For more information, see [Change the super admin credentials](../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#change-the-super-admin-credentials).
+The default role name of the Administrator, (`admin`) can be changed before starting WSO2 API Manager by editing `<API-M_HOME>/repository/conf/deployment.toml` file. For more information, see [Change the super admin credentials](../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords#change-the-super-admin-credentials).
 
 Configure the property `admin_role` with your custom role (`administrator`) in the `deployment.toml` file as follows and start the server.
 
@@ -207,7 +222,7 @@ create_admin_account = true
 
 The following steps guide you through updating the role names after you have used the product for some time.
 
-1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles/#update-before-the-first-startup-recommended).
+1.  Make the configuration changes indicated in [the above section](managing-user-roles#updating-before-the-first-startup-recommended).
 
 2.  Do the following user store level changes for existing users:
 
@@ -216,6 +231,6 @@ The following steps guide you through updating the role names after you have use
     !!! info
             The schema can be located by referring to the data source `[database.shared_db]` defined in the `deployment.toml` file. The data source definition can also be found in the same file.
 
-    -   If you are connected to the `ReadWriteLdapUserStoreManager`, populate the members of the previous `admin` role to the new role under **Groups**. For more information, see [Configuring User Stores](../../administer/product-administration/managing-users-and-roles/managing-user-stores/introduction-to-userstores).
+    -   If you are connected to the `ReadWriteLdapUserStoreManager`, populate the members of the previous `admin` role to the new role under **Groups**. For more information, see [Configuring User Stores](managing-user-stores/introduction-to-userstores).
 
 3.  Restart the server.

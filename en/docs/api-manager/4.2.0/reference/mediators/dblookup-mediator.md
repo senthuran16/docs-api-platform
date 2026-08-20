@@ -1,3 +1,18 @@
+---
+title: "DBLookup mediator"
+description: "Reference for the DBLookup mediator, which executes a SQL select statement and sets the result as a message property."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/dblookup-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/dblookup-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - dblookup-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # DBLookup Mediator
 
 The **DBLookup Mediator** can execute an arbitrary SQL select statement
@@ -6,8 +21,8 @@ message context. The DB connection used may be looked up from an
 external data source or specified inline.
 
 !!! Info
-    - The DBLookup mediator is a [content-aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
-    - The DBLookup mediator can set a property from one row in a result set. It cannot return multiple rows. If you need to get multiple records, or if you have a table with multiple parameters (such as URLs), you can create a data service and invoke that service from the Micro Integrator using the [Callout mediator](../../reference/mediators/callout-mediator) instead.
+    - The DBLookup mediator is a [content-aware](about-mediators#classification-of-mediators) mediator.
+    - The DBLookup mediator can set a property from one row in a result set. It cannot return multiple rows. If you need to get multiple records, or if you have a table with multiple parameters (such as URLs), you can create a data service and invoke that service from the Micro Integrator using the [Callout mediator](callout-mediator) instead.
 
 ## Syntax
 

@@ -1,3 +1,18 @@
+---
+title: "Managing integrations with apictl"
+description: "Use apictl to log in to a Micro Integrator instance and monitor Synapse artifacts and perform management tasks from the command line."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing Integrations with apictl
 
 WSO2 API Controller, **apictl** allows you to monitor the Synapse artifacts (deployed in a specified Micro Integrator server) and perform various management and administration tasks from the command line.
@@ -5,11 +20,11 @@ WSO2 API Controller, **apictl** allows you to monitor the Synapse artifacts (dep
 !!! info
     **Before you begin** 
 
-    -  Ensure that WSO2 Micro Integrator is started. See the instructions on [installing the Micro Integrator](../../../../install-and-setup/install/installing-the-product/installing-mi).
+    -  Ensure that WSO2 Micro Integrator is started. See the instructions on [installing the Micro Integrator](../../../install/installing-the-product/installing-mi).
 
-    -  Make sure the apictl is downloaded and initialized, if not follow the steps in [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
+    -  Make sure the apictl is downloaded and initialized, if not follow the steps in [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
 
-    -  Ensure that the Micro Integrator management endpoint is added to the environment configurations of CTL, before you start working with the following CTL commands. For more information, see [Add an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#add-an-environment).
+    -  Ensure that the Micro Integrator management endpoint is added to the environment configurations of CTL, before you start working with the following CTL commands. For more information, see [Add an Environment](../getting-started-with-wso2-api-controller#add-an-environment).
 
 ## Login to a Micro Integrator
 
@@ -102,7 +117,7 @@ After adding an environment, you can login to the Micro Integrator instance of t
 
 ## Manage Users
 
-You can view details of users stored in the [external user store](../../../../install-and-setup/setup/mi-setup/user_stores/managing_users). If you are logged in to the apictl with administrator credentials, you can also add new users, and remove users from the user store.
+You can view details of users stored in the [external user store](../../mi-setup/user_stores/managing_users). If you are logged in to the apictl with administrator credentials, you can also add new users, and remove users from the user store.
 
 ### Get information about users
 
@@ -1579,7 +1594,7 @@ You can use the command below to update the HashiCorp AppRole Pull secret ID tha
     - The HashiCorp secret ID is only applicable when **AppRole Pull** authentication is used between the Micro Integrator and HashiCorp.
     - This command only updates the SecretId for the current session of the Micro Integrator. To persist the Secret Id, you need to update the `deployment.toml` file and restart the Micro Integrator.
     
-    See [Using HashiCorp Secrets](../../../../install-and-setup/setup/mi-setup/security/using-hashicorp-secrets) for details.
+    See [Using HashiCorp Secrets](../../mi-setup/security/using-hashicorp-secrets) for details.
 
 -   **Command**
     ``` bash

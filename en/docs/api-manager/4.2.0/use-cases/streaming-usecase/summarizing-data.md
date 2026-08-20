@@ -1,3 +1,18 @@
+---
+title: "Summarizing data"
+description: "Summarize streaming data in WSO2 Streaming Integrator using clock-time based and time-length based incremental aggregations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/summarizing-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/summarizing-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - summarizing-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Summarizing Data
 
 Summarizing data refers to obtaining aggregates in an incremental manner for a specified set of time periods.
@@ -143,7 +158,7 @@ For this, you can update the `ProductionAggregatesApp` Siddhi application that y
     
         The above query joins the `ProductionsSummaryRetyrievalStream` stream and the `ProductionAggregation` aggregation. The `ProductionsSummaryRetyrievalStream` stream is assigned `b` as the short name, and the aggregation is assigned `a`. Therefore, `a.name == b.name` specifies that a matching event is identified when the value for the `name` attribute is the same. 
 
-        For more information about how to perform joins, see [Enriching Data](../../use-cases/streaming-usecase/enriching-data/#enriching-data).
+        For more information about how to perform joins, see [Enriching Data](enriching-data#enriching-data).
         
     - `within` clause 
     
@@ -190,7 +205,7 @@ To try out the example given above, follow the procedure below:
             isAutoCommit: false
     ```
     
-2. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+2. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 3. Open a new file in Streaming Integrator Tooling. Then add and save the following Siddhi application.
 
@@ -319,7 +334,7 @@ The following are a few examples of how short time summarizations can be perform
 
 To try out the four sample queries given above, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file. Then add and save the following Siddhi application.
 

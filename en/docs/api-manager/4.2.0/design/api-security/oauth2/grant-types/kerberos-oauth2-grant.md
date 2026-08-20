@@ -1,3 +1,18 @@
+---
+title: "Kerberos OAuth2 grant"
+description: "Exchange a Kerberos ticket for an OAuth2 token: understand the Kerberos OAuth2 grant flow and configure the grant with the Identity Server as Key Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/kerberos-oauth2-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/oauth2/grant-types/kerberos-oauth2-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Kerberos OAuth2 Grant
 
 Kerberos is a security protocol that has support built into various operating systems and open-source distributions (e.g.,  Ubuntu, Windows, RedHat, Open Solaris, etc.). In addition, a majority of browsers support some Kerberos functions as well. As WSO2 API Manager uses the OAuth 2.0 protocol, the Kerberos OAuth2 grant type allows organizations to exchange a Kerberos ticket for an OAuth 2.0 token. Thereby allowing organizations to re-use their existing Kerberos infrastructure, while easier adopting OAuth 2.0 within these organizations.

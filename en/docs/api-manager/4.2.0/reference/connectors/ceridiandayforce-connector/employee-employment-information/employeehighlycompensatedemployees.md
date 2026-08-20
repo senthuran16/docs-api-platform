@@ -1,3 +1,18 @@
+---
+title: "Working with employee highly compensated employees"
+description: "Reference of the operation used to retrieve highly compensated employee indicators with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeehighlycompensatedemployees/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeehighlycompensatedemployees.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Highly Compensated Employees
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve the high compensation status of a
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-high-compensation"></a>
 #### Retrieving Employee High Compensation
 We can use GET Employee Highly Compensated Employees operation with required parameters to find if an employee is highly compensated.
 

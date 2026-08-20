@@ -1,3 +1,18 @@
+---
+title: "Deploying API Manager using single Node instances"
+description: "Describes prerequisites and options for deploying a small to medium scale WSO2 API Manager single node instance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/single-node/deploying-api-manager-using-single-node-instances/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/single-node/deploying-api-manager-using-single-node-instances.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Deploying API Manager using Single Node Instances
 
 In a typical production deployment, API Manager is deployed as components (Publisher, Store, Gateway, Key Manager and Traffic Manager). While this provides very high performance and a high level of scalability, it may be too complex if you want to run API Manager as a small to medium scale API Management solution. A WSO2 API-M single node deployment, which has all the API-M components in one instance, would be simple to set up and requires less resources when compared with a distributed deployment. It is ideal for any organization that wants to start small and iteratively build up a robust API Management Platform.
@@ -17,7 +32,7 @@ WSO2 provides two options for organizations that are interested in setting up a 
 
 You can deploy a single node API Manager instance in the following methods:
 
--   [Single node deployment](#DeployingAPIManagerusingSingleNodeInstances-Singlenodedeployment)
+-   [Single node deployment](#single-node-deployment)
 -   [Active/active deployment](#DeployingAPIManagerusingSingleNodeInstances-Active/activedeployment)
 
 ### Single node deployment

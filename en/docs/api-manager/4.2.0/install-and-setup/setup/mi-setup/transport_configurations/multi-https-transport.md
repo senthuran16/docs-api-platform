@@ -1,3 +1,18 @@
+---
+title: "Multi-HTTPS transport"
+description: "Enable dynamic SSL profiles for the Micro Integrator's Multi-HTTPS transport and reload them at runtime without a restart."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/transport_configurations/multi-https-transport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/transport_configurations/multi-https-transport.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Multi-HTTPS Transport
 
 You can [enable dynamic SSL profiles](#enabling-dynamic-ssl-profiles) for the Micro Integrator by updating the `deployment.toml` file with the required SSL

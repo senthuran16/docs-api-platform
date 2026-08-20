@@ -1,3 +1,18 @@
+---
+title: "Searching the registry"
+description: "Search for resources and collections in the WSO2 API Manager registry using the management console's search page."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Searching the Registry
 
 The management console provides facility to search all resources in the registry.

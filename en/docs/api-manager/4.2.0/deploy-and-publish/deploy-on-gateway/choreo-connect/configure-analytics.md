@@ -1,15 +1,30 @@
+---
+title: "Configuring analytics for Choreo connect"
+description: "Configure Choreo Connect to publish analytics events to Choreo Portal Analytics or to an ELK-based analytics platform."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Analytics for Choreo Connect
 
 Choreo Connect is capable of publishing fine-grained analytics events which can then be used to generate reports, dashboards, statistics, and graphs for the APIs deployed on Choreo Connect.
 Choreo Connect can not only publish analytics data to the Choreo platform but also to platforms that support the ELK stack. The following subsections will explain in detail how you could enable and configure analytics for each platform to gain insights into the services exposed via Choreo Connect.
 
 !!! tip
-    To learn more on the analytics-related concepts, see [Choreo Connect Analytics - Concepts](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/choreo-connect-analytics/).
+    To learn more on the analytics-related concepts, see [Choreo Connect Analytics - Concepts](concepts/choreo-connect-analytics).
 
 Configure Analytics for Choreo Connect using one of the following methods:
 
-- [Choreo Portal Analytics for Choreo Connect](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics/#configuring-choreo-portal-analytics)
-- [ELK Analytics for Choreo Connect](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics/#configuring-elk-analytics)
+- [Choreo Portal Analytics for Choreo Connect](configure-analytics#configuring-choreo-portal-analytics)
+- [ELK Analytics for Choreo Connect](configure-analytics#configuring-elk-analytics)
 
 ## Configuring Choreo Portal Analytics
 
@@ -24,7 +39,7 @@ Follow the instructions below to configure analytics with Choreo:
 3. Open the `docker-compose.yaml` file, which based on your setup is located in the `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect` or `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim` directory.
 
     !!! info
-        You can configure Choreo Connect to publish Analytics to the Choreo cloud via the [standalone mode](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker/#step-3-start-choreo-connect) or via the [with Control Plane mode](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/#step-3-start-choreo-connect-and-api-manager).
+        You can configure Choreo Connect to publish Analytics to the Choreo cloud via the [standalone mode](getting-started/deploy/cc-as-a-standalone-gateway-on-docker#step-3-start-choreo-connect) or via the [with Control Plane mode](getting-started/quick-start-guide-docker-with-apim#step-3-start-choreo-connect-and-api-manager).
 
 4. Locate the environment variables section under the `enforcer` and change the following variables.
 
@@ -35,9 +50,11 @@ Follow the instructions below to configure analytics with Choreo:
         analytics_authToken=<your-on-prem-key>
     ```
 
-5. Enable analytics before starting Choreo Connect. First of all, navigate to the configuration file location. {!includes/deploy/cc-configuration-file.md!}
+5. Enable analytics before starting Choreo Connect. First of all, navigate to the configuration file location.
 
-    1. Locate the [Analytics](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/analytics-configurations/) section.
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
+
+    1. Locate the [Analytics](configurations/analytics-configurations) section.
 
     1. Enable analytics by using the following configurations. 
 
@@ -74,11 +91,11 @@ Follow the instructions below to generate some traffic in order to be able to vi
 
 1. Deploy your API.
     
-     [Deploy your API in API Manager](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/#step-3-deploy-the-api-in-api-manager) based on your setup.
+     [Deploy your API in API Manager](deploy-api/deploy-rest-api-in-choreo-connect#step-2-deploy-the-api-in-api-manager) based on your setup.
 
 2. Invoke the API a few times.
 
-     For more information, see [Invoke the API](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/#step-4-invoke-the-api).
+     For more information, see [Invoke the API](deploy-api/deploy-rest-api-in-choreo-connect#step-3-invoke-the-api).
 
 3. Go to <a href="https://console.choreo.dev/insights">Choreo Insights</a> to view the statistics. 
 
@@ -102,7 +119,8 @@ The Enforcer component in Choreo Connect can log analytics-related data to be us
 
 #### Step 1.1 - Configure the config.toml file
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
 2. Change the analytics section based on the following configurations.
 
@@ -121,7 +139,7 @@ The Enforcer component in Choreo Connect can log analytics-related data to be us
     2. Mount it to the `/home/wso2/lib/dropins` directory within the Enforcer by adding the JAR file to the choreo-connect-1.x.x/docker-compose/resources/enforcer/dropins directory.</br>
 
         !!! note 
-            If you use Choreo Connect with Helm Charts, please refer to the documentation [here](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/#mount-files-into-the-dropins-directory-optional) to add a JAR file into the dropins directory.
+            If you use Choreo Connect with Helm Charts, please refer to the documentation [here](production-deployment-guideline#mount-files-into-the-dropins-directory-optional) to add a JAR file into the dropins directory.
     3. Set the value of the `publisher.reporter.class` property to the class name of the new reporter implementation in the `config.toml` file as follows:
     	
         ```toml
@@ -213,7 +231,7 @@ Update the `choreo-connect-1.x.x/docker-compose/choreo-connect(-with-apim)/conf/
 
 ### Step 2 - Set up the ELK Stack
 
-1. [Configure and setup the following elements in ELK Stack](../../../api-analytics/on-prem/elk-installation-guide/#step-3-configure-security-in-elk).
+1. [Configure and setup the following elements in ELK Stack](../../../api-analytics/on-prem/elk-installation-guide#step-3-configure-security-in-elk).
 
      - Elasticsearch 
      - Kibana 
@@ -246,7 +264,7 @@ Invoke a few requests (success and failure).
 
 Check the Kibana dashboard. 
 
-You will notice that the populated data appears in [different dashboards](../../../api-analytics/on-prem/elk-installation-guide/#dashboards).
+You will notice that the populated data appears in [different dashboards](../../../api-analytics/on-prem/elk-installation-guide#dashboards).
 
 
 ## See Also

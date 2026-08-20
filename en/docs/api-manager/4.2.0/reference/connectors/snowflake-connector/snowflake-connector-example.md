@@ -1,3 +1,18 @@
+---
+title: "Snowflake connector example"
+description: "Configure a sample that uses the Snowflake connector to insert, query, and delete reservation records."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/snowflake-connector/snowflake-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/snowflake-connector/snowflake-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - snowflake-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Snowflake Connector Example
 
 The Snowflake Connector allows you to access the [Snowflake JDBC Driver API](https://docs.snowflake.com/developer-guide/jdbc/jdbc) from an integration sequence. This provides functionalities to execute a set of standard Snowflake DDL, DML and query commands. You can use the connector to perform query, execute and batch execute operations on Snowflake databases. 
@@ -50,7 +65,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
@@ -75,7 +90,7 @@ Let's add the operations to the resources in the `SnowflakeConnectorApi` API.
 
 Users can utilize this resource to insert a single record into the Snowflake database. The user will be sending the reservation payload in the request body.
 
-1. In the API insequence drag and drop the [Property Mediator](../../../reference/mediators/property-mediator/) to extract the payload from the request body. Let's store the payload in a property named `payload`.
+1. In the API insequence drag and drop the [Property Mediator](../../mediators/property-mediator) to extract the payload from the request body. Let's store the payload in a property named `payload`.
     ```xml
       <property expression="json-eval($)" name="payload" scope="default" type="STRING"/>
    ```
@@ -102,7 +117,7 @@ Users can utilize this resource to insert a single record into the Snowflake dat
         <payload>{$ctx:payload}</payload>
       </snowflake.execute>
       ```
-3. Drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) to send back the response.
+3. Drag and drop the [Respond Mediator](../../mediators/respond-mediator) to send back the response.
    
 #### - /getReservationInfo
 
@@ -122,17 +137,17 @@ Using this resource users retrieve all records from table `Reservations` of `HOT
       </snowflake.query>
       ```
       
-2. Drag and drop the [Property Mediator](../../../reference/mediators/property-mediator/) and set the Property name as `messageType` and the value as `application/json`. This is added so that the response will be in JSON.
+2. Drag and drop the [Property Mediator](../../mediators/property-mediator) and set the Property name as `messageType` and the value as `application/json`. This is added so that the response will be in JSON.
    ```xml
     <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
    ```
-3. Drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) to send back the response.
+3. Drag and drop the [Respond Mediator](../../mediators/respond-mediator) to send back the response.
 
 #### - /insertReservationBatch
 
 Using this resource users can insert multiple records into table `Reservations` of `HOTEL_DB`. The user will be sending the bulk payload in the request body.
 
-1. In the API insequence drag and drop the [Property Mediator](../../../reference/mediators/property-mediator/) to extract the payload from the request body. Let's store the payload in a property called `payload`.
+1. In the API insequence drag and drop the [Property Mediator](../../mediators/property-mediator) to extract the payload from the request body. Let's store the payload in a property called `payload`.
     ```xml
       <property expression="json-eval($)" name="payload" scope="default" type="STRING"/>
     ```
@@ -151,13 +166,13 @@ Using this resource users can insert multiple records into table `Reservations` 
          <payload>{$ctx:payload}</payload>
       </snowflake.batchExecute>
       ```
-   5. Drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) to send back the response.
+   5. Drag and drop the [Respond Mediator](../../mediators/respond-mediator) to send back the response.
 
 #### - /deleteReservation
 
 Using this resource users can delete a record in table `Reservations` of `HOTEL_DB`. The user will provide the NICNUMBER as a path parameter.
 
-1. In the API insequence drag and drop the [Property Mediator](../../../reference/mediators/property-mediator/) to construct the delete query. Let's store the query in a property named `deleteQuery`.
+1. In the API insequence drag and drop the [Property Mediator](../../mediators/property-mediator) to construct the delete query. Let's store the query in a property named `deleteQuery`.
     ```xml
       <property expression="fn:concat('DELETE FROM HOTEL_DB.PUBLIC.RESERVATIONS WHERE NICNUMBER=',get-property('uri.var.NICNUMBER'))" name="deleteQuery" scope="default" type="STRING"/>
     ```
@@ -170,11 +185,11 @@ Using this resource users can delete a record in table `Reservations` of `HOTEL_
         <executeQuery>{$ctx:deleteQuery}</executeQuery>
       </snowflake.execute>
       ```
-3. Drag and drop the [Property Mediator](../../../reference/mediators/property-mediator/) and set the Property name as `messageType` and the value as `application/json`. This is added so that the response will be in JSON.
+3. Drag and drop the [Property Mediator](../../mediators/property-mediator) and set the Property name as `messageType` and the value as `application/json`. This is added so that the response will be in JSON.
    ```xml
     <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
    ```
-4. Drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) to send back the response.
+4. Drag and drop the [Respond Mediator](../../mediators/respond-mediator) to send back the response.
 
 ??? info "The resources are now ready to be tested. The API source should resemble the following. Expand to see."
 ```xml
@@ -230,7 +245,7 @@ Using this resource users can delete a record in table `Reservations` of `HOTEL_
 </api>
 ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -247,7 +262,7 @@ You may need to update the values of Snowflake connection configurations before 
 
 Follow these steps to deploy the exported CApp in the integration runtime.
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ### Testing the resources
 
@@ -385,4 +400,4 @@ Let's test the API. Deploy the carbon application and start the Micro Integrator
 
 ## What's Next
 
-- To customize this example for your own scenario, see [Snowflake Connector Configuration](../../../reference/connectors/snowflake-connector/snowflake-connector-reference/) documentation for all operation details of the connector.
+- To customize this example for your own scenario, see [Snowflake Connector Configuration](snowflake-connector-reference) documentation for all operation details of the connector.

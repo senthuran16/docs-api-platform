@@ -1,8 +1,23 @@
+---
+title: "Switching from HTTP(S) to JMS"
+description: "Configure a proxy service that receives HTTP(S) messages and forwards them to a backend over JMS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_https_to_jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_https_to_jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from HTTP(S) to JMS
 
 This example demonstrates how WSO2 Micro Integrator receives messages in HTTP and passes the messages through JMS. The Micro Integrator uses a proxy service over HTTP, forwards the received messages to the EPR using JMS, and immediately responds with a 202. 
 
-If the previous example on [JMS to HTTP](../../../integrate/examples/protocol-switching/switching_from_jms_to_http) is also configured, it will pick the message from queue and send it to the stockquote proxy.
+If the previous example on [JMS to HTTP](switching_from_jms_to_http) is also configured, it will pick the message from queue and send it to the stockquote proxy.
 
 ## Synapse configuration
 
@@ -35,11 +50,11 @@ jms:/Queue1?transport.jms.ConnectionFactoryJNDIName=QueueConnectionFactory&amp;j
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../../integrate/develop/creating-artifacts/creating-registry-resources) (change the registry path of the proxy accordingly). 
-4. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../develop/creating-artifacts/creating-registry-resources) (change the registry path of the proxy accordingly). 
+4. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 6. [Configure MI with the selected message broker](../../../install-and-setup/setup/mi-setup/brokers/configure-with-activemq) and start the Micro-Integrator.
 
 Invoke the HTTPtoJMSStockQuoteProxy with the following payload (using SOAP UI or CURL):

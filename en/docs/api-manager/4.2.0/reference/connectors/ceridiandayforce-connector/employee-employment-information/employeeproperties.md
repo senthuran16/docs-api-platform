@@ -1,3 +1,18 @@
+---
+title: "Working with employee properties"
+description: "Retrieve, create, and update an employee's custom-defined properties using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeproperties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeproperties.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Properties
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update properties of a
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-properties"></a>
 #### Retrieving Employee Properties
 We can use GET Employee Properties operation with required parameters to search and find the required employees' properties.
 
@@ -110,6 +126,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Properties/GET-Employee-Properties.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Properties/GET-Employee-Properties.aspx)
 
+<a name="creating-employee-properties"></a>
 #### Creating Employee Properties
 We can use POST Employee Properties operation with required parameters to create properties for an employee.
 
@@ -163,6 +180,7 @@ Dayforce returns HTTP Code 200.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Properties/POST-Employee-Properties.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Properties/POST-Employee-Properties.aspx)
 
+<a name="updating-employee-properties"></a>
 #### Updating Employee Properties
 We can use PATCH Employee Properties operation with required parameters to update employee properties.
 

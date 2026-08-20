@@ -1,3 +1,18 @@
+---
+title: "Endpoints"
+description: "Explains endpoint concepts and classifications used to define external destinations for messages in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - endpoint-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Endpoints
 ## Introduction
 
@@ -11,7 +26,7 @@ Endpoints are independent of transports, which allows you to use the same endpoi
 
 ### Named Endpoints
 
-A named endpoint can be any one of the [listed endpoints](#list-of-endpoints). You can reuse these endpoints by referencing them in another endpoint by name using the `key` attribute. For example, if you have an [address endpoint](#address_endpoint) named `foo`, you can reference the `foo` endpoint in an [indirect](#indirect-and-resolving-endpoints) using the `key` attribute: `<endpoint key="foo">`
+A named endpoint can be any one of the [listed endpoints](#list-of-endpoints). You can reuse these endpoints by referencing them in another endpoint by name using the `key` attribute. For example, if you have an [address endpoint](#address_endpoint) named `foo`, you can reference the `foo` endpoint in an [indirect](#indirect-endpoints) using the `key` attribute: `<endpoint key="foo">`
 
 ### Indirect Endpoints
 
@@ -64,7 +79,7 @@ You can configure the following endpoint types.
   <tr>
     <td>HTTP Endpoint</td>
     <td>
-      Allows you to define REST endpoints using <b>URI templates</b> similar to the REST API. The URI templates allow a RESTful URI to contain variables that can be populated during mediation runtime using <a href="../../../reference/mediators/property-Mediator">property</a> values with the <code>uri.var.</code> prefix. An HTTP endpoint can also define the particular HTTP method to use in the RESTful invocation.
+      Allows you to define REST endpoints using <b>URI templates</b> similar to the REST API. The URI templates allow a RESTful URI to contain variables that can be populated during mediation runtime using <a href="../../../reference/mediators/property-mediator">property</a> values with the <code>uri.var.</code> prefix. An HTTP endpoint can also define the particular HTTP method to use in the RESTful invocation.
     </td>
   </tr>
   <tr>
@@ -548,8 +563,8 @@ The following properties <b>only</b> apply to HTTP endpoint.
 
 !!! Note
       1. You can also use environment variables for these parameters. For more information, see [Injecting Parameters](../../integrate/develop/injecting-parameters).
-      2. You can use dynamic values for OAuth configurations such as XPATH, JSON expressions or vault-lookup. For more information, see [Define dynamic expressions](../../reference/synapse-properties/endpoint-properties/#define-dynamic-expressions).
-      3. You can send additional parameters as well in the OAuth request body. For more information, see [Send additional parameters in the OAuth request body](../../reference/synapse-properties/endpoint-properties/#send-additional-parameters-in-the-oauth-request-body).
+      2. You can use dynamic values for OAuth configurations such as XPATH, JSON expressions or vault-lookup. For more information, see [Define dynamic expressions](endpoint-properties#define-dynamic-expressions).
+      3. You can send additional parameters as well in the OAuth request body. For more information, see [Send additional parameters in the OAuth request body](endpoint-properties#send-additional-parameters-in-the-oauth-request-body).
 
 
 !!! Tip
@@ -856,13 +871,13 @@ QoS (Quality of Service) aspects such as WS-Security and WS-Addressing may be en
 
 ### Endpoint Error Handling Properties
 
-Errors that can occur at [endpoints](../../reference/synapse-properties/endpoint-properties) can be specifically configured using the endpoint error handling properties.
+Errors that can occur at [endpoints](endpoint-properties) can be specifically configured using the endpoint error handling properties.
 
-The last step of **message mediation** is to send the message to a service provider through a listening service [endpoint](../../reference/synapse-properties/endpoint-properties). During this process, transport errors can occur. For example, the connection might time out, or it might be closed by the actual service. Therefore, endpoint error handling is a key part of any successful Micro Integrator deployment.
+The last step of **message mediation** is to send the message to a service provider through a listening service [endpoint](endpoint-properties). During this process, transport errors can occur. For example, the connection might time out, or it might be closed by the actual service. Therefore, endpoint error handling is a key part of any successful Micro Integrator deployment.
 
 Messages can fail or be lost due to various reasons in a real TCP network. When an endpoint error occurs, if the Micro Integrator is not configured to accept the error, it will mark the endpoint as failed, which leads to a message failure. By default, the endpoint is marked as failed for quite a long time, which can result in severe message loss.
 
-To avoid message loss, you configure error handling at the [endpoint](../../reference/synapse-properties/endpoint-properties) level. You should also run a few long-running load tests to discover errors and fine-tune the endpoint configurations for errors that can occur intermittently due to various reasons.
+To avoid message loss, you configure error handling at the [endpoint](endpoint-properties) level. You should also run a few long-running load tests to discover errors and fine-tune the endpoint configurations for errors that can occur intermittently due to various reasons.
 
 At any given time, the state of the endpoint can be one of the following. During an endpoint error, the endpoint will transition between these states and, if required, will initiate a [fault sequence](../../reference/synapse-properties/sequence-properties/#fault-sequences).
 

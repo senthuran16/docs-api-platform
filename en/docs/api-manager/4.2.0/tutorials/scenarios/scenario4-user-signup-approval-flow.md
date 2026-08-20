@@ -1,6 +1,21 @@
+---
+title: "Scenario 4 - signing up a new user"
+description: "Set up a self-signup approval workflow, register a new external user through the Developer Portal, and approve it in the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario4-user-signup-approval-flow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario4-user-signup-approval-flow.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario4-user-signup-approval-flow
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 4 - Signing up a New User
 
-This is a tutorial that is part of a series and can be used as a standalone tutorial on how to sign up a new user. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview).
+This is a tutorial that is part of a series and can be used as a standalone tutorial on how to sign up a new user. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview).
 
 **_Time to Complete : 3 minutes_**
 
@@ -50,4 +65,4 @@ To approve the signup request, do the following.
 
 ## What's next
 
-Try out the next scenario in the series, [Getting the Developer Community Involved](../../tutorials/scenarios/scenario5-developer-community-feature).
+Try out the next scenario in the series, [Getting the Developer Community Involved](scenario5-developer-community-feature).

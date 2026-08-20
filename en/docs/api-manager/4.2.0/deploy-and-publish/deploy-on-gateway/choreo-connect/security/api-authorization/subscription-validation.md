@@ -1,6 +1,21 @@
+---
+title: "Subscription Validation"
+description: "Configure subscription validation in Choreo Connect using self-contained token claims or Event Hub subscription data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/subscription-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/subscription-validation.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Subscription Validation
 
-The [subscription](../../../../../learn/consume-api/manage-subscription/subscribe-to-an-api/) validation is configurable per issuer basis. In order to mandate the subscriptions, subscription validation can be enabled.
+The [subscription](../../../../../consume/manage-subscription/subscribe-to-an-api) validation is configurable per issuer basis. In order to mandate the subscriptions, subscription validation can be enabled.
 If validation has failed, it will send an error message with error code 900908.
 
 In Choreo Connect subscription validation can be done in two ways.
@@ -16,7 +31,7 @@ In Choreo Connect subscription validation can be done in two ways.
 
     For JWTs issued by API Manager, to enable subscription validation it requires the Event Hub to fetch Application and Subscription data from WSO2 API Manager.
 
-    The latest versions of API manager do not include the `subscribedAPIs` claim in the JWT, instead, subscription validation is done using the `[eventhub]`. Refer documentation on [Event Hub](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/event-hub/) and [Subscription Validation Model](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/subscription-validation/) to understand how Choreo Connect validates subscriptions using Event Hub.
+    The latest versions of API manager do not include the `subscribedAPIs` claim in the JWT, instead, subscription validation is done using the `[eventhub]`. Refer documentation on [Event Hub](../../concepts/event-hub) and [Subscription Validation Model](../../concepts/subscription-validation) to understand how Choreo Connect validates subscriptions using Event Hub.
 
 ### Configure Subscription Validation
 

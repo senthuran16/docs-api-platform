@@ -1,3 +1,17 @@
+---
+title: "External broker and gateway integration with API Manager"
+description: "Integrate a Solace Event API with API Manager by configuring an OAuth profile, importing the event API, and invoking it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integrating-with-solace/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integrating-with-solace.md
+tags:
+  - api-manager
+  - tutorials
+  - integrating-with-solace
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # External Broker and Gateway Integration with API Manager
 
 WSO2 API Manager now supports integrating external third party Gateways and Brokers. Solace is an advanced event broker which is efficiently streaming events and information across cloud, on-premises, and IoT environments. In this section, you will integrate the Solace gateway environment with API Manager.
@@ -106,8 +120,8 @@ When the Application is attached with a Solace API Subscription, the solace brok
 
 The following are the two methods available in the Developer Portal to subscribe an API to an application.
 
-- **Subscribe to an existing application** - You can subscribe to a current API by [selecting an existing application](../consume/manage-subscription/subscribe-to-an-api/#subscribe-to-an-existing-application).
-- **Subscribe to an API using Key Generation Wizard** - You can use the **[SUBSCRIPTION & KEY GENERATION WIZARD](../consume/manage-subscription/subscribe-to-an-api/#subscribe-to-an-api-using-key-generation-wizard)** option to start the subscription process from scratch. 
+- **Subscribe to an existing application** - You can subscribe to a current API by [selecting an existing application](../consume/manage-subscription/subscribe-to-an-api#subscribe-to-an-existing-application).
+- **Subscribe to an API using Key Generation Wizard** - You can use the **[SUBSCRIPTION & KEY GENERATION WIZARD](../consume/manage-subscription/subscribe-to-an-api#subscribe-to-an-api-using-key-generation-wizard)** option to start the subscription process from scratch. 
 
 Note that the artifacts are deployed in the Solace broker, therefore API level and application-level throttling will not be supported for the Solace API subscriptions.
     

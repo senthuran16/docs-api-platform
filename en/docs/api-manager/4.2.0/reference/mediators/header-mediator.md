@@ -1,3 +1,18 @@
+---
+title: "Header mediator"
+description: "Reference for the Header mediator syntax and parameters used to set or remove SOAP and HTTP headers on a message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/header-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/header-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - header-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Header Mediator
 
 The **Header Mediator** allows you to manipulate SOAP and HTTP headers.
@@ -157,7 +172,7 @@ header named `         header1        ` .
 In this example, the Header mediator allows the endpoint URL to which
 the message is sent to be set dynamically. It specifies the default
 address to which the message is sent dynamically by deriving the To
-header of the message via an XPath expression. Then the [Send mediator](../../reference/mediators/send-mediator) sends the message to a **Default Endpoint**. A Default Endpoint sends the message to the default address of the message (i.e. address specified in the To header). Therefore, in this scenario, selecting the Default Endpoint results in the message being sent to relevant URL calculated via the `         fn:concat('http://localhost:9764/services/Axis2SampleService_',get-property('epr'))        `
+header of the message via an XPath expression. Then the [Send mediator](send-mediator) sends the message to a **Default Endpoint**. A Default Endpoint sends the message to the default address of the message (i.e. address specified in the To header). Therefore, in this scenario, selecting the Default Endpoint results in the message being sent to relevant URL calculated via the `         fn:concat('http://localhost:9764/services/Axis2SampleService_',get-property('epr'))        `
 expression.
 
 ```

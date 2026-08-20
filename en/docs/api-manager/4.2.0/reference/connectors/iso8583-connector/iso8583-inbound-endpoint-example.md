@@ -1,3 +1,18 @@
+---
+title: "ISO8583 inbound endpoint example"
+description: "Configure the ISO8583 Inbound Endpoint to consume ISO8583 messages from a sample Java client."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/iso8583-connector/iso8583-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/iso8583-connector/iso8583-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # ISO8583 Inbound Endpoint Example
 
 In the real world, financial scenarios are happening among thousands of banking systems and networks. In this situation, one system needs to act as a message publisher and another system needs to be capable of receiving messages. Once the message is received, further processing actions are performed based on the logic that is implemented in the internal system.
@@ -10,7 +25,7 @@ This scenario demonstrates how the ISO8583 inbound endpoint works as an ISO8583 
 
 The ISO8583 inbound endpoint listens on port 5000 and acts as a ISO8583 standard message consumer. When a sample Java client connects on port 5000, the ISO8583 inbound endpoint consumes ISO8583 standard messages, converts the messages to XML format, and then injects messages to a sequence in the integration runtime.
 
-See [ISO8583 connector configuration](../../../reference/connectors/ISO8583-connector/ISO8583-connector-configuration/) for more information. However, for simplicity of this example, we will just log the message. You can extend the sample as required using WSO2 [ mediators](../../../reference/mediators/about-mediators). 
+See [ISO8583 connector configuration](../../../reference/connectors/iso8583-connector/iso8583-connector-configuration/) for more information. However, for simplicity of this example, we will just log the message. You can extend the sample as required using WSO2 [ mediators](../../mediators/about-mediators). 
 
 The following diagram illustrates all the required functionality of the ISO8583 inbound operations that you are going to build. 
 

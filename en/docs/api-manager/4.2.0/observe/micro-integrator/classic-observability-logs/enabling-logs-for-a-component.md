@@ -1,3 +1,18 @@
+---
+title: "Enabling logs for a component"
+description: "Enable logs for a specific Micro Integrator component using the dashboard or the command-line interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling Logs for a Component
 
 Follow the instructions given below to enable logs for a specific component in the Micro Integrator.
@@ -7,11 +22,11 @@ Follow the instructions given below to enable logs for a specific component in t
 There are two ways to enable logs for a component: using the Micro Integrator [dashboard](#using-the-dashboard) or using the [CLI](#using-the-cli).
 
 !!! Info
-    Alternatively, you can directly update the [log configurations](../../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties) in the `log4j2.properties` file (stored in the `<MI_HOME>/conf` directory).
+    Alternatively, you can directly update the [log configurations](configuring-log4j2-properties) in the `log4j2.properties` file (stored in the `<MI_HOME>/conf` directory).
 
 ### Using the Dashboard
 
-1.  Sign in to the [Micro Integrator dashboard](../../../observe/mi-observe/working-with-monitoring-dashboard).
+1.  Sign in to the [Micro Integrator dashboard](../../mi-observe/working-with-monitoring-dashboard).
 2.  Click <b>Log Configs</b> on the left-hand navigator to open the <b>Logging Management</b> window.
 3.  Go to the <b>Add Loggers</b> tab and define the new logger.
 
@@ -48,19 +63,19 @@ There are two ways to enable logs for a component: using the Micro Integrator [d
 
 1.  Download and set up the [API Controller](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller).
 
-2.  Use the commands for [adding a new logger](../../../install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl/#add-a-new-logger) to the Micro Integrator.
+2.  Use the commands for [adding a new logger](../../../install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl#add-a-new-logger) to the Micro Integrator.
 
 ## Printing Logs
 
 By default, when you enable logs for a component, the logs get printed to the server console and the <b>carbon log file</b>. When there are error logs, these are also printed to the <b>error log file</b>. These log files are stored in the `<MI_HOME/repository/logs/` directory.
 
-By default, all loggers print logs to the destinations configured for the [root logger](../../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/#root-logs). If you want to print logs to new destinations, you can define new [appenders](../../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/#log4j2-appenders). 
+By default, all loggers print logs to the destinations configured for the [root logger](configuring-log4j2-properties#root-logs). If you want to print logs to new destinations, you can define new [appenders](configuring-log4j2-properties#log4j2-appenders). 
 
-For example, you will define new appenders when you want to have [per-service log files](../../../integrate/develop/monitoring-service-level-logs/) or [per-api log files](../../../integrate/develop/monitoring-api-level-logs/).
+For example, you will define new appenders when you want to have [per-service log files](../../../integrate/develop/monitoring-service-level-logs) or [per-api log files](../../../integrate/develop/monitoring-api-level-logs).
 
 ## What's Next?
 
 Once you have defined the new logger:
 
--   Start [using the logs](../../../observe/micro-integrator/classic-observability-logs/monitoring-logs).
--   [Configure the log properties](../../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties)
+-   Start [using the logs](monitoring-logs).
+-   [Configure the log properties](configuring-log4j2-properties)

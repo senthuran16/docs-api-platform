@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator dashboard"
+description: "Run the WSO2 Micro Integrator runtime together with its monitoring Dashboard after completing prerequisite setup steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Micro Integrator Dashboard
 
 Follow the steps given below to run the WSO2 Micro Integrator runtime and its monitoring Dashboard.
@@ -8,8 +23,8 @@ Follow the steps given below before you start.
 
 1.  Download and install the servers:
 
-    -     [Download and install](../../../install-and-setup/install/installing-the-product/installing-mi-dashboard) the Micro Integrator dashboard.
-    -     [Download and install](../../../install-and-setup/install/installing-the-product/installing-mi) the Micro Integrator.
+    -     [Download and install](installing-mi-dashboard) the Micro Integrator dashboard.
+    -     [Download and install](installing-mi) the Micro Integrator.
 
 2.  Set up the Micro Integrator:
 
@@ -26,9 +41,9 @@ Follow the steps given below before you start.
     2.  Be sure to change the host and port number of the `dashboard_url` in the above configuration if you have changed the default host and port for the dashboard.
 
     !!! Info
-        See the section on [configuring the MI servers for the dashboard](../../../observe/mi-observe/working-with-monitoring-dashboard/#step-2-configure-the-mi-servers) for more information.
+        See the section on [configuring the MI servers for the dashboard](../../../observe/mi-observe/working-with-monitoring-dashboard#step-2-configure-the-mi-servers) for more information.
 
-3.  [Start the Micro Integrator](../../../install-and-setup/install/installing-the-product/running-the-mi).
+3.  [Start the Micro Integrator](running-the-mi).
 
 ## Configuring Single Sign-on with OpenID Connect
 
@@ -112,7 +127,7 @@ Follow the steps given below to connect the Micro Integrator Dashboard to your I
 
 	</table>
 
-See the [complete list of parameters](../../../reference/config-catalog-mi-dashboard/#single-sign-on) you can configure for the single sign-on.
+See the [complete list of parameters](../../../reference/config-catalog-mi-dashboard#single-sign-on) you can configure for the single sign-on.
 
 ## Starting the dashboard server
 

@@ -1,3 +1,18 @@
+---
+title: "Working with employee ethnicities"
+description: "Retrieve ethnicity information for employees using the GET Employee Ethnicities operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeeethnicities/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeeethnicities.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Ethnicities
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve ethnicity information of an emplo
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-ethnicities"></a>
 #### Retrieving Employee Ethnicities
 We can use GET Employee Ethnicities operation with required parameters to search and find the ethnicity required employees.
 

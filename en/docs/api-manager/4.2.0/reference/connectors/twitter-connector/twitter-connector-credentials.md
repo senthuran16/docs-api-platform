@@ -1,3 +1,18 @@
+---
+title: "Creating the client ID, access token and refresh token"
+description: "Create a Twitter developer app and obtain the client ID, access token, and refresh token for the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/twitter-connector/twitter-connector-credentials/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/twitter-connector/twitter-connector-credentials.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - twitter-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating the Client ID, Access Token and Refresh Token
 
 In this documentation, you will learn how to create the Client ID, Access Token and Refresh Token for the Twitter connector using the Twitter developer portal.

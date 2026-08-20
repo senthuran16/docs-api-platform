@@ -1,3 +1,18 @@
+---
+title: "Drop mediator"
+description: "Reference for the Drop mediator, which stops processing of the current message so it is not passed to later mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/drop-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/drop-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - drop-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Drop Mediator
 
 The **Drop Mediator** stops the processing of the current message. This mediator is useful for ensuring that the message is sent only once and
@@ -6,7 +21,7 @@ then dropped by the Micro Integrator. If you have any mediators defined after th
 When the Drop mediator is within the `         In        ` sequence, it sends an HTTP 202 Accepted response to the client when it stops the message flow. When the Drop mediator is within the `         Out        ` sequence before the Send mediator, no response is sent to the client.
 
 !!! Info
-    The Drop mediator is a [content-unaware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The Drop mediator is a [content-unaware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 

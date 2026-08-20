@@ -1,3 +1,18 @@
+---
+title: "SMPP inbound endpoint reference"
+description: "Reference for the configuration parameters of the SMPP inbound endpoint used to consume SMSC messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-inbound-endpoint-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-inbound-endpoint-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - smpp-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # SMPP Inbound Endpoint Reference
 
 The following configurations allow you to configure SMPP Inbound Endpoint for your scenario. 

@@ -1,3 +1,17 @@
+---
+title: "About this release"
+description: "Get an introduction to WSO2 API Manager 4.2.0, its cloud-native messaging and integration capabilities, and download links."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/about-this-release/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/about-this-release.md
+tags:
+  - api-manager
+  - get-started
+  - about-this-release
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # About this Release
 
 WSO2 API Manager is a complete platform for building, integrating, and exposing your digital services as managed APIs in the cloud, on-premise, and hybrid architectures to drive your digital transformation strategy. It comes with a cloud-native, standards-based messaging engine, and an integration framework for integrating APIs, services, data, SaaS, proprietary, and legacy systems and it can also serve streaming-based integrations. The product comes with command-line and developer tools that enable easy design, development, and testing.
@@ -130,12 +144,12 @@ WSO2 API Manager Server 4.2.0 brings a range of new features and major improveme
 - Prior to WSO2 API Manager 4.2.0, the tenant configurations listed below were persisted only in the registry and only accessible via the Carbon Console. With the 4.2.0 release, these configurations are migrated to the `tenant-conf.json` file, and support is enabled to manage these through the Admin Portal (Advanced Configuration Section).
     - Self Sign Up Config
 
-        Self-signup is enabled out-of-the-box not only for the super tenant but also for the other tenants. Now the 'Internal/subscriber' role is taken from the `Advanced Configurations → DefaultRoles → SubscriberRole` when creating a tenant. In addition, the `sign-up-config.xml` file is removed along with the connection with the registry. For more information, see [Disabling or Enabling Self Signup](../reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/).
+        Self-signup is enabled out-of-the-box not only for the super tenant but also for the other tenants. Now the 'Internal/subscriber' role is taken from the `Advanced Configurations → DefaultRoles → SubscriberRole` when creating a tenant. In addition, the `sign-up-config.xml` file is removed along with the connection with the registry. For more information, see [Disabling or Enabling Self Signup](../reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup).
 
     - Life Cycle Config
 
-        XML configuration is converted to JSON format. Now the life cycle changes can be managed via `Advanced Configurations → LifeCycle` via the Admin Portal. The `APILifeCycle.xml` file is removed along with the connection with the registry. For more information, see [Customize API Life Cycle](../design/lifecycle-management/customize-api-life-cycle/).
+        XML configuration is converted to JSON format. Now the life cycle changes can be managed via `Advanced Configurations → LifeCycle` via the Admin Portal. The `APILifeCycle.xml` file is removed along with the connection with the registry. For more information, see [Customize API Life Cycle](../design/lifecycle-management/customize-api-life-cycle).
 
-- From WSO2 API Manager 4.2.0 onwards, correlation logs can be enabled without restarting the server. Newly added CorrelationConfigManager will handle the configuration updates from the DevOps API. This configuration information is persisted in the database. For more information, see [Monitoring Correlation Logs](../observe/api-manager/monitoring-correlation-logs/).
+- From WSO2 API Manager 4.2.0 onwards, correlation logs can be enabled without restarting the server. Newly added CorrelationConfigManager will handle the configuration updates from the DevOps API. This configuration information is persisted in the database. For more information, see [Monitoring Correlation Logs](../observe/api-manager/monitoring-correlation-logs).
 - In the WSO2 API Manager 4.2.0 onwards, the schema name in the challenge string for basic auth will be changed from "Basic Auth" to "Basic" according to IANA standards. For more information, see [HTTP Authentication Scheme Registry](https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml).
-- Prior to API Manager 4.2.0, only a single registry handler property with nested elements can be added. From API Manager 4.2.0 onwards multiple registry handler properties with nested elements can be added. To support that, the approach to configure nested properties is changed in 4.2.0. Therefore, if you are using registry handlers with nested properties, see [API-M Config Catalog - Registry Handler Properties](../reference/config-catalog/#registry-handler-properties) and change the configuration accordingly.
+- Prior to API Manager 4.2.0, only a single registry handler property with nested elements can be added. From API Manager 4.2.0 onwards multiple registry handler properties with nested elements can be added. To support that, the approach to configure nested properties is changed in 4.2.0. Therefore, if you are using registry handlers with nested properties, see [API-M Config Catalog - Registry Handler Properties](../reference/config-catalog#registry-handler-properties) and change the configuration accordingly.

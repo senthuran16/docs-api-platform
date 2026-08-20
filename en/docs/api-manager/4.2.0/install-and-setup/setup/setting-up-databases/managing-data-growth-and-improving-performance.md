@@ -1,3 +1,18 @@
+---
+title: "Managing data growth and improving performance"
+description: "Manage database growth in WSO2 API Manager by cleaning up invalid tokens, revoked tokens, and other accumulating runtime data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/setting-up-databases/managing-data-growth-and-improving-performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/setting-up-databases/managing-data-growth-and-improving-performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing Data Growth and Improving Performance
 
 WSO2 API Manager (WSO2 API-M) when in use, will store metadata and runtime data in its connected databases. For example, it stores APIs, applications, subscriptions, and tokens that are created by users. Metadata related to applications and APIs are not been written to the databases frequently. However, as runtime data depends on different attributes such as the number of users, number of connected applications, and usage patterns, having a considerable load on the system will result in runtime data accumulating slowly over time. This will result in high data growth of the tables and this in return will negatively impact the performance of the system. 
@@ -92,9 +107,10 @@ This will remove the old and invalid tokens, sessions, and Auth codes, which can
 
      You can also schedule a cleanup task that will automatically run after a given period of time as shown in the examples below:
 
-    -   [**MySQL**](#schedule-task-for-mysql)
-    -   [**SQL Server**](#schedule-task-for-sql-server)
+    -   [**MySQL**](#schedule-a-cleanup-task-for-mysql)
+    -   [**SQL Server**](#schedule-a-cleanup-task-for-sql-server)
  
+    <a name="schedule-a-cleanup-task-for-mysql"></a>
     #### Schedule a cleanup task for MySQL
     ``` sql
     USE 'WSO2AM_DB';
@@ -108,6 +124,7 @@ This will remove the old and invalid tokens, sessions, and Auth codes, which can
     SET GLOBAL event_scheduler = ON;
 
     ```
+    <a name="schedule-a-cleanup-task-for-sql-server"></a>
     #### Schedule a cleanup task for SQL Server
 
     ``` sql

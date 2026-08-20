@@ -1,3 +1,18 @@
+---
+title: "Routing requests based on message content"
+description: "Create mediation artifacts that route a request to the relevant backend service based on the content of the message payload."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/routing-requests-based-on-message-content/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/routing-requests-based-on-message-content.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - routing-requests-based-on-message-content
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Routing Requests based on Message Content
 
 ## What you'll build
@@ -119,7 +134,7 @@ Let's create three different HTTP endpoints for the above services.
 You have now created the three endpoints for the hospital back-end services that will be used to make appointment reservations.
 
 !!! Tip
-    You can also create a single endpoint where the differentiation of the hospital name can be handled using a variable in the URI template. See the tutorial on [Exposing Several Services as a Single Service](../../tutorials/integration-tutorials/exposing-several-services-as-a-single-service).
+    You can also create a single endpoint where the differentiation of the hospital name can be handled using a variable in the URI template. See the tutorial on [Exposing Several Services as a Single Service](exposing-several-services-as-a-single-service).
 
     Using three different endpoints is advantageous when the back-end services are very different from one another and/or when there is a requirement to configure error handling differently for each of them.
 

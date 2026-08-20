@@ -1,3 +1,18 @@
+---
+title: "Publish unacked messages to dead letter exchange"
+description: "Route undelivered messages to the RabbitMQ Dead Letter Exchange to guarantee message delivery from a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publish unacked messages to Dead Letter Exchange
 
 This sample demonstrates how WSO2 Micro Integrator can ensure guaranteed delivery of messages by using the <b>Dead Letter Exchange (DLX)</b> of RabbitMQ.
@@ -55,12 +70,12 @@ See the instructions on how to [build and run](#build-and-run) this example.
 3. Create another exchange `orders-error-exchange` with a queue bound to it (`orders-error`).
 4. Create queue `orders` (bound by `orders-exchange` with routing key `orders` ) and configure a
 dead letter exchange for it (`orders-error-exchange`).
-5. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-6. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-7. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+5. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+6. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+7. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
 8. Enable the RabbitMQ sender and receiver in the Micro-Integrator from the deployment.toml. Refer the 
  [configuring RabbitMQ documentation](../../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq) for more information.
-9. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+9. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 10. Make the `http://localhost:8280/orders` endpoint unavailable temporarily. 
 11. Publish a message to the orders queue.
 12. You will see that the failed message has been moved to the dead-letter-exchange.

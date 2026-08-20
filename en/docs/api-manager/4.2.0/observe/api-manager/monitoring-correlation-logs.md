@@ -1,3 +1,17 @@
+---
+title: "Monitoring correlation logs"
+description: "Enable correlation logs at server startup or runtime to trace method, HTTP, and database calls under a single correlation ID."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/monitoring-correlation-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/monitoring-correlation-logs.md
+tags:
+  - api-manager
+  - observe
+  - monitoring-correlation-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Correlation Logs
 
 Observability in WSO2 API Manager (WSO2 API-M) is really important to debug issues in a short period. WSO2 API-M facilitates observability by logging the following important points of the system with the time taken to achieve them. 
@@ -42,7 +56,7 @@ Enabling observability at the server startup is simple in API Manager. All you n
 ### Enable Correlation Logs using the Devops REST API
 
 Devops REST API can be used to enable / disable correlation logs during the runtime and retrieve the correlation logs configurations. 
-For more instructions, see [WSO2 Devops API v0](../../reference/product-apis/devops-apis/devops-v0/devops-v0/#/paths/~1config~1correlation~1/get).
+For more instructions, see [WSO2 Devops API v0](../../reference/product-apis/devops-apis/devops-v0/devops-v0#/paths/~1config~1correlation~1/get).
 
 1. Enable / disable correlation log configurations.
    

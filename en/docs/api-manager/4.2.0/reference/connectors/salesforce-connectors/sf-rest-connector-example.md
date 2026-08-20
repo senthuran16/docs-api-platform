@@ -1,3 +1,18 @@
+---
+title: "Salesforce rest API connector example"
+description: "Configure a sample that uses the Salesforce REST connector to create an account and query records with SOQL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-rest-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-rest-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce Rest API Connector Example
 
 The Salesforce REST Connector allows you to work with records in Salesforce, a web-based service that allows organizations to manage contact relationship management (CRM) data. You can use the Salesforce connector to create, query, retrieve, update, and delete records in your organization's Salesforce data. The connector uses the [Salesforce REST API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) to interact with Salesforce.
@@ -29,7 +44,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
@@ -44,7 +59,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 4. Now, when you select the `create` operation on the canvas, the properties window will appear. Create a connection from the properties window by clicking on the '+' icon as shown below.
    <img src="../../../../assets/img/integrate/connectors/salesforcerest-connector-2.png" title="Adding the connection." width="800" alt="Adding the connection."/>
    
-    In the pop-up window, following parameters must be provided. See the [Salesforce REST Connector reference page](../../../reference/connectors/salesforce-connectors/sf-rest-connector-config-v2) for more information.<br/>
+    In the pop-up window, following parameters must be provided. See the [Salesforce REST Connector reference page](sf-rest-connector-config-v2) for more information.<br/>
     
     - Connection Name - A Unique name for the Salesforce REST connection.
     - Connection Type - Type of the connection which specifies the protocol to be used.
@@ -111,7 +126,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     3. Select the query operation and add the `Connection` and `id, name from Account` query string to the properties section shown as bellow.
         <img src="../../../../assets/img/integrate/connectors/salesforcerest-connector-7.png" title="Configure query operation." width="800" alt="Configure query operation."/>
 
-8. Finally, drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) to send the message back to the client as a response.
+8. Finally, drag and drop the [Respond Mediator](../../mediators/respond-mediator) to send the message back to the client as a response.
    <img src="../../../../assets/img/integrate/connectors/salesforcerest-connector-8.png" title="Add respond mediator." width="800" alt="Add respond mediator."/>
 
 9. Now, you can switch into the Source view and check the complete XML configuration files of the created API and the Local Entry.
@@ -170,7 +185,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime.
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 Save a file called data.json with the following payload.
@@ -196,4 +211,4 @@ You will get a set of account names and the respective IDs as the output.
 
 ## What's Next
 
-* To customize this example for your own scenario, see [Salesforce REST Connector Configuration](../../../reference/connectors/salesforce-connectors/sf-rest-connector-config-v2) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [Salesforce REST Connector Configuration](sf-rest-connector-config-v2) documentation for all operation details of the connector.

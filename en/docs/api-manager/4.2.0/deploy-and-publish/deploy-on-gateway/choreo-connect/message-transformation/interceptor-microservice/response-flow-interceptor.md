@@ -1,3 +1,18 @@
+---
+title: "Response flow interceptor"
+description: "Reference the response format that the Choreo Connect Router sends to the interceptor service when the response interceptor is enabled."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/response-flow-interceptor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/response-flow-interceptor.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Response Flow Interceptor
 
 Intercept the Response to the client and update headers, trailer and body before reaching the client.
@@ -74,14 +89,14 @@ Following is the request received from the Choreo Connect Router when you enable
 
 The `requestHeaders`, `requestTrailers` and `requestBody` fields in the above request to the interceptor service
 provide the request headers, trailers and **base64 encoded** request body from the client. The `invocationContext`
-contains additional request details. For more information, see [Invocation Context](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-context-and-invocation-context/#invocation-context). 
+contains additional request details. For more information, see [Invocation Context](interceptor-context-and-invocation-context#invocation-context). 
 The `interceptorContext` contains key-value pairs that is set in request flow `interceptorContext`.
-For more information, see [Interceptor Context](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-context-and-invocation-context/#interceptor-context).
+For more information, see [Interceptor Context](interceptor-context-and-invocation-context#interceptor-context).
 
 The `responseCode`, `responseHeaders`, `responseTrailers` and `responseBody` fields in the request provides the response code,
 headers, trailers and **base64 encoded** response body from the backend.
 
-You can customize the request body in the open API definition according to your requirements. For more information, see [Defining Interceptors in an OpenAPI Definition](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/defining-interceptors-in-an-open-api-definition/).
+You can customize the request body in the open API definition according to your requirements. For more information, see [Defining Interceptors in an OpenAPI Definition](../defining-interceptors-in-an-open-api-definition).
 
 ### 2. Response from the Interceptor Service to Choreo Connect Router
 

@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect on Kubernetes with API Manager"
+description: "Deploy Choreo Connect on Kubernetes using YAML artifacts with WSO2 API Manager as the Control Plane."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect on Kubernetes With WSO2 API Manager as a Control Plane
 
 Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 API Manager as the Control Plane.
@@ -10,7 +25,7 @@ Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 AP
         - Minimum Memory : 3GB
     3.  Deploy an ingress controller - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/) for this sample.
 
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/k8s-setup-note.md"
 
 ## Step 1 - Setup Choreo Connect in Kubernetes
 
@@ -69,5 +84,5 @@ The JWKS endpoint of the API Manager has the external facing hostname by default
 - Publisher Portal:  `https://apim.wso2.com/publisher/`
 - Developer Portal:  `https://apim.wso2.com/devportal/`
 
-Follow the instructions in [create and publish an API from API Manager](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/#step-3-create-and-publish-an-api-from-api-manager) using the above URLs to access each of the portals.
+Follow the instructions in [create and publish an API from API Manager](../quick-start-guide-docker-with-apim#step-4-create-and-publish-an-api-via-api-manager) using the above URLs to access each of the portals.
 

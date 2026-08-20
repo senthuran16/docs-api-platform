@@ -1,3 +1,18 @@
+---
+title: "Customizing task scheduling"
+description: "Explains how to write a custom task-handling Java class to schedule tasks with specific requirements in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/customizations/creating-custom-task-scheduling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/customizations/creating-custom-task-scheduling.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing Task Scheduling
 
 When you create a task using the default task implementation, the task can inject messages to a proxy service, or to a sequence. If you have a specific task-handling requirement, you can write your own task-handling implementation by creating a custom Java Class that implements the `org.apache.synapse.startup.Task` interface.
@@ -310,8 +325,8 @@ Deploy the custom Task implementation.
 
 Follow the steps below to create the task and schedule it.
 
-1.  [Create a ESB Config project](../../../integrate/develop/create-integration-project) named `            PrintStockQuote           `.
-2.  [Create a Sequence](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) using the following information named `PrintStockQuoteSequence`. 
+1.  [Create a ESB Config project](../create-integration-project) named `            PrintStockQuote           `.
+2.  [Create a Sequence](../creating-artifacts/creating-reusable-sequences) using the following information named `PrintStockQuoteSequence`. 
 3.  Add a **Log Mediator** and a **Drop Mediator** to the sequence and configure them.
 
     ![](../../../assets/img/integrate/custom-task-scheduling/119130458/119130461.png)
@@ -326,7 +341,7 @@ Follow the steps below to create the task and schedule it.
     </sequence>
     ```
     
-4.  [Create a Scheduled Task](../../../integrate/develop/creating-artifacts/creating-scheduled-task) using the following information:
+4.  [Create a Scheduled Task](../creating-artifacts/creating-scheduled-task) using the following information:
     <table>
         <tr>
             <th>Task Property</th>

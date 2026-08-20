@@ -1,3 +1,18 @@
+---
+title: "Creating a reusable sequence"
+description: "Provides steps to create a reusable sequence artifact for use in mediation flows or sequence mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-reusable-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-reusable-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Reusable Sequence
 
 Follow these steps to create a new, reusable sequence that you can add to your mediation workflow or refer to from a sequence mediator, or to create a sequence mediator and its underlying sequence all at once.
@@ -6,7 +21,7 @@ Follow these steps to create a new, reusable sequence that you can add to your m
 
 ### Creating a Sequence Artifact
 
-1.  Right-click the [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) and go to **New → Sequence** to open the **New Sequence Artifact** dialog box.  
+1.  Right-click the [ESB Config project](../create-integration-project#sub-projects) and go to **New → Sequence** to open the **New Sequence Artifact** dialog box.  
 
     <img src="../../../../assets/img/integrate/create_artifacts/new_sequence/select-sequence.png" width="500">
 
@@ -24,7 +39,7 @@ Follow these steps to create a new, reusable sequence that you can add to your m
 
 4.  In the **Save Sequence in** field, specify the location to save the sequence:
     -   To save the sequence in an existing ESB Config project in your workspace, click **Browse** and select that project. Else, click **Create new Project** and create the new project.
-    -   To save the sequence as a **Dynamic Sequence** in a [registry resource project](../../../integrate/develop/create-integration-project/#registry-resource-project):
+    -   To save the sequence as a **Dynamic Sequence** in a [registry resource project](../create-integration-project#sub-projects):
         1.  Select the **Make this as Dynamic Sequence** check box.
         2.  Specify the registry space (Governance or Configuration) in the **Registry** field.
         3.  If a **Registry Resource** project already exist in the workspace, click **Browse** for the **Save Sequence in** field and select the registry resource project.
@@ -35,9 +50,9 @@ Follow these steps to create a new, reusable sequence that you can add to your m
 
 5.  Click **Finish**. 
 
-The sequence is created in the `src/main/synapse-config/sequences` folder under the ESB Config or [registry resource project](../../../integrate/develop/create-integration-project/#registry-resource-project) you specified.
+The sequence is created in the `src/main/synapse-config/sequences` folder under the ESB Config or [registry resource project](../create-integration-project#sub-projects) you specified.
 
-The sequence is also available in the **Defined Sequences** section of the **Palette** and ready for [use in other meditation workflows](#using-a-sequence).
+The sequence is also available in the **Defined Sequences** section of the **Palette** and ready for [use in other meditation workflows](#designing-the-integration).
 
 ### Create from a Sequence Mediator
 
@@ -88,6 +103,6 @@ Click the **Source** tab to view the XML-based synapse configuration (source cod
 
 ## Examples
 
--   [Breaking Complex Flows into Multiple Sequences](../../../integrate/examples/sequence_examples/using-multiple-sequences)
--   [Using Fault Sequences](../../../integrate/examples/sequence_examples/using-fault-sequences)
--   [Reusing Sequences](../../../integrate/examples/sequence_examples/custom-sequences-with-proxy-services)
+-   [Breaking Complex Flows into Multiple Sequences](../../examples/sequence_examples/using-multiple-sequences)
+-   [Using Fault Sequences](../../examples/sequence_examples/using-fault-sequences)
+-   [Reusing Sequences](../../examples/sequence_examples/custom-sequences-with-proxy-services)

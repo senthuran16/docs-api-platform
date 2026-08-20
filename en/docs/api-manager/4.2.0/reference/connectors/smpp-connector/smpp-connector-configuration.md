@@ -1,3 +1,18 @@
+---
+title: "Setting up the SMPP connector"
+description: "Set up the client libraries and an SMSC simulator required to use the SMPP connector with the integration runtime."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - smpp-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the SMPP Connector 
 
 SMPP (Short Message Peer-to-Peer Protocol) Connector allows you to send an SMS from an integration sequence. You need to set up the environment and SMSC simulator before using this. 

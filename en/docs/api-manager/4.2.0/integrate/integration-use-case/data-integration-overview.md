@@ -1,3 +1,18 @@
+---
+title: "Data integration"
+description: "Learn how the Micro Integrator exposes datasources as data services and find related tutorials and examples."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/integration-use-case/data-integration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/integration-use-case/data-integration-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - data-integration-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Data Integration
 
 Data integration is an important part of an integration process. For example, consider a typical integration process that is managed using the Micro Integrator: Data stored in various, disparate datasources are required in order to complete the integration use case. 

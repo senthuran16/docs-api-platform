@@ -1,3 +1,18 @@
+---
+title: "Acknowledging HL7 messages"
+description: "Explains how to configure automatic or manual ACK and NACK message acknowledgement for HL7 messages in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/hl7-examples/acknowledge_hl7_messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/hl7-examples/acknowledge_hl7_messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - hl7-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Acknowledging HL7 Messages
 
 Automatic message acknowledgement for HL7 messages is enabled in the Micro Integrator by default. With this setting, an ACK is immediately returned to the client when a message is received. 
@@ -89,11 +104,11 @@ Given below is a sample proxy service that is configured to send an ACK/NACK as 
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-hl7-transport) in your Micro Integrator.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-hl7-transport) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 To test this scenario, you need the following:
 
@@ -139,11 +154,11 @@ The following proxy service is configured to send a NACK message after the backe
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-hl7-transport) in your Micro Integrator.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-hl7-transport) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 To test this scenario, you need the following:
 

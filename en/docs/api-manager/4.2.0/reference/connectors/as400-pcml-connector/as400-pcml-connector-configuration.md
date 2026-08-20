@@ -1,3 +1,18 @@
+---
+title: "Setting up the AS400 PCML environment"
+description: "Set up an IBM iSeries (AS400) server and the JTOpen library required to use the AS400 PCML connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/as400-pcml-connector/as400-pcml-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/as400-pcml-connector/as400-pcml-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - as400-pcml-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the AS400 PCML Environment  
 
 The AS400 PCML connector allows you to access RPG programs that are available on AS400 (renamed as IBM iSeries). This is done using [Program Call Markup Language](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/rzahh/pcml.htm) (PCML). 

@@ -1,3 +1,18 @@
+---
+title: "Working with employee labor defaults"
+description: "Reference of the operation used to retrieve an employee's labor defaults with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeelabordefaults/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeelabordefaults.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Labor Defaults
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -8,12 +23,13 @@ The following operations allow you to retrieve the default labour of an employee
 
 | Operation | Description |
 | ------------- |-------------|
-|[GET Employee Labor Defaults](#retrieving-employee-labour-defaults)| Retrieve employee labor defaults. Labor defaults specify an employee default position, project, docket or other timesheet information. |
+|[GET Employee Labor Defaults](#retrieving-employee-labor-defaults)| Retrieve employee labor defaults. Labor defaults specify an employee default position, project, docket or other timesheet information. |
 
 ### Operation details
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-labor-defaults"></a>
 #### Retrieving Employee Labor Defaults
 We can use GET Employee Labor Defaults operation with required parameters to search and find the default labour of an employee.
 

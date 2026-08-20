@@ -1,3 +1,18 @@
+---
+title: "Expose a Kafka stream as a managed WebSocket API"
+description: "Configure the Streaming Integrator to consume a Kafka topic and expose it as a managed WebSocket API in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/expose-a-kafka-topic-as-a-managed-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/expose-a-kafka-topic-as-a-managed-websocket-api.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - expose-a-kafka-topic-as-a-managed-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Expose a Kafka Stream as a Managed WebSocket API
 
 The Streaming Integrator (SI) component in WSO2 API Manager (WSO2 API-M) can consume events from a third-party streaming provider topic (e.g., Kafka topic) and publish those events to a Streaming Backend (e.g., WebSocket Streaming Backend) in a streaming manner. When a stream of events are received by the third-party streaming provider source (e.g., Kafka source), they are published to the Streaming Backend simultaneously. 
@@ -18,7 +33,7 @@ Follow the instructions below to expose a third-party Service Provider stream as
 
         Let's refer to this directory as `<KAFKA_HOME>`.
 
-    2. Install relevant kafka client libraries in SI using extension installer. For instructions to download and install a Siddhi extension, see [Downloading and Installing Siddhi Extensions](../../reference/streaming-connectors/downloading-and-installing-siddhi-extensions/).
+    2. Install relevant kafka client libraries in SI using extension installer. For instructions to download and install a Siddhi extension, see [Downloading and Installing Siddhi Extensions](../../reference/streaming-connectors/downloading-and-installing-siddhi-extensions).
 
     3. Configure the basic details needed to publish siddhi application with AsyncAPI definition to the services in API Manager.
     
@@ -87,7 +102,7 @@ Follow the instructions below to expose a third-party Service Provider stream as
 
 1. Navigate to the `<APIM_HOME>/bin` directory 
 
-2. [Start the API_Manager](../../install-and-setup/install/installing-the-product/running-the-api-m/).
+2. [Start the API_Manager](../../install-and-setup/install/installing-the-product/running-the-api-m).
 
      The following log appears on the API Manager console when the server is started successfully.
 
@@ -100,7 +115,7 @@ Follow the instructions below to expose a third-party Service Provider stream as
 
 1. Navigate to the `<SI_HOME>/bin` directory 
 
-2. [Start the Streaming Integrator](../../install-and-setup/install/installing-the-product/running-the-si/#starting-the-si-server).
+2. [Start the Streaming Integrator](../../install-and-setup/install/installing-the-product/running-the-si#starting-the-si-server).
 
      The following log appears on the SI console when the server is started successfully.
 
@@ -116,7 +131,7 @@ Let's create a basic Siddhi application that can consume messages from a Kafka t
 
 Follow the instructions below to create a Streaming Backend server:
 
-1. [Start Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Click **New** to open a new file.
 

@@ -1,6 +1,21 @@
+---
+title: "Configuring ceridian dayforce REST operations"
+description: "Reference of the init operation and parameters used to authenticate and configure the Ceridian Dayforce REST connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuring Ceridian Dayforce REST Operations
 
-[[Prerequisites]](#Prerequisites) [[Initializing the connector]](#initializing-the-connector)
+[[Prerequisites]](#prerequisites) [[Initializing the connector]](#initializing-the-connector)
 
 ## Prerequisites
 

@@ -1,6 +1,21 @@
+---
+title: "Customize API life cycle"
+description: "Add a new state to the default API lifecycle in the Publisher to customize its states, transitions, and checklist items."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/lifecycle-management/customize-api-life-cycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/lifecycle-management/customize-api-life-cycle.md
+tags:
+  - api-manager
+  - design
+  - lifecycle-management
+  - customize-api-life-cycle
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customize API Life Cycle
 
-APIs created in WSO2 API Manager have their own life cycle consisting of the following: a set of life cycle states, specific actions for each state transition, and a checklist of items before a state transition occurs. An API has a predefined life cycle consists of [six states](../../design/lifecycle-management/api-lifecycle/#api-lifecycle-states). This tutorial demonstrates how you can edit the default API lifecycle and customize it according to your requirements.
+APIs created in WSO2 API Manager have their own life cycle consisting of the following: a set of life cycle states, specific actions for each state transition, and a checklist of items before a state transition occurs. An API has a predefined life cycle consists of [six states](api-lifecycle#api-lifecycle-states). This tutorial demonstrates how you can edit the default API lifecycle and customize it according to your requirements.
 
 Follow the steps below to add a new state to the default life cycle.
 
@@ -176,5 +191,5 @@ Follow the steps below to add a new state to the default life cycle.
                 lifeCycleImage: '/publisher/site/public/images/custom-lifecycle.png,
 
     !!! Tip "For Advanced Customization"
-        If you want to add the custom lifecycle state to the existing lifecycle diagram, you have to customize the LifeCycleImage.jsx file located in  `<APIM-Home>/repository/deployment/server/webapps/publisher/src/main/webapp/source/src/app/components/Apis/Details/LifeCycle/` directory, as mentioned in the [Advanced Customization](../../reference/customize-product/customizations/advanced-ui-customization/) section.
+        If you want to add the custom lifecycle state to the existing lifecycle diagram, you have to customize the LifeCycleImage.jsx file located in  `<APIM-Home>/repository/deployment/server/webapps/publisher/src/main/webapp/source/src/app/components/Apis/Details/LifeCycle/` directory, as mentioned in the [Advanced Customization](../../reference/customize-product/customizations/advanced-ui-customization) section.
     

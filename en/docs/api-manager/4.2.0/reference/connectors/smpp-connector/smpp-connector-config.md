@@ -1,3 +1,18 @@
+---
+title: "SMPP connector reference"
+description: "Reference for the SMPP connector's init operation and parameters used to bind with an SMSC connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - smpp-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # SMPP Connector Reference
 
 The following operations allow you to work with the SMPP Connector. Click an operation name to see parameter details and samples on how to use it.
@@ -633,7 +648,7 @@ The following is a sample proxy service that illustrates how to connect to the S
    <description/>
 </proxy>       
 ```
-**Note**: For more information on how this works in an actual scenario, see [SMPP Connector Example](../../../reference/connectors/smpp-connector/smpp-connector-example/).
+**Note**: For more information on how this works in an actual scenario, see [SMPP Connector Example](smpp-connector-example).
 
 ## Send bulk SMS message
 

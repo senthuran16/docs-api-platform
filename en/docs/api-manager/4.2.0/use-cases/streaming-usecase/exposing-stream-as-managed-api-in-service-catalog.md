@@ -1,22 +1,37 @@
+---
+title: "Exposing a stream as a managed API"
+description: "Create a Siddhi streaming backend, generate an AsyncAPI definition, and publish it to the API Manager Service Catalog."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - exposing-stream-as-managed-api-in-service-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a Stream as a Managed API
 
-Managed APIs refer to the APIs that are managed using WSO2 API Manager, namely REST APIs, GraphQL APIs, SOAP APIs, and Streaming APIs. This guide explains how to create a Streaming backend for a [Streaming API](../../use-cases/streaming-usecase/create-streaming-api/streaming-api-overview), generate an AsyncAPI definition for the corresponding Streaming API, and then publish the AsyncAPI definition in the WSO2 API Manager Service Catalog. 
+Managed APIs refer to the APIs that are managed using WSO2 API Manager, namely REST APIs, GraphQL APIs, SOAP APIs, and Streaming APIs. This guide explains how to create a Streaming backend for a [Streaming API](create-streaming-api/streaming-api-overview), generate an AsyncAPI definition for the corresponding Streaming API, and then publish the AsyncAPI definition in the WSO2 API Manager Service Catalog. 
 
 This involves enabling the AsyncAPI functionality in the Streaming Integrator component. As a result, when you deploy a Siddhi application with an AsyncAPI definition in the Streaming Integrator server, the Streaming Integrator exposes it as an API in WSO2 API Manager's service catalog.
 
 ## Step 1 - Enable publishing to the service catalog
 
-{!includes/streaming/enable-publishing.md!}
+--8<-- "api-manager/4.2.0/includes/streaming/enable-publishing.md"
    
 ## Step 2 - Start Streaming Integrator and WSO2 API Manager
 
-[Start the Streaming Integrator server](../../install-and-setup/install/installing-the-product/running-the-si/#starting-the-si-server) and the [API Manager server](../../install-and-setup/install/installing-the-product/running-the-api-m/) based on the instructions in the install and setup section.
+[Start the Streaming Integrator server](../../install-and-setup/install/installing-the-product/running-the-si#starting-the-si-server) and the [API Manager server](../../install-and-setup/install/installing-the-product/running-the-api-m) based on the instructions in the install and setup section.
 
 ## Step 3 - Create a Streaming Backend
 
 The Streaming Integrator component in WSO2 API Manager is powered by [Siddhi](https://siddhi.io/). Therefore, you need to create a Siddhi application that has one or more sources, namely of the types `websocket-server`, `webhooks`, or `sse`, as the streaming backend.
 
-[Create a Siddhi application](../../develop/streaming-apps/creating-a-siddhi-application/) with the following Siddhi application configurations.
+[Create a Siddhi application](../../develop/streaming-apps/creating-a-siddhi-application) with the following Siddhi application configurations.
 
 ```
 @App:name('AsyncAPIDef')
@@ -36,7 +51,7 @@ insert  into LowProductionAlertStream;
 ```
 
 !!! tip
-    For more information on the configurations and what they mean, refer to [Create a Siddhi application](../../develop/streaming-apps/creating-a-siddhi-application/).
+    For more information on the configurations and what they mean, refer to [Create a Siddhi application](../../develop/streaming-apps/creating-a-siddhi-application).
 
 ## Step 4 - Generate the AsyncAPI definition
 
@@ -153,6 +168,6 @@ Follow the instructions below to view the service catalog entry in WSO2 API Mana
    
 ## What's Next?
 
-- [Learn more on the available Streaming APIs](../../use-cases/streaming-usecase/create-streaming-api/streaming-api-overview). 
+- [Learn more on the available Streaming APIs](create-streaming-api/streaming-api-overview). 
 
-- [Learn how you can use a **third-party Streaming Provider** together with the Streaming Integrator in WSO2 API-M to create a Streaming API](../../get-started/streaming-quick-start-guide/).
+- [Learn how you can use a **third-party Streaming Provider** together with the Streaming Integrator in WSO2 API-M to create a Streaming API](../../get-started/streaming-quick-start-guide).

@@ -1,3 +1,18 @@
+---
+title: "Viewing server statistics"
+description: "View the Grafana dashboard that shows active server counts, JVM metrics, and Siddhi application counts over time."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/si-observe/viewing-server-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/si-observe/viewing-server-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-server-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing Server Statistics
 
 Siddhi Server Statistics Dashboard represents a detailed view of the active server instances. It also includes the JVM metrics related to the active servers.
@@ -35,15 +50,15 @@ This allows you to get an overall understanding of the level of activity carried
 
 !!! tip "Recommended action"
     If the Siddhi application count is relatively high, you can check the throughput for each Siddhi application to identify the Siddhi applications that you can remove from your Streaming Integrator deployment to reduce the system overhead. To do this, you can filter statistics for each individual Siddhi application in the following dashboards:<br/><br/>
-    - [Siddhi Stream Statistics](../../observe/si-observe/viewing-stream-statistics)<br/>
-    - [Siddhi Source Statistics](../../observe/si-observe/viewing-source-statistics)<br/>
-    - [Siddhi Sink Statistics](../../observe/si-observe/viewing-sink-statistics)<br/>
-    - [Siddhi Query Statistics](../../observe/si-observe/viewing-query-statistics)<br/>
-    - [Siddhi Window Statistics](../../observe/si-observe/viewing-window-statistics)<br/>
-    - [Siddhi Trigger Statistics](../../observe/si-observe/viewing-trigger-statistics)<br/>
-    - [Siddhi Table Statistics](../../observe/si-observe/viewing-table-statistics)<br/>
-    - [Siddhi Aggregation Statistics](../../observe/si-observe/viewing-aggregation-statistics)<br/>
-    - [Siddhi On Demand Query Statistics](../../observe/si-observe/viewing-on-demand-query-statistics)
+    - [Siddhi Stream Statistics](viewing-stream-statistics)<br/>
+    - [Siddhi Source Statistics](viewing-source-statistics)<br/>
+    - [Siddhi Sink Statistics](viewing-sink-statistics)<br/>
+    - [Siddhi Query Statistics](viewing-query-statistics)<br/>
+    - [Siddhi Window Statistics](viewing-window-statistics)<br/>
+    - [Siddhi Trigger Statistics](viewing-trigger-statistics)<br/>
+    - [Siddhi Table Statistics](viewing-table-statistics)<br/>
+    - [Siddhi Aggregation Statistics](viewing-aggregation-statistics)<br/>
+    - [Siddhi On Demand Query Statistics](viewing-on-demand-query-statistics)
 
 ## Server Statistics Summary Table
 

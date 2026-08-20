@@ -1,3 +1,17 @@
+---
+title: "Integration overview"
+description: "Get an overview of the Micro Integrator's enterprise integration capabilities shipped with WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/integration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/integration-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 <style>
     @font-face {
     font-family: 'Material Icons';
@@ -434,16 +448,16 @@ Learn how to implement various integration use cases, deploy them in the Micro I
     <tr>
         <td><b>Protocol Switching</b>
             <ul>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_JMS_to_HTTP/">Switching from JMS to HTTP/S</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_HTTPS_to_JMS">Switching from HTTP/S to JMS</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_FTP_listener_to_mail_sender">Switching from FTP Listener to Mail Sender</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_HTTP_to_FIX">Switching from HTTP to FIX</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_FIX_to_HTTP">Switch from FIX to HTTP</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_FIX_to_AMQP">Switch from FIX to AMQP</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_between_FIX_versions">Switching between FIX Versions</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_TCP_to_HTTPS">Switching from TCP to HTTP/S</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_from_UDP_to_HTTPS">Switching from UDP to HTTP/S</a></li>
-                <li><a href="../../integrate/examples/protocol-switching/switching_between_HTTP_and_MSMQ">Switching between HTTP to MSMQ</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_jms_to_http/">Switching from JMS to HTTP/S</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_https_to_jms/">Switching from HTTP/S to JMS</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_ftp_listener_to_mail_sender/">Switching from FTP Listener to Mail Sender</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_http_to_fix/">Switching from HTTP to FIX</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_fix_to_http/">Switch from FIX to HTTP</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_fix_to_amqp/">Switch from FIX to AMQP</a></li>
+                <li><a href="../examples/protocol-switching/switching_between_fix_versions/">Switching between FIX Versions</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_tcp_to_https/">Switching from TCP to HTTP/S</a></li>
+                <li><a href="../examples/protocol-switching/switching_from_udp_to_https/">Switching from UDP to HTTP/S</a></li>
+                <li><a href="../examples/protocol-switching/switching_between_http_and_msmq/">Switching between HTTP to MSMQ</a></li>
             </ul>
         </td>
     </tr>
@@ -451,7 +465,7 @@ Learn how to implement various integration use cases, deploy them in the Micro I
         <td><b>File Processing</b> 
             <ul>
                 <li><a href="../../integrate/examples/file-processing/vfs-transport-examples">Using VFS for File Transferring</a></li>
-                <li><a href="../../integrate/examples/file-processing/Accessing_Windows_Share_Using_VFS_Transport">Accessing a Windows Share Using VFS</a></li>
+                <li><a href="../examples/file-processing/accessing_windows_share_using_vfs_transport/">Accessing a Windows Share Using VFS</a></li>
                 <li><a href="../../integrate/examples/file-processing/mailto-transport-examples">Sending and Receiving Emails</a></li>
             </ul>
         </td>

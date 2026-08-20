@@ -1,3 +1,18 @@
+---
+title: "VFS transport"
+description: "Demonstrates using the VFS transport to process files from the local file system as a transport medium."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/file-processing/vfs-transport-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/file-processing/vfs-transport-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # VFS Transport
 
 The Micro Integrator can access the local file system using the [VFS transport](../../../reference/synapse-properties/transport-parameters/vfs-transport-parameters) sender and
@@ -72,7 +87,7 @@ To test this sample, the following files and directories should be created:
     -   Be sure that the endpoint in the `<outSequence>` points to the **out** directory location. Make sure that the prefix
         `          vfs:         ` in the endpoint URL is not removed or changed.
 
-2. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../../integrate/develop/creating-artifacts/creating-registry-resources). Change the registry path of the proxy accordingly. 
+2. Add [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl) as a [registry resource](../../develop/creating-artifacts/creating-registry-resources). Change the registry path of the proxy accordingly. 
 
 3. Set up the back-end service.
 

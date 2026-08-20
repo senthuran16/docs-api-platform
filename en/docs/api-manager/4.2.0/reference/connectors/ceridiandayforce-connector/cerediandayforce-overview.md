@@ -1,3 +1,18 @@
+---
+title: "Ceridian dayforce connector overview"
+description: "Overview of the Ceridian Dayforce connector, which lets you access the Ceridian Dayforce HCM REST API from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/cerediandayforce-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/cerediandayforce-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Ceridian Dayforce Connector Overview
 
 Dayforce is a comprehensive human capital management system that covers the entire employee lifecycle including HR, payroll, benefits, talent management, workforce management, and services. The entire system resides on cloud that takes the burden of managing and replicating data on-premise.
@@ -18,11 +33,11 @@ For older versions, see the details in the connector store.
 
 ## Ceridian Dayforce Connector documentation
 
-* **[Setting up the Ceridian Dayforce Environment](../../../reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-config/)**: You need to have a Ceridian Dayforce developer account and obtain test user credentials to try this out.
+* **[Setting up the Ceridian Dayforce Environment](ceridiandayforce-connector-config)**: You need to have a Ceridian Dayforce developer account and obtain test user credentials to try this out.
 
-* **[Ceridian Dayforce Connector Example](../../../reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-example/)**: This example depicts how to use Dayforce connector to send a GET request to retrieve address of employees and send a POST request to create contacts of an employee. 
+* **[Ceridian Dayforce Connector Example](ceridiandayforce-connector-example)**: This example depicts how to use Dayforce connector to send a GET request to retrieve address of employees and send a POST request to create contacts of an employee. 
 
-* **[Ceridian Dayforce Connector Reference](../../../reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-reference/)**: This documentation provides a reference guide for the Ceridian Dayforce Connector.
+* **[Ceridian Dayforce Connector Reference](ceridiandayforce-connector-reference)**: This documentation provides a reference guide for the Ceridian Dayforce Connector.
 
 ## How to contribute
 

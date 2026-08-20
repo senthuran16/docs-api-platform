@@ -1,3 +1,18 @@
+---
+title: "Adding SSL certificates to keystores"
+description: "Generate a certificate signing request and add a CA-signed SSL certificate to a Micro Integrator keystore."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/importing_ssl_certificate/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/importing_ssl_certificate.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding SSL Certificates to Keystores
 
 Follow the steps given below to add a new [CA-signed certificate](../../../../reference/mi-security-reference/using_keystores) to your [keystores](../../../../reference/mi-security-reference/using_keystores). Note that you do not need to create a new keystore every time you need a CA-signed certificate.
@@ -68,4 +83,4 @@ Follow the steps given below to import the CA-signed public key certificate into
 
 ## What's next?
 
-If required, [renew the CA-signed certificate](../../../..)(../../../../install-and-setup/setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore) in your keystore and trust store.
+If required, [renew the CA-signed certificate](../../../../index)(../../../../index.md/install-and-setup/setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore) in your keystore and trust store.

@@ -1,3 +1,18 @@
+---
+title: "Working with canadian employee taxes"
+description: "Retrieve a Canadian employee's federal taxes, provincial taxes, and tax filing statuses using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeecantaxes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeecantaxes.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Canadian Employee Taxes
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve tax details of a Canadian employe
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-canadian-employee-federal-taxes"></a>
 #### Retrieving Canadian Employee Federal Taxes
 We can use GET Employee CAN Federal Taxes operation with required parameters to retrieve federal taxes of a Canadian employee.
 
@@ -74,6 +90,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-Federal-Taxes/GET-Employee-CAN-Federal-Taxes.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-Federal-Taxes/GET-Employee-CAN-Federal-Taxes.aspx)
 
+<a name="retrieving-canadian-employee-state-taxes"></a>
 #### Retrieving Canadian Employee State Taxes
 We can use GET Employee CAN State Taxes operation with required parameters to retrieve the state taxes of Canadian employee.
 
@@ -136,6 +153,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-State-Taxes/GET-Employee-CAN-State-Taxes.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-CAN-State-Taxes/GET-Employee-CAN-State-Taxes.aspx)
 
+<a name="retrieving-canadian-employee-tax-statuses"></a>
 #### Retrieving Canadian Employee Tax Statuses
 We can use GET Employee CAN Employee Tax Statuses operation with required parameters to retrieve tax filing statuses of Canadian employees.
 

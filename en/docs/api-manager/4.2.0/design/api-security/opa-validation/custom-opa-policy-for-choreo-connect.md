@@ -1,3 +1,17 @@
+---
+title: "Custom OPA policy for Choreo connect"
+description: "Create a custom Open Policy Agent request generator for Choreo Connect by implementing a Java interface and packaging it as a dependency."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/opa-validation/custom-opa-policy-for-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/opa-validation/custom-opa-policy-for-choreo-connect.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - opa-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
 
 # Custom OPA Policy for Choreo Connect
 

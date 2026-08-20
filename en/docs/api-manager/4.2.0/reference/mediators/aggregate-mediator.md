@@ -1,12 +1,27 @@
+---
+title: "Aggregate mediator"
+description: "Reference for the Aggregate mediator syntax and parameters used to combine response messages split by Clone or Iterate."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/aggregate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/aggregate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - aggregate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Aggregate Mediator
 
 The **Aggregate mediator** implements the [Aggregator enterprise integration pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/aggregator/). It
-combines (aggregates) the **response messages** of messages that were split by the split by the [Clone](../../reference/mediators/clone-mediator) or
-[Iterate](../../reference/mediators/iterate-mediator) mediator. Note that the responses are not necessarily aggregated in the same order that the requests were sent,
+combines (aggregates) the **response messages** of messages that were split by the split by the [Clone](clone-mediator) or
+[Iterate](iterate-mediator) mediator. Note that the responses are not necessarily aggregated in the same order that the requests were sent,
 even if you set the `         sequential        ` attribute to `         true        ` on the Iterate mediator.
 
 !!! Info
-    The Aggregate mediator is a [content-aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The Aggregate mediator is a [content-aware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 

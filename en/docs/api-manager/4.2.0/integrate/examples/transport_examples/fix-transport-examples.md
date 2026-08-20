@@ -1,3 +1,18 @@
+---
+title: "Using the FIX transport"
+description: "Configure a proxy service that uses the FIX transport to create a session and forward order requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/transport_examples/fix-transport-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/transport_examples/fix-transport-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - transport_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the FIX Transport
 
 This example demonstrates the usage of the FIX (Financial Information eXchange) transport with proxy services.
@@ -31,7 +46,7 @@ Banzai.
 ## Build and run
 
 -   You will need the two sample FIX applications that come with
-    Quickfix/J (Banzai and Executor). [Configure the two applications](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-fix-transport) to
+    Quickfix/J (Banzai and Executor). [Configure the two applications](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-fix-transport) to
     establish sessions with the Micro Integrator and enable the FIX transport in the Micro-Integrator.
 -   Start the Micro-Integrator.
 -   Be sure that the

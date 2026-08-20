@@ -1,3 +1,18 @@
+---
+title: "CSV default mapping"
+description: "Configure WSO2 Streaming Integrator Tooling to publish and receive Siddhi data events to files in default CSV format."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/csv-default-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/csv-default-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # CSV Default Mapping
 
 ## Purpose:

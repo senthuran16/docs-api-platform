@@ -1,3 +1,17 @@
+---
+title: "Overview"
+description: "Get an overview of WSO2 API Manager's capabilities for designing, publishing, securing, and managing APIs and API products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/overview.md
+tags:
+  - api-manager
+  - get-started
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overview
 
 **WSO2 API Manager is a fully open-source** API management platform. It supports API designing, API publishing, lifecycle management, application development, API security, rate limiting, viewing statistics of APIs, as well as connecting APIs, API Products, and endpoints.
@@ -120,7 +134,7 @@ The following are some of the main capabilities of the product.
 <div class="leftContentOverview" style="width:75% !important;">WSO2 API Managers API Analytics Dashboard provides insights into your APIs. These insights can help you to understand your customers and make important strategic business decisions.
     <ul>
         <li><a href="../../observe/observe-overview/">Observability</li>
-        <li><a href="../../observe/api-manager-analytics/overview-of-api-analytics/">API Manager Analytics</li>
+        <li><a href="../../api-analytics/choreo-analytics/getting-started-guide/">API Manager Analytics</li>
     </ul>
   </div>
   
@@ -188,8 +202,8 @@ The following are some of the main capabilities of the product.
 ## What's Next
 
 - Try out the WSO2 API Manager by following the Quick Start Guides on the following.
-    - [Managing an API proxy](../get-started/quick-start-guide/quick-start-guide)
-    - [Creating an integration service](../get-started/quick-start-guide/integration-qsg)
-    - [Streaming integration](../get-started/quick-start-guide/streaming-qsg)
+    - [Managing an API proxy](api-manager-quick-start-guide)
+    - [Creating an integration service](integration-quick-start-guide)
+    - [Streaming integration](streaming-quick-start-guide)
 - Understand the [basic architecture of the product](../get-started/architecture).
-- Learn more [about this release](../get-started/about-this-release).
+- Learn more [about this release](about-this-release).

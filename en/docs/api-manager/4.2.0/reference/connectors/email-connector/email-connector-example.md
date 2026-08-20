@@ -1,3 +1,18 @@
+---
+title: "Email connector example"
+description: "Configure the Email Connector to send an email and retrieve the same email from a Gmail account."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/email-connector/email-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/email-connector/email-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - email-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Email Connector Example
 
 Email Connector can be used to perform operations using protocols SMTP, IMAP and POP3. 
@@ -22,7 +37,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
@@ -79,7 +94,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     - content - json-eval($.content)
     - contentType - json-eval($.contentType)
  
-9. Drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) to respond the response from sending the email as shown below.
+9. Drag and drop the [Respond Mediator](../../mediators/respond-mediator) to respond the response from sending the email as shown below.
    <img src="../../../../assets/img/integrate/connectors/email-conn-6.png" title="Adding the respond mediator." width="800" alt="Adding the respond mediator."/>
 
 10. Create the next API resource, which is `/retrieve` by dragging and dropping another API resource to the design view. This API resource will retrieve filters from the incoming HTTP post request from which to filter the email messages such as the subject, retrieve the emails, retrieve email body and respond back.
@@ -105,15 +120,15 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     
     - Subject Regex: json-eval($.subjectRegex)
     
-14. We will next iterate the response received and obtain the email content of each email using the `getEmailBody` operation. In order to do this, drag and drop the [Foreach Mediator](../../../reference/mediators/foreach-mediator/) as shown below and enter `//emails/email` as the Foreach Expression in the properties window.
+14. We will next iterate the response received and obtain the email content of each email using the `getEmailBody` operation. In order to do this, drag and drop the [Foreach Mediator](../../mediators/foreach-mediator) as shown below and enter `//emails/email` as the Foreach Expression in the properties window.
     <img src="../../../../assets/img/integrate/connectors/email-conn-9.png" title="Adding foreach mediator." width="800" alt="Adding foreach mediator."/>
 
-15. Inside the [Foreach Mediator](../../../reference/mediators/foreach-mediator/), drag and drop the `getEmailBody` operation as shown below and provide the `//email/index/text()` expression as the Email Index.
+15. Inside the [Foreach Mediator](../../mediators/foreach-mediator), drag and drop the `getEmailBody` operation as shown below and provide the `//email/index/text()` expression as the Email Index.
     <img src="../../../../assets/img/integrate/connectors/email-conn-10.png" title="Adding getEmailBody operation." width="800" alt="Adding getEmailBody operation."/>
 
-    > **NOTE**: Further, you can use `getAttachment` operation to retrieve attachment content if there are any. Refer [Reference Documentation](../../../reference/connectors/email-connector/email-connector-config/) to learn more.
+    > **NOTE**: Further, you can use `getAttachment` operation to retrieve attachment content if there are any. Refer [Reference Documentation](email-connector-config) to learn more.
 
-16. Next, we will use a [Payload Factory Mediator](../../../reference/mediators/payloadfactory-mediator/), to add the email content to the same response we received from `list` operation and configure the Payload mediator as shown below.
+16. Next, we will use a [Payload Factory Mediator](../../mediators/payloadfactory-mediator), to add the email content to the same response we received from `list` operation and configure the Payload mediator as shown below.
     <img src="../../../../assets/img/integrate/connectors/email-conn-11.png" title="Adding payload factory mediator." width="800" alt="Adding payload facotry mediator."/>
     
     Enter following as the payload:
@@ -127,12 +142,12 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     </email>
     ```
     
-    Here, you may observe that we are obtaining `TEXT_CONTENT` property which is being set when getEmailBody is invoked to retrieve the email content. You can find the list of similar properties set in this operation [here](../../../reference/connectors/email-connector/email-connector-config/).
+    Here, you may observe that we are obtaining `TEXT_CONTENT` property which is being set when getEmailBody is invoked to retrieve the email content. You can find the list of similar properties set in this operation [here](email-connector-config).
 
-17. Drag and drop a [Property Mediator](../../../reference/mediators/property-mediator/) and set the Property name as 'messageType' and the value as application/json. This is added so that the response will be in json.
+17. Drag and drop a [Property Mediator](../../mediators/property-mediator) and set the Property name as 'messageType' and the value as application/json. This is added so that the response will be in json.
     <img src="../../../../assets/img/integrate/connectors/email-conn-12.png" title="Adding property mediator." width="800" alt="Adding property mediator."/>
 
-18. Finally, drag and drop the [Respond Mediator](../../../reference/mediators/respond-mediator/) after the 'foreach' mediator to respond the response of retrieved emails.
+18. Finally, drag and drop the [Respond Mediator](../../mediators/respond-mediator) after the 'foreach' mediator to respond the response of retrieved emails.
     <img src="../../../../assets/img/integrate/connectors/email-conn-13.png" title="Adding property mediator." width="800" alt="Adding property mediator."/>
 
 19. You can find the complete API XML configuration below. You can go to the source view and copy paste the following config.
@@ -192,7 +207,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 </api>
 ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -206,7 +221,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -269,4 +284,4 @@ You should get a response like below.
 
 ## What's Next
 
-* To customize this example for your own scenario, see [Email Connector Configuration](../../../reference/connectors/email-connector/email-connector-config/) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [Email Connector Configuration](email-connector-config) documentation for all operation details of the connector.

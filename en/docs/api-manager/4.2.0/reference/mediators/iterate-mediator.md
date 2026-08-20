@@ -1,14 +1,29 @@
+---
+title: "Iterate mediator"
+description: "Reference for the Iterate mediator, which splits a message into multiple messages derived from the parent message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/iterate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/iterate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - iterate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Iterate Mediator
 
 The **Iterate Mediator** implements the [Splitter enterprise integration
 pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/splitter/)
 and splits the message into a number of different messages derived from
-the parent message. The Iterate mediator is similar to the [Clone mediator](../../reference/mediators/clone-Mediator). The difference between the two mediators
+the parent message. The Iterate mediator is similar to the [Clone mediator](../../reference/mediators/clone-mediator). The difference between the two mediators
 is, the Iterate mediator splits a message into different parts, whereas the Clone mediator makes multiple identical copies of the message.
 
 !!! Info
     -   The Iterate mediator is a [content aware](../../concepts/message-processing-units/#classification-of-mediators) mediator.
-    -   Iterate Mediator is quite similar to the [ForEach mediator](../../reference/mediators/foreach-mediator). You can use complex XPath expressions or JSON expressions to conditionally select elements to iterate over in both mediators. Following are the main difference between ForEach and Iterate mediators:
+    -   Iterate Mediator is quite similar to the [ForEach mediator](foreach-mediator). You can use complex XPath expressions or JSON expressions to conditionally select elements to iterate over in both mediators. Following are the main difference between ForEach and Iterate mediators:
         -   Use the ForEach mediator only for message transformations. If you
         need to make back-end calls from each iteration, then use the
         iterate mediator.
@@ -18,14 +33,14 @@ is, the Iterate mediator splits a message into different parts, whereas the Clon
         -   You need to always accompany an Iterate with an Aggregate mediator.
         ForEach loops over the sub-messages and merges them back to the same
         parent element of the message.
-        -   In Iterate you need to send the split messages to an endpoint to continue the message flow. However, ForEach does not allow using [Call](../../reference/mediators/call-mediator), [Send](../../reference/mediators/send-mediator) and
-        [Callout](../../reference/mediators/callout-mediator) mediators in the sequence.
+        -   In Iterate you need to send the split messages to an endpoint to continue the message flow. However, ForEach does not allow using [Call](call-mediator), [Send](send-mediator) and
+        [Callout](callout-mediator) mediators in the sequence.
         -   ForEach does not split the message flow, unlike Iterate Mediator. It
         guarantees to execute in the same thread until all iterations are
         complete.
 
 !!! Info
-    When using the Iterate Mediator, the message is cloned for each iteration, including properties with the [default scope](../../reference/mediators/property-reference/accessing-properties-with-xpath/#synapse-scope). If a property contains a large amount of data, this duplication can cause performance overhead.
+    When using the Iterate Mediator, the message is cloned for each iteration, including properties with the [default scope](property-reference/accessing-properties-with-xpath#synapse-scope). If a property contains a large amount of data, this duplication can cause performance overhead.
 
 When you use ForEach mediator, you can only loop through segments of the
 message and do changes to a particular segment. For example, you can

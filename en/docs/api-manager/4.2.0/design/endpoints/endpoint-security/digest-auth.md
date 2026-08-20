@@ -1,3 +1,18 @@
+---
+title: "Secure endpoint with digest auth"
+description: "Secure an API endpoint with Digest Authentication, which hashes credentials with nonce values to prevent replay attacks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/endpoints/endpoint-security/digest-auth/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/endpoints/endpoint-security/digest-auth.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure Endpoint with Digest Auth
 
 A secured endpoint is where we have access-protected resources. You have to specify the username and the password when a request is sent to a secured endpoint.  The endpoint authentication mechanism can either be Basic Authentication or Digest Authentication. They differ on how the credentials are communicated and how access is granted by the backend server. 
@@ -13,7 +28,7 @@ Digest Authentication applies a hash function to the username and the password b
 
 Digest Authentication is safer than Basic Authentication, which uses unencrypted base64 encoding instead of a hashing mechanism.
 
-When you [create an API](../../../design/create-api/create-rest-api/create-a-rest-api) using the API Publisher, you can specify the endpoints of the API backend implementation via the **Endpoints** page as Production and Sandbox endpoints respectively.
+When you [create an API](../../create-api/create-rest-api/create-a-rest-api) using the API Publisher, you can specify the endpoints of the API backend implementation via the **Endpoints** page as Production and Sandbox endpoints respectively.
 
 Follow the instructions below to use Digest Auth as the endpoint authentication type when using a secured endpoint:
 
@@ -22,7 +37,7 @@ Follow the instructions below to use Digest Auth as the endpoint authentication 
 2. Click the Endpoint Security symbol of the endpoint you want to secure with Digest Auth.
 
 <<<<<<< HEAD
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 =======
       [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 >>>>>>> upstream/doc-migration

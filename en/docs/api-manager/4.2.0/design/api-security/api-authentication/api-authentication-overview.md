@@ -1,18 +1,33 @@
+---
+title: "Overview"
+description: "Overview of API authentication mechanisms in API Manager, including OAuth2 tokens, API keys, mutual SSL, basic authentication, and multiple Key Managers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/api-authentication-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/api-authentication-overview.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overview
 
 API authentication is a way of protecting API access from unidentified or anonymous access. It ensures that the API is secured and accessible only by the consumers who proves their identity and whose identities are found within the API Management Platform. 
 
 WSO2 API Manager offers the following authentication mechanisms to secure your API from unauthenticated access.
 
-- [Securing APIs using OAuth2 Access Tokens](../../../design/api-security/api-authentication/secure-apis-using-oauth2-tokens)
+- [Securing APIs using OAuth2 Access Tokens](secure-apis-using-oauth2-tokens)
 
-    - [JWT (Self Contained) Access Tokens](../../../design/api-security/oauth2/access-token-types/jwt-tokens)
+    - [JWT (Self Contained) Access Tokens](../oauth2/access-token-types/jwt-tokens)
     
-- [Secure APIs Using API Keys](../../../design/api-security/api-authentication/secure-apis-using-api-keys)
+- [Secure APIs Using API Keys](secure-apis-using-api-keys)
 
-- [Secure APIs Using Mutual SSL](../../../design/api-security/api-authentication/secure-apis-using-mutual-ssl)
+- [Secure APIs Using Mutual SSL](secure-apis-using-mutual-ssl)
 
-- [Secure APIs Using Basic Authentication](../../../design/api-security/api-authentication/secure-apis-using-basic-authentication)
+- [Secure APIs Using Basic Authentication](secure-apis-using-basic-authentication)
 
 
 WSO2 API Manager allows you to enable multiple Key Managers for authentication.

@@ -1,3 +1,18 @@
+---
+title: "Distributed tracing"
+description: "Configure Choreo Connect to publish distributed traces to Jaeger, Zipkin, Azure Application Insights, or OTLP gRPC backends."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/distributed-tracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/distributed-tracing.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Distributed Tracing
 
 Performance issues, errors, and exceptions are unfortunate events that may occur in a production environment. In order to identify such an event, observing the production environment is essential. Choreo Connect provides the ability to observe how the requests are handled via an OpenTelemetry based distributed tracing implementation. By connecting Choreo Connect to one of the supported distributed tracing systems, users are able to easily debug and identify production issues.
@@ -43,7 +58,8 @@ When using **Jaeger** for tracing, the format is same as for **Zipkin** to publi
     ```
     COLLECTOR_ZIPKIN_HOST_PORT=9411
     ```
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 
@@ -61,7 +77,7 @@ When using **Jaeger** for tracing, the format is same as for **Zipkin** to publi
     ``` 
 
 1. Start Choreo Connect.
-1. [Create and Deploy an API](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/).
+1. [Create and Deploy an API](../getting-started/quick-start-guide-docker-with-apim).
 1. Invoke the newly created API and open Jaeger UI to view the traces. Navigate to `http://localhost:16686` if you have updated the Docker Compose file with an instance of Jaeger as mentioned at the beginning.
 
 You will be able to browse through the request traces and expand each trace to view complete trace details.
@@ -72,7 +88,8 @@ You will be able to browse through the request traces and expand each trace to v
 
 Follow these steps to configure WSO2 Choreo Connect with Zipkin.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 
@@ -90,7 +107,7 @@ Follow these steps to configure WSO2 Choreo Connect with Zipkin.
     ``` 
 
 1. Start Choreo Connect.
-1. [Create and Deploy an API](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide/quick-start-guide-docker-with-apim/).
+1. [Create and Deploy an API](../getting-started/quick-start-guide-docker-with-apim).
 1. Invoke the newly create API and open Zipkin UI to view the traces. Navigate to `http://localhost:9411` if you have updated the Docker Compose file with an instance of Zipkin as mentioned at the beginning. 
 1. Filter traces by `serviceName=choreo_connect` query.
 
@@ -109,7 +126,8 @@ Follow these steps to configure WSO2 Choreo Connect with Azure Application Insig
     InstrumentationKey=ab71943f-xxxx-xxxx-xxxx-fb2eb69ae11d;IngestionEndpoint=https://region.applicationinsights.azure.com/
     ```
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 
@@ -136,7 +154,7 @@ Follow these steps to configure WSO2 Choreo Connect with Azure Application Insig
         ```
 
 1. Start Choreo Connect.
-1. [Create and Deploy an API](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide/quick-start-guide-docker-with-apim/).
+1. [Create and Deploy an API](../getting-started/quick-start-guide-docker-with-apim).
 1. Invoke the newly create API.
 1. Now open "Azure Application Insights" Trasaction search window and select `Dependency` for `Event types` filter  
     ![Azure Trace Filter](../../../../assets/img/deploy/mgw/trace-azure-filter.png)
@@ -167,7 +185,8 @@ You will be able to see all traces. Detailed trace view will look like below.
     !!! Important
         Note that only Jaeger versions 1.35 and above support OTLP gRPC telemetry data collection. Also, it is required to set the environment variable `COLLECTOR_OTLP_ENABLED=true`.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
     === "Configuration"
         ```toml
@@ -191,7 +210,7 @@ You will be able to see all traces. Detailed trace view will look like below.
         ```
 
 1. Start Choreo Connect.
-1. [Create and Deploy an API](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide/quick-start-guide-docker-with-apim/).
+1. [Create and Deploy an API](../getting-started/quick-start-guide-docker-with-apim).
 1. Invoke the newly created API and open Jaeger UI to view the traces. Navigate to `http://localhost:16686` if you have updated the Docker Compose file with an instance of Jaeger as given above.
 
 You will be able to browse through the request traces and expand each trace to view complete trace details.
@@ -200,7 +219,8 @@ You will be able to browse through the request traces and expand each trace to v
 
 1. Create an account in New Relic portal and generate a license key to publish traces. [New Relic OTLP guide](https://docs.newrelic.com/docs/more-integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-setup/)
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
     === "Configuration"
         ```toml
@@ -247,7 +267,7 @@ You will be able to browse through the request traces and expand each trace to v
         ```
 
 1. Start Choreo Connect.
-1. [Create and Deploy an API](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide/quick-start-guide-docker-with-apim/).
+1. [Create and Deploy an API](../getting-started/quick-start-guide-docker-with-apim).
 1. Invoke the newly created API and go to New Relic Tracing dashboard to view the traces.
 
 You will be able to browse through the request traces and expand each trace to view complete trace details.

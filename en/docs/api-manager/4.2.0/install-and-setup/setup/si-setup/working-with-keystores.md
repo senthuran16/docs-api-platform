@@ -1,3 +1,18 @@
+---
+title: "Working with keystores"
+description: "Explains keystore concepts such as key pairs, digital certificates, and trusted certificates used for encryption and trust in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/working-with-keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/working-with-keystores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Working with Keystores
 
 A keystore is a repository that stores the cryptographic keys and

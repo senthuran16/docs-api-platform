@@ -1,6 +1,21 @@
+---
+title: "Adding an API state change workflow"
+description: "Configure WSO2 Enterprise Integrator or WSO2 Business Process Server to control API lifecycle state changes in API Manager through a custom workflow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/advanced-topics/adding-an-api-state-change-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/advanced-topics/adding-an-api-state-change-workflow-using-bps.md
+tags:
+  - api-manager
+  - design
+  - advanced-topics
+  - adding-an-api-state-change-workflow-using-bps
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding an API State Change Workflow
 
-This section explains how to add a custom workflow to control the API state changes in the API Manager. Before you begin, see [Workflow Extensions](../../reference/extending-the-api-manager/extendingh-workflows/invoking-the-api-manager-from-the-bpel-engine) for more information on the different types of workflow executors, and also, see [API Lifecycle](../../getting-started/key-concepts#api-lifecycle) to get a better understanding on the API states.
+This section explains how to add a custom workflow to control the API state changes in the API Manager. Before you begin, see [Workflow Extensions](../../reference/customize-product/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine) for more information on the different types of workflow executors, and also, see [API Lifecycle](../../get-started/apim-architecture#api-lifecycle) to get a better understanding on the API states.
 
 !!! Note
 
@@ -116,7 +131,7 @@ First, enable the API state change workflow.
 
 4.  Sign in to the API Publisher (`https://<Server Host>:9443/publisher`) and publish an API. 
 
-     For more information, see [Create a REST API](../../design/create-api/create-rest-api/create-a-rest-api/) and [Publish an API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api/). 
+     For more information, see [Create a REST API](../create-api/create-rest-api/create-a-rest-api) and [Publish an API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api). 
      
 5. Click **Lifecycle**.
 
