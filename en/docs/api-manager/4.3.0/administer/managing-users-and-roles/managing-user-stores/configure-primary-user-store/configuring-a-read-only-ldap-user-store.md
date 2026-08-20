@@ -70,7 +70,7 @@ Before you begin
 !!! note
     Note that these configurations will automatically applied to the `user-mgt.xml` file so you do not need to edit it.
     
-Given below is a sample for the LDAP/AD user store configuration in read-only mode. You can change the values to match your LDAP/AD in `deployment.toml` file. For descriptions on each of the properties used in the `<API-M_HOME>/repository/conf/deployment.toml` file which are used for configuring the primary user store , see [Properties of User Stores](#ConfiguringaRead-OnlyLDAPUserStore-Properties used in Read-only LDAP user store manager).
+Given below is a sample for the LDAP/AD user store configuration in read-only mode. You can change the values to match your LDAP/AD in `deployment.toml` file. For descriptions on each of the properties used in the `<API-M_HOME>/repository/conf/deployment.toml` file which are used for configuring the primary user store , see [Properties of User Stores](#properties-used-in-read-only-ldap-user-store-manager).
 The configuration for the external read-only user store in the user-mgt.xml file looks as follows for the above configurations:
 
     <UserManager>
@@ -155,7 +155,7 @@ The configuration for the external read-only user store in the user-mgt.xml file
            -   You also need to [enable connection pooling](https://is.docs.wso2.com/en/5.10.0/setup/performance-tuning-recommendations/#pooling-ldaps-connections) for LDAPS connections at the time of starting your server, which will enhance server performance.
     
 
-   2.  Obtain a user who has permission to read all users/attributes and perform searches on the user store from your LDAP/Active Directory administrator. For example, if the privileged user is `admin` and the password is `admin`, update the following sections of the user store configuration as shown below. Note that this user does NOT have to be the system administrator that you define [here](#admin_ConfiguringaRead-OnlyLDAPUserStore-Updatingthesystemadministrator) .
+   2.  Obtain a user who has permission to read all users/attributes and perform searches on the user store from your LDAP/Active Directory administrator. For example, if the privileged user is `admin` and the password is `admin`, update the following sections of the user store configuration as shown below. Note that this user does NOT have to be the system administrator that you define [here](#step-2-updating-the-system-administrator) .
 
      ``` 
      ConnectionName="uid=admin,ou=system"
@@ -249,7 +249,7 @@ For information information about the system administrator user, see [Configurin
 
 Start your server and try to log in as the admin user you specified. The password is the admin user's password in the LDAP server.
 
-### [Properties used in Read-only LDAP user store manager](#ConfiguringaRead-OnlyLDAPUserStore-Properties used in Read-only LDAP user store manager)
+### [Properties used in Read-only LDAP user store manager](#properties-used-in-read-only-ldap-user-store-manager)
 
 The following are the minimum configurations that are needed to be provided to configure the Read-only LDAP user store manager.
 
@@ -346,7 +346,7 @@ Any of the following properties can be configured for the `PRIMARY` user store b
  <td>The attribute used for uniquely identifying a user entry. Users can be authenticated using their email address, UID, etc. The name of the attribute is considered as the username.
  <p>Default: uid<br />
  <br />
- Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../administer/product-security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
+ Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#setup-an-e-mail-login">Using email address as the username</a></p></td>
  </tr>
  <tr class="even">
  <td>UserNameSearchFilter</td>

@@ -18,7 +18,7 @@ validated before they are run in an actual production environment.
 To validate a Siddhi application, follow the procedure below:
 
 1.  Start and access the Streaming Integrator Tooling. For detailed
-    instructions, see [Starting Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    instructions, see [Starting Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
 
 2.  In this example, let's use an existing sample as an example. Click
     on the **ReceiveAndCount** sample to open it.
@@ -47,7 +47,7 @@ You can run a Siddhi application to verify whether the logic
 you have written is correct. To start a Siddhi application, follow the procedure below:
 
 1.  Start and access the Streaming Integrator Tooling. For detailed
-    instructions, see [Starting Stream Integration Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    instructions, see [Starting Stream Integration Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
     
 2.  For this example, click the **existing** sample **ReceiveAndCount**. It opens in a new untitled tab.
 
@@ -154,7 +154,7 @@ below.
 
 2.  Click the **Event Simulator** icon in the left pane of the editor.
 
-    ![Event Simulator Icon](../../assets/img/streaming/testing-siddhi-applications/event-simulation_Icon.png)
+    ![Event Simulator Icon](../../assets/img/streaming/testing-siddhi-applications/event-simulation-icon.png)
 
 3.  In the event simulation left panel that opens, click on the **Feed Simulation** tab.
 
@@ -238,7 +238,7 @@ To simulate multiple events from a database, follow the procedure below:
      
 2.  Click the **Event Simulator** icon in the left pane of the editor.
 
-    ![Event Simulator Icon](../../assets/img/streaming/testing-siddhi-applications/event-simulation_Icon.png)
+    ![Event Simulator Icon](../../assets/img/streaming/testing-siddhi-applications/event-simulation-icon.png)
 
 3.  Click the **Feed** tab to open the **Feed Simulation** panel.
 

@@ -6,11 +6,11 @@ In addition, the GitHub and Slack channel URLs will not appear in the Developer 
 
 - [Enable Social Media Interaction](#enable-social-media-interaction)
   - [Enable sharing API link on social media](#enable-sharing-api-link-on-social-media)
-    - [Step 1 - Enable the community links option](#step-1---enable-the-community-links-option)
-    - [Step 2 - Verify the changes](#step-2---verify-the-changes)
+    - [Step 1 - Enable the community links option](#step-1-enable-the-community-links-option)
+    - [Step 2 - Verify the changes](#step-2-verify-the-changes)
   - [Add GitHub and Slack channel URLs to an API](#add-github-and-slack-channel-urls-to-an-api)
-    - [Step 1 - Define your GitHub and Slack channel URLs](#step-1---define-your-github-and-slack-channel-urls)
-    - [Step 2 - Verify the changes](#step-2---verify-the-changes-1)
+    - [Step 1 - Define your GitHub and Slack channel URLs](#step-1-define-your-github-and-slack-channel-urls)
+    - [Step 2 - Verify the changes](#step-2-verify-the-changes_1)
 
 ## Enable sharing API link on social media
 

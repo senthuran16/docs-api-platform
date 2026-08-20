@@ -51,12 +51,12 @@ Following are the minimum userstore properties that are needed to be provided to
 <td>Connection URL</td>
 <td><p>Connection URL to the user store server.</p>
 <p>Sample values:<br />
-<a href="ldap://10.100.1.100:389">ldap://10.100.1.100:389</a><br />
-<a href="ldaps://10.100.1.102:639">ldaps://10.100.1.102:639</a><br />
+<code>ldap://10.100.1.100:389</code><br />
+<code>ldaps://10.100.1.102:639</code><br />
 <br />
 If you are connecting over ldaps (secured LDAP)<br />
 Need to import the certificate of userstore to the client-truststore.jks of the WSO2 product. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see Using Asymmetric Encryption.<br />
-<a href="../../../../../deploy/security/use-asymmetric-encryption/">Using asymmetric encryption</a><br />
+<a href="https://is.docs.wso2.com/en/latest/deploy/security/asymmetric-encryption/use-asymmetric-encryption/">Using asymmetric encryption</a><br />
 <br />
 If LDAP connection pooling is used, see enable connection pooling for LDAPS connections.<br />
 <a href="../../../../../deploy/performance/performance-tuning-recommendations/#performance-tuning-ldaps-pooling">performance tuning ldaps pooling)</a></p></td>
@@ -138,7 +138,7 @@ Default: identityPerson( Is a custom object class defined in WSO2 Identity Serve
 <td><p>A uniquely identifying attribute that represents the username of the user. Users can be authenticated using their email address, UID, etc. The value of the attribute is considered as the username.</p>
 <p>Default: uid<br />
 <br />
-Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../guides/identity-lifecycles/enable-email-as-username/">Using email address as the username</a></p></td>
+Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="https://is.docs.wso2.com/en/latest/includes/enable-email-as-username/">Using email address as the username</a></p></td>
 </tr>
 <tr class="odd">
 <td>UserIDAttribute</td>

@@ -82,7 +82,7 @@ You can add advanced rate limiting policies to both APIs and resources.
     
     [![Add advanced policy page](../../assets/img/learn/new-header-condition-regex.png){:style="width:45%"}](../../assets/img/learn/new-header-condition-regex.png)
 
-    [![Add advanced policy page](../../assets/img/learn/new-jwt-condition-regex.png){:style="width:45%"}](../../assets/img/learn/anew-jwt-condition-regex.png)
+    [![Add advanced policy page](../../assets/img/learn/new-jwt-condition-regex.png){:style="width:45%"}](../../assets/img/learn/new-jwt-condition-regex.png)
 
     <div class="admonition info">
     <p class="admonition-title">Note</p>

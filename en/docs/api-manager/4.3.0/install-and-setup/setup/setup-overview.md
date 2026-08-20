@@ -52,7 +52,7 @@ Setting up involves doing the required configurations for the API Manager and it
     For instructions to tune the performance for each component, see the following topics:
     
     - [Tuning Performance for the API Manager](../../install-and-setup/setup/deployment-best-practices/tuning-performance.md)
-    - [Tuning Performance for the Micro Integrator](../../install-and-setup/setup/mi-setup/performance_tuning/tuning_jvm_performance.md)
+    - [Tuning Performance for the Micro Integrator](https://mi.docs.wso2.com/en/latest/install-and-setup/setup/performance-tuning/tuning-jvm-performance/)
     
 The above activities need to be carried out separately for each runtime. The procedures to execute them are similar, but there can be slight differences between one component to another.
 

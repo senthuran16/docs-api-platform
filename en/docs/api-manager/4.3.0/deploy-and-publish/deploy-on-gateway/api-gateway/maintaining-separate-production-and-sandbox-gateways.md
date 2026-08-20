@@ -10,6 +10,7 @@ This is the default scenario. Because this Gateway instance handles both product
 
 [![Hybrid Gateway](../../../assets/img/learn/hybrid-gw.png)](../../../assets/img/learn/hybrid-gw.png)
 
+<a name="multiple-gateways-to-handle-production-and-sandbox-requests-separately"></a>
 #### Multiple Gateways to handle production and sandbox requests separately
 
 Having a single Gateway instance to pass through both types of requests can negatively impact the performance of the production server. To avoid this, you can set up separate API Gateways. The production API Gateway handles requests that are made using PRODUCTION type tokens and the sandbox API Gateway handles requests that are made using SANDBOX type tokens.

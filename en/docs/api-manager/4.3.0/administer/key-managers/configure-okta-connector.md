@@ -211,7 +211,7 @@ Follow the instructions below to configure Okta as a third-party Key Manager:
           </tr>
           <tr class="even">
           <td>API Key</td>
-          <td>The API key generated from <a href="#section3">section 3</a>.</td>
+          <td>The API key generated from <a href="#step-3-generate-keys-using-the-okta-key-manager">section 3</a>.</td>
           <td>Mandatory</td>
           </tr>
           <tr class="odd">

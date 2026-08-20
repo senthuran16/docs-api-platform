@@ -80,7 +80,7 @@ If your system connects to the service through a proxy server/firewall, you need
 
 ### Basic configurations
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.3.0/includes/analytics/configure-synapse-gateway.md"
 
 ### Advanced configurations
 

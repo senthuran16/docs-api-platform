@@ -217,7 +217,7 @@ The elements of the above configuration are explained below.
     4.  Assign this role to a user.
     5.  Update `<DCREndPointUser>` and `<DCREndPointPassword>` with this user's credentials.
 
-    For more details on how to create users and roles see [managing users and roles](../../administer/managing-users-and-roles/admin-managing-users-roles-and-permissions.md).
+    For more details on how to create users and roles see [managing users and roles](../../administer/managing-users-and-roles/introduction-to-user-management.md).
 
 
 The configurations that can be changed by editing the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` are given below.

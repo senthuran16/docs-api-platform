@@ -77,7 +77,7 @@ You can define your own policy enforcement logic in OPA by using the values prov
 By default, each Gateway uses a default Request Generator to generate the request payload to the OPA server. You can configure your policies in OPA server based on the following request format.
 
 !!! Info
-    You can have your own **Request Generator Implementation** - you can do so by implementing the interface **OPARequestGenerator**. [Custom OPA Policy with Custom Request Generator](#custom-opa-policy-with-custom-request-generator) in this document describes this in more detail.
+    You can have your own **Request Generator Implementation** - you can do so by implementing the interface **OPARequestGenerator**. [Custom OPA Policy with Custom Request Generator](#customize-the-opa-request-payload-and-response-validation) in this document describes this in more detail.
 
 === "Format"
     ```json
@@ -144,7 +144,7 @@ By default, each Gateway uses a default Request Generator to generate the reques
 Similar to the request generation, the default request generator class validates the response from OPA. When using the default implementation, you have to write your OPA policies using the following response format when queried with the `allow` policy.
 
 !!! note
-    If required, you can have your own **Response Valiation Implementation** by implementing the interface **OPARequestGenerator**. For more information, see [Custom OPA Policy with Custom Request Generator](#custom-opa-policy-with-custom-request-generator).
+    If required, you can have your own **Response Valiation Implementation** by implementing the interface **OPARequestGenerator**. For more information, see [Custom OPA Policy with Custom Request Generator](#customize-the-opa-request-payload-and-response-validation).
 
 === "Format"
     ```json

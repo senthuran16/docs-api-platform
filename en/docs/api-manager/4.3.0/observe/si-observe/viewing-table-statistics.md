@@ -6,7 +6,7 @@ This dashboard displays the following information for your Streaming Integrator 
 
 ## Table Statistics Summary Table
 
-![Table Statistics Summary](../../assets/img/streaming/table-statistics/table-statistics-summary.png)
+![Table Statistics Summary](../../assets/img/streaming/table-statistics.png/table-statistics-summary.png)
 
 This lists all the table operations defined in all the Siddhi applications in your Streaming Integrator server. The table displays the following for each operation:
 
@@ -25,12 +25,12 @@ This lists all the table operations defined in all the Siddhi applications in yo
    
 ## Latency
 
-![Table Latency](../../assets/img/streaming/table-statistics/table-latency.png)
+![Table Latency](../../assets/img/streaming/table-statistics.png/table-latency.png)
 
 This shows the latency of each table operation in your Streaming Integrator server.
 
 ## Throughput
 
-![Table Throughput](../../assets/img/streaming/table-statistics/table-throughput.png)
+![Table Throughput](../../assets/img/streaming/table-statistics.png/table-throughput.png)
 
 This shows the throughput of each table operation in your Streaming Integrator server.

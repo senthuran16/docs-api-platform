@@ -9,6 +9,7 @@ The following two options are available to obtain the actual user information.
     -   [Decoding the id_token](#decoding-the-id_token)
     -   [Invoking the userinfo endpoint](#invoking-the-userinfo-endpoint)
     
+<a name="decoding-the-id_token"></a>
 #### Decoding the id_token
 
 Follow the instructions below to obtain user profile information with OpenID connect with WSO2 API Manager.
@@ -57,6 +58,7 @@ Follow the instructions below to obtain user profile information with OpenID con
     }
     ```
 
+<a name="invoking-the-userinfo-endpoint"></a>
 #### Invoking the userinfo endpoint
 
 You can obtain user information as a payload by invoking the userinfo endpoint with the access token obtained in step 1. The format of the curl command and a sample is given below

@@ -170,7 +170,7 @@ If you want to work with scopes, then you need to assign the relevant scopes to 
 
 Follow the instructions given below to configure WSO2 API Manager to work with the ForgeRock Authorization Server.
 
-1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
      `<API-M_HOME>` refers to the root folder of the extracted WSO2 API-M distribution.
 

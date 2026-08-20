@@ -166,6 +166,7 @@ You can extend the below YAML files to introduce other components. (e.g., config
 10. Verify that the new changes are available in the Dev environment.
 11. You can repeat steps 8, 9 and 10 for the Staging and Prod environment.
 
+<a name="setting-up-jenkins-server"></a>
 #### Setting up Jenkins server
 
 1. Docker scripts for setting up a Jenkins environment are provided inside `samples-apim/si-cicd`. This will spin up a preconfigured Docker image. By default, 3 Jenkins jobs will be created. One each for the environment descriptor branches (dev, staging, prod).

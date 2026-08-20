@@ -98,7 +98,7 @@ To export one or more Siddhi applications for Kubernetes, follow the procedure b
 
     As a result, the following wizard opens.
 
-    ![Export Siddhi App for Docker image dialog](../../assets/img/streaming/exporting-siddhi-applications/Export_k8s_1.png)
+    ![Export Siddhi App for Docker image dialog](../../assets/img/streaming/exporting-siddhi-applications/export-k8s-1.png)
 
 4. In **Step 1: Select Siddhi Apps**, select one or more Siddhi applications to be included in the Kubernetes artifact.
 

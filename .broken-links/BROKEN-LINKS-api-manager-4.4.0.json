@@ -1,0 +1,96 @@
+{
+ "scope": "api-manager/4.4.0",
+ "docs_root": "en/docs",
+ "counts": {
+  "templated_fixable": 0,
+  "templated": 0,
+  "malformed": 0,
+  "dir_style": 0,
+  "depth": 0,
+  "renamed": 0,
+  "case": 0,
+  "include": 0,
+  "gone": 5,
+  "stale": 0,
+  "anchor": 3,
+  "anchor_case": 0,
+  "anchor_legacy": 0,
+  "anchor_punct": 0,
+  "templated_typo": 0,
+  "partial": 0,
+  "partial_fixable": 0,
+  "stale_mapped": 0,
+  "anchor_deep": 0
+ },
+ "tiers": {
+  "templated_fixable": [],
+  "templated": [],
+  "malformed": [],
+  "dir_style": [],
+  "depth": [],
+  "renamed": [],
+  "case": [],
+  "include": [],
+  "gone": [
+   {
+    "file": "api-manager/4.4.0/design/create-api/create-a-websocket-api.md",
+    "link": "../../observe/api-manager-analytics/overview-of-api-analytics.md",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/4.4.0/install-and-setup/install-and-setup-overview.md",
+    "link": "../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-apis/api-deployments/",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/4.4.0/integrate/develop/working-with-service-catalog.md",
+    "link": "../../tutorials/integration-tutorials/service-catalog-tutorial.md",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/4.4.0/integrate/develop/working-with-service-catalog.md",
+    "link": "../../tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services.md",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   },
+   {
+    "file": "api-manager/4.4.0/integrate/develop/working-with-service-catalog.md",
+    "link": "../../integrate/develop/integration-development-kickstart.md",
+    "kind": "link",
+    "note": "no file of this name exists anywhere under the docs root"
+   }
+  ],
+  "stale": [],
+  "anchor": [
+   {
+    "file": "api-manager/4.4.0/design/api-security/authorization/role-based-access-control-using-xacml.md",
+    "link": "../../../reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md#sharing-the-user-store",
+    "target_file": "api-manager/4.4.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md",
+    "anchor": "sharing-the-user-store"
+   },
+   {
+    "file": "api-manager/4.4.0/integrate/develop/working-with-service-catalog.md",
+    "link": "../../tutorials/tutorials-overview.md#integration-tutorials",
+    "target_file": "api-manager/4.4.0/tutorials/tutorials-overview.md",
+    "anchor": "integration-tutorials"
+   },
+   {
+    "file": "api-manager/4.4.0/reference/vendor-extensions-catalog.md",
+    "link": "#x-wso2-pass-request-payload-to-enforcer",
+    "target_file": "api-manager/4.4.0/reference/vendor-extensions-catalog.md",
+    "anchor": "x-wso2-pass-request-payload-to-enforcer"
+   }
+  ],
+  "anchor_case": [],
+  "anchor_legacy": [],
+  "anchor_punct": [],
+  "templated_typo": [],
+  "partial": [],
+  "partial_fixable": [],
+  "stale_mapped": [],
+  "anchor_deep": []
+ }
+}

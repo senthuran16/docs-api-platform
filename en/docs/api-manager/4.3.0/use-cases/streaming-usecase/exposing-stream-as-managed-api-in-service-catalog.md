@@ -6,7 +6,7 @@ This involves enabling the AsyncAPI functionality in the Streaming Integrator co
 
 ## Step 1 - Enable publishing to the service catalog
 
-{!includes/streaming/enable-publishing.md!}
+--8<-- "api-manager/4.3.0/includes/streaming/enable-publishing.md"
    
 ## Step 2 - Start Streaming Integrator and WSO2 API Manager
 
