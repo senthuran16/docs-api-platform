@@ -1,3 +1,18 @@
+---
+title: "API rate monetization sample"
+description: "Explains a sample scenario for defining monetization tiers and throttling traffic based on API subscription models."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/reference/samples/api-rate-monetization-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/reference/samples/api-rate-monetization-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-rate-monetization-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "explanation"
+---
+
 # API Rate Monetization Sample
 
 ### Usecase

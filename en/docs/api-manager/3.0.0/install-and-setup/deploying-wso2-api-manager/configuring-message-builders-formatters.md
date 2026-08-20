@@ -1,3 +1,18 @@
+---
+title: "Configuring message builders and formatters"
+description: "Lists the default message builders and formatters WSO2 API Manager Gateway uses to process and convert message payloads."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/configuring-message-builders-formatters/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/configuring-message-builders-formatters.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - configuring-message-builders-formatters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuring message builders and formatters
 
 When a message comes in to WSO2 API Manager Gateway, the receiving transport selects a message builder based on the message's content type. It uses that builder to process the message's raw payload data and convert it into SOAP. Conversely, when sending a message out from API Gateway, a message formatter is used to build the outgoing stream from the message. As with message builders, the message formatter is selected based on the message's content type. Given below is the typical workflow:
@@ -151,7 +166,7 @@ The default message builder or message formatter for a given content type can be
     application_binary = "org.apache.axis2.format.BinaryFormatter"
     ```
 
-3. Save the changes and [restart the server]({{base_path}}/install-and-setup/installation-guide/running-the-product/#starting-the-server) to get the changes applied.
+3. Save the changes and [restart the server](../installation-guide/running-the-product#starting-the-server) to get the changes applied.
 
 Refer [Configuring message builders/formatters](https://ei.docs.wso2.com/en/latest/micro-integrator/setup/message_builders_formatters/message-builders-and-formatters/#configuring-message-buildersformatters) for more information on enabling message builders/formatters for different use cases.
 

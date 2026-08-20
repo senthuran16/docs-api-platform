@@ -1,3 +1,18 @@
+---
+title: "Viewing API statistics"
+description: "View API Publisher and Developer Portal statistics on the API-M Analytics dashboard after generating API traffic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analyzing-apim-statistics-with-batch-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing API Statistics
 
 API statistics are provided for both the API Publisher and the Developer Portal. 
@@ -376,7 +391,7 @@ For more information, see [Using Geolocation Based Statistics](../../../../learn
 
 !!! info
       The Developer Portal Statistics Dashboard can be viewed by admin users and users who have the `internal/subscriber ` role. By default, the dashboard cannot be viewed by users having the `internal/analytics` role.
-      However, these permissions can be changed based on your preferences using the **Settings** option in the dashboard. For more information, see [Managing Analytics Dashboard Permissions]({{base_path}}/learn/analytics/managing-dashboard-permissions/) page.
+      However, these permissions can be changed based on your preferences using the **Settings** option in the dashboard. For more information, see [Managing Analytics Dashboard Permissions](../managing-dashboard-permissions) page.
 
 
 Log into the analytics-dashboard application and access developer portal statistics ( ex: [https://localhost:9643/analytics-dashboard/dashboards/apimdevportal](https://localhost:9643/analytics-dashboard/dashboards/apimdevportal) ) dashboard from there.
@@ -413,7 +428,7 @@ You also can limit the number of users that needs to be listed by changing the l
 The statistics for this widget takes the number of users shared across each application in to consideration. 
 
 To enable application sharing among users within the same organization, see [Sharing Applications](../../../../learn/consume-api/manage-application/sharing-applications/sharing-applications/).
-Only users who have generated access tokens using the [password grant type](../../../../learn/consume-api/manage-application/generate-keys/grant-types/password-grant/) are considered in these statistics.
+Only users who have generated access tokens using the [password grant type](../../api-security/oauth2/grant-types/password-grant) are considered in these statistics.
 
 <html>
 <body>

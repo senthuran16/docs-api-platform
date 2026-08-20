@@ -1,3 +1,18 @@
+---
+title: "API lifecycle"
+description: "Describes the default API lifecycle states, from creation to retirement, and how to manage state transitions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/lifecycle-management/api-lifecycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/lifecycle-management/api-lifecycle.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - lifecycle-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # API Lifecycle
 
 The API lifecycle is one of the key factors in API management. An API lifecycle has predefined states. These states represent the stages that an API has in the process of starting to develop an API until it's retirement. WSO2 API Manager related APIs has a lifecycle that contains six stages which allows you to identify in which state that the API is currently in.
@@ -27,15 +42,15 @@ Follow the instructions below to manage the API lifecycle appropriately:
 
 2.  Click on the API for which you need to change its lifecycle state.
 
-     <a href="{{base_path}}/assets/img/learn/select-created-api.png" ><img src="{{base_path}}/assets/img/learn/select-created-api.png" alt="Select API" title="Select API" width="35%" /></a>
+     <a href="../../../../assets/img/learn/select-created-api.png" ><img src="../../../../assets/img/learn/select-created-api.png" alt="Select API" title="Select API" width="35%" /></a>
 
 3.  Click **Lifecycle**.
 
-     <a href="{{base_path}}/assets/img/learn/lifecycle-tab.png" ><img src="{{base_path}}/assets/img/learn/lifecycle-tab.png" alt="Lifecycle tab" title="Lifecycle tab" width="70%" /></a>
+     <a href="../../../../assets/img/learn/lifecycle-tab.png" ><img src="../../../../assets/img/learn/lifecycle-tab.png" alt="Lifecycle tab" title="Lifecycle tab" width="70%" /></a>
     
      The lifecycle state transition grid and the lifecycle change history appears. The current lifecycle state and the next possible lifecycle transitions are available in lifecycle state grid. The lifecycle history contains the data such as the lifecycle transition action, the user who performed the transition and the timestamp of the state change. 
 
 4. Click on the lifecycle state change buttons to change the lifecycle state.
 
-     [![]({{base_path}}/assets/img/learn/lifecycle-transition-grid.png)]({{base_path}}/assets/img/learn/lifecycle-transition-grid.png)
+     [![](../../../assets/img/learn/lifecycle-transition-grid.png)](../../../assets/img/learn/lifecycle-transition-grid.png)
     

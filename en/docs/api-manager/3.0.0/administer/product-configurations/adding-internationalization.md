@@ -1,3 +1,18 @@
+---
+title: "Adding internationalization and localization"
+description: "Change the browser language to localize the API Publisher and Developer Portal web applications in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/adding-internationalization/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/adding-internationalization.md
+tags:
+  - api-manager
+  - administer
+  - product-configurations
+  - adding-internationalization
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding Internationalization and Localization
 
 The API Manager includes two Web interfaces, namely the API Publisher and Developer Portal. The steps below explain how you can localize the API Publisher and the Developer Portal.
@@ -60,7 +75,7 @@ For example, let's assume that you are using Google Chrome, and let's change the
 
 1. Navigate to the `chrome://settings/languages` URL in your browser.
 
-     ![Chrome browser settings]({{base_path}}/assets/img/administer/chrome-set-language.png)
+     ![Chrome browser settings](../../assets/img/administer/chrome-set-language.png)
 
 2. Add the highest preference to "Spanish", so that "Spanish" moves to the top of the language list.
 
@@ -130,7 +145,7 @@ Sometimes going through the list of keys and modifying each of the values that c
 
 Let's find the key for the main title named **APIs** in the following screen.
 
-![Main title highlighted in the Developer Portal]({{base_path}}/assets/img/administer/find-key-01.png)
+![Main title highlighted in the Developer Portal](../../assets/img/administer/find-key-01.png)
 
 <div class="admonition tip">
 <p class="admonition-title">Prerequisites</p>
@@ -144,10 +159,10 @@ Let's find the key for the main title named **APIs** in the following screen.
 
 1. Right-click over the title named **APIs** and select **Inspect Element**.
 
-     ![Right click menu]({{base_path}}/assets/img/administer/find-key-02.png)
+     ![Right click menu](../../assets/img/administer/find-key-02.png)
 
      The Chrome Developer Tools will open.
 
 2. Click on **Components** and copy the ID of the text component.
 	
-     ![Inspect element window]({{base_path}}/assets/img/administer/find-key-03.png)
+     ![Inspect element window](../../assets/img/administer/find-key-03.png)

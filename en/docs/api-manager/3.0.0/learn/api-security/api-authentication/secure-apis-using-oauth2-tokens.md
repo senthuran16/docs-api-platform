@@ -1,3 +1,18 @@
+---
+title: "Securing APIs using OAuth2 access tokens"
+description: "Explains how APIs are secured with OAuth2 access tokens and links to the supported OAuth2 grant types for obtaining them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/api-authentication/secure-apis-using-oauth2-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/api-authentication/secure-apis-using-oauth2-tokens.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Securing APIs using OAuth2 Access Tokens
 
 APIs published on WSO2 API Gateway can be secured by OAuth 2.0, which is the de facto standard for access delegation in REST API world. Any client application invoking a OAuth2 secured API needs to have a valid subscription to that particular API and present a valid OAuth2.0 Access Token when invoking it. Please refer [Subscribe to an API](../../../../learn/consume-api/manage-subscription/subscribe-to-an-api/) for more information on how to subscribe an application to an API and generate credentials for it.
@@ -9,9 +24,9 @@ Once you have the got the required credentials, namely the consumer key and cons
 
 OAuth 2.0 access tokens come in two different flavors
 
-   - [JWT Access Tokens]({{base_path}}/learn/api-security/oauth2/access-token-types/jwt-tokens)
+   - [JWT Access Tokens](../oauth2/access-token-types/jwt-tokens)
     
-   - [Opaque Access Tokens]({{base_path}}/learn/api-security/oauth2/access-token-types/opaque-tokens)
+   - [Opaque Access Tokens](../oauth2/access-token-types/opaque-tokens)
    
 The token type is bound to the application and the consumer has to specify the supported token type at application creation time. Once the token type is specified, all the access tokens issues under that particular application will be in the specified access token type. 
 
@@ -95,7 +110,7 @@ Each tenant can define their own name for the authorization header by following 
 
 
 2.  Click **Main** , then click **Browse** which is under **Resources** .
-    ![]({{base_path}}/assets/attachments/103334899/103334897.png)
+    ![](../../../assets/attachments/103334899/103334897.png)
 3.  Enter / `_system/config/apimgt/applicationdata/tenant-conf.json` as the location and click **Go** to access the `tenant-conf.json` file that is in the WSO2 Registry.
 4.  Click **Edit as text** to be able to edit the JSON file.
 5.  Add the following configuration with the customized authorization header to the JSON file and save the file.
@@ -252,4 +267,4 @@ Before you start , sign in to the API Publisher and deploy the sample API ( `Piz
 
 Note that the customized authorization header appears in the Developer Portal UI as well.
 
-[ ![](../../../assets/img/learn//auth-header.png) ](../../../assets/img/learn//auth-header.png)
+[ ![](../../../assets/img/learn/auth-header.png) ](../../../assets/img/learn/auth-header.png)

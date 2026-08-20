@@ -1,3 +1,18 @@
+---
+title: "Configuring a Read-Write LDAP user store"
+description: "Configure a read-write LDAP directory as the primary user store for a WSO2 server using the deployment.toml file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - managing-users-and-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Read-Write LDAP User Store
 
 User management functionality is provided by default in all WSO2 Carbon-based products and is configured in the `deployment.toml` file found in the `<PRODUCT_HOME>/repository/conf/` directory and the changes will be automatically applied to `user-mgt.xml` file in `<PRODUCT_HOME>/repository/conf/` directory as well. This file is shipped with user store manager configurations for all possible user store types (JDBC, read-only LDAP/Active Directory, read-write LDAP and read-write Active directory). The instructions given below explains how to configure a read-write LDAP as the primary user store for the WSO2 server.
@@ -12,9 +27,9 @@ User management functionality is provided by default in all WSO2 Carbon-based pr
 
 Follow the given steps to configure a read-write LDAP as the primary user store:
 
--   [Step 1: Setting up the read-write LDAP user store manager](#ConfiguringaRead-WriteLDAPUserStore-Step1:Settinguptheread-writeLDAPuserstoremanager)
--   [Step 2: Updating the system administrator](#ConfiguringaRead-WriteLDAPUserStore-Step2:Updatingthesystemadministrator)
--   [Step 3: Starting the server](#ConfiguringaRead-WriteLDAPUserStore-Step3:Startingtheserver)
+-   [Step 1: Setting up the read-write LDAP user store manager](#step-1-setting-up-the-read-write-ldap-user-store-manager)
+-   [Step 2: Updating the system administrator](#step-2-updating-the-system-administrator)
+-   [Step 3: Starting the server](#step-3-starting-the-server)
 
 ### Step 1: Setting up the read-write LDAP user store manager
 

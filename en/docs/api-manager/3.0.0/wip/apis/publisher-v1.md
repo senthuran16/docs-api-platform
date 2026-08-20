@@ -1,6 +1,19 @@
 ---
+title: "Publisher API v1"
+description: "Interactive REST API reference for version 1 of the WSO2 API Manager Publisher REST API endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/apis/publisher-v1/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/apis/publisher-v1.md
+tags:
+  - api-manager
+  - wip
+  - apis
+  - publisher-v1
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 ??? Note "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager. 
      

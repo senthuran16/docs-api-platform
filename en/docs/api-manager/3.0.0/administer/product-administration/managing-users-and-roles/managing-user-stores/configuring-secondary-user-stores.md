@@ -1,3 +1,18 @@
+---
+title: "Configuring secondary user stores"
+description: "Add and configure secondary user stores manually or via the management console so users from multiple stores can log in."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - managing-users-and-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Secondary User Stores
 
 The default configuration of  the WSO2 API Manager have a single, embedded user store (primary user store). If required, you can configure WSO2 products to connect to several secondary user stores as well. After configuration, users from different stores can log in and perform operations depending on their roles/permissions. You can also configure your own customized user stores and connect them with the products as secondary stores.
@@ -55,7 +70,7 @@ There are two approaches to configure a secondary user store. It can be configur
 
 5.  Enter values for the properties, using the descriptions in the Descriptions column for guidance. The properties that appear vary based on the user store manager class you selected, and there may be additional properties in Optional or Advanced sections at the bottom of the screen. For information on the properties that are used when defining user stores, see [Properties of User Stores](https://docs.wso2.com/display/ADMIN44x/Working+with+Properties+of+User+Stores) .
 
-    ![]({{base_path}}/assets/img/administer/secondary-user-store-definition.png)
+    ![](../../../../assets/img/administer/secondary-user-store-definition.png)
 
     !!! note
         Make sure that you do not enter `federated` as the domain name as the term is reserved for federated users.
@@ -63,7 +78,7 @@ There are two approaches to configure a secondary user store. It can be configur
 6.  Ensure that all the mandatory fields are filled and a valid domain name is given and click **Add**.
 
 7.  A message appears saying that the user stores are being added.
-    ![]({{base_path}}/assets/img/administer/secondary-user-store-update-msg.png)
+    ![](../../../../assets/img/administer/secondary-user-store-update-msg.png)
 
     !!! info
         **Note** : The above message does not imply that the user store is added successfully. It simply means that the server is attempting to add the new user store to the end of the available chain of stores.

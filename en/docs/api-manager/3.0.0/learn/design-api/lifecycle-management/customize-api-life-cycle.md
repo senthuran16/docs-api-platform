@@ -1,3 +1,18 @@
+---
+title: "Customize API life cycle"
+description: "Add a custom state to the default API lifecycle by editing the lifecycle configuration in the Management Console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/lifecycle-management/customize-api-life-cycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/lifecycle-management/customize-api-life-cycle.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - lifecycle-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customize API Life Cycle
 
 APIs created in WSO2 API Manager have their own life cycle consisting of the following: 
@@ -6,7 +21,7 @@ APIs created in WSO2 API Manager have their own life cycle consisting of the fol
 -   Specific actions for each state transition
 -   A checklist of items before a state transition occurs. 
 
-An API has a predefined life cycle consists of [six states]({{base_path}}/Learn/DesignAPI/LifecycleManagement/api-lifecycle/#api-lifecycle-states). This tutorial demonstrates on how you can edit the default API lifecycle and customize it based on to your requirements.
+An API has a predefined life cycle consists of [six states](api-lifecycle#api-lifecycle-states). This tutorial demonstrates on how you can edit the default API lifecycle and customize it based on to your requirements.
 
 Follow the steps below to add a new state to the default life cycle.
 
@@ -15,17 +30,17 @@ Follow the steps below to add a new state to the default life cycle.
     (e.g., PizzaShackAPI - 1.0.0).
 
 2.  Click **Lifecycle** to view the current states available by default.
-    ![Published life cycle state]({{base_path}}/assets/img/Learn/default-lifecycle.png)
+    ![Published life cycle state](../../../assets/img/learn/default-lifecycle.png)
 
 3.  Open the WSO2 API Manager Management Console: <https://localhost:9443/carbon>
 
 4.  Navigate to **Extensions &gt; Configure &gt; Lifecycles**.
 
-    ![]({{base_path}}/assets/img/Learn/lifecycle-menu.png)
+    ![](../../../assets/img/learn/lifecycle-menu.png)
     
 5.  Click the **View/Edit** link corresponding to the default API LifeCycle.
 
-    ![]({{base_path}}/assets/img/Learn/api-lifecycle-veiw.png) 
+    ![](../../../assets/img/learn/api-lifecycle-veiw.png) 
     
      The APILifeCycle configurations appear.
 
@@ -186,7 +201,7 @@ Follow the steps below to add a new state to the default life cycle.
 
 10.  Open API Publisher and check the Lifecycle to see the changes.
 
-     ![]({{base_path}}/assets/img/Learn/custom-lifecycle-state.png)
+     ![](../../../assets/img/learn/custom-lifecycle-state.png)
 
 !!! tip
     Consider the following points when extending and customizing the API lifecycle XML configuration.
@@ -197,7 +212,7 @@ Follow the steps below to add a new state to the default life cycle.
 !!! info
     By default following lifecycle diagram is added in Publisher portal to show the state changes.
 
-    ![]({{base_path}}/assets/img/Learn/default-lifecycle-image.png)
+    ![](../../../assets/img/learn/default-lifecycle-image.png)
 
     If you want to change the lifecycle image in Publisher, you can follow the steps mentioned below:
 
@@ -207,4 +222,4 @@ Follow the steps below to add a new state to the default life cycle.
             lifeCycleImage: '/publisher/site/public/images/custom-lifecycle.png,
 
 
-For more details on customizing the API lifecycle, see [Extending the API Life Cycle]({{base_path}}/Learn/DesignAPI/LifecycleManagement/extending-the-api-life-cycle/) .
+For more details on customizing the API lifecycle, see [Extending the API Life Cycle](extending-the-api-life-cycle) .

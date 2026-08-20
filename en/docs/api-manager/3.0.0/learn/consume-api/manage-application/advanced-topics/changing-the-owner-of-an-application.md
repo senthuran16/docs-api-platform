@@ -1,3 +1,18 @@
+---
+title: "Changing the owner of an application"
+description: "Transfer ownership of an application to another user so they gain edit and delete permissions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/advanced-topics/changing-the-owner-of-an-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/advanced-topics/changing-the-owner-of-an-application.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Owner of an Application
 
 If required, you can transfer the ownership of your application to another user in your organization. Thereby, when transferring ownership, the new owner will have the required permission to delete or edit the respective application.
@@ -33,7 +48,7 @@ Follow the instructions below to change the ownership of an application:
         This shows you the list of applications together with the respective owners.
 
     3.  Search for the application that you want to share and click **Edit**.
-        [![Search for the application]({{base_path}}/assets/img/learn/changing-application-owner-search.png)]({{base_path}}/assets/img/learn/changing-application-owner-search.png)
+        [![Search for the application](../../../../assets/img/learn/changing-application-owner-search.png)](../../../../assets/img/learn/changing-application-owner-search.png)
 
     4.  Update the **Owner** field with the new owner's username (Kim).
 
@@ -43,7 +58,7 @@ Follow the instructions below to change the ownership of an application:
 
          The application page shows the new ownership.
 
-        [![Application page with the new ownership]({{base_path}}/assets/img/learn/changing-application-owner.png)]({{base_path}}/assets/img/learn/changing-application-owner.png)   
+        [![Application page with the new ownership](../../../../assets/img/learn/changing-application-owner.png)](../../../../assets/img/learn/changing-application-owner.png)   
         
         Now, when Chris signs in to the Developer Portal, the application named "TestApp" does not appear, and when Kim signs in to the Developer Portal the application named "TestApp" appears under the application list.
 

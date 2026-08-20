@@ -1,3 +1,18 @@
+---
+title: "Installing as a Linux service"
+description: "Register WSO2 API Manager as a Linux service so it starts automatically using update-rc.d or chkconfig."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-as-a-linux-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-as-a-linux-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - installation-guide
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing as a Linux Service
 
 !!! warning

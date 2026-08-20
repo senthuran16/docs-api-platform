@@ -1,3 +1,18 @@
+---
+title: "Token revocation"
+description: "Revoke an issued OAuth2 access token or refresh token by calling the Revoke API with the client credentials."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/token-revocation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/token-revocation.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Token Revocation
 
 ## Revoking access tokens
@@ -5,7 +20,7 @@
 After issuing an access token, a user or an admin can revoke it in case of theft or a security violation. You can do this by calling the Revoke API using a utility like cURL. The Revoke API's endpoint URL is `http://localhost:8280/revoke` .
 
 !!! note
-    You can also revoke refresh tokens. For more information, see [Revoking a refresh token]({{base_path}}/learn/api-security/oauth2/grant-types/refresh-token-grant/#revoking-a-refresh-token).
+    You can also revoke refresh tokens. For more information, see [Revoking a refresh token](grant-types/refresh-token-grant#revoking-a-refresh-token).
 
 
 The parameters required to invoke the following API are as follows:

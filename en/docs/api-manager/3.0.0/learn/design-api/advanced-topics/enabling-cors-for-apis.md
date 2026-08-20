@@ -1,3 +1,18 @@
+---
+title: "Enabling CORS for APIs"
+description: "Enable Cross-Origin Resource Sharing globally or per API by configuring deployment.toml settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/advanced-topics/enabling-cors-for-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/advanced-topics/enabling-cors-for-apis.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling CORS for APIs
 
 Cross-Origin Resource Sharing (CORS) is a mechanism that allows accessing restricted resources (i.e., fonts, images, scripts, videos, and iframes) from domains outside the domain from which the requesting resource originated. By default, web browsers apply the same-origin policy to avoid interactions between different origins. CORS defines a way in which a browser and a server can interact to determine whether or not it is safe to allow the cross-origin requests.
@@ -36,16 +51,16 @@ Follow the instructions below to enable CORS response headers globally. Once thi
 ## Enabling CORS Per API
 
 !!! note
-    You need to enable CORS globally before you enable CORS Per API. Therefore, if you have not enabled CORS globally, follow the instructions in [Enabling CORS Globally]({{base_path}}/learn/design-api/advanced-topics/enabling-cors-for-apis/#enabling-cors-globally) before carrying out the following instructions.
+    You need to enable CORS globally before you enable CORS Per API. Therefore, if you have not enabled CORS globally, follow the instructions in [Enabling CORS Globally](enabling-cors-for-apis#enabling-cors-globally) before carrying out the following instructions.
 
 
-1.  Sign in to API Publisher and [create a new API]({{base_path}}/design-api/create-api/create-a-rest-api/).
+1.  Sign in to API Publisher and [create a new API](../create-api/create-a-rest-api).
 
 2. Click **Runtime Configurations**.
 
 3.  Enable the switch under **CORS Configuration** to enable CORS for the API.
 
-     [![{base_path}}/assets/img/learn/enable-cors.png]({{base_path}}/assets/img/learn/enable-cors.png)]({{base_path}}/assets/img/learn/enable-cors.png)
+     [![{base_path}}/assets/img/learn/enable-cors.png](../../../assets/img/learn/enable-cors.png)](../../../assets/img/learn/enable-cors.png)
 
      After you enable CORS, you will be able to see the CORS response header configuration section. 
      
@@ -62,7 +77,7 @@ Follow the instructions below to enable CORS response headers globally. Once thi
 
 5.  Click **Save**.
 
-     [![Configure CORS properties]({{base_path}}/assets/img/learn/configure-cors-properties.png)]({{base_path}}/assets/img/learn/configure-cors-properties.png)
+     [![Configure CORS properties](../../../assets/img/learn/configure-cors-properties.png)](../../../assets/img/learn/configure-cors-properties.png)
 
 
 You have successfully enabled CORS for a specific API.

@@ -1,12 +1,27 @@
+---
+title: "Customizing API template"
+description: "Customize the API Gateway's synapse configuration template to modify generated APIs or conditionally engage custom handlers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/extending-api-manager/extending-gateway/customizing-api-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/extending-api-manager/extending-gateway/customizing-api-templates.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing API Template
 
-When an API is [published]({base_path}/learn/design-api/publish-api/publish-an-api/), corresponding synapse configuration of the API is generated and deployed in `<APIM_HOME>repository/deployment/server/synapse-configs/default/api/` location of the gateway in `<provider_name>--<API_name>_v<API_version>.xml` format(eg: admin--PizzaShackAPI_v1.0.0.xml). 
+When an API is [published](../../../learn/design-api/publish-api/publish-an-api), corresponding synapse configuration of the API is generated and deployed in `<APIM_HOME>repository/deployment/server/synapse-configs/default/api/` location of the gateway in `<provider_name>--<API_name>_v<API_version>.xml` format(eg: admin--PizzaShackAPI_v1.0.0.xml). 
  
 An API's gateway configuration file(Synapse configuration) content contains API metadata, API resource information, properties etc and it is generated based on the API template file which can be found in `<APIM_HOME>/repository/resources/api_templates/velocity_template.xml` location. You can modify the default API template definition in order to customize the synapse configurations of all APIs or a specific set of APIs that are being deployed to gateway.
 
 ## Engaging a custom handler based on API Properties
 
-In API Manager, you can implement and engage custom handlers to customize the default mediation flow of API requests. See [Writing a custom handler]() for more information. The [API properties]({base_path}/learn/design-api/create-api/adding-custom-properties-to-apis/) can be used to conditionally engage these custom handlers for APIs.
+In API Manager, you can implement and engage custom handlers to customize the default mediation flow of API requests. See [Writing a custom handler]() for more information. The [API properties](../../../learn/design-api/create-api/adding-custom-properties-to-apis) can be used to conditionally engage these custom handlers for APIs.
 
 Following steps illustrate how you can enable a custom handler for a selected set of APIs which are having a particular property value. 
 
@@ -70,13 +85,13 @@ Following steps illustrate how you can enable a custom handler for a selected se
     
     !!!Info
     
-        If you are using a [distributed API Manager deployment]({base_path}/install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/) (i.e., Publisher, Devportal, Gateway and Key Manager components are running on separate JVMs), edit the template in the Publisher node. 
+        If you are using a [distributed API Manager deployment](../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m) (i.e., Publisher, Devportal, Gateway and Key Manager components are running on separate JVMs), edit the template in the Publisher node. 
      
  3. Save the changes.
  
- 4. Add `custom_authentication=true` as an [additional property]({base_path}/learn/design-api/create-api/adding-custom-properties-to-apis/) for those APIs which you need to enable the custom handler.
+ 4. Add `custom_authentication=true` as an [additional property](../../../learn/design-api/create-api/adding-custom-properties-to-apis) for those APIs which you need to enable the custom handler.
  
-    <a href="{{base_path}}/assets/img/develop/extensions/custom_properties.png" ><img src="{{base_path}}/assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
+    <a href="../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
            title="Add Custom Property" width="80%" /></a>
            
 5.  Publish the API to gateway, and you will notice that the custom handler has been enabled for APIs which are configured with the custom property.

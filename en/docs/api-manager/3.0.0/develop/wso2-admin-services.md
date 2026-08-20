@@ -1,3 +1,17 @@
+---
+title: "WSO2 admin services"
+description: "Discover the WSDLs of WSO2 API Manager's internal SOAP admin services and invoke them directly from your applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/wso2-admin-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/wso2-admin-services.md
+tags:
+  - api-manager
+  - develop
+  - wso2-admin-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # WSO2 Admin Services
 
 WSO2 products are managed internally using SOAP Web services known as **admin services**, and they come with a management console UI, which communicates with these admin services to facilitate administration capabilities through the UI.
@@ -46,7 +60,7 @@ By default, the WSDLs of admin services are hidden from consumers. Follow the in
      
      For example:
 
-     ![Discover Admin Services]({{base_path}}/assets/img/develop/discover-admin-services.png)
+     ![Discover Admin Services](../assets/img/develop/discover-admin-services.png)
     
 5.  If required, view the service contract of an admin service.
 
@@ -225,4 +239,4 @@ public class AdminServiceClientManager {
 }
 ```
 
-The complete Maven project can be found at: [org.wso2.carbon.sample.admin.service.invoker.zip]({{base_path}}/assets/attachments/develop/org.wso2.carbon.sample.admin.service.invoker.zip)
+The complete Maven project can be found at: [org.wso2.carbon.sample.admin.service.invoker.zip](../assets/attachments/develop/org.wso2.carbon.sample.admin.service.invoker.zip)

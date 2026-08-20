@@ -1,3 +1,18 @@
+---
+title: "Editing collections using the entries panel"
+description: "Use the Entries panel to view, add, and manage child resources, collections, and links within a registry collection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/editing-collections-using-the-entries-panel/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/editing-collections-using-the-entries-panel.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setting-up-databases
+  - working-with-the-resgistry
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Editing collections using the Entries panel
 
 If you select a collection, in its detailed view, you can see the Entries panel with details of child collections and resources it has. It provides a UI to view details, add new resources, collections and links as follows:

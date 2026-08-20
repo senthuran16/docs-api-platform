@@ -1,3 +1,18 @@
+---
+title: "Customizing the management console"
+description: "Customize the layout, styles, and images of the WSO2 API Manager Management Console user interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/customizing-the-management-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/customizing-the-management-console.md
+tags:
+  - api-manager
+  - administer
+  - product-configurations
+  - customizing-the-management-console
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing the Management Console
 
 The User Interface of the Management Console (

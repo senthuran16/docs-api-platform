@@ -1,3 +1,18 @@
+---
+title: "Configure the gateway in a distributed setup with rsync"
+description: "Configure the API Manager Gateway Manager and Gateway Worker nodes to synchronize artifacts using rsync."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring the Gateway in a Distributed Environment with rsync
 
 !!! note
@@ -15,7 +30,7 @@ Follow the instructions below to configure the API-M Gateway in a distributed en
 -   [Step 5 - Start the Gateway Nodes](#step-5-start-the-gateway-nodes)
 
 Note that the configurations in this topic are done based on the following pattern. This pattern is used as a basic Gateway cluster where the worker nodes and manager nodes are separated.
-![]({{base_path}}/assets/attachments/103334495/103334496.png)
+![](../../../assets/attachments/103334495/103334496.png)
 
 ### Step 1 - Configure the load balancer
 

@@ -1,3 +1,18 @@
+---
+title: "Configuring environment specific parameters"
+description: "Configure the api_params.yaml parameter file so apictl can apply environment-specific endpoints and settings when importing APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-controller/advanced-topics/configuring-environment-specific-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-controller/advanced-topics/configuring-environment-specific-parameters.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 #  Configuring Environment Specific Parameters
 
 When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. It is recommended to store the parameter file with the API Project; however, it can be stored anywhere as required. 

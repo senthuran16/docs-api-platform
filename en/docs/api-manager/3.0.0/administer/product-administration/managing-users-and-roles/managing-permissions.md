@@ -1,3 +1,18 @@
+---
+title: "Role-based permissions"
+description: "Explains role-based permissions in WSO2 API Manager, including super tenant and tenant level permissions and the default roles provided."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-permissions.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - managing-users-and-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Role-based Permissions
 
 The **User Management** module in WSO2 products enable role-based access. With this functionality, the permissions enabled for a particular role determines what that user can do using the management console of a WSO2 product. Permissions can be granted to a role at two levels:
@@ -7,11 +22,11 @@ The **User Management** module in WSO2 products enable role-based access. With t
 
 The permissions navigator that you use to enable permissions for a role is divided into these two categories (**Super Admin** permissions and **Admin** permissions) as shown below.
 
-![Admin permissions tree]({{base_path}}/assets/img/administer/admin-permissions-tree.png)
+![Admin permissions tree](../../../assets/img/administer/admin-permissions-tree.png)
 
 You can access the permissions navigator for a particular role by clicking **Permissions** as shown below.
 
-![Change permissions of role]({{base_path}}/assets/img/administer/change-permissions-of-role.png)
+![Change permissions of role](../../../assets/img/administer/change-permissions-of-role.png)
 
 By default, every WSO2 product comes with the following Users, Roles and Permissions configured:
 
@@ -31,7 +46,7 @@ By default, every WSO2 product comes with the following Users, Roles and Permiss
             <Password>admin</Password>
         </AdminUser>
         ```
-        These properties can be customized by configuring the `<PRODUCT_HOME>/repository/conf/deployment.toml` file. For more information, see [Configuring the System Administrator]({{base_path}}/administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-the-system-administrator) 
+        These properties can be customized by configuring the `<PRODUCT_HOME>/repository/conf/deployment.toml` file. For more information, see [Configuring the System Administrator](managing-user-stores/configuring-the-system-administrator) 
 
     -   The **admin** role has all the permissions in the system enabled by default. Therefore, this is a super tenant, with all permissions enabled.
 
@@ -50,14 +65,14 @@ In addition to the above, the following roles exist by default.
 2.  Internal/publisher
 3.  Internal/subscriber
 
-For more information about managing roles, see [Managing User Roles]({{base_path}}/administer/product-administration/managing-users-and-roles/managing-user-roles)
+For more information about managing roles, see [Managing User Roles](managing-user-roles)
 
 You will be able to log in to the management console of the product with the **admin** user defined in the `user-mgt.xml` file. You can then create new users and roles and configure permissions for the roles using the management console. However, note that you cannot modify the permissions of the **admin** role. The possibility of managing users, roles and permissions is granted by the **User Management** permission. For more information, see [Configuring the User Realm](https://is.docs.wso2.com/en/5.9.0/setup/configuring-the-realm/) .
 
 ## Description of role-based permissions
 
 !!! note
-    Note that the descriptions given in this document only explains how permissions control access to operations available on the [Management Console](``https://localhost:9443/carbon``) (`https://<hostname>:9443/carbon`). Also, not all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
+    Note that the descriptions given in this document only explains how permissions control access to operations available on the [Management Console](https://localhost:9443/carbon) (`https://<hostname>:9443/carbon`). Also, not all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
 
 ### Log-in Permissions
 

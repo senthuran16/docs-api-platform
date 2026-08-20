@@ -1,3 +1,18 @@
+---
+title: "All-in-One deployment overview"
+description: "Introduces the All-in-One single node deployment pattern for running WSO2 API Manager as a small to medium scale solution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/single-node/all-in-one-deployment-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/single-node/all-in-one-deployment-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # All-in-One Deployment Overview
 
 In a typical production deployment, API Manager is deployed as components (Publisher, Developer Portal, Gateway, Key Manager, and Traffic Manager). While this provides very high performance and a high-level of scalability, it may be too 
@@ -13,7 +28,7 @@ deployment, which has all the API-M components in one instance, would be simple 
 
 In this setup, API traffic is served by one all-in-one instance of WSO2 API Manager.
 
-[![A single all-in-one instance]({{base_path}}/assets/img/setup-and-install/single-node-deployment.png)]({{base_path}}/assets/img/setup-and-install/single-node-deployment.png)
+[![A single all-in-one instance](../../../assets/img/setup-and-install/single-node-deployment.png)](../../../assets/img/setup-and-install/single-node-deployment.png)
 
 | Pros                                                                                                               | Cons                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -29,7 +44,7 @@ In this setup, API traffic is served by one all-in-one instance of WSO2 API Mana
 
 In this setup, API traffic is served by two single node (all-in-one) instances of WSO2 API Manager.
 
-[![Active active deployment]({{base_path}}/assets/img/setup-and-install/active-active-deployment.png)]({{base_path}}/assets/img/setup-and-install/active-active-deployment.png)
+[![Active active deployment](../../../assets/img/setup-and-install/active-active-deployment.png)](../../../assets/img/setup-and-install/active-active-deployment.png)
 
 | Pros                                                                                                    | Cons                                                                        |
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|

@@ -1,3 +1,18 @@
+---
+title: "Configure identity server as external IDP using OIDC"
+description: "Connect WSO2 Identity Server as an external identity provider to API Manager using OpenID Connect single sign-on."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/sso/configure-identity-server-as-external-idp-using-oidc/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/sso/configure-identity-server-as-external-idp-using-oidc.md
+tags:
+  - api-manager
+  - install-and-setup
+  - sso
+  - configure-identity-server-as-external-idp-using-oidc
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configure Identity Server as External IDP using OIDC
 
 WSO2 API Manager uses the OpenID Connect Single Sign-On (OIDC SSO) feature by default. This document explains how to connect WSO2 Identity Server (or WSO2 IS-KM) as a third party Identity Provider to API-Manager.
@@ -45,7 +60,7 @@ WSO2 API Manager uses the OpenID Connect Single Sign-On (OIDC SSO) feature by de
 
     1. Expand the **Claim Configuration** section and add **http://wso2.org/claims/role** as a mandatory claim.
 
-        [![Claim Configuration in Service Provider]({{base_path}}/assets/img/setup-and-install/claim-configuration-in-service-provider.png)]({{base_path}}/assets/img/setup-and-install/claim-configuration-in-service-provider.png)
+        [![Claim Configuration in Service Provider](../../assets/img/setup-and-install/claim-configuration-in-service-provider.png)](../../assets/img/setup-and-install/claim-configuration-in-service-provider.png)
 
     2. Expand the **Inbound Authentication Configuration** section and configure the **OAuth/OpenID Connect Configuration** with the callback URL - `https://{apim-ip}:9443/commonauth`
 
@@ -129,11 +144,11 @@ WSO2 API Manager uses the OpenID Connect Single Sign-On (OIDC SSO) feature by de
 
          The following image shows the sample values for the OAuth2/OpenIDConnect Configurations:
 
-         [![Identity Provider Configuration for SSO]({{base_path}}/assets/img/setup-and-install/identity-provider-configuration-for-sso.png)]({{base_path}}/assets/img/setup-and-install/identity-provider-configuration-for-sso.png)
+         [![Identity Provider Configuration for SSO](../../assets/img/setup-and-install/identity-provider-configuration-for-sso.png)](../../assets/img/setup-and-install/identity-provider-configuration-for-sso.png)
 
     2.  Enable Just-in-Time Provisioning to provision the users in API Manager: 
 
-        [![JIT provisioning for SSO]({{base_path}}/assets/img/setup-and-install/jit-provisioning-for-sso.png)]({{base_path}}/assets/img/setup-and-install/jit-provisioning-for-sso.png)
+        [![JIT provisioning for SSO](../../assets/img/setup-and-install/jit-provisioning-for-sso.png)](../../assets/img/setup-and-install/jit-provisioning-for-sso.png)
 
     3.  Add the following role mapping under the **Role Configuration** section:
         <table>
@@ -155,7 +170,7 @@ WSO2 API Manager uses the OpenID Connect Single Sign-On (OIDC SSO) feature by de
         </tbody>
         </table>
 
-         [![Role mapping for SSO]({{base_path}}/assets/img/setup-and-install/role-configuration-for-sso.png)]({{base_path}}/assets/img/setup-and-install/role-configuration-for-sso.png)
+         [![Role mapping for SSO](../../assets/img/setup-and-install/role-configuration-for-sso.png)](../../assets/img/setup-and-install/role-configuration-for-sso.png)
 
         !!! Tip
             Instead of using the default internal roles, you can also create new roles in API Manager and map it to the provisioned users. 
@@ -171,7 +186,7 @@ WSO2 API Manager uses the OpenID Connect Single Sign-On (OIDC SSO) feature by de
 
 2.  Expand the **Local & Outbound Authentication Configuration** section, select **Federated Authentication** as Authentication Type, select the name of the Identity Provider you created in <a href="#step21">Step 2.1</a>, and click **Update**. 
 
-    [![Local and outbound authentication configuration for SSO]({{base_path}}/assets/img/setup-and-install/local-and-outbound-authentication-configuration.png)]({{base_path}}/assets/img/setup-and-install/local-and-outbound-authentication-configuration.png)
+    [![Local and outbound authentication configuration for SSO](../../assets/img/setup-and-install/local-and-outbound-authentication-configuration.png)](../../assets/img/setup-and-install/local-and-outbound-authentication-configuration.png)
 
 3.  Repeat the same step for the `apim_devportal` Service Provider as well.
 

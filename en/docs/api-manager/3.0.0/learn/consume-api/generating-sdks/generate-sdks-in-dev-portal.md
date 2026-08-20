@@ -1,3 +1,18 @@
+---
+title: "Generate SDKs in the Developer Portal"
+description: "Generate and download a client-side SDK for a subscribed API from the WSO2 Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/generating-sdks/generate-sdks-in-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/generating-sdks/generate-sdks-in-dev-portal.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - generating-sdks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Generate SDKs in the Developer Portal
 
 A Software Development Kit (SDK) is a set of software development tools that allows you to create applications for a specific platform. If an API consumer wants to create an application, they can generate a client-side SDK for a supported language/framework and use it to write a software application to consume the subscribed APIs. 
@@ -12,19 +27,19 @@ Follow the instructions below to generate and download client-side SDKs via the 
 
 2. Click on the API for which you want to generate a client-side SDK (e.g., `PizzaShackAPI`).
 
-     [![API Overview]({{base_path}}/assets/img/learn/select-api-dev-portal.png)]({{base_path}}/assets/img/learn/select-api-dev-portal.png)
+     [![API Overview](../../../assets/img/learn/select-api-dev-portal.png)](../../../assets/img/learn/select-api-dev-portal.png)
  
 3.  Click **SDKs**. 
 
      The default SDKs that you can download appear. 
 
-     [![Default SDKs]({{base_path}}/assets/img/learn/default-sdks.png)]({{base_path}}/assets/img/learn/default-sdks.png)
+     [![Default SDKs](../../../assets/img/learn/default-sdks.png)](../../../assets/img/learn/default-sdks.png)
     
 4.  Click **Download** to download the required SDK. 
 
      This downloads the ZIP archive of the SDK.
 
-     <a href="{{base_path}}/assets/img/learn/download-sdk.png"><img src="{{base_path}}/assets/img/learn/download-sdk.png" alt="Download SDK" title="Download SDK" width="80%" /></a>    
+     <a href="../../../../assets/img/learn/download-sdk.png"><img src="../../../../assets/img/learn/download-sdk.png" alt="Download SDK" title="Download SDK" width="80%" /></a>    
     
 ##  Configuring supported languages for SDK generation
 
@@ -41,4 +56,4 @@ Follow the instructions below to configure the languages available for SDK gener
     supported_languages = ["android", "java", "csharp", "dart", "flash", "groovy", "javascript"]
     ```
     
-3.  [Restart the server]({{base_path}}/install-and-setup/installation-guide/running-the-product/) to apply the configuration changes.
+3.  [Restart the server](../../../install-and-setup/installation-guide/running-the-product) to apply the configuration changes.

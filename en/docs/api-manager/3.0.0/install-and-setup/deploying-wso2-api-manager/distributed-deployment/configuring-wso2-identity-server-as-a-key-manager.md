@@ -1,3 +1,18 @@
+---
+title: "Configuring WSO2 identity server as a key manager"
+description: "Configure a prepackaged WSO2 Identity Server instance as the Key Manager for a WSO2 API Manager deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring WSO2 Identity Server as a Key Manager
 
 Please follow below steps to configure the prepackaged WSO2 Identity Server as the Key Manager of WSO2 API Manager deployment. 
@@ -26,7 +41,7 @@ Download the prepackaged WSO2 Identity Server as a Key Manager from [here](http
 ### Step 2 - Optionally, configure port offset for WSO2 IS
 
 !!! note
-    This is only required if you are running both WSO2 API Manager and WSO2 Identity Server on the same Virtual Machine (VM). Please refer [Changing the Default Ports with Offset]({{base_path}}/install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset) for more information.
+    This is only required if you are running both WSO2 API Manager and WSO2 Identity Server on the same Virtual Machine (VM). Please refer [Changing the Default Ports with Offset](../changing-the-default-ports-with-offset) for more information.
 
 Open the `<IS_KM_HOME>/repository/conf/deployment.toml` file and change the offset to 1 by applying following config. This increments the product's default port by one.
 
@@ -41,7 +56,7 @@ You can create the required databases for the API-M deployment on a separate ser
 
 The following diagram depicts how the databases are shared between WSO2 IS and WSO2 API-M.
 
-<a href="{{base_path}}/assets/img/setup-and-install/is-as-km-dbs.png" ><img src="{{base_path}}/assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="70%" /></a>
+<a href="../../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="70%" /></a>
 
 -   **WSO2AM_DB** - This database stores the identity data and API-related data and it includes OAuth tokens and keys. When serving key-validation requests, the Key Manager accesses the `WSO2AM_DB` , validates whether there are subscriptions made by the particular key. 
 
@@ -58,7 +73,7 @@ The steps to setup and configure the databases for WSO2 IS as the Key Manager no
     #username = "wso2carbon"
     #password = "wso2carbon"
     ```
-2. Install, setup and configure `WSO2AM_DB` and `WSO2_SHARED_DB` databases as illustrated in [Changing the Default Databases]({{base_path}}/install-and-setup/setting-up-databases/overview/#changing-the-default-databases). This particular guide provides you all the steps on how to install the database, how to setup database users, create tables using relevant scripts, apply the drivers which are compatible with the database type and how to configure the connection details in connection data in 
+2. Install, setup and configure `WSO2AM_DB` and `WSO2_SHARED_DB` databases as illustrated in [Changing the Default Databases](../../setting-up-databases/overview#changing-the-default-databases). This particular guide provides you all the steps on how to install the database, how to setup database users, create tables using relevant scripts, apply the drivers which are compatible with the database type and how to configure the connection details in connection data in 
 `<IS_KM_HOME>/repository/conf/deployment.toml` file. 
  
     !!! warning
@@ -103,7 +118,7 @@ The steps to setup and configure the databases for WSO2 IS as the Key Manager no
     !!!Info    
         When users and roles are removed via the Key Manager, the tokens issued for that particular users and roles should be invalidated. But if the corresponding user tokens are cached on the Gateway, these tokens will only get invalidated when the cache is timed out. Therefore, you need to enable communication between the Key Manager and Gateway/Gateways to immediately invalidate the tokens in such scenarios.
     
-    For that, open `<IS_KM_HOME>/repository/conf/deployment.toml` file and configure the available [Gateway Environments]({{base_path}}/learn/api-gateway/maintaining-separate-production-and-sandbox-gateways/#maintaining-separate-production-and-sandbox-gateways) as follows.
+    For that, open `<IS_KM_HOME>/repository/conf/deployment.toml` file and configure the available [Gateway Environments](../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways#maintaining-separate-production-and-sandbox-gateways) as follows.
     
     - Single gateway environment
     
@@ -218,10 +233,10 @@ The steps to setup and configure the databases for WSO2 IS as the Key Manager no
     !!!Info
             
         -   This particular configuration should be applied in Key Manager nodes to establish the connection with traffic manager node/nodes in order to immediately notify the access token revocations to gateways through traffic manager. 
-        -   If you are having an [All-in-One Deployment]({{base_path}}/install-and-setup/deploying-wso2-api-manager/single-node/all-in-one-deployment-overview), the `traffic_manager_urls` and `traffic_manager_auth_urls` has to be pointed to all in one node's data publishing endpoints(Replace the `<traffic-manager-ip>` placeholder with all in one node's IP or a DNS mapping and `<binary-data-publishing-port>`, `<binary-data-publishing-authentication-port>` with releavant ports with offset). 
-        -   If you are working with a [Distributed Deployment]({{base_path}}/install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m) the `traffic_manager_urls` and `traffic_manager_auth_urls` should be pointed to traffic manager node's data publishing endpoints(Replace the `<traffic-manager-ip>` placeholder with traffic manager node's IP or a DNS mapping and `<binary-data-publishing-port>`, `<binary-data-publishing-authentication-port>` with releavant ports with offset).
+        -   If you are having an [All-in-One Deployment](../single-node/all-in-one-deployment-overview), the `traffic_manager_urls` and `traffic_manager_auth_urls` has to be pointed to all in one node's data publishing endpoints(Replace the `<traffic-manager-ip>` placeholder with all in one node's IP or a DNS mapping and `<binary-data-publishing-port>`, `<binary-data-publishing-authentication-port>` with releavant ports with offset). 
+        -   If you are working with a [Distributed Deployment](understanding-the-distributed-deployment-of-wso2-api-m) the `traffic_manager_urls` and `traffic_manager_auth_urls` should be pointed to traffic manager node's data publishing endpoints(Replace the `<traffic-manager-ip>` placeholder with traffic manager node's IP or a DNS mapping and `<binary-data-publishing-port>`, `<binary-data-publishing-authentication-port>` with releavant ports with offset).
         
-3.  If you want to configure [JSON Web Token (JWT)](http://openid.net/specs/draft-jones-json-web-token-07.html#anchor3) in order to pass the end user attributes to backend, open the `<IS_KM_HOME>/repository/conf/deployment.toml` file in the WSO2 IS as KM node and add relevant config changes given in [Passing Enduser Attributes to the Backend Using JWT]({{base_path}}/learn/api-gateway/passing-end-user-attributes-to-the-backend/passing-enduser-attributes-to-the-backend-using-jwt)
+3.  If you want to configure [JSON Web Token (JWT)](http://openid.net/specs/draft-jones-json-web-token-07.html#anchor3) in order to pass the end user attributes to backend, open the `<IS_KM_HOME>/repository/conf/deployment.toml` file in the WSO2 IS as KM node and add relevant config changes given in [Passing Enduser Attributes to the Backend Using JWT](../../../learn/api-gateway/passing-end-user-attributes-to-the-backend/passing-enduser-attributes-to-the-backend-using-jwt)
 
 4.  If you wish to encrypt the OAuth2 Keys (access tokens, client secrets and authorization codes) follow the steps given in [Encrypting OAuth Keys]({{base_path}}/learn/api-security/oauth2/encrypting-oauth-keys/) and apply relevant configurations in `<IS_KM_HOME>/repository/conf/deployment.toml` file to enable the feature.
 
@@ -241,7 +256,7 @@ The steps to setup and configure the databases for WSO2 IS as the Key Manager no
     ```
     
     !!!Info
-        - In here, **API Gateways** are referred to [All-in-One Deployment]({{base_path}}/install-and-setup/deploying-wso2-api-manager/single-node/all-in-one-deployment-overview) nodes and the Gateway nodes in a [Distributed Deployment]({{base_path}}/install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m). Basically, the Gateway nodes should be aware of the Key Manager endpoints, which in this case is WSO2 Identity Server as Key Manager, in order to handover key validation and authorization tasks. 
+        - In here, **API Gateways** are referred to [All-in-One Deployment](../single-node/all-in-one-deployment-overview) nodes and the Gateway nodes in a [Distributed Deployment](understanding-the-distributed-deployment-of-wso2-api-m). Basically, the Gateway nodes should be aware of the Key Manager endpoints, which in this case is WSO2 Identity Server as Key Manager, in order to handover key validation and authorization tasks. 
         - If you are working with a **Single IS as Key Manager** node, you need to replace the `<key-manager-host>` in `service_url` config with the actual host of the WSO2 IS as KM or the host of the fronted load balancer.
         - If you are working with multiple IS as Key Manager in **High Availability(HA)** mode **active-activ** node setup, you need to replace the `<key-manager-host>` in `service_url` config with the host of the load balancer which is used to front the all key manager nodes.
 
@@ -250,9 +265,9 @@ The steps to setup and configure the databases for WSO2 IS as the Key Manager no
 
      Import the public certificate of WSO2 IS as the Key Manager, which is used to sign the tokens, to the WSO2 API-M truststore (`client-truststore.jks`) under the "gateway_certificate_alias" alias. 
      
-     For more information, see [Import the public certificate into the client trust store]({{base_path}}/learn/api-security/oauth2/access-token-types/jwt-tokens/#importing-the-public-certificate-into-the-client-trust-store). 
+     For more information, see [Import the public certificate into the client trust store](../../../learn/api-security/oauth2/access-token-types/jwt-tokens#importing-the-public-certificate-into-the-client-trust-store). 
 
-3. By default, both API Manager and the WSO2 IS as Key Manager comes with JDBC User Store as the primary userstore. But if you wish to use any other type of user store(LDAP, Active Directory etc) in IS as Key Manager, that particular user store has to be configured in API Manager nodes as well. Please refer [Configuring Primary User Store]({{base_path}}/administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store/) and apply relevant configs to plug a new user store.
+3. By default, both API Manager and the WSO2 IS as Key Manager comes with JDBC User Store as the primary userstore. But if you wish to use any other type of user store(LDAP, Active Directory etc) in IS as Key Manager, that particular user store has to be configured in API Manager nodes as well. Please refer [Configuring Primary User Store](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store) and apply relevant configs to plug a new user store.
 
 
 ### Step 6 - Optionally, configure High Availability (HA) for the Key Manager
@@ -305,6 +320,6 @@ Start WSO2 Identity Server for the changes to take effect. For more information,
 Follow the instructions below to configure the other WSO2 API-M components, namely the Publisher, Developer Portal, Traffic Manager, and Gateway:
 
 - All-in-One Deployment
-    - [Configuring a Single Node]({{base_path}}/install-and-setup/deploying-wso2-api-manager/single-node/configuring-a-single-node/)
-    - [Configuring an Active-Active Deployment]({{base_path}}/install-and-setup/deploying-wso2-api-manager/single-node/configuring-an-active-active-deployment/)
-- [Distributed Deployment]({{base_path}}/install-and-setup/deploying-wso2-api-manager/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/)
+    - [Configuring a Single Node](../single-node/configuring-a-single-node)
+    - [Configuring an Active-Active Deployment](../single-node/configuring-an-active-active-deployment)
+- [Distributed Deployment](deploying-wso2-api-m-in-a-distributed-setup)

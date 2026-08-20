@@ -1,10 +1,25 @@
+---
+title: "Am300JSON threat protection for API Gateway"
+description: "Edit, apply, and test the JSON validator policy in the registry to protect the Gateway against JSON payload attacks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/threat-protection/gateway-threat-protectors/json-threat-protection-for-api-gateway.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Am300JSON Threat Protection for API Gateway
 
 The JSON threat protector in WSO2 API Manager validates the request body of the JSON message based on pre-configured to thwart payload attacks.
 
--   [Editing the sequence through registry artifacts](#Am300JSONThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the JSON validator policy](#Am300JSONThreatProtectionforAPIGateway-ApplyingtheJSONvalidatorpolicy)
--   [Testing the JSON threat protector](#Am300JSONThreatProtectionforAPIGateway-TestingtheJSONthreatprotector)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the JSON validator policy](#applying-the-json-validator-policy)
+-   [Testing the JSON threat protector](#testing-the-json-threat-protector)
 
 #### Detecting vulnerabilities before parsing the message
 
@@ -51,7 +66,7 @@ You can apply the pre-defined JSON Policy through the UI. Follow the instruction
 -   Go to **Message Mediation** Policies under the **Implement** tab.
 
 -   Select **Enable Message Mediation** . Select json\_validator from the drop-down menu for In Flow.
-    ![]({{base_path}}/assets/attachments/126559464/126559465.png)
+    ![](../../../../assets/attachments/126559464/126559465.png)
 -   Click **Save and Publish** to save the changes.
 
 ### Testing the JSON threat protector

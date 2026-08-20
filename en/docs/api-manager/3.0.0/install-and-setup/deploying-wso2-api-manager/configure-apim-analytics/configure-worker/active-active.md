@@ -1,10 +1,25 @@
+---
+title: "Configuring analytics workers as Active-Active"
+description: "Configure API Manager Analytics workers in an Active-Active deployment pattern using distributed aggregations for scalability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-active/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-active.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - configure-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Analytics Workers as Active-Active
 
 You can use the Active-Active deployment pattern to configure API-M Analytics as a scalable deployment. The following sub-sections contain an overview of the Active-Active deployment pattern and instructions to configure it.
 
 ## Overview
 
-[![API-M Analytics active-active deployment]({{base_path}}/assets/img/setup-and-install/analytics-active-active-deployment.png)]({{base_path}}/assets/img/setup-and-install/analytics-active-active-deployment.png)
+[![API-M Analytics active-active deployment](../../../../assets/img/setup-and-install/analytics-active-active-deployment.png)](../../../../assets/img/setup-and-install/analytics-active-active-deployment.png)
 
 The above diagram represents a deployment where you are not limited to two nodes. You can scale the event processing horizontally by adding more API-M Analytics nodes to the deployment. In this deployment, it is recommended to configure the Gateway node to publish events to multiple API-M Analytics nodes in a Round-robin manner to ensure better fault tolerance. The publishing of events can be carried out by one or more of the API-M Gateway nodes.
 

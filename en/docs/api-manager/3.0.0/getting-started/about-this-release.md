@@ -1,3 +1,17 @@
+---
+title: "About this release"
+description: "Summarizes the modules, new features, and enhancements introduced in the WSO2 API Manager 3.0.0 release."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/getting-started/about-this-release/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/getting-started/about-this-release.md
+tags:
+  - api-manager
+  - getting-started
+  - about-this-release
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "release-notes"
+---
+
 # About this Release
 
 WSO2 API Manager is a platform for creating, managing, consuming, and monitoring APIs. It employs proven SOA best practices to solve a wide range of API management challenges such as API provisioning, API governance, API security, and API monitoring. It combines some of the most powerful and mature components of the WSO2's state-of-the-art Carbon platform to deliver a smooth and end-to-end API management experience while catering to both API publisher and API consumer requirements.
@@ -10,7 +24,7 @@ WSO2 API Manager comprises of the following modules:
 -   **API Key Manager**: Performs key generation and key validation functionalities.
 -   **API Traffic Manager**: Performs rate limiting of API requests.
 
-For more information on WSO2 API Manager, see the [overview in the WSO2 API Manager 3.0.0 documentation]({{base_path}}/getting-started/overview/) and go to the [product page on WSO2 API Manager on the WSO2 website.](https://wso2.com/api-management/)
+For more information on WSO2 API Manager, see the [overview in the WSO2 API Manager 3.0.0 documentation](overview) and go to the [product page on WSO2 API Manager on the WSO2 website.](https://wso2.com/api-management/)
 
 ## What is new in this release
 
@@ -18,31 +32,31 @@ The **WSO2 API Manager 3.0.0** is the **latest** **WSO2 API Manager release*
 
 ### New features
 
-- **[API Monetization]({{base_path}}/learn/api-monetization/monetizing-an-api)**
+- **[API Monetization](../learn/api-monetization/monetizing-an-api)**
     
     WSO2 API Manager provides support for API monetization out of the box. Thereby making it possible to integrate with any third-party billing engine using the available pluggable extension points in WSO2 API Manager.
 
-- **[JWT Authentication]({{base_path}}/learn/api-security/oauth2/access-token-types/jwt-tokens)**
+- **[JWT Authentication](../learn/api-security/oauth2/access-token-types/jwt-tokens)**
 
     JWT Authentication allows users to use self-contained tokens when invoking APIs. When an API is secured using the OAuth2 security scheme, the JWT access tokens that are issued for the users from the Developer Portal can be used to invoke APIs.
 
-- **[API Schema Validator]({{base_path}}/learn/api-security/api-request-response-schema-validation/json-schema-validator)**
+- **[API Schema Validator](../learn/api-security/api-request-response-schema-validation/json-schema-validator)**
 
     WSO2 API Manager allows users to use their Open API definitions and enforce the request and response validations without any additional work (i.e., implementing custom mediations, etc.)
 
-- **[GraphQL API support]({{base_path}}/learn/design-api/create-api/create-a-graphql-api)**
+- **[GraphQL API support](../learn/design-api/create-api/create-a-graphql-api)**
 
     Users can use Schema Definition Language (SDL) schemas to design GraphQL APIs in WSO2 API Manager. Thereby, API Manager users can manage their GraphQL services as APIs.
 
-- **[Bot Detection]({{base_path}}/learn/api-security/threat-protection/bot-detection)**
+- **[Bot Detection](../learn/api-security/threat-protection/bot-detection)**
 
     The bot detection capability in WSO2 API Manager detects context scanning and internal service scanning. It notifies admin users via email about such threats and potentially problematic API calls, which are carried out by bots and attackers. 
 
-- **[API Product]({{base_path}}/learn/design-api/create-api-product/api-product-overview)**
+- **[API Product](../learn/design-api/create-api-product/api-product-overview)**
 
     API Product allows users to integrate several APIs and expose them as a single product. Thereby helping to package different services in different ways and exposing them as separate products.
 
-- **[API Key]({{base_path}}/learn/api-security/api-authentication/secure-apis-using-api-keys)**
+- **[API Key](../learn/api-security/api-authentication/secure-apis-using-api-keys)**
 
     WSO2 API Manager allowed users to use a self-contained token as the API key. An API Key is the simplest form of app-based security that a user will be able to configure via WSO2 API Manager's Developer Portal (API Store). The Gateway will validate the API Key before allowing the resources to be consumed.
 
@@ -76,11 +90,11 @@ This section lists out the features that were updated or introduced newly to WSO
 
 | Updated or newly introduced feature | The date of the update |
 | ----------------------------------- | ---------------------- |
-| [Disabling Anonymous Access to the Developer Portal]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#disabling-anonymous-access-to-the-developer-portal) | 29 Januray, 2021 | 
+| [Disabling Anonymous Access to the Developer Portal](../administer/product-security/identity-management-for-the-api-dev-portal#disabling-anonymous-access-to-the-developer-portal) | 29 Januray, 2021 | 
 
 ## Compatible WSO2 product versions
 
-WSO2 API-M 3.0.0 is based on WSO2 Carbon 4.5.1 and is expected to be compatible with any of the WSO2 products that are based on any Carbon 4.5.x version, except when using [WSO2 Identity Server as a Key Manager]({{base_path}}/install-and-setup/deploying-wso2-api-manager/ThirdPartyKeyManager/configuring-wso2-identity-server-as-a-key-manager/), you need to specifically use WSO2 Identity Server 5.9.0 when working with WSO2 API-M 3.0.0. If you get any compatibility issues, please [contact team WSO2](https://wso2.com/subscription/). For information on the third-party software required with API-M 3.0.0, see [Installation Prerequisites]({{base_path}}/install-and-setup/installation-guide/installation-prerequisites/). For more information on the products in each Carbon platform release, see the [Release Matrix](https://wso2.com/products/carbon/release-matrix/																								).
+WSO2 API-M 3.0.0 is based on WSO2 Carbon 4.5.1 and is expected to be compatible with any of the WSO2 products that are based on any Carbon 4.5.x version, except when using [WSO2 Identity Server as a Key Manager](../install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager), you need to specifically use WSO2 Identity Server 5.9.0 when working with WSO2 API-M 3.0.0. If you get any compatibility issues, please [contact team WSO2](https://wso2.com/subscription/). For information on the third-party software required with API-M 3.0.0, see [Installation Prerequisites](../install-and-setup/installation-guide/installation-prerequisites). For more information on the products in each Carbon platform release, see the [Release Matrix](https://wso2.com/products/carbon/release-matrix/																								).
 
 ## Fixed issues
 
@@ -100,7 +114,7 @@ WSO2 API-M 3.0.0 is based on WSO2 Carbon 4.5.1 and is expected to be compatible 
 
 - Until WSO2 API Manager 2.6.0, users had to update multiple configuration files to configure the product. This overhead is removed with the new configuration model because now users only have to update a single file (deployment.toml).
 
-  For more information on the configurations in the new configuration model, see the [Configuration Catalog](https://apim.docs.wso2.com/en/4.1.0/reference/config-catalog).
+  For more information on the configurations in the new configuration model, see the [Configuration Catalog](../reference/config-catalog).
   For more information on the mapping between WSO2 API Manager's old configuration files and the new `deployment.toml` file, see [Understanding the New Configuration Model](https://apim.docs.wso2.com/en/4.1.0/reference/understanding-the-new-configuration-model).
 
 - From 3.0.0 onwards, previous Jaggery based UIs for Publisher and Developer portals are replaced with new ReactJS based applications.

@@ -1,3 +1,18 @@
+---
+title: "Changing the default user role in workflows"
+description: "Change the default admin user role used in workflow configuration files and related BPS settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/managing-workflow-extension/changing-the-default-user-role-in-workflows/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/managing-workflow-extension/changing-the-default-user-role-in-workflows.md
+tags:
+  - api-manager
+  - learn
+  - extensions
+  - managing-workflow-extension
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Default User Role in Workflows
 
 The default user role in the workflow configuration files is the admin role. If you change this to something else, you need to change the following files:

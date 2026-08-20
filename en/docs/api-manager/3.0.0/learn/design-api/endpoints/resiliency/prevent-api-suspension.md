@@ -1,3 +1,18 @@
+---
+title: "Prevent API suspension"
+description: "Configure endpoint suspension settings to prevent or turn off automatic API suspension when a backend is unreachable."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/endpoints/resiliency/prevent-api-suspension/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/endpoints/resiliency/prevent-api-suspension.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Prevent API Suspension
 
 WSO2 API Manager suspends your API if the endpoint of your API cannot be reached. The default suspension time is 30 seconds. Any requests to your API will not be able to reach your endpoint for 30 seconds and will return an error message, as shown below.
@@ -25,17 +40,17 @@ Follow the instructions below to prevent or turn off API suspension:
 
 3. Click on the cogwheel, which is inline with the endpoint that you need to re-configure, and update the endpoint related configurations as required.
 
-     [![Link to advanced endpoint configurations]({{base_path}}/assets/img/learn/prevent-endpoint-suspension.png)]({{base_path}}/assets/img/learn/prevent-endpoint-suspension.png)
+     [![Link to advanced endpoint configurations](../../../../assets/img/learn/prevent-endpoint-suspension.png)](../../../../assets/img/learn/prevent-endpoint-suspension.png)
 
 4. Configure the **Endpoint Suspension State**. 
 
      Set the value for **Initial Duration** and **Max Duration** to zero to turn off suspension.
 
-    [![Set the Endpoint Suspension State]({{base_path}}/assets/img/learn/initial-duration-and-max-duration.png)]({{base_path}}/assets/img/learn/initial-duration-and-max-duration.png)
+    [![Set the Endpoint Suspension State](../../../../assets/img/learn/initial-duration-and-max-duration.png)](../../../../assets/img/learn/initial-duration-and-max-duration.png)
 
 5.  Click **Save** and re-publish the API.
 
-     For more details on creating and publishing an API, see [Create an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api) and [Publish an API]({{base_path}}/learn/design-api/publish-api/publish-an-api).
+     For more details on creating and publishing an API, see [Create an API](../../create-api/create-a-rest-api) and [Publish an API](../../publish-api/publish-an-api).
 
 !!! info
     To avoid backend endpoint suspension:
@@ -68,4 +83,4 @@ Follow the instructions below to prevent or turn off API suspension:
         </endpoint>
         ```
 
-For more details on configuring different timeouts, see [Timeout configurations for an API call]({{base_path}}/install-and-setup/perfromance-tuning-and-test-results/tuning-performance) in the Performance Tuning guide.
+For more details on configuring different timeouts, see [Timeout configurations for an API call](../../../../install-and-setup/performance-tuning-and-test-results/tuning-performance) in the Performance Tuning guide.

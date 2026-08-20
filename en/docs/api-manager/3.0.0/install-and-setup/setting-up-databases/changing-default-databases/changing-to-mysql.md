@@ -1,3 +1,18 @@
+---
+title: "Changing to MySQL"
+description: "Replace the default H2 database with MySQL by setting up the database, users, drivers, and running the required db scripts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/changing-default-databases/changing-to-mysql/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/changing-default-databases/changing-to-mysql.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setting-up-databases
+  - changing-default-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing to MySQL
 
 By default, WSO2 API Manager uses the embedded H2 database as the database for storing user management and registry data. Given below are the  instructions you need to follow in order to use MySQL for this purpose.
@@ -479,4 +494,4 @@ Follow the  instructions below to change the type of the default datasources.
 1.  Restart the server.
 
     !!! note
-        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores]({{base_path}}/administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store).
+        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store).

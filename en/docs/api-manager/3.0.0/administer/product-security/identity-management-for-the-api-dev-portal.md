@@ -1,12 +1,27 @@
+---
+title: "Identity management for the API Developer Portal"
+description: "Configure password recovery, account locking, password policies, and anonymous access for the API Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/identity-management-for-the-api-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/identity-management-for-the-api-dev-portal.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - identity-management-for-the-api-dev-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Identity Management for the API Developer Portal
 
 Identity management for the API developer portal includes the following features.
 
--   [Password Recovery]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#password-recovery)
--   [Account locking]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#account-locking)
--   [Password policies]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#Password-policies)
+-   [Password Recovery](identity-management-for-the-api-dev-portal#password-recovery)
+-   [Account locking](identity-management-for-the-api-dev-portal#account-locking)
+-   [Password policies](identity-management-for-the-api-dev-portal#password-policies)
 
-Apart from the above main features, there is another feature to [Disable the Anonymous Access to the Developer Portal]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#disabling-anonymous-access-to-the-developer-portal).
+Apart from the above main features, there is another feature to [Disable the Anonymous Access to the Developer Portal](identity-management-for-the-api-dev-portal#disabling-anonymous-access-to-the-developer-portal).
 
 ### Password Recovery
 
@@ -27,11 +42,11 @@ Password recovery feature does not work by default because an email server is no
 
 2.  After the mail server is configured, the user can click on the **Forgot Password** link on the Sign In page of the API Developer Portal and request a password change.
     
-    ![signin-forgot-password-link]({{base_path}}/assets/img/administer/product-security/identity-management-for-the-api-dev-portal/forgot-password.png)
+    ![signin-forgot-password-link](../../assets/img/administer/product-security/identity-management-for-the-api-dev-portal/forgot-password.png)
 
 3.  Enter the username you are trying to recover the password of and click **Submit**.
    
-    ![password-recovery-page]({{base_path}}/assets/img/administer/product-security/identity-management-for-the-api-dev-portal/password-recovery-form.png )
+    ![password-recovery-page](../../assets/img/administer/product-security/identity-management-for-the-api-dev-portal/password-recovery-form.png )
 
 4.  You will receive an email with instructions to reset your password. Note that this is email is sent to the email address stored during user sign up.
 
@@ -42,8 +57,8 @@ Password recovery feature does not work by default because an email server is no
 
 You can lock user accounts with the Account recovery and credential management feature, pre-installed in WSO2 API Manager.
 
--   [Account locking by failed login attempts]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#account-locking-by-failed-login-attempts)
--   [Account locking by an administrative user]({{base_path}}/administer/product-security/identity-management-for-the-api-dev-portal/#account-locking-by-an-administrative-user)
+-   [Account locking by failed login attempts](identity-management-for-the-api-dev-portal#account-locking-by-failed-login-attempts)
+-   [Account locking by an administrative user](identity-management-for-the-api-dev-portal#account-locking-by-an-administrative-user)
 
 #### Account locking by failed login attempts
 
@@ -57,7 +72,7 @@ The following steps show how to enable account locking. See [Account Locking by 
 
 4.  Expand the **Account Locking** tab and tick the **Account Lock Enabled** checkbox. Click **Update** to save changes.
 
-    ![enable-account-lock]({{base_path}}/assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-config.png)
+    ![enable-account-lock](../../assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-config.png)
 
 !!! info
     An error message similar to the following will be logged in wso2carbon.log when the account is locked.
@@ -77,17 +92,17 @@ An administrative user can lock and unlock a particular user's account through t
 
 3.  Expand the **Account Locked** claim and click **Edit** .
    
-    ![account-lock-claim]({{base_path}}/assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-claim-edit.png)
+    ![account-lock-claim](../../assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-claim-edit.png)
 
 4.  Tick the **Supported by Default** checkbox and click **Update**. This is done to make the **Account Locked** status appear in the user's profile.
    
-    ![edit-account-lock-claim]({{base_path}}/assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-claim-update.png)
+    ![edit-account-lock-claim](../../assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-claim-update.png)
 
 5.  Go to **Users and Roles &gt; List &gt; Users** on the **Main** menu and click on **User Profile** of the user you want to lock.
 
 6.  Tick the checkbox in front of the **Account Locked** field to lock the account for the user and click **Update** .
    
-    ![profile-account-lock]({{base_path}}/assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-checkbox.png)
+    ![profile-account-lock](../../assets/img/administer/product-security/identity-management-for-the-api-dev-portal/account-lock-checkbox.png)
 
 ### Password policies
 
@@ -126,7 +141,7 @@ Follow the instructions below to disable anonymous access to the Developer Porta
 
 4. Add the field named `EnableAnonymous` with the value `false` to the `tenant-conf.json` as shown below.
 
-    [![Disabling Developer Portal Anonymous Mode]({{base_path}}/assets/img/administer/disable-developer-portal-anonymous-mode.png)]({{base_path}}/assets/img/administer/disable-developer-portal-anonymous-mode.png)
+    [![Disabling Developer Portal Anonymous Mode](../../assets/img/administer/disable-developer-portal-anonymous-mode.png)](../../assets/img/administer/disable-developer-portal-anonymous-mode.png)
 
     !!! note
         To disable anonymous access globally, add the following to the `<API-M_HOME>/repository/conf/deployment.toml` file.

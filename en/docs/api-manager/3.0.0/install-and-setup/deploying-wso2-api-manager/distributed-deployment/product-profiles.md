@@ -1,3 +1,18 @@
+---
+title: "Product profiles"
+description: "Lists the WSO2 API Manager product profiles that let you start a node with only the components needed for its role."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Product Profiles
 
 When a WSO2 product starts, it starts all components, features and related artifacts bundled with it. Multi-profile support allows you to run the product on a selected profile so that only the features specific to that profile along with common features start up with the server.
@@ -86,6 +101,7 @@ You can start an API Manager profile in the following methods, based on your req
     4. Developer Portal
     5. Gateway
     
+<a name="method-1-optimizing-before-starting-the-server"></a>
 #### Method 1- Optimizing before starting the server
 
 !!! note
@@ -155,6 +171,7 @@ Create an optimized distribution for a particular API-M profile.
     <API-M_HOME>/bin/wso2server.bat -Dprofile=api-publisher
     ```    
 
+<a name="method-2-optimizing-while-starting-the-server"></a>
 #### Method 2 - Optimizing while starting the server
 
 1.  Start the server using the script based on your operating system, using the command given below.

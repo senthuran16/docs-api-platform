@@ -1,12 +1,27 @@
+---
+title: "GDPR compliance for WSO2 API Manager"
+description: "Configure and run the Forget-Me tool to remove a deleted user's identity from WSO2 API Manager and its Analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/general-data-protection-regulation-gdpr-for-wso2-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/general-data-protection-regulation-gdpr-for-wso2-api-manager.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - general-data-protection-regulation-gdpr-for-wso2-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # General Data Protection Regulation (GDPR) for WSO2 API Manager
 
 The Forget-Me tool pre-packed with API-M 2.2.0 can be used to remove identities of an **external user** who is deleted according to the system administrator's request. This tool removes user identities stored in the database and also in log files in order to meet GDPR requirements. The following sections guide you through configuring and running this tool in WSO2 API Manager.
 
--   [Changing the default configurations of the tool.](#GeneralDataProtectionRegulation(GDPR)forWSO2APIManager-Changingthedefaultconfigurationsofthetool.)
--   [Changing the default configurations location](#GeneralDataProtectionRegulation(GDPR)forWSO2APIManager-Changingthedefaultconfigurationslocation)
--   [Running the tool in API Manager](#GeneralDataProtectionRegulation(GDPR)forWSO2APIManager-RunningthetoolinAPIManager)
-    -   [Running the toolkit in standalone mode](#GeneralDataProtectionRegulation(GDPR)forWSO2APIManager-Runningthetoolkitinstandalonemode)
--   [Running the tool in API Manager Analytics](#GeneralDataProtectionRegulation(GDPR)forWSO2APIManager-RunningthetoolinAPIManagerAnalytics)
+-   [Changing the default configurations of the tool.](#changing-the-default-configurations-of-the-tool)forWSO2APIManager-Changingthedefaultconfigurationsofthetool.)
+-   [Changing the default configurations location](#changing-the-default-configurations-location)forWSO2APIManager-Changingthedefaultconfigurationslocation)
+-   [Running the tool in API Manager](#running-the-tool-in-api-manager)forWSO2APIManager-RunningthetoolinAPIManager)
+    -   [Running the toolkit in standalone mode](#running-the-toolkit-in-standalone-mode)forWSO2APIManager-Runningthetoolkitinstandalonemode)
+-   [Running the tool in API Manager Analytics](#running-the-tool-in-api-manager-analytics)forWSO2APIManager-RunningthetoolinAPIManagerAnalytics)
 
 ### Changing the default configurations of the tool.
 
@@ -136,6 +151,7 @@ This tool is packaged with WSO2 API Manager by default. Follow the steps below t
 
 4.  All references to the user are removed from WSO2 API Manager. You can view the generated reports inside the `<API-M_HOME>/repository/components/tools/forget-me/conf` directory.
 
+<a name="running-the-toolkit-in-standalone-mode"></a>
 #### Running the toolkit in standalone mode
 
 This tool can run standalone and therefore cater to multiple products. This means that if you are using multiple WSO2 products and need to delete the user's identity from all products at once, you can do so by running the tool in standalone mode.

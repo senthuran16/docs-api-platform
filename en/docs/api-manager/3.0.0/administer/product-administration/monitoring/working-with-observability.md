@@ -1,3 +1,18 @@
+---
+title: "Working with observability"
+description: "Enable observability in WSO2 API Manager to log method, external, and database calls under a shared correlation ID for tracing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/working-with-observability/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/working-with-observability.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Working with Observability
 
 Observability in WSO2 API Manager (WSO2 API-M) is really important to debug issues in a short period. WSO2 API-M facilitates observability by logging the following important points of the system with the time taken to achieve them. 
@@ -572,11 +587,11 @@ Enable observability with WSO2 API-M and start the WSO2 API-M server as explain
 
 If you don't have an API to access, follow the following links: 
 
-1. [Creating an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api)
+1. [Creating an API](../../../learn/design-api/create-api/create-a-rest-api)
 
-2. [Publish the API]({{base_path}}/learn/design-api/publish-api/publish-an-api)
+2. [Publish the API](../../../learn/design-api/publish-api/publish-an-api)
 
-3. [Subscribe to the API]({{base_path}}/learn/consume-api/manage-subscription/subscribe-to-an-api)
+3. [Subscribe to the API](../../../learn/consume-api/manage-subscription/subscribe-to-an-api)
 
 Use the following command to invoke the API.
 

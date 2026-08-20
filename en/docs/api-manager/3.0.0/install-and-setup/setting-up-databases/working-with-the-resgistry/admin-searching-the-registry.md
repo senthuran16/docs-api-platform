@@ -1,3 +1,18 @@
+---
+title: "Searching the registry"
+description: "Search registry resources from the management console using criteria such as name, dates, author, tags, and media type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setting-up-databases
+  - working-with-the-resgistry
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Searching the Registry
 
 The management console provides facility to search all resources in the registry.

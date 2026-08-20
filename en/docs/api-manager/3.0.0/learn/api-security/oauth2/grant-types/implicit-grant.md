@@ -1,3 +1,18 @@
+---
+title: "Implicit grant"
+description: "Explains the implicit grant's redirection-based flow for obtaining access tokens in mobile and browser-based clients."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/implicit-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/implicit-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Implicit Grant
 
 #### Flow
@@ -144,7 +159,7 @@ In this example we use the WSO2 Playground app, which is hosted as a web applica
     [![](../../../../assets/img/learn/implicit-grant-access-token-page.png)](../../../../assets/img/learn/implicit-grant-access-token-page.png)
 
 !!! note
-    For users to be counted in the [Registered Users for Application statistics](../../../../../analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics/#ViewingAPIStatistics-TopUsersperApplication) , which takes the number of users shared each of the Application, they have to generate access tokens using [Password Grant](../password-grant/) type.
+    For users to be counted in the [Registered Users for Application statistics](../../../analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics#registered-application-users) , which takes the number of users shared each of the Application, they have to generate access tokens using [Password Grant](../password-grant/) type.
 
 !!! tip
     If you want to disable the **Implicit grant type** in the APIM instance, add the following entry to the `deployment.toml` file in the `<APIM_HOME>/repository/conf/` folder.

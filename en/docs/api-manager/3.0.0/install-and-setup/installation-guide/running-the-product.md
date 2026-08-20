@@ -1,3 +1,18 @@
+---
+title: "Running the product"
+description: "Start and stop the WSO2 API Manager server from the command line on Windows, Linux, Mac OS, and Solaris."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/running-the-product/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/running-the-product.md
+tags:
+  - api-manager
+  - install-and-setup
+  - installation-guide
+  - running-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Product
 
 To run WSO2 products, you start the product server at the command line. You can then run the Management Console to configure and manage the product.
@@ -40,6 +55,7 @@ To start the server, run `<PRODUCT_HOME>\bin\wso2server.bat` (on Windows) or `<P
 
 4. The operation log appears in the command window. When the product server has started successfully, the log displays the message "WSO2 Carbon started in 'n' seconds".
 
+<a name="on-solaris"></a>
 #### On Solaris
 
 To start the server, run `<PRODUCT_HOME>/bin/wso2server.sh` from the command prompt as described below.
@@ -89,7 +105,7 @@ WSO2 API Manager has several web portals such as the Management Console, the API
 !!! info
     Web portals are based on the HTTPS protocol, which is a combination of HTTP and SSL protocols. This protocol is generally used to encrypt the traffic from the client to server for security reasons. The certificate it works with is used for encryption only, and does not prove the server identity. Therefore, when you try to access these portals, a warning of untrusted connection is usually displayed. To continue working with this certificate, some steps should be taken to "accept" the certificate before access to the site is permitted. If you are using the Mozilla Firefox browser, this usually occurs only on the first access to the server, after which the certificate is stored in the browser database and marked as trusted. With other browsers, the insecure connection warning might be displayed every time you access the server.
 
- This scenario is suitable for testing purposes or for running the program on the company's internal networks. If you want to make the above portals available to external users, your organization should obtain a certificate signed by a well-known certificate authority, which verifies that the server actually has the name it is accessed by and that this server actually belongs to the given organization. Refer [Creating new keystores]({{base_path}}/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores) to learn more about the information on configuring the keystores using certificates.
+ This scenario is suitable for testing purposes or for running the program on the company's internal networks. If you want to make the above portals available to external users, your organization should obtain a certificate signed by a well-known certificate authority, which verifies that the server actually has the name it is accessed by and that this server actually belongs to the given organization. Refer [Creating new keystores](../../administer/product-security/configuring-keystores/keystore-basics/creating-new-keystores) to learn more about the information on configuring the keystores using certificates.
 
 ### Accessing the Management Console
 
@@ -100,11 +116,12 @@ Once the server has started, you can run the Management Console by typing its UR
 -   [Getting help](#getting-help)
 -   [Configuring the session time-out](#configuring-the-session-time-out)
 
+<a name="working-with-the-url"></a>
 ##### Working with the URL
 
 The URL appears next to `Mgt Console URL` in the start script log that is displayed in the command window. For example:
 
-![]({{base_path}}/assets/img/setup-and-install/running-product-mgt-console-url.png)
+![](../../assets/img/setup-and-install/running-product-mgt-console-url.png)
 
 The URL should be in the following format: `https://<Server Host>:9443/carbon`
 
@@ -122,14 +139,17 @@ You can use this URL to access the Management Console on this computer from any 
     hostname = "localhost"
     ```
 
+<a name="signing-in"></a>
 ##### Signing in
 
 At the sign-in screen, you can sign in to the Management Console using **admin** as both the username and password.
 
+<a name="getting-help"></a>
 ##### Getting help
 
 The tabs and menu items in the navigation pane on the left may vary depending on the features you have installed. To view information about a particular page, click the **Help** link at the top right corner of that page, or click the **Docs** link to open the documentation for full information on managing the product.
 
+<a name="configuring-the-session-time-out"></a>
 ##### Configuring the session time-out
 
 If you leave the Management Console unattended for a defined time, its login session will time out. The default timeout value is 15 minutes, but you can change this by adding the configurations in the `<APIM-M_HOME>/repository/conf/deployment.toml` file as follows.
@@ -155,16 +175,18 @@ Once the server has started, you can run the API Publisher by typing its URL in 
 -   [Working with the URL](#working-with-the-url_1)
 -   [Signing in](#signing-in_1)
 
+<a name="working-with-the-url_1"></a>
 ##### Working with the URL
 
 The URL appears next to `API Publisher Default Context` in the start script log that is displayed in the command window. For example:
 
-![]({{base_path}}/assets/img/setup-and-install/running-product-publisher-url.png)
+![](../../assets/img/setup-and-install/running-product-publisher-url.png)
 
 The URL should be in the following format: `https://<Server Host>:9443/publisher        `
 
 You can use this URL to access the API Publisher on this computer from any other computer connected to the Internet or LAN. When accessing the API Publisher from the same server where it is installed, you can type `localhost` instead of the IP address as follows: `https://localhost:9443/publisher`
 
+<a name="signing-in_1"></a>
 ##### Signing in
 
 At the sign-in screen, you can sign in to the API Publisher using **admin** as both the username and password.
@@ -176,15 +198,17 @@ Once the server has started, you can run the Developer Portal by typing its URL 
 -   [Working with the URL](#working-with-the-url_2)
 -   [Signing in](#signing-in_2)
 
+<a name="working-with-the-url_2"></a>
 ##### Working with the URL
 
 The URL appears next to `Developer Portal Default Context` in the start script log that is displayed in the command window. For example:
 
-![]({{base_path}}/assets/img/setup-and-install/running-product-dev-portal-url.png)
+![](../../assets/img/setup-and-install/running-product-dev-portal-url.png)
 
 The URL should be in the following format: `https://<Server Host>:9443/devportal        `
 
 You can use this URL to access the Developer Portal on this computer from any other computer connected to the Internet or LAN. When accessing the Developer Portal from the same server where it is installed, you can type `localhost` instead of the IP address as follows: `https://localhost:9443/devportal                                  `
+<a name="signing-in_2"></a>
 ##### Signing in
 
 At the Developer Portal home page, you can click sign in link at top right corner to sign-in to the API Publisher using **admin** as both the username and password.
@@ -231,6 +255,6 @@ You can restrict access to the management console of your product by binding the
 
 **Related Topics**
 
--   [Installing as a Windows Service]({{base_path}}/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-as-a-windows-service/)
--   [Installing as a Linux Service]({{base_path}}/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-as-a-linux-service/)
+-   [Installing as a Windows Service](installing-the-product/installing-the-binary/installing-as-a-windows-service)
+-   [Installing as a Linux Service](installing-the-product/installing-the-binary/installing-as-a-linux-service)
 

@@ -1,3 +1,18 @@
+---
+title: "Changing the default ports with offset"
+description: "Change the default ports of a WSO2 API Manager instance using a port offset value to avoid conflicts on the same server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - changing-the-default-ports-with-offset
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Default Ports with Offset
 
 When you run multiple WSO2 products/clusters or multiple instances of the same product on the same server or virtual machines (VMs), you must change their default ports with an `offset` value to avoid port conflicts. An offset defines the number by which all ports in the runtime (e.g., HTTP/S ports) will be increased. 
@@ -11,7 +26,7 @@ There are two ways to set an offset to a port.
 
 ## Configuring the port offset
 
-1. [Stop the server]({{base_path}}/install-and-setup/installation-guide/running-the-product/#stopping-the-server) if it is already running
+1. [Stop the server](../installation-guide/running-the-product#stopping-the-server) if it is already running
 
 2.  Open `<APIM_HOME>/repository/conf/deployment.toml` file.
 
@@ -28,11 +43,11 @@ There are two ways to set an offset to a port.
     offset=1
     ```
 
-4. [Restart the server]({{base_path}}/install-and-setup/installation-guide/running-the-product/).
+4. [Restart the server](../installation-guide/running-the-product).
 
 ## Passing the port offset during server startup
 
-1.  [Stop the server]({{base_path}}/install-and-setup/installation-guide/running-the-product/#stopping-the-server) if it is already running
+1.  [Stop the server](../installation-guide/running-the-product#stopping-the-server) if it is already running
 
 2.  Restart the server with `-DportOffset` system property.
 
@@ -58,5 +73,5 @@ There are two ways to set an offset to a port.
 
 When you offset the server's port, it automatically changes all ports it uses. 
 
-For the list of all default ports opened in WSO2 API Manager, see [Default Product Ports]({{base_path}}/administer/product-configurations/default-product-ports/) .
+For the list of all default ports opened in WSO2 API Manager, see [Default Product Ports](../../administer/product-configurations/default-product-ports) .
 

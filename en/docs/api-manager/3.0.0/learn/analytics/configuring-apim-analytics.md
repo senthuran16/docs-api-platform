@@ -1,3 +1,18 @@
+---
+title: "Configuring APIM analytics"
+description: "Set up WSO2 API-M Analytics using a quick demo configuration or a standard production setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/configuring-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/configuring-apim-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - configuring-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring APIM Analytics
 
 WSO2 API Manager Analytics provides reports, statistics, and graphs on the APIs deployed in WSO2 API Manager. You can configure alerts to monitor these APIs and detect unusual activity, manage locations via Geo-location statistics, and carry out a detailed analysis of the logs. WSO2 API Manager has an enhanced distribution of Analytics to cater to the API Manager specific scenarios that are used here to configure API-M Analytics.
@@ -16,22 +31,22 @@ Follow the instructions below if you wish to set up API-M Analytics for quick de
 
 1.  Download and install WSO2 API-M.
 
-    WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). For more information on installing WSO2 API-M, see the [Installation Guide]({{base_path}}/install-and-setup/installation-guide/installation-prerequisites.md).
+    WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/installation-guide/installation-prerequisites).
     
-    [![apim download page]({{base_path}}/assets/img/learn/apim-download-page.png)]({{base_path}}/assets/img/learn/apim-download-page.png)
+    [![apim download page](../../assets/img/learn/apim-download-page.png)](../../assets/img/learn/apim-download-page.png)
     
 2.  Download and install WSO2 API-M Analytics.
 
     To download WSO2 API-M Analytics go to the [WSO2 API Manager page](https://wso2.com/api-management/install/), click **Download** to expand the installation options. Navigate to the **Other Resources** section, and click **Analytics**.
 
-    ![]({{base_path}}/assets/img/learn/analytics-download-page.png)
+    ![](../../assets/img/learn/analytics-download-page.png)
     
        <html><div class="admonition warning">
        <p class="admonition-title">Note</p>
        <p>If you are following the quick setup make sure both the binaries ( unzipped API-M pack and unzipped Analytics pack) are inside the same directory. 
                         Because the default configurations such as database connection URLs etc are configured assuming that both the packs are inside the same folder.
                         </p>
-                        ![]({{base_path}}/assets/img/learn/analytics-quick-setup.png)
+                        ![](../../assets/img/learn/analytics-quick-setup.png)
        </div>
        </html>
                   
@@ -77,7 +92,7 @@ You can now start using the WSO2 API Manager for its usual operations and the re
 
 ### Standard Setup
 
-![]({{base_path}}/assets/img/learn/analytics-standard-architecture-diagram.png)
+![](../../assets/img/learn/analytics-standard-architecture-diagram.png)
 
 Follow the instructions below if you wish to set up API-M Analytics for a production environment.
 
@@ -88,20 +103,23 @@ Follow the instructions below if you wish to set up API-M Analytics for a produc
 -   [Step 5 - Configure APIM IdP Client](#step-5-configure-apim-idp-client)
 -   [Step 6 - Configure keystores](#step-6-configure-keystores)
 
+<a name="step-1-download-and-install-wso2-api-m"></a>
 #### Step 1 - Download and install WSO2 API-M
 
  Download and install WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). Click **DOWNLOAD** and go to **INSTALLATION OPTIONS**.
- <br/>For more information on installing WSO2 API-M, see the [Installation Guide]({{base_path}}/install-and-setup/installation-guide/installation-prerequisites.md).
+ <br/>For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/installation-guide/installation-prerequisites).
     
- ![]({{base_path}}/assets/img/learn/apim-download-page.png)
+ ![](../../assets/img/learn/apim-download-page.png)
     
+<a name="step-2-download-and-install-wso2-api-m-analytics"></a>
 #### Step 2 - Download and install WSO2 API-M Analytics
 
 To download WSO2 API-M Analytics go to the [WSO2 API Manager page](https://wso2.com/api-management/install/), click **Download** to expand the installation options. Navigate to the **Other Resources** section, and click **Analytics**. 
 <br/>As the process of installing API-M Analytics is identical to installing WSO2 Streaming Integrator (WSO2 SI), which is part of WSO2 Enterprise Integrator 7.0.x, for more information, go to the [WSO2 SI documentation](https://ei.docs.wso2.com/en/latest/streaming-integrator/setup/installing-si-in-vm).
 
-  ![]({{base_path}}/assets/img/learn/analytics-download-page.png)
+  ![](../../assets/img/learn/analytics-download-page.png)
     
+<a name="step-3-configure-wso2-api-manager-to-publish-statistics"></a>
 #### Step 3 - Configure WSO2 API Manager to publish statistics
 
 Follow the instructions below to do the required configurations for WSO2 API-M to publish statistics in the WSO2 API-M Analytics server.
@@ -260,6 +278,7 @@ Please note that if the <code>username</code> and <code>password</code> are unco
 
 Save the changes.
 
+<a name="step-4-configure-databases"></a>
 #### Step 4 - Configure databases
 
 Configuring databases allow you to persist data relating to APIs, process them and analyze. Follow the procedure below to configure databases. 
@@ -299,7 +318,7 @@ Configuring databases allow you to persist data relating to APIs, process them a
 
 API-M Analytics contains two runtime, namely worker and dashboard. The worker is responsible for the summarization of the collected data and the dashboard is responsible to represent the summarised data in the dashboards. Therefore, two separate JVMs are required. As a best practice, the worker and dashboard runtime can have the same analytics binary. This helps when managing the deployment and when applying WUM updates. However, it is up to the dev-ops engineer to decide whether to use the same binary (pack) or two binaries for the two runtime.
 
-The Worker supports an [Active-Active]({{base_path}}/install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-active/) deployment and an [Active-Passive]({{base_path}}/install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-passive/) deployment.
+The Worker supports an [Active-Active](../../install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-active) deployment and an [Active-Passive](../../install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-passive) deployment.
 
 As the dashboard is used only to render the data there is no Active-Active or Active-Passive concept. However, based on the High Availability (HA) requirement it can be configured as Active-Active or Active-Passive by defining the load balancer related configurations. 
 
@@ -471,8 +490,9 @@ As the dashboard is used only to render the data there is no Active-Active or Ac
 !!! Info
       **Do the following to integrate third party products when configuring databases.**
       <br/>WSO2 API Manager Analytics is a OSGi-based product. Therefore, when you integrate third party products such as Oracle with WSO2 API-M Analytics, you need to check whether the libraries you need to add are OSGi based. If they are not, you need to convert them to OSGi bundles before adding them to the `<API-M_ANALYTICS_HOME>/lib` directory.
-      For detailed instructions, see [Adding Third Party Non OSGi Libraries]({{base_path}}/learn/analytics/adding-third-party-non-osgi-libraries/).
+      For detailed instructions, see [Adding Third Party Non OSGi Libraries](adding-third-party-non-osgi-libraries).
 
+<a name="step-5-configure-apim-idp-client"></a>
 #### Step 5 - Configure APIM IdP Client
 
 APIM IdP Client authenticates users by interacting with the identity provider of API Manager via OAuth2. The APIM Manager user store is used to provide access to APIM Analytics as well. WSO2 APIM Analytics server authenticates by requesting an access token from the identity provider in API Manager using the authentication code grant type. This APIM IdP client enables SSO(Single Sign On). 
@@ -528,8 +548,9 @@ auth.configs:
 | `externalLogoutUrl`| https://localhost:9443/oidc/logout | The URL via which you can log out from the external IDP provider(API Manager) side in the SSO. The `https://localhost:9443` section should be replaced with the API Manager node URL in the all in one deployment. In a distributed deployment, `https://localhost:9443` section should be replaced with the API Manager Publisher node URL.|
 
 
+<a name="step-6-configure-keystores"></a>
 #### Step 6 - Configure keystores
 
 In the SSL handshake between the API Manager and API Manager Analytics servers, the client (i.e. API Manager) needs to verify the certificate presented by the server (i.e., API Manager Analytics). For this purpose, the client stores the trusted certificate of the server in the `client-truststore.jks` keystore.
 
-If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores]({{base_path}}/administer/product-security/configuring-keystores/keystore-basics/creating-new-keystores/#adding-ca-signed-certificates-to-keystores).
+If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, follow the steps given in [Adding CA-signed certificates to keystores](../../administer/product-security/configuring-keystores/keystore-basics/creating-new-keystores#adding-ca-signed-certificates-to-keystores).

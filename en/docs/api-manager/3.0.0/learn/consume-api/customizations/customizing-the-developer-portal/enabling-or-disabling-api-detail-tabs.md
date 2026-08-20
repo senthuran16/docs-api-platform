@@ -1,8 +1,23 @@
+---
+title: "Enable or disable API detail tabs"
+description: "Show or hide the credentials, comments, tryout, documents, and SDK tabs on the API details page."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-api-detail-tabs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-api-detail-tabs.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enable or Disable API Detail Tabs
 
 When you go to the API details page, all the linked tabs (credentials, comments, tryout, sdks, documents) are displayed. You can enable or disable them by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here]({{base_path}}/learn/consume-api/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#overriding-the-default-theme).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme#overriding-the-default-theme).
 
 1. Open `<API-M_HOME>/repository/deployment/server/jaggeryapps/devportal/site/public/theme/defaultTheme.js` file in a text editor and set the `themes.light.custom.apiDetailPages` attributes accordingly as shown in the below example.
 

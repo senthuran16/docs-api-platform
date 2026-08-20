@@ -1,3 +1,18 @@
+---
+title: "Configuring caching"
+description: "Configure and manage the API Gateway, resource, Key Manager, response, and Developer Portal caches in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/configuring-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/configuring-caching.md
+tags:
+  - api-manager
+  - administer
+  - product-configurations
+  - configuring-caching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Caching
 
 When an API call hits the API Gateway, the Gateway carries out security checks to verify if the token is valid. During these verifications, the API Gateway extracts parameters (i.e., access token, API name, and API version) that are passed on to it. Since the entire load of traffic to APIs goes through the API Gateway, this verification process needs to be fast and efficient in order to prevent overhead and delays. WSO2 API Manager uses caching for this purpose, where the validation information is cached with the token, API name, and version, and the cache is stored in either the API Gateway or the Key Manager server.
@@ -87,7 +102,7 @@ Given below is how to configure this in a distributed API Manager setup.
 
 An API's resources are HTTP methods that handle particular types of requests such as GET, POST etc. They are similar to methods of a particular class. Each resource has parameters such as its throttling level, Auth type etc.
 
-![]({{base_path}}/assets/img/administer/resource-security-and-throttling-limit.png)
+![](../../assets/img/administer/resource-security-and-throttling-limit.png)
 
 Users can make requests to an API by calling any one of the HTTP methods of the API's resources. The API Manager uses the resource cache at the Gateway node to store the API's resource-level parameters (Auth type and throttling level). The cache entry is identified by a cache key, which is based on the API's context, version, request path and HTTP method. Caching avoids the need to do a separate back-end call to check the Auth type and throttling level of a resource, every time a request to the API comes. It improves performance.
 
@@ -107,6 +122,7 @@ The following caches are available:
 -   [Key cache](#key-cache)
 -   [OAuth cache](#oauth-cache)
 
+<a name="key-cache"></a>
 #### Key cache
 
 In a typical API Manager deployment, the Gateway is deployed in a DMZ while the Key Manager is in MZ. By default, caching is enabled at the Gateway. To avoid caching token-related information in a leniently secured zone, you can store the cache on the Key Manager side. If you do, for each and every API call that hits the API Gateway, the Gateway issues a Web service call to the Key Manager server. If the cache entry is available in the Key Manager server, it is returned to the Gateway. Else, the database is checked for the validity of the token.
@@ -142,13 +158,14 @@ You can configure the key cache by editing the following elements in the `<APIM_
 </tbody>
 </table>
 
+<a name="oauth-cache"></a>
 #### OAuth cache
 
 The OAuth token is saved in this cache, which is enabled by default. Whenever a new OAuth token is generated, it is saved in this cache to prevent constant database calls. Unless an OAuth expires or is revoked, the same token is sent back for the same user. Therefore, you do not need to change this cached token most of the time.
 
 ### Response cache
 
-Please refer [Response Caching]({{base_path}}/learn/api-gateway/response-caching/) to see how to enable response caching for a given API.
+Please refer [Response Caching](../../learn/api-gateway/response-caching) to see how to enable response caching for a given API.
 
 ### Developer Portal cache
 

@@ -1,3 +1,18 @@
+---
+title: "Add a new search keyword"
+description: "Write and register a custom Solr indexer to extend full-text search over API documentation content."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/api-documentation/search-documentation/add-new-search-keyword/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/api-documentation/search-documentation/add-new-search-keyword.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - api-documentation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Add a New Search Keyword
 
 WSO2 API Manager has [Apache Solr](https://lucene.apache.org/solr/) based indexing for API documentation content. It provides both the API Publisher and Developer Portal a full-text search facility to search through the API documentation, and find the documents and related APIs. The search syntax is `doc:keyword`. The search criteria looks for the keyword in any word/phrase in the documentation content and returns both the matching documents and associated APIs.
@@ -78,7 +93,7 @@ In addition to the default indexes, you can write your own indexer implementatio
     |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
     | `class`| Java class name of the indexer.                                                                           |
     | `mefiaTypeRegEx` | A regular expression (regex) pattern to match the media type.                                             |
-    | `profiles`| [API-M profiles]({{base_path}}/install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles/) in which the indexer is available. |
+    | `profiles`| [API-M profiles](../../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles) in which the indexer is available. |
 
 4.  Restart the server. 
 

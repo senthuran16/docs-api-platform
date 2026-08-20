@@ -1,3 +1,18 @@
+---
+title: "Create a prototype API with an inline script"
+description: "Create and test a prototyped API that uses an inline script to mock responses for a REST resource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/mock-api/create-a-mock-api-with-an-inline-script/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/mock-api/create-a-mock-api-with-an-inline-script.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - mock-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create a Prototype API with an Inline Script
 
 Generally, you would need to create APIs with inline scripts for testing purposes. You can deploy a new API or a new version of an existing API as a prototype. Thereby, this provides subscribers an early implementation of the API that they can try out and test without a subscription or monetization, and provide feedback to improve the API. After a period of time, the publishers can make changes that the users requested and publish the API.
@@ -14,7 +29,7 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
 
 2.  Click **CREATE API**, and click **Design a new REST API**. 
 
-    [![Create API options]({{base_path}}/assets/img/learn/create-api-design-rest-api-link.png)]({{base_path}}/assets/img/learn/create-api-design-rest-api-link.png)
+    [![Create API options](../../../assets/img/learn/create-api-design-rest-api-link.png)](../../../assets/img/learn/create-api-design-rest-api-link.png)
    
 3.  Provide the API name, context, and version. Click **CREATE**. 
      
@@ -26,7 +41,7 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
     |Context|/location|
     |Version|1.0.0|
 
-    [![Filled create api form]({{base_path}}/assets/img/learn/create-api-form-filled.png)]({{base_path}}/assets/img/learn/create-api-form-filled.png)
+    [![Filled create api form](../../../assets/img/learn/create-api-form-filled.png)](../../../assets/img/learn/create-api-form-filled.png)
     
     You are directed to the API Overview page.
     
@@ -39,21 +54,21 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
     |HTTP Verb|GET|
     |URI Pattern|/{town}|
     
-    [![]({{base_path}}/assets/img/learn/create-api-add-resource.png)]({{base_path}}/assets/img/learn/create-api-add-resource.png)
+    [![](../../../assets/img/learn/create-api-add-resource.png)](../../../assets/img/learn/create-api-add-resource.png)
     
     !!! tip
 
         After the new Resource is added, delete the default Resources (/\*) by clicking on the Delete Button \[1\] of
          each resource. Or select all the resources at once by clicking on **Select all for Delete** \[2\] button.
       
-    [![]({{base_path}}/assets/img/learn/create-api-delete-resource.png)]({{base_path}}/assets/img/learn/create-api-delete-resource.png)
+    [![](../../../assets/img/learn/create-api-delete-resource.png)](../../../assets/img/learn/create-api-delete-resource.png)
       
 
 5. Expand the newly added resource.
    
      Note that the path parameter named `town` is set in the **Parameters** section.
 
-    [![]({{base_path}}/assets/img/learn/create-api-resource-parameter-view.png)]({{base_path}}/assets/img/learn/create-api-resource-parameter-view.png)
+    [![](../../../assets/img/learn/create-api-resource-parameter-view.png)](../../../assets/img/learn/create-api-resource-parameter-view.png)
 
     !!! tip
 
@@ -71,11 +86,11 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
 
      Note that this page has been prompted because no endpoints have been added to the API yet.
  
-    [![]({{base_path}}/assets/img/learn/create-api-prototype-endpoint-add.png)]({{base_path}}/assets/img/learn/create-api-prototype-endpoint-add.png)
+    [![](../../../assets/img/learn/create-api-prototype-endpoint-add.png)](../../../assets/img/learn/create-api-prototype-endpoint-add.png)
 
     You will be directed to the endpoints page.
     
-    [![]({{base_path}}/assets/img/learn/create-api-prototype-endpoint-page.png)]({{base_path}}/assets/img/learn/create-api-prototype-endpoint-page.png)
+    [![](../../../assets/img/learn/create-api-prototype-endpoint-page.png)](../../../assets/img/learn/create-api-prototype-endpoint-page.png)
 
     !!! note
 
@@ -91,7 +106,7 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
     mc.setPayloadJSON('{ "Town" : "'+town+'"}');        // Set the new payload to the message context.
     ```
 
-    [![]({{base_path}}/assets/img/learn/create-api-prototype-script-added.png)]({{base_path}}/assets/img/learn/create-api-prototype-script-added.png)
+    [![](../../../assets/img/learn/create-api-prototype-script-added.png)](../../../assets/img/learn/create-api-prototype-script-added.png)
     
 7. Click **SAVE** to save the API.
 
@@ -100,7 +115,7 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
 1. Click **Lifecycle** to navigate to the **Lifecycle** page.
 2. Click **DEPLOY AS A PROTOTYPE** to deploy the API as a prototype.
         
-        [![]({{base_path}}/assets/img/learn/create-api-prototype-lc-page.png)]({{base_path}}/assets/img/learn/create-api-prototype-lc-page.png) 
+        [![](../../../assets/img/learn/create-api-prototype-lc-page.png)](../../../assets/img/learn/create-api-prototype-lc-page.png) 
  
 ## Step 3 - Invoke the API
 
@@ -114,17 +129,17 @@ Let's create a prototyped API with an inline script, deploy it as a prototype, a
 
 2.  Click **Try Out** to navigate to the API Console.
 
-     [![]({{base_path}}/assets/img/learn/create-api-prototype-dev-portal-overview.png)]({{base_path}}/assets/img/learn/create-api-prototype-dev-portal-overview.png)
+     [![](../../../assets/img/learn/create-api-prototype-dev-portal-overview.png)](../../../assets/img/learn/create-api-prototype-dev-portal-overview.png)
 
 3. Expand the `GET` method, click **Try it out**. 
 
 4. Give any value for the town (e.g., London) and click **Execute** to invoke the API.
 
-     [![]({{base_path}}/assets/img/learn/create-api-prototype-tryout-execute.png)]({{base_path}}/assets/img/learn/create-api-prototype-tryout-execute.png)
+     [![](../../../assets/img/learn/create-api-prototype-tryout-execute.png)](../../../assets/img/learn/create-api-prototype-tryout-execute.png)
 
      Note that the payload that you gave as a JSON output appears in the response.
 
-     [![]({{base_path}}/assets/img/learn/create-api-prototype-execute-response.png)]({{base_path}}/assets/img/learn/create-api-prototype-execute-response.png)
+     [![](../../../assets/img/learn/create-api-prototype-execute-response.png)](../../../assets/img/learn/create-api-prototype-execute-response.png)
 
 You have successfully created an API with inline script, deployed it as a prototype, and invoked it via the integrated API Console.
 
@@ -136,10 +151,10 @@ For more information, see the [Deploy and Test Prototype APIs](deploy-and-test-m
 !!! info
     Related Guides
     
-    - [Create and Publish an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api/)
+    - [Create and Publish an API](../create-api/create-a-rest-api)
     
-    - [Create a WebSocket API]({{base_path}}/learn/design-api/create-api/create-a-websocket-api/)
+    - [Create a WebSocket API](../create-api/create-a-websocket-api)
 
-    - [Create an API from an Open API definition]({{base_path}}//learn/design-api/create-api/create-a-rest-api-from-a-swagger-definition/)
+    - [Create an API from an Open API definition](../create-api/create-a-rest-api-from-a-swagger-definition)
 
 

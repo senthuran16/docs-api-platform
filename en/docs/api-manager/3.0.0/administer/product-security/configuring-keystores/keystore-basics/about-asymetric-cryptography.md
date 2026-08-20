@@ -1,3 +1,18 @@
+---
+title: "About asymmetric cryptography"
+description: "Explains keystores, truststores, keys, and certificates, and how asymmetric cryptography secures WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/configuring-keystores/keystore-basics/about-asymetric-cryptography/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - configuring-keystores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # About Asymmetric Cryptography
 
 All WSO2 products including WSO2 API Manager use asymmetric cryptography by default for the authentication and protection of data. In asymmetric cryptography, keystores (with private keys and public key certificates) and truststores (with only public key certificates) are created and stored for a product. It is possible to have multiple keystores so that the keys used for different use cases are kept unique. The following topics explain more details on keystores and truststores, and how they are used in WSO2 products.

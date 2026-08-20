@@ -1,3 +1,18 @@
+---
+title: "Getting started - Developer Portal API v1"
+description: "Walk through registering a client and generating an access token so you can invoke the Developer Portal API v1."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/getting-started/guide-devportal-v1/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/getting-started/guide-devportal-v1.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Getting Started - Developer Portal API v1
 
 WSO2 API Manager is a complete solution for publishing APIs, creating and managing a developer community, and for scalably routing API traffic. It leverages proven, production-ready, integration, security and governance components from WSO2 Enterprise Service Bus, WSO2 Identity Server, and WSO2 Governance Registry. Moreover, it is powered by API Manager Analytics, thereby making WSO2 API Manager ready for any large-scale deployments right away.
@@ -60,7 +75,7 @@ Token response:
 
 Now you have a valid access token, which you can use to invoke an API. Navigate through the API descriptions to find the required API, obtain an access token as described above and invoke the API with the authentication header. If you use a different authentication mechanism, this process may change.
 
-Further, to configure the Dev Portal REST API, do the necessary configurations mentioned in [configuring REST APIs]({{base_path}}/develop/product-apis/configuring-rest-api/).
+Further, to configure the Dev Portal REST API, do the necessary configurations mentioned in [configuring REST APIs](../configuring-rest-api).
 
 !!! note
-    To get a detailed overview of Dev Portal REST API, follow [Developer Portal API v1]({{base_path}}/develop/product-apis/devportal-apis/devportal-v1/devportal-v1/).
+    To get a detailed overview of Dev Portal REST API, follow [Developer Portal API v1](../devportal-apis/devportal-v1/devportal-v1).

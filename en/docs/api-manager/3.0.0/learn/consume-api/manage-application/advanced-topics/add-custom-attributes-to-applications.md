@@ -1,3 +1,18 @@
+---
+title: "Add custom attributes to applications"
+description: "Configure WSO2 API Manager to accept custom attributes when developers create applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/advanced-topics/add-custom-attributes-to-applications/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/advanced-topics/add-custom-attributes-to-applications.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Add Custom Attributes to Applications
 
 You as a developer can register applications via the WSO2 API Manager Developer Portal. When you create a subscription to an API for an application, it allows you to consume the API. Thereby, this helps developers to expose and monetize their APIs. Applications can be created with a predefined set of properties. In addition, WSO2 API Manager also allows you to add a set of custom attributes while creating an application if required.
@@ -72,10 +87,10 @@ After configuring the custom attributes as shown in the previous step, you will 
 
 2. Click **Add Application**, to add a new application.
 
-    [![Add application button]({{base_path}}/assets/img/learn/application-attributes-application-add.png)]({{base_path}}/assets/img/learn/application-attributes-application-add.png)
+    [![Add application button](../../../../assets/img/learn/application-attributes-application-add.png)](../../../../assets/img/learn/application-attributes-application-add.png)
     
     You will see the configured custom attribute as shown below.
 
-    [![Custom application attributes]({{base_path}}/assets/img/learn/application-attributes.png)]({{base_path}}/assets/img/learn/application-attributes.png)
+    [![Custom application attributes](../../../../assets/img/learn/application-attributes.png)](../../../../assets/img/learn/application-attributes.png)
 
 3. Add the application details and click **SAVE**.

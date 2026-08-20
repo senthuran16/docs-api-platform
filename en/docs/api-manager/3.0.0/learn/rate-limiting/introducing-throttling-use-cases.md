@@ -1,3 +1,18 @@
+---
+title: "Introducing throttling Use-Cases"
+description: "Explains the use cases for throttling in API Manager, including security, traffic regulation, and monetization."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/rate-limiting/introducing-throttling-use-cases/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/rate-limiting/introducing-throttling-use-cases.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - introducing-throttling-use-cases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Introducing Throttling Use-Cases
 
 Throttling allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:
@@ -39,7 +54,7 @@ The subscription tiers are used to gain monetary value for the API; you can char
 
 **Burst Control**
 
-Burst control limits are enforced for subscription tiers in order to distribute the load across the specified time period. For example, if you have a subscription tier that allows you to send 1000 requests per hour, you can ensure that a particular application does not consume the full quota of 1000 requests within the first 2 minutes by setting a burst control limit within the subscription tier allowing only a maximum of 25 requests per minute. Therefore, the time periods set for burst control limits must always be smaller than the time period specified for its corresponding subscription tier. Burst control limits can be set only to control the number of requests for a given period of time and does not allow you to control the data bandwidth for a given time period. The burst control limits are enforced for each individual Gateway node. Although the request counters are replicated across the cluster, since burst control time periods are usually quite small, the replication frequency can be quite high compared to the burst rate of incoming requests. Therefore, it is safe to assume that the burst control values are applied on a per-node basis. For information on how to define burst control limits, see [Rate limiting (burst control)](../setting-throttling-limits/#rate-limiting-burst-control) .
+Burst control limits are enforced for subscription tiers in order to distribute the load across the specified time period. For example, if you have a subscription tier that allows you to send 1000 requests per hour, you can ensure that a particular application does not consume the full quota of 1000 requests within the first 2 minutes by setting a burst control limit within the subscription tier allowing only a maximum of 25 requests per minute. Therefore, the time periods set for burst control limits must always be smaller than the time period specified for its corresponding subscription tier. Burst control limits can be set only to control the number of requests for a given period of time and does not allow you to control the data bandwidth for a given time period. The burst control limits are enforced for each individual Gateway node. Although the request counters are replicated across the cluster, since burst control time periods are usually quite small, the replication frequency can be quite high compared to the burst rate of incoming requests. Therefore, it is safe to assume that the burst control values are applied on a per-node basis. For information on how to define burst control limits, see [Rate limiting (burst control)](../setting-throttling-limits/#burst-control) .
 
 ### Advanced throttling policies: API Publisher
 
@@ -82,7 +97,7 @@ Filtering based on query parameters almost always apply to HTTP GET requests whe
 
 Eg : 'sales' category can be allocated with more requests than 'hr' category
 
-For more information on how to define advanced throttling policies, see [Adding a new advanced rate limiting policy]({{base_path}}/learn/rate-limiting/adding-new-throttling-policies/#adding-a-new-advanced-rate-limiting-policy).
+For more information on how to define advanced throttling policies, see [Adding a new advanced rate limiting policy](adding-new-throttling-policies#adding-a-new-advanced-throttling-policy).
 
 ### Implications on applications that consume APIs
 

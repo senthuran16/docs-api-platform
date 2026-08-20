@@ -1,3 +1,18 @@
+---
+title: "Overview of the API Gateway"
+description: "Explains the role of the API Gateway in securing, throttling, and routing API calls to backend services and the Key Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-gateway/overview-of-the-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-gateway/overview-of-the-api-gateway.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - overview-of-the-api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overview of the API Gateway
 WSO2 API Gateway is the 
 

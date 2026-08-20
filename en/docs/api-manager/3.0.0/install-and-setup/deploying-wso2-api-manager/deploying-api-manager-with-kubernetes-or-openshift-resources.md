@@ -1,3 +1,18 @@
+---
+title: "Deploying API Manager with Kubernetes resources"
+description: "Deploy WSO2 API Manager and API Manager Analytics on Kubernetes or OpenShift using the WSO2 Helm resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/deploying-api-manager-with-kubernetes-or-openshift-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/deploying-api-manager-with-kubernetes-or-openshift-resources.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - deploying-api-manager-with-kubernetes-or-openshift-resources
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying API Manager with Kubernetes Resources
 
 !!! warning

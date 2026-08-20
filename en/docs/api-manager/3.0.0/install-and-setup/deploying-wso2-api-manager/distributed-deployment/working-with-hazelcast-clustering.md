@@ -1,3 +1,18 @@
+---
+title: "Working with hazelcast clustering"
+description: "Enable and configure Hazelcast clustering in WSO2 API Manager for edge cases that require distributed shared memory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/working-with-hazelcast-clustering/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/working-with-hazelcast-clustering.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Working with Hazelcast Clustering
 
 Hazelcast is an in-memory data grid, which is used in clustering and distributed shared memory. When using Hazelcast as a clustering implementation, data is evenly distributed among the nodes in a cluster. Hazelcast clustering is disabled in WSO2 API Manager (WSO2 APIM) by default, because you can successfully deploy WSO2 API-M without Hazelcast. The following subsections explain as to when you need Hazelcast clustering with WSO2 API Manager (WSO2 APIM) and how you can configure it.
@@ -87,7 +102,7 @@ Follow the instructions below to deploy WSO2 API-M with Hazelcast clustering:
             members = ["127.0.0.1:4500", "127.0.0.1:4501"]
         ```
      
-    9.  See the instructions on [configuring hazelcast properties](#WorkingwithHazelcastClustering-ConfiguringHazelcastproperties) given below.
+    9.  See the instructions on [configuring hazelcast properties](#configuring-hazelcast-properties) given below.
 
 ### Configuring Hazelcast properties
 

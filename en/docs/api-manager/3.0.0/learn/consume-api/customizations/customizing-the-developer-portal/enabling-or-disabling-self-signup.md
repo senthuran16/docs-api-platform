@@ -1,3 +1,18 @@
+---
+title: "Enabling or disabling self signup"
+description: "Enable self sign-up to the Developer Portal for tenant users by editing the sign-up-config.xml resource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling or Disabling Self Signup
 
 #### Enabling self signup
@@ -66,4 +81,4 @@ In order to disable self signup for a particular tenant, follow the steps below.
     ![Self registration disabled](../../../../assets/img/learn/self-signup-disabled.png)
 
 !!! tip
-    To engage your own signup process, see [Adding a User Signup Workflow](/learn/consume-api/customizations/adding-a-user-signup-workflow).
+    To engage your own signup process, see [Adding a User Signup Workflow](../adding-a-user-signup-workflow).

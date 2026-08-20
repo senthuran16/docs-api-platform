@@ -1,3 +1,18 @@
+---
+title: "Getting started with WSO2 API controller"
+description: "Download, initialize, and add environments to the WSO2 API Controller (apictl) command-line tool for managing API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-controller/getting-started-with-wso2-api-controller/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-controller/getting-started-with-wso2-api-controller.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - getting-started-with-wso2-api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Getting Started with WSO2 API Controller
 
 WSO2 API Controller(CTL) is a command-line tool for managing API Manager environments, listing APIs and applications, creating API projects, importing and exporting APIs and applications, generating tokens for testing purposes, etc.  
@@ -6,11 +21,11 @@ WSO2 API Controller(CTL) is a command-line tool for managing API Manager environ
 
 1.  Download **API Controller** based on your preferred platform (i.e., Mac, Windows, Linux).
 
-    - [For MacOS]({{base_path}}/assets/attachments/learn/api-controller/apictl-3.0.4-macosx-x64.tar.gz)
-    - [For Linux 32-bit]({{base_path}}/assets/attachments/learn/api-controller/apictl-3.0.4-linux-i586.tar.gz)
-    - [For Linux 64-bit]({{base_path}}/assets/attachments/learn/api-controller/apictl-3.0.4-linux-x64.tar.gz)
-    - [For Windows 32-bit]({{base_path}}/assets/attachments/learn/api-controller/apictl-3.0.4-windows-i586.zip)
-    - [For Windows 64-bit]({{base_path}}/assets/attachments/learn/api-controller/apictl-3.0.4-windows-x64.zip)
+    - [For MacOS](../../assets/attachments/learn/api-controller/apictl-3.0.4-macosx-x64.tar.gz)
+    - [For Linux 32-bit](../../assets/attachments/learn/api-controller/apictl-3.0.4-linux-i586.tar.gz)
+    - [For Linux 64-bit](../../assets/attachments/learn/api-controller/apictl-3.0.4-linux-x64.tar.gz)
+    - [For Windows 32-bit](../../assets/attachments/learn/api-controller/apictl-3.0.4-windows-i586.zip)
+    - [For Windows 64-bit](../../assets/attachments/learn/api-controller/apictl-3.0.4-windows-x64.zip)
 
 2.  Extract the downloaded archive of the CTL Tool to the desired location.
 3.  Navigate to the working directory where the executable CTL Tool resides.
@@ -321,7 +336,7 @@ For more information, see [Download and Initialize the CTL Tool](#download-and-i
 ## Add APIs/Applications in an environment
 
 You can add APIs and Applications via the Publisher Portal and Developer Portal accordingly.
-However, **apictl** allows you to create and deploy APIs without using the Publisher Portal. For more information on adding APIs, see [Importing APIs Via Dev First Approach]({{base_path}}/learn/api-controller/importing-apis-via-dev-first-approach).
+However, **apictl** allows you to create and deploy APIs without using the Publisher Portal. For more information on adding APIs, see [Importing APIs Via Dev First Approach](importing-apis-via-dev-first-approach).
 
 ## List APIs of an environment
 Follow the instructions below to display a list of APIs in an environment using CTL:

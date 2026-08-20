@@ -1,3 +1,18 @@
+---
+title: "Writing a custom user store manager"
+description: "Write a custom user store manager to integrate an existing JDBC user store with a WSO2 product."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - managing-users-and-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Writing a Custom User Store Manager
 
 This page demonstrates the process of writing a simple custom user store
@@ -516,7 +531,7 @@ in your WSO2 product.
         configure this as a secondary user store if you already have a
         different primary user store configured. For more information
         configuring user stores in WSO2 products, see [Configuring User
-        Stores]({{base_path}}/administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/).
+        Stores](configuring-secondary-user-stores).
     
 
     You do not need to change anything else since you extend the

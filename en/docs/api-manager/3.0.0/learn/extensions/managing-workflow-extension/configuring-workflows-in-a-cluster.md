@@ -1,3 +1,18 @@
+---
+title: "Configuring workflows in a cluster"
+description: "Configure workflow-related settings, such as Admin Portal access and callback URLs, in a clustered API Manager deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/managing-workflow-extension/configuring-workflows-in-a-cluster/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/managing-workflow-extension/configuring-workflows-in-a-cluster.md
+tags:
+  - api-manager
+  - learn
+  - extensions
+  - managing-workflow-extension
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Workflows in a Cluster
 
 If you are working in a clustered API Manager setup with the Developer Portal, Publisher, Gateway and Key Manager in separate servers, do the workflow configurations that are discussed in the previous topics in the **Developer Portal node** . In addition, do the following configurations.

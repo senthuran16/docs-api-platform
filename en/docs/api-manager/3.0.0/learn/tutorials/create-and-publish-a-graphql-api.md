@@ -1,10 +1,25 @@
+---
+title: "Create and publish a GraphQL API"
+description: "Walk through designing, publishing, and invoking a GraphQL API in WSO2 API Manager step by step."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/tutorials/create-and-publish-a-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/tutorials/create-and-publish-a-graphql-api.md
+tags:
+  - api-manager
+  - learn
+  - tutorials
+  - create-and-publish-a-graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Create and Publish a GraphQL API
 
 Follow the instructions in this tutorial to design, publish, and invoke a GraphQL API.
 <html>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For more information on GraphQL APIs, see <a href="{{base_path}}/learn/design-api/create-api/create-a-graphql-api">Create a GraphQL API</a>.</p>
+<p>For more information on GraphQL APIs, see <a href="../../design-api/create-api/create-a-graphql-api.md">Create a GraphQL API</a>.</p>
 </div> 
 </html>
 ### Step 1 - Design a GraphQL API
@@ -23,16 +38,16 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
      <head>
      </head>
      <body>
-     <img src="{{base_path}}/assets/img/learn/create-graphql-schema-option.png" alt="Create GraphQL schema option" title="Create GraphQL schema option" width="600" />
+     <img src="../../../assets/img/learn/create-graphql-schema-option.png" alt="Create GraphQL schema option" title="Create GraphQL schema option" width="600" />
      </body>
      </html>
 
 
 3. Import the schema and click **Next**.  
 
-     [![Import a graphQL schema by adding a file]({{base_path}}/assets/img/learn/import-graphql-schema.png)]({{base_path}}/assets/img/learn/import-graphql-schema.png)
+     [![Import a graphQL schema by adding a file](../../assets/img/learn/import-graphql-schema.png)](../../assets/img/learn/import-graphql-schema.png)
 
-     Let's use the [StarWarsAPI schema definition]({{base_path}}/assets/attachments/learn/schema_graphql.graphql) to create the schema file. 
+     Let's use the [StarWarsAPI schema definition](../../assets/attachments/learn/schema_graphql.graphql) to create the schema file. 
    
       <html>
       <div class="admonition note">
@@ -44,7 +59,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
       </html>
 
 
-      [![Import a graphQL schema by adding a file]({{base_path}}/assets/img/learn/import-graphql-schema-via-file.png)]({{base_path}}/assets/img/learn/import-graphql-schema-via-file.png)
+      [![Import a graphQL schema by adding a file](../../assets/img/learn/import-graphql-schema-via-file.png)](../../assets/img/learn/import-graphql-schema-via-file.png)
 
 4. Enter the GraphQL API related details and click **Create**.
 
@@ -123,7 +138,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
          </table>
       </html>
 
-      [![Add GraphQL API details]({{base_path}}/assets/img/learn/create-graphql-api-details.png)]({{base_path}}/assets/img/learn/create-graphql-api-details.png)
+      [![Add GraphQL API details](../../assets/img/learn/create-graphql-api-details.png)](../../assets/img/learn/create-graphql-api-details.png)
 
 5. Optionally, modify the existing GraphQL schema definition.
 
@@ -133,7 +148,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
 
          The existing GraphQL API schema gets downloaded.
 
-         [![Add schema definition]({{base_path}}/assets/img/learn/download-schema-definition.png)]({{base_path}}/assets/img/learn/download-schema-definition.png)
+         [![Add schema definition](../../assets/img/learn/download-schema-definition.png)](../../assets/img/learn/download-schema-definition.png)
 
     3. Update the schema definition as required.
 
@@ -145,7 +160,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
 
     1. Click **Show More** under the **Operations** section in the **OVERVIEW** page to navigate to the operations page.
 
-         [![GraphQL API operations]({{base_path}}/assets/img/learn/operations.png)]({{base_path}}/assets/img/learn/operations.png)  
+         [![GraphQL API operations](../../assets/img/learn/operations.png)](../../assets/img/learn/operations.png)  
      
     2. Update the operations as required.
          
@@ -157,7 +172,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
 
             1. Click **Scopes** > **ADD NEW SCOPE**.
 
-                  [![Add a scope page]({{base_path}}/assets/img/learn/add-scope.png)]({{base_path}}/assets/img/learn/add-scope.png)
+                  [![Add a scope page](../../assets/img/learn/add-scope.png)](../../assets/img/learn/add-scope.png)
 
             2. Enter the required details.
 
@@ -170,13 +185,13 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
                   
                   Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users]({{base_path}}/administer/product-administration/managing-users-and-roles/adding-users/) and [Adding User Roles]({{base_path}}/administer/product-administration/managing-users-and-roles/adding-user-roles/).
 
-                  [![Create a scope]({{base_path}}/assets/img/learn/create-scope.png)]({{base_path}}/assets/img/learn/create-scope.png)
+                  [![Create a scope](../../assets/img/learn/create-scope.png)](../../assets/img/learn/create-scope.png)
 
             3. Press `Enter` to add each scope. 
 
             4. Click **SAVE**.
 
-                 [![List of added scopes]({{base_path}}/assets/img/learn/starwars-scope-list.png)]({{base_path}}/assets/img/learn/starwars-scope-list.png)
+                 [![List of added scopes](../../assets/img/learn/starwars-scope-list.png)](../../assets/img/learn/starwars-scope-list.png)
 
          2. Define the operation level configurations.
 
@@ -184,7 +199,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
             
             2. Click **Operation Level** to apply rate limiting for operations.
 
-                 [![Update GraphQL API operations]({{base_path}}/assets/img/learn/update-operations.png)]({{base_path}}/assets/img/learn/update-operations.png) 
+                 [![Update GraphQL API operations](../../assets/img/learn/update-operations.png)](../../assets/img/learn/update-operations.png) 
 
             3. Select a throttling policy, scope, and enable or disable security for each of the operations. 
 
@@ -194,7 +209,7 @@ Follow the instructions in this tutorial to design, publish, and invoke a GraphQ
 
                  If you check the list of scopes, it should appear as follows:
 
-                 [![Scope list]({{base_path}}/assets/img/learn/scope-list.png)]({{base_path}}/assets/img/learn/scope-list.png)
+                 [![Scope list](../../assets/img/learn/scope-list.png)](../../assets/img/learn/scope-list.png)
 
 Now, you have created and configured the GraphQL API successfully. 
 
@@ -202,7 +217,7 @@ Now, you have created and configured the GraphQL API successfully.
 
 Click **LIFECYCLE** to navigate to the API lifecycle and click **PUBLISH** to publish the API to the API Developer Portal.
 
-[![Publish GraphQL API]({{base_path}}/assets/img/learn/publish-graphql-api.png)]({{base_path}}/assets/img/learn/publish-graphql-api.png)
+[![Publish GraphQL API](../../assets/img/learn/publish-graphql-api.png)](../../assets/img/learn/publish-graphql-api.png)
 
 ### Step 3 - Invoke the GraphQL API
 
@@ -212,13 +227,13 @@ Click **LIFECYCLE** to navigate to the API lifecycle and click **PUBLISH** to pu
    
       Example: `https://localhost:9443/devportal`
 
-     [![Developer Portal]({{base_path}}/assets/img/learn/starwars-in-dev-portal.png)]({{base_path}}/assets/img/learn/starwars-in-dev-portal.png)
+     [![Developer Portal](../../assets/img/learn/starwars-in-dev-portal.png)](../../assets/img/learn/starwars-in-dev-portal.png)
     
 2. Click on the GraphQL API.
    
      The API overview appears.
  
-     [![StarWarsAPI API overview]({{base_path}}/assets/img/learn/api-overview.png)]({{base_path}}/assets/img/learn/api-overview.png)
+     [![StarWarsAPI API overview](../../assets/img/learn/api-overview.png)](../../assets/img/learn/api-overview.png)
 
 3. Optionally, download the API schema if required.
 
@@ -231,7 +246,7 @@ Click **LIFECYCLE** to navigate to the API lifecycle and click **PUBLISH** to pu
 
      Click **More** on the API overview page and then click **GRAPHQL SCHEMA** to download the API schema.
 
-     [![Download GraphQL API schema]({{base_path}}/assets/img/learn/download-schema.png)]({{base_path}}/assets/img/learn/download-schema.png)
+     [![Download GraphQL API schema](../../assets/img/learn/download-schema.png)](../../assets/img/learn/download-schema.png)
 
 4. Subscribe to the API.
 
@@ -246,17 +261,17 @@ Click **LIFECYCLE** to navigate to the API lifecycle and click **PUBLISH** to pu
        </p>
        </div>
 
-       [![Key generation wizard]({{base_path}}/assets/img/learn/starwars-scopes-gen-access-token.png)]({{base_path}}/assets/img/learn/starwars-scopes-gen-access-token.png)
+       [![Key generation wizard](../../assets/img/learn/starwars-scopes-gen-access-token.png)](../../assets/img/learn/starwars-scopes-gen-access-token.png)
 
     2. Copy the authorization token that appears.
 
-       [![Copy the authorization token]({{base_path}}/assets/img/learn/copy-access-token-starwars.png)]({{base_path}}/assets/img/learn/copy-access-token-starwars.png)
+       [![Copy the authorization token](../../assets/img/learn/copy-access-token-starwars.png)](../../assets/img/learn/copy-access-token-starwars.png)
 
 5. Try out the operations.
 
     1. Click **TEST** to navigate to the developer console.
     
-        [![Authorization token]({{base_path}}/assets/img/learn/authorization-token.png)]({{base_path}}/assets/img/learn/authorization-token.png)
+        [![Authorization token](../../assets/img/learn/authorization-token.png)](../../assets/img/learn/authorization-token.png)
 
     2. Select whether to invoke the API using HTTP or HTTPS from **Servers**.
 
@@ -272,7 +287,7 @@ Click **LIFECYCLE** to navigate to the API lifecycle and click **PUBLISH** to pu
          }
          ```
 
-         [![Try out the post operation]({{base_path}}/assets/img/learn/post-try-out-starwars.png)]({{base_path}}/assets/img/learn/post-try-out-starwars.png)
+         [![Try out the post operation](../../assets/img/learn/post-try-out-starwars.png)](../../assets/img/learn/post-try-out-starwars.png)
 
          <html>
          <div class="admonition note">
@@ -284,6 +299,6 @@ Click **LIFECYCLE** to navigate to the API lifecycle and click **PUBLISH** to pu
 
     6. Click **Execute**.
 
-        [![Try out the post operation]({{base_path}}/assets/img/learn/post-response-query.png)]({{base_path}}/assets/img/learn/post-response-query.png)
+        [![Try out the post operation](../../assets/img/learn/post-response-query.png)](../../assets/img/learn/post-response-query.png)
 
 You have successfully created and published your first GraphQL API, subscribed to it, obtained an access token for testing and tested your API with the access token.

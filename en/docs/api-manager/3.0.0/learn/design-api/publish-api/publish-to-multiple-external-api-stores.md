@@ -1,10 +1,25 @@
+---
+title: "Publish to multiple external Developer Portals"
+description: "Configure an API to be published and shared across multiple external Developer Portals belonging to other tenants."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/publish-api/publish-to-multiple-external-api-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/publish-api/publish-to-multiple-external-api-stores.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - publish-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publish to Multiple External Developer Portals
 
 You can share an API with application developers who are subscribed to the Developer Portals of other tenants. Thereby, this allows you to advertise your APIs to a wider community. Subscribers of other tenant developer portals can view and browse your APIs; however, the users must visit your (the original publisher's) Developer Portal to subscribe to the APIs.
 
 The following diagram illustrates the process involved when an API Publisher publishes to multiple Developer Portals.
 
-<img src="{{base_path}}/assets/img/learn/publish-to-multiple-developer-portals.png" alt="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" title="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" width="75%" />
+<img src="../../../../assets/img/learn/publish-to-multiple-developer-portals.png" alt="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" title="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" width="75%" />
 
 <a name="step8"> </a>
 
@@ -48,13 +63,13 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 5.  Navigate to  **Main > Resources > Browse**.
 
 
-    [![Menu option to navigate to the Browse option]({{base_path}}/assets/img/learn/publish-to-external-stores-browse-menu.png)]({{base_path}}/assets/img/learn/publish-to-external-stores-browse-menu.png)
+    [![Menu option to navigate to the Browse option](../../../assets/img/learn/publish-to-external-stores-browse-menu.png)](../../../assets/img/learn/publish-to-external-stores-browse-menu.png)
   
     The Registry opens.
 
 6.  Navigate to the `/_system/governance/apimgt/externalstores/external-api-stores.xml` file.
 
-     ![Navigating to the external-api-stores.xml file]({{base_path}}/assets/img/learn/browse-to-external-api-stores.png)
+     ![Navigating to the external-api-stores.xml file](../../../assets/img/learn/browse-to-external-api-stores.png)
 
 7.  Click **Edit as Text**, uncomment the `<StoreURL>` element under the `<ExternalAPIStores>` element, and add the details of each external API Developer Portal that you need to publish APIs to.
 
@@ -135,7 +150,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
         ```
     
     !!! tip
-        In a **multi-tenant environment**, each tenant can publish to different external Developer Portals by changing the above file in their tenant space. For more information on how APIs appear and are available for subscription in a multi-tenant environment, see [API visibility]({{base_path}}/getting-started/key-concepts#api-visibility). Note that publishing to an external Developer Portal only means that the API is advertised there. To subscribe, you must always register and sign in to the original publisher's tenant Developer Portal.
+        In a **multi-tenant environment**, each tenant can publish to different external Developer Portals by changing the above file in their tenant space. For more information on how APIs appear and are available for subscription in a multi-tenant environment, see [API visibility](../../../getting-started/key-concepts#api-visibility). Note that publishing to an external Developer Portal only means that the API is advertised there. To subscribe, you must always register and sign in to the original publisher's tenant Developer Portal.
 
 
     Note the following in the configuration above:
@@ -188,7 +203,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
 8.  Click **Save Content**.
 
-9.  Sign in to the Publisher of the first instance as `admin`/`admin` and if you do not have any APIs that are in the published state created, [create an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api/).
+9.  Sign in to the Publisher of the first instance as `admin`/`admin` and if you do not have any APIs that are in the published state created, [create an API](../create-api/create-a-rest-api).
 
     !!! tip
             In a multi-tenant environment, sign in to the API Publisher using your tenant's credentials.
@@ -202,7 +217,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
         This tab is only visible when viewing API's that are in the `PUBLISHED` state.
 
-    [![]({{base_path}}/assets/img/learn/external-dev-portals.png)]({{base_path}}/assets/img/learn/external-dev-portals.png)
+    [![](../../../assets/img/learn/external-dev-portals.png)](../../../assets/img/learn/external-dev-portals.png)
 
     !!! note
 
@@ -215,12 +230,12 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
 11. Select the Developer Portal that you want to publish to (in this case, `DeveloperPortal2`) and click **Save**.
 
-     [![]({{base_path}}/assets/img/learn/publish-to-external-devportal.png)]({{base_path}}/assets/img/learn/publish-to-external-devportal.png)
+     [![](../../../assets/img/learn/publish-to-external-devportal.png)](../../../assets/img/learn/publish-to-external-devportal.png)
 
 12. Sign in to the external API Developer Portal (in this case, `http://localhost:9444/devportal`) and click on the API that you just published.
 
     A link appears as **Visit Publisher Developer Portal** which directs you to the original publisher’s Developer Portal (in this case, `http://localhost:9443/devportal`) through which you can subscribe to the API.  
 
-    [![]({{base_path}}/assets/img/learn/visit-publisher-dev-portal.png)]({{base_path}}/assets/img/learn/visit-publisher-dev-portal.png)
+    [![](../../../assets/img/learn/visit-publisher-dev-portal.png)](../../../assets/img/learn/visit-publisher-dev-portal.png)
 
 You have successfully added multiple external Developer Portals to your registry and published your APIs to them.

@@ -1,10 +1,25 @@
+---
+title: "Configuring keystores in API-M analytics"
+description: "Configure keystores for the dashboard and worker profiles of WSO2 API-M Analytics to secure communication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/configuring-keystores-in-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/configuring-keystores-in-apim-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - configuring-keystores-in-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Keystores in API-M Analytics
 
-WSO2 products use asymmetric cryptography by default for authentication and data encryption. In asymmetric cryptography, keystores (with key pairs and certificates) are created and stored for the product. Keystore is a repository where private keys and certificates can be stored. It is possible to have multiple keystores so that the keys used for different use cases are kept separately. For more information about keystores and its concepts, see [About Asymmetric Cryptography]({{base_path}}/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography).
+WSO2 products use asymmetric cryptography by default for authentication and data encryption. In asymmetric cryptography, keystores (with key pairs and certificates) are created and stored for the product. Keystore is a repository where private keys and certificates can be stored. It is possible to have multiple keystores so that the keys used for different use cases are kept separately. For more information about keystores and its concepts, see [About Asymmetric Cryptography](../../administer/product-security/configuring-keystores/keystore-basics/about-asymetric-cryptography).
 
 In WSO2 API-M Analytics a set of keystores can be configured and used for different use cases in both dashboard and worker profiles.
 
-The `wso2carbon.jks` keystore file, which is shipped with all WSO2 products, is used as the default keystore for all functions. However, in a production environment, it is recommended to [create new keystores]({{base_path}}/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores) with new keys and certificates. If you have created a new keystore and updated the `client-truststore.jks` file, which resides in the `<API-M_ANALYTICS_HOME>/resources/security` directory, you must update the `deployment.yaml` file of the corresponding profile in order to make the keystore work.
+The `wso2carbon.jks` keystore file, which is shipped with all WSO2 products, is used as the default keystore for all functions. However, in a production environment, it is recommended to [create new keystores](../../administer/product-security/configuring-keystores/keystore-basics/creating-new-keystores) with new keys and certificates. If you have created a new keystore and updated the `client-truststore.jks` file, which resides in the `<API-M_ANALYTICS_HOME>/resources/security` directory, you must update the `deployment.yaml` file of the corresponding profile in order to make the keystore work.
 
 ## Configuring keystores in dashboard profile
 

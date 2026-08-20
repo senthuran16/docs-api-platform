@@ -1,8 +1,23 @@
+---
+title: "Configure analytics workers as Active-Passive"
+description: "Configure API Manager Analytics workers in a minimum high-availability Active-Passive deployment pattern."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-passive/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/configure-apim-analytics/configure-worker/active-passive.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - configure-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configure Analytics Workers as Active-Passive
 
 Minimum high availability (HA) deployment mainly focused on providing high availability which guarantees no data loss if the system suffer any failing due to several unforeseeable reasons. One of the main advantage of this is it uses minimum amount of infrastructure resources possible. Thus deployment pattern comprise of only two Streaming integration servers.
 
-[![API-M Analytics active-passive deployment]({{base_path}}/assets/img/setup-and-install/analytics-active-passive-deployment.png)]({{base_path}}/assets/img/setup-and-install/analytics-active-passive-deployment.png)
+[![API-M Analytics active-passive deployment](../../../../assets/img/setup-and-install/analytics-active-passive-deployment.png)](../../../../assets/img/setup-and-install/analytics-active-passive-deployment.png)
 
 In minimum HA setup, one node is assigned as the active node while the other node is assigned as the passive node. Only the active node processes the incoming events and publishes the outgoing events. Internally, the active node publishes the events to the passive node, but the passive node does not process or send any events outside as mentioned earlier. In a scenario where the active node fails, the passive node is activated, and it starts receiving events and then publishes them from where the active node left off. Once the terminated (previously active) node restarts , it operates in the passive state. In the passive node, sources are in an inactive mode where they will not receive events into the system.
 
@@ -15,13 +30,12 @@ In minimum HA setup, one node is assigned as the active node while the other nod
     `<APIM_ANALYTICS_HOME>/conf/worker/deployment.yaml` file. For more information about this port configuration, see 
     Managing Stored Data via REST APIs.
     
-    ![]({{base_path}}/assets/img/setup-and-install/open_endpoint_active_node.png)
+    ![](../../../../assets/img/setup-and-install/open_endpoint_active_node.png)
     
     When a failover occurs, the Siddhi Store Query API endpoint configured in node 2 (which becomes the currently active node) is opened, and 
     all the Developer Portal query traffic is directed to that endpoint.
     
-    ![]({{base_path}}/assets/img/setup-and-install/open_endpoint_after_active_member_changes
-    .png)
+    ![](../../../../assets/img/setup-and-install/open_endpoint_after_active_member_changes.png)
 
 !!! note
     In passive node databridge ports and Siddhi Store Query API endpoint are closed but the admin API are accessible. 
