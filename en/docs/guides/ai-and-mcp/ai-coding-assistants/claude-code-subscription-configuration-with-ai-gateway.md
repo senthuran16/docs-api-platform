@@ -62,7 +62,7 @@ Before you begin, make sure you have:
 - A Claude Team or Claude Enterprise subscription that your developers can sign in to
 - A WSO2 API Platform admin account
 - An organization created in WSO2 API Platform
-- An OAuth 2.0 identity provider that publishes a JSON Web Key Set (JWKS) endpoint, such as Asgardeo, Microsoft Entra ID, Okta, Keycloak, or Auth0. You need this only for JWT authentication, which this guide uses
+- An OAuth 2.0 identity provider that publishes a JSON Web Key Set (JWKS) endpoint, such as Asgardeo, Microsoft Entra ID, Okta, Keycloak, or Auth0. You need this only for JWT authentication, which this guide uses.
 - [Claude Code](https://code.claude.com/docs/en/overview) installed
 
 ---
@@ -156,7 +156,9 @@ Under subscription billing, the Gateway holds no Anthropic credential of its own
 
 5. Leave the **API Key** field empty.
 
-    Under subscription billing, the Gateway needs no Anthropic credential. From API Platform AI Gateway 1.2.0 onward, an empty field means the Gateway attaches no upstream API key to the request, so the developer's Claude subscription token is the only credential Anthropic receives.
+    Under subscription billing, the Gateway needs no Anthropic credential. With the field empty, AI Workspace records the provider's upstream authentication as `none`, and the Gateway attaches no API key to the upstream request, so the developer's Claude subscription token is the only credential Anthropic receives.
+
+    If you create the provider through the Gateway management API instead of the console, set `upstream.auth.type` to `none` and omit the header and value. An `api-key` type with an empty value fails validation.
 
 6. Click **Add Provider**.
 
@@ -176,7 +178,7 @@ Two settings differ from the defaults. Change both before you deploy the provide
 
     - **Issuer** — the key manager name you declared in `config.toml` in Step 2, for example `WSO2IDP`
     - **Header name** — the custom header that carries the enterprise token, for example `AuthorizationGW`
-    - **User ID claim** — optional. The claim that identifies the developer, used to attribute usage and cost
+    - **User ID claim** — optional. The claim that identifies the developer, used to attribute usage and cost.
 
 ### Deploy the Anthropic provider to the AI Gateway
 
@@ -210,6 +212,8 @@ Replace:
 - `<LLM PROVIDER URL>` with the AI Gateway host, port, and the context of the deployed Anthropic LLM provider
 - `<ENTERPRISE ACCESS TOKEN>` with an access token issued by your identity provider
 
+The access token is a credential. Typing it into an export command records it in your shell history, and it stays readable in the process environment, so treat the terminal session as you would one holding any other secret. [Refresh the enterprise token automatically](#optional-refresh-the-enterprise-token-automatically) describes how a token helper supplies the value without it being typed at all.
+
 The header name must match the **Header name** you set on the authentication policy in Step 3 and, for the JWT Auth policy, the header configured in `config.toml`. If the names differ, the Gateway finds no credential and rejects the request with a `401` status code.
 
 !!! warning "Don't set a gateway credential variable"
@@ -218,7 +222,7 @@ The header name must match the **Header name** you set on the authentication pol
 !!! note
     These environment variables apply only to the current terminal session. If you open a new terminal session, you must export them again.
 
-!!! note "Persistent Configuration"
+!!! note "Persistent configuration"
 
     To make the base URL permanent, add it to Claude Code's `settings.json` file.
 
@@ -272,11 +276,22 @@ If the Gateway uses a self-signed certificate, Claude Code may fail to connect d
 
 For more information, visit the [Claude Code Official Documentation](https://code.claude.com/docs/en/troubleshoot-install#tls-or-ssl-connection-errors).
 
-To bypass SSL certificate validation during testing, run:
+If your organization signs the Gateway certificate with an internal certificate authority, point Claude Code at that authority's certificate bundle:
 
 ```bash
-export NODE_TLS_REJECT_UNAUTHORIZED=0
+export NODE_EXTRA_CA_CERTS="/path/to/your-ca-bundle.pem"
 ```
+
+This adds your authority to the certificates Claude Code trusts, and leaves certificate validation in place. It works for a self-signed certificate too: point the variable at the certificate itself.
+
+!!! warning "Last resort for local testing"
+    If you can't add the certificate, you can turn certificate validation off altogether:
+
+    ```bash
+    export NODE_TLS_REJECT_UNAUTHORIZED=0
+    ```
+
+    This disables validation for every HTTPS connection the client makes, not only the one to the Gateway, which leaves the session open to interception. Use it in a throwaway terminal on your own machine, and never in `settings.json`, in a shell profile, or in managed settings delivered to other people.
 
 ---
 
@@ -294,7 +309,7 @@ Claude Code will now send requests through WSO2 API Platform instead of directly
 
 ## Use case examples
 
-### View API Analytics and Insights
+### View API analytics and insights
 
 By routing Claude Code requests through the WSO2 API Manager AI Gateway, you automatically gain access to built-in analytics and reporting capabilities.
 
@@ -310,7 +325,7 @@ For more information on Analytics, refer to the official [WSO2 API Platform Docu
 
 ---
 
-### Implement WSO2 AI Gateway Guardrails for Enhanced Control
+### Implement WSO2 AI Gateway guardrails for enhanced control
 
 WSO2 API Manager AI Gateway guardrails enable granular control over the data exchanged between Claude Code and the Anthropic API.
 
@@ -338,7 +353,7 @@ A Claude subscription charges a flat fee rather than a per-token rate, so use th
 
 [![Claude Code terminal showing prompt retrying with message "Retrying in 2s attempt 6/10" after rate limit reached](../../../assets/img/guides/ai-and-mcp/ai-coding-assistants/claude-code/claude-code-rate-limit-example.png)](../../../assets/img/guides/ai-and-mcp/ai-coding-assistants/claude-code/claude-code-rate-limit-example.png)
 
-For more information on Rate Limiting and other policies, refer to the official [WSO2 API Platform documentation](https://wso2.com/api-platform/docs/ai-workspace/policies/overview/)
+For more information on rate limiting and other policies, refer to the official [WSO2 API Platform documentation](https://wso2.com/api-platform/docs/ai-workspace/policies/overview/)
 
 ---
 
@@ -348,7 +363,9 @@ WSO2 API Manager AI Gateway supports Prompt Decorators, which allow you to modif
 
 Under a flat subscription, usage that isn't related to work costs the organization capacity rather than money, and it puts an organizational account behind requests the organization never intended to make. A Prompt Decorator applied in the request flow prepends an organizational usage restriction to the system prompt of every request, which keeps the restriction outside any single developer's control.
 
-The following policy configuration restricts the service to technical work. Adjust the wording of `text` to match your organization's acceptable use policy.
+A Prompt Decorator guides the model rather than filtering traffic. It states the policy on every request, and the model acts on it, but the Gateway still forwards the request. To reject off-policy prompts before they reach Anthropic, pair the decorator with a guardrail such as [Semantic Prompt Guard](../../../ai-gateway/1.2.0/llm-proxy/guardrails/semantic-prompt-guard.md), which compares each prompt against allowed and denied phrase lists and blocks the ones that fall outside them.
+
+The following policy configuration states the restriction. Adjust the wording of `text` to match your organization's acceptable use policy.
 
 ```json
 {
