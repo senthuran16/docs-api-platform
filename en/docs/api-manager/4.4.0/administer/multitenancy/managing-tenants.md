@@ -1,6 +1,6 @@
 ---
 title: "Managing Tenants"
-description: "Add a new tenant in API Manager's management console, browse and subscribe to APIs across tenant developer portals, and delete a tenant using the TenantMgtAdminService SOAP API."
+description: "Add a tenant in API Manager's management console, browse tenant developer portals, and delete a tenant using the TenantMgtAdminService API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/multitenancy/managing-tenants/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/multitenancy/managing-tenants.md
 tags:

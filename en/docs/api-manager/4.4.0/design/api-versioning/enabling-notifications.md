@@ -1,6 +1,6 @@
 ---
 title: "Enable Notifications for New API Versions"
-description: "Configure email server settings and enable notifications in API Manager so existing subscribers are automatically notified when a new version of an API is released."
+description: "Configure email server settings so subscribers are automatically notified when a new version of an API is released."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-versioning/enabling-notifications/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-versioning/enabling-notifications.md
 tags:

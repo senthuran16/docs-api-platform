@@ -1,6 +1,6 @@
 ---
 title: "Generate Application Keys"
-description: "Generate and renew OAuth2 application keys (consumer key, consumer secret, and access token) from the Developer Portal, including PKCE-enabled flows and key generation using Okta or Keycloak as the key manager."
+description: "Generate and renew OAuth2 application keys from the Developer Portal, including PKCE-enabled flows and key generation using Okta or Keycloak."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/generate-keys/generate-api-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/generate-keys/generate-api-keys.md
 tags:

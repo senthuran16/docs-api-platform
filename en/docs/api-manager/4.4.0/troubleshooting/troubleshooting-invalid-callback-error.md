@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting the Invalid Callback URL Error"
-description: "Fix the 'Registered callback does not match with the provided URL' login error in API Publisher and Developer Portal by updating the OAuth application callback URL regex after a hostname change."
+description: "Fix the 'Registered callback does not match with the provided URL' login error by updating the OAuth application's callback URL regex."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/troubleshooting-invalid-callback-error/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/troubleshooting-invalid-callback-error.md
 tags:

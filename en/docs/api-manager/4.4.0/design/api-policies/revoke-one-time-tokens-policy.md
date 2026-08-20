@@ -1,6 +1,6 @@
 ---
 title: "Revoke One Time Tokens Policy"
-description: "Configure the Revoke One Time Token gateway policy to restrict a JWT access token to a single use by attaching the policy to an API resource and adding the matching scope to the JWT."
+description: "Configure the Revoke One Time Token policy to restrict a JWT access token to a single use by attaching it to an API resource."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/revoke-one-time-tokens-policy/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/revoke-one-time-tokens-policy.md
 tags:

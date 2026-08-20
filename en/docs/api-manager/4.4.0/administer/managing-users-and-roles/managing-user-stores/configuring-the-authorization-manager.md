@@ -1,6 +1,6 @@
 ---
 title: "Configure the Authorization Manager"
-description: "Configure the Authorization Manager in user-mgt.xml to store role-based permissions in a separate RDBMS repository from the user store, including datasource setup and JDBCAuthorizationManager properties."
+description: "Configure the Authorization Manager in user-mgt.xml to store role-based permissions in a separate RDBMS from the user store."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager.md
 tags:
@@ -20,8 +20,8 @@ The repository that stores Permissions should always be an RDBMS. The Authorizat
 
 Follow the instructions given below to set up and configure the Authorization Manager.
 
--   [Step 1: Setting up the repository](#ConfiguringtheAuthorizationManager-Step1:Settinguptherepository)
--   [Step 2: Updating the user realm configurations](#ConfiguringtheAuthorizationManager-Step2:Updatingtheuserrealmconfigurations)
+-   [Step 1: Setting up the repository](#step-1-setting-up-the-repository)
+-   [Step 2: Updating the user realm configurations](#step-2-updating-the-user-realm-configurations)
 
 ### Step 1: Setting up the repository
 

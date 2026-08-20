@@ -1,6 +1,6 @@
 ---
 title: "Publish AWS API Gateway APIs in the Developer Portal"
-description: "Use apictl to import an API from AWS API Gateway into WSO2 API Manager and publish it on the Developer Portal, including common aws init troubleshooting errors."
+description: "Use apictl to import an API from AWS API Gateway into API Manager and publish it on the Developer Portal, with common troubleshooting."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/publish-on-dev-portal/publish-aws-apis-in-the-dev-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/publish-on-dev-portal/publish-aws-apis-in-the-dev-portal.md
 tags:

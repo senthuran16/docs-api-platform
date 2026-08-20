@@ -1,6 +1,6 @@
 ---
 title: "Configuring HTTP Redirection for Workflows"
-description: "Write a custom workflow executor that extends WorkflowExecutor to redirect subscribers to a third-party entity, such as a payment collector, as part of a custom subscription workflow."
+description: "Write a custom workflow executor extending WorkflowExecutor to redirect subscribers to a third-party entity, like a payment collector."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-http-redirection-for-workflows/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-http-redirection-for-workflows.md
 tags:
@@ -258,4 +258,4 @@ To customize the default workflow extension, you override the **`execute()`** an
     ```
 ### Invoking the API Manager from a third party BPEL engine
 
-The API Manager can be invoked from a third party entity through the [update workflow status method](../../../../reference/product-apis/admin-apis/admin-v4/admin-v4.md#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post). Refer the [Admin REST APIs](../../../../develop/product-apis/admin-apis/admin-v1/admin-v1.md#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post) to learn how to invoke it.  Note that the Admin REST API resources require authentication before invocation.
+The API Manager can be invoked from a third party entity through the [update workflow status method](../../../../reference/product-apis/admin-apis/admin-v4/admin-v4.md#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post). Refer the [Admin REST APIs](../../../../reference/product-apis/admin-apis/admin-v4/admin-v4.md#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post) to learn how to invoke it.  Note that the Admin REST API resources require authentication before invocation.

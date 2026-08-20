@@ -1,6 +1,6 @@
 ---
 title: "Configure a Read-Write LDAP User Store"
-description: "Configure a read-write LDAP directory as the primary user store for WSO2 API Manager, including deployment.toml userstore properties and system administrator setup."
+description: "Configure a read-write LDAP directory as the primary user store for WSO2 API Manager, including userstore properties and admin setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
 tags:
@@ -65,15 +65,15 @@ Following are the minimum userstore properties that are needed to be provided to
 <td>Connection URL</td>
 <td><p>Connection URL to the user store server.</p>
 <p>Sample values:<br />
-<a href="ldap://10.100.1.100:389">ldap://10.100.1.100:389</a><br />
-<a href="ldaps://10.100.1.102:639">ldaps://10.100.1.102:639</a><br />
+<code>ldap://10.100.1.100:389</code><br />
+<code>ldaps://10.100.1.102:639</code><br />
 <br />
 If you are connecting over ldaps (secured LDAP)<br />
 Need to import the certificate of userstore to the client-truststore.jks of the WSO2 product. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see Using Asymmetric Encryption.<br />
-<a href="../../../../../deploy/security/use-asymmetric-encryption/">Using asymmetric encryption</a><br />
+<a href="https://is.docs.wso2.com/en/latest/deploy/security/asymmetric-encryption/use-asymmetric-encryption/">Using asymmetric encryption</a><br />
 <br />
 If LDAP connection pooling is used, see enable connection pooling for LDAPS connections.<br />
-<a href="../../../../../deploy/performance/performance-tuning-recommendations/#performance-tuning-ldaps-pooling">performance tuning ldaps pooling)</a></p></td>
+<a href="https://is.docs.wso2.com/en/5.10.0/setup/performance-tuning-recommendations/#pooling-ldaps-connections">performance tuning ldaps pooling)</a></p></td>
 </tr>
 <tr class="odd">
 <td>ConnectionName</td>
@@ -152,7 +152,7 @@ Default: identityPerson( Is a custom object class defined in WSO2 Identity Serve
 <td><p>A uniquely identifying attribute that represents the username of the user. Users can be authenticated using their email address, UID, etc. The value of the attribute is considered as the username.</p>
 <p>Default: uid<br />
 <br />
- Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../administer/product-security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
+ Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login">Using email address as the username</a></p></td>
 </tr>
 <tr class="odd">
 <td>UserIDAttribute</td>

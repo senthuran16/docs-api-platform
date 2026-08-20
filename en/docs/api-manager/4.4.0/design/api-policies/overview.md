@@ -1,6 +1,6 @@
 ---
 title: "API Policies Overview"
-description: "Overview of API Manager's API policies feature: how request, response, and fault flow policies let you attach multiple, reorderable policies with dynamic inputs at the API or operation level."
+description: "Learn how request, response, and fault flow policies let you attach multiple, reorderable policies with dynamic inputs to an API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-policies/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # API Policies Overview

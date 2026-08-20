@@ -1,6 +1,6 @@
 ---
 title: "Enable Role-Based Access Control Using XACML"
-description: "Integrate an external XACML entitlement server (WSO2 Identity Server) with WSO2 API Manager to enforce role-based access control on APIs using entitlement policies and the entitlement mediator."
+description: "Integrate an external XACML entitlement server (WSO2 Identity Server) to enforce role-based access control on APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/authorization/role-based-access-control-using-xacml/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/authorization/role-based-access-control-using-xacml.md
 tags:
@@ -38,7 +38,7 @@ Let’s take the following requirement in exposing an API via the API manager.
 
 Based on the requirement, a single API is exposed to add or retrieve order information. Each member type (webuser or admin) is identified from the resource path. The operation (GET or POST) that needs to be performed is distinguished by the HTTP verb. Follow the steps below to implement this kind of role-based access control.
 
-1.  Let’s start by creating the required users. First, you need to link both the API Manager and the Identity Server to the same user store in order to share users, roles and other related information. This can be done by linking the API manager with the LDAP user store within WSO2 Identity Server. For more information, see [Configuring an external LDAP or Active Directory Userstore](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md) . For this you can create a read write LDAP user store.
+1.  Let’s start by creating the required users. First, you need to link both the API Manager and the Identity Server to the same user store in order to share users, roles and other related information. This can be done by linking the API manager with the LDAP user store within WSO2 Identity Server. For more information, see [Configuring an external LDAP or Active Directory Userstore](../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md) . For this you can create a read write LDAP user store.
 
     !!! note
         By default, in API Manager JDBCUserStore is enabled. When you are moving to the ReadWriteLDAPUserStore, make sure you have commented the configuration of JDBCUserStore and keep only one user store configuration `<API-M_HOME>/repository/conf/user-mgt.xml` in both nodes.

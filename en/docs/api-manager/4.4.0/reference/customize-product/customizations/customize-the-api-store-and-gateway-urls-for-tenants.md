@@ -1,6 +1,6 @@
 ---
 title: "Customize the Developer Portal and Gateway URLs for Tenants"
-description: "Configure per-tenant custom domain mappings, per-tenant service provider creation, and NGINX load balancer settings to serve custom Developer Portal and Gateway URLs for tenants."
+description: "Configure per-tenant custom domain mappings, service provider creation, and NGINX load balancer settings to serve custom Developer Portal and Gateway URLs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customize-the-api-store-and-gateway-urls-for-tenants/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customize-the-api-store-and-gateway-urls-for-tenants.md
 tags:
@@ -18,7 +18,7 @@ The default URL of WSO2 API Manager Developer Portal (`https://<HostName>:9443/d
 
 -   [Configure per tenant custom domain mappings](#configure-per-tenant-custom-domain-mappings)
 
--   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-devportal)
+-   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-the-developer-portal)
 
 -   [Configure the load balancer for custom URLs](#configure-the-load-balancer-for-custom-urls)
 

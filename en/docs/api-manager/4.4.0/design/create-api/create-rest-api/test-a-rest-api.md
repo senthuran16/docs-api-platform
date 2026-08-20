@@ -1,6 +1,6 @@
 ---
 title: "Test a REST API"
-description: "Use the WSO2 API Manager Publisher's integrated API Console to try out a REST API's resources, generate an internal test key, and invoke operations directly from the Swagger UI."
+description: "Use the Publisher's API Console to try out a REST API's resources, generate a test key, and invoke operations from Swagger UI."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-rest-api/test-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-rest-api/test-a-rest-api.md
 tags:
@@ -23,7 +23,7 @@ Follow the instructions below to use the Publisher test console to test an API:
 !!! note
     Create the `PizzaShack` REST API or an API of your choice before following the instructions below. For more information, see [Create a REST API.](../../../design/create-api/create-rest-api/create-a-rest-api.md).
 
-1.  {!includes/sign-in-publisher.md!}
+1.  --8<-- "api-manager/4.4.0/includes/sign-in-publisher.md"
 
      The list of APIs that are available in the Publisher appears.
 

@@ -1,6 +1,6 @@
 ---
 title: "Manage the API Lifecycle"
-description: "Understand the six default API lifecycle states in WSO2 API Manager - CREATED, PRE-RELEASED, PUBLISHED, BLOCKED, DEPRECATED, and RETIRED - and how to transition an API between them from the Publisher portal."
+description: "Understand the six default API lifecycle states and how to transition an API between them from the Publisher portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/lifecycle-management/api-lifecycle/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/lifecycle-management/api-lifecycle.md
 tags:

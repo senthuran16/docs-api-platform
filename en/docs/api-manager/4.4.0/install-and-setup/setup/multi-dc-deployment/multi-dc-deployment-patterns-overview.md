@@ -1,6 +1,6 @@
 ---
 title: "Multi-DC Deployment Patterns Overview"
-description: "Compares WSO2 API Manager's two multi-datacenter deployment patterns—geo-regional synchronized deployment with replicated databases versus centralized control plane with regional data planes—and how to choose between them."
+description: "Compares API Manager's two multi-datacenter deployment patterns—replicated databases versus centralized control plane—and how to choose."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - high-availability
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Multi-DC Deployment Patterns - Overview

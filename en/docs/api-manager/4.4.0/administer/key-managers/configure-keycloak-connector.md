@@ -1,6 +1,6 @@
 ---
 title: "Configure Keycloak as a Key Manager"
-description: "Configure Keycloak as a third-party Key Manager in WSO2 API Manager using the API-M Keycloak connector: set up Keycloak clients and scopes, register the Key Manager in the Admin Portal, and generate application keys through the Developer Portal."
+description: "Configure Keycloak as a third-party key manager in WSO2 API Manager: set up clients and scopes, register it, and generate application keys."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-keycloak-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-keycloak-connector.md
 tags:
@@ -340,5 +340,5 @@ Follow the instructions given below to configure Keycloak as a third-party Key M
 6. Click **Generate Keys**.
 
 !!! tip
-     * If you want to generate the tokens with scopes, those scopes should have been defined in Keycloak as mentioned in the <a href="#step12">Step 1 - (2)</a>.
+     * If you want to generate the tokens with scopes, those scopes should have been defined in Keycloak as mentioned in the <a href="#step-1-configure-keycloak">Step 1 - (2)</a>.
      * When generating a token in the Developer Portal, you need to have the `code` and `implicit` grant types selected and you need to enter the response type as `none`. Without these, the token generation process fails.

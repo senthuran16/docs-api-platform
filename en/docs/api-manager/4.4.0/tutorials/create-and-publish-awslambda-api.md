@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish an AWS Lambda API"
-description: "Create a REST API in WSO2 API Manager backed by an AWS Lambda endpoint: configure AWS credentials, map function ARNs to resources, and tune connection pooling and proxy response mapping."
+description: "Create a REST API in WSO2 API Manager backed by an AWS Lambda endpoint, mapping function ARNs and tuning connection pooling."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/create-and-publish-awslambda-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/create-and-publish-awslambda-api.md
 tags:

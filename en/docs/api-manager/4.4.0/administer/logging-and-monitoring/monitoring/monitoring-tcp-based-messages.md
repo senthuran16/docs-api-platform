@@ -1,6 +1,6 @@
 ---
 title: "Monitor TCP-Based Messages with TCPMon"
-description: "Use the Apache TCPMon utility bundled with WSO2 API Manager to monitor, capture, and resend TCP-based SOAP messages, and to run TCPMon as a proxy for debugging web services."
+description: "Use the TCPMon utility bundled with WSO2 API Manager to monitor, capture, and resend TCP-based SOAP messages for debugging web services."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md
 tags:

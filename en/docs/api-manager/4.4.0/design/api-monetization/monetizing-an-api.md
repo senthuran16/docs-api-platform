@@ -1,6 +1,6 @@
 ---
 title: "Monetizing an API"
-description: "Connect WSO2 API Manager to the Stripe billing engine, configure the monetization database and workflow executors, create paid subscription policies, enable monetization on an API, and publish usage data for metered billing."
+description: "Connect API Manager to Stripe, configure the monetization database and workflow executors, and enable metered billing on an API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-monetization/monetizing-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-monetization/monetizing-an-api.md
 tags:
@@ -94,7 +94,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
          [![Work in developer mode](../../assets/img/learn/developer-mode.png)](../../assets/img/learn/developer-mode.png)
      
-    5. Once you follow either of the options in the previous step, the onboarding process will be completed. After few seconds, API Publisher account will be listed under Connected accounts in Tenant Admin account. The connected account ID (Connect ID) for the API Publisher's account will appear when clicking on the connected account. Copy the **Connect ID** value as it is required when enabling monetization for an API from the APIM Publisher portal.
+    5. Once you follow either of the options in the previous step, the onboarding process will be completed. After few seconds, API Publisher account will be listed under Connected accounts in Tenant Admin account. The connected account ID (Connect ID) for the API Publisher's account will appear when clicking on the connected account. Copy the <a name="connectID"></a>**Connect ID** value as it is required when enabling monetization for an API from the APIM Publisher portal.
 
 #### (B) - Configure WSO2 API Manager
 
@@ -525,7 +525,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
         description = "connected account of the publisher"
         ```
            
-      The name property has to be identical to `ConnectedAccountKey`, which is defined in the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am-stripe-plugin/blob/master/src/main/java/org/wso2/apim/monetization/impl/StripeMonetizationImpl.java). However, you can add perferred values for the other properties.
+      The name property has to be identical to `ConnectedAccountKey`, which is defined in the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am-stripe-plugin/blob/master/stripe-plugin/src/main/java/org/wso2/apim/monetization/impl/StripeMonetizationImpl.java). However, you can add perferred values for the other properties.
  
     After saving these configurations, these additional properties appear in the **Monetization** page under the **Monetization properties** section in the API Publisher Portal.
 
@@ -644,7 +644,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
 2.  Create a subscription policy.  
      
-     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../design/rate-limiting/adding-new-throttling-policies.md#Adding-a-new-subscription---level-throttling-tier).
+     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-rate-limiting-tier).
 
      <html>
       <div class="admonition note">

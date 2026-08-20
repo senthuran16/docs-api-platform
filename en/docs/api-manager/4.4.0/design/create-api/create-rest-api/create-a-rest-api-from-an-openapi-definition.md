@@ -1,6 +1,6 @@
 ---
 title: "Create a REST API from an OpenAPI Definition"
-description: "Step-by-step walkthrough for importing an OpenAPI or Swagger definition into WSO2 API Manager to create a REST API, using the Publisher Portal's Import OpenAPI flow with the Petstore sample."
+description: "Import an OpenAPI or Swagger definition to create a REST API, using the Publisher's Import OpenAPI flow with the Petstore sample."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md
 tags:

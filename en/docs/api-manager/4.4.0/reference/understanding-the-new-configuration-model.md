@@ -1,6 +1,6 @@
 ---
 title: "Understanding the New Configuration Model"
-description: "How WSO2 API Manager's TOML-based deployment.toml configuration model maps to the legacy XML configuration files, using .j2 templates and default.json to identify override parameters."
+description: "How API Manager's TOML-based deployment.toml configuration model maps to legacy XML files, using .j2 templates and default.json overrides."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/understanding-the-new-configuration-model/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/understanding-the-new-configuration-model.md
 tags:

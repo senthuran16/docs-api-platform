@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Overview"
-description: "Overview of WSO2 API Manager's main capabilities: designing and publishing APIs, making them discoverable, securing them, applying rate limiting, and gaining analytics insights."
+description: "Overview of WSO2 API Manager's capabilities: designing, publishing, discovering, securing, rate limiting, and analyzing APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/get-started/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/get-started/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-lifecycle-management
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Overview

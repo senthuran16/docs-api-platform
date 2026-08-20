@@ -1,6 +1,6 @@
 ---
 title: "Overriding the Developer Portal Theme"
-description: "Customize the WSO2 API Manager Developer Portal appearance by overriding userTheme.json globally, or by uploading a tenant theme package via the Admin Portal to change logos, CSS, and login page branding."
+description: "Customize the Developer Portal appearance by overriding userTheme.json globally, or uploading a tenant theme package via the Admin Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md
 tags:

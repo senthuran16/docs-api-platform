@@ -9,7 +9,7 @@ tags:
   - api-consumption
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Consumer API - Overview

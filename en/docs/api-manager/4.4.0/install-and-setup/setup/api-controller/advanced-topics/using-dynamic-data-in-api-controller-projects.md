@@ -1,6 +1,6 @@
 ---
 title: "Using Dynamic Data in API Controller Projects"
-description: "Use environment variables to inject dynamic values into apictl project files, including environment configurations (params.yaml) and operation policy templates, for CI/CD-friendly API imports."
+description: "Use environment variables to inject dynamic values into apictl project files, including params.yaml and operation policy templates, for CI/CD imports."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects.md
 tags:

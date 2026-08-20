@@ -1,3 +1,4 @@
+
 ## Step 3 - Deploy the API
 
 [Deploy the API](../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/) in order to make the API available in the respective Gateway.

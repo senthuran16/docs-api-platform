@@ -1,6 +1,6 @@
 ---
 title: "Working with Databases"
-description: "Overview of the default H2 databases shipped with WSO2 API Manager and how to switch to a production-grade RDBMS such as MySQL, Oracle, PostgreSQL, MSSQL, or IBM DB2."
+description: "Overview of the default H2 databases shipped with API Manager and how to switch to a production-grade RDBMS such as MySQL or PostgreSQL."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - rdbms
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Working with Databases

@@ -1,6 +1,6 @@
 ---
 title: "Scenario 9 - Realtime Data with a WebSocket API"
-description: "Expose real-time train location events processed by WSO2 Streaming Integrator as a WebSocket API in API Manager, then subscribe and invoke it from the Developer Portal using wscat."
+description: "Expose real-time train location events from Streaming Integrator as a WebSocket API, then invoke it using wscat."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario9-realtime-data/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario9-realtime-data.md
 tags:

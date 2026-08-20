@@ -1,6 +1,6 @@
 ---
 title: "Client Credentials Grant"
-description: "Configure and use the OAuth2 Client Credentials grant type in WSO2 API Manager: enable the grant, generate consumer key and secret, and invoke the Token API to obtain access tokens with or without a scope."
+description: "Configure the OAuth2 Client Credentials grant, generate a consumer key and secret, and invoke the Token API for access tokens."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/grant-types/client-credentials-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/oauth2/grant-types/client-credentials-grant.md
 tags:
@@ -117,4 +117,4 @@ If you want to **disable the Client Credentials grant type** in the API-M instan
 
 ### Refresh Token grant type - supported or not
 
-The Client Credentials grant type **does not support** the Refresh Token grant type. This grant type does not issue a refresh token which can be used to obtain new access tokens using the [refresh token grant](../../../../learn/api-security/oauth2/grant-types/refresh-token-grant.md).
+The Client Credentials grant type **does not support** the Refresh Token grant type. This grant type does not issue a refresh token which can be used to obtain new access tokens using the [refresh token grant](refresh-token-grant.md).

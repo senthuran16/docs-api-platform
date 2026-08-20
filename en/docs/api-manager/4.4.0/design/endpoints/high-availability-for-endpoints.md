@@ -1,6 +1,6 @@
 ---
 title: "Configure High Availability for API Endpoints"
-description: "Configure load balancing and failover endpoint groups for an API in WSO2 API Manager, including load balancing algorithms, session management, and session timeout settings."
+description: "Configure load balancing and failover endpoint groups for an API, including algorithms, session management, and timeouts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/high-availability-for-endpoints/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/high-availability-for-endpoints.md
 tags:

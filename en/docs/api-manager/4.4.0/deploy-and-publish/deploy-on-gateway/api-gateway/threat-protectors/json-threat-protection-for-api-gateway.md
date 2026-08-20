@@ -1,6 +1,6 @@
 ---
 title: "JSON Threat Protection for API Gateway"
-description: "Configure the JSON threat protector in WSO2 API Manager to limit property count, string length, array size, key length, and JSON depth in request payloads, guarding against JSON-based payload attacks."
+description: "Configure the JSON threat protector to limit property count, string length, array size, key length, and JSON depth in request payloads."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/json-threat-protection-for-api-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/json-threat-protection-for-api-gateway.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Prototyped APIs (Pre-Released APIs) Overview"
-description: "Overview of the PRE-RELEASED lifecycle state in WSO2 API Manager, covering mock implementation endpoints and exposing a real backend early for subscriber feedback before publishing."
+description: "Overview of the PRE-RELEASED lifecycle state: mock implementation endpoints and exposing a real backend early for feedback."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/prototype-api/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/prototype-api/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - lifecycle-management
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Prototyped APIs (Pre-Released APIs)

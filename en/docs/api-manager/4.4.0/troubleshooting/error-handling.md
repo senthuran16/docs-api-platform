@@ -1,6 +1,6 @@
 ---
 title: "Error Handling"
-description: "Reference for WSO2 API Manager's default fault sequences, error codes (API handler, sequence, and transport level), and how to override error responses with a custom fault sequence."
+description: "Reference WSO2 API Manager's default fault sequences and error codes, and learn to override error responses with a custom fault sequence."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/error-handling/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/error-handling.md
 tags:

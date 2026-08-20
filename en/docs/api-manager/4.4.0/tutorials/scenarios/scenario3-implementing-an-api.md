@@ -1,6 +1,6 @@
 ---
 title: "Scenario 3 - Implementing an API"
-description: "Tutorial walkthrough using WSO2 Micro Integrator to aggregate data from three telecom backend services into a single API, then expose and invoke it through API Manager's Developer Portal."
+description: "Use Micro Integrator to aggregate data from three telecom backend services into one API, exposed via the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario3-implementing-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario3-implementing-an-api.md
 tags:

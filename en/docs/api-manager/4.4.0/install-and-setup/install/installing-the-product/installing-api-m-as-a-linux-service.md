@@ -1,6 +1,6 @@
 ---
 title: "Run API Manager as a Linux Service"
-description: "Configure WSO2 API Manager to run as a Linux service using a startup script registered with update-rc.d, including CARBON_HOME setup and runlevel configuration."
+description: "Configure WSO2 API Manager to run as a Linux service using update-rc.d, including CARBON_HOME setup and startup script runlevel configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service.md
 tags:
@@ -22,7 +22,7 @@ content_type: "how-to"
 
     **Before you begin:**
 
-    - See [our compatibility matrix](../../../install-and-setup/ProductCompatibility.md) to check the compatible JDK versions. 
+    - See [our compatibility matrix](../../setup/reference/product-compatibility.md) to check the compatible JDK versions. 
     - Set up the `JAVA_HOME` environment variable.
 
 #### Setting up CARBON\_HOME

@@ -1,6 +1,6 @@
 ---
 title: "Configuring Logging in WSO2 API Manager"
-description: "Configure Carbon logs, tenant and component-level loggers, and log levels via log4j2.properties, enable Gateway Wire Logs to trace HTTP traffic, and reference HTTP Access, Audit, and API Logs in WSO2 API Manager."
+description: "Configure Carbon logs, log levels, and Gateway Wire Logs in WSO2 API Manager, and find HTTP access, audit, and API log references."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/logging-and-monitoring/logging/configuring-logging/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/logging-and-monitoring/logging/configuring-logging.md
 tags:

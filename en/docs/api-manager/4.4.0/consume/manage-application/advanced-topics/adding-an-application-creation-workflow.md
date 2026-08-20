@@ -1,6 +1,6 @@
 ---
 title: "Adding an Application Creation Workflow"
-description: "Attach an approval workflow to application creation in API Manager by engaging the Approval Workflow Executor, so application requests must be approved or rejected from the Admin Portal before becoming active."
+description: "Attach an approval workflow to application creation so requests must be approved or rejected from the Admin Portal before becoming active."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow.md
 tags:

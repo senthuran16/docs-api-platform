@@ -1,6 +1,6 @@
 ---
 title: "Create an API Using a Service"
-description: "Create a REST or Streaming API in WSO2 API Manager by discovering an integration or streaming integration service from the Service Catalog and generating an API from it."
+description: "Create a REST or Streaming API by discovering an integration service from the Service Catalog and generating an API from it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-an-api-using-a-service/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-an-api-using-a-service.md
 tags:
@@ -32,7 +32,7 @@ More information:
 
 Follow the instructions below to discover the integration services:
 
-1.  {!includes/sign-in-publisher.md!}
+1.  --8<-- "api-manager/4.4.0/includes/sign-in-publisher.md"
 
 2.  Click **Services**.
 

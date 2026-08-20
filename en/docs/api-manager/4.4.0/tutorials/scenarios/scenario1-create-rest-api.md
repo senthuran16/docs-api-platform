@@ -1,6 +1,6 @@
 ---
 title: "Scenario 1: Create a REST API from an OpenAPI Definition"
-description: "Walk through importing an OpenAPI definition to create a REST API in WSO2 API Manager, remove resource-level authentication, deploy it to the Gateway, test it with the Try Out console, and publish it to the Developer Portal."
+description: "Import an OpenAPI definition to create a REST API, deploy it to the Gateway, test it, and publish it to the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario1-create-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario1-create-rest-api.md
 tags:

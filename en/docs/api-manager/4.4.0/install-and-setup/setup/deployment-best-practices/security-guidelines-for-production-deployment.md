@@ -1,6 +1,6 @@
 ---
 title: "Security Guidelines for Production Deployment"
-description: "Runtime, OS-level, and network-level security guidelines for deploying WSO2 API Manager in a production environment, covering TLS, keystores, credentials, logging, firewalls, and DMZ access controls."
+description: "Runtime, OS-level, and network-level security guidelines for a production API Manager deployment, covering TLS, keystores, and access controls."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment.md
 tags:
@@ -254,7 +254,7 @@ logging in API Manage</a>.</p></td>
 <p><br />
 </p></td>
 <td><p>The recommended JDK version is JDK 8 or 11. For more information, see <a 
-href="../../../../install-and-setup/setup/reference/product-compatibility/#tested-operating-systems-and-jdks">Tested Operating Systems and JDKs</a>.</p>
+href="../../../../install-and-setup/setup/reference/product-compatibility/#api-m-runtime-compatibility">Tested Operating Systems and JDKs</a>.</p>
 <p>You do not need to set the Heap and Permgen values for the JVM from JDK 1.8 onwards as the <code>MaxPermSize</code> value has 
 been removed from Hotspot JVM.</p>
 </td>

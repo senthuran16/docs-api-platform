@@ -1,6 +1,6 @@
 ---
 title: "Set Up Google reCAPTCHA"
-description: "Register a Google reCAPTCHA API key pair, configure the site key and secret in deployment.toml, and enable reCAPTCHA for the WSO2 API Manager login from the Carbon console."
+description: "Register a Google reCAPTCHA key pair, configure the site key and secret in deployment.toml, and enable reCAPTCHA for the API Manager login."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha.md
 tags:

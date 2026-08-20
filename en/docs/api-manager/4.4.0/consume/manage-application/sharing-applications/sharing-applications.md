@@ -1,6 +1,6 @@
 ---
 title: "Sharing Applications"
-description: "Enable application sharing in WSO2 API Manager so users in the same organization group can view, subscribe with, and access each other's applications, and learn to extend the group ID extractor."
+description: "Enable application sharing so users in the same organization group can view, subscribe with, and access each other's applications."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/sharing-applications/sharing-applications/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-application/sharing-applications/sharing-applications.md
 tags:

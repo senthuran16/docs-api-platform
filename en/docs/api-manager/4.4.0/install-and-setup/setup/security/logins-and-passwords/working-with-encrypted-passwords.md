@@ -1,6 +1,6 @@
 ---
 title: "Encrypt Passwords in Configuration Files"
-description: "Use the Secure Vault and Cipher tool to encrypt plain text passwords in deployment.toml, secure API backend endpoint credentials, change already encrypted passwords, and resolve encrypted passwords during server startup."
+description: "Use the Secure Vault to encrypt plain text passwords in deployment.toml, secure backend endpoint credentials, and resolve them at startup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/working-with-encrypted-passwords/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/working-with-encrypted-passwords.md
 tags:
@@ -85,7 +85,7 @@ The instructions below explain how plain text passwords in configuration files c
         ``` 
        
     !!! Note
-        You can also replace your passwords by referring values passed by environment variables and system properties. For instructions, see [Set Passwords using Environment Variables/System Properties](../../../../administer/product-security/logins-and-passwords/set-passwords-using-vars-and-sys-props.md)
+        You can also replace your passwords by referring values passed by environment variables and system properties. For instructions, see [Set Passwords using Environment Variables/System Properties](set-passwords-using-vars-and-sys-props.md)
        
 4.  Encrypt the passwords.
     1. Open a terminal and navigate to the `<APIM_HOME>/bin` directory.
@@ -207,7 +207,7 @@ Follow the instructions below to change any password that you have already encry
 
 !!! Note
     If you have secured the plain text passwords in configuration files using Secure Vault, the keystore password and private key password of the product's [primary keystore](../../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md) will serve as the root passwords for Secure Vault, if you have not configured a separate [internal keystore](../../../../install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md#configuring-the-internal-keystore). This is because the keystore passwords are needed to initialize the values encrypted by the **Secret Manager** in the **Secret Repository**. Therefore, the **Secret Callback 
-    handler** is used to resolve these passwords. The default secret CallbackHandler provides the two options given below. For more information on secure vault concepts, see [Secure Vault concepts](../../../../administer/product-security/logins-and-passwords/carbon-secure-vault-implementation.md#elements-of-the-secure-vault-implementation).
+    handler** is used to resolve these passwords. The default secret CallbackHandler provides the two options given below. For more information on secure vault concepts, see [Secure Vault concepts](carbon-secure-vault-implementation.md#elements-of-the-secure-vault-implementation).
 
 
 ### Enter password in command-line

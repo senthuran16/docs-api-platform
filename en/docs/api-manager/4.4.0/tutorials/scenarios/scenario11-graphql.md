@@ -1,6 +1,6 @@
 ---
 title: "Tutorial Scenario 11 - Expose a GraphQL API"
-description: "Walk through creating a GraphQL API in WSO2 API Manager by importing a GraphQL SDL schema, then publish, subscribe to, and invoke it from the Developer Portal."
+description: "Create a GraphQL API by importing a GraphQL SDL schema, then publish, subscribe to, and invoke it from the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario11-graphql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario11-graphql.md
 tags:

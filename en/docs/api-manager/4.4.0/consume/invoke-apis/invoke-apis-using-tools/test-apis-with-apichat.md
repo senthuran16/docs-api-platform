@@ -1,6 +1,6 @@
 ---
 title: "Test APIs with API Chat"
-description: "Configure the AI Subscription Portal and API Manager to enable API Chat, then test a REST API by invoking its resources using natural-language queries in the Developer Portal."
+description: "Configure the AI Subscription Portal and API Manager to enable API Chat, then test a REST API using natural-language queries."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Role-Based Access Control for the Admin Portal"
-description: "Restrict access to sections of the Admin Portal by creating a role, assigning it to a user, and mapping specific admin scopes such as key manager, rate limiting, and gateway management scopes to that role."
+description: "Restrict access to Admin Portal sections by creating a role and mapping admin scopes such as key manager and rate limiting to it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/role-based-access-control/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/role-based-access-control.md
 tags:

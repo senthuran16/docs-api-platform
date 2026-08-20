@@ -1,6 +1,6 @@
 ---
 title: "Production Deployment Checklist"
-description: "Checklist of best practices for preparing a WSO2 API Manager production environment, covering security hardening, hostname configuration, registry setup, performance tuning, firewalls, proxy servers, high availability, and backups."
+description: "Checklist of best practices for preparing an API Manager production environment: security, hostnames, registry, performance, firewalls, and backups."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - production-readiness
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Production Deployment Checklist
@@ -84,7 +84,7 @@ Given below is a checklist that will guide you to set up your production environ
                <p>The Micro Integrator runtime uses a file-based registry instead of a database.</p>
                <ul>
                   <li>
-                     <a href="../../../../install-and-setup/setup/mi-setup/deployment/file_based_registry/">File-based registry</a> for the Micro Integrator. runtime.
+                     <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/deployment/file-based-registry/">File-based registry</a> for the Micro Integrator runtime.
                   </li>
                </ul>
             </div>
@@ -134,7 +134,7 @@ Given below is a checklist that will guide you to set up your production environ
             If the runtime is hosted behind a proxy such as ApacheHTTPD, you can configure the runtime  to use the proxy server. See the following topics for instructions:
             <ul>
                <li>Configuring a <a href="../../../../install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/">proxy server for the API-M runtime</a>.</li>
-               <li>Configuring a <a href="../../../../install-and-setup/setup/mi-setup/configuring_proxy_servers/">proxy server for the Micro Integrator runtime</a>.</li>
+               <li>Configuring a <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/configuring-proxy-servers/">proxy server for the Micro Integrator runtime</a>.</li>
             </ul>
          </td>
       </tr>

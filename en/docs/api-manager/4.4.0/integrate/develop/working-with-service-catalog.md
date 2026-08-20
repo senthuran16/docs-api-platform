@@ -1,6 +1,6 @@
 ---
 title: "Publish Integrations to API Manager"
-description: "Publish a REST API artifact developed in WSO2 Integration Studio from the Micro Integrator runtime to the API Manager layer using the Service Catalog client, so it can be created, deployed, and published as a managed API."
+description: "Publish a REST API built in WSO2 Integration Studio from the Micro Integrator runtime to the API Manager layer via the Service Catalog."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/integrate/develop/working-with-service-catalog/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/integrate/develop/working-with-service-catalog.md
 tags:
@@ -93,7 +93,7 @@ username = "admin"
 password = "admin"
 ```
 
-See the descriptions of the [service catalog parameters](../../reference/config-catalog-mi.md#service-catalog-client).
+See the descriptions of the service catalog parameters in the WSO2 Micro Integrator documentation at [mi.docs.wso2.com](https://mi.docs.wso2.com/en/latest/).
 
 ## Step 3 - Start the servers
 

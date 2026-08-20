@@ -1,6 +1,6 @@
 ---
 title: "Customizing a Workflow Extension"
-description: "Override the execute() and complete() methods of the WorkflowExecutor abstract class to build a custom workflow extension, using a subscription-creation email-notification executor as a worked example, then deploy and register it in API Manager."
+description: "Override the execute() and complete() methods of WorkflowExecutor to build a custom workflow extension, then deploy and register it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-workflows/customizing-a-workflow-extension/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-workflows/customizing-a-workflow-extension.md
 tags:

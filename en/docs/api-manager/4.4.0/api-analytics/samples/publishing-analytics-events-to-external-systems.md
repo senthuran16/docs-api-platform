@@ -1,6 +1,6 @@
 ---
 title: "Publishing Analytics Events to External Systems"
-description: "Create and deploy a custom event publisher to send WSO2 API Manager analytics data to an external system, and visualize the published events using the ELK stack."
+description: "Create and deploy a custom event publisher to send WSO2 API Manager analytics data to an external system such as the ELK stack."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/samples/publishing-analytics-events-to-external-systems/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/samples/publishing-analytics-events-to-external-systems.md
 tags:
@@ -170,7 +170,7 @@ This section will guide you through the steps required to visualize the publishe
               - /<API-M_HOME>/repository/logs/wso2carbon.log
         ```
 
-2. [Set up assets]((https://www.elastic.co/guide/en/beats/filebeat/7.13/filebeat-installation-configuration.html#setup-assets)). 
+2. [Set up assets](https://www.elastic.co/guide/en/beats/filebeat/7.13/filebeat-installation-configuration.html#setup-assets). 
          
     !!! tip
         In case of a failure with the above command, run the following command to set up assets.

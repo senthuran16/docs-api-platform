@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Deployment Overview"
-description: "Compare WSO2 API Manager deployment patterns - standard HA, standard HA with multitenancy, simple scalable, and simple scalable with Traffic Manager separation - and find links to set up the API-M and integration clusters for each."
+description: "Compare API Manager deployment patterns—standard HA, HA with multitenancy, and simple scalable—and find links to set up each cluster."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - high-availability
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # WSO2 API Manager Deployment Overview
@@ -43,10 +43,10 @@ The integration cluster may be a Micro Integrator cluster or a Streaming Integra
 
 <ul>
     <li>
-        <a href="../../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/">Micro Integrator Cluster with Minimum High Availability</a>
+        <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/deployment/deploying-wso2-mi/">Micro Integrator Cluster with Minimum High Availability</a> in the WSO2 Micro Integrator documentation
     </li>
     <li>
-        <a href="../../../install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster/">Streaming Integrator Cluster with Minimum High Availability</a>
+        Streaming Integrator Cluster with Minimum High Availability (see the WSO2 Streaming Integrator documentation)
     </li>
 </ul>
 
@@ -77,10 +77,10 @@ The integration cluster consists of two nodes of the integration runtime for eac
 
 <ul>
     <li>
-        <a href="../../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/">Micro Integrator Cluster with Minimum High Availability</a>
+        <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/deployment/deploying-wso2-mi/">Micro Integrator Cluster with Minimum High Availability</a> in the WSO2 Micro Integrator documentation
     </li>
     <li>
-        <a href="../../../install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster/">Streaming Integrator Cluster with Minimum High Availability</a>
+        Streaming Integrator Cluster with Minimum High Availability (see the WSO2 Streaming Integrator documentation)
     </li>
 </ul>
 
@@ -126,10 +126,10 @@ The integration cluster consist of a minimum of two nodes of the integration run
 
 <ul>
     <li>
-        <a href="../../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/">Micro Integrator Cluster with Minimum High Availability</a>
+        <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/deployment/deploying-wso2-mi/">Micro Integrator Cluster with Minimum High Availability</a> in the WSO2 Micro Integrator documentation
     </li>
     <li>
-        <a href="../../../install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster/">Streaming Integrator Cluster with Minimum High Availability</a>
+        Streaming Integrator Cluster with Minimum High Availability (see the WSO2 Streaming Integrator documentation)
     </li>
 </ul>
 
@@ -184,9 +184,9 @@ The integration cluster consist of a minimum of two nodes of the integration run
 
 <ul>
     <li>
-        <a href="../../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/">Micro Integrator Cluster with Minimum High Availability</a>
+        <a href="https://mi.docs.wso2.com/en/latest/install-and-setup/setup/deployment/deploying-wso2-mi/">Micro Integrator Cluster with Minimum High Availability</a> in the WSO2 Micro Integrator documentation
     </li>
     <li>
-        <a href="../../../install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster/">Streaming Integrator Cluster with Minimum High Availability</a>
+        Streaming Integrator Cluster with Minimum High Availability (see the WSO2 Streaming Integrator documentation)
     </li>
 </ul>

@@ -1,6 +1,6 @@
 ---
 title: "Creating Custom Users to Perform apictl Operations"
-description: "Create custom users and roles for the API Controller (apictl) by assigning the Internal/devops role or a custom role with the minimal scopes required for specific apictl operations."
+description: "Create custom users and roles for apictl by assigning the Internal/devops role or a custom role scoped to specific apictl operations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md
 tags:
@@ -23,7 +23,7 @@ Further, you can create your own custom user with a custom role to perform speci
 !!! info
     **Steps to create a custom user with a custom role for your need** 
 
-    - As shown in [Create user roles](../../../../administer/managing-users-and-roles/managing-user-roles.md#create-user-roles) section, you can create your own custom user role by assigning scopes that are required to perform a particular set of apictl operations by referring the table below.
+    - As shown in [Create user roles](../../../../administer/managing-users-and-roles/managing-user-roles.md#creating-user-roles) section, you can create your own custom user role by assigning scopes that are required to perform a particular set of apictl operations by referring the table below.
     - Then, create a user as explained in [Adding a new User](../../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user), by assigning the custom role that you created in the above step, to that user.
     - Now you can login to apictl (using `apictl login <env-name>` command) and perform the particular set of operations as per your need.
 

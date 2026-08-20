@@ -1,6 +1,6 @@
 ---
 title: "Performance Test Results for Asynchronous APIs"
-description: "Performance test results and key observations for WSO2 API Manager's streaming API protocols: Server Sent Events (SSE), WebSub/WebHook, and WebSocket, including the all-in-one test deployment setup and CPU/memory/error-rate measurements."
+description: "Performance test results for API Manager's streaming protocols: Server Sent Events, WebSub/WebHook, and WebSocket, with CPU, memory, and error rates."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/performance-tests-results-async/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/performance-tests-results-async.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Publish an API to Multiple External Developer Portals"
-description: "Configure the external-api-stores.xml registry file so an API Publisher can advertise APIs across the Developer Portals of other tenants and nodes, using a two-instance WSO2 API Manager example."
+description: "Configure the external-api-stores.xml file so a Publisher can advertise APIs across the Developer Portals of other tenants and nodes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/publish-on-dev-portal/publish-to-multiple-external-api-stores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/publish-on-dev-portal/publish-to-multiple-external-api-stores.md
 tags:

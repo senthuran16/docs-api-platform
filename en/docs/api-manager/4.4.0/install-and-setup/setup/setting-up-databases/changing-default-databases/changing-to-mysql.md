@@ -1,6 +1,6 @@
 ---
 title: "Changing to MySQL"
-description: "Replace the default embedded H2 database with MySQL in WSO2 API Manager: create the databases and users, set up the JDBC driver, run the DB scripts, and configure the datasource connections."
+description: "Replace the default H2 database with MySQL in API Manager: create databases and users, set up the JDBC driver, and configure datasources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql.md
 tags:
@@ -556,7 +556,7 @@ Follow the  instructions below to change the type of the default datasources.
 1.  Restart the server.
 
     !!! note
-        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, see [Configuring Userstores](../../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
+        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, see [Configuring Userstores](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
 
     !!! info
         **Changing WSO2CARBON_DB to MySQL**

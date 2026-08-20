@@ -1,6 +1,6 @@
 ---
 title: "Secure a Backend Endpoint with Basic Auth"
-description: "Configure Basic Authentication as the endpoint security type for a Production or Sandbox backend endpoint in the API Publisher, so credentials are sent as a Base64-encoded Authorization header."
+description: "Configure Basic Authentication for a Production or Sandbox backend endpoint so credentials are sent as a Base64 header."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-security/basic-auth/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-security/basic-auth.md
 tags:
@@ -32,7 +32,7 @@ Follow the instructions below to use Basic Auth as the endpoint authentication t
 
 2. Click the Endpoint Security symbol of the endpoint that you want to secure with Basic Auth.
 
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 
 3. Select **Basic Auth** as the endpoint authentication type from the drop-down menu.
 

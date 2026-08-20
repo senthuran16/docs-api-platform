@@ -1,6 +1,6 @@
 ---
 title: "Configure the Global Key Manager"
-description: "Enable global key manager support in WSO2 API Manager so a single token from the super tenant's key manager can invoke subscribed APIs across multiple tenants."
+description: "Enable the global key manager in WSO2 API Manager so a super tenant token can invoke subscribed APIs across multiple tenants."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-global-key-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-global-key-manager.md
 tags:

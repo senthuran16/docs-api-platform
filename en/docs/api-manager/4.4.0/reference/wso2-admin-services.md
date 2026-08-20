@@ -1,6 +1,6 @@
 ---
 title: "WSO2 Admin Services"
-description: "Discover the WSDLs of WSO2 API Manager's internal SOAP admin services via the OSGi console, then authenticate and invoke them directly using generated Axis2 client stubs."
+description: "Discover the WSDLs of API Manager's internal SOAP admin services via the OSGi console, then invoke them using generated Axis2 client stubs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/wso2-admin-services/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/wso2-admin-services.md
 tags:
@@ -26,7 +26,7 @@ There can be instances where you want to call back-end web services directly. Fo
 
 ## Discovering the admin services
 
-By default, the WSDLs of admin services are hidden from consumers. Follow the instructions below to discover the WSDLs of the admin services using the [OSGi](https://www.osgi.org/developer/) console.
+By default, the WSDLs of admin services are hidden from consumers. Follow the instructions below to discover the WSDLs of the admin services using the OSGi console.
 
 1. Add the following configuration to the `<API-M_HOME>/repository/conf/deployment.toml` file.
 

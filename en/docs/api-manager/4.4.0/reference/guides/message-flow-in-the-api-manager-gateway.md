@@ -1,6 +1,6 @@
 ---
 title: "Message Flow in the API Manager Gateway"
-description: "Explains how requests and responses move through the API Manager Gateway, covering the request/response handlers, mediation extensions, and the in sequence and out sequence."
+description: "How requests and responses move through the API Manager Gateway, covering request and response handlers, mediation extensions, and sequences."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/guides/message-flow-in-the-api-manager-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/guides/message-flow-in-the-api-manager-gateway.md
 tags:

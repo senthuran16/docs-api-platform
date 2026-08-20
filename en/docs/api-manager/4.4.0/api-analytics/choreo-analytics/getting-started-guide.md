@@ -1,6 +1,6 @@
 ---
 title: "Get Started with Choreo Based API Analytics"
-description: "Sign in to Choreo, register your on-premise environment, configure the API Gateway to publish analytics data to the Choreo Analytics Cloud, and view API Insights dashboards."
+description: "Sign in to Choreo, register your on-premise environment, configure the Gateway to publish analytics data, and view API Insights dashboards."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/choreo-analytics/getting-started-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/choreo-analytics/getting-started-guide.md
 tags:
@@ -94,7 +94,7 @@ If your system connects to the service through a proxy server/firewall, you need
 
 ### Basic configurations
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.4.0/includes/analytics/configure-synapse-gateway.md"
 
 ### Advanced configurations
 

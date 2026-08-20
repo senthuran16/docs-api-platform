@@ -1,6 +1,6 @@
 ---
 title: "Configure API Monetization Category Labels"
-description: "Configure the EnableMonetization and IsUnlimitedTierPaid Admin Console properties to display Free, Paid, or Freemium monetization category labels for APIs in the Developer Portal."
+description: "Configure the EnableMonetization and IsUnlimitedTierPaid properties to show Free, Paid, or Freemium labels in the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-monetization/configuring-api-monetization-category-labels/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-monetization/configuring-api-monetization-category-labels.md
 tags:

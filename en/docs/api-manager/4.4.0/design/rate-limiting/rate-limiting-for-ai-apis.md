@@ -1,6 +1,6 @@
 ---
 title: "Rate Limiting for AI APIs"
-description: "Configure token-based rate limiting for AI APIs in WSO2 API Manager by creating subscription throttling policies that limit request count, total token count, prompt token count, and completion token count."
+description: "Configure token-based rate limiting for AI APIs with subscription policies that limit request, prompt, and completion token counts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/rate-limiting-for-ai-apis/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/rate-limiting-for-ai-apis.md
 tags:

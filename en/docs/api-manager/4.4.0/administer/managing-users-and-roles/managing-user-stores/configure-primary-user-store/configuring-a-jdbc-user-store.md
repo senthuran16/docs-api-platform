@@ -1,6 +1,6 @@
 ---
 title: "Configure a JDBC User Store"
-description: "Configure a JDBC user store as the primary user store for WSO2 API Manager using deployment.toml, including user store manager, admin user, datasource, and JDBC driver setup."
+description: "Configure a JDBC user store as the primary user store for WSO2 API Manager via deployment.toml, including datasource and driver setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md
 tags:
@@ -22,7 +22,7 @@ JDBC user stores can be configured using the <APIM_HOME>/repository/conf/deploym
 You can either use the default configuration or you can change it in the following ways:
 
 -   You can set up two separate databases for the Authorization Manager and the User Store Manager.
--   It is not recommended to use the default H2 database in production. Therefore, you can replace them with a different RDBMS. For instructions on setting up a new RDBMS and configuring it for your system, see [Setting Up Databases](../../../../install-and-setup/setting-up-databases/overview.md).
+-   It is not recommended to use the default H2 database in production. Therefore, you can replace them with a different RDBMS. For instructions on setting up a new RDBMS and configuring it for your system, see [Setting Up Databases](../../../../install-and-setup/setup/setting-up-databases/overview.md).
 
 !!!tip
     Before you begin, ensure that the RDBMS that you want to use as the JDBC user store is correctly set up for your system. Then, follow the steps given below to configure a JDBC user store as the primary user store in your product.

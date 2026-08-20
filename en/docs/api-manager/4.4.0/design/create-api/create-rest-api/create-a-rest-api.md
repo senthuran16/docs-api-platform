@@ -1,6 +1,6 @@
 ---
 title: "Create a REST API"
-description: "Create a REST API in WSO2 API Publisher by linking a backend implementation, configuring API details, resources, security, and runtime settings using the basic creation flow."
+description: "Create a REST API in the Publisher by linking a backend, and configuring API details, resources, security, and runtime settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-rest-api/create-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-rest-api/create-a-rest-api.md
 tags:

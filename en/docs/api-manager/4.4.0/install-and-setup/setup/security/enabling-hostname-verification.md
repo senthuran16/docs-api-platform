@@ -1,6 +1,6 @@
 ---
 title: "Enabling Hostname Verification"
-description: "Enable and configure hostname verification for API Manager, including DefaultAndLocalhost, Strict, and AllowAll modes, and disabling hostname verification for WebSocket transport."
+description: "Enable and configure hostname verification for API Manager, including DefaultAndLocalhost, Strict, and AllowAll modes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/enabling-hostname-verification/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/enabling-hostname-verification.md
 tags:
@@ -19,7 +19,7 @@ If hostname verification is disabled for your product, the hostnames (that are a
 !!! note
     **Important!**
     
-    Be sure to enable hostname verification for your production environment. This is necessary to avoid security issues in production. See the full list of [security recommendations for production](../../../install-and-setup/deploying-wso2-api-manager/security-guidelines-for-production-deployment.md) environments.
+    Be sure to enable hostname verification for your production environment. This is necessary to avoid security issues in production. See the full list of [security recommendations for production](../deployment-best-practices/security-guidelines-for-production-deployment.md) environments.
 
 ### Configuring hostname verification
 

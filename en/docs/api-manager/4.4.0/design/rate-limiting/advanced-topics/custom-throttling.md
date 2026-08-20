@@ -1,6 +1,6 @@
 ---
 title: "Configure Custom Rate Limiting"
-description: "Define custom rate limiting policies in API Manager by writing Siddhi queries and key templates that the Traffic Manager evaluates to throttle requests globally across tenants."
+description: "Define custom rate limiting policies by writing Siddhi queries and key templates the Traffic Manager evaluates across tenants."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/advanced-topics/custom-throttling/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/rate-limiting/advanced-topics/custom-throttling.md
 tags:

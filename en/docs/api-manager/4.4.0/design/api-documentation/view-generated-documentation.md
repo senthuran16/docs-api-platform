@@ -1,6 +1,6 @@
 ---
 title: "View Generated Documentation for REST APIs"
-description: "View the auto-generated Swagger-based documentation for a REST API in the WSO2 API Publisher by navigating to the Documents tab and opening the generated document."
+description: "View the auto-generated Swagger-based documentation for a REST API in the API Publisher's Documents tab."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-documentation/view-generated-documentation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-documentation/view-generated-documentation.md
 tags:

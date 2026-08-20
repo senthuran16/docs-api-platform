@@ -1,6 +1,6 @@
 ---
 title: "Scenario 12: Guaranteed Message Delivery"
-description: "Tutorial on implementing a store-and-forward guaranteed message delivery pattern using a Message Store and Message Processor in Micro Integrator, so registration entries reach a Catering service even when it is temporarily unavailable."
+description: "Implement store-and-forward guaranteed message delivery using a Message Store and Processor in Micro Integrator."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario12-message-delivery/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario12-message-delivery.md
 tags:

@@ -1,3 +1,4 @@
+
 **Enabling TLS/SSL for event hub JMS communications**
 
         If required, you can enable TLS/SSL for the JMS communications of event hub. Update your event hub configurations to include the following for this purpose.

@@ -1,6 +1,6 @@
 ---
 title: "Develop an Integration From a Managed API"
-description: "Tutorial on the API-first integration approach: create a REST API in WSO2 API Manager, build the backend integration in WSO2 Integration Studio, and connect it back to the published API."
+description: "API-first integration tutorial: create a REST API in API Manager, build its backend in WSO2 Integration Studio, and connect them."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/develop-an-integration-with-a-managed-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/develop-an-integration-with-a-managed-api.md
 tags:

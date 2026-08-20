@@ -1,4 +1,14 @@
 ---
+title: "Page not found"
+description: "404 error page shown when a requested WSO2 API Manager documentation page cannot be found or has moved."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/page-not-found/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/page-not-found.md
+tags:
+  - api-manager
+  - page-not-found
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-15
+content_type: "concept"
 template: templates/no-navbars.html
 ---
 

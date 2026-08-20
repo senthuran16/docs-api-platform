@@ -1,6 +1,6 @@
 ---
 title: "Generate SDKs in the Developer Portal"
-description: "Download client-side SDKs for subscribed APIs from the WSO2 API Developer Portal, and configure which languages (such as C#, Dart, Python, or Swift 5) are available for SDK generation."
+description: "Download client-side SDKs for subscribed APIs from the Developer Portal, and configure which languages are available for SDK generation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/generating-sdks/generate-sdks-in-dev-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/generating-sdks/generate-sdks-in-dev-portal.md
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Capturing System Data in Error Situations"
-description: "Use the CarbonDump tool to capture heap dumps, thread dumps, and system information from a running Carbon instance at the time of an error, for WSO2 support analysis."
+description: "Use the CarbonDump tool to capture heap dumps, thread dumps, and system information from a running Carbon instance for WSO2 support."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/capturing-system-data-in-error-situations/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/troubleshooting/capturing-system-data-in-error-situations.md
 tags:

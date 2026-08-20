@@ -1,6 +1,6 @@
 ---
 title: "Customizing User Signup in the Developer Portal"
-description: "Customize the Developer Portal self sign-up form in WSO2 API Manager by adding or modifying claim-based fields, and configure consent purposes collected from users during signup."
+description: "Customize the Developer Portal self sign-up form by adding claim-based fields, and configure consent purposes collected from users during signup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-user-signup-in-developer-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-user-signup-in-developer-portal.md
 tags:

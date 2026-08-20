@@ -1,6 +1,6 @@
 ---
 title: "Maintain Logins and Passwords"
-description: "Change the super admin credentials in deployment.toml, set up e-mail login with tenant domain usernames, and configure social media login for the Developer Portal."
+description: "Change the super admin credentials in deployment.toml, set up e-mail login, and configure social media login for the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md
 tags:
@@ -209,7 +209,7 @@ Follow the instructions below to change the default admin password:
 
 ### Setup a social media login
 
-You can auto-provision users based on a social network login by integrating the API Manager with WSO2 Identity Server. For more information, see [Log in to the API Developer Portal using Social Media](../../../../develop/customizations/log-in-to-the-dev-portal-using-social-media.md).
+You can auto-provision users based on a social network login by integrating the API Manager with WSO2 Identity Server. For more information, see [Log in to the API Developer Portal using Social Media](../../../../reference/customize-product/customizations/log-in-to-the-dev-portal-using-social-media.md).
 
 !!! note
     Note that auto-provision users based on a social network login are not supported in a **multi-tenant environment**.

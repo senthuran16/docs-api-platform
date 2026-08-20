@@ -1,6 +1,6 @@
 ---
 title: "Expose a SOAP Service as a REST API"
-description: "Tutorial walking through designing a Pass Through API from a SOAP/WSDL backend in API Publisher, publishing it, and invoking it as a REST API with a generated access token."
+description: "Design a Pass Through API from a SOAP/WSDL backend in the API Publisher, publish it, and invoke it as a REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/expose-a-soap-service-as-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/expose-a-soap-service-as-a-rest-api.md
 tags:

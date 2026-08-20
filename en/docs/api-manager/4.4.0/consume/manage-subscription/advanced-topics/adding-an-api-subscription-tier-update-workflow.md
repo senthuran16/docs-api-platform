@@ -1,6 +1,6 @@
 ---
 title: "Add a Subscription Tier Update Workflow"
-description: "Engage the SubscriptionUpdateApprovalWorkflowExecutor so an admin or publisher must approve or reject subscription tier change requests before they take effect."
+description: "Engage the subscription tier update workflow so an admin or publisher must approve or reject subscription tier change requests."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow.md
 tags:

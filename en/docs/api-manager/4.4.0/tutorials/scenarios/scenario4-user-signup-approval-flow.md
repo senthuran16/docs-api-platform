@@ -1,6 +1,6 @@
 ---
 title: "Scenario 4 - Signing up a New User"
-description: "Set up a self-signup approval workflow in WSO2 API Manager, register a new external user through the Developer Portal, and approve the signup request from the Admin Portal."
+description: "Set up a self-signup approval workflow: register a new user via the Developer Portal and approve it from the Admin Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario4-user-signup-approval-flow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/tutorials/scenarios/scenario4-user-signup-approval-flow.md
 tags:

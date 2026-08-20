@@ -1,6 +1,6 @@
 ---
 title: "Configure WSO2 Identity Server as a Resident Key Manager"
-description: "Set up WSO2 Identity Server as the Resident Key Manager for a distributed WSO2 API Manager deployment, covering database sharing, the IS connector, deployment.toml configuration, and optional HA."
+description: "Set up WSO2 Identity Server as the Resident Key Manager for a distributed API Manager deployment, covering database sharing and optional HA."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
 tags:
@@ -73,7 +73,7 @@ Follow the instructions below to set up and configure the databases for the WSO2
     !!! warning
         If you have already created and set up the database (`WSO2_SHARED_DB`) for WSO2 API Manager, you only need to configure the data source configurations in the WSO2 IS node for it to connect with the required databases and act as the Key Manager.
 
-     <a name="#step3-2"></a>
+     <a name="step3-2"></a>
 
 2. Share `WSO2_SHARED_DB`with WSO2 IS.
 
@@ -293,7 +293,7 @@ Follow the instructions below to set up and configure the databases for the WSO2
 
 ## Step 5 - Configure WSO2 API-M with the WSO2 IS
 
-1. By default, WSO2 API Manager and WSO2 Identity Server come with a JDBC User Store as the primary userstore. If you wish to use any other type of user store (e.g., LDAP, Active Directory, etc.) in WSO2 IS, it has to be configured in the API Manager nodes. For more information, see [Configuring the Primary User Store](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md) and apply the relevant configs to plug in a new user store.
+1. By default, WSO2 API Manager and WSO2 Identity Server come with a JDBC User Store as the primary userstore. If you wish to use any other type of user store (e.g., LDAP, Active Directory, etc.) in WSO2 IS, it has to be configured in the API Manager nodes. For more information, see [Configuring the Primary User Store](../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md) and apply the relevant configs to plug in a new user store.
   
     Add below configuration in `<APIM_HOME>/repository/conf/deployment.toml`
   
@@ -323,13 +323,15 @@ Follow the instructions below to set up and configure the databases for the WSO2
 
 Start WSO2 Identity Server for the changes to take effect. For more information, see [Running the Product](https://is.docs.wso2.com/en/5.10.0/setup/running-the-product/) in the WSO2 Identity Server documentation.
 
-   -   [**Linux/Mac OS**](#Linux-Mac)
+   <a name="Linux-Mac"></a>
+-   [**Linux/Mac OS**](#Linux-Mac)
         ``` java
         cd <IS_KM_HOME>>/bin/
         sh wso2server.sh 
         ```
        
-   -   [**Windows**](#windows)
+   <a name="windows"></a>
+-   [**Windows**](#windows)
         ``` java
         cd <IS_KM_HOME>>\bin\    
         wso2server.bat 
@@ -358,6 +360,6 @@ Start WSO2 Identity Server for the changes to take effect. For more information,
 Follow the instructions below to configure the other WSO2 API-M components, namely the Publisher, Developer Portal, Traffic Manager, and Gateway:
 
 - All-in-One Deployment
-    - [Configuring a Single Node](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-a-single-node.md)
-    - [Configuring an Active-Active Deployment](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-an-active-active-deployment.md)
+    - [Configuring a Single Node](../single-node/configuring-a-single-node.md)
+    - [Configuring an Active-Active Deployment](../single-node/configuring-an-active-active-deployment.md)
 - [Distributed Deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md)

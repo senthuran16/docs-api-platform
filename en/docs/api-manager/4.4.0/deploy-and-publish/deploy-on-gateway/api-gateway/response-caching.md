@@ -1,6 +1,6 @@
 ---
 title: "Response Caching"
-description: "Enable response caching for an API in API Manager using the cache mediator, configure caching properties in velocity_template.xml, and invalidate cached responses remotely via JMX."
+description: "Enable response caching for an API using the cache mediator, configure caching properties, and invalidate cached responses via JMX."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching.md
 tags:

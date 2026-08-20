@@ -1,6 +1,6 @@
 ---
 title: "Create a New API Version"
-description: "Create a new version of a published API in WSO2 API Manager using the Publisher, deploy it as a prototype, and control multi-version visibility in the Developer Portal."
+description: "Create a new version of a published API using the Publisher, deploy it as a prototype, and control multi-version visibility."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-versioning/create-a-new-api-version/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-versioning/create-a-new-api-version.md
 tags:

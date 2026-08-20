@@ -1,6 +1,6 @@
 ---
 title: "ELK-Based On-Premise Analytics Installation Guide"
-description: "Set up on-premise API analytics for WSO2 API Manager using Filebeat, Logstash, Elasticsearch, and Kibana, including SSO configuration via OpenID Connect and the resulting Kibana dashboards."
+description: "Set up on-premise API analytics for WSO2 API Manager using Filebeat, Logstash, Elasticsearch, and Kibana, with SSO via OpenID Connect."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/on-prem/elk-installation-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/on-prem/elk-installation-guide.md
 tags:

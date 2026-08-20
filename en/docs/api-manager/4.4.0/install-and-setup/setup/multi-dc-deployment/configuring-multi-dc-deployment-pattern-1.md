@@ -1,6 +1,6 @@
 ---
-title: "Configure Multi-DC Deployment Pattern 1: Geo-Regional Synchronized API Management with Replicated Databases"
-description: "Configure multi-DC deployment pattern 1 for WSO2 API Manager: set up database replication across regions, deploy the API Manager nodes, and configure JMS-based event hub communication between control planes."
+title: "Multi-DC pattern 1: geo-regional sync with replicas"
+description: "Configure multi-DC deployment pattern 1 for API Manager: set up database replication across regions and JMS-based event hub communication."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1.md
 tags:
@@ -65,7 +65,7 @@ You should consult your database administrator on replication related configurat
 
 ## Step 2: Configure the API Manager Nodes
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md!}
+--8<-- "api-manager/4.4.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md"
 
 ## Step 3: Configure the Communication Between Control Plane Nodes Across Regions
 

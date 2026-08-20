@@ -1,6 +1,6 @@
 ---
 title: "Validate Requests with Open Policy Agent (OPA)"
-description: "Use Open Policy Agent (OPA) to validate API requests at the WSO2 API Manager Gateway: attach the OPA validation policy in the Publisher Portal, configure the OPA server connection, and define Rego policies using the default request and response payload formats."
+description: "Use Open Policy Agent to validate API requests at the Gateway: attach the OPA policy, configure the server connection, and define Rego policies."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/opa-validation/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/opa-validation/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - opa
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Validate Request with Open Policy Agent (OPA)
@@ -91,7 +91,7 @@ You can define your own policy enforcement logic in OPA by using the values prov
 By default, each Gateway uses a default Request Generator to generate the request payload to the OPA server. You can configure your policies in OPA server based on the following request format.
 
 !!! Info
-    You can have your own **Request Generator Implementation** - you can do so by implementing the interface **OPARequestGenerator**. [Custom OPA Policy with Custom Request Generator](#custom-opa-policy-with-custom-request-generator) in this document describes this in more detail.
+    You can have your own **Request Generator Implementation** - you can do so by implementing the interface **OPARequestGenerator**. [Custom OPA Policy with Custom Request Generator](#customize-the-opa-request-payload-and-response-validation) in this document describes this in more detail.
 
 === "Format"
     ```json
@@ -158,7 +158,7 @@ By default, each Gateway uses a default Request Generator to generate the reques
 Similar to the request generation, the default request generator class validates the response from OPA. When using the default implementation, you have to write your OPA policies using the following response format when queried with the `allow` policy.
 
 !!! note
-    If required, you can have your own **Response Valiation Implementation** by implementing the interface **OPARequestGenerator**. For more information, see [Custom OPA Policy with Custom Request Generator](#custom-opa-policy-with-custom-request-generator).
+    If required, you can have your own **Response Valiation Implementation** by implementing the interface **OPARequestGenerator**. For more information, see [Custom OPA Policy with Custom Request Generator](#customize-the-opa-request-payload-and-response-validation).
 
 === "Format"
     ```json

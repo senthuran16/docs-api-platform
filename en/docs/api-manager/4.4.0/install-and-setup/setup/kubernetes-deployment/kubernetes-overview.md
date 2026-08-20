@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Deployment Overview and Prerequisites"
-description: "Supported Kubernetes distributions, managed Kubernetes services, Helm versions, and resource requirements for deploying WSO2 API Manager 4.4.0 on Kubernetes, with links to each of the available deployment patterns."
+description: "Supported Kubernetes distributions, managed services, Helm versions, and resource requirements for deploying API Manager 4.4.0 on Kubernetes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/kubernetes-deployment/kubernetes-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/kubernetes-deployment/kubernetes-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment-patterns
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Prerequisites

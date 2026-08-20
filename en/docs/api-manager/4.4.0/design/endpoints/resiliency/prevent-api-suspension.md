@@ -1,6 +1,6 @@
 ---
 title: "Prevent API Suspension"
-description: "Configure endpoint suspension settings in WSO2 API Manager to stop APIs from being suspended when their backend endpoint is unreachable, using either the Publisher Portal or the endpoint XML configuration."
+description: "Configure endpoint suspension settings so APIs aren't suspended when a backend is unreachable, via the Publisher or endpoint XML."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/resiliency/prevent-api-suspension/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/resiliency/prevent-api-suspension.md
 tags:

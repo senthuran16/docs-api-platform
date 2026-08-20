@@ -1,6 +1,6 @@
 ---
 title: "Deploying API Manager on Kubernetes Using Helm Resources"
-description: "Use the wso2/helm-apim Git repository to deploy WSO2 API Manager on Kubernetes or OpenShift with Helm: clone the resources, configure the values.yaml, install the release, and access the Management Console through the NGINX Ingress Controller."
+description: "Deploy WSO2 API Manager on Kubernetes or OpenShift using the wso2/helm-apim Git repository: clone resources, configure values.yaml, and install the release."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/deploying-api-manager-with-kubernetes-or-openshift-resources/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/deploying-api-manager-with-kubernetes-or-openshift-resources.md
 tags:
@@ -28,7 +28,7 @@ Follow the instructions below to use Kubernetes (K8s) and Helm resources for con
     - An already setup [Kubernetes cluster](https://kubernetes.io/docs/setup/#learning-environment).<br><br>
     
     - Install [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/). Please note that Helm resources for WSO2 product
-      deployment patterns are compatible with NGINX Ingress Controller Git release [`nginx-0.22.0`](https://github.com/kubernetes/ingress-nginx/releases/tag/nginx-0.22.0).
+      deployment patterns are compatible with NGINX Ingress Controller Git release `nginx-0.22.0`.
 
 1.  Checkout the Helm Resources for WSO2 API Manager Git repository using `git clone` :
 

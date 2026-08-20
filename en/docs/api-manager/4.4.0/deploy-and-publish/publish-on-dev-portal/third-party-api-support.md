@@ -1,6 +1,6 @@
 ---
 title: "Add a Third-party API"
-description: "Publish APIs deployed on external gateways in WSO2 API Manager as third-party APIs, converting existing API types or importing streaming APIs via the Other option."
+description: "Publish APIs deployed on external gateways in API Manager as third-party APIs, converting existing API types or importing streaming APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/publish-on-dev-portal/third-party-api-support/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/deploy-and-publish/publish-on-dev-portal/third-party-api-support.md
 tags:

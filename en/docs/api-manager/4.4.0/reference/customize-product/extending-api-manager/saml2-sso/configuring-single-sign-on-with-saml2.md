@@ -1,6 +1,6 @@
 ---
 title: "Configuring Single Sign-On with SAML2"
-description: "Overview of SAML2-based Single Sign-On in API Manager, covering claims-based authorization and links to configuring Identity Server as an IdP or through an external IdP."
+description: "Overview of SAML2-based Single Sign-On in API Manager, covering claims-based authorization and links to configuring Identity Server as an IdP."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-single-sign-on-with-saml2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-single-sign-on-with-saml2.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - saml2
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Configuring Single Sign-on with SAML2
@@ -22,8 +22,8 @@ Single Sign-On (SSO) allows users, who are authenticated against one application
 
 This section covers the following topics.
 
--   [Configuring Identity Server as IDP for SSO](../../../../develop/extending-api-manager/saml2-sso/configuring-identity-server-as-idp-for-sso.md)
--   [Configuring External IDP through Identity Server for SSO](../../../../develop/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso.md)
+-   [Configuring Identity Server as IDP for SSO](configuring-identity-server-as-idp-for-sso.md)
+-   [Configuring External IDP through Identity Server for SSO](configuring-external-idp-through-identity-server-for-sso.md)
 
 !!! info
     The **Single Sign-On with OpenID Connect** feature is enabled by default in the API Manager.  

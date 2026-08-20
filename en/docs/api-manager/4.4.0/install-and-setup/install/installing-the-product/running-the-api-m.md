@@ -1,6 +1,6 @@
 ---
 title: "Running the API Manager Runtime"
-description: "Start and stop the WSO2 API Manager runtime, access its Management Console, Publisher, and Developer Portal web portals, and troubleshoot common server startup errors."
+description: "Start and stop the WSO2 API Manager runtime, access the Management Console, Publisher, and Developer Portal, and troubleshoot startup errors."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/installing-the-product/running-the-api-m/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install/installing-the-product/running-the-api-m.md
 tags:

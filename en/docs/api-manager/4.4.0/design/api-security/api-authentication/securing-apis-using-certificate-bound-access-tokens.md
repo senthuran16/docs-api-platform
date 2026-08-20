@@ -1,6 +1,6 @@
 ---
 title: "Securing APIs with Certificate Bound Access Tokens"
-description: "Configure WSO2 API Manager to validate certificate bound (Holder of Key) JWT access tokens, import the client certificate into the truststore, and invoke a secured API using mutual TLS or a custom certificate header."
+description: "Configure API Manager to validate certificate-bound (Holder of Key) JWT tokens and invoke a secured API using mTLS or a header."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/api-authentication/securing-apis-using-certificate-bound-access-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/api-security/api-authentication/securing-apis-using-certificate-bound-access-tokens.md
 tags:

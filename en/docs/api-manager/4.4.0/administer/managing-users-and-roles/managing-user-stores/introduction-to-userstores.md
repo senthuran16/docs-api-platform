@@ -1,6 +1,6 @@
 ---
 title: "Introduction to User Stores"
-description: "Overview of user stores in WSO2 API Manager, covering the default embedded H2 database and the read/write versus read-only modes for connecting external user stores."
+description: "Learn about user stores in WSO2 API Manager, including the default embedded H2 database and read/write versus read-only modes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md
 tags:

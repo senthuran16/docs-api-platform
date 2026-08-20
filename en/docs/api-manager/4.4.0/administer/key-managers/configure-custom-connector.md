@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom Key Manager Connector"
-description: "Write, build, and deploy a custom Key Manager connector for WSO2 API Manager, then register it as a Key Manager in the Admin Portal to integrate an external OAuth Authorization Server."
+description: "Write, build, and deploy a custom key manager connector for WSO2 API Manager to integrate an external OAuth authorization server."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-custom-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/administer/key-managers/configure-custom-connector.md
 tags:
@@ -102,12 +102,12 @@ You need to write a custom Key Manager connector as explained below.
   
 3. Extend `AbstractKeyManager`.
 
-      The `AbstractKeyManager` implements the `KeyManager` interface. For more information on the operations carried out on the `KeyManager` interface, see [Extending the Key Manager Interface](../../develop/extending-api-manager/extending-key-management/extending-the-key-manager-interface.md).
+      The `AbstractKeyManager` implements the `KeyManager` interface. For more information on the operations carried out on the `KeyManager` interface, see [Extending the Key Manager Interface](../../reference/customize-product/extending-api-manager/extending-key-management/extending-the-key-manager-interface.md).
 
 
       In the sample project, the `AbstractKeyManager` interface has been extended using the `org.wso2.custom.client.CustomOAuthClient.java` class.
 
-4. If you need to customize the `JWTValidation` interface, you need to [extend the JWTValidator](../../develop/extending-api-manager/extending-key-management/extending-key-validation.md).
+4. If you need to customize the `JWTValidation` interface, you need to [extend the JWTValidator](../../reference/customize-product/extending-api-manager/extending-key-management/extending-key-validation.md).
 
 5. Build the project.
 
@@ -498,4 +498,4 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
     !!! tip
         If you want to generate the tokens with scopes, make sure that those scopes are defined in the Authorization Server.
 
-6. You can now use the generated token to [invoke an API](../../consume/invoke-apis/invoke-apis-using-tools/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).
+6. You can now use the generated token to [invoke an API](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).

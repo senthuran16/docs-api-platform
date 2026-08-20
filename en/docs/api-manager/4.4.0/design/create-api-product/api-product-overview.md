@@ -1,6 +1,6 @@
 ---
 title: "API Product Overview"
-description: "Learn how API Products let you bundle selected resources from multiple REST APIs into a single consumable interface, reusing existing scopes, authentication schemes, and backend endpoints."
+description: "Learn how API Products bundle resources from multiple REST APIs into one interface, reusing scopes, auth schemes, and endpoints."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api-product/api-product-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api-product/api-product-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-design
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # API Product Overview

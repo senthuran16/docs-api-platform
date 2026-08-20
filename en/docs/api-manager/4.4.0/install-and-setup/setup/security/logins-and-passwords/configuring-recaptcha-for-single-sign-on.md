@@ -1,6 +1,6 @@
 ---
 title: "Configure reCaptcha for Single Sign-On"
-description: "Configure reCaptcha for the SSO login flow in WSO2 API Manager's Resident Identity Provider to mitigate brute force login attacks, either prompting every time or after a maximum number of failed attempts."
+description: "Configure reCaptcha for the SSO login flow in API Manager's Resident Identity Provider to mitigate brute force login attacks."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on.md
 tags:

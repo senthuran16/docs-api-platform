@@ -1,6 +1,6 @@
 ---
 title: "Secure Endpoint with Digest Auth"
-description: "Configure Digest Authentication for a production or sandbox endpoint in API Publisher, and see how the Authorization header is constructed using MD5 hashing and nonce values."
+description: "Configure Digest Authentication for a production or sandbox endpoint, and see how the header is built using MD5 and nonces."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-security/digest-auth/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/endpoints/endpoint-security/digest-auth.md
 tags:
@@ -35,7 +35,7 @@ Follow the instructions below to use Digest Auth as the endpoint authentication 
 
 2. Click the Endpoint Security symbol of the endpoint you want to secure with Digest Auth.
 
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 
 3. Select **Digest Auth** as the endpoint authentication type from the drop-down menu.
 

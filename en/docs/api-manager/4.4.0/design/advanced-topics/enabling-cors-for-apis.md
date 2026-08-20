@@ -1,6 +1,6 @@
 ---
 title: "Enabling CORS for APIs"
-description: "Enable Cross-Origin Resource Sharing (CORS) in API Manager either globally via the deployment.toml configuration or per API through the Publisher Runtime settings and OpenAPI x-wso2-cors extension."
+description: "Enable CORS in API Manager globally via deployment.toml, or per API through Publisher runtime settings and the x-wso2-cors extension."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/advanced-topics/enabling-cors-for-apis/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/advanced-topics/enabling-cors-for-apis.md
 tags:

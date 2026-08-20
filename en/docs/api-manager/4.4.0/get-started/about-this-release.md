@@ -1,6 +1,6 @@
 ---
 title: "About This Release - WSO2 API Manager 4.4.0"
-description: "Summary of what's new in WSO2 API Manager 4.4.0, including AI/LLM API management, WSO2 Identity Server 7.0 key manager support, removed bot detection, compatible product versions, and fixed/known issues."
+description: "Release notes for WSO2 API Manager 4.4.0: AI/LLM API management, WSO2 Identity Server 7.0 key manager support, removed features, and known issues."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/get-started/about-this-release/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/get-started/about-this-release.md
 tags:
@@ -18,7 +18,7 @@ WSO2 API Manager is a complete platform for building, integrating, and exposing 
 
 **WSO2 API Manager 4.4.0** is the latest **WSO2 API Manager release** and is the successor of **WSO2 API Manager 4.3.0**.
 
-For more information on WSO2 API Manager, see the [overview](../getting-started/overview.md).
+For more information on WSO2 API Manager, see the [overview](overview.md).
 
 ## Downloads
 
@@ -101,7 +101,7 @@ These features are unsupported and removed from WSO2 API Manager 4.4.0 onwards.
 ## Compatible WSO2 product versions
 
 - WSO2 API Manager 4.4.0 is compatible with WSO2 Identity Server 6.1.0 and 7.0.0
-- WSO2 API Manager 4.4.0 is compatible with WSO2 API Platform for Kubernetes ([APK](https://wso2.com/api-platform-for-k8s/)) version 1.2.0.
+- WSO2 API Manager 4.4.0 is compatible with WSO2 API Platform for Kubernetes ([APK](https://apk.docs.wso2.com/en/latest/)) version 1.2.0.
 
 ## Fixed issues
 

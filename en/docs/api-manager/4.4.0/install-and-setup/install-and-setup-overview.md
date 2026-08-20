@@ -1,6 +1,6 @@
 ---
 title: "Install and Setup Overview"
-description: "Landing page linking to the install, setup, deployment, CI/CD, and upgrade topics for the API Manager component, plus reference material on ports, artifacts, and compatibility."
+description: "Landing page linking to install, deployment, CI/CD, and upgrade topics for API Manager, plus port and artifact reference material."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install-and-setup-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/install-and-setup-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
 author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
-content_type: "overview"
+content_type: "concept"
 ---
 
 # Install and Setup Overview
@@ -311,7 +311,7 @@ To implement continuous integration and continuous deployment pipelines for APIs
     </tr>
     <tr>
         <th>
-            <a href="../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach/">Building a CI/CD Pipeline for APIs using Jenkins</a>
+            <a href="../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline.md">Building a CI/CD Pipeline for APIs using Jenkins</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for APIs using Jenkins and the API Controller (apictl).

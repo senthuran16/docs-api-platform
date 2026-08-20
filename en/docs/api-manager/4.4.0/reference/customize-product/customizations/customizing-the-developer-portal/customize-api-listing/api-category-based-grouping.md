@@ -1,6 +1,6 @@
 ---
 title: "API Category Based Grouping"
-description: "Group APIs in the Developer Portal using API categories: create categories in the Admin Portal, attach them to APIs in the Publisher, and let consumers browse by category via the Tag Cloud."
+description: "Group APIs in the Developer Portal using API categories: create them in the Admin Portal, attach to APIs in the Publisher, and browse via Tag Cloud."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping.md
 tags:
@@ -11,7 +11,6 @@ author: WSO2 API Platform Documentation Team
 last_updated: 2026-07-15
 content_type: "how-to"
 ---
-
 
 # API Category based Grouping
 

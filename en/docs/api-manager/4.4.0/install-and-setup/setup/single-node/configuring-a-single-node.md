@@ -1,6 +1,6 @@
 ---
 title: "Configure a Single Node Deployment"
-description: "Manually configure and deploy WSO2 API Manager as a single standalone node: set up keystores, the load balancer, databases, gateway and Dev Portal URLs, analytics, and production hardening."
+description: "Manually configure and deploy API Manager as a single standalone node: set up keystores, the load balancer, databases, and production hardening."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/single-node/configuring-a-single-node/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/single-node/configuring-a-single-node.md
 tags:
@@ -51,7 +51,7 @@ Follow the steps in [Configuring the Proxy Server and the Load Balancer](../../.
 
 ## Step 3 - Configure the Databases
 
-WSO2 API-M is shipped with H2 databases by default. However, in a **production setup**, it is recommended to use an industry-standard RDBMS databases for  `WSO2AM_DB` and `WSO2SHARED_DB`. For more information on default databases and changing them into RDBMS databases, see [Working with Databases](../../../install-and-setup/setting-up-databases/overview.md).
+WSO2 API-M is shipped with H2 databases by default. However, in a **production setup**, it is recommended to use an industry-standard RDBMS databases for  `WSO2AM_DB` and `WSO2SHARED_DB`. For more information on default databases and changing them into RDBMS databases, see [Working with Databases](../setting-up-databases/overview.md).
 
 ??? tip
     If you have configured the apim and shared databases correctly, the `deployment.toml` in `<API-M_HOME>/repository/conf` 
@@ -112,7 +112,7 @@ In this case, let's use `api.am.wso2.com` as the hostname:
 
 API Manager Analytics is delivered via the API Manager Analytics cloud solution. You need to configure the API Manager Gateway to publish analytics data into the cloud.
 
-See the instructions on [configuring the API Gateway](../../../api-analytics/gateways/configure-synapse-gateway.md) with the cloud-based analytics solution.
+See the instructions on [configuring the API Gateway](../../../includes/analytics/configure-synapse-gateway.md) with the cloud-based analytics solution.
 
 ## Step 7 - Configure Production Hardening
 
@@ -120,16 +120,16 @@ In a **production setup**, ensure that you have taken into account the respectiv
 (e.g., changing and encrypting the default passwords, configuring JVM security etc.) and other production deployment 
 guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) before deploying WSO2 API-M node. 
 
-For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../../../install-and-setup/deploying-wso2-api-manager/security-guidelines-for-production-deployment.md).
+For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md).
   
 ## Step 8 - Start the WSO2 API-M server
 
 If you want to deploy WSO2 API-M using a hybrid single node deployment, where WSO2 Identity Server is used as the Key Manager while the rest of the WSO2 API-M components are all in one node, configure and start the Key Manager (e.g., configure and start WSO2 Identity Server as the Key Manager) before starting the WSO2 API-M server.
 
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 === "Linux/Mac OS"
     ```bash

@@ -1,6 +1,6 @@
 ---
 title: "Role-based Access Control for API Analytics"
-description: "Manage organization-level access to Choreo Insights API analytics by inviting users to the Admin or Developer group and configuring organization settings in the Choreo console."
+description: "Manage organization-level access to Choreo Insights analytics by inviting users to the Admin or Developer group in the Choreo console."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/choreo-analytics/role-based-access-control/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/api-analytics/choreo-analytics/role-based-access-control.md
 tags:

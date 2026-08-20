@@ -1,6 +1,6 @@
 ---
 title: "Create a Streaming API from an AsyncAPI Definition"
-description: "Import an existing AsyncAPI definition, by URL or file upload, into WSO2 API Manager to create a WebSocket, WebSub, or SSE streaming API, then configure its topics."
+description: "Import an AsyncAPI definition by URL or file to create a WebSocket, WebSub, or SSE streaming API, then configure its topics."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/design/create-api/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition.md
 tags:
@@ -26,7 +26,7 @@ Follow the instructions below to create a Streaming API using an AsyncAPI defini
 
 ## Step 1 - Design a Streaming API
 
-1. {!includes/sign-in-publisher.md!}
+1. --8<-- "api-manager/4.4.0/includes/sign-in-publisher.md"
 
 2. Click **CREATE API** and then click **Import AsyncAPI Definition**.
 
@@ -111,4 +111,4 @@ Next, publish the API, for more information, see [Publish an API](../../../../de
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.4.0/includes/design/stream-more-links.md"

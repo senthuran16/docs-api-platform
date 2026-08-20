@@ -1,6 +1,6 @@
 ---
-title: "Advanced UI Customization for the Developer Portal, Publisher, and Admin Portal"
-description: "Rebuild the React codebase of the Developer Portal, Publisher, and Admin Portal to make advanced UI customizations beyond simple configuration, including overriding and adding components."
+title: "Advanced UI customization for the portals"
+description: "Rebuild the React codebase of the Developer Portal, Publisher, and Admin Portal to customize the UI beyond configuration, including overriding components."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/advanced-ui-customization/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/customizations/advanced-ui-customization.md
 tags:

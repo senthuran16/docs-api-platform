@@ -1,6 +1,6 @@
 ---
 title: "Configuring Workflows for Tenants"
-description: "Configure tenant-specific approval workflows in a multi-tenant API Manager deployment by sharing user stores and registry data with WSO2 EI and deploying a tenant-aware BPEL and HumanTask."
+description: "Configure tenant-specific approval workflows in a multi-tenant deployment by sharing user stores and registry data with a tenant-aware BPEL."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-workflows-for-tenants/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.4.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-workflows-for-tenants.md
 tags:
