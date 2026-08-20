@@ -1,3 +1,18 @@
+---
+title: "FIX parameters"
+description: "Reference the FIX transport parameters available for configuring a proxy service artifact in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/fix-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/fix-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # FIX Parameters
 
 When you implement an integration use case that requires a FIX connection, you can use the following FIX parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.
@@ -5,7 +20,7 @@ When you implement an integration use case that requires a FIX connection, you c
 !!! Info
     The Micro Integrator can use the FIX transport only if the FIX transport listener and sender are enabled and configured at the server level. Read about the [FIX transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md#configuring-the-fix-transport).
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.1.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) for instructions.
 

@@ -1,3 +1,18 @@
+---
+title: "Connecting to WSO2 MB"
+description: "Configure WSO2 Micro Integrator to connect with WSO2 Message Broker and secure the JMS connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-wso2-mb/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-wso2-mb.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Connecting to WSO2 MB
 
 This section describes how to configure WSO2 Micro Integrator to connect with WSO2 Message Broker.
@@ -65,9 +80,9 @@ Given below is an overview of how some common security concepts are implemented 
 | Security Concept                                        | How it is Implemented in EI-Broker                      |
 |---------------------------------------------------------|---------------------------------------------------------|
 | [Authentication](#ConfigurewiththeBrokerProfile-AuthMB) | Andes Authenticator connected entities to authenticate. |
-| [Authorization](#ConfigurewiththeBrokerProfile-AuthrMB) | Creation and use of role-based permissions.             |
+| [Authorization](#authorization) | Creation and use of role-based permissions.             |
 | Availability                                            | Clustering using Apache Zookeeper.                      |
-| [Integrity](#ConfigurewiththeBrokerProfile-InMB)        | Message-level encryption using WS-Security.             |
+| [Integrity](#integrity)        | Message-level encryption using WS-Security.             |
 
 Let's see how each concept in the table above is implemented in WSO2 MB.
 

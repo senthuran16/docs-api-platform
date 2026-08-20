@@ -1,3 +1,18 @@
+---
+title: "Configuring timestamp conversion for RDBMS"
+description: "Disable UTC timestamp conversion for RDBMS data integration by setting a system property in the server startup script."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/feature_configs/configuring_timestamp_conversion_for_rdbms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/feature_configs/configuring_timestamp_conversion_for_rdbms.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Timestamp Conversion for RDBMS
 
 !!! Note

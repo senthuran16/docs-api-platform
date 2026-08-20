@@ -1,3 +1,18 @@
+---
+title: "EJB mediator"
+description: "Reference for the EJB mediator syntax used to call an external Enterprise JavaBean and store the result in the message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/ejb-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/ejb-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - ejb-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # EJB Mediator
 
 The **EJB mediator** calls an external Enterprise JavaBean(EJB) and stores the result in the message payload or in a message context property. Currently, this mediator supports EJB3 Stateless Session Beans and Stateful Session Beans.

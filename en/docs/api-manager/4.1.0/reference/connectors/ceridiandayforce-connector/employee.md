@@ -1,3 +1,18 @@
+---
+title: "Working with employees"
+description: "Retrieve, create, or update employee human resources data in Dayforce using the Ceridian Dayforce connector operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employees
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -18,6 +33,7 @@ If the employee is not already in Dayforce, you can add them.
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-a-list-of-employees"></a>
 #### Retrieving a list of Employees
 
 We can use GET Employees operation with required parameters to search and find the required employees.
@@ -79,6 +95,7 @@ Given below is a sample response for the GET Employees operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee/GET-Employees.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee/GET-Employees.aspx)
 
+<a name="retrieving-details-of-employee"></a>
 #### Retrieving details of employee
 We can use GET Employee Details operation with required parameters to retrieve information on employees
 
@@ -179,6 +196,7 @@ Given below is a sample response for the GET Employee Details operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee/GET-Employee-Details.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee/GET-Employee-Details.aspx)
 
+<a name="create-an-employee"></a>
 #### Create an employee
 
 We can use POST Employee operation with required parameters to create a new employee in Dayforce.
@@ -348,6 +366,7 @@ Given below is a sample response for the POST Employee operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee/POST-Employee.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee/POST-Employee.aspx)
 
+<a name="update-existing-employee"></a>
 #### Update existing employee
 
 We can use PATCH employee operation to update an existing employee details.

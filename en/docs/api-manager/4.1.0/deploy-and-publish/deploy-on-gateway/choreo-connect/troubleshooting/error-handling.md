@@ -1,3 +1,18 @@
+---
+title: "Error handling"
+description: "Lists the error codes returned by the Choreo Connect Router and Enforcer, with their corresponding Envoy codes and causes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/error-handling.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Error Handling
 
 ### Error Codes

@@ -1,3 +1,18 @@
+---
+title: "Expose APIs with custom hostnames in Choreo Connect"
+description: "Expose APIs with custom hostnames in Choreo Connect via the Publisher Portal or apictl in standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-with-custom-hostnames/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-with-custom-hostnames.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Exposing APIs With Custom Hostnames in Choreo Connect Using WSO2 API Manager
 
 You can expose APIs with custom hostnames in the following ways depending on the Choreo Connect **mode** you have chosen.
@@ -62,7 +77,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 
@@ -146,7 +161,7 @@ data:
 
 ### Step 2 - Deploy the API
 
-Follow the all steps up to **Deploy API** in the [Deploy an API via apictl documentation](deploy-rest-api-in-choreo-connect.md#choreo-connect-as-a-standalone-gateway).
+Follow the all steps up to **Deploy API** in the [Deploy an API via apictl documentation](deploy-rest-api-in-choreo-connect.md#via-apictl-for-standalone-mode).
 
 Let's invoke the API.
 
@@ -160,7 +175,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 

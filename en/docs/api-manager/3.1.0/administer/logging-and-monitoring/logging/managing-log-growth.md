@@ -1,3 +1,18 @@
+---
+title: "Managing log growth"
+description: "Configure time-based or size-based log4j2 rollover policies to control Carbon and audit log file growth."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/managing-log-growth/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/managing-log-growth.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing log growth
 
 See the following content on managing the growth of [Carbon logs](#managing-the-growth-of-carbon-logs) and [Audit logs](#managing-the-growth-of-audit-log-files) :
@@ -9,9 +24,10 @@ Log4j2 supports two main log rotation options.
 
 By default wso2 supports rollover based on a time period. This interval is by default one day. The log4j-based logging mechanism uses appenders to append all the log messages into a file, then at the end of the log rotation period, a new file will be created with the appended logs and archived. The name of the archived log file will always contain the date on which the file is archived.
 
+<a name="managing-the-growth-of-carbon-logs"></a>
 #### Managing the growth of Carbon logs
 
-Log growth in [Carbon logs](../../../administer/product-administration/monitoring/logging/setting-up-logging/#configuring-carbon-logs) can be managed by following configurations in `<APIM_HOME>/repository/conf/log4j2.properties` file.
+Log growth in [Carbon logs](setting-up-logging.md#configuring-carbon-logs) can be managed by following configurations in `<APIM_HOME>/repository/conf/log4j2.properties` file.
 
 
 -   Rollover based on a time period can be configured by changing `appender.CARBON_LOGFILE.policies.time.interval` value in days(Default value is 1 day).
@@ -53,6 +69,7 @@ Log growth in [Carbon logs](../../../administer/product-administration/monitorin
     appender.CARBON_LOGFILE.strategy.max   
     ```
 
+<a name="managing-the-growth-of-audit-log-files"></a>
 #### Managing the growth of audit log files
 
 -   Rollover based on a time period can be configured by changing `appender.AUDIT_LOGFILE.policies.time.interval` value in days(Default value is 1 day).

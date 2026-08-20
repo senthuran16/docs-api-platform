@@ -1,3 +1,18 @@
+---
+title: "Managing users"
+description: "Add users, assign roles, access the Admin Dashboard, and change passwords using the management console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-users/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-users.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-users
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing Users
 
 Users are consumers who interact with your enterprise's applications, databases or any other systems. These users can be persons, devices or applications/programs within or outside of the enterprise's network. Since these users interact with internal systems and access data, the need to define which user is allowed to do what, is critical. This is called user management.
@@ -21,7 +36,7 @@ Follow the steps below to create users and assign them to roles via the Manageme
     !!! tip
             The **Domain** drop-down list contains all user stores configured in the system. By default, only the PRIMARY user store is configured. To configure secondary user stores, see [Configuring Secondary User Stores](managing-user-stores/configuring-secondary-user-stores.md).
 
-4.  Select the roles you want to assign to the user. In this example, we assign the `creator` role defined in the [previous section](managing-user-roles.md). For details on adding roles, see [Create user roles](managing-user-roles.md#create-user-roles).
+4.  Select the roles you want to assign to the user. In this example, we assign the `creator` role defined in the [previous section](managing-user-roles.md). For details on adding roles, see [Create user roles](managing-user-roles.md#creating-user-roles).
 
     [![Add roles to user](../../assets/img/administer/add-roles-to-user.png)](../../assets/img/administer/add-roles-to-user.png)
 
@@ -38,7 +53,7 @@ Follow the steps below to create users and assign them to roles via the Manageme
 The Admin Dashboard ( `https://<hostname>:9443/admin`) is intended to be used by API Manager admins. The admin user has special permissions specified under `All Permissions > Admin Permissions > Manage > API-M Admin` attached to the `admin` role. If a new user needs to access the admin dashboard, follow the steps below:
 
 1.  Create a user.
-2.  Create a new role. For more information, see [Create User Roles](managing-user-roles.md#create-user-roles).
+2.  Create a new role. For more information, see [Create User Roles](managing-user-roles.md#creating-user-roles).
 3.  Assign the following permissions to the new role you just created: `All Permissions > Admin Permissions > Manage > API-M Admin` and `All Permissions > Admin Permissions > Configure > Login`.
 4.  Assign the role created in step 2, to the user created in step 1.
 

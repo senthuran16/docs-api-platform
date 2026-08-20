@@ -1,3 +1,18 @@
+---
+title: "Call mediator"
+description: "Configure the Call mediator to send messages to an endpoint in blocking or non-blocking mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/call-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/call-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - call-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Call Mediator
 
 The **Call mediator** is used to send messages out of the Micro Integrator to an **endpoint**. You can invoke services either in blocking or non-blocking manner.
@@ -95,7 +110,7 @@ Select one of the following options to define the endpoint to which the message 
 </tr>
 <tr class="even">
 <td><strong>Define Inline</strong></td>
-<td>If this is selected, the endpoint to which the message should be sent can be included within the Call mediator configuration. Click <strong>Add</strong> to add the required endpoint. For more information on Adding an endpoint, see <a href="../../integrate/develop/creating-artifacts/creating-endpoints.md">Adding an Endpoint</a> .</td>
+<td>If this is selected, the endpoint to which the message should be sent can be included within the Call mediator configuration. Click <strong>Add</strong> to add the required endpoint. For more information on Adding an endpoint, see <a href="../../../integrate/develop/creating-artifacts/creating-endpoints/">Adding an Endpoint</a> .</td>
 </tr>
 <tr class="odd">
 <td><strong>Pick From Registry</strong></td>

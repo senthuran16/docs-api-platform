@@ -1,3 +1,17 @@
+---
+title: "Kubernetes-based CI/CD for Streaming Integrator"
+description: "Set up a Kubernetes-based CI/CD pipeline with deployment descriptor repositories and Jenkins jobs for Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/si-cicd-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/si-cicd-k8s.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
 
 [![K8s based CI/CD for Streaming Integrator](../../../assets/img/deploy/si-cicd-k8s.png)](../../../assets/img/deploy/mi-cicd-k8s.png)
 
@@ -164,6 +178,7 @@ spec:
 10. Verify that the new changes are available in the Dev environment.
 11. You can repeat steps 8, 9 and 10 for the Staging and Prod environment.
 
+<a name="setting-up-jenkins-server"></a>
 #### Setting up Jenkins server
 
 1. Docker scripts for setting up a Jenkins environment are provided inside `samples-apim/si-cicd`. This will spin up a preconfigured Docker image. By default, 3 Jenkins jobs will be created. One each for the environment descriptor branches (dev, staging, prod).

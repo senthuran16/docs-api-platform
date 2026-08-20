@@ -1,3 +1,18 @@
+---
+title: "Applying security to a data service"
+description: "Create a WS-Security policy resource in WSO2 Integration Studio and apply it to protect a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/securing-data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/securing-data-services.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Applying Security to a Data Service
 
 WSO2 supports WS-Security, WS-Policy, and WS-Security Policy

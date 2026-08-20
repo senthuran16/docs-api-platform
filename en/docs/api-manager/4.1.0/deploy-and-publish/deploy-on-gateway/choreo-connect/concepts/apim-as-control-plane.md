@@ -1,3 +1,18 @@
+---
+title: "Choreo connect with API Manager as Control Plane"
+description: "Learn how Choreo Connect works with WSO2 API Manager as its Control Plane to deploy and manage APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Choreo Connect with API Manager as Control Plane
 
 ## Overview

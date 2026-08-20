@@ -1,3 +1,18 @@
+---
+title: "Avro message with Kafka connector example"
+description: "Demonstrates sending Apache Avro messages to a Kafka broker using the Kafka connector's publishMessages operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-connector-avro-producer-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-connector-avro-producer-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Avro Message with Kafka Connector Example
 
 Given below is a sample scenario that demonstrates how to send Apache Avro messages to a Kafka broker via Kafka topics. The `publishMessages` operation allows you to publish messages to the Kafka brokers via Kafka topics.
@@ -16,7 +31,7 @@ Before you begin, set up Kafka by following the instructions in [Setting up Kafk
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right-click the created Integration Project and select **New** -> **Rest API** to create the REST API.
 
@@ -65,13 +80,13 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     ```
 Now we can export the imported connector and the API into a single CAR application. The CAR application needs to be deployed during server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Deployment
 
 Follow these steps to deploy the exported CApp in the Enterprise Integrator Runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
     
 ## Testing
 

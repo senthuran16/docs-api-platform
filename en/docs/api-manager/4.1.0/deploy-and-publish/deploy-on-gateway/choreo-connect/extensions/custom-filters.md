@@ -1,3 +1,18 @@
+---
+title: "Add custom filters"
+description: "Implement and mount custom Java filters in the Choreo Connect enforcer to add request interception logic beyond the built-in filters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/custom-filters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/custom-filters.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Add Custom Filters
 Filters is a set of execution points in the request flow that intercept the request before it goes to the 
 backend service. They are engaged while the request is processed within the enforcer. The defined set of filters 

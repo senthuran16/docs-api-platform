@@ -1,3 +1,18 @@
+---
+title: "Securing APIs using OAuth2 access tokens"
+description: "Explains how OAuth2 access tokens secure APIs and how client applications present them to the Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/api-authentication/secure-apis-using-oauth2-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/api-authentication/secure-apis-using-oauth2-tokens.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Securing APIs using OAuth2 Access Tokens
 
 APIs published on WSO2 API Gateway can be secured by OAuth 2.0, which is the de facto standard for access delegation in the REST API world. Any client application invoking an OAuth2 secured API needs to have a valid subscription to that particular API and present a valid OAuth2.0 Access Token when invoking it. For more information on how to subscribe to an application to an API and generate credentials for it, see [Subscribe to an API](../../../consume/manage-subscription/subscribe-to-an-api.md).
@@ -190,7 +205,7 @@ Each tenant can define their name for the authorization header by following the 
     }
     ```
 
-4.  If you have already published and deployed the APIs, [sign in to the API Publisher](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-api-publisher) using your tenant credentials, and save and redeploy those APIs.
+4.  If you have already published and deployed the APIs, [sign in to the API Publisher](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-web-portals) using your tenant credentials, and save and redeploy those APIs.
 
 ### Customize per API
 
@@ -202,7 +217,7 @@ The API Publisher application allows an API Developer or Product Manager to spec
 
 Follow the instructions below to add a customized authorization header for an API:
 
-1.  [Sign in to the Publisher](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-api-publisher).
+1.  [Sign in to the Publisher](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#accessing-the-web-portals).
 `https://<server-host>:9443/publisher         `
 
 2.  When [creating](../../create-api/create-rest-api/create-a-rest-api.md) or updating an API, define the customized authorization header in the **Runtime** tab under **Develop -> API Configurations**.

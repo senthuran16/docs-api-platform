@@ -1,3 +1,18 @@
+---
+title: "Using the embedded Micro Integrator"
+description: "Deploy, run, and manage integration artifacts using the embedded Micro Integrator in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-embedded-micro-integrator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-embedded-micro-integrator.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - using-embedded-micro-integrator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using the Embedded Micro Integrator
 
 WSO2 Integration Studio contains an embedded Micro Integrator instance, which you can use for testing your integration solutions during the development process.
@@ -7,18 +22,18 @@ WSO2 Integration Studio contains an embedded Micro Integrator instance, which yo
 Once you have the [integration artifacts packaged](packaging-artifacts.md) in a composite application, you can deploy and run them in the embedded Micro Integrator using a single click. 
 
 1.  Select the composite application in the project explorer.
-2.  Click the <img src="../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette to open the <b>Run As</b> dialog box.
+2.  Click the <img src="../../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette to open the <b>Run As</b> dialog box.
 
 3. Select <b>Run on Micro Integrator</b> and click <b>OK</b>.
 
-    <img src="../../assets/img/integrate/testing-integrations/run-as-micro-integrator.png" width="700">
+    <img src="../../../assets/img/integrate/testing-integrations/run-as-micro-integrator.png" width="700">
 
 4. Select the artifacts from the composite application that you want to deploy.  
-    <img src="../../assets/img/integrate/testing-integrations/testing_artifact_selection.png" width="700">
+    <img src="../../../assets/img/integrate/testing-integrations/testing_artifact_selection.png" width="700">
 
 5.  Click **Finish**. The artifacts will be deployed in the WSO2 Micro Integrator and the server will start. 
 	See the startup log in the **Console** tab:  
-    <img src="../../assets/img/integrate/testing-integrations/testing_log.png" width="700">
+    <img src="../../../assets/img/integrate/testing-integrations/testing_log.png" width="700">
 
 6.  If you find errors in your mediation sequence, use the [debugging features](debugging-mediation.md) to troubleshoot.
 
@@ -28,22 +43,22 @@ Use the <b>Runtime Services</b> tab in WSO2 Integration Studio to view the endpo
 
 When you [deploy the artifacts and start](#deploy-and-run-artifacts-in-the-embedded-server) the embedded Micro Integrator, the <b>Console</b> tab prints the server startup logs and the <b>Runtime Services</b> tab will open as shown below. 
 
-<img src="../../assets/img/integrate/testing-integrations/deployed-endpoints.jpg">
+<img src="../../../assets/img/integrate/testing-integrations/deployed-endpoints.jpg">
 
 If you have closed the tab and you want to open it again, go to <b>Window -> Show View -> Other</b> and select <b>Runtime Services</b>.
 
-<img src="../../assets/img/integrate/testing-integrations/show-deployed-endpoints.png" width="300">
+<img src="../../../assets/img/integrate/testing-integrations/show-deployed-endpoints.png" width="300">
 
 ## Update (embedded) server configurations and libraries
 
 For some integrations, it is necessary to update the server configurations. For example, if you are integrating with an external broker, you need to update broker connection details and also add the broker's connection JARs to the server's `/lib` folder.
 
-Click the <img src="../../assets/img/integrate/testing-integrations/server-configs-panel-icon.png" width="20"> icon to open the <b>Embedded Micro Integrator Configuration</b> dialog box shown below.
+Click the <img src="../../../assets/img/integrate/testing-integrations/server-configs-panel-icon.png" width="20"> icon to open the <b>Embedded Micro Integrator Configuration</b> dialog box shown below.
 
 !!! Note 
 	You can also paramterize configurations as [environment variables](../../install-and-setup/setup/mi-setup/dynamic_server_configurations.md) and later [inject environment variables to the embedded Micro Integrator](#injecting-environment-variables-to-embedded-micro-integrator).
 
-<img src="../../assets/img/integrate/testing-integrations/server-configs-panel.png">
+<img src="../../../assets/img/integrate/testing-integrations/server-configs-panel.png">
 
 In the upper section, update the server configuration file (`deployment.toml` file). In the lower section, add any required third-party libraries to the `/lib` folder of the server.
 
@@ -51,22 +66,22 @@ In the upper section, update the server configuration file (`deployment.toml` fi
 
 If you have secrets in the `deployment.toml` file, you can encrypt them using the <b>Cipher Tool</b>. 
 
-1.  Open the [<b>Embedded Micro Integrator Configuration</b>](#update-embedded-server-configs-and-libraries) dialog box. 
+1.  Open the [<b>Embedded Micro Integrator Configuration</b>](#update-embedded-server-configurations-and-libraries) dialog box. 
 2.  Update the static secrets in the `deployment.toml` file as explained in [encrypting server secrets](../../install-and-setup/setup/mi-setup/security/encrypting_plain_text.md).
 3.  Click <b>Encrypt Secrets</b>.
 	
-    <img src="../../assets/img/integrate/testing-integrations/encrypt-secrets.png">
+    <img src="../../../assets/img/integrate/testing-integrations/encrypt-secrets.png">
 
 This will run the Cipher Tool internally and encrypt the secrets. The plain-text values you entered are now replaced with the encrypted values.
 
-<img src="../../assets/img/integrate/testing-integrations/encrypt-secrets-executed.png" width="700">
+<img src="../../../assets/img/integrate/testing-integrations/encrypt-secrets-executed.png" width="700">
 
 ## Redeploy integration artifacts
 
 Hot deployment is enabled in the Micro Integrator by default. This allows you to redeploy artifacts without restarting the server. However, if you have applied changes to the server configurations and libraries, the server will restart.
 
 1.	Select the composite application that contains your artifacts.
-2.	Click the <img src="../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette.
+2.	Click the <img src="../../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette.
 
 ## Injecting environment variables to embedded Micro Integrator
 

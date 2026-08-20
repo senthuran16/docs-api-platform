@@ -1,3 +1,18 @@
+---
+title: "API Gateways with dedicated backends"
+description: "Configure parameterized endpoint URLs so each Gateway instance points to its own dedicated backend API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/api-gateways-with-dedicated-backends/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/api-gateways-with-dedicated-backends.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - api-gateways-with-dedicated-backends
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # API Gateways with Dedicated Backends
 
 We can extend the [multiple gateway environments](../maintaining-separate-production-and-sandbox-gateways) feature by utilizing parameterized endpoint capabilities of WSO2 API Manager to have each gateway point to a different back-end endpoint. API Gateway is the actual runtime of the APIs that are developed and published from the API Publisher. WSO2 API Manager is capable of publishing APIs to different Gateways where API users connect to those API Gateways in order to do the actual API calls through the applications to which they are subscribed.

@@ -1,3 +1,18 @@
+---
+title: "Exposing an RDBMS datasource"
+description: "Expose data stored in a MySQL database as a REST data service in WSO2 Micro Integrator, supporting GET, POST, and PUT operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/rdbms-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/rdbms-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Exposing an RDBMS Datasource
 
 This example demonstrates how RDBMS data (stored in a MySQL database) can be exposed as a data service.

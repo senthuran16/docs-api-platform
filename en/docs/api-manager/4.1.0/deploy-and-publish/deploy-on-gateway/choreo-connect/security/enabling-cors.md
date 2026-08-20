@@ -1,8 +1,22 @@
+---
+title: "Enabling CORS"
+description: "Enable CORS configurations for individual APIs or globally across all APIs deployed in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/enabling-cors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/enabling-cors.md
+tags:
+  - cors
+  - choreo-connect
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enabling CORS
 
 ### Enable CORS configuration for API resources (API level)
 
-If you are following the developer first approach, ([deploy the API via CLI tool](../deploy-api/deploy-rest-api-in-choreo-connect.md#choreo-connect-as-a-standalone-gateway/)). You can add CrossOrigin Resource Sharing (**CORS**) configurations for each API (at API level) using the OpenAPI vendor extension **x-wso2-cors** in the API definition. The following code snippet depicts the usage of the `x-wso2-cors` extension. For more information, see the [detailed sample OpenAPI definition with CORS level configuration](https://github.com/wso2/product-microgateway/blob/master/samples/cors_sample.yaml).
+If you are following the developer first approach, ([deploy the API via CLI tool](../deploy-api/deploy-rest-api-in-choreo-connect.md#via-apictl-for-standalone-mode)). You can add CrossOrigin Resource Sharing (**CORS**) configurations for each API (at API level) using the OpenAPI vendor extension **x-wso2-cors** in the API definition. The following code snippet depicts the usage of the `x-wso2-cors` extension. For more information, see the [detailed sample OpenAPI definition with CORS level configuration](https://github.com/wso2/product-microgateway/blob/master/samples/cors_sample.yaml).
 
 ``` java
 x-wso2-basePath: /petstore/v1
@@ -29,7 +43,8 @@ If you are following the [Deploy API via API-M](../deploy-api/deploy-rest-api-in
 
 Follow the instructions below to enable CORS globally. Once this is enabled, it will apply this configurations through all endpoints and APIs deployed in Choreo Connect.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/deploy/cc-configuration-file.md"
 
 2. Locate the following configuration set and make the `enabled` attribute to `true` with the required CORS attributes there.
 

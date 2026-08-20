@@ -1,8 +1,23 @@
+---
+title: "Subscribe to an API"
+description: "Subscribe to a published API in the Developer Portal using an existing application or the Key Generation Wizard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-subscription/subscribe-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-subscription/subscribe-to-an-api.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-subscription
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Subscribe to an API
 
 You have to **subscribe** to a published API before using it in your applications. The subscription process fulfills the authentication process and provides you with access tokens that you can use to invoke an API. 
 
-The examples here use the `PizzaShackAPI` REST API, which is [created](../../../learn/design-api/create-api/create-a-rest-api) and [published](../../../learn/design-api/publish-api/publish-an-api) to Developer Portal in WSO2 API Manager.
+The examples here use the `PizzaShackAPI` REST API, which is [created](../../design-api/create-api/create-a-rest-api.md) and [published](../../design-api/publish-api/publish-an-api.md) to Developer Portal in WSO2 API Manager.
 
 The following are the two methods available in the Developer Portal to subscribe an API to an application. 
 
@@ -34,7 +49,7 @@ The following are the two methods available in the Developer Portal to subscribe
      
      [![Subscribe to new application process](../../../assets/img/learn/key-gen-wizard-subscribe.png)](../../../assets/img/learn/key-gen-wizard-subscribe.png)
     
-5. [Generate application keys](../../../learn/consume-api/manage-application/generate-keys/generate-api-keys) (Production or sandbox) by selecting the [grant types](../../../learn/api-security/oauth2/grant-types/overview/) which need to be allowed for this application. Thereafter, click **Next** to continue. 
+5. [Generate application keys](../manage-application/generate-keys/generate-api-keys.md) (Production or sandbox) by selecting the [grant types](../../api-security/oauth2/grant-types/overview.md) which need to be allowed for this application. Thereafter, click **Next** to continue. 
 
      The application key and secret is generated in this step.
 
@@ -45,11 +60,11 @@ The following are the two methods available in the Developer Portal to subscribe
         - If you have a supported callback URL that sends a callback to a specific server or program soon after your application request is sent, you can specify it under the **Callback URL** field.
         
     
-6.  Select the access token validity period and [scopes](../../../learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/) to generate an access token to invoke the API, then click **Next** to continue.
+6.  Select the access token validity period and [scopes](../../api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md) to generate an access token to invoke the API, then click **Next** to continue.
     
 7.  Copy the generated access token. 
 
-8. Click **Finish** to complete the wizard or click **Test** to navigate to the [API Console](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console) so that you can invoke and try out the API.
+8. Click **Finish** to complete the wizard or click **Test** to navigate to the [API Console](../invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md) so that you can invoke and try out the API.
 
     [![Copy access token](../../../assets/img/learn/key-gen-wizard-access.png)](../../../assets/img/learn/key-gen-wizard-access.png)
     

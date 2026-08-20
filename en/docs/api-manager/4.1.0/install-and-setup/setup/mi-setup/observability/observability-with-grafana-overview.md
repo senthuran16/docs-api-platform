@@ -1,3 +1,18 @@
+---
+title: "Observability: classic vs. cloud native deployment"
+description: "Compare the classic analytics-based observability deployment with the cloud-native Grafana-based deployment for Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/observability/observability-with-grafana-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/observability/observability-with-grafana-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Enhanced Observability Overview: Classic vs. Cloud Native Deployment
 
 Observability can be viewed as a superset of monitoring where monitoring is enriched with capabilities to perform debugging and profiling through rich context, log analysis, correlation, and tracing. Modern day observability resides on three pillars of **logs**, **metrics**, and **tracing**. Modern businesses require observability systems to self-sufficiently emit their current state(overview), generate alerts for any abnormalities detected to proactively identify failures, and to provide information to find the root causes of a system failure.

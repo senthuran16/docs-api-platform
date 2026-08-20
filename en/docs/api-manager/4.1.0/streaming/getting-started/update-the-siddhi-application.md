@@ -1,3 +1,18 @@
+---
+title: "Step 5: update the siddhi application"
+description: "Extend the SweetFactoryApp Siddhi application to filter events and publish them to a Kafka topic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/getting-started/update-the-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/getting-started/update-the-siddhi-application.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - update-the-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "tutorial"
+---
+
 # Step 5: Update the Siddhi Application
 
 A Siddhi application can be easily extended to consume messages from more sources, to carry out more processing activities for data or to publish data to more destinations. For this example, consider a scenario where you also need to filter out the production data of eclairs and publish it to a Kafka topic so that applications that cannot read streaming data can have access to it. This involves extending the `SweetFactoryApp` Siddhi application to include Kafka in the streaming flow so that it functions as shown in the diagram below.

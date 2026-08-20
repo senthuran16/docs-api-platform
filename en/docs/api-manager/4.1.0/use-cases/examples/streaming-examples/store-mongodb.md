@@ -1,3 +1,18 @@
+---
+title: "Receiving events and persisting in MongoDB store"
+description: "Perform CRUD and upsert operations on stream data in a MongoDB store using Siddhi queries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/store-mongodb/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/store-mongodb.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Events and Persisting in MongoDB Store
 
 ## Purpose:

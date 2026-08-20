@@ -1,3 +1,18 @@
+---
+title: "Amazon S3 connector example"
+description: "Build a sample API that creates an S3 bucket and uploads and retrieves a file using the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazons3-connector/1.x/amazons3-connector-1.x-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazons3-connector/1.x/amazons3-connector-1.x-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazons3-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Amazon S3 Connector Example 
 
 The AmazonS3 Connector allows you to access the REST API of Amazon Simple Storage Service (Amazon S3).  
@@ -20,7 +35,7 @@ Following diagram shows the overall solution. The user creates a bucket, stores 
 
 To invoke each operation, the user uses the same API. 
 
-<img src="../../../../assets/img/integrate/connectors/amazon-s3-diagram.jpg" title="Overview of Amazon S3 use case" width="800" alt="Amazon S3 use case"/>
+<img src="../../../../../assets/img/integrate/connectors/amazon-s3-diagram.jpg" title="Overview of Amazon S3 use case" width="800" alt="Amazon S3 use case"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -32,10 +47,10 @@ Please follow the steps mentioned at [Setting up Amazon S3](amazons3-connector-1
 
 Follow these steps to set up the Integration Project and import AmazonS3 connector into it.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md" 
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API.
-   <img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
+   <img src="../../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 2. Specify the API name as `S3ConnectorTestAPI` and API context as `/s3connector`. You can go to the source view of the XML configuration file of the API and copy the following configuration.
 
@@ -229,7 +244,7 @@ Follow these steps to set up the Integration Project and import AmazonS3 connect
 
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 Now the exported CApp can be deployed in the integration runtime so that we can run it and test.
 
@@ -237,8 +252,8 @@ Now the exported CApp can be deployed in the integration runtime so that we can 
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../../assets/attachments/connectors/s3-connector.zip">
-    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../../assets/attachments/connectors/s3-connector.zip">
+    <img src="../../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -248,7 +263,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -271,7 +286,7 @@ We can use Curl or Postman to try the API. The testing steps are provided for cu
 
     You should receive 200OK response. Please navigate to Amazon AWS S3 console[s3.console.aws.amazon.com] and see if a bucket called `wso2engineers` is created. If you tried to create a bucket with a name that already exists, it will reply back with a message indicating the conflict. 
 
-    <img src="../../../../assets/img/integrate/connectors/amazons3-bucket.png" title="Creating Amazon S3 bucket" width="800" alt="Creating Amazon S3 bucket"/>
+    <img src="../../../../../assets/img/integrate/connectors/amazons3-bucket.png" title="Creating Amazon S3 bucket" width="800" alt="Creating Amazon S3 bucket"/>
 
 ### Post a message into Amazon S3 bucket
 
@@ -299,7 +314,7 @@ We can use Curl or Postman to try the API. The testing steps are provided for cu
     </CompleteMultipartUploadResult>
     ```
     Navigate to AWS S3 console and click on the bucket `wso2engineers`. You will note that a file has been created with the name `Julian.txt`. 
-    <img src="../../../../assets/img/integrate/connectors/amazons3-bucket-upload.jpg" title="Upload object to Amazon S3 bucket" width="800" alt="Upload object to Amazon S3 bucket"/>
+    <img src="../../../../../assets/img/integrate/connectors/amazons3-bucket-upload.jpg" title="Upload object to Amazon S3 bucket" width="800" alt="Upload object to Amazon S3 bucket"/>
 
 ### Read objects from Amazon S3 bucket
 

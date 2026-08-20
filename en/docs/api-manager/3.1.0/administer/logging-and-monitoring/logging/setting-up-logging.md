@@ -1,3 +1,18 @@
+---
+title: "Setting up logging in API Manager"
+description: "Configure Carbon logs, tenant-wise log files, and component-level log settings using log4j2.properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/setting-up-logging/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/setting-up-logging.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up Logging in API Manager
 
 Logging is one of the most important aspects of a production-grade server. A properly configured logging system is vital for identifying errors, security threats, and usage patterns.
@@ -37,7 +52,7 @@ appenders = CARBON_LOGFILE, CARBON_CONSOLE, AUDIT_LOGFILE, ATOMIKOS_LOGFILE, CAR
 DELETE_EVENT_LOGFILE, TRANSACTION_LOGFILE
 ```
    
-The log growth of Carbon Logs can be managed using the configurations mentioned in the [Managing log growth](../../../administer/product-administration/monitoring/logging/managing-log-growth) guide.
+The log growth of Carbon Logs can be managed using the configurations mentioned in the [Managing log growth](managing-log-growth.md) guide.
 
 ###Enable Logs for a Tenant
 
@@ -96,7 +111,7 @@ Follow the instructions below to enable logs for a given service component avail
 ### Enable logs for a component via the UI
 
 !!! note
-    You need to get the [latest product updates for your product](../../../administer/updating-wso2-api-manager/) to use this feature in the current version of WSO2 API-M. This feature is available as a product update in WSO2 API-M 3.1.0 from September 19, 2020 onwards.
+    You need to get the [latest product updates for your product](../../updating-wso2-api-manager.md) to use this feature in the current version of WSO2 API-M. This feature is available as a product update in WSO2 API-M 3.1.0 from September 19, 2020 onwards.
 
     !!! warning
         Note that you can deploy updates in a production environment only if you have a valid subscription with WSO2. Read more about [WSO2 Updates](https://wso2.com/updates).
@@ -247,8 +262,8 @@ The following is a sample Gateway Wire Log for an API request.
 
 ## HTTP Access Logs
 
-HTTP requests/responses are logged in Access Logs to monitor the activities related to an application's usage. For instructions on how to configure and use the HTTP access logs in WSO2 API Manager, see [Monitoring HTTP Access Logs](../../../administer/product-administration/monitoring/logging/monitoring-http-access-logs/). 
+HTTP requests/responses are logged in Access Logs to monitor the activities related to an application's usage. For instructions on how to configure and use the HTTP access logs in WSO2 API Manager, see [Monitoring HTTP Access Logs](monitoring-http-access-logs.md). 
 
 ## Audit Logs
 
-Audit Logs are used for tracking the sequence of actions that affect a particular task carried out on the server. For instructions on how to configure and use the audit logs in WSO2 API Manager, see [Monitoring Audit Logs](../../../administer/product-administration/monitoring/logging/monitoring-audit-logs/).
+Audit Logs are used for tracking the sequence of actions that affect a particular task carried out on the server. For instructions on how to configure and use the audit logs in WSO2 API Manager, see [Monitoring Audit Logs](monitoring-audit-logs.md).

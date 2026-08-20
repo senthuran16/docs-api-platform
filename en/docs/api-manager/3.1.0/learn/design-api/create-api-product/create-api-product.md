@@ -1,6 +1,21 @@
+---
+title: "Create an API Product"
+description: "Create an API Product that combines resources from multiple existing APIs using the API Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/create-api-product/create-api-product/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/create-api-product/create-api-product.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create an API Product
 
-Let's create an API Product named customer leasing that includes resources from the Customer Info API & Leasing API, as discussed in the [previous example](../../../learn/design-api/create-api-product/api-product-overview/#how-it-works).
+Let's create an API Product named customer leasing that includes resources from the Customer Info API & Leasing API, as discussed in the [previous example](api-product-overview.md#how-it-works).
 
 1. Sign in to the API Publisher.
 
@@ -130,6 +145,6 @@ the attached OpenAPI definition (a.k.a Swagger definition) files.
 
      (e.g., `https://localhost:9443/devportal`). 
 
-     For more information on how to subscribe to an API, see [Subscribe to an API](../../../learn/consume-api/manage-subscription/subscribe-to-an-api/).
+     For more information on how to subscribe to an API, see [Subscribe to an API](../../consume-api/manage-subscription/subscribe-to-an-api.md).
     
      

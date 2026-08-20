@@ -1,10 +1,25 @@
+---
+title: "Gmail connector example"
+description: "Build an integration that reads unread customer emails from Gmail and sends automated replies using the Gmail connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/gmail-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/gmail-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Gmail Connector Example
 
 The Gmail Connector allows you to access the [Gmail REST API](https://developers.google.com/gmail/api/v1/reference) from an integration sequence. 
 
 ## What you'll build
 
-<img src="../../../assets/img/integrate/connectors/gmailconnector.png" title="Using Gmail Connector" width="800" alt="Using Gmail Connector"/>
+<img src="../../../../assets/img/integrate/connectors/gmailconnector.png" title="Using Gmail Connector" width="800" alt="Using Gmail Connector"/>
 
 This example demonstrates a scenario where a customer feedback Gmail account of a company can be easily managed using the WSO2 Gmail Connector. This application contains a service that can be invoked through an HTTP GET request. Once the service is invoked, it returns the contents of unread emails in the Inbox under the label of Customers, while sending an automated response to the customer, thanking them for their feedback. The number of emails that can be handled in a single invocation is specified in the application.
 
@@ -13,10 +28,10 @@ If you do not want to configure this yourself, you can simply [get the project](
 ## Configure the connector in WSO2 Integration Studio
 
 1. Follow these steps to set up the Integration Project and the Connector Exporter Project. 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 2. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API. 
-    <img src="../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
+    <img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 3. Follow these steps to [configure the Gmail API](configuring-gmail-api.md) and obtain the Client Id, Client Secret, Access Token and Refresh Token. 
 
@@ -89,14 +104,14 @@ If you do not want to configure this yourself, you can simply [get the project](
 7. In the Rest API and in the Sequence, provide your obtained **Client ID**, **Client Secret**, **Access Token**, and **Refresh Token** accordingly. The **userID** should be your Gmail address. 
 
 8. Follow these steps to export the artifacts. 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/gmailconnector.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/gmailconnector.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -105,7 +120,7 @@ You can download the ZIP file and extract the contents to get the project code.
 ## Deployment
 Follow these steps to deploy the exported CApp in the integration runtime.<br>
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 Invoke the API as shown below using the curl command. Curl Application can be downloaded from [here](https://curl.haxx.se/download.html).

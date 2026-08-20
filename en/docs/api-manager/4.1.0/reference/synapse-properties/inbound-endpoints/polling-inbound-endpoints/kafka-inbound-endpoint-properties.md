@@ -1,3 +1,18 @@
+---
+title: "Kafka inbound"
+description: "Lists the required and optional properties for configuring a Kafka inbound endpoint that consumes topic messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/kafka-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/kafka-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Kafka Inbound 
 ## Introduction
 

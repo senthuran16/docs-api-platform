@@ -1,3 +1,16 @@
+---
+title: "ServiceNow connector overview"
+description: "Learn what the ServiceNow connector does, its compatible product versions, and where to find its example and reference docs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/servicenow-connector/servicenow-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/servicenow-connector/servicenow-overview.md
+tags:
+  - esb-connector
+  - servicenow
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # ServiceNow Connector Overview
 
 ServiceNow is an application platform as a service, which is a cloud-based computing model that provides the infrastructure needed to develop, run, and manage applications. It offers activities of an organization such as data collection, storage, workflow automation, and reporting through a single user interface. This software as a service (SaaS) platform contains a number of modular applications that can vary by instance and user. It focuses on service-orientation toward the tasks, activities, and processes.
@@ -6,7 +19,7 @@ The WSO2 ServiceNow connector allows you to access the ServiceNow REST API from 
 
 To see the available ServiceNow connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "ServiceNow".
 
-<img src="../../../assets/img/integrate/connectors/servicenow-store.png" title="ServiceNow Connector Store" width="200" alt="ServiceNow Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/servicenow-store.png" title="ServiceNow Connector Store" width="200" alt="ServiceNow Connector Store"/>
 
 ## Compatibility
 

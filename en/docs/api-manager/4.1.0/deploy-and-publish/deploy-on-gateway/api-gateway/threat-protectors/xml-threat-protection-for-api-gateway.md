@@ -1,3 +1,18 @@
+---
+title: "XML threat protection for API Gateway"
+description: "Configure the XML threat protector and schema validation to limit XML payload depth, elements, and attributes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/xml-threat-protection-for-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/xml-threat-protection-for-api-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # XML Threat Protection for API Gateway
 
 The XML threat protector in WSO2 API Manager validates the XML payload vulnerabilities based on the pre-configured 
@@ -102,7 +117,7 @@ in sequence.
 
 -   Select `xml_validator` from the drop-down menu for Common Policies.
 
-    <a href="../../../../assets/img/learn/mediation-xml-validator.png"><img src="../../../../assets/img/learn/mediation-xml-validator.png" width="70%" alt="Select XML validator from the drop-down menu"></a> 
+    <a href="../../../../../assets/img/learn/mediation-xml-validator.png"><img src="../../../../../assets/img/learn/mediation-xml-validator.png" width="70%" alt="Select XML validator from the drop-down menu"></a> 
 
     
 -   Scroll down the page and click **Save** to save the changes.

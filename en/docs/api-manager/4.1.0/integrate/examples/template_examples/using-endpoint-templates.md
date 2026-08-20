@@ -1,3 +1,18 @@
+---
+title: "Using endpoint templates"
+description: "Use endpoint templates to define reusable endpoint configurations that vary only by address URI."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/template_examples/using-endpoint-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/template_examples/using-endpoint-templates.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - template_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using Endpoint Templates
 
 For example, let's say we have two address endpoints with the following hypothetical configurations:

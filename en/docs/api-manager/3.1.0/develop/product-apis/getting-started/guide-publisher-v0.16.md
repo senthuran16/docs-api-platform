@@ -1,8 +1,23 @@
+---
+title: "Getting started"
+description: "Walks through obtaining an access token and invoking the Publisher REST API v0.16 with sample curl commands."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/getting-started/guide-publisher-v0.16/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/getting-started/guide-publisher-v0.16.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Getting Started
 
 !!! warning
     - The **Publisher v0.16 REST APIs will be deprecated in the next WSO2 API Manager release**. 
-    - **[WSO2 recommends that you use the Publisher v1 REST APIs](../../../develop/product-apis/publisher-apis/publisher-v1/guide/)** as it up to date and has support for the latest WSO2 API Manager 3.1.0 features.
+    - **[WSO2 recommends that you use the Publisher v1 REST APIs](../publisher-apis/publisher-v1/publisher-v1.md)** as it up to date and has support for the latest WSO2 API Manager 3.1.0 features.
 
 WSO2 API Manager is a complete solution for publishing APIs, creating and managing a developer community, and for scalably routing API traffic. It leverages proven, production-ready, integration, security and governance components from WSO2 Enterprise Service Bus, WSO2 Identity Server, and WSO2 Governance Registry. Moreover, it is powered by API Manager Analytics, thereby making WSO2 API Manager ready for any large-scale deployments right away.
 
@@ -64,4 +79,4 @@ Token response:
 
 Now you have a valid access token, which you can use to invoke an API. Navigate through the API descriptions to find the required API, obtain an access token as described above and invoke the API with the authentication header. If you use a different authentication mechanism, this process may change.
 
-Note: The implementation of WSO2 API Manager is similar to DCR. Since retrieve client application, edit, and delete is only available in DCRM specifications you cannot perform these actions using REST API. However, you can view the created OAuth2 application using the Management Console. Please see [Accessing the Management Console](../../../install-and-setup/install/running-the-product/#accessing-the-management-console) for more details.
+Note: The implementation of WSO2 API Manager is similar to DCR. Since retrieve client application, edit, and delete is only available in DCRM specifications you cannot perform these actions using REST API. However, you can view the created OAuth2 application using the Management Console. Please see [Accessing the Management Console](../../../install-and-setup/install/running-the-product.md#accessing-the-management-console) for more details.

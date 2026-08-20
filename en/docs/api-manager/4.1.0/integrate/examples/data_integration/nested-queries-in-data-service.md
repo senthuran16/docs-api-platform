@@ -1,3 +1,18 @@
+---
+title: "Using nested data queries"
+description: "Use nested queries in a data service to pass one query's result as input to another, transactionally."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/nested-queries-in-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/nested-queries-in-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using Nested Data Queries
 
 Nested queries help you to use the result of one query as an input

@@ -1,3 +1,18 @@
+---
+title: "Setting up the Redis environment"
+description: "Sets up the Redis environment, including client libraries and a local Redis server, for use with the Redis connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/redis-connector/redis-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/redis-connector/redis-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - redis-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Redis Environment 
 
 The Redis connector allows you to access the Redis commands from an integration sequence. Redis stands for remote dictionary server. Redis store/server that stores data as key-value pairs and this key-value store can be used as a database.
@@ -18,8 +33,8 @@ To configure the Redis connector, download the following client libraries from t
 3. Enter **redis-server** command to start the Redis server.
 4. In the command line, you can see the Redis **port** and **PID** as shown below.
     
-    <a href="../../../assets/img/integrate/connectors/redis-server.png"><img src="../../../assets/img/integrate/connectors/redis-server.png" title="Redis server" alt="Redis server"/></a>
+    <a href="../../../../assets/img/integrate/connectors/redis-server.png"><img src="../../../../assets/img/integrate/connectors/redis-server.png" title="Redis server" alt="Redis server"/></a>
  
 5. You can interact with Redis using the built-in client. In the command line, navigate to the location you installed Redis. Enter `redis-cli`.
 
-    <a href="../../../assets/img/integrate/connectors/redis-client.png"><img src="../../../assets/img/integrate/connectors/redis-client.png" title="Redis Client" width="60%" alt="Redis Client"/> </a>
+    <a href="../../../../assets/img/integrate/connectors/redis-client.png"><img src="../../../../assets/img/integrate/connectors/redis-client.png" title="Redis Client" width="60%" alt="Redis Client"/> </a>

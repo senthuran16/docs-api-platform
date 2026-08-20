@@ -1,3 +1,18 @@
+---
+title: "Publish through multiple API Gateways"
+description: "Configure multiple API Gateway environments in WSO2 API Manager to distribute Gateway load to a single Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - deploy-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish Through Multiple API Gateways
 
 If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. This helps you to distribute the API Gateway load to multiple nodes and also gives you some logical separation (e.g., production vs. sandbox) between the APIs in the Developer Portal. When you publish an API through multiple Gateway environments, the APIs in the API Developer Portal will have different server hosts and ports.
@@ -101,7 +116,7 @@ As mentioned above, the **second and the third** instances will serve as the Gat
 
 Carry out the following instructions in the **second** and the **third** instances to configure the Gateway instances so that it can communicate with the Control Plane node:
 
-{!includes/install_setup/configuring_gateway_node.md!}
+--8<-- "api-manager/4.1.0/includes/install_setup/configuring_gateway_node.md"
 
 ## Step 3 - Start the instances
 
@@ -113,27 +128,27 @@ Make sure to start instance 1 first before starting the other two instances.
 
 1.  Sign in to the API Publisher in the **first** WSO2 API-M instance and click to edit an API.
 
-    <a href="../../../assets/img/learn/pizzashak-api-publisher.png"><img src="../../../assets/img/learn/pizzashak-api-publisher.png" title="Pizza Shack Publisher" width="30%" alt="Pizza Shack Publisher"/></a>
+    <a href="../../../../assets/img/learn/pizzashak-api-publisher.png"><img src="../../../../assets/img/learn/pizzashak-api-publisher.png" title="Pizza Shack Publisher" width="30%" alt="Pizza Shack Publisher"/></a>
      
 2.  Click **Deployments** and click **Deploy New Revision**.
 
-    <a href="../../../assets/img/learn/api-revisions-mutiple-gateways.png"><img src="../../../assets/img/learn/api-revisions-mutiple-gateways.png" title="API Revisions Multiple Gateways" width="80%" alt="API Revisions Multiple Gateways"/></a>
+    <a href="../../../../assets/img/learn/api-revisions-mutiple-gateways.png"><img src="../../../../assets/img/learn/api-revisions-mutiple-gateways.png" title="API Revisions Multiple Gateways" width="80%" alt="API Revisions Multiple Gateways"/></a>
     
     Note that the two Gateway environments are listed there
 
-    <a href="../../../assets/img/learn/multiple-gateways-revision-dialog.png"><img src="../../../assets/img/learn/multiple-gateways-revision-dialog.png" title="Multiple Gateways Dialog" width="40%" alt="Multiple Gateways Dialog"/></a>
+    <a href="../../../../assets/img/learn/multiple-gateways-revision-dialog.png"><img src="../../../../assets/img/learn/multiple-gateways-revision-dialog.png" title="Multiple Gateways Dialog" width="40%" alt="Multiple Gateways Dialog"/></a>
 
 3.  Select both Gateways and click deploy.
 
-    <a href="../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png"><img src="../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png" title="Filled Multiple Gateways Dialog" width="40%" alt="Filled Multiple Gateways Dialog"/></a>
+    <a href="../../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png"><img src="../../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png" title="Filled Multiple Gateways Dialog" width="40%" alt="Filled Multiple Gateways Dialog"/></a>
 
 4.  Sign in to the Developer Portal (of the **first** instance) and click on the respective API to open it.
 
-    <a href="../../../assets/img/learn/pizzashack-api-devportal.png"><img src="../../../assets/img/learn/pizzashack-api-devportal.png" title="Dev Portal Pizza Shack" width="30%" alt="Dev Portal Pizza Shack"/></a>
+    <a href="../../../../assets/img/learn/pizzashack-api-devportal.png"><img src="../../../../assets/img/learn/pizzashack-api-devportal.png" title="Dev Portal Pizza Shack" width="30%" alt="Dev Portal Pizza Shack"/></a>
      
     In the **Overview** tab that corresponds to the API, note that it has two sets of URLs for the two Gateway instances:
 
-    <a href="../../../assets/img/learn/multiple-gateways-devportal-overview.png"><img src="../../../assets/img/learn/multiple-gateways-devportal-overview.png" title="Multiple Gateways Deploy Overview" width="50%" alt="Multiple Gateways Deploy Overview"/></a>
+    <a href="../../../../assets/img/learn/multiple-gateways-devportal-overview.png"><img src="../../../../assets/img/learn/multiple-gateways-devportal-overview.png" title="Multiple Gateways Deploy Overview" width="50%" alt="Multiple Gateways Deploy Overview"/></a>
 
 You have successfully published an API to the API Developer Portals through multiple Gateway environments.
 
@@ -141,7 +156,7 @@ You have successfully published an API to the API Developer Portals through mult
 
 Use the following sample cURL command to generate an access token for the Gateway URL of the initially published Gateway Environments, which was listed in API Publisher in step 10, using the Password Grant type.
 
-<a href="../../../assets/img/learn/generate-access-tokens.png"><img src="../../../assets/img/learn/generate-access-tokens.png" title="Generate Access Token" width="55%" alt="Generate Access Token"/></a>
+<a href="../../../../assets/img/learn/generate-access-tokens.png"><img src="../../../../assets/img/learn/generate-access-tokens.png" title="Generate Access Token" width="55%" alt="Generate Access Token"/></a>
 
 Change the Gateway URL based on the Gateway that you need to publish the API.
 

@@ -1,3 +1,18 @@
+---
+title: "Streaming integrator tooling overview"
+description: "Introduces the Streaming Integrator Tooling interfaces used to develop and design Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/streaming-integrator-studio-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/streaming-integrator-studio-overview.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - streaming-integrator-studio-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Streaming Integrator Tooling Overview
 
 The Streaming Integrator Tooling is a developer tool that is shipped with the Streaming Integrator to develop Siddhi applications. It provides four interfaces to develop Siddhi applications.
@@ -159,17 +174,17 @@ The **Edit** menu includes the following options.
 
 -   **Reformat Code**
     Click this to reformat the Siddhi queries in the Siddhi
-    application that you are currently creating/editing in the [source view](#StreamProcessorStudioOverview-SourceView).
+    application that you are currently creating/editing in the [source view](creating-a-siddhi-application.md#creating-a-siddhi-application-in-the-source-view).
 
     !!! info
-        This menu option is only visible when you are working in the [source view](#StreamProcessorStudioOverview-SourceView).
+        This menu option is only visible when you are working in the [source view](creating-a-siddhi-application.md#creating-a-siddhi-application-in-the-source-view).
 
 -   **Auto-Align** <br/>
     Click this to horizontally align all the Siddhi components in a
-    Siddhi application that you are creating/editing in the [design view](#StreamProcessorStudioOverview-DesignView).
+    Siddhi application that you are creating/editing in the [design view](working-with-the-design-view.md).
 
     !!! info
-        This menu option is only visible when you are working in the [design view](#StreamProcessorStudioOverview-DesignView).
+        This menu option is only visible when you are working in the [design view](working-with-the-design-view.md).
 
 #### Run menu Items
 
@@ -183,7 +198,7 @@ The **Run** menu includes the following options.
     saved Siddhi applications can be run.
 
     !!! info
-        This menu option is enabled only when a Siddhi application is being created/edited in the [source view](#StreamProcessorStudioOverview-SourceView).
+        This menu option is enabled only when a Siddhi application is being created/edited in the [source view](creating-a-siddhi-application.md#creating-a-siddhi-application-in-the-source-view).
 
 
 -   **Stop**
@@ -199,7 +214,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **File Explorer**
 
-    The file explorer. This is also available in the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The file explorer. This is also available in the [Side Panel](#side-panel).
 
 - **Extension Installer**
 
@@ -215,7 +230,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
     -   Feed Simulation
 
     For detailed information about event simulation, see [Simulating Events](testing-a-siddhi-application.md#simulating-events).
-    The event simulator can also be accessed from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The event simulator can also be accessed from the [Side Panel](#side-panel).
 
 - **Error Store Explorer**
 
@@ -259,7 +274,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **Console**
 
-    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#side-panel).
 
 - **Sample Event Generator**
 

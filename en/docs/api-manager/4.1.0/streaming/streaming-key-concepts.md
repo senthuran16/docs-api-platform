@@ -1,3 +1,17 @@
+---
+title: "Streaming key concepts"
+description: "Learn the key streaming concepts, including stream processing, data integration, transformation, and change data capture."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/streaming-key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/streaming-key-concepts.md
+tags:
+  - api-manager
+  - streaming
+  - streaming-key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 ## Streaming Key Concepts
 
 | **Concept**                       | **Description**                                                                                                                                                                       |

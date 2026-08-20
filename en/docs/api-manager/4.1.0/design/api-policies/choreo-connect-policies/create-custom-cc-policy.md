@@ -1,3 +1,18 @@
+---
+title: "Create a custom Choreo Connect policy"
+description: "Reference table of Choreo Connect policy actions, parameters, and supported flows for custom policies."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/choreo-connect-policies/create-custom-cc-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/choreo-connect-policies/create-custom-cc-policy.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - choreo-connect-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Create a Custom Choreo Connect Policy
 
 Choreo Connect supports the following operations and the policies supporting these operations are shipped with the WSO2 API Manager by default. The following table contains the action name and parameters of the operations that are supported in Choreo Connect.
@@ -67,7 +82,7 @@ Choreo Connect supports the following operations and the policies supporting the
             <li>includes (this require a comma separated string, which describes what should be included in the request body of the interceptor service)</li>
         </ul></td>
     <td>Request Response</td>
-    <td>Call an interceptor service in request or response flow. For more information, visit <a href="../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview.md">Message Mediation</a>.</td>
+    <td>Call an interceptor service in request or response flow. For more information, visit <a href="../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview/">Message Mediation</a>.</td>
  </tr>
  <tr>
     <td>OPA</td>

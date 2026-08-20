@@ -1,3 +1,18 @@
+---
+title: "Adding an API subscription workflow"
+description: "Attach a custom approval workflow to API subscriptions so an admin must approve a request before the consumer can invoke the API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-workflow.md
+tags:
+  - api-manager
+  - consume
+  - manage-subscription
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Adding an API Subscription Workflow
 
 This section explains how to attach a simple approval workflow to the API subscription operation in the API Manager.

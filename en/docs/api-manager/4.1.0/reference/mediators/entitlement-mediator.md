@@ -1,3 +1,18 @@
+---
+title: "Entitlement mediator"
+description: "Reference for the Entitlement mediator syntax used to evaluate user actions against an XACML policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/entitlement-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/entitlement-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - entitlement-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Entitlement Mediator
 
 The **Entitlement Mediator** intercepts requests and evaluates the actions performed by a user against an [eXtensible Access Control Markup Language (XACML)](http://en.wikipedia.org/wiki/XACML) policy. This supports XACML 2.0 and 3.0. WSO2 Identity Server can be used as the XACML Policy Decision Point (PDP) where the policy is set, and the Micro Integrator serves as the XACML Policy Enforcement Point (PEP) where the policy is enforced.

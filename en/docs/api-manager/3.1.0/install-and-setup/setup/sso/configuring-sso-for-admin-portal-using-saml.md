@@ -1,3 +1,18 @@
+---
+title: "Configuring SSO for Admin Portal using SAML"
+description: "Connect WSO2 Identity Server as a third-party identity provider to configure SAML 2.0 SSO for the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/sso/configuring-sso-for-admin-portal-using-saml/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/sso/configuring-sso-for-admin-portal-using-saml.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring SSO for Admin Portal using SAML
 
 This document explains how to connect WSO2 Identity Server as a third-party Identity Provider to WSO2 API Manager using SAML 2.0. Using this feature, you can configure SSO with SAML 2.0 for Admin Portal.
@@ -19,7 +34,7 @@ This document explains how to connect WSO2 Identity Server as a third-party Iden
 
 1. Configure the user store(s) (if you have not done so already).
 
-    Follow the instructions in [Configuring User Stores](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/introduction-to-userstores/).
+    Follow the instructions in [Configuring User Stores](../../../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md).
 
     Let's use JDBC userstore (MySQL) and share it between WSO2 Identity Server and WSO2 API Manager.
 
@@ -46,7 +61,7 @@ This document explains how to connect WSO2 Identity Server as a third-party Iden
         password = "${password}"
         ```
 
-    4.  Share the userstore with API Manager by adding the same configuration, which was defined in <a href="stepc">Step C</a>) in the `deployment.toml` file, which is in the `<API-M_HOME>/repository/conf` directory.
+    4.  Share the userstore with API Manager by adding the same configuration, which was defined in <a href="#stepc">Step C</a>) in the `deployment.toml` file, which is in the `<API-M_HOME>/repository/conf` directory.
 
     5.  Copy the JDBC driver JAR file into the `<PRODUCT_HOME>/repository/components/lib` directory of both servers.
 

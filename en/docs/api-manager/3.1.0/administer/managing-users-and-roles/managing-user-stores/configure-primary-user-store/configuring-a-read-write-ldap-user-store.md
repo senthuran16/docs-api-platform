@@ -1,10 +1,25 @@
+---
+title: "Configuring a Read-Write LDAP user store"
+description: "Configure a read-write LDAP server as the primary user store for WSO2 API Manager, including admin user updates and server restarts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Read-Write LDAP User Store
 
 WSO2 API Manager provides the user management functionality by default, and it can be configured in the 
 `<API-M_HOME>/repository/conf/deployment.toml` file. The instructions given below explains how to configure a read-write LDAP as the primary user store for WSO2 API Manager.
 
 !!! tip
-    To get a high-level understanding of the primary user stores available in WSO2 API Manager, see [Configuring primary User Stores](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store/).
+    To get a high-level understanding of the primary user stores available in WSO2 API Manager, see [Configuring primary User Stores](configuring-the-primary-user-store.md).
 
 !!! info
     **Default User Store**: The primary user store that is configured by default in the `deployment.toml` file of API Manager is a JDBC user store, which reads/writes into the internal database of the product server. By default, the internal database is H2. This database is used by the Authorization Manager (for user authentication information) as well as the User Store Manager (for defining users and roles).
@@ -16,7 +31,7 @@ Follow the given steps to configure a read-write LDAP as the primary user store:
 -   [Step 1 - Set up the read-write LDAP user store manager](#step-1-set-up-the-read-write-ldap-user-store-manager)
 -   [Step 2 - Update the system administrator](#step-2-update-the-system-administrator)
 -   [Step 3 - Start the IS server](#step-3-start-the-is-server)
--   [Step 4 - Start the APIM server](#step-4-start-the-apim-server)
+-   [Step 4 - Start the APIM server](#step-4-start-the-api-m-server)
 
 ### Step 1 - Set up the read-write LDAP user store manager
 
@@ -195,7 +210,7 @@ Apart from above properties WSO2 API Manager also supports advanced LDAP configu
 
 ### Step 2 - Update the system administrator
 
-The **admin** user is the super tenant that will be able to manage all other users, roles, and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the LDAP user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the LDAP. For information about the system administrator user, see [Configuring the System Administrator](../../../../reference/config-catalog/#super-admin-configurations).
+The **admin** user is the super tenant that will be able to manage all other users, roles, and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the LDAP user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the LDAP. For information about the system administrator user, see [Configuring the System Administrator](../../../../reference/config-catalog.md#super-admin-configurations).
 
 These two alternative configurations can be done as explained below.
 
@@ -286,7 +301,7 @@ Default: uid<br />
 <br />
 Ideally, <code>UserNameAttribute</code> and <code>UserNameSearchFilter</code> should refer to the same attribute. If you are not sure what attribute is available in your user store, check with your LDAP administrator.
 <br />
-Note: email address is considered as a special case in WSO2 products, if you want to set the email address as the username, see <a href="../../../../administer/product-security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
+Note: email address is considered as a special case in WSO2 products, if you want to set the email address as the username, see <a href="../../../../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
 </tr>
 <tr class="odd">
 <td>UserIDAttribute</td>

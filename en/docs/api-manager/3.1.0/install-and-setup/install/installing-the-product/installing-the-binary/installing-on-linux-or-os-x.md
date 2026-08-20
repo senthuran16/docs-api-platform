@@ -1,17 +1,32 @@
+---
+title: "Installing on Linux or OS X"
+description: "Install WSO2 API Manager on Linux or OS X, set the JAVA_HOME environment variable, and configure server system properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-linux-or-os-x/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-linux-or-os-x.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing on Linux or OS X
 
 !!! note
 
     **Before you begin:**
 
-    -   See [our compatibility matrix](../../../../install-and-setup/ProductCompatibility) to find out if this version of the product is fully tested on Linux or OS X.
+    -   See [our compatibility matrix](../../../../install-and-setup/setup/reference/product-compatibility.md) to find out if this version of the product is fully tested on Linux or OS X.
 
 Follow the instructions below to install API Manager on Linux or Mac OS X.
 
 ### Installing the required applications
 
 1.  Log in to the command line (Terminal on Mac).
-2.  Ensure that your system meets the [Installation Prerequisites](../../../../install-and-setup/installation-guide/installation-prerequisites). Java Development Kit (JDK) is essential to run the product.
+2.  Ensure that your system meets the [Installation Prerequisites](../../installation-prerequisites.md). Java Development Kit (JDK) is essential to run the product.
 
 ### Installing the API Manager
 
@@ -70,4 +85,4 @@ If you need to set additional system properties when the server starts, you can 
 
     When using SUSE Linux, it ignores `/etc/resolv.conf` and only looks at the `/etc/hosts` file. This means that the server will throw an exception on startup if you have not specified anything besides localhost. To avoid this error, add the following line above `127.0.0.1 localhost` in the `/etc/hosts` file: `<ip_address><machine_name> localhost`
 
-You are now ready to [run the product](../../../../install-and-setup/installation-guide/running-the-product/).
+You are now ready to [run the product](../../running-the-product.md).

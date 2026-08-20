@@ -1,3 +1,18 @@
+---
+title: "Default product ports"
+description: "Lists the default ports used by each API Manager runtime when the port offset is set to 0."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/reference/default-product-ports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/reference/default-product-ports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Default Product Ports
 
 This page describes the default ports used by each runtime of WSO2 API Manager.
@@ -172,7 +187,7 @@ By default, the Micro Integrator is **internally** configured with a port offset
             <code>9201</code>
         </td>
         <td>
-            The HTTP port of the <a href="../../../observe/mi-observe/working-with-management-api.md">Management API</a> of WSO2 Micro Integrator.</br></br>
+            The HTTP port of the <a href="../../../../observe/mi-observe/working-with-management-api/">Management API</a> of WSO2 Micro Integrator.</br></br>
             <b>Configuring the default HTTP port</b></br>
             If required, you can manually change the HTTP port in the <code>deployment.toml</code> file (stored in the <code>MI_HOME/conf</code> folder) as shown below.</br></br>
             <div>
@@ -187,7 +202,7 @@ By default, the Micro Integrator is **internally** configured with a port offset
             <code>9164</code>
         </td>
         <td>
-            The HTTPS port of the <a href="../../../observe/mi-observe/working-with-management-api.md">Management API</a> of WSO2 Micro Integrator.</br></br>
+            The HTTPS port of the <a href="../../../../observe/mi-observe/working-with-management-api/">Management API</a> of WSO2 Micro Integrator.</br></br>
             <b>Configuring the default HTTPS port</b></br>
             If required, you can manually change the HTTPS port in the <code>deployment.toml</code> file (stored in the <code>MI_HOME/conf</code> folder) as shown below.</br></br>
             <div>

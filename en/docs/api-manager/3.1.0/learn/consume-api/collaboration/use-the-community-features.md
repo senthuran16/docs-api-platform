@@ -1,3 +1,18 @@
+---
+title: "Use the community features"
+description: "Use Developer Portal community features such as search, ratings, and comments on published APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/collaboration/use-the-community-features/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/collaboration/use-the-community-features.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - collaboration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Use the Community Features
 
 The Developer Portal provides several useful features to build and nurture an active community of users, for your APIs. This is required to advertise APIs, learn user requirements and market trends.
@@ -7,10 +22,12 @@ Let's see what community features are available in the Developer Portal:
 -   [Use the search facility](#use-the-search-facility)
 -   [Rate and comment](#rate-and-comment)
 
+<a name="use-the-search-facility"></a>
 #### Use the search facility
 
 You can search for APIs in the API Publisher or Developer Portal. To check more details refer [API Search page](../discover-apis/search.md).
 
+<a name="rate-and-comment"></a>
 #### Rate and comment
 
 Rates and comments give useful insights to potential API consumers on the quality and usefulness of an API. You can rate and comment on each API version.

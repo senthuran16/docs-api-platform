@@ -1,3 +1,18 @@
+---
+title: "Guaranteed delivery with failover"
+description: "Configure a failover message store and scheduled forwarding processor to ensure guaranteed JMS message delivery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/guaranteed-delivery-with-failover/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/guaranteed-delivery-with-failover.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Guaranteed Delivery with Failover
 
 WSO2 Micro Integrator ensures guaranteed delivery with the failover message store and scheduled failover message forwarding processor. The topics in the following section describe how you can setup guaranteed message delivery with failover configurations.

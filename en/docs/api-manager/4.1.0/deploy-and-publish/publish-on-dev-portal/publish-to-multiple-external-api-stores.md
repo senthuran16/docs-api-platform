@@ -1,10 +1,25 @@
+---
+title: "Publish to multiple external Developer Portals"
+description: "Configure an API Publisher to advertise and publish an API to Developer Portals of other tenants and instances."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/publish-on-dev-portal/publish-to-multiple-external-api-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/publish-on-dev-portal/publish-to-multiple-external-api-stores.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - publish-on-dev-portal
+  - publish-to-multiple-external-api-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish to Multiple External Developer Portals
 
 You can share an API with application developers who are subscribed to the Developer Portals of other tenants. Thereby, this allows you to advertise your APIs to a wider community. Subscribers of other tenant developer portals can view and browse your APIs; however, the users must visit your (the original publisher's) Developer Portal to subscribe to the APIs.
 
 The following diagram illustrates the process involved when an API Publisher publishes to multiple Developer Portals.
 
-<img src="../../assets/img/learn/publish-to-multiple-developer-portals.png" alt="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" title="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" width="45%" />
+<img src="../../../assets/img/learn/publish-to-multiple-developer-portals.png" alt="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" title="Illustrates the process involved when an API Publisher publishes to multiple Developer Portals" width="45%" />
 
 <a name="step8"> </a>
 
@@ -47,7 +62,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
 5.  Navigate to  **Main > Resources > Browse**.
 
-    <img src="../../assets/img/learn/navigate-main-resources.png" alt="Menu option to navigate to the Browse option" title="Menu option to navigate to the Browse option" width="70%" />
+    <img src="../../../assets/img/learn/navigate-main-resources.png" alt="Menu option to navigate to the Browse option" title="Menu option to navigate to the Browse option" width="70%" />
     
      The Registry opens.
 

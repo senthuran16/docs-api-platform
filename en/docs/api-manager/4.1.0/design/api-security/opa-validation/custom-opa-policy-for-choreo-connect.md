@@ -1,3 +1,17 @@
+---
+title: "Custom OPA policy for Choreo connect"
+description: "Create a custom OPA policy for Choreo Connect by implementing your own Request Policy Generator interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/opa-validation/custom-opa-policy-for-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/opa-validation/custom-opa-policy-for-choreo-connect.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - opa-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
 
 # Custom OPA Policy for Choreo Connect
 

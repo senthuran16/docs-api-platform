@@ -1,3 +1,18 @@
+---
+title: "Configuring transport level security"
+description: "Configure transport-level security settings such as disabling weak ciphers and changing server response headers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/security/configuring-transport-level-security/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/security/configuring-transport-level-security.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Transport Level Security
 
 Given below are the various transport-level security configurations that are required for WSO2 API Manager. See the following topics for instructions.

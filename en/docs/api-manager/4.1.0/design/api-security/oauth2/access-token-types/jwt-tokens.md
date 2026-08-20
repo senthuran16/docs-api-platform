@@ -1,3 +1,18 @@
+---
+title: "Secure APIs using JWT (Self contained) access tokens"
+description: "Use self-contained, signed JWT OAuth2 access tokens as API credentials, validated directly by the gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/access-token-types/jwt-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/access-token-types/jwt-tokens.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Secure APIs using JWT (Self Contained) Access Tokens
 
 JSON Web Token (JWT) is an open standard of transmitting information securely between two parties. As the tokens are digitally signed, the information is secured. The authentication and authorization process uses JWT access tokens. It is ideal to use JWT access tokens as API credentials because JWT access tokens can carry claims (data) that are used in order to authenticate and authorize requests.

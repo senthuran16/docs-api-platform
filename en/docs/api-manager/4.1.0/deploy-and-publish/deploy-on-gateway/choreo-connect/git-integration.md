@@ -1,3 +1,18 @@
+---
+title: "Git integration for Choreo connect"
+description: "Integrate Choreo Connect with a Git repository so the Adapter can version-control and redeploy API artifacts automatically."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Git Integration for Choreo Connect
 
 The following section provides information on how to integrate Choreo Connect with Git for version controlling of API artifacts.
@@ -168,6 +183,7 @@ The source watcher needs to be authenticated with the Git repository to fetch th
 
 __________________________________________
 
+<a name="using-username-and-access-token"></a>
 #### **Using the Username and Access Token**
 
 To authenticate the repository with basic HTTP authentication, the username and access token should be set in the `username` and `accessToken` fields. The password can also be set in the `accessToken` field. It is recommended to use the personal access token for authentication. For public repositories (in GitHub), the `username` and `accessToken` fields can be kept empty.
@@ -222,6 +238,7 @@ To authenticate the repository with basic HTTP authentication, the username and 
 
 __________________________________________
 
+<a name="using-ssh-key-file"></a>
 #### **Using the SSH Key file**
 
 To authenticate the repository with SSH key, the SSH private key file path should be set in the `SSHKeyFile` field. 
@@ -340,7 +357,7 @@ To authenticate the repository with SSH key, the SSH private key file path shoul
 
 Start Choreo Connect on Docker Compose by executing the Docker Compose script inside the `<CHOREO-CONNECT_HOME>` directory.
 
-{!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 1. Navigate to `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/` directory.
 

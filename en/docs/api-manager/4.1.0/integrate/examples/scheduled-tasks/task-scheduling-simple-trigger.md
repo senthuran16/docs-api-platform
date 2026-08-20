@@ -1,3 +1,18 @@
+---
+title: "Task scheduling using a simple trigger"
+description: "Schedule a recurring task in WSO2 Micro Integrator using a Quartz trigger and the MessageInjector class to send messages to an endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/scheduled-tasks/task-scheduling-simple-trigger/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/scheduled-tasks/task-scheduling-simple-trigger.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - scheduled-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Task Scheduling using a Simple Trigger
 This example demonstrates the concept of tasks and how a simple trigger works. Here the `MessageInjector` class is used, which injects a specified message to the Micro Integrator environment. You can write your own task class implementing the `org.apache.synapse.startup.Task` interface and implement the `execute` method to run the task.
 

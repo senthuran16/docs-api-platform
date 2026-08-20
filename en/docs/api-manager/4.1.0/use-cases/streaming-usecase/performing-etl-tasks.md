@@ -1,3 +1,18 @@
+---
+title: "Performing ETL operations"
+description: "Explains how WSO2 Streaming Integrator performs real-time ETL operations to extract, transform, and load streaming data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/performing-etl-tasks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/performing-etl-tasks.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - performing-etl-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Performing ETL Operations
 
 ETL (Extract Transform Load) is a form of data processing that involves **extracting** data from one or multiple sources (typically from multiple sources), **transforming data** to generate the required output, and then **loading** that output to one or more destinations to make it available for further processing.
@@ -196,7 +211,7 @@ update or insert into StockRecords
 ## Scalability
 
 When there are rapid changes and growths in business, it is necessary to scale ETL applications in an agile manner to support it. WSO2 Streaming Integrator supports the need for scalability via the Siddhi logic. 
-This can be observed in the previous examples where the `ManagingStocksApp` Siddhi application which only captured purchase records in the [Performing ETL in real time section](#performing-ETL-in-real-time) and with only two files and one database table (`SugarSupply.csv` file, `FlourSupply.csv` file and `PurchaseRecords` database table) in the ETL flow was scaled to perform stock updates by incorporating another file and a database (i.e., `MaterialDispatches.csv` file and `StockRecords` database table) to the ETL flow.
+This can be observed in the previous examples where the `ManagingStocksApp` Siddhi application which only captured purchase records in the [Performing ETL in real time section](#performing-etl-in-real-time) and with only two files and one database table (`SugarSupply.csv` file, `FlourSupply.csv` file and `PurchaseRecords` database table) in the ETL flow was scaled to perform stock updates by incorporating another file and a database (i.e., `MaterialDispatches.csv` file and `StockRecords` database table) to the ETL flow.
 
 ![Extended ETL Flow](../../assets/img/streaming/performing-etl-operations/extended-etl-flow.png)
 

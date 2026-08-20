@@ -1,3 +1,18 @@
+---
+title: "Creating a custom validator"
+description: "Create or import a custom Java validator to check request input parameters for a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/creating-input-validators/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/creating-input-validators.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Creating a custom validator
 
 An **input validator** allows a data service to validate the input

@@ -1,3 +1,18 @@
+---
+title: "Specifying a mediation flow using a policy"
+description: "Explains how to attach and arrange multiple policies across the request, response, and fault flows of an operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/regular-gateway-policies/specifying-mediation-flow-based-on-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/regular-gateway-policies/specifying-mediation-flow-based-on-policy.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Specifying a Mediation Flow Using a Policy
 
 Operation level policy support provides the ability to attach multiple policies at the operation level itself.
@@ -18,11 +33,11 @@ A common policy is a globally maintained policy and you can easily utilize this 
 
 2. Navigate to **Policies** page from the left menu. Notice that there are some out-of-the-box policies that you can use.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy1.png"><img src="../../../assets/img/publish/policy-mediation/policy1.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy1.png"><img src="../../../../assets/img/publish/policy-mediation/policy1.png" width="70%"></a>
 
 3. Now let’s create a new policy named “Sample Log”. Click the **Add New Policy** button from the top, and you will see the following screen. Notice that the first step is to upload the Policy Definition file.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy2.png"><img src="../../../assets/img/publish/policy-mediation/policy2.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy2.png"><img src="../../../../assets/img/publish/policy-mediation/policy2.png" width="70%"></a>
 
 4. Policy Definition is a .j2 file that includes the Synapse gateway related logic. For this sample policy you can make use of the below logic. You can copy this content and save the file as addLogMessage.j2. Then click or drag the definition file to the dropzone appearing in the screen from step 3.
 
@@ -36,7 +51,7 @@ A common policy is a globally maintained policy and you can easily utilize this 
 
 6. You need to provide the Policy Specification, which is a JSON that describes the policy that you are about to add.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy3.png"><img src="../../../assets/img/publish/policy-mediation/policy3.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy3.png"><img src="../../../../assets/img/publish/policy-mediation/policy3.png" width="70%"></a>
 
     You can use this sample JSON and simply paste it in the editor.
 
@@ -69,7 +84,7 @@ A common policy is a globally maintained policy and you can easily utilize this 
 
 9. Try viewing this policy by clicking **View**. Notice that you can download the policy that we have created using the **Download Policy** button. This download operation will give you the .zip file inclusive of the Policy Definition file and Policy Specification file.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy4.png"><img src="../../../assets/img/publish/policy-mediation/policy4.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy4.png"><img src="../../../../assets/img/publish/policy-mediation/policy4.png" width="70%"></a>
 
 10. You can delete this newly created policy using the **Delete** action.
 
@@ -80,17 +95,17 @@ If you would rather create a policy that is local to the API, you can follow the
 
 1. Navigate to the **Policies** tab under any API that you want. You will see a screen like below. Click on the **Add New Policy** button in order to create an API specific policy.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy5.png"><img src="../../../assets/img/publish/policy-mediation/policy5.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy5.png"><img src="../../../../assets/img/publish/policy-mediation/policy5.png" width="70%"></a>
 
 2. Then you will be redirected to a screen where you can set up the policy for your API.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy6.png"><img src="../../../assets/img/publish/policy-mediation/policy6.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy6.png"><img src="../../../../assets/img/publish/policy-mediation/policy6.png" width="70%"></a>
 
 3. Now you can upload the Policy Definition file, and add in the Policy Specification JSON just like you did under the common policy creation. Then, click on **Save** to create a policy.
 
 4. Refer to the below screenshot to find such a local policy. Notice the policy named **Local Test**, where the delete operation is enabled as opposed to the disabled delete operations of Common Policies.
 
-    <a href="../../../assets/img/publish/policy-mediation/policy7.png"><img src="../../../assets/img/publish/policy-mediation/policy7.png" width="70%"></a>
+    <a href="../../../../assets/img/publish/policy-mediation/policy7.png"><img src="../../../../assets/img/publish/policy-mediation/policy7.png" width="70%"></a>
 
 5. You can perform view and delete actions on API specific policies by clicking the respective icons next to the policy.
 
@@ -98,11 +113,11 @@ If you would rather create a policy that is local to the API, you can follow the
 
 When it comes to attaching these policies to an API resource, you can pick out the desired operation and flow. Once that is decided, you can expand the relevant section from the left column of the below UI. Let’s assume that we want to attach a policy to /menu get.
 
-<a href="../../../assets/img/publish/policy-mediation/policy8.png"><img src="../../../assets/img/publish/policy-mediation/policy8.png" width="70%"></a>
+<a href="../../../../assets/img/publish/policy-mediation/policy8.png"><img src="../../../../assets/img/publish/policy-mediation/policy8.png" width="70%"></a>
 
 Now let’s drag the **Add Header Policy** from the **Request** tab of the **Policy List** and drop that to the dropzone highlighted in the above image. Then, you will notice a side panel appearing from the right hand side.
 
-<a href="../../../assets/img/publish/policy-mediation/policy9.png"><img src="../../../assets/img/publish/policy-mediation/policy9.png" width="70%"></a>
+<a href="../../../../assets/img/publish/policy-mediation/policy9.png"><img src="../../../../assets/img/publish/policy-mediation/policy9.png" width="70%"></a>
 
 Let’s add in the header name as Foo and header value as Bar and click **Save**.
 
@@ -111,7 +126,7 @@ Let’s add in the header name as Foo and header value as Bar and click **Save**
 
 Now that we have saved the dropped policy, you should be able to see a new Add Header policy (depicts with the initials AH) under the /menu get like so:
 
-<a href="../../../assets/img/publish/policy-mediation/policy10.png"><img src="../../../assets/img/publish/policy-mediation/policy10.png" width="70%"></a>
+<a href="../../../../assets/img/publish/policy-mediation/policy10.png"><img src="../../../../assets/img/publish/policy-mediation/policy10.png" width="70%"></a>
 
 If you click on this newly appended AH policy, you should still be able to edit the initially added values and update those saved values.
 

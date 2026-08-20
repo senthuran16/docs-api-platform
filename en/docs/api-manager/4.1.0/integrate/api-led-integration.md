@@ -1,3 +1,17 @@
+---
+title: "API-led integration"
+description: "Implement an API-led integration strategy by developing experience, process, and system APIs separately."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/api-led-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/api-led-integration.md
+tags:
+  - api-manager
+  - integrate
+  - api-led-integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # API-led Integration
 
 WSO2 API Manager consists of an API management layer as well as an integration layer. While the integration layer (Micro Integrator) is used for running the integration logic, the API management layer is used for managing the APIs (with the integration logic) and making these APIs discoverable to developers.
@@ -10,7 +24,7 @@ This development strategy enables you to first design the **experience APIs** in
 
 Integration developers will then use the Swagger definition of the experience APIs and implement the **process APIs** that contains the integration logic as well as the **system APIs** that directly interact with internal and external systems.
 
-<a href="../assets/img/integrate/api-led-integration/api-first.jpg"><img src="../assets/img/integrate/api-led-integration/api-first.jpg" alt="api-first integration development"></a>
+<a href="../../assets/img/integrate/api-led-integration/api-first.jpg"><img src="../../assets/img/integrate/api-led-integration/api-first.jpg" alt="api-first integration development"></a>
 
 The high-level steps are as follows:
 
@@ -35,7 +49,7 @@ The high-level steps are as follows:
 
 With this development strategy, integration developers will first create the **process APIs** (with the integration logic) or the **system APIs**. These integration services are published to the service catalog in the API management layer. API creators will then convert these integration APIs to **experience APIs**.
 
-<a href="../assets/img/integrate/api-led-integration/integration-first.jpg"><img src="../assets/img/integrate/api-led-integration/integration-first.jpg" alt="api-first integration development"></a>
+<a href="../../assets/img/integrate/api-led-integration/integration-first.jpg"><img src="../../assets/img/integrate/api-led-integration/integration-first.jpg" alt="api-first integration development"></a>
 
 The high-level steps are as follows:
 

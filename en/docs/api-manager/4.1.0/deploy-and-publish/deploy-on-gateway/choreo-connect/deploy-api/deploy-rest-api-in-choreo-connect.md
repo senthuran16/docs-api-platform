@@ -1,3 +1,18 @@
+---
+title: "Deploying a REST API in Choreo Connect"
+description: "Deploy a REST API in Choreo Connect via the WSO2 API Manager Publisher Portal or apictl in standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploying a REST API in Choreo Connect
 
 You can deploy a REST API in the following ways depending on the Choreo Connect **mode** you have chosen.
@@ -36,7 +51,7 @@ For this example, let's create an API via the WSO2 API Manager Publsiher Portal.
 
  The guide [here](../../deploy-api/deploy-an-api.md) will explain how you could easily deploy the API you just created.
 
-That's it! To invoke the API follow the steps [here](#step-4-invoke-the-api).
+That's it! To invoke the API follow the steps [here](#step-3-invoke-the-api).
 
 !!! info
 
@@ -50,8 +65,8 @@ That's it! To invoke the API follow the steps [here](#step-4-invoke-the-api).
 
 ###  Step 3 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.1.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.
@@ -84,12 +99,12 @@ Let's create your first project "petstore" using an OpenAPI definition. The foll
 apictl init petstore --oas https://petstore.swagger.io/v2/swagger.json
 ```
 
-{! ./includes/deploy/cc-deploy-api-standalone-mode.md !}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-deploy-api-standalone-mode.md"
 
 ###  Step 6 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.1.0/includes/invoke-api-with-jwt.md"
 
 !!! info 
 

@@ -1,3 +1,18 @@
+---
+title: "Transforming API message payload"
+description: "Understand how the API Gateway transforms message payloads between content types using builders and formatters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/transforming-api-message-payload/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/transforming-api-message-payload.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Transforming API Message Payload
 
 When a request comes to the API Manager, it sends the response in the same format of the request. For example, 
@@ -14,7 +29,7 @@ from the message. As with message builders, the message formatter is selected ba
     Note that if you edit an API's synapse configuration as mentioned in this guide and then go back to the API 
     Publisher and save the API, your changes will be overwritten. Therefore, we do not recommend changing the API's 
     synapse configuration directly. The recommended way to extend an API's mediation flow is by 
-    [engaging <code>In/Out</code> sequences](../../../learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests) .
+    [engaging <code>In/Out</code> sequences](changing-the-default-mediation-flow-of-api-requests.md) .
 
 
 !!! info

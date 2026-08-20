@@ -1,3 +1,18 @@
+---
+title: "Disabling message chunking"
+description: "Disable chunked Transfer-Encoding for an API's backend calls when the backend doesn't support chunking."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/regular-gateway-policies/disabling-message-chunking/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/regular-gateway-policies/disabling-message-chunking.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Disabling Message Chunking
 
 When processing large messages, message chunking facilitates sending the message as multiple independent chunks. 

@@ -1,5 +1,21 @@
+---
+title: "Enabling or disabling self signup"
+description: "Enable Developer Portal self sign-up for tenants by editing the sign-up-config.xml registry resource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enabling or Disabling Self Signup
 
+<a name="enabling-self-signup"></a>
 #### Enabling self signup
 
 In a multi-tenanted API Manager setup, self signup to the Developer Portal works out-of-the-box for super tenant(`carbon.super`). **But in order to make it work for tenants the following steps should be carried out**.

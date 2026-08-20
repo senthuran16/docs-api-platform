@@ -1,3 +1,18 @@
+---
+title: "Create a GraphQL API"
+description: "Design a GraphQL API in API Manager from a Schema Definition Language schema, then configure scopes and rate limiting for its operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/create-api/create-a-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/create-api/create-a-graphql-api.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create a GraphQL API
 
 GraphQL, which has been developed by Facebook, is a data query language for APIs. When using GraphQL, users can explicitly specify as to what data they need from an API. GraphQL APIs are an alternative to REST-based APIs. 
@@ -162,7 +177,7 @@ Follow the instructions below to design a GraphQL API
                 </p>
                 </div>
                   
-                Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users](../../../administer/product-administration/managing-users-and-roles/adding-users) and [Adding User Roles](../../../administer/product-administration/managing-users-and-roles/adding-user-roles).
+                Create a role named `FilmSubscriber` and assign it to the `admin` user for this example scenario. For more information, see [Adding Users](../../../administer/managing-users-and-roles/managing-users.md) and [Adding User Roles](../../../administer/managing-users-and-roles/managing-user-roles.md).
                
 
                 [![Create a scope](../../../assets/img/learn/create-scope.png)](../../../assets/img/learn/create-scope.png)
@@ -193,7 +208,7 @@ Follow the instructions below to design a GraphQL API
 
                  [![Scope list](../../../assets/img/learn/scope-list.png)](../../../assets/img/learn/scope-list.png)
 
-Now, you have successfully created and configured a GraphQL API. Next, let's [Publish your API](../../../learn/design-api/publish-api/publish-an-api).
+Now, you have successfully created and configured a GraphQL API. Next, let's [Publish your API](../publish-api/publish-an-api.md).
 
 ### GraphQL operations
 

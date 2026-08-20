@@ -1,3 +1,18 @@
+---
+title: "Writing a custom user store manager"
+description: "Write a custom user store manager by overriding methods of the AbstractUserStoreManager class in WSO2 products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Writing a Custom User Store Manager
 
 This page demonstrates the process of writing a simple custom user store

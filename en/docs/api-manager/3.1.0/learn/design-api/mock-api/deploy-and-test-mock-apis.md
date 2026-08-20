@@ -1,3 +1,18 @@
+---
+title: "Deploy and test prototype APIs"
+description: "Deploy a created API as a prototype and invoke it through the API Console to test mock responses before publishing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/mock-api/deploy-and-test-mock-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/mock-api/deploy-and-test-mock-apis.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - mock-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploy and Test Prototype APIs
 
 You would need to create an API prototype for the purpose of early promotion and testing. You can deploy a new API or a new version of an existing API as a prototype. It gives subscribers an early implementation of the API that they can try out without a subscription or monetization, and in-turn the subscribers can provide feedback to improve the API. After a period of time, the publishers can make changes that the users request and publish the API.
@@ -7,7 +22,7 @@ You would need to create an API prototype for the purpose of early promotion and
 !!! note
 
     The example described in the following steps uses the `PizzaShackAPI 2.0.0` API. For more information on creating this API, see 
-    [Create a New API Version](../../../learn/design-api/api-versioning/create-a-new-api-version/).
+    [Create a New API Version](../api-versioning/create-a-new-api-version.md).
 
 1.  Sign in to the WSO2 API Publisher `https://<hostname>:9443/publisher` and click on the API (e.g., `PizzaShackAPI 2.0.0`) that you want to prototype.
      

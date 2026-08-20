@@ -1,3 +1,18 @@
+---
+title: "Configuring secondary user stores"
+description: "Enable the user-core feature and add secondary user stores to the Micro Integrator using template configuration files."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores-mi.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Secondary User Stores
 
 For user management purposes, the WSO2 Micro Integrator can connect to several secondary user stores.

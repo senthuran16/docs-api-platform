@@ -1,3 +1,18 @@
+---
+title: "Hot deploying artifacts"
+description: "Understand hot deployment of Synapse artifacts in the Micro Integrator and how to disable it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/hot-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/hot-deployment.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - hot-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Hot Deploying Artifacts
 
 Hot deployment is the process of dynamically deploying your synapse artifacts (XML), dataservices(DBS), carbon applications (CAR), etc., in your Micro Integrator. That is, it is not required to restart the server for the artifact deployment to be effective.

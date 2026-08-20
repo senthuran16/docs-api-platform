@@ -1,3 +1,18 @@
+---
+title: "Tuning inbound endpoints"
+description: "Tune HTTP and Kafka inbound endpoints by configuring worker pool and thread pool settings for better throughput."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/tuning-inbound-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/tuning-inbound-endpoints.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Tuning Inbound Endpoints
 
 See the following topics to tune the HTTP and Kafka inbound endpoints.

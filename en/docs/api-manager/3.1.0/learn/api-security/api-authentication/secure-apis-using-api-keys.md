@@ -1,3 +1,18 @@
+---
+title: "Secure APIs with API keys"
+description: "Generate and use a JWT-based API key from the Developer Portal to secure API invocations without OAuth2."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/secure-apis-using-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/secure-apis-using-api-keys.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Secure APIs with API Keys
 
 An API key is the simplest form of application-based security that you can configure for an API. You can obtain an API key for a client application from WSO2 API Manager's Developer Portal, via the UI, or via REST APIs. Thereafter, the client application can use the API key to invoke the APIs that are secured with the API key security scheme.
@@ -110,7 +125,7 @@ You can use any one of the following methods to invoke the API.
 
 - Specify as a query parameter in the API request.
 
-     - `<url_encoded_API_key_value>` - Encode the API key using a URL encoder (e.g., [https://www.urlencoder.org](ttps://www.urlencoder.org)).
+     - `<url_encoded_API_key_value>` - Encode the API key using a URL encoder (e.g., [https://www.urlencoder.org](https://www.urlencoder.org)).
 
      ``` bash tab="Format"
      curl -k -X GET "https://localhost:8243/pizzashack/1.0.0/menu?apikey=<url_encoded_API_key_value>"
@@ -177,7 +192,7 @@ Follow the instructions below to configure a custom Keystore to sign the API Key
  
 1. Add the custom Keystore into the `<API-M_HOME>/repository/resources/security` directory.
 
-2. Export the public certificate from the custom Keystore and import that into the client trust store as described in [Importing the public certificate into the client truststore](../../../learn/api-security/api-authentication/secure-apis-using-api-keys/#importing-the-public-certificate-into-the-client-trust-store).
+2. Export the public certificate from the custom Keystore and import that into the client trust store as described in [Importing the public certificate into the client truststore](secure-apis-using-api-keys.md#importing-the-public-certificate-into-the-client-trust-store).
  
 3. Add the custom Keystore configuration in the `<API-M_HOME>/repository/conf/deployment.toml` file as follows:
     
@@ -209,7 +224,7 @@ Follow the instructions below to configure a custom Keystore to sign the API Key
      api_key_keystore = "KeySignKeyStore"
      ```
 
-5. Configure the alias name value as described in [Changing the alias name in the JWT](../../../learn/api-security/api-authentication/secure-apis-using-api-keys/#changing-the-alias-name-in-the-jwt).
+5. Configure the alias name value as described in [Changing the alias name in the JWT](secure-apis-using-api-keys.md#changing-the-alias-name-in-the-jwt).
 
 ### API key restriction for IP address and HTTP referrer
 

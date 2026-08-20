@@ -1,3 +1,18 @@
+---
+title: "Writing custom handlers"
+description: "Write, build, and engage a custom Synapse handler to extend the API Gateway's default mediation flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-gateway/writing-custom-handlers.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Writing Custom Handlers
 
 This section introduces handlers and using an example, explains how to write a custom handler:
@@ -40,7 +55,7 @@ Let's see what each handler does:
  Throttling is applied both at the application level as well as subscription level.
  - **APIMgtUsageHandler:** Publishes events to WSO2 Stream Processor (WSO2 SP) for collection and analysis of statistics. 
  This handler only comes to effect if API usage tracking is enabled . 
- See the [Overview of API Analytics](../../../analytics/overview-of-api-analytics) 
+ See the [Overview of API Analytics](../../../learn/analytics/overview-of-api-analytics.md) 
  section for more information.
  - **APIMgtGoogleAnalyticsTrackingHandler:** Publishes events to Google Analytics. This handler only comes into effect 
  if Google analytics tracking is enabled. See Integrating with Google Analytics for more information.

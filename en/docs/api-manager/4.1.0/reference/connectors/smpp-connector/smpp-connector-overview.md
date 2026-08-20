@@ -1,10 +1,23 @@
+---
+title: "SMPP connector overview"
+description: "Learn what the SMPP connector does, its compatible versions, and where to find setup, example, and reference docs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/smpp-connector/smpp-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/smpp-connector/smpp-connector-overview.md
+tags:
+  - esb-connector
+  - sms
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # SMPP Connector Overview
 
 SMPP (Short Message Peer-to-Peer Protocol) is an open, industry standard protocol designed to provide a flexible data communications interface for transfer of short message data between SMSCs (Short Message Service Center). There are many SMPP gateways available in the world and now almost all the Message Centers support SMPP. 
 
 To see the available SMPP connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "SMPP".
 
-<img src="../../../assets/img/integrate/connectors/smpp-store.png" title="SMPP Connector Store" width="200" alt="SMPP Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/smpp-store.png" title="SMPP Connector Store" width="200" alt="SMPP Connector Store"/>
 
 ## Compatibility
 

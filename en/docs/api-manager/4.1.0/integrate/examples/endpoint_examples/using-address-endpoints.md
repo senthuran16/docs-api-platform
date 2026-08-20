@@ -1,3 +1,18 @@
+---
+title: "Using the address endpoint"
+description: "Convert a POX message to a SOAP request using an address endpoint, with a sample proxy configuration and build steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-address-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-address-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the Address Endpoint
 This sample demonstrates how you can convert a POX message to a SOAP request using an <b>Address</b> endpoint.
 

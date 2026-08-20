@@ -1,7 +1,22 @@
+---
+title: "Generate REST API from SOAP backend"
+description: "Generate a RESTful API definition from a SOAP backend WSDL, including known feature limitations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-rest-api/generate-rest-api-from-soap-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-rest-api/generate-rest-api-from-soap-backend.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Generate REST API from SOAP Backend
 
 !!! Warning "Limitations"
-    APIM supports only a limited set of capabilities with this feature. If you want to process complex WSDL/XML schema please refer [WSO2 Integration Studio documentation](https://apim.docs.wso2.com/en/4.1.0/integrate/develop/creating-artifacts/creating-an-api/).
+    APIM supports only a limited set of capabilities with this feature. If you want to process complex WSDL/XML schema please refer [WSO2 Integration Studio documentation](../../../integrate/develop/creating-artifacts/creating-an-api.md).
 
     This feature has the following known limitations.
 

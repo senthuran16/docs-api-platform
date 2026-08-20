@@ -1,3 +1,18 @@
+---
+title: "Exposing a proxy service via inbound endpoint"
+description: "Restrict a proxy service to be accessed only through an inbound endpoint using the inbound.only parameter."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/exposing-proxy-via-inbound/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/exposing-proxy-via-inbound.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Exposing a Proxy Service via Inbound Endpoint
 If a proxy service is to be exposed only via inbound endpoints, the `inbound.only` service parameter has to be set in the proxy configuration.
 

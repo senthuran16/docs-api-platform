@@ -1,3 +1,17 @@
+---
+title: "Configuration catalog"
+description: "Reference the configuration parameters and .toml file settings used across a WSO2 API Manager deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/config-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/config-catalog.md
+tags:
+  - api-manager
+  - wip
+  - config-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
+---
+
 # Configuration Catalog
 This document describes all the configuration parameters that are used in WSO2 Identity Server.
 

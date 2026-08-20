@@ -1,3 +1,18 @@
+---
+title: "Using a simple proxy service"
+description: "Configure a proxy service in WSO2 Micro Integrator that forwards client requests to a back-end service and returns its response."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/introduction-to-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/introduction-to-proxy-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using a Simple Proxy Service
 This example demonstrates how to use a simple proxy service to expose a back-end service. In this example, a request received by the proxy service is forwarded to the sample service hosted in the backend.
 

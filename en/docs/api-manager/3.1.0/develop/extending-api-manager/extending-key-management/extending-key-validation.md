@@ -1,3 +1,18 @@
+---
+title: "Extending key validation"
+description: "Extend the KeyValidationHandler to customize token, subscription, and scope validation during key validation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-key-management/extending-key-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-key-management/extending-key-validation.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-key-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Extending Key Validation
 
 In WSO2 API Manager (WSO2 API-M) versions prior to 1.9.0, the components were tightly coupled with the [Key Manager](https://docs.wso2.com/display/AM200/Key+Concepts#KeyConcepts-KeyManager) and token validation was done by directly accessing the databases. However, from WSO2 API-M 1.9.0 onwards, you can [plug different OAuth2 providers](https://docs.wso2.com/display/AM260/Configuring+a+Third-Party+Key+Manager) to the key validation. When you call an API providing an access token, the execution flows through the handlers specified in the API. Among them, the API authentication handler extracts the token from the header and calls `APIKeyValidationService` to get the token validated. Upon validating the token, the API Gateway receives `APIKeyValidationInforDTO` as the response, using which the rest of the operations are performed.

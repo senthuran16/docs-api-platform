@@ -1,3 +1,18 @@
+---
+title: "RabbitMQ parameters"
+description: "Reference for configuring a RabbitMQ connection factory and listener parameters for a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # RabbitMQ Parameters
 
 When you implement an integration use case that requires a RabbitMQ connection, you can use the following RabbitMQ parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.
@@ -75,7 +90,7 @@ The following parameters can be specified under the connection factory configura
   </tr>
   <tr>
     <td>parameter.retry_interval</td>
-    <td>The interval in milliseconds between connection retry attempts when reconnection fails. See <a href="../../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq.md#configuring-connection-recovery">Configuring connection recovery</a> for more details.</td>
+    <td>The interval in milliseconds between connection retry attempts when reconnection fails. See <a href="../../../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq/#configuring-connection-recovery">Configuring connection recovery</a> for more details.</td>
   </tr>
   <tr>
     <td>parameter.retry_count</td>
@@ -132,7 +147,7 @@ For SSL configuration details, see [Enabling SSL](../../../install-and-setup/set
 
 ## Service-Level Parameters (Receiving Messages)
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.1.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) for instructions.
 
@@ -413,7 +428,7 @@ rabbitmq:/<placeholder>?<query-parameter-name1>=<query-parameter-value1>&amp;<qu
 
     Double-click the **Address Endpoint** artifact to open the **Properties** tab and enter the address URL with RabbitMQ parameters.
 
-    <img src="../../../assets/img/integrate/create_artifacts/new_endpoint/address-endpoint-url.png" width="800">
+    <img src="../../../../assets/img/integrate/create_artifacts/new_endpoint/address-endpoint-url.png" width="800">
 
 -   Source view of an address endpoint:
 

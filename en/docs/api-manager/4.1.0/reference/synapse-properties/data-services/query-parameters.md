@@ -1,3 +1,18 @@
+---
+title: "Query parameters"
+description: "Configure the query in a data service to define how requests perform SQL operations against a data store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/query-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/query-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Query Parameters
 
 The query in a data service specifies the type of task that should be
@@ -92,7 +107,7 @@ For each input, you can specify the following parameter values:
       </tr>
       <tr>
          <td>SQL Type</td>
-         <td>The data type of the corresponding SQL parameter can be selected from this menu. Note that the QUERY_STRING data type cannot be used if the <b>parameter type</b> is set to ARRAY. Read more about <a href="mapping-data-types.md">data types</a>.</td>
+         <td>The data type of the corresponding SQL parameter can be selected from this menu. Note that the QUERY_STRING data type cannot be used if the <b>parameter type</b> is set to ARRAY. Read more about <a href="../mapping-data-types/">data types</a>.</td>
       </tr>
       <tr>
          <td>Default Value</td>
@@ -120,7 +135,7 @@ For each input, you can specify the following parameter values:
       <tr>
          <td>Validators</td>
          <td>
-         	See <a href="input-validators.md">input validators</a>
+         	See <a href="../input-validators/">input validators</a>
          </td>
       </tr>
    </tbody>
@@ -188,7 +203,7 @@ The following parameters are configurable for XML/RDF output types.
 </div></td>
 <tr class="even">
 <td>Row Namespace</td>
-<td>See <a href="using-namespaces.md">Defining Namespaces</a> .</td>
+<td>See <a href="../using-namespaces/">Defining Namespaces</a> .</td>
 </tr>
 </tbody>
 </table>

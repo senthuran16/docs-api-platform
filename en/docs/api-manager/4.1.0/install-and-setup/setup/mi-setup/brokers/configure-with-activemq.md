@@ -1,3 +1,18 @@
+---
+title: "Connecting to ActiveMQ"
+description: "Configure WSO2 Micro Integrator to connect with Apache ActiveMQ by copying client libraries and setting JMS parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-activemq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-activemq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Connecting to ActiveMQ
 
 This section describes how to configure WSO2 Micro Integrator to connect with ActiveMQ.

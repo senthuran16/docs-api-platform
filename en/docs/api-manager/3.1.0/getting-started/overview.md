@@ -1,3 +1,17 @@
+---
+title: "Overview"
+description: "Introduces WSO2 API Manager's components, key features, and basic architecture for end-to-end API management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/overview.md
+tags:
+  - api-manager
+  - getting-started
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Overview
 
 WSO2 API Manager is a fully open-source solution for end to end API Management in the cloud, on-prem or in hybrid environments. It comes with an [Apache Software License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) which makes it **free to use**. It allows API developers to design, publish, and manage the lifecycle of APIs and API product managers to create API products from one or more APIs. It hosts an application developer portal which helps in building and managing a developer community for your APIs. Its cloud-native API gateway is used for securing, routing, controlling and monitoring your API traffic in a scalable manner.
@@ -31,6 +45,7 @@ The WSO2 API Manager consists of 6 main components, the [API Publisher,](#api-pu
 
 The component architecture of the WSO2 API Manager is illustrated in the diagram below.
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 ![](../assets/attachments/103327648/126556771.png)
@@ -41,14 +56,16 @@ WSO2 API Manager provides a state-of-the-art web interface called **WSO2 API Pub
 
 The diagram above shows the common lifecycle activities of an API developer/manager.
 
+<a name="developer-portal"></a>
 #### Developer Portal
 
 ![](../assets/attachments/103327648/126556772.png)
 
-The Developer Portal is a state-of-the-art web interface that allows API publishers to host and advertise their APIs while allowing API consumers to [self-register](../learn/consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup), discover, evaluate, subscribe to and consume APIs.
+The Developer Portal is a state-of-the-art web interface that allows API publishers to host and advertise their APIs while allowing API consumers to [self-register](../develop/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md), discover, evaluate, subscribe to and consume APIs.
 
 The diagram above shows common API consumer lifecycle activities:
 
+<a name="api-gateway"></a>
 #### API Gateway
 
 The API Gateway is a runtime, backend component (an [API proxy](https://docs.wso2.com/display/EI660/Working+with+APIs)) developed using [WSO2 EI](https://docs.wso2.com/display/EI660). API Gateway secures, protects, manages, and scales API calls. It intercepts API requests, applies policies such as throttling and security using handlers, and manages API statistics. Upon validation of a policy, the Gateway passes web service calls to the actual backend. If the service call is a token request, the Gateway passes it directly to the [Key Manager](#key-manager).
@@ -60,6 +77,7 @@ When WSO2 API Manager is running, you can access the API-M Managment Console in 
 !!! note
     Although the API Gateway contains WSO2 EI features, it is recommended not to use it for EI-specific tasks. Its intended to be used only for Gateway functionality related to API invocations. For example, if you want to call external services like SAP, use a separate [EI cluster](https://docs.wso2.com/display/EI660/Clustering+the+ESB+Profile) for that purpose.
 
+<a name="key-manager"></a>
 #### Key Manager
 
 ![](../assets/img/get_started/key-manager.png)
@@ -72,27 +90,29 @@ The Key Manager manages all clients, security and access token-related operation
  
  Similarly, to validate a token, the API Gateway calls the Key Manager, which fetches and validates the token details from the database.
 
-You can avoid making the Gateway connect with the Key Manager every time it receives an API invocation call, by enabling API Gateway [caching](../../administer/product-configurations/configuring-caching). When caching is not enabled, a verification call happens every time the Gateway receives an API invocation call. For this verification, the Gateway passes an access token, the API, and API version to the Key Manager. Communication between the API Gateway and the Key Manager happens in either of the following ways:
+You can avoid making the Gateway connect with the Key Manager every time it receives an API invocation call, by enabling API Gateway [caching](../install-and-setup/setup/advance-configurations/configuring-caching.md). When caching is not enabled, a verification call happens every time the Gateway receives an API invocation call. For this verification, the Gateway passes an access token, the API, and API version to the Key Manager. Communication between the API Gateway and the Key Manager happens in either of the following ways:
 
 -   Through a Web service call
 
  The Key Manager properly decouples the operations for creating OAuth applications and validating access tokens so that you can even plug in a third party-authorization server for key validations. In a typical production environment, you can configure one of the following setups:
 
--   Configure a WSO2 API Manager instance as the Key Manager in a separate server. See [Product Profiles](../install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles).
--   Configure an instance of WSO2 Identity Server as the Key Manager. See [Configuring WSO2 Identity Server as the Key Manager](../install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager).
--   Configure a third-party authorization server for key validations and an API Manager instance for the rest of the key management operations. See [Configuring a Third-Party Key Manager](../install-and-setup/deploying-wso2-api-manager/distributed-deployment/configure-a-third-party-key-manager).
+-   Configure a WSO2 API Manager instance as the Key Manager in a separate server. See [Product Profiles](../install-and-setup/setup/distributed-deployment/product-profiles.md).
+-   Configure an instance of WSO2 Identity Server as the Key Manager. See [Configuring WSO2 Identity Server as the Key Manager](../install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md).
+-   Configure a third-party authorization server for key validations and an API Manager instance for the rest of the key management operations. See [Configuring a Third-Party Key Manager](../install-and-setup/setup/distributed-deployment/configure-a-third-party-key-manager.md).
 
+<a name="traffic-manager"></a>
 #### Traffic Manager
 
 ![](../assets/img/get_started/traffic-manager.png)
 
-The Traffic Manager helps users to regulate API traffic, make APIs and applications available to consumers at different service levels, and secure APIs against security attacks. The Traffic Manager features a dynamic throttling engine to process throttling policies in real-time, including rate limiting of API requests. For more information, see [Working with Throttling](../learn/rate-limiting/introducing-throttling-use-cases).
+The Traffic Manager helps users to regulate API traffic, make APIs and applications available to consumers at different service levels, and secure APIs against security attacks. The Traffic Manager features a dynamic throttling engine to process throttling policies in real-time, including rate limiting of API requests. For more information, see [Working with Throttling](../learn/rate-limiting/introducing-throttling-use-cases.md).
 
 
+<a name="analytics"></a>
 #### Analytics
 
 ![](../assets/attachments/103327648/126556775.png)
 ![](../assets/img/get_started/analytics.png)
 
-Additionally, monitoring and analytics are provided by the analytics component, WSO2 API Manager Analytics. This component provides a host of statistical graphs and an alerting mechanism on pre-determined events. For more information, see [Working with Analytics](../learn/analytics/configuring-apim-analytics).
+Additionally, monitoring and analytics are provided by the analytics component, WSO2 API Manager Analytics. This component provides a host of statistical graphs and an alerting mechanism on pre-determined events. For more information, see [Working with Analytics](../learn/analytics/configuring-apim-analytics.md).
 

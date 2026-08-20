@@ -1,3 +1,18 @@
+---
+title: "Circuit breakers"
+description: "Configure circuit breakers in Choreo Connect to fail fast on backend failures and relieve back pressure."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/circuit-breakers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/circuit-breakers.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Circuit Breakers
 
 In case of backend failure, it is always better to fail quickly and relieve the back pressure from the actual backend, so it can recover quickly. Choreo Connect supports various types of distributed circuit breakers offered by Envoy. 

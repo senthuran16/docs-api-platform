@@ -1,3 +1,18 @@
+---
+title: "Receiving text events via TCP"
+description: "Configure WSO2 Streaming Integrator to receive text events via TCP transport using default mapping and log alerts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/receive-tcp-in-text-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/receive-tcp-in-text-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Text Events via TCP
 
 ## Purpose:

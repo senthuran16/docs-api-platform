@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint example"
+description: "Walks through configuring the DB Event Inbound Endpoint to listen for changes in a MySQL table and trigger events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # DB Event Inbound Endpoint Example 
 
 Following are the main features of the event generator. 
@@ -13,7 +28,7 @@ In an enterprise system, a relational database table is used to store customer i
 
 Following diagram shows the overall solution we are going to build. External system will update the MySQL DB and the integration runtime will trigger events based on the inserts and updates. 
 
-<img src="../../../assets/img/integrate/connectors/db-event-diagram.png" title="Overview of DB event inbound EP use case" width="600" alt="Overview of DB event inbound EP use case"/>
+<img src="../../../../assets/img/integrate/connectors/db-event-diagram.png" title="Overview of DB event inbound EP use case" width="600" alt="Overview of DB event inbound EP use case"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -43,10 +58,10 @@ First, install [MySQL database](https://www.mysql.com/downloads/) locally. If yo
 ## Configure inbound endpoint using WSO2 Integration Studio
 
 1. Download [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/). Create an **Integration Project** as below. 
-<img src="../../../assets/img/integrate/connectors/solution-project.jpg" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" />
+<img src="../../../../assets/img/integrate/connectors/solution-project.jpg" title="Creating a new Integration Project" width="800" alt="Creating a new Integration Project" />
 
 2. Right click on **Source** -> **main** -> **synapse-config** -> **inbound-endpoints** and add a new **custom inbound endpoint**.</br> 
-<img src="../../../assets/img/integrate/connectors/db-event-inbound-ep.png" title="Creating DB event inbound endpoint" width="400" alt="Creating DB event inbound endpoint" style="border:1px solid black"/>
+<img src="../../../../assets/img/integrate/connectors/db-event-inbound-ep.png" title="Creating DB event inbound endpoint" width="400" alt="Creating DB event inbound endpoint" style="border:1px solid black"/>
 
 3. Click on **Inbound Endpoint** in design view and under `properties` tab, update class name to `org.wso2.carbon.inbound.poll.dbeventlistener.DBEventPollingConsumer`. 
 
@@ -80,7 +95,7 @@ First, install [MySQL database](https://www.mysql.com/downloads/) locally. If yo
 **CApp (Carbon Application)** is the deployable artefact on the integration runtime. Let us see how we can export integration logic we developed into a CApp. To export the `Solution Project` as a CApp, a `Composite Application Project` needs to be created. Usually, when a solution project is created, this project is automatically created by Integration Studio. If not, you can specifically create it by navigating to  **File** -> **New** -> **Other** -> **WSO2** -> **Distribution** -> **Composite Application Project**. 
 
 1. Right click on Composite Application Project and click on **Export Composite Application Project**.</br> 
-  <img src="../../../assets/img/integrate/connectors/capp-project1.jpg" title="Export as a Carbon Application" width="300" alt="Export as a Carbon Application" />
+  <img src="../../../../assets/img/integrate/connectors/capp-project1.jpg" title="Export as a Carbon Application" width="300" alt="Export as a Carbon Application" />
 
 2. Select an **Export Destination** where you want to save the .car file. 
 
@@ -90,8 +105,8 @@ First, install [MySQL database](https://www.mysql.com/downloads/) locally. If yo
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/db-event-listener.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/db-event-listener.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip

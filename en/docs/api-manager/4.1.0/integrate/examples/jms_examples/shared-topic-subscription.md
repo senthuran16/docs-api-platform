@@ -1,3 +1,18 @@
+---
+title: "Shared topic subscription"
+description: "Configure the Micro Integrator as a shared JMS topic listener to distribute topic messages across multiple consumers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/shared-topic-subscription/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/shared-topic-subscription.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Shared Topic Subscription
 
 With JMS 1.1, a subscription on a topic is not permitted to have more than one consumer at a time. That is, if multiple JMS

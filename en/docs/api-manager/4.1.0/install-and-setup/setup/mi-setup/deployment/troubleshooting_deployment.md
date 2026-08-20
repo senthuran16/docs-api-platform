@@ -1,3 +1,18 @@
+---
+title: "Troubleshooting in production environments"
+description: "Diagnose CPU spikes and capture system state in production Micro Integrator deployments using jstack and Carbondump."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/troubleshooting_deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/troubleshooting_deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "troubleshooting"
+---
+
 # Troubleshooting in Production Environments
 
 The following sections will guide you to troubleshoot various issues that may arise in your [Micro Integrator deployment](deploying_wso2_ei.md).

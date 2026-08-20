@@ -1,3 +1,18 @@
+---
+title: "Tuning the HTTP transport"
+description: "Tune non-blocking and blocking HTTP PassThrough transport parameters in deployment.toml to improve Micro Integrator performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/http_transport_tuning/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/http_transport_tuning.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Tuning the HTTP Transport
 
 See the following topics to tune the HTTP PassThrough transport:

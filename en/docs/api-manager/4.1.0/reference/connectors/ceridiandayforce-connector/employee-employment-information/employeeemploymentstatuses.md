@@ -1,3 +1,18 @@
+---
+title: "Working with employee employment statuses"
+description: "Retrieve, create, or update an employee's employment status information using the Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeemploymentstatuses/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeemploymentstatuses.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee Employment Statuses
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update employment Stat
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-employment-agreement"></a>
 #### Retrieving Employee Employment Statuses
 We can use GET Employee Contacts operation with required parameters to retrieve the employment status of an employee.
 
@@ -170,6 +186,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Statuses/GET-Employee-Employment-Statuses.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Statuses/GET-Employee-Employment-Statuses.aspx)
 
+<a name="creating-employee-employment-agreement"></a>
 #### Creating Employee Employment Statuses
 We can use POST Employee Employment Statuses operation with required parameters to create the required employee's employment Status.
 
@@ -315,6 +332,7 @@ This method returns a HTTP code 200 and no response body
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Statuses/POST-Employee-Employment-Statuses.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Employment-Information/Employment-Statuses/POST-Employee-Employment-Statuses.aspx)
 
+<a name="updating-employee-employment-agreement"></a>
 #### Updating Employee Employment Statuses
 We can use PATCH Employee Employment Statuses operation with required parameters to update the employment status of existing employees.
 

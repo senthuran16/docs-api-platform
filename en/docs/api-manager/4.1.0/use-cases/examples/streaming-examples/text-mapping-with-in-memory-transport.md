@@ -1,3 +1,18 @@
+---
+title: "Text mapping with in-memory transport"
+description: "Configure custom and default text mapping over TCP and in-memory transports and log the mapped events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/text-mapping-with-in-memory-transport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/text-mapping-with-in-memory-transport.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Text Mapping with In-memory Transport
 
 ## Purpose

@@ -1,3 +1,18 @@
+---
+title: "Transforming content types"
+description: "Configure an API to transform message content types between XML and JSON for different HTTP methods."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/transforming-content-type/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/transforming-content-type.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Transforming Content Types
 This section describes how you can transform the content type of a message using an API. In this scenario, the API exposes a REST back-end service that accepts and returns XML and JSON messages for HTTP methods as follows:
     

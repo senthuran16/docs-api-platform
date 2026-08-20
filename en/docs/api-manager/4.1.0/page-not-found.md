@@ -1,4 +1,14 @@
 ---
+title: "Page not found"
+description: "Shows a custom 404 message with navigation links and a search box when a requested documentation page cannot be found."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/page-not-found/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/page-not-found.md
+tags:
+  - api-manager
+  - page-not-found
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
 template: templates/no-navbars.html
 ---
 

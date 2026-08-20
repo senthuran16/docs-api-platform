@@ -1,8 +1,23 @@
+---
+title: "Styling API details info section"
+description: "Customize colors, height, and icons of the API and application details info section via defaultTheme.js."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/styling-api-details-info-section/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/styling-api-details-info-section.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Styling API Details Info Section
 
 The "API Details Info" section which is shown below can be customized according to your design needs by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#devportal).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme.md#devportal).
 
 [![styling api details info section](../../../assets/img/learn/styling-api-details-info-section1.png)](../../../assets/img/learn/styling-api-details-info-section1.png)
 
@@ -68,7 +83,7 @@ const Configurations = {
 | listGridSelectedColor | string | Define the color of a selected icon (Grid/List) view of the API listing page. |
 | tagChipBackground | string | Change the background color of the tags. |
 
-You can handle most of the use cases with regard to rebranding using these configurations. However, if you need to make a change that is not supported by the defaultTheme.js file, then you need to override the relevant React component. For more information, see [Advanced Customization](../../../develop/customizations/customizing-the-developer-portal/advanced-customization/) for more information.
+You can handle most of the use cases with regard to rebranding using these configurations. However, if you need to make a change that is not supported by the defaultTheme.js file, then you need to override the relevant React component. For more information, see [Advanced Customization](advanced-customization.md) for more information.
 
 ### Known issues and workarounds
 

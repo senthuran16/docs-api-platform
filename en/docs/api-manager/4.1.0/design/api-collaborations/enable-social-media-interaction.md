@@ -1,10 +1,25 @@
+---
+title: "Enable social media interaction"
+description: "Enable sharing API links on Facebook, Twitter, and Reddit, and add GitHub and Slack URLs to an API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-collaborations/enable-social-media-interaction/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-collaborations/enable-social-media-interaction.md
+tags:
+  - api-manager
+  - design
+  - api-collaborations
+  - enable-social-media-interaction
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enable Social Media Interaction
 
 By default, the community links option is **disabled** (hidden). As a result, the sharable Developer Portal links of the APIs for Facebook, Twitter, and Reddit will not appear in the Developer Portal by default. Instead, the administrators have to enable the social media sharing option if they wish to allow API Consumers to use this feature.
 
 In addition, the GitHub and Slack channel URLs will not appear in the Developer Portal unless the administrators have defined these URLs via the Publisher.
 
-- [Enable sharing API links on social media](#enable-sharing-api-links-on-social-media)
+- [Enable sharing API links on social media](#enable-sharing-api-link-on-social-media)
 - [Add GitHub and Slack channel URLs to an API](#add-github-and-slack-channel-urls-to-an-api)
 
 ## Enable sharing API link on social media
@@ -23,7 +38,7 @@ Follow the instructions below to enable API Consumers to be able to share the AP
     The default configuration comes with an empty configuration object declaration. You can override the default configuration in the <code>userTheme.js</code> file.
     </li>
     <li>
-    <p>For more information on the content that is in the default configuration, see <a href="../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md#content-of-defaultthemejs">Overriding the Developer Portal theme</a>.</p>
+    <p>For more information on the content that is in the default configuration, see <a href="../../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#content-of-defaultthemejs">Overriding the Developer Portal theme</a>.</p>
     </li>
     </ul>
     </div> 

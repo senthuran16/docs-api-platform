@@ -1,3 +1,18 @@
+---
+title: "Working with employee clock device groups"
+description: "Retrieve an employee's clock device groups that control which clocks the employee can punch on."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeclockdevicegroups/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeclockdevicegroups.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee Clock Device Groups
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operation allows you to retrieve an employee's clock device group
 
 This section provides more details on the operation.
 
+<a name="retrieving-employee-clock-device-groups"></a>
 #### Retrieving Employee Clock Device Groups
 We can use GET Employee Clock Device Groups operation with required parameters to search and find the required employee's clock device group.
 

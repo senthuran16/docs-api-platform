@@ -1,3 +1,18 @@
+---
+title: "Configure analytics workers as Active-Passive"
+description: "Configure a two-node Active-Passive high availability cluster for API-M Analytics workers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configure Analytics Workers as Active-Passive
 
 Minimum high availability (HA) deployment mainly focused on providing high availability which guarantees no data loss if the system suffer any failing due to several unforeseeable reasons. One of the main advantage of this is it uses minimum amount of infrastructure resources possible. Thus deployment pattern comprise of only two Streaming integration servers.
@@ -20,8 +35,7 @@ In minimum HA setup, one node is assigned as the active node while the other nod
     When a failover occurs, the Siddhi Store Query API endpoint configured in node 2 (which becomes the currently active node) is opened, and 
     all the Developer Portal query traffic is directed to that endpoint.
     
-    ![](../../../../assets/img/setup-and-install/configure_apim_analytics//open_endpoint_after_active_member_changes
-    .png)
+    ![](../../../../assets/img/setup-and-install/configure_apim_analytics/open_endpoint_after_active_member_changes.png)
 
 !!! note
     In passive node databridge ports and Siddhi Store Query API endpoint are closed but the admin API are accessible. 
@@ -43,7 +57,7 @@ In order to configure a minimum HA cluster, the following prerequisites must be 
     `<APIM_ANALYTICS_HOME>/lib` directory of both nodes. 
   - In order to retrieve the state of the Siddhi Applications deployed in the system in case of a scenario where both the 
     nodes fail, state persistence must be enabled for both nodes by specifying the same datasource/file location. 
-    For detailed instructions, see [Configuring Database and File System State Persistence](../../../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/configuring-database-and-the-file-system-state-persistence).
+    For detailed instructions, see [Configuring Database and File System State Persistence](configuring-database-and-the-file-system-state-persistence.md).
   - A load balancer or some other client-side data publishing mechanism that works in a failover manner must be available 
     to publish events to one of the available nodes (i.e., to the active node). 
     

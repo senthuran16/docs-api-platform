@@ -1,3 +1,18 @@
+---
+title: "Injecting parameters"
+description: "Inject environment-specific parameter values into Synapse artifacts using environment variables or a properties file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/injecting-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/injecting-parameters.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - injecting-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Injecting Parameters
 
 When deploying integration artifacts in different environments, it is necessary to change the synapse parameters used in the artifacts according to the environment. For example, the 'endpoint URL' will be different in each environment. If you define the synapse parameters in your artifacts as explained below, you can inject the required parameter values for each environment using system variables. Without this feature, you need to create and maintain separate artifacts for each environment. This feature is useful for container deployments.
@@ -318,17 +333,17 @@ The <b>pinned servers</b> parameter can be dynamically injected to a scheduled t
 
 See the list of inbound endpoint parameters that can be dynamically injected.
 
--   <a href="../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/http-inbound-endpoint-properties.md">HTTP/HTTPS Inbound Protocol</a>
--   <a href="../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/hl7-inbound-endpoint-properties.md">HL7 Inbound Protocol</a>
--   <a href="../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/cxf-ws-rm-inbound-endpoint-properties.md">CXF WS-RM Inbound Protocol</a>
--   <a href="../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/websocket-inbound-endpoint-properties.md">WebSocket Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/http-inbound-endpoint-properties/">HTTP/HTTPS Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/hl7-inbound-endpoint-properties/">HL7 Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/cxf-ws-rm-inbound-endpoint-properties/">CXF WS-RM Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/websocket-inbound-endpoint-properties/">WebSocket Inbound Protocol</a>
 
--   <a href="../../reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/file-inbound-endpoint-properties.md">File Inbound Protocol</a>
--   <a href="../../reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/jms-inbound-endpoint-properties.md">JMS Inbound Protocol</a>
--   <a href="../../reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/kafka-inbound-endpoint-properties.md">Kafka Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/file-inbound-endpoint-properties/">File Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/jms-inbound-endpoint-properties/">JMS Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/kafka-inbound-endpoint-properties/">Kafka Inbound Protocol</a>
 
--   <a href="../../reference/synapse-properties/inbound-endpoints/event-based-inbound-endpoints/mqtt-inbound-endpoint-properties.md">MQTT Inbound Protocol</a>
--   <a href="../../reference/synapse-properties/inbound-endpoints/event-based-inbound-endpoints/rabbitmq-inbound-endpoint-properties.md">RabbitMQ Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/event-based-inbound-endpoints/mqtt-inbound-endpoint-properties/">MQTT Inbound Protocol</a>
+-   <a href="../../../reference/synapse-properties/inbound-endpoints/event-based-inbound-endpoints/rabbitmq-inbound-endpoint-properties/">RabbitMQ Inbound Protocol</a>
 
 #### Example
 

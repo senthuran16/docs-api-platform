@@ -1,3 +1,18 @@
+---
+title: "Creating unit test suite"
+description: "Create and update a unit test suite in WSO2 Integration Studio to test sequences, proxies, and APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-unit-test-suite/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-unit-test-suite.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-unit-test-suite
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating Unit Test Suite
 
 Once you have developed an integration solution, WSO2 Integration Studio allows you to build unit tests for the following:
@@ -202,7 +217,7 @@ If you encounter errors with the unit testing framework, you can debug the frame
     !!! Tip 
         This enables <b>maven debug</b> for the testing framework.
 
-    <img src="../../assets/img/integrate/create_project/synapse_unit_test/debug-unit-testing.png" alt="troubleshooting unit testing">
+    <img src="../../../assets/img/integrate/create_project/synapse_unit_test/debug-unit-testing.png" alt="troubleshooting unit testing">
 
 4. Click <b>Apply</b> and then click <b>Run</b>.
 

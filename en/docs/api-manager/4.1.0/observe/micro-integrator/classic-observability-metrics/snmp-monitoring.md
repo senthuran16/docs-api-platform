@@ -1,3 +1,18 @@
+---
+title: "SNMP monitoring"
+description: "Enable SNMP in the Micro Integrator and map its MBeans to SNMP OIDs for network monitoring."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-metrics/snmp-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-metrics/snmp-monitoring.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-metrics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # SNMP Monitoring
 
 Simple Network Management Protocol (SNMP) is an Internet-standard protocol for managing devices on IP networks. Follow the instructions given below to configure SNMP in the Micro Integrator, which exposes various MBeans via SNMP.

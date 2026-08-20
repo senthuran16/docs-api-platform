@@ -1,3 +1,18 @@
+---
+title: "Triggering integration flows via the Micro Integrator"
+description: "Trigger a Micro Integrator integration flow from a Streaming Integrator alert and receive the response back."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-tutorials/triggering-integrations-via-micro-integrator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-tutorials/triggering-integrations-via-micro-integrator.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - triggering-integrations-via-micro-integrator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "tutorial"
+---
+
 # Triggering Integration Flows via the Micro Integrator
 
 ## Introduction

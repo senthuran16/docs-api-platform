@@ -1,3 +1,18 @@
+---
+title: "Deploy a minimum HA Streaming Integrator cluster in AWS ECS"
+description: "Run WSO2 Streaming Integrator as a minimum high availability cluster in AWS ECS with active and passive nodes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster-in-aws-ecs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster-in-aws-ecs.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Deploying the Streaming Integrator as a Minimum HA Cluster in AWS ECS
 
 ## Introduction

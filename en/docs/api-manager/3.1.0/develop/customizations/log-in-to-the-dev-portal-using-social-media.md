@@ -1,6 +1,21 @@
+---
+title: "Log in to the Developer Portal using social media"
+description: "Configure Facebook as an identity provider so users can log in to the Developer Portal with social media credentials."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/log-in-to-the-dev-portal-using-social-media/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/log-in-to-the-dev-portal-using-social-media.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - log-in-to-the-dev-portal-using-social-media
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Log in to the Developer Portal using Social Media
 
-You can integrate WSO2 Identity Server with WSO2 API Manager and use your social media credentials to log in to the Developer Portal and Publisher. This tutorial shows you how to integrate Facebook authentication and log in to the Developer Portal. Before following these steps, [configure WSO2 Identity Server as a Key Manager with API Manager](../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/).
+You can integrate WSO2 Identity Server with WSO2 API Manager and use your social media credentials to log in to the Developer Portal and Publisher. This tutorial shows you how to integrate Facebook authentication and log in to the Developer Portal. Before following these steps, [configure WSO2 Identity Server as a Key Manager with API Manager](../../install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md).
 
 !!! note
         Note that the Facebook application development UI might be slightly different from the demonstrated UIs in this tutorial due to the frequent updates in the Facebook Developer Portal.
@@ -135,7 +150,7 @@ For more information, see [Permissions Reference - Facebook Login.](https://deve
 To federate logging in to the Publisher and Developer Portal with Facebook, you need to configure the service provider with the Facebook Identity Provider.
 
 !!! note
-        You have to allow the usage of email addresses as usernames, to use email addresses. For instructions, see [Setting up an e-mail login](/administer/product-security/General/logins-and-passwords/maintaining-logins-and-passwords/#setting-up-an-e-mail-login).
+        You have to allow the usage of email addresses as usernames, to use email addresses. For instructions, see [Setting up an e-mail login](../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setting-up-an-e-mail-login).
 
 
 1.  Go to the **Management Console** of WSO2 Identity Server (`https://localhost:9444/carbon`) and click on **Service Providers**.

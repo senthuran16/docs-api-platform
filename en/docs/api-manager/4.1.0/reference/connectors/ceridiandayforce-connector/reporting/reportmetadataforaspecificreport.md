@@ -1,3 +1,18 @@
+---
+title: "Working with report metadata for a specific report"
+description: "Use the GET Report Metadata operation to retrieve column metadata and filter parameters for a specific report."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/reporting/reportmetadataforaspecificreport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/reporting/reportmetadataforaspecificreport.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Report Metadata for a specific report
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve meta data for a report
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-report-metadata-for-a-specific-report"></a>
 #### Retrieving Report Metadata for a specific report
 We can use GET Employee addresses operation with required parameters to find meta data for a report
 

@@ -1,9 +1,24 @@
+---
+title: "Load balanced endpoints"
+description: "Enable load balanced endpoints in Choreo Connect to route traffic across multiple endpoints using round robin."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/load-balanced-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/load-balanced-endpoints.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Load Balanced Endpoints
 
 When you use Load Balanced API Endpoints, the traffic that comes to the resource is routed to the mentioned endpoint addresses based on the round-robin algorithm. You can enable load balancing capabilities when working with Choreo Connect (CC) in the following two modes.
 
-- [Load Balanced Endpoints With WSO2 API Manager](load-balanced-endpoints.md#load-balanced-endpoints-with-apim)
-- [Load Balanced Endpoints With APICTL (WSO2 API Controller)](load-balanced-endpoints.md#load-balanced-endpoints-with-apictl)
+- [Load Balanced Endpoints With WSO2 API Manager](#choreo-connect-with-wso2-api-manager-as-a-control-plane)
+- [Load Balanced Endpoints With APICTL (WSO2 API Controller)](#choreo-connect-as-a-standalone-gateway)
 
 ## Choreo Connect with WSO2 API Manager as a Control Plane
 
@@ -33,7 +48,7 @@ After creating an API in the APIM publisher, select the API you want to apply lo
 
 ### Step 2 - Invoke API Endpoint Via The Choreo Connect
 
-After obtaining a valid JWT token, you can invoke APIs as described [here](../getting-started/quick-start-guide-docker-with-apim.md#step-6-invoke-the-api-via-choreo-connect). 
+After obtaining a valid JWT token, you can invoke APIs as described [here](../getting-started/quick-start-guide-docker-with-apim.md#step-6-invoke-the-api-from-developer-portal). 
 When invoking the API, traffic will route to the load balanced endpoints you defined above.
 
 Example is given below:

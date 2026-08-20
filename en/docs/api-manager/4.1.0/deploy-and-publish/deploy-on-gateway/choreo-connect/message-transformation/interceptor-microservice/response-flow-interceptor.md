@@ -1,3 +1,18 @@
+---
+title: "Response flow interceptor"
+description: "Reference for the request and response payloads exchanged between Choreo Connect Router and the response flow interceptor service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/response-flow-interceptor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/response-flow-interceptor.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Response Flow Interceptor
 
 Intercept the Response to the client and update headers, trailer and body before reaching the client.

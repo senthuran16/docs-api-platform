@@ -1,3 +1,18 @@
+---
+title: "Mock implementation with API Gateway"
+description: "Create a prototype API with a JavaScript mock implementation auto-generated from the OpenAPI specification."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/prototype-api/create-mocked-js-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/prototype-api/create-mocked-js-api.md
+tags:
+  - api-manager
+  - design
+  - prototype-api
+  - create-mocked-js-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Mock Implementation with API Gateway
 
 Let's create a Prototype API that has a mock implementation of JavaScript snippets auto-generated based on the OpenAPI specification, and invoke it via Publisher and Developer Portals to test it out.
@@ -163,7 +178,7 @@ Follow the instructions below to add a mock implementation to the API:
 
      [![Save inline scripts](../../assets/img/learn/create-api-prototype-click-save.png)](../../assets/img/learn/create-api-prototype-click-save.png)
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.1.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 

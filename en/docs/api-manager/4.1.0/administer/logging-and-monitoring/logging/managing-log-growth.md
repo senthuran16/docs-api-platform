@@ -1,3 +1,18 @@
+---
+title: "Managing log growth"
+description: "Explains how to manage the growth of Carbon logs and audit log files using time- and size-based rollover policies."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/logging-and-monitoring/logging/managing-log-growth/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/logging-and-monitoring/logging/managing-log-growth.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing Log Growth
 
 See the following content on managing the growth of [Carbon Logs](#managing-the-growth-of-carbon-logs) and [Audit Logs](#managing-the-growth-of-audit-log-files):
@@ -68,6 +83,7 @@ Log growth in [Carbon Logs](configuring-logging.md#configuring-carbon-logs) can 
 
         You can change the `appender.CARBON_LOGFILE.strategy.action.condition.age` parameter to accept files that are as old or older than the specified duration.
 
+<a name="managing-the-growth-of-audit-log-files"></a>
 #### Managing the growth of audit log files
 
 -   Rollover based on a time period can be configured by changing `appender.AUDIT_LOGFILE.policies.time.interval` value in days (Default value is 1 day).

@@ -1,3 +1,18 @@
+---
+title: "Installing the Micro Integrator runtime"
+description: "Explains how to download, extract, and set up JAVA_HOME to install the Micro Integrator runtime."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/installing-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/installing-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing the Micro Integrator Runtime
 
 Follow the steps given below to install the Micro Integrator (MI) runtime of WSO2 API Manager.
@@ -88,7 +103,7 @@ You must set your `JAVA_HOME` environment variable to point to the directory whe
 
     1.  Right-click the **My Computer** icon on the desktop and click **Properties.**
 
-        ![]({{base_path}}/assets/attachments/thumbnails/26838941/27042151)
+        ![](../../../assets/attachments/thumbnails/26838941/27042151)
 
     2.  In the System Properties window, click the **Advanced** tab, and then click **Environment Variables**.
 
@@ -96,7 +111,7 @@ You must set your `JAVA_HOME` environment variable to point to the directory whe
 
     3.  Click **New** under **System variables** (for all users) or under **User variables** (just for the user who is currently logged in).
 
-        ![]({{base_path}}/assets/attachments/thumbnails/26838941/27042154)
+        ![](../../../assets/attachments/thumbnails/26838941/27042154)
 
     4.  Enter the following information:
         -   In the **Variable name** field, enter: `JAVA_HOME`

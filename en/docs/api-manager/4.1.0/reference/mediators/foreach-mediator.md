@@ -1,3 +1,18 @@
+---
+title: "ForEach mediator"
+description: "Reference for the ForEach mediator syntax used to iterate over matching elements and merge sub-messages back into the original."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/foreach-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/foreach-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - foreach-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # ForEach Mediator
 
 The ForEach mediator requires an XPath/JSONPath expression and a sequence (inline or referred). It splits the message into a number of different messages
@@ -83,7 +98,7 @@ The parameters available to configure the ForEach mediator are as follows.
 </tr>
 <tr class="odd">
 <td><strong>Sequence</strong></td>
-<td><p>The mediation sequence that should be applied to the messages derived from the parent message. ForEach mediator is used only for transformations, thereby, you should not include <a href="call-mediator.md">Call</a> , <a href="send-mediator.md">Send</a> and <a href="callout-mediator.md">Callout</a> mediators, which are used to invoke endpoints, in t his sequence.</p>
+<td><p>The mediation sequence that should be applied to the messages derived from the parent message. ForEach mediator is used only for transformations, thereby, you should not include <a href="../call-mediator/">Call</a> , <a href="../send-mediator/">Send</a> and <a href="../callout-mediator/">Callout</a> mediators, which are used to invoke endpoints, in t his sequence.</p>
 <p>You can select one of the following options.</p>
 <ul>
 <li><strong>Anonymous</strong>: This allows you to define an anonymous sequence to be applied to the split messages by adding the required mediators as children of the ForEach mediator in the mediator tree.</li>

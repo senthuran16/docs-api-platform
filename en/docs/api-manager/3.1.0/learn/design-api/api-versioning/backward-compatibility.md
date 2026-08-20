@@ -1,3 +1,18 @@
+---
+title: "Backward compatibility"
+description: "Understand default API versions and backward compatibility requirements when routing requests across versions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/api-versioning/backward-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/api-versioning/backward-compatibility.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - api-versioning
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Backward Compatibility
 
 The following section explains the concept of a default version and backward compatibility with regard to an API version.

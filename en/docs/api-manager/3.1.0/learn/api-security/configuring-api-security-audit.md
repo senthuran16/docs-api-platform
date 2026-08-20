@@ -1,3 +1,18 @@
+---
+title: "Securing APIs by auditing API definitions"
+description: "Configure a 42Crunch security audit for API definitions to obtain OpenAPI Specification compliance reports."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/configuring-api-security-audit/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/configuring-api-security-audit.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - configuring-api-security-audit
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Securing APIs by Auditing API Definitions
 
 API Security has become an important concern in recent times as organizations are more cautious about exposing raw, sensitive data via APIs. Therefore, it is important that APIs adhere to the OpenAPI Specification (OAS) to ensure API security.
@@ -73,7 +88,7 @@ You need to add the API Token and Collection ID properties inside the configurat
 #### Enable Audit API for a single tenant
 
 !!! tip
-    For more information on creating a tenant, see [Managing Tenants](../../administer/product-administration/multitenancy/introduction-to-multitenancy/).
+    For more information on creating a tenant, see [Managing Tenants](../../administer/multitenancy/introduction-to-multitenancy.md).
 
 1.  Navigate to the Management Console [https://localhost:9443/carbon](https://localhost:9443/carbon) and sign in with your tenant credentials.
 
@@ -129,9 +144,7 @@ You need to add the API Token and Collection ID properties inside the configurat
 
      [![sample audit report](../../assets/img/learn/sample-audit-report.png)](../../assets/img/learn/sample-audit-report.png)
 
-     For more information on the details provided in the report, see [Audit report sections](#auditreports)
-
-<a href="auditreports"></a>
+     For more information on the details provided in the report, see [Audit report sections](#audit-report-sections)
 
 ## Audit report sections
 

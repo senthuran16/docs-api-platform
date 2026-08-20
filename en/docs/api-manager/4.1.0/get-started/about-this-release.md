@@ -1,3 +1,17 @@
+---
+title: "About this release"
+description: "Summarizes new features, improvements, and downloads available in the WSO2 API Manager 4.1.0 release."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/about-this-release/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/about-this-release.md
+tags:
+  - api-manager
+  - get-started
+  - about-this-release
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "release-notes"
+---
+
 # About this Release
 
 WSO2 API Manager is a complete platform for building, integrating, and exposing your digital services as managed APIs in the cloud, on-premise, and hybrid architectures to drive your digital transformation strategy. It comes with a cloud-native, standards-based messaging engine, and an integration framework for integrating APIs, services, data, SaaS, proprietary, and legacy systems and it can also serve streaming-based integrations. The product comes with command-line and developer tools that enable easy design, development, and testing.
@@ -8,7 +22,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
 
 ## Downloads
 
-<a href="https://wso2.com/api-manager/#"><img src="../assets/img/get_started/download-apim.png" title="Download WSO2 API Manager" width="25%" alt="Download WSO2 API Manager"/></a>
+<a href="https://wso2.com/api-manager/#"><img src="../../assets/img/get_started/download-apim.png" title="Download WSO2 API Manager" width="25%" alt="Download WSO2 API Manager"/></a>
 
 ## New features
 
@@ -287,12 +301,12 @@ Mediation policies that you have attached to API types other than REST, i.e., SO
 
 APICTL Project structure has been changed and Sequences directory has been replaced with a new Policies directory. This policies directory contains the policies applied to the API at the operation level. Each policy has a specification file (yaml or json) which has all the meta information about the policy and a policy definition file (j2 file for regular gateway and gotmpl file for choreo connect) which contains the logic behind the policy. Policy allocation and policy order of each operation is recorded in the api.yaml file and if the policy is parameterized, values of each parameterized attribute are defined in this section.
 
-For more information see, [OPA policy support](https://apim.docs.wso2.com/en/4.1.0/design/api-security/opa-validation/overview/#attaching-opa-policy)
+For more information see, [OPA policy support](../design/api-security/opa-validation/overview.md#attaching-opa-policy)
 
 #### GraphQL subscription
 
 If the GraphQL subscription operations are available on your existing GraphQL APIs in 4.0.0,  API-M 4.1.0 is supported for subscription opertaion under websocket flow.
 
-For more information see, [GraphQL subscription](https://apim.docs.wso2.com/en/4.1.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console/#invoke-a-graphql-subscription-operation)
+For more information see, [GraphQL subscription](../consume/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md#invoke-a-graphql-subscription-operation)
 
 

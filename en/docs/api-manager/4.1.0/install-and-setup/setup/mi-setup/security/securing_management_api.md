@@ -1,3 +1,18 @@
+---
+title: "Securing the management API"
+description: "Secure the Micro Integrator management API with JWT-based authentication for login, logout, and access control."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/securing_management_api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/securing_management_api.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Securing the Management API
 
 The Management API of WSO2 Micro Integrator is the internal REST API.

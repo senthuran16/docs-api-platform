@@ -1,3 +1,18 @@
+---
+title: "ISO8583 connector example"
+description: "Build an API that sends ISO8583 financial transaction messages to a banking network using the ISO8583 connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # ISO8583 Connector Example
 
 Given below is a sample scenario that demonstrates how the WSO2 ISO8583 Connector sends an ISO8583 message to financial networks using the integration runtime of WSO2.
@@ -10,7 +25,7 @@ Given below is a sample API that illustrates how you can configure ISO8583 with 
 
 To know the further information about the  `init` and `iso8583.sendMessage` operations please refer this link.
 
-<img src="../../../assets/img/integrate/connectors/iso8583-connector.png" title="ISO8583 Connector" width="800" alt="ISO8583 Connector"/>
+<img src="../../../../assets/img/integrate/connectors/iso8583-connector.png" title="ISO8583 Connector" width="800" alt="ISO8583 Connector"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -18,7 +33,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API.
 
@@ -49,21 +64,21 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
    ```
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime. 
    
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/iso8583-connector.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/iso8583-connector.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 ## Deployment
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
     
 ## Testing
 

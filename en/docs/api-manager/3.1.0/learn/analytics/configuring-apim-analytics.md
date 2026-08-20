@@ -1,3 +1,18 @@
+---
+title: "Configuring APIM analytics"
+description: "Install and configure WSO2 API-M Analytics for quick demos or a production standard setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/configuring-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/configuring-apim-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - configuring-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring APIM Analytics
 
 WSO2 API Manager Analytics provides reports, statistics, and graphs on the APIs deployed in WSO2 API Manager. You can configure alerts to monitor these APIs and detect unusual activity, manage locations via Geo-location statistics, and carry out a detailed analysis of the logs. WSO2 API Manager has an enhanced distribution of Analytics to cater to the API Manager specific scenarios that are used here to configure API-M Analytics.
@@ -17,7 +32,7 @@ Follow the instructions below if you wish to set up API-M Analytics for quick de
 
 1.  Download and install WSO2 API-M.
 
-    WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/install/installation-prerequisites).
+    WSO2 API-M via the [WSO2 API Manager page](https://wso2.com/api-management/install/). For more information on installing WSO2 API-M, see the [Installation Guide](../../install-and-setup/install/installation-prerequisites.md).
     
      [![apim download page](../../assets/img/learn/apim-download-page.png)](../../assets/img/learn/apim-download-page.png)
     
@@ -296,7 +311,7 @@ Configuring databases allow you to persist data relating to APIs, process them a
 
 API-M Analytics contains two runtime, namely worker and dashboard. The worker is responsible for the summarization of the collected data and the dashboard is responsible to represent the summarised data in the dashboards. Therefore, two separate JVMs are required. As a best practice, the worker and dashboard runtime can have the same analytics binary. This helps when managing the deployment and when applying WUM updates. However, it is up to the dev-ops engineer to decide whether to use the same binary (pack) or two binaries for the two runtime.
     
-The Worker supports an [Active-Active](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-active/) deployment and an [Active-Passive](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive/) deployment. 
+The Worker supports an [Active-Active](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-active.md) deployment and an [Active-Passive](../../install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-passive.md) deployment. 
 
 As the dashboard is used only to render the data there is no Active-Active or Active-Passive concept. However, based on the High Availability (HA) requirement it can be configured as Active-Active or Active-Passive by defining the load balancer related configurations. 
 
@@ -380,7 +395,7 @@ As the dashboard is used only to render the data there is no Active-Active or Ac
 !!! Info
       **Do the following to integrate third party products when configuring databases.**
       <br/>WSO2 API Manager Analytics is a OSGi-based product. Therefore, when you integrate third party products such as Oracle with WSO2 API-M Analytics, you need to check whether the libraries you need to add are OSGi based. If they are not, you need to convert them to OSGi bundles before adding them to the `<API-M_ANALYTICS_HOME>/lib` directory.
-      For detailed instructions, see [Adding Third Party Non OSGi Libraries](../../learn/analytics/adding-third-party-non-osgi-libraries/).
+      For detailed instructions, see [Adding Third Party Non OSGi Libraries](adding-third-party-non-osgi-libraries.md).
 
 ### Step 5 - Configure APIM IdP Client
 
@@ -439,9 +454,9 @@ auth.configs:
 
 In the SSL handshake between the API Manager and API Manager Analytics servers, the client (i.e. API Manager) needs to verify the certificate presented by the server (i.e. API Manager Analytics). For this purpose, the client stores the trusted certificate of the server in the `client-truststore.jks` keystore.
 
-If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, see [Adding CA-signed certificates to keystores](../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#adding-ca-signed-certificates-to-keystores).
+If you use a custom keystore in API Manager and/or API Manager Analytics, import the public key certificate of API Manager Analytics into the `client-truststore.jks` file of the API Manager. To export the public key from the server and import it into the client's trust store, see [Adding CA-signed certificates to keystores](../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md#adding-ca-signed-certificates-to-keystores).
 
-For more information follow [Configuring Keystores in APIM Analytics](../../learn/analytics/configuring-keystores-in-apim-analytics/).
+For more information follow [Configuring Keystores in APIM Analytics](configuring-keystores-in-apim-analytics.md).
 
 ### Step 7 - Configure User-Agent Parser
 

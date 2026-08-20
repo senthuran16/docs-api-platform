@@ -1,3 +1,18 @@
+---
+title: "Tuning the JMS transport"
+description: "Tune JMS transport thread pool sizes and listener parameters to improve concurrent consumer performance in Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/jms_transport_tuning/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/jms_transport_tuning.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Tuning the JMS Transport
 
 The Java Message Service (JMS) transport of the WSO2 Micro Integrator allows you to easily send and receive messages to queues and topics of any JMS service that implements the JMS specification. The following sections describe how you can tune the JMS transport of the Micro Integrator for better performance.

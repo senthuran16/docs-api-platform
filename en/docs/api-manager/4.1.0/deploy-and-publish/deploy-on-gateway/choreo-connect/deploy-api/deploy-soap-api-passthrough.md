@@ -1,3 +1,18 @@
+---
+title: "Deploying a SOAP API in Choreo Connect"
+description: "Deploy an existing SOAP or WSDL-based service as a pass-through API in Choreo Connect with API security and rate limiting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-soap-api-passthrough/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-soap-api-passthrough.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploying a SOAP API in Choreo Connect
 
 !!! attention "Update Level 4"
@@ -209,7 +224,7 @@ x-wso2-transports:
 The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token, for our `PhoneVerify` example.
 
 !!! Info "Before you begin"
-    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview.md#choreo-connect-deployment-options). 
+    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview.md#choreo-connect-deployment-options). 
 
 
 ### Step 1 - Initialize the apictl project

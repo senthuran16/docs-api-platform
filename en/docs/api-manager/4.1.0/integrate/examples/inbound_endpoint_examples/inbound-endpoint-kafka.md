@@ -1,3 +1,18 @@
+---
+title: "Using the Kafka inbound endpoint"
+description: "Configure a Kafka inbound endpoint to bridge one-way messages from a Kafka topic to an HTTP backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-kafka.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the Kafka Inbound Endpoint
 
 ## Example use case

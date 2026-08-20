@@ -1,3 +1,18 @@
+---
+title: "Creatio connector example"
+description: "Configure the Creatio connector in WSO2 Integration Studio to create, retrieve, update, and delete contacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - creatio-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Creatio Connector Example
 
 ## What you’ll build 
@@ -19,7 +34,7 @@ Connectors can be added to integration flows in WSO2 Integration Studio, which i
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md" 
 
 Now the connector is added to the palette.
 
@@ -89,8 +104,8 @@ Alternatively, you can copy and paste the below Synapse configuration in to the 
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/creatio-test.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/creatio-test.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -100,7 +115,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}   
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"   
 
 ## Testing
 

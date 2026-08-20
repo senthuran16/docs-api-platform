@@ -1,3 +1,18 @@
+---
+title: "Generating and viewing AsyncAPI definitions"
+description: "Generate, edit, and view AsyncAPI definitions in the Async API view of Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/working-with-the-async-api-view/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/working-with-the-async-api-view.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - working-with-the-async-api-view
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Generating and Viewing AsyncAPI Definitions
 
 This section covers how to generate, edit and view AsyncAPI definitions in the **Async API** view of Streaming Integrator Tooling.
@@ -53,7 +68,7 @@ To access the Async API View, open a Siddhi application that meets the criterion
 
      Click **Add Async API** to add the generated AsyncAPI definition to the Siddhi application.
 
-     <a href="../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
+     <a href="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
 
 5. Click **Code View** to view the Siddhi application with the AsyncAPI definition that was generated and to edit it if required.
 

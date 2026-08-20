@@ -1,3 +1,18 @@
+---
+title: "Step 4: run the siddhi application"
+description: "Install required extensions and run the SweetFactoryApp Siddhi application to generate and verify an input event."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/getting-started/test-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/getting-started/test-siddhi-application.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - test-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "tutorial"
+---
+
 # Step 4: Run the Siddhi Application
 
 In this step, let's run the `SweetFactoryApp` Siddhi application that you created, tested and deployed.

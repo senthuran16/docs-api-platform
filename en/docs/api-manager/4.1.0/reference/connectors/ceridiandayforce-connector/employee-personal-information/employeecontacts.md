@@ -1,3 +1,18 @@
+---
+title: "Working with employee contacts"
+description: "Retrieve, create, or update employee contact information using the Ceridian Dayforce connector operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeecontacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeecontacts.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee Contacts
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update contacts of an 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-contact"></a>
 #### Retrieving Employee Contact
 We can use GET Employee Contacts operation with required parameters to retrieve the contact information of an employee.
 
@@ -163,6 +179,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Contacts/GET-Employee-Contacts.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Contacts/GET-Employee-Contacts.aspx)
 
+<a name="creating-employee-contact"></a>
 #### Creating Employee Contact
 We can use POST Employee Contacts operation with required parameters to create the required employee's contact information.
 
@@ -231,6 +248,7 @@ This method returns a HTTP code 200 and no response body
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Contacts/POST-Employee-Contacts.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-Contacts/POST-Employee-Contacts.aspx)
 
+<a name="updating-employee-contact"></a>
 #### Updating Employee Contact
 We can use PATCH Employee Contacts operation with required parameters to update the contact information of existing employees.
 

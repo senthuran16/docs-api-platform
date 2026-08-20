@@ -1,3 +1,17 @@
+---
+title: "About this release"
+description: "Summarizes the modules, new features, and changes introduced in the WSO2 API Manager 3.1.0 release."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/about-this-release/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/about-this-release.md
+tags:
+  - api-manager
+  - getting-started
+  - about-this-release
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "release-notes"
+---
+
 # About this Release
 
 WSO2 API Manager is a platform for creating, managing, consuming, and monitoring APIs. It employs proven SOA best practices to solve a wide range of API management challenges such as API provisioning, API governance, API security, and API monitoring. It combines some of the most powerful and mature components of the WSO2's state-of-the-art Carbon platform to deliver a smooth and end-to-end API management experience while catering to both API publisher and API consumer requirements.
@@ -10,7 +24,7 @@ WSO2 API Manager comprises of the following modules:
 -   **API Key Manager**: Performs key generation and key validation functionalities.
 -   **API Traffic Manager**: Performs rate limiting of API requests.
 
-For more information on WSO2 API Manager, see the [overview in the WSO2 API Manager 3.1.0 documentation](../getting-started/overview/) and go to the [product page on WSO2 API Manager on the WSO2 website.](https://wso2.com/api-management/)
+For more information on WSO2 API Manager, see the [overview in the WSO2 API Manager 3.1.0 documentation](overview.md) and go to the [product page on WSO2 API Manager on the WSO2 website.](https://wso2.com/api-management/)
 
 ## What is new in this release
 
@@ -18,20 +32,20 @@ The **WSO2 API Manager 3.1.0** is the **latest** **WSO2 API Manager release*
 
 ### WSO2 API-M related new features
 
-- **[Integrating AWS Lambda with APIM](../learn/tutorials/create-and-publish-awslambda-api)**
+- **[Integrating AWS Lambda with APIM](../learn/tutorials/create-and-publish-awslambda-api.md)**
 
      When using AWS Lambda to create and publish APIs, you can execute your code without having to manage or provision servers.
 
 
-- **[API Security Audit Integration](../learn/api-security/configuring-api-security-audit)**
+- **[API Security Audit Integration](../learn/api-security/configuring-api-security-audit.md)**
 
      WSO2 API-M has partnered with [42Crunch](https://42crunch.com/), which is the only enterprise API security platform, in order to be able to conduct a security audit on the OpenAPI Specification definition and to obtain an audit report.
 
-- **[API Categories](../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping)**
+- **[API Categories](../develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md)**
 
      API categories are similar to Tag wise grouping. However, admins need to define API categories that Publishers can use when creating APIs. Furthermore, unlike Tag wise grouping API categories do not use a naming convention. Therefore, with the introduction of this feature, WSO2 has deprecated the Tag wise grouping feature.
 
-- [**API Mocking**](../learn/design-api/mock-api/create-a-mock-api-with-an-inline-script)
+- [**API Mocking**](../learn/design-api/mock-api/create-a-mock-api-with-an-inline-script.md)
 
      Ability to create a prototype API using a mock payload that is generated for inline scripts.
 
@@ -56,11 +70,11 @@ The **WSO2 API Manager 3.1.0** is the **latest** **WSO2 API Manager release*
 
 ### Improvements to existing WSO2 API-M features
 
-- [Language Switch](../learn/consume-api/customizations/adding-internationalization/#enabling-the-language-switch)
+- [Language Switch](../develop/customizations/adding-internationalization.md#enabling-the-language-switch)
     
     A language switch allows the Developer Portal users to select the language in which they want to read the content. The Developer Portal theming architecture lets developers to add a language switch in different ways.
 
-- [Changing the layout direction in the Developer Portal](../learn/consume-api/customizations/adding-internationalization/#changing-the-layout-direction)
+- [Changing the layout direction in the Developer Portal](../develop/customizations/adding-internationalization.md#changing-the-direction-of-the-ui)
 
     You can switch the Developer Portal layout direction from its default LTR to RTL using a single configuration.
 
@@ -86,17 +100,17 @@ The **WSO2 API Manager 3.1.0** is the **latest** **WSO2 API Manager release*
 
      API categories are used for API grouping, similar to Tag wise grouping. However, the user does not have to go through the hassle of following a naming convention when creating API categories. Therefore, with the introduction of the API categories, Tag wise grouping has been deprecated, and WSO2 recommends users to use the 
 
-- [Developer Portal](../develop/product-apis/devportal-v0.15/) and [Publisher](../develop/product-apis/publisher-v0.15) v0.15 based REST APIs.
+- [Developer Portal](../wip/apis/devportal-v0.15.md) and [Publisher](../wip/apis/publisher-v0.15.md) v0.15 based REST APIs.
 
 ### Removed features and functionalities
 
-- [Monitoring message flows](https://apim.docs.wso2.com/en/3.0.0/administer/product-administration/monitoring/monitoring-message-flows/)
+- [Monitoring message flows](../../3.0.0/administer/product-administration/monitoring/monitoring-message-flows.md)
 
      This feature was removed due to low usage of the feature.
 
 ## Compatible WSO2 product versions
 
-WSO2 API-M 3.1.0 is based on WSO2 Carbon 4.6.0 and is expected to be compatible with any of the WSO2 products that are based on any Carbon 4.6.x version, except when using [WSO2 Identity Server as a Key Manager](../install-and-setup/deploying-wso2-api-manager/ThirdPartyKeyManager/configuring-wso2-identity-server-as-a-key-manager/), you need to specifically use WSO2 Identity Server 5.10.0 when working with WSO2 API-M 3.1.0. If you get any compatibility issues, please [contact team WSO2](https://wso2.com/subscription/). For information on the third-party software required with API-M 3.1.0, see [Installation Prerequisites](../install-and-setup/installation-guide/installation-prerequisites/). For more information on the products in each Carbon platform release, see the [Release Matrix](https://wso2.com/products/carbon/release-matrix/).
+WSO2 API-M 3.1.0 is based on WSO2 Carbon 4.6.0 and is expected to be compatible with any of the WSO2 products that are based on any Carbon 4.6.x version, except when using [WSO2 Identity Server as a Key Manager](../install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md), you need to specifically use WSO2 Identity Server 5.10.0 when working with WSO2 API-M 3.1.0. If you get any compatibility issues, please [contact team WSO2](https://wso2.com/subscription/). For information on the third-party software required with API-M 3.1.0, see [Installation Prerequisites](../install-and-setup/install/installation-prerequisites.md). For more information on the products in each Carbon platform release, see the [Release Matrix](https://wso2.com/products/carbon/release-matrix/).
 
 ## Fixed issues
 
@@ -125,7 +139,7 @@ WSO2 API-M 3.1.0 is based on WSO2 Carbon 4.6.0 and is expected to be compatible 
     supported_document_types = "pdf, txt, zip, json, yaml"
     ``` 
 
-- From API-M 3.1.0 onwards, tag-wise grouping has been deprecated. Users are informed to use [API category based grouping](https://apim.docs.wso2.com/en/latest/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/) instead.
+- From API-M 3.1.0 onwards, tag-wise grouping has been deprecated. Users are informed to use [API category based grouping](../develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md) instead.
 
 - New user store managers with inbuilt unique ID support was introduced in WSO2 5.10.0 and named with the UniqueID prefix. User store managers that do not have UniqueID as part of the user store manager name are only available for backward compatibility purposes and can only be used if you are migrating from a previous version of WSO2 Identity Server.
 

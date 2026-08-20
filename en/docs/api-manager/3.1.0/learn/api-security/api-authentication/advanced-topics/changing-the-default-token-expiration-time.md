@@ -1,3 +1,18 @@
+---
+title: "Changing the default token expiration time"
+description: "Change the default validity period of application and user access tokens issued by WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/advanced-topics/changing-the-default-token-expiration-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/api-authentication/advanced-topics/changing-the-default-token-expiration-time.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # duplicate\_Changing the default token expiration time
 
 Access tokens have an expiration time, which is set to 60 minutes by default.

@@ -1,3 +1,18 @@
+---
+title: "Deploying integrations using the operator"
+description: "Deploy Micro Integrator solutions to Kubernetes using the K8s API operator and the Integration custom resource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploying Integrations using the Operator
 
 The Kubernetes API operator (**k8s-api-operator**) provides first-class support for Micro Integrator deployments in the Kubernetes ecosystem. It uses the **Integration custom resource** (`integration_cr.yaml` file) that is available in the Kubernetes exporter module (exported from WSO2 Integration Studio) and deploys the integration in your Kubernetes environment.
@@ -235,7 +250,7 @@ Given below are the main steps your will follow when you deploy integration solu
 When the integration is successfully deployed, it should create the `hello-world` integration, `hello-world-deployment`, `hello-world-service`, and `ei-operator-ingress` as follows:
 
 !!! Tip
-    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#Disable-ingress-controller-creation).
+    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#disable-ingress-controller-creation).
 
 ```bash
 kubectl get integration
@@ -426,7 +441,7 @@ Follow the steps given below:
     ```
 
 !!! Tip
-    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#Disable-ingress-controller-creation).
+    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#disable-ingress-controller-creation).
 
 
 ## Update existing integration deployments
@@ -548,7 +563,7 @@ data:
   maxReplicas: "5"
 ```
 
-Note how you can set required resources and resource limits for the pods in the deployment referring to the above section [Managing resources for pods in EI deployment](#Managing-resources-for-pods-in-EI-deployment). HPA configs are injected through the integration configmap. See how you can define it at ([integration_controller_conf.yaml](https://github.com/wso2/k8s-api-operator/blob/master/api-operator/deploy/controller-configs/integration_controller_conf.yaml)) file. 
+Note how you can set required resources and resource limits for the pods in the deployment referring to the above section [Managing resources for pods in EI deployment](#manage-resources-of-pods-in-integration-deployment). HPA configs are injected through the integration configmap. See how you can define it at ([integration_controller_conf.yaml](https://github.com/wso2/k8s-api-operator/blob/master/api-operator/deploy/controller-configs/integration_controller_conf.yaml)) file. 
 
 ```yaml
   hpaMetrics: |

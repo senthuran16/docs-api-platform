@@ -1,3 +1,18 @@
+---
+title: "Switching between HTTP and MSMQ"
+description: "Route stock quote requests between HTTP and MSMQ transports using two proxy services in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/protocol-switching/switching_between_http_and_msmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/protocol-switching/switching_between_http_and_msmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Switching between HTTP and MSMQ
 
 This example demonstrates how you can use the Micro Integrator to switch messages between HTTP and MSMQ during message mediation.

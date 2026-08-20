@@ -1,3 +1,18 @@
+---
+title: "Using HL7 messages with file systems"
+description: "Transfer HL7 messages between file systems and between HL7 and file system endpoints using the VFS transport."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/hl7-examples/file_transfer_using_hl7/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/hl7-examples/file_transfer_using_hl7.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - hl7-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using HL7 Messages with File Systems
 
 The Micro Integrator allows messages to be transferred between HL7 and the file system using the HL7 

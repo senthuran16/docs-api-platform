@@ -1,3 +1,18 @@
+---
+title: "SQL/Data types"
+description: "Reference the SQL and data types used when defining input and output mappings in a data service query."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/mapping-data-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/mapping-data-types.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # SQL/Data Types
 
 This section describes the data types that are used when defining [Input and Output Mappings](query-parameters.md) in a data service:

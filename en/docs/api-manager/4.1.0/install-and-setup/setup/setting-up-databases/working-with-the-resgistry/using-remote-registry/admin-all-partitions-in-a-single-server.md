@@ -1,3 +1,18 @@
+---
+title: "All partitions in a single server"
+description: "Deploy all registry partitions locally within a single server instance without additional configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-all-partitions-in-a-single-server/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-all-partitions-in-a-single-server.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # All Partitions in a Single Server
 
 #### Strategy 1: Local Registry

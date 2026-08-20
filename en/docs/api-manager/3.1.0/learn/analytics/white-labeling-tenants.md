@@ -1,3 +1,18 @@
+---
+title: "White labeling for tenants"
+description: "Customize the logo and favicon of the analytics dashboard for individual tenants in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/white-labeling-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/white-labeling-tenants.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - white-labeling-tenants
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # White Labeling for Tenants
 This section explains how to white label analytics dashboard for tenants. You can customize logo and favicon for tenants. 
 1. Add following configuration in the deployment.yaml. You can use `logoFileName` and `faviconFileName` directives of deployment.yaml to specifiy file names of logo and favicon.(Ex: logo.png, favicon.ico)

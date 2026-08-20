@@ -1,3 +1,18 @@
+---
+title: "Invoke a GraphQL API using the integrated GraphQL console"
+description: "Subscribe to a GraphQL API and run queries against it using the integrated GraphiQL console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - invoke-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Invoke an GraphQL API using the Integrated GraphQL Console
 
 WSO2 API Manager(WSO2 API-M) has an integrated GraphiQL UI for the GraphQL APIs.
@@ -12,7 +27,7 @@ Let's see how to use the GraphQL Console in the Store to invoke an GraphQL API.
     You can only try out HTTPS based APIs via the GraphQL Console because the API Store runs on HTTPS.
 
 
-The examples here use the `StarWarsAPI` GraphQL API, which was created in [Create a GraphQL API](../../../../learn/design-api/create-api/create-a-graphql-api/) .
+The examples here use the `StarWarsAPI` GraphQL API, which was created in [Create a GraphQL API](../../../design-api/create-api/create-a-graphql-api.md) .
 
 1.  Sign in to the WSO2 Develeoper Portal (`https://<hostname>:9443/devportal`) and click an API (e.g., `StarWarsAPI` ).
 
@@ -27,7 +42,7 @@ The examples here use the `StarWarsAPI` GraphQL API, which was created in [Creat
     !!! tip
         **Production and Sandbox Tokens**
 
-        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more details, see [Maintaining Separate Production and Sandbox Gateways](../../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways/#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
+        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more details, see [Maintaining Separate Production and Sandbox Gateways](../../../api-gateway/maintaining-separate-production-and-sandbox-gateways.md#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
 
     !!! tip
         **JWT vs Oauth tokens**

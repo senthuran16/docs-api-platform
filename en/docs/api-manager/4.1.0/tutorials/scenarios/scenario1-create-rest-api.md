@@ -1,3 +1,18 @@
+---
+title: "Scenario 1 - create REST API from an OpenAPI definition"
+description: "Create a REST API in API Manager by importing an OpenAPI definition for an existing train schedule backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario1-create-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario1-create-rest-api.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario1-create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Scenario 1 - Create REST API from an OpenAPI Definition
 
 This tutorial is part of a series that guides you through all the capabilities of API Manager. This involves creating a REST API from an OpenAPI Definition. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).
@@ -12,7 +27,7 @@ By exposing this API through WSO2 API Manager, Coltrain expects to get the full 
 
 WSO2 API manager provides capability to import OAS definitions and create the API using that. 
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario1.png" title="Import OAS definition to API-M" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario1.png" title="Import OAS definition to API-M" width="630"/>
     
 ## Step 1: Testing the backend
 

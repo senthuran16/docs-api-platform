@@ -1,9 +1,24 @@
+---
+title: "Installing as a Windows service"
+description: "Configure the YAJSW wrapper to run WSO2 API Manager as a Windows service using a wrapper.conf configuration file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing as a Windows Service
 
 !!! note
     **Before you begin:**
 
-    -   See [our compatibility matrix](../../../../install-and-setup/ProductCompatibility) to find out if this version of the product is fully tested on your OS.
+    -   See [our compatibility matrix](../../../../install-and-setup/setup/reference/product-compatibility.md) to find out if this version of the product is fully tested on your OS.
 
 
 ### Prerequisites
@@ -20,7 +35,7 @@ The configuration file used for wrapping Java Applications by YAJSW is `wrapper.
 
 !!! info
     
-    If you want to set additional properties from an external registry at runtime, store sensitive information like usernames and passwords for connecting to the registry in a properties file and secure it with [secure vault](../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation).
+    If you want to set additional properties from an external registry at runtime, store sensitive information like usernames and passwords for connecting to the registry in a properties file and secure it with [secure vault](../../../../install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation.md).
 
 !!! note
     

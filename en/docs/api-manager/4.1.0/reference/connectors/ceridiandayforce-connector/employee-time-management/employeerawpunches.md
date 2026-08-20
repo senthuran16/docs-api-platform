@@ -1,3 +1,18 @@
+---
+title: "Working with employee raw punches"
+description: "Retrieve or create raw clock punch data for employees using the Ceridian Dayforce connector operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-time-management/employeerawpunches/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-time-management/employeerawpunches.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee Raw Punches
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -15,6 +30,7 @@ The following operations allow you to retrieve, create raw punches of an employe
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-raw-punches"></a>
 #### Retrieving Employee Raw Punches
 We can use GET Employee Raw Punches operation with required parameters to retrieve raw punches of employees.
 
@@ -141,6 +157,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Time-Management/GET-Employee-Raw-Punches.aspx](https://developers.dayforce.com/Build/API-Explorer/Time-Management/GET-Employee-Raw-Punches.aspx)
 
+<a name="creating-employee-raw-punches"></a>
 #### Creating Employee Raw Punches
 We can use POST Employee Raw Punches operation with required parameters to create raw punches for employees.
 

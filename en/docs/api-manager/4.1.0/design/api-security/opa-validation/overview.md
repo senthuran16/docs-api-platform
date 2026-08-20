@@ -1,3 +1,18 @@
+---
+title: "Validate request with open policy agent (OPA)"
+description: "Use Open Policy Agent to validate API requests against custom policies and attach OPA policies to API operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/opa-validation/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/opa-validation/overview.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - opa-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Validate Request with Open Policy Agent (OPA)
 
 The [Open Policy Agent (OPA)](https://openpolicyagent.org/) is an open source, general-purpose policy engine that unifies policy enforcement. 
@@ -8,8 +23,8 @@ A policy for Open Policy Agent can be though as a set of rules and policy engine
 
 WSO2 API Manager uses this unique policy engine to evaluate the requests that the Gateway receives and decides the fate of the request.
 
-<a href="../../../assets/img/design/security/opa/opa-policy-architecture.png">
-    <img src="../../../assets/img/design/security/opa/opa-policy-architecture.png" alt="OPA Architecture"/>
+<a href="../../../../assets/img/design/security/opa/opa-policy-architecture.png">
+    <img src="../../../../assets/img/design/security/opa/opa-policy-architecture.png" alt="OPA Architecture"/>
 </a>
 
 ## How to use OPA for request validation?
@@ -33,8 +48,8 @@ Once OPA engine is deployed, you have to attach the policy to the operations tha
 5. Fill the configurations as per your deployment and save the page.
 6. Create a new revision from these changes and deploy it to the Gateway.
 
-<a href="../../../assets/img/design/security/opa/opa-policy-selection.png">
-    <img src="../../../assets/img/design/security/opa/opa-policy-selection.png" alt="Select the OPA Policy"/>
+<a href="../../../../assets/img/design/security/opa/opa-policy-selection.png">
+    <img src="../../../../assets/img/design/security/opa/opa-policy-selection.png" alt="Select the OPA Policy"/>
 </a>
 
 Configurations for the policy is as follows.
@@ -50,8 +65,8 @@ Configurations for the policy is as follows.
 | Max Open Connections  | **Optional** Maximum number of open HTTP connections between the gateway and OPA server.                                                                                                                                                                               | `500`                                  |
 | Connection Timeout    | **Optional** Connection timeout in seconds.                                                                                                                                                                                                                            | `30`                                   |
 
-<a href="../../../assets/img/design/security/opa/configure-opa-policy.png">
-    <img src="../../../assets/img/design/security/opa/configure-opa-policy.png" alt="Configure OPA policy"/>
+<a href="../../../../assets/img/design/security/opa/configure-opa-policy.png">
+    <img src="../../../../assets/img/design/security/opa/configure-opa-policy.png" alt="Configure OPA policy"/>
 </a>
 
 ## Defining Policies in the OPA Server

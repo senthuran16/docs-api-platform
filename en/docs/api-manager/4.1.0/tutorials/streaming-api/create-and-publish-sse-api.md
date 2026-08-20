@@ -1,10 +1,26 @@
+---
+title: "Create and publish a server sent events API"
+description: "Design, publish, and invoke a server sent events API backed by a memory-monitoring SSE server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/streaming-api/create-and-publish-sse-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/streaming-api/create-and-publish-sse-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-sse-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Create and Publish a Server Sent Events API
 
 This tutorial will guide you to create a [SSE Streaming API](../../use-cases/streaming-usecase/create-streaming-api/create-a-sse-streaming-api.md) which is connected to a backend that observes your system's memory, and gives you the values in a continuous manner. Follow the instructions in this tutorial to design and publish an API with an SSE backend, and thereafter invoke it using a cURL command.
 
 ## Step 1 - Design a SSE API
 
-1.  {!includes/sign-in-publisher.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and click **SSE API**.
 
@@ -75,7 +91,7 @@ Now, you have created and configured the SSE API successfully.
 
 3. Select **Production and Sandbox**, choose **localhost** as the VHost, and click on **Deploy**.
 
-      <a href="../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png"><img src="../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png" width="80%" alt="Deploy New Revision"></a>
+      <a href="../../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png"><img src="../../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png" width="80%" alt="Deploy New Revision"></a>
 
 ## Step 3 - Start the SSE Server
 
@@ -89,7 +105,8 @@ Now, you have created and configured the SSE API successfully.
 
 ## Step 4 - Invoke the SSE API
 
-1. {!includes/sign-in-devportal.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-devportal.md"
 
 2. Click on the SSE API. 
 

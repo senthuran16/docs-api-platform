@@ -1,3 +1,18 @@
+---
+title: "Using the load balance endpoint"
+description: "Configure session affinity load balancing across three back-end endpoints in WSO2 Micro Integrator using a client-initiated session."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-loadbalancing-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-loadbalancing-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the Load Balance Endpoint
 
 **Session Affinity Load Balancing between Three Endpoints**

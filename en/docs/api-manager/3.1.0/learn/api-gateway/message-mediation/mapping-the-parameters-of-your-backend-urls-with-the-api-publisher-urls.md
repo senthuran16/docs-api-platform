@@ -1,3 +1,18 @@
+---
+title: "Mapping backend URL parameters to publisher URLs"
+description: "Map backend URL parameters to API Publisher URL patterns using URI template variables and mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/mapping-the-parameters-of-your-backend-urls-with-the-api-publisher-urls/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/mapping-the-parameters-of-your-backend-urls-with-the-api-publisher-urls.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Mapping the Parameters of your Backend URLs with the API Publisher URLs
 
 This tutorial explains how to map your backend URLs to the pattern that you want in the API Publisher.   
@@ -19,7 +34,7 @@ We do the following mapping in this tutorial:
     **Before you begin...** 
     
     Note that a mock backend implementation is set up in this tutorial for the purpose of demonstrating the API invocation. 
-    If you have a local API Manager setup, save [this file](../../../assets/attachments/learn/api-gateway/message-mediation/Response_API.xml) in the `<API-M_HOME>/repository/deployment/server/synapse-configs/default/api` folder to set up the mock backend.
+    If you have a local API Manager setup, save [this file](../../../assets/attachments/learn/APIGateway/MessageMediation/Response_API.xml) in the `<API-M_HOME>/repository/deployment/server/synapse-configs/default/api` folder to set up the mock backend.
 
 1.  Log in to the API Publisher, design a new API with the following information, click **Create**.
 

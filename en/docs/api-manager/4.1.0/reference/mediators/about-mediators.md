@@ -1,3 +1,18 @@
+---
+title: "About mediators"
+description: "Learn how mediators process messages in the Micro Integrator and how they are classified by content awareness."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/about-mediators/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/about-mediators.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - about-mediators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
     # About Mediators
 
 Mediators are individual processing units that perform a specific function on messages that pass through the Micro Integrator. The mediator takes the message received by the proxy service or REST API, carries out some predefined actions on it (such as transforming, enriching, filtering), and outputs the modified message. 
@@ -21,19 +36,19 @@ Mediators are classified as follows based on whether or not they access the mess
   <tr>
     <td><b>Content-Aware</b> mediators</td>
     <td>
-      These mediators always access the message content when mediating messages (e.g., <a href="enrich-mediator.md">Enrich</a> mediator).
+      These mediators always access the message content when mediating messages (e.g., <a href="../enrich-mediator/">Enrich</a> mediator).
     </td>
   </tr>
   <tr>
     <td><b>Content-Unaware</b> mediators</td>
     <td>
-      These mediators never access the message content when mediating messages (e.g., <a href="send-mediator.md">Send</a> mediator).
+      These mediators never access the message content when mediating messages (e.g., <a href="../send-mediator/">Send</a> mediator).
     </td>
   </tr>
   <tr>
     <td><b>Conditionally Content-Aware</b> mediators</td>
     <td>
-      These mediators could be either content-aware or content-unaware depending on their exact instance configuration. For example, a simple <a href="log-mediator.md"></a> mediator instance (i.e. configured as <log/>) is content-unaware. However a log mediator configured as <log level=”full”/> would be content-aware since it is expected to log the message payload.
+      These mediators could be either content-aware or content-unaware depending on their exact instance configuration. For example, a simple <a href="../log-mediator/"></a> mediator instance (i.e. configured as <log/>) is content-unaware. However a log mediator configured as <log level=”full”/> would be content-aware since it is expected to log the message payload.
     </td>
   </tr>
 </table>

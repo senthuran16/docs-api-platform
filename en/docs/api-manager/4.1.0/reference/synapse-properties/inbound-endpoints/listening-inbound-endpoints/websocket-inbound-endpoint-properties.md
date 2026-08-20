@@ -1,3 +1,18 @@
+---
+title: "WebSocket inbound endpoint"
+description: "Lists the syntax and configuration properties for setting up WebSocket and secure WebSocket inbound endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/websocket-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/websocket-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # WebSocket Inbound Endpoint
 ## Introduction
 
@@ -81,7 +96,7 @@ The following properties are required when [creating a WebSocket inbound endpoin
 
 ### Required Properties (for Secured WebSocket)
 
-In addition to the [common WebSocket inbound properties](#common-websocket-inbound-required-properties) listed above, the following properties are required when [creating a **secured** WebSocket inbound endpoint](../../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md).
+In addition to the [common WebSocket inbound properties](#required-properties) listed above, the following properties are required when [creating a **secured** WebSocket inbound endpoint](../../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md).
 
 <table>
   <tr>

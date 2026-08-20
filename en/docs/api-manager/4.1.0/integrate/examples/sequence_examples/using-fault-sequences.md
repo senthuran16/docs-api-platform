@@ -1,3 +1,18 @@
+---
+title: "Using fault sequences"
+description: "Use fault sequences in the Micro Integrator to handle errors and access error properties during mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/sequence_examples/using-fault-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/sequence_examples/using-fault-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - sequence_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using Fault Sequences 
 WSO2 Micro Integrator provides fault sequences for dealing with errors. Whenever an error occurs, the mediation engine attempts to provide as much information as possible on the error to the user by initializing the following properties on the erroneous message:
 

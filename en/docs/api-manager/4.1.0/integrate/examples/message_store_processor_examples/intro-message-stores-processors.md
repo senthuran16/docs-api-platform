@@ -1,3 +1,18 @@
+---
+title: "Introduction to message stores"
+description: "Set up a proxy service and message store to demonstrate basic message storing functionality in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_store_processor_examples/intro-message-stores-processors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_store_processor_examples/intro-message-stores-processors.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Introduction to Message Stores
 This sample demonstrates the basic functionality of a [message store](../../../reference/synapse-properties/about-message-stores-processors.md).
 

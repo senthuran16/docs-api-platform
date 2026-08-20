@@ -1,3 +1,18 @@
+---
+title: "Changing to remote H2"
+description: "Set up a remote H2 database and drivers to replace the default embedded H2 database in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/deleted-pages/changing-to-remote-h2/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/deleted-pages/changing-to-remote-h2.md
+tags:
+  - api-manager
+  - wip
+  - deleted-pages
+  - changing-to-remote-h2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing to Remote H2
 
 By default, WSO2 API Manager uses the embedded H2 database as the database for storing user management and registry data. Given below are the instructions you need to follow in order to use remote H2 for this purpose.
@@ -133,7 +148,7 @@ Follow the instructions below to change the type of the default datasource.
 
     !!! note
 <<<<<<< HEAD:en/docs/install-and-setup/setting-up-databases/changing-default-databases/changing-to-remote-h2.md
-        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store).
+        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
 =======
-        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store).
+        To give the Key Manager, Publisher, and Developer Portal components access to the user management data with shared permissions, JDBCUserStoreManager has been configured by default. For more information, refer [Configuring Userstores](../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md).
 >>>>>>> 3.0.0:en/docs/wip/deleted-pages/changing-to-remote-h2.md

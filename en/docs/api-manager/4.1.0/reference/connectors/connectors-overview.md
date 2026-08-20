@@ -1,3 +1,18 @@
+---
+title: "Connectors overview"
+description: "Learn about connector types, inbound and outbound connectivity, and the advantages of using integration connectors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/connectors-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/connectors-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - connectors-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Connectors Overview
 
 Integration Connectors are extensions to the integration runtime of WSO2 (compatible with EI 6.x, EI 7.x, and also APIM 4.0.0). They allow you to interact with SaaS applications on the cloud, databases, and popular B2B protocols. 
@@ -22,7 +37,7 @@ There are three types of connectors available.
 
 Most of the connectors available in the connector store are outbound connectors that illustrate connections and operations going out from the integration runtime to third-party applications and systems. However, there are connectors that also enable inbound connectivity from popular third-party applications.
 
-<img src="../../assets/img/integrate/connectors/inbound-outbound.png" title="Inbound and Outbound Connectors" width="700" alt="Inbound and Outbound Connectors"/>
+<img src="../../../assets/img/integrate/connectors/inbound-outbound.png" title="Inbound and Outbound Connectors" width="700" alt="Inbound and Outbound Connectors"/>
 
 Some examples for inbound connectors are as follows.
 

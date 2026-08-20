@@ -1,19 +1,34 @@
+---
+title: "Migrating applications to different environments"
+description: "Export and import applications between API Manager environments to manage the application lifecycle."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/migrating-applications-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/migrating-applications-to-different-environments.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - migrating-applications-to-different-environments
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Migrating Apps to Different Environments
 WSO2 API Controller, **apictl** allows you to maintain multiple environments running on the same WSO2 API-M version. This feature allows you to import and export applications between your environments. For example, if you have an application running in the development environment, you can import it and export it to the production environment. Thereby, applications do not have to be created from scratch in different environments.
 
 !!! info
     **Before you begin** 
 
-    -   Make sure WSO2 API CTL Tool is initialized and running, if not follow the instructions in [Download and Initialize the CTL Tool](../../learn/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-ctl-tool).
+    -   Make sure WSO2 API CTL Tool is initialized and running, if not follow the instructions in [Download and Initialize the CTL Tool](getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool).
 
     -  Make sure to add an environment before you start working with the following CTL commands, because all applications need to be imported or exported to/from a specific environment.    
-       For more information, see [Add an Environment](../../learn/api-controller/getting-started-with-wso2-api-controller#add-an-environment).
+       For more information, see [Add an Environment](getting-started-with-wso2-api-controller.md#add-an-environment).
     
 !!! tip
     -  Only the following types of users are allowed to export and import applications.  
         -   A user with the `admin` role.
         -   A user with a role having `apim:app_import_export` Admin REST API scope with `API Subscribe` permission.
-    - Refer [Creating Custom Users to Perform API Controller Operations](../../learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations) for more information.
+    - Refer [Creating Custom Users to Perform API Controller Operations](advanced-topics/creating-custom-users-to-perform-api-controller-operations.md) for more information.
 
 ## Manage the application lifecycle
 
@@ -26,7 +41,7 @@ The lifecycle of an application could be defined as the stages of an application
 
 You can export an application in the Developer Portal and download it as a zipped file.
 
-1.  Log in to the API Manager in exporting the environment by following the instructions in [Login to an Environment](../../learn/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment).  
+1.  Log in to the API Manager in exporting the environment by following the instructions in [Login to an Environment](getting-started-with-wso2-api-controller.md#login-to-an-environment).  
     
     !!! tip
         If you are already logged-in and your logged-in credentials and the keys are already available in the `<USER_HOME>/.wso2apictl/keys.json` file, you can skip this step. 
@@ -86,7 +101,7 @@ The exported application zipped file will be as follows:
 
 You can import an application to your environment as a zipped application. When you import an application as a zipped file, a new application is created within the target environment.
 
-1.  Log in to the API Manager in exporting the environment by following the instructions in [Login to an Environment](../../learn/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment).  
+1.  Log in to the API Manager in exporting the environment by following the instructions in [Login to an Environment](getting-started-with-wso2-api-controller.md#login-to-an-environment).  
     
     !!! tip
         If you are already logged-in and your logged-in credentials and the keys already are available in the `<USER_HOME>/.wso2apictl/keys.json` file, you can skip this step. 

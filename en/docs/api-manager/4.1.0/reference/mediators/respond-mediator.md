@@ -1,3 +1,18 @@
+---
+title: "Respond mediator"
+description: "Reference for the Respond mediator, which stops message processing and sends a response back to the client."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/respond-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/respond-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - respond-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Respond Mediator
 
 The **Respond Mediator** stops the processing on the current message and sends the message back to the client as a response.

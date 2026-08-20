@@ -1,3 +1,18 @@
+---
+title: "Creatio connector reference"
+description: "Reference the Creatio connector's cookie-based authentication flow and its operations for CreatioCRM integration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - creatio-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Creatio Connector Reference
 
 ## Authentication implementation

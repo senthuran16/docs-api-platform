@@ -1,3 +1,18 @@
+---
+title: "Include additional headers in the API console"
+description: "Configure CORS to allow an additional custom header and add it as a parameter in the API console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - invoke-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Include Additional Headers in the API Console
 
 
@@ -7,7 +22,7 @@
         The Swagger API Console is a JavaScript client that runs in the Developer Portal and makes JavaScript calls from the Developer Portal to the API Gateway. In order to successfuly invoke an API by specifying an additional header via the API console, first you must specify the header that you want to add, under the CORS ( [Cross Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) ) configuration.
 
 
-        Open the `<API-M_HOME>/repository/conf/deployment.toml` file, and specify the additional headers ( `userId` , in this case)under the `[apim.cors]` section: Alternatively, you could choose to add this additional header only to a specific API ( [Enabling Cors per API](../../../../learn/design-api/advanced-topics/enabling-cors-for-apis/#enabling-cors-per-api)).
+        Open the `<API-M_HOME>/repository/conf/deployment.toml` file, and specify the additional headers ( `userId` , in this case)under the `[apim.cors]` section: Alternatively, you could choose to add this additional header only to a specific API ( [Enabling Cors per API](../../../design-api/advanced-topics/enabling-cors-for-apis.md#enabling-cors-per-api)).
 
         **CORS configurations in deployment.toml**
 

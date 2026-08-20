@@ -1,16 +1,31 @@
+---
+title: "Publish the new version and deprecate old versions"
+description: "Publish a new API version and deprecate older versions to move subscribers to the latest release."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/api-versioning/deprecate-the-old-version/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/api-versioning/deprecate-the-old-version.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - api-versioning
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish the New Version and Deprecate Old Versions
 
 When you publish a new version of an API, you have to maintain the old versions of the API until all the subscribers move to the new version. However, it would be best if you encourage subscribers to use the latest version. For this use case, you can use '**Deprecate old versions after publishing the API**' option when publishing the new version.
 
 !!! note
-    For more details on the API lifecycle stages, see [API lifecycle](../../../learn/design-api/lifecycle-management/api-lifecycle/).
+    For more details on the API lifecycle stages, see [API lifecycle](../lifecycle-management/api-lifecycle.md).
 
 
 1.  Sign in to the WSO2 API Publisher as a user who has the `publisher` role assigned to themselves.
 
      `https://<hostname>:9443/publisher`
 
-2.  Click on the API that you created in the [previous tutorial](../../../learn/design-api/api-versioning/create-a-new-api-version/) (e.g., `PhoneVerification 2.0.0`).
+2.  Click on the API that you created in the [previous tutorial](create-a-new-api-version.md) (e.g., `PhoneVerification 2.0.0`).
 
 3.  Click **Lifecycle**. The API Lifecycle page appears.
 

@@ -1,8 +1,23 @@
+---
+title: "Tag wise based grouping"
+description: "Group APIs by tags in the Developer Portal by enabling tag-wise filtering and adding API groups in the Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/tagwise-based-grouping/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/tagwise-based-grouping.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Tag wise based Grouping
 
 !!! note
 
-    The Tag wise grouping feature has been deprecated with the introduction of the [API categories feature](../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping) in WSO2 API Manager 3.1.0. Therefore, WSO2 recommends all users to use API categories instead of tag wise grouping.
+    The Tag wise grouping feature has been deprecated with the introduction of the [API categories feature](api-category-based-grouping.md) in WSO2 API Manager 3.1.0. Therefore, WSO2 recommends all users to use API categories instead of tag wise grouping.
 
 API providers add tags to APIs when designing them using the API Publisher. Tags allow API providers to categorize APIs that have similar attributes. When a tagged API gets published to the Developer Portal, its tags appear as clickable links to the API consumers, who can use them to quickly jump to a category of interest. The font size of the tag in the Developer Portal varies based on the number of APIs that are assigned to it. Therefore, for example the font size of a tag which has 10 APIs assigned to it will be bigger than the font size of a tag that has only 2 APIs assigned to it.
 

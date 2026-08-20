@@ -1,3 +1,18 @@
+---
+title: "Config and governance partitions in separate nodes"
+description: "Configure separate remote registry instances for configuration and governance partitions across product clusters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-separate-nodes/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-separate-nodes.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Config and Governance Partitions in Separate Nodes
 
 In this deployment strategy, let's assume 2 clusters of Carbon-based product Foo and Carbon-based product Bar that share a governance registry space by the name G-Reg 1. In addition, the product Foo cluster shares a configuration registry space by the name G-Reg 2 and the product Bar cluster shares a configuration registry space by the name G-Reg 3.
@@ -7,8 +22,8 @@ Figure 4: Config and governance partitions in separate registry instances .
 
 Configuration steps are given in the following sections.
 
--   [Creating the Database](#ConfigandGovernancePartitionsinSeparateNodes-Database)
--   [Configuring the Remote Registry Instances](#ConfigandGovernancePartitionsinSeparateNodes-RemoteRegistry)
+-   [Creating the Database](#creating-the-database)
+-   [Configuring the Remote Registry Instances](#configuring-the-remote-registry-instances)
 -   Configuring Foo Product Cluster
 -   Configuring Bar Product Cluster
 

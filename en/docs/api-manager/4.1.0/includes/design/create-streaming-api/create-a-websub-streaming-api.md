@@ -22,7 +22,8 @@ Follow the instructions below to create a WebHook API using the basic flow:
 
 ### Step 1 - Design a WebSub/Webhook API
 
-1.  {!includes/sign-in-publisher.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-publisher.md"
 
 2.  Click **CREATE API**, go to **Streaming API**, and Click **Webhook API**.
 
@@ -139,4 +140,4 @@ Learn more by trying out an end-to-end tutorial on <a href="../../../../tutorial
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.1.0/includes/design/stream-more-links.md"

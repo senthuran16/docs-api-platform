@@ -1,3 +1,18 @@
+---
+title: "ISO8583 inbound endpoint reference"
+description: "Describes how to configure the ISO8583 inbound endpoint, including required libraries and thread pool parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-inbound-endpoint-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-inbound-endpoint-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # ISO8583 Inbound Endpoint Reference
 
 The following operations allow you to work with the ISO8583 Inbound Endpoint. Click an operation name to see parameter details and samples on how to use it.

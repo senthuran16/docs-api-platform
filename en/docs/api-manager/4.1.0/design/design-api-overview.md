@@ -1,8 +1,22 @@
+---
+title: "Designing an API"
+description: "Get an overview of API design options in WSO2 API Manager, including creating REST APIs, converting SOAP services, and service-based APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/design-api-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/design-api-overview.md
+tags:
+  - api-manager
+  - design
+  - design-api-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Designing an API
 
 Designing an API spans through a few phases of an API Lifecycle. A correct tool can help design an API seamlessly and efficiently. WSO2 API Manager supports the designing of an API via the API Publisher Portal. 
   
-<img src="../assets/img/learn/design-api/design-api-lifecycle.png" height="400" />
+<img src="../../assets/img/learn/design-api/design-api-lifecycle.png" height="400" />
 
 The following are the various aspects associated with the designing phase of the API lifecycle.
 

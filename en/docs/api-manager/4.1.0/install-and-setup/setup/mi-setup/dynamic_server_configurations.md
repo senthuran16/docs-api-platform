@@ -1,3 +1,18 @@
+---
+title: "Managing configurations across environments"
+description: "Define server and synapse configurations as system properties, environment variables, or runtime-resolved variables per environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/dynamic_server_configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/dynamic_server_configurations.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing Configurations across Environments
 
 When you have multiple environments (Dev, QA, UAT, Prod), you need the flexibility of dynamically updating the configurations in each environment without replacing artifacts and configuration files. This applies to server configurations, which are defined in the `deployment.toml` file (stored in the `<MI_HOME>/conf` directory) and to synapse configurations in your integration artifacts (such as proxy service, endpoint artifacts, etc.)
@@ -88,7 +103,7 @@ When you update product configurations for a container deployment (Docker or Kub
 
 You can open the `deployment.toml` file from the project explorer and update the parameter values as [system properties](#system-properties) or [environment variables](#environment-variables).
 
-<img src="../../../assets/img/integrate/env-variable-support/k8s-project-deployment-file.img" width="500">
+<img src="../../../../assets/img/integrate/env-variable-support/k8s-project-deployment-file.img" width="500">
 
 When you execute the `docker run` command to start the container, you can pass the system properties and environment variables. These values will be resolved dynamically during the runtime.
 

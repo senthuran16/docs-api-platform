@@ -1,3 +1,18 @@
+---
+title: "Monetizing an API"
+description: "Set up the Stripe billing engine and monetize an API so subscribers pay for usage under business plans."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-monetization/monetizing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-monetization/monetizing-an-api.md
+tags:
+  - api-manager
+  - design
+  - api-monetization
+  - monetizing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Monetizing an API
 
 API Monetization allows organizations to expand their business and generate higher revenue by exposing their services and data via APIs. API Publishers can publish their APIs with competitive business plans to the Developer Portal. Thereafter, API subscribers (e.g., Application Developers) can discover, subscribe, and invoke these monetized APIs, and pay for their API usage based on dynamic or fixed business plans.
@@ -535,7 +550,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
      These configurations are required only if you intend to create dynamic plans (usage-based plans) where consumers are charged based on the usage of the API. In such situations, you need analytics to record and retrieve the usage of the monetized APIs. 
     
-    1. Enable analytics. Refer [this guide](https://apim.docs.wso2.com/en/latest/api-analytics/getting-started-guide/#step-2-register-your-environment) for more info.
+    1. Enable analytics. Refer [this guide](../../api-analytics/getting-started-guide.md#step-2-register-your-environment) for more info.
     
         ``` java tab="Format"
          [apim.analytics]
@@ -573,7 +588,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
          ```
 
        4. Optionally, configure WSO2 API Manager to work with Choreo Analytics.
-           1. Enable analytics by referring to this [guide](https://apim.docs.wso2.com/en/latest/api-analytics/getting-started-guide/#step-2-register-your-environment).
+           1. Enable analytics by referring to this [guide](../../api-analytics/getting-started-guide.md#step-2-register-your-environment).
           
         !!! note
             analytics_access_token was generated in the **step a**.
@@ -641,7 +656,7 @@ Let's use the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am
 
 2.  Create a subscription policy.  
      
-     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../rate-limiting/adding-new-throttling-policies.md#Adding-a-new-subscription---level-throttling-tier).
+     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-rate-limiting-tier).
 
      <html>
       <div class="admonition note">
@@ -802,7 +817,7 @@ The Application Developers who are subscribed to a dynamic business plan can sig
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
     </body>
      </html>
 
@@ -828,7 +843,7 @@ The API Publisher can access the billing information related to each of the subs
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
     </body>
      </html>
 

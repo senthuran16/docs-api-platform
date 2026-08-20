@@ -1,3 +1,18 @@
+---
+title: "Using the management API"
+description: "Acquires a JWT token and invokes the Micro Integrator's internal Management REST API resources securely."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/working-with-management-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/working-with-management-api.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - working-with-management-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the Management API
 
 The Management API of the Micro Integrator is an internal REST API, which was introduced to substitute

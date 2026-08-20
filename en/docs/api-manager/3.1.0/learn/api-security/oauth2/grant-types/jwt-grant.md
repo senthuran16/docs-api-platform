@@ -1,3 +1,18 @@
+---
+title: "JWT grant"
+description: "Configure and use the JWT bearer grant to exchange JWT assertions from an external identity provider for OAuth2 tokens."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/grant-types/jwt-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/grant-types/jwt-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # JWT Grant
 
 The JSON Web Token (JWT) Bearer Grant is simply a JSON string containing claim values that will be evaluated and validated by the JWT Grant Handlers at the Authorization Server end before issuing an access token.
@@ -56,7 +71,7 @@ Now you have configured a service provider in WSO2 IS that can be used [later](#
 
 ### Step 2 - Configure an Identity Provider and a Service Provider in WSO2 API-M
 
-1. Make sure WSO2 API-M is [up and running](../../../../install-and-setup/installation-guide/running-the-product/#starting-the-server).
+1. Make sure WSO2 API-M is [up and running](../../../../install-and-setup/install/running-the-product.md#starting-the-server).
 
 2. Sign in to the WSO2 API-M Management Console (`https://<API-M_Server_Host>:9443/carbon`)
 
@@ -79,7 +94,7 @@ Now you have configured a service provider in WSO2 IS that can be used [later](#
 
             - After you run this command, the certificate will be exported as `wso2.crt` in the same folder. You can upload it by clicking **Choose File** in Identity Provider section in the Management Console.
 
-            For more information on how public keys work and how to sign these keys by a certification authority, see [About Asymmetric Cryptography](../../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography/).
+            For more information on how public keys work and how to sign these keys by a certification authority, see [About Asymmetric Cryptography](../../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md).
 
     -   **Alias** : Enter the audience (`aud` value) of the JWTs issued by the identity provider (WSO2 IS).
 
@@ -108,7 +123,7 @@ Now you have a registered identity provider and as well as a service provider wi
 
 1. Obtain a JWT from the service provider.
 
-     Use the following sample cURL command to obtain a JWT from the service provider inside WSO2 IS that you configured in [Step 1](#step-1-obtain-a-jwt-from-an-external-identity-provider). Note that, you can use any `grant_type` when sending the request. For more information, see [OAuth2 Grant Types](../../../../learn/api-security/oauth2/grant-types/overview/).
+     Use the following sample cURL command to obtain a JWT from the service provider inside WSO2 IS that you configured in [Step 1](#step-1-obtain-a-jwt-from-an-external-identity-provider). Note that, you can use any `grant_type` when sending the request. For more information, see [OAuth2 Grant Types](overview.md).
 
     ``` java tab="Format"
     curl -k -d "grant_type=<grant_type_of_your_choice>" -H "Authorization: Basic <Base64-encoded-client_key:client_secret>" -H "Content-Type: application/x-www-form-urlencoded" https://<IS_Server_Host>:9444/oauth2/token

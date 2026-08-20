@@ -1,3 +1,18 @@
+---
+title: "Microsoft Azure storage connector example"
+description: "Builds a sample API that creates, lists, and deletes containers and blobs using the Microsoft Azure Storage connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Microsoft Azure Storage Connector Example
 
 Given below is a sample scenario that demonstrates how to work with container and blob operations using the WSO2 Microsoft Azure Storage Connector.
@@ -28,7 +43,7 @@ For more information about these operations, please refer to the [Microsoft Azur
 
 The following diagram shows the overall solution. The user creates a container, stores some text or binary employee data (blob) into the container, and then receives it back. To invoke each operation, the user uses the same API. 
 
-<img src="../../../assets/img/integrate/connectors/ms-azure-storage-connector.png" title="Microsoft Azure Storage Connector" width="800" alt="Microsoft Azure Storage Connector"/>
+<img src="../../../../assets/img/integrate/connectors/ms-azure-storage-connector.png" title="Microsoft Azure Storage Connector" width="800" alt="Microsoft Azure Storage Connector"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -36,7 +51,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the ESB Solution Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API.
 
@@ -178,14 +193,14 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime. 
    
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/ms-azure-connector.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/ms-azure-connector.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -195,7 +210,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

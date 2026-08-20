@@ -1,3 +1,18 @@
+---
+title: "JWT grant"
+description: "Configure and use the JWT bearer grant to exchange an external identity provider's JWT for an OAuth2 access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/grant-types/jwt-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/grant-types/jwt-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # JWT Grant
 
 The JSON Web Token (JWT) Bearer Grant is simply a JSON string containing claim values that will be evaluated and validated by the JWT Grant Handlers at the Authorization Server end before issuing an access token.
@@ -34,8 +49,8 @@ You can use any identity provider to obtain a JWT. As an example, this step will
 
 4. Click **Main** --> **Service Providers** --> **Add**.
 
-     <a href="../../../../assets/img/learn/api-security/oauth2/jwt-grant/add-service-provider-menu.png" >
-     <img src="../../../../assets/img/learn/api-security/oauth2/jwt-grant/add-service-provider-menu.png" alt="Add Service Provider Menu" title="Add Service Provider Menu" width="30%" />
+     <a href="../../../../../assets/img/learn/api-security/oauth2/jwt-grant/add-service-provider-menu.png" >
+     <img src="../../../../../assets/img/learn/api-security/oauth2/jwt-grant/add-service-provider-menu.png" alt="Add Service Provider Menu" title="Add Service Provider Menu" width="30%" />
      </a>
 
 5.  Enter the name of the service provider and click **Register**.
@@ -52,7 +67,7 @@ You can use any identity provider to obtain a JWT. As an example, this step will
     
      If you do not have a **Callback URL**, you can clear the **Code** and **Implicit** authorization grant types and add the OAuth2 client.
     
-     <a href="../../../../assets/img/learn/api-security/oauth2/jwt-grant/register-oauth-app.png" ><img src="../../../../assets/img/learn/api-security/oauth2/jwt-grant/register-oauth-app.png" alt="Register Oauth app" title="Register Oauth app"/></a>  
+     <a href="../../../../../assets/img/learn/api-security/oauth2/jwt-grant/register-oauth-app.png" ><img src="../../../../../assets/img/learn/api-security/oauth2/jwt-grant/register-oauth-app.png" alt="Register Oauth app" title="Register Oauth app"/></a>  
     
     Now you have successfully created an OAuth2 client and generated a consumer key and consumer secret for it. 
    
@@ -62,7 +77,7 @@ Now you have configured a service provider in WSO2 IS that can be used [later](#
 
 ### Step 2 - Configure an Identity Provider and a Service Provider in WSO2 API-M
 
-1. Make sure WSO2 API-M is [up and running](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. Make sure WSO2 API-M is [up and running](../../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 2. Sign in to the WSO2 API-M Management Console (`https://<API-M_Server_Host>:9443/carbon`)   
 

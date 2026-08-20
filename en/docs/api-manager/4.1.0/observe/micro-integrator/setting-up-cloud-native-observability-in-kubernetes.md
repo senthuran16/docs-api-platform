@@ -1,3 +1,18 @@
+---
+title: "Setting up cloud native observability on Kubernetes"
+description: "Deploy the Micro Integrator cloud native observability stack on Kubernetes using the provided Helm chart."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - setting-up-cloud-native-observability-in-kubernetes
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Setting up Cloud Native Observability on Kubernetes
 
 Follow the instructions given below to set up a cloud native observability solution in a Kubernetes environment. 

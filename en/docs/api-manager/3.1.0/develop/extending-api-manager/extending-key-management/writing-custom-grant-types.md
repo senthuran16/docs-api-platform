@@ -1,3 +1,18 @@
+---
+title: "Writing custom grant types"
+description: "Extend existing OAuth2 grant type handlers or add custom grant types for API Manager's key manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-key-management/writing-custom-grant-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-key-management/writing-custom-grant-types.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-key-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Writing Custom Grant Types
 
 OAuth 2.0 authorization servers provide support for four main grant types according to the OAuth 2.0 specification. They also allow you to add custom grant types and extend the existing ones.

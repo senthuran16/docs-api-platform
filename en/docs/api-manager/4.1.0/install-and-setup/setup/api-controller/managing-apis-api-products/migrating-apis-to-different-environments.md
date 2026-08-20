@@ -1,3 +1,18 @@
+---
+title: "Migrating APIs to different environments"
+description: "Export and import APIs between development, testing, and production environments using apictl."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-apis-api-products/migrating-apis-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-apis-api-products/migrating-apis-to-different-environments.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Migrating APIs to Different Environments
 
 **WSO2 API Controller(apictl)** allows you to maintain multiple environments running on the same WSO2 API Manager (WSO2 API-M) version. This allows you to import and export APIs between your environments. For example, if you have an API running in the development environment, you can export it and import it to the production environment. Thereby, APIs do not have to be created from scratch in different environments.
@@ -478,11 +493,11 @@ mentioned gateway environments. If the **deployment environments are not provide
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for APIs, see [Defining the params file for an API](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api).
+    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for APIs, see [Defining the params file for an API](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api).
     
     **Add dynamic data to environment configs**
 
-    The above parameter file supports detecting environment variables during the API import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the API import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configurations).
 
 !!! info
     Tiers and sequences are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment. However, if an exported API sequence is not available in the importing environment, it is added.

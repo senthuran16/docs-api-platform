@@ -1,3 +1,18 @@
+---
+title: "Add a Third-party API"
+description: "Publish a third-party API that is deployed and proxied through an external gateway instead of the WSO2 API Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/publish-on-dev-portal/third-party-api-support/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/publish-on-dev-portal/third-party-api-support.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - publish-on-dev-portal
+  - third-party-api-support
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Add a Third-party API
 
 WSO2 API Manager provides the capability to publish APIs that are deployed in an external gateway. Since these APIs are not deployed in the WSO2 API gateway, the API will not be proxied through the gateway.
@@ -33,7 +48,7 @@ Listed below are the fields available when adding third-party API details to the
 You can see an indicator added to the API thumbnail in the API Publisher Portal to distinguish whether an API is from a third-party, as shown below.
 
 
-<a href="../../assets/img/develop/third-party-tag.png"><img src="../../assets/img/develop/third-party-tag.png" width="20%"></a>
+<a href="../../../assets/img/develop/third-party-tag.png"><img src="../../../assets/img/develop/third-party-tag.png" width="20%"></a>
 
 You can use the new default property `thirdParty` to search for APIs that are from a third-party.
 

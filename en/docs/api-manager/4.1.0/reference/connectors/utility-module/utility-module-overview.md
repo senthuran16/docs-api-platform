@@ -1,3 +1,16 @@
+---
+title: "Utility module overview"
+description: "Learn what the Utility module offers, its compatible product versions, and where to find its reference documentation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/utility-module/utility-module-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/utility-module/utility-module-overview.md
+tags:
+  - esb-connector
+  - utility-module
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Utility Module Overview
 
 The Utility Module allows you to do the following.
@@ -10,7 +23,7 @@ The Utility Module allows you to do the following.
 
 Access the Utility Module by navigating to the [Connector Store](https://store.wso2.com/store/assets/esbconnector/list) and search for `Utility`.
 
-<img src="../../../assets/img/integrate/connectors/utility-store.png" title="Utility Module" width="200" alt="Utility Module logo in Connector Store"/></img>
+<img src="../../../../assets/img/integrate/connectors/utility-store.png" title="Utility Module" width="200" alt="Utility Module logo in Connector Store"/></img>
 
 ## Compatibility
 

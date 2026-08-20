@@ -1,3 +1,18 @@
+---
+title: "Create a mock API with an inline script"
+description: "Create a prototype API that generates mock response payloads inline with JavaScript, then deploy and test it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/mock-api/create-a-mock-api-with-an-inline-script/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/mock-api/create-a-mock-api-with-an-inline-script.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - mock-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Prototype API with Mock Payload Generated Inline Scripts
 
 The prototype implementation in WSO2 API Manager gives users the ability to prototype APIs with inline scripts for testing purposes and as an early promotion. This allows subscribers to try out and test APIs without subscriptions or monetizations, allowing them to provide feedback to improve APIs. Publishers can use this to make changes to the APIs requested by users. The WSO2 API Manager prototype implementation allows you to generate a mock payload based on an API definition. You can prototype an API using the inbuilt JavaScript engine without having to manually write the JavaScript implementation for each resource.
@@ -181,7 +196,7 @@ You have successfully created an API with an inline script, deployed it as a pro
 
 An API can also be prototyped by moving the API to the `PROTOTYPED` state by changing the API lifecycle state and providing the prototype endpoints.
 
-For more information, see the [Deploy and Test Prototype APIs](../../../learn/design-api/mock-api/deploy-and-test-mock-apis) tutorial.
+For more information, see the [Deploy and Test Prototype APIs](deploy-and-test-mock-apis.md) tutorial.
 
 <div class="admonition info">
 <p class="admonition-title">Related Guides</p>

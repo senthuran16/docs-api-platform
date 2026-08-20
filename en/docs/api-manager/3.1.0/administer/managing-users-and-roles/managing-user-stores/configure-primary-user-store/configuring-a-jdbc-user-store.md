@@ -1,9 +1,24 @@
+---
+title: "Configuring a JDBC user store"
+description: "Configure a JDBC user store manager, datasources, and system administrator as the primary user store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a JDBC User Store
 
 User management functionality is provided by default in WSO2 API Manager and it can be configured via the `<API-M_HOME>/repository/conf/deployment.toml` file. The instructions given below explain how to configure JDBC as a user store.
 
 !!! tip
-       To get a high-level understanding of the primary user stores available in WSO2 API Manager, see [Configuring primary User Stores](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store) 
+       To get a high-level understanding of the primary user stores available in WSO2 API Manager, see [Configuring primary User Stores](configuring-the-primary-user-store.md) 
 
 The user core connects to two databases (the same database is utilized by default):
 
@@ -13,7 +28,7 @@ The user core connects to two databases (the same database is utilized by defaul
 You can either use the default configuration or you can change it in the following ways:
 
 -   You can set up two separate databases for the Authorization Manager and the User Store Manager.
--   It is not recommended to use the default H2 database in production. Therefore, you can replace them with a different RDBMS. For instructions on setting up a new RDBMS and configuring it for your system, see [Setting Up Databases](../../../../install-and-setup/setting-up-databases/overview).
+-   It is not recommended to use the default H2 database in production. Therefore, you can replace them with a different RDBMS. For instructions on setting up a new RDBMS and configuring it for your system, see [Setting Up Databases](../../../../install-and-setup/setup/setting-up-databases/overview.md).
 
 !!!tip
     Before you begin, ensure that the RDBMS that you want to use as the JDBC user store is correctly set up for your system. Then, follow the steps given below to configure a JDBC user store as the primary user store in your product.
@@ -259,7 +274,7 @@ MultiTenantRealmConfigBuilder = "org.wso2.carbon.user.core.config.multitenancy.S
 
 ## Step 3 - Update the datasources
 
-1. Create a database on [any supported RDBMS database](../../../../install-and-setup/setting-up-databases/overview). 
+1. Create a database on [any supported RDBMS database](../../../../install-and-setup/setup/setting-up-databases/overview.md). 
     
 2. Configure the database.
     

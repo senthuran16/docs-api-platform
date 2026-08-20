@@ -1,3 +1,18 @@
+---
+title: "Migrating APIs to different environments"
+description: "Export APIs from one WSO2 API Manager environment and import them into another using apictl export-api and import-api commands."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/migrating-apis-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/migrating-apis-to-different-environments.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - migrating-apis-to-different-environments
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Migrating APIs to Different Environments
 
 WSO2 API Controller, **apictl** allows you to maintain multiple environments running on the same WSO2 API-M version. This allows you to import and export APIs between your environments. For example, if you have an API running in the development environment, you can export it and import it to the production environment. Thereby, APIs do not have to be created from scratch in different environments.
@@ -5,17 +20,17 @@ WSO2 API Controller, **apictl** allows you to maintain multiple environments run
 !!! info
     **Before you begin** 
 
-    -   Make sure WSO2 API CTL Tool is initialized and running, if not follow the steps in [Download and Initialize the CTL Tool](../../learn/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-ctl-tool).
+    -   Make sure WSO2 API CTL Tool is initialized and running, if not follow the steps in [Download and Initialize the CTL Tool](getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool).
 
     -  Make sure to add an environment before you start working with the following CTL commands, because all APIs need to be imported or exported to/from a specific environment.      
-    For more information, visit [Add an Environment](../../learn/api-controller/getting-started-with-wso2-api-controller#add-an-environment).
+    For more information, visit [Add an Environment](getting-started-with-wso2-api-controller.md#add-an-environment).
     
 !!! tip
-    A user with `admin` role is allowed to import/export APIs. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `admin` role is allowed to import/export APIs. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
 
 ### Export an API
 
-1.  Log in to the API Manager in exporting the environment by following steps in [Login to an Environment](../../learn/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment).  
+1.  Log in to the API Manager in exporting the environment by following steps in [Login to an Environment](getting-started-with-wso2-api-controller.md#login-to-an-environment).  
     
     !!! tip
         If you are already logged-in and your logged-in credentials and keys are already available in the `<USER_HOME>/.wso2apictl/keys.json` file, you can skip this step. 
@@ -186,7 +201,7 @@ You can use the API archive exported from the previous section and import it to 
     4. Compress the `<API-name-version>` directory.  
     For example, compress the `PhoneVerification_1.0.0` directory.
 
-1.  Log in to the API Manager in the importing environment by following steps in [Login to an Environment](../../learn/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment).
+1.  Log in to the API Manager in the importing environment by following steps in [Login to an Environment](getting-started-with-wso2-api-controller.md#login-to-an-environment).
     
     !!! tip
         If you are already logged-in and your logged-in credentials and keys are already available in the `<USER_HOME>/.wso2apictl/keys.json` file, you can skip this step. 
@@ -255,11 +270,11 @@ You can use the API archive exported from the previous section and import it to 
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default CTL tool supports an additional parameter file named `api_params.yaml`. For more information on using an environment parameter file, see [Configuring Environment Specific Parameters](../../learn/api-controller/advanced-topics/configuring-environment-specific-parameters).
+    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default CTL tool supports an additional parameter file named `api_params.yaml`. For more information on using an environment parameter file, see [Configuring Environment Specific Parameters](advanced-topics/configuring-environment-specific-parameters.md).
 
     **Add Dynamic Data to Environment Configs**
 
-    The above parameter file supports detecting environment variables during the API import process. For more information on using dynamic data, see [Add Dynamic Data to Environment Configs](../../learn/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the API import process. For more information on using dynamic data, see [Add Dynamic Data to Environment Configs](advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configs).
 
 !!! info
     Tiers and sequences are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment. However, if an exported API sequence is not available in the importing environment, it is added.
@@ -276,7 +291,7 @@ You can use the API archive exported from the previous section and import it to 
     3.  Restart API Manager 3.1.0 server.
 
 !!! warning
-    If you have enabled Secure Endpoint (Refer [Configuring Environment Specific Parameters](../../learn/api-controller/advanced-topics/configuring-environment-specific-parameters) for more information), the endpoint password will be removed when exporting an API causing an error when you try to import the same API to an environment. There are 2 solutions for this.
+    If you have enabled Secure Endpoint (Refer [Configuring Environment Specific Parameters](advanced-topics/configuring-environment-specific-parameters.md) for more information), the endpoint password will be removed when exporting an API causing an error when you try to import the same API to an environment. There are 2 solutions for this.
 
     1.  If Secure Endpoint is enabled and if the endpoint password should be exposed;
     `ExposeEndpointPassword` should be set to `true` in the `/_system/config/apimgt/applicationdata/tenant-conf.json` in the registry so that the exported API will contain the endpoint password.

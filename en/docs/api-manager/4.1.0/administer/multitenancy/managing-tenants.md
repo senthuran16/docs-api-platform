@@ -1,3 +1,18 @@
+---
+title: "Managing tenants"
+description: "Add a new tenant through the management console and browse tenant developer portals in a multitenant deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/multitenancy/managing-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/multitenancy/managing-tenants.md
+tags:
+  - api-manager
+  - administer
+  - multitenancy
+  - managing-tenants
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Managing Tenants
 
 

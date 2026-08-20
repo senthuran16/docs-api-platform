@@ -1,3 +1,18 @@
+---
+title: "Viewing general SI statistics"
+description: "Explore the general Siddhi statistics dashboards covering streams, sources, sinks, queries, windows, and more."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/streaming-integrator/viewing-general-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/streaming-integrator/viewing-general-statistics.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - viewing-general-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Viewing General SI Statistics
 
 !!! note "Before you begin:"

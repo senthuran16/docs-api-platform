@@ -1,3 +1,18 @@
+---
+title: "Creating a message processor"
+description: "Create a message processor artifact in WSO2 Integration Studio and configure its processor type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-message-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-message-processor.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Message Processor
 
 Follow the instructions given below to create a new [Message Processor](../../../reference/synapse-properties/about-message-stores-processors.md) artifact in WSO2 Integration Studio.
@@ -8,15 +23,15 @@ Follow the instructions given below to create a new [Message Processor](../../..
 
 1.  Right-click the [ESB Config project](../create-integration-project.md#esb-config-project) and go to **New → Message Processor** to open the **New Message Processor Artifact** dialog box.
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_processor/select-message-processor.jpg">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_processor/select-message-processor.jpg">
 
 2.  Select **Create a new message-processor artifact** and click **Next**.
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_processor/new-message-processor-wizard-1.png" width="500">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_processor/new-message-processor-wizard-1.png" width="500">
 
 3.  Enter a unique name for this message processor, specify the type of processor you're creating.
 
-	<img src="../../../assets/img/integrate/create_artifacts/new_message_processor/new-message-processor-wizard-2.png" width="500">
+	<img src="../../../../assets/img/integrate/create_artifacts/new_message_processor/new-message-processor-wizard-2.png" width="500">
 
 	See the links given below for descriptions of properties for each message processor type:
 
@@ -37,7 +52,7 @@ The message processor is created in the `src/main/synapse-config/message-process
 
 Open the new message processor artifact from the project explorer. You can use the **Form** view or the **Source** view to update message processor properties.
 
-<img src="../../../assets/img/integrate/create_artifacts/new_message_processor/message-processor-form-view.png" width="800">
+<img src="../../../../assets/img/integrate/create_artifacts/new_message_processor/message-processor-form-view.png" width="800">
 
 See the links given below for descriptions of properties for each processor type:
 
@@ -49,16 +64,16 @@ See the links given below for descriptions of properties for each processor type
 
 <ul>
 	<li>
-		<a href="../../examples/message_store_processor_examples/using-message-forwarding-processor.md">Using the Message Forwarding Processor</a>
+		<a href="../../../examples/message_store_processor_examples/using-message-forwarding-processor/">Using the Message Forwarding Processor</a>
 	</li>
 	<li>
-		<a href="../../examples/message_store_processor_examples/using-message-sampling-processor.md">Using the Message Sampling Processor</a>
+		<a href="../../../examples/message_store_processor_examples/using-message-sampling-processor/">Using the Message Sampling Processor</a>
 	</li>
 	<li>
-		<a href="../../examples/message_store_processor_examples/securing-message-processor.md">Securing the Message Forwarding Processor</a>
+		<a href="../../../examples/message_store_processor_examples/securing-message-processor/">Securing the Message Forwarding Processor</a>
 	</li>
 	<li>
-		<a href="../../examples/message_store_processor_examples/loadbalancing-with-message-processor.md">Load Balancing with Message Forwarding Processor</a>
+		<a href="../../../examples/message_store_processor_examples/loadbalancing-with-message-processor/">Load Balancing with Message Forwarding Processor</a>
 	</li>
 </ul>
 

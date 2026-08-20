@@ -1,3 +1,18 @@
+---
+title: "Configuring workflows for tenants"
+description: "Deploy a tenant-specific BPEL and HumanTask workflow so tenants can approve requests without editing shared config files."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-workflows/configuring-workflows-for-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/extending-api-manager/extending-workflows/configuring-workflows-for-tenants.md
+tags:
+  - api-manager
+  - develop
+  - extending-api-manager
+  - extending-workflows
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Workflows for Tenants
 
 Using the API Manager, you can configure custom workflows that get invoked at user signup, application creation, registration, subscription etc. You do these configurations in the `workflow-extensions.xml` as described in the previous sections.
@@ -123,7 +138,7 @@ The registry data of API Manager is stored in the above-mentioned `jdbc/SHARED_D
 
 ### Step 3 - Create a BPEL
 
-In this section, you create a BPEL that has service endpoints pointing to services hosted in the tenant's space. This example uses the [Application Creation](../../../learn/consume-api/manage-application/advanced-topics/adding-an-application-creation-workflow/) workflow.
+In this section, you create a BPEL that has service endpoints pointing to services hosted in the tenant's space. This example uses the [Application Creation](../../../learn/consume-api/manage-application/advanced-topics/adding-an-application-creation-workflow.md) workflow.
 
 
 1.  Sign in to the API Manager's management console (`https://localhost:9443/carbon`) and create a tenant using the **Configure -&gt; Multitenancy** menu.

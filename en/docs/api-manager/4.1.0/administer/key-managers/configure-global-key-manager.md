@@ -1,3 +1,18 @@
+---
+title: "Configure the global key manager"
+description: "Explains how to enable and configure a global key manager so a single token can invoke APIs across tenants."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/key-managers/configure-global-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/key-managers/configure-global-key-manager.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - configure-global-key-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configure the Global Key Manager
 
 This document outlines the steps to enable the global key manager support in WSO2 API Manager (API-M). With this feature, a single token generated using the global key manager can be used to invoke cross-tenant APIs without generating a token in that specific tenant's key manager.
@@ -26,7 +41,7 @@ Follow the steps given below to configure the Global Key Manager
 
     [![Add Global Key Manager](../../assets/img/administer/global-keymanager/add-global-key-manager.png)](../../assets/img/administer/global-keymanager/add-global-key-manager.png)
 
-6. Add the Global Key Manager configurations. Refer to the [configurations](overview.md#configuring-key-managers-with-wso2-api-m/) of the key manager that needs to be added as the global key manager
+6. Add the Global Key Manager configurations. Refer to the [configurations](overview.md#configuring-key-managers-with-wso2-api-m) of the key manager that needs to be added as the global key manager
 
     [![Add Global Key Manager Configurations](../../assets/img/administer/global-keymanager/add-global-key-manager-configurations.png)](../../assets/img/administer/global-keymanager/add-global-key-manager-configurations.png)
 

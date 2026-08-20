@@ -1,3 +1,18 @@
+---
+title: "Migrating API Products to different environments"
+description: "Export and import API Products, with or without dependent APIs, between environments using apictl."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-apis-api-products/migrating-api-products-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-apis-api-products/migrating-api-products-to-different-environments.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Migrating API Products (with or without Dependent APIs) to Different Environments
 
 **WSO2 API Controller (apictl)** allows you to maintain multiple environments running on the same WSO2 API Manager (WSO2 API-M) version. This allows you to import and export API Products between your environments. For example, if you have an API Product running in the development environment, you can export it and import it to the production environment. Thereby, API Products do not have to be created from scratch in different environments.
@@ -345,11 +360,11 @@ mentioned gateway environments. If the **deployment environments are not provide
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the API Product, you may need to update the exported API Product with details relevant to the importing environment. For example, the subscription policies, MutualSSL certificates and deployment environments of an API Product might differ between the dev and production environments. Furthermore, when considering the dependent APIs of an API product, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between environments as well. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for API Products, see [Defining the params file for an API Product](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api-product).
+    When the importing and exporting environments are different, before importing the API Product, you may need to update the exported API Product with details relevant to the importing environment. For example, the subscription policies, MutualSSL certificates and deployment environments of an API Product might differ between the dev and production environments. Furthermore, when considering the dependent APIs of an API product, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between environments as well. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for API Products, see [Defining the params file for an API Product](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api-product).
 
     **Add dynamic data to environment configs**
 
-    The above parameter file supports detecting environment variables during the API Product import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the API Product import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configurations).
 
 !!! info
     Tiers are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment.

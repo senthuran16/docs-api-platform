@@ -1,3 +1,18 @@
+---
+title: "Styling API and application details info section"
+description: "Customize the styling of the API and application details info section via the infoBar theme attributes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Styling API and Application Details Info Section
 
 The "API Details Info" section which is shown below can be customized according to your design needs by configuring the `defaultTheme.js` file.

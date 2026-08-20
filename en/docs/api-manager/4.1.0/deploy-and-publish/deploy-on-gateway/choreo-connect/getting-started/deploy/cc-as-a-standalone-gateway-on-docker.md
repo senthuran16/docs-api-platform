@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect standalone on Docker Compose"
+description: "Deploy an API to Choreo Connect running as a standalone gateway on Docker Compose using the apictl command line tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Deploying Choreo Connect as a Standalone Gateway on Docker Compose
 
 Let's deploy an API in Choreo Connect running on Docker Compose as a Standalone Gateway. We can use [WSO2 API Controller (apictl)](../../../../../reference/apictl/wso2-api-controller.md) the Command Line Tool to deploy the API.
@@ -10,7 +25,7 @@ Let's deploy an API in Choreo Connect running on Docker Compose as a Standalone 
 
 1. Download and install apictl
 
-    apictl is a CLI tool that can be used to deploy and undeploy APIs in the Choreo Connect clusters. Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool) to setup apictl in your development environment.
+    apictl is a CLI tool that can be used to deploy and undeploy APIs in the Choreo Connect clusters. Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl) to setup apictl in your development environment.
 
 2. Download and extract the Choreo Connect distribution .zip file
 
@@ -61,7 +76,7 @@ The project is now initialized. A directory with the name "petstore" has been cr
 
 Start Choreo Connect on Docker Compose by executing the Docker Compose script inside the extracted distribution folder by navigating to `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect/` and executing the following command.
 
-{!includes/deploy/cc-tryout-in-arm64-docker-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-docker-note.md"
 
 ``` java
 docker-compose up -d

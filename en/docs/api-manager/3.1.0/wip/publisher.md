@@ -1,6 +1,18 @@
 ---
+title: "Publisher API"
+description: "Try out the WSO2 API Manager Publisher REST API operations interactively using the embedded Swagger UI console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/publisher/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/publisher.md
+tags:
+  - api-manager
+  - wip
+  - publisher
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 ??? Note "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager. 
      

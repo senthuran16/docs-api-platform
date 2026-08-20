@@ -1,3 +1,18 @@
+---
+title: "Java virtual machine performance tuning"
+description: "Configure JVM parameters such as heap memory allocation to improve production performance of the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/tuning_jvm_performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/tuning_jvm_performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Java Virtual Machine Performance Tuning
 
 You can tune the Java Virtual Machine (JVM) settings to make a production system more efficient.

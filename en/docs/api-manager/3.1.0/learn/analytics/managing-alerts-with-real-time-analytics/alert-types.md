@@ -1,3 +1,18 @@
+---
+title: "Alert types"
+description: "Reference the alert types supported by WSO2 API Manager analytics, including their triggers and indications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/alert-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/alert-types.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-alerts-with-real-time-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Alert Types
 
 WSO2 APIM currently supports the following alert types.
@@ -72,7 +87,7 @@ These alerts are triggered for the reasons specified in the tables below.
 | Indication            | A server side error has occurred.                                                                                                                                                              |
 
 !!! info
-     For more information on API status changing over availability of APIs, see [Viewing Availability Of APIs](../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics/#availability-of-apis/).
+     For more information on API status changing over availability of APIs, see [Viewing Availability Of APIs](../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics.md#availability-of-apis).
 
 
 

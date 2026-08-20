@@ -1,3 +1,18 @@
+---
+title: "Working with US employee taxes"
+description: "Retrieve federal taxes, state taxes, and tax filing statuses of a US employee via the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeeustaxes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-personal-information/employeeustaxes.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with US Employee Taxes
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -8,14 +23,15 @@ The following operations allow you to retrieve tax details of a US employee
 
 | Operation | Description |
 | ------------- |-------------|
-|[GET Employee US Federal Taxes](#retrieving-US-employee-federal-taxes)| Retrieve a US employee's total federal claim amount, resident status and authorized tax credits. |
-|[GET Employee US State Taxes](#retrieving-US-employee-state-taxes)| Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits. |
-|[GET Employee US Tax Statuses](#retrieving-US-employee-tax-statuses)| Retrieve a US employee's provincial tax filing status (e.g. single, married). |
+|[GET Employee US Federal Taxes](#retrieving-us-employee-federal-taxes)| Retrieve a US employee's total federal claim amount, resident status and authorized tax credits. |
+|[GET Employee US State Taxes](#retrieving-us-employee-state-taxes)| Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits. |
+|[GET Employee US Tax Statuses](#retrieving-us-employee-tax-statuses)| Retrieve a US employee's provincial tax filing status (e.g. single, married). |
 
 ### Operation details
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-us-employee-federal-taxes"></a>
 #### Retrieving US Employee Federal Taxes
 We can use GET Employee US Federal Taxes operation with required parameters to retrieve federal taxes of a US employee.
 
@@ -80,6 +96,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-US-Federal-Taxes/GET-Employee-US-Federal-Taxes.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-US-Federal-Taxes/GET-Employee-US-Federal-Taxes.aspx)
 
+<a name="retrieving-us-employee-state-taxes"></a>
 #### Retrieving US Employee State Taxes
 We can use GET Employee US State Taxes operation with required parameters to retrieve the state taxes of US employee.
 
@@ -148,6 +165,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-US-State-Taxes/GET-Employee-US-State-Taxes.aspx](https://developers.dayforce.com/Build/API-Explorer/Employee-Personal-Information/Employee-US-State-Taxes/GET-Employee-US-State-Taxes.aspx)
 
+<a name="retrieving-us-employee-tax-statuses"></a>
 #### Retrieving US Employee Tax Statuses
 We can use GET Employee US Employee Tax Statuses operation with required parameters to retrieve tax filing statuses of US employees.
 

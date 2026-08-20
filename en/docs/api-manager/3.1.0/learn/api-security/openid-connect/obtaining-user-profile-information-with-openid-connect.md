@@ -1,3 +1,18 @@
+---
+title: "Obtaining user profile information with OpenID Connect"
+description: "Obtain user profile information with OpenID Connect by decoding the id_token or calling the userinfo endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/openid-connect/obtaining-user-profile-information-with-openid-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/openid-connect/obtaining-user-profile-information-with-openid-connect.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - openid-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Obtaining User Profile Information with OpenID Connect
 
 [OpenID Connect](http://openid.net/connect/) is an **authentication protocol** that is a simple identity layer on top of the OAuth 2.0 protocol. It allows clients to verify the identity of the end-user based on the authentication performed by an authorization server, as well as to obtain basic profile information about the end-user in an interoperable and REST-like manner.
@@ -9,11 +24,12 @@ The following two options are available to obtain the actual user information.
     -   [Decoding the id_token](#decoding-the-id_token)
     -   [Invoking the userinfo endpoint](#invoking-the-userinfo-endpoint)
     
+<a name="decoding-the-id_token"></a>
 #### Decoding the id_token
 
 Follow the instructions below to obtain user profile information with OpenID connect with WSO2 API Manager.
 
-1.  Obtain a token using password grant type and `openid` scope. For more information on token generation with password grant type, see [Password Grant Type](../../../learn/api-security/oauth2/grant-types/password-grant/). The format of the curl command and a sample is given below :
+1.  Obtain a token using password grant type and `openid` scope. For more information on token generation with password grant type, see [Password Grant Type](../oauth2/grant-types/password-grant.md). The format of the curl command and a sample is given below :
 
     ``` bash tab="Format"
     curl -k -d "grant_type=password&username=<USERNAME>&password=<PASSWORD>&scope=openid" -H "Authorization: Basic <BASE64 ENCODED CONSUMER_KEY:CONSUMER_SECRET>, Content-Type: application/x-www-form-urlencoded" https://<GATEWAY_HOSTNAME>:<PORT>/token
@@ -55,6 +71,7 @@ Follow the instructions below to obtain user profile information with OpenID con
     }
     ```
 
+<a name="invoking-the-userinfo-endpoint"></a>
 #### Invoking the userinfo endpoint
 
 You can obtain user information as a payload by invoking the userinfo endpoint with the access token obtained in step 1. The format of the curl command and a sample is given below

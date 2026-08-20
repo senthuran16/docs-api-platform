@@ -1,3 +1,18 @@
+---
+title: "PayloadFactory mediator"
+description: "Reference for the PayloadFactory mediator syntax used to transform or replace message payload content."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/payloadfactory-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/payloadfactory-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - payloadfactory-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # PayloadFactory Mediator
 
 The **PayloadFactory Mediator** transforms or replaces the contents of a
@@ -1129,6 +1144,7 @@ IEA${element_separator}${payload.UniversalTransaction.Interchange_Control_Traile
 </UniversalTransaction>
 ```
 
+<a name="build-and-run"></a>
 #### Build and run
 
 1. [Set up WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio.md).

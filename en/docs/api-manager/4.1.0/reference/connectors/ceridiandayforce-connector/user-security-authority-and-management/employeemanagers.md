@@ -1,3 +1,18 @@
+---
+title: "Working with employee managers"
+description: "Use the GET Employee Managers operation to retrieve managers assigned to employees directly or by location."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeemanagers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeemanagers.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee Managers
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve managers of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-managers"></a>
 #### Retrieving Employee Managers
 We can use GET Employee Managers operation with required parameters to search and find the managers of the required employees.
 

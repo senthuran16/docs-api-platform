@@ -1,3 +1,18 @@
+---
+title: "Message transformation"
+description: "Learn how request and response interceptors transform and mediate API traffic in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Message Transformation
 
 You can use interceptors in Choreo Connect to carry out transformations and mediation on the requests and responses.
@@ -21,7 +36,7 @@ interceptor for the resource defined.
 
 The following diagram illustrates the request flow from the client to the backend through the request interceptor service and the response flow from the backend to the client through the response interceptor service.
 
-<img src="../../../../assets/img/deploy/mgw/interceptors-overview.png" alt="Choreo Connect Interceptors request flow" width="650px"/>
+<img src="../../../../../assets/img/deploy/mgw/interceptors-overview.png" alt="Choreo Connect Interceptors request flow" width="650px"/>
 
 | Numbers | Description                                                                                                                                                                                                  |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

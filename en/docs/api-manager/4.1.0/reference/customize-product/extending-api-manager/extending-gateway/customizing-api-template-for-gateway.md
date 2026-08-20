@@ -1,3 +1,18 @@
+---
+title: "Customizing API template"
+description: "Modify the Gateway's API template file to customize the Synapse configuration generated for deployed APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/extending-api-manager/extending-gateway/customizing-api-template-for-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/extending-api-manager/extending-gateway/customizing-api-template-for-gateway.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Customizing API Template
 
 When an API is [published](../../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md) and [deployed](../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md) in the Gateway, corresponding API is generated and deployed in the gateway in-memory. 
@@ -76,7 +91,7 @@ Following steps illustrate how you can enable a custom handler for a selected se
  
  4. Add `custom_authentication=true` as an [additional property](../../../../design/create-api/adding-custom-properties-to-apis.md) for those APIs which you need to enable the custom handler.
  
-    <a href="../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
+    <a href="../../../../../assets/img/develop/extensions/custom_properties.png" ><img src="../../../../../assets/img/develop/extensions/custom_properties.png" alt="Add Custom Property" 
            title="Add Custom Property" width="80%" /></a>
            
 5.  Publish the API to gateway, and you will notice that the custom handler has been enabled for APIs which are configured with the custom property.

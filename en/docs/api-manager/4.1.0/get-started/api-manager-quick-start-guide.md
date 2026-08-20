@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - API management"
+description: "Step-by-step guide to create, publish, and invoke an API using the API Manager Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/api-manager-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/api-manager-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - api-manager-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "quickstart"
+---
+
 # Quick Start Guide - API Management
 
 This section is a step-by-step guide to create, publish, and invoke an API using the **WSO2 API Manager (WSO2 API-M)** Publisher and Developer Portal.

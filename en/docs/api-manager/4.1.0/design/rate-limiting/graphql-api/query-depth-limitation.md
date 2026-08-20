@@ -1,3 +1,18 @@
+---
+title: "GraphQL query depth limitation"
+description: "Limit GraphQL query nesting depth by configuring a maximum depth value in a subscription policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/graphql-api/query-depth-limitation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/graphql-api/query-depth-limitation.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 Since GraphQL schemas often have circular relationships, the depth can grow without bounds. 
 An example of such a query is as follows:
 
@@ -66,7 +81,7 @@ To design a GraphQL API, see [Create a GraphQL API](../../create-api/create-a-gr
 <p class="admonition-title">Note</p>
 <p>
 Instead of giving Business Plans of GraphQL API related details in 
-<a href="../../create-api/create-a-graphql-api.md">Create a GraphQL API</a>, 
+<a href="../../../create-api/create-a-graphql-api/">Create a GraphQL API</a>, 
 Use Business Plans that you create in the previous steps.
 </p>
 </div> 

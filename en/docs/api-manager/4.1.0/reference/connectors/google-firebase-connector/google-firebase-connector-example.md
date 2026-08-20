@@ -1,3 +1,18 @@
+---
+title: "Google firebase connector example"
+description: "Build an integration that generates a Firebase push notification from an HTTP API invocation using the Google Firebase connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-firebase-connector/google-firebase-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-firebase-connector/google-firebase-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-firebase-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Google Firebase Connector Example   
 
 **Google Firebase Connector** is useful for integrating Google Firebase with other enterprise applications, on-premise or cloud. You can generate notifications and send them to Firebase so that they will be triggered to all the registered devices on that topic.
@@ -16,7 +31,7 @@ In this example let us see how we can use Google Firebase Connector to generate 
 
 Overall integration scenario would look like below. 
 <br/><br/>
-<img src="../../../assets/img/integrate/connectors/google-firebase-scenario.png" title="Google Firebase Connector scenario" width="800" alt="Google Firebase Connector scenario"/>
+<img src="../../../../assets/img/integrate/connectors/google-firebase-scenario.png" title="Google Firebase Connector scenario" width="800" alt="Google Firebase Connector scenario"/>
 
 ## Setting up the environment
 
@@ -26,7 +41,7 @@ You need to create an application at Google Firebase and get the credentials req
 
 Follow these steps to set up the Integration Project and import Google Firebase connector into it.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md" 
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API.
 2. Specify the API name as `FirebaseNotify` and API context as `/firebasenotify`. You can go to the source view of the XML configuration file of the API and copy the following configuration. 
@@ -178,14 +193,14 @@ clientCertUrl --> client_x509_cert_url
 Now we can export the imported connector, sequence, and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime.
 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/google-firebase-test-project.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/google-firebase-test-project.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -202,7 +217,7 @@ Now the exported CApp can be deployed in the integration runtime so that we can 
 4. [api-common-1.7.0.jar](https://mvnrepository.com/artifact/com.google.api/api-common/1.7.0)
 and place those into `<Product_HOME>/lib` folder.
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

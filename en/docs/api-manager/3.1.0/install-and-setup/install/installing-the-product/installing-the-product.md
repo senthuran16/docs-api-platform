@@ -1,3 +1,18 @@
+---
+title: "Installing the product"
+description: "Lists the available methods for installing WSO2 API Manager, including the installer and binary distribution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-product/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-product.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Installing the Product
 The following are the available methods to install WSO2 API Manager via the [WSO2 API Manager product page](https://wso2.com/api-management/).
 </br>

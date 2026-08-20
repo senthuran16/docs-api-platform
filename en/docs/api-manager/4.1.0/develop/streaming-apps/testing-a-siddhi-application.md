@@ -1,3 +1,18 @@
+---
+title: "Testing siddhi applications"
+description: "Validate, run, and simulate events for Siddhi applications in Streaming Integrator Tooling before production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/testing-a-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/testing-a-siddhi-application.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - testing-a-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Testing Siddhi Applications
 
 The Streaming Integrator allows the following tasks to be carried
@@ -18,7 +33,7 @@ validated before they are run in an actual production environment.
 To validate a Siddhi application, follow the procedure below:
 
 1.  Start and access the Streaming Integrator Tooling. For detailed
-    instructions, see [Starting Streaming Integrator Tooling](streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    instructions, see [Starting Streaming Integrator Tooling](streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
 
 2.  In this example, let's use an existing sample as an example. Click
     on the **ReceiveAndCount** sample to open it.
@@ -47,7 +62,7 @@ You can run a Siddhi application to verify whether the logic
 you have written is correct. To start a Siddhi application, follow the procedure below:
 
 1.  Start and access the Streaming Integrator Tooling. For detailed
-    instructions, see [Starting Stream Integration Tooling](streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    instructions, see [Starting Stream Integration Tooling](streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
     
 2.  For this example, click the **existing** sample **ReceiveAndCount**. It opens in a new untitled tab.
 

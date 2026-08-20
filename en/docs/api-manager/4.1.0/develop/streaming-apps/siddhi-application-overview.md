@@ -1,3 +1,18 @@
+---
+title: "Siddhi application overview"
+description: "Explains the structure and format of a Siddhi application file used for streaming integration logic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/siddhi-application-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/siddhi-application-overview.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - siddhi-application-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Siddhi Application Overview
 
 A Siddhi application (.siddhi) file is the deployment artifact containing the Streaming Integration logic for WSO2 Streaming Integrator.

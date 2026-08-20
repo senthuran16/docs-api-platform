@@ -1,3 +1,18 @@
+---
+title: "Configuring a Micro Integrator cluster"
+description: "Set up a two-node Micro Integrator cluster with a load balancer, service catalog, and database coordination."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Micro Integrator Cluster
 See the instructions on how to set up a cluster of WSO2 Micro Integrator nodes in an on-premise VM deployment. A third-party load balancer is used for this deployment.
 
@@ -5,7 +20,7 @@ See the instructions on how to set up a cluster of WSO2 Micro Integrator nodes i
 
 This deployment scenario is a two-node Micro Integrator deployment. That is, two Micro Integrator nodes are configured to serve requests with high availability and scalability. The product nodes in the deployment are fronted by an external third-party load balancer, which routes requests to the two nodes on a round-robin basis.
 
-<a href="../../../../assets/img/integrate/mi-deployment.png"><img src="../../../../assets/img/integrate/mi-deployment.png" alt="micro integrator deployment" width="60%"></a>
+<a href="../../../../../assets/img/integrate/mi-deployment.png"><img src="../../../../../assets/img/integrate/mi-deployment.png" alt="micro integrator deployment" width="60%"></a>
 
 ## Install the Micro Integrator
 

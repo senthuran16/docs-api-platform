@@ -1,3 +1,18 @@
+---
+title: "Product compatibility"
+description: "Reference the operating systems, JDKs, databases, browsers, and WSO2 products compatible with WSO2 API Manager 3.1.0."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/reference/product-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/reference/product-compatibility.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
+---
+
 # Product Compatibility
 The following compatibility details are with regard to WSO2 API Manager (WSO2 API-M) 3.1.0.
 

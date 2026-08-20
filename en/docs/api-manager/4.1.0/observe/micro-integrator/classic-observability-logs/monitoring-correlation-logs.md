@@ -1,3 +1,18 @@
+---
+title: "Monitoring correlation logs"
+description: "Enable Correlation logs in the Micro Integrator to trace a single HTTP request across the full client-to-backend round trip."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Monitoring Correlation Logs
 
 Product observability enables rapid debugging of product issues. The Micro Integrator enables observability using Correlation logs. Correlation logs allow you to monitor individual HTTP requests from the point that a message is received by the Micro Integrator until the corresponding response message is sent back to the original message sender. That is, the complete round trip of an HTTP message (client → Micro Integrator → back-end → Micro Integrator → client) can be tracked and analyzed using a log

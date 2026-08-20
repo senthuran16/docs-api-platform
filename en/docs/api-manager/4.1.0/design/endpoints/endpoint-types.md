@@ -1,3 +1,18 @@
+---
+title: "Endpoint types"
+description: "Compare the endpoint types supported by WSO2 API Manager, including REST, SOAP, failover, and load balance endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/endpoint-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/endpoint-types.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-types
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Endpoint Types
 
 An Endpoint is a specific destination for a message such as an address, WSDL, a failover group, a load-balance group etc. WSO2 API Manager supports a range of different endpoint types, allowing the API Gateway to connect with advanced types of backends.
@@ -25,22 +40,22 @@ An Endpoint is a specific destination for a message such as an address, WSDL, a 
 <td>The endpoints where the incoming requests are directed to in a round-robin manner. They automatically handle fail-over as well.</td>
 </tr>
 <tr><td>Dynamic Endpoint</td>
-<td>Using a dynamic endpoint, the requests can be dynamically routed to an address based on a specific condition (e.g., request parameters, payload etc.). When using this endpoint type, a mediation sequence should be applied to the message <b>IN Flow</b> of the API. For more information, see <a href="../api-policies/regular-gateway-policies/adding-dynamic-endpoints.md">Adding Dynamic Endpoints</a>.</td>
+<td>Using a dynamic endpoint, the requests can be dynamically routed to an address based on a specific condition (e.g., request parameters, payload etc.). When using this endpoint type, a mediation sequence should be applied to the message <b>IN Flow</b> of the API. For more information, see <a href="../../api-policies/regular-gateway-policies/adding-dynamic-endpoints/">Adding Dynamic Endpoints</a>.</td>
 </tr>
 <tr><td>Mock Implementation</td>
 <td>
 <ul>
-<li><a href="../prototype-api/create-mocked-js-api.md">Mock implementation with API Gateway</a> - The Mock Implementation uses the built-in JavaScript engine of Synapse to mock the responses and can be used per HTTP resource of the API.</br>
+<li><a href="../../prototype-api/create-mocked-js-api/">Mock implementation with API Gateway</a> - The Mock Implementation uses the built-in JavaScript engine of Synapse to mock the responses and can be used per HTTP resource of the API.</br>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <b>Mock Implementation</b> will be only available for APIs that are in the <b>CREATED</b> or <b>PRE-RELEASED</b> state.</p>
 </div></li>
 <li>
-<a href="../prototype-api/create-mocked-oas-api.md">Mock implementation with Choreo Connect</a> - When using the Mock Implementation in Choreo Connect, you can generate mock responses based on the examples provided in the OpenAPI specification and directly get the response. For non-default cases, the exact response can be requested using the <code>Prefer</code> and <code>Accept</code> headers.
+<a href="../../prototype-api/create-mocked-oas-api/">Mock implementation with Choreo Connect</a> - When using the Mock Implementation in Choreo Connect, you can generate mock responses based on the examples provided in the OpenAPI specification and directly get the response. For non-default cases, the exact response can be requested using the <code>Prefer</code> and <code>Accept</code> headers.
 </li>
 </td>
 </tr>
-<tr><td>AWS Lambda</td><td>An AWS Lambda endpoint can be used to invoke AWS Lambda functions through WSO2 API Gateway. For more information on creating APIs with AWS Lambda endpoint, see <a href="../../tutorials/create-and-publish-awslambda-api.md">Create and Publish an AWS Lambda API</a>.</td>
+<tr><td>AWS Lambda</td><td>An AWS Lambda endpoint can be used to invoke AWS Lambda functions through WSO2 API Gateway. For more information on creating APIs with AWS Lambda endpoint, see <a href="../../../tutorials/create-and-publish-awslambda-api/">Create and Publish an AWS Lambda API</a>.</td>
 </tr>
 </table>
 

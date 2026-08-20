@@ -1,3 +1,18 @@
+---
+title: "SAML extension grant"
+description: "Exchange a SAML2 bearer token for an OAuth2 access token using the SAML extension grant type in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/grant-types/saml-extension-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/grant-types/saml-extension-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # SAML Extension Grant
 
 #### Flow
@@ -54,7 +69,7 @@ A sequence diagram explaining the above flow would be as follows:
     [apim.key_manager]
     configuration.ServerURL = "<key-manager-server-url>"
     ```
-    -   A valid SAML2 assertion. For instructions on how to configure WSO2 API Manager with SAML2, see [Configuring API Manager for SSO](../../../../develop/extending-api-manager/saml2-sso/configuring-single-sign-on-with-saml2/)
+    -   A valid SAML2 assertion. For instructions on how to configure WSO2 API Manager with SAML2, see [Configuring API Manager for SSO](../../../../develop/extending-api-manager/saml2-sso/configuring-single-sign-on-with-saml2.md)
 
 
 In this example, **WSO2 Identity Server 5.7.0** is used as the IdP to get a SAML token and the API Manager is used as the OAuth server.

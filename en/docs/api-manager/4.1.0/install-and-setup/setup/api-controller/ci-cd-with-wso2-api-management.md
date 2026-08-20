@@ -1,3 +1,18 @@
+---
+title: "CI/CD for APIs - overview"
+description: "Understand the roles, tools, and workflow involved in automating API deployment with WSO2 API-M."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # CI/CD for APIs - Overview
 
 APIs have become a norm for connecting apps, services, and data. An organization can have multiple environments, such as development, testing, QA, staging, and production, each with its own instance of API Managers. Therefore, the APIs need to be available in each environment after developers specify the required conditions. Manually promoting APIs between environments is a tedious, error-prone, and time-consuming task. This drastically reduces an organization’s productivity.

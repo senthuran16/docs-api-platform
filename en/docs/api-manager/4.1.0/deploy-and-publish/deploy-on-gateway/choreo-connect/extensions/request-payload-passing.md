@@ -1,3 +1,18 @@
+---
+title: "Request payload passing"
+description: "Enable or disable passing the request payload from the Router to the Enforcer for custom filters in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/request-payload-passing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/extensions/request-payload-passing.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Request Payload Passing
 
 By default, the payload of a request will not be passed to the Enforcer. Therefore, when using custom filters, you will not be able to update a request based on the payload. 

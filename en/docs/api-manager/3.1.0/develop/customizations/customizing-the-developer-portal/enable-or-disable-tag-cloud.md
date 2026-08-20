@@ -1,8 +1,23 @@
+---
+title: "Enable or disable tag cloud"
+description: "Disable or configure the tag cloud styling and colors on the Developer Portal via defaultTheme.js."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/enable-or-disable-tag-cloud/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/enable-or-disable-tag-cloud.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enable or Disable Tag Cloud
 
 The tag cloud is enabled by default. You can disable the tag cloud by configuring the `defaultTheme.js` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#devportal).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme.md#devportal).
 
 1. Open the `<API-M_HOME>/repository/deployment/server/jaggeryapps/devportal/site/public/theme/defaultTheme.js` file in a text editor and set the `themes.light.custom.tagCloud.active` attribute as `false`.
 

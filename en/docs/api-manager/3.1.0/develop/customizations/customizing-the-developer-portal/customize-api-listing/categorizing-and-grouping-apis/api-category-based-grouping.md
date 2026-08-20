@@ -1,3 +1,17 @@
+---
+title: "API category based grouping"
+description: "Add API categories via the Admin Portal or REST API to group APIs without relying on tag naming conventions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
 
 # API Category based Grouping
 
@@ -5,7 +19,7 @@ You can use API categories to group APIs. In previous versions of WSO2 API Manag
 
 !!! note
 
-    The [tag wise grouping feature](../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/tagwise-based-grouping) has been deprecated with the introduction of the API categories feature in WSO2 API Manager 3.1.0. Therfore, WSO2 recommends all users to use API categories instead of tag wise grouping.
+    The [tag wise grouping feature](tagwise-based-grouping.md) has been deprecated with the introduction of the API categories feature in WSO2 API Manager 3.1.0. Therfore, WSO2 recommends all users to use API categories instead of tag wise grouping.
 
 Initially, the Admins will define API categories. Thereafter, API providers will add API categories to APIs when designing them via the API Publisher. API categories allow API providers to categorize APIs that have similar attributes. When a categorized API gets published to the Developer Portal, its categories appear as clickable links to the API consumers. The API consumers can use the available API categories to quickly jump to a category of interest.
 
@@ -13,8 +27,8 @@ Initially, the Admins will define API categories. Thereafter, API providers will
 
 You can add an API category using any of the following methods:
 
-- [Add an API Category using the Admin Portal UI](../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/#add-an-api-category-using-the-admin-portal-ui)
-- [Add an API Category using the Admin REST API](../../../../../learn/consume-api/customizations/customizing-the-developer-portal/customize-api-listing/categorizing-and-grouping-apis/api-category-based-grouping/#add-an-api-category-using-the-admin-rest-api)
+- [Add an API Category using the Admin Portal UI](#add-an-api-category-using-the-admin-portal-ui)
+- [Add an API Category using the Admin REST API](#add-an-api-category-using-the-admin-rest-api)
 
 ### Add an API Category using the Admin Portal UI
 

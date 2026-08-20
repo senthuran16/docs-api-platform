@@ -1,3 +1,18 @@
+---
+title: "Adding an application creation workflow"
+description: "Attach a custom approval workflow to the application creation process in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-creation-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-application/advanced-topics/adding-an-application-creation-workflow.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an Application Creation Workflow
 
 This section explains as to how you can attach a custom workflow to the application creation operation in WSO2 API Manager (WSO2 API-M).
@@ -31,7 +46,7 @@ Example usecase:
 1.  Download [WSO2 Enterprise Integrator](https://wso2.com/integration/previous-releases/) version 6.5.0 by selecting the version from the dropdown.
 2.  Set an offset of 2 to the default BPS port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. 
 
-     This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset/).
+     This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md).
 
     ``` java
     <Offset>2</Offset>

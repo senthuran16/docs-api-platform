@@ -1,3 +1,18 @@
+---
+title: "JDBC message store"
+description: "Lists the required and optional properties for creating a JDBC message store backed by a relational database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/jdbc-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/jdbc-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # JDBC Message Store
 ## Introduction
 Used for storing and retrieving messages more efficiently in comparison with other message stores. This is a variation of the already existing synapse message store implementation and is designed in a manner similar to the same message store. The JDBC message store uses a JDBC connector to connect to external relational databases.

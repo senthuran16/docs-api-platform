@@ -1,3 +1,18 @@
+---
+title: "Accessing properties with XPath"
+description: "Reference for XPath extension functions and variables used to access message properties in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/accessing-properties-with-xpath/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/accessing-properties-with-xpath.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Accessing Properties with XPath
 
 The WSO2 Micro Integrator supports standard XPath functions and variables through its underlying XPath engine. It supports XPath 1.0 by default where as the support for XPath 2.0 can be introduced by adding the following property in <MI_HOME>/conf/deployment.toml.
@@ -82,6 +97,7 @@ If you provide only the property name without the scope, the default s
     </inSequence>
     ```
     
+<a name="synapse-scope"></a>
 #### Synapse scope
 
 When the scope of a property mediator is `         synapse        ` ,

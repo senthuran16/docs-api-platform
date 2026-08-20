@@ -1,3 +1,18 @@
+---
+title: "Converting JSON to SOAP"
+description: "Convert JSON client requests to SOAP and back using the PayloadFactory mediator in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_transformation_examples/json-to-soap-conversion/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_transformation_examples/json-to-soap-conversion.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_transformation_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Converting JSON to SOAP 
 
 Let's consider a scenario where you have a SOAP-based backend and a JSON client. The SOAP backend is exposed as a REST API in the Micro Integrator. 

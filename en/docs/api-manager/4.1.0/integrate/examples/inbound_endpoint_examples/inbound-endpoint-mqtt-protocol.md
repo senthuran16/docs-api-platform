@@ -1,3 +1,18 @@
+---
+title: "Using the MQTT inbound endpoint"
+description: "Configure an MQTT inbound endpoint to publish and receive messages on a topic using a Mosquitto broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-mqtt-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-mqtt-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the MQTT Inbound Endpoint
 This sample demonstrates how the MQTT connector publishes a message on a
 particular topic and how a MQTT client that is subscribed to that topic

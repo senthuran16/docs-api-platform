@@ -1,3 +1,18 @@
+---
+title: "Publishing a custom WSDL"
+description: "Publish a custom WSDL for a proxy service instead of the default WSDL generated from the mediate operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/publishing-a-custom-wsdl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/publishing-a-custom-wsdl.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publishing a Custom WSDL
 When you create a proxy service, a default WSDL is automatically
 generated. You can access this WSDL by suffixing the service URL

@@ -1,10 +1,25 @@
+---
+title: "Installing on Windows"
+description: "Explains how to install WSO2 API Manager, set up snappy-java, and configure JAVA_HOME on Windows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-windows/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/install/installing-the-product/installing-the-binary/installing-on-windows.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing on Windows
 
 !!! note
 
     **Before you begin:**
 
-    -   See [our compatibility matrix](../../../../install-and-setup/ProductCompatibility) to find out if this version of the product is fully tested on Windows.
+    -   See [our compatibility matrix](../../../../install-and-setup/setup/reference/product-compatibility.md) to find out if this version of the product is fully tested on Windows.
 
 Follow the instructions below to install API Manager on Windows.
 
@@ -33,7 +48,7 @@ You must set your `JAVA_HOME` environment variable to point to the directory whe
     Environment variables are global system variables accessible by all the processes running under the operating system. You can define an environment variable as a system variable, which applies to all users, or as a user variable, which applies only to the user who is currently logged in.
 
 
-You set up `JAVA_HOME` using the System Properties, as described below. Alternatively, if you just want to set `JAVA_HOME` temporarily for the current command prompt window, [set it at the command prompt](../../../../install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-windows/#setting-java95home-temporarily-using-the-windows-command-prompt-cmd).
+You set up `JAVA_HOME` using the System Properties, as described below. Alternatively, if you just want to set `JAVA_HOME` temporarily for the current command prompt window, [set it at the command prompt](#setting-java_home-temporarily-using-the-windows-command-prompt-cmd).
 
 ### Setting up JAVA\_HOME using the system properties
 
@@ -57,7 +72,7 @@ The `JAVA_HOME` variable is now set and will apply to any subsequent command pro
 
 `set JAVA_HOME`
 
-The system returns the JDK installation path. You are now ready to [run the product](../../../../install-and-setup/installation-guide/running-the-product/).
+The system returns the JDK installation path. You are now ready to [run the product](../../running-the-product.md).
 
 ### Setting JAVA\_HOME temporarily using the Windows command prompt (CMD)
 
@@ -82,6 +97,6 @@ You can temporarily set the `JAVA_HOME` environment variable within a Windows co
 If you need to set additional system properties when the server starts, you can take the following approaches:
 
 -   **Set the properties from a script** : Setting your system properties in the startup script is ideal, because it ensures that you set the properties every time you start the server. To avoid having to modify the script each time you upgrade, the best approach is to create your own startup script that wraps the WSO2 startup script and adds the properties you want to set, rather than editing the WSO2 startup script directly.
--   **Set the properties from an external registry** : If you want to access properties from an external registry, you could create Java code that reads the properties at runtime from that registry. Be sure to store sensitive data such as username and password to connect to the registry in a properties file instead of in the Java code and secure the properties file with the [secure vault](../../../../administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation).
+-   **Set the properties from an external registry** : If you want to access properties from an external registry, you could create Java code that reads the properties at runtime from that registry. Be sure to store sensitive data such as username and password to connect to the registry in a properties file instead of in the Java code and secure the properties file with the [secure vault](../../../../install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation.md).
 
-You are now ready to [run the product](../../../../install-and-setup/installation-guide/running-the-product/).
+You are now ready to [run the product](../../running-the-product.md).

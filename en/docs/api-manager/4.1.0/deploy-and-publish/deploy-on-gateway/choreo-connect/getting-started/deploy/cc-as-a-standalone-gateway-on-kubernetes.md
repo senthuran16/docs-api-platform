@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect standalone on Kubernetes"
+description: "Deploy an API to Choreo Connect running as a standalone gateway on Kubernetes using apictl and YAML artifacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Deploying Choreo Connect as a Standalone Gateway on Kubernetes
 
 Let's deploy an API in Choreo Connect running on Kubernetes as a Standalone Gateway. We can use [WSO2 API Controller (apictl)](../../../../../reference/apictl/wso2-api-controller.md) the Command Line Tool to deploy the API.
@@ -10,7 +25,7 @@ Let's deploy an API in Choreo Connect running on Kubernetes as a Standalone Gate
         - Minimum Memory : 2GB
     3.  Deploy an ingress controller - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/deploy/) for this sample.
 
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/k8s-setup-note.md"
 
 ## Step 1 - Setup Choreo Connect in Kubernetes
 
@@ -20,7 +35,7 @@ Let's deploy an API in Choreo Connect running on Kubernetes as a Standalone Gate
 
 2.  Apply the Kubernetes configurations for Choreo Connect using the kubectl tool.
 
-     {!includes/deploy/cc-tryout-in-arm64-k8s-note.md!}
+     --8<-- "api-manager/4.1.0/includes/deploy/cc-tryout-in-arm64-k8s-note.md"
 
      ```bash
      kubectl apply -f <CHOREO-CONNECT_HOME>/k8s-artifacts/choreo-connect
@@ -41,7 +56,7 @@ Let's create our first project with the name "petstore" based on the [OpenAPI de
 1. Download and install apictl
 
     apictl is a CLI tool that can be used to deploy and undeploy APIs in the Choreo Connect clusters.
-    Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-ctl-tool)
+    Refer [Download and initialize the CTL Tool](../../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#download-and-initialize-the-apictl)
     to set up the apictl in your development environment.
     
 2. Now let's create our first API project to deploy on Choreo Connect that is set up on Kubernetes

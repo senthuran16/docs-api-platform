@@ -1,3 +1,18 @@
+---
+title: "Renewing a CA-Signed certificate in a keystore"
+description: "Renew an expiring CA-signed certificate in a keystore before it causes SSL handshake failures."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Renewing a CA-Signed Certificate in a Keystore
 
 The [digital certificates](../../../../reference/mi-security-reference/using_keystores.md) that are used for SSL handshaking has a validity period. Once a certificate expires, it can cause the client-server communication to fail at the SSL handshake level. 

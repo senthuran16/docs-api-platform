@@ -1,3 +1,18 @@
+---
+title: "Working with databases"
+description: "Learn about the default AM, shared, and carbon H2 databases API Manager uses to store data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Working with Databases
 
 WSO2 API Manager is shipped with an H2 database for storing data. These default databases are located in the `<API-M_HOME>/repository/database` directory of the product pack.
@@ -14,7 +29,7 @@ Explained below are the default databases which will be used within API Manager.
 
 The following image shows the default databases and the data that are stored in each database.
 
-<a href="../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
+<a href="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
 
 See how these databases are used when you [run API-M servers as separate profiles](../distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md) in a distributed deployment.
 

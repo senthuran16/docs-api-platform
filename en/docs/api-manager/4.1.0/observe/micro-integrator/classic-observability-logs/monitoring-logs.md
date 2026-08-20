@@ -1,3 +1,18 @@
+---
+title: "Monitoring logs"
+description: "Download and read the Carbon, API, and service log files the Micro Integrator generates by default."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/monitoring-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/monitoring-logs.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring Logs
 
 Logging is one of the most important aspects of a production-grade server. A properly configured logging system is vital for identifying errors, security threats, and usage patterns.
@@ -21,7 +36,7 @@ You can easily download them from the [Micro Integrator Dashboard](../../mi-obse
 1.  Sign in to the dashboard. 
 2.  Click <b>Log Files</b> as shown below to view the complete list.
 
-    <img alt="download log files" src="../../../assets/img/integrate/monitoring-dashboard/log-files-dashboard.png" width="80%">
+    <img alt="download log files" src="../../../../assets/img/integrate/monitoring-dashboard/log-files-dashboard.png" width="80%">
 
 3.  User the <b>Search</b> option to find a specific log file.
 4.  Click the log file to download.

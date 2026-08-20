@@ -1,3 +1,18 @@
+---
+title: "Create and publish a WebSocket API"
+description: "Design, publish, and invoke a WebSocket API to implement a command-line chat application with WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/streaming-api/create-and-publish-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/streaming-api/create-and-publish-websocket-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSocket API
 
 This tutorial will guide you to implement a WebSocket based chat application using the WSO2 API Manager.
@@ -11,7 +26,8 @@ This will demonstrate a simple command line based chat room which has two channe
 
 ### Step 1 - Design a WebSocket API
 
-1.  {!includes/sign-in-publisher.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and click **WebSocket API**.
 
@@ -86,7 +102,7 @@ This will demonstrate a simple command line based chat room which has two channe
           - /notifications
           - /rooms/{roomID}
 
-          <img src="../../assets/img/tutorials/streaming-api/websocket-api-add-topics.png" width="80%" alt="Add Topics to WebSocket API">
+          <img src="../../../assets/img/tutorials/streaming-api/websocket-api-add-topics.png" width="80%" alt="Add Topics to WebSocket API">
           
      4. Expand each topic, provide URL Mappings as follows, and click **Save**.
 
@@ -119,7 +135,7 @@ Now, you have created and configured the WebSocket API successfully.
 
 3. Select **Production and Sandbox**, choose **localhost** as the VHost, and click on **Deploy**.
 
-      <a href="../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png"><img src="../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png" width="80%" alt="Deploy New Revision"></a>
+      <a href="../../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png"><img src="../../../assets/img/tutorials/streaming-api/streaming-api-deploy-new-revision.png" width="80%" alt="Deploy New Revision"></a>
 
 ### Step 3 - Start the WebSocket Server
 
@@ -139,7 +155,8 @@ Now, you have created and configured the WebSocket API successfully.
 
 ### Step 4 - Invoke the WebSocket API
 
-1. {!includes/sign-in-devportal.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSocket API. 
 

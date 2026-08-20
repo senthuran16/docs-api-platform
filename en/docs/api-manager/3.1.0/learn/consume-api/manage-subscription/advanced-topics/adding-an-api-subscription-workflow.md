@@ -1,3 +1,18 @@
+---
+title: "Adding an API subscription workflow"
+description: "Configure a custom approval workflow for API subscriptions using WSO2 EI or WSO2 BPS so subscriptions require admin approval."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-subscription/advanced-topics/adding-an-api-subscription-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-subscription/advanced-topics/adding-an-api-subscription-workflow.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-subscription
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an API Subscription Workflow
 
 This section explains how to attach a custom workflow to the API subscription operation in the API Manager.
@@ -75,7 +90,7 @@ Attaching a custom workflow to API subscription enables you to add throttling ti
 
 7.  Select **Add** under the **Human Tasks** menu and upload the `<API-M_HOME>/business-processes/subscription-creation/HumanTask/SubscriptionsApprovalTask-1.0.0.zip` file to EI. This is the human task archived file.
 
-For instructions on how to customize workflow extensions, see [Customizing a Workflow Extension](../../../../develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension/)
+For instructions on how to customize workflow extensions, see [Customizing a Workflow Extension](../../../../develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension.md)
 
 ## Configuring WSO2 BPS
 

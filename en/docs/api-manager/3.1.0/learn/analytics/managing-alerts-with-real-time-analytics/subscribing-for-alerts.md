@@ -1,3 +1,18 @@
+---
+title: "Subscribing for alerts"
+description: "Subscribe to and unsubscribe from analytics alerts as a system administrator or API publisher or subscriber."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/subscribing-for-alerts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-alerts-with-real-time-analytics/subscribing-for-alerts.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-alerts-with-real-time-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Subscribing for Alerts
 
 You can subscribe to events as a system administrator or as a API publisher/subscriber. These users can subscribe to any of the alert types listed in the **Manage Alert Subscriptions** page specific to them. For more information about different types of alerts and their importance, see [Alert Types](../../../../learn/analytics/managing-alerts-with-real-time-analytics/alert-types/) .

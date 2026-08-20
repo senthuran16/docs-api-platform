@@ -1,3 +1,18 @@
+---
+title: "Monitoring HTTP access logs"
+description: "Configure access logs for the HTTP servlet transport and for PassThrough or NIO transports in the API Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/monitoring-http-access-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/logging/monitoring-http-access-logs.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring HTTP Access Logs
 
 HTTP access logs help you monitor your application's usage with information such as the persons who access it, how many hits it received, what the errors are, etc. This information is useful for troubleshooting errors. 
@@ -128,7 +143,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
                    <p>The attribute defines the format for the log pattern, which consists of the information fields from the requests and responses that should be logged. The pattern format is created using the following attributes:</p>
                    <ul>
                       <li>
-                         <p>A standard value to represent a particular string. For example, "%h" represents the remote host name in the request. Note that all the <a href="https://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/catalina/valves/AccessLogValve.html">string replacement values supported by Tomcat</a> are NOT supported for the PassThrough transport's access logs. The list of supported values are <a href="#supported-log-pattern-formats-for-the-passthrough-and-nio-transports">given below</a> .</p>
+                         <p>A standard value to represent a particular string. For example, "%h" represents the remote host name in the request. Note that all the <a href="https://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/catalina/valves/AccessLogValve.html">string replacement values supported by Tomcat</a> are NOT supported for the PassThrough transport's access logs. The list of supported values are <a href="#supported-log-pattern-formats-for-the-passthrough-transport">given below</a> .</p>
                       </li>
                       <li><strong>%{xxx}i</strong> is used to represent the header in the incoming request (xxx=header value).</li>
                       <li><strong>%{xxx}o</strong> is used to represents the header in the outgoing request (xxx=header value).</li>
@@ -177,7 +192,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
     "nhttp.is.log.rotatable" = "true"
     ```
     
-5.  Then [Restart the server](../../../install-and-setup/installation-guide/running-the-product/).
+5.  Then [Restart the server](../../../install-and-setup/install/running-the-product.md).
 
 6.  Invoke an API in API Gateway. Then, navigate to `<APIM_HOME>/repository/logs/` directory and you will see a newly created log file called `http_gw.log` which contain API invocation related access logs.
 

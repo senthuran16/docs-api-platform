@@ -1,3 +1,18 @@
+---
+title: "Securing APIs with mutual SSL"
+description: "Shows how to secure APIs with mutual SSL so the Gateway validates client certificates alongside OAuth2."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/api-authentication/secure-apis-using-mutual-ssl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/api-authentication/secure-apis-using-mutual-ssl.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Securing APIs with Mutual SSL
 
 In contrast to the usual one-way SSL authentication where a client verifies the identity of the server, in mutual SSL the server validates the identity of the client so that both parties trust each other. This builds a system that has very tight security and avoids any requests made to the client with regard to providing its username/password, as long as the server is aware of the certificates that belong to the client.

@@ -1,3 +1,18 @@
+---
+title: "Working with databases"
+description: "Learn about the default AM, shared, and carbon H2 databases shipped with WSO2 API Manager and what each stores."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Working with Databases
 
 WSO2 API Manager is shipped with an H2 database for storing data. These default databases are located in the `<API-M_HOME>/repository/database` directory of the product pack.
@@ -23,13 +38,13 @@ management and registry data are stored in the `<API-M_HOME>/dbscripts` folder.
 
 **Changing the default database:** You simply have to set up new physical databases, point the product server to the new databases by updating the relevant configuration files, and create the required tables using the scripts provided in the product pack. See the following topics for instructions:
 
--   [Changing to MySQL](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-mysql)
--   [Changing to Oracle](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-oracle)
--   [Changing to MSSQL](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-mssql)
--   [Changing to Oracle RAC](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-oracle-rac)
--   [Changing to PostgreSQL](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-postgresql)
--   [Changing to IBM DB2](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2)
--   [Changing to MariaDB](../../../install-and-setup/setting-up-databases/changing-default-databases/changing-to-mariadb)
+-   [Changing to MySQL](changing-default-databases/changing-to-mysql.md)
+-   [Changing to Oracle](changing-default-databases/changing-to-oracle.md)
+-   [Changing to MSSQL](changing-default-databases/changing-to-mssql.md)
+-   [Changing to Oracle RAC](changing-default-databases/changing-to-oracle-rac.md)
+-   [Changing to PostgreSQL](changing-default-databases/changing-to-postgresql.md)
+-   [Changing to IBM DB2](changing-default-databases/changing-to-ibm-db2.md)
+-   [Changing to MariaDB](changing-default-databases/changing-to-mariadb.md)
 
 !!! Note
 

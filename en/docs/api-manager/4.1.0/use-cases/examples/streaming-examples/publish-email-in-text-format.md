@@ -1,3 +1,18 @@
+---
+title: "Publishing text events via email"
+description: "Configure the siddhi-io-email sink to publish sweet production events as plain-text emails."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/publish-email-in-text-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/publish-email-in-text-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publishing Text Events via Email
 
 ## Purpose:

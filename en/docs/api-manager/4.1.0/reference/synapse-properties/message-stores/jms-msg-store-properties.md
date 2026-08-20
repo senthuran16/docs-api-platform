@@ -1,3 +1,18 @@
+---
+title: "JMS message store"
+description: "Lists the required and optional properties for creating a JMS message store that persists messages in a broker queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/jms-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/jms-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # JMS Message Store
 ## Introduction
 Persists messages in a JMS queue inside a JMS Broker. Since messages are persisted in an orderly manner, JMS message stores implement the <b>Store and Forward</b> integration pattern. This message store can be configured by specifying the class as <code>org.apache.synapse.message.store.impl.jms.JmsStore</code>.

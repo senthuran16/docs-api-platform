@@ -1,3 +1,18 @@
+---
+title: "Maintaining logins and passwords"
+description: "Change super admin credentials, recover passwords, and set up email or social media logins."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Maintaining Logins and Passwords
 
 This section covers the following topics:
@@ -5,7 +20,7 @@ This section covers the following topics:
 -   [Changing the super admin credentials](#changing-the-super-admin-credentials)
 -   [Recovering a password](#recovering-a-password)
 -   [Login in via multiple user attributes in API Developer-portal](#login-in-via-multiple-user-attributes-in-developer-portal)
--   [Setting up an e-mail login](#login-in-via-multiple-user-attributes-in-developer-portal)
+-   [Setting up an e-mail login](#setting-up-an-e-mail-login)
 -   [Setting up a social media login](#setting-up-a-social-media-login)
 
 ### Changing the super admin credentials
@@ -126,7 +141,7 @@ Follow the instructions below to change the default admin password:
 
 ### Setting up a social media login
 
-You can auto-provision users based on a social network login by integrating the API Manager with WSO2 Identity Server. Refer [Log in to the API Developer Portal using Social Media](../../../../learn/consume-api/customizations/log-in-to-the-api-store-using-social-media/) for more information.
+You can auto-provision users based on a social network login by integrating the API Manager with WSO2 Identity Server. Refer [Log in to the API Developer Portal using Social Media](../../../../develop/customizations/log-in-to-the-dev-portal-using-social-media.md) for more information.
 
 !!! note
     Note that auto-provision users based on a social network login are not supported in a **multi-tenant environment**.

@@ -1,3 +1,18 @@
+---
+title: "Accessing API Manager by multiple devices simultaneously"
+description: "Explains how client applications should handle authentication when the same user logs in from multiple devices simultaneously."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/guides/accessing-api-manager-by-multiple-devices-simultaneously/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/guides/accessing-api-manager-by-multiple-devices-simultaneously.md
+tags:
+  - api-manager
+  - reference
+  - guides
+  - accessing-api-manager-by-multiple-devices-simultaneously
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Accessing API Manager by Multiple Devices Simultaneously
 
 When there are many users who use production deployment setups, accessing API Manager by multiple devices is more important. According to the architecture, if we logged out from one device and revoke the access token, then all the calls made with that token thereafter will get authentication failures. In this case Applications should be smart enough to detect that authentication failure and should request  for a new access token.
@@ -6,9 +21,9 @@ When there are many users who use production deployment setups, accessing API 
     This will be a guide for you if you create client applications having API Manager underlying. Note that, you need to use [Password Grant](https://docs.wso2.com/display/AM260/Password+Grant) type in this scenario.
 
 
--   [Issue in having multiple access tokens](#AccessingAPIManagerbyMultipleDevicesSimultaneously-Issueinhavingmultipleaccesstokens)
--   [Recommended Solution](#AccessingAPIManagerbyMultipleDevicesSimultaneously-RecommendedSolution)
--   [How this should work](#AccessingAPIManagerbyMultipleDevicesSimultaneously-Howthisshouldwork)
+-   [Issue in having multiple access tokens](#issue-in-having-multiple-access-tokens)
+-   [Recommended Solution](#recommended-solution)
+-   [How this should work](#how-this-should-work)
 
 ### Issue in having multiple access tokens
 

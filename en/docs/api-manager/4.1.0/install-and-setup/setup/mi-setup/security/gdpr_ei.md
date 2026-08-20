@@ -1,3 +1,18 @@
+---
+title: "GDPR compliance in the WSO2 Micro Integrator"
+description: "Understand GDPR requirements and how to remove or anonymize a user's PII stored in the WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/gdpr_ei/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/gdpr_ei.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # GDPR Compliance in the WSO2 Micro Integrator
 
 WSO2 Micro Integrator can persist

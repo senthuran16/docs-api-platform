@@ -1,3 +1,18 @@
+---
+title: "Handling Non-Matching resources"
+description: "Define a sequence that returns an error response when an API invocation has no matching resource definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/handling-non-matching-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/handling-non-matching-resources.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Handling Non-Matching Resources
     
 This example demonstrates how you can define a sequence to be invoked if the Micro Integrator is unable to find a matching resource definition for a specific API invocation. This sequence generates a response indicating an error when no matching resource definition is found.

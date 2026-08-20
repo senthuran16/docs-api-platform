@@ -1,3 +1,18 @@
+---
+title: "K8s deployment sample 1: hello world scenario"
+description: "Build and deploy a Hello World integration solution on Kubernetes using the K8s API operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/hello-world/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/hello-world.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # K8s Deployment Sample 1: Hello World Scenario
 Let's define a basic Hello World scenario using WSO2 Micro Integrator and deploy it on your Kubernetes environment.
 
@@ -15,13 +30,13 @@ Let's use an integration template in WSO2 Integration Studio to generate a sampl
 1.	Open WSO2 Integration Studio.
 2.	In the <b>Getting Started</b> view, select the <b>Hello Kubernetes</b> template.
 
-	<img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/k8s-hello-world-template.jpg" alt="getting started view">
+	<img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/k8s-hello-world-template.jpg" alt="getting started view">
 
 3.	Give a project name and click <b>Finish</b>. 
 
 This generates the complete integration project with the 'Hello World' solution, which is ready to be deployed in Kubernetes.
 
-<img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/hello-k8s-sample-project.png" width="400" alt="k8s project structure">
+<img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/hello-k8s-sample-project.png" width="400" alt="k8s project structure">
 
 ## Step 2 - Build and Push the Docker image
 
@@ -50,14 +65,14 @@ There are two ways to build a Docker image of the integration solution and push 
       
 	1.  Open the **pom.xml** file in the Kubernetes project as shown below.
 	    
-	    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/select-dependency-hello-world.png">
+	    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/select-dependency-hello-world.png">
 	
 	2.	Ensure that the composite exporter is selected under **Dependencies**.
 	3.  In the <b>Target Repository</b> field, enter the name of the Docker registry to which you will push a Docker image.
 	4.	Click <b>Build & Push</b> to build the image and push to the Docker registry.
 	5.	In the dialog box that opens, enter the credentials of your Docker registry to which the image should be pushed.
 
-	    <img src="../../../../../../assets/img/integrate/create_project/docker_k8s_project/docker-registry-credentials.png" width="500" alt="docker registry credentials">
+	    <img src="../../../../../../../assets/img/integrate/create_project/docker_k8s_project/docker-registry-credentials.png" width="500" alt="docker registry credentials">
 
 	6.	Click <b>Push Image</b>.
 

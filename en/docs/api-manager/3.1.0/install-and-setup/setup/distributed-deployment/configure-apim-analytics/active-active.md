@@ -1,3 +1,18 @@
+---
+title: "Configuring analytics workers as Active-Active"
+description: "Configure API-M Analytics nodes as an Active-Active cluster with distributed aggregations for scalability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-active/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/configure-apim-analytics/active-active.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Configuring Analytics Workers as Active-Active
 
 You can use the Active-Active deployment pattern to configure API-M Analytics as a scalable deployment. The following sub-sections contain an overview of the Active-Active deployment pattern and instructions to configure it.

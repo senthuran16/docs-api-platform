@@ -1,8 +1,23 @@
+---
+title: "Customize Developer Portal and gateway URLs for tenants"
+description: "Configure custom per-tenant domain mappings for the Developer Portal and gateway URLs using the registry."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customize-the-api-store-and-gateway-urls-for-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customize-the-api-store-and-gateway-urls-for-tenants.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customize-the-api-store-and-gateway-urls-for-tenants
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Customizing the Developer Portal and Gateway URLs for Tenants
 
 The default URL of WSO2 API Manager Developer Portal(`https://<HostName>:9443/devportal`) and the gateway URLs (`http://<HostName>:8280/t/<tenant-domain>` and `https://<HostName>:8243/t/<tenant-domain>`) can be customized per tenant. Following steps illustrates how to configure devportal and gateway custom urls for a given tenant.
 
--   [Configure per tenant custom domain mappings](#setup-custom-domain-mapping-in-the-registry)
+-   [Configure per tenant custom domain mappings](#configure-per-tenant-custom-domain-mappings)
 -   [Configure per tenant service provider creation for devportal](#configure-per-tenant-service-provider-creation-for-devportal)
 -   [Configure the load balancer for custom URLs](#configure-the-load-balancer-for-custom-urls)
 
@@ -18,7 +33,7 @@ The default URL of WSO2 API Manager Developer Portal(`https://<HostName>:9443/de
 
     ![](../../assets/img/develop/customizations/browse-registry.png)
 
-3.  Navigate to the `/_system/governance` registry path and create `customurl/api-cloud/<tenant-domain>/urlMapping` directory structure in the registry, as shown in the following diagram. Replace the `<tenant-domain>` placeholder with the domain name of the tenant you want to customize the devportal and gateway URLs. For details on how to create and manage multiple tenants, see [Managing Tenants](../../administer/multitenancy/managing-tenants).
+3.  Navigate to the `/_system/governance` registry path and create `customurl/api-cloud/<tenant-domain>/urlMapping` directory structure in the registry, as shown in the following diagram. Replace the `<tenant-domain>` placeholder with the domain name of the tenant you want to customize the devportal and gateway URLs. For details on how to create and manage multiple tenants, see [Managing Tenants](../../administer/multitenancy/managing-tenants.md).
     
     ![](../../assets/img/develop/customizations/mapping-file-directory-structure.png)
 

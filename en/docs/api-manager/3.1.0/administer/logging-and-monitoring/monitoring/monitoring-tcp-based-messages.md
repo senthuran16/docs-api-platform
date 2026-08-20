@@ -1,20 +1,35 @@
+---
+title: "Monitoring TCP-based messages"
+description: "Use the TCPMon utility to start, monitor, and debug TCP-based message conversations in web services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring TCP-Based Messages
 
 Users can view and monitor the messages passed along a TCP-based conversation using the TCPMon utility. Therefore, this is a convenient tool, particularly useful for debugging when you develop Web services. TCPMon is an Apache project distributed under [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html) .
 
 TCPMon is not dependent on any third party libraries. Its user interface is based on a swing UI and works on almost all platforms that support Java.
 
--   [Starting TCPMon](_Starting_TCPMon_)
+-   [Starting TCPMon](#starting-tcpmon)
 -   [Message Monitoring with TCPMon](_Message_Monitoring_with_TCPMon_)
--   [Other Usages of TCPMon](_Other_Usages_of_TCPMon_)
+-   [Other Usages of TCPMon](#other-usages-of-tcpmon)
 
 
 # Starting TCPMon
 
 TCPMon is available in the `<PRODUCT_HOME>/bin` directory of any WSO2 Carbon based product distribution. Alternatively, you can download TCPMon from Apache and run the tool.
 
--   [Running TCPMon (from Carbon product pack)](#StartingTCPMon-RunningTCPMon(fromCarbonproductpack))
--   [Running TCPMon (downloaded from Apache)](#StartingTCPMon-RunningTCPMon(downloadedfromApache))
+-   [Running TCPMon (from Carbon product pack)](#running-tcpmon-from-carbon-product-pack)
+-   [Running TCPMon (downloaded from Apache)](#running-tcpmon-downloaded-from-apache)
 
 ### Running TCPMon (from Carbon product pack)
 
@@ -70,22 +85,25 @@ To download TCPMon from Apache and run the tool:
 
 TCPMon is primarily used for message monitoring. Additionally, TCPMon can also be used for sending requests to web services and as a proxy service. Refer [Starting TCPMon](https://docs.wso2.com/display/Carbon440/Starting+TCPMon) for details on how to start the tool.
 
--   [Sending Requests for Web Services](#OtherUsagesofTCPMon-SendingRequestsforWebServices)
--   [As a Proxy](#OtherUsagesofTCPMon-AsaProxy)
--   [Advanced Settings](#OtherUsagesofTCPMon-AdvancedSettings)
+-   [Sending Requests for Web Services](#sending-requests-for-web-services)
+-   [As a Proxy](#as-a-proxy)
+-   [Advanced Settings](#advanced-settings)
 
+<a name="sending-requests-for-web-services"></a>
 #### Sending Requests for Web Services
 
 TCPMon can also be used as a request sender for Web services. The request SOAP message can be pasted on the send screen and sent directly to the server.
 
 ![](../../../assets/attachments/45946410/46206514.png)
 
+<a name="as-a-proxy"></a>
 #### As a Proxy
 
 TCPMon can act as a proxy. To start it in proxy mode, select the Proxy option. When acting as a proxy, TCPMon only needs the listener port to be configured.
 
 ![](../../../assets/attachments/45946410/46206513.png)
 
+<a name="advanced-settings"></a>
 #### Advanced Settings
 
 TCPMon can simulate a slow connection, in which case the delay and the bytes to be dropped can be configured. This is useful when testing Web services.

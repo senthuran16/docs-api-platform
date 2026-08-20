@@ -1,3 +1,18 @@
+---
+title: "Overriding Developer Portal theme"
+description: "Override Developer Portal look, feel, and behavior by editing the defaultTheme.js configuration file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Overriding Developer Portal Theme
 
 WSO2 provides the developers with an easier approach to customize the UI. You do not need to have React, CSS, or HTML knowledge to customize the UI. We have a single JSON file which holds the parameterized constraints of the look and feel. For example, you can change the font family via the JSON file so that the changes appear throughout the Developer Portal. When updating the Developer Portal theme, you can update not only the look and feel but also behaviors such as making the listing view default instead of grid view, hiding social features, etc.
@@ -39,6 +54,7 @@ Ex: Enable landing page. **defaultTheme.json** ( Teant theming ).
 ```
 ### Tenant Theming 
 
+<a name="uploading-devportal-theme-via-the-admin-portal-tenants-only"></a>
 #### Uploading Devportal theme via the Admin Portal (Tenants Only)
 
 **If you do not have access to the file system** , you can upload the Devportal theme via the Admin Portal as shown below:

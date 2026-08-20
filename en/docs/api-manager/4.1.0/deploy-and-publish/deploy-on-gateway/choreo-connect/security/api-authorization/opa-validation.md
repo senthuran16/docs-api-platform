@@ -1,3 +1,16 @@
+---
+title: "Validate request with open policy agent (OPA)"
+description: "Understand how Choreo Connect integrates with Open Policy Agent to offload authorization decisions for API requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/opa-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/opa-validation.md
+tags:
+  - open-policy-agent
+  - api-authorization
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Validate Request with Open Policy Agent (OPA)
 
 The [Open Policy Agent (OPA)](https://openpolicyagent.org/) is an open source, general-purpose policy engine that unifies policy enforcement. In Choreo Connect, you can offload some responsibility of making the decision to authorize or not when a consumer invokes APIs based on policies attached to APIs.
@@ -7,8 +20,8 @@ Choreo Connect uses OPA’s policy evaluation REST API interface to communicate 
 !!! tip
     You can deploy OPA server as a sidecar with Choreo Connect Runtime (Enforcer and Router) in a Kubernetes deployment, if you want to improve communication between Enforcer and OPA server.
 
-<a href="../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png">
-    <img src="../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png" alt="Choreo Connect OPA request flow" width="60%"/>
+<a href="../../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png">
+    <img src="../../../../../../assets/img/deploy/mgw/choreo-connect-opa-overview.png" alt="Choreo Connect OPA request flow" width="60%"/>
 </a>
 
 | Numbers | Description                                                                                                                                         |

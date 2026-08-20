@@ -1,3 +1,18 @@
+---
+title: "Deploying a REST API with a mock implementation"
+description: "Deploy a REST API with a mock implementation in Choreo Connect that returns OpenAPI example responses without a backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploying a REST API with a Mock Implementation
 
 In addition to exposing an existing backend implementation as an API, Choreo Connect is also capable of responding to HTTP requests even without a backend. By changing the endpoint type to **Mock Implementation**, you can make Choreo Connect read the examples you have provided in the OpenAPI definition and respond to each HTTP request accordingly. While it supports default responses, you can also request specific responses using the HTTP headers `Prefer` and `Accept`.
@@ -12,7 +27,7 @@ Pick a method given below to start creating an API with a Mock Implementation.
 ### Mock Implementation with OpenAPI examples
 
 !!! abstract
-    {!includes/design/add-oas-example.md!}
+    --8<-- "api-manager/4.1.0/includes/design/add-oas-example.md"
     
 ## Via WSO2 API Manager Publisher Portal
 ### Step 1 - Create a REST API
@@ -72,7 +87,7 @@ Invoke the API the using the commands given in the [Invoke the API](#invoke-the-
 
 1. Initialize an API Project.
 
-    Use the following command to initialize an API. This is a sample OpenAPI definition containing example responses that will be referred by Choreo Connect to respond to API calls. Refer to [Updating the OpenAPI definition to generate a Mock Implementation](#updating-the-openapi-definition-to-generate-a-mock-implementation) for more information.
+    Use the following command to initialize an API. This is a sample OpenAPI definition containing example responses that will be referred by Choreo Connect to respond to API calls. Refer to [Updating the OpenAPI definition to generate a Mock Implementation](#mock-implementation-with-openapi-examples) for more information.
 
     ```bash
     apictl init petstore --oas https://raw.githubusercontent.com/wso2/product-microgateway/main/samples/openAPI-definitions/mock-impl-sample.yaml
@@ -92,7 +107,7 @@ Invoke the API the using the commands given in the [Invoke the API](#invoke-the-
 
 ## Invoke the API
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
 
 Use the command given below to get the default response for the resource `/pet/findByStatus`.
 

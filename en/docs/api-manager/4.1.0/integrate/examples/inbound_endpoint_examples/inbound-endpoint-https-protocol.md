@@ -1,3 +1,18 @@
+---
+title: "Using the HTTPS inbound endpoint"
+description: "Configure an HTTPS inbound endpoint as a dynamic listener with keystore settings for secure message mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-https-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-https-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the HTTPS Inbound Endpoint
 This sample demonstrates how an HTTPS inbound endpoint can act as a
 dynamic HTTPS listener. Many HTTPS listeners can be added without

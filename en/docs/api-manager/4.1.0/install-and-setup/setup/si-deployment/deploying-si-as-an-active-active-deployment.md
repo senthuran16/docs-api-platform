@@ -1,3 +1,18 @@
+---
+title: "Active-Active deployment"
+description: "Configure the Streaming Integrator active-active deployment pattern with distributed aggregations for scalability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-deployment/deploying-si-as-an-active-active-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-deployment/deploying-si-as-an-active-active-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Active-Active Deployment
 
 The recommended deployment for WSO2 Streaming Integrator (SI) is the Minimum HA Deployment. However, that deployment pattern involves using only two nodes and it is

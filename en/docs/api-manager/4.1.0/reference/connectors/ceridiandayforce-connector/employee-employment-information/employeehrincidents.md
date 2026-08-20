@@ -1,3 +1,18 @@
+---
+title: "Working with employee HR incidents"
+description: "Retrieve HR incidents attached to an employee using the Dayforce connector's Employee HR Incidents operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeehrincidents/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeehrincidents.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee HR Incidents
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve hr incidents of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-hr-incidents"></a>
 #### Retrieving Employee HR Incidents
 We can use GET Employee HR Incidents operation with required parameters to search and find the hr incidents related to an employee.
 

@@ -1,3 +1,18 @@
+---
+title: "Translating message formats"
+description: "Use the Data Mapper mediator to transform a request payload into the format expected by a back-end service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/transforming-message-content/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/transforming-message-content.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - transforming-message-content
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Translating Message Formats
 
 ## What you'll build
@@ -61,11 +76,11 @@ An Integration project is a maven multi module project, which will contain all t
 1.  Open **WSO2 Integration Studio**.
 2.  Click **New Integration Project** in the **Getting Started** tab as shown below. 
 
-    <img src="../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
+    <img src="../../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
 
     This will open the <b>New Integration Project</b> dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
+    <img src="../../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
 
 3.  Enter `SampleServices` as the project name and select the following check boxes to create the required modules.
     -   **Create ESB Configs**
@@ -139,7 +154,7 @@ You will now see the projects listed in the **Project Explorer**.
     </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/119132155/119132164.png">
+    <img src="../../../assets/img/integrate/tutorials/119132155/119132164.png">
 
 #### Create new Endpoint
 
@@ -247,7 +262,7 @@ Let's configure the API resource with the data transformation logic.
         <td>
           <div class="content-wrapper">
             <p>Follow the steps given below to specify the expression value:</p>
-            <img src="../../assets/img/integrate/tutorials/119132155/expression-value.png">
+            <img src="../../../assets/img/integrate/tutorials/119132155/expression-value.png">
           <ol>
               <li>
                 Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.
@@ -269,7 +284,7 @@ Let's configure the API resource with the data transformation logic.
 3.  Add a **Data Mapper** mediator just after
     the Property mediator in the In Sequence of the API resource.
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/add-data-mapper.png">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/add-data-mapper.png">
 
 4.  Double-click the Data Mapper mediator icon and specify the following details:
     <table>
@@ -288,11 +303,11 @@ Let's configure the API resource with the data transformation logic.
       </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/119132196/119132224.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/119132196/119132224.png" width="500">
 
     Click **OK**. You can view the data mapping editor.  
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/data-mapper-canvas.png">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/data-mapper-canvas.png">
 
 5.  Create a JSON file (e.g., `input.json`) by copying the following sample content of the request message sent to the API resource and save it in your local file system.
 
@@ -320,7 +335,7 @@ Let's configure the API resource with the data transformation logic.
 
 8.  Click **file system** link in **Select resource from**, select the JSON file (i.e., `input.json` ) you saved in your local file system, and click **Open**. You can view the input format loaded in the **Input** box of the editor as shown below.
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/load-data-input-data-mapper.png" width="300">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/load-data-input-data-mapper.png" width="300">
 
 9.  Create another JSON file (e.g., `output.json`) by copying the following sample content of the request message expected by the back-end service and save it in your local file system.
 
@@ -347,7 +362,7 @@ Let's configure the API resource with the data transformation logic.
 
 12. Click the **file system** link in **Select resource from**, select the JSON file you saved in your local file system, and click **Open**. You can view the input format loaded in the **Output** box in the editor as shown below. 
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/load-data-output-data-mapper.png" width="300">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/load-data-output-data-mapper.png" width="300">
 
     !!! Info
         Check the **Input** and **Output** boxes with the sample messages to see if the element types (i.e. Arrays, Objects and Primitive values) are correctly identified. The following symbols will help you identify them correctly.
@@ -361,11 +376,11 @@ Let's configure the API resource with the data transformation logic.
     - If you click **Apply**, the mapping will be generated by the **AI Data Mapper**. You have the option to manually change the mapping after it is generated.
     - You can also manually draw the mapping by dragging arrows from the values in the **Input** box to the relevant values in the **Output** box.  
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/input-output-data-mapper.png">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/input-output-data-mapper.png">
 
     The completed mapping will look as follows:
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/mapping-data-input-output.png">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/mapping-data-input-output.png">
 
 14. Save and close the configuration.
 
@@ -389,15 +404,15 @@ Let's configure the API resource with the data transformation logic.
       </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/message-transformation/data-mapper-properties.png">
+    <img src="../../../assets/img/integrate/tutorials/message-transformation/data-mapper-properties.png">
 
 16.  Add a Call mediator from the **Mediators** palette and add the HospitalServicesEP endpoint from the **Defined Endpoints** palette to the empty box adjoining the Call mediator.
 
-      <img src="../../assets/img/integrate/tutorials/message-transformation/add-call-mediator-for-transformation.png">
+      <img src="../../../assets/img/integrate/tutorials/message-transformation/add-call-mediator-for-transformation.png">
 
 17. Add a **Respond mediator** next to the **Call** mediator to return the response from the health care service back to the client.
 
-      <img src="../../assets/img/integrate/tutorials/message-transformation/add-respond-mediator-for-transformation.png">
+      <img src="../../../assets/img/integrate/tutorials/message-transformation/add-respond-mediator-for-transformation.png">
     
 18. Save the REST API configuration.
 
@@ -505,7 +520,7 @@ Let's send a request to the API resource to make a reservation. You can use the 
      </table>
 
      <br/><br/>
-     <video src="../../assets/vids/surgery-reserve.webm" width="720" height="480" controls></video>
+     <video src="../../../assets/vids/surgery-reserve.webm" width="720" height="480" controls></video>
      <br/><br/>
      
 If you want to send the client request from your terminal:

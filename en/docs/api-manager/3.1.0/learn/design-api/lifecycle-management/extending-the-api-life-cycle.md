@@ -1,3 +1,18 @@
+---
+title: "Extending the API life cycle"
+description: "View and extend the XML-based default API lifecycle configuration and its extension points in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/lifecycle-management/extending-the-api-life-cycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/lifecycle-management/extending-the-api-life-cycle.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - lifecycle-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Extending the API Life Cycle
 
 -  [Default API Lifecycle in WSO2 API Manager](#default-api-lifecycle-in-wso2-api-manager)
@@ -166,7 +181,7 @@ With the integration of the registry life cycle to the API life cycle of API Man
 
 Following are some extention points where the default API life cycle can be extended by modifying above mentioned XML configuration of the API life cycle.
 
--   [Define your own life cycle states](../../../learn/design-api/lifecycle-management/customize-api-life-cycle/) in the API life cycle
+-   [Define your own life cycle states](customize-api-life-cycle.md) in the API life cycle
 -   Change the state transition events as per the environmental preferences
 -   Add custom checklist items for specific state transitions
 -   Change the execution code for each state transition

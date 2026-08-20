@@ -1,3 +1,18 @@
+---
+title: "Adapter log configurations"
+description: "Describes the log configuration parameters and sample TOML settings for the Choreo Connect Adapter component."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Adapter Log Configurations
 
 The log configurations file for the Adapter is located in [these directories](configure-logs-overview.md#log_config_toml) based on your Choreo Connect deployment method.

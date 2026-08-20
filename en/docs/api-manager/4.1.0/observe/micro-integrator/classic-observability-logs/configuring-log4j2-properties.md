@@ -1,3 +1,18 @@
+---
+title: "Configuring logs"
+description: "Explains Log4j2 loggers, appenders, and layouts used to configure server-side logging in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Configuring Logs
 
 ## Introduction
@@ -627,7 +642,7 @@ You can <b>dynamically</b> update the log level for a specific logger by using t
 1.  Sign in to the [Micro Integrator dashboard](../../mi-observe/working-with-monitoring-dashboard.md).
 2.  Click <b>Log Configs</b> on the left-hand navigator to open the <b>Logging Management</b> window.
 
-    <img alt="change log level from dashboard" src="../../../assets/img/integrate/monitoring-dashboard/change-log-level-dashboard.png">
+    <img alt="change log level from dashboard" src="../../../../assets/img/integrate/monitoring-dashboard/change-log-level-dashboard.png">
 
 3.  Use the <b>Search</b> option to find the required logger, and change the log level as shown above.
 

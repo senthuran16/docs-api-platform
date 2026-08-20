@@ -1,3 +1,18 @@
+---
+title: "Setting up ISO8583 connector"
+description: "Set up client libraries and a test server to configure the ISO8583 connector for financial transaction messaging."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Setting up ISO8583 Connector 
 
 ISO8583 is an international standard for financial transaction messaging protocol. It is the International Organization for Standardization standard for systems that exchange electronic transactions initiated by cardholders using payment cards.

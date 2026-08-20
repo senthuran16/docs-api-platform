@@ -1,3 +1,18 @@
+---
+title: "Endpoint timeouts"
+description: "Configure advanced endpoint timeout settings for production and sandbox endpoints in the API Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/resiliency/endpoint-timeouts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/resiliency/endpoint-timeouts.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - resiliency
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Endpoint Timeouts
 
 WSO2 API Manager allows you to control the production and sandbox endpoints using the Advanced Endpoint Configurations.
@@ -22,7 +37,7 @@ Configure the Advanced Endpoint Configurations as follows:
 
      The Advanced Endpoint Configurations page appears.
 
-    <a href="../../../assets/img/learn/advance-config-dialog.png"><img src="../../../assets/img/learn/advance-config-dialog.png" alt="Advanced endpoint configurations" width="60%"/></a>
+    <a href="../../../../assets/img/learn/advance-config-dialog.png"><img src="../../../../assets/img/learn/advance-config-dialog.png" alt="Advanced endpoint configurations" width="60%"/></a>
 
 The following are Advanced Endpoint Configurations that you can configure for both the production and sandbox endpoints.
 

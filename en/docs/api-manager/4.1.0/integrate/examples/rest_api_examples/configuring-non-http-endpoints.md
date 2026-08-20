@@ -1,3 +1,18 @@
+---
+title: "Exposing Non-HTTP services as RESTful APIs"
+description: "Configure a REST API in the Micro Integrator to forward messages to non-HTTP backend endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/configuring-non-http-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/configuring-non-http-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Exposing Non-HTTP Services as RESTful APIs
 This example demonstrates how the WSO2 Micro Integrator forwards messages to non-HTTP endpoints.
 

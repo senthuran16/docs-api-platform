@@ -1,3 +1,18 @@
+---
+title: "Proxy services"
+description: "Reference for the general and transport-specific properties used to configure a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/proxy-service-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/proxy-service-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - proxy-service-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Proxy Services
 ## Introduction
 
@@ -36,10 +51,10 @@ Listed below are the main properties that are required when [creating a proxy se
       The proxy service uses an <b>Endpoint</b> artifact inline to define the location to which messages should be routed. You can choose one of the following options to specify the endpoint.
       <ul>
         <li>Enter the URL of the endpoint.</li>
-        <li>If you have a <a href="../../integrate/develop/creating-artifacts/creating-endpoints.md">predefined <b>Endpoint</b></a> artifact in WSO2 Integration Studio, provide the name of the artifact.</li>
-        <li>If you have a predefined <b>Endpoint</b> artifact that is saved in the <a href="../../integrate/integration-key-concepts.md#registry">registry</a>, provide the link to the artifact.</li>
+        <li>If you have a <a href="../../../integrate/develop/creating-artifacts/creating-endpoints/">predefined <b>Endpoint</b></a> artifact in WSO2 Integration Studio, provide the name of the artifact.</li>
+        <li>If you have a predefined <b>Endpoint</b> artifact that is saved in the <a href="../../../integrate/integration-key-concepts/#registry">registry</a>, provide the link to the artifact.</li>
       </ul>
-      See <a href="endpoint-properties.md">Endpoint Properties</a> for the complete list of properties you can define for the Endpoint artifact.
+      See <a href="../endpoint-properties/">Endpoint Properties</a> for the complete list of properties you can define for the Endpoint artifact.
     </td>
   </tr>
 </table>

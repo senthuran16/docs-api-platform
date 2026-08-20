@@ -1,3 +1,18 @@
+---
+title: "API rate monetization sample"
+description: "Demonstrates how to define subscription tiers and connect to a billing engine to monetize APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-rate-monetization-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-rate-monetization-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-rate-monetization-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # API Rate Monetization Sample
 
 ### Usecase
@@ -26,7 +41,7 @@ ABC organization exposes the prices of their products through an API. The API is
 
 WSO2 API Manager has the following subscription tiers defined by default.
 
-![](../../assets/attachments/reference-sample-subscription-tiers)
+![](../../assets/attachments/reference-sample-subscription-tiers.png)
 
 You can add custom subscription tiers according your pricing requirements. You can also create a free subscription tier as a trail version, by limiting the number of requests and the consumption of resources. Once the  limit is exceeded, you can offer a pricing model or terminate the trial usage.
 

@@ -1,3 +1,18 @@
+---
+title: "Working with the design view"
+description: "Build Siddhi applications visually by adding and connecting components in the Design View."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/working-with-the-design-view/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/working-with-the-design-view.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - working-with-the-design-view
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Working with the Design View
 
 This section provides an overview of the design view of the Streaming Integrator Tooling.
@@ -7,7 +22,7 @@ This section provides an overview of the design view of the Streaming Integrato
 To open the design view of the Streaming Integrator Tooling:
 
 1.  Start the Streaming Integrator Tooling and log in with your credentials. For detailed instructions, see 
-    [Streaming Integrator Tooling Overview - Starting Streaming Integrator Tooling](streaming-integrator-studio-overview.md#starting-streaming-integration-studio).
+    [Streaming Integrator Tooling Overview - Starting Streaming Integrator Tooling](streaming-integrator-studio-overview.md#starting-streaming-integrator-tooling).
 
 2.  Click **New** and open a new Siddhi file, or click **Open** and open an existing Siddhi file.
 
@@ -43,7 +58,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/stream-icon.png" /></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/stream-icon.png" /></p>
             </div>
          </td>
       </tr>
@@ -59,14 +74,14 @@ to the grid of the design view when you create a Siddhi application.
                <p><strong>Stream Name</strong> <strong>:</strong> A unique name for the stream. This should be specified in title caps, and without spaces (e.g., <code>ProductionDataStream</code> ).</p>
                <p><strong>Attributes</strong> : Attributes of streams are specified as name and type pairs in the <strong>Attributes</strong> table.</p>
                <p>If you want to generate the stream from a file or a database, click <strong>Generate Stream</strong>. However, note that you need to create the relevant file or set up the database and the tables beforehand.</p>
-               <p><img src="../../assets/img/streaming/working-with-the design-view/Generate-Stream.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/Generate-Stream.png"/></p>
                <p>The <strong>Generate Stream</strong> form opens as follows</p>
-               <p><img src="../../assets/img/streaming/working-with-the design-view/generate-stream-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/generate-stream-form.png"/></p>
                <p>To generate the stream from a file:
                 <ol>
                 <li>In the <strong>Generate Stream</strong> form, select <strong>From File</strong>.</li>
                 <li><p>Then click <strong>Choose File</strong> and browse for the file from which you want to generate the stream. <br/> the supported file types are <code>CSV</code>, <code>JSON</code>, and <code>XML</code>. If you select a file that is not of one of these types, the <strong>Select File Type</strong> field is enabled as shown in the example below.</p>
-                    <p><img src="../../assets/img/streaming/working-with-the design-view/select-file-type.png"/></p>
+                    <p><img src="../../../assets/img/streaming/working-with-the design-view/select-file-type.png"/></p>
                     <p>You are required to select the appropriate file type in this field in order to proceed to generate the stream from the selected file.</p>
                     <p>The rest of the fields that appear in the dialog box differ based on the file type as explained below. If required, change the default values that appear in them as required</p>
                     <ul>
@@ -99,7 +114,7 @@ to the grid of the design view when you create a Siddhi application.
                     <li> Enter details relating to the data source as follows.</li>
                         <ul>
                             <li>If you are defining the data source configuration inline, enter information as follows:</li>
-                            <p><img src="../../assets/img/streaming/working-with-the design-view/generate-stream-with-inline-datasource-configuration.png"/></p>
+                            <p><img src="../../../assets/img/streaming/working-with-the design-view/generate-stream-with-inline-datasource-configuration.png"/></p>
                                 <ul>
                                     <li><strong>Stream Name</strong>: A name for the stream that you are generating.</li>
                                     <li><strong>Database URL</strong>: The URL via which you can connect to the database.</li>
@@ -108,7 +123,7 @@ to the grid of the design view when you create a Siddhi application.
                                     <li><strong>Table Name</strong>: The name of the database table from which you are generating the stream. To make the available tables appear in this field as a list so that you can select one, enter the relevant information in the previous fields and click <strong>Retrieve Tables</strong>.</li>
                                 </ul>
                             <li>If the data source you are using is already defined externally, enter information as follows:</li>
-                            <p><img src="../../assets/img/streaming/working-with-the design-view/generate-stream-with-externally-defined-datasource.png"/></p>
+                            <p><img src="../../../assets/img/streaming/working-with-the design-view/generate-stream-with-externally-defined-datasource.png"/></p>
                                 <ul>
                                     <li><strong>Stream Name</strong>: A name for the stream that you are generating.</li>
                                     <li><strong>Datasource Name</strong>: The name of the data source from which you are generating the stream.</li>
@@ -123,7 +138,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/stream-configuration.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/stream-configuration.png"/></p>
                <p>The details entered in the above <strong></strong> form creates a stream configuration as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -172,7 +187,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/source-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/source-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -200,7 +215,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/source-configuration.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/source-configuration.png"/></p>
                <p>The details entered in the above <strong></strong> form creates a source configuration as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -235,7 +250,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/sink-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/sink-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -263,7 +278,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/sink-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/sink-configuration-form.png"/></p>
                <p>The details entered in the above <strong></strong> form creates a sink configuration as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -297,7 +312,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/table-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/table-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -319,7 +334,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/table-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/table-configuration-form.png"/></p>
                <p>The details entered in the above <strong></strong> form creates a table definition as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -365,7 +380,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/window-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/window-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -390,7 +405,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/window-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/window-configuration-form.png"/></p>
                <p>The details entered in the above form creates a window definition as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -435,7 +450,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/trigger-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/trigger-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -466,7 +481,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>
             <div class="content-wrapper">
                <p><br /></p>
-               <img src="../../assets/img/streaming/working-with-the design-view/trigger-configuration-form.png"/>
+               <img src="../../../assets/img/streaming/working-with-the design-view/trigger-configuration-form.png"/>
                <p>The details entered in the above form creates a trigger definition as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -503,7 +518,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/trigger-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/trigger-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -535,7 +550,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>
             <div class="content-wrapper">
                <p><br /></p>
-               <img src="../../assets/img/streaming/working-with-the design-view/trigger-configuration-form.png"/>
+               <img src="../../../assets/img/streaming/working-with-the design-view/trigger-configuration-form.png"/>
                <p>The details entered in the above orm creates a trigger definition as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -574,7 +589,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/aggregation-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/aggregation-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -605,7 +620,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/aggregation-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/aggregation-configuration-form.png"/></p>
                <p>The details entered in the above form creates an aggregation definition as follows:<br /></p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -640,7 +655,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/function-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/function-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -664,7 +679,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/function-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/function-configuration-form.png"/></p>
                <p>The details entered in the above form creates a function definition as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -693,7 +708,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/projection-query-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/projection-query-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -736,7 +751,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/projection-query-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/projection-query-configuration-form.png"/></p>
                <p>The details entered in the above form creates a query as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -781,7 +796,7 @@ to the grid of the design view when you create a Siddhi application.
 <tr class="odd">
 <td>Icon</td>
 <td><div class="content-wrapper">
-<p><img src="../../assets/img/streaming/working-with-the design-view/filter-query-icon.png"/></p>
+<p><img src="../../../assets/img/streaming/working-with-the design-view/filter-query-icon.png"/></p>
 </div></td>
 </tr>
 <tr class="even">
@@ -820,7 +835,7 @@ to the grid of the design view when you create a Siddhi application.
 <tr class="even">
 <td>Example</td>
 <td><div class="content-wrapper">
-<p><img src="../../assets/img/streaming/working-with-the design-view/filter-query-configuration-form.png"/></p>
+<p><img src="../../../assets/img/streaming/working-with-the design-view/filter-query-configuration-form.png"/></p>
 <p>The details entered in the above form creates a query with a filter as follows:</p>
 <div class="code panel pdl" style="border-width: 1px;">
 <div class="codeContent panelContent pdl">
@@ -859,7 +874,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/window-query-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/window-query-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -907,7 +922,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/filter-query-configuration-form.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/filter-query-configuration-form.png"/></p>
                <p>The details entered in the above <strong>Query Configuration</strong> form creates a query with a window as follows:</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -957,7 +972,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/join-query-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/join-query-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -991,7 +1006,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>
             <div class="content-wrapper">
                <p>A join query is configured as follows:</p>
-               <p><strong><img src="../../assets/img/streaming/working-with-the design-view/join-query-configuration-form.png" /><br />
+               <p><strong><img src="../../../assets/img/streaming/working-with-the design-view/join-query-configuration-form.png" /><br />
                   </strong> The above configurations result in creating the following join query.
                </p>
                <div class="code panel pdl" style="border-width: 1px;">
@@ -1052,7 +1067,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/pattern-query-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/pattern-query-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -1096,7 +1111,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/pattern-query-configuration.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/pattern-query-configuration.png"/></p>
                <p>The above configuration results in creating the following query.</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -1149,7 +1164,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/sequence-query-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/sequence-query-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -1193,7 +1208,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/sequence-query-configuration.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/sequence-query-configuration.png"/></p>
                <p>The above configuration results in creating the following query.</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">
@@ -1245,7 +1260,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Icon</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/partition-query-icon.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/partition-query-icon.png"/></p>
             </div>
          </td>
       </tr>
@@ -1272,7 +1287,7 @@ to the grid of the design view when you create a Siddhi application.
          <td>Example</td>
          <td>
             <div class="content-wrapper">
-               <p><img src="../../assets/img/streaming/working-with-the design-view/partition-configuration.png"/></p>
+               <p><img src="../../../assets/img/streaming/working-with-the design-view/partition-configuration.png"/></p>
                <p>The above configuration creates the following partition query.</p>
                <div class="code panel pdl" style="border-width: 1px;">
                   <div class="codeContent panelContent pdl">

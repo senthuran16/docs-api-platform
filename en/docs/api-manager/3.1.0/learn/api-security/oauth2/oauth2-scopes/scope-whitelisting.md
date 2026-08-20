@@ -1,3 +1,18 @@
+---
+title: "Scope whitelisting"
+description: "Whitelist OAuth2 scopes to skip role validation for scopes such as openid that aren't tied to roles."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/oauth2-scopes/scope-whitelisting/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/oauth2-scopes/scope-whitelisting.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Scope Whitelisting
 
 A scope is not always used for controlling access to a resource. You can also use it to simply mark an access token. There are scopes that cannot be associated to roles (e.g., openid, device\_). Such scopes do not have to have roles associated with them. Skipping role validation for scopes is called scope whitelisting.

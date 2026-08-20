@@ -1,3 +1,18 @@
+---
+title: "Aggregate mediator"
+description: "Configure the Aggregate mediator to combine response messages split by the Clone or Iterate mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/aggregate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/aggregate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - aggregate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Aggregate Mediator
 
 The **Aggregate mediator** implements the [Aggregator enterprise integration pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/aggregator/). It
@@ -69,7 +84,7 @@ The parameters available for configuring the Aggregate mediator are as follows.
 <td><strong>On Complete</strong></td>
 <td><p>The sequence to run when the aggregation is complete. You can select one of the following options:</p>
 <ul>
-<li><strong>Anonymous</strong>: Select this value if you want to specify the sequence to run by adding child mediators to the Aggregate mediator instead of selecting an existing sequence. For example, if you want to send the aggregated message via the <a href="send-mediator.md">Send mediator</a>, you can add the Send mediator as a child mediator.</li>
+<li><strong>Anonymous</strong>: Select this value if you want to specify the sequence to run by adding child mediators to the Aggregate mediator instead of selecting an existing sequence. For example, if you want to send the aggregated message via the <a href="../send-mediator/">Send mediator</a>, you can add the Send mediator as a child mediator.</li>
 <li><strong>Pick from Registry</strong>: Select this option if you want to specify a sequence which is already defined and saved in the registry. You can select the sequence from the Configuration Registry or Governance Registry.</li>
 </ul></td>
 </tr>

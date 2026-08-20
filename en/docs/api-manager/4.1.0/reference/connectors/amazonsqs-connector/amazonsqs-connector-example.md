@@ -1,3 +1,18 @@
+---
+title: "AmazonSQS connector example"
+description: "Walks through building an integration that creates an Amazon SQS queue, sends a message, and forwards it to a backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # AmazonSQS Connector Example
 
 The WSO2 Amazon SQS connector allows you to access the exposed Amazon SQS API from an integration sequence.
@@ -8,7 +23,7 @@ This example explains how to use Amazon SQS Connector to create a queue in the A
 
 It has a single HTTP API resource, which is `sendToQueue`. 
 
-<img src="../../../assets/img/integrate/connectors/amazonsqs-connector.jpg" title="AmazonSQS-Connector" width="800" alt="AmazonSQS-Connector"/>
+<img src="../../../../assets/img/integrate/connectors/amazonsqs-connector.jpg" title="AmazonSQS-Connector" width="800" alt="AmazonSQS-Connector"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -33,10 +48,10 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md" 
 
 1. First let's create the following sequences, which are buildMessage, createQueue, sendMessage and ReceiveAndForwardMessage. Right click on the created Integration Project and select, -> **New** -> **Sequence** to create the Sequence. 
-    <img src="../../../assets/img/integrate/connectors/add-sequence.jpg" title="Adding a Sequence" width="800" alt="Adding a Sequence"/>
+    <img src="../../../../assets/img/integrate/connectors/add-sequence.jpg" title="Adding a Sequence" width="800" alt="Adding a Sequence"/>
 
 2. Provide the Sequence name as buildMessage. You can go to the source view of the XML configuration file of the API and copy the following configuration. In this sequence we are taking the user's input `companyName` and we build the message using a Payload Factory Mediator. 
     ```
@@ -158,14 +173,14 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
       </api>
     ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/amazonsqs-inbound-endpoint.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/amazonsqs-inbound-endpoint.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -175,7 +190,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

@@ -1,3 +1,18 @@
+---
+title: "Axis2 properties"
+description: "Reference for Axis2 properties used with the Property and Property Group mediators to configure the web services engine."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/axis2-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/axis2-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Axis2 Properties
 
 !!! Info
@@ -177,7 +192,7 @@ Axis2 properties allow you to configure the web services engine in WSO2 Micro In
 </tr>
 <tr class="odd">
 <td><p><strong>Description</strong></p></td>
-<td><p>The maximum number of threads that can be added for message consuming. See <a href="axis2-properties.md#concurrentconsumers">ConcurrentConsumers</a> .</p></td>
+<td><p>The maximum number of threads that can be added for message consuming. See <a href="#concurrentconsumers">ConcurrentConsumers</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Example</strong></p></td>

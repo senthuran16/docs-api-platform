@@ -1,3 +1,18 @@
+---
+title: "CI/CD for integrations - overview"
+description: "Understand the reference CI/CD implementation and project structure for Micro Integrator integrations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/integration-cicd-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/integration-cicd-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # CI/CD for Integrations - Overview
 
 Continuous integration(CI) and continuous deployment(CD) for Integration is a must for delivering changes more frequently and reliably.

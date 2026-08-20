@@ -1,3 +1,18 @@
+---
+title: "Troubleshooting WSO2 integration studio"
+description: "Troubleshoot common WSO2 Integration Studio errors such as refreshing artifacts, resetting views, and Docker image creation failures."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/troubleshooting-wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/troubleshooting-wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - troubleshooting-wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "troubleshooting"
+---
+
 # Troubleshooting WSO2 Integration Studio
 
 The following are some of the ways to troubleshoot errors that you may encounter when working with WSO2 Integration Studio.

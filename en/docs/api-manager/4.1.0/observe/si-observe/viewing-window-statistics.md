@@ -1,3 +1,18 @@
+---
+title: "Viewing window statistics"
+description: "Interpret the window statistics dashboard showing memory usage, latency, and throughput for Siddhi windows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/si-observe/viewing-window-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/si-observe/viewing-window-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-window-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Viewing Window Statistics
 
 ![Window statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/window_statistics_dashboard.jpg)

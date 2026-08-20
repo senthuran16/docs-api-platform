@@ -1,3 +1,18 @@
+---
+title: "Enabling SSL tunneling through a proxy server"
+description: "Set up Squid and configure the deployment.toml transport parameters to enable SSL tunneling through a proxy server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/enabling_ssl_tunneling_thru_proxy_server/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/enabling_ssl_tunneling_thru_proxy_server.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Enabling SSL Tunneling through a Proxy Server
 
 If your proxy service connects to a back-end server through a proxy server, you can enable secure socket layer (SSL) tunneling through the proxy server to prevent any intermediate proxy services from interfering with the communication. SSL tunneling is available when your proxy service uses either the **HTTP PassThrough** transport.

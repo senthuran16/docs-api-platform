@@ -1,3 +1,18 @@
+---
+title: "Scheduled task properties"
+description: "Reference the required and optional properties used to configure a scheduled task in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/scheduled-task-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/scheduled-task-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - scheduled-task-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 ## Introduction
 
 WSO2 Micro Integrator can be configured to execute tasks periodically. According to the default task scheduling implementation in WSO2 Micro Integrator, a task can be configured to inject messages, either to a defined endpoint, to a proxy service, or a specific sequence. If required, you can use a custom task scheduling implementation.
@@ -41,7 +56,7 @@ The following properties are required when [creating a scheduled task](../../int
       <tr class="odd">
          <td>Task Implementation</td>
          <td>The default task implementation class ( <code>                 org.apache.synapse.startup.tasks.MessageInjector                </code> ) of the Micro Integrator will be selected by default. This class simply injects a specified message into the Synapse environment when the server starts.<br />
-            If you are want to use a custom task implementation, see the instructions on <a href="../../integrate/develop/customizations/creating-custom-task-scheduling.md">writing tasks</a> .
+            If you are want to use a custom task implementation, see the instructions on <a href="../../../integrate/develop/customizations/creating-custom-task-scheduling/">writing tasks</a> .
          </td>
       </tr>
       <tr class="even">

@@ -1,3 +1,18 @@
+---
+title: "Viewing source statistics"
+description: "Interpret the source statistics dashboard showing source mapper throughput and latency for Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/si-observe/viewing-source-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/si-observe/viewing-source-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-source-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Viewing Source Statistics
 
 ![Source statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/source_statistics_dashboard.jpg)

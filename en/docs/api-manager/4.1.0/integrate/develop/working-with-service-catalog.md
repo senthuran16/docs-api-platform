@@ -1,3 +1,18 @@
+---
+title: "Publishing integrations to API Manager"
+description: "Publish a REST API artifact from WSO2 Integration Studio to the API management layer to make it discoverable."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/working-with-service-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/working-with-service-catalog.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - working-with-service-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publishing Integrations to the API Manager
 
 A REST API artifact you create from WSO2 Integration Studio is exposed to consumers when you run it on the Micro Integrator runtime. If you want to control and manage this API, and also expose it to an API marketplace where it becomes discoverable to a wider community of consumers, you need to publish this REST API to the API management layer (API-M runtime) of the product.
@@ -21,7 +36,7 @@ Develop a REST API artifact using WSO2 Integration Studio. This is your integrat
 
 When you create a REST API artifact from WSO2 Integration Studio, a **resources** folder with metadata files is created as shown below. This metadata is used by the API management runtime to generate the API proxy for the service.
 
-<img src="../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
+<img src="../../../assets/img/integrate/tutorials/service-catalog/metadata-folder-service-catalog.png" width="400">
 
 Update the metadata for your service as explained below.
 

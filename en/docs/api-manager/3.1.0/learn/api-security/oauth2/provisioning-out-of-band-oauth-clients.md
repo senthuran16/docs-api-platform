@@ -1,3 +1,18 @@
+---
+title: "Provisioning Out-of-Band OAuth2 clients"
+description: "Provision an OAuth2 client created outside the Developer Portal and associate it with an application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Provisioning Out-of-Band OAuth2 Clients
 
 When application keys are generated, an OAuth2 client is created underneath. The consumer key and consumer secret that appears under a key type belong to the OAuth2 client. There can be situations where an OAuth2 client is created elsewhere but needs to be associated with an application in the Developer Portal. These types of OAuth2 clients are referred to as **Out-of-Band OAuth2 Clients**. 
@@ -58,7 +73,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
         Note that the ability to provision Out-of-Band Auth client will only be available for the applications that you created **after** applying this configuration.
 
 
-3.  [Start the server](../../../install-and-setup/installation-guide/running-the-product/#starting-the-server).
+3.  [Start the server](../../../install-and-setup/install/running-the-product.md#starting-the-server).
 
 4.  Sign in to the Developer Portal.
 
@@ -66,7 +81,7 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
 5.  Create an application. 
      
-     For more information, see [Create Application](../../../learn/consume-api/manage-application/create-application).
+     For more information, see [Create Application](../../consume-api/manage-application/create-application.md).
     
 6.  Click on the respective application to view the credential details.
     
@@ -87,4 +102,4 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
 9. Click **Provide**.
 
-Now you have successfully mapped an out-of-band OAuth client to an application. Thereafter, you can [subscribe to an API](../../../learn/consume-api/manage-subscription/subscribe-to-an-api) via this application, [obtain an access token](../../../learn/consume-api/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens) for it, and [invoke the API](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console).
+Now you have successfully mapped an out-of-band OAuth client to an application. Thereafter, you can [subscribe to an API](../../consume-api/manage-subscription/subscribe-to-an-api.md) via this application, [obtain an access token](../../consume-api/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens.md) for it, and [invoke the API](../../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).

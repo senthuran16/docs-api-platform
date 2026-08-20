@@ -1,3 +1,18 @@
+---
+title: "Gateway threat protectors"
+description: "Combine regular expression, JSON, and XML threat protectors to secure the API Gateway from malicious requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Gateway Threat Protectors
 
 WSO2 API Manager has three types of threat protectors for the Gateway.
@@ -47,8 +62,8 @@ You can add custom sequences depending on the threats that you need to address. 
 2.  Go to **Runtime Configurations** Tab of the relevant API.
 3.  Click **Message Mediation** under **Request**.
       
-      <a href="../../../../assets/img/learn/request-message-mediation.png"><img src="../../../../assets/img/learn/request-message-mediation.png" width="70%"></a>
+      <a href="../../../../../assets/img/learn/request-message-mediation.png"><img src="../../../../../assets/img/learn/request-message-mediation.png" width="70%"></a>
 
 4.  Select and upload your custom sequence.
    
-      <a href="../../../../assets/img/learn/add-custom-mediation-policy.png"><img src="../../../../assets/img/learn/add-custom-mediation-policy.png" width="70%"></a>
+      <a href="../../../../../assets/img/learn/add-custom-mediation-policy.png"><img src="../../../../../assets/img/learn/add-custom-mediation-policy.png" width="70%"></a>

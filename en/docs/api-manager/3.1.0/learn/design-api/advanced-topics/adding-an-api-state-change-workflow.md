@@ -1,6 +1,21 @@
+---
+title: "Adding an API state change workflow"
+description: "Configure a custom approval workflow for API lifecycle state changes, such as publishing, using WSO2 EI or WSO2 BPS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/advanced-topics/adding-an-api-state-change-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/advanced-topics/adding-an-api-state-change-workflow.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an API State Change Workflow
 
-This section explains how to add a custom workflow to control the API state changes in the API Manager. Before you begin, see [Workflow Extensions](../../../learn/extensions/managing-workflow-extension/invoking-the-api-manager-from-the-bpel-engine) for more information on the different types of workflow executors, and also, see [API Lifecycle](../../../getting-started/key-concepts#api-lifecycle) to get a better understanding on the API states.
+This section explains how to add a custom workflow to control the API state changes in the API Manager. Before you begin, see [Workflow Extensions](../../../develop/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine.md) for more information on the different types of workflow executors, and also, see [API Lifecycle](../../../getting-started/key-concepts.md#api-lifecycle) to get a better understanding on the API states.
 
 !!! Note
 
@@ -11,7 +26,7 @@ This section explains how to add a custom workflow to control the API state chan
 1.  Download [WSO2 Enterprise Integrator (WSO2 EI)](https://wso2.com/integration).
 2.  Set an offset of 2 to the default BPS port in `<EI_HOME>/conf/carbon.xml` file. 
 
-     This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset).
+     This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md).
 
     ``` xml
     <Offset>2</Offset>
@@ -43,7 +58,7 @@ This section explains how to add a custom workflow to control the API state chan
 1.  Download [WSO2 Business Process Server](http://wso2.com/products/business-process-server/).
 2.  Set an offset of 2 to the default BPS port in the `<BPS_HOME>/repository/conf/carbon.xml` file. 
 
-     This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset).
+     This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md).
 
     ``` xml
     <Offset>2</Offset>
@@ -116,7 +131,7 @@ First, enable the API state change workflow.
 
 4.  Sign in to the API Publisher (`https://<Server Host>:9443/publisher`) and publish an API. 
 
-     For more information, see [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/) and [Publish an API](../../../learn/design-api/publish-api/publish-an-api/). 
+     For more information, see [Create a REST API](../create-api/create-a-rest-api.md) and [Publish an API](../publish-api/publish-an-api.md). 
      
 5. Click **Lifecycle**.
 

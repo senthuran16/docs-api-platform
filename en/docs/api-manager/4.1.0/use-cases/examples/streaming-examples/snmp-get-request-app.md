@@ -1,3 +1,18 @@
+---
+title: "Receiving custom key value events via SNMP"
+description: "Configure WSO2 Streaming Integrator to receive custom key-value events via an SNMP source using custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/snmp-get-request-app/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/snmp-get-request-app.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Custom Key Value Events via SNMP
 
 ## Purpose:

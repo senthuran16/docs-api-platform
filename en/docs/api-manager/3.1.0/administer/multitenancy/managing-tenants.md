@@ -1,3 +1,18 @@
+---
+title: "Managing tenants"
+description: "Add tenants, browse tenant developer portals, and delete tenants using the RemoteTenantManager admin service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/multitenancy/managing-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/multitenancy/managing-tenants.md
+tags:
+  - api-manager
+  - administer
+  - multitenancy
+  - managing-tenants
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Managing Tenants
 
 

@@ -1,3 +1,18 @@
+---
+title: "Creating custom widgets in analytics dashboards"
+description: "Generate and build a custom ReactJS widget to visualize data in API-M Analytics dashboards."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/creating-custom-widgets-in-analytics-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/creating-custom-widgets-in-analytics-dashboards.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - creating-custom-widgets-in-analytics-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 #Creating Custom Widgets
 
 In addition to already available widgets in the analytics dashboards, you can implement your own custom widget and use them across the dashboards.

@@ -1,3 +1,18 @@
+---
+title: "REST API guide overview"
+description: "Lists the REST API categories supported for WSO2 Streaming Integrator, including Siddhi application and store APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/rest-api-guide-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/rest-api-guide-overview.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - rest-api-guide-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # REST API Guide Overview
 
 The following REST API categories are supported for WSO2 Streaming Integrator:

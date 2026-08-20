@@ -1,7 +1,22 @@
+---
+title: "Write a client application using the SDK"
+description: "Generate a Java client SDK for a subscribed API, build it with Maven, and call the API from custom client application code."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/generating-sdks/write-a-client-application-using-the-sdk/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/generating-sdks/write-a-client-application-using-the-sdk.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - generating-sdks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Write a Client Application Using the SDK
 
 
-1.  Follow the steps in the [Quick Start Guide](../../../GettingStarted/quick-start-guide), to deploy the sample API, subscribe and generate keys.
+1.  Follow the steps in the [Quick Start Guide](../../../getting-started/quick-start-guide.md), to deploy the sample API, subscribe and generate keys.
 
     <div class="admonition info">
         <p class="admonition-title">Info</p>
@@ -9,7 +24,7 @@
         <p>Once the keys are generated, copy the access token. You can use this token to invoke APIs that you subscribe to using the same application.</p>
     </div>
 
-2.  Go to the Developer Portal. Select your API and [download the SDK for Java](../../../learn/consume-api/generating-sdks/generate-sdks-in-dev-portal/). 
+2.  Go to the Developer Portal. Select your API and [download the SDK for Java](generate-sdks-in-dev-portal.md). 
 
 ![Default SDKs in Developer Portal](../../../assets/img/learn/default-sdks.png)
 
@@ -140,7 +155,7 @@
 
     <div class="admonition warning">
         <p class="admonition-title">Warning</p>
-        <p>You need an access token to invoke the API. It is important to have a valid subscription before using the SDK, to obtain an access token. Note that the obtained access token has an [expiration time](/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time).</p>
+        <p>You need an access token to invoke the API. It is important to have a valid subscription before using the SDK, to obtain an access token. Note that the obtained access token has an [expiration time](../manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time.md).</p>
     </div>
     
 9.  Set the base path to the API client.

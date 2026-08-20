@@ -1,3 +1,18 @@
+---
+title: "Application keys"
+description: "Generate and renew production or sandbox application keys, including PKCE and Okta key generation options."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-application/generate-keys/generate-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-application/generate-keys/generate-api-keys.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - generate-keys
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Application Keys
 
 An API Access Token/Key is a string that is passed as an HTTP header of an API request. WSO2 API-M provides OAuth2.0 bearer token-based authentication for API access, and the API key has to be submitted alongside the API request in order to authenticate the access.
@@ -29,7 +44,7 @@ Follow the instructions below to generate/renew application keys:
     
 5. Copy the generated JWT Access Token that appears so that you can use it in the future.
 
-      <a href="../../../assets/img/learn/jwt-access-token.png" ><img src="../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
+      <a href="../../../../assets/img/learn/jwt-access-token.png" ><img src="../../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
      
      After the keys are generated, you can find the consumer key and consumer secret pair via the application details page.
      

@@ -1,3 +1,18 @@
+---
+title: "Input validators"
+description: "Reference the built-in input validators available for validating request parameters in a data service query."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/input-validators/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/input-validators.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Input Validators
 
 Validators are added to individual input mappings in a query. Input

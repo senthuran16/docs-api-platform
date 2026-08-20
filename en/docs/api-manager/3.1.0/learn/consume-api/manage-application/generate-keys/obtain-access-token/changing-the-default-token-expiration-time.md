@@ -1,3 +1,18 @@
+---
+title: "Changing the default token expiration time"
+description: "Change the default expiration time for application, user, and refresh access tokens in the deployment.toml configuration file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Changing the Default Token Expiration Time
 
 Follow the instructions below to change the default token expiry time based on your requirements.
@@ -53,4 +68,4 @@ Refresh access tokens have an expiration time, which is set to 24 hours by defau
         refresh_token_validity = 86400
     ```
 
-In addition, see [Configuring Caching](../../../../../administer/product-configurations/configuring-caching/) for several caching options that you can use to optimize key validation.
+In addition, see [Configuring Caching](../../../../../install-and-setup/setup/advance-configurations/configuring-caching.md) for several caching options that you can use to optimize key validation.

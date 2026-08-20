@@ -1,3 +1,18 @@
+---
+title: "Scenario 12 - guaranteed message delivery"
+description: "Use a Message Store and Message Processor in Micro Integrator to guarantee delivery when a backend is down."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario12-message-delivery/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario12-message-delivery.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario12-message-delivery
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Scenario 12 - Guaranteed Message Delivery
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to guarantee message delivery. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).
@@ -12,7 +27,7 @@ Store and forward messaging pattern is used to ensure guaranteed delivery of mes
 
 This will be implemented with Message Store and Message Processor in Micro Integrator. Whenever the catering system is down, the messages will be stored in the Message Store. When the system becomes available again, the stored messages will be sent to the Catering system.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario12.png" alt="Guaranteed Message Delivery" title="Guaranteed Message Delivery" width="60%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario12.png" alt="Guaranteed Message Delivery" title="Guaranteed Message Delivery" width="60%" />
 
 If you look at the `docker-compose.yml` file, you can see that ``CATERING_SERVICE_EP`` is defined as `http://www.urldoesnotexist.com` under mi-runtime service. If you send a request to this endpoint, it will fail and the message will be stored in the Message Store database.
 

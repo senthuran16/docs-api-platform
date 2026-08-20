@@ -1,3 +1,18 @@
+---
+title: "Passing enduser attributes to the backend using JWT"
+description: "Configure the API Gateway to generate and pass a JWT containing end-user and application claims to the backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/passing-end-user-attributes-to-the-backend/passing-enduser-attributes-to-the-backend-using-jwt/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/passing-end-user-attributes-to-the-backend/passing-enduser-attributes-to-the-backend-using-jwt.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - passing-end-user-attributes-to-the-backend
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Passing Enduser Attributes to the Backend Using JWT
 
 **JSON Web Token (JWT)** is used to represent claims that are transferred between two parties such as the end user and the backend.
@@ -48,7 +63,7 @@ Let's see how to enable and pass information in the JWT or completely alter the 
 Before passing end-user attributes, you need to enable and configure the JWT implementation in the `<API-M_HOME>/repository/conf/deployment.toml` file. The relevant elements are described below. If you do not configure these elements, they take their default values.
 
 !!! note
-    Enable JWT in all Gateway and Key Manager nodes. For more information on setting up a distributed deployment of API Manager, see [Deploying WSO2 API-M in a Distributed Setup](../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup).
+    Enable JWT in all Gateway and Key Manager nodes. For more information on setting up a distributed deployment of API Manager, see [Deploying WSO2 API-M in a Distributed Setup](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md).
 
 
 <table>

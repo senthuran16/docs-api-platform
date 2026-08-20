@@ -1,3 +1,18 @@
+---
+title: "Create and publish an AWS lambda API"
+description: "Create a REST API, add an AWS Lambda endpoint, map function ARNs to resources, and publish the API for consumption."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/tutorials/create-and-publish-awslambda-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/tutorials/create-and-publish-awslambda-api.md
+tags:
+  - api-manager
+  - learn
+  - tutorials
+  - create-and-publish-awslambda-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Create and Publish an AWS Lambda API
 
 When using AWS Lambda, you can execute your code without having to manage or provision servers. For more information on AWS Lambda, see [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
@@ -18,7 +33,7 @@ Follow the steps below to create and publish an AWS Lambda API:
 
     !!!note
          **You do not need to enter the Endpoint during the initial process of creating the API.**
-         For more information on the possible API details that you can add, see [Create a REST API](../../learn/design-api/create-api/create-a-rest-api)
+         For more information on the possible API details that you can add, see [Create a REST API](../design-api/create-api/create-a-rest-api.md)
 
 Now, you have created a new REST API successfully. 
 

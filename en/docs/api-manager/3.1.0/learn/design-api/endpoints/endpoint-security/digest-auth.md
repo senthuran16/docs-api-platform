@@ -1,3 +1,18 @@
+---
+title: "Secure an endpoint with digest auth"
+description: "Configure Digest Authentication as the endpoint security type to hash credentials before sending them to the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/endpoint-security/digest-auth/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/endpoint-security/digest-auth.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Secure Endpoint with Digest Auth
 
 A secured endpoint is where we have access-protected resources. You have to specify the username and the password when a request is sent to a secured endpoint.  The endpoint authentication mechanism can either be Basic Authentication or Digest Authentication. They differ on how the credentials are communicated and how access is granted by the backend server. 
@@ -13,7 +28,7 @@ Digest Authentication applies a hash function to the username and the password b
 
 Digest Authentication is safer than Basic Authentication, which uses unencrypted base64 encoding instead of a hashing mechanism.
 
-When you [create an API](../../../../learn/design-api/create-api/create-a-rest-api) using the API Publisher, you can specify the endpoint of the API backend implementation via the **Endpoint** page as Production and Sandbox endpoints.
+When you [create an API](../../create-api/create-a-rest-api.md) using the API Publisher, you can specify the endpoint of the API backend implementation via the **Endpoint** page as Production and Sandbox endpoints.
 
 Follow the instructions below to use Digest Auth as the endpoint authentication type when using a secured endpoint:
 

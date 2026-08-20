@@ -1,3 +1,18 @@
+---
+title: "Publishing data"
+description: "Shows how to publish processed events to destinations and messaging systems using WSO2 Streaming Integrator sinks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/publishing-data-to-event-stream-consumers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/publishing-data-to-event-stream-consumers.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - publishing-data-to-event-stream-consumers
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publishing Data
 
 This guide covers how WSO2 Streaming Integrator publishes data to destinations and messaging systems.

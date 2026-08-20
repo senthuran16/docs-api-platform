@@ -1,6 +1,20 @@
+---
+title: "Vendor specific extensions"
+description: "Reference for the vendor-specific OpenAPI extensions, such as x-auth-type and x-throttling-tier, supported by API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/vendor-extensions-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/vendor-extensions-catalog.md
+tags:
+  - api-manager
+  - reference
+  - vendor-extensions-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Vendor Specific Extensions
  
-WSO2 API Manager utilizes the vendor extensions support in [Open API specification](#https://swagger.io/docs/specification/openapi-extensions/), to store operations such as throttling, against each API.
+WSO2 API Manager utilizes the vendor extensions support in [Open API specification](https://swagger.io/docs/specification/openapi-extensions/), to store operations such as throttling, against each API.
 As per the current implementation, following extensions are supported by API Manager:
 
   - [x-auth-type](#x-auth-type)

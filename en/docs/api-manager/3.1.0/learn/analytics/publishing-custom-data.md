@@ -1,3 +1,18 @@
+---
+title: "Publishing custom attributes"
+description: "Publish and persist custom attributes for an API call to the Analytics Server using custom mediation sequences."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/publishing-custom-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/publishing-custom-data.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - publishing-custom-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publishing Custom Attributes 
 
 WSO2 API Manager's gateway component publishes attributes related to each API call to the Analytics Server. These details are published in the form of events and then summarized and persisted in the database. However, not all information related to the request is published to the Analytics Server by default (e.g header, payload). 
@@ -33,7 +48,7 @@ Following is a sample sequence for the response path. Note the property named <b
 </sequence>
 ```
 
-Once the sequences are created, they can be engaged to the in-sequence or out-sequence via the publisher portal. More information on engaging custom sequences can be found [here](../../learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests/#changing-the-default-mediation-flow-of-api-requests). 
+Once the sequences are created, they can be engaged to the in-sequence or out-sequence via the publisher portal. More information on engaging custom sequences can be found [here](../api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests.md#changing-the-default-mediation-flow-of-api-requests). 
 
 
 ## Persisting published custom attributes 

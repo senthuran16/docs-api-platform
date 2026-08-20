@@ -1,3 +1,18 @@
+---
+title: "Salesforce connectors overview"
+description: "Overview of the Salesforce, Salesforce REST, and SalesforceBulk connectors available for integrating with Salesforce CRM data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/sf-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/sf-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Salesforce Connectors Overview
 
 Salesforce is a Customer Relationship Management (CRM) solution that helps bridge the gap between customers and enterprises. This enables you to integrate with Salesforce and perform various actions with ease. This is done using connectors that interact with available Salesforce APIs. 
@@ -6,7 +21,7 @@ Salesforce is a Customer Relationship Management (CRM) solution that helps bridg
 
 To see the available Salesforce connectors, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "Salesforce". You get the following connectors:
 
-<img src="../../../assets/img/integrate/connectors/sf-connector-store.png" title="Salesforce Connector Store" width="800" alt="Salesforce Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/sf-connector-store.png" title="Salesforce Connector Store" width="800" alt="Salesforce Connector Store"/>
 
 ### Salesforce Connector
 

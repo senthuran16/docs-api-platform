@@ -1,3 +1,18 @@
+---
+title: "Understanding the distributed deployment of WSO2 API-M"
+description: "Learn the components, datastores, and database usage patterns behind a WSO2 API Manager distributed deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Understanding the Distributed Deployment of WSO2 API-M
 
 Before understanding how to deploy WSO2 API Manager (WSO2 API-M), let's understand the WSO2 API-M distributed deployment better.

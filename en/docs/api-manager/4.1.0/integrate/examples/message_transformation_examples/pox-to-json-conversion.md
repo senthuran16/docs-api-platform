@@ -1,3 +1,18 @@
+---
+title: "Converting POX messages to JSON"
+description: "Convert POX messages to JSON using the messageType property and the Respond mediator in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_transformation_examples/pox-to-json-conversion/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_transformation_examples/pox-to-json-conversion.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_transformation_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Converting POX Messages to JSON 
 
 The following examples explain different methods of converting POX messages to JSON using the Micro Integrator.

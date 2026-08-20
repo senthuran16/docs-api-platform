@@ -1,3 +1,18 @@
+---
+title: "Receiving binary events via Kafka"
+description: "Configure WSO2 Streaming Integrator to receive binary-format events over Kafka and log the output to the console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/receive-kafka-in-binary-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/receive-kafka-in-binary-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Binary Events via Kafka
 
 ## Purpose:

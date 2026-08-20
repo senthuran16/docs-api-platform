@@ -1,3 +1,18 @@
+---
+title: "Siddhi application management APIs"
+description: "Reference for the REST APIs used to create, update, delete, and manage Siddhi applications in the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/siddhi-application-management-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/siddhi-application-management-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - siddhi-application-management-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Siddhi Application Management APIs
 
 ## Creating a Siddhi application
@@ -732,7 +747,7 @@ The output can be one of the following:
 ## Restoring a Siddhi Application via a snapshot
 
 !!! info
-    In order to call this API, you need to have already taken a snapshot of the Siddhi application to be restored. For more information about the API via which the snapshot is taken, see [Taking a snapshot of a Siddhi application](#SiddhiApplicationManagementAPIs-Snapshot).
+    In order to call this API, you need to have already taken a snapshot of the Siddhi application to be restored. For more information about the API via which the snapshot is taken, see [Taking a snapshot of a Siddhi application](#taking-a-snapshot-of-a-siddhi-application).
 
 ### Overview
 

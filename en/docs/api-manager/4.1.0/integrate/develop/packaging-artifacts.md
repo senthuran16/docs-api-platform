@@ -1,3 +1,18 @@
+---
+title: "Packaging synapse artifacts"
+description: "Package Synapse artifacts into a composite application project using an existing or new composite application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/packaging-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/packaging-artifacts.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - packaging-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Packaging Synapse Artifacts
 
 To package Synapse artifacts, you need to create a Composite Application Project. Use one of the following methods:

@@ -1,3 +1,18 @@
+---
+title: "Monetizing an API"
+description: "Configure the Stripe billing engine and monetize an API end-to-end using WSO2 API Manager's monetization capability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-monetization/monetizing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-monetization/monetizing-an-api.md
+tags:
+  - api-manager
+  - learn
+  - api-monetization
+  - monetizing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Monetizing an API
 
 API Monetization allows organizations to expand their business and generate higher revenue by exposing their services and data via APIs. API Publishers can publish their APIs with competitive business plans to the Developer Portal. Thereafter, API subscribers (e.g., Application Developers) can discover, subscribe, and invoke these monetized APIs, and pay for their API usage based on dynamic or fixed business plans.
@@ -715,7 +730,7 @@ When working with API Monetization that involves dynamic business plans (usage-b
 
 2.  Create a subscription policy.  
      
-     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](/learn/rate-limiting/adding-new-throttling-policies#Adding-a-new-subscription---level-throttling-tier).
+     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-throttling-tier).
 
      <html>
       <div class="admonition note">
@@ -758,7 +773,7 @@ When working with API Monetization that involves dynamic business plans (usage-b
 
 ### Step 3 - Subscribe to a monetized API
 
-[Subscribe to an API](../../learn/consume-api/manage-subscription/subscribe-to-an-api) and invoke the API. The price of the business plan appears when subscribing to an API. Therefore, the Subscriber can select an appropriate plan and subscribe to it. 
+[Subscribe to an API](../consume-api/manage-subscription/subscribe-to-an-api.md) and invoke the API. The price of the business plan appears when subscribing to an API. Therefore, the Subscriber can select an appropriate plan and subscribe to it. 
 
 When subscribing to an API, simultaneously a customer is created in the Stripe platform account (e.g., the Stripe account is created for the Tenant Admin). The following screenshot shows the customer record in the platform Stripe account.
 
@@ -793,7 +808,7 @@ You can use the admin REST API, which is available in WSO2 API Manager, to publi
 
 1.  Obtain the consumer key and secret key pair by calling the dynamic client registration endpoint.  
      
-     For more information, see [Admin REST API v1.0](../../develop/product-apis/admin-apis/admin-v1/admin-v1/).
+     For more information, see [Admin REST API v1.0](../../wip/apis/admin-v1.md).
 
     ``` java
     curl -X POST -H "Authorization: Basic <base64encoded-admin-account-credentials>" -H "Content-Type: application/json" -d @payload.json https://localhost:9443/client-registration/v0.16/register

@@ -1,3 +1,17 @@
+---
+title: "Access the MI analytics portal"
+description: "Explains how to access and use the MI Analytics portal to monitor statistics and trace messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/mi-analytics/using-the-analytics-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/mi-analytics/using-the-analytics-dashboard.md
+tags:
+  - api-manager
+  - mi-analytics
+  - using-the-analytics-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Access the MI Analytics Portal
 
 Let's use **MI Analytics** to view and monitor **statistics** and **message tracing**.
@@ -40,7 +54,7 @@ Let's start the servers in the given order.
 ### Step 1.1 - Start the Analytics Server
 
 !!! Note
-    Be sure to start the **Analytics** server before [starting the Micro Integrator](#starting-the-micro-integrator).
+    Be sure to start the **Analytics** server before [starting the Micro Integrator](#step-12-start-the-micro-integrator).
 
 1.  Open a terminal and navigate to the `<MI_ANALYTICS_HOME>/bin` directory.
 2.  Start the Analytics server by executing the following command:
@@ -55,7 +69,7 @@ Let's start the servers in the given order.
 
 ### Step 1.2 - Start the Micro Integrator
 
-Once you have [started the Analytics Server](#starting-the-analytics-server), you can [start the Micro Integrator](../install-and-setup/install/installing-the-product/installing-mi.md).
+Once you have [started the Analytics Server](#step-11-start-the-analytics-server), you can [start the Micro Integrator](../install-and-setup/install/installing-the-product/installing-mi.md).
 
 ### Step 1.3 - Start the Analytics Portal
 
@@ -73,7 +87,7 @@ Once you have [started the Analytics Server](#starting-the-analytics-server), yo
 In a new browser window or tab, open the Analytics Portal using the following URL: https://localhost:9645/analytics-dashboard. 
 Use `admin` for both the username and password.
 
-<img src="../assets/img/integrate/mi-analytics/dashboard-login.png" width="500">
+<img src="../../assets/img/integrate/mi-analytics/dashboard-login.png" width="500">
 
 ## Step 2 - Publish statistics to the Portal
 

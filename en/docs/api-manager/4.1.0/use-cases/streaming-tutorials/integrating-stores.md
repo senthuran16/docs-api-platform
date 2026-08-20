@@ -1,3 +1,18 @@
+---
+title: "Integrating data stores in streaming integration"
+description: "Perform CRUD operations against multiple data stores in a streaming integration scenario using Siddhi."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-tutorials/integrating-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-tutorials/integrating-stores.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - integrating-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "tutorial"
+---
+
 # Integrating Data Stores in Streaming Integration
 
 ## Introduction

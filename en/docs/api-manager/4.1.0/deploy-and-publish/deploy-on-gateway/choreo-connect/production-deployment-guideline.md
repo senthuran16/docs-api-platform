@@ -1,3 +1,18 @@
+---
+title: "Production deployment guideline"
+description: "Follow guidelines for deploying Choreo Connect on Kubernetes in a production environment, including keystore configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Production Deployment Guideline
 
 Kubernetes should be used for Choreo Connect production deployments. The common guidelines for deploying Choreo Connect in a production environment using the [Helm deployment option](getting-started/deploy/cc-deploy-overview.md) provided below.
@@ -70,7 +85,7 @@ openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 \
 
 By default, **SSL Hostnames** for adapter and enforcer is `adapter` and `enforcer`, in case if you want to have your own SAN names in the certificates, update the following values in the helm release with the SAN names in the certificates.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```bash tab='Format'
 wso2.deployment.adapter.security.sslHostname=<ADAPTER_HOST_NAME>
@@ -109,7 +124,7 @@ kubectl create secret tls router-keystore -n $NAMESPACE_OF_CC --cert=certs/route
 
 You can set the keystore secrets in the same namespace that Choreo Connect is going to be installed. Set the following values.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```yaml tab='Format'
         keystore:
@@ -172,7 +187,7 @@ When you update the Keystore of any component, the **Truststore of other compone
 You can explicitly mount certs to the truststore of each component.
 The following is a sample how to define the truststore. If you have created a secret in **the same namespace** that Choreo Connect going to be installed, you can refer them in the config as follows.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```yaml tab='Format'
 ...:
@@ -274,7 +289,7 @@ wso2:
                 key: tm_password
 ```
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 Following are the default values, update to read them from a Kubernetes secret.
 
@@ -326,7 +341,7 @@ Refer the document [Generate a Test JWT](security/generate-a-test-jwt.md) to rea
 
 Set the following value to `false` when installing the helm chart or set it in the values.yaml file.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```bash
 wso2.deployment.gatewayRuntime.enforcer.security.testTokenIssuer.enabled=false
@@ -447,7 +462,7 @@ docker build -t myimages/choreo-connect-adapter-petstore:{{choreo_connect.versio
 
 Update the following values in the helm release with the Adapter docker image, image pull secrets. You can separate each gateway environments by specifying the value `wso2.deployment.labelName`.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 !!! important
     Make sure to set `wso2.deployment.adapter.apiArtifactsMountEmptyDir=false`. This field is available from Helm chart version `1.1.0.5`.
@@ -503,7 +518,7 @@ wso2:
 Since we want to make our gateway immutable, we can disable the Adapter Rest API which is used by the `apictl` communicate the Choreo Connect to
 deploy, undeploy APIs. Update the following value of the helm release for that purpose.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.1.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```bash
 wso2.deployment.adapter.security.adapterRestService.enabled="false"

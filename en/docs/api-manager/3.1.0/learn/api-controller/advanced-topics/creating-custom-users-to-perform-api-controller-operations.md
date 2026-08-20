@@ -1,3 +1,18 @@
+---
+title: "Creating custom users to perform API controller operations"
+description: "Create a custom user role with the permissions and scopes required to perform API Controller operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 #  Creating Custom Users to Perform API Controller Operations
 
 To perform tasks using the API Controller, a particular user must have required permissions and scopes. By default, a user with `admin` role is allowed perform all the tasks. 
@@ -7,7 +22,7 @@ To perform tasks using the API Controller, a particular user must have required 
 1. Create a role named `custom_role` with `API Create`, `API Publish` and `API Subscribe` permissions (along with `Login` permission) and assign it to a user.
 
     !!! tip
-        Refer [Managing Users and Roles](../../../administer/product-administration/managing-users-and-roles/introduction-to-user-management/) to learn how to create a user role with permissions and assign it to a user.
+        Refer [Managing Users and Roles](../../../administer/managing-users-and-roles/introduction-to-user-management.md) to learn how to create a user role with permissions and assign it to a user.
 
 2.  Assigning the required scopes for the `custom_role` can be done using 2 methods.
 

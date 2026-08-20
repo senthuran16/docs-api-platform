@@ -1,3 +1,18 @@
+---
+title: "Sending a simple message to a service"
+description: "Create a REST API resource that forwards client requests to a backend microservice and returns its response."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-service.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - sending-a-simple-message-to-a-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Sending a Simple Message to a Service
 
 ## What you'll build
@@ -30,11 +45,11 @@ An Integration project is a maven multi module project, which will contain all t
 1.  Open **WSO2 Integration Studio**.
 2.  Click **New Integration Project** in the **Getting Started** tab as shown below. 
 
-    <img src="../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
+    <img src="../../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
 
     This will open the <b>New Integration Project</b> dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
+    <img src="../../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
 
 3.  Enter `SampleServices` as the project name and select the following check boxes to create the required modules.
     -   **Create ESB Configs**
@@ -133,7 +148,7 @@ A REST API is required for receiving the client response and the REST resource w
       </tr>
     </table>
                                                                                                                                                                                    |
-    <img src="../../assets/img/integrate/tutorials/119132413/create-rest-api.png" width="500">
+    <img src="../../../assets/img/integrate/tutorials/119132413/create-rest-api.png" width="500">
 
 4.  Click **Finish**.
 
@@ -146,7 +161,7 @@ Once the API resource is created, the design view of the `           HealthcareA
     - The middle part of the canvas is the **Out sequence**, which controls how responses are handled. In this case, a **Send** mediator is already in place to send responses back to the requesting client.
     - The bottom part of the canvas is the **Fault sequence**, which allows you to configure how to handle messages when an error occurs (for more information, see [Error Handling](../../troubleshooting/error-handling-mi.md)).
 
-<img src="../../assets/img/integrate/tutorials/119132413/119132425.png">
+<img src="../../../assets/img/integrate/tutorials/119132413/119132425.png">
 
 You can now start configuring the API resource.
 
@@ -179,7 +194,7 @@ You can now start configuring the API resource.
       </tr>
     </table>
 
-    <img src="../../assets/img/integrate/tutorials/119132413/119132424.png">
+    <img src="../../../assets/img/integrate/tutorials/119132413/119132424.png">
 
 3.  You can now configure the In sequence to handle requests from the client:
 
@@ -218,7 +233,7 @@ You can now start configuring the API resource.
          </td>
          <td>
             <div class="content-wrapper">
-               To extract the stock symbol from the request and print a welcome message in the log, click the plus icon (<img src="../../assets/img/integrate/tutorials/common/plus-icon.png" width="30">) in the <strong>Properties</strong> section, and then add the following values:<br />
+               To extract the stock symbol from the request and print a welcome message in the log, click the plus icon (<img src="../../../assets/img/integrate/tutorials/common/plus-icon.png" width="30">) in the <strong>Properties</strong> section, and then add the following values:<br />
                <ul>
                   <li><strong>Name</strong>: <code>Log Property message</code></li>
                   <li><strong>Type</strong>: <code>LITERAL</code><br />
@@ -226,7 +241,7 @@ You can now start configuring the API resource.
                   </li>
                   <li><strong>Value/Expression</strong> : <code>"Welcome to HealthcareService"</code></li>
                </ul>
-               <p><img src="../../assets/img/integrate/tutorials/119132413/119132423.png"/></p>
+               <p><img src="../../../assets/img/integrate/tutorials/119132413/119132423.png"/></p>
             </div>
          </td>
       </tr>
@@ -316,7 +331,7 @@ Let's send the request to the API. You can use the embedded <b>HTTP Client</b> o
      </table>
 
      <br/><br/>
-     <video src="../../assets/vids/query-doctor-surgery.webm" width="720" height="480" controls></video>
+     <video src="../../../assets/vids/query-doctor-surgery.webm" width="720" height="480" controls></video>
      <br/><br/>
      
 If you want to send the client request from your terminal:

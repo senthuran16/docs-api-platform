@@ -1,3 +1,18 @@
+---
+title: "File upload via multipart requests"
+description: "Define single and multiple file uploads with other data using multipart requests in an OpenAPI definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/file-upload-via-multipart-requests/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/file-upload-via-multipart-requests.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # File Upload via Multipart Requests
 
 #### File uploads with other data

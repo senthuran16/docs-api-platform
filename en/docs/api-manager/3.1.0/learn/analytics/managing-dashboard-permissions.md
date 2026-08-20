@@ -1,3 +1,18 @@
+---
+title: "Managing analytics dashboard permissions"
+description: "Manage owner, editor, and viewer permission levels for the API Publisher and Developer Portal analytics dashboards."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-dashboard-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/managing-dashboard-permissions.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-dashboard-permissions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Managing Analytics Dashboard Permissions
 
 API statistics related to both the API Publisher and the Developer Portal can be viewed using the **dashboard** runtime of the API-M Analytics server.

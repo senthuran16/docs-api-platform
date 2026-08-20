@@ -1,3 +1,18 @@
+---
+title: "Overview of API analytics"
+description: "Learn how API Manager integrates with API Manager Analytics to provide reports, statistics, and alerts on deployed APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/overview-of-api-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/analytics/overview-of-api-analytics.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - overview-of-api-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "concept"
+---
+
 # Overview of API Analytics
 
 The API Manager integrates with API Manager Analytics to provide reports, statistics and graphs on the APIs deployed in 

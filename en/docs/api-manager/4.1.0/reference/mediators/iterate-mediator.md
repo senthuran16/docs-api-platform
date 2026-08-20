@@ -1,3 +1,18 @@
+---
+title: "Iterate mediator"
+description: "Reference for the Iterate mediator syntax used to split a message into multiple messages based on the Splitter pattern."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/iterate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/iterate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - iterate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Iterate Mediator
 
 The **Iterate Mediator** implements the <b>Splitter enterprise integration

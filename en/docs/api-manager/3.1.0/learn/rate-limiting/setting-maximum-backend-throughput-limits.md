@@ -1,3 +1,18 @@
+---
+title: "Setting maximum backend throughput limits"
+description: "Set a maximum backend throughput limit for an API to protect backend services from overuse."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/setting-maximum-backend-throughput-limits/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/rate-limiting/setting-maximum-backend-throughput-limits.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - setting-maximum-backend-throughput-limits
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Setting Maximum Backend Throughput Limits
 
 The maximum backend throughput setting limits the total number of calls a particular API in the API Manager is allowed to make to the backend. While the [other throttling levels](../setting-throttling-limits) define the quota the API invoker gets, they do not ensure that the backend is protected from overuse. The maximum backend throughput setting limits the quota the backend can handle. The counters maintained when evaluating the maximum backend throughput are shared across all nodes of the Gateway cluster and apply across all users using any application that accesses that particular API.

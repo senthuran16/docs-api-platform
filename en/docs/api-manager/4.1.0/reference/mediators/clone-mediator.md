@@ -1,3 +1,18 @@
+---
+title: "Clone mediator"
+description: "Reference for the Clone mediator syntax and configuration used to duplicate a message into multiple identical copies."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/clone-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/clone-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - clone-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Clone Mediator
 
 The **Clone Mediator** can be used to clone a message into several messages. It resembles the [Scatter-Gather enterprise integration pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/scatter-gather/). The Clone mediator is similar to the [Iterate mediator](iterate-mediator.md). The difference between the two mediators is that the Iterate mediator splits a message into different parts, whereas the Clone mediator makes multiple identical copies of the message.

@@ -1,3 +1,18 @@
+---
+title: "All-in-One deployment overview"
+description: "Compare single node and active-active all-in-one deployment options for running API Manager at smaller scale."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/single-node/all-in-one-deployment-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/single-node/all-in-one-deployment-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # All-in-One Deployment Overview
 
 In a typical production deployment, API Manager is deployed as components (Publisher, Developer Portal, Gateway, 
@@ -26,7 +41,7 @@ In this setup, API traffic is served by one all-in-one instance of WSO2 API Mana
      Not network friendly. Deploying on a demilitarized zone (DMZ) would require a Reverse Proxy.  |
 
 !!! info
-    For more information on manually configuring a single node API-M production server, see [Configuring a Single Node](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-a-single-node/).
+    For more information on manually configuring a single node API-M production server, see [Configuring a Single Node](configuring-a-single-node.md).
 
 
 ## Active - Active Deployment
@@ -43,4 +58,4 @@ In this setup, API traffic is served by two single node (all-in-one) instances o
     Deployment is up and running within hours.                                                           |    Not network friendly. Deploying on a DMZ would require a Reverse Proxy. |
 
 !!! info
-    For more information on manually configuring active-active API-M production servers, see [Configuring an Active-Active Deployment](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-an-active-active-deployment/).
+    For more information on manually configuring active-active API-M production servers, see [Configuring an Active-Active Deployment](configuring-an-active-active-deployment.md).

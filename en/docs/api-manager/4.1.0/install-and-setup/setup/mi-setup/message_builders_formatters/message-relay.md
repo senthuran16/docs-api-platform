@@ -1,3 +1,18 @@
+---
+title: "Message relay"
+description: "Enable Message Relay to pass messages through Micro Integrator without building or formatting them, for higher throughput."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-relay/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-relay.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Message Relay
 
 **Message Relay** enables WSO2 Micro Integrator to pass messages along without building or processing them
@@ -8,7 +23,7 @@ Micro Integrator does not need to work on the full message but can work on [mess
 like request URLs or transport headers instead. With Message Relay, the
 Micro Integrator can achieve a very high throughput.
 
-See also [PassThrough Transport](https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-httphttps-transport).
+See also [PassThrough Transport](../transport_configurations/configuring-transports.md#configuring-the-httphttps-transport).
 
 ## Configuring Message Relay
 

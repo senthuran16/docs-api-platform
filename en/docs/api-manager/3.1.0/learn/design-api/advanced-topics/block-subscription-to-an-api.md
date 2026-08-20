@@ -1,3 +1,18 @@
+---
+title: "Block subscription to an API"
+description: "Block or unblock a user's subscription to an API to disable access at the production or sandbox level."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/advanced-topics/block-subscription-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/advanced-topics/block-subscription-to-an-api.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Block Subscription to an API
 
 An API publisher can **block subscription** to an API as a way of disabling access to it and managing its usage and monetization. Subscription blocking can be temporary or permanent. There is an unblocking facility to allow API invocations again.
@@ -5,7 +20,7 @@ An API publisher can **block subscription** to an API as a way of disabling acce
 You can block APIs by subscription by blocking access to a specific user to access a specific API that he/she has subscribed to using a specific application. If a user is subscribed to two APIs using the same application and you block access to only one of the APIs, the user can still continue to invoke the other API that he/she subscribed to using the same application. In addition, the user can continue to access the same API subscribed to using different applications.
 
 !!! info
-    API level subscription blocking is useful to control only the subscriptions created for a specific API by a user. If you want to block all API requests from a specific application/user/specific IP address or to a specific API, you can use [request blacklisting](../../../learn/rate-limiting/blacklisting-whitelisting/#blacklisting-requests).
+    API level subscription blocking is useful to control only the subscriptions created for a specific API by a user. If you want to block all API requests from a specific application/user/specific IP address or to a specific API, you can use [request blacklisting](../../rate-limiting/blacklisting-whitelisting.md#blacklisting-requests).
 
 
 Blocking can be done at two levels:
@@ -42,7 +57,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition tip"> 
          <p class="admonition-title">Tip</p>
-         <p>For more information, see [Create and Publish an API](../../../learn/design-api/create-api/create-a-rest-api/).</p>
+         <p>For more information, see [Create and Publish an API](../create-api/create-a-rest-api.md).</p>
          </div>
          </html>
          
@@ -70,7 +85,7 @@ Blocking can be done at two levels:
       <html>
       <div class="admonition tip"> 
       <p class="admonition-title">Tip</p>
-      <p>For more information, see  [Consume an API](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/).</p>
+      <p>For more information, see  [Consume an API](../../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md).</p>
       </div>
       </html>
 
@@ -126,7 +141,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition warning">
          <p class="admonition-title">Warning</p>
-         <p>When [Gateway caching](../../../getting-started/overview/#api-gateway) is enabled, which is the case by default, the subscription blocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is blocked, then the API will be blocked immediately.</p>
+         <p>When [Gateway caching](../../../getting-started/overview.md#api-gateway) is enabled, which is the case by default, the subscription blocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is blocked, then the API will be blocked immediately.</p>
          </div>
          </html>
 
@@ -168,7 +183,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition warning">
          <p class="admonition-title">Warning</p>
-         <p>When [Gateway caching](../../../getting-started/overview/#api-gateway) is enabled, which is the case by default, the subscription unblocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is unblocked, then the API will be unblocked immediately.</p>
+         <p>When [Gateway caching](../../../getting-started/overview.md#api-gateway) is enabled, which is the case by default, the subscription unblocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is unblocked, then the API will be unblocked immediately.</p>
          </div>
          </html>
 

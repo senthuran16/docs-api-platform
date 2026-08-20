@@ -1,3 +1,18 @@
+---
+title: "Prevent API suspension"
+description: "Prevent or turn off API suspension when a backend endpoint becomes unreachable, using the API Publisher's endpoint settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/resiliency/prevent-api-suspension/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/resiliency/prevent-api-suspension.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Prevent API Suspension
 
 WSO2 API Manager suspends your API if the endpoint of your API cannot be reached. The default suspension time is 30 seconds. Any requests to your API will not be able to reach your endpoint for 30 seconds and will return an error message, as shown below.
@@ -35,7 +50,7 @@ Follow the instructions below to prevent or turn off API suspension:
 
 5.  Click **Save** and re-publish the API.
 
-     For more details on creating and publishing an API, see [Create an API](../../../../learn/design-api/create-api/create-a-rest-api) and [Publish an API](../../../../learn/design-api/publish-api/publish-an-api).
+     For more details on creating and publishing an API, see [Create an API](../../create-api/create-a-rest-api.md) and [Publish an API](../../publish-api/publish-an-api.md).
 
 !!! info
     To avoid backend endpoint suspension:
@@ -68,4 +83,4 @@ Follow the instructions below to prevent or turn off API suspension:
         </endpoint>
         ```
 
-For more details on configuring different timeouts, see [Timeout configurations for an API call](../../../../install-and-setup/perfromance-tuning-and-test-results/tuning-performance) in the Performance Tuning guide.
+For more details on configuring different timeouts, see [Timeout configurations for an API call](../../../../install-and-setup/setup/deployment-best-practices/tuning-performance.md) in the Performance Tuning guide.

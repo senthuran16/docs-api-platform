@@ -1,3 +1,18 @@
+---
+title: "Installing WSO2 integration studio"
+description: "Install WSO2 Integration Studio, check prerequisites, get updates, and verify the installed version."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/installing-wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/installing-wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - installing-wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing WSO2 Integration Studio
 
 WSO2 Integration Studio provides a comprehensive development experience for building integration solutions.
@@ -41,7 +56,7 @@ If you have already installed and set up WSO2 Integration Studio, you can get th
 1.  Open WSO2 Integration Studio on your computer.
 2.  Go to **Help** -> **Check for Updates**.
 
-    <a href="../../assets/img/integrate/get-tooling-updates.png"><img src="../../assets/img/integrate/get-tooling-updates.png" alt="get tooling updates" width="300"></a>
+    <a href="../../../assets/img/integrate/get-tooling-updates.png"><img src="../../../assets/img/integrate/get-tooling-updates.png" alt="get tooling updates" width="300"></a>
 
 3.  Once the update check is completed, you can select all the available updates and install.
 
@@ -52,7 +67,7 @@ You can check the version of the Integration Studio as below.
 * For MacOS : Integration Studio > About Integration Studio
 * For Windows/Linux : Help > About Integration Studio
 
-    <a href="../../assets/img/integrate/about-integration-studio.jpg"><img src="../../assets/img/integrate/about-integration-studio.jpg" alt="get studio information" width="400"></a>
+    <a href="../../../assets/img/integrate/about-integration-studio.jpg"><img src="../../../assets/img/integrate/about-integration-studio.jpg" alt="get studio information" width="400"></a>
 
 ### Troubleshooting
 

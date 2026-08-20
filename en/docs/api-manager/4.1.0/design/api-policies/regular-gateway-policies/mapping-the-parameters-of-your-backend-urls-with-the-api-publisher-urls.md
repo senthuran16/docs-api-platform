@@ -1,3 +1,18 @@
+---
+title: "Mapping backend URL parameters to publisher URLs"
+description: "Walks through mapping variables in your backend endpoint URLs to the URI template used in the API Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/regular-gateway-policies/mapping-the-parameters-of-your-backend-urls-with-the-api-publisher-urls/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/regular-gateway-policies/mapping-the-parameters-of-your-backend-urls-with-the-api-publisher-urls.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "tutorial"
+---
+
 # Mapping the Parameters of your Backend URLs with the API Publisher URLs
 
 This tutorial explains how to map your backend URLs to the pattern that you want in the API Publisher.   

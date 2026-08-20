@@ -1,3 +1,18 @@
+---
+title: "Create an API using a service"
+description: "Create a REST or Streaming API from a Micro Integrator or Streaming Integrator service in the service catalog."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-an-api-using-a-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-an-api-using-a-service.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-an-api-using-a-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create an API Using a Service
 
 The service catalog in WSO2 API Manager contains services that correspond to either the Micro Integrator or the Streaming Integrator. The Micro Integrator services correspond to the REST API backend services, and the Streaming Integrator services correspond to the Streaming API (i.e., WebSocket, WebHook/WebSub or SSE) backend services that are managed by the respective integration layer (Micro Integrator or Streaming Integrator).
@@ -18,15 +33,16 @@ More information:
 
 Follow the instructions below to discover the integration services:
 
-1.  {!includes/sign-in-publisher.md!}
+1. 
+    --8<-- "api-manager/4.1.0/includes/sign-in-publisher.md"
 
 2.  Click **Services**.
 
-      <a href="../../assets/img/integrate/service-catalog/select-services.png"><img src="../../assets/img/integrate/service-catalog/select-services.png" alt="open service catalog" width="30%"></a>
+      <a href="../../../assets/img/integrate/service-catalog/select-services.png"><img src="../../../assets/img/integrate/service-catalog/select-services.png" alt="open service catalog" width="30%"></a>
 
       The available integration services appear.
 
-      <a href="../../assets/img/common/service-catalog/services-catalog-list.png"><img src="../../assets/img/common/service-catalog/services-catalog-list.png" width="50%" alt="service catalog listings"></a>
+      <a href="../../../assets/img/common/service-catalog/services-catalog-list.png"><img src="../../../assets/img/common/service-catalog/services-catalog-list.png" width="50%" alt="service catalog listings"></a>
 
 ## Step 3 - Optionally, view the details of the service
 
@@ -34,7 +50,7 @@ Follow the instructions below to discover the integration services:
 
      You can view the service name, version, description, usages in APIs, and other important metadata.
 
-     <a href="../../assets/img/common/service-catalog/service-overview.png"><img src="../../assets/img/common/service-catalog/service-overview.png" width="80%" alt="service overview"></a>
+     <a href="../../../assets/img/common/service-catalog/service-overview.png"><img src="../../../assets/img/common/service-catalog/service-overview.png" width="80%" alt="service overview"></a>
 
 2. Optionally, **download a service definition**.
 
@@ -44,7 +60,7 @@ Follow the instructions below to discover the integration services:
 
      If you want to see the service definition before creating an API, click **View Definition**.
 
-     <a href="../../assets/img/common/service-catalog/view-api-definition.png"><img src="../../assets/img/common/service-catalog/view-api-definition.png" alt="view api definition"></a>
+     <a href="../../../assets/img/common/service-catalog/view-api-definition.png"><img src="../../../assets/img/common/service-catalog/view-api-definition.png" alt="view api definition"></a>
 
 ## Step 4 - Create an API from the service
 
@@ -54,13 +70,13 @@ Follow the instructions below to discover the integration services:
 
      This opens the **Create API** dialog box with the API details that are generated based on the service.
 
-    <a href="../../assets/img/common/service-catalog/create-api-from-service.png"><img src="../../assets/img/common/service-catalog/create-api-from-service.png" alt="create api dialog box"></a>
+    <a href="../../../assets/img/common/service-catalog/create-api-from-service.png"><img src="../../../assets/img/common/service-catalog/create-api-from-service.png" alt="create api dialog box"></a>
 
 3.  Update the API name, context, and version if required, and click **Create API**. 
 
     The overview page of the API that you just created appears. 
 
-    <a href="../../assets/img/common/service-catalog/new-api-view.png"><img src="../../assets/img/common/service-catalog/new-api-view.png" alt="apis list"></a>
+    <a href="../../../assets/img/common/service-catalog/new-api-view.png"><img src="../../../assets/img/common/service-catalog/new-api-view.png" alt="apis list"></a>
 
 4.  Update the portal configurations and API configurations as required.
 

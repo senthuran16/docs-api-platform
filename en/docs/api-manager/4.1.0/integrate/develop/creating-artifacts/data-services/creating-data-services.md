@@ -1,3 +1,18 @@
+---
+title: "Creating a data service"
+description: "Create a data service artifact, add a datasource, and define a query in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/creating-data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/creating-data-services.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Data Service
 
 Follow the instructions given below to create a new data service artifact.
@@ -17,12 +32,12 @@ Follow the steps given below to create the data service file:
 1.  Right-click the **Data Service Config** module in the project
     explorer and go to **New -> Data Service**. 
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/new-data-service.png"><img src="../../../../assets/img/integrate/tutorials/data_services/new-data-service.png" width="700"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/new-data-service.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/new-data-service.png" width="700"></a>
 
 2.	In the **New Data Service** wizard that opens, select **Create New
     Data Service** and click **Next**.
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/119130577/119130578.png"><img src="../../../../assets/img/integrate/tutorials/data_services/119130577/119130578.png" width="500"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/119130577/119130578.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/119130577/119130578.png" width="500"></a>
 
 3.  Enter a name for the data service and click **Finish**.
 
@@ -58,11 +73,11 @@ You can configure the main query details using this section.
 
 1.  Click **Queries** to expand the section. 
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/query_expanded.png"><img src="../../../../assets/img/integrate/tutorials/data_services/query_expanded.png" width="70%"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/query_expanded.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/query_expanded.png" width="70%"></a>
 
 2.  Click **Add New** to open the **Add Query** page.
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/add_query.png"><img src="../../../../assets/img/integrate/tutorials/data_services/add_query.png" width="70%"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/add_query.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/add_query.png" width="70%"></a>
 
 3.  Enter the following query details.
 	
@@ -107,7 +122,7 @@ You can configure input parameters for the query using this section.
 
 1.  Click **Input Mappings** to expand the section. 
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/input_mapping_expanded.png"><img src="../../../../assets/img/integrate/tutorials/data_services/input_mapping_expanded.png" width="70%"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/input_mapping_expanded.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/input_mapping_expanded.png" width="70%"></a>
 
 2.	There are two  ways to create the mapping:
 	
@@ -116,7 +131,7 @@ You can configure input parameters for the query using this section.
 
 		1.	Click **Add New** to open the **Add Input Mapping** page.
 
-			<a href="../../../../assets/img/integrate/tutorials/data_services/add_input_mappings.png"><img src="../../../../assets/img/integrate/tutorials/data_services/add_input_mappings.png" width="500"></a>
+			<a href="../../../../../assets/img/integrate/tutorials/data_services/add_input_mappings.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/add_input_mappings.png" width="500"></a>
 
 		2.	Enter the following input mapping details:
 
@@ -159,7 +174,7 @@ You can configure input parameters for the query using this section.
 
 Shown below is an example query with input mapping:
                         
-<a href="../../../../assets/img/integrate/tutorials/data_services/input_mappings.png"><img src="../../../../assets/img/integrate/tutorials/data_services/input_mappings.png" width="70%"></a>
+<a href="../../../../../assets/img/integrate/tutorials/data_services/input_mappings.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/input_mappings.png" width="70%"></a>
 
 #### Result (Output Mappings) 
 
@@ -167,7 +182,7 @@ You can configure output result parameters for the query using this section.
 
 1.  Click **Result (Output Mappings)** to expand the section.
     
-    <a href="../../../../assets/img/integrate/tutorials/data_services/out_mapping_expanded.png"><img src="../../../../assets/img/integrate/tutorials/data_services/out_mapping_expanded.png"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/out_mapping_expanded.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/out_mapping_expanded.png"></a>
     
 2.  Enter the following details:
 
@@ -189,7 +204,7 @@ You can configure output result parameters for the query using this section.
 
 		1. Click **Add New** to open the **Add Output Mapping** page.
 
-			<a href="../../../../assets/img/integrate/tutorials/data_services/add_output_mappings.png"><img src="../../../../assets/img/integrate/tutorials/data_services/add_output_mappings.png" width="50%"></a>
+			<a href="../../../../../assets/img/integrate/tutorials/data_services/add_output_mappings.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/add_output_mappings.png" width="50%"></a>
 
 		2. Enter the following output element details.
 
@@ -239,11 +254,11 @@ Use this section to configure a SOAP operation for invoking the data service.
 
 1.  Click **Operations** to expand the section.
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/new-operataion.png"><img src="../../../../assets/img/integrate/tutorials/data_services/new-operataion.png" width="70%"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/new-operataion.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/new-operataion.png" width="70%"></a>
 
 2.  Click **Add New** to add a SOAP Operation for your data service.
 
-	<a href="../../../../assets/img/integrate/tutorials/data_services/add-operation.png"><img src="../../../../assets/img/integrate/tutorials/data_services/add-operation.png" width="70%"></a>
+	<a href="../../../../../assets/img/integrate/tutorials/data_services/add-operation.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/add-operation.png" width="70%"></a>
 
 3.	Enter the following information:
 
@@ -288,11 +303,11 @@ Use this section to configure a REST resource for invoking the data service.
 
 1.  Click **Resources** to expand the section.
 	
-	<a href="../../../../assets/img/integrate/tutorials/data_services/resource_expanded.png"><img src="../../../../assets/img/integrate/tutorials/data_services/resource_expanded.png" width="70%"></a>
+	<a href="../../../../../assets/img/integrate/tutorials/data_services/resource_expanded.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/resource_expanded.png" width="70%"></a>
 
 2.	Click **Add New** to add a new resource.
 
-	<a href="../../../../assets/img/integrate/tutorials/data_services/create_resource.png"><img src="../../../../assets/img/integrate/tutorials/data_services/create_resource.png" width="70%"></a>
+	<a href="../../../../../assets/img/integrate/tutorials/data_services/create_resource.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/create_resource.png" width="70%"></a>
 
 3.	Give the following details to create the REST resource. 
 
@@ -337,21 +352,21 @@ datasource and automatically creates the SELECT, INSERT, UPDATE, and DELETE oper
 	refer [Creating a Datasource](creating-datasources.md) for more information.
 
 2.	In the **New Data Service** wizard that opens, select **Generate Data Service from Datasource** and click **Next**.
-	  <a href="../../../../assets/img/integrate/tutorials/data_services/generate_dataservice.png"><img src="../../../../assets/img/integrate/tutorials/data_services/generate_dataservice.png" width="700"></a>
+	  <a href="../../../../../assets/img/integrate/tutorials/data_services/generate_dataservice.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/generate_dataservice.png" width="700"></a>
 
 3. 	From the wizard, select the datasource that you have configured in step 1.
 	
-    <a href="../../../../assets/img/integrate/tutorials/data_services/generate_dataservice_select_datasource.png"><img src="../../../../assets/img/integrate/tutorials/data_services/generate_dataservice_select_datasource.png" width="700"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/generate_dataservice_select_datasource.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/generate_dataservice_select_datasource.png" width="700"></a>
 
 4. 	Select the driver to connect to the datasource. There are two ways to select a driver:
 
 	-	You can use an existing driver from the Integration Studio. You can select the driver version from the drop down.
 
-    <a href="../../../../assets/img/integrate/tutorials/data_services/select_existing_driver.png"><img src="../../../../assets/img/integrate/tutorials/data_services/select_existing_driver.png" width="700"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/select_existing_driver.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/select_existing_driver.png" width="700"></a>
 
 	-	You can browse and upload a driver from your file system.
 	
-    <a href="../../../../assets/img/integrate/tutorials/data_services/select_driver_file_system.png"><img src="../../../../assets/img/integrate/tutorials/data_services/select_driver_file_system.png" width="700"></a>
+    <a href="../../../../../assets/img/integrate/tutorials/data_services/select_driver_file_system.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/select_driver_file_system.png" width="700"></a>
 
     Then click **Fetch Table** to list down all avaialble tables in the selected datasource.
 
@@ -361,7 +376,7 @@ datasource and automatically creates the SELECT, INSERT, UPDATE, and DELETE oper
 		1.	The **POST** REST method is enabled only when the database is not in read-only mode.
 		2.	The **PUT** and **DELETE** REST methods are enabled only when a primary key is defined on the table.
 
-	<a href="../../../../assets/img/integrate/tutorials/data_services/select_tables.png"><img src="../../../../assets/img/integrate/tutorials/data_services/select_tables.png" width="700"></a>
+	<a href="../../../../../assets/img/integrate/tutorials/data_services/select_tables.png"><img src="../../../../../assets/img/integrate/tutorials/data_services/select_tables.png" width="700"></a>
 
 6. 	You can select a service generation mode from the following two options:
 
@@ -376,33 +391,33 @@ datasource and automatically creates the SELECT, INSERT, UPDATE, and DELETE oper
 
 <ul>
 	<li>
-		<a href="../../../examples/data_integration/rdbms-data-service.md">Exposing an RDBMS Datasource</a>
+		<a href="../../../../examples/data_integration/rdbms-data-service/">Exposing an RDBMS Datasource</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/json-with-data-service.md">Exposing Data in JSON Format</a>
+		<a href="../../../../examples/data_integration/json-with-data-service/">Exposing Data in JSON Format</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/odata-service.md">Using an OData Service</a>
+		<a href="../../../../examples/data_integration/odata-service/">Using an OData Service</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/nested-queries-in-data-service.md">Using Nested Data Queries</a>
+		<a href="../../../../examples/data_integration/nested-queries-in-data-service/">Using Nested Data Queries</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/batch-requesting.md">Batch Requesting</a>
+		<a href="../../../../examples/data_integration/batch-requesting/">Batch Requesting</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/request-box.md">Invoking Multiple Operations via Request Box</a>
+		<a href="../../../../examples/data_integration/request-box/">Invoking Multiple Operations via Request Box</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/distributed-trans-data-service.md">Using Distributed Transactions in Data Services</a>
+		<a href="../../../../examples/data_integration/distributed-trans-data-service/">Using Distributed Transactions in Data Services</a>
 	</li>
 	<li>
-		<a href="../../../examples/data_integration/data-input-validator.md">Validating Data Input</a>
+		<a href="../../../../examples/data_integration/data-input-validator/">Validating Data Input</a>
 	</li>
 </ul>
 
 ## Tutorials
 
 <li>
-	See the tutorial on <a href="../../../../tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource.md">data integration</a>
+	See the tutorial on <a href="../../../../../tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource/">data integration</a>
 </li>

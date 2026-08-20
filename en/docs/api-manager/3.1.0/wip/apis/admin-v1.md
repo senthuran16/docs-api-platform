@@ -1,6 +1,19 @@
 ---
+title: "Admin API v1 reference"
+description: "Try out the WSO2 API Manager Admin REST API v1 operations interactively using the embedded Swagger UI."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/apis/admin-v1/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/wip/apis/admin-v1.md
+tags:
+  - api-manager
+  - wip
+  - apis
+  - admin-v1
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 ??? Info "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager. 
      

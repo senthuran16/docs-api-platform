@@ -1,3 +1,17 @@
+---
+title: "Quick start guide"
+description: "Walks through creating, publishing, subscribing to, and invoking a sample API using the Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/getting-started/quick-start-guide.md
+tags:
+  - api-manager
+  - getting-started
+  - quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Quick Start Guide
 
 ## Design Your First API
@@ -6,7 +20,7 @@ This section is a step-by-step guide to create, publish and invoke an API using 
 
 ### Before you begin...
 
-<p>   <ol><li>Install <a href="http://java.sun.com/javase/downloads/index.jsp">Oracle Java SE Development Kit (JDK)</a> version 11.\* or 1.8.\* and set the <code>JAVA_HOME</code> environment variable. For more information on setting the <code>JAVA_HOME</code> environment variable for different operating systems, see <a href="../install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-linux-or-os-x/">Setup and Install</a>.</li>
+<p>   <ol><li>Install <a href="http://java.sun.com/javase/downloads/index.jsp">Oracle Java SE Development Kit (JDK)</a> version 11.\* or 1.8.\* and set the <code>JAVA_HOME</code> environment variable. For more information on setting the <code>JAVA_HOME</code> environment variable for different operating systems, see <a href="../../install-and-setup/install/installing-the-product/installing-the-binary/installing-on-linux-or-os-x/">Setup and Install</a>.</li>
 <li><a href="https://wso2.com/api-management/previous-releases/">Download the version 3.1.0 of WSO2 API Manager</a>.</li>
 <li>Start WSO2 API Manager by navigating to the <code><API-M_HOME>/bin</code> directory using the command-line and execute the following command <code>wso2server.bat --run</code> (for Windows) or <code>sh wso2server.sh</code> (for Linux.)</li></ol>
 </p>

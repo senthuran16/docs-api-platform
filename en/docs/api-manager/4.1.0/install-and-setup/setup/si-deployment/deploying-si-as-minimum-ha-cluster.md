@@ -1,3 +1,18 @@
+---
+title: "Minimum high availability (HA) deployment"
+description: "Deploy the Streaming Integrator as a two-node minimum HA cluster with active and passive failover nodes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Minimum High Availability (HA) Deployment
 
 The minimum high availability deployment mainly focuses on providing high availability that ensures the prevention of data loss if the

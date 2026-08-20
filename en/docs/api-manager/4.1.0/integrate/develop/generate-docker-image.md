@@ -1,3 +1,18 @@
+---
+title: "Generating Docker images"
+description: "Generate a Docker image of a composite application project using WSO2 Integration Studio's export wizard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/generate-docker-image/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/generate-docker-image.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - generate-docker-image
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Generating Docker images
 
 See the topics given below.
@@ -13,7 +28,7 @@ See the topics given below.
 1.  Right-click the **Composite Application Project** in the project explorer and
     then click **Generate Docker Image**.  
 
-    <img src="../../assets/img/integrate/create_project/open-docker_image_generation_wizard.png" width="500">
+    <img src="../../../assets/img/integrate/create_project/open-docker_image_generation_wizard.png" width="500">
     
 2.  In the **Generate Docker Image Wizard** that opens, select one from the following three options and proceed. 
     

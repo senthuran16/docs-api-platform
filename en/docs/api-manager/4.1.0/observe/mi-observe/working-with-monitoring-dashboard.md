@@ -1,3 +1,18 @@
+---
+title: "Monitoring MI artifacts and logs"
+description: "Sets up and uses the Micro Integrator dashboard to view, update, and manage artifacts, logs, and users across a cluster."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/working-with-monitoring-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/working-with-monitoring-dashboard.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - working-with-monitoring-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring MI Artifacts and Logs
 
 The Micro Integrator (MI) dashboard monitors the MI instances in a deployment. This can be a single MI instance or multiple MI instances in a group (cluster). It provides a graphical view of the integration artifacts that are deployed in the MI instances. You can also perform various management 
@@ -115,7 +130,7 @@ Follow the steps given below to configure the MI servers to publish data to the 
                 node_id
             </th>
             <td>
-                <b>Optional</b>. By default, in a clustered deployment, the relevant `node_id` is used as this configuration. For more information about the cluster node ID, see the instructions on <a href="../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei.md#node-id">configuring an MI cluster</a>. In a non-clustered deployment, a random UUID is used if the `node_id` is not set for this configuration.
+                <b>Optional</b>. By default, in a clustered deployment, the relevant `node_id` is used as this configuration. For more information about the cluster node ID, see the instructions on <a href="../../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/#node-id">configuring an MI cluster</a>. In a non-clustered deployment, a random UUID is used if the `node_id` is not set for this configuration.
             </td>
         </tr>
         <tr>
@@ -185,7 +200,7 @@ Follow the steps given below.
       
 ### Step 5 - Sign in to the Dashboard
 
-Once you have [set up and started the dashboard](#setting-up-the-dashboard), you can access the dashboard URL.
+Once you have [set up and started the dashboard](#using-the-mi-dashboard), you can access the dashboard URL.
 
 !!! Note "Before you begin"
     Be sure to have at least one Micro Integrator server connected to the dashboard before attempting to sign in to it. This can be verified by checking the presence of the following log.
@@ -211,7 +226,7 @@ Once you have [set up and started the dashboard](#setting-up-the-dashboard), you
             <td>
                 The user name to sign in.</br></br>
                 <b>Note</b>: This should be a valid username that is saved in the Micro Integrator server's user store. By default, the 'admin' user name is configured in the default user store.</br></br> 
-                See <a href="../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md">configuring user stores</a> for information.
+                See <a href="../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/">configuring user stores</a> for information.
             </td>
         </tr>
         <tr>
@@ -228,7 +243,7 @@ Once you have [set up and started the dashboard](#setting-up-the-dashboard), you
 
 You are redirected to the home page of the Micro Integrator dashboard. 
      
-<a href="../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-home.png"><img src="../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-home.png" width="1000"></a>
+<a href="../../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-home.png"><img src="../../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-home.png" width="1000"></a>
 
 ### Step 6 - Monitor MI artifacts and logs
 
@@ -236,21 +251,21 @@ Follow the steps given below.
 
 1.  Select the group ID that you want to view from the upper left menu.  
     
-    <a href="../../assets/img/integrate/monitoring-dashboard/dashboard-select-group.png"><img src="../../assets/img/integrate/monitoring-dashboard/dashboard-select-group.png" width="1000"></a>
+    <a href="../../../assets/img/integrate/monitoring-dashboard/dashboard-select-group.png"><img src="../../../assets/img/integrate/monitoring-dashboard/dashboard-select-group.png" width="1000"></a>
 
     You can see the list of server nodes in each group, as shown in the above diagram.
 
 2.  Click a node ID, and a side navigational panel opens to display the server information.
     
-    <a href="../../assets/img/integrate/monitoring-dashboard/dashboard-server-sidepanal.png"><img src="../../assets/img/integrate/monitoring-dashboard/dashboard-server-sidepanal.png" width="1000"></a>
+    <a href="../../../assets/img/integrate/monitoring-dashboard/dashboard-server-sidepanal.png"><img src="../../../assets/img/integrate/monitoring-dashboard/dashboard-server-sidepanal.png" width="1000"></a>
 
 3.  Select the set of nodes you want to monitor, as shown in the below figure.
     
-    <a href="../../assets/img/integrate/monitoring-dashboard/dashboard-select-nodes.png"><img src="../../assets/img/integrate/monitoring-dashboard/dashboard-select-nodes.png" width="1000"></a>
+    <a href="../../../assets/img/integrate/monitoring-dashboard/dashboard-select-nodes.png"><img src="../../../assets/img/integrate/monitoring-dashboard/dashboard-select-nodes.png" width="1000"></a>
 
 Now you can view details of artifacts, update artifacts, and perform various other administration tasks. Select the required option from the left-hand navigator.
 
-<a href="../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-list.png"><img src="../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-list.png" width="300"></a>
+<a href="../../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-list.png"><img src="../../../assets/img/integrate/monitoring-dashboard/dashboard-artifact-list.png" width="300"></a>
 
 <!--
 ### Proxy Services

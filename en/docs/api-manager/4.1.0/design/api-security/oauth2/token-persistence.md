@@ -1,3 +1,18 @@
+---
+title: "Token persistence"
+description: "Compare JWT and opaque token persistence behavior and configure synchronous or asynchronous token persistence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/token-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/token-persistence.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Token Persistence
 
 This guide describes OAuth2 token persistence and the possible approaches you can follow for token persistence in a production environment. 

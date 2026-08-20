@@ -1,10 +1,25 @@
+---
+title: "Identity management for the API Developer Portal"
+description: "Enable password recovery, account locking, and password policies for the API Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/identity-management-for-the-api-dev-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/security/identity-management-for-the-api-dev-portal.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Identity Management for the API Developer Portal
 
 Identity management for the API developer portal includes the following features.
 
--   [Password Recovery](../../../administer/product-security/identity-management-for-the-api-dev-portal/#password-recovery)
--   [Account locking](../../../administer/product-security/identity-management-for-the-api-dev-portal/#account-locking)
--   [Password policies](../../../administer/product-security/identity-management-for-the-api-dev-portal/#Password-policies)
+-   [Password Recovery](#password-recovery)
+-   [Account locking](#account-locking)
+-   [Password policies](#password-policies)
 
 ### Password Recovery
 
@@ -40,9 +55,10 @@ Password recovery feature does not work by default because an email server is no
 
 You can lock user accounts with the Account recovery and credential management feature, pre-installed in WSO2 API Manager.
 
--   [Account locking by failed login attempts](../../../administer/product-security/identity-management-for-the-api-dev-portal/#account-locking-by-failed-login-attempts)
--   [Account locking by an administrative user](../../../administer/product-security/identity-management-for-the-api-dev-portal/#account-locking-by-an-administrative-user)
+-   [Account locking by failed login attempts](#account-locking-by-failed-login-attempts)
+-   [Account locking by an administrative user](#account-locking-by-an-administrative-user)
 
+<a name="account-locking-by-failed-login-attempts"></a>
 #### Account locking by failed login attempts
 
 The following steps show how to enable account locking. See [Account Locking by Failed Login Attempts](https://is.docs.wso2.com/en/5.10.0/learn/account-locking-by-failed-login-attempts/) for more information. 
@@ -65,6 +81,7 @@ The following steps show how to enable account locking. See [Account Locking by 
     ```
 
 
+<a name="account-locking-by-an-administrative-user"></a>
 #### Account locking by an administrative user
 
 An administrative user can lock and unlock a particular user's account through the management console. See [Locking a Specific User Account](https://is.docs.wso2.com/en/5.10.0/learn/locking-a-specific-user-account/) for more information. 

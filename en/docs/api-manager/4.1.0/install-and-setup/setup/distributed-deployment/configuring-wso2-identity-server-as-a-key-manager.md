@@ -1,3 +1,18 @@
+---
+title: "Set up WSO2 identity server as a key manager"
+description: "Configure WSO2 Identity Server as the global Key Manager for a WSO2 API Manager deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Set up WSO2 Identity Server as a Key Manager
 
 Follow the instructions below to configure WSO2 Identity Server (WSO2 IS) as the Key Manager of the WSO2 API Manager (WSO2 API-M) deployment globally.
@@ -40,7 +55,7 @@ You can create the required databases for the API-M deployment on a separate ser
 
 The following diagram depicts how the databases are shared between WSO2 IS and WSO2 API-M.
 
-<a href="../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
+<a href="../../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
 
 -   **WSO2SHARED_DB** - This database contains the registry and user management data. 
 
@@ -55,7 +70,7 @@ Follow the instructions below to set up and configure the databases for the WSO2
     !!! warning
         If you have already created and set up the database (`WSO2_SHARED_DB`) for WSO2 API Manager, you only need to configure the data source configurations in the WSO2 IS node for it to connect with the required databases and act as the Key Manager.
 
-     <a name="#step3-2"></a>
+     <a name="step3-2"></a>
 
 2. Share `WSO2_SHARED_DB`with WSO2 IS.
 

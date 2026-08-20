@@ -1,3 +1,18 @@
+---
+title: "Creating a custom mediator"
+description: "Create or import a custom mediator project in WSO2 Integration Studio and deploy it as a JAR or CAR."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/customizations/creating-custom-mediators/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/customizations/creating-custom-mediators.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Creating a Custom Mediator
 
 If you need to create a custom mediator that performs some logic on a message, you can either create a new mediator project, or import an existing mediator project using WSO2 Integration Studio.

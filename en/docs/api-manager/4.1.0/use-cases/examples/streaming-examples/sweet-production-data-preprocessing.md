@@ -1,3 +1,18 @@
+---
+title: "Receiving data via TCP and preprocessing"
+description: "Receive events over TCP and preprocess them with Siddhi string and time extensions before storage."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/sweet-production-data-preprocessing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/sweet-production-data-preprocessing.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Data via TCP and Preprocessing
 
 ## Purpose

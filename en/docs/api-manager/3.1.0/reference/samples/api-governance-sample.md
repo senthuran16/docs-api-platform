@@ -1,3 +1,18 @@
+---
+title: "API governance sample"
+description: "Demonstrates how to apply traffic management and governance policies across APIs and departments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-governance-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-governance-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-governance-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "tutorial"
+---
+
 # API Governance Sample
 
 ### Usecase

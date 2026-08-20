@@ -1,3 +1,18 @@
+---
+title: "Working with JSON message payloads"
+description: "Learn how the Micro Integrator converts JSON payloads to XML and back, with examples for objects, arrays, and strings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/json_examples/json-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/json_examples/json-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - json_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with JSON Message Payloads
 
 WSO2 Micro Integrator provides support for [JavaScript Object Notation (JSON)](http://www.json.org/) payloads in messages. The following sections describe how to work with JSON via the Micro Integrator.
@@ -348,7 +363,7 @@ You can use JSON path expressions with following mediators:
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="../../../reference/mediators/log-mediator.md">Log</a></td>
+<td><a href="../../../../reference/mediators/log-mediator/">Log</a></td>
 <td><div class="content-wrapper">
 <p>As a log property:</p>
 <div class="code panel pdl" style="border-width: 1px;">
@@ -362,7 +377,7 @@ You can use JSON path expressions with following mediators:
 </div></td>
 </tr>
 <tr class="even">
-<td><a href="../../../reference/mediators/property-mediator.md">Property</a></td>
+<td><a href="../../../../reference/mediators/property-mediator/">Property</a></td>
 <td><div class="content-wrapper">
 <p>As a standalone property:</p>
 <div class="code panel pdl" style="border-width: 1px;">
@@ -374,7 +389,7 @@ You can use JSON path expressions with following mediators:
 </div></td>
 </tr>
 <tr class="odd">
-<td><a href="../../../reference/mediators/payloadfactory-mediator.md">PayloadFactory</a></td>
+<td><a href="../../../../reference/mediators/payloadfactory-mediator/">PayloadFactory</a></td>
 <td><div class="content-wrapper">
 <p>As the payload arguments:</p>
 <div class="code panel pdl" style="border-width: 1px;">
@@ -391,7 +406,7 @@ You can use JSON path expressions with following mediators:
 </div></td>
 </tr>
 <tr class="even">
-<td><a href="../../../reference/mediators/switch-mediator.md">Switch</a></td>
+<td><a href="../../../../reference/mediators/switch-mediator/">Switch</a></td>
 <td><div class="content-wrapper">
 <p>As the switch source:</p>
 <div class="code panel pdl" style="border-width: 1px;">
@@ -402,7 +417,7 @@ You can use JSON path expressions with following mediators:
 </div></td>
 </tr>
 <tr class="odd">
-<td><a href="../../../reference/mediators/filter-mediator.md">Filter</a></td>
+<td><a href="../../../../reference/mediators/filter-mediator/">Filter</a></td>
 <td><div class="content-wrapper">
 <p>As the filter source:</p>
 <div class="code panel pdl" style="border-width: 1px;">
@@ -672,6 +687,7 @@ to the registry resource key):
 !!! Note
     When saving format text for the PayloadFactory mediator as a registry resource, be sure to save it as text content with the “text/plain” media type.
 
+<a name="script-mediator"></a>
 #### Script mediator
 
 The [Script mediator](../../../reference/mediators/script-mediator.md) in
@@ -1041,12 +1057,12 @@ descriptions:
 </tr>
 <tr class="odd">
 <td><code>             synapse.commons.enableXmlNilReadWrite            </code></td>
-<td>Handles how <a href="#WorkingwithJSONMessagePayloads-EmptyXMLelementswiththe&#39;nil&#39;attribute">empty XML elements with the 'nil' attribute</a> are converted to JSON.</td>
+<td>Handles how <a href="#empty-xml-elements-with-the-nil-attribute">empty XML elements with the 'nil' attribute</a> are converted to JSON.</td>
 <td><code>             false            </code></td>
 </tr>
 <tr class="even">
 <td><pre><code>synapse.commons.enableXmlNullForEmptyElement</code></pre></td>
-<td>Handles how <a href="#WorkingwithJSONMessagePayloads-EmptyXMLelements">empty XML elements</a> are converted to JSON.</td>
+<td>Handles how <a href="#empty-xml-elements">empty XML elements</a> are converted to JSON.</td>
 <td><code>             true            </code></td>
 </tr>
 </tbody>

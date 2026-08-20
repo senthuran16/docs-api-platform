@@ -1,3 +1,18 @@
+---
+title: "Callout mediator"
+description: "Configure the Callout mediator to perform blocking external service calls during mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/callout-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/callout-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - callout-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Callout Mediator
 
 The **Callout** mediator performs a blocking external service invocation during mediation. As the Callout mediator performs a blocking call, it cannot use the default non-blocking HTTP/S transports based on Java NIO.

@@ -1,3 +1,18 @@
+---
+title: "Customizing secure Vault"
+description: "Implement custom Secure Vault configurations by writing your own Secret Callback Handler and Secret Repository."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mi-security-reference/customizing-secure-vault/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mi-security-reference/customizing-secure-vault.md
+tags:
+  - api-manager
+  - reference
+  - mi-security-reference
+  - customizing-secure-vault
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Customizing Secure Vault
 
 WSO2 products are shipped with a Secure Vault implementation, which is a

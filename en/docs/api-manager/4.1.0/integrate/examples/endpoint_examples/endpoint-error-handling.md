@@ -1,3 +1,18 @@
+---
+title: "Endpoint error handling"
+description: "Configure endpoint-level error handling to prevent message loss when transport errors occur in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/endpoint-error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/endpoint-error-handling.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Endpoint Error Handling
 
 The last step of message processing inside WSO2 Micro Integrator

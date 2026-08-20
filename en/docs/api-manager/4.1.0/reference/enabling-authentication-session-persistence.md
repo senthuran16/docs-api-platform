@@ -1,3 +1,17 @@
+---
+title: "Enabling authentication session persistence"
+description: "Enable authentication session persistence in identity.xml to retain sessions across API Manager restarts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/enabling-authentication-session-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/enabling-authentication-session-persistence.md
+tags:
+  - api-manager
+  - reference
+  - enabling-authentication-session-persistence
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Enabling Authentication Session Persistence
 
 This topic is regarding sessions in the WSO2 API Manager (WSO2 API-M) and the process of enabling session persistence for these sessions. This is particularly useful when the remember me option is selected when logging into either the service provider or the WSO2 API-M.

@@ -1,10 +1,25 @@
+---
+title: "High availability for endpoints"
+description: "Configure load balancing and failover endpoints in the API Publisher for high availability of backend services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/high-availability-for-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/high-availability-for-endpoints.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # High Availability for Endpoints
 
 ## Configuring Load Balancing Endpoints
 
 When using WSO2 API Manager, you can configure load balancing endpoints via the API Publisher.
 
-1. When you [create an API](../../../learn/design-api/create-api/create-a-rest-api), to configure load balancing endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
+1. When you [create an API](../create-api/create-a-rest-api.md), to configure load balancing endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
 
 2. Expand **Load balance and Failover Configurations**.
 
@@ -69,7 +84,7 @@ When using WSO2 API Manager, you can configure load balancing endpoints via the 
 ## Configuring Failover Group of Endpoints
 When using WSO2 API Manager, you can configure failover group endpoints via the API Publisher.
 
-1. When you [create an API](../../../learn/design-api/create-api/create-a-rest-api), to configure failover endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
+1. When you [create an API](../create-api/create-a-rest-api.md), to configure failover endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
 
 2. Expand **Load balance and Failover Configurations**.
 

@@ -1,10 +1,25 @@
+---
+title: "Configuring a Read-Write active directory user store"
+description: "Configure an external Active Directory as the read-write primary user store for WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Read-Write Active Directory User Store
 
 User management functionality is provided by default in WSO2 API Manager and it can be configured in the 
 `<API-M_HOME>/repository/conf/deployment.toml` file. The instructions given below explains how to configure Read Write Active Directory as a user store.
 
 !!! tip
-    To get a high-level understanding of the primary user stores available in WSO2 API Manager, see [Configuring primary User Stores](../../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store/).
+    To get a high-level understanding of the primary user stores available in WSO2 API Manager, see [Configuring primary User Stores](configuring-the-primary-user-store.md).
 
 !!! info
     **Default User Store**: The primary user store that is configured by default in the `deployment.toml` file of API Manager is a JDBC user store, which reads/writes into the internal database of the product server. By default, the internal database is H2. This database is used by the Authorization Manager (for user authentication information) as well as the User Store Manager (for defining users and roles).
@@ -132,7 +147,7 @@ Follow the given steps to configure an external Active Directory as the primary 
     !!! note
         When working with Active Directory;
 
-        -  It is best to enable the `GetAllRolesOfUserEnabled` property in the `AuthorizationManager` as follows. See the documentation on [Configuring the Authorization Manager](../../../../administer/managing-users-and-roles/managing-user-stores/configuring-the-authorization-manager#configuring-the-authorization-manager) for more information.
+        -  It is best to enable the `GetAllRolesOfUserEnabled` property in the `AuthorizationManager` as follows. See the documentation on [Configuring the Authorization Manager](../configuring-the-authorization-manager.md#configuring-the-authorization-manager) for more information.
         ``` xml
         <AuthorizationManager class="org.wso2.carbon.user.core.authorization.JDBCAuthorizationManager">
             <Property name="AdminRoleManagementPermissions">/permission</Property>
@@ -143,7 +158,7 @@ Follow the given steps to configure an external Active Directory as the primary 
 
         Although using the user store manager does not depend on this property, you must consider enabling this if there are any performance issues in your production environment. Enabling this property affects the performance when the user signs in. This depends on the users, roles and permission stats.
 
-        -   If you are using `ldaps` (secured LDAP) to connect to the Active Directory as shown in the example below, you need to import the certificate of Active Directory to the `client-truststore.jks` of the WSO2 product. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see [Using Asymmetric Encryption](./../../../../../product-security/UsingAsymmetricEncryption/creating-new-keystores/).
+        -   If you are using `ldaps` (secured LDAP) to connect to the Active Directory as shown in the example below, you need to import the certificate of Active Directory to the `client-truststore.jks` of the WSO2 product. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see [Using Asymmetric Encryption](../../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md).
 
         ``` toml
         ConnectionURL="ldaps://10.100.1.100:636"
@@ -252,7 +267,7 @@ Apart from above properties WSO2 API Manager also supports advanced LDAP configu
   
 ### Step 2 - Update the system administrator
 
-The **admin** user is the super tenant that will be able to manage all other users, roles, and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the LDAP user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the LDAP. For information about the system administrator user, see [Configuring the System Administrator](../../../../reference/config-catalog/#super-admin-configurations).
+The **admin** user is the super tenant that will be able to manage all other users, roles, and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the user store when you start the system for the first time. Since the LDAP user store can be written to, you have the option of creating a new admin user in the user store when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the LDAP. For information about the system administrator user, see [Configuring the System Administrator](../../../../reference/config-catalog.md#super-admin-configurations).
 
 These two alternative configurations can be done as explained below.
 

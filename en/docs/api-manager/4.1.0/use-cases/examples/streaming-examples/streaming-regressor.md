@@ -1,3 +1,18 @@
+---
+title: "Making predictions via a regressor model"
+description: "Train a regression model on CSV data and use it to predict spending from streaming events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/streaming-regressor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/streaming-regressor.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Making Predictions via a Regressor Model
 
 ## Purpose

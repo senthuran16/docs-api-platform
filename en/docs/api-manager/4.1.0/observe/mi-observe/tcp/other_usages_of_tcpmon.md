@@ -1,3 +1,18 @@
+---
+title: "Other usages of TCPMon"
+description: "Covers using TCPMon to send requests directly to web services, act as a proxy, and simulate slow connections."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/tcp/other_usages_of_tcpmon/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/tcp/other_usages_of_tcpmon.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - tcp
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Other Usages of TCPMon
 
 TCPMon is primarily used for message monitoring. Additionally, TCPMon

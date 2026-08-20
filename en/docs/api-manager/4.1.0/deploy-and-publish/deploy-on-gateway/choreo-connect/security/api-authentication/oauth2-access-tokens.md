@@ -1,3 +1,16 @@
+---
+title: "OAuth 2.0 authentication"
+description: "Configure how Choreo Connect validates OAuth2 JWT access tokens from trusted key managers using issuer, signature, subject, and expiry claims."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/oauth2-access-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/oauth2-access-tokens.md
+tags:
+  - oauth2
+  - jwt-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # OAuth 2.0 Authentication
 
 Choreo Connect can accept JWTs issued by **trusted** Key Managers as valid Access Tokens to invoke the APIs. JWTs are self-validated by Choreo Connect without validating it against the Authorization Server (Key Manager) that issued the JWT. This is done by validating based on the following attributes/claims of the JWT.
@@ -36,7 +49,7 @@ The following is an example standalone mode configuration for a trusted Key Mana
 - The `issuer` of the above configuration will be used to validate the "iss" claim of the JWT. 
 
 - The JWT signature can be validated either by the certificate in `certificateFilePath` (which the alias is defined in `certificateAlias`) or using the issuer's `jwksURL` endpoint. When configured both properties, if the JWT contains the kid (key ID), the token will be validated through the JWKS endpoint. Importing the public certificate into the Choreo Connect trust store and configuring the certificate alias in the JWT validation configuration section is explained in the [importing certificates to the Choreo Connect truststore](../tls/component-certificates.md#adding-a-certificate-to-a-component-truststore).
-- To enable [subscription validation](#subscription-validation), set `validateSubscription` to true and set `consumerKeyClaim` to the name of the claim in JWT which contains the consumer key of the application.
+- To enable [subscription validation](#enable-subscription-validation), set `validateSubscription` to true and set `consumerKeyClaim` to the name of the claim in JWT which contains the consumer key of the application.
 
 Refer to [Token Service in Enforcer Configurations](../../configurations/enforcer-configurations.md#token-service) to learn about the remaining parameters.
 

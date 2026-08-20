@@ -1,3 +1,18 @@
+---
+title: "Using Okta as an external IDP with SAML"
+description: "Connect Okta as a third-party identity provider to WSO2 API Manager using SAML for single sign-on authentication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-saml.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using Okta as an External IDP with SAML 
 
 Follow the instructions below to connect Okta as a third party Identity Provider to WSO2 API Manager.
@@ -70,15 +85,15 @@ Before you begin, make sure you do the following.
 
     1.  Go to **Users** -> **People** and click on your profile name.
         
-        <a href="../../../assets/img/learn/okta-profile-edit.png"><img src="../../../assets/img/learn/okta-profile-edit.png"/></a>
+        <a href="../../../../assets/img/learn/okta-profile-edit.png"><img src="../../../../assets/img/learn/okta-profile-edit.png"/></a>
     
     2.  Click **Edit** to change the profile details.
         
-        <a href="../../../assets/img/learn/okta-profile-edit2.png"><img src="../../../assets/img/learn/okta-profile-edit2.png" width="600" height="400"/></a>
+        <a href="../../../../assets/img/learn/okta-profile-edit2.png"><img src="../../../../assets/img/learn/okta-profile-edit2.png" width="600" height="400"/></a>
 
     3.  Add the **Role**. This will be used in the API Manager to map an internal role to the provisioned user.
         
-        <a href="../../../assets/img/learn/okta-profile-edit3.png"><img src="../../../assets/img/learn/okta-profile-edit3.png"/></a>
+        <a href="../../../../assets/img/learn/okta-profile-edit3.png"><img src="../../../../assets/img/learn/okta-profile-edit3.png"/></a>
 
 ## Step 2 - Setup API-Manager
 
@@ -86,29 +101,29 @@ Before you begin, make sure you do the following.
 
 2. Create a role that needs to be assigned to users that will be provisioned from Okta.
 
-    <a href="../../../assets/img/learn/okta-apim-add-role.png"><img src="../../../assets/img/learn/okta-apim-add-role.png" width=90%/></a>
+    <a href="../../../../assets/img/learn/okta-apim-add-role.png"><img src="../../../../assets/img/learn/okta-apim-add-role.png" width=90%/></a>
 
     1. Go to **Users and Roles**.
 
-         <a href="../../../assets/img/learn/okta-apim-add-role-name.png"><img src="../../../assets/img/learn/okta-apim-add-role-name.png" width=50%/></a>
+         <a href="../../../../assets/img/learn/okta-apim-add-role-name.png"><img src="../../../../assets/img/learn/okta-apim-add-role-name.png" width=50%/></a>
 
     2. Add a new role.
 
     3. Assign the following permissions to the role and save the role.
 
-        <a href="../../../assets/img/learn/okta-apim-add-role-permissions3.png"><img src="../../../assets/img/learn/okta-apim-add-role-permissions3.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-add-role-permissions3.png"><img src="../../../../assets/img/learn/okta-apim-add-role-permissions3.png" width=25%/></a>
         <br/>
         <br/>
-        <a href="../../../assets/img/learn/okta-apim-add-role-permissions2.png"><img src="../../../assets/img/learn/okta-apim-add-role-permissions2.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-add-role-permissions2.png"><img src="../../../../assets/img/learn/okta-apim-add-role-permissions2.png" width=25%/></a>
         <br/>
         <br/>
-        <a href="../../../assets/img/learn/okta-apim-add-role-permissions1.png"><img src="../../../assets/img/learn/okta-apim-add-role-permissions1.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-add-role-permissions1.png"><img src="../../../../assets/img/learn/okta-apim-add-role-permissions1.png" width=25%/></a>
 
 3. Log in to `https://localhost:9443/admin`. 
 
     1. Expand **Settings** and click **Scope Mapping**.
 
-        <a href="../../../assets/img/learn/okta-apim-role-scope-mapping.png"><img src="../../../assets/img/learn/okta-apim-role-scope-mapping.png" width=25%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-role-scope-mapping.png"><img src="../../../../assets/img/learn/okta-apim-role-scope-mapping.png" width=25%/></a>
 
     2. Update the following scopes with the `okta_role`.
 
@@ -168,28 +183,28 @@ Before you begin, make sure you do the following.
      
     You can check if the user logged in has the role `any` and assign the local `okta_role`.
 
-    <a href="../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png" width=90%/></a>
+    <a href="../../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png" width=90%/></a>
 
 7. Enable **Just-in-Time Provisioning** for the user to be saved in the API Manager user store.
 
-    <a href="../../../assets/img/learn/okta-apim-role-oidc-jit.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-jit.png" width=70%/></a>
+    <a href="../../../../assets/img/learn/okta-apim-role-oidc-jit.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-jit.png" width=70%/></a>
 
 8. Select a Service Provider.
 
     1. Navigate to **Service Providers** -> **List**.
 
-        <a href="../../../assets/img/learn/okta-apim-role-oidc-sp-select.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-sp-select.png" width=20%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-role-oidc-sp-select.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-sp-select.png" width=20%/></a>
     
     2. There are two service providers created `apim_publisher` and `apim_devportal`. Click **Edit** for `apim_publisher`.
 
         !!!warning
             You need to have signed in to the Developer Portal and Publisher at least once for the two service providers to appear, as it is created during the first sign in.
 
-        <a href="../../../assets/img/learn/okta-apim-role-oidc-sp.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-sp.png" width=90%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-role-oidc-sp.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-sp.png" width=90%/></a>
 
     3. Expand **Local & Outbound Authentication Configuration**. Select **Federated Authentication** and select the name of the Identity Provider you created from the corresponding drop-down menu.
 
-        <a href="../../../assets/img/learn/okta-apim-role-oidc-sp-outbound.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-sp-outbound.png" width=90%/></a>
+        <a href="../../../../assets/img/learn/okta-apim-role-oidc-sp-outbound.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-sp-outbound.png" width=90%/></a>
     
     Repeat this step for `apim_devportal` as a Service Provider.
 

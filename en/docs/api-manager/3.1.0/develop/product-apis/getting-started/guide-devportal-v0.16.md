@@ -1,8 +1,23 @@
+---
+title: "Getting started with the Developer Portal API v0.16"
+description: "Walks through obtaining an access token and invoking the Developer Portal REST API v0.16 with sample curl commands."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/getting-started/guide-devportal-v0.16/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/product-apis/getting-started/guide-devportal-v0.16.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Getting Started
 
 !!! warning
     - The **Developer Portal v0.16 REST APIs will be deprecated in the next WSO2 API Manager release**. 
-    - **[WSO2 recommends that you use the Developer Portal v1 REST APIs](../../../develop/product-apis/devportal-apis/devportal-v1/guide/)** as it is up to date and has support for the latest WSO2 API Manager 3.1.0 features.
+    - **[WSO2 recommends that you use the Developer Portal v1 REST APIs](../devportal-apis/devportal-v1/devportal-v1.md)** as it is up to date and has support for the latest WSO2 API Manager 3.1.0 features.
 
 WSO2 API Manager is a complete solution for publishing APIs, creating and managing a developer community, and for scalably routing API traffic. It leverages proven, production-ready, integration, security and governance components from WSO2 Enterprise Service Bus, WSO2 Identity Server, and WSO2 Governance Registry. Moreover, it is powered by API Manager Analytics, thereby making WSO2 API Manager ready for any large-scale deployments right away.
 

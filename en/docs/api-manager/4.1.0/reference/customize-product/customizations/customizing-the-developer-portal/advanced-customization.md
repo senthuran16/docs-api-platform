@@ -1,3 +1,18 @@
+---
+title: "Advanced customization"
+description: "Set up NodeJS and npm tooling to build and apply advanced React-based UI customizations to the portals."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/advanced-customization/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/advanced-customization.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Advanced Customization
 
 The user interface of the WSO2 API-M Developer Portal and Publisher Portal can be customized simply without editing the React codebase or the CSS in most cases. You will be required to modify the React codebase only if you need to do advanced customizations.

@@ -1,3 +1,18 @@
+---
+title: "High availability for endpoints"
+description: "Configure load balancing and failover endpoints in the API Publisher for high availability of API backends."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/high-availability-for-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/high-availability-for-endpoints.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - high-availability-for-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # High Availability for Endpoints
 
 ## Configuring Load Balancing Endpoints

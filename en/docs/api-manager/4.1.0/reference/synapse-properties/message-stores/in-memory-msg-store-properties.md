@@ -1,3 +1,18 @@
+---
+title: "In memory message store"
+description: "Lists the configuration properties for creating an in-memory message store for temporary message queuing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/in-memory-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/in-memory-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # In Memory Message Store
 ## Introduction
 This is a basic <b>message store</b> that stores messages in an in-memory queue. This means that all the stored messages will be lost when the server restarts. The in memory message store is a lot faster than a persistent message store. Therefore, it can be used to temporarily store messages for high-speed <b>store and forward</b> integrations where message persistence is not a requirement.</br></br>

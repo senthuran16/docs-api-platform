@@ -1,3 +1,18 @@
+---
+title: "Configuring rsync for deployment synchronization"
+description: "Configure rsync to synchronize deployment artifacts between manager and worker nodes for gateway clustering."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/clustering-gateway-for-ha-using-rsync/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/clustering-gateway-for-ha-using-rsync.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring rsync for Deployment Synchronization
 
 Deployment synchronization can be done using [rsync](https://download.samba.org/pub/rsync/rsync.html), which is a file copying tool. These changes must be done in the manager node and in the same directory.

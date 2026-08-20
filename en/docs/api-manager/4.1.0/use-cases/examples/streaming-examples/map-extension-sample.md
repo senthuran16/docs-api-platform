@@ -1,3 +1,18 @@
+---
+title: "Inserting and accessing data in a map"
+description: "Run a Siddhi sample that creates a map, inserts values, and checks whether the values are available."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/map-extension-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/map-extension-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Inserting and Accessing Data in a Map
 
 ## Purpose:

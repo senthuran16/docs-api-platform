@@ -1,3 +1,18 @@
+---
+title: "Documentum connector example"
+description: "Shows how to use the Documentum Connector to create folders, retrieve cabinets, and create documents in Documentum."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/documentum/documentum-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/documentum/documentum-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - documentum
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Documentum Connector Example
 
 Documentum Connector can be used to perform operations on OpenText Documentum Enterprise content management system.
@@ -20,7 +35,7 @@ The example consists of an API named as Documentum API with two resources create
 
 The following diagram shows the overall solution.
 
-<img src="../../../assets/img/integrate/connectors/documentum-example.png" title="Documentum connector example" width="400" alt="Documentum connector example"/>
+<img src="../../../../assets/img/integrate/connectors/documentum-example.png" title="Documentum connector example" width="400" alt="Documentum connector example"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -32,7 +47,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.1.0/includes/reference/connectors/importing-connector-to-integration-studio.md" 
 
 Now the connector is added to the palette.
 
@@ -69,19 +84,19 @@ Now the connector is added to the palette.
 
 You can see the newly added connector in the design palette.
 
-<img src="../../../assets/img/integrate/connectors/documentum-proxy.png" title="Documentum proxy" width="800" alt="Documentum proxy"/>
+<img src="../../../../assets/img/integrate/connectors/documentum-proxy.png" title="Documentum proxy" width="800" alt="Documentum proxy"/>
 
 ### Configure the connection and create folder operation
 
 1. Do the following configurations to initialize the connector.
-    <img src="../../../assets/img/integrate/connectors/documentum-connection.png" title="Documentum connection" width="800" alt="Documentum connection"/>
+    <img src="../../../../assets/img/integrate/connectors/documentum-connection.png" title="Documentum connection" width="800" alt="Documentum connection"/>
 
 2. Do the following configurations to set up the `create folder` operation.
-    <img src="../../../assets/img/integrate/connectors/documentum-create-folder.png" title="Documentum create folder" width="800" alt="Documentum create folder"/>
+    <img src="../../../../assets/img/integrate/connectors/documentum-create-folder.png" title="Documentum create folder" width="800" alt="Documentum create folder"/>
 
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.1.0/includes/reference/connectors/exporting-artifacts.md"
 
 Now the exported CApp can be deployed in the integration runtime so that we can run it and test.
 
@@ -89,8 +104,8 @@ Now the exported CApp can be deployed in the integration runtime so that we can 
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/googlepubsub-connector.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/googlepubsub-connector.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -100,7 +115,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}   
+--8<-- "api-manager/4.1.0/includes/reference/connectors/deploy-capp.md"   
 
 ## Testing
 

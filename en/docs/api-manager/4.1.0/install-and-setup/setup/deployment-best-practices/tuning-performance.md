@@ -1,3 +1,18 @@
+---
+title: "Tuning performance"
+description: "Apply OS-level and product configuration changes to optimize WSO2 API Manager performance in production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/deployment-best-practices/tuning-performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/deployment-best-practices/tuning-performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Tuning Performance
 
 This section describes some recommended performance tuning configurations to optimize WSO2 API Manager. It assumes that you have set up the API Manager on Unix/Linux, which is recommended for a production deployment.
@@ -9,7 +24,7 @@ This section describes some recommended performance tuning configurations to opt
     The values that WSO2 discusses here are general recommendations. They might not be the optimal values for the specific hardware configurations in your environment. WSO2 recommends that you carry out load tests on your environment to tune the API Manager accordingly.
 
 !!! note
-    Over time, databases accumulate large volumes of data including invalid access tokens, revoked access tokens, registry transaction-related logs, authorization codes, and user sessions. Therefore, cleaning up outdated and unnecessary data helps maintain optimal database performance by reducing storage overhead, improving query execution times, and ensuring that the system can handle higher loads effectively. WSO2 API Manager provides mechanisms to [manage data growth and improve performance](#configuring-wso2-api-m-to-perform-regular-cleaning).
+    Over time, databases accumulate large volumes of data including invalid access tokens, revoked access tokens, registry transaction-related logs, authorization codes, and user sessions. Therefore, cleaning up outdated and unnecessary data helps maintain optimal database performance by reducing storage overhead, improving query execution times, and ensuring that the system can handle higher loads effectively. WSO2 API Manager provides mechanisms to [manage data growth and improve performance](../../setup/setting-up-databases/managing-data-growth-and-improving-performance.md#configuring-wso2-api-m-to-perform-regular-cleaning).
 
 ## OS-level settings
 
@@ -287,7 +302,7 @@ default_max_per_route = 50
      <p class="admonition-title">Note</p>
      <p>Note that when the endpoint is suspended, the default action is defined here as invoking the fault sequence.</p>
 </div> 
-<p><img src="../../../assets/img/setup-and-install/timeout-configuration.png" alt="timeout-configuration.png" width="734" /></p></li>
+<p><img src="../../../../assets/img/setup-and-install/timeout-configuration.png" alt="timeout-configuration.png" width="734" /></p></li>
 <li><p>Click <strong>Save</strong>.</p></li>
 </ol>
 <div class="admonition note">

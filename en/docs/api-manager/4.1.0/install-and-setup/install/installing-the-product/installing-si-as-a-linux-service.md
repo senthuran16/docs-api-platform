@@ -1,3 +1,18 @@
+---
+title: "Running streaming integrator as a Linux service"
+description: "Explains how to download the Streaming Integrator and configure it to run as a Linux service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/installing-si-as-a-linux-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/installing-si-as-a-linux-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Running Streaming Integrator as a Linux Service
 
 WSO2 Streaming Integrator can be run as a Linux service.

@@ -1,3 +1,18 @@
+---
+title: "Creating and uploading using WSO2 integration studio"
+description: "Create a custom mediation policy in WSO2 Integration Studio and deploy it to the API Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/creating-and-uploading-using-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/creating-and-uploading-using-integration-studio.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Creating and Uploading using WSO2 Integration Studio
 
 You can design all custom mediation policies using a tool such as the WSO2 Integration Studio and then store the policy in the registry which can be later deployed to the Gateway.
@@ -65,7 +80,7 @@ prompted with the following dialog box.
     
 15. Log in to the **API Publisher Portal**. 
 
-16. Click **CREATE API** and then design a new REST API to create an API by following the steps in [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/).
+16. Click **CREATE API** and then design a new REST API to create an API by following the steps in [Create a REST API](../../design-api/create-api/create-a-rest-api.md).
 
 17. Go to the created API and from the Left Menu, go to **Runtime Configurations**.
 

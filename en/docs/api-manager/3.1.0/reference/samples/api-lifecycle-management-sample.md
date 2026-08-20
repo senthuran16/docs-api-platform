@@ -1,3 +1,18 @@
+---
+title: "API lifecycle management sample"
+description: "Walks through a sample scenario for managing API lifecycle states and configuring lifecycle change notifications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-lifecycle-management-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/reference/samples/api-lifecycle-management-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-lifecycle-management-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "tutorial"
+---
+
 # API Lifecycle Management Sample
 
 ### Usecase

@@ -1,3 +1,18 @@
+---
+title: "Deploy APIs as immutable gateway"
+description: "Deploy APIs as an immutable Choreo Connect gateway by mounting apictl projects for startup-time deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-apis-as-immutable-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-apis-as-immutable-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploy APIs as Immutable Gateway
 
 When deploying APIs as an immutable Gateway, the APIs are deployed during startup. After startup, no APIs can be added using apictl. 
@@ -58,8 +73,8 @@ All the apictl projects in the directory will be deployed during the startup.
 
 
 ##  Step 5 - Invoke the API
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.1.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.1.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.

@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint overview"
+description: "Introduces the DB Event Inbound Endpoint, which generates events from database changes, and links to its example and reference guides."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # DB Event Inbound Endpoint Overview
 
 Data is the most valuable asset in any business. Almost every cooperate system has an on-premise or cloud-based data storage facility. When the individual systems in a particular business are integrated together, sometimes they are coupled via database systems. For an example, one system can write data, while another system reads and processes them. In such instances, the systems may want to know if there are any changes to the data being performed by external parties or systems. 
@@ -6,7 +21,7 @@ Hence, for an enterprise integration platform it is a useful feature to be able 
 
 To see the DB Event Inbound Endpoint, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "Event". **DB Event Listener** is the name of the connector that has this functionality.
 
-<img src="../../../assets/img/integrate/connectors/db-event-store.png" title="DB Event Listener Store" width="200" alt="DB Event Listener Store"/>
+<img src="../../../../assets/img/integrate/connectors/db-event-store.png" title="DB Event Listener Store" width="200" alt="DB Event Listener Store"/>
 
 ## Compatibility
 

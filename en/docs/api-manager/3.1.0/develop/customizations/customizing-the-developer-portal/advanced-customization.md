@@ -1,3 +1,18 @@
+---
+title: "Advanced customization"
+description: "Set up NodeJS and NPM to build and override React components in the Developer Portal source code."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/advanced-customization/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/develop/customizations/customizing-the-developer-portal/advanced-customization.md
+tags:
+  - api-manager
+  - develop
+  - customizations
+  - customizing-the-developer-portal
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Advanced Customization
 
 ### Prerequisites

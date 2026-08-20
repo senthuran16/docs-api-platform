@@ -1,3 +1,18 @@
+---
+title: "Choreo connect analytics configuration catalog"
+description: "Lists the configuration parameters and sample TOML values for enabling analytics in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/analytics-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/analytics-configurations.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Choreo Connect Analytics Configuration Catalog
 
 This document describes all the configurations related to analytics that are used in WSO2 Choreo Connect.

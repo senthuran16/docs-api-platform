@@ -1,3 +1,16 @@
+---
+title: "Backend certificates"
+description: "Configure TLS settings and add trusted backend certificates to the Choreo Connect router for secure endpoint connections."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/backend-certificates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/backend-certificates.md
+tags:
+  - tls
+  - backend-certificates
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Backend Certificates
 
 To connect to endpoints (backends) with TLS, the public certificate of the backend should be added as a trusted certificate to the router.
@@ -85,6 +98,6 @@ The above section explains how a certificate can be added to the Choreo Connect 
 1. Create a new API Project by following the [Importing APIs via Developer First Approach](../../../../../install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach.md)
 2. Copy the backend certificate to `<API_PROJECT_HOME>/Endpoint-certificates` directory in PEM format.
 3. Generate the Deployment directory for the API project following [Generating the Deployment Directory](../../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#generating-the-deployment-directory)
-4. Following [Defining the parameters file for an API](../../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api), edit the params.yaml file in the generated deployment directory.
+4. Following [Defining the parameters file for an API](../../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api), edit the params.yaml file in the generated deployment directory.
 5. Bundle the generated Deployment directory with the project, [Bundling the generated directory before Import](../../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#bundling-the-generated-directory-before-import)
 6. Deploy the API project into Choreo Connect [Deploy an API](../../../../../install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl.md#deploy-an-api)

@@ -1,3 +1,18 @@
+---
+title: "Publish to multiple external Developer Portals"
+description: "Publish an API to Developer Portals of other tenants so their subscribers can view and browse it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/publish-api/publish-to-multiple-external-api-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/publish-api/publish-to-multiple-external-api-stores.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - publish-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish to Multiple External Developer Portals
 
 You can share an API with application developers who are subscribed to the Developer Portals of other tenants. Thereby, this allows you to advertise your APIs to a wider community. Subscribers of other tenant developer portals can view and browse your APIs; however, the users must visit your (the original publisher's) Developer Portal to subscribe to the APIs.
@@ -135,7 +150,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
         ```
     
     !!! tip
-        In a **multi-tenant environment**, each tenant can publish to different external Developer Portals by changing the above file in their tenant space. For more information on how APIs appear and are available for subscription in a multi-tenant environment, see [API visibility](../../../getting-started/key-concepts#api-visibility). Note that publishing to an external Developer Portal only means that the API is advertised there. To subscribe, you must always register and sign in to the original publisher's tenant Developer Portal.
+        In a **multi-tenant environment**, each tenant can publish to different external Developer Portals by changing the above file in their tenant space. For more information on how APIs appear and are available for subscription in a multi-tenant environment, see [API visibility](../../../getting-started/key-concepts.md#api-visibility). Note that publishing to an external Developer Portal only means that the API is advertised there. To subscribe, you must always register and sign in to the original publisher's tenant Developer Portal.
 
 
     Note the following in the configuration above:
@@ -188,7 +203,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
 8.  Click **Save Content**.
 
-9.  Sign in to the Publisher of the first instance as `admin`/`admin` and if you do not have any APIs that are in the published state created, [create an API](../../../learn/design-api/create-api/create-a-rest-api/).
+9.  Sign in to the Publisher of the first instance as `admin`/`admin` and if you do not have any APIs that are in the published state created, [create an API](../create-api/create-a-rest-api.md).
 
     !!! tip
             In a multi-tenant environment, sign in to the API Publisher using your tenant's credentials.

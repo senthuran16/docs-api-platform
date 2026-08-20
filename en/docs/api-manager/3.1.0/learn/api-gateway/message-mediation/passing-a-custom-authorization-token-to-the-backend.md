@@ -1,3 +1,18 @@
+---
+title: "Passing a custom authorization token to the backend"
+description: "Exchange a custom authorization token for the generated access token before forwarding requests to the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/passing-a-custom-authorization-token-to-the-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/api-gateway/message-mediation/passing-a-custom-authorization-token-to-the-backend.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Passing a Custom Authorization Token to the Backend
 
 When you send an API request to the backend, you pass a token in the `Authorization` header of the request. 
@@ -26,7 +41,7 @@ Here's a summary:
         </sequence>
         ```
 
-2.  Log in to the **API Publisher**, create a new REST API with the information given in the table below by following the instructions in [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/).
+2.  Log in to the **API Publisher**, create a new REST API with the information given in the table below by following the instructions in [Create a REST API](../../design-api/create-api/create-a-rest-api.md).
 
     | Field         | Sample value         |
     |---------------|----------------------|
@@ -46,7 +61,7 @@ sequence that you created earlier and click **Save** .
 5. Go **Developer Portal**, subscribe and obtain a token to invoke the published API. 
 
     !!! tip
-        Follow the instructions in [here](../../../learn/consume-api/manage-application/generate-keys/generate-api-keys/#generate-application-keys) to generate an application access token.  
+        Follow the instructions in [here](../../consume-api/manage-application/generate-keys/generate-api-keys.md#generate-application-keys) to generate an application access token.  
 
 6. Install any REST client in your machine. We use [cURL](http://curl.haxx.se/download.html) here.
 

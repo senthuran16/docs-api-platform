@@ -1,3 +1,18 @@
+---
+title: "Business rules APIs"
+description: "Reference the business rules API for listing available business rule instances with sample curl commands."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/business-rules-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/business-rules-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - business-rules-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Business Rules APIs
 
 ## Listing the available business rule instances

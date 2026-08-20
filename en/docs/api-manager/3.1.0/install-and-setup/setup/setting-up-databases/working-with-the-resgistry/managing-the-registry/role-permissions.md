@@ -1,3 +1,18 @@
+---
+title: "Role permissions"
+description: "Configure role permissions to control which roles can read, write, delete, or authorize registry resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/role-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/role-permissions.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-27
+content_type: "how-to"
+---
+
 # Role Permissions
 
 When you select a collection in the registry, the **Permissions** panel opens with the defined role permissions available. It allows you to specify which role has access to perform which operations on a registry resource or a collection.

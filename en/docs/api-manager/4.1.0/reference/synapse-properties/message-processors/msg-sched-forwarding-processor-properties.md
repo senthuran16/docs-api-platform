@@ -1,6 +1,21 @@
+---
+title: "Scheduled message forwarding processor"
+description: "Lists the configuration properties for the scheduled message forwarding processor that delivers messages to an endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-processors/msg-sched-forwarding-processor-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-processors/msg-sched-forwarding-processor-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Scheduled Message Forwarding Processor 
 ## Introduction
-The scheduled message forwarding processor consumes messages in a message store and sends them to an <a href="../endpoint-properties.md">endpoint</a>. If a message is successfully delivered to the endpoint, the processor deletes the message from the message store. In case of a failure, it will retry after a specified interval.
+The scheduled message forwarding processor consumes messages in a message store and sends them to an <a href="../../endpoint-properties/">endpoint</a>. If a message is successfully delivered to the endpoint, the processor deletes the message from the message store. In case of a failure, it will retry after a specified interval.
 
 ## Properties
 

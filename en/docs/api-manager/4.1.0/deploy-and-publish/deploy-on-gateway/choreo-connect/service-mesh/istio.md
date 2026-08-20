@@ -1,3 +1,16 @@
+---
+title: "API management in Istio microservices using Choreo connect"
+description: "Integrate Choreo Connect with Istio service mesh using MTLS mode, sidecar mode, or service-to-service communication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-mesh/istio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-mesh/istio.md
+tags:
+  - istio
+  - service-mesh
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # API Management in Istio Microservices Using Choreo Connect
 
 Choreo Connect can be integrated with the Istio service mesh to provide API management for Istio microservices. Microservices can be deployed in Istio and exposed as APIs via Choreo Connect. This enables a variety of API management quality of services (QoS) for the API, such as message security rate-limiting, observability, and message mediation. You can productize the APIs and provide them to application developers via the WSO2 Developer Portal using WSO2 API Manager.
@@ -23,7 +36,7 @@ Istio Sidecar sample can be found in [GitHub](https://github.com/wso2/product-mi
 
 ### Service to Service Communication
 
-<img src="../../../../assets/img/deploy/istio-east-west-traffic.png" width="75%" alt="East-West traffic API management">
+<img src="../../../../../assets/img/deploy/istio-east-west-traffic.png" width="75%" alt="East-West traffic API management">
 
 Microservices can be deployed in the Istio service mesh and the communication between microservices can be configured to route through Choreo Connect as an Internal API Gateway. Choreo Connect is deployed in the Istio service mesh as a separate service where it applies API Management for the microservices. Requests arrive that are validated in Choreo Connect before passing it the relevant microservice, as indicated in the diagram. In this scenario Choreo Connect acts as the edge Gateway as well as the internal Gateway.
 

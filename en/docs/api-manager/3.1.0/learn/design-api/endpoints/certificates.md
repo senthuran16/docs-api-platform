@@ -1,3 +1,18 @@
+---
+title: "Manage endpoint certificates"
+description: "Upload a self-signed backend certificate to an API endpoint through the API Publisher without restarting the server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/certificates/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.1.0/learn/design-api/endpoints/certificates.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Managing Endpoint Certificates
 
 If your API backend is secured with a self-signed certificate (or a certificate which is not signed by a CA) you need to import the backend certificate to the API manager (Gateway) client-truststore and restart the server. This feature enables you to upload the backend certificate through API Publisher while creating or editing your API **without restarting the server**. 
@@ -125,7 +140,7 @@ Follow the steps below to add a certificate to an endpoint:
 
 1.  Sign in to the API Publisher. 
 
-2. [Create a new API](../../../learn/design-api/create-api/create-a-rest-api/) or click on an existing API.
+2. [Create a new API](../create-api/create-a-rest-api.md) or click on an existing API.
 
 3.  Click **Endpoints** and click **General Endpoint Configuration** to expand that section. 
     [![Open General Endpoint Configuration](../../../assets/img/learn/open-general-endpoint-configuration.png)](../../../assets/img/learn/open-general-endpoint-configuration.png)
