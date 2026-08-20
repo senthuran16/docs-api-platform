@@ -2,8 +2,8 @@
 
 In an API-M Gateway cluster, artifact synchronization is critical to maintain consistency among the nodes. WSO2 API-M provides three mechanisms for artifact synchronization.
 
-1. [Shared file system (e.g., NFS)](../../../install-and-setup/setup/distributed-deployment/synchronizing-artifacts-in-a-gateway-cluster/#artifact-synchronization-with-a-shared-file-system)
-2. [Inbuilt artifact synchronizer](../../../install-and-setup/setup/distributed-deployment/synchronizing-artifacts-in-a-gateway-cluster/#inbuilt-artifact-synchronization) 
+1. [Shared file system (e.g., NFS)](synchronizing-artifacts-in-a-gateway-cluster.md#artifact-synchronization-with-a-shared-file-system)
+2. [Inbuilt artifact synchronizer](synchronizing-artifacts-in-a-gateway-cluster.md#inbuilt-artifact-synchronization) 
 
 ## Artifact synchronization with a shared file system
 
@@ -48,7 +48,7 @@ Gateways are subscribed to the Traffic Manager. There is an extension in the Gat
 
 ### Gateway Labels and Environments
 
-If you need to deploy an API in a specific Gateway, you could use either [Gateway Labels](../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways/#gateway-labels) or [Gateway Environments](../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways) to expose that particular Gateway. 
+If you need to deploy an API in a specific Gateway, you could use either [Gateway Labels](../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways.md#gateway-labels) or [Gateway Environments](../../../learn/api-gateway/maintaining-separate-production-and-sandbox-gateways.md) to expose that particular Gateway. 
 
 
 ### Configuring the Inbuilt Artifact Synchronizer
@@ -104,14 +104,14 @@ Configure the Gateway and Publisher profiles as explained below to enable artifa
 #### Retrieve artifacts from the storage
 
 Once the Inbuilt Artifact Synchronizer is enabled, runtime artifacts will no longer be saved to the file system (`<API-M_HOME>/repository/deployment/server/synapse-configs/default` directory as XMLs). Instead they will be saved as blobs in the database.
-However, for debugging purposes or recovery purposes, you can use the [Gateway REST API](../../../develop/product-apis/gateway-apis/gateway-v1/gateway-v1/#tag/Get-API-Artifacts) to view artifacts, redeploy artifacts or undeploy artifacts. 
+However, for debugging purposes or recovery purposes, you can use the [Gateway REST API](../../../develop/product-apis/gateway-apis/gateway-v1/gateway-v1.md#tag/Get-API-Artifacts) to view artifacts, redeploy artifacts or undeploy artifacts. 
 
 !!! note
     Please note that Gateway REST API operations are local to that Gateway deployment. If there are multiple Gateway nodes in the cluster,
     undeploying the artifacts with the REST API resource in one Gateway node will not undeploy from the entire cluster. 
 
 !!! tip
-    Even though the artifacts are not getting saved to the file system, if we add a valid XML with the relevant runtime artifacts (retrieved from the [Gateway REST API](../../../develop/product-apis/gateway-apis/gateway-v1/gateway-v1/#tag/Get-API-Artifacts)) to the  `<API-M_HOME>/repository/deployment/server/synapse-configs/default/api` directory,
+    Even though the artifacts are not getting saved to the file system, if we add a valid XML with the relevant runtime artifacts (retrieved from the [Gateway REST API](../../../develop/product-apis/gateway-apis/gateway-v1/gateway-v1.md#tag/Get-API-Artifacts)) to the  `<API-M_HOME>/repository/deployment/server/synapse-configs/default/api` directory,
     it will undeploy the current artifact and deploy the API from the file system. This can be used to debug the behavior of the artifact. However this is not recommended as it can cause inconsistencies in the runtime artifacts.
 
 #### Database configurations

@@ -126,7 +126,7 @@ The throttle summary widget shows the throttled counts of the selected API(s) as
 ![Throttle summary](../../../assets/img/learn/analytics/analytics_throttle_summary_widget.png)
 
 ### Error summary
-The error summary page provides information about the APIs with the highest throttled out request and faulty request counts(refer [error analysis](../../../learn/analytics/viewing-api-statistics/business-analytics-dashboard/#error-summary_1) section for more details). The top throttled out APIs widget available in this page helps identify the most throttled out APIs.
+The error summary page provides information about the APIs with the highest throttled out request and faulty request counts(refer [error analysis](business-analytics-dashboard.md#error-summary_1) section for more details). The top throttled out APIs widget available in this page helps identify the most throttled out APIs.
 
 #### Top throttled out APIs
 The top throttled out APIs widget displays the APIs with the highest throttled out request count within the specified time range. This widget comprises of 2 representations:
@@ -139,7 +139,7 @@ Click on an API on the pie chart or the table to see the breakdown of the select
 ![Top throttled out APIs](../../../assets/img/learn/analytics/analytics_top_throttled_out_apis_widget.png)
 
 ### API errors
-The API errors page provides information about the throttled out requests and faulty requests(refer [error analysis](../../../learn/analytics/viewing-api-statistics/business-analytics-dashboard/#api-errors_1) section for more details) of a selected API. The API throttled out requests over time widget provides an overtime representation of the throttled out invocations of the selected API.
+The API errors page provides information about the throttled out requests and faulty requests(refer [error analysis](business-analytics-dashboard.md#api-errors_1) section for more details) of a selected API. The API throttled out requests over time widget provides an overtime representation of the throttled out invocations of the selected API.
 
 #### API throttled out requests over time
 API throttled out requests over time widget shows how the selected API was throttled out overtime for the specified time range. This widget contains 2 representations;
@@ -153,7 +153,7 @@ API throttled out requests over time widget shows how the selected API was throt
 Error analysis will help identify problematic APIs so that proactive measures could be taken to improve these APIs. API error related data are displayed in the following pages in the business analytics dashboard:
 
 ### Error summary
-The error summary page provides information about the APIs with the highest throttled out request(refer [analysing throttled out API requests](../../../learn/analytics/viewing-api-statistics/business-analytics-dashboard/#error-summary) section for more details) and faulty request counts. The top faulty APIs widget available in this page helps identify the APIs with the most faulty invocations.
+The error summary page provides information about the APIs with the highest throttled out request(refer [analysing throttled out API requests](business-analytics-dashboard.md#error-summary) section for more details) and faulty request counts. The top faulty APIs widget available in this page helps identify the APIs with the most faulty invocations.
 
 #### Top faulty APIs
 The top faulty APIs widget displays the APIs with the highest faulty request count within the specified time range. This widget comprises of 2 representations:
@@ -166,7 +166,7 @@ Click on an API on the pie chart or the table to see the representation of the f
 [![Top faulty APIs](../../../assets/img/learn/analytics/analytics_top_faulty_apis_widget.png)](../../../assets/img/learn/analytics/analytics_top_faulty_apis_widget.png)
 
 ### API errors
-The API errors page provides information about the throttled out requests(refer [analysing throttled out API requests](../../../learn/analytics/viewing-api-statistics/business-analytics-dashboard/#api-errors) section for more details) and faulty requests of a selected API. The API faults over time widget provides an overtime representation of the faulty invocations of the selected API.
+The API errors page provides information about the throttled out requests(refer [analysing throttled out API requests](business-analytics-dashboard.md#api-errors) section for more details) and faulty requests of a selected API. The API faults over time widget provides an overtime representation of the faulty invocations of the selected API.
 
 #### API faults over time
 API faults over time widget shows the faulty invocations of the selected API overtime for the specified time range. This widget contains 2 representations:
@@ -203,6 +203,6 @@ Using this widget, the user will be able to identify the key locations where the
 
 Here, Geolocation based statistics are used to carry out detailed monitoring of geographic locations. 
 Geographic location is identified from X-Forwarded-For header with the relevant IP in the API request. 
-For more information, see [Using Geolocation Based Statistics](../../../learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set/).
+For more information, see [Using Geolocation Based Statistics](../analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/creating-geo-location-data-set.md).
 
 [![Geo location based invocations](../../../assets/img/learn/analytics/geo-location-stats.png)](../../../assets/img/learn/analytics/geo-location-stats.png)

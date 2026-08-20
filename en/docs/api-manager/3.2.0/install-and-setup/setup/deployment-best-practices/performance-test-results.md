@@ -132,7 +132,7 @@ The following charts depict the GC Throughput (%) based on the number of concurr
 
 [![Lineplot WSO2 Api Manager GC throughput 2G 10KiB 0ms](../../../assets/img/setup-and-install/performance-test-results/lineplot-wso2-api-manager-gc-throughput-2g-10kib-0ms.png)](../../../assets/img/setup-and-install/performance-test-results/lineplot-wso2-api-manager-gc-throughput-2g-10kib-0ms.png)
 
-[![Lineplot WSO2 Api Manager GC throughput 2G 50B 0ms](../../../assets/img/setup-and-install/performance-test-results/lineplot-wso2-api-manager-gc-throughput-2g-50B-0ms.png)](../../../assets/img/setup-and-install/performance-test-results/lineplot-wso2-api-manager-gc-throughput-2g-50B-0ms.png)
+[![Lineplot WSO2 Api Manager GC throughput 2G 50B 0ms](../../../assets/img/setup-and-install/performance-test-results/lineplot-wso2-api-manager-gc-throughput-2g-50b-0ms.png)](../../../assets/img/setup-and-install/performance-test-results/lineplot-wso2-api-manager-gc-throughput-2g-50b-0ms.png)
 
 ## Comparison of results
 

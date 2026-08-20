@@ -44,7 +44,7 @@ curl -k -X GET "https://localhost:8243/pizzashack/1.0.0/menu" -H  "accept: appli
 
 ## Basic Authentication with Scopes
 
-WSO2 API Manager allow users to configure [Scopes](../../../learn/api-security/oauth2/AOuth2Scopes/fine-grained-access-control-with-oauth-scopes) with role bindings which can associate with API Resources. Basic authentication
+WSO2 API Manager allow users to configure [Scopes](../oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md) with role bindings which can associate with API Resources. Basic authentication
 uses credentials of the user to authenticate with the Basic Authentication protected API.
 
 If a user associate API resources with scopes which protected with Basic Authentication scheme, API Manager will perform the 

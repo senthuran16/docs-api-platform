@@ -21,7 +21,7 @@ The thumbnail of an API can be changed by uploading an image for the thumbnail o
       
 ## Design a new API Thumbnail
 
-1. Follow [steps 1 - 3 under Upload new API thumbnail](#Upload-new-API-thumbnail).
+1. Follow [steps 1 - 3 under Upload new API thumbnail](#upload-new-api-thumbnail).
 
 2. Click **Design**.
     [![](../../../assets/img/learn/change-thumbnail-design.png)](../../../assets/img/learn/change-thumbnail-design.png) 

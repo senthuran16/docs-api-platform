@@ -10,6 +10,7 @@ This is the default scenario. Because this Gateway instance handles both product
 
 [![Hybrid Gateway](../../assets/img/learn/hybrid-gw.png)](../../assets/img/learn/hybrid-gw.png)
 
+<a name="multiple-gateways-to-handle-production-and-sandbox-requests-separately"></a>
 #### Multiple Gateways to handle production and sandbox requests separately
 
 Having a single Gateway instance to pass through both types of requests can negatively impact the performance of the production server. To avoid this, you can set up separate API Gateways. The production API Gateway handles requests that are made using PRODUCTION type tokens and the sandbox API Gateway handles requests that are made using SANDBOX type tokens.
@@ -74,10 +75,10 @@ If you work with Gateways in different geographical locations, configuring mult
 Similar to Gateway Environments, you can use `Gateway Labels` to expose a particular Gateway. Once you expose an Gateway, you can choose from the API Publisher Portal, the API Gateways that the API should be deployed.
 In previous versions of APIM, Gateway Labels were only used with Micro Gateway and not with the synapse Gateway.
 With APIM 3.2.0 release, Gateway Labels acts similar to Gateway Environment in the architecture. Even though Gateway environments are added through a configuration as explained above, 
-Gateway Labels can be added dynamically from the [admin portal](../../learn/api-microgateway/grouping-apis-with-labels/#step-1-create-a-microgateway-label).
+Gateway Labels can be added dynamically from the [admin portal](../api-microgateway/grouping-apis-with-labels.md#step-1-create-a-microgateway-label).
 
 However Gateway Labels only works if you have enabled artifact synchronization of Gateway runtime artifacts with Inbuilt Artifact Synchronizer. The Publisher-Subscriber architecture
-in the Inbuilt Artifact Synchronizer deploys the artifacts to the Gateways defined with Gateway Labels. For more information, see [Inbuilt Artifact Synchronizer](../../install-and-setup/setup/distributed-deployment/synchronizing-artifacts-in-a-gateway-cluster/#inbuilt-artifact-synchronization)
+in the Inbuilt Artifact Synchronizer deploys the artifacts to the Gateways defined with Gateway Labels. For more information, see [Inbuilt Artifact Synchronizer](../../install-and-setup/setup/distributed-deployment/synchronizing-artifacts-in-a-gateway-cluster.md#inbuilt-artifact-synchronization)
 
 Once you define a Gateway Label, Gateway deployment has to subscribe to that Label. Gateway deployment to Gateway Label has a many to many relationship. One Gateway deployment can subscribe to multiple Labels and One label can be subscribed by multiple Gateway deployments.
 Once the API publisher publish the API by selecting a Gateway Label, Publisher node will publish this event to all the Gateways in the deployment through Traffic Manager. If the Gateway is subscribed to that API Label, it will retrieve the artifact and deploy.

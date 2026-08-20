@@ -15,11 +15,11 @@ If the API is in the created lifecycle state, the developer can initialize the t
 
 Let's see how to use the Publisher test Console to test an API.
 
-The examples here use the `PizzaShack` REST API, which was created in [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/) .
+The examples here use the `PizzaShack` REST API, which was created in [Create a REST API](create-a-rest-api.md) .
 
-1.  Sign in to the API Publisher `https://<hostname>:9443/publisher` (e.g., `https://localhost:9443/publisher` ). Upon signing in, the list of APIs in the API Publisher is listed. Please refer [create an API guide](../../../learn/design-api/create-api/create-a-rest-api/) to create a new API.
+1.  Sign in to the API Publisher `https://<hostname>:9443/publisher` (e.g., `https://localhost:9443/publisher` ). Upon signing in, the list of APIs in the API Publisher is listed. Please refer [create an API guide](create-a-rest-api.md) to create a new API.
 
-     If there are no APIs created, [create an API](../../../learn/design-api/create-api/create-a-rest-api/) before starting.
+     If there are no APIs created, [create an API](create-a-rest-api.md) before starting.
 
 2.  Click on an API that is in the **CREATED** state.
 

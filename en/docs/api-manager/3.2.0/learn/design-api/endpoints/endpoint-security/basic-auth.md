@@ -10,7 +10,7 @@ Basic Authentication is the simplest mechanism used to enforce access controls 
     Authorization: Basic YWRtaW46YWRtaW4=` (where `YWRtaW46YWRtaW4=` is equivalent to Base64Encoded{admin:admin} )
     ```
 
-When you [create an API](../../../../learn/design-api/create-api/create-a-rest-api) using the API Publisher, you can specify the endpoints of the API backend implementation via the **Endpoints** page as Production and Sandbox endpoints respectively.
+When you [create an API](../../create-api/create-a-rest-api.md) using the API Publisher, you can specify the endpoints of the API backend implementation via the **Endpoints** page as Production and Sandbox endpoints respectively.
 
 Follow the instructions below to use Basic Auth as the endpoint authentication type when using a secured endpoint:
 

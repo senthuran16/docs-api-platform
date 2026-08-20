@@ -50,9 +50,9 @@ We recommend the following patterns for blacklisting.
 </tbody>
 </table>
 
--   [Editing the sequence through registry artifacts](#Am300RegularExpressionThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the Regular Expression Policy](#Am300RegularExpressionThreatProtectionforAPIGateway-ApplyingtheRegularExpressionPolicy)
--   [Testing the regex threat protector](#Am300RegularExpressionThreatProtectionforAPIGateway-Testingtheregexthreatprotector)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the Regular Expression Policy](#applying-the-regular-expression-policy)
+-   [Testing the regex threat protector](#testing-the-regex-threat-protector)
 
 ### Editing the sequence through registry artifacts
 
@@ -103,6 +103,8 @@ You can test this feature by sending an SQL injection attack with the XML messag
 -   [**Message**](#10673ba9a16d49dcaf1b6a073de9cf4d)
 -   [**Response**](#90b129a29c8c4b74869eb1676bb3f705)
 
+<a name="10673ba9a16d49dcaf1b6a073de9cf4d"></a>
+
 ``` java
     <?xml version="1.0" encoding="UTF-8"?>
     <breakfast_menu>
@@ -116,6 +118,8 @@ You can test this feature by sending an SQL injection attack with the XML messag
     </food>
     </breakfast_menu>
 ```
+
+<a name="90b129a29c8c4b74869eb1676bb3f705"></a>
 
 ``` java
     <am:fault xmlns:am="http://wso2.org/apimanager">

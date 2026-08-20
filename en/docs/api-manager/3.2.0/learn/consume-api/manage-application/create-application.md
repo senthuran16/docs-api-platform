@@ -8,7 +8,7 @@ Applications allow you to:
 -   Subscribe multiple times to a single API with different Service Level Agreements (SLAs)/business plans which 
 operate on per access token basis.
 
-WSO2 API Manager comes with a pre-created default application, which allows unlimited access by default. Default application creation can be disabled by adding the configuration `"DisableDefaultApplicationCreation" : true` into the `/repository/resources/tenant-conf.json`. You can also [create](../../../learn/consume-api/manage-application/create-application/#create-a-new-application) your own.
+WSO2 API Manager comes with a pre-created default application, which allows unlimited access by default. Default application creation can be disabled by adding the configuration `"DisableDefaultApplicationCreation" : true` into the `/repository/resources/tenant-conf.json`. You can also [create](create-application.md#create-a-new-application) your own.
 
 ## Create a new application
 
@@ -18,7 +18,7 @@ WSO2 API Manager comes with a pre-created default application, which allows unli
 
 3.  Click **ADD NEW APPLICATION**.
 
-    [![Add new application option](../../../assets/img/learn/add-new-application-option.png)](../../../assets/img/learn/add-new-application-option.png)
+    [![Add new application option](../../../assets/img/learn/api-security/oauth2/access-token-types/add-new-application-option.png)](../../../assets/img/learn/api-security/oauth2/access-token-types/add-new-application-option.png)
 
 4.  Enter the application details and click **SAVE** to create the application.
    

@@ -29,14 +29,14 @@ Finally if the backend JWT generation is enabled, it generates the JWT.
 
 ## Configuring Key Managers with WSO2 API-M
 
-- [Configure WSO2 IS as a Key Manager](../../administer/key-managers/configure-wso2is-connector/)
+- [Configure WSO2 IS as a Key Manager](configure-wso2is-connector.md)
 
-- [Configure Keycloak as a Key Manager](../../administer/key-managers/configure-keycloak-connector/)
+- [Configure Keycloak as a Key Manager](configure-keycloak-connector.md)
 
-- [Configure Okta as a Key Manager](../../administer/key-managers/configure-okta-connector/)
+- [Configure Okta as a Key Manager](configure-okta-connector.md)
 
-- [Configure Auth0 as a Key Manager](../../administer/key-managers/configure-auth0-connector/)
+- [Configure Auth0 as a Key Manager](configure-auth0-connector.md)
 
-- [Configure PingFederate as a Key Manager](../../administer/key-managers/configure-pingfederate-connector/)
+- [Configure PingFederate as a Key Manager](configure-pingfederate-connector.md)
 
-- [Configure ForgeRock as a Key Manager](../../administer/key-managers/configure-forgerock-connector/)
+- [Configure ForgeRock as a Key Manager](configure-forgerock-connector.md)

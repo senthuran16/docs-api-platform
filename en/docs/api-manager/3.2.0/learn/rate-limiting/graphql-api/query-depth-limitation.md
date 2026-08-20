@@ -59,14 +59,14 @@ subscription policies.
 
 ### Design a GraphQL API
 
-To design a GraphQL API, see [Create a GraphQL API](../../../learn/design-api/create-api/create-a-graphql-api).
+To design a GraphQL API, see [Create a GraphQL API](../../design-api/create-api/create-a-graphql-api.md).
 
 <html>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>
 Instead of giving Business Plans of GraphQL API related details in 
-<a href="../../../learn/design-api/create-api/create-a-graphql-api">Create a GraphQL API</a>, 
+<a href="../../../design-api/create-api/create-a-graphql-api/">Create a GraphQL API</a>, 
 Use Business Plans that you create in the previous steps.
 </p>
 </div> 
@@ -75,7 +75,7 @@ Use Business Plans that you create in the previous steps.
 ### Invoke a GraphQL API
 
 To invoke a GraphQL API, see 
-[Invoke a GraphQL API](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console).
+[Invoke a GraphQL API](../../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md).
 
 To perform **GraphQL Query Depth Limitation**: 
 

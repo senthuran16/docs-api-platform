@@ -9,7 +9,7 @@ In order to make the data easily available, WSO2 API Manager Analytics offers di
 Follow the instructions below to access the statistical dashboards.
 
 !!! info
-    For instructions on how to set up Analytics, see [Configuring APIM Analytics](../../learn/analytics/configuring-apim-analytics)
+    For instructions on how to set up Analytics, see [Configuring APIM Analytics](configuring-apim-analytics.md)
 
 1. Sign in to the Analytics Dashboard.
 
@@ -37,7 +37,7 @@ Follow the instructions below to access the statistical dashboards.
 <a name="business-analytics-dashboard"></a>
 <table>
 <tr>
-<th colspan="2"><b><a href="../../learn/analytics/viewing-api-statistics/business-analytics-dashboard">Business Analytics Dashboard</a></b></th>
+<th colspan="2"><b><a href="../viewing-api-statistics/business-analytics-dashboard/">Business Analytics Dashboard</a></b></th>
 
 </tr>
 <tr>
@@ -62,7 +62,7 @@ Permission Needed
 </tr>
 <tr>
 
-<td colspan="2">For more details, see the <a href="../../learn/analytics/viewing-api-statistics/business-analytics-dashboard">Business Analytics</a> section.
+<td colspan="2">For more details, see the <a href="../viewing-api-statistics/business-analytics-dashboard/">Business Analytics</a> section.
 </td>
 </tr>
 </table>
@@ -71,7 +71,7 @@ ______
 <a name="application-analytics-dashboard"></a>
 <table>
 <tr>
-<th colspan="2"><b><a href="../../learn/analytics/viewing-api-statistics/application-analytics-dashboard">Application Analytics Dashboard</a></b></th>
+<th colspan="2"><b><a href="../viewing-api-statistics/application-analytics-dashboard/">Application Analytics Dashboard</a></b></th>
 
 </tr>
 <tr>
@@ -95,7 +95,7 @@ Permission Needed
 </tr>
 <tr>
 
-<td colspan="2">For more details, see the <a href="../../learn/analytics/viewing-api-statistics/application-analytics-dashboard">Application Analytics</a> section.
+<td colspan="2">For more details, see the <a href="../viewing-api-statistics/application-analytics-dashboard/">Application Analytics</a> section.
 </td>
 </tr>
 </table>
@@ -104,7 +104,7 @@ ______
 <a name="api-analytics-dashboard"></a>
 <table>
 <tr>
-<th colspan="2"><b><a href="../../learn/analytics/viewing-api-statistics/api-analytics-dashboard">API Analytics Dashboard</a></b></th>
+<th colspan="2"><b><a href="../viewing-api-statistics/api-analytics-dashboard/">API Analytics Dashboard</a></b></th>
 
 </tr>
 <tr>
@@ -134,7 +134,7 @@ Permission Needed
 </tr>
 <tr>
 
-<td colspan="2">For more details, see the <a href="../../learn/analytics/viewing-api-statistics/api-analytics-dashboard">API Analytics</a> section.
+<td colspan="2">For more details, see the <a href="../viewing-api-statistics/api-analytics-dashboard/">API Analytics</a> section.
 </td>
 </tr>
 </table>
@@ -143,7 +143,7 @@ ______
 <a name="monitoring-dashboard"></a>
 <table>
 <tr>
-<th colspan="2"><b><a href="../../learn/analytics/viewing-api-statistics/monitoring-dashboard">Monitoring Dashboard</a></b></th>
+<th colspan="2"><b><a href="../viewing-api-statistics/monitoring-dashboard/">Monitoring Dashboard</a></b></th>
 
 </tr>
 <tr>
@@ -162,12 +162,12 @@ Targeted Audience
 <th>
 Permission Needed
 </th>
-<td>Currently, the <code>internal/analytics</code> role is needed to view this dashboard. However, a different role can be assigned by editing role mappings as described in <a href="(../../learn/analytics/managing-dashboard-permissions">Managing Analytics Dashboard Permissions</a>.
+<td>Currently, the <code>internal/analytics</code> role is needed to view this dashboard. However, a different role can be assigned by editing role mappings as described in <a href="../managing-dashboard-permissions/">Managing Analytics Dashboard Permissions</a>.
 </td>
 </tr>
 <tr>
 
-<td colspan="2">For more details, see the <a href="../../learn/analytics/viewing-api-statistics/monitoring-dashboard">Monitoring Dashboard</a> section.
+<td colspan="2">For more details, see the <a href="../viewing-api-statistics/monitoring-dashboard/">Monitoring Dashboard</a> section.
 </td>
 </tr>
 </table>
@@ -176,7 +176,7 @@ ______
 <a name="monthly-api-usage-report"></a>
 <table>
 <tr>
-<th colspan="2"><b><a href="../../learn/analytics/monthly-api-usage-report">Reports Dashboard</a></b></th>
+<th colspan="2"><b><a href="../monthly-api-usage-report/">Reports Dashboard</a></b></th>
 
 </tr>
 <tr>
@@ -184,7 +184,7 @@ ______
 <td>Users can download a PDF report of the API usage statistics for the selected month. Later this report can be used for billing purposes. 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can customize the format and structure of this dashboard as explained in the <a href="../../learn/analytics/monthly-api-usage-report/#customizing-the-report">Monthly API Usage Report</a> section.</p>
+<p>You can customize the format and structure of this dashboard as explained in the <a href="../monthly-api-usage-report/#customizing-the-report">Monthly API Usage Report</a> section.</p>
 
 </td>
 </tr>
@@ -205,11 +205,11 @@ Permission Needed
 </tr>
 <tr>
 
-<td colspan="2">For more details, see the <a href="../../learn/analytics/monthly-api-usage-report">Monthly API Usage Report</a> section.
+<td colspan="2">For more details, see the <a href="../monthly-api-usage-report/">Monthly API Usage Report</a> section.
 </td>
 </tr>
 </table>
 
 ## Customizing the Analytics Dashboards
 
-Apart from the latter mentioned default dashboards, the users can create custom dashboards based on their specific requirements as explained in **[Customizing Analytics Dashboards](../../learn/analytics/customizing-analytics-dashboards)**.
+Apart from the latter mentioned default dashboards, the users can create custom dashboards based on their specific requirements as explained in **[Customizing Analytics Dashboards](customizing-analytics-dashboards.md)**.

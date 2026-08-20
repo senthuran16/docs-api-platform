@@ -33,7 +33,7 @@ you to add a customized mediation policy to your API.
     'limit_java_class_access_in_scripts.list_type' = "ALLOW_LIST" # or BLOCK_LIST
     'limit_java_class_access_in_scripts.class_prefixes' = "java.util"</code></pre>
 
-    To further configure script mediation access control, please refer to the  <a href="../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
+    To further configure script mediation access control, please refer to the  <a href="../../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
 
 Following is a manually created sample custom mediation policy. This custom sequence adds a trace log which is getting printed when you invoke any of the APIs deployed in the Gateway.
 
@@ -50,7 +50,7 @@ Follow the below steps to upload the above sequence as a custom mediation policy
 
 1. You can copy the above mediation sequence into an **XML** file.
 2.  Log in to the **API Publisher Portal**.
-3.  Create a REST API by following the instructions in [Create a REST API](../../../learn/design-api/create-api/create-a-rest-api/).
+3.  Create a REST API by following the instructions in [Create a REST API](../../design-api/create-api/create-a-rest-api.md).
 4.  Go to the created API and from the Left Menu, go to **Runtime Configurations**.
 5.  Click [![](../../../assets/img/learn/api-gateway/message-mediation/edit-button.png)](../../../assets/img/learn/api-gateway/message-mediation/edit-button.png) button in the **Message Mediation** section.  
 *You can do this for Request, Response and/or Fault message flows.*     
@@ -68,7 +68,7 @@ Follow the below steps to upload the above sequence as a custom mediation policy
 4.  Go **Developer Portal**, subscribe and obtain a token to invoke the published API. 
 
     !!! tip
-        Follow the instructions in [here](../../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/) to invoke the API using the integrated API console. 
+        Follow the instructions in [here](../../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md) to invoke the API using the integrated API console. 
 
 5.  When you invoke the API using a valid subscription, you can see the following trace log in wso2carbon server logs.
 
@@ -113,7 +113,7 @@ You can do this for Request, Response and/or Fault message flows.
     'limit_java_class_access_in_scripts.list_type' = "ALLOW_LIST" # or BLOCK_LIST
     'limit_java_class_access_in_scripts.class_prefixes' = "java.util"</code></pre>
 
-    To further configure script mediation access control, please refer to the  <a href="../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
+    To further configure script mediation access control, please refer to the  <a href="../../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
 
 ### Creating Manually and Saving in the File System
 
@@ -150,14 +150,14 @@ You can copy this content into an XML file (e.g., `twittersearch_ext.xml` ) and 
     'limit_java_class_access_in_scripts.list_type' = "ALLOW_LIST" # or BLOCK_LIST
     'limit_java_class_access_in_scripts.class_prefixes' = "java.util"</code></pre>
 
-    To further configure script mediation access control, please refer to the  <a href="../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
+    To further configure script mediation access control, please refer to the  <a href="../../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
 
 The above sequence prints a log message in the wso2carbon logs whenever the `TwitterSearch` API is invoked.
 
 ### Creating and Uploading using WSO2 Integration Studio
 
 You can design the custom mediation policy using the tooling support provided by WSO2 Integration Studio and directly upload it
-to the registry in WSO2 API Manager. Visit [Creating and Uploading using WSO2 Integration Studio](../../../learn/api-gateway/message-mediation/creating-and-uploading-using-integration-studio).
+to the registry in WSO2 API Manager. Visit [Creating and Uploading using WSO2 Integration Studio](creating-and-uploading-using-integration-studio.md).
 
 ## Creating Global Extensions
 
@@ -193,17 +193,17 @@ You can copy this content into an XML file (e.g., `global_ext.xml` ) and save it
     'limit_java_class_access_in_scripts.list_type' = "ALLOW_LIST" # or BLOCK_LIST
     'limit_java_class_access_in_scripts.class_prefixes' = "java.util"</code></pre>
 
-    To further configure script mediation access control, please refer to the  <a href="../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
+    To further configure script mediation access control, please refer to the  <a href="../../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#restrict-access-java">Restrict Access to Java classes and Java Methods/Native Objects in Scripts documentation.</a>
 
 ## Sample Message Mediation Policies
 
 Following are some sample mediation policies which you can upload as per API or global policies based on your requirement.
 
--   [Adding Dynamic Endpoints](../../../learn/api-gateway/message-mediation/adding-dynamic-endpoints)
--   [Removing Specific Request Headers From Response](../../../learn/api-gateway/message-mediation/removing-specific-request-headers-from-response)
--   [Passing a Custom Authorization Token to the Backend](../../../learn/api-gateway/message-mediation/passing-a-custom-authorization-token-to-the-backend)
--   [URL Mapping](../../../learn/api-gateway/message-mediation/mapping-the-parameters-of-your-backend-urls-with-the-api-publisher-urls)
--   [Disabling Message Chunking](../../../learn/api-gateway/message-mediation/disabling-message-chunking)
--   [Transforming API Message Payload](../../../learn/api-gateway/message-mediation/transforming-api-message-payload)
--   [Adding a Non-Blocking Send Operation](../../../learn/api-gateway/message-mediation/adding-a-non-blocking-send-operation)
--   [Adding a Class Mediator](../../../learn/api-gateway/message-mediation/adding-a-class-mediator)
+-   [Adding Dynamic Endpoints](adding-dynamic-endpoints.md)
+-   [Removing Specific Request Headers From Response](removing-specific-request-headers-from-response.md)
+-   [Passing a Custom Authorization Token to the Backend](passing-a-custom-authorization-token-to-the-backend.md)
+-   [URL Mapping](mapping-the-parameters-of-your-backend-urls-with-the-api-publisher-urls.md)
+-   [Disabling Message Chunking](disabling-message-chunking.md)
+-   [Transforming API Message Payload](transforming-api-message-payload.md)
+-   [Adding a Non-Blocking Send Operation](adding-a-non-blocking-send-operation.md)
+-   [Adding a Class Mediator](adding-a-class-mediator.md)

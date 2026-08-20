@@ -23,7 +23,7 @@ It is assumed that you have already downloaded WSO2 API Manager.
 ## Step 2 - Optionally, configure port offset for WSO2 IS
 
 !!! note
-    This is only required if you are running both WSO2 API Manager and WSO2 Identity Server on the same Virtual Machine (VM). For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset).
+    This is only required if you are running both WSO2 API Manager and WSO2 Identity Server on the same Virtual Machine (VM). For more information, see [Changing the Default Ports with Offset](../deployment-best-practices/changing-the-default-ports-with-offset.md).
 
 Open the `<IS_HOME>/repository/conf/deployment.toml` file and change the offset to 1 by applying the following config as follows:
 
@@ -46,7 +46,7 @@ The following diagram depicts how the databases are shared between WSO2 IS and W
 
 Follow the instructions below to set up and configure the databases for the WSO2 IS as the Key Manager node:
 
-1. Install, setup, and configure `WSO2_SHARED_DB` databases as illustrated in [Changing the Default Databases](../../../install-and-setup/setup/setting-up-databases/overview/). 
+1. Install, setup, and configure `WSO2_SHARED_DB` databases as illustrated in [Changing the Default Databases](../setting-up-databases/overview.md). 
 
      This particular guide provides you all the steps on how to install the database, set up database users, create tables using relevant scripts, apply the drivers that are compatible with the database type, and configure the connection details in the connection data in the `<IS_HOME>/repository/conf/deployment.toml` file.
 
@@ -55,6 +55,7 @@ Follow the instructions below to set up and configure the databases for the WSO2
     !!! warning
         If you have already created and set up the database (`WSO2_SHARED_DB`) for WSO2 API Manager, you only need to configure the data source configurations in the WSO2 IS node for it to connect with the required databases and act as the Key Manager.
 
+     <a name="step3-2"></a>
      <a name="#step3-2"></a>
 
 2. Share `WSO2_SHARED_DB`with WSO2 IS.
@@ -245,12 +246,12 @@ Follow the instructions below to set up and configure the databases for the WSO2
 
 6.  If you wish to encrypt the OAuth2 Keys (access tokens, client secrets, and authorization codes) follow the steps given in [Encrypting OAuth Keys](https://is.docs.wso2.com/en/5.10.0/learn/testing-oidc-encrypted-id-token-with-is/#enable-id-token-encryption), which is in the WSO2 Identity Server 5.10.0 documentation, and apply the relevant configurations in the `<IS_HOME>/repository/conf/deployment.toml` file to enable the feature.
 
-7. If you are using the existing keystore and truststore (with self signed certificate) shipped by default with the product distributions, replace the keystore in `<IS_HOME>/repository/resources/security/wso2carbon.jks` and trustore in `<IS_HOME>/repository/resources/security/client-truststore.jks` with the `<APIM_HOME>/repository/resources/security/wso2carbon.jks` and  `<APIM_HOME>/repository/resources/security/client-truststore.jks` respectively. Make sure to follow this step before starting either of the servers for the first time. (Please note that in a production environment, it is not recommended to use the default keystores. Instead, it is recommended to [create new keystores](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/) with new keys and certificates.)
+7. If you are using the existing keystore and truststore (with self signed certificate) shipped by default with the product distributions, replace the keystore in `<IS_HOME>/repository/resources/security/wso2carbon.jks` and trustore in `<IS_HOME>/repository/resources/security/client-truststore.jks` with the `<APIM_HOME>/repository/resources/security/wso2carbon.jks` and  `<APIM_HOME>/repository/resources/security/client-truststore.jks` respectively. Make sure to follow this step before starting either of the servers for the first time. (Please note that in a production environment, it is not recommended to use the default keystores. Instead, it is recommended to [create new keystores](../security/configuring-keystores/keystore-basics/creating-new-keystores.md) with new keys and certificates.)
 
 
 ## Step 5 - Configure WSO2 API-M with the WSO2 IS
 
-By default, WSO2 API Manager and WSO2 Identity Server comes with a JDBC User Store as the primary userstore. However, if you wish to use any other type of user store (e.g., LDAP, Active Directory, etc.) in WSO2 IS, that particular user store has to be configured in the API Manager nodes as well. For more information, see [Configuring the Primary User Store](../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store/) and apply the relevant configs to plug in a new user store.
+By default, WSO2 API Manager and WSO2 Identity Server comes with a JDBC User Store as the primary userstore. However, if you wish to use any other type of user store (e.g., LDAP, Active Directory, etc.) in WSO2 IS, that particular user store has to be configured in the API Manager nodes as well. For more information, see [Configuring the Primary User Store](../../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md) and apply the relevant configs to plug in a new user store.
 
 1. Add below config in `<APIM_HOME>/repository/conf/deployment.toml`
 
@@ -273,12 +274,16 @@ By default, WSO2 API Manager and WSO2 Identity Server comes with a JDBC User Sto
 
 Start WSO2 Identity Server for the changes to take effect. For more information, see [Running the Product](https://is.docs.wso2.com/en/5.10.0/setup/running-the-product/) in the WSO2 Identity Server documentation.
 
+   <a name="Linux-Mac"></a>
+
    -   [**Linux/Mac OS**](#Linux-Mac)
         ``` java
         cd <IS_KM_HOME>>/bin/
         sh wso2server.sh 
         ```
        
+   <a name="windows"></a>
+
    -   [**Windows**](#windows)
         ``` java
         cd <IS_KM_HOME>>\bin\    
@@ -295,7 +300,7 @@ Start WSO2 Identity Server for the changes to take effect. For more information,
 
         The reason for this is that the default certificates that come with the WSO2 servers are created for `localhost`. Therefore, when WSO2 API Manager boots up, it makes an HTTP call to a webapp that is in the Key Manager (throttle data at `KM_URL/internal/data/v1/keyTemplates`). Thereafter, WSO2 API Manager decides the URL of the Key Manager based on the URL that is configured in the `deployment.toml`, which is `localhost`.
 
-        To overcome this issue, you need to create self-signed certificates for WSO2 API-M and WSO2 IS hostnames. Then [import the public certificates](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore) of WSO2 API-M to the `trust-store.jks` of WSO2 IS and vice versa. This should resolve the SSL handshake failure.
+        To overcome this issue, you need to create self-signed certificates for WSO2 API-M and WSO2 IS hostnames. Then [import the public certificates](../security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-3-importing-certificates-to-the-truststore) of WSO2 API-M to the `trust-store.jks` of WSO2 IS and vice versa. This should resolve the SSL handshake failure.
 
     !!! Note
         In a IS as KM separated environment to invoke RESTful APIs (product APIs), users must generate tokens through API-M Control Plane's token endpoint.
@@ -308,6 +313,6 @@ Start WSO2 Identity Server for the changes to take effect. For more information,
 Follow the instructions below to configure the other WSO2 API-M components, namely the Publisher, Developer Portal, Traffic Manager, and Gateway:
 
 - All-in-One Deployment
-    - [Configuring a Single Node](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-a-single-node/)
-    - [Configuring an Active-Active Deployment](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-an-active-active-deployment/)
-- [Distributed Deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/)
+    - [Configuring a Single Node](../single-node/configuring-a-single-node.md)
+    - [Configuring an Active-Active Deployment](../single-node/configuring-an-active-active-deployment.md)
+- [Distributed Deployment](deploying-wso2-api-m-in-a-distributed-setup.md)

@@ -14,7 +14,7 @@ Follow the instructions below to change the ownership of an application:
          `https://<APIM-hostname>:9443/carbon`
 
      2. Create two users named **Chris** and **Kim** with the `Internal/subscriber` role.
-        Refer [Create New Users](../../../../administer/managing-users-and-roles/managing-users#adding-a-new-user) for more information.
+        Refer [Create New Users](../../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user) for more information.
 
 3.  Check the details of the application that you wish to share in the Developer Portal (e.g., testApplication).
 

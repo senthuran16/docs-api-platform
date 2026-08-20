@@ -13,7 +13,7 @@ In WSO2 API-M, an OAuth scope can be created before the API is created and share
      REST API scope. Shared scope create, update and delete operations are only allowed for user roles associated with 
      `apim:shared_scope_manage` Publisher REST API scope. 
      
-     By default, only an `admin` user can perform create, update and delete operations of shared scopes. For more information on changing the default behavior, see [Scope To Role Mappings](../../../../administer/managing-users-and-roles/managing-user-roles/#adding-role-mappings).
+     By default, only an `admin` user can perform create, update and delete operations of shared scopes. For more information on changing the default behavior, see [Scope To Role Mappings](../../../../administer/managing-users-and-roles/managing-user-roles.md#adding-role-mappings).
 ### Creating a Shared Scope
 
 The shared scope need to be created before API creation/update time. Follow the steps below to create a new shared scope:
@@ -93,7 +93,7 @@ A local scope can be created and applied to a resource at API creation time by f
 
 1. Login to API Publisher (https://localhost:9443/publisher) 
 
-2. Start creating an API as described [here](../../../../learn/design-api/create-api/create-a-rest-api/).
+2. Start creating an API as described [here](../../../design-api/create-api/create-a-rest-api.md).
 
 3. Navigate to **Scopes** section and click on **CREATE SCOPES** button.
 
@@ -157,8 +157,8 @@ Once you attach multiple scopes per resource, the resource will look as follows.
 
 ## Defining OAuth Scopes in API Definition
 
-Both [Shared Scopes](../../../../learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/#shared-scopes) 
-and [Local Scopes](../../../../learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/#local-scopes) should be defined in same way in the OpenAPI definition as follows.
+Both [Shared Scopes](fine-grained-access-control-with-oauth-scopes.md#shared-scopes) 
+and [Local Scopes](fine-grained-access-control-with-oauth-scopes.md#local-scopes) should be defined in same way in the OpenAPI definition as follows.
 
 <a href="../../../../../assets/img/learn/api-security/oauth2/oauth2-scopes/resource-scope-api-definition.png" ><img src="../../../../../assets/img/learn/api-security/oauth2/oauth2-scopes/resource-scope-api-definition.png" alt="Resource Scopes API Definition" 
      title="Resource Scopes API Definition" width="50%" /></a>

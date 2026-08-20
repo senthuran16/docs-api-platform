@@ -3,7 +3,7 @@
 The requirements for deploying WSO2 products can change based on the deployment scenario and pattern. The 
 recommendations in this topic are for general production use, assuming moderate load conditions. For situations where
  a high volume of traffic is expected and if there are large deployments, these guidelines may not be sufficient. See
-  [Troubleshooting in Production Environments](../../../troubleshooting/admin-troubleshooting-in-production-environments) for
+  [Troubleshooting in Production Environments](../../../troubleshooting/admin-troubleshooting-in-production-environments.md) for
   information on how to obtain and analyze information to solve production issues. The following are the topics addressed in this section. The 
   following are the topics addressed in this section.
 ------------------------------------------------------------------------
@@ -132,7 +132,7 @@ If you need to set additional system properties when the server starts, you can 
         Be sure to set the system property `httpclient.hostnameVerifier`
          in the the product's startup script file to as follows. This setting will enable hostname verification of 
          HTTP requests and responses in the Carbon server, and thereby avoid security issues in production environments. 
-         For more information, see [Enabling HostName Verification](../../../administer/product-security/enabling-hostname-verification/).
+         For more information, see [Enabling HostName Verification](../security/enabling-hostname-verification.md).
 
 ```  
     -Dhttpclient.hostnameVerifier=Strict \
@@ -222,6 +222,8 @@ These configurations has to be set properly for the management console to be acc
     -   [**Oracle JDK**](#cc08b6aaf09742a7b6389db09f3e3b36)
     -   [**IBM JDK**](#944559bca1c0464fa8a12ec742f9cd07)
 
+    <a name="cc08b6aaf09742a7b6389db09f3e3b36"></a>
+
     Some updates of JDK 1.8 (for example, **JDK1.8.0\_151** ) are affected by a [known issue](https://bugs.openjdk.java.net/browse/JDK-8189789) related to GZIP decoding. Until this issue is fixed, we recommend that you disable GZIP decoding for your product by following the steps given below. This will ensure that your product is not affected by the [known issue](https://bugs.openjdk.java.net/browse/JDK-8189789) .
 
     1.  Open the `deployment.toml` file from the `<PRODUCT_HOME>/repository/conf/` directory.
@@ -240,6 +242,8 @@ These configurations has to be set properly for the management console to be acc
 
     3.  Restart the server.
 
+    <a name="944559bca1c0464fa8a12ec742f9cd07"></a>
+
     If you are using IBM JDK 1.8, change the value of the `org.owasp.csrfguard.PRNG.Provider` property to ' `IBMJCE` ' in the `Owasp.CsrfGuard.Carbon.properties` file. This file is stored in the `<PRODUCT_HOME>/repository/conf/security` / directory.
 
 ### Starting the Product Profiles
@@ -247,8 +251,7 @@ These configurations has to be set properly for the management console to be acc
 When a WSO2 product starts, it starts all components, features and related artifacts bundled with it. Multi-profile 
 support allows you to run the product on a selected profile so that only the features specific to that profile along 
 with common features start up with the server. For more on product-profiles please refer 
-[Product Profiles](../../../install-and-setup/deploying-wso2-api-manager/distributed-deployment/product-profiles
-/#product-profiles).
+[Product Profiles](../distributed-deployment/product-profiles.md#product-profiles).
 
 ### Stopping the Server
 
@@ -324,10 +327,10 @@ hostname = "test.wso2.com"
 <li>See the topics on changing hostnames shown below:
 <ul>
 <li>
-<a href="../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset">Setting up hostnames and ports</a>
+<a href="../changing-the-default-ports-with-offset/">Setting up hostnames and ports</a>
 </li>
 <li>
-<a href="../../../install-and-setup/deploying-wso2-api-manager/changing-the-hostname">Changing the hostname</li>
+<a href="../changing-the-hostname/">Changing the hostname</li>
 </ul></li>
 <li>See <a href="https://docs.wso2.com/display/ADMIN44x/Working+with+Transports">Working with Transports</a> for information on transports in WSO2 products.</li>
 </ul>
@@ -395,7 +398,7 @@ by adding the JMX port parameter in the <code> &lt;PRODUCT_HOME&gt;/repository/c
 <strong>Related links</strong>
 </div>
 <div class="panelContent">
-<p>Please refer <a href="../../../administer/product-administration/monitoring/jmx-based-monitoring/#configuring-jmx-in-a-wso2-product">JMX-Based Monitoring</a> for 
+<p>Please refer <a href="../../../../administer/logging-and-monitoring/monitoring/jmx-based-monitoring/#configuring-jmx-in-a-wso2-product">JMX-Based Monitoring</a> for 
 information on monitoring WSO2 products using JMX.</p>
 </div>
 </div>
@@ -412,7 +415,7 @@ information on monitoring WSO2 products using JMX.</p>
 <div class="panelContent">
 <div>
 <ul>
-<li>See <a href="../../../install-and-setup/performance-tuning-and-test-results/tuning-performance">Performance 
+<li>See <a href="../tuning-performance/">Performance 
 Tuning</a> for the WSO2 API Manager related guidelines.</li>
 <li>For performance tuning guidelines that are specific to each product, go to the product documentation for each 
 product listed below and search for performance tuning guidelines.<br />
@@ -471,7 +474,7 @@ are reflected in the below mentioned config files, according to the new configur
 <strong>Related links</strong>
 </div>
 <div class="panelContent">
-<p>See <a href="../../../administer/product-configurations/default-product-ports/">Default Product Ports</a> for
+<p>See <a href="../../reference/default-product-ports/">Default Product Ports</a> for
  a list of common and product-specific ports used by WSO2 products.</p>
 </div>
 <div class="panelHeader" style="border-bottom-width: 1px;">

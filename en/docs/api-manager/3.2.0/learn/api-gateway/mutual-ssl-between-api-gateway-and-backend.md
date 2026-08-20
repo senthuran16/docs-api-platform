@@ -113,7 +113,7 @@ Now both the backend service and ESB is configured to use default key stores and
 
 You can do the following to test your mutual SSL configurations
 
-1.  [Create an API](../../learn/design-api/create-api/create-a-rest-api)
-2.  [Publish the API](../../learn/design-api/publish-api/publish-an-api)
-3.  [Subscribe to the API](../../learn/consume-api/manage-subscription/subscribe-to-an-api)
-4.  [Invoke the API](../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console)
+1.  [Create an API](../design-api/create-api/create-a-rest-api.md)
+2.  [Publish the API](../design-api/publish-api/publish-an-api.md)
+3.  [Subscribe to the API](../consume-api/manage-subscription/subscribe-to-an-api.md)
+4.  [Invoke the API](../consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md)

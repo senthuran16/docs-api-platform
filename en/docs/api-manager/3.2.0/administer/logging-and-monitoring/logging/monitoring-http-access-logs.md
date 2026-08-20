@@ -187,7 +187,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
                    <p>While you can use the above attributes to define a custom pattern, the standard patterns shown below can be used.</p>
                    <ul>
                       <li>
-                         <p><strong>common</strong> ( <a href="http://httpd.apache.org/docs/1.3/logs.html#common">Apache common log pattern</a> ):</p>
+                         <p><strong>common</strong> ( <a href="https://httpd.apache.org/docs/current/logs.html#common">Apache common log pattern</a> ):</p>
                          <div class="code panel pdl" style="border-width: 1px;">
                             <div class="codeContent panelContent pdl">
                                <div class="sourceCode" id="cb4" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
@@ -197,7 +197,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
                          </div>
                       </li>
                       <li>
-                         <p><strong>combined</strong> ( <a href="http://httpd.apache.org/docs/1.3/logs.html#combined">Apache combined log pattern</a> ):</p>
+                         <p><strong>combined</strong> ( <a href="https://httpd.apache.org/docs/current/logs.html#combined">Apache combined log pattern</a> ):</p>
                          <div class="code panel pdl" style="border-width: 1px;">
                             <div class="codeContent panelContent pdl">
                                <div class="sourceCode" id="cb5" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
@@ -207,7 +207,7 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
                          </div>
                       </li>
                    </ul>
-                   <p>By default, a modified version of the <a href="http://httpd.apache.org/docs/1.3/logs.html#combined">Apache combined log format</a> is enabled in the ESB as shown below. Note that the "X-Forwarded-For" header is appended to the beginning of the usually <strong>combined</strong> log format. This correctly identifies the original node that sent the request (in situations where requests go through a proxy such as a load balancer). The "X-Forwarded-For" header must be present in the incoming request for this to be logged.</p>
+                   <p>By default, a modified version of the <a href="https://httpd.apache.org/docs/current/logs.html#combined">Apache combined log format</a> is enabled in the ESB as shown below. Note that the "X-Forwarded-For" header is appended to the beginning of the usually <strong>combined</strong> log format. This correctly identifies the original node that sent the request (in situations where requests go through a proxy such as a load balancer). The "X-Forwarded-For" header must be present in the incoming request for this to be logged.</p>
                    <div class="code panel pdl" style="border-width: 1px;">
                       <div class="codeContent panelContent pdl">
                          <div class="sourceCode" id="cb6" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
@@ -236,9 +236,11 @@ Follow the steps given below to enable access logs for the PassThrough or NIO tr
     "nhttp.is.log.rotatable" = "true"
     ```
     
-7.  Then [Restart the server](../../../install-and-setup/installation-guide/running-the-product/).
+7.  Then [Restart the server](../../../install-and-setup/install/running-the-product.md).
 
 8.  Invoke an API in API Gateway. Then, navigate to `<APIM_HOME>/repository/logs/` directory and you will see a newly created log file called `http_gw.log` which contain API invocation related access logs.
+
+<a name="supported-log-pattern-formats-for-the-passthrough-and-nio-transports"></a>
 
 ###Supported log pattern formats for the PassThrough transport
 

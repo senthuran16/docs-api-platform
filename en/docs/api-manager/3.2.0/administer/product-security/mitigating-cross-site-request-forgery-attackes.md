@@ -53,6 +53,7 @@ See the following for instructions on manually updating CSRF configurations in W
 -   [Securing web applications](#securing-web-applications)
 -   [Securing Jaggery applications](#securing-jaggery-applications)
 
+<a name="securing-web-applications"></a>
 #### Securing web applications
 
 Follow the steps below to secure web applications.
@@ -129,6 +130,7 @@ Follow the steps below to secure web applications.
     | `org.owasp.csrfguard.TokenLength=32`| Defines the length of the CSRF token.                                            |
     | `org.owasp.csrfguard.action.Invalidate=org.owasp.csrfguard.action.Invalidate` | Invalidates the user session, if a CSRF attack attempt was blocked by CSRFGuard. |
 
+<a name="securing-jaggery-applications"></a>
 #### Securing Jaggery applications
 
 Follow the steps below to secure Jaggery applications.

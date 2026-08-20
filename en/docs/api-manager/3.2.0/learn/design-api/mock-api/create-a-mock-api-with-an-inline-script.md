@@ -187,7 +187,7 @@ You have successfully created an API with an inline script, deployed it as a pro
 
 An API can also be prototyped by moving the API to the `PROTOTYPED` state by changing the API lifecycle state and providing the prototype endpoints.
 
-For more information, see the [Deploy and Test Prototype APIs](../../../learn/design-api/mock-api/deploy-and-test-mock-apis) tutorial.
+For more information, see the [Deploy and Test Prototype APIs](deploy-and-test-mock-apis.md) tutorial.
 
 <div class="admonition info">
 <p class="admonition-title">Related Guides</p>
@@ -196,15 +196,15 @@ For more information, see the [Deploy and Test Prototype APIs](../../../learn/de
     <ul>
     <li>Create and Publish an API
 <ul>
-          <li> <a href="../../../learn/design-api/publish-api/publish-an-api">Create and Publish an API</a></li>
+          <li> <a href="../../publish-api/publish-an-api/">Create and Publish an API</a></li>
 
-          <li> <a href="../../../learn/design-api/create-api/create-a-rest-api">Create and Publish an API</a> </li>
+          <li> <a href="../../create-api/create-a-rest-api/">Create and Publish an API</a> </li>
     </ul>
     <li>
-    <a href="../../../learn/design-api/create-api/create-a-websocket-api">Create a WebSocket API </a>
+    <a href="../../create-api/create-a-websocket-api/">Create a WebSocket API </a>
 </li>
 <li>
-    <a href="../../../learn/design-api/create-api/create-a-rest-api-from-a-swagger-definition">Create an API from an OpenAPI definition</a></li>
+    <a href="../../create-api/create-a-rest-api-from-an-openapi-definition/">Create an API from an OpenAPI definition</a></li>
   </p>
   </div>
 

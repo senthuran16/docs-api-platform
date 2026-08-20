@@ -5,7 +5,7 @@
 After issuing an access token, a user or an admin can revoke it in case of theft or a security violation. You can do this by calling the Revoke API using a utility like cURL. The Revoke API's endpoint URL is `http://localhost:8280/revoke`.
 
 !!! note
-    You can also revoke refresh tokens. For more information, see [Revoking a refresh token](../../../learn/api-security/oauth2/grant-types/refresh-token-grant/#revoking-a-refresh-token).
+    You can also revoke refresh tokens. For more information, see [Revoking a refresh token](grant-types/refresh-token-grant.md#revoking-a-refresh-token).
 
 
 The parameters required to invoke the following API are as follows:
@@ -73,7 +73,7 @@ There may be situations where immediate token revocation is needed in each Gatew
 If you are using any other third party Key Manager with WSO2 API-M, follow the instructions below to configure immediate token revocation:
 
 !!! info 
-    For more information on configuring third party key managers, see [Multiple Key Manager Support in WSO2 API Manager](../../../administer/key-managers/overview/#multiple-key-manager-support-in-wso2-api-manager).
+    For more information on configuring third party key managers, see [Multiple Key Manager Support in WSO2 API Manager](../../../administer/key-managers/overview.md#multiple-key-manager-support-in-wso2-api-manager).
 
 1. Implement a listener or a handler at the third party Key Manager side to capture each token revocation event.
 

@@ -1,6 +1,6 @@
 #  Configuring Different Endpoint Security Types
 
-When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. (Please refer [Configuring Environment Specific Parameters](../../../learn/api-controller/advanced-topics/configuring-environment-specific-parameters) for more information). You can specify different types of endpoint security in this file, as discussed under the below topics.
+When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. (Please refer [Configuring Environment Specific Parameters](configuring-environment-specific-parameters.md) for more information). You can specify different types of endpoint security in this file, as discussed under the below topics.
 
 1. Configuring Basic or Digest Endpoint Security
 2. Configuring OAuth 2.0 Endpoint Security

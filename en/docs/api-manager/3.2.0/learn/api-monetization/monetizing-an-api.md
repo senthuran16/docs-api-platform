@@ -18,7 +18,7 @@ WSO2 API Manager uses <a href="https://stripe.com">Stripe</a> as its sample impl
 </html>
 
 Let's use the
-[wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am-stripe-plugin/blob/master/src/main/java/org.wso2.apim.monetization/impl/StripeMonetizationImpl.java) to monetize an API in the following example scenario.
+[wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am-stripe-plugin/blob/v1.1.2/src/main/java/org.wso2.apim.monetization/impl/StripeMonetizationImpl.java) to monetize an API in the following example scenario.
 
 ### Before you begin
 
@@ -81,6 +81,8 @@ Let's use the
 
          [![Work in developer mode](../../assets/img/learn/developer-mode.png)](../../assets/img/learn/developer-mode.png)
      
+    <a name="connectID"></a>
+
     5. Once you follow either of the options in the previous step, the onboarding process will be completed. After few seconds, API Publisher account will be listed under Connected accounts in Tenant Admin account. The connected account ID (Connect ID) for the API Publisher's account will appear when clicking on the connected account. Copy the **Connect ID** value as it is required when enabling monetization for an API from the APIM Publisher portal. 
 
 #### (B) - Configure WSO2 API-M Analytics
@@ -578,7 +580,7 @@ When working with API Monetization that involves dynamic business plans (usage-b
       description = "connected account of the publisher"
       ```
            
-      The name property has to be identical to `ConnectedAccountKey`, which is defined in the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am-stripe-plugin/blob/master/src/main/java/org.wso2.apim.monetization/impl/StripeMonetizationImpl.java). However, you can add perferred values for the other properties.
+      The name property has to be identical to `ConnectedAccountKey`, which is defined in the [wso2-am-stripe-plugin](https://github.com/wso2-extensions/wso2-am-stripe-plugin/blob/v1.1.2/src/main/java/org.wso2.apim.monetization/impl/StripeMonetizationImpl.java). However, you can add perferred values for the other properties.
  
      After saving these configurations, these additional properties appear in the **Monetization** page under the **Monetization properties** section in the API Publisher Portal.   
 
@@ -705,7 +707,7 @@ When working with API Monetization that involves dynamic business plans (usage-b
 
 2.  Create a subscription policy.  
      
-     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../learn/rate-limiting/adding-new-throttling-policies#Adding-a-new-subscription---level-throttling-tier).
+     Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-throttling-tier).
 
      <html>
       <div class="admonition note">
@@ -748,7 +750,7 @@ When working with API Monetization that involves dynamic business plans (usage-b
 
 ### Step 3 - Subscribe to a monetized API
 
-[Subscribe to an API](../../learn/consume-api/manage-subscription/subscribe-to-an-api) and invoke the API. The price of the business plan appears when subscribing to an API. Therefore, the Subscriber can select an appropriate plan and subscribe to it. 
+[Subscribe to an API](../consume-api/manage-subscription/subscribe-to-an-api.md) and invoke the API. The price of the business plan appears when subscribing to an API. Therefore, the Subscriber can select an appropriate plan and subscribe to it. 
 
 When subscribing to an API, simultaneously a customer is created in the Stripe platform account (e.g., the Stripe account is created for the Tenant Admin). The following screenshot shows the customer record in the platform Stripe account.
 
@@ -783,7 +785,7 @@ You can use the admin REST API, which is available in WSO2 API Manager, to publi
 
 1.  Obtain the consumer key and secret key pair by calling the dynamic client registration endpoint.  
      
-     For more information, see [Admin REST API v1.0](../../develop/product-apis/admin-apis/admin-v1/admin-v1/).
+     For more information, see [Admin REST API v1.0](../../develop/product-apis/admin-apis/admin-v1/admin-v1.md).
 
     ``` java
     curl -X POST -H "Authorization: Basic <base64encoded-admin-account-credentials>" -H "Content-Type: application/json" -d @payload.json https://localhost:9443/client-registration/v0.17/register

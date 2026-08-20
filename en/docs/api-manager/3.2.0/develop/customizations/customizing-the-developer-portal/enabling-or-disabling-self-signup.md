@@ -1,5 +1,6 @@
 # Enabling or Disabling Self Signup
 
+<a name="enabling-self-signup"></a>
 #### Enabling self signup
 
 In a multi-tenanted API Manager setup, self signup to the Developer Portal works out-of-the-box for super tenant(`carbon.super`). **But in order to make it work for tenants the following steps should be carried out**.
@@ -76,4 +77,4 @@ In order to disable self signup for a particular tenant, follow the steps below.
     ```
 
 !!! tip
-    To engage your own signup process, see [Adding a User Signup Workflow](../../../develop/customizations/adding-a-user-signup-workflow).
+    To engage your own signup process, see [Adding a User Signup Workflow](../adding-a-user-signup-workflow.md).

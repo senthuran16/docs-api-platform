@@ -41,4 +41,4 @@ First, enable the API subscription workflow for **Approval Workflow Executor.**
 
 5.  Go back to the API Devportal and see that the user is now subscribed to the API.
 
-For instructions on how to customize workflow extensions, see [Customizing a Workflow Extension](../../../../develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension/)
+For instructions on how to customize workflow extensions, see [Customizing a Workflow Extension](../../../../develop/extending-api-manager/extending-workflows/customizing-a-workflow-extension.md)

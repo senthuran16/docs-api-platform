@@ -1,11 +1,11 @@
 # Enforce Throttling and Resource Access Policies
 
-**Throttling** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of throttling in WSO2 API Manager (WSO2 API-M), see [Throttling tiers](../../design/rate-limiting/setting-throttling-limits/) .
+**Throttling** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of throttling in WSO2 API Manager (WSO2 API-M), see [Throttling tiers](setting-throttling-limits.md) .
 
 !!! note
     This tutorial uses the `PhoneVerification` API, which has one resource, GET and POST methods to access it and a throttling policy enforced.
 
-    **Before you begin** , follow the [Create and Publish an API](../../../learn/tutorials/create-and-publish-an-api) to create and publish the `PhoneVerification` API and then the [Subscribe to an API](../../../learn/tutorials/subscribe-to-an-api/) to subscribe to the API using the `Bronze` throttling tier.
+    **Before you begin** , follow the [Create and Publish an API](../../wip/need-to-update/create-and-publish-an-api.md) to create and publish the `PhoneVerification` API and then the [Subscribe to an API](../consume-api/manage-subscription/subscribe-to-an-api.md) to subscribe to the API using the `Bronze` throttling tier.
 
 
 After you created, published, and subscribed to the API, let's see how the API Gateway enforces throttling and resource access policies to the API.

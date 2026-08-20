@@ -2,7 +2,7 @@
 
 Given below are the common security guidelines for deploying a WSO2 product in a **production environment**.
 
-In addition, see the [production deployment guidelines](../../../install-and-setup/deploying-wso2-api-manager/production-deployment-guidelines) and any other product-specific guidelines that might come in the respective product's documentation.
+In addition, see the [production deployment guidelines](production-deployment-guidelines.md) and any other product-specific guidelines that might come in the respective product's documentation.
 
 - [Security Guidelines for Production Deployment](#security-guidelines-for-production-deployment)
     - [WSO2 product-level security](#wso2-product-level-security)
@@ -45,21 +45,21 @@ latest product version to receive all the security issues resolved until that pa
 <li><p>Make sure that WSO2 default certificates do not exist in any of the keystores in your production environment. For example, be sure to delete the default public certificate in the default trust store that is shipped with the product.</p></li>
 </ul>
 <p>For more information on recommendations for using keystores in WSO2 
-products, see <a href="../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography/">About Asymmetric Cryptography</a>.<br />
+products, see <a href="../../security/configuring-keystores/keystore-basics/about-asymetric-cryptography/">About Asymmetric Cryptography</a>.<br />
 For information on how to create and configure your own keys and keystores, see <a href="../../../administer/product-security/configuring-keystores/keystore-basics/creating-new-keystores
 ">Creating New Keystores</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Encrypt passwords in configuration files</td>
 <td><p>WSO2 products use a tool, namely <strong>Secure Vault</strong>, to encrypt the plain-text passwords in configuration files.</p>
-<p>See <a href="../../../administer/product-security/logins-and-passwords/working-with-encrypted-passwords">Encrypting Passwords in Configuration Files</a> for instructions.</p></td>
+<p>See <a href="../../security/logins-and-passwords/working-with-encrypted-passwords/">Encrypting Passwords in Configuration Files</a> for instructions.</p></td>
 </tr>
 <tr class="even">
 <td><p>Change default ports</p>
 <p><br />
 </p></td>
-<td><p>For information on all the default ports used by WSO2 products, see <a href="../../../install-and-setup/setup/reference/default-product-ports/">Default Ports of WSO2 Products</a>. For example, the default HTTPS port is 9443 and the HTTP port is 9763. In addition, Axis2 services are exposed over the following ports: 8243 and 8280.</p>
-<p>For information on changing a default port, see <a href="../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/#configuring-the-port-offset">Configuring the port offset</a>.</p></td>
+<td><p>For information on all the default ports used by WSO2 products, see <a href="../../reference/default-product-ports/">Default Ports of WSO2 Products</a>. For example, the default HTTPS port is 9443 and the HTTP port is 9763. In addition, Axis2 services are exposed over the following ports: 8243 and 8280.</p>
+<p>For information on changing a default port, see <a href="../changing-the-default-ports-with-offset/#configuring-the-port-offset">Configuring the port offset</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Enable <strong>read-only access</strong> to external user stores (LDAPs etc.)</p></td>
@@ -85,7 +85,7 @@ versions TLS 1, TLS 1.1 and TLS 1.2. This can be done by replacing <code>sslProt
 <code>ThriftAuthenticationService</code>, Tomcat transport and PassThrough transport in the <code>deployment.toml</code> file. See the
  following links for instructions:</p>
 <ul>
-<li><a href="../../../administer/product-security/configuring-transport-level-security/">Configuring Transport Level Security</a></li>
+<li><a href="../../security/configuring-transport-level-security/">Configuring Transport Level Security</a></li>
 <li><a href="https://docs.wso2.com/display/ADMIN44x/Supported+Cipher+Suites">Supported Cipher Suites</a></li>
 </ul>    
   
@@ -113,7 +113,7 @@ versions TLS 1, TLS 1.1 and TLS 1.2. This can be done by replacing <code>sslProt
 <p>Remove any weak ciphers from the PassThrough transport and ensure that the server does not accept connections 
 using those weak ciphers. For this, <code>PreferredCiphers</code> should be configured for PassThrough transport, 
 within the <code>deployment.toml</code> file in the <code>&lt;PRODUCT_HOME&gt;/repository/conf/</code> directory.
-<p>For more information, see <a href="../../../administer/product-security/configuring-transport-level-security/">Configuring 
+<p>For more information, see <a href="../../security/configuring-transport-level-security/">Configuring 
 Transport Level Security</a>.</p>
 </tr>
 <tr class="even">
@@ -122,7 +122,7 @@ Transport Level Security</a>.</p>
 sending HTTP responses. This means that information about the WSO2 product stack will be exposed through HTTP 
 responses. It is recommended to change this by configuring the server name for relevant connectors via 
 <code>deployment.toml</code>.
-<p>For more information, see <a href="../../../administer/product-security/configuring-transport-level-security/">Configuring 
+<p>For more information, see <a href="../../security/configuring-transport-level-security/">Configuring 
 Transport Level Security</a>.</p>
 </tr>
 <tr class="odd">
@@ -174,7 +174,7 @@ sure that hostname verification is enabled in the product startup script (<code
 <pre class="java" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"><code>-Dorg.wso2.ignoreHostnameVerification=false \</code></pre>
 </div>
 </div>
-<p>For instructions, see <a href="../../../install-and-setup/setup/security/enabling-hostname-verification/">Enabling HostName Verification</a>.</p></td>
+<p>For instructions, see <a href="../../security/enabling-hostname-verification/">Enabling HostName Verification</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Increase JSESSIONID length</p></td>
@@ -192,7 +192,7 @@ sure that hostname verification is enabled in the product startup script (<code
 <p><br />
 </p></td>
 <td><p>All WSO2 products have the Administrator account configured by default. The default user name and password of the administrator account is &quot;admin&quot;. To change the administrator credentials, you need to first sign in to the management console of the product as &quot;admin&quot;, and then use the <strong>Change Password</strong> option under <strong>Home-&gt;Configure-&gt;User Management-&gt;Users</strong> in the navigator.</p>
-<p>For more information on how to change the password of the administrator, see <a href="../../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#change-the-super-admin-credentials">Changing the super admin credentials</a>.</p></td>
+<p>For more information on how to change the password of the administrator, see <a href="../../security/logins-and-passwords/maintaining-logins-and-passwords/#change-the-super-admin-credentials">Changing the super admin credentials</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Restrict access to the management console</p>
@@ -201,7 +201,7 @@ sure that hostname verification is enabled in the product startup script (<code
 <td><p>Make sure that the permission for signing into the management console is granted only to the users that need to use the management console. For example, the majority of users only need to login to the connected service providers via the WSO2 product. Therefore, such users should not have permission to log into the management console.</p>
 <p>You need to make sure that only administrative users have access to the product's management console. Further, 
 instead of granting all permission to one administrator, you can distribute the responsibilities among administrators by assigning different permissions for conducting various tasks.</p>
-<p>For instructions, see <a href="../../../administer/managing-users-and-roles/managing-user-roles/">Managing User Roles</a>.</p></td>
+<p>For instructions, see <a href="../../../../administer/managing-users-and-roles/managing-user-roles/">Managing User Roles</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Enable log rotation and monitoring</p>
@@ -212,7 +212,7 @@ configured in the <code>&lt;PRODUCT_HOME&gt;/repository/conf/log4j2.properties<
 <code>appender.CARBON_LOGFILE.policies.time.interval = 1</code>
 
 <p>You can also configure rollover based on log file size, and also it is possible to limit the number of backup 
-files. For details on how to configure log rotation and manage log growth details in WSO2 API Manager, see <a href="../../../administer/logging-and-monitoring/logging/managing-log-growth/">Managing log growth</a>.</p></td>
+files. For details on how to configure log rotation and manage log growth details in WSO2 API Manager, see <a href="../../../../administer/logging-and-monitoring/logging/managing-log-growth/">Managing log growth</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Prevent log forging</p></td>
@@ -220,7 +220,7 @@ files. For details on how to configure log rotation and manage log growth detail
 used in the pattern layout to log a UUID. For example, the log pattern can be set as following for <code>AUDIT</code> 
 logs, so that the UUID will be printed at the beginning of each log record.</p>
 <code>appender.AUDIT_LOGFILE.layout.pattern = [%u] TID: [%tenantId] [%d] %5p {&#37;c} - %m%ex%n </code>
-<p>For more information on configuring logging, see <a href="../../../administer/logging-and-monitoring/logging/setting-up-logging/">Setting up 
+<p>For more information on configuring logging, see <a href="../../../../administer/logging-and-monitoring/logging/setting-up-logging/">Setting up 
 logging in API Manage</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -228,7 +228,7 @@ logging in API Manage</a>.</p></td>
 <p><br />
 </p></td>
 <td><p>The recommended JDK version is JDK 8 or 11. For more information, see <a 
-href="../../../install-and-setup/setup/reference/product-compatibility/#tested-operating-systems-and-jdks">Tested Operating Systems and JDKs</a>.</p>
+href="../../reference/product-compatibility/#tested-operating-systems-and-jdks">Tested Operating Systems and JDKs</a>.</p>
 <p>You do not need to set the Heap and Permgen values for the JVM from JDK 1.8 onwards as the <code>MaxPermSize</code> value has 
 been removed from Hotspot JVM.</p>
 </td>
@@ -245,7 +245,7 @@ been removed from Hotspot JVM.</p>
 <p><br />
 </p></td>
 <td><p>WSO2 recommends that you use two separate admin user accounts in production, one account for logging into the system and the other one as the system user in configurations (for internal service communications).</p>
-<p>For more information regarding admin user accounts, see <a href="../../../reference/config-catalog/#super-admin-configurations">Super admin configurations</a>.</p>
+<p>For more information regarding admin user accounts, see <a href="../../../../reference/config-catalog/#super-admin-configurations">Super admin configurations</a>.</p>
 </td>
 </tr>
 </tr>
@@ -261,7 +261,7 @@ been removed from Hotspot JVM.</p>
 <td><p>Configure client authentication</p>
 <p><br />
 </p></td>
-<td><p>Client authentication is used to identify the application or client making a request to the WSO2 API Manager  REST APIs. By default, web applications provided with WSO2 API Manager use a set of default credentials for authentication. However, it is recommended to change these default credentials to enhance security. For more details see, <a href="../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/#configure-client-authentication">Configure client authentication</a></p>
+<td><p>Client authentication is used to identify the application or client making a request to the WSO2 API Manager  REST APIs. By default, web applications provided with WSO2 API Manager use a set of default credentials for authentication. However, it is recommended to change these default credentials to enhance security. For more details see, <a href="#configure-client-authentication">Configure client authentication</a></p>
 </td>
 </tr>
 <tr class="even">
@@ -407,7 +407,7 @@ This section provides the list of OS-level security guidelines for your producti
 <tr class="even">
 <td><p>Minimize software to avoid vulnerability</p></td>
 <td><p>Make sure that you only install the software/packages that are relevant to your WSO2 product's deployment. Also, continuously monitor the software that you install.</p>
-<p>For information on the minimum software that your WSO2 product will need, see <a href="../../../install-and-setup/install/installation-prerequisites/#system-requirements">Installation Prerequisites</a>.</p></td>
+<p>For information on the minimum software that your WSO2 product will need, see <a href="../../../install/installation-prerequisites/#system-requirements">Installation Prerequisites</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Enable the Firewall</p></td>
@@ -492,7 +492,7 @@ This section provides a list of security guidelines for configuring the network
 <tr class="odd">
 <td><p>Check open ports and services</p></td>
 <td><p>Periodically check for open ports using port scanning tools and make sure that only the necessary ports are open to both internal and external networks. Be sure that only the ports relevant to your WSO2 products are open for communication. If there are other ports started, be sure to monitor them.</p>
-<p>For the full list of ports in all WSO2 products, see <a href="../../../install-and-setup/setup/reference/default-product-ports/">Default Product Ports</a>.</p></td>
+<p>For the full list of ports in all WSO2 products, see <a href="../../reference/default-product-ports/">Default Product Ports</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Configure device-level security</p></td>

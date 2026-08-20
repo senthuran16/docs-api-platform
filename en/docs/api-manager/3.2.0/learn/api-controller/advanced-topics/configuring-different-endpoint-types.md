@@ -1,6 +1,6 @@
 #  Configuring Different Endpoint Types
 
-When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. (Please refer [Configuring Environment Specific Parameters](../../../learn/api-controller/advanced-topics/configuring-environment-specific-parameters) for more information). You can specify different types of endpoints in this file, as discussed in this section.
+When there are multiple environments, to allow easily configuring environment-specific details, apictl supports an additional parameter file named `api_params.yaml`. (Please refer [Configuring Environment Specific Parameters](configuring-environment-specific-parameters.md) for more information). You can specify different types of endpoints in this file, as discussed in this section.
 
 API Manager supports four (4) main types of endpoints as follows.
 
@@ -211,7 +211,7 @@ The following is an example `api_params.yaml` file for this scenario. (Make sure
     ```
 
 !!! tip
-    When importing an API, if you are specifying the endpoint type as `dynamic`, you can include a message mediation policy with a `To` header inside the `Sequences` directory of your API Project. (Refer [Adding Dynamic Endpoints](../../../learn/api-gateway/message-mediation/adding-dynamic-endpoints/#adding-dynamic-endpoints) to learn more about Dynamic endpoints and message mediations associated with that.)
+    When importing an API, if you are specifying the endpoint type as `dynamic`, you can include a message mediation policy with a `To` header inside the `Sequences` directory of your API Project. (Refer [Adding Dynamic Endpoints](../../api-gateway/message-mediation/adding-dynamic-endpoints.md#adding-dynamic-endpoints) to learn more about Dynamic endpoints and message mediations associated with that.)
 
 ### AWS Lambda Endpoints
 

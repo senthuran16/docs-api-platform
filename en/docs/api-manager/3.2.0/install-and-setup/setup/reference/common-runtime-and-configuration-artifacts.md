@@ -12,7 +12,7 @@ The following are the artifacts used commonly in a WSO2 API Manager and API Mana
     Example: In a Kubernetes based container environment, its possible to use Persistent Volumes to persist these artifacts.
 
 
-1. [API Manager](##api-manager)
+1. [API Manager](#api-manager)
     1. [Persistent Runtime Artifacts](#persistent-runtime-artifacts)
     2. [Persistent Configuration Artifacts](#persistent-configuration-artifacts)
 2. [APIM Analytics](#apim-analytics)

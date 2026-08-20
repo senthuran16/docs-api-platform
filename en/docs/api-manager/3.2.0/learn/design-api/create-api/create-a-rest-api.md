@@ -1,6 +1,6 @@
 # Create a REST API
 
-**API creation** is the process of linking an existing backend API implementation to the [API Publisher](../../../getting-started/basic-architecture/#api-publisher), so that you can manage and monitor the [API's lifecycle](../../../learn/design-api/lifecycle-management/api-lifecycle/), documentation, security, community, and subscriptions. Alternatively, you can provide the API implementation in-line in the [API Publisher](../../../getting-started/basic-architecture/#api-publisher) itself.
+**API creation** is the process of linking an existing backend API implementation to the [API Publisher](../../../getting-started/basic-architecture.md#api-publisher), so that you can manage and monitor the [API's lifecycle](../lifecycle-management/api-lifecycle.md), documentation, security, community, and subscriptions. Alternatively, you can provide the API implementation in-line in the [API Publisher](../../../getting-started/basic-architecture.md#api-publisher) itself.
 
 Follow the instructions below to create a REST API using the basic flow.
 
@@ -47,7 +47,7 @@ Follow the instructions below to create a REST API using the basic flow.
 
          <html><div class="admonition note">
          <p class="admonition-title">Note</p>
-         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal'>Publisher Access Control</a>** and public **<a href='../../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/'> 
+         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal/'>Publisher Access Control</a>** and public **<a href='../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/'> 
          Developer Portal visibility</a>**.</p>
          <p>
          </div>
@@ -133,19 +133,19 @@ Follow the instructions below to create a REST API using the basic flow.
 
      [![REST API definition](../../../assets/img/learn/api-definiton-rest.jpg)](../../../assets/img/learn/api-definiton-rest.jpg)
 
-Now, you have successfully created and configured a REST API. Next, let's [Publish your API](../../../learn/design-api/publish-api/publish-an-api/).
+Now, you have successfully created and configured a REST API. Next, let's [Publish your API](../publish-api/publish-an-api.md).
 
 !!! More
 
         Click the following topics to learn more on the concepts that you need to know when creating an API:
-       -   [API Visibility](../../../learn/design-api/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/)
-       -   [Endpoints](../../../learn/design-api/endpoints/endpoint-types/)
-       -   [Throttling Tiers](../../../learn/rate-limiting/introducing-throttling-use-cases/)
-       -   [Custom Properties](../../../learn/design-api/create-api/adding-custom-properties-to-apis/)
-       -   [API Security](../../../learn/api-security/api-authentication/secure-apis-using-oauth2-tokens)
-       -   [Life Cycle Management](../../../learn/design-api/lifecycle-management/api-lifecycle/)
-       -   [API Documentation](../../../learn/design-api/api-documentation/add-api-documentation/)
-       -   [API Monetization](../../../learn/api-monetization/monetizing-an-api/)
+       -   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)
+       -   [Endpoints](../endpoints/endpoint-types.md)
+       -   [Throttling Tiers](../../rate-limiting/introducing-throttling-use-cases.md)
+       -   [Custom Properties](adding-custom-properties-to-apis.md)
+       -   [API Security](../../api-security/api-authentication/secure-apis-using-oauth2-tokens.md)
+       -   [Life Cycle Management](../lifecycle-management/api-lifecycle.md)
+       -   [API Documentation](../api-documentation/add-api-documentation.md)
+       -   [API Monetization](../../api-monetization/monetizing-an-api.md)
 
 
 

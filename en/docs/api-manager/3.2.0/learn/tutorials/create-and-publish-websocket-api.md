@@ -5,7 +5,7 @@ Follow the instructions in this tutorial to design and publish API with a WebSoc
 <html>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For more information on WebSocket APIs, see <a href="../../learn/design-api/create-api/create-a-websocket-api">Create a WebSocket API</a>.</p>
+<p>For more information on WebSocket APIs, see <a href="../../design-api/create-api/create-a-websocket-api/">Create a WebSocket API</a>.</p>
 </div> 
 </html>
 
@@ -90,9 +90,9 @@ Follow the instructions in this tutorial to design and publish API with a WebSoc
      
          For more information, see the following sections on endpoint related configurations.
 
-         - [Endpoint Timeouts](../../learn/design-api/endpoints/resiliency/endpoint-timeouts)
-         - [Endpoint Suspension](../../learn/design-api/endpoints/resiliency/endpoint-suspension)
-         - [Prevent API Suspension](../../learn/design-api/endpoints/resiliency/prevent-api-suspension)
+         - [Endpoint Timeouts](../design-api/endpoints/resiliency/endpoint-timeouts.md)
+         - [Endpoint Suspension](../design-api/endpoints/resiliency/endpoint-suspension.md)
+         - [Prevent API Suspension](../design-api/endpoints/resiliency/prevent-api-suspension.md)
 
      [![View endpoint details](../../assets/img/learn/endpoint-view-of-websocket-api.png)](../../assets/img/learn/endpoint-view-of-websocket-api.png)
 

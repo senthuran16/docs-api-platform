@@ -5,11 +5,11 @@ The following are the available methods to install WSO2 API Manager via the [WSO
 <tr>
 <td>
 <b>
-<a href="../../../install-and-setup/install/installing-the-product/installing-via-the-installer">Installing via the installer</a></b> </br>
+<a href="../installing-via-the-installer/">Installing via the installer</a></b> </br>
 <p>After you click <b> Download</b>, the installer that is compatible with your OS appears.</p>
 </td>
 <td> 
-<a href="../../../install-and-setup/install/installing-the-product/installing-via-the-installer">
+<a href="../installing-via-the-installer/">
 <img src="../../../../assets/img/setup-and-install/installer.png" width="480" height="80" />
 </td>
 
@@ -20,19 +20,19 @@ The following are the available methods to install WSO2 API Manager via the [WSO
 <p>This takes you to GitHub so that you can download the community version of the distribution directly from GitHub.</p>
 </br>
 <li>
-<a href="../../../install-and-setup/install/installing-the-product/installing-the-binary/installing-on-linux-or-os-x">Installing on Linux or OS X</a>
+<a href="../installing-the-binary/installing-on-linux-or-os-x/">Installing on Linux or OS X</a>
 </li>
 <li>
-<a href="../../../install-and-setup/install/installing-the-product/installing-the-binary/installing-on-solaris">Installing on Solaris</a>
+<a href="../installing-the-binary/installing-on-solaris/">Installing on Solaris</a>
 </li>
 <li>
-<a href="../../../install-and-setup/install/installing-the-product/installing-the-binary/installing-on-windows">Installing on Windows</a>
+<a href="../installing-the-binary/installing-on-windows/">Installing on Windows</a>
 </li>
 <li>
-<a href="../../../install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-linux-service">Installing as a Linux Service</a>
+<a href="../installing-the-binary/installing-as-a-linux-service/">Installing as a Linux Service</a>
 </li>
 <li>
-<a href="../../../install-and-setup/install/installing-the-product/installing-the-binary/installing-as-a-windows-service">Installing as a Windows Service</a>
+<a href="../installing-the-binary/installing-as-a-windows-service/">Installing as a Windows Service</a>
 </li>
 </td>
 

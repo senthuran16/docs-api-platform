@@ -40,7 +40,7 @@ Let's see what each handler does:
  Throttling is applied both at the application level as well as subscription level.
  - **APIMgtUsageHandler:** Publishes events to WSO2 Stream Processor (WSO2 SP) for collection and analysis of statistics. 
  This handler only comes to effect if API usage tracking is enabled . 
- See the [Overview of API Analytics](../../../analytics/overview-of-api-analytics) 
+ See the [Overview of API Analytics](../../../learn/analytics/overview-of-api-analytics.md) 
  section for more information.
  - **APIMgtGoogleAnalyticsTrackingHandler:** Publishes events to Google Analytics. This handler only comes into effect 
  if Google analytics tracking is enabled. See Integrating with Google Analytics for more information.

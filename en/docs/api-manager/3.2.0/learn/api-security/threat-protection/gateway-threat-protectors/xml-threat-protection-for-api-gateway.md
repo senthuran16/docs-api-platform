@@ -2,10 +2,11 @@
 
 The XML threat protector in WSO2 API Manager validates the XML payload vulnerabilities based on the pre-configured limits. It uses following methodologies to thwart the gateway from XML based attacks.
 
--   [Detecting the malformed, vulnerable XML messages through limitations](#Am300XMLThreatProtectionforAPIGateway-detectvulnerability)
+-   [Detecting the malformed, vulnerable XML messages through limitations](#detecting-the-malformed-vulnerable-xml-messages-through-limitations)
 
--   [XML schema validation](#Am300XMLThreatProtectionforAPIGateway-XMLSchemaValidation)
+-   [XML schema validation](#xml-schema-validation)
 
+<a name="detecting-the-malformed-vulnerable-xml-messages-through-limitations"></a>
 #### Detecting the malformed, vulnerable XML messages through limitations
 
 The xml\_validator sequence specifies the properties to be limited in the payload. A sample xml\_validator sequence is given below.
@@ -47,9 +48,13 @@ Users can enable or disable XML payload limits and schema validation. Some examp
 -   [**Disabling the XML payload validation**](#b95bd611fb2144d0940b193f34addf5b)
 -   [**Disabling the XML schema validation**](#70c795c618f04f2cb9983858b263298d)
 
+<a name="b95bd611fb2144d0940b193f34addf5b"></a>
+
 ``` java
     <property name="xmlValidation" value="false"/>
 ```
+
+<a name="70c795c618f04f2cb9983858b263298d"></a>
 
 ``` java
     <property name="schemaValidation" value="false"/>
@@ -114,6 +119,7 @@ Users can enable or disable XML payload limits and schema validation. Some examp
     </tbody>
     </table>
 
+<a name="xml-schema-validation"></a>
 #### XML schema validation
 
 You can define XML schemas per resource to validate each request. For example, to add an XML schema to the resource /userapi/1.0.0/addResource/value follow the steps below.
@@ -124,10 +130,10 @@ You can define XML schemas per resource to validate each request. For example, t
 
 Each request is sanitized through the XML threat protector. API developer can modify each properties according to your requirement.
 
--   [Editing the sequence through registry artifacts](#Am300XMLThreatProtectionforAPIGateway-Editingthesequencethroughregistryartifacts)
--   [Applying the XML validator policy](#Am300XMLThreatProtectionforAPIGateway-ApplyingtheXMLvalidatorpolicy)
--   [Testing the XML threat protector](#Am300XMLThreatProtectionforAPIGateway-TestingtheXMLthreatprotector)
--   [Testing the schema validation](#Am300XMLThreatProtectionforAPIGateway-Testingtheschemavalidation)
+-   [Editing the sequence through registry artifacts](#editing-the-sequence-through-registry-artifacts)
+-   [Applying the XML validator policy](#applying-the-xml-validator-policy)
+-   [Testing the XML threat protector](#testing-the-xml-threat-protector)
+-   [Testing the schema validation](#testing-the-schema-validation)
 
 ### Editing the sequence through registry artifacts
 
@@ -157,9 +163,13 @@ You can edit the sequence to set the property values according to your requireme
 -   [**Request**](#389c50828aa24292b0657e037c09c635)
 -   [**Response**](#159d32ca825c41a480037880ce2e6413)
 
+<a name="389c50828aa24292b0657e037c09c635"></a>
+
 ``` java
     curl -X POST "https://192.168.8.101:8243/xmlPolicy/1.0.0/addResource" -H "accept: application/json" -H "Content-Type: application/xml" -H "Authorization: Bearer 2901c002-f626-372c-9be3-fc54b2c8d65f" -d "<?xml version=\"1.0\"?><inline_model> <Name>string</Name> <Age>string</Age> <Address>string</Address> <phone>string</phone> <home>string</home> <path>string</path> <class>string</class> <team>string</team> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data> <Name>string</Name> <Age>string</Age> <Address>string</Address> <phone>string</phone> <home>string</home> <path>string</path> <class>string</class> <team>string</team> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data> <Name>string</Name> <Age>string</Age> <Address>string</Address> <phone>string</phone> <home>string</home> <path>string</path> <class>string</class> <team>string</team> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data> <Name>string</Name> <Age>string</Age> <Address>string</Address> <phone>string</phone> <home>string</home> <path>string</path> <class>string</class> <team>string</team> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data></inline_model>"
 ```
+
+<a name="159d32ca825c41a480037880ce2e6413"></a>
 
 ``` java
     <am:fault xmlns:am="http://wso2.org/apimanager">
@@ -177,9 +187,13 @@ A sample request and response to test the schema validation is given below.
 -   [**Response**](#194a5a4652e94e609d80ba175c16b449)
 -   [**.xsd URL**](#db80409dd4d941dc972837213bc340e5)
 
+<a name="45b87273c80b44ffb18a3f8fe4f5b8f6"></a>
+
 ``` java
     curl -X POST "https://192.168.8.101:8243/xmlPolicy/1.0.0/addResource" -H "accept: application/json" -H "Content-Type: application/xml" -H "Authorization: Bearer 2901c002-f626-372c-9be3-fc54b2c8d65f" -d "<?xml version=\"1.0\"?><inline_model> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data> <Name>string</Name> <Age>string</Age> <Address>string</Address> <phone>string</phone> <home>string</home> <path>string</path> <class>string</class> <team>string</team> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data> <Name>string</Name> <Age>string</Age> <Address>string</Address> <phone>string</phone> <home>string</home> <path>string</path> <class>string</class> <team>string</team> <location>string</location> <brand>string</brand> <summary>string</summary> <data>string</data></inline_model>"
 ```
+
+<a name="194a5a4652e94e609d80ba175c16b449"></a>
 
 ``` java
     <am:fault xmlns:am="http://wso2.org/apimanager">
@@ -188,6 +202,8 @@ A sample request and response to test the schema validation is given below.
       <am:description>Error occurred while parsing XML payload : org.xml.sax.SAXParseException: cvc-elt.1: Cannot find the declaration of element 'inline_model'.</am:description>
     </am:fault>
 ```
+
+<a name="db80409dd4d941dc972837213bc340e5"></a>
 
 ``` java
     <?xml version="1.0" encoding="UTF-8" ?>
