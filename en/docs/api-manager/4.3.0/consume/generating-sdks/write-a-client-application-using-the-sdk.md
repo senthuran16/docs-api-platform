@@ -1,3 +1,18 @@
+---
+title: "Write a client application using the SDK"
+description: "Build a Java client application that invokes a subscribed API using an SDK downloaded from the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/generating-sdks/write-a-client-application-using-the-sdk/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/generating-sdks/write-a-client-application-using-the-sdk.md
+tags:
+  - api-manager
+  - consume
+  - generating-sdks
+  - write-a-client-application-using-the-sdk
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "tutorial"
+---
+
 # Write a Client Application Using the SDK
 
 

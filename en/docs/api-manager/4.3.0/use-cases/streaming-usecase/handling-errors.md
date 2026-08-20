@@ -1,3 +1,18 @@
+---
+title: "Handling errors"
+description: "Explains how WSO2 Streaming Integrator handles errors in streaming data through storing, logging, streaming, or waiting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/handling-errors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/handling-errors.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - handling-errors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Handling Errors
 
 WSO2 Streaming Integrator allows you to handle any errors that may occur when handling streaming data in a graceful manner. 

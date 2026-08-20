@@ -1,3 +1,18 @@
+---
+title: "Publishing XML messages via HL7"
+description: "Configure Streaming Integrator Tooling to send and receive HL7 events in XML format over MLLP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-hl7-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-hl7-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Publishing XML messages via HL7
 
 ## Purpose:

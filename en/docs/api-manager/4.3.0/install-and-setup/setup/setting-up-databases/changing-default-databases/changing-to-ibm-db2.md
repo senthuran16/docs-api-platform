@@ -1,3 +1,18 @@
+---
+title: "Changing to IBM DB2"
+description: "Set up an IBM DB2 database, install drivers, and run scripts to replace the default H2 database in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-ibm-db2.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Changing to IBM DB2
 
 By default, WSO2 API Manager uses the embedded H2 database as the database for storing user management and registry data. Given below are the instructions you need to follow in order to use IBM DB2 for this purpose.

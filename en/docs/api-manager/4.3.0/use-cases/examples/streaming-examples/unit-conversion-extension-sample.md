@@ -1,3 +1,16 @@
+---
+title: "Converting units"
+description: "Use the unit conversion Siddhi extension to convert values between units in a streaming sample application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/unit-conversion-extension-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/unit-conversion-extension-sample.md
+tags:
+  - siddhi
+  - unit-conversion
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Converting Units
 
 ## Purpose

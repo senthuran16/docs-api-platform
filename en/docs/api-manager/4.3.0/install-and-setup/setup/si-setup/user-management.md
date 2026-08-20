@@ -1,3 +1,18 @@
+---
+title: "User management"
+description: "Learn how WSO2 Streaming Integrator manages users, roles, permissions, and user stores for authentication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/user-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/user-management.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # User Management
 
 !!! info

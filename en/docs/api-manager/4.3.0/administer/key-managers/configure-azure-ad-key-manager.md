@@ -1,3 +1,18 @@
+---
+title: "Configure Azure AD as a key manager"
+description: "Configure Azure AD as a third-party key manager using the WSO2 API-M KM Azure AD connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/key-managers/configure-azure-ad-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/key-managers/configure-azure-ad-key-manager.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - configure-azure-ad-key-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Configure a Azure AD as a Key Manager
 
 WSO2 API Manager supports multiple Key Managers. As a result, WSO2 API Manager is prepacked with an inbuilt resident Key Manager and with the use of connectors it is capable of supporting any authorization server as a Key Manager.

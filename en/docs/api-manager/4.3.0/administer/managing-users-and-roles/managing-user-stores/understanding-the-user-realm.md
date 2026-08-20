@@ -1,3 +1,18 @@
+---
+title: "Understanding the user realm"
+description: "Learn about the user realm, the classes, configurations, and repositories that make up user management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/managing-users-and-roles/managing-user-stores/understanding-the-user-realm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/managing-users-and-roles/managing-user-stores/understanding-the-user-realm.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Understanding the User Realm
 
 User management functionality is provided by default in all WSO2 Carbon-based products and is configured in the 

@@ -1,3 +1,18 @@
+---
+title: "User management via the IdP client interface"
+description: "Switch between the local and external IdP client interfaces used for user management in WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/user-management-via-the-idp-client-interface/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/user-management-via-the-idp-client-interface.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # User Management via the IdP Client Interface
 
 In WSO2 Streaming Integrator, user management is carried out through the

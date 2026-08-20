@@ -1,3 +1,18 @@
+---
+title: "Testing siddhi applications"
+description: "Shows how to validate, run, and simulate events for Siddhi applications in Streaming Integrator Tooling before deploying to production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/testing-a-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/testing-a-siddhi-application.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - testing-a-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Testing Siddhi Applications
 
 The Streaming Integrator allows the following tasks to be carried

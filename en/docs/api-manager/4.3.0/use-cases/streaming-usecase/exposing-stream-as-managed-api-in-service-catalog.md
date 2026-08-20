@@ -1,3 +1,18 @@
+---
+title: "Exposing a stream as a managed API"
+description: "Describes how to create a Streaming API backend, generate an AsyncAPI definition, and publish it to the Service Catalog."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - exposing-stream-as-managed-api-in-service-catalog
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Exposing a Stream as a Managed API
 
 Managed APIs refer to the APIs that are managed using WSO2 API Manager, namely REST APIs, GraphQL APIs, SOAP APIs, and Streaming APIs. This guide explains how to create a Streaming backend for a [Streaming API](../../use-cases/streaming-usecase/create-streaming-api/streaming-api-overview.md), generate an AsyncAPI definition for the corresponding Streaming API, and then publish the AsyncAPI definition in the WSO2 API Manager Service Catalog. 

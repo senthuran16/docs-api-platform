@@ -1,3 +1,18 @@
+---
+title: "Overview of the API Gateway"
+description: "Learn how the API Gateway secures, throttles, and routes API calls, and how requests flow through its architecture."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/deploy-and-publish/deploy-on-gateway/api-gateway/overview-of-the-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/deploy-and-publish/deploy-on-gateway/api-gateway/overview-of-the-api-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Overview of the API Gateway
 
 [![API-M overview](../../../assets/img/learn/apim-overview.png){: style="width:60%"}](../../../assets/img/learn/apim-overview.png)

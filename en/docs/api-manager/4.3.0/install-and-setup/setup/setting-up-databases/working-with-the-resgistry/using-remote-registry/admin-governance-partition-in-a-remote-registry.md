@@ -1,3 +1,18 @@
+---
+title: "Governance partition in a remote registry"
+description: "Set up a governance partition shared across a cluster using a remote WSO2 Governance Registry instance and database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-governance-partition-in-a-remote-registry/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-governance-partition-in-a-remote-registry.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Governance Partition in a Remote Registry
 
 In this deployment strategy, only the governance partition is shared among instances of a group/cluster. For example, a WSO2 Application Server instance and a WSO2 ESB instance that have been configured to operate in a clustered environment can have a single governance registry which is shared across each node of the cluster. A separate instance of the WSO2 Governance Registry (G-Reg) is used to provide the space used in common.

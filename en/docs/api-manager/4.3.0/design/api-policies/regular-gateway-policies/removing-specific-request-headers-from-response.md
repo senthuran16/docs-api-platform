@@ -1,3 +1,18 @@
+---
+title: "Removing specific request headers from response"
+description: "Remove sensitive transport headers from API responses using a custom out sequence property."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/removing-specific-request-headers-from-response/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/removing-specific-request-headers-from-response.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Removing Specific Request Headers From Response
 
 Web services may contain response headers with sensitive information. The following explains how to remove HTTP request headers from the responses for security reasons.

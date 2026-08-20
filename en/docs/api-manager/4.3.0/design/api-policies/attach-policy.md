@@ -1,3 +1,18 @@
+---
+title: "Attaching policies"
+description: "Attach default API-level or operation-level policies shipped with WSO2 API Manager to an existing API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/attach-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/attach-policy.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - attach-policy
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Attaching Policies
 
 Follow the instructions below to attach one or more default policies that are shipped with WSO2 API Manager to an existing API.

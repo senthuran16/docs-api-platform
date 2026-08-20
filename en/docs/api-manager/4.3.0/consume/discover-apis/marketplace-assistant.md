@@ -1,3 +1,18 @@
+---
+title: "Marketplace assistant getting started guide"
+description: "Configure and use the AI-powered Marketplace Assistant to chat with APIs and get recommendations in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/discover-apis/marketplace-assistant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/discover-apis/marketplace-assistant.md
+tags:
+  - api-manager
+  - consume
+  - discover-apis
+  - marketplace-assistant
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Marketplace Assistant Getting Started Guide
 
 The Marketplace Assistant is a powerful tool provided by API Manager, utilizing AI to chat with your APIs and offer recommendations, moving beyond traditional keyword searches. Using this you can access public APIs defined according to the [developer portal visibility](../../design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md#control-api-visibility-in-the-developer-portal).

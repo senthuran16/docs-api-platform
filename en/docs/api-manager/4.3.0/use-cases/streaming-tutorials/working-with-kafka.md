@@ -1,3 +1,18 @@
+---
+title: "Working with Kafka"
+description: "Consume messages from a Kafka topic, process them, and publish the output back to a Kafka topic using the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/working-with-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/working-with-kafka.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - working-with-kafka
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "tutorial"
+---
+
 # Working with Kafka
 
 ## Introduction

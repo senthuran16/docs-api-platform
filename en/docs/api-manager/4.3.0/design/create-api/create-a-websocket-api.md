@@ -1,3 +1,18 @@
+---
+title: "Create a WebSocket API"
+description: "Design a WebSocket API in the Publisher Portal to expose a WebSocket backend with OAuth security, throttling, and analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/create-a-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/create-a-websocket-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-a-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Create a WebSocket API
 
 WebSocket is a protocol similar to HTTP that is part of the HTML5 specification. It enables simultaneous two-way communication (full-duplex communication) between the client and the server over a single connection. 

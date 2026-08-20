@@ -1,3 +1,18 @@
+---
+title: "Refresh token grant"
+description: "Use the OAuth2 refresh token grant to obtain a new access token when the current one expires or is no longer needed."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/grant-types/refresh-token-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/grant-types/refresh-token-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # Refresh Token Grant
 
 The refresh token grant can be used when the current access token is expired or when a new access token is needed. With this grant type, the refresh token acts as a credential and is issued to the client by the authorization server. Issuing a refresh token is optional and if the authorization server issues a refresh token, it is included when issuing an access token. WSO2 Identity Server issues refresh tokens for all other grant types other than the **implicit and client credentials grant types**, as recommended by the OAuth 2.0 specification.

@@ -1,3 +1,18 @@
+---
+title: "GDPR for streaming integrator"
+description: "Learn how WSO2 Streaming Integrator supports GDPR compliance and remove personally identifiable data with the Forget-me tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/general-data-protection-regulations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/general-data-protection-regulations.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # General Data Protection Regulations (GDPR) for Streaming Integrator
 
 The General Data Protection Regulation (GDPR) is a new legal framework formalized by the European Union (EU) in 2016. This regulation is effective since 28, May 2018, and can affect any organization that processes Personally Identifiable Information (PII) of individuals who live in Europe. Organizations that fail to demonstrate GDPR compliance are subjected to financial penalties.

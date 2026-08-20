@@ -1,3 +1,18 @@
+---
+title: "GraphQL rate limiting overview"
+description: "Learn how the Static Query Analyzer applies query depth and complexity limits to protect GraphQL API backends."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/rate-limiting/graphql-api/overview-query-limits-for-graphql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/rate-limiting/graphql-api/overview-query-limits-for-graphql.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # GraphQL Rate Limiting Overview 
 
 GraphQL is an open-source data query & manipulation language for APIs. It provides a common interface between the client and the server for data fetching and manipulations.

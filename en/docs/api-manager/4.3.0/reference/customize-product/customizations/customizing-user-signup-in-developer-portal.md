@@ -1,3 +1,18 @@
+---
+title: "Customizing user signup in Developer Portal"
+description: "Add, modify, or remove fields on the Developer Portal self sign-up form by managing local claim attributes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/customizing-user-signup-in-developer-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/customizing-user-signup-in-developer-portal.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Customizing User Signup in Developer Portal
 
 WSO2 API Manager (WSO2 API-M) allows new users to gain access to the Developer Portal via a Self sign-up page. The default sign-up page has a set of mandatory and optional fields where the user can use to provide their details. However, there can be cases where Developer Portal owners need to customize the available fields by modifying the available fields or/and adding new fields.

@@ -1,3 +1,18 @@
+---
+title: "Creating siddhi applications"
+description: "Explains the configurations in a Siddhi file and how to create Siddhi applications using Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/creating-a-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/creating-a-siddhi-application.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - creating-a-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Creating Siddhi Applications
 
 Siddhi applications are files that define the Siddhi logic to process

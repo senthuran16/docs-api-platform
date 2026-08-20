@@ -1,3 +1,18 @@
+---
+title: "Configuring different endpoint security types"
+description: "Configure Basic, Digest, or OAuth2 endpoint security in the apictl environment parameters file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/advanced-topics/configuring-different-endpoint-security-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/advanced-topics/configuring-different-endpoint-security-types.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 #  Configuring Different Endpoint Security Types
 
 When there are multiple environments, to allow easily configuring environment-specific details, **WSO2 API Controller (apictl)** supports an additional parameter file. (Please refer [Configuring Environment Specific Parameters](../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md) for more information). You can specify different types of endpoint security in this file, as discussed under the below topics.

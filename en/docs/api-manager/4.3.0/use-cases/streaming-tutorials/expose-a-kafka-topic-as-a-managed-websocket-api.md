@@ -1,3 +1,18 @@
+---
+title: "Expose a Kafka stream as a managed WebSocket API"
+description: "Consume a Kafka topic with the Streaming Integrator and expose it as a managed WebSocket API in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/expose-a-kafka-topic-as-a-managed-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/expose-a-kafka-topic-as-a-managed-websocket-api.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - expose-a-kafka-topic-as-a-managed-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "tutorial"
+---
+
 # Expose a Kafka Stream as a Managed WebSocket API
 
 The Streaming Integrator (SI) component in WSO2 API Manager (WSO2 API-M) can consume events from a third-party streaming provider topic (e.g., Kafka topic) and publish those events to a Streaming Backend (e.g., WebSocket Streaming Backend) in a streaming manner. When a stream of events are received by the third-party streaming provider source (e.g., Kafka source), they are published to the Streaming Backend simultaneously. 

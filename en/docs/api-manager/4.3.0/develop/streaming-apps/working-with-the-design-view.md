@@ -1,3 +1,18 @@
+---
+title: "Working with the design view"
+description: "Explains how to access the design view and add and configure Siddhi components by dragging and dropping them onto the grid."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/working-with-the-design-view/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/working-with-the-design-view.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - working-with-the-design-view
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Working with the Design View
 
 This section provides an overview of the design view of the Streaming Integrator Tooling.

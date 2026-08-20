@@ -1,3 +1,18 @@
+---
+title: "Working with keystores"
+description: "Understand how keystores, key pairs, and digital certificates secure WSO2 Streaming Integrator deployments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/working-with-keystores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/working-with-keystores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "concept"
+---
+
 # Working with Keystores
 
 A keystore is a repository that stores the cryptographic keys and

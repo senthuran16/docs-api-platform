@@ -1,3 +1,18 @@
+---
+title: "Viewing aggregation statistics"
+description: "View the aggregation statistics dashboard showing memory usage, latency, and throughput for Siddhi aggregations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-aggregation-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-aggregation-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-aggregation-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "reference"
+---
+
 !!! note
     **This page is still a work in progress!**
     

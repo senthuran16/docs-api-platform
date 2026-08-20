@@ -1,3 +1,18 @@
+---
+title: "Viewing trigger statistics"
+description: "View the trigger statistics dashboard showing throughput for triggers in the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-trigger-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-trigger-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-trigger-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "reference"
+---
+
 # Viewing Trigger Statistics
 
 ![Trigger statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/trigger_statistics_dashboard.png)

@@ -1,3 +1,18 @@
+---
+title: "Publish HTTP events via OAuth with a refresh token"
+description: "Configure Streaming Integrator to send HTTP events to an OAuth-protected endpoint using the refresh token grant type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-http-oauth-request-with-refresh-token/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-http-oauth-request-with-refresh-token.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Publishing HTTP Events to an OAuth-protected Endpoint while Using a Refresh Token Grant Type
 
 ## Purpose:

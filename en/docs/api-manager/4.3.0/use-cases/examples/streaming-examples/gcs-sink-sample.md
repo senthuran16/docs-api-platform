@@ -1,3 +1,18 @@
+---
+title: "Publishing events to a GCS bucket"
+description: "Run a Siddhi sample that aggregates and publishes events to a Google Cloud Storage bucket via the GCS sink."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/gcs-sink-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/gcs-sink-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Publishing Events to a GCS Bucket
 
 ## Purpose

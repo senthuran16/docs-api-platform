@@ -1,3 +1,18 @@
+---
+title: "Access tokens per device"
+description: "Configure WSO2 API Manager to issue distinct OAuth2 access tokens per device for the same user and application combination."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/access-tokens-per-device/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/access-tokens-per-device.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # duplicate\_Access Tokens Per Device
 
 ### Generating access tokens per device

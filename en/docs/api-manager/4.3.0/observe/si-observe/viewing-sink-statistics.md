@@ -1,3 +1,18 @@
+---
+title: "Viewing sink statistics"
+description: "View the sink statistics dashboard showing sink mapper latency and throughput in Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-sink-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-sink-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-sink-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "reference"
+---
+
 # Viewing Query Statistics
 
 ![Sink statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/sink_statistics_dashboard.jpg)

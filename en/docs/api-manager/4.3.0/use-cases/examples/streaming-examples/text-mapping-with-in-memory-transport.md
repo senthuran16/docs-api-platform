@@ -1,3 +1,16 @@
+---
+title: "Text mapping with In-memory transport"
+description: "Configure Streaming Integrator Tooling to check custom and default text mapping using in-memory transport and logging."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/text-mapping-with-in-memory-transport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/text-mapping-with-in-memory-transport.md
+tags:
+  - text-mapping
+  - in-memory-transport
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Text Mapping with In-memory Transport
 
 ## Purpose

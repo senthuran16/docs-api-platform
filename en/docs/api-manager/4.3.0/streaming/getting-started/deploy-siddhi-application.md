@@ -1,3 +1,18 @@
+---
+title: "Step 3: deploy the siddhi application"
+description: "Walks through deploying the SweetFactoryApp Siddhi application to a Streaming Integrator server using the tooling interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/streaming/getting-started/deploy-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/streaming/getting-started/deploy-siddhi-application.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - deploy-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "tutorial"
+---
+
 # Step 3: Deploy the Siddhi Application
 
 The `SweetFactoryApp` that you created in [Step 2: Create the Siddhi Application](../../streaming/getting-started/create-the-siddhi-application.md) is now ready to be deployed in the Streaming Integrator server, exported as a Docker image, or deployed in Kubernetes.

@@ -1,3 +1,18 @@
+---
+title: "Receiving events via HTTP transport"
+description: "Configure WSO2 Streaming Integrator to receive events via HTTP transport and count arriving events on the console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-and-count/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-and-count.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving Events via HTTP Transport
 
 ## Purpose:

@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Review Micro Integrator performance test results for proxy and API scenarios across concurrent users and payload sizes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/deployment-best-practices/performance-test-results-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/deployment-best-practices/performance-test-results-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "reference"
+---
+
 # Performance Test Results
 
 The performance of WSO2 Micro Integrator Manager was measured using the following scenarios.

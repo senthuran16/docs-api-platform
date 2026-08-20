@@ -1,3 +1,18 @@
+---
+title: "Creating custom users to perform apictl operations"
+description: "Create a custom user with a role and scopes limited to the specific apictl operations that user needs to perform."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 #  Creating Custom Users to Perform apictl Operations
 
 To perform tasks using the **WSO2 API Controller (apictl)**, a particular user must have required scopes. From WSO2 API Manager (WSO2 API-M) 3.2.0 onwards, a new role named `Internal/devops` has been introduced who has the ability to perform all the apictl related operations. You just need to create a new user (Refer [Adding a new User](../../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user) to learn about adding new users), assign the role `Internal/devops` and use that user to perform the apictl operations.

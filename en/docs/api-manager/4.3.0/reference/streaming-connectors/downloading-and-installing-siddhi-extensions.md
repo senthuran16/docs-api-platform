@@ -1,3 +1,18 @@
+---
+title: "Downloading and installing siddhi extensions"
+description: "Explains how to download, install, and uninstall Siddhi extensions for Streaming Integrator via the command line or manually."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/streaming-connectors/downloading-and-installing-siddhi-extensions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/streaming-connectors/downloading-and-installing-siddhi-extensions.md
+tags:
+  - api-manager
+  - reference
+  - streaming-connectors
+  - downloading-and-installing-siddhi-extensions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Downloading and Installing Siddhi Extensions
 
 The Siddhi extensions supported for the Streaming Integrator are shipped with the product by

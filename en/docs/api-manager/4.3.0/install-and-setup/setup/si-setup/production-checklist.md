@@ -1,3 +1,18 @@
+---
+title: "Production checklist"
+description: "Review the configuration changes needed to prepare WSO2 Streaming Integrator for a production deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/production-checklist/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/production-checklist.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # Production Checklist
 
 Once you download and install WSO2 Streaming Integrator, you may need to update its default configurations based on your requirements.

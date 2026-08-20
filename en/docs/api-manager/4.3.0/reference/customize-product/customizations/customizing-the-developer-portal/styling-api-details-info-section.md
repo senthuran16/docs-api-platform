@@ -1,3 +1,18 @@
+---
+title: "Styling API and application details info section"
+description: "Customize colors, thumbnail visibility, and other attributes of the API and application details info bar via userTheme.json."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-info-section.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Styling API and Application Details Info Section
 
 The "API Details Info" section which is shown below can be customized according to your design needs by configuring the `defaultTheme.js` file.

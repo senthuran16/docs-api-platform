@@ -1,3 +1,18 @@
+---
+title: "Exporting siddhi applications"
+description: "Shows how to export Siddhi applications as Docker or Kubernetes artifacts from the Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/exporting-siddhi-applications/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/exporting-siddhi-applications.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - exporting-siddhi-applications
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Exporting Siddhi Applications
 
 The Streaming Integrator Tooling allows you to export one or more Siddhi files as a Docker or Kubernetes artifact in order to run those Siddhi applications within a Docker or Kubernetes environment.

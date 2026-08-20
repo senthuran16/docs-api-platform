@@ -1,3 +1,18 @@
+---
+title: "Defining tables for physical stores"
+description: "Define @Store annotations for physical database tables in WSO2 Streaming Integrator using inline or reference syntax."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/defining-tables-for-physical-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/defining-tables-for-physical-stores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Defining Tables for Physical Stores
 
 This section explains how to define data tables to store data handled by

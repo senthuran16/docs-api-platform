@@ -1,3 +1,18 @@
+---
+title: "Writing custom siddhi extensions"
+description: "Explains how to generate maven archetype projects for writing custom Siddhi extensions such as execution, source, and sink types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/streaming-connectors/writing-custom-siddhi-extensions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/streaming-connectors/writing-custom-siddhi-extensions.md
+tags:
+  - api-manager
+  - reference
+  - streaming-connectors
+  - writing-custom-siddhi-extensions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Writing Custom Siddhi Extensions
 
 Custom extensions can be written in order to apply use case specific logic that is not available in Siddhi out of the 

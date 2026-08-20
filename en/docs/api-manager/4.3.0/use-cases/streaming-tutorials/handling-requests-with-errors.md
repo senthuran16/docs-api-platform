@@ -1,3 +1,18 @@
+---
+title: "Managing streaming data with errors"
+description: "Handle streaming events that contain errors by logging, redirecting, or storing them in a MySQL data store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/handling-requests-with-errors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/handling-requests-with-errors.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - handling-requests-with-errors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "tutorial"
+---
+
 # Managing Streaming Data with Errors
 
 ## Introduction

@@ -1,3 +1,18 @@
+---
+title: "Pre-processing data received via TCP"
+description: "Run a Siddhi sample that receives events over TCP and pre-processes them using string and time extensions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/data-preprocessing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/data-preprocessing.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Pre-processing Data Received via TCP
 
 ## Purpose

@@ -1,3 +1,18 @@
+---
+title: "Validate request with Open Policy Agent (OPA)"
+description: "Configure Open Policy Agent to validate Gateway requests, attach OPA policies to APIs, and customize the request and response payloads."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/opa-validation/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/opa-validation/overview.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - opa-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Validate Request with Open Policy Agent (OPA)
 
 The [Open Policy Agent (OPA)](https://openpolicyagent.org/) is an open source, general-purpose policy engine that unifies policy enforcement. 

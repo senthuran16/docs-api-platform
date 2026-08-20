@@ -1,3 +1,18 @@
+---
+title: "Making predictions via hoeffding classifier model"
+description: "Train a Hoeffding Classifier and predict the sweet category from a production stream in streaming manner."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/hoeffding-adaptive-tree-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/hoeffding-adaptive-tree-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Making Predictions via Hoeffding Classifier Model
 
 ## Purpose:

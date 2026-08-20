@@ -1,3 +1,18 @@
+---
+title: "Test a GraphQL API using the integrated GraphQL console"
+description: "Subscribe to a GraphQL API and invoke it using the Integrated GraphiQL console in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md
+tags:
+  - api-manager
+  - consume
+  - invoke-apis
+  - invoke-apis-using-tools
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Test a GraphQL API Using the Integrated GraphQL Console
 
 WSO2 API Manager (WSO2 API-M) has an Integrated GraphiQL UI for the GraphQL APIs.

@@ -1,3 +1,18 @@
+---
+title: "Configuring workflows for tenants"
+description: "Configure tenant-specific custom workflows for signup, application, registration, and subscription approvals in a multi-tenant setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-workflows-for-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-workflows-for-tenants.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Configuring Workflows for Tenants
 
 Using the API Manager, you can configure custom workflows that get invoked at user signup, application creation, registration, subscription etc. You do these configurations in the `workflow-extensions.xml` as described in the previous sections.

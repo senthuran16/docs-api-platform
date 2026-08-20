@@ -1,3 +1,18 @@
+---
+title: "Properties"
+description: "Add, edit, or delete custom properties on a registry resource or collection using the Properties panel."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/properties.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Properties
 
 The **Properties** panel displays the properties of the currently selected resource or collection. New properties can be added, while existing properties can be edited or deleted.

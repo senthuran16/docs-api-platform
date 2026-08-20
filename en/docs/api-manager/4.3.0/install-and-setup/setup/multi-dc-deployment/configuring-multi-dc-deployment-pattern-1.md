@@ -1,3 +1,18 @@
+---
+title: "Configure multi-DC pattern 1: replicated databases"
+description: "Configure the database replication and regional setup for the geo-regional synchronized API management multi-DC pattern."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - multi-dc-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Configure Pattern 1: Geo-Regional Synchronized API Management with Replicated Databases
 
 <a href="../../../../assets/img/setup-and-install/multi-dc-pattern-1.png"><img src="../../../../assets/img/setup-and-install/multi-dc-pattern-1.png" alt="Multi-DC Pattern 1" width="80%"></a>

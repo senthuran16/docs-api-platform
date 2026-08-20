@@ -1,3 +1,17 @@
+---
+title: "Streaming overview"
+description: "Get an overview of the Streaming Integrator component and links to quick start guides, tutorials, and key concepts for streaming."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/streaming/streaming-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/streaming/streaming-overview.md
+tags:
+  - api-manager
+  - streaming
+  - streaming-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 <style>
     @font-face {
     font-family: 'Material Icons';

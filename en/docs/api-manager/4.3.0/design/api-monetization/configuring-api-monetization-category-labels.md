@@ -1,3 +1,18 @@
+---
+title: "Configuring API monetization category labels"
+description: "Enable monetization category labels so APIs display as Free, Paid, or Freemium in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-monetization/configuring-api-monetization-category-labels/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-monetization/configuring-api-monetization-category-labels.md
+tags:
+  - api-manager
+  - design
+  - api-monetization
+  - configuring-api-monetization-category-labels
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Configuring API Monetization Category Labels
 
 When defining throttling tiers using the Admin Portal, you have the option to specify a given billing plan for tiers. A tier is defined as either a free or paid tier. Depending on the tiers available for a given API, the following API monetization categories are displayed as labels in the Developer Portal.

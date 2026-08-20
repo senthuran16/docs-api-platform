@@ -1,4 +1,14 @@
 ---
+title: "Page not found"
+description: "Displays when a requested API Manager documentation page cannot be found and suggests navigation or search instead."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/page-not-found/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/page-not-found.md
+tags:
+  - api-manager
+  - page-not-found
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "reference"
 template: templates/no-navbars.html
 ---
 

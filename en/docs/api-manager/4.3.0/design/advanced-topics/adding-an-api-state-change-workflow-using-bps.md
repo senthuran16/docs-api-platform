@@ -1,3 +1,18 @@
+---
+title: "Adding an API state change workflow (BPS)"
+description: "Configure WSO2 EI or WSO2 BPS with API Manager to add a custom approval workflow for API lifecycle state changes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/advanced-topics/adding-an-api-state-change-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/advanced-topics/adding-an-api-state-change-workflow-using-bps.md
+tags:
+  - api-manager
+  - design
+  - advanced-topics
+  - adding-an-api-state-change-workflow-using-bps
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Adding an API State Change Workflow
 
 This section explains how to add a custom workflow to control the API state changes in the API Manager. Before you begin, see [Workflow Extensions](../../reference/customize-product/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine.md) for more information on the different types of workflow executors, and also, see [API Lifecycle](../../get-started/key-concepts.md#api-lifecycle) to get a better understanding on the API states.

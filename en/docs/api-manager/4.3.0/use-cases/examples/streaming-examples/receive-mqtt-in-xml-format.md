@@ -1,3 +1,18 @@
+---
+title: "Receiving XML events via MQTT"
+description: "Configure WSO2 Streaming Integrator to receive XML events over MQTT transport using a mosquitto broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-mqtt-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-mqtt-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving XML events via MQTT
 
 ## Purpose:

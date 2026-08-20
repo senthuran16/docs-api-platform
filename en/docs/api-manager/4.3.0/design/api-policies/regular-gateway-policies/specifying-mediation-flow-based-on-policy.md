@@ -1,3 +1,18 @@
+---
+title: "Specifying a mediation flow using a policy"
+description: "Attach common or API-specific mediation policies to request, response, and fault flows at the operation level."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/specifying-mediation-flow-based-on-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/specifying-mediation-flow-based-on-policy.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Specifying a Mediation Flow Using a Policy
 
 Operation level policy support provides the ability to attach multiple policies at the operation level itself.

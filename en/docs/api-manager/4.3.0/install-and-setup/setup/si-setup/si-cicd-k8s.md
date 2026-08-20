@@ -1,3 +1,17 @@
+---
+title: "CI/CD for streaming integrator on Kubernetes"
+description: "Set up a CI/CD pipeline for WSO2 Streaming Integrator deployments on Kubernetes using a deployment descriptor repository."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/si-cicd-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/si-cicd-k8s.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
 
 [![K8s based CI/CD for Streaming Integrator](../../../assets/img/deploy/si-cicd-k8s.png)](../../../assets/img/deploy/mi-cicd-k8s.png)
 

@@ -1,3 +1,18 @@
+---
+title: "Viewing the API analytics overview"
+description: "Explore the analytics overview page widgets for total traffic, latency, error rate, and the API request summary timeline."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/viewing/analytics-pages-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/viewing/analytics-pages-overview.md
+tags:
+  - api-manager
+  - api-analytics
+  - viewing
+  - analytics-pages-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # Viewing the API Analytics Overview
 
 [![overview page full](../../assets/img/analytics/overview/overview-page-full.png)](../../assets/img/analytics/overview/overview-page-full.png)

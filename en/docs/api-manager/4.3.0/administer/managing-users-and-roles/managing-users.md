@@ -1,3 +1,18 @@
+---
+title: "Managing users"
+description: "Add users, assign roles, access the Admin Dashboard, and change user passwords via the management console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/managing-users-and-roles/managing-users/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/managing-users-and-roles/managing-users.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-users
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Managing Users
 
 Users are consumers who interact with your enterprise's applications, databases or any other systems. These users can be persons, devices or applications/programs within or outside of the enterprise's network. Since these users interact with internal systems and access data, the need to define which user is allowed to do what, is critical. This is called user management.

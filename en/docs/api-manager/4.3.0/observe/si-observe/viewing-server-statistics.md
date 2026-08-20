@@ -1,3 +1,18 @@
+---
+title: "Viewing server statistics"
+description: "View the server statistics dashboard showing active Streaming Integrator server instances and JVM metrics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-server-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-server-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-server-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "reference"
+---
+
 # Viewing Server Statistics
 
 Siddhi Server Statistics Dashboard represents a detailed view of the active server instances. It also includes the JVM metrics related to the active servers.

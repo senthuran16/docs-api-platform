@@ -1,3 +1,17 @@
+---
+title: "Architecture and key components"
+description: "Describes the API Manager architecture, including the management plane, data plane, and their key components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/get-started/apim-architecture/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/get-started/apim-architecture.md
+tags:
+  - api-manager
+  - get-started
+  - apim-architecture
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # Architecture and Key Components
 
 The diagram below is a high-level snapshot of WSO2 API Manager and the various components that it can work together with. 

@@ -1,3 +1,18 @@
+---
+title: "Configure the API gateway"
+description: "Configure the WSO2 API Manager gateway to publish analytics data to the cloud, including worker thread tuning."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/choreo-analytics/gateways/configure-synapse-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/choreo-analytics/gateways/configure-synapse-gateway.md
+tags:
+  - api-manager
+  - api-analytics
+  - choreo-analytics
+  - gateways
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Configure the API Gateway
 
 API Analytics is delivered via the API Analytics Cloud. Therefore, the API Manager Gateway needs to be configured to publish analytics data into the cloud.

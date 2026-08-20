@@ -1,3 +1,18 @@
+---
+title: "Response caching"
+description: "Enable response caching for an API in the Publisher to reduce redundant backend processing and improve performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 #Response caching
 
 The API Manager uses [WSO2 ESB's cache mediator](https://docs.wso2.com/display/EI650/Cache+Mediator) to cache response messages for each API. Caching improves performance, because the backend server does not have to process the same data for a request multiple times. You need to set an appropriate timeout period to offset the risk of stale data in the cache.

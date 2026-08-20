@@ -1,3 +1,18 @@
+---
+title: "Configuring alerts for API analytics"
+description: "Configure alerts in Choreo Insights to monitor API abnormalities, including suppression windows and email limits."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/choreo-analytics/configure-alerts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/choreo-analytics/configure-alerts.md
+tags:
+  - api-manager
+  - api-analytics
+  - choreo-analytics
+  - configure-alerts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Configuring Alerts for API Analytics
 
 Choreo Insights allows you to configure alerts. These alerts allow you to proactively monitor your API ecosystem and take corrective measures for any abnormalities you find. 

@@ -1,3 +1,16 @@
+---
+title: "Receiving data via TCP and preprocessing"
+description: "Receive events via TCP transport and preprocess them using Siddhi string and time extensions before storing in MySQL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/sweet-production-data-preprocessing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/sweet-production-data-preprocessing.md
+tags:
+  - siddhi-extensions
+  - tcp-transport
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving Data via TCP and Preprocessing
 
 ## Purpose

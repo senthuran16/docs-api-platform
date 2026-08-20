@@ -1,3 +1,18 @@
+---
+title: "Installing the streaming integrator runtime"
+description: "Download, extract, and configure the JAVA_HOME environment variable to install the WSO2 Streaming Integrator runtime."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/install/installing-the-product/installing-si/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/install/installing-the-product/installing-si.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Installing the Streaming Integrator Runtime
 
 Follow the steps given below to install the WSO2 Streaming Integrator (SI) runtime of WSO2 API Manager.

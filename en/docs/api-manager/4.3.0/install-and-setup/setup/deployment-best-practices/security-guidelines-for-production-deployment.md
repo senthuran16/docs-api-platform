@@ -1,3 +1,18 @@
+---
+title: "Security guidelines for production deployment"
+description: "Apply runtime-level, OS-level, and network-level security guidelines when deploying API Manager to production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Security Guidelines for Production Deployment
 
 Given below are the common security guidelines for deploying a WSO2 API Manager in a **production environment**.

@@ -1,3 +1,18 @@
+---
+title: "Enriching data"
+description: "Explains how to enrich streaming data by joining data streams with static data, other streams, or external services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/enriching-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/enriching-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - enriching-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Enriching Data
 
 Enriching data involves integrated the data received into a streaming integration flow with data from other medium such as a data store, another data stream, or an external service to derive an expected result.

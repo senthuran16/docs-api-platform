@@ -1,3 +1,18 @@
+---
+title: "Interact with the community"
+description: "Rate and comment on APIs, share API links on social media, and access GitHub and Slack URLs from the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/collaboration/interact-with-the-community/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/collaboration/interact-with-the-community.md
+tags:
+  - api-manager
+  - consume
+  - collaboration
+  - interact-with-the-community
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Interact with the Community
 
 The Developer Portal provides community features that help API Consumers collaborate and communicate with the API Publisher and build up constructive conversations. You can actively use the following community features to build and nurture an active community of users for the APIs available in the Developer Portal.

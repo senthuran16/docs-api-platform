@@ -1,4 +1,15 @@
 ---
+title: "WSO2 API Manager documentation"
+description: "Landing page for WSO2 API Manager 4.3.0 documentation, linking to quick start guides, overviews, and key sections."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0.md
+tags:
+  - api-manager
+  - landing-page
+  - documentation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
 template: templates/no-navbars.html
 ---
 

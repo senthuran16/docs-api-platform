@@ -1,3 +1,18 @@
+---
+title: "Product compatibility"
+description: "Lists the operating systems, databases, and other runtimes tested for compatibility with WSO2 API Manager 4.3.0."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/reference/product-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/reference/product-compatibility.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "reference"
+---
+
 # Product Compatibility
 
 Given below are the compatibility details of the WSO2 API Manager (WSO2 API-M) 4.3.0 runtimes.

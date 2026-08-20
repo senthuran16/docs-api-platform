@@ -1,3 +1,18 @@
+---
+title: "Running streaming integrator as a Windows service"
+description: "Set up the YAJSW wrapper configuration to run WSO2 Streaming Integrator as a Windows service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/install/installing-the-product/installing-si-as-windows-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/install/installing-the-product/installing-si-as-windows-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Running Streaming Integrator as a Windows Service
 
 !!! note

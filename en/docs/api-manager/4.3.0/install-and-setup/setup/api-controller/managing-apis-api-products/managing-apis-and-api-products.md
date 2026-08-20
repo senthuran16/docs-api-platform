@@ -1,3 +1,18 @@
+---
+title: "Managing APIs and API Products"
+description: "Add and list APIs and API Products in a WSO2 API Manager environment using apictl get and search commands."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Managing APIs and API Products
 
 ## Add APIs or API Products in an environment

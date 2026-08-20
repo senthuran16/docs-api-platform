@@ -1,3 +1,18 @@
+---
+title: "Performance test results for token persistence"
+description: "Compare API Manager token endpoint throughput and resource usage with and without token persistence enabled."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/deployment-best-practices/performance-test-results-token-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/deployment-best-practices/performance-test-results-token-persistence.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "reference"
+---
+
 # Performance Test Results for Token Persistence
 
 

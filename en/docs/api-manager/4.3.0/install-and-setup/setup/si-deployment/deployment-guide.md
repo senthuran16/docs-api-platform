@@ -1,3 +1,18 @@
+---
+title: "Deployment"
+description: "Compare the single node, minimum HA, and scalable HA deployment patterns supported by Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-deployment/deployment-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-deployment/deployment-guide.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Deployment
 
 WSO2 Streaming Integrator(SI) is designed to deploy enterprise grade critical systems that demand high 
