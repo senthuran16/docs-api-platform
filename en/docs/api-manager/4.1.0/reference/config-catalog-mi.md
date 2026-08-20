@@ -1,3 +1,17 @@
+---
+title: "Integration server configurations"
+description: "Reference for all deployment.toml configuration parameters available for the Micro Integrator server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/config-catalog-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/config-catalog-mi.md
+tags:
+  - api-manager
+  - reference
+  - config-catalog-mi
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Integration Server Configurations
 
 All the server-level configurations of your Micro Integrator instance can be applied using a single configuration file, which is the `deployment.toml` file (stored in the `MI_HOME/conf` directory).

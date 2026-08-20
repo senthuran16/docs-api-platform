@@ -1,3 +1,18 @@
+---
+title: "File connector example"
+description: "Shows how to use version 3 of the File Connector to create a file in the local file system and read its content."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/file-connector/3.x/file-connector-3.x-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/file-connector/3.x/file-connector-3.x-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # File Connector Example
 
 File Connector can be used to perform operations in the local file system as well as in a remote server such as FTP and SFTP. 

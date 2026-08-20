@@ -1,3 +1,18 @@
+---
+title: "WS-Security implementations"
+description: "Review the 16 predefined WS-Security scenarios and specifications supported by the WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mi-security-reference/security-implementation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mi-security-reference/security-implementation.md
+tags:
+  - api-manager
+  - reference
+  - mi-security-reference
+  - security-implementation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # WS-Security Implementations
 
 Web services security, or to be more precise, SOAP message security

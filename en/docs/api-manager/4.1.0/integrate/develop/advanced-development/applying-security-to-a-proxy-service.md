@@ -1,3 +1,18 @@
+---
+title: "Applying security to a proxy service"
+description: "Apply WS-Policy based security to a proxy service in WSO2 Integration Studio and test it with SoapUI."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/advanced-development/applying-security-to-a-proxy-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/advanced-development/applying-security-to-a-proxy-service.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Applying Security to a Proxy Service
 
 Follow the instructions below to apply security to a proxy service via WSO2 Integration Studio:

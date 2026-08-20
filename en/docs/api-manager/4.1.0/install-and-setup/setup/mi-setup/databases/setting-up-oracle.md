@@ -1,3 +1,18 @@
+---
+title: "Setting up an Oracle database"
+description: "Set up an Oracle database and required users for the Micro Integrator's cluster coordination and user stores."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/databases/setting-up-oracle/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/databases/setting-up-oracle.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up an Oracle Database
 
 Follow the steps given below to set up the required Oracle databases for your Micro Integrator.

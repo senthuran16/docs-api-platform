@@ -1,3 +1,18 @@
+---
+title: "Tuning performance"
+description: "Apply OS-level and product configuration changes to optimize WSO2 API Manager performance in production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/deployment-best-practices/tuning-performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/deployment-best-practices/tuning-performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Tuning Performance
 
 This section describes some recommended performance tuning configurations to optimize WSO2 API Manager. It assumes that you have set up the API Manager on Unix/Linux, which is recommended for a production deployment.

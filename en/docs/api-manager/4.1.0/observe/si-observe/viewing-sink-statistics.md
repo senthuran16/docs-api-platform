@@ -1,3 +1,18 @@
+---
+title: "Viewing sink statistics"
+description: "Interpret the sink statistics dashboard showing sink mapper throughput and latency for Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/si-observe/viewing-sink-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/si-observe/viewing-sink-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-sink-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Viewing Query Statistics
 
 ![Sink statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/sink_statistics_dashboard.jpg)

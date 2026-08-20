@@ -1,3 +1,18 @@
+---
+title: "RDBMS coordination configuration"
+description: "Configure heartbeat interval and retry parameters for RDBMS-based cluster coordination and perform safe rolling updates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/feature_configs/configuring_rdbms_coordination/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/feature_configs/configuring_rdbms_coordination.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # RDBMS Coordination Configuration
 
 ## RDBMS Coordination Parameters

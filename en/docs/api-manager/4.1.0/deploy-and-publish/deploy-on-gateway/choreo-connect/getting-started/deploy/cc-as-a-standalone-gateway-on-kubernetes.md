@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect standalone on Kubernetes"
+description: "Deploy an API to Choreo Connect running as a standalone gateway on Kubernetes using apictl and YAML artifacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Deploying Choreo Connect as a Standalone Gateway on Kubernetes
 
 Let's deploy an API in Choreo Connect running on Kubernetes as a Standalone Gateway. We can use [WSO2 API Controller (apictl)](../../../../../reference/apictl/wso2-api-controller.md) the Command Line Tool to deploy the API.

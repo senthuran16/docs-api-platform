@@ -1,3 +1,18 @@
+---
+title: "Token revocation"
+description: "Revoke OAuth2 access and refresh tokens using the Revoke API with cURL, including required parameters and examples."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/token-revocation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/token-revocation.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Token Revocation
 
 ## Revoking access tokens

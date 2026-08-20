@@ -1,3 +1,18 @@
+---
+title: "Proxy services"
+description: "Reference for the general and transport-specific properties used to configure a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/proxy-service-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/proxy-service-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - proxy-service-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Proxy Services
 ## Introduction
 

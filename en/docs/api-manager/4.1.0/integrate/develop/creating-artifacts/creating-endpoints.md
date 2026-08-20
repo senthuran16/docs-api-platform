@@ -1,3 +1,18 @@
+---
+title: "Creating an endpoint"
+description: "Create an endpoint artifact in WSO2 Integration Studio and choose whether to save it statically or dynamically."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating an Endpoint
 Follow the instructions given below to create a new [Endpoint](../../../reference/synapse-properties/endpoint-properties.md) artifact in WSO2 Integration Studio.
 

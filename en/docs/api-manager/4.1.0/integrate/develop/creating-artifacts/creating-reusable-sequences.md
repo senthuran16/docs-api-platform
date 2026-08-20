@@ -1,3 +1,18 @@
+---
+title: "Creating a reusable sequence"
+description: "Create a reusable sequence artifact in WSO2 Integration Studio and use it in a mediation workflow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-reusable-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-reusable-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Reusable Sequence
 
 Follow these steps to create a new, reusable sequence that you can add to your mediation workflow or refer to from a sequence mediator, or to create a sequence mediator and its underlying sequence all at once.

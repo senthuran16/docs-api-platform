@@ -1,3 +1,18 @@
+---
+title: "Generic properties"
+description: "Reference for generic message properties used with the Property and Property Group mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/generic-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/generic-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Generic Properties
 
 !!! Info

@@ -1,3 +1,17 @@
+---
+title: "API category based grouping"
+description: "Group APIs by category using the Admin Portal or REST API so consumers can browse by category on the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
 
 # API Category based Grouping
 

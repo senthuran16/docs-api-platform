@@ -1,3 +1,18 @@
+---
+title: "XSLT mediator"
+description: "Configure the XSLT mediator to apply XSLT transformations to message payloads, with syntax and parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/xslt-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/xslt-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - xslt-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # XSLT Mediator
 
 The **XSLT Mediator** applies a specified XSLT transformation to a

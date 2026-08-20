@@ -1,3 +1,18 @@
+---
+title: "Attaching policies"
+description: "Attach one or more Gateway policies to an API operation's request, response, or fault flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/attach-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/attach-policy.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - attach-policy
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Attaching Policies
 
 Follow the instructions below to attach one or more default policies that are shipped with WSO2 API Manager to an API operation(s) of an existing API.

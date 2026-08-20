@@ -1,3 +1,18 @@
+---
+title: "Defining endpoints in an OpenAPI definition"
+description: "Define API-level and resource-level production and sandbox endpoints directly in an OpenAPI definition for Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-endpoints-in-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-endpoints-in-an-openapi-definition.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Defining Endpoints in an OpenAPI Definition
 
 You can use an existing OpenAPI definition to create an API project using APICTL, and deploy that project directly to Choreo Connect. When following this path, the endpoints must be included in the OpenAPI definition itself, so that the inbound request of Choreo Connect can be routed to the corresponding backend service. You, as a developer, can state the endpoint URLs for, 

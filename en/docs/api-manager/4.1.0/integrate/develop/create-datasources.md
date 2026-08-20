@@ -1,3 +1,18 @@
+---
+title: "Create datasource configs"
+description: "Create a datasource config project in WSO2 Integration Studio to expose datasources through a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-datasources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-datasources.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-datasources
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create Datasource Configs
 
 Create this project directory to start creating datasources that you can expose through a data service.

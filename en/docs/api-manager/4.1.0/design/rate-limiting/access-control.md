@@ -1,3 +1,18 @@
+---
+title: "Access control for API requests"
+description: "Restrict API access to trusted IPs or deny requests using advanced rate limiting policies in API Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/access-control/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/access-control.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - access-control
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Access Control for API requests
 
 This section guides you through the following areas:

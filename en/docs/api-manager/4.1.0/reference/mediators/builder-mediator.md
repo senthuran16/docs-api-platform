@@ -1,3 +1,18 @@
+---
+title: "Builder mediator"
+description: "Configure the Builder mediator to build SOAP messages from binary relay content in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/builder-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/builder-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - builder-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Builder Mediator
 
 The **Builder Mediator** can be used to build the actual SOAP message from a message coming into the Micro Integrator through the Binary Relay. One usage is to use this before trying to log the actual message in case of an error. Also the Builder Mediator in the Micro Integrator can be configured to build some of the messages while passing the others along.

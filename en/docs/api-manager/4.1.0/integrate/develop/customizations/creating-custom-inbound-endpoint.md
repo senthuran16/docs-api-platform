@@ -1,3 +1,18 @@
+---
+title: "Creating a custom inbound endpoint"
+description: "Develop, deploy, and configure a custom inbound endpoint for listening, polling, or event-based scenarios."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/customizations/creating-custom-inbound-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/customizations/creating-custom-inbound-endpoint.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Custom Inbound Endpoint
 
 WSO2 Micro Integrator supports several inbound endpoints. However, there can be scenarios that require functionality not provided by the existing inbound endpoints. For example, you might need an inbound endpoint to connect to a certain back-end server or vendor specific protocol.

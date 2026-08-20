@@ -1,3 +1,18 @@
+---
+title: "MTOM and SwA optimizations and Request/Response correlation"
+description: "Use MTOM and SwA optimizations with endpoints to transmit binary content and correlate requests and responses."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/mtom-swa-with-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/mtom-swa-with-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # MTOM and SwA Optimizations and Request/Response Correlation
 
 This sample demonstrates how you can use content optimization mechanisms such as **Message Transmission Optimization Mechanism** (MTOM) and **SOAP with

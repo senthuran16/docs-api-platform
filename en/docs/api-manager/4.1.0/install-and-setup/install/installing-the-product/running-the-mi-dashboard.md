@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator dashboard"
+description: "Set up the Micro Integrator runtime and start its monitoring dashboard for the first time."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/running-the-mi-dashboard.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Running the Micro Integrator Dashboard
 
 Follow the steps given below to run the WSO2 Micro Integrator runtime and its monitoring Dashboard.

@@ -1,3 +1,18 @@
+---
+title: "Google spreadsheet connector reference"
+description: "Reference for the Google Spreadsheet connector init operation and parameters for reading and writing spreadsheet data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-spreadsheet-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Google Spreadsheet Connector Reference
 
 The following operations allow you to work with the Google Spreadsheet Connector. Click an operation name to see parameter details and samples on how to use it.

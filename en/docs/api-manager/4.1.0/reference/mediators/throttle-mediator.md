@@ -1,3 +1,18 @@
+---
+title: "Throttle mediator"
+description: "Configure the Throttle mediator to restrict service access using throttle policies and accept/reject sequences."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/throttle-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/throttle-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - throttle-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Throttle Mediator
 
 The **Throttle Mediator** can be used to restrict access to services.

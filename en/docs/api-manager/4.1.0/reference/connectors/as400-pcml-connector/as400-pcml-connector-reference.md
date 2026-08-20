@@ -1,3 +1,18 @@
+---
+title: "AS400 PCML connector reference"
+description: "Reference for the AS400 PCML connector's init operation and configuration parameters for calling RPG programs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/as400-pcml-connector/as400-pcml-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/as400-pcml-connector/as400-pcml-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - as400-pcml-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # AS400 PCML Connector Reference
 
 The following operations allow you to work with the AS400 PCML Connector. Click an operation name to see parameter details and samples on how to use it.

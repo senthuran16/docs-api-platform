@@ -1,3 +1,18 @@
+---
+title: "Synapse message context properties"
+description: "Reference for Synapse message context properties retrievable via the Property mediator's get-property() function."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/message-context-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-reference/message-context-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Synapse Message Context Properties
 
 !!! Info

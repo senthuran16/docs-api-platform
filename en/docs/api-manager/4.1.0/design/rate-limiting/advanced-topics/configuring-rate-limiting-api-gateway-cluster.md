@@ -1,3 +1,18 @@
+---
+title: "Configuring rate limiting for an API Gateway cluster"
+description: "Configure a Redis cluster so Gateway nodes share distributed rate limiting counters in a cluster."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/advanced-topics/configuring-rate-limiting-api-gateway-cluster/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/advanced-topics/configuring-rate-limiting-api-gateway-cluster.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Rate Limiting for an API Gateway Cluster
 
 Typically, you need to have more than one Gateway node in your WSO2 API Manager (WSO2 API-M) deployment when either having an all-in-one set up in a high availability (HA) deployment (i.e., 2 nodes) or when having a distributed set up with multiple Gateways. In such scenarios, for features such as [burst control](../setting-throttling-limits.md#burst-control) and [backend rate limiting](../setting-maximum-backend-throughput-limits.md) to work properly, it requires maintaining distributed request counters across all gateway nodes.

@@ -1,3 +1,18 @@
+---
+title: "Configuring logs"
+description: "Explains Log4j2 loggers, appenders, and layouts used to configure server-side logging in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Configuring Logs
 
 ## Introduction

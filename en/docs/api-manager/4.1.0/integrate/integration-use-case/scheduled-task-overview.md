@@ -1,3 +1,18 @@
+---
+title: "Periodic execution of integration processes"
+description: "Explains how to schedule periodic execution of integration processes using tasks in WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/scheduled-task-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/scheduled-task-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - scheduled-task-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Periodic Execution of Integration Processes
 
 Executing an integration process at a specified time is another common requirement in enterprise integration. For example, in an organization, there can be a need for running an integration process to synchronize two systems every day at the day end.  

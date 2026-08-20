@@ -1,3 +1,16 @@
+---
+title: "Configure Choreo Connect with Consul discovery"
+description: "Set up Consul for service discovery, health checks, and tagging, and configure Choreo Connect to use it without a service mesh."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-discovery/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-discovery.md
+tags:
+  - consul
+  - service-discovery
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Choreo Connect with Consul Discovery (Without Service Mesh)
 
 As the number of services grows within your organization, you may have multiple nodes running the same service.

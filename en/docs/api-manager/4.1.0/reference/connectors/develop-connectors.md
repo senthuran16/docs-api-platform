@@ -1,3 +1,18 @@
+---
+title: "Connector developer guidelines"
+description: "Explains the architecture, types, and folder structure of integration connectors and guides developers through building a new one."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/develop-connectors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/develop-connectors.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - develop-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Connector Developer Guidelines
 
 Integration Connectors are extensions to the integration runtime of WSO2 (compatible with EI 6.x, EI 7.x, as well as APIM 4.0.0). This enables developers to interact with SaaS applications on the cloud, databases, and popular B2B protocols.

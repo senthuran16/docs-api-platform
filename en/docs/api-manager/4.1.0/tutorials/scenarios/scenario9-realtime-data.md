@@ -1,3 +1,18 @@
+---
+title: "Scenario 9 - realtime data with WebSocket API"
+description: "Build a Streaming Integrator service and expose real-time train location data as a WebSocket API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario9-realtime-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario9-realtime-data.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario9-realtime-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Scenario 9 - Realtime Data with WebSocket API
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to work with real time data with a WebSocket API. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).

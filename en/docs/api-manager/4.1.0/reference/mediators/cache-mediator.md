@@ -1,3 +1,18 @@
+---
+title: "Cache mediator"
+description: "Configure the Cache mediator to detect similar incoming messages and return a cached response instead of resending the request."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/cache-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/cache-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - cache-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Cache Mediator
 
 When a message enters a message flow, the Cache mediator checks whether the incoming message is similar to a previous message that was received

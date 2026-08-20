@@ -1,3 +1,18 @@
+---
+title: "Publishing XML events via RabbitMQ"
+description: "Configure WSO2 Streaming Integrator to publish XML events over RabbitMQ and verify output on the consumer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/publish-rabbitmq-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/publish-rabbitmq-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publishing XML Events via RabbitMQ
 
 ## Purpose:

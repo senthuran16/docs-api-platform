@@ -1,3 +1,18 @@
+---
+title: "Connector usage guidelines"
+description: "Learn how to import, configure, and provide parameter values for connectors throughout the integration lifecycle."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/connector-usage/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/connector-usage.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - connector-usage
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Connector Usage Guidelines
 
 This document provides a set of guidelines on how to use connectors throughout their lifecycle.

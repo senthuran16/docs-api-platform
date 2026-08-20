@@ -1,5 +1,16 @@
 ---
-title: Monitoring Audit Logs - WSO2 API Manager 4.1.0
+title: "Monitoring Audit Logs - WSO2 API Manager 4.1.0"
+description: "Configure audit logging in the Micro Integrator and view the actions recorded for sign-ins, deployments, and configuration changes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/monitoring-mi-audit-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/monitoring-mi-audit-logs.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
 ---
 
 # Monitoring Audit Logs in Micro Integrator

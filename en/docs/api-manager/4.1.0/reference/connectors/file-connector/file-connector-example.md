@@ -1,3 +1,18 @@
+---
+title: "File connector example"
+description: "Shows how to use the File Connector to write employee data to a local CSV file and read it back as XML."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/file-connector/file-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/file-connector/file-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # File Connector Example
 
 File Connector can be used to perform operations in the local file system as well as in a remote server such as FTP and SFTP. 

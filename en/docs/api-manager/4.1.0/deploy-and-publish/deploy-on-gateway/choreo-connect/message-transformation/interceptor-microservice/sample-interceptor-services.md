@@ -1,3 +1,18 @@
+---
+title: "Sample interceptor services"
+description: "Walk through a sample interceptor service that converts a JSON request to XML for a legacy backend in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/sample-interceptor-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/sample-interceptor-services.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Sample Interceptor Services
 
 ## Sample 1 - JSON to XML transformation for a Legacy Backend - Book Store

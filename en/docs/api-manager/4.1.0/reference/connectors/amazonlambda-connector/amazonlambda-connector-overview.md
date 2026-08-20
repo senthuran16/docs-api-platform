@@ -1,3 +1,18 @@
+---
+title: "Amazon Lambda connector overview"
+description: "Introduces the Amazon Lambda connector, its compatibility, and links to its example and reference docs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Amazon Lambda Connector Overview
 
 AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second.

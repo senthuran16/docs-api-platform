@@ -1,3 +1,18 @@
+---
+title: "Enabling logs for a component"
+description: "Enable logs for a specific WSO2 Micro Integrator component using the monitoring dashboard or the API Controller CLI."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enabling Logs for a Component
 
 Follow the instructions given below to enable logs for a specific component in the Micro Integrator.

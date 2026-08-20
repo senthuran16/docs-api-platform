@@ -1,3 +1,18 @@
+---
+title: "Using the JMS message store"
+description: "Store and forward JMS messages using a proxy service, JMS message store, and message forwarding processor."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_store_processor_examples/using-jms-message-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_store_processor_examples/using-jms-message-stores.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using the JMS Message Store
 See the examples given below.
 

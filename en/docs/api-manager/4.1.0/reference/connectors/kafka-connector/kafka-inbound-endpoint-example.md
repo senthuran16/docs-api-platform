@@ -1,3 +1,18 @@
+---
+title: "Kafka inbound endpoint example"
+description: "Bridge messages from a Kafka topic to an HTTP backend using the Kafka inbound endpoint, configured through WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Kafka Inbound Endpoint Example
 
 The Kafka inbound endpoint acts as a message consumer. It creates a connection to ZooKeeper and requests messages for either a topic/s or topic filters.

@@ -1,3 +1,18 @@
+---
+title: "AmazonSQS connector example"
+description: "Walks through building an integration that creates an Amazon SQS queue, sends a message, and forwards it to a backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # AmazonSQS Connector Example
 
 The WSO2 Amazon SQS connector allows you to access the exposed Amazon SQS API from an integration sequence.

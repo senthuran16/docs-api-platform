@@ -1,3 +1,18 @@
+---
+title: "Connecting to Azure Service Bus"
+description: "Configure WSO2 Micro Integrator to send and receive messages through Azure Service Bus queues using JMS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-azureservicebus/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-azureservicebus.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Connecting to Azure Service Bus
 
 This section describes how to configure WSO2 Micro Integrator to connect with [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/). Azure Service Bus is a messaging service that exists on Azure Cloud. It only needs to be configured in order to work.

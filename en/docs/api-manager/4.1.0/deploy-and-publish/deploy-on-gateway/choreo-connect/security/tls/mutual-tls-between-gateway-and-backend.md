@@ -1,3 +1,16 @@
+---
+title: "Mutual TLS between Choreo connect and backend"
+description: "Set up mutual TLS between the Choreo Connect router and backend servers by exchanging and trusting certificates on both sides."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/mutual-tls-between-gateway-and-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/mutual-tls-between-gateway-and-backend.md
+tags:
+  - mutual-tls
+  - backend-certificates
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Mutual TLS Between Choreo Connect and Backend
 
 In Mutual TLS, in addition to the client verifying the server, the server also verifies the client. By having Mutual TLS between Choreo Connect and the backend, both of the following security measures are applied.

@@ -1,3 +1,17 @@
+---
+title: "Error handling"
+description: "Reference the default fault sequences and error codes used by WSO2 API Manager to handle runtime errors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/troubleshooting/error-handling.md
+tags:
+  - api-manager
+  - troubleshooting
+  - error-handling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Error Handling
 
 When errors/exceptions occur in the system, the API Manager throws JSON-based error responses to the client by default. 

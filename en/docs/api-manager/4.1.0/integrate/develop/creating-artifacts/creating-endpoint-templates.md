@@ -1,3 +1,18 @@
+---
+title: "Creating endpoint templates"
+description: "Create an endpoint template artifact of a chosen type in WSO2 Integration Studio and configure its parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-endpoint-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-endpoint-templates.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating Endpoint Templates
 
 Follow the instructions given below to create a new **Endpoint Template** in WSO2 Integration Studio.

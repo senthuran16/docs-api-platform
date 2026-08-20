@@ -1,3 +1,18 @@
+---
+title: "MailTo parameters"
+description: "Reference for the MailTo transport parameters used to send and receive emails in a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/mailto-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/mailto-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # MailTo Parameters
 
 When you implement an integration use case that requires the capability of sending emails (over SMTP) or receive emails (over POP3 or IMAP), you can use the following parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.

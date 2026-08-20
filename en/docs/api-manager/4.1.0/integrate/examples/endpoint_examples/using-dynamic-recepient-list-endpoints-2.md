@@ -1,3 +1,18 @@
+---
+title: "Routing and aggregating dynamic recipient list responses"
+description: "Clone a message, route it to a dynamic list of recipients, and aggregate their responses into a single reply in WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-dynamic-recepient-list-endpoints-2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-dynamic-recepient-list-endpoints-2.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Routing a Message to a Dynamic List of Recipients and Aggregating Responses
 This example demonstrates message routing to a set of dynamic endpoints and aggregate responses. 
 

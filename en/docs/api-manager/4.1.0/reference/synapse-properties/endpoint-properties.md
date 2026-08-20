@@ -1,3 +1,18 @@
+---
+title: "Endpoints"
+description: "Reference the classification and configuration of Synapse endpoints, including named, indirect, and other endpoint types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - endpoint-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Endpoints
 ## Introduction
 

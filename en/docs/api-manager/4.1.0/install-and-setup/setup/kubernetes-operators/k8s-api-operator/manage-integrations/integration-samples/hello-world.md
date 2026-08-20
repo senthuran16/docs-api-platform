@@ -1,3 +1,18 @@
+---
+title: "K8s deployment sample 1: hello world scenario"
+description: "Build and deploy a Hello World integration solution on Kubernetes using the K8s API operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/hello-world/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/hello-world.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # K8s Deployment Sample 1: Hello World Scenario
 Let's define a basic Hello World scenario using WSO2 Micro Integrator and deploy it on your Kubernetes environment.
 

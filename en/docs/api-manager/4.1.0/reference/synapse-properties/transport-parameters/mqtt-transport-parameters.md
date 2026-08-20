@@ -1,3 +1,18 @@
+---
+title: "MQTT parameters"
+description: "Reference for the MQTT transport parameters used to configure an MQTT connection in a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/mqtt-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/mqtt-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # MQTT Parameters
 
 When you implement an integration use case that requires an MQTT connection, you can use the following MQTT parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.

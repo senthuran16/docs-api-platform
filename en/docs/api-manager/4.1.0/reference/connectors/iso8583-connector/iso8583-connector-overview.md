@@ -1,3 +1,18 @@
+---
+title: "ISO8583 connector overview"
+description: "Introduces the ISO8583 connector for sending and receiving ISO8583 financial transaction messages over a socket connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # ISO8583 Connector Overview
 
 The ISO8583 message format is used for financial transactions such as ATM, POS, Credit Card, Mobile Banking, Internet Banking, KIOSK, e-commerce, etc. transactions.

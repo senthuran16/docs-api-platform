@@ -1,3 +1,18 @@
+---
+title: "Setup overview"
+description: "Get an overview of setup tasks such as updates, databases, user stores, and security for each API Manager component."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setup-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setup-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setup-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Setup Overview
 
 Setting up involves doing the required configurations for the API Manager and its components before running them in the production environment. The following are some common set up tasks that you are required to do separately for each component.

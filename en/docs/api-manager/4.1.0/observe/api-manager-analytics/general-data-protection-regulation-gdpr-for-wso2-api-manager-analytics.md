@@ -1,3 +1,18 @@
+---
+title: "GDPR for API Manager analytics"
+description: "Explains how to remove or obfuscate personally identifiable information from API-M Analytics logs and databases for GDPR compliance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/api-manager-analytics/general-data-protection-regulation-gdpr-for-wso2-api-manager-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/api-manager-analytics/general-data-protection-regulation-gdpr-for-wso2-api-manager-analytics.md
+tags:
+  - api-manager
+  - observe
+  - api-manager-analytics
+  - general-data-protection-regulation-gdpr-for-wso2-api-manager-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # General Data Protection Regulation (GDPR) for WSO2 API Manager Analytics
 
 In API Manager Analytics, Personally Identifiable Information(PII) of a user can be included in the log files and in the data sources associated to API Manager Analytics distribution.

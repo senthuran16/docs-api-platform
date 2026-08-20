@@ -1,3 +1,18 @@
+---
+title: "Creating a message store"
+description: "Create a message store artifact in WSO2 Integration Studio and select the store type, such as JMS or JDBC."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-message-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-message-store.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Message Store
 
 Follow the instructions given below to create a new [Message Store](../../../reference/synapse-properties/about-message-stores-processors.md) artifact in WSO2 Integration Studio.

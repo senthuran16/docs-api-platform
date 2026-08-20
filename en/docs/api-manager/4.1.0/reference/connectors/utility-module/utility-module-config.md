@@ -1,3 +1,16 @@
+---
+title: "Utility module reference"
+description: "Reference for the Utility module's math, string, date, and signature operations, including parameters and sample configurations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/utility-module/utility-module-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/utility-module/utility-module-config.md
+tags:
+  - esb-connector
+  - utility-module
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Utility Module Reference
 
 The Utility Module in WSO2 Enterprise Integrator helps to perform basic utility functions such as math, string, date, and signature. The connector will compute the result and save it to a property.

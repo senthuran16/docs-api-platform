@@ -1,3 +1,18 @@
+---
+title: "Connecting to WSO2 MB"
+description: "Configure WSO2 Micro Integrator to connect with WSO2 Message Broker and secure the JMS connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-wso2-mb/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-wso2-mb.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Connecting to WSO2 MB
 
 This section describes how to configure WSO2 Micro Integrator to connect with WSO2 Message Broker.

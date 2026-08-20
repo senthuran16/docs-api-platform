@@ -1,3 +1,18 @@
+---
+title: "Script mediator"
+description: "Reference for the Script mediator used to invoke JavaScript, Groovy, or Ruby functions during mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/script-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/script-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - script-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Script Mediator
 
 The **Script Mediator** is used to invoke the functions of a variety of scripting languages such as JavaScript, Groovy, or Ruby.

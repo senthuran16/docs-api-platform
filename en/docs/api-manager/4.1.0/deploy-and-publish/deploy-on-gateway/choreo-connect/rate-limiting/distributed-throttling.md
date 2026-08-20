@@ -1,3 +1,18 @@
+---
+title: "Distributed rate limiting"
+description: "Configure distributed rate limiting in Choreo Connect using WSO2 API Manager as the control plane."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/rate-limiting/distributed-throttling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/rate-limiting/distributed-throttling.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Distributed Rate Limiting
 
 You can enable Distributed Rate Limiting in Choreo Connect using Choreo Connect with WSO2 API Manager as a Control Plane.

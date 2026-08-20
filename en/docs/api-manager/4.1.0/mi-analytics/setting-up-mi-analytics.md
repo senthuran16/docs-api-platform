@@ -1,3 +1,17 @@
+---
+title: "Set up MI analytics"
+description: "Describes how to set up MI Analytics, including system requirements, to monitor Micro Integrator statistics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/mi-analytics/setting-up-mi-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/mi-analytics/setting-up-mi-analytics.md
+tags:
+  - api-manager
+  - mi-analytics
+  - setting-up-mi-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Set up MI Analytics
 
 !!! note

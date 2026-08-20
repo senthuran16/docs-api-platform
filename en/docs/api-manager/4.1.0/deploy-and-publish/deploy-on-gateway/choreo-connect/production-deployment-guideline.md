@@ -1,3 +1,18 @@
+---
+title: "Production deployment guideline"
+description: "Follow guidelines for deploying Choreo Connect on Kubernetes in a production environment, including keystore configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Production Deployment Guideline
 
 Kubernetes should be used for Choreo Connect production deployments. The common guidelines for deploying Choreo Connect in a production environment using the [Helm deployment option](getting-started/deploy/cc-deploy-overview.md) provided below.

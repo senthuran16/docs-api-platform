@@ -1,3 +1,18 @@
+---
+title: "Using Kubernetes secrets in synapse configurations"
+description: "Generate Kubernetes secrets, inject them into pods, and access them from synapse configurations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/using_k8s_secrets/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/using_k8s_secrets.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using Kubernetes Secrets in Synapse Configurations
 
 WSO2 Micro Integrator comes with a built-in secret repository as a part of its secure vault implementation by default. In addition to this, the Micro Integrator also provides built-in support for Docker secrets and Kubernetes secrets for your containerized deployments.

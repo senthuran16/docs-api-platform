@@ -1,3 +1,18 @@
+---
+title: "Configuring the Gmail API"
+description: "Create a Google API project, obtain OAuth2 client credentials, and generate access and refresh tokens for the Gmail connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/configuring-gmail-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/configuring-gmail-api.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 ## Creating the Client ID and Client Secret
 
 1. Navigate to [API Credentials Page](https://console.developers.google.com/projectselector/apis/credentials) and sign in with your Google account.

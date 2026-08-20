@@ -1,3 +1,18 @@
+---
+title: "Configuring the tenant loading policy"
+description: "Configure lazy or eager tenant loading, set the tenant idle timeout, and enable artifact synchronization."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/multitenancy/configuring-the-tenant-loading-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/multitenancy/configuring-the-tenant-loading-policy.md
+tags:
+  - api-manager
+  - administer
+  - multitenancy
+  - configuring-the-tenant-loading-policy
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring the Tenant Loading Policy
 
 In WSO2 products based on Carbon 4.4.0 or later versions, you have the option of setting the required tenant loading policy by enabling either **Lazy Loading** or **Eager Loading** of tenants.

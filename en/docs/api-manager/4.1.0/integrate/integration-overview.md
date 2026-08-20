@@ -1,3 +1,17 @@
+---
+title: "Integration overview"
+description: "Provides an overview of WSO2 Micro Integrator's capabilities and use cases for enterprise integration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 <style>
     @font-face {
     font-family: 'Material Icons';

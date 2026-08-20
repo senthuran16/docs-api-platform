@@ -1,3 +1,18 @@
+---
+title: "Using wire logs"
+description: "Enable and read wire logs to inspect HTTP messages entering and leaving the Micro Integrator for troubleshooting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-wire-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-wire-logs.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - using-wire-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using Wire Logs
 
 While debugging a Synapse flow, you can view the the actual HTTP

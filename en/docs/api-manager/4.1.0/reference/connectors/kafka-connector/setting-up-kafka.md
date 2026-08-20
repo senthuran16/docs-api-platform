@@ -1,3 +1,18 @@
+---
+title: "Setting up Kafka"
+description: "Explains how to download, install, and configure Apache Kafka client libraries for use with the Kafka connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/setting-up-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/setting-up-kafka.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Setting up Kafka
 
 ## For connector version 3.2.0 and later

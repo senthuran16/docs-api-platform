@@ -1,3 +1,18 @@
+---
+title: "Monitoring MI artifacts and logs"
+description: "Sets up and uses the Micro Integrator dashboard to view, update, and manage artifacts, logs, and users across a cluster."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/working-with-monitoring-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/mi-observe/working-with-monitoring-dashboard.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - working-with-monitoring-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Monitoring MI Artifacts and Logs
 
 The Micro Integrator (MI) dashboard monitors the MI instances in a deployment. This can be a single MI instance or multiple MI instances in a group (cluster). It provides a graphical view of the integration artifacts that are deployed in the MI instances. You can also perform various management 

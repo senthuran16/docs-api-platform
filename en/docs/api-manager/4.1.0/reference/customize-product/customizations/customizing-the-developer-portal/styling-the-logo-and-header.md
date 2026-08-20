@@ -1,3 +1,18 @@
+---
+title: "Changing the logo and header styles"
+description: "Change the Developer Portal logo, header background, and other header styles via defaultTheme.js."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-the-logo-and-header/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-the-logo-and-header.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Changing the Logo and Header Styles
 
 The header section can be customized to match different design needs by configuring the `defaultTheme.js` file.

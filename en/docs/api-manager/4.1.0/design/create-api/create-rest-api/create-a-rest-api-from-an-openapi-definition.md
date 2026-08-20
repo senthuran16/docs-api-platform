@@ -1,3 +1,18 @@
+---
+title: "Create an API from an OpenAPI definition"
+description: "Create a REST API in the API Publisher by importing an existing OpenAPI (Swagger) definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create an API from an OpenAPI Definition
 
 An OpenAPI definition is a format that describes REST APIs. 

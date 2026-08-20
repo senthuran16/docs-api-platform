@@ -1,3 +1,18 @@
+---
+title: "Configuring a user store"
+description: "Configure a file-based, LDAP, or RDBMS user store to store user credentials for the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a User Store
 
 A user store is a repository that stores user credentials (user names and passwords).

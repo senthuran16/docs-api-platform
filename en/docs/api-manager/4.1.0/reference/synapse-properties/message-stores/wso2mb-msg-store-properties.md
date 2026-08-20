@@ -1,3 +1,18 @@
+---
+title: "WSO2 MB message store"
+description: "Reference for the properties used to configure a WSO2 MB message store for the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/wso2mb-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/wso2mb-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # WSO2 MB Message Store
 ## Introduction
 WSO2 Message Broker is used as the <b>message store</b> for the Micro Integrator.

@@ -1,3 +1,18 @@
+---
+title: "HTTP/HTTPS inbound endpoint"
+description: "Lists the syntax and configuration properties for setting up HTTP and HTTPS inbound endpoint listeners."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/http-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/http-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # HTTP/HTTPS Inbound Endpoint
 ## Introduction
 

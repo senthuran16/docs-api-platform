@@ -1,3 +1,18 @@
+---
+title: "FHIR connector example"
+description: "Shows how to build a sample API that uses the FHIR Connector to create, read, update, and delete patient records."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/fhir-connector/fhir-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/fhir-connector/fhir-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - fhir-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # FHIR Connector Example
 
 In this example the connector uses the FHIR REST API to interact with FHIR.  

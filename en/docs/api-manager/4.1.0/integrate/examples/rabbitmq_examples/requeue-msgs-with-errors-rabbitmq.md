@@ -1,3 +1,18 @@
+---
+title: "Requeue messages with a delay after errors"
+description: "Requeue failed RabbitMQ messages with a delay while preserving message order until the backend becomes available."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/requeue-msgs-with-errors-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/requeue-msgs-with-errors-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Requeue a message preserving the message order with a delay in case of error
 
 This sample demonstrates how WSO2 Micro Integrator can ensure guaranteed delivery of messages by requeueing messages when an error occurs during delivery. That is, the Micro Integrator can be configured to requeue messages to a RabbitMQ queue when the delivery fails. 

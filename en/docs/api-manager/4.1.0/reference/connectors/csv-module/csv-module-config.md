@@ -1,3 +1,18 @@
+---
+title: "CSV module reference"
+description: "Reference the configuration parameters for transforming CSV payloads using the WSO2 Enterprise Integrator CSV module."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/csv-module/csv-module-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/csv-module/csv-module-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - csv-module
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # CSV Module Reference
 
 CSV Module in WSO2 Enterprise Integrator helps working with CSV payloads. This transforms a given payload into another type of payload according to your requirements. You can change the type of the output payload using these transformation configurations as well. You can send the payload to be transformed in multiple ways (e.g., POST request ).

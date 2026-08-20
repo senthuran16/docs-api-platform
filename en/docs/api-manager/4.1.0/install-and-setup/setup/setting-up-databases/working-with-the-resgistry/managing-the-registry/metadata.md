@@ -1,3 +1,18 @@
+---
+title: "Metadata"
+description: "Manage resource metadata, create checkpoints, and view or restore prior versions from the Metadata panel."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Metadata
 
 **The Metadata panel** allows you to manage resource metadata and revisions using the [Create Checkpoint](#creating-a-checkpoint) and [View Versions](#viewing-versions) options. Each time you create a check point, it is added as a new reversion of the resource. Revisions is a useful way to facilitate Disaster Recovery and Fault Tolerance in the registry. By creating a revision, a user essentially saves a snapshot of the current state of a resource or collection that can be restored at a later date. The registry's checkpoint and restoration mechanisms are similar to that of System Restore of Microsoft Windows.

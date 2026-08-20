@@ -1,3 +1,18 @@
+---
+title: "Exposing an integration SOAP service as a managed API"
+description: "Create a Proxy Service, publish its WSDL to the Service Catalog, and expose it as a SOAP Pass-Through managed API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - service-catalog-tutorial-for-proxy-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Exposing an Integration SOAP Service as a Managed API
 
 Managed APIs refer to the APIs that are managed using WSO2 API Manager, namely REST APIs, GraphQL APIs, SOAP APIs, and Streaming APIs. This guide explains how to create a Proxy Service (SOAP backend) for the integration solution, generate relevant metadata for the corresponding Proxy service, publish the WSDL definition in the WSO2 API Manager Service Catalog and then creating a **SOAP Pass-Through API**.

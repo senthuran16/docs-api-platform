@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator runtime"
+description: "Start the WSO2 Micro Integrator runtime server from the command line on Linux, macOS, or Windows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/running-the-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/running-the-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Running the Micro Integrator Runtime
 
 Follow the steps given below to run the WSO2 Micro Integrator (MI) runtime.

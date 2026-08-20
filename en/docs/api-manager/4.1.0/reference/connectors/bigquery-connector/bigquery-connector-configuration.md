@@ -1,3 +1,18 @@
+---
+title: "Setting up the BigQuery environment"
+description: "Explains how to set up a Google Cloud Platform account and obtain OAuth2 credentials for the BigQuery connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/bigquery-connector/bigquery-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/bigquery-connector/bigquery-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - bigquery-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the BigQuery Environment  
 
 The BigQuery connector allows you to access the [BigQuery REST API](https://cloud.google.com/bigquery/docs/reference/rest) from an integration sequence.

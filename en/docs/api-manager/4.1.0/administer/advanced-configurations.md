@@ -1,3 +1,17 @@
+---
+title: "Advanced configurations"
+description: "Explains how to view and change advanced tenant configurations through the Admin Portal's Advanced settings section."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/advanced-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/advanced-configurations.md
+tags:
+  - api-manager
+  - administer
+  - advanced-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Advanced Configurations
 
 This section covers how to change and configure several features related to the advanced tenant configurations.

@@ -1,3 +1,18 @@
+---
+title: "Deploying the Micro Integrator with Helm"
+description: "Deploy the Micro Integrator on Kubernetes using Helm resources and configure the deployment settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/deploying-micro-integrator-with-helm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/deploying-micro-integrator-with-helm.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Deploying the Micro Integrator on Kubernetes using Helm Resources
 
 Follow the instructions given below to deploy the Micro Integrator on Kubernetes (K8s) using Helm resources.

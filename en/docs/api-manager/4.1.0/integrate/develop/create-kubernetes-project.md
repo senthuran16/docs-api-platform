@@ -1,3 +1,18 @@
+---
+title: "Creating Kubernetes exporter"
+description: "Package integration modules into a Kubernetes Exporter project for deployment via the API Kubernetes Operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-kubernetes-project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-kubernetes-project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-kubernetes-project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating Kubernetes Exporter
 
 Create a Kubernetes Exporter if you want to deploy your integration solutions in a Kubernetes environment. 

@@ -1,3 +1,18 @@
+---
+title: "Sequence mediator"
+description: "Reference for the Sequence mediator, which invokes a predefined named sequence of mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/sequence-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/sequence-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - sequence-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Sequence Mediator
 
 The **Sequence Mediator** refers to an already defined sequence element,

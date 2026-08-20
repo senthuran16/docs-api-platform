@@ -1,3 +1,18 @@
+---
+title: "Salesforce SOAP connector example"
+description: "Build an integration that creates a Salesforce record and retrieves account names using SOQL over SOAP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-soap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Salesforce Rest API Connector Example
 
 The Salesforce REST Connector allows you to work with records in Salesforce, a web-based service that allows organizations to manage contact relationship management (CRM) data. You can use the Salesforce connector to create, query, retrieve, update, and delete records in your organization's Salesforce data. The connector uses the [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm?search_text=SOAP%20API%20Developer%20Guide) to interact with Salesforce.

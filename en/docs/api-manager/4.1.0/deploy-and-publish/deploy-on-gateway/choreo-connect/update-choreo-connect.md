@@ -1,3 +1,18 @@
+---
+title: "Update Choreo connect"
+description: "Apply WSO2 Subscription updates to Choreo Connect Docker images for bug fixes, features, and improvements."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/update-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/update-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Update Choreo Connect
 
 Choreo Connect components are available as public Docker images in [WSO2](https://hub.docker.com/u/wso2) organization in the Docker hub whereas you will be able to find images corresponding to [Choreo Connect releases](https://github.com/wso2/product-microgateway/releases). 

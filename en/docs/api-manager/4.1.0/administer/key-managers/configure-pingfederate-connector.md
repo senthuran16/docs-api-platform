@@ -1,3 +1,18 @@
+---
+title: "Configure PingFederate as a key manager"
+description: "Explains how to configure PingFederate as a third-party key manager in WSO2 API Manager using the PingFederate connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/key-managers/configure-pingfederate-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/key-managers/configure-pingfederate-connector.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - configure-pingfederate-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configure PingFederate as a Key Manager
 
 WSO2 API Manager supports multiple Key Managers at the same time. As a result, WSO2 API Manager is prepacked with an inbuilt resident Key Manager, and with the use of connectors, it is capable of supporting any authorization server as a Key Manager.

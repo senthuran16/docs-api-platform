@@ -1,3 +1,18 @@
+---
+title: "Viewing cloud native observability statistics"
+description: "Use the Grafana cluster and node dashboards to view statistics from a cloud native Micro Integrator deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/viewing-cloud-native-observability-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/viewing-cloud-native-observability-statistics.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - viewing-cloud-native-observability-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Viewing Cloud Native Observability Statistics
 
 Let's use the **dashboards** from the cloud-native observability deployment to monitor **statistics** from your integration artifacts.

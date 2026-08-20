@@ -1,3 +1,17 @@
+---
+title: "Integration key concepts"
+description: "Introduces core WSO2 Micro Integrator concepts such as message entry points, REST APIs, and proxy services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-key-concepts.md
+tags:
+  - api-manager
+  - integrate
+  - integration-key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Integration Key Concepts
 
 Listed below are the key concepts of WSO2 Micro Integrator.

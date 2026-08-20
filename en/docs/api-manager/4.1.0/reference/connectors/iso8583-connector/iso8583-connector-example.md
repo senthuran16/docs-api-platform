@@ -1,3 +1,18 @@
+---
+title: "ISO8583 connector example"
+description: "Build an API that sends ISO8583 financial transaction messages to a banking network using the ISO8583 connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # ISO8583 Connector Example
 
 Given below is a sample scenario that demonstrates how the WSO2 ISO8583 Connector sends an ISO8583 message to financial networks using the integration runtime of WSO2.

@@ -1,3 +1,18 @@
+---
+title: "Encrypting secrets using WSO2 secure Vault"
+description: "Encrypt static and dynamic plain-text secrets in server and synapse configurations using the WSO2 Cipher Tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/encrypting_plain_text/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/security/encrypting_plain_text.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Encrypting Secrets using WSO2 Secure Vault
 
 WSO2 Micro Integrator can use secrets with static origins as well as dynamic origins in configurations. This applies to secrets in server-level configurations as well as configurations within integration solutions (synapse configurations).

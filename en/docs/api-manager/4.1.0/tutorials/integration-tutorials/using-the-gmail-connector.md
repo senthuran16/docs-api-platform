@@ -1,3 +1,18 @@
+---
+title: "Connecting web APIs/Cloud services"
+description: "Add an Email connector to a mediation flow so clients receive a confirmation email after a request."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/using-the-gmail-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/using-the-gmail-connector.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-the-gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Connecting Web APIs/Cloud Services
 
 ## What you'll build

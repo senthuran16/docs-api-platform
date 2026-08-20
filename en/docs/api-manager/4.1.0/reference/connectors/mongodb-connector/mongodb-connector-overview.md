@@ -1,3 +1,18 @@
+---
+title: "MongoDB connector overview"
+description: "Introduces the MongoDB connector, its compatibility, and links to example and reference documentation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/mongodb-connector/mongodb-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/mongodb-connector/mongodb-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - mongodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # MongoDB Connector Overview
 
 The MongoDB Connector allows you to connect to the MongoDB database via different connection URI and perform CRUD operations on the database.

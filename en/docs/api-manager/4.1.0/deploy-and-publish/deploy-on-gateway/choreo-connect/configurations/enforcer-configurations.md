@@ -1,3 +1,18 @@
+---
+title: "Choreo connect enforcer configuration catalog"
+description: "Lists the configuration parameters and sample TOML values for the Choreo Connect Enforcer component."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/enforcer-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/enforcer-configurations.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Choreo Connect Enforcer Configuration Catalog
 
 This document describes all the configuration parameters that are used in WSO2 Choreo Connect Enforcer.

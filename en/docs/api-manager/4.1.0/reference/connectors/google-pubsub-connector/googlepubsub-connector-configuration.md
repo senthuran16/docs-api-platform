@@ -1,3 +1,18 @@
+---
+title: "Setting up the google PubSub environment"
+description: "Obtain a Google Cloud client ID, client secret, access token, and refresh token to authenticate the Google Pub/Sub connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-pubsub-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Google PubSub Environment  
 
 The Google Pub/Sub connector allows you to access the [Google Cloud Pub/Sub API Version v1](https://cloud.google.com/pubsub/docs/reference/rest/) using an integration sequence.

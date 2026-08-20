@@ -1,3 +1,18 @@
+---
+title: "Routing requests based on message content"
+description: "Route a request to the correct backend endpoint based on values found in the incoming message payload."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/routing-requests-based-on-message-content/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/routing-requests-based-on-message-content.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - routing-requests-based-on-message-content
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Routing Requests based on Message Content
 
 ## What you'll build

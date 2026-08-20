@@ -1,3 +1,18 @@
+---
+title: "JSON transform mediator"
+description: "Reference for the JSON Transform mediator syntax used to control XML to JSON transformations within a mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/json-transform-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/json-transform-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - json-transform-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # JSON Transform Mediator
 
 The **JSON Transform mediator** is used for controlling XML to JSON transformations (possibly with a JSON Schema)  inside a mediation. Normally XML to JSON transformations are controlled by the properties defined in `synapse.properties`. 

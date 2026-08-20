@@ -1,3 +1,18 @@
+---
+title: "Gmail connector example"
+description: "Build an integration that reads unread customer emails from Gmail and sends automated replies using the Gmail connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/gmail-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/gmail-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Gmail Connector Example
 
 The Gmail Connector allows you to access the [Gmail REST API](https://developers.google.com/gmail/api/v1/reference) from an integration sequence. 

@@ -1,3 +1,18 @@
+---
+title: "SaaS and B2B integration"
+description: "Lists SaaS and B2B connectors available for integrating WSO2 Micro Integrator with external applications and protocols."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/connectors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/connectors.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # SaaS and B2B Integration
 
 Connectors are a means of interacting with various SaaS applications on the cloud, databases, and popular B2B protocols. See [Connectors Overview](../../reference/connectors/connectors-overview.md) for more information.

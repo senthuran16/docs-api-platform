@@ -1,3 +1,18 @@
+---
+title: "Analytics for Choreo connect"
+description: "Learn how Choreo Connect publishes real-time analytics events to Choreo Analytics Cloud using gRPC components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/choreo-connect-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/choreo-connect-analytics.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Analytics for Choreo Connect
 Choreo Connect Analytics provides reports, dashboards, statistics, and graphs for the APIs deployed on Choreo Connect.
 WSO2 Choreo Connect has the capability to publish events to the Choreo Analytics Cloud in order to generate analytics. This page describes the concepts behind publishing analytics events from Choreo Connect.

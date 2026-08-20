@@ -1,3 +1,18 @@
+---
+title: "Enforcer log configurations"
+description: "Explains how to configure log4j2 loggers, appenders, layouts, and log levels for the Choreo Connect Enforcer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Enforcer Log Configurations
 
 As the Enforcer component is implemented in Java, we are using the `log4j2` framework for logging. Hence, this section will contain most of the configurations related to `log4j2`.

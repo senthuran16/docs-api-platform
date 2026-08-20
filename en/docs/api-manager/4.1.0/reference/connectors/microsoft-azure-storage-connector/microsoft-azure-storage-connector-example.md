@@ -1,3 +1,18 @@
+---
+title: "Microsoft Azure storage connector example"
+description: "Builds a sample API that creates, lists, and deletes containers and blobs using the Microsoft Azure Storage connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Microsoft Azure Storage Connector Example
 
 Given below is a sample scenario that demonstrates how to work with container and blob operations using the WSO2 Microsoft Azure Storage Connector.

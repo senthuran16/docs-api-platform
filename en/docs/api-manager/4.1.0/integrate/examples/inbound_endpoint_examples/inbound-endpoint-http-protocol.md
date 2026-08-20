@@ -1,3 +1,18 @@
+---
+title: "Using the HTTP inbound endpoint"
+description: "Configure an HTTP inbound endpoint as a dynamic listener that mediates messages directly via a synapse sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-http-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-http-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the HTTP Inbound Endpoint
 This sample demonstrates how an HTTP inbound endpoint can act as a
 dynamic http listener. Many http listeners can be added without

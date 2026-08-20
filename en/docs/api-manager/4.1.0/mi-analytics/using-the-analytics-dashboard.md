@@ -1,3 +1,17 @@
+---
+title: "Access the MI analytics portal"
+description: "Explains how to access and use the MI Analytics portal to monitor statistics and trace messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/mi-analytics/using-the-analytics-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/mi-analytics/using-the-analytics-dashboard.md
+tags:
+  - api-manager
+  - mi-analytics
+  - using-the-analytics-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Access the MI Analytics Portal
 
 Let's use **MI Analytics** to view and monitor **statistics** and **message tracing**.

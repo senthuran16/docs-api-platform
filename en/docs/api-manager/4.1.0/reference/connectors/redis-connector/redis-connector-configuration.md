@@ -1,3 +1,18 @@
+---
+title: "Setting up the Redis environment"
+description: "Sets up the Redis environment, including client libraries and a local Redis server, for use with the Redis connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/redis-connector/redis-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/redis-connector/redis-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - redis-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Redis Environment 
 
 The Redis connector allows you to access the Redis commands from an integration sequence. Redis stands for remote dictionary server. Redis store/server that stores data as key-value pairs and this key-value store can be used as a database.

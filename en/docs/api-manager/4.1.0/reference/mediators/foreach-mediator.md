@@ -1,3 +1,18 @@
+---
+title: "ForEach mediator"
+description: "Reference for the ForEach mediator syntax used to iterate over matching elements and merge sub-messages back into the original."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/foreach-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/foreach-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - foreach-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # ForEach Mediator
 
 The ForEach mediator requires an XPath/JSONPath expression and a sequence (inline or referred). It splits the message into a number of different messages

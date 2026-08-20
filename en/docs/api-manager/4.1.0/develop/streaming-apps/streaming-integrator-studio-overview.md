@@ -1,3 +1,18 @@
+---
+title: "Streaming integrator tooling overview"
+description: "Introduces the Streaming Integrator Tooling interfaces used to develop and design Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/streaming-integrator-studio-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/streaming-integrator-studio-overview.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - streaming-integrator-studio-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Streaming Integrator Tooling Overview
 
 The Streaming Integrator Tooling is a developer tool that is shipped with the Streaming Integrator to develop Siddhi applications. It provides four interfaces to develop Siddhi applications.

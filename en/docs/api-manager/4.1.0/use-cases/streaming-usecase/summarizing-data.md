@@ -1,3 +1,18 @@
+---
+title: "Summarizing data"
+description: "Shows how to perform clock-time and length/time window based data summarization using WSO2 Streaming Integrator aggregations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/summarizing-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/summarizing-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - summarizing-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Summarizing Data
 
 Summarizing data refers to obtaining aggregates in an incremental manner for a specified set of time periods.

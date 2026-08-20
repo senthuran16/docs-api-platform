@@ -1,3 +1,18 @@
+---
+title: "Creating a data service"
+description: "Create a data service artifact, add a datasource, and define a query in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/creating-data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/data-services/creating-data-services.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Data Service
 
 Follow the instructions given below to create a new data service artifact.

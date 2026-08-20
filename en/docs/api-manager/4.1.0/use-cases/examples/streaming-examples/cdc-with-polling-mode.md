@@ -1,3 +1,18 @@
+---
+title: "Capturing MySQL inserts and updates via CDC polling mode"
+description: "Capture MySQL insert and update events with the CDC source in polling mode, and adapt the sample for Oracle, H2, or PostgreSQL databases."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/cdc-with-polling-mode/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/cdc-with-polling-mode.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Capturing MySQL Inserts and Updates via CDC Polling Mode
 
 ## Purpose:

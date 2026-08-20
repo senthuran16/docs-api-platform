@@ -1,3 +1,18 @@
+---
+title: "Publisher Portal in Read-only mode"
+description: "Create a read-only user and access the API Publisher portal in read-only mode to view API, API Product, and analytics details."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/authorization/publisher-portal-in-read-only-mode/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/authorization/publisher-portal-in-read-only-mode.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - authorization
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publisher Portal in Read-only Mode
 
 Users who have the view/read only permissions can only view the API, API Product and Service details in the Publisher portal and in addition they can also review all the analytics related details.

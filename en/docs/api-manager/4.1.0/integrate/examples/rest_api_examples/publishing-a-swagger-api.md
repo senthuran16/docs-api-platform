@@ -1,3 +1,18 @@
+---
+title: "Publishing a custom Swagger document"
+description: "Publish a custom Swagger definition for a REST API by storing it in the Micro Integrator registry."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/publishing-a-swagger-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/publishing-a-swagger-api.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publishing a Custom Swagger Document
 
 When you create a REST API, by default a Swagger 3.0 (OpenApi) definition is generated automatically. You can access this Swagger document by suffixing the API URL

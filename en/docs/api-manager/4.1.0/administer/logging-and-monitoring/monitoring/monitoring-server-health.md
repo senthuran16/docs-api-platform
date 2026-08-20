@@ -1,3 +1,18 @@
+---
+title: "Monitoring server health"
+description: "Explains how to deploy and configure the Health Check API to monitor data sources and user stores in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/logging-and-monitoring/monitoring/monitoring-server-health/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/logging-and-monitoring/monitoring/monitoring-server-health.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Monitoring Server Health
 
 **Health Check API** is used to validate and verify the status of the API-M server and its dependencies. It is a REST service that returns the operational status, performance information of the configured endpoints (with the appropriate HTTP return code), and a JSON object. There are two Health Checkers available by default:

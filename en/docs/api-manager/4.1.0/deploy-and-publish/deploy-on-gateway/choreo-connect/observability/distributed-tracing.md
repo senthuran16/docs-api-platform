@@ -1,3 +1,18 @@
+---
+title: "Distributed tracing"
+description: "Configure OpenTelemetry-based distributed tracing in Choreo Connect with Jaeger, Zipkin, or Azure Application Insights."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/distributed-tracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/distributed-tracing.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Distributed Tracing
 
 Performance issues, errors, and exceptions are unfortunate events that may occur in a production environment. In order to identify such an event, observing the production environment is essential. Choreo Connect provides the ability to observe how the requests are handled via an OpenTelemetry based distributed tracing implementation. By connecting Choreo Connect to one of the supported distributed tracing systems, users are able to easily debug and identify production issues.

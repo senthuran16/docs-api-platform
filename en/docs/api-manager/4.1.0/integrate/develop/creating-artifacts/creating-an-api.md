@@ -1,3 +1,18 @@
+---
+title: "Creating a REST API"
+description: "Create a REST API artifact in WSO2 Integration Studio from scratch or from an existing definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-an-api.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a REST API
 
 Follow the instructions given below to create a new [REST API](../../../reference/synapse-properties/rest-api-properties.md) artifact in WSO2 Integration Studio.

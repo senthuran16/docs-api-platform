@@ -1,3 +1,18 @@
+---
+title: "Redis connector example"
+description: "Builds a sample API that stores and retrieves stock volume details in a Redis server using the Redis connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/redis-connector/redis-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/redis-connector/redis-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - redis-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Redis Connector Example
 
 The Redis connector allows you to access the Redis commands from an integration sequence. 

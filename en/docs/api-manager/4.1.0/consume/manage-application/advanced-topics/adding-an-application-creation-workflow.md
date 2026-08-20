@@ -1,3 +1,18 @@
+---
+title: "Adding an application creation workflow"
+description: "Attach a custom approval workflow to application creation so an admin can approve or reject new applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-application/advanced-topics/adding-an-application-creation-workflow.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an Application Creation Workflow
 
 Attaching a custom workflow to application creation provides the ability to control the creation of applications (approve or reject the request for application creation) in the Developer Portal. An application is an entity that holds a set of subscribed APIs, accessed by an authorization key generated for that particular application. Therefore, controlling the creation of these applications would be a decision based on the organization's requirements. 

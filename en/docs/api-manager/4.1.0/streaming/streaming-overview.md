@@ -1,3 +1,17 @@
+---
+title: "Streaming overview"
+description: "Get an overview of how the Streaming Integrator processes real-time data and exposes results as managed APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/streaming-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/streaming-overview.md
+tags:
+  - api-manager
+  - streaming
+  - streaming-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 <style>
     @font-face {
     font-family: 'Material Icons';

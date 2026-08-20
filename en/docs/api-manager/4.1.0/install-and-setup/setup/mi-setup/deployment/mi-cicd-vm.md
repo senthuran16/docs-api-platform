@@ -1,3 +1,18 @@
+---
+title: "Setting up CI/CD for Micro Integrator on a VM"
+description: "Configure Jenkins jobs and a Nexus repository to build, release, and deploy Micro Integrator CApps to VM instances."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-vm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-vm.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 There are two kinds of jobs in Jenkins that we need to maintain. One for the Integration project repositories. Another kind is for the Deployment Descriptor repositories. 
 
 [![VM based CI/CD for Micro Integrator](../../../../assets/img/deploy/mi-cicd-vm.png)](../../../../assets/img/deploy/mi-cicd-vm.png)

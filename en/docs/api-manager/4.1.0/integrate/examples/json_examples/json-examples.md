@@ -1,3 +1,18 @@
+---
+title: "Working with JSON message payloads"
+description: "Learn how the Micro Integrator converts JSON payloads to XML and back, with examples for objects, arrays, and strings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/json_examples/json-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/json_examples/json-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - json_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with JSON Message Payloads
 
 WSO2 Micro Integrator provides support for [JavaScript Object Notation (JSON)](http://www.json.org/) payloads in messages. The following sections describe how to work with JSON via the Micro Integrator.

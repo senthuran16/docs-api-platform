@@ -1,3 +1,18 @@
+---
+title: "Receiving email alerts"
+description: "Configure Streaming Integrator to send email alerts when a transaction exceeds a threshold value."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/alerts-and-thresholds/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/alerts-and-thresholds.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Email Alerts
 
 ## Purpose:

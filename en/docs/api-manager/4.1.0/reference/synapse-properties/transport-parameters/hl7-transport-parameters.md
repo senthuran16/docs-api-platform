@@ -1,3 +1,18 @@
+---
+title: "HL7 parameters"
+description: "Reference for the HL7 transport parameters used to send and receive HL7 messages in a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/hl7-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/transport-parameters/hl7-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # HL7 Parameters
 
 When you implement an integration use case that handles HL7 messages, you can use the following HL7 parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.

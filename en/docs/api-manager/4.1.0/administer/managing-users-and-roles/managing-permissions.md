@@ -1,3 +1,18 @@
+---
+title: "Role-based permissions"
+description: "Understand super tenant and tenant level role-based permissions and the default users, roles, and permissions in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-permissions.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-permissions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Role-based Permissions
 
 The **User Management** module in WSO2 products enables role-based access. As a result, the permissions enabled for a particular role determines what that user can do using the management console of a WSO2 product. Permissions can be granted to a role at two levels:

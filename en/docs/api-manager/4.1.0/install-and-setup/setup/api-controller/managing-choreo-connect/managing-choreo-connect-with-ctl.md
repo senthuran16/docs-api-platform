@@ -1,3 +1,18 @@
+---
+title: "Managing Choreo connect"
+description: "Deploy, list, and undeploy APIs on Choreo Connect environments using the apictl command-line tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Managing Choreo Connect
 
 **WSO2 API Controller (apictl)** can be used as a developer CLI tool for Choreo Connect. It enables interacting with one or more Choreo Connect environments without having to perform the following tasks via the WSO2 API Manager (WSO2 API-M).

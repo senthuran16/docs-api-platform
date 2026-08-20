@@ -1,3 +1,18 @@
+---
+title: "Tuning the RabbitMQ transport"
+description: "Tune the RabbitMQ transport by increasing connection pool size and member count for better performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/rabbitmq_transport_tuning/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/rabbitmq_transport_tuning.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Tuning the RabbitMQ Transport
 
 See the following topics to tune the RabbitMQ transport:

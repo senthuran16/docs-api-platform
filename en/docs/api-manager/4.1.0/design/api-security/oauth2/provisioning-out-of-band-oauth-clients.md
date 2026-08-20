@@ -1,3 +1,18 @@
+---
+title: "Provisioning Out-of-Band OAuth2 clients"
+description: "Associate an OAuth2 client created outside the Developer Portal with an application in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/provisioning-out-of-band-oauth-clients/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/provisioning-out-of-band-oauth-clients.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Provisioning Out-of-Band OAuth2 Clients
 
 When application keys are generated, an OAuth2 client is created underneath. The consumer key and consumer secret that appears under a key type belong to the OAuth2 client. There can be situations where an OAuth2 client is created elsewhere but needs to be associated with an application in the Developer Portal. These types of OAuth2 clients are referred to as **Out-of-Band OAuth2 Clients**. 

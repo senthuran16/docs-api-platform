@@ -1,3 +1,18 @@
+---
+title: "Tuning JDBC pool configurations"
+description: "Tune JDBC connection pool properties such as maxActive, maxWait, and minIdle for optimal Micro Integrator database performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/jdbc_tuning/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/jdbc_tuning.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Tuning JDBC Pool Configurations
 
 If you have connected a [JDBC user store](../user_stores/setting_up_a_userstore.md#configuring-an-ldap-user-store) to the Micro Integrator, you can apply the following datasource tuning recommendations in the `deployment.toml` file (stored in the `<MI_HOME>/conf` directory).

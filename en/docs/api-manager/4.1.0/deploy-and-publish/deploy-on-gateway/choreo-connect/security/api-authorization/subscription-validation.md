@@ -1,3 +1,16 @@
+---
+title: "Subscription Validation"
+description: "Enable and configure subscription validation in Choreo Connect using self-contained JWT claims or Event Hub-based checks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/subscription-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/subscription-validation.md
+tags:
+  - subscription-validation
+  - event-hub
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Subscription Validation
 
 The [subscription](../../../../../consume/manage-subscription/subscribe-to-an-api.md) validation is configurable per issuer basis. In order to mandate the subscriptions, subscription validation can be enabled.

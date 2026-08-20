@@ -1,3 +1,18 @@
+---
+title: "Working with employee pay adjustment code groups"
+description: "Retrieve employee pay adjustment groups that control which pay codes can be used in a timesheet."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeepayadjustmentcodegroups/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeepayadjustmentcodegroups.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Employee Pay Adjustment Code Groups
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)

@@ -1,3 +1,16 @@
+---
+title: "Internal key authentication"
+description: "Generate and use an Internal Key from the API-M Publisher Try Out page to test APIs deployed in Choreo Connect before publishing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication.md
+tags:
+  - internal-key
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Internal Key Authentication
 
 This authentication can be used to test APIs that are created in the API Manager Publisher right after deploying the API and even before publishing. An Internal Key can be generated from the API Manager Publisher Try Out page and can be used for both of the modes given below.  

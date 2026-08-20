@@ -1,3 +1,18 @@
+---
+title: "Micro Integrator deployment patterns on Kubernetes"
+description: "Compare single-replica, multi-replica, and coordinated deployment patterns for the Micro Integrator on Kubernetes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/kubernetes_deployment_patterns/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/kubernetes_deployment_patterns.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Micro Integrator Deployment Patterns on Kubernetes
 
 These are the deployment patterns you can use when deploying your WSO2 Micro Integrator-based integration solutions in a Kubernetes environment.

@@ -1,3 +1,18 @@
+---
+title: "Connecting to SwiftMQ"
+description: "Configure WSO2 Micro Integrator's JMS transport to connect with a SwiftMQ broker using client libraries and connection parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-swiftmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-swiftmq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Connecting to SwiftMQ
 
 This section describes how to configure WSO2 Micro Integrator to connect with SwiftMQ.

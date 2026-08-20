@@ -1,3 +1,18 @@
+---
+title: "Publish and subscribe with JMS"
+description: "Configure publisher and subscriber proxy services in the Micro Integrator to implement the JMS publish-subscribe pattern."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/publish-subscribe-with-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/publish-subscribe-with-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publish and Subscribe with JMS
 
 JMS supports two models for messaging as follows:

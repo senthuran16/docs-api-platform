@@ -1,3 +1,18 @@
+---
+title: "Configuring an Active-Active deployment"
+description: "Configure WSO2 API Manager with two active all-in-one nodes for an active-active deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring an Active-Active Deployment
 
 This page walks you through how to manually configure WSO2 API Manager (WSO2 API-M) with two active nodes that each has all the components of the API-M together in one instance (all-in-one instance).

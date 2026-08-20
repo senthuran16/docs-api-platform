@@ -1,3 +1,18 @@
+---
+title: "Configuring Kafka"
+description: "Install Apache Kafka, copy the required client libraries, and start the Kafka and ZooKeeper servers for the Kafka inbound endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/feature_configs/configuring-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/feature_configs/configuring-kafka.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Kafka
 
 In order to use the Kafka inbound endpoint, you need to download and install [Apache Kafka](http://kafka.apache.org/downloads.html). The recommended version is `kafka_2.12-2.2.1`.

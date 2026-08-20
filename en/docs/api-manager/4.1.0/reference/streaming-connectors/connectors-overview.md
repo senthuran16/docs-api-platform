@@ -1,3 +1,18 @@
+---
+title: "Streaming integrator connectors overview"
+description: "Learn how Siddhi extensions extend Streaming Integrator functionality through namespaces and extension syntax."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/streaming-connectors/connectors-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/streaming-connectors/connectors-overview.md
+tags:
+  - api-manager
+  - reference
+  - streaming-connectors
+  - connectors-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Streaming Integrator Connectors Overview
 
 WSO2 Streaming Integrator is powered by Siddhi. Siddhi supports an extension architecture to enhance its functionality by incorporating other libraries in a seamless manner.

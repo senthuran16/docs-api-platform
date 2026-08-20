@@ -1,3 +1,18 @@
+---
+title: "About message stores and processors"
+description: "Learn how message stores and message processors work together to buffer and deliver messages at a controlled rate."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/about-message-stores-processors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/about-message-stores-processors.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - about-message-stores-processors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # About Message Stores and Processors
 
 A **Message Store** is used by a mediation sequence to temporarily store messages before they are delivered to their destination. This approach is useful for serving traffic to back-end services that can only accept messages at a given rate, whereas incoming traffic arrives at different rates. 

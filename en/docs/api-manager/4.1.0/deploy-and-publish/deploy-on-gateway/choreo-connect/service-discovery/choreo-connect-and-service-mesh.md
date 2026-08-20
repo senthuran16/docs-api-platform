@@ -1,3 +1,16 @@
+---
+title: "Configuring Choreo connect with consul service mesh"
+description: "Set up Consul service mesh and register Choreo Connect as a native service for zero-trust API traffic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-mesh/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-mesh.md
+tags:
+  - consul
+  - service-mesh
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring Choreo Connect with Consul Service Mesh
 
 In a traditional on-premise datacenter, components inside the datacenter are considered secure. Any component inside the data center could communicate with another component.

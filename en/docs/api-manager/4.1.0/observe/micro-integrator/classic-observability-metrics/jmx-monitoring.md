@@ -1,5 +1,16 @@
 ---
-title: JMX Monitoring - WSO2 API Manager 4.1.0
+title: "JMX Monitoring - WSO2 API Manager 4.1.0"
+description: "Monitor WSO2 Micro Integrator MBeans for connections, latency, and transports using JConsole or the Jolokia JMX-HTTP bridge."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-metrics/jmx-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/classic-observability-metrics/jmx-monitoring.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-metrics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
 ---
 
 # JMX Monitoring

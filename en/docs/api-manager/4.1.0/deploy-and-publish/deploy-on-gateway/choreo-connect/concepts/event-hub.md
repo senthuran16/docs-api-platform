@@ -1,3 +1,18 @@
+---
+title: "Event hub"
+description: "Explains how the Event Hub mediates data exchange between the Adapter and Control Plane using the Internal Data REST API and JMS topics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/event-hub/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/event-hub.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Event Hub
 
 The Event Hub acts as a mediator between the Adapter and the Control Plane. Choreo Connect uses the following methods to fetch data from WSO2 API Manager (WSO2 API-M).

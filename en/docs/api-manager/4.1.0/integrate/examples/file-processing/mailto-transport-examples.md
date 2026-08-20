@@ -1,3 +1,18 @@
+---
+title: "MailTo transport examples"
+description: "Configure the MailTo transport to send emails from mediation sequences using global or per-message sender settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/file-processing/mailto-transport-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/file-processing/mailto-transport-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # MailTo Transport Examples
 
 ## Globally setting the email sender

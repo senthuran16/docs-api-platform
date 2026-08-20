@@ -1,3 +1,18 @@
+---
+title: "Message routing and transformation"
+description: "Learn how WSO2 Micro Integrator routes messages by content, header, or rule, and transforms message formats such as XML to JSON."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/message-routing-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/message-routing-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - message-routing-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Message Routing and Transformation
 
 ## Message routing

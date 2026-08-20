@@ -1,3 +1,18 @@
+---
+title: "Connecting to IBM WebSphere MQ"
+description: "Set up a queue manager, queue, and channel in IBM WebSphere MQ and connect it to WSO2 Micro Integrator's JMS transport."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-ibm-webspheremq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/brokers/configure-with-ibm-webspheremq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Connecting to IBM WebSphere MQ
 
 The WSO2 JMS transport can be configured with IBM® WebSphere® MQ. The

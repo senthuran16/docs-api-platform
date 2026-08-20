@@ -1,3 +1,18 @@
+---
+title: "Securing REST APIs"
+description: "Secure a REST API in the Micro Integrator using the basic auth handler to validate consumer credentials."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/securing-rest-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/securing-rest-apis.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Securing REST APIs
 In most of the real-world use cases of REST, when a consumer attempts to access a privileged resource, access will be denied unless the consumer's credentials are provided in an Authorization header. By default, the Micro Integrator validates the credentials of the consumer (that is provided in the Authorization header) against the credentials of users that are registered in the [user store connected to the server](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md). 
 

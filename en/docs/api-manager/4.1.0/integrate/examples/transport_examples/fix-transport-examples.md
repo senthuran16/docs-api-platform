@@ -1,3 +1,18 @@
+---
+title: "Using the FIX transport"
+description: "Shows a sample proxy service configuration for sending and receiving messages using the FIX transport in WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/transport_examples/fix-transport-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/transport_examples/fix-transport-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - transport_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the FIX Transport
 
 This example demonstrates the usage of the FIX (Financial Information eXchange) transport with proxy services.

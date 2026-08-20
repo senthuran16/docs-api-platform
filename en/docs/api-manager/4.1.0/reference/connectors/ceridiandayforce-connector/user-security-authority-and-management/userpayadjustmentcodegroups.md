@@ -1,3 +1,18 @@
+---
+title: "Working with user pay adjustment code groups"
+description: "Use the GET User Pay Adjustment Code Groups operation to retrieve pay adjustment groups assigned to an employee."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/userpayadjustmentcodegroups/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/userpayadjustmentcodegroups.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with User Pay Adjustment Code Groups
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)

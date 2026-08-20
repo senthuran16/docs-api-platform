@@ -1,3 +1,18 @@
+---
+title: "Configuring analytics for Choreo connect"
+description: "Explains how to configure Choreo Connect to publish analytics events to the Choreo platform or an ELK stack."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Analytics for Choreo Connect
 
 Choreo Connect is capable of publishing fine grained analytics events which can then be used to generate reports, dashboards, statistics, and graphs for the APIs deployed on Choreo Connect.

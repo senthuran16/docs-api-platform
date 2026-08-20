@@ -1,3 +1,18 @@
+---
+title: "File connector reference"
+description: "Lists connection configurations for version 4 of the File Connector across local, FTP, FTPS, SFTP, and SMB file systems."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/file-connector/file-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/file-connector/file-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # File Connector Reference
 
 The following configurations allow you to work with the File Connector version 4.

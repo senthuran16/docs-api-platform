@@ -1,3 +1,18 @@
+---
+title: "SAP integration"
+description: "Install the SAP JCo library and IDoc and BAPI adapters to integrate WSO2 Micro Integrator with an SAP R/3 solution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sap-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sap-integration.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - sap-integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # SAP Integration
 
 **Systems**, **Applications**, and **Products** **(SAP)** for data processing is an industry leading enterprise software solution that is widely used in product and process oriented enterprises for finance, operations, HR, and many other aspects of a business. 

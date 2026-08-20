@@ -1,3 +1,18 @@
+---
+title: "Create data services configs"
+description: "Create a data services config project in WSO2 Integration Studio to expose datasources as services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-data-services-configs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-data-services-configs.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-data-services-configs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create Data Services Configs
 
 Create this project directory to start creating data services (.dbs files) for exposing various datasources as a service.</br>

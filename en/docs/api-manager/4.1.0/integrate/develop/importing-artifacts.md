@@ -1,3 +1,18 @@
+---
+title: "Importing artifacts"
+description: "Import an existing integration artifact into a WSO2 Integration Studio ESB project from a configuration file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/importing-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/importing-artifacts.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - importing-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Importing Artifacts
 
 Follow the instructions given below to import an integration artifact into WSO2 Integration Studio.

@@ -1,3 +1,18 @@
+---
+title: "Developing integration solutions"
+description: "Get an overview of the topics and workflow for developing integration solutions with WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/intro-integration-development/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/intro-integration-development.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - intro-integration-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Developing Integration Solutions
 
 The contents on this page will walk you through the topics related to developing integration solutions using WSO2 Integration Studio.

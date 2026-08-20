@@ -1,3 +1,18 @@
+---
+title: "Custom inbound endpoint properties"
+description: "Reference the properties required to configure custom listening and polling inbound endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/custom-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/inbound-endpoints/custom-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Custom Inbound Endpoint Properties
 
 Given below are the properties that should be configured when you define a custom inbound endpoint.

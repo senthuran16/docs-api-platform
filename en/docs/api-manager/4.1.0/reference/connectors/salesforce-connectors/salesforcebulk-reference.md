@@ -1,3 +1,18 @@
+---
+title: "SalesforceBulk connector reference"
+description: "Reference for SalesforceBulk connector operations, including init parameters for connecting to the Salesforce Bulk API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/salesforcebulk-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/salesforcebulk-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # SalesforceBulk Connector Reference
 
 The following operations allow you to work with the Salesforce Bulk Connector. Click an operation name to see parameter details and samples on how to use it.

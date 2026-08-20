@@ -1,3 +1,18 @@
+---
+title: "Gmail connector reference"
+description: "Reference for the Gmail connector init operation and all supported parameters for working with Gmail drafts, threads, and messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/gmail-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/gmail-connector/gmail-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Gmail Connector Reference
 
 The following operations allow you to work with the Gmail Connector. Click an operation name to see parameter details and samples on how to use it.

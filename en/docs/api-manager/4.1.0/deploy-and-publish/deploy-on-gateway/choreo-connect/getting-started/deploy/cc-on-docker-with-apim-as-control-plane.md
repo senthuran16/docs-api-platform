@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect on Docker with API Manager"
+description: "Deploy an API to Choreo Connect on Docker Compose using WSO2 API Manager as the control plane."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Deploying Choreo Connect on Docker Compose With WSO2 API Manager as a Control Plane
 
 Let's deploy an API on Choreo Connect, which running on Docker, with WSO2 API Manager as the Control Plane.

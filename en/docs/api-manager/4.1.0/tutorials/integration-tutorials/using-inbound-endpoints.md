@@ -1,3 +1,18 @@
+---
+title: "Using inbound endpoints"
+description: "Expose an existing REST API through a different port using an inbound endpoint in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/using-inbound-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/using-inbound-endpoints.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Using Inbound Endpoints
 
 ## What you'll build

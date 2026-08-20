@@ -1,3 +1,18 @@
+---
+title: "Creatio connector"
+description: "Learn how the Creatio connector integrates with the Creatio REST API to manage CRM contacts, cases, and accounts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - creatio-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Creatio Connector¶
 
 Creatio is a leading low-code platform for process management and customer relationship management (CRM). It is a cloud-based software that merges CRM features with business process management (BPM) capabilities. Creatio combines low-code CRM’s core modules (account and contact management, Salesforce automation, service management, marketing automation, document management, reporting, and analytics) with a business process management (BPM) engine. It can be delivered as a service (SaaS) or on-premise. Creatio enables a range of methods for integration with third-party software products. 

@@ -1,3 +1,18 @@
+---
+title: "Deploying artifacts"
+description: "Deploy composite application artifacts to embedded, remote, Docker, or Kubernetes Micro Integrator environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/deploy-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/deploy-artifacts.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - deploy-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Deploying Artifacts
 
 Once you have your integration artifacts developed and [packaged in a composite application](packaging-artifacts.md), you can deploy the composite application in your Micro Integrator server or your container environment.

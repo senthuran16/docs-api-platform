@@ -1,3 +1,18 @@
+---
+title: "Installation prerequisites"
+description: "Lists OS, JDK, and database compatibility requirements to check before installing WSO2 API Manager runtimes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installation-prerequisites/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installation-prerequisites.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installation-prerequisites
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Installation Prerequisites
 
 WSO2 API Manager contains multiple runtimes. Before installing the runtimes, be sure that the appropriate prerequisites are fulfilled.

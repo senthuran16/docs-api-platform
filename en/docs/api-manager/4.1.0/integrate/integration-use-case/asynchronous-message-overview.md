@@ -1,3 +1,18 @@
+---
+title: "Asynchronous message processing"
+description: "Explains asynchronous messaging concepts and links to tutorials and examples for message queuing use cases."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/asynchronous-message-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/asynchronous-message-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - asynchronous-message-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Asynchronous Message Processing
 
 Asynchronous messaging is a communication method wherein the system puts a message in a message queue and does not require an immediate response to continue processing. Asynchronous messaging is useful for the following:

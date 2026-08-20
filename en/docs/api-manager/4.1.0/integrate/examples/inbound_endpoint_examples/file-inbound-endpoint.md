@@ -1,3 +1,18 @@
+---
+title: "Using the file inbound endpoint"
+description: "Configure a file inbound endpoint and track failed file processing records using the VFS transport."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/file-inbound-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/inbound_endpoint_examples/file-inbound-endpoint.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the File Inbound Endpoint
 ## Failure tracking using File Inbound
 To track failures in file processing that can occur when a resource

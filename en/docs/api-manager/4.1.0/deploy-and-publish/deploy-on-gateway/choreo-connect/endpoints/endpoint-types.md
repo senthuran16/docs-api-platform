@@ -1,3 +1,18 @@
+---
+title: "Endpoint types"
+description: "Learn how Choreo Connect categorizes endpoint types by key type, routing behavior, and backend service type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/endpoint-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/endpoint-types.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Endpoint Types
 
 Endpoint types supported by Choreo Connect can be categorized based on multiple aspects.

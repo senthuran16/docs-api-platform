@@ -1,3 +1,18 @@
+---
+title: "Using the message forwarding processor"
+description: "Configure a message forwarding processor to pick up stored messages and invoke a backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_store_processor_examples/using-message-forwarding-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/message_store_processor_examples/using-message-forwarding-processor.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the Message Forwarding Processor
 This example demonstrates the usage of the message forwarding processor.
 

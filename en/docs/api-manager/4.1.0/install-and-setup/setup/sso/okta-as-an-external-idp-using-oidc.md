@@ -1,3 +1,18 @@
+---
+title: "Using Okta as an external IDP with OIDC"
+description: "Connect Okta as a third-party identity provider to WSO2 API Manager using OpenID Connect for single sign-on."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-oidc/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-oidc.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using Okta as an External IDP with OIDC
 
 Follow the instructions below to connect Okta as a third-party Identity Provider to WSO2 API Manager.

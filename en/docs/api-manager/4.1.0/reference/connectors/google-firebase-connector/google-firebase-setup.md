@@ -1,3 +1,18 @@
+---
+title: "Setting up google firebase environment"
+description: "Create a Firebase project and generate a service account private key to initialize the Google Firebase connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-firebase-connector/google-firebase-setup/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-firebase-connector/google-firebase-setup.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-firebase-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up Google Firebase Environment 
 
 1. Open up [Firebase Console](https://console.firebase.google.com/) and log in.

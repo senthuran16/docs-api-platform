@@ -1,3 +1,18 @@
+---
+title: "AmazonSQS inbound endpoint example"
+description: "Shows how to configure the AmazonSQS inbound endpoint to consume messages from an SQS queue in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # AmazonSQS Inbound Endpoint Example
 
 The AmazonSQS Inbound Endpoint allows you to connect to Amazon and consume messages form an Amazon SQS queue. The messages are then injected into the mediation engine for further processing and mediation.

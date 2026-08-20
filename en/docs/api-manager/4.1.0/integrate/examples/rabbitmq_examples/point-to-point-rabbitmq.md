@@ -1,3 +1,18 @@
+---
+title: "A queue used to deliver a message to a consumer"
+description: "Implement asynchronous point-to-point messaging between two Micro Integrator proxy services using a RabbitMQ queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/point-to-point-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/point-to-point-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # A queue used to deliver a message to a consumer
 
 This example demonstrates how WSO2 Micro Integrator can be used to implement an asynchronous point-to-point messaging scenario using queues in a RabbitMQ broker instance.

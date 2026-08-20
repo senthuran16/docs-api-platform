@@ -1,3 +1,16 @@
+---
+title: "Service discovery"
+description: "Learn how Choreo Connect uses Consul service registry to automatically discover upstream service endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/service-discovery-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/service-discovery-overview.md
+tags:
+  - service-discovery
+  - consul
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Service Discovery
 
 The following section provides information on the use of using the Consul service registry for service discovery and also how you can deploy an API with Consul service catalog-based services.

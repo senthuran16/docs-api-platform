@@ -1,3 +1,18 @@
+---
+title: "Securing a proxy service"
+description: "Secure a proxy service with WS-Security signing and encryption using an Apache Rampart security policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/securing-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/proxy_service_examples/securing-proxy-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Securing a Proxy Service
 This sample demonstrates how you can use WS-Security signing and encryption with proxy services through a WS policy.
 

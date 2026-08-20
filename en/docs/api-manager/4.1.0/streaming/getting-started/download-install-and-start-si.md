@@ -1,3 +1,18 @@
+---
+title: "Step 1: download streaming integrator and dependencies"
+description: "Download the Streaming Integrator and its tooling, then set up a MySQL database table for the getting started scenario."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/getting-started/download-install-and-start-si/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/streaming/getting-started/download-install-and-start-si.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - download-install-and-start-si
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "tutorial"
+---
+
 # Step 1: Download Streaming Integrator and Dependencies
 
 First, you are required to download the Streaming Integrator and the other software needed for the scenario you are trying out. To do this, follow the topics below.

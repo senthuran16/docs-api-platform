@@ -1,3 +1,18 @@
+---
+title: "Exposing data in JSON format"
+description: "Configure a data service query to expose RDBMS data in JSON format using a JSON output template."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/json-with-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/json-with-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Exposing Data in JSON Format
 
 You can send and receive JSON messages by default via WSO2 Micro Integrator. See the topics given below to

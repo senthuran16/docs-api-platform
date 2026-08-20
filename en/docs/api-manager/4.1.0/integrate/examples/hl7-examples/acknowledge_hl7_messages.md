@@ -1,3 +1,18 @@
+---
+title: "Acknowledging HL7 messages"
+description: "Disable automatic HL7 acknowledgement and manually configure ACK/NACK messages in the mediation logic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/hl7-examples/acknowledge_hl7_messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/hl7-examples/acknowledge_hl7_messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - hl7-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Acknowledging HL7 Messages
 
 Automatic message acknowledgement for HL7 messages is enabled in the Micro Integrator by default. With this setting, an ACK is immediately returned to the client when a message is received. 

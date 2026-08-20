@@ -1,3 +1,18 @@
+---
+title: "Configurations"
+description: "Lists the Choreo Connect configuration, log, and log4j2 files and their locations for Docker Compose and Kubernetes deployments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configuration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configuration-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Configurations
 
 The following are the Choreo Connect related configuration files.

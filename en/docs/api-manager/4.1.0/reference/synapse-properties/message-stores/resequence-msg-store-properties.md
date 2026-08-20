@@ -1,3 +1,18 @@
+---
+title: "Resequence message store"
+description: "Lists the configuration properties for creating a resequence message store that reorders out-of-sequence messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/resequence-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/message-stores/resequence-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Resequence Message Store
 ## Introduction
 Used for storing a stream of related but out-of-sequence messages so that they can be put back into the correct order. It collects and reorders the stored messages based on a defined sequence number derived from some part of the message. The messages are then published to the output channel in a specific order. This helps when the order of message delivery is important. For example, it avoids some messages arriving earlier than others.</br>

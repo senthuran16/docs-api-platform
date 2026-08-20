@@ -1,3 +1,18 @@
+---
+title: "Configuring the File-Based registry"
+description: "Configure the file-based registry folders and paths used by the Micro Integrator to store registry artifacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/file_based_registry/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/file_based_registry.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring the File-Based Registry
 
 WSO2 Micro Integrator is shipped with a file-system-based registry. By default, the `MI_HOME/registry/` folder acts as the registry that stores registry artifacts. This root registry folder consists of the following sub-registry folders:

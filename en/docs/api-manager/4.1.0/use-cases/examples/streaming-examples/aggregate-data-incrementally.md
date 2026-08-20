@@ -1,3 +1,18 @@
+---
+title: "Aggregating data incrementally"
+description: "Use a Siddhi application to compute running statistics on incrementally received raw material data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/aggregate-data-incrementally/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/aggregate-data-incrementally.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Aggregating Data Incrementally
 
 ## Purpose

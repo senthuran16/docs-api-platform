@@ -1,3 +1,18 @@
+---
+title: "Receiving JSON events via HTTP"
+description: "Configure WSO2 Streaming Integrator to receive JSON events over HTTP using default mapping and log the output."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/receive-http-in-json-format-with-default-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/receive-http-in-json-format-with-default-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving JSON Events via HTTP
 
 ## Purpose:

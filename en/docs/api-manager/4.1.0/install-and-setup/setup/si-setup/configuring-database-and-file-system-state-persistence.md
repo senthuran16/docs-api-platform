@@ -1,3 +1,18 @@
+---
+title: "Configuring database and file system state persistence"
+description: "Prevent data loss by persisting WSO2 Streaming Integrator state periodically to a database or the file system."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/configuring-database-and-file-system-state-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/configuring-database-and-file-system-state-persistence.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Database and File System State Persistence
 
 This section explains how to prevent the loss of data that can result

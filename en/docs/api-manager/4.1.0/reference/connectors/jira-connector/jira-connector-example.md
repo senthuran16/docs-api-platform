@@ -1,3 +1,18 @@
+---
+title: "Jira connector example"
+description: "Shows how to use the Jira connector to create an issue and retrieve it using the createIssue and getIssue operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/jira-connector/jira-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/jira-connector/jira-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - jira-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Jira Connector Example
 
 The Jira REST API enables you to interact with Jira programmatically. The WSO2 JIRA Connector allows you to access the REST resources available in Jira Cloud [API Version v2](https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/) from an integration sequence.

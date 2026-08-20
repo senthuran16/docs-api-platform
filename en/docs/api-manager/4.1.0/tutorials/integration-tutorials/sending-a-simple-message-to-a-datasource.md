@@ -1,3 +1,18 @@
+---
+title: "Data integration"
+description: "Build a data service in Integration Studio to expose data stored in a relational datasource or CSV file as a web service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - sending-a-simple-message-to-a-datasource
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Data Integration
 
 ## What you'll build

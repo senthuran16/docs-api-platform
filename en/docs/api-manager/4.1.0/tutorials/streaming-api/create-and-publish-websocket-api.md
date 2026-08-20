@@ -1,3 +1,18 @@
+---
+title: "Create and publish a WebSocket API"
+description: "Design, publish, and invoke a WebSocket API to implement a command-line chat application with WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/streaming-api/create-and-publish-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/streaming-api/create-and-publish-websocket-api.md
+tags:
+  - api-manager
+  - tutorials
+  - streaming-api
+  - create-and-publish-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Create and Publish a WebSocket API
 
 This tutorial will guide you to implement a WebSocket based chat application using the WSO2 API Manager.

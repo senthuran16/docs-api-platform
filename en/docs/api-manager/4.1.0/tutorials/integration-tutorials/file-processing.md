@@ -1,3 +1,18 @@
+---
+title: "File processing"
+description: "Pick up a file, insert its records into a database, send an email, log the content, and move the processed file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/file-processing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/file-processing.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # File processing
 
 ## What you'll build

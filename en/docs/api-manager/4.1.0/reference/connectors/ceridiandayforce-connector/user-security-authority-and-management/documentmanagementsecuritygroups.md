@@ -1,3 +1,18 @@
+---
+title: "Working with document management security groups"
+description: "Use the GET Document Management Security Groups operation to retrieve the security groups assigned to an employee."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/documentmanagementsecuritygroups/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/documentmanagementsecuritygroups.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Document Management Security Groups
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)

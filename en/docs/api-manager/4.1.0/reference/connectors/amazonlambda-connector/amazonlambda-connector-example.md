@@ -1,3 +1,18 @@
+---
+title: "Amazon Lambda connector example"
+description: "Build a sample REST API that uses the Amazon Lambda connector's createFunction operation to deploy a Lambda function to AWS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Amazon Lambda Connector Example 
 
 Given below is a sample scenario that demonstrates how to create an Amazon Lambda function in the AWS Lambda Service using the WSO2 Amazon Lambda Connector.

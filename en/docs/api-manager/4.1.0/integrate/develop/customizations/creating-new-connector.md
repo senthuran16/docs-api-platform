@@ -1,3 +1,18 @@
+---
+title: "Creating a new connector"
+description: "Write a new connector using the Maven archetype to integrate with a service not covered by existing connectors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/customizations/creating-new-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/customizations/creating-new-connector.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a New Connector
 
 You can write a new connector for a specific requirement that cannot be addressed via any of the existing connectors that can be downloaded from the [connector store](https://store.wso2.com/store/pages/top-assets).

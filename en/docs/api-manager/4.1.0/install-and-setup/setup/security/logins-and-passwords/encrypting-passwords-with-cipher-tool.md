@@ -1,3 +1,18 @@
+---
+title: "Encrypting passwords with cipher tool"
+description: "Steps to encrypt plain text passwords in configuration files using the built-in Cipher Tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/security/logins-and-passwords/encrypting-passwords-with-cipher-tool/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/security/logins-and-passwords/encrypting-passwords-with-cipher-tool.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Encrypting Passwords with Cipher Tool
 
 The instructions on this page explain how plain text passwords in configuration files can be encrypted using the secure vault implementation that is built into WSO2 products. Note that you can customize the default secure vault configurations in the product by implementing a new secret repository, call back handler etc. Read more about the [Secure Vault implementation](https://docs.wso2.com/display/ADMIN44x/Carbon+Secure+Vault+Implementation) in WSO2 products.

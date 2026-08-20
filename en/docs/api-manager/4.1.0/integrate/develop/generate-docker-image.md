@@ -1,3 +1,18 @@
+---
+title: "Generating Docker images"
+description: "Generate a Docker image of a composite application project using WSO2 Integration Studio's export wizard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/generate-docker-image/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/generate-docker-image.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - generate-docker-image
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Generating Docker images
 
 See the topics given below.

@@ -1,3 +1,18 @@
+---
+title: "Adding an application key generation workflow"
+description: "Configure a WS-based application key generation workflow using WSO2 EI or BPS for production and sandbox key requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow-using-bps.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Adding an Application Key Generation Workflow
 
 This section explains as to how you can attach a custom workflow to the **application registration** operation in the API Manager. 

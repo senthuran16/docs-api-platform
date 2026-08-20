@@ -1,3 +1,18 @@
+---
+title: "Rate limiting in Choreo Connect"
+description: "Learn how Choreo Connect enforces API, resource, subscription, and application level rate limiting, including distributed rate limiting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/cc-rate-limiting/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/cc-rate-limiting.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Rate Limiting
 
 Rate limiting allows users to limit the number of incoming requests to Choreo Connect. Choreo Connect connects

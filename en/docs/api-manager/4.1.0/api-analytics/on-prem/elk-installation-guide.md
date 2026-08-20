@@ -1,3 +1,18 @@
+---
+title: "ELK based analytics installation guide"
+description: "Configure WSO2 API Manager to publish analytics logs to an external ELK stack using Filebeat, Logstash, and Kibana."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/api-analytics/on-prem/elk-installation-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/api-analytics/on-prem/elk-installation-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - on-prem
+  - elk-installation-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # ELK Based Analytics Installation Guide
 
 <a href="../../../assets/img/analytics/cloud/architecture.png"><img src="../../../assets/img/analytics/cloud/architecture.png" width="70%" alt="Deployment diagram"></a>

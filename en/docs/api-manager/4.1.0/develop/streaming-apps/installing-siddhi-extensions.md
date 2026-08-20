@@ -1,3 +1,18 @@
+---
+title: "Installing siddhi extensions"
+description: "Install or uninstall Siddhi extensions in Streaming Integrator Tooling using the Extension Installer."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/installing-siddhi-extensions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/installing-siddhi-extensions.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - installing-siddhi-extensions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing Siddhi Extensions
 
 Streaming Integrator Tooling uses Siddhi extensions to connect with various data sources. Siddhi extensions can be installed or uninstalled using the Extension Installer.

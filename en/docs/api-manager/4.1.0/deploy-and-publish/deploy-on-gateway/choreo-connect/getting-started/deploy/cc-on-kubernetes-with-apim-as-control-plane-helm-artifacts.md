@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect on Kubernetes with API Manager"
+description: "Deploy an API on Choreo Connect running on Kubernetes with WSO2 API Manager as the control plane, using Helm chart artifacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Deploying Choreo Connect on Kubernetes With WSO2 API Manager as a Control Plane - Helm Artifacts
 
 Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 API Manager as the Control Plane. You can select one of the options to install Choreo Connect with Helm Chart.

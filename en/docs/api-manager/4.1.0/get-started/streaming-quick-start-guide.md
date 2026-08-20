@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - streaming integration"
+description: "Build and run a streaming integration that aggregates factory purchase data and publishes results to a WebSocket server using WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/streaming-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/streaming-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - streaming-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "quickstart"
+---
+
 # Quick Start Guide - Streaming Integration
 
 Let's get started with WSO2 Streaming Integrator(SI) by running a simple streaming use case in your local environment. 

@@ -1,3 +1,18 @@
+---
+title: "BigQuery connector example"
+description: "Walks through a sample scenario that retrieves, inserts, and queries data in BigQuery tables using the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/bigquery-connector/bigquery-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/bigquery-connector/bigquery-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - bigquery-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # BigQuery Connector Example
 
 The WSO2 BigQuery connector is mostly comprised of operations that are useful for retrieving BigQuery data such as project details, datasets, tables, and jobs (it has one operation that can be used to insert data into BigQuery tables).

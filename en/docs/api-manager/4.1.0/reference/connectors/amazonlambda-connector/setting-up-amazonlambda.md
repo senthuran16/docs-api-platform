@@ -1,3 +1,18 @@
+---
+title: "Setting up the Amazon Lambda environment"
+description: "Sign up for an AWS account and get the access key ID and secret access key needed to use the Amazon Lambda connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonlambda-connector/setting-up-amazonlambda/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazonlambda-connector/setting-up-amazonlambda.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Amazon Lambda Environment
 
 To use the AmazonLambda service, you must have an AWS account. If you do not already have an account, you are prompted to create one when you sign up. You are not charged for any AWS services that you sign up for unless you use them.

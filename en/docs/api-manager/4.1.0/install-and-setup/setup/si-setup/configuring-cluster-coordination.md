@@ -1,3 +1,18 @@
+---
+title: "Configuring cluster coordination"
+description: "Configure an RDBMS-based cluster coordination strategy for WSO2 Streaming Integrator high availability deployments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/configuring-cluster-coordination/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/configuring-cluster-coordination.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Cluster Coordination
 
 Multiple WSO2 SI nodes can be configured to work together by configuring

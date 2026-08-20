@@ -1,3 +1,18 @@
+---
+title: "Configure the API Gateway"
+description: "Configure the API Gateway to publish analytics data, including worker thread count, queue size, and flushing delay."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/api-analytics/gateways/configure-synapse-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/api-analytics/gateways/configure-synapse-gateway.md
+tags:
+  - api-manager
+  - api-analytics
+  - gateways
+  - configure-synapse-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configure the API Gateway
 
 API Analytics is delivered via the API Analytics Cloud. Therefore, the API Manager Gateway needs to be configured to publish analytics data into the cloud.

@@ -1,3 +1,18 @@
+---
+title: "GraphQL query complexity limitation"
+description: "Calculate GraphQL query complexity values and enforce a maximum complexity limit per subscription policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/graphql-api/query-complexity-limitation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/rate-limiting/graphql-api/query-complexity-limitation.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 Often, limiting only the depth of a query is not sufficient to protect a GraphQL service from complex queries. 
 The reason for this is that some fields in a GraphQL schema are more costly to compute than others. WSO2 API-Manager introduces  
 **“Query Complexity Limitation”** to address such cases. 

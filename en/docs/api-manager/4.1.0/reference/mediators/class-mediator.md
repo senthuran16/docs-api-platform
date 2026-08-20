@@ -1,3 +1,18 @@
+---
+title: "Class mediator"
+description: "Reference for the Class mediator syntax and configuration used to invoke a custom Java mediator class."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/class-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/class-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - class-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Class Mediator
 
 The **Class Mediator** creates an instance of a custom-specified class

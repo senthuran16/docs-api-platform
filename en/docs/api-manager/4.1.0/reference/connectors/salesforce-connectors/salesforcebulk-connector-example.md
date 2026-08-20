@@ -1,3 +1,18 @@
+---
+title: "Salesforce bulk connector example"
+description: "Build an integration that inserts employee records into Salesforce in bulk and retrieves the batch job status."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/salesforcebulk-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/salesforcebulk-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Salesforce Bulk Connector Example
 
 The Salesforce Bulk Connector allows you to access the [Salesforce Bulk REST API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) from an integration sequence. SalesforceBulk is a RESTful API that allows you to quickly load large sets of your organization's data into Salesforce or delete large sets of your organization's data from Salesforce. You can use SalesforceBulk to query, insert, update, upsert or delete a large number of records asynchronously, by submitting the records in batches. Salesforce can process these batches in the background.

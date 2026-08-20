@@ -1,3 +1,18 @@
+---
+title: "Permission APIs"
+description: "Reference for permission APIs to add permission strings, retrieve permission IDs, and check role grants."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/permission-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/permission-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - permission-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Permission APIs
 
 ## Adding a permission string

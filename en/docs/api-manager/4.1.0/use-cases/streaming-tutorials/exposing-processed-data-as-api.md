@@ -1,3 +1,18 @@
+---
+title: "Siddhi query API"
+description: "Use the Siddhi query REST API to manage, test, and query Siddhi applications in Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-tutorials/exposing-processed-data-as-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-tutorials/exposing-processed-data-as-api.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - exposing-processed-data-as-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Siddhi Query API
 
 ## Introduction

@@ -1,3 +1,18 @@
+---
+title: "Service orchestration"
+description: "Chain multiple backend service calls into a single aggregated response using the Call and PayloadFactory mediators."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/exposing-several-services-as-a-single-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/exposing-several-services-as-a-single-service.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - exposing-several-services-as-a-single-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Service Orchestration
 
 ## What you'll build

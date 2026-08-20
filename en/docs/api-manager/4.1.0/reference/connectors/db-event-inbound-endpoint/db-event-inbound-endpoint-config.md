@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint reference"
+description: "Lists configuration parameters for the DB Event Inbound Endpoint, including database driver, polling, and event settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # DB Event Inbound Endpoint Reference
 
 The following configurations allow you to configure DB Event Inbound Endpoint for your scenario. 

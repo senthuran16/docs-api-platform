@@ -1,3 +1,18 @@
+---
+title: "Configuring reCaptcha for self Sign-up"
+description: "Configure reCaptcha for the Developer Portal self-registration flow, either per tenant or globally."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/configuring-recaptcha-for-self-signup/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/customizing-the-developer-portal/configuring-recaptcha-for-self-signup.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Configuring reCaptcha for Self Sign-up
 
 Self Sign-up is an important feature when it comes to commercial

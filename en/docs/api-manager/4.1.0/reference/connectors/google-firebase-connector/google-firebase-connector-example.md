@@ -1,3 +1,18 @@
+---
+title: "Google firebase connector example"
+description: "Build an integration that generates a Firebase push notification from an HTTP API invocation using the Google Firebase connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-firebase-connector/google-firebase-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-firebase-connector/google-firebase-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-firebase-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Google Firebase Connector Example   
 
 **Google Firebase Connector** is useful for integrating Google Firebase with other enterprise applications, on-premise or cloud. You can generate notifications and send them to Firebase so that they will be triggered to all the registered devices on that topic.

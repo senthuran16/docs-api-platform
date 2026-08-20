@@ -1,3 +1,18 @@
+---
+title: "Creating a registry resource"
+description: "Create registry resource artifacts in a registry resources project using templates or imported files."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-registry-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-registry-resources.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Registry Resource
 
 Initially, your Registry resources project will contain only a `pom` file. You can create any number of registry resources inside that project.

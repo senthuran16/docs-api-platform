@@ -1,3 +1,18 @@
+---
+title: "Validate mediator"
+description: "Configure the Validate mediator to validate XML and JSON messages against a schema, with syntax and parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/validate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/validate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - validate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Validate Mediator
 
 You can use the Validate mediator to validate XML and JSON messages.

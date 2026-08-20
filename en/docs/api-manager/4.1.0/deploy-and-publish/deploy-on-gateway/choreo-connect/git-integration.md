@@ -1,3 +1,18 @@
+---
+title: "Git integration for Choreo connect"
+description: "Integrate Choreo Connect with a Git repository so the Adapter can version-control and redeploy API artifacts automatically."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Git Integration for Choreo Connect
 
 The following section provides information on how to integrate Choreo Connect with Git for version controlling of API artifacts.

@@ -1,3 +1,18 @@
+---
+title: "ISO8583 inbound endpoint example"
+description: "Walks through building an ISO8583 inbound endpoint that consumes messages and converts them to XML for a sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/iso8583-connector/iso8583-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # ISO8583 Inbound Endpoint Example
 
 In the real world, financial scenarios are happening among thousands of banking systems and networks. In this situation, one system needs to act as a message publisher and another system needs to be capable of receiving messages. Once the message is received, further processing actions are performed based on the logic that is implemented in the internal system.

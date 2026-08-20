@@ -1,3 +1,18 @@
+---
+title: "Overview"
+description: "Describes the log configuration files used by Choreo Connect and their locations across deployment architectures."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Overview
 
 Logging in Choreo Connect is really important when debugging issues in a short period of time and looking into the underlying details of how each component works.  Choreo Connect provides facilities for getting the logs in various formats (JSON, Plain text), various output methods and various logging levels.

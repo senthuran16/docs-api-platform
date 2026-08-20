@@ -1,3 +1,18 @@
+---
+title: "Defining tables for physical stores"
+description: "Define data tables backed by physical databases using the store annotation for different database types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/defining-tables-for-physical-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/defining-tables-for-physical-stores.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Defining Tables for Physical Stores
 
 This section explains how to define data tables to store data handled by

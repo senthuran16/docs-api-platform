@@ -1,3 +1,18 @@
+---
+title: "Using Swagger documents"
+description: "Access and attach Swagger or OpenAPI definitions for REST API and data service artifacts in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/advanced-development/using-swagger-for-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/advanced-development/using-swagger-for-apis.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using Swagger Documents
 
 API documentation is important to guide the users on what they can do using specific APIs. 

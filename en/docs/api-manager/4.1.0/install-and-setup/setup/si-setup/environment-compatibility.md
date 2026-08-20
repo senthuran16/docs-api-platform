@@ -1,3 +1,18 @@
+---
+title: "Environment compatibility"
+description: "Reference the operating systems, JDKs, and DBMSs tested and supported for WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/environment-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/si-setup/environment-compatibility.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Environment Compatibility
 
 This section describes the environment compatibilities of WSO2 Streaming Integrator.

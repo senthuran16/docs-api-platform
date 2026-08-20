@@ -1,3 +1,18 @@
+---
+title: "Email connector example"
+description: "Shows how to use the Email Connector to send an email and retrieve it from Gmail through a sample integration API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/email-connector/email-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/email-connector/email-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - email-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Email Connector Example
 
 Email Connector can be used to perform operations using protocols SMTP, IMAP and POP3. 

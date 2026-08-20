@@ -1,3 +1,18 @@
+---
+title: "Tour WSO2 Integration Studio"
+description: "Tour WSO2 Integration Studio's Getting Started view, project directories, samples, and development tools."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Quick Tour - WSO2 Integration Studio
 
 WSO2 Integration Studio is your development environment for designing, developing, debugging, and testing integration solutions. As an integration developer, you can execute all the phases of the development lifecycle using this tool. When your integration solutions are production-ready, you can easily push the artifacts to your continuous integration/continuous deployment pipeline.

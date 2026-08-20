@@ -1,3 +1,16 @@
+---
+title: "WSO2 API Manager documentation"
+description: "Get started with WSO2 API Manager: design, publish, and manage APIs and API products, and explore quick start guides for integration and streaming."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0.md
+tags:
+  - overview
+  - documentation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 <style>
     @font-face {
     font-family: 'Material Icons';

@@ -1,3 +1,17 @@
+---
+title: "WSO2 API Manager best practices"
+description: "Follow guidelines for naming, versioning, and designing APIs and resources when using WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/wso2-api-manager-best-practices/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/wso2-api-manager-best-practices.md
+tags:
+  - api-manager
+  - reference
+  - wso2-api-manager-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # WSO2 API Manager Best Practices
 
 Here are the guidelines and recommendations to design and deploy APIs using WSO2 API Manager:

@@ -1,3 +1,18 @@
+---
+title: "Sequences and endpoints as local registry entries"
+description: "Fetch sequences and endpoints from a local registry for use in a Micro Integrator proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/registry_examples/local-registry-entries/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/registry_examples/local-registry-entries.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - registry_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Sequences and Endpoints as Local Registry Entries
 This sample demonstrates how sequences and endpoints can be fetched from a local registry.
 

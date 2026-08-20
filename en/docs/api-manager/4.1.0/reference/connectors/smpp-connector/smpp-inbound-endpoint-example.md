@@ -1,3 +1,16 @@
+---
+title: "SMPP inbound endpoint example"
+description: "Configure the SMPP inbound endpoint in WSO2 Integration Studio to consume SMS messages from an SMSC."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/smpp-connector/smpp-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/smpp-connector/smpp-inbound-endpoint-example.md
+tags:
+  - esb-connector
+  - sms
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # SMPP Inbound Endpoint Example
 
 The SMPP inbound endpoint allows you to consume messages from SMSC. The WSO2 SMPP inbound endpoint acts as a message consumer. It creates a connection with the SMSC, then listens over a port to consume only SMS messages from the SMSC and injects the messages to the integration sequence. It will receive alert notifications or will notify when a data short message accepted.

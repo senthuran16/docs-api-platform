@@ -1,3 +1,18 @@
+---
+title: "Google PubSub connector overview"
+description: "Overview of the Google Pub/Sub connector for asynchronous messaging use cases, its compatibility, and related documentation links."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-pubsub-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Google PubSub Connector Overview
 
 The Google Pub/Sub connector allows you to access the [Google Cloud Pub/Sub API Version v1](https://cloud.google.com/pubsub/docs/reference/rest/) from an integration sequence. Google Cloud Pub/Sub is a fully-managed real-time messaging service that allows you to send and receive messages between independent applications.

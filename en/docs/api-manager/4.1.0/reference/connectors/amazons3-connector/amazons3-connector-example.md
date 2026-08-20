@@ -1,3 +1,18 @@
+---
+title: "Amazon S3 connector example"
+description: "Build a sample API that creates an S3 bucket and uploads and retrieves a file using the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazons3-connector/amazons3-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazons3-connector/amazons3-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazons3-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Amazon S3 Connector Example 
 
 The AmazonS3 Connector allows you to access the Amazon Simple Storage Service (Amazon S3) via the AWS [SDK](https://aws.amazon.com/sdk-for-java/).

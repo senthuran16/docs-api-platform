@@ -1,3 +1,17 @@
+---
+title: "API analytics getting started guide"
+description: "Sign in to Choreo, register your environment, and configure the Gateway to start using API Analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/api-analytics/getting-started-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/api-analytics/getting-started-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - getting-started-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # API Analytics Getting Started Guide
 
 API Manager offers analytics as a cloud service. Therefore, you need to register with the analytics cloud in order to use API Manager Analytics. Follow the instructions below to get started with analytics:

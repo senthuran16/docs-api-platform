@@ -1,3 +1,18 @@
+---
+title: "Setting up the Amazon DynamoDB connector"
+description: "Configure message builders and formatters and set up AWS credentials for the Amazon DynamoDB connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazondynamodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Amazon DynamoDB Connector 
 
 Amazon DynamoDB Connector allows you to access the [Amazon DynamoDB REST API](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html) from integration sequence. 

@@ -1,3 +1,18 @@
+---
+title: "Call interceptor service"
+description: "Reference for the Call Interceptor Service policy attributes and supported payload values in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/choreo-connect-policies/call-interceptor-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-policies/choreo-connect-policies/call-interceptor-service.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - choreo-connect-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Call Interceptor Service
 
 You can use interceptors in Choreo Connect to carry out transformations and mediation on the requests and responses. Learn more about [Message Transformation](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/message-transformation-overview.md) in Choreo Connect.

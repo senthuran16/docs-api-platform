@@ -1,3 +1,18 @@
+---
+title: "Message store and message processor for guaranteed delivery"
+description: "Implement store-and-forward messaging with a message store and processor to guarantee delivery via RabbitMQ."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/store-forward-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/store-forward-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Message store and message processor for guaranteed delivery
 
 This sample demonstrates how a <b>store and forward</b> messaging scenario can be implemented using the RabbitMQ

@@ -1,3 +1,18 @@
+---
+title: "Configuring a Read-Write LDAP user store"
+description: "Configure a read-write LDAP, such as WSO2 Identity Server, as the primary user store in deployment.toml."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Read-Write LDAP User Store
 
 Follow the given steps to configure a read-write LDAP as the primary user store:

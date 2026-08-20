@@ -1,3 +1,18 @@
+---
+title: "Create a GraphQL API"
+description: "Design a GraphQL API in WSO2 API Manager using an SDL schema for query, mutation, and subscription operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-a-graphql-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/create-api/create-a-graphql-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-a-graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Create a GraphQL API
 
 GraphQL, which has been developed by Facebook, is a data query language for APIs. When using GraphQL, users can explicitly specify as to what data they need from an API. GraphQL APIs are an alternative to REST-based APIs. 

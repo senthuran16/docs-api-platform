@@ -1,3 +1,18 @@
+---
+title: "Publish unacked messages to dead letter exchange"
+description: "Route undelivered messages to a RabbitMQ dead letter exchange to ensure guaranteed message delivery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/move-msgs-to-dlq-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Publish unacked messages to Dead Letter Exchange
 
 This sample demonstrates how WSO2 Micro Integrator can ensure guaranteed delivery of messages by using the <b>Dead Letter Exchange (DLX)</b> of RabbitMQ.

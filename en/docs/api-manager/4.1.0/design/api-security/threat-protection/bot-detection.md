@@ -1,3 +1,18 @@
+---
+title: "Bot detection"
+description: "Detect bot and port-scanning attacks against unadvertised Gateway services using API Manager's bot detection logs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/threat-protection/bot-detection/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/threat-protection/bot-detection.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # Bot Detection
 
 There is a possibility that hackers may invoke services without any proper authentication by using tools such as port scanning. Therefore, WSO2 API Manager (WSO2 API-M) provides a bot detection mechanism in place. There is an unadvertised service deployed in the Gateway that logs and sends events to API-M Analytics if it receives any traffic. Thereby, this helps Publishers to protect their data from bot attackers and improve the security of the data.

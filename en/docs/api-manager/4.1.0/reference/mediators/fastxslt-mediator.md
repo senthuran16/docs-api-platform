@@ -1,3 +1,18 @@
+---
+title: "FastXSLT mediator"
+description: "Reference for the FastXSLT mediator syntax used to apply XSLT transformations to a streaming message payload."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/fastxslt-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/fastxslt-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - fastxslt-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # FastXSLT Mediator
 
 The **FastXSLT Mediator** is similar to the [XSLT mediator](xslt-mediator.md), but it uses the [Streaming XPath Parser](https://wso2.com/library/articles/2013/01/streaming-xpath-parser-wso2-esb/) and applies the XSLT transformation to the message stream instead of to the XML message payload. The result is a faster transformation, but you cannot specify the source, properties, features, or resources as you can with the XSLT mediator. Therefore, the FastXSLT mediator is intended to be used to gain performance in cases where the original message remains unmodified. Any pre-processing performed on the message payload will not be visible to the FastXSLT mediator, because the transformation logic is applied on the original message stream instead of the message payload. In cases where the message payload needs to be pre-processed, use the XSLT mediator instead of the FastXSLT mediator.

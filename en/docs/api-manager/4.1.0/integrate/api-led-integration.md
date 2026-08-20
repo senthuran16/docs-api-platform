@@ -1,3 +1,17 @@
+---
+title: "API-led integration"
+description: "Implement an API-led integration strategy by developing experience, process, and system APIs separately."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/api-led-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/api-led-integration.md
+tags:
+  - api-manager
+  - integrate
+  - api-led-integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # API-led Integration
 
 WSO2 API Manager consists of an API management layer as well as an integration layer. While the integration layer (Micro Integrator) is used for running the integration logic, the API management layer is used for managing the APIs (with the integration logic) and making these APIs discoverable to developers.

@@ -1,3 +1,18 @@
+---
+title: "REST API"
+description: "Reference for the properties required and available when creating a REST API artifact in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/rest-api-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/rest-api-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - rest-api-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # REST API
 ## Introduction
 

@@ -1,3 +1,18 @@
+---
+title: "Using the WSDL endpoint"
+description: "Use a WSDL endpoint inside the Send mediator to extract the target endpoint reference from a WSDL document."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-wsdl-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/endpoint_examples/using-wsdl-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using the WSDL Endpoint
 This sample demonstrates how you can use a WSDL endpoint as the target
 endpoint. The configuration in this sample uses a WSDL endpoint inside

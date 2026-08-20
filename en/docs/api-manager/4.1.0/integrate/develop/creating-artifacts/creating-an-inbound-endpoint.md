@@ -1,3 +1,18 @@
+---
+title: "Creating an inbound endpoint"
+description: "Create an inbound endpoint artifact in WSO2 Integration Studio and configure its protocol-specific parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-an-inbound-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating an Inbound Endpoint
 
 Follow the instructions given below to create a new [Inbound Endpoint](../../../reference/synapse-properties/inbound-endpoints/about-inbound-endpoints.md) artifact in WSO2 Integration Studio.

@@ -1,3 +1,18 @@
+---
+title: "Working with message builders and formatters"
+description: "Configure default and custom message builders and formatters that convert message payloads by content type in Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Working with Message Builders and Formatters
 
 ## Overview

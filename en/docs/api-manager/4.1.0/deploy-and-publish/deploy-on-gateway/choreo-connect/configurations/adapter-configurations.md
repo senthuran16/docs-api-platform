@@ -1,3 +1,18 @@
+---
+title: "Choreo connect adapter configuration catalog"
+description: "Lists the configuration parameters, sections, and sample TOML values for the Choreo Connect Adapter component."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/adapter-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/adapter-configurations.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Choreo Connect Adapter Configuration Catalog
 
 This document describes all the configuration parameters that are used in Choreo Connect Adapter.

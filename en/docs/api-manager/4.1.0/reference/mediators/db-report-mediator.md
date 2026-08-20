@@ -1,3 +1,18 @@
+---
+title: "DB report mediator"
+description: "Reference for the DB Report mediator syntax used to write message information to a database with an insert SQL statement."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/db-report-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/db-report-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - db-report-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # DB Report Mediator
 
 The **DB Report Mediator** is similar to the [DBLookup Mediator](dblookup-mediator.md). The difference between the two mediators is that the DB Report mediator writes information to a database using the specified insert SQL statement.

@@ -1,3 +1,16 @@
+---
+title: "ServiceNow connector example"
+description: "Configure the ServiceNow connector in WSO2 Integration Studio to create and retrieve incident records via the Table API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/servicenow-connector/servicenow-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/servicenow-connector/servicenow-connector-example.md
+tags:
+  - esb-connector
+  - integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # ServiceNow Connector Example
 
 The WSO2 ServiceNow connector allows you to access the ServiceNow REST API from an integration sequence. Using ServiceNow connector you can work with Aggregate API, Import Set API and Table API in ServiceNow. You can further read about ServiceNow REST APIs from [here](https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI).

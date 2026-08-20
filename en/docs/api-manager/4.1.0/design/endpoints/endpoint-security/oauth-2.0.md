@@ -1,3 +1,18 @@
+---
+title: "Secure endpoint with OAuth2"
+description: "Configure OAuth2 as the endpoint security type so the gateway retrieves access tokens on behalf of the API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/endpoint-security/oauth-2.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/endpoints/endpoint-security/oauth-2.0.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Secure Endpoint with OAuth 2.0
 
 A secured endpoint is when you have access-protected resources. WSO2 API Manager supports Basic Authentication, Digest Authentication, and OAuth 2.0. They differ on how the credentials are communicated and how access is granted by the backend server.

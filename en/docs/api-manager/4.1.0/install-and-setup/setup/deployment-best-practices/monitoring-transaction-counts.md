@@ -1,3 +1,18 @@
+---
+title: "Monitoring integration transactions counts"
+description: "Enable and configure the transaction counter component to track Micro Integrator transaction counts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/deployment-best-practices/monitoring-transaction-counts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/deployment-best-practices/monitoring-transaction-counts.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Monitoring Integration Transactions Counts
 
 A **Transaction** in WSO2 Micro Integrator is typically defined as an inbound request (a request coming to the server). That is, any inbound request to a [REST API](../../../integrate/develop/creating-artifacts/creating-an-api.md), [Proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md), or [Inbound Endpoint](../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md) is considered as one transaction.

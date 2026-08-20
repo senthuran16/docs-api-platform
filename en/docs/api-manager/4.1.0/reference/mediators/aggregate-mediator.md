@@ -1,3 +1,18 @@
+---
+title: "Aggregate mediator"
+description: "Configure the Aggregate mediator to combine response messages split by the Clone or Iterate mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/aggregate-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/aggregate-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - aggregate-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Aggregate Mediator
 
 The **Aggregate mediator** implements the [Aggregator enterprise integration pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/aggregator/). It

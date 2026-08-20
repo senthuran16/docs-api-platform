@@ -1,3 +1,18 @@
+---
+title: "Performing regression tasks via an imported TensorFlow model"
+description: "Import a pretrained TensorFlow model into Streaming Integrator to perform regression on streaming data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/tensor-flow-test-app/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/tensor-flow-test-app.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Performing Regression Tasks via an Imported Tensorflow Model
 
 ## Purpose

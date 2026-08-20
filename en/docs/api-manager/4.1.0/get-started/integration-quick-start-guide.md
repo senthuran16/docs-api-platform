@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - integration"
+description: "Build and run a service orchestration integration between two hospital backend services using WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/integration-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/integration-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - integration-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "quickstart"
+---
+
 # Quick Start Guide - Integration
 
 Let's get started with WSO2 Micro Integrator by running a simple integration use case in your local environment. 

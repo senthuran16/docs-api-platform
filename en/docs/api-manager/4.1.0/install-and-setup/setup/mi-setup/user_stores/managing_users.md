@@ -1,3 +1,18 @@
+---
+title: "Managing users"
+description: "Explains user credentials, authentication, and admin privileges for managing users in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/user_stores/managing_users/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/user_stores/managing_users.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Managing Users
 
 See the topics given below to understand **user management** in the Micro Integrator.

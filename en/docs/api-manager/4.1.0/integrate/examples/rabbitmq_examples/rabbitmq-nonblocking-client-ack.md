@@ -1,3 +1,18 @@
+---
+title: "Guaranteed delivery with non-blocking client acknowledgement"
+description: "Ensure guaranteed RabbitMQ message delivery in a non-blocking model using client-controlled acknowledgements."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/rabbitmq-nonblocking-client-ack/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rabbitmq_examples/rabbitmq-nonblocking-client-ack.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # How to Manage Guaranteed Delivery with Non-Blocking Client Acknowledgement
 
 This sample demonstrates how **WSO2 Integrator: MI** can ensure

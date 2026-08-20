@@ -1,3 +1,17 @@
+---
+title: "Key concepts"
+description: "Reference table defining core WSO2 API Manager concepts such as APIs, applications, tokens, and rate limits."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/get-started/key-concepts.md
+tags:
+  - api-manager
+  - get-started
+  - key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Key Concepts
 
 | **Concept**                            | **Description**                                                  |

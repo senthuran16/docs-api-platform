@@ -1,3 +1,18 @@
+---
+title: "Kafka connector example"
+description: "Demonstrates building an API that connects to a Kafka broker and publishes messages to a topic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-connector-producer-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-connector-producer-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Kafka Connector Example
 
 Given below is a sample scenario that demonstrates how to send messages to a Kafka broker via Kafka topics. The publishMessages operation allows you to publish messages to the Kafka brokers via Kafka topics.

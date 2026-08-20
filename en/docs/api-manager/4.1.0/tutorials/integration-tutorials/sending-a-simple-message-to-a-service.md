@@ -1,3 +1,18 @@
+---
+title: "Sending a simple message to a service"
+description: "Create a REST API resource that forwards client requests to a backend microservice and returns its response."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-service.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - sending-a-simple-message-to-a-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Sending a Simple Message to a Service
 
 ## What you'll build

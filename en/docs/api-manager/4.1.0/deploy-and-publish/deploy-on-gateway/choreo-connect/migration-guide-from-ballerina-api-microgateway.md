@@ -1,3 +1,18 @@
+---
+title: "Migrate from Ballerina API microgateway to Choreo connect"
+description: "Compares features between Ballerina API Microgateway and Choreo Connect and explains how to migrate between them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/migration-guide-from-ballerina-api-microgateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/migration-guide-from-ballerina-api-microgateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Migrate from Ballerina API Microgateway to Choreo Connect
 
 Earlier versions of the Choreo Connect were named as WSO2 API Microgateway (Ballerina MGW). The final version of API Microgateway is 3.X.X and it is compatible with WSO2 API Manager 3.0 series only. With the release of WSO2 API Manager 4.0.0, Choreo Connect 1.0.0 released as the new version of API Microgateway. This document explains how you can migrate from API Microgateway to the Choreo Connect.

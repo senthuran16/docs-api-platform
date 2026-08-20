@@ -1,3 +1,18 @@
+---
+title: "Creating Docker exporter"
+description: "Package integration modules into a Docker image using a Docker Exporter project in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-docker-project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-docker-project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-docker-project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating Docker Exporter
 
 Create a Docker Exporter if you want to deploy your integration solutions inside a Docker environment. This project directory allows you to package multiple [integration modules](create-integration-project.md) into a single Docker image and then build and push to the Docker registries.

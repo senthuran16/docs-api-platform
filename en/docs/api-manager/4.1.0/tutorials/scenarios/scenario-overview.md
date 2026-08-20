@@ -1,3 +1,18 @@
+---
+title: "Scenario overview"
+description: "Get the prerequisites, requirements, and deployment setup for the Union Station railway scenario tutorial series."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario-overview.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Scenario Overview
 
 **Union Station** is a major multimodal railway transportation hub. It is one of the busiest stations in the country and serves thousands of passengers a day. The train shed, platforms, and tracks are owned by **GOGO transit**, and they operate the station. Trains are owned by the companies named **Quantis**, **ColTrain**, and **RailCo**. To provide a digital ecosystem, all four companies are planning to develop their day to day business operations with WSO2 technology. These development ranges from providing different kinds of APIs to external/internal users, providing real time notifications, stream data processing, integrating with partners/external systems etc.

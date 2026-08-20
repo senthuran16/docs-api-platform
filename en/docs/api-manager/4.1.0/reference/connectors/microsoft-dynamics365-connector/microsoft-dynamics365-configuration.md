@@ -1,3 +1,18 @@
+---
+title: "Setting up the microsoft Dynamics365 environment with Azure"
+description: "Configures Azure AD authentication and app registration for connecting to Microsoft Dynamics 365."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-dynamics365-connector/microsoft-dynamics365-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-dynamics365-connector/microsoft-dynamics365-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-dynamics365-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Microsoft Dynamics365 Environment with Azure
 
 The Microsoft Dynamics 365 (Microsoft Dynamics CRM) Connector allows you to access the [Microsoft Dynamics 365 Web API](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)?redirectedfrom=MSDN) through the WSO2 integration runtime. The Microsoft Dynamics CRM system (now known as Microsoft Dynamics 365) is a standalone CRM product from Microsoft that provides sales, marketing, and service management capabilities only via individual modules.

@@ -1,3 +1,18 @@
+---
+title: "Aggregating data over time"
+description: "Simulate random events and calculate running aggregates such as avg, min, and max over a time window."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/aggregate-over-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/aggregate-over-time.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Aggregating Data Over Time
 
 ## Purpose:

@@ -1,3 +1,18 @@
+---
+title: "Salesforce inbound endpoint example"
+description: "Build an integration that uses the Salesforce inbound endpoint to receive streaming notifications from Salesforce."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/sf-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-connectors/sf-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Salesforce Inbound Endpoint Example
 
 The Salesforce streaming Inbound Endpoint allows you to perform various operations on Salesforce streaming data.

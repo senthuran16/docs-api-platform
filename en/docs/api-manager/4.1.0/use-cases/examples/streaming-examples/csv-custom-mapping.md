@@ -1,3 +1,18 @@
+---
+title: "Receiving and publishing events in custom CSV format"
+description: "Configure Streaming Integrator to read events from a file source and publish them to another file using a custom CSV mapping format."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/csv-custom-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/csv-custom-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving and Publishing Events in Custom CSV Format
 
 ## Purpose

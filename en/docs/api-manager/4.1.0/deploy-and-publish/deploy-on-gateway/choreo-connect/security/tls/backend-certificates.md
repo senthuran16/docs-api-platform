@@ -1,3 +1,16 @@
+---
+title: "Backend certificates"
+description: "Configure TLS settings and add trusted backend certificates to the Choreo Connect router for secure endpoint connections."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/backend-certificates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/backend-certificates.md
+tags:
+  - tls
+  - backend-certificates
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Backend Certificates
 
 To connect to endpoints (backends) with TLS, the public certificate of the backend should be added as a trusted certificate to the router.

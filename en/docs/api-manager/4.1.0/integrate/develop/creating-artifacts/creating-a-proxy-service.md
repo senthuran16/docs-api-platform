@@ -1,3 +1,18 @@
+---
+title: "Creating a proxy service"
+description: "Create a proxy service artifact in WSO2 Integration Studio using a predefined service template."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-proxy-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-proxy-service.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Proxy Service
 
 Follow the instructions given below to create a new [Proxy Service](../../../reference/synapse-properties/proxy-service-properties.md) artifact in WSO2 Integration Studio.

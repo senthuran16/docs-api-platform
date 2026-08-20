@@ -1,3 +1,18 @@
+---
+title: "Service orchestration"
+description: "Explains service orchestration concepts, including service chaining and parallel service invocations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/service-orchestration-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/service-orchestration-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - service-orchestration-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Service Orchestration
 
 Service Orchestration is the process of exposing multiple fine-grained services using a single coarse-grained service. The service client will only have access to a single coarse-grained service, which encapsulates the multiple fine-grained services that are invoked in the process flow.

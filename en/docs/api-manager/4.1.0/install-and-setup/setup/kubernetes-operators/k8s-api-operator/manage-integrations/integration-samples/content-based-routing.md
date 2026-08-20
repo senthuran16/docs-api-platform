@@ -1,3 +1,18 @@
+---
+title: "K8s deployment sample 2: content based routing"
+description: "Build and deploy a content-based routing integration on Kubernetes using WSO2 Integration Studio and the K8s API operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/content-based-routing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/content-based-routing.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # K8s Deployment Sample 2: Content Based Routing
 
 Let's define a content-based routing scenario using WSO2 Micro Integrator and deploy it on your Kubernetes environment.

@@ -1,3 +1,18 @@
+---
+title: "Creating sequence templates"
+description: "Create a sequence template in WSO2 Integration Studio and invoke it using the Call Template mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-sequence-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-sequence-templates.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating Sequence Templates
 
 Follow the instructions given below to create a new **Sequence Template** in WSO2 Integration Studio.

@@ -1,3 +1,18 @@
+---
+title: "Configuring timeouts in Choreo Connect"
+description: "Configure endpoint-level and global-level timeouts in Choreo Connect to control how long the router waits for backend responses."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring Timeouts in Choreo Connect
 
 You can use timeouts to gracefully handle connections that take an unusual amount of time to respond. Timeouts mainly ensure that the client gets a success or an error response within the specified amount of time, and thereby the client does not hang indefinitely. Timeouts also enable both the client and the backend to free its resources, allocated for the connection, within the time gap defined.

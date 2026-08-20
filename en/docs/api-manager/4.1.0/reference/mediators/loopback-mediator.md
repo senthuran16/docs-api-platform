@@ -1,3 +1,18 @@
+---
+title: "Loopback mediator"
+description: "Reference for the Loopback mediator, which moves a message from the in flow directly to the out flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/loopback-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/loopback-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - loopback-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Loopback Mediator
 
 The **Loopback Mediator** moves messages from the in flow (request path) to the out flow (response path). All the configuration included in the in sequence that appears after the Loopback mediator is skipped.

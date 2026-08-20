@@ -1,3 +1,18 @@
+---
+title: "Property mediator"
+description: "Reference for the Property mediator syntax used to set, remove, or retrieve message context properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/property-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Property Mediator
 
 The **Property Mediator** has no direct impact on the message, but rather on the message context flowing through Synapse. You can retrieve

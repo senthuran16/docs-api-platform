@@ -1,3 +1,16 @@
+---
+title: "Custom claims mapping"
+description: "Map claims from incoming JWT tokens issued by different identity providers to claims expected by Choreo Connect and backend services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/support-custom-claims-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/support-custom-claims-mapping.md
+tags:
+  - claims-mapping
+  - jwt
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Custom Claims Mapping
 
 Choreo Connect provides the capability to map any claims in an incoming authentication JWT token, to claims expected by the backend upstream service using the custom claim mapping feature.

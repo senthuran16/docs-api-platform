@@ -1,3 +1,18 @@
+---
+title: "Choreo connect as a standalone gateway"
+description: "Learn how to run Choreo Connect as a standalone Gateway using apictl and OpenAPI vendor extensions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Choreo Connect as a Standalone Gateway
 
 Choreo Connect can be used as a **standalone** Gateway without the API Manager as the Control Plane. Choreo Connect is considered to be in *standalone mode* when `control-plane` is disabled in the [config](../configurations/control-plane-configurations.md#instructions-for-use). In standalone mode, 

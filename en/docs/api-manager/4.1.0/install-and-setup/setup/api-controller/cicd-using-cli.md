@@ -1,3 +1,18 @@
+---
+title: "CI/CD for APIs - using the CLI"
+description: "Compare CLI-only and Publisher-plus-CLI approaches for implementing CI/CD pipelines for APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/cicd-using-cli/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/cicd-using-cli.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # CI/CD for APIs - Using the CLI
 
 When you implement CI/CD for your APIs, there are two approaches you can use.

@@ -1,3 +1,18 @@
+---
+title: "Scenario 4 - signing up a new user"
+description: "Configure and test a self-signup workflow that requires administrator approval for new user registration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario4-user-signup-approval-flow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/scenarios/scenario4-user-signup-approval-flow.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario4-user-signup-approval-flow
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Scenario 4 - Signing up a New User
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to sign up a new user. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).

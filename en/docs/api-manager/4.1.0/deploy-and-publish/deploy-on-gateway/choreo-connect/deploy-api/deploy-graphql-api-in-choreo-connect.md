@@ -1,3 +1,18 @@
+---
+title: "Deploying a GraphQL API in Choreo Connect"
+description: "Deploy a GraphQL API in Choreo Connect and review the GraphQL features the gateway supports."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-graphql-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-graphql-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Deploying a GraphQL API in Choreo Connect
 
 GraphQL is a querying language for APIs that was initially developed by Facebook. When compared to the REST APIs, GraphQL APIs allow

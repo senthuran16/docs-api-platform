@@ -1,3 +1,18 @@
+---
+title: "Google pub sub connector example"
+description: "Build an integration that creates a Pub/Sub topic and inserts and retrieves company update notifications using the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-pubsub-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Google Pub Sub Connector Example  
 
 The Google Pub/Sub connector allows you to access the [Google Cloud Pub/Sub API Version v1](https://cloud.google.com/pubsub/docs/reference/rest/) from an integration sequence. 

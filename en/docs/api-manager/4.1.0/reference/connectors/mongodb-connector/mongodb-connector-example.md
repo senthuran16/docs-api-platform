@@ -1,3 +1,18 @@
+---
+title: "MongoDB connector example"
+description: "Builds a sample API that inserts and finds documents in a MongoDB database using the MongoDB connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/mongodb-connector/mongodb-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/mongodb-connector/mongodb-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - mongodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # MongoDB Connector Example
 
 The MongoDB Connector can be used to perform CRUD operations in the local database as well as in MongoDB Atlas (cloud version of MongoDB).

@@ -1,3 +1,18 @@
+---
+title: "Managing APIs in Kubernetes"
+description: "Deploy and manage APIs on a Kubernetes cluster running Microgateway using apictl and the WSO2 API Operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-apis-in-kubernetes/managing-apis-in-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/api-controller/managing-apis-in-kubernetes/managing-apis-in-kubernetes.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Managing APIs in Kubernetes
 
 **WSO2 API Controller (apictl)** allows you to manage APIs in Kubernetes with the use of WSO2 API Operator. This approach uses the Kubernetes native way to deploy the APIs into a running Microgateway cluster from the command line.

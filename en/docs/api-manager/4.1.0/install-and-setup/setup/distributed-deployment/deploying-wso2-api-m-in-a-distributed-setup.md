@@ -1,3 +1,18 @@
+---
+title: "Distributed API-M deployment with Gateway and Control Plane"
+description: "Deploy WSO2 API-M as separate Gateway Worker and Control Plane nodes to set up a distributed, highly available deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Configuring a Distributed API-M Deployment with Gateway and Control Plane
 
 The WSO2 API-M server can be deployed as an [all-in-one deployment](../single-node/all-in-one-deployment-overview.md) or as a distributed deployment. In the distributed setup, the [API-M server profiles](product-profiles.md) are deployed as separate API-M nodes. 

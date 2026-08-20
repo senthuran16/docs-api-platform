@@ -1,3 +1,18 @@
+---
+title: "File processing"
+description: "Explains file processing capabilities of WSO2 Micro Integrator and links to related tutorials and examples."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/file-processing-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/integration-use-case/file-processing-overview.md
+tags:
+  - api-manager
+  - integrate
+  - integration-use-case
+  - file-processing-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # File Processing
 
 In many business domains, there are different use cases related to managing files. Also, there are file-based legacy systems that are tightly coupled with other systems. These files contain huge amounts of data, which requires a big effort for manual processing. It is not scalable with an increase in system load. This leads us to the requirement of automating the processing of files. The WSO2 Micro Integrator enables the following file processing capabilities:

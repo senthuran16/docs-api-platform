@@ -1,3 +1,18 @@
+---
+title: "Receiving data in transit"
+description: "Shows how to receive data in transit from data publishers and messaging systems using WSO2 Streaming Integrator sources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/receiving-data-in-transit/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/streaming-usecase/receiving-data-in-transit.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - receiving-data-in-transit
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Receiving Data in Transit
 
 Data in transit, also known as data in flight refers to data that is in the process of being moved and therefore not permanently stored in a location where they can be in a static state. Streaming data, messages in a queue or a topic in a messaging system, and requests sent to a HTTP listening port are a few examples.

@@ -1,3 +1,18 @@
+---
+title: "Translating message formats"
+description: "Use the Data Mapper mediator to transform a request payload into the format expected by a back-end service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/transforming-message-content/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/transforming-message-content.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - transforming-message-content
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Translating Message Formats
 
 ## What you'll build

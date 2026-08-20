@@ -1,3 +1,18 @@
+---
+title: "Observability deployment strategy"
+description: "Compare cloud-native observability deployment options for Micro Integrator using Prometheus, Grafana, Loki, and Jaeger."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/observability/observability-deployment-strategy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/observability/observability-deployment-strategy.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Observability Deployment Strategy
 
 The following diagram depicts the complete **cloud-native** observability solution for your Micro Integrator deployment, which includes **metrics monitoring**, **log monitoring**, and **message tracing** capabilities.

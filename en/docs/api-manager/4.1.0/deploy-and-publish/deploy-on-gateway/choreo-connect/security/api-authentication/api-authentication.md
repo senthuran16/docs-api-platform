@@ -1,3 +1,18 @@
+---
+title: "API authentication"
+description: "Learn about the application-level and transport-level API authentication options available in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/api-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/api-authentication.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "concept"
+---
+
 # API Authentication
 
 Choreo Connect provides the ability to secure APIs in API level and resource levels. The following section would concisely guide you through the available security options in Choreo Connect. API security can be divided into two main categories; namely, Application-level security and Transport-level security.

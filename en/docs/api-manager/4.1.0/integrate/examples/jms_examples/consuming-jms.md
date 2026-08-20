@@ -1,3 +1,18 @@
+---
+title: "Consuming JMS messages"
+description: "Configure the Micro Integrator to listen to a JMS queue and forward consumed messages to an HTTP backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/consuming-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/consuming-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Consuming JMS Messages
 This section describes how to configure WSO2 Micro Integrator to listen to a JMS Queue.
 

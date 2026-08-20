@@ -1,3 +1,18 @@
+---
+title: "Exposing an integration service as a managed API"
+description: "Build an integration service, publish it to the Service Catalog, and expose it as a managed API in the marketplace."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/service-catalog-tutorial/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/tutorials/integration-tutorials/service-catalog-tutorial.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - service-catalog-tutorial
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Exposing an Integration Service as a Managed API
 
 ## What you'll build

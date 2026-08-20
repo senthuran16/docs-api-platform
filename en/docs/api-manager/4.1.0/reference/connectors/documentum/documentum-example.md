@@ -1,3 +1,18 @@
+---
+title: "Documentum connector example"
+description: "Shows how to use the Documentum Connector to create folders, retrieve cabinets, and create documents in Documentum."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/documentum/documentum-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/documentum/documentum-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - documentum
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Documentum Connector Example
 
 Documentum Connector can be used to perform operations on OpenText Documentum Enterprise content management system.

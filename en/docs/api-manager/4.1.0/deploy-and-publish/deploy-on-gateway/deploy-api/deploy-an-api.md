@@ -1,3 +1,18 @@
+---
+title: "Deploy an API"
+description: "Deploy an API revision to a Gateway environment via the Publisher Portal so it can be invoked."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - deploy-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Deploy an API
 
 <div class="admonition note">

@@ -1,3 +1,18 @@
+---
+title: "Passing end user attributes to the backend"
+description: "Configure backend JWT encoding, JWKS-based validation, and expiry settings for passing end user attributes to the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Passing End User Attributes to the Backend
 
 --8<-- "api-manager/4.1.0/includes/deploy/backend-jwt-intro.md"

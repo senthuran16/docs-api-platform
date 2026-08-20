@@ -1,3 +1,18 @@
+---
+title: "Performance test results for router with two CPU"
+description: "Reference for Choreo Connect REST API performance test results with the router allocated two CPUs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/router-with-two-cpu-for-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/router-with-two-cpu-for-rest-api.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Performance Test Results for Router with Two CPU
 
 Test results explained in below obtained assigning Router's concurrency level as four. For the Choreo Connect components, below resource amounts are allocated. Same test setup diagram includes in [here](performance-test-results-overview-cc.md#deployment-used-for-the-test) .

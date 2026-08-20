@@ -1,3 +1,18 @@
+---
+title: "Installing the Micro Integrator runtime"
+description: "Explains how to download, extract, and set up JAVA_HOME to install the Micro Integrator runtime."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/installing-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/install/installing-the-product/installing-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Installing the Micro Integrator Runtime
 
 Follow the steps given below to install the Micro Integrator (MI) runtime of WSO2 API Manager.

@@ -1,3 +1,18 @@
+---
+title: "LDAP connector overview"
+description: "Introduces the LDAP connector for performing CRUD operations on LDAP entries through a web services interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ldap-connector/ldap-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ldap-connector/ldap-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ldap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # LDAP Connector Overview
 
 The LDAP connector allows you to connect to any LDAP server through a simple web services interface and perform CRUD 

@@ -1,3 +1,18 @@
+---
+title: "OAuth mediator"
+description: "Reference for the OAuth mediator, which authenticates RESTful requests against WSO2 Identity Server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/oauth-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/oauth-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - oauth-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # OAuth Mediator
 
 The **OAuth Mediator** supports 2 forms of OAuth. It bypasses the RESTful requests and authenticates users against WSO2 Identity Server.

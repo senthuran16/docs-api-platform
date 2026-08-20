@@ -1,3 +1,18 @@
+---
+title: "Deployment synchronization"
+description: "Synchronize deployment artifacts across Micro Integrator cluster nodes using NFS, Rsync, or configuration management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/deployment_synchronization/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/deployment_synchronization.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Deployment Synchronization
 
 When you have a [clustered deployment](deploying_wso2_ei.md), the integration artifacts deployed in each server node of the cluster needs to be identical. This can be achieved by synchronizing the deployment directories of each server. That is, the `<MI_HOME>/repository/deployment/server` folder of each server needs to be shared.

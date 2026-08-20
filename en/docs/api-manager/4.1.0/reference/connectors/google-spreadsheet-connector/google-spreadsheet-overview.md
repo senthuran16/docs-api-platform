@@ -1,3 +1,18 @@
+---
+title: "Google spreadsheet connector overview"
+description: "Overview of the Google Spreadsheet connector for reading and writing spreadsheet data, its compatibility, and related docs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-spreadsheet-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Google Spreadsheet Connector Overview
 
 The Google Sheets API lets users to read and modify any aspect of a spreadsheet. The WSO2 Google Spreadsheet Connector allows you to access the [Google Spreadsheet API Version v4](https://developers.google.com/sheets/api/guides/concepts) through an integration sequence. It allows users to read/write any aspect of the spreadsheet via the spreadsheets collection.

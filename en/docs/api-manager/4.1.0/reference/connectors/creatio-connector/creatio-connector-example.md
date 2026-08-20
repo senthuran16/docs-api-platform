@@ -1,3 +1,18 @@
+---
+title: "Creatio connector example"
+description: "Configure the Creatio connector in WSO2 Integration Studio to create, retrieve, update, and delete contacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/creatio-connector/creatio-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - creatio-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Creatio Connector Example
 
 ## What you’ll build 

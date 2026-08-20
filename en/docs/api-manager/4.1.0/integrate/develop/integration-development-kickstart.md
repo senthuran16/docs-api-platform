@@ -1,3 +1,18 @@
+---
+title: "Developing your first integration solution"
+description: "Build and run a healthcare doctor-appointment integration solution from scratch using WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/integration-development-kickstart/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/integration-development-kickstart.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - integration-development-kickstart
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Developing Your First Integration Solution
 
 Integration developers need efficient tools to build and test all the integration use cases required by the enterprise before pushing them into a production environment. The following topics will guide you through the process of building and running an example 

@@ -1,3 +1,18 @@
+---
+title: "Query parameters"
+description: "Configure the query in a data service to define how requests perform SQL operations against a data store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/query-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/query-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Query Parameters
 
 The query in a data service specifies the type of task that should be

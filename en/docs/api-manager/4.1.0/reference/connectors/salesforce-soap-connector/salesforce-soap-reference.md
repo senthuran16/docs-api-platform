@@ -1,3 +1,18 @@
+---
+title: "Salesforce SOAP connector reference"
+description: "Reference for Salesforce SOAP connector operations, including init parameters such as username and password."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-soap-connector/salesforce-soap-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/salesforce-soap-connector/salesforce-soap-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-soap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # SalesforceBulk Connector Reference
 
 The following operations allow you to work with the Salesforce SOAP Connector. Click an operation name to see parameter details and samples on how to use it.

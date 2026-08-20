@@ -1,3 +1,18 @@
+---
+title: "Ceridian dayforce connector example"
+description: "Walks through using the Dayforce connector to retrieve employee addresses and create employee contacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Ceridian Dayforce Connector Example 
 
 The Ceridian Dayforce connector allows you to  access the REST API of Ceridian Dayforce HCM. Dayforce is a 

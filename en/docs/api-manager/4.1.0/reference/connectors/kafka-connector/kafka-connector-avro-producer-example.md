@@ -1,3 +1,18 @@
+---
+title: "Avro message with Kafka connector example"
+description: "Demonstrates sending Apache Avro messages to a Kafka broker using the Kafka connector's publishMessages operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-connector-avro-producer-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/kafka-connector/kafka-connector-avro-producer-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Avro Message with Kafka Connector Example
 
 Given below is a sample scenario that demonstrates how to send Apache Avro messages to a Kafka broker via Kafka topics. The `publishMessages` operation allows you to publish messages to the Kafka brokers via Kafka topics.

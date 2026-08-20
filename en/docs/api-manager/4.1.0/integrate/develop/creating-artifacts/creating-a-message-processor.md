@@ -1,3 +1,18 @@
+---
+title: "Creating a message processor"
+description: "Create a message processor artifact in WSO2 Integration Studio and configure its processor type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-message-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/creating-a-message-processor.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating a Message Processor
 
 Follow the instructions given below to create a new [Message Processor](../../../reference/synapse-properties/about-message-stores-processors.md) artifact in WSO2 Integration Studio.

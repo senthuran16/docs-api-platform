@@ -1,3 +1,18 @@
+---
+title: "Switch mediator"
+description: "Configure the Switch mediator to route messages based on XPath or JSONPath matches against switch-case values."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/switch-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/mediators/switch-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - switch-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Switch Mediator
 
 The **Switch Mediator** is an XPath or JSONPath filter. The XPath or JSONPath is evaluated and returns a string. This string is matched against the regular expression in each switch case mediator, in the specified order. If a matching case is found, it will be executed, and the remaining switch case mediators are not processed. If none of the case statements are matching, and a default case is specified, the default will be executed.

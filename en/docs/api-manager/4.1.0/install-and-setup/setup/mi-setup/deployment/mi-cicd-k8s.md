@@ -1,3 +1,18 @@
+---
+title: "Setting up CI/CD for Micro Integrator on Kubernetes"
+description: "Configure Jenkins jobs and Kubernetes artifacts to build, release, and deploy Micro Integrator projects across environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-k8s.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 There are two kinds of jobs in Jenkins that we need to maintain. One for the Integration project repositories. Another kind is for the Deployment Descriptor repositories. 
 
 [![K8s based CI/CD for Micro Integrator](../../../../assets/img/deploy/mi-cicd-k8s.png)](../../../../assets/img/deploy/mi-cicd-k8s.png)

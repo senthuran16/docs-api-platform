@@ -1,3 +1,18 @@
+---
+title: "Using the embedded Micro Integrator"
+description: "Deploy, run, and manage integration artifacts using the embedded Micro Integrator in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-embedded-micro-integrator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-embedded-micro-integrator.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - using-embedded-micro-integrator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using the Embedded Micro Integrator
 
 WSO2 Integration Studio contains an embedded Micro Integrator instance, which you can use for testing your integration solutions during the development process.

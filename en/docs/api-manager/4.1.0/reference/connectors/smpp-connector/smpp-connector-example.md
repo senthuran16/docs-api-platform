@@ -1,3 +1,16 @@
+---
+title: "SMPP connector example"
+description: "Configure the SMPP connector in WSO2 Integration Studio to send SMS messages through an SMSC simulator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/smpp-connector/smpp-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/smpp-connector/smpp-connector-example.md
+tags:
+  - esb-connector
+  - sms
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # SMPP Connector Example
 
 SMPP (Short Message Peer-to-Peer Protocol) Connector allows you to send an SMS from an integration sequence. It uses the [jsmpp API](https://jsmpp.org/) to communicate with an SMSC (Short Message Service Center), which is used to store, forward, convert, and deliver Short Message Service (SMS) messages. jsmpp is a Java implementation of the SMPP protocol.

@@ -1,3 +1,17 @@
+---
+title: "Error codes in Micro Integrator"
+description: "Look up transport and other error codes returned by the Micro Integrator and what each code means."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/troubleshooting/error-handling-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/troubleshooting/error-handling-mi.md
+tags:
+  - api-manager
+  - troubleshooting
+  - error-handling-mi
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Error codes in Micro Integrator
 
 This section describes error codes and their meanings.

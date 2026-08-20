@@ -1,3 +1,18 @@
+---
+title: "Network and OS level performance tuning"
+description: "Configure Linux, Windows, and network-level OS parameters to optimize concurrency and throughput for the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/network_os_performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/install-and-setup/setup/mi-setup/performance_tuning/network_os_performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Network and OS Level Performance Tuning
 
 When it comes to performance, the OS that the server runs plays an

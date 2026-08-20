@@ -1,3 +1,18 @@
+---
+title: "Creating an integration project"
+description: "Create an integration project with sub-modules such as ESB Configs, connectors, and exporters in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-integration-project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/create-integration-project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-integration-project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Creating an Integration Project
 
 An integration project consists of one or several project directories. These directories store the various artifacts that you create for your integration sequence. An integration project can be created as a Maven Multi Module (MMM) project by default. This enables you to add ESB Configs, Composite Exporter, Registry Resources, Connector Exporter, Docker Exporter, and Kubernetes Exporter as sub-modules to the project. 

@@ -1,3 +1,18 @@
+---
+title: "Template properties"
+description: "Reference for endpoint and sequence template types used to reduce configuration redundancy in mediation flows."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/template-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/template-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - template-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Template Properties
 ## Introduction
 

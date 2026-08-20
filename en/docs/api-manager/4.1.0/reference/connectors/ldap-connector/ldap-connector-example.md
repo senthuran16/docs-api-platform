@@ -1,3 +1,18 @@
+---
+title: "LDAP connector example"
+description: "Demonstrates using the LDAP connector to create and search LDAP entries in a student directory scenario."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ldap-connector/ldap-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ldap-connector/ldap-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ldap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # LDAP Connector Example
 
 Given below is a sample scenario that demonstrates how to perform CRUD operations on LDAP entries using LDAP Connector.

@@ -1,3 +1,18 @@
+---
+title: "Working with report metadata for a list of reports"
+description: "Use the GET Report Metadata operation to retrieve base information for all reports available via web services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/reporting/reportmetadataforalistofreports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/ceridiandayforce-connector/reporting/reportmetadataforalistofreports.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Working with Report Metadata for a list of reports
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)

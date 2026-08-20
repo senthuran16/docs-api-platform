@@ -1,3 +1,18 @@
+---
+title: "Router log configurations"
+description: "Configure Choreo Connect Router access logs and debug logs, including log format, log level, and component-level logging."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Router Log Configurations
 
 As Choreo Connect uses an Envoy proxy as the Router component, it only supports the logging mechanisms provided by the Envoy proxy ([read more details about router](../getting-started/choreo-connect-overview.md#router)). In the following sections, you may find how to enable Router access logs and debug logs.

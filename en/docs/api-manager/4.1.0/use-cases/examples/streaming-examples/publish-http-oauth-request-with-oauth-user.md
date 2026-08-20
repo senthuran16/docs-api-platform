@@ -1,3 +1,18 @@
+---
+title: "Publishing HTTP events to an OAuth-protected endpoint"
+description: "Configure the Streaming Integrator to send HTTP events to an OAuth-protected endpoint using the password grant type."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/publish-http-oauth-request-with-oauth-user/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/publish-http-oauth-request-with-oauth-user.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Publishing HTTP Events to an OAuth-protected Endpoint
 
 ## Purpose:

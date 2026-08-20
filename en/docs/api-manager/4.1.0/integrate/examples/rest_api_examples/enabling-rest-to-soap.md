@@ -1,3 +1,18 @@
+---
+title: "Exposing a SOAP endpoint as a RESTful API"
+description: "Configure a REST API in the Micro Integrator that exposes a back-end SOAP service to REST clients."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/enabling-rest-to-soap/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/rest_api_examples/enabling-rest-to-soap.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Exposing a SOAP Endpoint as a RESTful API
     
 This example demonstrates how you can expose a SOAP service over REST using an API in WSO2 Micro Integrator.

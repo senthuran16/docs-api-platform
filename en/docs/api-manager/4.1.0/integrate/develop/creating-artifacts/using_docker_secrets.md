@@ -1,3 +1,18 @@
+---
+title: "Using Docker secrets in synapse configurations"
+description: "Create Docker secrets and access them from synapse configurations using the vault-lookup function."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/using_docker_secrets/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/creating-artifacts/using_docker_secrets.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using Docker Secrets in Synapse Configurations
 
 WSO2 Micro Integrator comes with a built-in secret repository as a part of its [secure vault implementation](../../../install-and-setup/setup/security/logins-and-passwords/carbon-secure-vault-implementation.md) by default. In addition to this, the Micro Integrator also provides built-in support for Docker secrets and Kubernetes secrets for your containerized deployments.

@@ -1,3 +1,18 @@
+---
+title: "FHIR connector overview"
+description: "Introduces the FHIR Connector, which invokes FHIR operations for electronic exchange of healthcare information."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/fhir-connector/fhir-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/fhir-connector/fhir-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - fhir-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # FHIR Connector Overview
 
 Fast Healthcare Interoperability Resources (FHIR) is an interoperability standard for electronic exchange of healthcare information. The FHIR connector can be used to invoke FHIR operations within the mediation logic. 

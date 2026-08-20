@@ -1,3 +1,18 @@
+---
+title: "Siddhi application management APIs"
+description: "Reference for the REST APIs used to create, update, delete, and manage Siddhi applications in the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/siddhi-application-management-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/develop/streaming-apps/siddhi-application-management-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - siddhi-application-management-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # Siddhi Application Management APIs
 
 ## Creating a Siddhi application

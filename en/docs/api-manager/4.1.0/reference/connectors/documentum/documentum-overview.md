@@ -1,3 +1,18 @@
+---
+title: "Documentum overview"
+description: "Describes the operations supported by the Documentum Connector for managing folders, documents, cabinets, and ACLs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/documentum/documentum-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/documentum/documentum-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - documentum
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Documentum Overview
 
 Content, in a broad sense, is information stored as computer data files. It can include word processing, spreadsheet, graphics, video and audio files. Most content is stored locally on personal computers, organized arbitrarily, and only available to a single user. This means that valuable data is subject to loss, and projects are subject to delay when people cannot get the information they need.

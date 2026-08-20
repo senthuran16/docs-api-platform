@@ -1,3 +1,18 @@
+---
+title: "Accessing a Windows share using VFS"
+description: "Configure the VFS transport in WSO2 Micro Integrator to poll, process, and move files across a Windows network share over SMB."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/file-processing/accessing_windows_share_using_vfs_transport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/file-processing/accessing_windows_share_using_vfs_transport.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Accessing a Windows Share using VFS
 This example demonstrates how the [VFS transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md#configuring-the-vfs-transport) in WSO2 Micro Integrator can be used to access a windows share.
 

@@ -1,3 +1,18 @@
+---
+title: "Setting up the microsoft Azure storage environment"
+description: "Signs up for a Microsoft Azure account and creates a storage account to obtain access credentials for the connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Setting up the Microsoft Azure Storage Environment
 
 To work with the Microsoft Azure Storage connector, you need to have a Microsoft Azure account. If you do not have a Microsoft Azure account, you are prompted to create one when you sign up.

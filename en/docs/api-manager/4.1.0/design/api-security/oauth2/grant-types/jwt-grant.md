@@ -1,3 +1,18 @@
+---
+title: "JWT grant"
+description: "Configure and use the JWT bearer grant to exchange an external identity provider's JWT for an OAuth2 access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/grant-types/jwt-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/oauth2/grant-types/jwt-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # JWT Grant
 
 The JSON Web Token (JWT) Bearer Grant is simply a JSON string containing claim values that will be evaluated and validated by the JWT Grant Handlers at the Authorization Server end before issuing an access token.

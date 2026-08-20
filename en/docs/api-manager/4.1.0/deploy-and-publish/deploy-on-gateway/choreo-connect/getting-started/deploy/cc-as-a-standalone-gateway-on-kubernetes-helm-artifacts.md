@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect standalone on Kubernetes with Helm"
+description: "Deploy an API to Choreo Connect running as a standalone gateway on Kubernetes using Helm chart artifacts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes-helm-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes-helm-artifacts.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # Deploying Choreo Connect as a Standalone Gateway on Kubernetes - Helm Artifacts
 
 Let's deploy an API using WSO2 API Controller (apictl) on Choreo Connect, which is running on Kubernetes as a Standalone Gateway. You can select one of the options to install Choreo Connect with Helm Chart.

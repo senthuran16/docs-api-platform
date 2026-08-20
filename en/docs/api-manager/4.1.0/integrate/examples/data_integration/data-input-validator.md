@@ -1,3 +1,18 @@
+---
+title: "Validating input data in a data request"
+description: "Validate input parameters in a data service request using built-in or custom validators before execution."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/data-input-validator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/data_integration/data-input-validator.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Validating Input Data in a Data Request
 
 Validators are added to individual input mappings in a query. Input

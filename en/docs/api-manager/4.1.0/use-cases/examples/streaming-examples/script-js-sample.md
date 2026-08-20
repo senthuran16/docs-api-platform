@@ -1,3 +1,18 @@
+---
+title: "Using JavaScript functions in siddhi applications"
+description: "Use JavaScript functions inside Siddhi applications and test them with the event simulator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/script-js-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/use-cases/examples/streaming-examples/script-js-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Using JavaScript Functions in Siddhi Applications
 
 ## Purpose:

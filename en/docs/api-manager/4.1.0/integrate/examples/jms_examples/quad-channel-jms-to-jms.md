@@ -1,3 +1,18 @@
+---
+title: "JMS synchronous invocations: quad channel JMS-to-JMS"
+description: "Configure a proxy service that handles quad-channel JMS-to-JMS synchronous invocations in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/quad-channel-jms-to-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/examples/jms_examples/quad-channel-jms-to-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 __# JMS Synchronous Invocations: Quad Channel JMS-to-JMS
 
 The example demonstrates how WSO2 Micro Integrator handles quad-channel JMS synchronous invocations.

@@ -1,3 +1,18 @@
+---
+title: "Using a remote Micro Integrator"
+description: "Configure and deploy integration artifacts to a remote Micro Integrator instance from WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-remote-micro-integrator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/integrate/develop/using-remote-micro-integrator.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - using-remote-micro-integrator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "how-to"
+---
+
 # Using a Remote Micro Integrator
 
 The light-weight Micro Integrator is already included in your WSO2 Integration Studio package, which allows you to [deploy and run the artifacts instantly](using-embedded-micro-integrator.md). 

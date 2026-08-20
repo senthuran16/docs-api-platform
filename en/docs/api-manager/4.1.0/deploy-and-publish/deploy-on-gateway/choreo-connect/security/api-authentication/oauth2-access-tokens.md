@@ -1,3 +1,16 @@
+---
+title: "OAuth 2.0 authentication"
+description: "Configure how Choreo Connect validates OAuth2 JWT access tokens from trusted key managers using issuer, signature, subject, and expiry claims."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/oauth2-access-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/oauth2-access-tokens.md
+tags:
+  - oauth2
+  - jwt-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "reference"
+---
+
 # OAuth 2.0 Authentication
 
 Choreo Connect can accept JWTs issued by **trusted** Key Managers as valid Access Tokens to invoke the APIs. JWTs are self-validated by Choreo Connect without validating it against the Authorization Server (Key Manager) that issued the JWT. This is done by validating based on the following attributes/claims of the JWT.

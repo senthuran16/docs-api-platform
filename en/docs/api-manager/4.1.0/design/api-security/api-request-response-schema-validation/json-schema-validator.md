@@ -1,3 +1,18 @@
+---
+title: "JSON Schema validator"
+description: "Explains how the JSON Schema Validator checks API requests and responses against the schema defined in swagger.json."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/api-request-response-schema-validation/json-schema-validator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/design/api-security/api-request-response-schema-validation/json-schema-validator.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-request-response-schema-validation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # JSON Schema Validator
 
 Attackers may try malicious payloads to break the API Gateway. Therefore, it is vital to have thorough client-side validation to validate all the requests and responses to reduce backend failures. 

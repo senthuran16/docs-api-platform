@@ -1,3 +1,18 @@
+---
+title: "Elements of a data service"
+description: "Reference the Data Services and Resource Language elements used to compose queries, operations, and resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/elements-of-a-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/synapse-properties/data-services/elements-of-a-data-service.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # Elements of a Data Service
 
 Data services and resources provide a service-and-resource interface to

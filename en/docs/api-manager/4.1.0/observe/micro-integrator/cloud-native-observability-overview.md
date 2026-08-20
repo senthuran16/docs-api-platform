@@ -1,3 +1,18 @@
+---
+title: "Micro Integrator observability overview"
+description: "Compare the cloud native observability options available for a Micro Integrator deployment, including metrics, logging, and tracing add-ons."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/cloud-native-observability-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/observe/micro-integrator/cloud-native-observability-overview.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - cloud-native-observability-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "concept"
+---
+
 # Micro Integrator Observability Overview
 
 The following diagram depicts the complete **cloud native** observability solution for your Micro Integrator deployment, which includes **metrics monitoring**, **log monitoring**, and **message tracing** capabilities.

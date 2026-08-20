@@ -1,3 +1,16 @@
+---
+title: "Adding a user signup workflow"
+description: "Enable the approval workflow executor so new Developer Portal signups require admin approval before activation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/adding-a-user-signup-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/customize-product/customizations/adding-a-user-signup-workflow.md
+tags:
+  - workflow
+  - user-signup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "how-to"
+---
+
 # Adding a User Signup Workflow
 
 ## Engaging the Approval Workflow Executor in API Manager

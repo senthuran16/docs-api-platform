@@ -1,3 +1,18 @@
+---
+title: "FHIR connector reference"
+description: "Lists the initialization parameters and configuration required to use the FHIR Connector's REST API operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/fhir-connector/fhir-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/fhir-connector/fhir-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - fhir-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-30
+content_type: "reference"
+---
+
 # FHIR Connector Reference
 
 The FHIR Connector allows you to work with resources in [FHIR](http://www.hl7.org/fhir/index.html), which are the modular components of FHIR. The connector uses the [FHIR RESTFul API](http://www.hl7.org/fhir/http.html)  to interact with FHIR.

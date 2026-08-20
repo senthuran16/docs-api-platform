@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint example"
+description: "Walks through configuring the DB Event Inbound Endpoint to listen for changes in a MySQL table and trigger events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.1.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-19
+content_type: "tutorial"
+---
+
 # DB Event Inbound Endpoint Example 
 
 Following are the main features of the event generator. 
