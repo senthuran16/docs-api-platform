@@ -1,0 +1,43 @@
+# Unrecoverable images — `api-manager/4.1.0`
+
+34 broken image references, confirmed by manual review, that cannot be fixed by relinking. The
+source files were never migrated anywhere this repo's history reaches — a fresh screenshot
+against the current product is the only real fix.
+
+## Why these can't be relinked
+
+Same investigation as `UNRECOVERABLE-IMAGES-api-manager-4.3.0.md`, which explicitly checked
+every version this repo has (4.0.0, 4.1.0, 4.2.0, 4.3.0) and found all four carry the identical
+broken reference, byte-for-byte. Confirmed here directly: every file/path pair below is
+byte-for-byte identical to its `4.3.0` counterpart (`diff` on the extracted attachment paths
+returns no differences). This is legacy boilerplate (Registry management, Multitenancy,
+single-node deployment) copied forward unchanged at each release — the break happened once,
+upstream of all four versions, and has been mechanically propagated forward ever since.
+
+The path shape (`assets/attachments/<pageId>/<attachmentId>.png`) is Confluence's own attachment
+download URL scheme. The pre-migration `wso2/docs-apim` repo (checked as part of the `4.3.0`
+investigation) does not have these attachment folders either — the loss predates `4.0.0`, which
+is as far back as this repo's history goes.
+
+**No recovery path exists from this repo or its known predecessor.** The only way to fix these is
+either a fresh screenshot taken against the current product UI, or someone with access to the
+original Confluence space (if it still exists) pulling the attachment from there directly.
+
+## The list
+
+| # | Page | Broken image(s) |
+|---|---|---|
+| 1 | `en/docs/api-manager/4.1.0/administer/managing-users-and-roles/managing-user-stores/understanding-the-user-realm.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562314/126562315.png` |
+| 2 | `en/docs/api-manager/4.1.0/administer/multitenancy/adding-new-tenants.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562777/126562778.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562777/126562781.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562777/126562782.png` |
+| 3 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/admin-searching-the-registry.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562657/126562660.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562657/126562659.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562657/126562658.png` |
+| 4 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/adding-a-resource.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562631/126562638.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562631/126562637.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562631/126562635.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562631/126562633.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562631/126562632.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562631/126562636.png` |
+| 5 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/editing-collections-using-the-entries-panel.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562643/126562644.png` |
+| 6 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562639/126562641.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562639/126562640.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562639/126562642.png` |
+| 7 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/metadata.md` | `en/docs/api-manager/4.1.0/assets/attachments/22185146/22514191.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562605/126562606.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562605/126562611.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/22185146/22514195.png` |
+| 8 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/properties.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562613/126562618.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562613/126562617.png` |
+| 9 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/role-permissions.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562645/126562646.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562645/126562647.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/126562645/126562648.png` |
+| 10 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-all-partitions-in-a-single-server.md` | `en/docs/api-manager/4.1.0/assets/attachments/21037149/21331970.png` |
+| 11 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-a-remote-registry.md` | `en/docs/api-manager/4.1.0/assets/attachments/21037149/21331972.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/21037149/21332021.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/21037149/21332022.png` |
+| 12 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-config-and-governance-partitions-in-separate-nodes.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562675/126562676.png` |
+| 13 | `en/docs/api-manager/4.1.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/using-remote-registry/admin-governance-partition-in-a-remote-registry.md` | `en/docs/api-manager/4.1.0/assets/attachments/126562673/126562674.png` |
+| 14 | `en/docs/api-manager/4.1.0/install-and-setup/setup/single-node/deploying-api-manager-using-single-node-instances.md` | `en/docs/api-manager/4.1.0/assets/attachments/103334465/103334466.png`<br>`en/docs/api-manager/4.1.0/assets/attachments/103334465/103334467.png` |
