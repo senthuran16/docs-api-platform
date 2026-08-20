@@ -1,6 +1,6 @@
 ---
 title: "Masking Sensitive Information in Logs"
-description: "Enable log masking in WSO2 API Manager and define regex patterns in the wso2-log-masking.properties file to mask sensitive data such as credit card numbers and access tokens from log output."
+description: "Enable log masking and define regex patterns in wso2-log-masking.properties to mask sensitive data such as credit card numbers from logs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/logging-and-monitoring/logging/masking-sensitive-information-in-logs/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/logging-and-monitoring/logging/masking-sensitive-information-in-logs.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - logging
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

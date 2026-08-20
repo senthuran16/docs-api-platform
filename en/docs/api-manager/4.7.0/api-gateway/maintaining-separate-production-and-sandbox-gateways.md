@@ -1,6 +1,6 @@
 ---
 title: "Maintaining Separate Production and Sandbox Gateways"
-description: "Explains how WSO2 API Manager routes production and sandbox token traffic through a hybrid Classic Gateway by default, and how to configure separate production and sandbox Gateway environments in deployment.toml for better performance isolation."
+description: "By default, production and sandbox token traffic routes through a hybrid Gateway; configure separate environments in deployment.toml instead."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/maintaining-separate-production-and-sandbox-gateways/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/maintaining-separate-production-and-sandbox-gateways.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-gateway
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

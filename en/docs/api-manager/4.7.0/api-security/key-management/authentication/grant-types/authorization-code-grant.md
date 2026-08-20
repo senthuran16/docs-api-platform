@@ -1,6 +1,6 @@
 ---
 title: "OAuth2 Authorization Code Grant"
-description: "Explains the OAuth2 authorization code grant flow in WSO2 API Manager, how the client and authorization server exchange an authorization code for an access token, and walks through generating and testing tokens with the sample playground webapp."
+description: "Learn how the OAuth2 authorization code grant exchanges a code for an access token, and generate and test tokens with the sample playground webapp."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/authorization-code-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/authorization-code-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

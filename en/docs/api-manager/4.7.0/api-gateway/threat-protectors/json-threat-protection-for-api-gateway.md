@@ -1,6 +1,6 @@
 ---
 title: "Configure JSON Threat Protection for the Classic Gateway"
-description: "Configure the JSON validator sequence in WSO2 API Manager's Classic Gateway to limit property count, string length, array size, key length, and nesting depth in request payloads, then apply and test the policy on an API."
+description: "Configure the JSON validator sequence in the Classic Gateway to limit property count, string length, array size, key length, and nesting depth."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/threat-protectors/json-threat-protection-for-api-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/threat-protectors/json-threat-protection-for-api-gateway.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -66,7 +66,7 @@ in sequence.
 3. As required, drag and drop the **JSON Validator** from the Policy List tab into Request Flow.
 4. Provide the required parameters for JSON validation.
 
-    <a href="../../assets/img/learn/mediation-json-validator.png"><img src="../../assets/img/learn/mediation-json-validator.png" width="70%" alt="Drag and drop the JSON Validator from the policy list"></a> 
+    <a href="../../../assets/img/learn/mediation-json-validator.png"><img src="../../../assets/img/learn/mediation-json-validator.png" width="70%" alt="Drag and drop the JSON Validator from the policy list"></a> 
     
 4. Scroll down the page and click **Save** to save the changes (click **Save and Deploy** and deploy the API for the changes to take effect in the gateways).
 

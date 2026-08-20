@@ -1,6 +1,6 @@
 ---
 title: "Understanding the API Manager Configuration Model"
-description: "Explains the TOML-based deployment.toml configuration model introduced in API Manager 3.0.0, including how to map old XML configuration parameters using .j2 template files and default.json, and how to configure arrays and key-value pairs."
+description: "Explains the TOML-based deployment.toml configuration model, including how to map old XML parameters using .j2 template files."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/understanding-the-new-configuration-model/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/understanding-the-new-configuration-model.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment-toml
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -100,7 +100,7 @@ Let’s assume that you want to enable the Gateway Token Cache. The relevant con
 
 Let's check the `default.json` file and look for the default value set for `apim.cache.gateway_token.enable`
 
-<a href="../assets/img/reference/default-json.png"><img src="../assets/img/reference/default-json.png" width=500></a>
+<a href="../../assets/img/reference/default-json.png"><img src="../../assets/img/reference/default-json.png" width=500></a>
 
 It is set to `true`, which means, by default, the Gateway token cache is enabled.
 Therefore, you do not need to add any configuration in the `deployment.toml` file.

@@ -1,6 +1,6 @@
 ---
 title: "Configure Auth0 as a Third-Party Key Manager"
-description: "Integrate WSO2 API Manager with Auth0 as a third-party Key Manager: set up a management API application in Auth0, register Auth0 as a Key Manager in the Admin Portal with its endpoints and connector configurations, and generate application keys using the Auth0 Key Manager."
+description: "Integrate Auth0 as a third-party Key Manager in WSO2 API Manager, covering Auth0 API setup, Admin Portal registration, and application key generation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-auth0-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-auth0-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -79,7 +79,7 @@ Follow the instructions below to configure Auth0 as a third-party Key Manager:
          - The introspection endpoint will not be populated as it is not exposed in Auth0. Therefore, set its value as <code>none</code>. 
          - Select the token validation method as <code>Self validate JWT</code> as shown below.
 
-         <a href="../../../assets/img/administer/auth0-token-validation.png"><img src="../../../assets/img/administer/auth0-token-validation.png" width="400" alt="auth0 token validation"></a>
+         <a href="../../../../assets/img/administer/auth0-token-validation.png"><img src="../../../../assets/img/administer/auth0-token-validation.png" width="400" alt="auth0 token validation"></a>
 
      2. Set the grant types which are allowed in Auth0.
 

@@ -1,6 +1,6 @@
 ---
 title: "Configure Mutual SSL Between the Classic Gateway and Backend"
-description: "Secure backend connections by enabling mutual SSL between the WSO2 Classic Gateway and a backend service: export and exchange certificates between keystores and truststores, configure dynamic SSL profiles in deployment.toml, and test the mutual SSL setup end to end."
+description: "Secure backend connections with mutual SSL between the Classic Gateway and a backend service, exchanging certificates and testing the setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/mutual-ssl-between-api-gateway-and-backend/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/mutual-ssl-between-api-gateway-and-backend.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - tls
   - endpoint-security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

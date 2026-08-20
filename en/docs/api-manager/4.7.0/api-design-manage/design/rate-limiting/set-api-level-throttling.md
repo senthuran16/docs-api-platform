@@ -1,6 +1,6 @@
 ---
 title: "Set API- and Operation-Level Rate Limits"
-description: "Apply advanced rate limiting policies at the API level or to individual resource operations in the WSO2 API Manager Publisher Portal, and define throttling tiers directly in an OpenAPI definition using the x-wso2-throttling-tier extension."
+description: "Apply advanced rate limiting policies at the API or operation level, and define throttling tiers in an OpenAPI definition with x-wso2-throttling-tier."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/rate-limiting/set-api-level-throttling/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/rate-limiting/set-api-level-throttling.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - throttling
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

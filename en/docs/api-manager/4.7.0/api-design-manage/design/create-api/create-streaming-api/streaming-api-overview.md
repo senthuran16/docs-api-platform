@@ -1,6 +1,6 @@
 ---
 title: "Streaming APIs Overview"
-description: "Understand how WSO2 API Manager supports Event-Driven Architecture through Streaming APIs over the WebSocket, WebSub, and SSE protocols, and how topic-based authorization works for streaming events."
+description: "Streaming APIs support Event-Driven Architecture over WebSocket, WebSub, and SSE protocols, with topic-based authorization for streaming events."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-streaming-api/streaming-api-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-streaming-api/streaming-api-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - streaming-api
   - api-design
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Streaming APIs Overview

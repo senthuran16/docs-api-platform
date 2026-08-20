@@ -1,6 +1,6 @@
 ---
 title: "Configure PingFederate as a Key Manager"
-description: "Set up PingFederate as a third-party Key Manager in WSO2 API Manager, including OAuth client creation, certificate import, and Key Manager configuration in the Admin Portal."
+description: "Set up PingFederate as a third-party Key Manager in WSO2 API Manager, including OAuth client creation, certificate import, and Admin Portal configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-pingfederate-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-pingfederate-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

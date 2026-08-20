@@ -1,6 +1,6 @@
 ---
 title: "Deploy an API Through Multiple API Gateway Environments"
-description: "Configure multiple API Gateway environments (production and sandbox) in WSO2 API Manager, connect them to a Control Plane and Traffic Manager, and deploy and invoke an API across the different Gateway nodes."
+description: "Configure multiple API Gateway environments, connect them to a Control Plane and Traffic Manager, and deploy an API across nodes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -311,25 +311,25 @@ Make sure to start instance 1 first before starting the other two instances.
 
 2.  Click **Deployments** and click **Deploy New Revision**.
 
-    <a href="../../../../assets/img/learn/api-revisions-mutiple-gateways.png"><img src="../../../../assets/img/learn/api-revisions-mutiple-gateways.png" title="API Revisions Multiple Gateways" width="80%" alt="API Revisions Multiple Gateways"/></a>
+    <a href="../../../../../assets/img/learn/api-revisions-mutiple-gateways.png"><img src="../../../../../assets/img/learn/api-revisions-mutiple-gateways.png" title="API Revisions Multiple Gateways" width="80%" alt="API Revisions Multiple Gateways"/></a>
     
     Note that the two Gateway environments are listed there.
 
-    <a href="../../../../assets/img/learn/multiple-gateways-revision-dialog.png"><img src="../../../../assets/img/learn/multiple-gateways-revision-dialog.png" title="Multiple Gateways Dialog" width="40%" alt="Multiple Gateways Dialog"/></a>
+    <a href="../../../../../assets/img/learn/multiple-gateways-revision-dialog.png"><img src="../../../../../assets/img/learn/multiple-gateways-revision-dialog.png" title="Multiple Gateways Dialog" width="40%" alt="Multiple Gateways Dialog"/></a>
 
     Here you have the option to view the visibility permissions set for each Gateway environment. Click on the permission type to view the allowed/denied roles.
 
-    <a href="../../../../assets/img/learn/api-gateway-visibility-permissions.png"><img src="../../../../assets/img/learn/api-gateway-visibility-permissions.png" title="API Gateway Visibility Permissions" width="80%" alt="API Gateway Visibility Permissions"/></a>
+    <a href="../../../../../assets/img/learn/api-gateway-visibility-permissions.png"><img src="../../../../../assets/img/learn/api-gateway-visibility-permissions.png" title="API Gateway Visibility Permissions" width="80%" alt="API Gateway Visibility Permissions"/></a>
 
 3.  Select both Gateways and click deploy.
 
-    <a href="../../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png"><img src="../../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png" title="Filled Multiple Gateways Dialog" width="40%" alt="Filled Multiple Gateways Dialog"/></a>
+    <a href="../../../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png"><img src="../../../../../assets/img/learn/multiple-gateways-revision-dialog-filled.png" title="Filled Multiple Gateways Dialog" width="40%" alt="Filled Multiple Gateways Dialog"/></a>
 
 4.  Sign in to the Developer Portal (of the **first** instance) and click on the respective API to open it.
 
     In the **Overview** tab that corresponds to the API, note that it has two sets of URLs for the two Gateway instances:
 
-    <a href="../../../../assets/img/learn/multiple-gateways-devportal-overview.png"><img src="../../../../assets/img/learn/multiple-gateways-devportal-overview.png" title="Multiple Gateways Deploy Overview" width="50%" alt="Multiple Gateways Deploy Overview"/></a>
+    <a href="../../../../../assets/img/learn/multiple-gateways-devportal-overview.png"><img src="../../../../../assets/img/learn/multiple-gateways-devportal-overview.png" title="Multiple Gateways Deploy Overview" width="50%" alt="Multiple Gateways Deploy Overview"/></a>
 
 You have successfully published an API to the API Developer Portals through multiple Gateway environments.
 
@@ -337,7 +337,7 @@ You have successfully published an API to the API Developer Portals through mult
 
 Use the following sample cURL command to generate an access token for the Gateway URL of the initially published Gateway Environments, which was listed in API Publisher in step 10, using the Password Grant type.
 
-<a href="../../../../assets/img/learn/generate-access-tokens.png"><img src="../../../../assets/img/learn/generate-access-tokens.png" title="Generate Access Token" width="55%" alt="Generate Access Token"/></a>
+<a href="../../../../../assets/img/learn/generate-access-tokens.png"><img src="../../../../../assets/img/learn/generate-access-tokens.png" title="Generate Access Token" width="55%" alt="Generate Access Token"/></a>
 
 Change the Gateway URL based on the Gateway that you need to publish the API.
 

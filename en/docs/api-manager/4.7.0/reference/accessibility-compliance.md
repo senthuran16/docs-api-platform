@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Compliance"
-description: "WSO2's commitment to accessible product design, detailing how the WSO2 API Manager Developer Portal complies with Level A and AA success criteria of the Web Content Accessibility Guidelines 2.1 (WCAG 2.1)."
+description: "WSO2's commitment to accessible product design, detailing how the API Manager Developer Portal complies with WCAG 2.1 Level A and AA criteria."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/accessibility-compliance/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/accessibility-compliance.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - accessibility
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Configure Multi-Factor Authentication for Publisher and Developer Portal"
-description: "Add an extra layer of security to the Publisher and Developer Portal by configuring Single Sign-On with WSO2 Identity Server and then enabling multi-factor authentication in WSO2 Identity Server."
+title: "Configure MFA for Publisher and Developer Portal"
+description: "Add multi-factor authentication to the Publisher and Developer Portal by configuring SSO and MFA with WSO2 Identity Server."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/saml2-sso/multi-factor-authentication-mfa-for-publisher-and-developer-portals/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/saml2-sso/multi-factor-authentication-mfa-for-publisher-and-developer-portals.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

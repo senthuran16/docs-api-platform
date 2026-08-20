@@ -1,6 +1,6 @@
 ---
 title: "Extend Scope Validation to Skip Role Checks"
-description: "Skip role validation for OAuth2 scopes that are not associated with roles, such as OpenID scopes, by allowlisting scope patterns in the deployment.toml file and verifying the behavior through token requests."
+description: "Skip role validation for OAuth2 scopes not associated with roles, such as OpenID scopes, by allowlisting scope patterns in deployment.toml."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-key-management/extending-scope-validation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-key-management/extending-scope-validation.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - key-managers
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -23,7 +23,7 @@ Validating the role of a requester does not make much sense in some scenarios. F
 
 ### Skipping role validation for scopes
 
-When scopes that cannot be associated with roles are requested, the token should be issued without validating the scope. In WSO2 API Manager, you do this by [allowlisting the scope]({{base_path}}/manage-apis/design/api-security/oauth2/oauth2-scopes/scope-allowlisting) using configurations. Patterns of the allowed scopes are specified via a configuration under the `apim.oauth_config` element in the `<API-M_HOME>/repository/conf/deployment.toml` file. Scopes that match the pattern are not validated by role and are available to anyone requesting it.
+When scopes that cannot be associated with roles are requested, the token should be issued without validating the scope. In WSO2 API Manager, you do this by [allowlisting the scope](../../../../api-security/runtime/authorization/oauth2-scopes/scope-whitelisting) using configurations. Patterns of the allowed scopes are specified via a configuration under the `apim.oauth_config` element in the `<API-M_HOME>/repository/conf/deployment.toml` file. Scopes that match the pattern are not validated by role and are available to anyone requesting it.
 
 Follow the instructions below to skip role validation for scopes:
 

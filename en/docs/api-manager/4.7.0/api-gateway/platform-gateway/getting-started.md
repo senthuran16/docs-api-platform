@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Platform Gateway"
-description: "Set up a Platform Gateway end to end: register it in the Admin Portal, download and start it with Docker Compose, create and deploy a REST API to it, and invoke the API using API key, bearer token, or Basic authentication."
+description: "Set up a Platform Gateway end to end: register it, start it with Docker Compose, deploy a REST API, and invoke it with a key or token."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/platform-gateway/getting-started/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/platform-gateway/getting-started.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "Generate SDKs in the Developer Portal"
-description: "Download client-side SDKs for a subscribed API from the WSO2 API Manager Developer Portal, and configure which languages, such as Java, Python, C#, and Swift, are available for SDK generation via deployment.toml."
+description: "Download client-side SDKs for a subscribed API from the Developer Portal, and configure which languages are available for SDK generation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/generating-sdks/generate-sdks-in-dev-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/generating-sdks/generate-sdks-in-dev-portal.md
 tags:
   - api-manager
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -37,7 +37,7 @@ Follow the instructions below to generate and download client-side SDKs via the 
 
       This downloads the ZIP archive of the SDK.
 
-      <a href="../../assets/img/learn/download-sdk.png"><img src="../../assets/img/learn/download-sdk.png" alt="Download SDK" title="Download SDK" width="60%" /></a>    
+      <a href="../../../assets/img/learn/download-sdk.png"><img src="../../../assets/img/learn/download-sdk.png" alt="Download SDK" title="Download SDK" width="60%" /></a>    
     
 ##  Configuring supported languages for SDK generation
 

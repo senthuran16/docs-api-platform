@@ -1,6 +1,6 @@
 ---
 title: "Invoke API Manager from a Third-Party BPEL Engine"
-description: "Reference the SOAP and REST WorkflowCallbackService endpoints, their basic authentication requirements, and the workflowReference, status, and description parameters used to progress a workflow from a third-party BPEL engine."
+description: "Reference the SOAP and REST WorkflowCallbackService endpoints and parameters used to progress a workflow from a third-party BPEL engine."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - rest-api
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

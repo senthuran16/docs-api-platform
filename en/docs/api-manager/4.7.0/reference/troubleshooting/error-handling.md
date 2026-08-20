@@ -1,6 +1,6 @@
 ---
 title: "Error Handling in API Manager"
-description: "Reference for WSO2 API Manager's default fault sequences and API error codes, covering authentication, throttling, transport, and sequence-level errors, plus how to customize error responses with a custom mediation sequence."
+description: "Reference for API Manager's default fault sequences and error codes, and how to customize error responses with a mediation sequence."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/error-handling/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/error-handling.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - rate-limiting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -151,7 +151,7 @@ Given below are some error codes and their meanings.
 <tr class="even">
 <td><code>900905</code></td>
 <td><p>Incorrect access token type is provided</p></td>
-<td><p>The access token type used is not supported when invoking the API. The supported access token types are application and user accesses tokens. See <a href="../../get-started/key-concepts.md#access-token">Access Tokens</a>.</p></td>
+<td><p>The access token type used is not supported when invoking the API. The supported access token types are application and user accesses tokens. See <a href="../../../get-started/key-concepts.md#access-token">Access Tokens</a>.</p></td>
 <td>Invoke an API with application token, where the resource only allows application user tokens</td>
 </tr>
 <tr class="odd">

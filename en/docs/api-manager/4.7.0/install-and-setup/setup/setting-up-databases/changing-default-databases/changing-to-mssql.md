@@ -1,6 +1,6 @@
 ---
 title: "Changing to Microsoft SQL Server in WSO2 API Manager"
-description: "Replace the default embedded H2 database with Microsoft SQL Server in WSO2 API Manager: enable TCP/IP, create a case-sensitive database and user, install the JDBC driver, run the mssql.sql scripts, and configure the shared_db and apim_db datasources."
+description: "Replace the default embedded H2 database with Microsoft SQL Server in WSO2 API Manager, including database setup, JDBC drivers, and schema scripts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mssql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mssql.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Working with Databases in WSO2 API Manager"
-description: "Overview of the default AM, Shared, and Carbon H2 databases shipped with WSO2 API Manager, where to obtain schema scripts for Kubernetes or VM deployments, and links to instructions for switching to a production-grade RDBMS."
+description: "An overview of the default AM, Shared, and Carbon H2 databases in WSO2 API Manager, and where to get schema scripts for switching to an RDBMS."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/setting-up-databases/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/setting-up-databases/overview.md
 tags:
@@ -9,15 +9,15 @@ tags:
   - deployment
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Working with Databases
 
 WSO2 API Manager is shipped with an H2 database for storing data. These default databases are located in the `<API-M_HOME>/repository/database` directory of the product pack.
 
-When setting up databases, you need to ensure that the setup matches the distributed deployment pattern that you implement. For more information, see [Understanding the Distributed Deployment of API Manager]({{base_path}}/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/).
+When setting up databases, you need to ensure that the setup matches the distributed deployment pattern that you implement. For more information, see [Understanding the Distributed Deployment of API Manager](../distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup).
 
 ## Default databases
 
@@ -29,9 +29,9 @@ Explained below are the default databases which will be used within API Manager.
 
 The following image shows the default databases and the data that are stored in each database.
 
-<a href="../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
+<a href="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
 
-See how these databases are used when you [run API-M in a distributed deployment]({{base_path}}/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/).
+See how these databases are used when you [run API-M in a distributed deployment](../distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup).
 
 ## Changing the default databases
 

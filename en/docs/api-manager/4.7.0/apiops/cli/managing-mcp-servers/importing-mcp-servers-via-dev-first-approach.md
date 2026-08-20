@@ -1,6 +1,6 @@
 ---
-title: "Import MCP Servers Using the Dev First Approach with API Controller"
-description: "Create and deploy MCP (Model Context Protocol) Servers without the Publisher Portal by importing an MCP Server project into a WSO2 API Manager environment using apictl, including revision handling and provider preservation."
+title: "Import MCP Servers using the dev-first approach"
+description: "Create and deploy MCP Servers without the Publisher Portal by importing an MCP Server project into an environment using apictl."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-mcp-servers/importing-mcp-servers-via-dev-first-approach/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-mcp-servers/importing-mcp-servers-via-dev-first-approach.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - mcp
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -37,7 +37,7 @@ content_type: "how-to"
 
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import MCP Servers. To create a custom user who can import MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import MCP Servers. To create a custom user who can import MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#creating-custom-users-to-perform-apictl-operations).
 
 You can import the MCP Server to an environment using any of the following commands.  
 

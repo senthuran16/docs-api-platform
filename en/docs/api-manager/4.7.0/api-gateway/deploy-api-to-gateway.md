@@ -1,6 +1,6 @@
 ---
 title: "Deploy an API to the Gateway"
-description: "Deploy APIs and API Products to the WSO2 Classic Gateway using a revision-based approach, including deploying the first revision, adding new revisions, and understanding the five-revision limit."
+description: "Deploy APIs and API Products to the Classic Gateway using a revision-based approach, including new revisions and the five-revision limit."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/deploy-api-to-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/deploy-api-to-gateway.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - api-lifecycle-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Rate Limiting for AI APIs"
-description: "Configure subscription-level and backend rate limiting for AI APIs in WSO2 API Manager based on request counts and prompt, completion, and total token usage, to control cost and protect AI backends."
+description: "Configure subscription-level and backend rate limiting for AI APIs based on request counts and token usage to control cost."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/rate-limiting/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/rate-limiting.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - rate-limiting
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

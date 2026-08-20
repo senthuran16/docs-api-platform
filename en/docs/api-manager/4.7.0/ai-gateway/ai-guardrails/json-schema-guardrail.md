@@ -1,6 +1,6 @@
 ---
 title: "JSON Schema Guardrail"
-description: "Validate AI API request and response JSON payloads against a user-defined JSON Schema using WSO2 AI Gateway's JSON Schema Guardrail policy, including its limitations for JSON object extraction."
+description: "Validate AI API request and response JSON payloads against a user-defined JSON Schema using the JSON Schema Guardrail policy."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/json-schema-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/json-schema-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

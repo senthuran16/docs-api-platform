@@ -1,6 +1,6 @@
 ---
 title: "Format API Controller get Command Output"
-description: "Format the output of apictl's get envs, get apis, get api-products, and get apps commands using Go Templates, including table, JSON, jsonArray, jsonPretty, upper, lower, and title formatting options."
+description: "Format the output of apictl's get envs, get apis, get api-products, and get apps commands using Go Templates like table and JSON."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/formatting-the-output-of-get-command/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/formatting-the-output-of-get-command.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - reference
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

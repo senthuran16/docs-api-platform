@@ -1,6 +1,6 @@
 ---
 title: "Configure Gateways with Dedicated Backends"
-description: "Use parameterized endpoint URLs so each Gateway environment in WSO2 API Manager proxies to a different dedicated backend, resolved at Gateway startup using system properties or a custom class mediator."
+description: "Use parameterized endpoint URLs so each Gateway environment proxies to a different dedicated backend, resolved at Gateway startup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/api-gateways-with-dedicated-backends/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/api-gateways-with-dedicated-backends.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - endpoints
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

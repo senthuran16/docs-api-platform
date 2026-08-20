@@ -1,6 +1,6 @@
 ---
 title: "Manage APIs and API Products with API Controller"
-description: "apictl commands to list, delete, change status of, undeploy revisions of, and manage logging levels for APIs and API Products in a WSO2 API Manager environment."
+description: "Use apictl commands to list, delete, change the status of, and manage logging levels for APIs and API Products in an environment."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-apis-api-products/managing-apis-and-api-products/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-apis-api-products/managing-apis-and-api-products.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - api-lifecycle-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

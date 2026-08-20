@@ -1,6 +1,6 @@
 ---
 title: "Create a REST API"
-description: "Create a REST API from scratch in the WSO2 API Publisher by defining API details, configuring runtime transport security, and adding resources with parameters and security settings, using the PizzaShack sample API."
+description: "Create a REST API from scratch in the Publisher by defining API details, runtime transport security, and resources, using the PizzaShack sample API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-rest-api/create-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-rest-api/create-a-rest-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-design
   - rest-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -53,8 +53,8 @@ Follow the instructions below to create a REST API using the basic flow:
 
 5. Go to **Develop**, **Portal Configurations**, and click **Basic Info**.
 
-     <a href="../../../../assets/img/learn/click-basic-info.png">
-     <img src="../../../../assets/img/learn/click-basic-info.png" width="20%"></a>
+     <a href="../../../../../assets/img/learn/click-basic-info.png">
+     <img src="../../../../../assets/img/learn/click-basic-info.png" width="20%"></a>
 
      1. Configure the API design configurations.
 
@@ -62,7 +62,7 @@ Follow the instructions below to create a REST API using the basic flow:
 
          <html><div class="admonition note">
          <p class="admonition-title">Note</p>
-         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
+         <p>By default, **All** users who have `creator` permission are allowed **<a href='../../../advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md'>Publisher Access Control</a>** and public **<a href='../../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md'> 
          Developer Portal visibility</a>**.</p>
          <p>
          </div>
@@ -170,8 +170,8 @@ Follow the instructions below to create a REST API using the basic flow:
     4. Click on **Edit** from the toolbar.
         </br>
         <div style="text-align: left;">
-            <a href="../../../../assets/img/design/create-api/linter-observe/linter-observe1.png">
-                 <img src="../../../../assets/img/design/create-api/linter-observe/linter-observe1.png" alt="API configuration toolbar" width="600" height="377">
+            <a href="../../../../../assets/img/design/create-api/linter-observe/linter-observe1.png">
+                 <img src="../../../../../assets/img/design/create-api/linter-observe/linter-observe1.png" alt="API configuration toolbar" width="600" height="377">
             </a>
         </div>
 
@@ -179,8 +179,8 @@ Follow the instructions below to create a REST API using the basic flow:
 
     6. You will see the Linter error corresponding to the new rule you enforced.
         <div style="text-align: left;">
-            <a href="../../../../assets/img/design/create-api/linter-observe/linter-observe2.png">
-                <img src="../../../../assets/img/design/create-api/linter-observe/linter-observe2.png" alt="Linter error" width="600" height="377">
+            <a href="../../../../../assets/img/design/create-api/linter-observe/linter-observe2.png">
+                <img src="../../../../../assets/img/design/create-api/linter-observe/linter-observe2.png" alt="Linter error" width="600" height="377">
             </a>
         </div>
 
@@ -193,7 +193,7 @@ Learn more on the concepts that you need to know when creating a REST API:
 
 -   [Endpoints](../../endpoints/endpoint-types.md)
 -   [API Security](../../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
--   [Rate Limiting]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+-   [Rate Limiting](../../../../api-gateway/rate-limiting/understand-rate-limit-enforcement)
 -   [Life Cycle Management](../../lifecycle-management/api-lifecycle.md)
 -   [API Monetization](../../../../monitoring/api-monetization/monetizing-an-api.md)
 -   [API Visibility](../../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)

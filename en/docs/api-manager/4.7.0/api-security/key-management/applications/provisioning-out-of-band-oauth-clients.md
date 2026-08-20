@@ -1,6 +1,6 @@
 ---
 title: "Provision Out-of-Band OAuth2 Clients"
-description: "Associate an OAuth2 client created outside the Developer Portal, such as one created directly in WSO2 Identity Server, with an application in WSO2 API Manager's Developer Portal so it functions like a natively created OAuth2 client."
+description: "Associate an OAuth2 client created outside the Developer Portal, such as one created in WSO2 Identity Server, with an application so it works natively."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/applications/provisioning-out-of-band-oauth-clients/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/applications/provisioning-out-of-band-oauth-clients.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - key-managers
   - applications
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -67,7 +67,7 @@ In this example, it will be assumed that WSO2 IS and WSO2 API-M are up and runni
 
 Follow the instructions below to provision the out-of-band OAuth2 client that you created in the previous step in WSO2 API Manager.
 
-1.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 2.  Sign in to the Developer Portal.
 
@@ -90,9 +90,9 @@ Follow the instructions below to provision the out-of-band OAuth2 client that yo
 
      [![Provide Keys](../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/provide-keys-section.png)](../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/provide-keys-section.png)
 
-6.  Paste the consumer key and consumer secret pair, which you derived in [Step 2 - (5) Creating an external OAuth client](#step5).
+6.  Paste the consumer key and consumer secret pair, which you derived in [Step 2 - (5) Creating an external OAuth client](#step-2-create-an-external-oauth2-client).
 
-     <a href="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" ><img src="../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" alt="update-keys" title="update-keys" width="80%" /></a>
+     <a href="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" ><img src="../../../../assets/img/learn/api-security/oauth2/provisioning-out-of-band-oauth-clients/update-keys.png" alt="update-keys" title="update-keys" width="80%" /></a>
 
     !!! Note
         - The ability to provision Out-of-Band Auth client will only be available for the applications that you created **after** applying this configuration.

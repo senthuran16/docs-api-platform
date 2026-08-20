@@ -1,6 +1,6 @@
 ---
 title: "API Lifecycle States and Management"
-description: "Understand the six default API lifecycle states in WSO2 API Manager (Created, Pre-Released, Published, Blocked, Deprecated, and Retired) and learn how to transition an API between states using the Publisher Portal Lifecycle tab."
+description: "The six default API lifecycle states in API Manager, and how to transition an API between them using the Publisher Portal Lifecycle tab."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/lifecycle-management/api-lifecycle/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/lifecycle-management/api-lifecycle.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - lifecycle-management
   - api-lifecycle
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -43,13 +43,13 @@ Follow the instructions below to manage the API lifecycle appropriately:
 
 3.  Click **Lifecycle**.
 
-     <a href="../../../assets/img/learn/default-lifecycle.png" ><img src="../../../assets/img/learn/default-lifecycle.png" alt="Lifecycle tab" title="Lifecycle tab" width="70%" /></a>
+     <a href="../../../../assets/img/learn/default-lifecycle.png" ><img src="../../../../assets/img/learn/default-lifecycle.png" alt="Lifecycle tab" title="Lifecycle tab" width="70%" /></a>
     
      The lifecycle state transition grid and the lifecycle change history appears. The current lifecycle state and the next possible lifecycle transitions are available in lifecycle state grid. The lifecycle history contains the data such as the lifecycle transition action, the user who performed the transition and the timestamp of the state change. 
 
 4. Click on the lifecycle state change buttons to change the lifecycle state.
 
-     [![](../../../assets/img/learn/lifecycle-transition-grid.png")](../../../assets/img/learn/lifecycle-transition-grid.png")
+     [![](../../../assets/img/learn/lifecycle-transition-grid.png)](../../../assets/img/learn/lifecycle-transition-grid.png)
     
 
 

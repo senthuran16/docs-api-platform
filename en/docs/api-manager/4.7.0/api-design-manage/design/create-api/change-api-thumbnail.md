@@ -8,7 +8,7 @@ tags:
   - api-design
   - publisher-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -29,4 +29,4 @@ The thumbnail of an API can be changed by uploading an image for the thumbnail o
   
     The newly added image appears as the API thumbnail.
     
-    <img src="../../../assets/img/learn/change-thumbnail-api-updated.png" height="250"/>
+    <img src="../../../../assets/img/learn/change-thumbnail-api-updated.png" height="250"/>

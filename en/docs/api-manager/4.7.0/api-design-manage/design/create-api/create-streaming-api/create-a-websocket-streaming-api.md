@@ -8,7 +8,7 @@ tags:
   - websocket
   - streaming-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -53,7 +53,8 @@ Follow the instructions below to create a WebSocket API using the basic flow:
 
              In the above configuration, the offset is `100`. `9190` was obtained by adding `100` to the default port `9090`.
 
-1.  {!includes/sign-in-publisher.md!}
+1.  
+    --8<-- "api-manager/4.7.0/includes/sign-in-publisher.md"
 
 2.  Click **Create API**, go to **Streaming API**, and Click **WebSocket API**.
 
@@ -132,7 +133,7 @@ Follow the instructions below to create a WebSocket API using the basic flow:
          </tbody>
      </table>
 
-      <a href="../../../../assets/img/design/create-api/streaming-api/create-websocket-streaming-api-form.png"><img src="../../../../assets/img/design/create-api/streaming-api/create-websocket-streaming-api-form.png" width="80%" alt="Create WebSocket API Form"></a>
+      <a href="../../../../../assets/img/design/create-api/streaming-api/create-websocket-streaming-api-form.png"><img src="../../../../../assets/img/design/create-api/streaming-api/create-websocket-streaming-api-form.png" width="80%" alt="Create WebSocket API Form"></a>
 
 4.  Click **Create** to create the API.
 
@@ -149,17 +150,17 @@ Topics of a WebSocket API represents the channels which support actions **Receiv
    
 2. By default, the newly created WebSocket API will have a topic with the name `/*`.
 
-    <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-topics.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-topics.png" width="80%" alt="WebSocket API Topics Page"></a>
+    <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-topics.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-topics.png" width="80%" alt="WebSocket API Topics Page"></a>
 
 3. This default channel `/*` will have two default operations `send_/*` and `receive_/*` and are listed inside the respective action of the channel.
 
-    <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-operation.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-operation.png" width="80%" alt="WebSocket API Channel Operations"></a>
+    <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-operation.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-operation.png" width="80%" alt="WebSocket API Channel Operations"></a>
 
 4. Modify the topics as follows and click **Save** to update them.
 
     1. Optionally, click delete as shown below, to delete an existing topic or an operation.
 
-         <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-delete-topic-operation.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-delete-topic-operation.png" width="80%" alt="WebSocket API Delete Topic"></a>
+         <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-delete-topic-operation.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-delete-topic-operation.png" width="80%" alt="WebSocket API Delete Topic"></a>
 
     2. Select a **Type**, enter the **Address** of the channel to be created, enter the **Operation Name** to be added to the selected channel, and click **+** as shown below, to add a new topic.
 
@@ -168,19 +169,19 @@ Topics of a WebSocket API represents the channels which support actions **Receiv
           <tr><td>Operation Name</td><td><code>sendNotifications</code></td> </tr>
          </table>
 
-         <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-channel.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-channel.png" width="80%" alt="WebSocket API Add Channel"></a>
+         <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-channel.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-channel.png" width="80%" alt="WebSocket API Add Channel"></a>
 
          The newly added topic is displayed as follows. Expand the topic to view the newly added operation.
 
-         <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-channel.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-channel.png" width="80%" alt="WebSocket API Newly Added Topic"></a>
+         <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-channel.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-channel.png" width="80%" alt="WebSocket API Newly Added Topic"></a>
 
     3. You can also add a new operation to an existing topic by selecting the respective channel address from the dropdown.
 
-         <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-operation.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-operation.png" width="80%" alt="WebSocket API Add Operation"></a>
+         <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-operation.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-add-operation.png" width="80%" alt="WebSocket API Add Operation"></a>
 
          Expand the topic to view the newly added operation.
 
-         <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-operation.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-operation.png" width="80%" alt="WebSocket API Newly Added Operation"></a>
+         <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-operation.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-new-operation.png" width="80%" alt="WebSocket API Newly Added Operation"></a>
 
     4. Optionally, provide a URL Mapping to the topic.
 
@@ -191,7 +192,7 @@ Topics of a WebSocket API represents the channels which support actions **Receiv
          <table><tr><td> Description</td> <td>Chat room notifications</td> </tr>
          <tr><td>URL Mapping</td> <td><code>/notifications</code></td> </tr></table>
 
-         <a href="../../../../assets/img/design/create-api/streaming-api/wesocket-streaming-api-v3-add-topic-url-mapping.png"><img src="../../../../assets/img/design/create-api/streaming-api/wesocket-streaming-api-v3-add-topic-url-mapping.png" width="80%" alt="WebSocket API Topic URL Mapping"></a>
+         <a href="../../../../../assets/img/design/create-api/streaming-api/wesocket-streaming-api-v3-add-topic-url-mapping.png"><img src="../../../../../assets/img/design/create-api/streaming-api/wesocket-streaming-api-v3-add-topic-url-mapping.png" width="80%" alt="WebSocket API Topic URL Mapping"></a>
 
 ### Step 3 - View the AsyncAPI Definition
 
@@ -202,22 +203,22 @@ Click **AsyncAPI Definition** under **API Configurations**.
 
 The AsyncAPI definition of the streaming API, which you just created, appears.
 
-   <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-asyncapi.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-asyncapi.png" width="65%" alt="WebSocket API AsyncAPI Definition"></a>
+   <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-asyncapi.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-v3-asyncapi.png" width="65%" alt="WebSocket API AsyncAPI Definition"></a>
 
 ### Step 4 - Configure the Runtime Configurations
 
 Click **Runtime** under the **API Configurations** section, select the required authentication type, and click **Save**.
 
-   <a href="../../../../assets/img/tutorials/streaming-api/websocket-api-runtime-configurations.png"><img src="../../../../assets/img/tutorials/streaming-api/websocket-api-runtime-configurations.png" width="65%" alt="Runtime Configurations of WebSocket API"></a>
+   <a href="../../../../../assets/img/tutorials/streaming-api/websocket-api-runtime-configurations.png"><img src="../../../../../assets/img/tutorials/streaming-api/websocket-api-runtime-configurations.png" width="65%" alt="Runtime Configurations of WebSocket API"></a>
 
 Now, you have successfully created and configured a Streaming API. Next, let's [Publish your API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
 ## End-to-end tutorial
 
-Learn more by trying out an end-to-end tutorial on <a href="../../../../tutorials/streaming-api/create-and-publish-websocket-api.md">Creating and Publishing a WebSocket API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
+Learn more by trying out an end-to-end tutorial on <a href="../../../../../tutorials/streaming-api/create-and-publish-websocket-api.md">Creating and Publishing a WebSocket API</a>, which uses the default Streaming Provider that works with WSO2 API Manager, namely the WSO2 Streaming Integrator.
 
-Once you create and publish a WebSocket API, you can also <a href="../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md">deploy the API you created</a>.
+Once you create and publish a WebSocket API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md">deploy the API you created</a>.
 
 ## See Also
 
-{!includes/design/stream-more-links.md!}
+--8<-- "api-manager/4.7.0/includes/design/stream-more-links.md"

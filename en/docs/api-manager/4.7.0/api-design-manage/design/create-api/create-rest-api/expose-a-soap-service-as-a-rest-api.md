@@ -1,6 +1,6 @@
 ---
 title: "Expose a SOAP Service as a REST API"
-description: "Create a pass-through REST API for an existing SOAP/WSDL backend in WSO2 API Manager, bridging legacy SOAP services to REST without migrating the backend implementation."
+description: "Create a pass-through REST API for an existing SOAP/WSDL backend, bridging legacy SOAP services to REST without migrating the backend."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-rest-api/expose-a-soap-service-as-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-rest-api/expose-a-soap-service-as-a-rest-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - soap
   - api-design
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -74,7 +74,7 @@ Follow the instructions below to create a SOAP service as a RESTful API using **
      <html><div class="admonition note">
      <p class="admonition-title">Note</p>
      <p> Note that when creating this API, **API Level** was selected as the default option for the **Rate limiting level**. For more information on setting advanced throttling policies,
-     see [Enforce Throttling and Resource Access Policies]({{base_path}}/manage-apis/design/rate-limiting/setting-throttling-limits/).</p>
+     see [Enforce Throttling and Resource Access Policies](../../../../api-gateway/rate-limiting/understand-rate-limit-enforcement).</p>
      </div>
      </html>
 
@@ -82,6 +82,6 @@ Now, the SOAP service is created and configured successfully as a RESTful API.
 
 For more information on API publishing, see [Publish API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md).
 
-Once you create and publish the API, you can also <a href="../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md">deploy the API you created</a>.
+Once you create and publish the API, you can also <a href="../../../../deploy-and-publish/deploy-on-gateway/deploy-api/deploy-an-api.md">deploy the API you created</a>.
 
 To learn more, see the tutorial on [Creating and Publishing a SOAP service as a RESTful API](../../../../tutorials/expose-a-soap-service-as-a-rest-api.md).

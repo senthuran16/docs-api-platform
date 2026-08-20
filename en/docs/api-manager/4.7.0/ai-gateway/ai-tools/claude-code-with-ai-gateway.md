@@ -1,6 +1,6 @@
 ---
 title: "Configuring Claude Code with AI Gateway"
-description: "Proxy Anthropic API calls from Claude Code through WSO2 API Manager's AI Gateway to apply guardrails, rate limiting, prompt decorators, and analytics to Claude Code usage."
+description: "Proxy Anthropic API calls from Claude Code through the AI Gateway to apply guardrails, rate limiting, and analytics."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-tools/claude-code-with-ai-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-tools/claude-code-with-ai-gateway.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-tools
   - ai-vendor-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -145,7 +145,7 @@ For example, an admin could view the token usage by users and applications to id
 
 [![analytics token usage example](../../assets/img/llm-gateway/analytics-token-usage-example.png)](../../assets/img/llm-gateway/analytics-token-usage-example.png)
 
-For more information on Analytics, refer to the official [WSO2 API Manager Documentation](https://apim.docs.wso2.com/en/latest/monitoring/api-analytics/analytics-overview/)
+For more information on Analytics, refer to the official [WSO2 API Manager Documentation](../../monitoring/api-analytics/analytics-overview)
 
 ---
 
@@ -163,7 +163,7 @@ For example, a **PII Masking Regex Guardrail** can be configured in the request 
 
 [![claude code guardrail example](../../assets/img/llm-gateway/claude-code-guardrail-redacted-example.png)](../../assets/img/llm-gateway/claude-code-guardrail-redacted-example.png)
 
-For more information on AI Guardrails, refer to the official [WSO2 API Manager Documentation](https://apim.docs.wso2.com/en/latest/ai-gateway/ai-guardrails/overview/)
+For more information on AI Guardrails, refer to the official [WSO2 API Manager Documentation](../ai-guardrails/overview)
 
 ---
 
@@ -175,9 +175,9 @@ For example, you can create an AI subscription policy with a limited request cou
 
 This helps control token consumption and avoid unexpected costs.
 
-[![claude code rate limit example](../../assets/img/llm-gateway/claude-code-rate-limit-example.png)]({{base_path}}/assets/img/llm-gateway/claude-code-rate-limit.png)
+[![claude code rate limit example](../../assets/img/llm-gateway/claude-code-rate-limit-example.png)](../../assets/img/llm-gateway/claude-code-rate-limit-example.png)
 
-For more information on Rate Limiting, refer to the official [WSO2 API Manager documentation](https://apim.docs.wso2.com/en/latest/ai-gateway/rate-limiting/)
+For more information on Rate Limiting, refer to the official [WSO2 API Manager documentation](../rate-limiting)
 
 ### Prompt Decorator
 
@@ -194,4 +194,4 @@ The following screenshot shows Claude Code responding to that same prompt with a
 [![claude code prompt decorator example](../../assets/img/llm-gateway/claude-code-prompt-decorator-example-2.png)](../../assets/img/llm-gateway/claude-code-prompt-decorator-example-2.png)
 
 
-For more information on Prompt Management, refer to the official [WSO2 API Manager documentation](https://apim.docs.wso2.com/en/latest/ai-gateway/prompt-management/overview/)
+For more information on Prompt Management, refer to the official [WSO2 API Manager documentation](../prompt-management/overview)

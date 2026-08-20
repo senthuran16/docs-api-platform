@@ -1,6 +1,6 @@
 ---
 title: "Enable Publisher Access Control"
-description: "Restrict which users can view or modify an API within the API Publisher by enabling role-based Publisher Access Control through the Publisher UI or the REST API, and configure the publisher role cache."
+description: "Restrict which users can view or modify an API by enabling role-based Publisher Access Control via the UI or REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/enable-publisher-access-control-in-api-publisher-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/enable-publisher-access-control-in-api-publisher-portal.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - publisher-portal
   - rest-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -51,7 +51,7 @@ The APIs created in the API Publisher are visible to any user who signs in to th
      <head>
      </head>
      <body>
-     <img src="../../../assets/img/learn/save-api-publisher.png" alt="Save API" title="Save API" width="250" height="50"/>
+     <img src="../../../../assets/img/learn/save-api-publisher.png" alt="Save API" title="Save API" width="250" height="50"/>
      </body>
      </html>
 
@@ -64,7 +64,7 @@ The APIs created in the API Publisher are visible to any user who signs in to th
 
 ## Using the REST API
 
-Use the [existing REST API]({{base_path}}/reference/product-apis/restful-apis/) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
+Use the [existing REST API](../../../reference/product-apis/overview) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
 
 ``` 
 "accessControl" : "RESTRICTED",

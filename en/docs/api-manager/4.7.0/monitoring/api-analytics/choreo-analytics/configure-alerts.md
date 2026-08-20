@@ -1,6 +1,6 @@
 ---
 title: "Configure Alerts for Choreo-Based API Analytics"
-description: "Configure Choreo Insights alerts per API and environment to proactively monitor your API ecosystem, including alert suppression policy, email notification limits, and per-organization alert quotas."
+description: "Configure Choreo Insights alerts per API and environment to monitor your API ecosystem, including suppression policy and notification limits."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/choreo-analytics/configure-alerts/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/choreo-analytics/configure-alerts.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - analytics
   - observability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

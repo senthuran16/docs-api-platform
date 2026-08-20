@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Architecture and Key Components"
-description: "An explanation of the WSO2 API Manager architecture, covering the API Control Plane (Publisher, Developer Portal, Service Catalog, Key Manager, Analytics), the Data Plane (Classic Gateway, Kubernetes Gateway, Immutable Gateway), the Traffic Manager, and tooling such as the API Controller."
+description: "Learn the WSO2 API Manager architecture, including the API Control Plane, Data Plane gateways, the Traffic Manager, and tools like the API Controller."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/apim-architecture/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/apim-architecture.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -25,6 +25,7 @@ The diagram below is a high-level snapshot of WSO2 API Manager and the various c
 
 The API Control Plane is where API creation and API management takes place. It consists of portals (Publisher, Developer Portal and Service Catalog) for users to create and manage APIs, implement rate limiting policies, monitor, and monetize etc. The API Control Plane consists of a Key manager component for API security validation and API key generation. It also provides a set of APIs to interact with external tools like API Controller. The API Control Plane includes API Analytics dashboards, displaying various business insights.
 
+<a name="api-publisher"></a>
 #### API Publisher
 
 [![API Publisher](../assets/img/get_started/architecture/publisher-overview.png)](../assets/img/get_started/architecture/publisher-overview.png)
@@ -45,6 +46,7 @@ WSO2 API Control Plane includes a Service Catalog where developers can register 
 
 These integration services can be created using WSO2 Integration Studio and a variety of other platforms. For an Integration Studio user, the service registration happens automatically when exporting the project as a composite application (CApp).
 
+<a name="key-manager"></a>
 #### Key Manager
  
 [![Key Manager](../assets/img/get_started/architecture/key-manager-overview.png)](../assets/img/get_started/architecture/key-manager-overview.png)
@@ -59,7 +61,7 @@ In addition to using the built-in Key Manager as the IDP, WSO2 API Control Plane
 
 #### API Analytics
 
-- For information on the architecture, see [API Analytics Architecture](../monitoring/api-analytics/analytics-overview.md#architecture/)
+- For information on the architecture, see [API Analytics Architecture](../monitoring/api-analytics/analytics-overview.md#architecture)
 
 - For information on working with Analytics, see the [API Analytics Getting Started Guide](../monitoring/api-analytics/moesif-analytics/moesif-integration-guide.md).
 
@@ -97,7 +99,7 @@ The Traffic Manager helps users to regulate API traffic, make APIs and applicati
 
 In addition to the above, the Traffic Manager also helps to keep the Classic Gateway's in-memory map, which is used for key validation, up-to-date via a JMS topic. The Traffic Manager publishes artifact (API/application) update events that are received from the API Publisher and API Developer Portal to a JMS topic. The Classic Gateway receives these events via the JMS topic and updates its in-memory map.
 
-For more information, see [Working with Throttling]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases).
+For more information, see [Working with Throttling](../api-gateway/rate-limiting/understand-rate-limit-enforcement).
 
 ## Tooling
 

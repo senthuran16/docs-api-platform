@@ -1,6 +1,6 @@
 ---
 title: "Configure Mistral AI as an AI Service Provider"
-description: "Configure Mistral AI as a default AI Service Provider in the WSO2 API Manager admin portal, including read-only general details, editable model lists, and model-based load balancing and failover."
+description: "Configure Mistral AI as a default AI Service Provider, including editable model lists and model-based load balancing and failover."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/mistral-ai/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/mistral-ai.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-vendor-management
   - multi-model-routing
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

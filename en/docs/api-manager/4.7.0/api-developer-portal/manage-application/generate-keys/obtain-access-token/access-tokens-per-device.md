@@ -1,6 +1,6 @@
 ---
 title: "Generate Access Tokens Per Device"
-description: "Generate unique access tokens per device for the same application in WSO2 API Manager using OAuth2.0 scopes prefixed with device_, avoiding token revocation conflicts across multiple devices."
+description: "Generate unique access tokens per device for the same application using OAuth2.0 scopes prefixed with device_, avoiding revocation conflicts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/obtain-access-token/access-tokens-per-device/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/obtain-access-token/access-tokens-per-device.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - access-tokens
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

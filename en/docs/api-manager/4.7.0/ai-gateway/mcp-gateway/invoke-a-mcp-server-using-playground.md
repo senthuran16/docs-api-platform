@@ -1,6 +1,6 @@
 ---
 title: "Consume and Test MCP Servers Using the MCP Playground"
-description: "Configure the WSO2 API Manager Developer Portal to run as an MCP-only Hub, and use the integrated MCP Playground to explore an MCP Server's schema and invoke its tools with a subscribed access token."
+description: "Configure the Developer Portal as an MCP-only Hub, and use the MCP Playground to explore and invoke an MCP Server's tools."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/invoke-a-mcp-server-using-playground/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/invoke-a-mcp-server-using-playground.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mcp
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -42,7 +42,7 @@ Follow the instructions below to use the MCP Playground to test a MCP Server:
 
 !!! prerequisite
     - You need to have an application subscribed to the MCP Server. For more information, see [Subscribe to a MCP Server](subscribe-to-a-mcp-server.md).
-    - Obtain an access token for the application. You can use the token endpoint to get a JWT token. For more information, see [Generate an Access Token](../../api-developer-portal/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md#step-3-get-an-access-token).
+    - Obtain an access token for the application. You can use the token endpoint to get a JWT token. For more information, see [Generate an Access Token](../../api-developer-portal/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md#get-a-test-key-to-invoke-an-api).
 
 The examples here use the `Petstore` MCP Server, which was created in [Create a MCP Server from an OpenAPI definition](create-from-openapi.md).
 

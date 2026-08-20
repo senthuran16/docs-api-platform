@@ -1,6 +1,6 @@
 ---
 title: "Disable the Subscription Requirement for an API"
-description: "Publish an API that does not require a subscription for consumption by deselecting its business plans, re-enable subscription validation later, and optionally prevent this capability globally or per tenant."
+description: "Publish an API that does not require a subscription by deselecting its business plans, and re-enable subscription validation later."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/disable-subscriptions-for-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/disable-subscriptions-for-an-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - rate-limiting
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

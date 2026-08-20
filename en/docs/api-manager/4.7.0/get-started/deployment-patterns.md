@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Deployment Patterns"
-description: "An overview of the All-in-One, Distributed, and Multi-Datacenter deployment patterns for WSO2 API Manager, including Pattern 0 through Pattern 6, the component distributions involved, and links to platform-specific configuration guides."
+description: "Compare the All-in-One, Distributed, and Multi-Datacenter deployment patterns for WSO2 API Manager, from Pattern 0 through Pattern 6."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/deployment-patterns/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/deployment-patterns.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -32,7 +32,7 @@ A single API Manager instance contains all components, including the API Control
 *   **Use Case**: Ideal for development, testing, and training environments where simplicity and speed of setup are key.
 *   **Limitations**: Not recommended for production as it represents a single point of failure and has no high availability.
 
-<a href="../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../assets/img/setup-and-install/single-node-apim-deployment.png" alt="Pattern 0: Single Node" width="60%"></a>
+<a href="../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="Pattern 0: Single Node" width="60%"></a>
 
 > **View the Configuration Guides for Pattern 0:** [Deploy on VMs](../install-and-setup/setup/single-node/configuring-a-single-node.md) or [Deploy on Kubernetes](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md)
 
@@ -45,7 +45,7 @@ This pattern involves running two or more identical All-in-One nodes in an activ
 *   **Use Case**: Suitable for small-scale production environments with low to moderate traffic that require high availability without the complexity of a distributed setup.
 *   **Benefits**: Provides basic fault tolerance and reliability.
 
-<a href="../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../assets/img/setup-and-install/active-active-apim-deployment.png" alt="Pattern 1: All-in-One HA" width="60%"></a>
+<a href="../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="Pattern 1: All-in-One HA" width="60%"></a>
 
 > **View the Configuration Guides for Pattern 1:** [Deploy on VMs](../install-and-setup/setup/single-node/configuring-an-active-active-deployment.md) or [Deploy on Kubernetes](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-1-all-in-one-ha.md)
 
@@ -169,7 +169,7 @@ This pattern separates the API Gateway from an All-in-One node that serves as th
 *   **Use Case**: Environments where API traffic is the primary bottleneck and needs to be scaled independently of the management portals.
 *   **Benefits**: Better scalability for API traffic and improved security by isolating the Gateway.
     
-<a href="../assets/img/setup-and-install/simple-distributed.png"><img src="../assets/img/setup-and-install/simple-distributed.png" alt="Pattern 2: Simple Scalable" width="80%"></a>
+<a href="../../assets/img/setup-and-install/simple-distributed.png"><img src="../../assets/img/setup-and-install/simple-distributed.png" alt="Pattern 2: Simple Scalable" width="80%"></a>
 
 > **View the Configuration Guides for Pattern 2:** [Deploy on VMs](../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-simple-scalable-setup.md) or [Deploy on Kubernetes](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-2-all-in-one-gw.md)
 
@@ -183,7 +183,7 @@ This pattern separates the API Control Plane, Traffic Manager, and Gateway into 
 *   **Use Case**: The recommended setup for most production environments with high traffic, requiring component-level scalability and isolation.
 *   **Benefits**: Allows for independent scaling of each component, provides strong fault isolation, and enhances security.
 
-<a href="../assets/img/setup-and-install/distributed-deployment-tm.png"><img src="../assets/img/setup-and-install/distributed-deployment-tm.png" alt="Pattern 3: Recommended Distributed" width="80%"></a>
+<a href="../../assets/img/setup-and-install/distributed-deployment-tm.png"><img src="../../assets/img/setup-and-install/distributed-deployment-tm.png" alt="Pattern 3: Recommended Distributed" width="80%"></a>
 
 > **View the Configuration Guides for Pattern 3:** [Deploy on VMs](../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md) or [Deploy on Kubernetes](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-3-acp-tm-gw.md)
 
@@ -196,7 +196,7 @@ This pattern extends Pattern 3 by also separating the Key Manager into its own d
 *   **Use Case**: Large-scale, complex production environments with very high security requirements or those needing to integrate with a centralized, external Identity and Access Management (IAM) system.
 *   **Benefits**: The highest level of security, scalability, and isolation.
 
-<a href="../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../assets/img/setup-and-install/distributed-deployment-km.png" alt="Pattern 4: Fully Distributed" width="80%"></a>
+<a href="../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../assets/img/setup-and-install/distributed-deployment-km.png" alt="Pattern 4: Fully Distributed" width="80%"></a>
 
 > **View the Configuration Guides for Pattern 4:** [Deploy on VMs](../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated.md) or [Deploy on Kubernetes](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-4-acp-tm-gw-km.md)
 
@@ -209,7 +209,7 @@ This is a variation of Pattern 2 where the Gateway and Key Manager are separated
 *   **Use Case**: Environments with a strong focus on both API traffic scaling and security, where the Key Manager handles a heavy load or requires special security treatment.
 *   **Benefits**: Balances scalability and security concerns.
   
-<a href="../assets/img/setup-and-install/deployment-cp-gw-km.png"><img src="../assets/img/setup-and-install/deployment-cp-gw-km.png" alt="Pattern 5: Simple Scalable with KM" width="80%"></a>
+<a href="../../assets/img/setup-and-install/deployment-cp-gw-km.png"><img src="../../assets/img/setup-and-install/deployment-cp-gw-km.png" alt="Pattern 5: Simple Scalable with KM" width="80%"></a>
 
 > **View the Configuration Guides for Pattern 5:** [Deploy on Kubernetes](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-5-all-in-one-gw-km.md)
 

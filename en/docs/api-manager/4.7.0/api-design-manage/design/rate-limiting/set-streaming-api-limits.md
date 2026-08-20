@@ -1,6 +1,6 @@
 ---
 title: "Set Rate Limits for Streaming APIs"
-description: "Configure event count, time-based, and hybrid subscription tier limits for WebSocket, SSE, and WebHook/WebSub streaming APIs in WSO2 API Manager, and understand how events are counted for each protocol."
+description: "Configure event count, time-based, and hybrid subscription tier limits for WebSocket, SSE, and WebHook/WebSub streaming APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/rate-limiting/set-streaming-api-limits/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/rate-limiting/set-streaming-api-limits.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - rate-limiting
   - websocket
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

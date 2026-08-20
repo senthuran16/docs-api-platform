@@ -1,6 +1,6 @@
 ---
 title: "Azure Content Safety Content Moderation Guardrail"
-description: "Perform content moderation on AI API requests and responses using Azure Content Safety's harm category severity thresholds with WSO2 AI Gateway's Azure Content Safety guardrail policy."
+description: "Moderate AI API requests and responses using Azure Content Safety's harm category severity thresholds via the AI Gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/azure-content-safety/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/azure-content-safety.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-guardrails
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

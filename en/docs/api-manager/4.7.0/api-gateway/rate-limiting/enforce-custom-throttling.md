@@ -1,6 +1,6 @@
 ---
 title: "Enforce Custom Throttling Policies in the Gateway"
-description: "Understand how the WSO2 API Gateway and Traffic Manager enforce custom throttling policies defined with Siddhi queries, including the key template format and a worked example that limits a specific user to 5 requests per minute."
+description: "Understand how the Gateway and Traffic Manager enforce custom throttling policies defined with Siddhi queries, including the key template format."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/rate-limiting/enforce-custom-throttling/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/rate-limiting/enforce-custom-throttling.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

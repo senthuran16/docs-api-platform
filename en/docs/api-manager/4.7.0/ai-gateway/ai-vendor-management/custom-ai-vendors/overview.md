@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom AI Vendor"
-description: "Add and configure a custom AI vendor in the WSO2 API Manager admin portal: provide vendor details, map AI model and token-usage fields from the payload, header, or query parameter, upload its OpenAPI definition, and set the connector type."
+description: "Add a custom AI vendor in the Admin Portal: provide vendor details, map token-usage fields, and upload its OpenAPI definition."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/custom-ai-vendors/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/custom-ai-vendors/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-vendor-management
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -146,7 +146,7 @@ Upload the **OpenAPI specification** file provided by the custom AI service prov
  <html><div class="admonition note">
  <p class="admonition-title">Note</p>
  <p>The <a href='https://github.com/wso2/carbon-apimgt/blob/master/components/apimgt/org.wso2.carbon.apimgt.api/src/main/java/org/wso2/carbon/apimgt/api/DefaultLLMProviderService.java'>`default`</a> connector type is a built in connector to extract AI model name, prompt token count, completion token count, total token count from the response.
- To write your own connector follow <a href='custom-connector.md'> 
+ To write your own connector follow <a href='../custom-connector.md'> 
  Write a connector for a Custom AI Service Provider.</a></p>
  <p>
  </div>

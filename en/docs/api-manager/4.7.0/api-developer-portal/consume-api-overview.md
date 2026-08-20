@@ -1,14 +1,14 @@
 ---
 title: "API Consumer Overview"
-description: "Learn the end-to-end process an API consumer follows in WSO2 API Manager's Developer Portal: discovering APIs, creating applications and subscriptions, authenticating with OAuth2, testing APIs, and rating and supporting published APIs."
+description: "The end-to-end process an API consumer follows in the Developer Portal: discover APIs, subscribe, authenticate, test, rate, and support them."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/consume-api-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/consume-api-overview.md
 tags:
   - api-manager
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Consumer API - Overview
@@ -17,7 +17,7 @@ An API Consumer is typically an application developer who may be internal or ext
 
 API consumers discover and access APIs from the **Developer Portal** of your WSO2 API Manager as shown below.
 
-<img src="../assets/img/get_started/architecture/developer-portal-overview.png" alt="developer portal of wso2 api manager">
+<img src="../../assets/img/get_started/architecture/developer-portal-overview.png" alt="developer portal of wso2 api manager">
 
 See [Publish an API to Developer Portal](publish-an-api-to-dev-portal.md) to learn how to publish APIs to the Developer Portal.
 
@@ -25,7 +25,7 @@ See [Publish an API to Developer Portal](publish-an-api-to-dev-portal.md) to lea
 
 The process of consuming an API from WSO2 API Manager involves the following steps:
 
-<img src="../assets/img/consume/api-consumer-workflow.png" alt="main tasks for an api consumer">
+<img src="../../assets/img/consume/api-consumer-workflow.png" alt="main tasks for an api consumer">
 
 ### Discover APIs
 
@@ -47,7 +47,7 @@ The subscription process is authenticated using OAuth2 by default. The authentic
 
 **Business Plans**
 
-Developers need to select a business plan for each API subscription. The business plan determines the number of requests that are allowed to be sent to the API per minute. Therefore, this is also the [throttling policy]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases) that applies to a subscription.
+Developers need to select a business plan for each API subscription. The business plan determines the number of requests that are allowed to be sent to the API per minute. Therefore, this is also the [throttling policy](../api-gateway/rate-limiting/understand-rate-limit-enforcement) that applies to a subscription.
 
 ### Test APIs
 

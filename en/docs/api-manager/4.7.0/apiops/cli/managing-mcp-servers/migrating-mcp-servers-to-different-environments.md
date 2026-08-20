@@ -1,6 +1,6 @@
 ---
 title: "Migrate MCP Servers to Different Environments"
-description: "Use apictl to export MCP Servers from one WSO2 API Manager environment and import them into another, covering the exported archive structure, revision handling, environment-specific parameters, and tenanted environment considerations."
+description: "Use apictl to export MCP Servers from one WSO2 API Manager environment and import them into another, handling revisions and environment parameters."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-mcp-servers/migrating-mcp-servers-to-different-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-mcp-servers/migrating-mcp-servers-to-different-environments.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-controller
   - ci-cd
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -26,7 +26,7 @@ content_type: "how-to"
     For more information, visit [Add an Environment](../getting-started-with-wso2-api-controller.md#add-an-environment).
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export MCP Servers. To create a custom user who can import/export MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export MCP Servers. To create a custom user who can import/export MCP Servers, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#creating-custom-users-to-perform-apictl-operations).
 
 ### Export an MCP Server
 
@@ -340,7 +340,7 @@ mentioned gateway environments. If the **deployment environments are not provide
 
     **Add dynamic data to environment configs**
 
-    The above parameter file supports detecting environment variables during the MCP Server import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the MCP Server import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configurations).
 
 !!! info
     Tiers are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment.

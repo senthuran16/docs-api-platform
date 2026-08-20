@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Multitenancy"
-description: "Understand the multitenancy architecture of WSO2 API Manager, including tenant isolation, resource sharing, tenant loading policies, restrictions, request dispatching, and scaling."
+description: "Learn the multitenancy architecture of WSO2 API Manager, covering tenant isolation, resource sharing, and tenant loading policies."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/multitenancy/introduction-to-multitenancy/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/multitenancy/introduction-to-multitenancy.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - multitenancy
   - architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

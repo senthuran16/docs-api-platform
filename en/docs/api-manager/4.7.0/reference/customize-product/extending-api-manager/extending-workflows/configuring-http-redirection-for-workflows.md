@@ -1,6 +1,6 @@
 ---
 title: "Configure HTTP Redirection for Workflows"
-description: "Write a custom WorkflowExecutor that redirects subscribers to a third-party entity, such as a payment collection service, as part of a custom subscription workflow, and complete the workflow via a callback."
+description: "Write a custom WorkflowExecutor that redirects subscribers to a third-party entity as part of a custom subscription workflow."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-http-redirection-for-workflows/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-http-redirection-for-workflows.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - workflows
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Create a Gateway Environment"
-description: "Create a WSO2 API Manager Gateway environment with virtual hosts using either the Admin Portal or the deployment.toml configuration file, including advanced VHost settings."
+description: "Create a Gateway environment with virtual hosts using the Admin Portal or the deployment.toml configuration file."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/multiple-gateways/configure-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/multiple-gateways/configure-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment
   - gateway-policies
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -18,7 +18,7 @@ Each Gateway environment definition contains details related to a specific Gatew
 
 ## Option 1: Create a Gateway environment via the Admin Portal
 
-1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -34,8 +34,8 @@ Each Gateway environment definition contains details related to a specific Gatew
 
     1. Click **Gateways**, and then click **Add Gateway Environment**.
 
-      <a href="../../assets/img/deploy/add-gateway-environment-menu.png">
-         <img src="../../assets/img/deploy/add-gateway-environment-menu.png" alt="Menu to add Gateway environment"
+      <a href="../../../assets/img/deploy/add-gateway-environment-menu.png">
+         <img src="../../../assets/img/deploy/add-gateway-environment-menu.png" alt="Menu to add Gateway environment"
          title="Menu to add Gateway environment" width="500px" />
       </a>
 
@@ -47,15 +47,15 @@ Each Gateway environment definition contains details related to a specific Gatew
                  |-------------|--------------|-------------------------------------------|--------------|
        | us-region   | US Region    | Gateway environment deployed in the US region. | us.wso2.com  |
 
-      <a href="../../assets/img/deploy/add-gateway-environment.png">
-         <img src="../../assets/img/deploy/add-gateway-environment.png" alt="Add a Gateway Environment"
+      <a href="../../../assets/img/deploy/add-gateway-environment.png">
+         <img src="../../../assets/img/deploy/add-gateway-environment.png" alt="Add a Gateway Environment"
          title="Add a Gateway Environment" width="500px" />
       </a>
 
     3. Optionally, click **Advanced Settings** to add an HTTP(S) context and custom ports.
 
-         <a href="../../assets/img/deploy/vhost-advanced-settings.png">
-             <img src="../../assets/img/deploy/vhost-advanced-settings.png" alt="Advanced VHost settings"
+         <a href="../../../assets/img/deploy/vhost-advanced-settings.png">
+             <img src="../../../assets/img/deploy/vhost-advanced-settings.png" alt="Advanced VHost settings"
              title="Advanced VHost settings" width="500px" />
          </a>
        
@@ -118,7 +118,7 @@ Follow the instructions below to use the `deployment.toml` file, which is the ce
    ```
 
 <ol start="3">
-<li><a href="../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server">Start WSO2 API Manager</a>.</li>
+<li><a href="../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server">Start WSO2 API Manager</a>.</li>
 </ol>
 
 This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
@@ -126,7 +126,7 @@ This will start WSO2 API Manager in the all-in-one mode, which includes the defa
 !!! note
     Once the Gateway environment is set up, you can observe the active Gateway instances registered under the created environment, as shown in the image below. If a Gateway instance shows an **expired** status, it means the instance has not sent a heartbeat signal within the expected time interval and is considered inactive or unreachable.
 
-    <a href="../../assets/img/deploy/gateway-instances.png">
-        <img src="../../assets/img/deploy/gateway-instances.png" alt="observe gateway instances"
+    <a href="../../../assets/img/deploy/gateway-instances.png">
+        <img src="../../../assets/img/deploy/gateway-instances.png" alt="observe gateway instances"
         title="observe gateway instances" width="800px" /> 
     </a>   

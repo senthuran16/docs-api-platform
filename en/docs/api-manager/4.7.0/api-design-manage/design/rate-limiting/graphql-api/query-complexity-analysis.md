@@ -1,6 +1,6 @@
 ---
 title: "Limit GraphQL Query Complexity"
-description: "Protect a GraphQL API's backend from expensive queries by assigning subscription tiers with complexity limits and configuring per-field complexity values in the WSO2 API Manager Publisher Portal."
+description: "Protect a GraphQL API's backend from expensive queries by assigning subscription tiers with complexity limits and per-field complexity values."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/rate-limiting/graphql-api/query-complexity-analysis/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/rate-limiting/graphql-api/query-complexity-analysis.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - graphql
   - rate-limiting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

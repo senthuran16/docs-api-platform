@@ -1,6 +1,6 @@
 ---
 title: "API Manager Gateway Performance Test Results"
-description: "Presents WSO2 API Manager Gateway throughput and response time benchmark results for Echo and Mediation APIs across varying concurrent users and payload sizes, including GC throughput analysis."
+description: "Presents API Manager Gateway throughput and response time benchmarks for Echo and Mediation APIs across concurrent users and payload sizes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/performance-tests-results/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/performance-tests-results.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

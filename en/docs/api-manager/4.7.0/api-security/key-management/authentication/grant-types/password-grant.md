@@ -1,6 +1,6 @@
 ---
 title: "OAuth2 Password Grant"
-description: "Explains the OAuth2 resource owner password credentials grant flow in WSO2 API Manager, its prerequisites, and how to invoke the Token API with a username and password to generate an access token and refresh token."
+description: "Learn the OAuth2 resource owner password credentials grant flow and invoke the Token API with a username and password to generate access and refresh tokens."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/password-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/password-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Adding Dynamic Endpoints"
-description: "Use a default endpoint with a dynamically constructed To header, driven by a mediation sequence property, to route API requests to a backend endpoint that cannot be defined as a static address endpoint."
+description: "Use a default endpoint with a dynamically constructed To header to route requests to a backend that can't be a static address endpoint."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/adding-dynamic-endpoints/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/adding-dynamic-endpoints.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -43,4 +43,4 @@ In this example, you have constructed the `service_ep` property dynamically and 
 
 You can copy the content of the above sequence to an XML file and upload it to an API configured with a dynamic endpoint using the Publisher Portal UI.
 
-For more information, visit [Creating and Uploading Manually in API Publisher]({{base_path}}/learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests#creating-and-uploading-manually-in-api-publisher).
+For more information, visit [Creating and Uploading Manually in API Publisher](../../api-design-manage/design/api-policies/attach-policy#attaching-policies).

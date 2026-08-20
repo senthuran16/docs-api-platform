@@ -1,6 +1,6 @@
 ---
 title: "Manage Global Gateway Policies"
-description: "Create, deploy, and undeploy global-level gateway policies in the WSO2 API Manager Publisher Portal to apply common mediation policies across all APIs on a gateway without manually creating and placing XML policy files."
+description: "Create, deploy, and undeploy global gateway policies in the Publisher Portal to apply mediation policies across all APIs on a gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/gateway-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/gateway-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

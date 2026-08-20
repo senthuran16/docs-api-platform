@@ -1,13 +1,13 @@
 ---
 title: "Endpoint Types Reference"
-description: "Reference of the endpoint types supported by WSO2 API Manager, including HTTP/REST, HTTP/SOAP, Service, Failover Group, Load Balance, Dynamic, Mock Implementation, and AWS Lambda endpoints."
+description: "Reference of endpoint types supported by API Manager, including HTTP/REST, HTTP/SOAP, Service, Failover Group, Load Balance, Dynamic, and AWS Lambda."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/endpoint-types/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/endpoint-types.md
 tags:
   - api-manager
   - endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -38,19 +38,19 @@ An Endpoint is a specific destination for a message such as an address, WSDL, a 
 <td>The endpoints where the incoming requests are directed to in a round-robin manner. They automatically handle fail-over as well.</td>
 </tr>
 <tr><td>Dynamic Endpoint</td>
-<td>Using a dynamic endpoint, the requests can be dynamically routed to an address based on a specific condition (e.g., request parameters, payload etc.). When using this endpoint type, a mediation sequence should be applied to the message <b>IN Flow</b> of the API. For more information, see <a href="../../../api-gateway/policies/adding-dynamic-endpoints.md">Adding Dynamic Endpoints</a>.</td>
+<td>Using a dynamic endpoint, the requests can be dynamically routed to an address based on a specific condition (e.g., request parameters, payload etc.). When using this endpoint type, a mediation sequence should be applied to the message <b>IN Flow</b> of the API. For more information, see <a href="../../../../api-gateway/policies/adding-dynamic-endpoints.md">Adding Dynamic Endpoints</a>.</td>
 </tr>
 <tr><td>Mock Implementation</td>
 <td>
 <ul>
-<li><a href="../prototype-api/create-mocked-js-api.md">Mock implementation with API Gateway</a> - The Mock Implementation uses the built-in JavaScript engine of Synapse to mock the responses and can be used per HTTP resource of the API.</br>
+<li><a href="../../prototype-api/create-mocked-js-api.md">Mock implementation with API Gateway</a> - The Mock Implementation uses the built-in JavaScript engine of Synapse to mock the responses and can be used per HTTP resource of the API.</br>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <b>Mock Implementation</b> will be only available for APIs that are in the <b>CREATED</b> or <b>PRE-RELEASED</b> state.</p>
 </div></li>
 </td>
 </tr>
-<tr><td>AWS Lambda</td><td>An AWS Lambda endpoint can be used to invoke AWS Lambda functions through WSO2 API Gateway. For more information on creating APIs with AWS Lambda endpoint, see <a href="../../../tutorials/create-and-publish-awslambda-api.md">Create and Publish an AWS Lambda API</a>.</td>
+<tr><td>AWS Lambda</td><td>An AWS Lambda endpoint can be used to invoke AWS Lambda functions through WSO2 API Gateway. For more information on creating APIs with AWS Lambda endpoint, see <a href="../../../../tutorials/create-and-publish-awslambda-api.md">Create and Publish an AWS Lambda API</a>.</td>
 </tr>
 </table>
 

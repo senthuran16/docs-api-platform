@@ -1,13 +1,13 @@
 ---
 title: "Search for APIs in the Developer Portal"
-description: "Use unified and attribute-based search syntax, including name, provider, version, context, status, description, tag, custom property, and API category, to find APIs in the WSO2 API Manager Publisher and Developer Portals."
+description: "Use unified and attribute-based search syntax, including name, provider, version, status, tag, and category, to find APIs in the portals."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/discover-apis/search/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/discover-apis/search.md
 tags:
   - api-manager
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

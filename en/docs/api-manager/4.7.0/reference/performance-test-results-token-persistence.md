@@ -1,6 +1,6 @@
 ---
 title: "Performance Test Results for Token Persistence"
-description: "Presents throughput and CPU/IOPS benchmark results comparing WSO2 API Manager token generation with and without token persistence across Client Credentials, Password, and Refresh grant types."
+description: "Presents throughput and CPU/IOPS benchmarks comparing API Manager token generation with and without token persistence across grant types."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/performance-test-results-token-persistence/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/performance-test-results-token-persistence.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - access-tokens
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -107,19 +107,19 @@ The following graphs depict the variance of the CPU usage of the database over t
 
 CPU Usage                  |  Total IOPS
 :-------------------------:|:----------------------:
-[![DB CPU vs time for Client Credentials](../assets/img/setup-and-install/performance-test-results/token/cc_db_cpu.png)]({{base_path}}/assets/img/setup-and-install/performance-test-results/token/cc__db_cpu.png)  |  [![DB IOPS vs time for Client Credentials](../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)](../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)
+[![DB CPU vs time for Client Credentials](../assets/img/setup-and-install/performance-test-results/token/cc_db_cpu.png)](../assets/img/setup-and-install/performance-test-results/token/cc_db_cpu.png)  |  [![DB IOPS vs time for Client Credentials](../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)](../assets/img/setup-and-install/performance-test-results/token/cc_iops.png)
 
 **Password Grant**
 
 CPU Usage                  |  Total IOPS
 :-------------------------:|:----------------------:
-[![DB CPU vs time for Password](../assets/img/setup-and-install/performance-test-results/token/pwd_db_cpu.png)]({{base_path}}/assets/img/setup-and-install/performance-test-results/token/pwd__db_cpu.png)  |  [![DB IOPS vs time for Password](../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)](../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)
+[![DB CPU vs time for Password](../assets/img/setup-and-install/performance-test-results/token/pwd_db_cpu.png)](../assets/img/setup-and-install/performance-test-results/token/pwd_db_cpu.png)  |  [![DB IOPS vs time for Password](../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)](../assets/img/setup-and-install/performance-test-results/token/pwd_iops.png)
 
 **Refresh Grant**
 
 CPU Usage                  |  Total IOPS
 :-------------------------:|:----------------------:
-[![DB CPU vs time for Password](../assets/img/setup-and-install/performance-test-results/token/refresh_db_cpu.png)]({{base_path}}/assets/img/setup-and-install/performance-test-results/token/refresh__db_cpu.png)  |  [![DB IOPS vs time for Password](../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)](../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)
+[![DB CPU vs time for Password](../assets/img/setup-and-install/performance-test-results/token/refresh_db_cpu.png)](../assets/img/setup-and-install/performance-test-results/token/refresh_db_cpu.png)  |  [![DB IOPS vs time for Password](../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)](../assets/img/setup-and-install/performance-test-results/token/refresh_iops.png)
 
 
 The above graphs were generated without any throughput limits in JMeter. As a result, the API Manager CPU was saturated and the maximum throughput was observed. The following graphs show the metrics from a similar test setup where the throughput was limited to **100 TPS**.

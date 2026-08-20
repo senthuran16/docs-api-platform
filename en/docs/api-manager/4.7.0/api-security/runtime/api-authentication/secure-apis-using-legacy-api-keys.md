@@ -1,6 +1,6 @@
 ---
 title: "Secure APIs Using Legacy API Keys"
-description: "Configure and use deprecated Legacy API keys to secure APIs in WSO2 API Manager, including IP and referrer restrictions, and migrate to the new API-bound API Keys feature."
+description: "Configure and use deprecated Legacy API keys to secure APIs in WSO2 API Manager, and migrate applications to the newer API-bound API Keys feature."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/secure-apis-using-legacy-api-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/secure-apis-using-legacy-api-keys.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-security
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -48,11 +48,11 @@ enable_legacy_api_keys = true
 
 Create, publish and deploy an API that is secured with the API key security scheme as the application-level security. Let's work with the sample app for this purpose.
 
-{!includes/design/create-publish-api.md!}
+--8<-- "api-manager/4.7.0/includes/design/create-publish-api.md"
 
 ### Step 2 - Generate the Legacy API key
 
-{!includes/design/generate-legacy-api-key.md!}
+--8<-- "api-manager/4.7.0/includes/design/generate-legacy-api-key.md"
 
 ### Step 3 - Invoke the API
 

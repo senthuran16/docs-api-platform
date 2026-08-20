@@ -1,6 +1,6 @@
 ---
 title: "Get Started with the Marketplace Assistant"
-description: "Set up and use the AI-powered Marketplace Assistant in WSO2 API Manager's Developer Portal: register on the AI Subscription Portal, configure the apim.ai settings, sync the vector database, and chat with APIs to get recommendations."
+description: "Set up and use the AI-powered Marketplace Assistant in the Developer Portal to sync the vector database and chat with APIs for recommendations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/discover-apis/marketplace-assistant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/discover-apis/marketplace-assistant.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - ai-tools
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 

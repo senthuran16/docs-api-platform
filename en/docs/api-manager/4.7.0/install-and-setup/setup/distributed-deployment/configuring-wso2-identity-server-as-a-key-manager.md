@@ -1,6 +1,6 @@
 ---
 title: "Set Up WSO2 Identity Server as a Resident Key Manager"
-description: "Step-by-step instructions to configure WSO2 Identity Server as the Resident Key Manager for a WSO2 API Manager deployment, including database sharing, IS connector setup, event listener configuration, and optional high availability."
+description: "Configure WSO2 Identity Server as the Resident Key Manager for a WSO2 API Manager deployment, including database sharing and optional high availability."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -59,7 +59,7 @@ You can create the required databases for the API-M deployment on a separate ser
 
 The following diagram depicts how the databases are shared between WSO2 IS and WSO2 API-M.
 
-<a href="../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
+<a href="../../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
 
 -   **WSO2SHARED_DB** - This database contains the registry and user management data. 
 

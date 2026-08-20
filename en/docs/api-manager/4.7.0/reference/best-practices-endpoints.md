@@ -1,6 +1,6 @@
 ---
 title: "Best Practices for Working with Endpoints"
-description: "Recommended practices for configuring endpoints in WSO2 API Manager, including using named endpoints, setting socket and endpoint timeout values correctly, handling endpoint errors, and choosing between REST APIs and HTTP endpoints."
+description: "Recommended practices for configuring endpoints in WSO2 API Manager, including named endpoints, timeout values, and endpoint error handling."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/best-practices-endpoints/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/best-practices-endpoints.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - micro-integrator
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -29,7 +29,7 @@ content_type: "concept"
   separate connections that do not depend on each other. Even if one
   connections times out, the other is unaffected.  
 
-<a href="../assets/img/reference/typical-message-flow.png"><img src="../assets/img/reference/typical-message-flow.png" width=500></a> 
+<a href="../../assets/img/reference/typical-message-flow.png"><img src="../../assets/img/reference/typical-message-flow.png" width=500></a> 
 
   Here are the important timeout parameters you should configure
   before going into production:

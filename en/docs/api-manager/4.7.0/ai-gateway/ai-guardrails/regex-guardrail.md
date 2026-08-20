@@ -1,6 +1,6 @@
 ---
 title: "Regex Guardrail"
-description: "Validate AI API request and response JSON content against custom regular expression patterns using WSO2 AI Gateway's Regex Guardrail policy to enforce security, compliance, and prompt-safety rules."
+description: "Validate AI API request and response JSON content against regular expression patterns to enforce security and compliance rules."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/regex-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/regex-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

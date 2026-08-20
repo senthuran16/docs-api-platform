@@ -1,6 +1,6 @@
 ---
 title: "Adding a Class Mediator"
-description: "Write a custom Java class mediator by extending AbstractMediator to customize an API's mediation flow, package it as a policy XML file, and attach it to a request or response flow."
+description: "Write a custom Java class mediator by extending AbstractMediator to customize an API's mediation flow, then attach it as a policy."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/adding-a-class-mediator/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/adding-a-class-mediator.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - customization
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

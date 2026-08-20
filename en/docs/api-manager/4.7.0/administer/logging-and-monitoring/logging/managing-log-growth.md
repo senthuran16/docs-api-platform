@@ -1,6 +1,6 @@
 ---
 title: "Managing Log Growth"
-description: "Configure log4j2 rollover policies for Carbon and audit logs in WSO2 API Manager, based on time period or file size, and manage the number of retained backup log files."
+description: "Configure log4j2 rollover policies for Carbon and audit logs by time period or file size, and manage retained backup log files."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/logging-and-monitoring/logging/managing-log-growth/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/logging-and-monitoring/logging/managing-log-growth.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - logging
   - observability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -82,6 +82,7 @@ Log growth in [Carbon Logs](../../../monitoring/observability/configuring-loggin
 
         You can change the `appender.CARBON_LOGFILE.strategy.action.condition.age` parameter to accept files that are as old or older than the specified duration.
 
+<a name="managing-the-growth-of-audit-log-files"></a>
 #### Managing the growth of audit log files
 
 -   Rollover based on a time period can be configured by changing `appender.AUDIT_LOGFILE.policies.time.interval` value in days (Default value is 1 day).

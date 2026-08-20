@@ -1,6 +1,6 @@
 ---
 title: "Scenario 12: Guaranteed Message Delivery"
-description: "Scenario tutorial demonstrating the store-and-forward messaging pattern in WSO2 Micro Integrator: invoke an API whose backend is unavailable so the message lands in the Message Store, then restore the backend and observe the Message Processor successfully redeliver it."
+description: "Demonstrates the store-and-forward pattern: a message lands in the Message Store when the backend is down, then is redelivered."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario12-message-delivery/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario12-message-delivery.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - message-mediation
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -27,7 +27,7 @@ Store and forward messaging pattern is used to ensure guaranteed delivery of mes
 
 This will be implemented with Message Store and Message Processor in Micro Integrator. Whenever the catering system is down, the messages will be stored in the Message Store. When the system becomes available again, the stored messages will be sent to the Catering system.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario12.png" alt="Guaranteed Message Delivery" title="Guaranteed Message Delivery" width="60%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario12.png" alt="Guaranteed Message Delivery" title="Guaranteed Message Delivery" width="60%" />
 
 If you look at the `docker-compose.yml` file, you can see that ``CATERING_SERVICE_EP`` is defined as ‘<code>[http://www.urldoesnotexist.com](http://www.urldoesnotexist.com)</code>’ under mi-runtime service. If you send a request to this endpoint, it will fail and the message will be stored in the Message Store database.
 

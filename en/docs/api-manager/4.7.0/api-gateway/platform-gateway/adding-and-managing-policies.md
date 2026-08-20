@@ -1,6 +1,6 @@
 ---
 title: "Adding and Managing Policies on Platform Gateway"
-description: "Attach and configure Policy Hub policies to an API deployed on Platform Gateway by dragging them onto the request or response flow in the Publisher Portal's policy canvas and redeploying the API."
+description: "Attach and configure Policy Hub policies to an API deployed on Platform Gateway by dragging them onto the policy canvas and redeploying."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/platform-gateway/adding-and-managing-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/platform-gateway/adding-and-managing-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-policies
   - gateway-policies
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Migrate API Products Between Environments with API Controller"
-description: "Export API Products (with or without dependent APIs) as archives from one WSO2 API Manager environment and import them into another using apictl, including the exported archive structure and tenanted-environment considerations."
+title: "Migrate API Products between environments with apictl"
+description: "Export API Products, with or without dependent APIs, as archives from one environment and import them into another using apictl."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-apis-api-products/migrating-api-products-to-different-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-apis-api-products/migrating-api-products-to-different-environments.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - product-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -25,7 +25,7 @@ content_type: "how-to"
     For more information, visit [Add an Environment](../getting-started-with-wso2-api-controller.md#add-an-environment).
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export API Products. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export API Products. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#creating-custom-users-to-perform-apictl-operations).
 
 ### Export an API Product
 
@@ -361,11 +361,11 @@ mentioned gateway environments. If the **deployment environments are not provide
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the API Product, you may need to update the exported API Product with details relevant to the importing environment. For example, the subscription policies, MutualSSL certificates and deployment environments of an API Product might differ between the dev and production environments. Furthermore, when considering the dependent APIs of an API product, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between environments as well. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for API Products, see [Defining the params file for an API Product](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api-product).
+    When the importing and exporting environments are different, before importing the API Product, you may need to update the exported API Product with details relevant to the importing environment. For example, the subscription policies, MutualSSL certificates and deployment environments of an API Product might differ between the dev and production environments. Furthermore, when considering the dependent APIs of an API product, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between environments as well. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for API Products, see [Defining the params file for an API Product](../advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api-product).
 
     **Add dynamic data to environment configs**
 
-    The above parameter file supports detecting environment variables during the API Product import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the API Product import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configurations).
 
 !!! info
     Tiers are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment.

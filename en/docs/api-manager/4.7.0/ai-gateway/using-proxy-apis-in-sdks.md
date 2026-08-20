@@ -1,6 +1,6 @@
 ---
 title: "Use SDKs to Integrate AI APIs"
-description: "Integrate AI APIs created in WSO2 API Manager into applications using LangChain and provider-specific SDKs for Anthropic, AWS Bedrock, Azure AI Foundry, Azure OpenAI, Gemini, Mistral AI, and OpenAI."
+description: "Integrate AI APIs into applications using LangChain and provider-specific SDKs for Anthropic, AWS Bedrock, Gemini, and more."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/using-proxy-apis-in-sdks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/using-proxy-apis-in-sdks.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-apis
   - rest-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

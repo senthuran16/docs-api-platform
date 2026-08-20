@@ -1,6 +1,6 @@
 ---
 title: "Configure Okta as a Key Manager"
-description: "Integrate Okta as a third-party Key Manager in WSO2 API Manager, covering authorization server setup, access policies, OAuth application creation, and Admin Portal configuration."
+description: "Integrate Okta as a third-party Key Manager in WSO2 API Manager, covering authorization server setup, access policies, and Admin Portal configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-okta-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-okta-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

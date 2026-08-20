@@ -1,6 +1,6 @@
 ---
 title: "Monitoring Server Health"
-description: "Deploy and configure the Health Check API in WSO2 API Manager to monitor data source and user store health, customize Health Checker settings, add custom Health Checkers, and interpret error responses."
+description: "Deploy and configure the Health Check API to monitor data source and user store health, and customize Health Checker settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/logging-and-monitoring/monitoring/monitoring-server-health/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/logging-and-monitoring/monitoring/monitoring-server-health.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - monitoring
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

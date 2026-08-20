@@ -1,6 +1,6 @@
 ---
 title: "Transforming API Message Payload"
-description: "Explains how the API Gateway's message builders and formatters convert JSON and XML payloads, how to configure the JSON-to-XML conversion behavior for arrays, empty values, and special characters, and how to force payload transformation via the messageType property."
+description: "The Gateway's message builders and formatters convert JSON and XML payloads; configure JSON-to-XML conversion behavior and forced transformation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/transforming-api-message-payload/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/transforming-api-message-payload.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Message Tracing (Deprecated)"
-description: "Configure the deprecated Message Tracer feature in WSO2 API Manager to log message flow details for debugging and auditing, including enabling tracing in the Management Console and adding an event publisher to dump trace events to the wso2carbon log."
+description: "Configure the deprecated Message Tracer feature to log message flow details for debugging, including adding an event publisher for trace events."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/message-tracing/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/message-tracing.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - logging
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "troubleshooting"
 ---
 

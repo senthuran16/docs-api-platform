@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Management Governance Overview"
-description: "Learn what API governance is and the benefits it provides for managing APIs and MCP Servers throughout their lifecycle, including security, compliance, consistency, and collaboration."
+description: "Learn what API governance is and the benefits it provides for managing APIs and MCP Servers across their lifecycle."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/governance/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/governance/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - governance
   - api-lifecycle-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # WSO2 API Management Governance

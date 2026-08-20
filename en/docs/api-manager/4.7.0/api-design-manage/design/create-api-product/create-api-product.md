@@ -1,6 +1,6 @@
 ---
 title: "Create an API Product"
-description: "Step-by-step guide to creating an API Product in the WSO2 API Publisher by bundling resources from the Customer Info API and Leasing API, then deploying it to the Gateway and publishing it to the Developer Portal."
+description: "Create an API Product in the Publisher Portal by bundling resources from two sample APIs, then deploy and publish it to the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api-product/create-api-product/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api-product/create-api-product.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-design
   - publisher-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Scenario 1: Create a REST API from an OpenAPI Definition"
-description: "Scenario tutorial where a railway company exposes an internally managed schedule API to the public by importing its OpenAPI definition into WSO2 API Manager, removing authentication on a public resource, deploying to the Gateway, and testing and publishing the API."
+description: "Expose an internally managed schedule API to the public by importing its OpenAPI definition, removing authentication, and publishing it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario1-create-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario1-create-rest-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - openapi
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -27,7 +27,7 @@ By exposing this API through WSO2 API Manager, Coltrain expects to get the full 
 
 WSO2 API manager provides capability to import OAS definitions and create the API using that. 
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario1.png" title="Import OAS definition to API-M" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario1.png" title="Import OAS definition to API-M" width="630"/>
     
 ## Step 1: Testing the backend
 

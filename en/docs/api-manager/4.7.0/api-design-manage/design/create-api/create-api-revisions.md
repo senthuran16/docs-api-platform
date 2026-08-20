@@ -1,6 +1,6 @@
 ---
 title: "Manage API Revisions"
-description: "Understand and manage API Revisions in WSO2 API Manager: create, deploy, undeploy, delete, and restore revisions to decouple API publishing in the Developer Portal from deployment in Gateway environments."
+description: "Create, deploy, undeploy, delete, and restore API Revisions to decouple publishing an API from deploying it to Gateway environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-api-revisions/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-api-revisions.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-lifecycle-management
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -40,7 +40,7 @@ Follow the instructions below to either deploy a new revision or deploy an exist
 
 ### Deploy a new revision
 
-{!includes/design/deploy-revision.md!}
+--8<-- "api-manager/4.7.0/includes/design/deploy-revision.md"
 
 ### Deploy an existing revision
 

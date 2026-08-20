@@ -1,6 +1,6 @@
 ---
 title: "Symmetric Encryption in WSO2 API Manager"
-description: "Learn why WSO2 API Manager 4.7.0 uses symmetric key encryption by default to protect backend secrets, Key Manager secrets, access tokens, and other sensitive data, and how to generate and configure a custom encryption key."
+description: "Learn why WSO2 API Manager uses symmetric key encryption by default to protect secrets and tokens, and how to configure a custom encryption key."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/encryption/symmetric-encryption/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/encryption/symmetric-encryption.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - security
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

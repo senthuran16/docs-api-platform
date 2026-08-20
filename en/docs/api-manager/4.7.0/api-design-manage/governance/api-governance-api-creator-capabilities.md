@@ -1,13 +1,13 @@
 ---
 title: "API Governance Capabilities for API Creators and Publishers"
-description: "Learn how API creators and publishers monitor API compliance in WSO2 API Manager: attach governance labels to APIs, understand blocking vs. non-blocking policy checks, and use the API Compliance Dashboard to review ruleset and policy adherence."
+description: "API creators and publishers monitor compliance by attaching governance labels, understanding blocking checks, and using the Compliance Dashboard."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/governance/api-governance-api-creator-capabilities/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/governance/api-governance-api-creator-capabilities.md
 tags:
   - api-manager
   - governance
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -52,8 +52,8 @@ To add labels to an API follow these steps:
 4. Click on **Basic Info** to access the API’s design configurations.  
 5. Click the **+** icon to attach the relevant labels to the API from the list of available labels.
 
-<a href="../../assets/img/governance/label_attach.png">
-  <img src="../../assets/img/governance/label_attach.png" alt="APIM Governance API Label Attach"/>
+<a href="../../../assets/img/governance/label_attach.png">
+  <img src="../../../assets/img/governance/label_attach.png" alt="APIM Governance API Label Attach"/>
 </a>
 
 ## API Compliance Dashboard
@@ -63,8 +63,8 @@ The **API Compliance Dashboard** provides a comprehensive view of the compliance
 1. Log in to the **API Manager Publisher Portal**.  
 2. Select an API and navigate to the **Compliance** section from the left panel.
 
-<a href="../../assets/img/governance/api_compliance.png">
-  <img src="../../assets/img/governance/api_compliance.png" alt="APIM Governance API Compliance"/>
+<a href="../../../assets/img/governance/api_compliance.png">
+  <img src="../../../assets/img/governance/api_compliance.png" alt="APIM Governance API Compliance"/>
 </a>
 
 
@@ -96,6 +96,6 @@ during the API Publish and Deploy stages. When a blocking policy is violated, th
 and the API creator is notified of the violation. A view similar to following will be displayed in the Publisher Portal
 when an API operation is blocked:
 
-<a href="../../assets/img/governance/api_blocking.png">
-  <img src="../../assets/img/governance/api_blocking.png" alt="APIM Blocked API Action"/>
+<a href="../../../assets/img/governance/api_blocking.png">
+  <img src="../../../assets/img/governance/api_blocking.png" alt="APIM Blocked API Action"/>
 </a>

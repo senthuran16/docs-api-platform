@@ -1,6 +1,6 @@
 ---
 title: "Create Custom Users for API Controller Operations"
-description: "Create custom users and roles with the minimal scopes required to perform specific apictl operations, or use the built-in Internal/devops role for full access to API Controller functionality."
+description: "Create custom users and roles with the minimal scopes needed for specific apictl operations, or use the built-in Internal/devops role."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/creating-custom-users-to-perform-api-controller-operations/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - user-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -23,7 +23,7 @@ Further, you can create your own custom user with a custom role to perform speci
 !!! info
     **Steps to create a custom user with a custom role for your need** 
 
-    - As shown in [Create user roles](../../../administer/managing-users-and-roles/managing-user-roles.md#create-user-roles) section, you can create your own custom user role by assigning scopes that are required to perform a particular set of apictl operations by referring the table below.
+    - As shown in [Create user roles](../../../administer/managing-users-and-roles/managing-user-roles.md#creating-user-roles) section, you can create your own custom user role by assigning scopes that are required to perform a particular set of apictl operations by referring the table below.
     - Then, create a user as explained in [Adding a new User](../../../administer/managing-users-and-roles/managing-users.md#adding-a-new-user), by assigning the custom role that you created in the above step, to that user.
     - Now you can login to apictl (using `apictl login <env-name>` command) and perform the particular set of operations as per your need.
 

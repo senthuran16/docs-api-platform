@@ -1,6 +1,6 @@
 ---
 title: "Configure OpenSearch-Based Analytics for API Manager"
-description: "Set up an on-premise OpenSearch analytics solution for WSO2 API Manager, covering deployment.toml and log4j2 configuration, installing OpenSearch and OpenSearch Dashboards, configuring Fluent Bit to ship analytics logs, and viewing the imported dashboards."
+description: "Set up an on-premise OpenSearch analytics solution for WSO2 API Manager, installing OpenSearch and OpenSearch Dashboards and configuring Fluent Bit."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/on-prem/opensearch-installation-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/on-prem/opensearch-installation-guide.md
 tags:
@@ -8,13 +8,13 @@ tags:
   - analytics
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
 # OpenSearch Based Analytics Installation Guide
 
-<a href="../../../assets/img/analytics/opensearch/architecture.png"><img src="../../../assets/img/analytics/opensearch/architecture.png" width="70%" alt="Deployment diagram"></a>
+<a href="../../../../assets/img/analytics/opensearch/architecture.png"><img src="../../../../assets/img/analytics/opensearch/architecture.png" width="70%" alt="Deployment diagram"></a>
 
 ### Analytics Data flow
 

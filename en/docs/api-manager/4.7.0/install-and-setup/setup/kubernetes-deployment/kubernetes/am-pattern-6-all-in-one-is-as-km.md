@@ -1,6 +1,6 @@
 ---
-title: "Pattern 6: All-in-One Kubernetes Setup with WSO2 Identity Server as Key Manager"
-description: "Deploy WSO2 API Manager as a single All-in-One Kubernetes node with WSO2 Identity Server 7.x acting as a third-party Key Manager, covering custom Docker images, certificate trust setup, and registering IS as a Key Manager in the Admin Portal."
+title: "Pattern 6: All-in-One with WSO2 IS as Key Manager"
+description: "Deploy WSO2 API Manager as a single All-in-One Kubernetes node with WSO2 Identity Server 7.x acting as a third-party Key Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-6-all-in-one-is-as-km/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-6-all-in-one-is-as-km.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -687,9 +687,9 @@ kubectl create secret generic apim-keystore-secret \
   -n apim
 ```
 
-For mutual certificate trust between APIM and IS, import each product's public certificate into the other's truststore. Refer to the [Importing certificates to the truststore](https://apim.docs.wso2.com/en/4.7.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/#step-3-importing-certificates-to-the-truststore) guide.
+For mutual certificate trust between APIM and IS, import each product's public certificate into the other's truststore. Refer to the [Importing certificates to the truststore](../../security/configuring-keystores/keystore-basics/creating-new-keystores#step-3-importing-certificates-to-the-truststore) guide.
 
-For more details on configuring keystores, see [Configuring Keystores in WSO2 API Manager](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/).
+For more details on configuring keystores, see [Configuring Keystores in WSO2 API Manager](../../security/configuring-keystores/configuring-keystores-in-wso2-api-manager).
 
 #### 3.2 Configure the Internal Encryption Key
 
@@ -717,6 +717,7 @@ For more details on configuring keystores, see [Configuring Keystores in WSO2 AP
 
     If you encrypt secrets using the cipher tool and secure vault (see [Section 3.3](#33-encrypt-secrets)), also encrypt the internal encryption key and set the encrypted value here instead of the plaintext key.
 
+<a name="33-encrypt-secrets"></a>
 #### 3.3 Encrypt Secrets
 
 By default, database passwords and other sensitive values are stored as plain text in the values files. This is acceptable for local testing but a security risk in production.
@@ -731,7 +732,7 @@ sh ciphertool.sh -Dconfigure -Dsymmetric -Dkey.based.encryption
 
 **Option 2: apictl**
 
-You can also use `apictl` to encrypt secrets. For further guidance, refer to [Encrypting Secrets with apictl](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/api-controller/encrypting-secrets-with-ctl/).
+You can also use `apictl` to encrypt secrets. For further guidance, refer to [Encrypting Secrets with apictl](../../../../apiops/cli/encrypting-secrets-with-ctl).
 
 1. Initialize `apictl` using the trust store:
 
@@ -940,7 +941,7 @@ userStore:
 !!! warning
     If you do not need to set any custom properties, remove the `properties` block entirely. An empty `properties` block will cause the deployment to fail.
 
-See [Working with user store properties](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/) for the full list of options.
+See [Working with user store properties](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores) for the full list of options.
 
 ### 6. Deploy with Custom Values { #section-6 }
 

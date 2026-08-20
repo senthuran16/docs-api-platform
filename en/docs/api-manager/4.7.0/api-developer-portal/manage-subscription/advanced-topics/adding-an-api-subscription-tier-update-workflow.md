@@ -1,6 +1,6 @@
 ---
 title: "Add an API Subscription Tier Update Workflow"
-description: "Attach an approval workflow to subscription tier changes in WSO2 API Manager so an admin or publisher must approve or reject tier update requests before they are applied."
+description: "Attach an approval workflow to subscription tier changes so an admin or publisher must approve or reject tier update requests before they apply."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-subscription/advanced-topics/adding-an-api-subscription-tier-update-workflow.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - subscriptions
   - rate-limiting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

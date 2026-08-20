@@ -1,6 +1,6 @@
 ---
 title: "Overview of Access Tokens"
-description: "Learn how WSO2 API Manager issues and uses application and user access tokens to authenticate API requests, and the uniqueness constraints enforced on generated tokens."
+description: "How API Manager issues and uses application and user access tokens to authenticate API requests, and the uniqueness constraints enforced."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/obtain-access-token/overview-of-access-tokens.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - access-tokens
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

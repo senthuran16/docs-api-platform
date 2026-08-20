@@ -1,6 +1,6 @@
 ---
 title: "CI/CD-Driven API Governance with WSO2 APICTL"
-description: "Use WSO2 APICTL's --dry-run flag to validate API compliance against governance policies before importing APIs, enabling automated governance checks within a CI/CD pipeline."
+description: "Validate API compliance against governance policies before importing APIs using APICTL's --dry-run flag in a CI/CD pipeline."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/governance/api-governance-cicd/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/governance/api-governance-cicd.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ci-cd
   - api-controller
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -31,8 +31,8 @@ apictl import api --file <path-to-API-archive> --environment <environment> --dry
 
 The results will be displayed in the console as shown in the example below:
 
-<a href="../../assets/img/governance/api_gov_apictl_result.png">
-  <img src="../../assets/img/governance/api_gov_apictl_result.png" alt="APIM Governance Validation Result Example" width="90%" />
+<a href="../../../assets/img/governance/api_gov_apictl_result.png">
+  <img src="../../../assets/img/governance/api_gov_apictl_result.png" alt="APIM Governance Validation Result Example" width="90%" />
 </a>
 
 !!! note "Applicable Governance Policies"

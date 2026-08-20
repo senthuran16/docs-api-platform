@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting WebSocket APIs"
-description: "Explains how to enable debug-level logging for the WebSocket API request and response handlers in the API Manager Gateway to troubleshoot WebSocket API issues."
+description: "Explains how to enable debug-level logging for WebSocket API request and response handlers in the API Manager Gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/troubleshooting-websocket-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/troubleshooting-websocket-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - troubleshooting
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "troubleshooting"
 ---
 

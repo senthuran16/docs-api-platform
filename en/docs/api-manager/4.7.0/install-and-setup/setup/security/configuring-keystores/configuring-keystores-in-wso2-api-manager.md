@@ -1,6 +1,6 @@
 ---
 title: "Configuring Keystores in WSO2 API Manager"
-description: "Configure the primary, secondary (TLS), internal, and custom keystores used by WSO2 API Manager for signing, SSL/TLS communication, and encrypting internal data, with recommended keystore setup practices."
+description: "Configure the primary, secondary, and internal keystores WSO2 API Manager uses for signing, SSL/TLS communication, and encrypting internal data."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

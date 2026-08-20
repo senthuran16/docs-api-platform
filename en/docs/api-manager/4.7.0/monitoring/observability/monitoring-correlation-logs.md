@@ -1,6 +1,6 @@
 ---
 title: "Monitor Correlation Logs in WSO2 API Manager"
-description: "Enable and analyze correlation logs in WSO2 API Manager to trace method calls, external HTTP calls, and JDBC/LDAP database calls under a shared Correlation ID, including how to track a specific request and narrow down performance bottlenecks."
+description: "Enable and analyze correlation logs in WSO2 API Manager to trace method, HTTP, and database calls under a shared Correlation ID."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/monitoring-correlation-logs/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/monitoring-correlation-logs.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - observability
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Create an MCP Server by Proxying an Existing MCP Server"
-description: "Proxy an existing standards-compliant MCP Server through WSO2 API Manager, discovering its upstream tools and applying governance policies such as auth, throttling, and analytics without regenerating tools."
+description: "Proxy an existing MCP Server through WSO2 API Manager, discovering its upstream tools and applying auth, throttling, and analytics."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/create-from-mcp-server/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/create-from-mcp-server.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mcp
   - ai-tools
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

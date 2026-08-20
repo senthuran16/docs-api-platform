@@ -1,6 +1,6 @@
 ---
 title: "Block Subscription to an API"
-description: "Block and unblock subscription access to an API in WSO2 API Manager at the production-only or full-access level to control usage, and understand how Gateway caching affects when the block takes effect."
+description: "Block and unblock subscription access to an API at the production-only or full-access level to control usage."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/block-subscription-to-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/block-subscription-to-an-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -31,16 +31,16 @@ Blocking can be done at two levels:
   <html>
   <div class="admonition warning">
   <p class="admonition-title">Warning</p>
-  <p>When <a href="../../../get-started/overview.md#api-gateway">API Gateway</a> caching is enabled (it is enabled by default), even after blocking a subscription, consumers might still be able to access APIs until the cache expires, which happens approximately every 15 minutes. Likewise, the API Gateway cache applies even when an API is unblocked.</p>
+  <p>When <a href="../../../../get-started/overview.md#classic-federated-gateways">API Gateway</a> caching is enabled (it is enabled by default), even after blocking a subscription, consumers might still be able to access APIs until the cache expires, which happens approximately every 15 minutes. Likewise, the API Gateway cache applies even when an API is unblocked.</p>
   </div> 
   
   <div class="admonition note">
   <p class="admonition-title">Note</p>
   <p>See the following topics for the descriptions on the concepts that you need to know when you block subscriptions to an API:
   <ul>
-    <li><a href="../../../get-started/key-concepts.md#application">Applications</a></li>
-    <li><a href="../../../get-started/key-concepts.md#rate-limits">Rate Limiting</a></li>
-    <li> <a href="../../../get-started/key-concepts.md#access-token">Access tokens</a></li></ul>
+    <li><a href="../../../../get-started/key-concepts.md#application">Applications</a></li>
+    <li><a href="../../../../get-started/key-concepts.md#rate-limits">Rate Limiting</a></li>
+    <li> <a href="../../../../get-started/key-concepts.md#access-token">Access tokens</a></li></ul>
     </p>
   </div> 
   </html>
@@ -112,7 +112,7 @@ Blocking can be done at two levels:
 
      3.  Go to **Portal Configurations** and click **Subscriptions** to navigate to the managed subscription section.
 
-         <a href="../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu"><img src="../../../assets/img/learn/subscriptions-menu.png" width=250></a>
+         <a href="../../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu"><img src="../../../../assets/img/learn/subscriptions-menu.png" width=250></a>
 
      4. Click **Block All**.
 
@@ -143,7 +143,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition warning">
          <p class="admonition-title">Warning</p>
-         <p>When [Gateway caching](../../../get-started/overview.md#api-gateway) is enabled, which is the case by default, the subscription blocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is blocked, then the API will be blocked immediately.</p>
+         <p>When [Gateway caching](../../../get-started/overview.md#classic-federated-gateways) is enabled, which is the case by default, the subscription blocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is blocked, then the API will be blocked immediately.</p>
          </div>
          </html>
 
@@ -185,7 +185,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition warning">
          <p class="admonition-title">Warning</p>
-         <p>When [Gateway caching](../../../get-started/overview.md#api-gateway) is enabled, which is the case by default, the subscription unblocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is unblocked, then the API will be unblocked immediately.</p>
+         <p>When [Gateway caching](../../../get-started/overview.md#classic-federated-gateways) is enabled, which is the case by default, the subscription unblocking will take place only after the token cache expires (the default token cache expiry time is 15min). However, if the token is regenerated after the API is unblocked, then the API will be unblocked immediately.</p>
          </div>
          </html>
 

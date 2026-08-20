@@ -1,6 +1,6 @@
 ---
 title: "Enforce GraphQL Query Depth and Complexity Limits"
-description: "Learn how the WSO2 API Gateway's Static Query Analyzer protects GraphQL APIs from denial-of-service attacks by enforcing query depth and complexity limits configured in subscription policies, with worked examples of each calculation."
+description: "Learn how the Gateway's Static Query Analyzer protects GraphQL APIs from denial-of-service attacks by enforcing query depth and complexity limits."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/rate-limiting/enforce-graphql-query-limits/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/rate-limiting/enforce-graphql-query-limits.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - graphql
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

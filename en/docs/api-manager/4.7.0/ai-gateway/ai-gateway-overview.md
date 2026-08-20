@@ -1,6 +1,6 @@
 ---
 title: "WSO2 AI Gateway Overview"
-description: "Overview of WSO2 AI Gateway's LLM Gateway and MCP Gateway modes, covering cost control, provider independence, security, guardrails, observability, and governance features for production AI deployments."
+description: "Explore the WSO2 AI Gateway's LLM Gateway and MCP Gateway modes, covering cost control, security, guardrails, and observability."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-gateway-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-gateway-overview.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - mcp-gateway
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # WSO2 AI Gateway

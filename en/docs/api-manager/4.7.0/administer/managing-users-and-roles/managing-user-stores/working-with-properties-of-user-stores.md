@@ -1,6 +1,6 @@
 ---
 title: "Properties of User Stores"
-description: "Reference of the key configuration properties used to define primary user stores in WSO2 API Manager, including LDAP and JDBC-specific properties for connections, search filters, and password handling."
+description: "Reference the key configuration properties for primary user stores, including LDAP and JDBC connection and search filter settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

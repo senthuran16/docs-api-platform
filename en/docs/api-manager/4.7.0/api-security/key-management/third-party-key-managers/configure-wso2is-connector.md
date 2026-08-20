@@ -1,6 +1,6 @@
 ---
 title: "Configure WSO2 IS 6.x as a Key Manager"
-description: "Configure WSO2 Identity Server versions before 7.x as a third-party Key Manager in WSO2 API Manager, including deployment.toml settings, connector JARs, and Admin Portal configuration."
+description: "Configure WSO2 Identity Server versions before 7.x as a third-party Key Manager in WSO2 API Manager, including deployment.toml settings and connectors."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-wso2is-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-wso2is-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

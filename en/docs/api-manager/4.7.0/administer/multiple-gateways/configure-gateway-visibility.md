@@ -1,6 +1,6 @@
 ---
 title: "Configure Gateway Visibility"
-description: "Restrict access to Gateway environments in WSO2 API Manager based on user roles, using either the Admin Portal or the deployment.toml configuration file with allow or deny permission types."
+description: "Restrict access to Gateway environments based on user roles, using the Admin Portal or deployment.toml with allow or deny permissions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/multiple-gateways/configure-gateway-visibility/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/multiple-gateways/configure-gateway-visibility.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - access-control
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -27,7 +27,7 @@ Similarly, when the permission type for the role-based restriction is set to **D
 
 ## Option 1: Configure visibility for a Gateway environment via the Admin Portal
 
-1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -95,7 +95,7 @@ Follow the instructions below to use the `deployment.toml` file, which is the ce
     websub_event_receiver_https_endpoint = "https://localhost:8021"
    ```
 
-3. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 

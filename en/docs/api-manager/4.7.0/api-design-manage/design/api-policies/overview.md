@@ -1,6 +1,6 @@
 ---
 title: "API Policies Overview"
-description: "Understand how API policies enforce business logic on the request, response, and fault flows of an API invocation in WSO2 API Manager, and the architectural improvements over previous mediation policy features."
+description: "Learn how API policies enforce business logic on the request, response, and fault flows of an API invocation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-policies/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-policies/overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - gateway-policies
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "High Availability for Endpoints"
-description: "Configure load balancing and failover groups of endpoints in the WSO2 API Publisher to distribute or redirect backend requests across multiple endpoints for high availability."
+description: "Configure load balancing and failover groups of endpoints in the Publisher to distribute or redirect backend requests for high availability."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/high-availability-for-endpoints/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/high-availability-for-endpoints.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - high-availability
   - endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

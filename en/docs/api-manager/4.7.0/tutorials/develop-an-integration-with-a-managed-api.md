@@ -1,6 +1,6 @@
 ---
 title: "Develop an Integration from a Managed API"
-description: "API-first integration tutorial where an API developer creates and mock-tests a REST API in WSO2 API Manager first, an integration developer implements the backend in WSO2 Integration Studio and publishes it to the Service Catalog, and the API developer then wires up the real service endpoint."
+description: "API-first tutorial where an API developer mock-tests a REST API, an integration developer implements the backend, and the API is wired up."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/develop-an-integration-with-a-managed-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/develop-an-integration-with-a-managed-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - service-catalog
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

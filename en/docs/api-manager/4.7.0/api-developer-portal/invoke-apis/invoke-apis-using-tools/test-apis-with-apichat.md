@@ -1,6 +1,6 @@
 ---
 title: "Test APIs with API Chat"
-description: "Set up and use API Chat, an experimental natural-language testing feature in the WSO2 API Manager Developer Portal, to invoke REST API resources and multi-step operations without writing manual test scenarios."
+description: "Set up and use API Chat, an experimental natural-language testing feature, to invoke REST API resources without writing manual test scenarios."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - ai-tools
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

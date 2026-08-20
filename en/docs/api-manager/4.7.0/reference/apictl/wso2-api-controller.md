@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Controller (apictl) Reference"
-description: "Reference guide to installing and using apictl, the WSO2 API Manager command-line tool, covering environment setup, login, import/export, deployment, undeploy, Kubernetes, AWS, VCS, Micro Integrator, and secret management commands."
+description: "A reference guide to installing and using apictl, the WSO2 API Manager command-line tool, covering environments, login, import/export, and deployment."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/apictl/wso2-api-controller/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/apictl/wso2-api-controller.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ci-cd
   - kubernetes
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

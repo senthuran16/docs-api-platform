@@ -1,6 +1,6 @@
 ---
 title: "Add Custom Attributes to Applications"
-description: "Configure server-specific or tenant-specific custom attributes for applications in WSO2 API Manager, then create an application in the Developer Portal that captures those additional attribute values."
+description: "Configure server-specific or tenant-specific custom attributes for applications, then create an application that captures those values."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/advanced-topics/add-custom-attributes-to-applications/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/advanced-topics/add-custom-attributes-to-applications.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

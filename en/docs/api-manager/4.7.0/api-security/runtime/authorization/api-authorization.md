@@ -8,8 +8,8 @@ tags:
   - access-control
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 Nowadays, most of the enterprise applications are built with a collection of REST APIs. These APIs are being used by wide variety of users and devices. Due to the expanding consumer base, the application developers have to focus on limiting the API access in order to make sure that only the authorized parties have access to respective resources/services.

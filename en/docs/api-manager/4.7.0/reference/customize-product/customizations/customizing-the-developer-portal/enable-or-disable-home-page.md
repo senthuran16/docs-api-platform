@@ -1,6 +1,6 @@
 ---
 title: "Enable or Disable the Developer Portal Home Page"
-description: "Configure a branded Developer Portal landing page with a carousel, tag-based API listings, parallax sections, and a contact-us block by editing the landingPage properties in userTheme.json."
+description: "Configure a branded Developer Portal landing page with a carousel, tag-based API listings, and a contact section via userTheme.json."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/customizing-the-developer-portal/enable-or-disable-home-page/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/customizing-the-developer-portal/enable-or-disable-home-page.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - theming
   - ui-customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Securing API Manager Web Portals"
-description: "Secure the WSO2 API Manager Management Console, Publisher, and Developer Portal web applications by updating SSL certificates, configuring session time-out, restricting access by IP, bypassing client credentials with PKCE, and enabling JWT for portal tokens."
+description: "Secure the WSO2 API Manager Management Console, Publisher, and Developer Portal by updating SSL certificates and configuring session time-out."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/securing-api-m-web-portals/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/securing-api-m-web-portals.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - admin-portal
   - publisher-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

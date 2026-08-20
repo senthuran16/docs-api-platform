@@ -1,14 +1,14 @@
 ---
 title: "Third-Party Key Manager Integration"
-description: "Overview of WSO2 API Manager's support for integrating external authorization servers as Key Managers, listing supported enterprise, cloud, and custom Key Manager connectors."
+description: "Browse WSO2 API Manager's supported third-party Key Manager connectors, covering enterprise, cloud, and custom authorization server integrations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/overview.md
 tags:
   - api-manager
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Third-Party Key Manager Integration

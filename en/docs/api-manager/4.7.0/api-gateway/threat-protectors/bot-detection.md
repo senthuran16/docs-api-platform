@@ -1,6 +1,6 @@
 ---
 title: "Detect Bot Attacks at the API Gateway"
-description: "Understand how WSO2 API Manager's unadvertised Gateway service logs unauthenticated bot traffic, such as port-scanning attempts, to the wso2-BotDetectedData.log file so you can monitor or build alerting on top of it."
+description: "Understand how the Gateway's unadvertised service logs unauthenticated bot traffic, such as port-scanning attempts, so you can monitor or alert on it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/threat-protectors/bot-detection/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/threat-protectors/bot-detection.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - threat-protection
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

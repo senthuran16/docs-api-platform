@@ -1,6 +1,6 @@
 ---
 title: "Enforce Rate Limiting and Resource Access Policies"
-description: "Tutorial demonstrating how the WSO2 API Manager Gateway enforces a subscription rate limiting tier on the PizzaShack sample API, from generating an access token and invoking the API to observing the rate limiting error once the quota is exceeded."
+description: "See how the API Manager Gateway enforces a subscription rate limiting tier, from invoking an API to observing the throttled error."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/enforce-throttling-and-resource-access-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/enforce-throttling-and-resource-access-policies.md
 tags:
@@ -9,13 +9,13 @@ tags:
   - throttling
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
 # Enforce Rate Limiting and Resource Access Policies
 
-**Rate limiting** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of rate limiting in WSO2 API Manager (WSO2 API-M), see [rate limiting tiers]({{base_path}}/manage-apis/design/rate-limiting/setting-throttling-limits/).
+**Rate limiting** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of rate limiting in WSO2 API Manager (WSO2 API-M), see [rate limiting tiers](../api-gateway/rate-limiting/understand-rate-limit-enforcement).
 
 !!! note
     This tutorial uses the `PizzaShack` API, which has  GET and POST methods to access it and a rate limiting policy enforced.

@@ -1,6 +1,6 @@
 ---
 title: "Configure the Anthropic AI Service Provider"
-description: "Configure the default Anthropic AI Service Provider in the WSO2 API Manager Admin Portal, including editable model lists and read-only LLM and authentication configurations for Claude models."
+description: "Configure the default Anthropic AI Service Provider in the Admin Portal, including editable model lists and authentication settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/anthropic/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/anthropic.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-vendor-management
   - ai-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

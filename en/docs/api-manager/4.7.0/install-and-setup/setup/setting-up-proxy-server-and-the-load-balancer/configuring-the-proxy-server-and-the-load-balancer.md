@@ -1,6 +1,6 @@
 ---
 title: "Configuring the Proxy Server and the Load Balancer"
-description: "Set up an SSL certificate and configure NGINX as a reverse proxy or load balancer for WSO2 API Manager single-node, active-active, and distributed deployments, and configure the corresponding proxy host, port, and dynamic callback origin in deployment.toml."
+description: "Set up an SSL certificate and configure NGINX as a reverse proxy or load balancer for single-node, active-active, and distributed API-M deployments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - high-availability
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

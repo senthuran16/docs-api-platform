@@ -1,6 +1,6 @@
 ---
 title: "What's New in WSO2 API Manager 4.7.0"
-description: "An overview of WSO2 API Manager 4.7.0, covering new features such as Platform Gateway integration, API-bound API keys, symmetric encryption, MCP governance and analytics, multi-model routing, improvements, deprecations, and key breaking changes to review before upgrading."
+description: "Review what's new in WSO2 API Manager 4.7.0, including Platform Gateway integration, API-bound API keys, MCP governance, and key breaking changes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/about-this-release/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/about-this-release.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - ai-gateway
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # About this Release
@@ -23,7 +23,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
 
 ## Downloads
 
-<a href="https://wso2.com/api-manager/#"><img src="../assets/img/get_started/download-apim.png" title="Download WSO2 API Manager" width="25%" alt="Download WSO2 API Manager"/></a>
+<a href="https://wso2.com/api-manager/#"><img src="../../assets/img/get_started/download-apim.png" title="Download WSO2 API Manager" width="25%" alt="Download WSO2 API Manager"/></a>
 
 ## New Features
 
@@ -163,7 +163,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
 
 ## Compatible WSO2 product versions
 
-{!includes/compatibility-matrix.md!}
+--8<-- "api-manager/4.7.0/includes/compatibility-matrix.md"
 
 ## **Key Changes**
 

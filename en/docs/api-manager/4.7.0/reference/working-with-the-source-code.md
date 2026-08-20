@@ -1,6 +1,6 @@
 ---
 title: "Working with the WSO2 API Manager Source Code"
-description: "Pointers to the GitHub repositories that host WSO2 API Manager source code, the Maven-based build process, and how to contribute to the codebase if you want to clone, modify, or build a customized version of the product."
+description: "Pointers to the GitHub repositories hosting API Manager source code, the Maven build process, and how to contribute to the codebase."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/working-with-the-source-code/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/working-with-the-source-code.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - installation
   - ci-cd
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

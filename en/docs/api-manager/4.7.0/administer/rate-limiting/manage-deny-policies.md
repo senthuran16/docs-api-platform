@@ -1,6 +1,6 @@
 ---
 title: "Manage Deny Policies"
-description: "Configure deny policies in the WSO2 API Manager Admin Portal to block requests to specific APIs, applications, IP addresses, or users, protecting backend servers from abuse and attacks."
+description: "Configure deny policies to block requests to specific APIs, applications, IP addresses, or users, protecting backend servers from abuse."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-deny-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-deny-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - admin-portal
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

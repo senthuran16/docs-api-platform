@@ -1,6 +1,6 @@
 ---
 title: "AI Service Provider Ecosystem Overview"
-description: "An overview of the AI Service Providers supported out of the box by the WSO2 API Manager AI Gateway, including OpenAI, Azure OpenAI, AWS Bedrock, Anthropic, Gemini, and Mistral AI, plus the framework for integrating custom AI services."
+description: "Explore the AI Service Providers supported out of the box by the AI Gateway, plus the framework for integrating custom AI services."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/overview.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - ai-vendor-management
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # AI Service Provider Ecosystem

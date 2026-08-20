@@ -1,6 +1,6 @@
 ---
 title: "Federated Gateways Overview"
-description: "Understand WSO2 API Manager's federated gateway architecture, including supported gateway types (AWS, Azure, Kong, Envoy, and custom agents), gateway modes, and the architectural benefits of separating the control plane from distributed runtime gateways."
+description: "API Manager's federated gateway architecture, including supported gateway types, gateway modes, and the benefits of separating control and runtime."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/overview.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - federated-gateways
   - architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Federated Gateways Overview
@@ -76,7 +76,7 @@ Discover and manage APIs deployed on Envoy Gateway in Kubernetes environments.
 - Kubernetes-native integration
 - Centralized API governance
 
-[Learn more about Envoy Gateway integration](EnvoyGateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes.md)
+[Learn more about Envoy Gateway integration](envoygateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes.md)
 
 ## Gateway Modes
 

@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish a WebSocket API"
-description: "Tutorial that guides you through designing a WebSocket-based chat API in WSO2 API Manager, publishing it to the Developer Portal, and invoking it with the wscat WebSocket client using a generated access token."
+description: "Design a WebSocket-based chat API in API Manager, publish it to the Developer Portal, and invoke it with the wscat client."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/create-and-publish-websocket-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/create-and-publish-websocket-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - tutorials
   - streaming-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -22,7 +22,7 @@ invoke it using the **wscat** WebSocket client.
 <html>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For more information on WebSocket APIs, see <a href="{{base_path}}/manage-apis/design/create-api/create-a-websocket-api">Create a WebSocket API</a>.</p>
+<p>For more information on WebSocket APIs, see <a href="../../api-design-manage/design/create-api/create-streaming-api/create-a-websocket-streaming-api/">Create a WebSocket API</a>.</p>
 </div> 
 </html>
 
@@ -44,7 +44,7 @@ invoke it using the **wscat** WebSocket client.
       </div>
      </html>
     
-     [![Create WebSocket API menu]({{base_path}}/assets/img/learn/design-new-streaming-api.jpg)]({{base_path}}/assets/img/learn/design-new-streaming-api.jpg)
+     [![Create WebSocket API menu](../assets/img/design/create-api/streaming-api/design-new-streaming-api.png)](../assets/img/design/create-api/streaming-api/design-new-streaming-api.png)
 
 3.  Enter the details of the new WebSocket API.
 

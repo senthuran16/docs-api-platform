@@ -1,6 +1,6 @@
 ---
 title: "Generate Application Keys"
-description: "Generate and manage application keys in the Developer Portal, including production and sandbox consumer secrets, multiple consumer secrets configuration, PKCE-enabled key generation, and generating keys using Okta or Keycloak as the key manager."
+description: "Generate and manage application keys in the Developer Portal, including multiple consumer secrets, PKCE, and keys via Okta or Keycloak."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/generate-api-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/generate-api-keys.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - access-tokens
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -70,13 +70,13 @@ Follow the instructions below to generate/renew application keys:
 
 8.  Two consumer secrets are now available for the application. Access tokens can be generated using any of the available consumer secrets associated with the application. To generate an access token, click **GENERATE ACCESS TOKEN**. When prompted, provide one of the consumer secrets associated with the application.
 
-     <a href="../../../assets/img/consume/consumer-secrets/access-token-generation-with-consumer-secret.png">
-        <img src="../../../assets/img/consume/consumer-secrets/access-token-generation-with-consumer-secret.png" alt="Access Token Generation With Consumer Secret" width="60%">
+     <a href="../../../../assets/img/consume/consumer-secrets/access-token-generation-with-consumer-secret.png">
+        <img src="../../../../assets/img/consume/consumer-secrets/access-token-generation-with-consumer-secret.png" alt="Access Token Generation With Consumer Secret" width="60%">
     </a>
 
 9.  Copy the generated JWT Access Token that appears so that you can use it in the future.
 
-     <a href="../../../assets/img/learn/jwt-access-token.png" ><img src="../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
+     <a href="../../../../assets/img/learn/jwt-access-token.png" ><img src="../../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" title="JWT access token" width="60%" /></a>
 
 !!! tip
     When you generate Access Tokens for APIs that are protected by scopes, you can select the respective [scopes](../../../api-security/runtime/authorization/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md) and, thereafter, generate the token for it.

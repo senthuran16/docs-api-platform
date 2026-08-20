@@ -1,6 +1,6 @@
 ---
 title: "Test a GraphQL API Using the Integrated GraphiQL Console"
-description: "Subscribe to a GraphQL API, generate an access token, and invoke GraphQL query and subscription operations using the Developer Portal's Integrated GraphiQL Console in WSO2 API Manager."
+description: "Subscribe to a GraphQL API, generate an access token, and invoke query and subscription operations using the Developer Portal's GraphiQL Console."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - graphql
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

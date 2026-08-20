@@ -1,6 +1,6 @@
 ---
 title: "OAuth2 NTLM Grant"
-description: "Obtain an OAuth2 access token in WSO2 API Manager running on Windows by exchanging a valid NTLM token as an authorization grant, including how to generate the NTLM token and invoke the Token API."
+description: "Obtain an OAuth2 access token on Windows by exchanging a valid NTLM token as an authorization grant, including generating the token."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/ntlm-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/ntlm-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

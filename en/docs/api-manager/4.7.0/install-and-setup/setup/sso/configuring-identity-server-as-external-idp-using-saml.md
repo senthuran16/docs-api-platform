@@ -1,6 +1,6 @@
 ---
 title: "Configure WSO2 Identity Server as an External IdP Using SAML"
-description: "Set up SAML 2.0 single sign-on between WSO2 Identity Server and WSO2 API Manager so users can access the Developer Portal and Publisher with one authentication, covering service provider setup, certificate import, identity provider configuration, and role and claim mapping."
+description: "Set up SAML 2.0 single sign-on between WSO2 Identity Server and WSO2 API Manager so users access the Developer Portal and Publisher once."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-saml/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-saml.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - sso
   - saml2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

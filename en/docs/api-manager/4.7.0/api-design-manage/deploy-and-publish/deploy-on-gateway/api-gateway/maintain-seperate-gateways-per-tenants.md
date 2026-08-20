@@ -1,6 +1,6 @@
 ---
 title: "Maintain Separate Gateways per Tenant"
-description: "Configure single-tenant-per-gateway or multiple-tenants-per-gateway deployment patterns in WSO2 API Manager's deployment.toml to isolate tenant traffic, resources, and security policies across Classic Gateways."
+description: "Configure single-tenant-per-gateway or multiple-tenants-per-gateway deployment patterns to isolate tenant traffic and resources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/maintain-seperate-gateways-per-tenants/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/maintain-seperate-gateways-per-tenants.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Scenario-Based Tutorials: Union Station Overview"
-description: "Overview of a scenario-based tutorial series that uses a fictional multimodal railway hub, Union Station, to demonstrate WSO2 API Manager, Micro Integrator, and Streaming Integrator capabilities, including the Docker Compose setup, tenants, and users shared across all scenarios."
+description: "Overview of a scenario-based tutorial series using a fictional railway hub to demonstrate API Manager, Micro Integrator, and Streaming Integrator."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario-overview.md
 tags:
@@ -8,15 +8,15 @@ tags:
   - tutorials
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Scenario Overview
 
 **Union Station** is a major multimodal railway transportation hub. It is one of the busiest stations in the country and serves thousands of passengers a day. The train shed, platforms, and tracks are owned by **GOGO transit**, and they operate the station. Trains are owned by the companies named **Quantis**, **ColTrain**, and **RailCo**. To provide a digital ecosystem, all four companies are planning to develop their day to day business operations with WSO2 technology. These development ranges from providing different kinds of APIs to external/internal users, providing real time notifications, stream data processing, integrating with partners/external systems etc.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario-overview.png" alt="Scenario Overview" title="Scenario Overview" width="65%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario-overview.png" alt="Scenario Overview" title="Scenario Overview" width="65%" />
 
 These tutorials will demonstrate how WSO2 technology can be used to cater to their different requirements.
 
@@ -36,7 +36,7 @@ Docker and Docker compose need to be installed. Please refer [https://docs.docke
 
 ## Deployment
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario-deployment.png" alt="Scenario Deployment" title="Scenario Deployment" width="65%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario-deployment.png" alt="Scenario Deployment" title="Scenario Deployment" width="65%" />
 
 A basic infrastructure has already been created for you to try out the scenarios. To run the setup please follow these steps.
 
@@ -54,7 +54,7 @@ A basic infrastructure has already been created for you to try out the scenarios
 
 The API Manager setup consists of 3 tenants for Quantis, ColTrain, and RailCo and Gogo Transit uses the super tenant domain. Tenants, Users, and APIs will be created automatically when Docker compose starts.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario-tenants.png" alt="Scenario Tenants" title="Scenario Tenants" width="65%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario-tenants.png" alt="Scenario Tenants" title="Scenario Tenants" width="65%" />
 
 You can log in to the Publisher Portal and Developer Portal using each tenant's credentials. 
 
@@ -147,24 +147,24 @@ The Micro Integrator and Streaming Integrator containers that were created when 
     <tr>
         <td>
             <ul>
-                <li><a href="scenario1-create-rest-api.md">Scenario 1: Create a REST API from an OpenAPI Definition<a></li>
-                <li><a href="scenario2-access-control.md">Scenario 2: Engage Access Control to the API<a></li>
-                <li><a href="scenario3-implementing-an-api.md">Scenario 3: Implementing an API<a></li>
-                <li><a href="scenario4-user-signup-approval-flow.md">Scenario 4: Signing up a New User<a></li>
-                <li><a href="scenario5-developer-community-feature.md">Scenario 5: Getting the Developer Community Involved<a></li>
-                <li><a href="scenario6-integrating-with-data-sources.md">Scenario 6: Integrating with Data Sources<a></li>
-                <li><a href="scenario7-analytics.md">Scenario 7: Analytics<a></li>
+                <li><a href="../scenario1-create-rest-api.md">Scenario 1: Create a REST API from an OpenAPI Definition<a></li>
+                <li><a href="../scenario2-access-control.md">Scenario 2: Engage Access Control to the API<a></li>
+                <li><a href="../scenario3-implementing-an-api.md">Scenario 3: Implementing an API<a></li>
+                <li><a href="../scenario4-user-signup-approval-flow.md">Scenario 4: Signing up a New User<a></li>
+                <li><a href="../scenario5-developer-community-feature.md">Scenario 5: Getting the Developer Community Involved<a></li>
+                <li><a href="../scenario6-integrating-with-data-sources.md">Scenario 6: Integrating with Data Sources<a></li>
+                <li><a href="../scenario7-analytics.md">Scenario 7: Analytics<a></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><a href="scenario8-rate-limiting.md">Scenario 8: Rate Limiting<a></li>
-                <li><a href="scenario9-realtime-data.md">Scenario 9: Realtime Data with WebSocket API<a></li>
-                <li><a href="scenario10-notifications-webhooks.md">Scenario 10: Notifications Using Webhooks<a></li>
-                <li><a href="scenario11-graphql.md">Scenario 11: GraphQL Support<a></li>
-                <li><a href="scenario12-message-delivery.md">Scenario 12: Guaranteed Message Delivery<a></li>
-                <li><a href="scenario13-integrate-with-connectors.md">Scenario 13: Integrate with Services via Connectors<a></li>
-                <li><a href="scenario14-external-key-manager.md">Scenario 14: External Key Manager Support<a></li>
+                <li><a href="../scenario8-rate-limiting.md">Scenario 8: Rate Limiting<a></li>
+                <li><a href="../scenario9-realtime-data.md">Scenario 9: Realtime Data with WebSocket API<a></li>
+                <li><a href="../scenario10-notifications-webhooks.md">Scenario 10: Notifications Using Webhooks<a></li>
+                <li><a href="../scenario11-graphql.md">Scenario 11: GraphQL Support<a></li>
+                <li><a href="../scenario12-message-delivery.md">Scenario 12: Guaranteed Message Delivery<a></li>
+                <li><a href="../scenario13-integrate-with-connectors.md">Scenario 13: Integrate with Services via Connectors<a></li>
+                <li><a href="../scenario14-external-key-manager.md">Scenario 14: External Key Manager Support<a></li>
             </ul>
         </td>
     </tr>

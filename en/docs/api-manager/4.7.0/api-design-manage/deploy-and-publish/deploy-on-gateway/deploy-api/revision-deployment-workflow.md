@@ -1,6 +1,6 @@
 ---
 title: "Add an Approval Workflow for Revision Deployment"
-description: "Enable the Approval Workflow Executor for API revision deployments so that publisher deployment requests must be approved or rejected by an administrator before being deployed to the Gateway."
+description: "Enable the Approval Workflow Executor so API revision deployments must be approved by an administrator before reaching the Gateway."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/revision-deployment-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/revision-deployment-workflow.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - admin-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -89,7 +89,7 @@ In this section let's see how to add an approval workflow to control the deploym
     If the request is approved, the new revision will be shown in the **Current Revision** column.
     If the request is rejected, the **Current Revision** column will remain unchanged.
 
-       [![API revision deployment updated list]({{base_path}}/assets/img/deploy/revision deployment-updated-status.png)]({{base_path}}/assets/img/deploy/revision deployment-updated-status.png)
+       [![API revision deployment updated list](../../../../assets/img/deploy/revision deployment-updated-status.png)](../../../../assets/img/deploy/revision deployment-updated-status.png)
        
     !!! info
          You can send a new pending request even while a deployment to a specific gateway is in progress. The current revision will not be undeployed until the new request is approved. As

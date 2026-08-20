@@ -1,6 +1,6 @@
 ---
 title: "Add an API Subscription Deletion Workflow"
-description: "Attach an approval workflow to API subscription deletion in WSO2 API Manager so an admin must approve or reject subscription deletion requests before they take effect."
+description: "Attach an approval workflow to API subscription deletion so an admin must approve or reject subscription deletion requests before they apply."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-subscription/advanced-topics/adding-an-api-subscription-deletion-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-subscription/advanced-topics/adding-an-api-subscription-deletion-workflow.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - subscriptions
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

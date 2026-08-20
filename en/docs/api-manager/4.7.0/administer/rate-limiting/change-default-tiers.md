@@ -1,6 +1,6 @@
 ---
 title: "Change Default Rate Limiting Tiers"
-description: "Change the default API-level, application-level, and subscription-level throttling tiers in WSO2 API Manager by adding configurations to the Admin Portal's Advanced Configurations section."
+description: "Change the default API-level, application-level, and subscription-level throttling tiers via the Admin Portal's Advanced Configurations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/change-default-tiers/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/change-default-tiers.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - admin-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Create an AI API"
-description: "Create an AI API in the WSO2 API Manager Publisher Portal by selecting a built-in AI vendor such as OpenAI, Azure OpenAI, or Mistral, obtaining a vendor API key, and configuring the sandbox and production endpoint security."
+description: "Create an AI API in the Publisher Portal by selecting a built-in AI vendor, obtaining a vendor API key, and configuring endpoint security."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-ai-api/create-an-ai-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-ai-api/create-an-ai-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-gateway
   - ai-vendor-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -17,7 +17,7 @@ content_type: "how-to"
 
 AI APIs enable seamless integration of AI services into applications through the WSO2 API Manager. By using the AI API feature, users can select specific AI vendors that best suit their needs. WSO2 API Manager provides built-in support for leading AI vendors like **OpenAI**, **Azure OpenAI**, and **Mistral**, while also allowing configuration of custom AI vendors to create AI APIs.
 
-This guide will get you started with AI API creation using WSO2 API Manager. Thus created AI API will be deployed into the AI Gateway. Refer to [AI Gateway]({{base_path}}/ai-gateway/overview/) to get a deeper understanding on API Manager's AI Gateway capabilities.
+This guide will get you started with AI API creation using WSO2 API Manager. Thus created AI API will be deployed into the AI Gateway. Refer to [AI Gateway](../../../../ai-gateway/ai-gateway-overview) to get a deeper understanding on API Manager's AI Gateway capabilities.
 
 Follow the instructions below to create an AI API using the basic flow:
 
@@ -35,7 +35,7 @@ Follow the instructions below to create an AI API using the basic flow:
 
     <div class="admonition tip">
         <p class="admonition-title">Tip</p>
-        <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default vendors, you can add custom AI vendors by following the <a href='../../../../ai-gateway/ai-vendor-management/custom-ai-vendors/overview.md'>custom AI vendor integration</a> documentation.</p>
+        <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default vendors, you can add custom AI vendors by following the <a href='../../../../../ai-gateway/ai-vendor-management/custom-ai-vendors/overview.md'>custom AI vendor integration</a> documentation.</p>
     </div>
 
 4. Fill in the AI API details and click **Create**.

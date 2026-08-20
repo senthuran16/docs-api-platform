@@ -1,6 +1,6 @@
 ---
 title: "Scenario 14: External Key Manager Support"
-description: "Scenario tutorial on configuring Keycloak as an external key manager for WSO2 API Manager so tokens can be generated from an existing identity provider without duplicating user data, then invoking an API using a token issued by Keycloak."
+description: "Configure Keycloak as an external key manager so tokens are generated from an existing identity provider, then invoke an API with it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario14-external-key-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario14-external-key-manager.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - oauth2
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -27,7 +27,7 @@ WSO2 API Manager comes with out-of-the-box external key manager connectors to va
 
 For this scenario, we assume Railco has Keycloak IDP as their internal identity provider. Following are the steps to configure Keycloak IdP as the external Key Manager for RailCo.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario14.png" title="Key Manager Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario14.png" title="Key Manager Description" width="630"/>
 
 ## Step 1: Set up Keycloak
 

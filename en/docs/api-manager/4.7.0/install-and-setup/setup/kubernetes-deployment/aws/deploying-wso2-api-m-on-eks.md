@@ -1,6 +1,6 @@
 ---
 title: "Deploy WSO2 API Manager on AWS EKS"
-description: "Step-by-step guide to deploying WSO2 API Manager on Amazon EKS, covering cluster creation, RDS/Aurora database setup, custom Docker images, keystore generation, Helm chart deployment, ALB ingress and DNS configuration, and troubleshooting."
+description: "Deploy WSO2 API Manager on Amazon EKS, covering cluster setup, RDS/Aurora databases, custom Docker images, Helm charts, and ALB ingress configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/aws/deploying-wso2-api-m-on-eks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/aws/deploying-wso2-api-m-on-eks.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -94,11 +94,11 @@ This deployment follows the standard WSO2 Kubernetes architecture, extended to u
 
 ### AWS Deployment Architecture
 
-<a href="../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png"><img src="../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png" alt="AWS deployment architecture overview" width="80%"></a>
+<a href="../../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png"><img src="../../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png" alt="AWS deployment architecture overview" width="80%"></a>
 
 ### WSO2 API Manager Deployment Architecture
 
-<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="WSO2 API Manager deployment architecture" width="80%"></a>
+<a href="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="WSO2 API Manager deployment architecture" width="80%"></a>
 
 ## Step 1: Create and Prepare the EKS Cluster
 
@@ -431,7 +431,7 @@ Check:
 
 ## Next Steps
 
-- Set up [Rate Limiting]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+- Set up [Rate Limiting](../../../../api-gateway/rate-limiting/understand-rate-limit-enforcement)
 - Enable [Analytics](../../../../monitoring/api-analytics/analytics-overview.md)
 
 ## See Also

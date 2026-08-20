@@ -1,6 +1,6 @@
 ---
-title: "Migrate Common API Policies Between Environments with API Controller"
-description: "Export a common API Policy as an archive from one WSO2 API Manager environment and import it into another using apictl, including the exported archive structure."
+title: "Migrate common API policies with API Controller"
+description: "Export a common API Policy as an archive from one WSO2 API Manager environment using apictl, and import it into another environment."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-common-api-policies/migrating-common-api-policies-to-different-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-common-api-policies/migrating-common-api-policies-to-different-environments.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - api-policies
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -25,7 +25,7 @@ content_type: "how-to"
     For more information, visit [Add an Environment](../getting-started-with-wso2-api-controller.md#add-an-environment).
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export Common API Policies. To create a custom user who can import/export Common API Policies, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export Common API Policies. To create a custom user who can import/export Common API Policies, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#creating-custom-users-to-perform-apictl-operations).
 
 ### Export a Common API Policy
 

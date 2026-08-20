@@ -1,6 +1,6 @@
 ---
 title: "OAuth2 Refresh Token Grant"
-description: "Explains the OAuth2 refresh token grant in WSO2 API Manager and walks through generating a new access and refresh token pair, configuring refresh token validity, and revoking a refresh token via the Revoke API."
+description: "Learn the OAuth2 refresh token grant and generate a new access and refresh token pair, configure refresh token validity, and revoke tokens via the Revoke API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/refresh-token-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/refresh-token-grant.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - grant-types
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

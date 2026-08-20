@@ -1,6 +1,6 @@
 ---
 title: "Observability Overview"
-description: "An overview of the observability pillars in WSO2 API Manager - logs, traces, and metrics - and links to the correlation, HTTP access, audit, API, and WebSocket logs, distributed tracing, and JMX-based monitoring guides."
+description: "An overview of the observability pillars in WSO2 API Manager, logs, traces, and metrics, with links to the related monitoring guides."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/observability-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/observability-overview.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - monitoring
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Observability Overview

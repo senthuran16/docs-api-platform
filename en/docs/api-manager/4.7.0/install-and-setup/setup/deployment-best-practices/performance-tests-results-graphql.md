@@ -1,6 +1,6 @@
 ---
 title: "GraphQL Performance Test Results"
-description: "Review WSO2 API Manager's GraphQL performance test setup and results, including throughput, response time percentiles, and GC throughput measured across varying concurrent users and query complexities."
+description: "Review WSO2 API Manager's GraphQL performance test setup and results, including throughput and response times across concurrent users and query loads."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/performance-tests-results-graphql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/performance-tests-results-graphql.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - monitoring
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Manage Advanced Rate Limiting Policies"
-description: "Create and manage advanced rate limiting policies in WSO2 API Manager, including default tiers, conditional groups based on IP, header, query parameter, or JWT claims, and restricting API access to allowed IP addresses."
+description: "Create advanced rate limiting policies with conditional groups based on IP, header, query parameter, or JWT claims."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-advanced-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-advanced-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - admin-portal
   - throttling
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -108,7 +108,7 @@ You can add rate limiting limits with different parameters to the conditions by 
     
     [![Add advanced policy page](../../assets/img/learn/new-header-condition-regex.png){:style="width:45%"}](../../assets/img/learn/new-header-condition-regex.png)
 
-    [![Add advanced policy page](../../assets/img/learn/new-jwt-condition-regex.png){:style="width:45%"}]({{base_path}}/assets/img/learn/anew-jwt-condition-regex.png)
+    [![Add advanced policy page](../../assets/img/learn/new-jwt-condition-regex.png){:style="width:45%"}](../../assets/img/learn/new-jwt-condition-regex.png)
 
     <div class="admonition info">
     <p class="admonition-title">Note</p>
