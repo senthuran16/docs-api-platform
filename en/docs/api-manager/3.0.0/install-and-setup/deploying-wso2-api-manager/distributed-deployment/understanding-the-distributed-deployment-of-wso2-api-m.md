@@ -1,3 +1,18 @@
+---
+title: "Understanding the distributed deployment of WSO2 API-M"
+description: "Explains the components and architecture behind a distributed deployment of WSO2 API Manager before you configure one."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Understanding the Distributed Deployment of WSO2 API-M
 
 Before understanding how to deploy WSO2 API Manager (WSO2 API-M), let's understand the WSO2 API-M distributed deployment better.
@@ -88,6 +103,6 @@ When we consider a distributed deployment of WSO2 API Manager, we have the optio
 In the following diagram, the five components are set up in a distributed deployment, and the five databases are connected to the relevant components respectively. The entire setup is also fronted by a load balancer.
 
 
-[![Understanding the distributed deployment]({{base_path}}/assets/img/setup-and-install/db-connection-distributed-deployment.png)]({{base_path}}/assets/img/setup-and-install/db-connection-distributed-deployment.png)
+[![Understanding the distributed deployment](../../../assets/img/setup-and-install/db-connection-distributed-deployment.png)](../../../assets/img/setup-and-install/db-connection-distributed-deployment.png)
 
 

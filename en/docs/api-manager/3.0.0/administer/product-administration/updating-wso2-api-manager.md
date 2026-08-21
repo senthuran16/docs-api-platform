@@ -1,3 +1,18 @@
+---
+title: "Updating WSO2 API Manager"
+description: "Apply WSO2 Update Manager (WUM) or WSO2 in-place updates to WSO2 API Manager to get the latest bug and security fixes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/updating-wso2-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/updating-wso2-api-manager.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - updating-wso2-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Updating WSO2 API Manager
 
 WSO2 introduces the [WSO2 Update Manager (WUM)](http://wso2.com/update/) , which is a command-line utility that allows you to get the latest updates that are available for a particular product release. These updates include the latest bug fixes and security fixes that are released by WSO2 after a particular product version is released. Therefore, you do not need to wait and upgrade to the next product release to get these bug fixes.
@@ -17,7 +32,7 @@ For more information, see [Using WSO2 Update Manager](https://docs.wso2.com/disp
 
     **Persisting Index data**
 
-    The indexing related information of WSO2 API Manager is stored in the `<API-M_HOME>/solr/data` directory. Once the data is indexed, it is stored in the index directory. Refer [Add New Search Keyword]({{base_path}}/learn/design-api/api-documentation/search-documentation/add-new-search-keyword) for more information.
+    The indexing related information of WSO2 API Manager is stored in the `<API-M_HOME>/solr/data` directory. Once the data is indexed, it is stored in the index directory. Refer [Add New Search Keyword](../../learn/design-api/api-documentation/search-documentation/add-new-search-keyword) for more information.
     
     !!! tip
         Before you discard the old API Manager instance,
@@ -39,4 +54,4 @@ For more information, see [Using WSO2 Update Manager](https://docs.wso2.com/disp
         Take a backup of `<API-M_HOME>/repository/database/WSO2METRICS_DB.h2.db` and replace it to the API Manager binary pack in the `<API-M_HOME>/repository/database` directory that is updated with the WUM updates.
         
     
-    For more information on run time and configuration artifact directories of API Manager refer [Common Runtime and Configuration Artifacts]({{base_path}}/administer/product-configurations/common-runtime-and-configuration-artifacts/) .
+    For more information on run time and configuration artifact directories of API Manager refer [Common Runtime and Configuration Artifacts](../product-configurations/common-runtime-and-configuration-artifacts) .

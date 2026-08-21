@@ -1,3 +1,18 @@
+---
+title: "Working with properties of user stores"
+description: "Reference table of the key properties used to configure primary user stores in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - managing-users-and-roles
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Properties of User Stores
 
 The following table provides descriptions of the key properties you use to configure primary user stores.

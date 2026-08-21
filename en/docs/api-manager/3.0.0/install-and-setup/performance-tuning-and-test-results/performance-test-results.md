@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Review WSO2 API Manager 3.0.0 performance benchmark results across concurrent users, message sizes, and back-end delays."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/performance-tuning-and-test-results/performance-test-results/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/performance-tuning-and-test-results/performance-test-results.md
+tags:
+  - api-manager
+  - install-and-setup
+  - performance-tuning-and-test-results
+  - performance-test-results
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Test Results
 
 ## Summary
@@ -12,7 +27,7 @@ Tests were done using 100, 200, 300, 1000, and 2000 concurrent users. Concurrent
 
 ## Deployment used for the test
 
-[![APIM performance test all in one deployment]({{base_path}}/assets/img/setup-and-install/apim_performance_test_all_in_one_deployment.png)]({{base_path}}/assets/img/setup-and-install/apim_performance_test_all_in_one_deployment.png)
+[![APIM performance test all in one deployment](../../assets/img/setup-and-install/apim_performance_test_all_in_one_deployment.png)](../../assets/img/setup-and-install/apim_performance_test_all_in_one_deployment.png)
 
 | Name | EC2 Instance Type | vCPU | Mem(GiB) |  
 |---|---|---|---|
@@ -33,6 +48,6 @@ You can find the complete results in [this location.](https://github.com/wso2/pr
 
 The following is an extraction of the result. An average WSO2 API Manager user use ~1KiB messages and most of the back-ends usually responds in ~30ms. 
 
-[![Performance result graph]({{base_path}}/assets/img/setup-and-install/performance-result-graph.png)]({{base_path}}/assets/img/setup-and-install/performance-result-graph.png)
+[![Performance result graph](../../assets/img/setup-and-install/performance-result-graph.png)](../../assets/img/setup-and-install/performance-result-graph.png)
 
 As WSO2 API Manager 3.0.0 supports JDK 11, WSO2 has done a separate test to get the performance numbers and it can be found in [this location.](https://github.com/wso2/product-apim/blob/performance-test-44-2019-11-29_15-07-18/performance/benchmarks/summary.md)

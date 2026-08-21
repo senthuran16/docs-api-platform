@@ -1,3 +1,18 @@
+---
+title: "Configuring identity server as external IDP using SAML"
+description: "Configure SAML 2.0 single sign-on with WSO2 Identity Server across the API Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/sso/configure-identity-server-as-external-idp-using-saml/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/sso/configure-identity-server-as-external-idp-using-saml.md
+tags:
+  - api-manager
+  - install-and-setup
+  - sso
+  - configure-identity-server-as-external-idp-using-saml
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Identity Server as External IDP using SAML
 
 The Single Sign-On with SAML 2.0 feature in the API Manager is implemented according to the SAML 2.0 browser-based SSO support that is facilitated by WSO2 Identity Server. This feature is available in any WSO2 IS version from 4.1.0 onwards. WSO2 IS 5.9.0 is used in this guide. WSO2 Identity Server acts as an identity Service Provider of systems enabled with single sign-on, while the Web applications act as SSO Service Providers. Using this feature, you can configure SSO with SAML 2.0 across the API Publisher and Developer Portal. After configuring, you can access the Developer Portal or API Publisher in a single authentication attempt.
@@ -91,17 +106,17 @@ The Single Sign-On with SAML 2.0 feature in the API Manager is implemented accor
 
         The following image shows the sample values for SAML2 Web SSO configuration:
 
-        [![SAML configuration in Service Provider]({{base_path}}/assets/img/setup-and-install/saml-configuration-in-service-provider.png)]({{base_path}}/assets/img/setup-and-install/saml-configuration-in-service-provider.png)
+        [![SAML configuration in Service Provider](../../assets/img/setup-and-install/saml-configuration-in-service-provider.png)](../../assets/img/setup-and-install/saml-configuration-in-service-provider.png)
 
         ??? Info "Enable a tenant-specific SSO for the Publisher and Developer Portal"
 
             To enable a tenant-specific SSO with IS 5.9.0 for Publisher and the Developer Portal, enable the **Use tenant domain in local subject identifier** option under the **Local & Outbound Authentication Configuration** section.
 
-            [![saml-configuration-in-service-provider]({{base_path}}/assets/img/setup-and-install/enable-tenant-domain-in-local-sub-identifier.png)]({{base_path}}/assets/img/setup-and-install/enable-tenant-domain-in-local-sub-identifier.png)
+            [![saml-configuration-in-service-provider](../../assets/img/setup-and-install/enable-tenant-domain-in-local-sub-identifier.png)](../../assets/img/setup-and-install/enable-tenant-domain-in-local-sub-identifier.png)
 
     2.  Expand the **Claim Configuration** section and add **http://wso2.org/claims/role** as a mandatory claim.
 
-        [![Claim configuration in Service Provider for SAML2 SSO]({{base_path}}/assets/img/setup-and-install/claim-configuration-in-service-provider-for-saml2-sso.png)]({{base_path}}/assets/img/setup-and-install/claim-configuration-in-service-provider-for-saml2-sso.png)
+        [![Claim configuration in Service Provider for SAML2 SSO](../../assets/img/setup-and-install/claim-configuration-in-service-provider-for-saml2-sso.png)](../../assets/img/setup-and-install/claim-configuration-in-service-provider-for-saml2-sso.png)
 
     3.  Update the Service Provider configurations.
 
@@ -110,13 +125,13 @@ The Single Sign-On with SAML 2.0 feature in the API Manager is implemented accor
 
             1. Click the **SaaS Application** option that appears after registering the Service Provider.
 
-               [![saas-configuration-in-service-provider]({{base_path}}/assets/img/setup-and-install/saas.png)]({{base_path}}/assets/img/setup-and-install/saas.png)            
+               [![saas-configuration-in-service-provider](../../assets/img/setup-and-install/saas.png)](../../assets/img/setup-and-install/saas.png)            
 
             If you do not select the **SaaS Application** option, only users in the current tenant domain will be allowed to sign in to the portals. You will need to register separate Service Providers for portals from each tenant.
 
 4.  Upload the public certificate of the API Manager by selecting **Select SP Certificate Type**.
 
-    [![Upload certificate in SP for SAML2 SSO]({{base_path}}/assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)]({{base_path}}/assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)
+    [![Upload certificate in SP for SAML2 SSO](../../assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)](../../assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)
 
 ### Step 1.2 - Create users and roles
 
@@ -200,7 +215,7 @@ The Single Sign-On with SAML 2.0 feature in the API Manager is implemented accor
 
         The following image shows the sample values for SAML2 Web SSO configurations:
 
-        [![SAML configuration in Identity Provider]({{base_path}}/assets/img/setup-and-install/identity-provider-configuration-for-saml-sso.png)]({{base_path}}/assets/img/setup-and-install/identity-provider-configuration-for-saml-sso.png)
+        [![SAML configuration in Identity Provider](../../assets/img/setup-and-install/identity-provider-configuration-for-saml-sso.png)](../../assets/img/setup-and-install/identity-provider-configuration-for-saml-sso.png)
 
         !!! Note
             Make sure your Service Provider configurations in the Identity Server and the Identity Provider configurations in API Manager reflect each other.
@@ -212,7 +227,7 @@ The Single Sign-On with SAML 2.0 feature in the API Manager is implemented accor
 
     3.  Enable Just-in-Time Provisioning to provision the users in API Manager.
 
-        [![JIT provisioning for SSO]({{base_path}}/assets/img/setup-and-install/jit-provisioning-for-sso.png)]({{base_path}}/assets/img/setup-and-install/jit-provisioning-for-sso.png)
+        [![JIT provisioning for SSO](../../assets/img/setup-and-install/jit-provisioning-for-sso.png)](../../assets/img/setup-and-install/jit-provisioning-for-sso.png)
 
     4.  Add the following role mapping under the **Role Configuration** section.
 
@@ -235,7 +250,7 @@ The Single Sign-On with SAML 2.0 feature in the API Manager is implemented accor
         </tbody>
         </table>
 
-        [![Role mapping for SSO]({{base_path}}/assets/img/setup-and-install/role-mapping-for-sso.png)]({{base_path}}/assets/img/setup-and-install/role-mapping-for-sso.png)
+        [![Role mapping for SSO](../../assets/img/setup-and-install/role-mapping-for-sso.png)](../../assets/img/setup-and-install/role-mapping-for-sso.png)
 
         !!! Tip
             Instead of using the default internal roles, you can also create new roles in API Manager and map it to the provisioned users. 
@@ -252,7 +267,7 @@ The Single Sign-On with SAML 2.0 feature in the API Manager is implemented accor
 
     2.  Expand the **Local & Outbound Authentication Configuration** section, select **Federated Authentication** as Authentication Type, and select the name of the Identity Provider you created and update. 
 
-        [![Local and outbound authentication configuration for SSO]({{base_path}}/assets/img/setup-and-install/local-and-outbound-authentication-configuration-for-sso.png)]({{base_path}}/assets/img/setup-and-install/local-and-outbound-authentication-configuration-for-sso.png)
+        [![Local and outbound authentication configuration for SSO](../../assets/img/setup-and-install/local-and-outbound-authentication-configuration-for-sso.png)](../../assets/img/setup-and-install/local-and-outbound-authentication-configuration-for-sso.png)
 
     3.  Repeat the same step for the `apim_devportal` Service Provider as well.
 

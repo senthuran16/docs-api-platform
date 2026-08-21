@@ -1,3 +1,18 @@
+---
+title: "Getting started - admin API v0.15"
+description: "Walk through registering a client and generating an access token so you can invoke the WSO2 API Manager Admin API v0.15."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/getting-started/guide-admin-v0.15/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/getting-started/guide-admin-v0.15.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Getting Started - Admin API v0.15
 
 !!! warning
@@ -62,7 +77,7 @@ Token response:
 
 Now, you have a valid access token, which you can use to invoke an API. Navigate through the API descriptions to find the required API, obtain an access token as described above and invoke the API with the authentication header. If you use a different authentication mechanism, this process may change.
 
-Further, to configure the Admin Portal REST API, do the necessary configurations mentioned in [configuring REST APIs]({{base_path}}/develop/product-apis/configuring-rest-api/).
+Further, to configure the Admin Portal REST API, do the necessary configurations mentioned in [configuring REST APIs](../configuring-rest-api).
 
 !!! note
-    To get a detailed overview of Admin Portal REST API, follow [Admin API v0.15]({{base_path}}/develop/product-apis/admin-apis/admin-v0.15/admin-v0.15/).
+    To get a detailed overview of Admin Portal REST API, follow [Admin API v0.15](../admin-apis/admin-v0.15/admin-v0.15).

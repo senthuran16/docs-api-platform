@@ -1,3 +1,18 @@
+---
+title: "API versioning sample"
+description: "Explains a sample scenario for versioning APIs while maintaining support for existing consumers during transitions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/reference/samples/api-versioning-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/reference/samples/api-versioning-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-versioning-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "explanation"
+---
+
 # API Versioning Sample
 
 ### Use case

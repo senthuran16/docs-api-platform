@@ -1,3 +1,18 @@
+---
+title: "Mutual SSL between API Gateway and backend"
+description: "Enable mutual SSL between the API Gateway and a backend service by generating and exchanging keystore and truststore certificates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/mutual-ssl-between-api-gateway-and-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/mutual-ssl-between-api-gateway-and-backend.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - mutual-ssl-between-api-gateway-and-backend
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mutual SSL Between API Gateway and Backend
 
 In contrast to the usual one-way SSL authentication where a client verifies the identity of the server, in mutual SSL the server validates the identity of the client so that both parties trust each other. This builds a system that has very tight security and avoids any requests made to the client to provide the username/password, as long as the server is aware of the certificates that belong to the client.
@@ -104,7 +119,7 @@ Now both the backend service and ESB is configured to use default key stores and
 
 You can do the following to test your mutual SSL configurations
 
-1.  [Create an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api)
-2.  [Publish the API]({{base_path}}/learn/design-api/publish-api/publish-an-api)
-3.  [Subscribe to the API]({{base_path}}/learn/consume-api/manage-subscription/subscribe-to-an-api)
-4.  [Invoke the API]({{base_path}}/learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console)
+1.  [Create an API](../../learn/design-api/create-api/create-a-rest-api)
+2.  [Publish the API](../../learn/design-api/publish-api/publish-an-api)
+3.  [Subscribe to the API](../../learn/consume-api/manage-subscription/subscribe-to-an-api)
+4.  [Invoke the API](../../learn/consume-api/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console)

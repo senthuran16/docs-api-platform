@@ -1,3 +1,18 @@
+---
+title: "Setting throttling limits"
+description: "Explains the different levels of throttling in API Manager and how API, application, and subscription tiers combine."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/rate-limiting/setting-throttling-limits/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/rate-limiting/setting-throttling-limits.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - setting-throttling-limits
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Setting Throttling Limits
 
 Throttling allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:
@@ -25,8 +40,9 @@ Let's take a look at the different levels of throttling:
     -   [Resource-level (Operation-level) Throttling](#resource-leveloperation-level-throttling)
     -   [Advanced Throttling tiers](#advanced-throttling-tiers)
 -   [Application-level throttling (application developer)](#application-level-throttling-application-developer)
-    -   [Application-level Throttling tiers](#SettingThrottlingLimits-Application-levelThrottlingtiers)
+    -   [Application-level Throttling tiers](#application-level-throttling-tiers)
 
+<a name="subscription-level-throttling-api-publisher"></a>
 #### Subscription-level throttling (API publisher)
 
 Subscription-level throttling tiers can be applied for an API when creating APIs using the API Publisher portal.
@@ -50,6 +66,7 @@ It is also possible to specify a bandwidth per unit time instead of a number of 
 </div>
 
 
+<a name="burst-control"></a>
 ##### **Burst control**
 
 With burst control, you can define tiers with a combination of, for example, a 1000 requests per day and 10 requests per second. Users are then throttled at two layers. Enforcing a rate limit protects the backend from sudden request bursts and controls the usage at a subscription and API level.
@@ -66,6 +83,7 @@ As an example, if we specify a quota policy as 20 requests per minute, it is pos
 
 For each subscription level throttle key, a WS policy is created on demand. The request count is calculated and throttling occurs at the node level. If you are using a clustered deployment, the counters are replicated across the cluster.
 
+<a name="subscription-level-throttling-api-subscriber"></a>
 #### Subscription-level throttling (API subscriber)
 
 After subscription-level throttling tiers are set and the API is published, at subscription time, the consumers of the API can sign in to the **Developer Portal** and select which tier (out of those enabled for subscribers) they are interested in, as shown below:
@@ -74,6 +92,7 @@ After subscription-level throttling tiers are set and the API is published, at 
 
 According to the selected tiers, the subscribers are granted a maximum number of requests to the API.
 
+<a name="advanced-throttling-api-publisher"></a>
 #### Advanced throttling (API publisher)
 
 Advanced throttling policies are applied when you are Publishing an API. It can be further divided into the following two levels base on the applicability.
@@ -81,17 +100,20 @@ Advanced throttling policies are applied when you are Publishing an API. It can 
 -   API level throttling
 -   Resource level (operational level) throttling
 
+<a name="api-level-throttling"></a>
 ##### API level throttling
 
 API level policies can be engaged via the resources section of an API in the Publisher portal by selecting **API Level** under **Rate limitting level** as shown below.
 
 ![](../../assets/img/learn/api-level-advanced-policy.png)
 
+<a name="resource-leveloperation-level-throttling"></a>
 ##### **Resource level(Operation level) Throttling**
 
 An API is made up of one or more resources. Each resource handles a particular type of request and is similar to a method (function) in a larger API. You can use this method when handling a large number of request at resource level such as Financial transactions. For example, Imagine API have two resources and one resource take more request than other you do not need to throttle it in API level in that case you can use this.  Resource-level throttling tiers are set to HTTP verbs of an API's  resources.  You can apply resource-level throttling through the **Resources** section of an API as shown below.
 
 ![](../../assets/img/learn/operation-level-advanced-policy.png)
+<a name="advanced-throttling-tiers"></a>
 ##### Advanced Throttling tiers
 
 The default throttling tiers are as follows:
@@ -103,6 +125,7 @@ The default throttling tiers are as follows:
 
 It is also possible to specify a bandwidth per unit time instead of a number of requests. This can be defined via the API Manager Admin Portal. For information on editing the values of the existing tiers, defining new tiers, and specifying a bandwidth per unit time, see [Adding a new advanced throttling policy](../adding-new-throttling-policies/#adding-a-new-advanced-throttling-policy) .
 
+<a name="application-level-throttling-application-developer"></a>
 #### Application-level throttling (application developer)
 
 Application-level throttling tiers are defined at the time an application is created in the Developer Portal as shown below. The limits are restricted per token for a specific application.
@@ -112,6 +135,7 @@ An application is a logical collection of one or more APIs and is required to su
 
 An application is available to a consumer at different levels of service. For example, if you have infrastructure limitations in facilitating more than a certain number of requests to an application at a time, the throttling tiers can be set accordingly so that the application can have a maximum number of requests within a defined time.
 
+<a name="application-level-throttling-tiers"></a>
 ##### Application-level Throttling tiers
 
 The default throttling levels are as follows:

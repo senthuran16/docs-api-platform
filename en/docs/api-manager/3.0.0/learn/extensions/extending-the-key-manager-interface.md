@@ -1,3 +1,18 @@
+---
+title: "Extending the key manager interface"
+description: "Explains the role of the Key Manager interface in API Manager and how it can be extended for custom key management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/extending-the-key-manager-interface/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/extending-the-key-manager-interface.md
+tags:
+  - api-manager
+  - learn
+  - extensions
+  - extending-the-key-manager-interface
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Extending the Key Manager Interface
 
 ### Purpose of the Key Manager
@@ -8,7 +23,7 @@ For instance,
 
 -   After creating an application in Developer Portal, subscribers would click on the `Generate Keys` button to register an application. 
 
-    ![Generate Keys]({{base_path}}/assets/img/learn/extensions/KeyManagerInterface/generate-keys-button.png)
+    ![Generate Keys](../../assets/img/learn/extensions/key-manager-interface/generate-keys-button.png)
 
 -   At this point, the Developer Portal talks to the **KeyManager** to create an *OAuth client* and get the *Consumer Key/Secret* and the *Application Access token*.
 

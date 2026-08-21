@@ -1,3 +1,18 @@
+---
+title: "Managing analytics dashboard permissions"
+description: "Assign owner, editor, and viewer permission levels to control access to analytics dashboards in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/managing-dashboard-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/managing-dashboard-permissions.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-dashboard-permissions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Managing Analytics Dashboard Permissions
 
 From API-M Analytics 3.0.0 release onwards, the Publisher and Developer Portal statistics are moved out from the Publisher and Developer Portal apps, and those statistics can be viewed using the **dashboard** runtime of the WSO2 API-M Analytics server.
@@ -20,18 +35,18 @@ Follow the instructions below to change the default permissions that are set for
 
     After you sign in, you will see the **APIM Publisher** and the **APIM Developer Portal** dashboards listed.
   
-    [![Analytics dashboard listing]({{base_path}}/assets/img/learn/analytics-dashboard-listing.png)]({{base_path}}/assets/img/learn/analytics-dashboard-listing.png)
+    [![Analytics dashboard listing](../../assets/img/learn/analytics-dashboard-listing.png)](../../assets/img/learn/analytics-dashboard-listing.png)
 
 2. Click on the more options icon on a preferred dashboard card and select **Settings**
 
-     [![Dashboard Settings]({{base_path}}/assets/img/learn/dashboard-settings.png)]({{base_path}}/assets/img/learn/dashboard-settings.png)
+     [![Dashboard Settings](../../assets/img/learn/dashboard-settings.png)](../../assets/img/learn/dashboard-settings.png)
      
     !!! Note
         The **Settings** option will be visible only if you have owner permission of the selected dashboard.
       
      The Dashboard Settings page opens, and you can assign scopes for different permission levels.
 
-      [![Dashboard settings Developer Portal]({{base_path}}/assets/img/learn/dashboard-settings-dev-portal.png)]({{base_path}}/assets/img/learn/dashboard-settings-dev-portal.png)
+      [![Dashboard settings Developer Portal](../../assets/img/learn/dashboard-settings-dev-portal.png)](../../assets/img/learn/dashboard-settings-dev-portal.png)
       
 !!! Info
     A list of available scopes will be populated for each permission level. Dashboard owners can set the required scopes for each of those permission levels. Each permission level can have multiple scopes.

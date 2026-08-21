@@ -1,3 +1,18 @@
+---
+title: "Edit an API by modifying the API definition"
+description: "Walk through editing an API's Swagger definition directly using the integrated Swagger Editor in the API Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/tutorials/edit-an-api-by-modifyng-the-api-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/tutorials/edit-an-api-by-modifyng-the-api-definition.md
+tags:
+  - api-manager
+  - learn
+  - tutorials
+  - edit-an-api-by-modifyng-the-api-definition
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Edit an API by modifying the API Definition
 
 WSO2 API Manager has an integrated Swagger Editor, which is part of the Swagger project.
@@ -11,13 +26,13 @@ API Manager supports [Open API 3.0](https://github.com/OAI/OpenAPI-Specification
 In this tutorial, let's see how you can add interactive documentation to an API by directly editing the Swagger code via the API Publisher UI.
 
 !!! note
-    This tutorial uses the `PizzaShack` API created in [Create a REST API]({{base_path}}/learn/design-api/create-api/create-a-rest-api/) section and Published in the [Publish an API]({{base_path}}/learn/design-api/publish-api/publish-an-api/) section.
+    This tutorial uses the `PizzaShack` API created in [Create a REST API](../design-api/create-api/create-a-rest-api) section and Published in the [Publish an API](../design-api/publish-api/publish-an-api) section.
  .
 
 
 1.  Sign in to the API Publisher and choose to design a new REST API. `https://<hostname>:9443/publisher`
 
-    ![create_a_rest_api]({{base_path}}/assets/img/learn/create-a-rest-api.jpg)
+    ![create_a_rest_api](../../assets/img/learn/create-a-rest-api.jpg)
 
 
 2.  Click **Design a New REST API** .
@@ -26,16 +41,16 @@ In this tutorial, let's see how you can add interactive documentation to an API 
 
     <table><colgroup> <col/> <col/> <col/> </colgroup><tbody><tr><th colspan="2" >Field</th><th >Sample value</th></tr><tr><td colspan="2" class="confluenceTd">Name</td><td class="confluenceTd">PizzaShack</td></tr><tr><td colspan="2" class="confluenceTd">Version</td><td colspan="1" class="confluenceTd">1.0.0</td></tr><tr><td colspan="2" class="confluenceTd">Context</td><td class="confluenceTd"><div class="content-wrapper"><p><code>/pizzashack</code></p><div><div class="confluence-information-macro-body"></div><div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"></div></div></div></div></td></tr><tr><td colspan="2" class="confluenceTd">Endpoint</td><td colspan="1" class="confluenceTd"><p><a class="external-link" href="https://localhost:9443/am/sample/pizzashack/v1/api" rel="nofollow">https://localhost:9443/am/sample/pizzashack/v1/api/</a></p><p>The endpoint that you add is automatically added as the production and sandbox endpoints.</p></td></tr></tbody></table>
          
-    ![create_an_API]({{base_path}}/assets/img/learn/create-a-rest-api-pizzashack.png)
+    ![create_an_API](../../assets/img/learn/create-a-rest-api-pizzashack.png)
 
     The **Overview** of the created API will be displayed. 
 
-    ![create_a_rest_api]({{base_path}}/assets/img/learn/overviewpage-rest-api.jpg)
+    ![create_a_rest_api](../../assets/img/learn/overviewpage-rest-api.jpg)
 
 
 4. Click on **API definition** to view the API Definition in the swagger UI.
     The Swagger UI opens.
-    ![]({{base_path}}/assets/img/learn/rest-api-definition-pizzashack.png)
+    ![](../../assets/img/learn/rest-api-definition-pizzashack.png)
   
 5. Add the following GET and PUT method for the API.
        1. Under the `paths` object, remove the `{}` and add the following code, as shown in the screenshot below.
@@ -158,14 +173,14 @@ In this tutorial, let's see how you can add interactive documentation to an API 
     3. Click **Update Content** .
        This adds a resource with two HTTP methods into the API, which is visible in the API Publisher 
        **Resources** tab along with the parameters defined. 
-       ![]({{base_path}}/assets/img/learn/create-rest-api-pizzashack-resources.png)
+       ![](../../assets/img/learn/create-rest-api-pizzashack-resources.png)
 
            Let's assume that the backend of this API sends the response in XML format. Let's document this under the GET method in the resource that we just added.
     
         !!! info
             Troubleshooting:
                If you get an error after adding the API definition in the Swagger UI, first check the indentation of the code that you added, which defines the API, because Swagger throw errors if the indention is not correct.
-                ![]({{base_path}}/assets/img/learn/rest-api-definition-pizzashack-indentation.png)
+                ![](../../assets/img/learn/rest-api-definition-pizzashack-indentation.png)
 
 7.  Add a summary and description for the GET method.
 
@@ -176,11 +191,11 @@ In this tutorial, let's see how you can add interactive documentation to an API 
                     description: "Get details of an order by order Id"
         ```
 
-        ![]({{base_path}}/assets/img/learn/pizzashack-api-get-summary-and-descrption.png)
+        ![](../../assets/img/learn/pizzashack-api-get-summary-and-descrption.png)
 
     2.  Click **Apply Changes** .
         The summary and description of the GET method that you added is visible when you expand the GET method in the API Publisher.
-        ![]({{base_path}}/assets/img/learn/pizza-shack-api-get-summary-and-description-updated.png)
+        ![](../../assets/img/learn/pizza-shack-api-get-summary-and-description-updated.png)
 
 8.  Change the title of the API.
 
@@ -192,19 +207,19 @@ In this tutorial, let's see how you can add interactive documentation to an API 
                       title: PizzaShackAPI
         ```
 
-        ![]({{base_path}}/assets/img/learn/pizza-shack-api-change-api-title.png)
+        ![](../../assets/img/learn/pizza-shack-api-change-api-title.png)
         You can see how this change is reflected in the Developer Portal in step 12.
 
     2.  Click **Apply Changes** and complete the API creation process.
 
 10. Complete the rest of the API creation process.
-    For more information, see step 7 onwards under [Create a REST API]({{base_path}}/learn/design-api/create-api/create-a-rest-api/) section and Published in the [Publish an API]({{base_path}}/learn/design-api/publish-api/publish-an-api/) section.
+    For more information, see step 7 onwards under [Create a REST API](../design-api/create-api/create-a-rest-api) section and Published in the [Publish an API](../design-api/publish-api/publish-an-api) section.
 
 11. Click **View in Dev Portal** and the API you just published appears.
 12. Click **Try Out** .
     Note that the changes that you made earlier now appear in the Developer Portal for consumers.
-    ![]({{base_path}}/assets/img/learn/pizza-shack-api-get-dev-portal.png)
-    ![]({{base_path}}/assets/img/learn/pizza-shack-api-put-dev-portal.png)
+    ![](../../assets/img/learn/pizza-shack-api-get-dev-portal.png)
+    ![](../../assets/img/learn/pizza-shack-api-put-dev-portal.png)
 
 
 In this tutorial, you have seen how the integrated Swagger Editor can be used to design, describe, and document your API, so that the API consumers get a better understanding of the API's functionality.

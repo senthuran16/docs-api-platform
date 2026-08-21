@@ -1,3 +1,18 @@
+---
+title: "Getting started - publisher API v1"
+description: "Walk through registering a client and generating an access token so you can invoke the WSO2 API Manager Publisher API v1."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/getting-started/guide-publisher-v1/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/getting-started/guide-publisher-v1.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Getting Started - Publisher API v1
 
 WSO2 API Manager is a complete solution for publishing APIs, creating and managing a developer community, and for scalably routing API traffic. It leverages proven, production-ready, integration, security and governance components from WSO2 Enterprise Service Bus, WSO2 Identity Server, and WSO2 Governance Registry. Moreover, it is powered by API Manager Analytics, thereby making WSO2 API Manager ready for any large-scale deployments right away.
@@ -60,9 +75,9 @@ Token response:
 
 Now you have a valid access token, which you can use to invoke an API. Navigate through the API descriptions to find the required API, obtain an access token as described above and invoke the API with the authentication header. If you use a different authentication mechanism, this process may change.
 
-Note: The implementation of WSO2 API Manager is similar to DCR. Since retrieve client application, edit, and delete is only available in DCRM specifications you cannot perform these actions using REST API. However, you can view the created OAuth2 application using the Management Console. Please see [Accessing the Management Console]({{base_path}}/install-and-setup/installation-guide/running-the-product/#accessing-the-management-console) for more details.
+Note: The implementation of WSO2 API Manager is similar to DCR. Since retrieve client application, edit, and delete is only available in DCRM specifications you cannot perform these actions using REST API. However, you can view the created OAuth2 application using the Management Console. Please see [Accessing the Management Console](../../../install-and-setup/installation-guide/running-the-product#accessing-the-management-console) for more details.
 
-Further, to configure the Publisher REST API, do the necessary configurations mentioned in [configuring REST APIs]({{base_path}}/develop/product-apis/configuring-rest-api/).
+Further, to configure the Publisher REST API, do the necessary configurations mentioned in [configuring REST APIs](../configuring-rest-api).
 
 !!! note
-    To get a detailed overview of Publisher REST API, follow [Publisher API v1]({{base_path}}/develop/product-apis/publisher-apis/publisher-v1/publisher-v1/).
+    To get a detailed overview of Publisher REST API, follow [Publisher API v1](../publisher-apis/publisher-v1/publisher-v1).

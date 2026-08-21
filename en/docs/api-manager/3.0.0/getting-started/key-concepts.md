@@ -1,3 +1,17 @@
+---
+title: "Key concepts"
+description: "Defines the core WSO2 API Manager concepts, including APIs, API products, applications, access tokens, and user roles."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/getting-started/key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/getting-started/key-concepts.md
+tags:
+  - api-manager
+  - getting-started
+  - key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Key Concepts
 
 | Concept                            | Description                                                  |

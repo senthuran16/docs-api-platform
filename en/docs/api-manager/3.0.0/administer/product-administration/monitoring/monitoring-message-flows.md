@@ -1,3 +1,18 @@
+---
+title: "Monitoring message flows"
+description: "Access the Message Flows page in the management console to view graphical and textual views of engaged handlers in each message flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/monitoring-message-flows/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/monitoring-message-flows.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Message Flows
 
 Message Flows provide graphical or textual views of the globally-engaged handlers in the system at a given time. This functionality is provided by the following feature:

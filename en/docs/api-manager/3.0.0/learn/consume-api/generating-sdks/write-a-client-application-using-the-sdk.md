@@ -1,7 +1,22 @@
+---
+title: "Write a client application using the SDK"
+description: "Build a Java client application using a generated SDK to invoke a subscribed API with an access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/generating-sdks/write-a-client-application-using-the-sdk/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/generating-sdks/write-a-client-application-using-the-sdk.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - generating-sdks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Write a Client Application Using the SDK
 
 
-1.  Follow the steps in the [Quick Start Guide]({{base_path}}/GettingStarted/quick-start-guide), to deploy the sample API, subscribe and generate keys.
+1.  Follow the steps in the [Quick Start Guide](../../../getting-started/quick-start-guide), to deploy the sample API, subscribe and generate keys.
 
     <div class="admonition info">
         <p class="admonition-title">Info</p>
@@ -9,9 +24,9 @@
         <p>Once the keys are generated, copy the access token. You can use this token to invoke APIs that you subscribe to using the same application.</p>
     </div>
 
-2.  Go to the Developer Portal. Select your API and [download the SDK for Java]({{base_path}}/learn/consume-api/generating-sdks/generate-sdks-in-dev-portal/). 
+2.  Go to the Developer Portal. Select your API and [download the SDK for Java](generate-sdks-in-dev-portal). 
 
-![Default SDKs in Developer Portal]({{base_path}}/assets/img/learn/default-sdks.png)
+![Default SDKs in Developer Portal](../../../assets/img/learn/default-sdks.png)
 
 3.  In this example, you would have downloaded the `PizzaShackAPI_1.0.0_java.zip` file. This file name includes the API name, version, and language of the SDK. Unzip the `PizzaShackAPI_1.0.0_java.zip` file.
 <details class="admonition info">

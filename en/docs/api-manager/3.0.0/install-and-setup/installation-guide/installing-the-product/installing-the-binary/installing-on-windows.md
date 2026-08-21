@@ -1,3 +1,18 @@
+---
+title: "Installing on Windows"
+description: "Install the WSO2 API Manager binary distribution on Windows, including required applications and setup steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-windows/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-windows.md
+tags:
+  - api-manager
+  - install-and-setup
+  - installation-guide
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing on Windows
 
 !!! note
@@ -33,13 +48,13 @@ You must set your `JAVA_HOME` environment variable to point to the directory whe
     Environment variables are global system variables accessible by all the processes running under the operating system. You can define an environment variable as a system variable, which applies to all users, or as a user variable, which applies only to the user who is currently logged in.
 
 
-You set up `JAVA_HOME` using the System Properties, as described below. Alternatively, if you just want to set `JAVA_HOME` temporarily for the current command prompt window, [set it at the command prompt]({{base_path}}/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-windows/#setting-java95home-temporarily-using-the-windows-command-prompt-cmd).
+You set up `JAVA_HOME` using the System Properties, as described below. Alternatively, if you just want to set `JAVA_HOME` temporarily for the current command prompt window, [set it at the command prompt](installing-on-windows#setting-java95home-temporarily-using-the-windows-command-prompt-cmd).
 
 ### Setting up JAVA\_HOME using the system properties
 
 1.  Right-click the **My Computer** icon on the desktop and click **Properties.**
 
-    ![]({{base_path}}/assets/attachments/thumbnails/26838941/27042151)
+    ![](../../../../assets/attachments/thumbnails/26838941/27042151)
 
 2.  In the System Properties window, click the **Advanced** tab, and then click **Environment Variables**.
 
@@ -47,7 +62,7 @@ You set up `JAVA_HOME` using the System Properties, as described below. Alternat
 
 3.  Click **New** under **System variables** (for all users) or under **User variables** (just for the user who is currently logged in).
 
-    ![]({{base_path}}/assets/attachments/thumbnails/26838941/27042154)
+    ![](../../../../assets/attachments/thumbnails/26838941/27042154)
 
 4.  Enter the following information:
     -   In the **Variable name** field, enter: `JAVA_HOME           `
@@ -57,7 +72,7 @@ The `JAVA_HOME` variable is now set and will apply to any subsequent command pro
 
 `set JAVA_HOME`
 
-The system returns the JDK installation path. You are now ready to [run the product]({{base_path}}/install-and-setup/installation-guide/running-the-product/).
+The system returns the JDK installation path. You are now ready to [run the product](../../running-the-product).
 
 ### Setting JAVA\_HOME temporarily using the Windows command prompt (CMD)
 
@@ -84,4 +99,4 @@ If you need to set additional system properties when the server starts, you can 
 -   **Set the properties from a script** : Setting your system properties in the startup script is ideal, because it ensures that you set the properties every time you start the server. To avoid having to modify the script each time you upgrade, the best approach is to create your own startup script that wraps the WSO2 startup script and adds the properties you want to set, rather than editing the WSO2 startup script directly.
 -   **Set the properties from an external registry** : If you want to access properties from an external registry, you could create Java code that reads the properties at runtime from that registry. Be sure to store sensitive data such as username and password to connect to the registry in a properties file instead of in the Java code and secure the properties file with the [secure vault]({{base_path}}/administer/product-security/General/logins-and-passwords/admin-carbon-secure-vault-implementation).
 
-You are now ready to [run the product]({{base_path}}/install-and-setup/installation-guide/running-the-product/).
+You are now ready to [run the product](../../running-the-product).

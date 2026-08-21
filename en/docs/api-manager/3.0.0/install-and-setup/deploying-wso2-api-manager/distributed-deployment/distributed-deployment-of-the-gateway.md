@@ -1,3 +1,18 @@
+---
+title: "Distributed deployment of the gateway"
+description: "Configure multiple API Gateway nodes for high availability using a shared file system as the content synchronization mechanism."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/distributed-deployment-of-the-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/deploying-wso2-api-manager/distributed-deployment/distributed-deployment-of-the-gateway.md
+tags:
+  - api-manager
+  - install-and-setup
+  - deploying-wso2-api-manager
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Distributed Deployment of the Gateway
 
 This topic provides instructions on how to configure the multiple Gateways in WSO2 API Manager (WSO2 API-M) in a distributed deployment to facilitate high availability (HA). The instructions in this topic are based on the [Distributed Deployment of API Manager](../deploying-wso2-api-m-in-a-distributed-setup) and these configurations will only work if the configurations in that topic are done correctly
@@ -18,7 +33,7 @@ Follow the instructions below to configure the API-M Gateway in a distributed en
 -   [Step 4 - Start the Gateway Nodes](#step-4-start-the-gateway-nodes)
 
 Note that the configurations in this topic are done based on the following pattern.
-![]({{base_path}}/assets/attachments/103334491/103334492.png)
+![](../../../assets/attachments/103334491/103334492.png)
 ### Step 1 - Configure the load balancer
 
 For more information see, [Configuring the Proxy Server and the Load Balancer](../../configuring-the-proxy-server-and-the-load-balancer/).

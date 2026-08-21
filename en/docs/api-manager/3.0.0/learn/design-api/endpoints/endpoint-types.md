@@ -1,3 +1,18 @@
+---
+title: "Endpoint types"
+description: "Lists the endpoint types API Manager supports, including HTTP/REST, SOAP, failover, load balance, dynamic, and prototype endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/endpoints/endpoint-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/endpoints/endpoint-types.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Endpoint Types
 
 An Endpoint is a specific destination for a message such as an address, WSDL, a failover group, a load-balance group
@@ -10,9 +25,9 @@ An Endpoint is a specific destination for a message such as an address, WSDL, a 
 | HTTP/ SOAP Endpoint     | The direct URL of the SOAP web service.                                                                                                                                                                                                                                                                                                                                                                             |
 | Failover Group Endpoint | The endpoints that the service tries to connect to in case of a failure. Selecting the endpoint when the primary endpoint fails, happens in a round-robin manner. Failover Group is a group of leaf endpoints (i.e., address endpoint, HTTP endpoint, and WSDL endpoint). When a failure occurs in the current endpoint (while sending a message), the failover group endpoint will try to send the message to another endpoint. The failover group ensures that the message is delivered as long as there is at least one active endpoint among the listed endpoints.                              |
 | Load Balance Endpoint   | The endpoints where the incoming requests are directed to in a round-robin manner. They automatically handle fail-over as well.                                                                                                                                                                                                                                                                            |
-| Dynamic Endpoint        | Using a dynamic endpoint, the requests can be dynamically routed to an address based on a specific condition (e.g., request parameters, payload etc.). When using this endpoint type, a mediation sequence should be applied to the message **IN Flow** of the API. For more details of configuring APIs to change the default mediation flow, see [Changing the Default Mediation Flow of API Requests]({{base_path}}/learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests/). |
-| Prototype Endpoint      | Prototype endpoint is a type of HTTP Endpoint which can be used when Prototyping an API (for promoting and testing). For instructions, see [Deploy and Test Mock APIs]({{base_path}}/learn/design-api/mock-api/deploy-and-test-mock-apis/). |
-| Prototype Implementation      | **Prototype implementation** in WSO2 API Manager uses the built-in Javascript engine of Synapse to mock the responses and can be used per HTTP resource of the API. For more information on Prototype Implementation, see [Create a Mock API with an Inline Script]({{base_path}}/learn/design-api/mock-api/create-a-mock-api-with-an-inline-script/) for more information. |
+| Dynamic Endpoint        | Using a dynamic endpoint, the requests can be dynamically routed to an address based on a specific condition (e.g., request parameters, payload etc.). When using this endpoint type, a mediation sequence should be applied to the message **IN Flow** of the API. For more details of configuring APIs to change the default mediation flow, see [Changing the Default Mediation Flow of API Requests](../../api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests). |
+| Prototype Endpoint      | Prototype endpoint is a type of HTTP Endpoint which can be used when Prototyping an API (for promoting and testing). For instructions, see [Deploy and Test Mock APIs](../mock-api/deploy-and-test-mock-apis). |
+| Prototype Implementation      | **Prototype implementation** in WSO2 API Manager uses the built-in Javascript engine of Synapse to mock the responses and can be used per HTTP resource of the API. For more information on Prototype Implementation, see [Create a Mock API with an Inline Script](../mock-api/create-a-mock-api-with-an-inline-script) for more information. |
 
 !!! note
     - **Prototype Endpoints** and **Prototype Implementation** will be available only for the APIs which are in **CREATED** or **PROTOTYPED** state.

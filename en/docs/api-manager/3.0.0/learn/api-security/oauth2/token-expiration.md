@@ -1,3 +1,18 @@
+---
+title: "Token expiration"
+description: "Configure the access token expiration time and timestamp skew across Key Managers in deployment.toml."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/token-expiration/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/token-expiration.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Token Expiration
 
 ### Configuring the token expiration time

@@ -1,3 +1,18 @@
+---
+title: "Secure APIs using OAuth2 Opaque(Reference) access tokens"
+description: "Create an OAuth2 application in the Developer Portal and use an opaque reference access token to invoke an API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/access-token-types/opaque-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/access-token-types/opaque-tokens.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure APIs using OAuth2 Opaque(Reference) Access Tokens
 
 An opaque or a reference token is a random and a unique string of characters which has been issued by the token service as an identifier to be used for API authentication purposes. These tokens does not carry any information related to user, hence it is required to open a back channel to the token validation service to validate it and retrieve token information.

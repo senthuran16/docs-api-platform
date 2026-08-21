@@ -1,3 +1,18 @@
+---
+title: "Secure APIs using basic authentication"
+description: "Enable Basic Authentication for an API, invoke a Basic Auth protected API with cURL, and combine Basic Authentication with OAuth2 and other schemes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/api-authentication/secure-apis-using-basic-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/api-authentication/secure-apis-using-basic-authentication.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 #Securing APIs with Basic Authentication
 
 Basic authentication is a simple HTTP authentication scheme in which the request will contain an authorization header with a valid  base64 encoded username and password. The WSO2 API Manager is able to authenticate requests using Basic and OAuth2 authentication 
@@ -11,7 +26,7 @@ Basic Authentication is an API level configuration. Please sign in to the API Pu
 Basic Authentication. Under the Application Level Security section in the Runtime Configuration of the API Details page allow users to configure
 the Basic Authentication as follow.
 
-[ ![](../../../assets/img/learn//basic-authentication.png) ](../../../assets/img/learn//basic-authentication.png)
+[ ![](../../../assets/img/learn/basic-authentication.png) ](../../../assets/img/learn/basic-authentication.png)
 
 ## Understanding multiple authentication schemes
 
@@ -43,7 +58,7 @@ curl -k -X GET "https://localhost:8243/pizzashack/1.0.0/menu" -H  "accept: appli
 ```
 
 ##Basic Authentication with Scopes
-WSO2 API Manager allow users to configure [Scopes](learn/api-security/oauth2/AOuth2Scopes/fine-grained-access-control-with-oauth-scopes) with role bindings which can associate with API Resources. Basic authentication
+WSO2 API Manager allow users to configure [Scopes](../oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes) with role bindings which can associate with API Resources. Basic authentication
 uses credentials of the user to authenticate with the Basic Authentication protected API.
 
 If a user associate API resources with scopes which protected with Basic Authentication scheme, API Manager will perform the 

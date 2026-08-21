@@ -1,3 +1,18 @@
+---
+title: "Backward compatibility"
+description: "Understand how default API versions and backward compatibility work when maintaining multiple API versions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/api-versioning/backward-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/api-versioning/backward-compatibility.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - api-versioning
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Backward Compatibility
 
 The following section explains the concept of a default version and backward compatibility with regard to an API version.
@@ -12,7 +27,7 @@ If you mark `http://<hostname>:<port>/phoneverify/2.0` as the default version wh
 
 If you mark any version of an API as the default, two API URLs are listed in its **Overview** tab in the Developer Portal. One URL appears with the version and the other URL appears without the version. You can invoke the default version of an API using either one of the latter mentioned URLs.
    
-   [![default-api-urls]({{base_path}}/assets/img/learn/default-api-urls.png)]({{base_path}}/assets/img/learn/default-api-urls.png)
+   [![default-api-urls](../../../assets/img/learn/default-api-urls.png)](../../../assets/img/learn/default-api-urls.png)
 
 ## Default version and Backward Compatibility
 

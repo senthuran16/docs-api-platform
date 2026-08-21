@@ -1,3 +1,18 @@
+---
+title: "Fine grained access control with OAuth scopes"
+description: "Create OAuth2 scopes and attach them to API resources to restrict access based on the invoking user's role."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Fine Grained Access Control with OAuth Scopes
 
 Scopes enable fine-grained access control to API resources based on user roles. You define scopes to an API's resources. When a user invokes the API, his/her OAuth 2 bearer token cannot grant access to any API resource beyond its associated scopes.
@@ -10,7 +25,7 @@ The scopes can be created and applied to an API resources at API create time. Pl
 
 1. Login to API Publisher (https://localhost:9443/publisher) 
 
-2. Start creating an API as described [here]({{base_path}}learn/design-api/create-api/create-a-rest-api).
+2. Start creating an API as described [here](../../../design-api/create-api/create-a-rest-api).
 
 3. Navigate to Scope section and click on create scope button.
 

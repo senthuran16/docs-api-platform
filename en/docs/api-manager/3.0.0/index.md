@@ -1,14 +1,14 @@
 ---
 title: "WSO2 API Manager 3.0.0 Documentation"
-description: "Home page for WSO2 API Manager 3.0.0 documentation, with links to getting started guides, API design, consumption, gateway, security, rate limiting, and analytics."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/index/
-md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/index.md
+description: "Home page for WSO2 API Manager 3.0.0 documentation, linking to getting started guides, installation, development, and administration resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0.md
 tags:
   - api-manager
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-28
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Overview

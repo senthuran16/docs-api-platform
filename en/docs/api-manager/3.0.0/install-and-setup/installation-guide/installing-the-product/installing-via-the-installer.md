@@ -1,3 +1,18 @@
+---
+title: "Installing via the installer"
+description: "Download, install, and uninstall WSO2 API Manager using the installer wizard on Mac OS, Windows, Ubuntu, and CentOS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-via-the-installer/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-via-the-installer.md
+tags:
+  - api-manager
+  - install-and-setup
+  - installation-guide
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing via the Installer
 
 The following sections explain as to how to to use the WSO2 API Manager installer.
@@ -5,7 +20,7 @@ The following sections explain as to how to to use the WSO2 API Manager installe
 
 ## Download and install the product
 
-If the [installation prerequisites]({{base_path}}/install-and-setup/installation-guide/installation-prerequisites) are satisfied, follow the steps below:
+If the [installation prerequisites](../installation-prerequisites) are satisfied, follow the steps below:
 
 1.  Go to the WSO2 API Manager [product page](https://wso2.com/api-management/) and download the WSO2 API Manager Installer.
 
@@ -96,5 +111,5 @@ Open a terminal and run the following command:
 
 ## What's next?
 
--   See the instructions for [running the product]({{base_path}}/install-and-setup/installation-guide/running-the-product/).
+-   See the instructions for [running the product](../running-the-product).
 

@@ -1,3 +1,18 @@
+---
+title: "Removing unused tokens from the database"
+description: "Configure automatic token cleanup or run stored procedures to remove revoked, inactive, and expired tokens from the database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/removing-unused-tokens-from-the-database/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/removing-unused-tokens-from-the-database.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - removing-unused-tokens-from-the-database
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Removing Unused Tokens from the Database
 
 !!! note
@@ -72,6 +87,7 @@ Alternatively, you can also use the stored procedures provided below, to run a t
     -   [**MySQL**](#schedule-task-for-mysql)
     -   [**SQL Server**](#schedule-task-for-sql-server)
     
+<a name="schedule-task-for-mysql"></a>
 ####Schedule task for MySQL
 ``` sql
 USE 'WSO2AM_DB';
@@ -85,6 +101,7 @@ CREATE EVENT 'cleanup_tokens_event'
 SET GLOBAL event_scheduler = ON;
 
 ```
+<a name="schedule-task-for-sql-server"></a>
 ####Schedule task for SQL Server
 
 ``` sql

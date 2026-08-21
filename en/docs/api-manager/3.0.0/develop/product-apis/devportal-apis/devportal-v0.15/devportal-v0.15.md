@@ -1,10 +1,22 @@
 ---
+title: "Developer Portal API v0.15 reference"
+description: "Interactive REST API reference for the deprecated WSO2 API Manager Developer Portal API v0.15, covering applications and subscriptions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/devportal-apis/devportal-v0.15/devportal-v0.15/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/devportal-apis/devportal-v0.15/devportal-v0.15.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - devportal-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
 template: templates/swagger.html
 ---
 
 !!! warning
     - The **Developer Portal v0.15 REST APIs will be deprecated in the next WSO2 API Manager release**. 
-    - **[WSO2 recommends that you use the Developer Portal v1 REST APIs]({{base_path}}/develop/product-apis/devportal-apis/devportal-v1/devportal-v1)** as it is up to date and has support for the latest WSO2 API Manager 3.0.0 features.
+    - **[WSO2 recommends that you use the Developer Portal v1 REST APIs](../devportal-v1/devportal-v1)** as it is up to date and has support for the latest WSO2 API Manager 3.0.0 features.
 
 ??? info "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager.
@@ -15,7 +27,7 @@ template: templates/swagger.html
           
            You will receive a sample curl command with the sample values you filled in.
 
-       3. Add the `Authorization: Bearer <access-token>` header to the cURL command. You may refer to [Getting Started Guide]({{base_path}}/develop/product-apis/getting-started/guide-devportal-v0.15) to see how to  obtain an access token with required scopes.
+       3. Add the `Authorization: Bearer <access-token>` header to the cURL command. You may refer to [Getting Started Guide](../../getting-started/guide-devportal-v0.15) to see how to  obtain an access token with required scopes.
               
        4. Add a `-k` header to the cURL command and run the cURL command on the terminal with a running instance of WSO2 API-M.
               

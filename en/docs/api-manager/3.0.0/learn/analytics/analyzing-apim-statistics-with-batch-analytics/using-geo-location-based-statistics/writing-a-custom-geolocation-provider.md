@@ -1,3 +1,18 @@
+---
+title: "Writing a custom geolocation provider"
+description: "Implement a custom geolocation resolver by extending the LocationResolver class to override IP-based location lookup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/writing-a-custom-geolocation-provider/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/using-geo-location-based-statistics/writing-a-custom-geolocation-provider.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analyzing-apim-statistics-with-batch-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Writing a Custom Geolocation Provider
 
 Each Geolocation Resolver implementation in WSO2 Analytics is inherited from the `org.wso2.carbon.analytics.apim.spark.geolocation.api.LocationResolver` abstract class has the following methods.

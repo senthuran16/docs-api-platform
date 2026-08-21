@@ -1,6 +1,19 @@
 ---
+title: "Admin API"
+description: "Interactive REST API reference for the WSO2 API Manager Admin API, generated from its OpenAPI definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/apis/admin-v1/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/apis/admin-v1.md
+tags:
+  - api-manager
+  - wip
+  - apis
+  - admin-v1
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
 template: templates/swagger.html
 ---
+
 ??? Info "Note: Click to view"
     Do the following to try out the REST APIs with your local instance of WSO2 API Manager. 
      

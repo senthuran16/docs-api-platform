@@ -1,3 +1,18 @@
+---
+title: "JMX-Based monitoring"
+description: "Enable, configure, and disable JMX for WSO2 API Manager, then monitor the server and datasources using the JConsole tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/jmx-based-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/jmx-based-monitoring.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # JMX-Based Monitoring
 
 Java Management Extensions (JMX) is a technology that lets you implement management interfaces for Java applications. A management interface, as defined by JMX, is composed of named objects called MBeans (Management Beans). MBeans are registered with a name (an ObjectName) in an MBeanServer. To manage a resource or many resources in your application, you can write an MBean defining its management interface and register that MBean in your MBeanServer. The content of the MBeanServer can then be exposed through various protocols, implemented by protocol connectors, or protocol adaptors.
@@ -82,7 +97,7 @@ Once the product server is started, you can start the jConsole tool as follows:
 1.  Open a command prompt and navigate to the `<JDK_HOME>/bin` directory.
 2.  Execute the j `console` command to open the log-in screen of the **Java Monitoring & Management Console** as shown below.
 
-     [![log screen]({{base_path}}/assets/img/administer/log-screen.png)]({{base_path}}/assets/img/administer/log-screen.png)
+     [![log screen](../../../assets/img/administer/log-screen.png)](../../../assets/img/administer/log-screen.png)
     
 3.  Enter the connection details in the above screen as follows:
     
@@ -101,7 +116,7 @@ Once the product server is started, you can start the jConsole tool as follows:
      2.  Enter values for the **Username** and **Password** fields to log in. If you are logging in as the administrator, you can use the same administrator account that is used to log in to the product's management console: admin/admin.
 
         !!! info
-            Make sure that the user ID you are using for JMX monitoring is assigned a role that has the **Server Admin** permission. See [Configuring Roles]({{base_path}}/administer/product-administration/managing-users-and-roles/managing-user-roles) for further information about configuring roles assigned to users. Any user assigned to the **admin** role can log in to JMX.
+            Make sure that the user ID you are using for JMX monitoring is assigned a role that has the **Server Admin** permission. See [Configuring Roles](../managing-users-and-roles/managing-user-roles) for further information about configuring roles assigned to users. Any user assigned to the **admin** role can log in to JMX.
 
 
 4.  Click **Connect** to open the **Java Monitoring & Management Console**. The following tabs will be available:
@@ -110,48 +125,48 @@ Once the product server is started, you can start the jConsole tool as follows:
 
      See the Oracle documentation on [using JConsole](http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html) for more information on these tabs.
 
-     [![Overview]({{base_path}}/assets/img/administer/overview.png)]({{base_path}}/assets/img/administer/overview.png)
+     [![Overview](../../../assets/img/administer/overview.png)](../../../assets/img/administer/overview.png)
 
 
      **Memory**
 
      See the Oracle documentation on [using JConsole](http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html) for more information on these tabs.
 
-     [![Memory]({{base_path}}/assets/img/administer/memory.png)]({{base_path}}/assets/img/administer/memory.png)
+     [![Memory](../../../assets/img/administer/memory.png)](../../../assets/img/administer/memory.png)
    
 
      **Threads**
 
      See the Oracle documentation on [using JConsole](http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html) for more information on these tabs.
 
-     [![Threads]({{base_path}}/assets/img/administer/threads.png)]({{base_path}}/assets/img/administer/threads.png)
+     [![Threads](../../../assets/img/administer/threads.png)](../../../assets/img/administer/threads.png)
     
 
      **Classes**
 
      See the Oracle documentation on [using JConsole](http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html) for more information on these tabs.
 
-     [![Classes]({{base_path}}/assets/img/administer/classes.png)]({{base_path}}/assets/img/administer/classes.png)
+     [![Classes](../../../assets/img/administer/classes.png)](../../../assets/img/administer/classes.png)
     
     
      **VM**
 
      See the Oracle documentation on [using JConsole](http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html) for more information on these tabs.
 
-     [![VM]({{base_path}}/assets/img/administer/vmsummary.png)]({{base_path}}/assets/img/administer/vmsummary.png)
+     [![VM](../../../assets/img/administer/vmsummary.png)](../../../assets/img/administer/vmsummary.png)
 
 
      **MBeans**
 
      See the Oracle documentation on [using JConsole](http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html) for more information on these tabs.
 
-     [![MBeans]({{base_path}}/assets/img/administer/mbeans.png)]({{base_path}}/assets/img/administer/mbeans.png)
+     [![MBeans](../../../assets/img/administer/mbeans.png)](../../../assets/img/administer/mbeans.png)
 
 ### Using the ServerAdmin MBean
 
 When you go to the **MBeans** tab in the JConsole, the **ServerAdmin** MBean will be listed under the "org.wso2.carbon" domain as shown below.
 
-[![Server admin]({{base_path}}/assets/img/administer/server-admin.png)]({{base_path}}/assets/img/administer/server-admin.png)
+[![Server admin](../../../assets/img/administer/server-admin.png)](../../../assets/img/administer/server-admin.png)
 
 The **ServerAdmin** MBean is used for administering the product server instance. There are several server attributes such as "ServerStatus", "ServerData" and "ServerVersion". The "ServerStatus" attribute can take any of the following values:
 
@@ -160,7 +175,7 @@ The **ServerAdmin** MBean is used for administering the product server instance.
 -   RESTARTING
 -   IN\_MAINTENANCE
 
-[![Attributes]({{base_path}}/assets/img/administer/attributes.png)]({{base_path}}/assets/img/administer/attributes.png)
+[![Attributes](../../../assets/img/administer/attributes.png)](../../../assets/img/administer/attributes.png)
 
 The **ServerAdmin** MBean has the following operations:
 
@@ -173,7 +188,7 @@ The **ServerAdmin** MBean has the following operations:
 | **startMaintenance**   | Switch the server to maintenance mode. No new requests will be accepted while the server is in maintenance. |
 | **endMaintenance**     | Switch the server to normal mode if it was switched to maintenance mode earlier.                            |
 
-[![Operations]({{base_path}}/assets/img/administer/operations.png)]({{base_path}}/assets/img/administer/operations.png)
+[![Operations](../../../assets/img/administer/operations.png)](../../../assets/img/administer/operations.png)
 
 ### Using the ServiceAdmin MBean
 
@@ -185,7 +200,7 @@ This MBean is used for administering services deployed in your product. Its attr
 | **NumberOfInactiveServices** | The number of services which have been disabled by an administrator. |
 | **NumberOfFaultyServices**   | The number of services which are faulty.                             |
 
-[![Number of active services]({{base_path}}/assets/img/administer/number-of-active-services.png)]({{base_path}}/assets/img/administer/number-of-active-services.png)
+[![Number of active services](../../../assets/img/administer/number-of-active-services.png)](../../../assets/img/administer/number-of-active-services.png)
 
 The operations available in the ServiceAdmin MBean:
 
@@ -194,7 +209,7 @@ The operations available in the ServiceAdmin MBean:
 | **startService** ( [p1:string](http://p1string/) ) | The p1 parameter is the service name. You can activate a service using this operation.           |
 | **stopService** ( [p1:string](http://p1string/) )  | The p1 parameter is the service name. You can deactivate/disable a service using this operation. |
 
-![Operation invocation]({{base_path}}/assets/img/administer/operation-invocation.png)]({{base_path}}/assets/img/administer/operation-invocation.png)
+![Operation invocation](../../../assets/img/administer/operation-invocation.png)](../../../assets/img/administer/operation-invocation.png)
 
 ### Using the StatisticsAdmin MBean
 
@@ -209,7 +224,7 @@ This MBean is used for monitoring system and server statistics. Its attributes a
 | **SystemRequestCount**    | The total number of requests that has been served by the system since the server was started.                                                    |
 | **SystemResponseCount**   | The total number of response that has been sent by the system since the server was started.                                                      |
 
-[![System request count]({{base_path}}/assets/img/administer/system-request-count.png)]({{base_path}}/assets/img/administer/system-request-count.png)
+[![System request count](../../../assets/img/administer/system-request-count.png)](../../../assets/img/administer/system-request-count.png)
 
 Operations available in the **Statistics** MBean:
 
@@ -228,17 +243,17 @@ Operations available in the **Statistics** MBean:
 | **getMinOperationResponseTime** ( [p1:string](http://p1string/), [p2:string](http://p2string/) ) | The p1 parameter is the service name. The p2 parameter is the operation name. You can get the minimum response time of this operation since deployment.                                                             |
 | **getAvgOperationResponseTime** ( [p1:string](http://p1string/), [p2:string](http://p2string/) ) | The p1 parameter is the service name. The p2 parameter is the operation name. You can get the average response time of this operation since deployment.                                                             |
 
-[![Statistics mbean]({{base_path}}/assets/img/administer/statistics-mbean.png)]({{base_path}}/assets/img/administer/statistics-mbean.png)
+[![Statistics mbean](../../../assets/img/administer/statistics-mbean.png)](../../../assets/img/administer/statistics-mbean.png)
 
 ### Using the DataSource MBean
 
-If you have [JMX enabled for a datasource connected to the product](#JMX-BasedMonitoring-EnablingJMXforadatasource), you can monitor the performance of the datasource using this MBean. The **DataSource** MBean will be listed as shown below.
+If you have [JMX enabled for a datasource connected to the product](#enabling-jmx-for-a-datasource), you can monitor the performance of the datasource using this MBean. The **DataSource** MBean will be listed as shown below.
 
-[![Datasource mbean]({{base_path}}/assets/img/administer/datasource-mbean.png)]({{base_path}}/assets/img/administer/datasource-mbean.png)
+[![Datasource mbean](../../../assets/img/administer/datasource-mbean.png)](../../../assets/img/administer/datasource-mbean.png)
 
-**Example:** If you have JMX enabled for the default Carbon datasource in the `master-datasources.xml.` file, the [JDBC connection pool parameters](http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) that are configured for the Carbon datasource will be listed as attributes as shown below. See the [performance tuning guide]({{base_path}}/install-and-setup/perfromance-tuning-and-test-results/tuning-performance) for instructions on how these parameters are configured for a datasource.
+**Example:** If you have JMX enabled for the default Carbon datasource in the `master-datasources.xml.` file, the [JDBC connection pool parameters](http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) that are configured for the Carbon datasource will be listed as attributes as shown below. See the [performance tuning guide](../../../install-and-setup/performance-tuning-and-test-results/tuning-performance) for instructions on how these parameters are configured for a datasource.
 
-[![Attributes mbeans]({{base_path}}/assets/img/administer/attributes-mbeans.png)]({{base_path}}/assets/img/administer/attributes-mbeans.png)
+[![Attributes mbeans](../../../assets/img/administer/attributes-mbeans.png)](../../../assets/img/administer/attributes-mbeans.png)
 
 ### Using product-specific MBeans
 

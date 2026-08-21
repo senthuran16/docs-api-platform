@@ -1,12 +1,27 @@
+---
+title: "Mitigating cross site request forgery attacks"
+description: "Explains CSRF attacks and how to configure OWASP CSRFGuard to protect web and Jaggery applications from them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/mitigating-cross-site-request-forgery-attacks/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/mitigating-cross-site-request-forgery-attacks.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - mitigating-cross-site-request-forgery-attacks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mitigating Cross Site Request Forgery Attacks
 
 The following sections describe the impact of the Cross Site Request Forgery (CSRF) attack and how to mitigate it.
 
--   [How can CSRF attacks be harmful?](#MitigatingCrossSiteRequestForgeryAttacks-HowcanCSRFattacksbeharmful?)
--   [Mitigating CSRF attacks](#MitigatingCrossSiteRequestForgeryAttacks-MitigatingCSRFattacks)
--   [Configuring applications in WSO2 product to mitigate CSRF attacks](#MitigatingCrossSiteRequestForgeryAttacks-ConfiguringapplicationsinWSO2producttomitigateCSRFattacks)
-    -   [Securing web applications](#MitigatingCrossSiteRequestForgeryAttacks-Securingwebapplications)
-    -   [Securing Jaggery applications](#MitigatingCrossSiteRequestForgeryAttacks-SecuringJaggeryapplications)
+-   [How can CSRF attacks be harmful?](#how-can-csrf-attacks-be-harmful)
+-   [Mitigating CSRF attacks](#mitigating-csrf-attacks)
+-   [Configuring applications in WSO2 product to mitigate CSRF attacks](#configuring-applications-in-wso2-product-to-mitigate-csrf-attacks)
+    -   [Securing web applications](#securing-web-applications)
+    -   [Securing Jaggery applications](#securing-jaggery-applications)
 
 ### How can CSRF attacks be harmful?
 
@@ -50,9 +65,10 @@ You can protect HTTP GET requests sent as a result of resource inclusions and li
 
 See the following for instructions on manually updating CSRF configurations in WSO2 products:
 
--   [Securing web applications](#MitigatingCrossSiteRequestForgeryAttacks-Securingwebapplications)
--   [Securing Jaggery applications](#MitigatingCrossSiteRequestForgeryAttacks-SecuringJaggeryapplications)
+-   [Securing web applications](#securing-web-applications)
+-   [Securing Jaggery applications](#securing-jaggery-applications)
 
+<a name="securing-web-applications"></a>
 #### Securing web applications
 
 Follow the steps below to secure web applications.
@@ -129,6 +145,7 @@ Follow the steps below to secure web applications.
     | `org.owasp.csrfguard.TokenLength=32`| Defines the length of the CSRF token.                                            |
     | `org.owasp.csrfguard.action.Invalidate=org.owasp.csrfguard.action.Invalidate` | Invalidates the user session, if a CSRF attack attempt was blocked by CSRFGuard. |
 
+<a name="securing-jaggery-applications"></a>
 #### Securing Jaggery applications
 
 Follow the steps below to secure Jaggery applications.

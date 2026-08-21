@@ -1,3 +1,18 @@
+---
+title: "Create applications"
+description: "Create a new application in the Developer Portal to subscribe to APIs and generate access keys."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/create-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/create-application.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create Applications
 
 An application is a logical representation of a physical application such as a mobile app, webapp, device, etc. If an application needs to consume an API, it should subscribe to the required API over a selected business plan, which determined the usage quota the application is allowed. A single application can have multiple API subscriptions. Each application has a consumer key and consumer secret pair. The requests to the subscribed APIs are authenticated via the tokens generated using the latter mentioned security credentials. 
@@ -10,7 +25,7 @@ operate on per access token basis
 
 
 
-The API Manager comes with a pre-created default application, which allows unlimited access by default. You can also [create](#create-a-new-applications) your own.
+The API Manager comes with a pre-created default application, which allows unlimited access by default. You can also [create](#create-a-new-application) your own.
 
 ## Create a new application
 
@@ -20,7 +35,7 @@ The API Manager comes with a pre-created default application, which allows unlim
 
 3.  Click **ADD NEW APPLICATION**.
 
-    ![Add new application option]({{base_path}}/assets/img/learn/add-new-application-option.png)   
+    ![Add new application option](../../../assets/img/learn/add-new-application-option.png)   
 
 4.  Enter the application details and click **SAVE** to create the application.
    
@@ -37,16 +52,16 @@ The API Manager comes with a pre-created default application, which allows unlim
      </html>
 
         
-       [![create a new application]({{base_path}}/assets/img/learn/create-new-application.png)]({{base_path}}/assets/img/learn/create-new-application.png)
+       [![create a new application](../../../assets/img/learn/create-new-application.png)](../../../assets/img/learn/create-new-application.png)
       
        If the application creation is successful, you will be redirected to the application overview page.
 
-       [![Application overview]({{base_path}}/assets/img/learn/application-overview.png)]({{base_path}}/assets/img/learn/application-overview.png)
+       [![Application overview](../../../assets/img/learn/application-overview.png)](../../../assets/img/learn/application-overview.png)
     
 5.  Click **BACK TO LISTING** to navigate to Applications listing page.
     
     You will find the PizzaShack application listed with other applications. The application can be edited or deleted by the application owner.
 
-    [![Application listing]({{base_path}}/assets/img/learn/applications-listing.png)]({{base_path}}/assets/img/learn/applications-listing.png)
+    [![Application listing](../../../assets/img/learn/applications-listing.png)](../../../assets/img/learn/applications-listing.png)
 
     

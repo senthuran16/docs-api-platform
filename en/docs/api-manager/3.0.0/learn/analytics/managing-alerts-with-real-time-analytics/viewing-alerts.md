@@ -1,3 +1,18 @@
+---
+title: "Viewing alerts"
+description: "View the alerts generated for APIs deployed in WSO2 API Manager through the Alerts History page in the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/managing-alerts-with-real-time-analytics/viewing-alerts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/managing-alerts-with-real-time-analytics/viewing-alerts.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - managing-alerts-with-real-time-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing Alerts
 
 !!! info

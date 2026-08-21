@@ -1,3 +1,18 @@
+---
+title: "Installing on Linux or OS X"
+description: "Install the WSO2 API Manager binary distribution on Linux or macOS, including required applications and setup steps."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-linux-or-os-x/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/installation-guide/installing-the-product/installing-the-binary/installing-on-linux-or-os-x.md
+tags:
+  - api-manager
+  - install-and-setup
+  - installation-guide
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing on Linux or OS X
 
 !!! note
@@ -11,7 +26,7 @@ Follow the instructions below to install API Manager on Linux or Mac OS X.
 ### Installing the required applications
 
 1.  Log in to the command line (Terminal on Mac).
-2.  Ensure that your system meets the [Installation Prerequisites]({{base_path}}/install-and-setup/installation-guide/installation-prerequisites). Java Development Kit (JDK) is essential to run the product.
+2.  Ensure that your system meets the [Installation Prerequisites](../../installation-prerequisites). Java Development Kit (JDK) is essential to run the product.
 
 ### Installing the API Manager
 
@@ -70,4 +85,4 @@ If you need to set additional system properties when the server starts, you can 
 
     When using SUSE Linux, it ignores `/etc/resolv.conf` and only looks at the `/etc/hosts` file. This means that the server will throw an exception on startup if you have not specified anything besides localhost. To avoid this error, add the following line above `127.0.0.1 localhost` in the `/etc/hosts` file: `<ip_address><machine_name> localhost`
 
-You are now ready to [run the product]({{base_path}}/install-and-setup/installation-guide/running-the-product/).
+You are now ready to [run the product](../../running-the-product).

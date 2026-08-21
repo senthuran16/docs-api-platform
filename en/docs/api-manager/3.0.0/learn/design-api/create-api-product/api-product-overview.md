@@ -1,3 +1,18 @@
+---
+title: "API Product overview"
+description: "Understand how API Products bundle resources from multiple APIs into a single consumable interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/create-api-product/api-product-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/create-api-product/api-product-overview.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # API Product Overview
 
 An API Product is a packaging mechanism that you can use when you need to bundle a preferred set of resources from multiple APIs and expose it as a separate API interface, which can be consumed by subscribers. API Products give Publishers the ability to repackage their existing APIs in various combinations to provide a tailor-made experience for their subscribers.
@@ -13,7 +28,7 @@ Let's use the following  example to understand how API Products work in WSO2 API
 
 **Example**
 
-   [![Example for API Product]({{base_path}}/assets/img/learn/design-api/create-api-product/api-product-overview.png)]({{base_path}}/assets/img/learn/design-api/create-api-product/api-product-overview.png)
+   [![Example for API Product](../../../assets/img/learn/design-api/create-api-product/api-product-overview.png)](../../../assets/img/learn/design-api/create-api-product/api-product-overview.png)
   
 A financial institution has the following three APIs.
 

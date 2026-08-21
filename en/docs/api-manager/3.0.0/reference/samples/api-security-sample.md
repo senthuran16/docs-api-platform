@@ -1,3 +1,18 @@
+---
+title: "API security sample"
+description: "Explains a sample scenario for securing APIs against misuse through authentication, authorization, and access audits."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/reference/samples/api-security-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/reference/samples/api-security-sample.md
+tags:
+  - api-manager
+  - reference
+  - samples
+  - api-security-sample
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "explanation"
+---
+
 # API Security Sample
 
 ### Usecase

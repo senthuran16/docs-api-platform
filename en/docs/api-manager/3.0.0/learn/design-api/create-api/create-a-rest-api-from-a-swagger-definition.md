@@ -1,3 +1,18 @@
+---
+title: "Create an API from a open API definition"
+description: "Create a REST API in the Publisher by importing an existing OpenAPI (Swagger) definition URL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/create-api/create-a-rest-api-from-a-swagger-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/create-api/create-a-rest-api-from-a-swagger-definition.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - create-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create an API from a Open API Definition
 
 A Swagger definition is a format that describes REST APIs. 

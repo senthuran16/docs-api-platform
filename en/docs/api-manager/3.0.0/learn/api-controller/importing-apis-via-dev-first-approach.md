@@ -1,3 +1,18 @@
+---
+title: "Importing APIs via dev first approach"
+description: "Create and deploy APIs from scratch or from an existing OpenAPI specification using apictl without the Publisher Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-controller/importing-apis-via-dev-first-approach/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-controller/importing-apis-via-dev-first-approach.md
+tags:
+  - api-manager
+  - learn
+  - api-controller
+  - importing-apis-via-dev-first-approach
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Importing APIs Via Dev First Approach
 
 WSO2 API Controller (**apictl**) allows you to create and deploy APIs without using WSO2 API Publisher Portal. You can use this feature to create an API **from scratch** or **using an existing Swagger or Open API specification** and then deploy it to the desired API Manager environment.
@@ -5,11 +20,11 @@ WSO2 API Controller (**apictl**) allows you to create and deploy APIs without us
 !!! info
     **Before you begin...** 
 
-    -   Make sure that the WSO2 API Manager CTL Tool is downloaded and initialized, if not, follow the steps in [Download and Initialize the CTL Tool]({{base_path}}/learn/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-ctl-tool).
+    -   Make sure that the WSO2 API Manager CTL Tool is downloaded and initialized, if not, follow the steps in [Download and Initialize the CTL Tool](getting-started-with-wso2-api-controller#download-and-initialize-the-ctl-tool).
 
     -   Make sure you already have added an environment using the CTL tool for the API Manager environment you plan to import the API to. 
 
-        If not, follow the steps in [Add an Environment]({{base_path}}/learn/api-controller/getting-started-with-wso2-api-controller#add-an-environment).
+        If not, follow the steps in [Add an Environment](getting-started-with-wso2-api-controller#add-an-environment).
 
 ## Initialize an API Project
 
@@ -316,13 +331,13 @@ WSO2 API Controller (**apictl**) allows you to create and deploy APIs without us
 !!! info
     **Before you begin...** 
 
-    -   Make sure you have already created an environment to which you are planning to import the API. If not, follow steps in [Add an Environment]({{base_path}}/learn/api-controller/getting-started-with-wso2-api-controller#add-an-environment).
+    -   Make sure you have already created an environment to which you are planning to import the API. If not, follow steps in [Add an Environment](getting-started-with-wso2-api-controller#add-an-environment).
     
-    -   Make sure you have logged-in to the importing environment. If not, follow steps in [Login to an Environment]({{base_path}}/learn/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment). 
+    -   Make sure you have logged-in to the importing environment. If not, follow steps in [Login to an Environment](getting-started-with-wso2-api-controller#login-to-an-environment). 
 
 
 !!! tip
-    A user with `admin` role is allowed to import APIs. To create a custom user who can import APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations]({{base_path}}/learn/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `admin` role is allowed to import APIs. To create a custom user who can import APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](advanced-topics/creating-custom-users-to-perform-api-controller-operations#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
 
 After editing the mandatory fields in the API Project, you can import the API to an environment using any of the following commands.  
 
@@ -347,7 +362,7 @@ After editing the mandatory fields in the API Project, you can import the API to
             `--preserve-provider` : Preserve the existing provider of API after importing. The default value is `true`. 
             `--update` : Update an existing API or create a new API in the importing environment.  
             `--params` : Provide a API Manager environment params file (The default file is `api_params.yaml`.).   
-                        For more information, see [Configuring Environment Specific Parameters]({{base_path}}/learn/api-controller/advanced-topics/configuring-environment-specific-parameters). 
+                        For more information, see [Configuring Environment Specific Parameters](advanced-topics/configuring-environment-specific-parameters). 
             `--skipCleanup` : Leave all temporary files created in the CTL during import process. The default value is `false`.  
             
     !!! example

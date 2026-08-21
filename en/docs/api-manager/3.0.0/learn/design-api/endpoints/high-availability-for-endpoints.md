@@ -1,22 +1,37 @@
+---
+title: "High availability for endpoints"
+description: "Configure load balancing and failover endpoints for an API to distribute traffic and improve availability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/endpoints/high-availability-for-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/endpoints/high-availability-for-endpoints.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # High Availability for Endpoints
 
 ## Configuring Load Balancing Endpoints
 
 When using WSO2 API Manager, you can configure load balancing endpoints via the API Publisher.
 
-1. When you [create an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api), to configure load balancing endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
+1. When you [create an API](../create-api/create-a-rest-api), to configure load balancing endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
 
 2. Expand **Load balance and Failover Configurations**.
 
-     [![load balance and fail over]({{base_path}}/assets/img/learn/load-balance-and-fail-over.png)]({{base_path}}/assets/img/learn/load-balance-and-fail-over.png)
+     [![load balance and fail over](../../../assets/img/learn/load-balance-and-fail-over.png)](../../../assets/img/learn/load-balance-and-fail-over.png)
 
 3. Select **Load Balanced** as the endpoint type.
 
-     ![load-balanced]({{base_path}}/assets/img/learn/load-balanced-configurations.png)
+     ![load-balanced](../../../assets/img/learn/load-balanced-configurations.png)
 
 4. Configure the endpoint.
 
-    ![load-balanced]({{base_path}}/assets/img/learn/load-balanced-configured.png)
+    ![load-balanced](../../../assets/img/learn/load-balanced-configured.png)
     
     The following are the other configurations that you need to define in order to specify a load balancing endpoint.
     <table>
@@ -69,17 +84,17 @@ When using WSO2 API Manager, you can configure load balancing endpoints via the 
 ## Configuring Failover Group of Endpoints
 When using WSO2 API Manager, you can configure failover group endpoints via the API Publisher.
 
-1. When you [create an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api), to configure failover endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
+1. When you [create an API](../create-api/create-a-rest-api), to configure failover endpoints go to the edit view of the API, click **Endpoint** to view the Endpoint page.
 
 2. Expand **Load balance and Failover Configurations**.
 
-     ![failover]({{base_path}}/assets/img/learn/failover.png)
+     ![failover](../../../assets/img/learn/failover.png)
 
 3. Select **Failover** as the endpoint type.
 
 4. Configure the endpoint.
 
-     ![failover]({{base_path}}/assets/img/learn/failover-configured.png)
+     ![failover](../../../assets/img/learn/failover-configured.png)
      
      You need to add at least one failover endpoint as the production and sandbox (based on the endpoints that you have specified) endpoints. 
      

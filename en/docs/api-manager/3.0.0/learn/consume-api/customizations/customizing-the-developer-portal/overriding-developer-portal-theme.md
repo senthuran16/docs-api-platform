@@ -1,3 +1,18 @@
+---
+title: "Overriding Developer Portal theme"
+description: "Customize the Developer Portal's look, feel, and behavior by editing the defaultTheme.js configuration file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overriding Developer Portal Theme
 
 WSO2 provides the developers with an easier approach to customize the UI. You do not need to have React, CSS, or HTML knowledge to customize the UI. We have a single JSON file which holds the parameterized constraints of the look and feel. For example, you can change the font family via the JSON file so that the changes appear through out the Developer Portal. When updating the Developer Portal theme, you can update not only the look and feel, but also behaviors such as making the listing view default instead of grid view, hiding social features, etc. 
@@ -16,7 +31,7 @@ Changes done in the `defaultTheme.js` file are reflected directly in the Develop
 
 **If you do not have access to the file system** , you can upload the theme via the Admin Portal as shown below:
 
-1.  Download the sample theme here [sampleTheme.zip]({{base_path}}/assets/attachments/learn/sampleTheme.zip). 
+1.  Download the sample theme here [sampleTheme.zip](../../../../assets/attachments/learn/sampleTheme.zip). 
 2.  The `sampleTheme.zip` file contains the following folder structure. 
 
      You can make the changes required to `defaultTheme.json` file and archive it back. The name of the archive does not matter, but the name of the JSON file (`defaultTheme.json`) does.
@@ -33,7 +48,7 @@ Changes done in the `defaultTheme.js` file are reflected directly in the Develop
 
 4.  Expand the **Settings** menu, click **Upload Tenant Theme** and upload your ZIP file. 
 
-    ![Upload tenant theme]({{base_path}}/assets/img/learn/upload-tenant-theme.png)
+    ![Upload tenant theme](../../../../assets/img/learn/upload-tenant-theme.png)
 
 5.  Access the API Developer Portal (`https://<server-host>:9443/devportal`) using your tenant username and password.
 

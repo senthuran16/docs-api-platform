@@ -1,3 +1,18 @@
+---
+title: "Customizing user signup in Developer Portal"
+description: "Customize the fields shown on the Developer Portal self sign-up page using dynamic user claim attributes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-user-signup-in-developer-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-user-signup-in-developer-portal.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing User Signup in Developer Portal
 
 WSO2 API Manager (WSO2 API-M) allows new users to gain access to the Developer Portal via a Self sign-up page. The default sign-up page has a set of mandatory and optional fields where the user can use to provide their details. However, there can be cases where Developer Portal owners need to customize the available fields by modifying the available fields or/and adding new fields.

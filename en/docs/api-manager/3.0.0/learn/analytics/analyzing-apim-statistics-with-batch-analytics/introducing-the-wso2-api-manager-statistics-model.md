@@ -1,3 +1,18 @@
+---
+title: "Introducing the WSO2 API Manager statistics model"
+description: "Explains how API Manager generates, publishes, and analyzes statistics events through its internal usage publisher and event streams."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/introducing-the-wso2-api-manager-statistics-model/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/analytics/analyzing-apim-statistics-with-batch-analytics/introducing-the-wso2-api-manager-statistics-model.md
+tags:
+  - api-manager
+  - learn
+  - analytics
+  - analyzing-apim-statistics-with-batch-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Introducing the WSO2 API Manager Statistics Model
 
 ## Introduction

@@ -1,3 +1,18 @@
+---
+title: "Enabling Java security manager"
+description: "Enable the Java Security Manager in WSO2 API Manager by signing JARs and defining security policies."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/enabling-java-security-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/enabling-java-security-manager.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - enabling-java-security-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling Java Security Manager
 
 !!! warning
@@ -10,7 +25,7 @@ The Java Security Manager is used to define various security policies that pre
     **Before you begin**
 
     * Ensure that you have Java 1.8 or Java 11 installed.
-    * Note that you need to use a keystore for signing JARs using the Java security manager. In this example, you will be using the default keystore in your WSO2 product ( `wso2carbon.jks` ). You can read about the recommendations for using keystores from [here]({{base_path}}/administer/product-security/configuring-keystores/keystore-basics/about-asymetric-cryptography/).
+    * Note that you need to use a keystore for signing JARs using the Java security manager. In this example, you will be using the default keystore in your WSO2 product ( `wso2carbon.jks` ). You can read about the recommendations for using keystores from [here](configuring-keystores/keystore-basics/about-asymetric-cryptography).
 
 
 The steps below show how to enable the Java Security Manager for WSO2 products.

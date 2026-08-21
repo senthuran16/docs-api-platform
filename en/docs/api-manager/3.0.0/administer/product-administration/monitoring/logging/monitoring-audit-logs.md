@@ -1,3 +1,18 @@
+---
+title: "Monitoring audit logs"
+description: "Configure and understand the audit logs that WSO2 API Manager writes to the audit.log file via log4j2 settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/logging/monitoring-audit-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/logging/monitoring-audit-logs.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Audit Logs
 
 Auditing is a primary requirement when it comes to monitoring production servers. For examples, DevOps need to have a clear mechanism for identifying who did what, and to filter possible system violations or breaches.
@@ -27,7 +42,7 @@ Audit logs are enabled by default in WSO2 API Manager (WSO2 API-M) via the follo
     appender.AUDIT_LOGFILE.filter.threshold.level = INFO
     ```
 
-   The log growth of audit logs can be managed by the configurations discussed in [Managing log growth]({{base_path}}/administer/product-administration/monitoring/logging/managing-log-growth) guide.
+   The log growth of audit logs can be managed by the configurations discussed in [Managing log growth](managing-log-growth) guide.
    
 ## Audit log actions
 

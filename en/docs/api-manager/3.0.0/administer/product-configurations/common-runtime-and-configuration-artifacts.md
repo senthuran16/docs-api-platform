@@ -1,3 +1,18 @@
+---
+title: "Common runtime and configuration artifacts"
+description: "Lists the persistent runtime and configuration artifact directories used in WSO2 API Manager and API Manager Analytics deployments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/common-runtime-and-configuration-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-configurations/common-runtime-and-configuration-artifacts.md
+tags:
+  - api-manager
+  - administer
+  - product-configurations
+  - common-runtime-and-configuration-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Common Runtime and Configuration Artifacts
 
 The following are the artifacts used commonly in a WSO2 API Manager and API Manager Analytics deployment.
@@ -12,7 +27,7 @@ The following are the artifacts used commonly in a WSO2 API Manager and API Mana
     Ex.: In a Kubernetes based container environment, its possible to use Persistent Volumes to persist these artifacts.
 
 
-1. [API Manager](##api-manager)
+1. [API Manager](#api-manager)
     1. [Persistent Runtime Artifacts](#persistent-runtime-artifacts)
     2. [Persistent Configuration Artifacts](#persistent-configuration-artifacts)
 2. [APIM Analytics](#apim-analytics)

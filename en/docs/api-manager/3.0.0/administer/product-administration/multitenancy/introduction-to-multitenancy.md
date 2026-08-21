@@ -1,3 +1,18 @@
+---
+title: "Introduction to multitenancy"
+description: "Explains multitenancy in WSO2 API Manager, covering tenant isolation, resource sharing, tenant loading policy, and restrictions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/multitenancy/introduction-to-multitenancy/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/multitenancy/introduction-to-multitenancy.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - multitenancy
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Introduction to Multitenancy
 
 The goal of multitenancy is to maximize resource sharing by allowing multiple users (tenants) to log in and use a single server/cluster at the same time, in a tenant-isolated manner. That is, each user is given the experience of using his/her own server, rather than a shared environment. Multitenancy ensures optimal performance of the system's resources such as memory and hardware and also secures each tenant's personal data.
@@ -38,7 +53,7 @@ The super tenant as well as each individual tenant has its own configuration a
 
 Each tenant has its own security domain. A domain has a set of users, and permissions for those users to access resources. Thus, a tenant is restricted by the users and permissions of the domain assigned to it. The artifact repositories of the tenants are separated from each other.
 
- [![]({{base_path}}/assets/img/administer/multitenant-architecture.png)]({{base_path}}/assets/img/administer/multitenant-architecture.png)
+ [![](../../../assets/img/administer/multitenant-architecture.png)](../../../assets/img/administer/multitenant-architecture.png)
 
 An individual tenant can carry out the following activities within the boundaries of its own configuration and context module:
 

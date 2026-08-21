@@ -1,3 +1,18 @@
+---
+title: "Customize the Developer Portal and gateway URLs for tenants"
+description: "Configure per-tenant custom domain mappings and load balancer settings for the Developer Portal and Gateway URLs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customize-the-api-store-and-gateway-urls-for-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customize-the-api-store-and-gateway-urls-for-tenants.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing the Developer Portal and Gateway URLs for Tenants
 
 The default URL of WSO2 API Manager Developer Porttal (`https://<HostName>:9443/devportal`). and the gateway URLs (`http://<HostName>:8280/t/<tenant-domain>` and `https://<HostName>:8243/t/<tenant-domain>`) can be customized per tenant. Following steps illustrates how to configure devportal and gateway custom urls for a given tenant.
@@ -15,11 +30,11 @@ The default URL of WSO2 API Manager Developer Porttal (`https://<HostName>:9443/
 
 2.  In the **Main** menu, click **Browse** under **Resources**.
 
-    ![]({{base_path}}/assets/img/learn/customizations/browse-registry.png)
+    ![](../../../assets/img/learn/customizations/browse-registry.png)
 
-3.  Navigate to the `/_system/governance` registry path and create `customurl/api-cloud/<tenant-domain>/urlMapping` directory structure in the registry, as shown in the following diagram. Replace the `<tenant-domain>` placeholder with the domain name of the tenant you want to customize the devportal and gateway URLs. For details on how to create and manage multiple tenants, see [Managing Tenants]({{base_path}}/administer/product-administration/multitenancy/managing-tenants/).
+3.  Navigate to the `/_system/governance` registry path and create `customurl/api-cloud/<tenant-domain>/urlMapping` directory structure in the registry, as shown in the following diagram. Replace the `<tenant-domain>` placeholder with the domain name of the tenant you want to customize the devportal and gateway URLs. For details on how to create and manage multiple tenants, see [Managing Tenants](../../../administer/product-administration/multitenancy/managing-tenants).
 
-    ![]({{base_path}}/assets/img/learn/customizations/mapping-file-directory-structure.png)
+    ![](../../../assets/img/learn/customizations/mapping-file-directory-structure.png)
 
     To create a directory in the registry path,
 
@@ -27,7 +42,7 @@ The default URL of WSO2 API Manager Developer Porttal (`https://<HostName>:9443/
     
     2.  Click **Add Collection** and specify the name of the directory and click **Add**.
 
-        ![]({{base_path}}/assets/img/learn/customizations/browse-registry.png)
+        ![](../../../assets/img/learn/customizations/browse-registry.png)
 
         !!! note
             In [API Cloud](https://docs.wso2.com/display/APICloud/Customize+Cloud+URLs), this directory structure is created automatically when specifying the custom URL through the UI.
@@ -60,7 +75,7 @@ The default URL of WSO2 API Manager Developer Porttal (`https://<HostName>:9443/
     }
     ```
 
-    ![]({{base_path}}/assets/img/learn/customizations/create-mapping-file.png)
+    ![](../../../assets/img/learn/customizations/create-mapping-file.png)
 
 ## Configure per tenant service provider creation for devportal
 
@@ -70,11 +85,11 @@ By default the developer portal is acting as SAAS app, which is shared among all
 
 2.  In the **Main** menu, click **Browse** under **Resources**.
 
-    ![]({{base_path}}/assets/img/learn/customizations/browse-registry.png)
+    ![](../../../assets/img/learn/customizations/browse-registry.png)
 
 3.  Navigate to `/_system/config/apimgt/applicationdata/tenant-conf.json` configuration file.
 
-    ![]({{base_path}}/assets/img/learn/customizations/tenant-conf.png )
+    ![](../../../assets/img/learn/customizations/tenant-conf.png )
 
 4.  Edit tenant-conf.json and add following new property to enable per tenant service provider creation for the respective tenant. Then save the content.
 
@@ -82,7 +97,7 @@ By default the developer portal is acting as SAAS app, which is shared among all
     "EnablePerTenantServiceProviderCreation": true
     ```
 
-    ![]({{base_path}}/assets/img/learn/customizations/per-tenant-sp-creation-config.png )
+    ![](../../../assets/img/learn/customizations/per-tenant-sp-creation-config.png )
 
 ## Configure the load balancer for custom URLs
 

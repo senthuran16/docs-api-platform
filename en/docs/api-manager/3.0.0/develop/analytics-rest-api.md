@@ -1,3 +1,17 @@
+---
+title: "Fetch APIM analytics data via siddhi REST API"
+description: "Fetch WSO2 API Manager analytics data from aggregation tables by running Siddhi queries against the Store REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/analytics-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/analytics-rest-api.md
+tags:
+  - api-manager
+  - develop
+  - analytics-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Fetch APIM Analytics Data via Siddhi REST API
 
 Analytics data published to the WSO2 APIM Analytics Server can be viewed via the analytics dashboard portal. In addition to this, these data can be fetched via REST APIs to external dashboards/applications for interested parties. Following section explains the usage of the Siddhi Store REST API to achieve this requirement.
@@ -37,7 +51,7 @@ curl -X POST -H "content-type: application/json" -u "admin:admin" -d '{"appName"
 
 ## Constructing a Siddhi Query to Fetch Data
 
-Available aggregation tables in APIM Analytics and its schema are listed in [here]({{base_path}}/learn/analytics/analyzing-apim-statistics-with-batch-analytics/introducing-the-wso2-api-manager-statistics-model/#api-manager-aggregate-tables). By inspecting the schema of each aggregation table, and modifying the query accordingly, required data can be fetched via the API from REST clients. 
+Available aggregation tables in APIM Analytics and its schema are listed in [here](../learn/analytics/analyzing-apim-statistics-with-batch-analytics/introducing-the-wso2-api-manager-statistics-model#api-manager-aggregate-tables). By inspecting the schema of each aggregation table, and modifying the query accordingly, required data can be fetched via the API from REST clients. 
 
 
 

@@ -1,3 +1,17 @@
+---
+title: "Configuration catalog"
+description: "Reference of the deployment.toml configuration parameters for an all-in-one WSO2 API Manager deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/config_introduction/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/config_introduction.md
+tags:
+  - api-manager
+  - wip
+  - config_introduction
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuration Catalog
 This document describes all the configuration parameters that are used in WSO2 API Manager in a all-in-one deployment. 
 

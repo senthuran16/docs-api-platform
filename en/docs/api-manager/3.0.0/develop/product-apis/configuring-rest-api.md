@@ -1,3 +1,18 @@
+---
+title: "Configuring the REST API"
+description: "Modify the default roles mapped to OAuth2 scopes that protect resources of the WSO2 API Manager REST APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/configuring-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/develop/product-apis/configuring-rest-api.md
+tags:
+  - api-manager
+  - develop
+  - product-apis
+  - configuring-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring the REST API
 
 This section explains how to configure the API Manager REST APIs:
@@ -5,7 +20,7 @@ This section explains how to configure the API Manager REST APIs:
 Changing Default Roles
 Certain resources of the REST API are protected using OAuth 2.0 scopes. Each tenant has a `tenant-conf.json` configuration file with a section for RESTAPIScopes that contains a mapping between all the scopes that are available with API Manager REST APIs, and a set of roles. The `tenant-conf.json` file for each tenant can be accessed by logging into the Management Console and browsing the registry, as shown below.
 
-![Tenant conf]({{base_path}}/assets/img/develop/tenant-conf.jpg)
+![Tenant conf](../../assets/img/develop/tenant-conf.jpg)
 
 When a user requires access to a resource protected by an OAuth 2.0 scope, an access token needs to be provided. The access token must be associated with that particular scope as the Bearer token in the Authorization header. In order to retrieve it, the user needs to invoke the Token API and request for that scope. For more information, see the Getting Started section. When providing such an access token, the Token API validates the eligibility of the user for that particular scope using the RESTAPIScopes configuration. An access token with the particular scope is issued for the user only if that user has been assigned one or more of the roles specified in the RESTAPIScopes configuration for that scope.
 

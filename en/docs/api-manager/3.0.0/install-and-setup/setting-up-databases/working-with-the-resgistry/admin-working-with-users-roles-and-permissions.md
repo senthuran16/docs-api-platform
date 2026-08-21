@@ -1,3 +1,18 @@
+---
+title: "Working with users, roles and permissions"
+description: "Understand the default user, role, and permission configuration in a WSO2 product and where to change it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/working-with-the-resgistry/admin-working-with-users-roles-and-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/install-and-setup/setting-up-databases/working-with-the-resgistry/admin-working-with-users-roles-and-permissions.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setting-up-databases
+  - working-with-the-resgistry
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Working with Users, Roles and Permissions
 
 The user management functionality allows you to configure the users that can access your product and the permissions that determine how each user can work with your system.

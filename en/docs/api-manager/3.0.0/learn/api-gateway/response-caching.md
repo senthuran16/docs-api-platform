@@ -1,3 +1,18 @@
+---
+title: "Response caching"
+description: "Enable response caching for an API using the cache mediator, tune cache mediator properties, and invalidate cached responses via JMX."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-gateway/response-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-gateway/response-caching.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - response-caching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 #Response caching
 
 The API Manager uses [WSO2 ESB's cache mediator](https://docs.wso2.com/display/EI650/Cache+Mediator) to cache response messages for each API. Caching improves performance, because the backend server does not have to process the same data for a request multiple times. You need to set an appropriate timeout period to offset the risk of stale data in the cache.
@@ -8,11 +23,11 @@ You need to enable response caching when creating a new API or editing an existi
 
 Please follow below steps to enable response caching for an API.
 
-1.  [Create an API]({{base_path}}/learn/design-api/create-api/create-a-rest-api/).
+1.  [Create an API](../design-api/create-api/create-a-rest-api).
 
 2.  Navigate to the **Runtime Configurations** tab where you find the response caching configuration. Then turn on Response caching and give a timeout value. This enables the default response caching settings.
 
-    ![]({{base_path}}/assets/img/learn/enable-response-caching.png)
+    ![](../../assets/img/learn/enable-response-caching.png)
 
 3.  If you want to change the default response caching settings, edit the following cache mediator properties in the `<API-M_HOME>/repository/resources/api_templates/velocity_template.xml` file:
 
@@ -47,7 +62,7 @@ Please follow below steps to enable response caching for an API.
     <tr class="even">
     <td><p><code>              hashGenerator             </code></p></td>
     <td><p>Defines the hash generator class.</p>
-    <p>When caching response messages, a hash value is generated based on the request's URI, transport headers and the payload (if available). WSO2 has a default <code>              REQUESTHASHGenerator             </code> class written to generate the hash value. See sample <a href="attachments/103333424/103333429.java">here</a> .</p>
+    <p>When caching response messages, a hash value is generated based on the request's URI, transport headers and the payload (if available). WSO2 has a default <code>              REQUESTHASHGenerator             </code> class written to generate the hash value. See sample <a href="../../../assets/attachments/103333424/103333429.java">here</a> .</p>
     <p>If you want to change this default implementation (for example, to exclude certain headers), you can write a new hash generator implementation by extending the <code>              REQUESTHASHGenerator             </code> and overriding its <code>              getDigest()             </code> method. Once done, add the new class as the <code>              hashGenerator             </code> attribute of the <code>              &lt;cache&gt;             </code> element in the <code>              velocity_template.xml             </code> file.</p></td>
     </tr>
     </tbody>
@@ -70,5 +85,5 @@ Follow the instructions below to enable the stream builders in the API gateway:
 
 You can invalidate all cached response remotely by using any [JMX monitoring tool such as Jconsole](https://docs.wso2.com/display/EI650/JMX+Monitoring) using the exposed MBeans. You can use the `InvalidateMediatorCache()` operation of the `org.wso2.carbon.mediation` MBean for this as shown below.
 
-![JMX monitoring through JConsole]({{base_path}}/assets/img/learn/jmx-monitoring-through-jsoncole.png)
+![JMX monitoring through JConsole](../../assets/img/learn/jmx-monitoring-through-jsoncole.png)
 

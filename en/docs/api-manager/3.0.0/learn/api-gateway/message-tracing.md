@@ -1,3 +1,18 @@
+---
+title: "Message tracing"
+description: "Configure the Message Tracer in API Manager to log message flow details for debugging and auditing in development environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-gateway/message-tracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-gateway/message-tracing.md
+tags:
+  - api-manager
+  - learn
+  - api-gateway
+  - message-tracing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Message Tracing
 
 Message Tracing refers to the process of identifying each message flow of each of the transactions that go through the 

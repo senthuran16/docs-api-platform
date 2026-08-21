@@ -1,3 +1,18 @@
+---
+title: "Refresh token grant"
+description: "Renew an expired access token using a refresh token, and revoke a refresh token when it is no longer needed."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/refresh-token-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/refresh-token-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Refresh Token Grant
 
 #### Flow
@@ -141,7 +156,7 @@ curl -k -v -d "token=4ed29669-a457-3f83-af1e-180cad271cca&token_type_hint=refres
 ```
 
 !!! note
-    Note that for users to be counted in the [Registered Users for Application statistics](../../../../../analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics/#ViewingAPIStatistics-TopUsersperApplication) which takes the number of users shared each of the Application, they should have to generate access tokens using [Password Grant](../password-grant/) type.
+    Note that for users to be counted in the [Registered Users for Application statistics](../../../analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics#registered-application-users) which takes the number of users shared each of the Application, they should have to generate access tokens using [Password Grant](../password-grant/) type.
 
 !!! tip
     If you want to disable the **Refresh Token grant type** in the APIM instance, add the following entry to the `deployment.toml` file in the `<APIM_HOME>/repository/conf/` folder.

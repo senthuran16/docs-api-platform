@@ -1,3 +1,18 @@
+---
+title: "Application keys"
+description: "Generate or renew consumer key and secret pairs and access tokens for a Developer Portal application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/generate-keys/generate-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/manage-application/generate-keys/generate-api-keys.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - manage-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Application Keys
 
 An API Access Token/Key is a string that is being passed as a HTTP header of an API request. WSO2 APIM provides OAuth2.0 bearer token based authentication for API access and the API key has to be submitted alongside the API request in order to authenticate the access.
@@ -17,31 +32,31 @@ Follow the instructions below to generate/renew application keys:
             
 2.  Click **Applications** to navigate to the applications listing page and click on the respective application for which you want to generate keys.
 
-     [![Application view]({{base_path}}/assets/img/learn/application-select.png)]({{base_path}}/assets/img/learn/application-select.png)
+     [![Application view](../../../../assets/img/learn/application-select.png)](../../../../assets/img/learn/application-select.png)
  
 3.  Click **Production Keys** and click **Generate Keys** to create an application access token. 
 
      The access token will be generated along with application consumer key and secret.
 
-     [![Generate Application Keys]({{base_path}}/assets/img/learn/application-key-generation.png)]({{base_path}}/assets/img/learn/application-key-generation.png)
+     [![Generate Application Keys](../../../../assets/img/learn/application-key-generation.png)](../../../../assets/img/learn/application-key-generation.png)
     
      - If the application type is **JWT**, a JWT access token is generated. Make sure to copy the JWT access token that appears so that you can use it in the future.
 
-        <a href="{{base_path}}/assets/img/learn/jwt-access-token.png" ><img src="{{base_path}}/assets/img/learn/jwt-access-token.png" alt="JWT access token" 
+        <a href="../../../../../assets/img/learn/jwt-access-token.png" ><img src="../../../../../assets/img/learn/jwt-access-token.png" alt="JWT access token" 
           title="JWT access token" width="60%" /></a>
      
      -  If the application type is **OAuth**, the generated access token will be an Opaque token.
      
-         [![OAuth Token]({{base_path}}/assets/img/learn/oauth-access-token.png)]({{base_path}}/assets/img/learn/oauth-access-token.png)
+         [![OAuth Token](../../../../assets/img/learn/oauth-access-token.png)](../../../../assets/img/learn/oauth-access-token.png)
      
      After the keys are generated, you can find the consumer key and consumer secret pair via the application details page.
      
-     [![Application Consumer Key Secret]({{base_path}}/assets/img/learn/application-key-secret-view.png)]({{base_path}}/assets/img/learn/application-key-secret-view.png)
+     [![Application Consumer Key Secret](../../../../assets/img/learn/application-key-secret-view.png)](../../../../assets/img/learn/application-key-secret-view.png)
      
 !!! tip
     In the Access token validity period field, you can set an expiration period to determine the validity period of 
-    the token after generation. Set this to a negative value to ensure that the token never expires. For more information, see [Changing the default token expiration time]({{base_path}}/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time/).
+    the token after generation. Set this to a negative value to ensure that the token never expires. For more information, see [Changing the default token expiration time](obtain-access-token/changing-the-default-token-expiration-time).
 
 !!! tip
-    When you generate access tokens for APIs that are protected by scopes, you can select the respective [scopes]({{base_path}}/learn/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/) and thereafter, generate the token for it.
+    When you generate access tokens for APIs that are protected by scopes, you can select the respective [scopes](../../../api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes) and thereafter, generate the token for it.
     

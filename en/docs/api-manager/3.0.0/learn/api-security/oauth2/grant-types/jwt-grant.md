@@ -1,3 +1,18 @@
+---
+title: "JWT grant"
+description: "Configure the JWT bearer grant handler in the identity provider and use a JWT assertion to obtain an OAuth2 access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/jwt-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/jwt-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # JWT Grant
 
 The JSON Web Token(JWT) bearer grant is simply a JSON string containing claim values that will be evaluated and validated by the JWT Grant Handlers at the Authorization Server end, before issuing an access token.
@@ -48,7 +63,7 @@ WSO2 API Manager, as an OAuth 2.0 Authorization Server with its key manager fe
 
 7.  Enter a **Callback URL** . For example, use `https://wso2is.local:8080/playground2/oauth2client` and click **Add**. The **OAuth Client Key** and **OAuth Client Secret** will now be visible.
 
-    [![]({{base_path}}/assets/img/learn/add-service-provider.png)]({{base_path}}/assets/img/learn/add-service-provider.png)
+    [![](../../../../assets/img/learn/add-service-provider.png)](../../../../assets/img/learn/add-service-provider.png)
 
 ### Using the JWT grant
 

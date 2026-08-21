@@ -1,3 +1,18 @@
+---
+title: "Adding a user signup workflow"
+description: "Attach a custom business process workflow to the user signup operation using WSO2 EI or Business Process Server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/adding-a-user-signup-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/adding-a-user-signup-workflow.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding a User Signup Workflow
 
 This section explains how to attach a custom workflow to the user signup operation in the API Manager. 
@@ -28,7 +43,7 @@ This section explains how to attach a custom workflow to the user signup operati
 
 1.  Download [WSO2 Enterprise Integrator](https://wso2.com/integration).
 
-2.  Make sure that an offset of 2 is added to the default EI port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](/reference/guides/changing-the-default-ports-with-offset).
+2.  Make sure that an offset of 2 is added to the default EI port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset).
 
     ``` xml
     <Offset>2</Offset>
@@ -102,7 +117,7 @@ This section explains how to attach a custom workflow to the user signup operati
 
 1.  Download [WSO2 Business Process Server](http://wso2.com/products/business-process-server/) .
 
-2.  Set an offset of 2 to the default BPS port in the `<BPS_HOME>/repository/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](/reference/guides/changing-the-default-ports-with-offset).
+2.  Set an offset of 2 to the default BPS port in the `<BPS_HOME>/repository/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset).
 
     ``` xml
     <Offset>2</Offset>
@@ -183,7 +198,7 @@ This section explains how to attach a custom workflow to the user signup operati
 #### Engaging the WS Workflow Executor in the API Manager
 
 !!! important
-    When there are multiple tenants, first enable self sign up for tenant admin for each tenant by following the steps mentioned in [Enabling self signup]({{base_path}}/learn/consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/#enabling-self-signup). 
+    When there are multiple tenants, first enable self sign up for tenant admin for each tenant by following the steps mentioned in [Enabling self signup](customizing-the-developer-portal/enabling-or-disabling-self-signup#enabling-self-signup). 
     Then to add a user sign-up workflow with regard to the Developer Portal, follow the below instructions from step 1 after sign in to the API Manager Management Console as tenant admin for each tenant.
 
 1.  Log in to API-M management console ( `https://<Server-Host>:9443/carbon` ) and select **Browse** under **Resources**.
@@ -209,13 +224,13 @@ This section explains how to attach a custom workflow to the user signup operati
 
 3.  Go to the Developer Portal Web interface of API Manager and sign up / register as a new user.
 
-    ![Register now option]({{base_path}}/assets/img/learn/register-now.png)
+    ![Register now option](../../../assets/img/learn/register-now.png)
 
     It invokes the signup process and creates a Human Task instance that holds the execution of the BPEL until some action is performed on it.
 
 4.  Note the message that appears if the BPEL is invoked correctly, saying that the request is successfully submitted.
 
-5.  Log in to the [Admin Portal](`https://localhost:9443/admin`) (`https://<Server-Host>:9443/admin`) of API Manager giving the admin username and password.
+5.  Log in to the [Admin Portal](https://localhost:9443/admin) (`https://<Server-Host>:9443/admin`) of API Manager giving the admin username and password.
 
 6.  Navigate to **Tasks** > **User Creation** and approve the user signup task listed. This will resume the BPEL process and complete the signup process.
 

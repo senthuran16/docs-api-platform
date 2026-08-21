@@ -1,3 +1,18 @@
+---
+title: "Token persistence"
+description: "Explains the synchronous and asynchronous OAuth2 token persistence approaches and how to configure each for production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/token-persistence/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/token-persistence.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Token Persistence
 
 This guide describes OAuth2 token persistence and the possible approaches you can follow for token persistence in a production environment. The OAuth2 component in WSO2 API Manager has two implementations that you can use to handle token persistence in the database, which are namely synchronous and asynchronous token persistence. 
@@ -9,7 +24,7 @@ The following sections guide you through the difference between these two approa
 
 ### Synchronous token persistence
 
-[![Synchronous token persistence]({{base_path}}/assets/img/learn/synchronous-token-persistence.png)]({{base_path}}/assets/img/learn/synchronous-token-persistence.png)
+[![Synchronous token persistence](../../../assets/img/learn/synchronous-token-persistence.png)](../../../assets/img/learn/synchronous-token-persistence.png)
 
 The flow of synchronous token persistence is as follows:
 
@@ -37,7 +52,7 @@ The flow of synchronous token persistence is as follows:
 
 ### Asynchronous token persistence
 
-[![Asynchronous token generation]({{base_path}}/assets/img/learn/asynchronous-token-generation.png)]({{base_path}}/assets/img/learn/asynchronous-token-generation.png)
+[![Asynchronous token generation](../../../assets/img/learn/asynchronous-token-generation.png)](../../../assets/img/learn/asynchronous-token-generation.png)
 
 If an existing access token is not found, the OAuth2 component creates a new access token and adds it to a persisting queue. Once the token is added to the queue, the token is returned to the client. There are background threads that consume the queue and persist the tokens in the queue to the database.
 
@@ -56,10 +71,11 @@ If an existing access token is not found, the OAuth2 component creates a new acc
 
 This section explains the recovery flow triggered in WSO2 API Manager for exceptional cases that may occur in a production environment caused by the client application mishandling the `CON_APP_KEY` constraint that is explained below.
 
--   [CON\_APP\_KEY constraint](#conn-app-key-constraint)
--   [Asynchronous token persistence](#asynchronous-token-persistence-recovery-flow)
--   [Synchronous token persistence](#synchronous-token-persistence-recovery-flow)
+-   [CON\_APP\_KEY constraint](#con_app_key-constraint)
+-   [Asynchronous token persistence](#asynchronous-token-persistence_1)
+-   [Synchronous token persistence](#synchronous-token-persistence_1)
 
+<a name="con_app_key-constraint"></a>
 #### CON_APP_KEY constraint
 
 For a given set of consumer key, user, and scope values, there can be only one ACTIVE access token. The CON_APP_KEY constraint in the IDN_OAUTH2_ACCESS_TOKEN table enforces this by allowing only one active access token for a given set of consumer key, user, and scope values. This constraint may be violated in a scenario where two or more identical token requests come from the same application. 
@@ -67,6 +83,7 @@ For a given set of consumer key, user, and scope values, there can be only one A
 The above scenario is unlikely because in practice an application is usually designed to handle this situation using scopes, or in the case of a multi-threaded client, there is usually a separate thread to acquire access tokens so that other threads can retrieve from it.
 
 
+<a name="asynchronous-token-persistence_1"></a>
 #### Asynchronous token persistence
 
 ##### Flow
@@ -92,6 +109,7 @@ To handle this situation, WSO2 API Manager has a recovery flow for token persist
 !!! tip
     If the client application is not designed to handle the `CONN_APP_KEY` constraint violation using scopes, you can avoid the situation described above and avoid any invalid tokens by using **synchronous token persistence**.
 
+<a name="synchronous-token-persistence_1"></a>
 #### Synchronous token persistence
 
 ##### Flow

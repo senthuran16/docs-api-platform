@@ -1,3 +1,18 @@
+---
+title: "Advanced customization"
+description: "Set up NodeJS and npm to rebuild and customize the Developer Portal's React codebase beyond basic UI changes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/advanced-customization/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-the-developer-portal/advanced-customization.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Advanced Customization
 
 ### Prerequisites

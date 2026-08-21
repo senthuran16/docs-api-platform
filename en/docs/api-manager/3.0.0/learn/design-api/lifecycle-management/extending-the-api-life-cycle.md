@@ -1,3 +1,18 @@
+---
+title: "Extending the API life cycle"
+description: "Explains the default API lifecycle configuration and how to extend it with custom states and transition scripts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/lifecycle-management/extending-the-api-life-cycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/design-api/lifecycle-management/extending-the-api-life-cycle.md
+tags:
+  - api-manager
+  - learn
+  - design-api
+  - lifecycle-management
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Extending the API Life Cycle
 
 -  [Default API Lifecycle in WSO2 API Manager](#default-api-lifecycle-in-wso2-api-manager)
@@ -13,7 +28,7 @@ To see the default API life cycle configuration, follow the steps given below.
 
 2.  Navigate to **Extensions &gt; Configure &gt; Lifecycles**.
 
-     ![]({{base_path}}/assets/img/Learn/api-lifecycle-veiw.png) 
+     ![](../../../assets/img/learn/api-lifecycle-veiw.png) 
 
 3.  Click the **View/Edit** link corresponding to the API LifeCycle. The default API life cycle configuration opens.
 
@@ -134,11 +149,11 @@ The above configuration includes the following important information:
 
     The state transition events that occur in the default API life cycle is shown in the following diagram:
 
-    ![Published life cycle state]({{base_path}}/assets/img/Learn/default-lifecycle.png)
+    ![Published life cycle state](../../../assets/img/learn/default-lifecycle.png)
 
 The **Lifecycle** tab shows the current state of an API, the target events defined in the API life cycle for that state, and the set of checklist items.
 
-![]({{base_path}}/assets/img/Learn/lifecycle-image-with-checklist.png)
+![](../../../assets/img/learn/lifecycle-image-with-checklist.png)
 
 !!! Info
 
@@ -160,7 +175,7 @@ With the integration of the registry life cycle to the API life cycle of WSO2 AP
 
 Following are some extention points where the default API life cycle can be extended by modifying above mentioned XML configuration of the API life cycle.
 
--   [Define your own life cycle states]({{base_path}}/Learn/DesignAPI/LifecycleManagement/customize-api-life-cycle/) in the API life cycle
+-   [Define your own life cycle states](customize-api-life-cycle) in the API life cycle
 -   Change the state transition events as per the environmental preferences
 -   Add custom checklist items for specific state transitions
 -   Change the execution code for each state transition
@@ -187,4 +202,4 @@ For example, a transition event called `Notify Users` is introduced in the **DEP
 ```
 After adding this changes, if you Deprecate an API, the newly added transition option will be available in Lifecycle tab:
 
-![]({{base_path}}/assets/img/Learn/lifecycle-image-with-custom-transition.png)
+![](../../../assets/img/learn/lifecycle-image-with-custom-transition.png)

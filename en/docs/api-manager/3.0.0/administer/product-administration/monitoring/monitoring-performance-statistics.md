@@ -1,3 +1,18 @@
+---
+title: "Monitoring performance statistics"
+description: "View system-level and service-level performance statistics, such as response times and memory usage, through the management console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/monitoring-performance-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-administration/monitoring/monitoring-performance-statistics.md
+tags:
+  - api-manager
+  - administer
+  - product-administration
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Performance Statistics
 
 WSO2 products provide a range of performance statistics on a running Carbon instance. These statistics include information about memory availability, request count, server name, server start time, system up time, active services, total memory, average, minimum, maximum response times etc. Statistics are accessible through the management console of a running Carbon instance.
@@ -13,12 +28,13 @@ Follow the instructions given below to access system-level statistics.
 2.  The **System Statistics** page appears as follows:
     ![]({{base_path}}/assets/attachments/126562881/126562886.png)
     The following information is available:
-    -   [Service Summary](#MonitoringPerformanceStatistics-ServiceSummary)
-    -   [Server Information](#MonitoringPerformanceStatistics-ServerInformation)
-    -   [Response Time Graph](#MonitoringPerformanceStatistics-ResponseTimeGraph)
-    -   [Memory Graph](#MonitoringPerformanceStatistics-MemoryGraph)
-    -   [Statistics Configuration Panel](#MonitoringPerformanceStatistics-StatisticsConfigurationPanel)
+    -   [Service Summary](#service-summary)
+    -   [Server Information](#server-information)
+    -   [Response Time Graph](#response-time-graph)
+    -   [Memory Graph](#memory-graph)
+    -   [Statistics Configuration Panel](#statistics-configuration-panel)
 
+<a name="service-summary"></a>
 #### Service Summary
 
 ![]({{base_path}}/assets/attachments/126562881/126562883.png)
@@ -33,6 +49,7 @@ This panel provides the following information:
 -   **Total Fault Count -** The number of messages that triggered faults while being mediated through the channel.
 -   **Active Services** - The number of currently active services.
 
+<a name="server-information"></a>
 #### Server Information
 
 ![]({{base_path}}/assets/attachments/126562881/126562885.png)
@@ -45,18 +62,21 @@ This panel provides the following information:
 -   **Memory Allocated** - Shows the memory capacity of the server.
 -   **Memory Usage** - Shows the used memory of the server.
 
+<a name="response-time-graph"></a>
 #### Response Time Graph
 
 ![]({{base_path}}/assets/attachments/126562881/126562884.png)
 
 This graph shows the temporal variation of the Average Response time.
 
+<a name="memory-graph"></a>
 #### Memory Graph
 
 ![]({{base_path}}/assets/attachments/126562881/126562890.png)
 
 This graph shows the temporal variation of the server Memory.
 
+<a name="statistics-configuration-panel"></a>
 #### Statistics Configuration Panel
 
 The **Statistics Configuration** panel is provided to customize the **System Statistics** display by configuring the level information that can be viewed on the panel.

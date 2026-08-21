@@ -1,3 +1,18 @@
+---
+title: "Minimum high availability deployment for WSO2 APIM analytics"
+description: "Explains the minimum high availability deployment pattern for WSO2 API Manager Analytics using active-passive nodes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/need-to-update/minimum-high-availability-deployment-for-wso2-apim-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/wip/need-to-update/minimum-high-availability-deployment-for-wso2-apim-analytics.md
+tags:
+  - api-manager
+  - wip
+  - need-to-update
+  - minimum-high-availability-deployment-for-wso2-apim-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Minimum High Availability Deployment for WSO2 APIM Analytics
 
 !!! warning
@@ -6,7 +21,7 @@
 
 This section explains how to configure WSO2 API Manager Analytics in a distributed setup. You can configure alerts to monitor these APIs and detect unusual activity, manage locations via geo location statistics and to carry out detailed analysis of logs relating to the APIs. WSO2 APIM Analytics is powered by WSO2 DAS. The following diagram indicates the minimum deployment pattern used for high availability.
 
-![]({{base_path}}/assets/attachments/103334517/103334521.png)
+![](../../assets/attachments/103334517/103334521.png)
 
 APIM Analytics supports a deployment scenario that has focus on high availability (HA) along with HA processing. To enable HA processing, you should have two APIM Analytics servers in a cluster.
 
@@ -16,11 +31,11 @@ In this scenario, one API-M Analytics node works in active mode and the other wo
 
 If the active node fails, the other node becomes active and receives all the requests.
 
-![]({{base_path}}/assets/attachments/103334517/103334520.png)
+![](../../assets/attachments/103334517/103334520.png)
 When the failed node is up again, it fetches  all the internal states of the current active node via synching.
 
-![]({{base_path}}/assets/attachments/103334517/103334519.png)
-![]({{base_path}}/assets/attachments/103334517/103334518.png)
+![](../../assets/attachments/103334517/103334519.png)
+![](../../assets/attachments/103334517/103334518.png)
 The newly arrived node then becomes the passive node and starts processing all the incoming messages to keep its state synched with the active node so that it can become active if the current active node fails.
 
 !!! warning
@@ -796,15 +811,15 @@ The HA deployment you configured can be tested as follows.
 
 1.  Access the Spark UIs of the active master and the stand-by master using &lt; `node ip>:8081` in each node.
     -   Information relating to the active master is displayed as shown in the example below.
-        ![]({{base_path}}/assets/attachments/103334517/103334525.png)
+        ![](../../assets/attachments/103334517/103334525.png)
     -   Information relating to the stand-by master is displayed as shown in the example below.
-        ![]({{base_path}}/assets/attachments/103334517/103334526.png)
+        ![](../../assets/attachments/103334517/103334526.png)
 2.  Click the links under **Running Applications** in the Spark UI of the active master to check the Spark application UIs of those applications. A working application is displayed as shown in the following example.
-    ![]({{base_path}}/assets/attachments/103334517/103334527.png)
+    ![](../../assets/attachments/103334517/103334527.png)
 3.  Click the **Environment** tab of a Spark application UI to check whether all the configuration parameters are correctly set. You can also check whether the class path variables in this tab can be accessed manually.
-    ![]({{base_path}}/assets/attachments/103334517/103334528.png)
+    ![](../../assets/attachments/103334517/103334528.png)
 4.  Check the Spark UIs of workers to check whether they have running executors. If a worker UI does not have running executors or if it is continuously creating executors, it indicates an issue in the Spark cluster configuration. The following example shows a worker UI with a running executor.
-    ![]({{base_path}}/assets/attachments/103334517/103334529.png)
+    ![](../../assets/attachments/103334517/103334529.png)
 5.  Check the symbolic parameter, and check if you could manually access it via a `cd <directory>` command in the CLI.
 6.  [Log into the API-M Analytics Management Console](https://docs.wso2.com/display/DAS300/Running+the+Product) and navigate to **Main** =&gt; **Manage** =&gt; **Batch Analytics** =&gt; **Console** to open the **Interactive Analytics Console** . Run a query in this console.
 

@@ -1,3 +1,18 @@
+---
+title: "Adding new throttling policies"
+description: "Add new advanced, application-level, or subscription-level throttling policies using the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/rate-limiting/adding-new-throttling-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/rate-limiting/adding-new-throttling-policies.md
+tags:
+  - api-manager
+  - learn
+  - rate-limiting
+  - adding-new-throttling-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding New Throttling Policies
 
 WSO2 API Manager admins can add new throttling policies and define extra properties to the throttling policies. To get started, click the level of throttling that you want to add a new policy to:
@@ -13,11 +28,11 @@ You can add advanced throttling policies to both APIs and resources.
 1.  Sign in to the Admin Portal using the URL `https://localhost:9443/admin` and your admin credentials (admin/admin by default).
 2.  Click **Advanced Throttling** under the **Throttle Policies** section to see the set of existing throttling tiers.
 3.  To add a new tier, click **Add Tier**.
-    ![]({{base_path}}/assets/img/learn/add-new-advanced-throttling-tier.png)
+    ![](../../assets/img/learn/add-new-advanced-throttling-tier.png)
     
 4.  Fill in the required details and click **Save**.
 
-    ![]({{base_path}}/assets/img/learn/save-new-advanced-policy.png)
+    ![](../../assets/img/learn/save-new-advanced-policy.png)
 
     <div class="admonition info">
     <p class="admonition-title">Note</p>
@@ -27,7 +42,7 @@ You can add advanced throttling policies to both APIs and resources.
     </p>
     </div>
 
-     ![]({{base_path}}/assets/img/learn/request-bandwith-advanced-policy.png)
+     ![](../../assets/img/learn/request-bandwith-advanced-policy.png)
 
 
 5.  To add throttling limits with different parameters to the conditions below, click **Add Conditional Group**.
@@ -44,7 +59,7 @@ You can add advanced throttling policies to both APIs and resources.
 
     You can add a description about the condition group by clicking **Sample description about condition group** under **Condition Group.**
 
-    ![]({{base_path}}/assets/img/learn/conditional-groups.png)
+    ![](../../assets/img/learn/conditional-groups.png)
 
 
      | Condition    | Description value |
@@ -70,9 +85,9 @@ You can add advanced throttling policies to both APIs and resources.
 7.  Header condition and JWT claim condition values allow regex patterns to be defined.
     You can configure it to make either an exact match or a pattern match for the value using the regex values. For example,
     
-    ![]({{base_path}}/assets/img/learn/header-condition-regex.png)
+    ![](../../assets/img/learn/header-condition-regex.png)
 
-    ![]({{base_path}}/assets/img/learn/jwt-condition-regex.png)
+    ![](../../assets/img/learn/jwt-condition-regex.png)
 
     <div class="admonition info">
     <p class="admonition-title">Note</p>
@@ -114,9 +129,9 @@ Application-level throttling policies are applicable per access token generated 
 1.  Sign in to the Admin Portal using the URL https://localhost:9443/admin and your admin credentials (admin/admin by default).
 2.  Click **Application Tiers** under the **Throttle Policies** section to see the set of existing throttling tiers.
 3.  To add a new tier, click **Add New Policy**.
-    ![]({{base_path}}/assets/img/learn/add-new-application-policy.png)
+    ![](../../assets/img/learn/add-new-application-policy.png)
 4.  Fill in the required details and click **Save**.
-    ![]({{base_path}}/assets/img/learn//save-application-policy.png)
+    ![](../../assets/img/learn/save-application-policy.png)
 You have added a new application-level throttling policy.
 
 ## Adding a new subscription-level throttling tier
@@ -124,7 +139,7 @@ You have added a new application-level throttling policy.
 1.  Sign in to the Admin Portal using the URL `https://localhost:9443/admin` and your admin credentials.
 2.  Click **Subscription Policies** under the **Throttling Policies** section. The existing set of throttling tiers are displayed.
 3.  To add a new tier, click **Add New Policy**.
-    ![]({{base_path}}/assets/img/learn/add-new-subscription-policy.png)
+    ![](../../assets/img/learn/add-new-subscription-policy.png)
 
     <div class="admonition info">
     <p class="admonition-title">Note</p>
@@ -134,7 +149,7 @@ You have added a new application-level throttling policy.
     </div>    
 4.  Fill in the details required by this form and click **Save** once you are done.
 
-    ![]({{base_path}}/assets/img/learn/save-subscription-policy.png)
+    ![](../../assets/img/learn/save-subscription-policy.png)
 
     Given below are the descriptions of the fields you find in the form:
 

@@ -1,3 +1,18 @@
+---
+title: "Customizing login pages for Developer Portal and publisher"
+description: "Customize the SAML2 SSO, OAuth, and OpenID login, error, and notification pages of the authenticationendpoint webapp."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-login-pages-for-dev-portal-and-publisher/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/consume-api/customizations/customizing-login-pages-for-dev-portal-and-publisher.md
+tags:
+  - api-manager
+  - learn
+  - consume-api
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing Login Pages for Developer Portal and Publisher
 
 Custom pages for logging into the server are available for SAML2 SSO, OAuth and OpenID. This section guides you through this customization.
@@ -52,7 +67,7 @@ Usually WSO2 API Manager displays a default login page for all the SAML SSO serv
 
 7.  When attempting to login with SAML from WSO2 Identity Server in Publisher and Developer Portal, you can see the following default page located at `<IS_HOME>/repository/deployment/server/webapps/authenticationendpoint/login.jsp          `
 
-    ![Identity Server Login Page](../../../assets/img/learn/identity-server-login-page.png) For instructions on configuring WSO2 Identity Server as an identity provider, see [Configuring Identity Server as IDP for SSO](/administer/product-security/saml2-sso/configuring-identity-server-as-idp-for-sso/) .
+    ![Identity Server Login Page](../../../assets/img/learn/identity-server-login-page.png) For instructions on configuring WSO2 Identity Server as an identity provider, see [Configuring Identity Server as IDP for SSO](../../extensions/saml2-sso/configuring-identity-server-as-idp-for-sso) .
 
 #### Configuring the login page
 

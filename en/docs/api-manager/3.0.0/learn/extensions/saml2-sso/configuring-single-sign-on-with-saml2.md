@@ -1,3 +1,18 @@
+---
+title: "Configuring single Sign-on with SAML2"
+description: "Explains single sign-on with SAML2 in API Manager and links to identity provider and external IDP configuration guides."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/saml2-sso/configuring-single-sign-on-with-saml2/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/saml2-sso/configuring-single-sign-on-with-saml2.md
+tags:
+  - api-manager
+  - learn
+  - extensions
+  - saml2-sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Configuring Single Sign-on with SAML2
 
 Single Sign-On (SSO) allows users, who are authenticated against one application, to gain access to multiple other related applications without having to repeatedly authenticate themselves. It also allows the web applications to gain access to a set of back-end services with the logged-in user's access rights, and the back-end services can authorize the user based on different **claims** like the user role.

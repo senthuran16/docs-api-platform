@@ -1,3 +1,18 @@
+---
+title: "Configuring transport level security"
+description: "Disable weak ciphers and change the server name in HTTP response headers to secure transport-level communication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/configuring-transport-level-security/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/administer/product-security/configuring-transport-level-security.md
+tags:
+  - api-manager
+  - administer
+  - product-security
+  - configuring-transport-level-security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Transport Level Security
 
 Given below are the various transport-level security configurations that are required for WSO2 products. See the following topics for instructions.
@@ -25,7 +40,7 @@ To prevent these types of security attacks, it is encouraged to disable the weak
     See the list of [supported cipher suites](https://docs.wso2.com/display/ADMIN44x/Supported+Cipher+Suites) .
 
 4.  Start the server.
-5.  To verify that the configurations are all set correctly, download and run the [TestSSLServer.jar]({{base_path}}/assets/attachments/administer/TestSSLServer.jar).
+5.  To verify that the configurations are all set correctly, download and run the [TestSSLServer.jar](../../assets/attachments/administer/TestSSLServer.jar).
 
     ``` java
         $ java -jar TestSSLServer.jar localhost 9443
@@ -41,7 +56,7 @@ To prevent these types of security attacks, it is encouraged to disable the weak
 !!! info
     From **Firefox** 39.0 onwards, the browser does not allow to access Web sites that support DHE with keys less than 1023 bits (not just DHE\_EXPORT). 768/1024 bits are considered to be too small and vulnerable to attacks if the hacker has enough computing resources.
 !!! tip
-    To use AES-256, the Java JCE Unlimited Strength Jurisdiction Policy files need to be installed. Download them from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](index) .
+    To use AES-256, the Java JCE Unlimited Strength Jurisdiction Policy files need to be installed. Download them from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](../../index) .
 !!! tip
     From Java 7, you must set the `jdk.certpath.disabledAlgorithms` property in the `<JAVA_HOME>/jre/lib/security/java.security` file to `jdk.certpath.disabledAlgorithms=MD2, DSA, RSA keySize < 2048` . It rejects all algorithms that have key sizes less than 2048 for MD2, DSA and RSA.
 
@@ -61,4 +76,4 @@ By default, all WSO2 products pass "WSO2 Carbon Server" as the server value in H
     ```
 
 !!! info
-    See the [Security Guidelines for Production Deployment]({{base_path}}install-and-setup/deploying-wso2-api-manager/security-guidelines-for-production-deployment/) for the full list of security-related recommendations for WSO2 products.
+    See the [Security Guidelines for Production Deployment](../../install-and-setup/deploying-wso2-api-manager/security-guidelines-for-production-deployment) for the full list of security-related recommendations for WSO2 products.

@@ -1,10 +1,25 @@
+---
+title: "Password grant"
+description: "Obtain an OAuth2 access token by invoking the Token API with the resource owner's username and password."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/password-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/password-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Password Grant
 
 You can obtain an access token by providing the resource owner's username and password as an authorization grant. It requires the base64 encoded string of the `consumer-key:consumer-secret` combination. You need to meet the following prerequisites before using the Token API to generate a token.
 
 #### Prerequisites
 
--   A valid user account in the API Developer Portal. You can self sign up if it is [enabled by an admin](../../../../customizations/CustomizingTheAPIStore/enabling-or-disabling-self-signup) .
+-   A valid user account in the API Developer Portal. You can self sign up if it is [enabled by an admin](../../../consume-api/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup) .
 -   A valid consumer key and consumer secret pair. Initially, these keys must be generated through the API Developer Portal by clicking **GENERATE KEYS** on the **Production Keys** tab of the application.
 -   A running API Gateway instance (typically an API Manager instance should be running). For instructions on API Gateway, see [Components](../../../../../../getting-started/overview/#api-gateway).
 
@@ -15,7 +30,7 @@ You can obtain an access token by providing the resource owner's username and pa
     configuration.ServerURL = "<key-manager-server-url>"
 
 ```
--   If you have multiple Carbon servers running on the same computer, [change the port with an offset](../../../../../../reference/guides/changing-the-default-ports-with-offset/) to avoid port conflicts.
+-   If you have multiple Carbon servers running on the same computer, [change the port with an offset](../../../../install-and-setup/deploying-wso2-api-manager/changing-the-default-ports-with-offset) to avoid port conflicts.
 
 #### Invoking the Token API to generate tokens
 
@@ -94,7 +109,7 @@ You can obtain an access token by providing the resource owner's username and pa
 Instead of using the Token API, you can generate access tokens from the API Developer Portal's UI.
 
 !!! note
-    Note that for users to be counted in the [Registered Users for Application statistics](../../../../../analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics/#ViewingAPIStatistics-TopUsersperApplication) which takes the number of users shared each of the Application, they should have to generate access tokens using [Password Grant](#password-grant) type.
+    Note that for users to be counted in the [Registered Users for Application statistics](../../../analytics/analyzing-apim-statistics-with-batch-analytics/viewing-api-statistics#registered-application-users) which takes the number of users shared each of the Application, they should have to generate access tokens using [Password Grant](#password-grant) type.
 
 !!! tip
     If you want to disable the **Password grant type** in the APIM instance, add the following entry to the `deployment.toml` file in the `<APIM_HOME>/repository/conf/` folder.

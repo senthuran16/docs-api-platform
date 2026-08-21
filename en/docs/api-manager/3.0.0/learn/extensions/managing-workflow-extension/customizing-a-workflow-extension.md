@@ -1,3 +1,18 @@
+---
+title: "Customizing a workflow extension"
+description: "Customize a workflow extension by overriding the execute and complete methods of the WorkflowExecutor class."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/managing-workflow-extension/customizing-a-workflow-extension/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/extensions/managing-workflow-extension/customizing-a-workflow-extension.md
+tags:
+  - api-manager
+  - learn
+  - extensions
+  - managing-workflow-extension
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Customizing a Workflow Extension
 
 Each workflow executor in the WSO2 API Manager is inherited from the **`org.wso2.carbon.apimgt.impl.workflow.WorkflowExecutor`** abstract class, which has the following abstract methods:
@@ -138,7 +153,7 @@ After the implementation of the class is done, follow the steps below to impleme
 
 2.  After exporting the JAR, copy it to `<API-M_HOME>/repository/components/lib` directory.
 3.  Log in to APIM management console ( `https://<Server Host>:9443/carbon` ) and select **Browse** under **Resources.**
-    **![]({{base_path}}/assets/attachments/103334715/103334716.png)**
+    **![](../../../assets/attachments/103334715/103334716.png)**
 
 4.  Go to the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource, disable the Simple Workflow Executor and enable the WS Workflow Executor. Also specify the service endpoint where the workflow engine is hosted and the credentials required to access the said service via basic authentication (i.e., username/password based authentication). For example:
 

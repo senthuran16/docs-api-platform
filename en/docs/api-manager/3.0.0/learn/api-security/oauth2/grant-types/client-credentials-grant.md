@@ -1,3 +1,18 @@
+---
+title: "Client credentials grant"
+description: "Explains the client credentials grant flow and how to invoke the Token API using only client key and secret."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/client-credentials-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/3.0.0/learn/api-security/oauth2/grant-types/client-credentials-grant.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Client Credentials Grant
 
 Client credentials can be used when the authorization scope is limited to the protected resources belonging to the client. Client credentials are used as an authorization grant when the client requests access to protected resources based on an authorization previously arranged with the authorization server. The client application requests an access token from the authorization server, authenticating the request with its client key and client secret. If the client is successfully authenticated, an access token is returned.
@@ -6,9 +21,9 @@ Please refer to the [WSO2 IS documentation](https://is.docs.wso2.com/en/5.9.0/le
 
 #### Flow
 
-The client can request an access token using only its client credentials with this grant type. It is similar to the [resource owner password credentials grant]({{base_path}}/api-security/oauth2/grant-types/password-grant/) type except in this case, only the client’s credentials are used to authenticate a request for an access token.
+The client can request an access token using only its client credentials with this grant type. It is similar to the [resource owner password credentials grant](password-grant) type except in this case, only the client’s credentials are used to authenticate a request for an access token.
 
-![Client credentials flow]({{base_path}}/assets/img/learn/oauth-client-credentials-diagram.png)
+![Client credentials flow](../../../../assets/img/learn/oauth-client-credentials-diagram.png)
 
 ### Invoking the Token API to generate the tokens
 
@@ -60,7 +75,7 @@ The client can request an access token using only its client credentials with th
 !!! tip
     We use the Client Credentials grant type to generate access tokens for an application through the API Developer Portal. Therefore, you should enable this grant type to the application. To do that, go to the API Developer Portal, click the application name from under the **APPLICATIONS** tab, click the **Production Keys** tab, and select the **Client Credentials** check box under **Grant Types** in **Key Configurations**.
 
-    ![]({{base_path}}/assets/img/learn/client-credentials.png)
+    ![](../../../../assets/img/learn/client-credentials.png)
 
 !!! tip
     If you want to disable the **Client Credentials grant type** in the APIM instance, add the following entry to the `deployment.toml` file in the `<APIM_HOME>/repository/conf/` folder.
@@ -84,4 +99,4 @@ The client can request an access token using only its client credentials with th
     ```
 
 !!! note "Support for refresh token grant - No"
-	This grant type does not issue a refresh token which can be used to obtain new access tokens using the [Refresh Token Grant]({{base_path}}/learn/api-security/oauth2/grant-types/refresh-token-grant/).
+	This grant type does not issue a refresh token which can be used to obtain new access tokens using the [Refresh Token Grant](refresh-token-grant).
