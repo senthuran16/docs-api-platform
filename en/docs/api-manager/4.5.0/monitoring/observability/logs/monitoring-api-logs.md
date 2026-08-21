@@ -1,6 +1,6 @@
 ---
 title: "Monitoring API Logs"
-description: "Enable and configure API Logs in WSO2 API Manager to capture per-request HTTP call logs at OFF, BASIC, STANDARD, or FULL levels, using the Devops REST API or API Controller (apictl)."
+description: "Enable and configure API Logs to capture per-request HTTP call logs at OFF, BASIC, STANDARD, or FULL levels using the DevOps REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/logs/monitoring-api-logs/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/logs/monitoring-api-logs.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Default AI Vendors"
-description: "View the built-in OpenAI, Azure OpenAI, and Mistral AI/LLM vendor configurations that come pre-configured in WSO2 API Manager, and learn which fields are read-only versus updatable."
+description: "Reference for the built-in OpenAI, Azure OpenAI, and Mistral vendor configurations in WSO2 API Manager, and which fields are read-only versus updatable."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-vendor-management/default-ai-vendors/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-vendor-management/default-ai-vendors.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-vendor-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

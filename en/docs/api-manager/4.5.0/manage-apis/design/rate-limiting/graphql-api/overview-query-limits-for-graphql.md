@@ -1,6 +1,6 @@
 ---
 title: "GraphQL Query Limits Overview"
-description: "Overview of WSO2 API Manager's Static Query Analyzer, which enforces GraphQL Max Depth and Max Complexity limits defined in subscription policies to protect backends from complex or malicious queries."
+description: "Overview of the Static Query Analyzer, which enforces GraphQL Max Depth and Max Complexity limits to protect backends from malicious queries."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/graphql-api/overview-query-limits-for-graphql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/graphql-api/overview-query-limits-for-graphql.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - graphql
   - rate-limiting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # GraphQL Rate Limiting Overview 

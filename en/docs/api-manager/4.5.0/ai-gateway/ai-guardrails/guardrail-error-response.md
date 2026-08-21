@@ -1,6 +1,6 @@
 ---
 title: "Guardrail Error Response"
-description: "Understand the default HTTP 446 structured error response emitted by AI Guardrails in WSO2 AI Gateway, and learn how to customize it with a custom fault sequence and deployment.toml configuration."
+description: "Explains the default HTTP 446 error response from AI Guardrails, and how to customize it with a fault sequence and deployment.toml configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/guardrail-error-response/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/guardrail-error-response.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

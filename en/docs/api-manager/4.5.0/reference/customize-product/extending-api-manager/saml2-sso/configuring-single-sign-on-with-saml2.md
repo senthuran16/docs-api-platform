@@ -1,6 +1,6 @@
 ---
 title: "Configuring Single Sign-On with SAML2"
-description: "Overview of SAML2-based Single Sign-On in API Manager, covering claims-based authorization and links to configuring Identity Server as an IdP or through an external IdP."
+description: "Overview of SAML2-based single sign-on in API Manager, covering claims-based authorization and identity provider setup options."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-single-sign-on-with-saml2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-single-sign-on-with-saml2.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - sso
   - saml2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Configuring Single Sign-on with SAML2

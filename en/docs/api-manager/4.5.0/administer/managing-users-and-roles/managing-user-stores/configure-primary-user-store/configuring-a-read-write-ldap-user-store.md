@@ -1,6 +1,6 @@
 ---
 title: "Configure a Read-Write LDAP User Store"
-description: "Configure a read-write LDAP directory as the primary user store for WSO2 API Manager, including deployment.toml userstore properties and system administrator setup."
+description: "Configure a read-write LDAP directory as the primary user store for WSO2 API Manager, including deployment.toml properties and administrator setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - ldap
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -152,7 +152,7 @@ Default: identityPerson( Is a custom object class defined in WSO2 Identity Serve
 <td><p>A uniquely identifying attribute that represents the username of the user. Users can be authenticated using their email address, UID, etc. The value of the attribute is considered as the username.</p>
 <p>Default: uid<br />
 <br />
- Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../administer/product-security/logins-and-passwords/maintaining-logins-and-passwords.md#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
+ Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login">Using email address as the username</a></p></td>
 </tr>
 <tr class="odd">
 <td>UserIDAttribute</td>

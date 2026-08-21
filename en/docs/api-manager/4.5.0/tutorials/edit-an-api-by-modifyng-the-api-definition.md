@@ -1,6 +1,6 @@
 ---
 title: "Edit an API by Modifying the API Definition"
-description: "Use the integrated Swagger Editor in the API Publisher to directly edit an API's OpenAPI definition, adding resources, parameters, schemas, and descriptions to the PizzaShack sample API."
+description: "Use the integrated Swagger Editor in the API Publisher to directly edit an API's OpenAPI definition and add new resources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/edit-an-api-by-modifyng-the-api-definition/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/edit-an-api-by-modifyng-the-api-definition.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - swagger
   - openapi
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

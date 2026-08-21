@@ -1,6 +1,6 @@
 ---
 title: "Migrate Rate Limiting Policies to Different Environments"
-description: "Use apictl to export a rate limiting policy from one environment and import it into another, avoiding rate limiting policy support errors when migrating APIs or applications."
+description: "Use apictl to export a rate limiting policy from one environment and import it into another, avoiding policy support errors when migrating APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/managing-rate-limiting-policies/migrating-rate-limiting-policies-to-different-environments/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/managing-rate-limiting-policies/migrating-rate-limiting-policies-to-different-environments.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - api-controller
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

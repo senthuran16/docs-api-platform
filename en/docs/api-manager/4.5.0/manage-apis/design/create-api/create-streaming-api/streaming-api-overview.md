@@ -1,6 +1,6 @@
 ---
 title: "Streaming APIs Overview"
-description: "Overview of Streaming API support in WSO2 API Manager, covering event-driven architecture challenges, how WebSocket, WebSub, and SSE topics work, and topic-level authorization."
+description: "Overview of Streaming API support in API Manager, covering how WebSocket, WebSub, and SSE topics work and their authorization."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-streaming-api/streaming-api-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-streaming-api/streaming-api-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - streaming-apis
   - websocket
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Streaming APIs Overview
@@ -63,7 +63,7 @@ The Streaming Integrator component in WSO2 API Manager (WSO2 API-M) supports Str
 
 The WebSocket and SSE Streaming APIs require a persistent connection between the client and the API Gateway. This enables the server to stream events continually, with idle times in the middle if required, through a single connection, thereby eliminating the overhead of creating new connections. Thereby, the WebSocket and SSE protocols allow publishers to maintain persistent communication channels with receivers. However, WebSub Streaming APIs do not require to have a persistent connection. Instead, the WebSub APIs make an HTTP call when required.
 
-When you create a WebSocket API, WebSub API/ WebHook API, or SSE API, it links an existing streaming backend API implementation to the <a href="../../../../get-started/apim-architecture.md#api-publisher">API Publisher,</a> so that you can manage and monitor your [API's lifecycle](../../../../manage-apis/design/lifecycle-management/api-lifecycle.md), documentation, security, community, and subscriptions. 
+When you create a WebSocket API, WebSub API/ WebHook API, or SSE API, it links an existing streaming backend API implementation to the <a href="../../../../../get-started/apim-architecture.md#api-publisher">API Publisher,</a> so that you can manage and monitor your [API's lifecycle](../../../../manage-apis/design/lifecycle-management/api-lifecycle.md), documentation, security, community, and subscriptions. 
 
 You can define Streaming APIs using [AsyncAPI](https://www.asyncapi.com/) definitions. Therefore, alternatively, you can also **[create a Streaming API, which supports any one of the above protocols, using an AsyncAPI definition.](../create-a-streaming-api-from-an-asyncapi-definition)**
 

@@ -1,6 +1,6 @@
 ---
 title: "Advanced Configurations for Product REST APIs"
-description: "Configure scope-to-role mappings for API Manager REST API OAuth 2.0 scopes and restrict allowed CORS origins for the Publisher, Developer Portal, Gateway, and Service Catalog REST APIs."
+description: "Configure scope-to-role mappings for API Manager REST API OAuth2 scopes and restrict allowed CORS origins for each REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/product-apis/advanced-configurations/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/product-apis/advanced-configurations.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rest-apis
   - cors
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -22,7 +22,7 @@ Certain resources of the REST API are protected using OAuth 2.0 scopes. Each ten
 
 When a user requires access to a resource protected by an OAuth 2.0 scope, an access token associated with that particular scope needs to be provided as the Bearer token in the Authorization header. In order to retrieve the token, the user has to invoke the Token API and request for that scope. For more information, see the Authorization section in REST API documents. When issuing such an access token, the Token API validates the eligibility of the user for that particular scope using the RESTAPIScopes configuration. An access token with the particular scope is issued for the user only if that user has been assigned one or more of the roles specified in the RESTAPIScopes configuration for that scope.
 
-You can modify the default roles defined in RESTAPIScopes configuration according to your requirements via the Admin Portal UI. For more information, refer [Managing Permissions](../../administer/managing-users-and-roles/managing-permissions.md#adding-role-based-permissions). 
+You can modify the default roles defined in RESTAPIScopes configuration according to your requirements via the Admin Portal UI. For more information, refer [Managing Permissions](../../administer/managing-users-and-roles/managing-permissions.md#role-based-permissions). 
 
 !!! note
     Restart the server for the RESTAPIScopes configuration changes to take effect.

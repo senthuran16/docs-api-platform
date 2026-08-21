@@ -1,6 +1,6 @@
 ---
 title: "Configure WSO2 IS 7.x as a Key Manager"
-description: "Configure WSO2 Identity Server 7.x as a Key Manager for WSO2 API Manager, including required IS 7.x deployment.toml settings and the Key Manager Endpoints, Grant Types, and Connector Configurations in the Admin Portal."
+description: "Configure WSO2 Identity Server 7.x as a Key Manager for WSO2 API Manager, including deployment.toml settings and Admin Portal connector configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-wso2is7-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-wso2is7-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - identity-server
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -75,7 +75,7 @@ Follow the steps given below to configure WSO2 IS 7.x as a Key Manager component
 
         You need to import the public certificate of the WSO2 Identity Server 7.x to the truststore of the WSO2 API Manager, and vice-versa. For information on importing the certificates, see the [Importing certificates to the truststore](../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md#step-3-importing-certificates-to-the-truststore) guide.
 
-3. Download [notification.event.handlers-2.0.4.jar](../../assets/attachments/administer/wso2is.notification.event.handlers-2.0.4.6.jar.md) and add it to `<IS_HOME>/repository/components/dropins`.
+3. Download [notification.event.handlers-2.0.4.jar](../../assets/attachments/administer/wso2is.notification.event.handlers-2.0.4.6.jar) and add it to `<IS_HOME>/repository/components/dropins`.
 
 4. Start WSO2 Identity Server 7.x with a port offset.
    portOffset is required only if you are running both API-M and IS 7.x in the same JVM.

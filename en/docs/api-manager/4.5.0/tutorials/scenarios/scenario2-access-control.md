@@ -1,6 +1,6 @@
 ---
 title: "Tutorial Scenario 2: Access Control for APIs"
-description: "Restrict Developer Portal visibility of an API to a specific role and enforce OAuth2 scope-based access control on individual API resources, then verify the behavior with tokens issued for two different users."
+description: "Restrict Developer Portal visibility of an API to a role and enforce OAuth2 scope-based access control on its resources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/scenarios/scenario2-access-control/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/scenarios/scenario2-access-control.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - access-control
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -24,11 +24,11 @@ ColTrain has a separate API to manage schedules for their internal staff. This A
 
 We could configure the API to be visible for a set of users. For example, this API should be visible for only Developer Portal users with **coltrain_employee** role only.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario2.png" title="Rate limiting" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario2.png" title="Rate limiting" width="630"/>
 
 Also WSO2 API Manager provides capability to provide access control to the resources of the API by using OAuth2 scopes. Requests containing access tokens with the correct scope will be able to access these resources. 
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario2a.png" title="Rate limiting" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario2a.png" title="Rate limiting" width="630"/>
 
 !!! Note 
     This setup contains roles **schedule_admin**  and **coltrain_employee** already created in the ColTrain tenant domain. **schedule_admin** and **coltrain_employee** roles are assigned to the user **jenny@coltrain.com** and only **coltrain_employee** role is assigned to **george@coltrain.com** . 

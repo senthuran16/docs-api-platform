@@ -1,6 +1,6 @@
 ---
 title: "Gateway Threat Protectors"
-description: "Overview of the regular expression, JSON, and XML threat protectors available for the API Manager Gateway, and how to combine them or add a custom mediation sequence for threat protection."
+description: "Overview of the regular expression, JSON, and XML threat protectors available for the Gateway, and how to combine them or add a custom mediation sequence."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - threat-protection
   - api-security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

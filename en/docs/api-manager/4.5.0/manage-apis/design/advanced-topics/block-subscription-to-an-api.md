@@ -1,6 +1,6 @@
 ---
 title: "Block Subscription to an API"
-description: "Block and unblock subscriptions to an API in WSO2 API Manager, either fully or for production access only, to temporarily disable access for a specific application."
+description: "Block and unblock subscriptions to an API in WSO2 API Manager, fully or for production access only, to disable access for an application."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/advanced-topics/block-subscription-to-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/advanced-topics/block-subscription-to-an-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - subscriptions
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -30,16 +30,16 @@ Blocking can be done at two levels:
   <html>
   <div class="admonition warning">
   <p class="admonition-title">Warning</p>
-  <p>When <a href="../../../get-started/overview.md#api-gateway">API Gateway</a> caching is enabled (it is enabled by default), even after blocking a subscription, consumers might still be able to access APIs until the cache expires, which happens approximately every 15 minutes. Likewise, the API Gateway cache applies even when an API is unblocked.</p>
+  <p>When <a href="../../../../get-started/overview.md#api-gateway">API Gateway</a> caching is enabled (it is enabled by default), even after blocking a subscription, consumers might still be able to access APIs until the cache expires, which happens approximately every 15 minutes. Likewise, the API Gateway cache applies even when an API is unblocked.</p>
   </div> 
   
   <div class="admonition note">
   <p class="admonition-title">Note</p>
   <p>See the following topics for the descriptions on the concepts that you need to know when you block subscriptions to an API:
   <ul>
-    <li><a href="../../../get-started/key-concepts.md#application">Applications</a></li>
-    <li><a href="../../../get-started/key-concepts.md#rate-limits">Rate Limiting</a></li>
-    <li> <a href="../../../get-started/key-concepts.md#access-token">Access tokens</a></li></ul>
+    <li><a href="../../../../get-started/key-concepts.md#application">Applications</a></li>
+    <li><a href="../../../../get-started/key-concepts.md#rate-limits">Rate Limiting</a></li>
+    <li> <a href="../../../../get-started/key-concepts.md#access-token">Access tokens</a></li></ul>
     </p>
   </div> 
   </html>
@@ -111,7 +111,7 @@ Blocking can be done at two levels:
 
      3.  Go to **Portal Configurations** and click **Subscriptions** to navigate to the managed subscription section.
 
-         <a href="../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu"><img src="../../../assets/img/learn/subscriptions-menu.png" width=250></a>
+         <a href="../../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu"><img src="../../../../assets/img/learn/subscriptions-menu.png" width=250></a>
 
      4. Click **Block All**.
 

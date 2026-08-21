@@ -1,6 +1,6 @@
 ---
 title: "Configure Mutual SSL Between the Gateway and Backend"
-description: "Secure backend connections by enabling mutual SSL between the Universal Gateway and the backend service, including certificate exchange and dynamic SSL profile configuration."
+description: "Secure backend connections by enabling mutual SSL between the Universal Gateway and the backend service, including certificate exchange."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/mutual-ssl-between-api-gateway-and-backend/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/mutual-ssl-between-api-gateway-and-backend.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - mutual-ssl
   - gateway-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

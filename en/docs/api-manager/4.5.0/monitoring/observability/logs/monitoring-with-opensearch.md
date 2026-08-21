@@ -1,6 +1,6 @@
 ---
 title: "Monitor API Manager Logs with OpenSearch"
-description: "Configure Fluent Bit and API Manager's log4j2 appenders to ship Carbon, HTTP access, audit, correlation, and trace logs to OpenSearch, then view them in OpenSearch Dashboards."
+description: "Configure Fluent Bit and API Manager's log4j2 appenders to ship Carbon, HTTP access, and audit logs to OpenSearch Dashboards."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/logs/monitoring-with-opensearch/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/logs/monitoring-with-opensearch.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Scaling the Gateway"
-description: "Guidance on scaling WSO2 API Manager Gateways, including recommended ratios for Gateways to Key Managers, Traffic Managers, and Control Plane nodes, plus key caching strategies."
+description: "Review guidance on scaling WSO2 API Manager Gateways, including ratios for Key Managers, Traffic Managers, and Control Plane nodes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/scaling-the-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/deploy-and-publish/deploy-on-gateway/api-gateway/scaling-the-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-gateway
   - scalability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -24,7 +24,7 @@ For key validation, the Gateway can usually handle 3,000 transactions per second
 -   When the cache is enabled at the Key Manager and disabled at the Gateway, you can have only one Gateway per Key Manager.
 -   If both caches are disabled (not recommended), even with only one Gateway per Key Manager, the system may not be able to handle the load, as the Key Manager will only be able to handle 500 TPS.
 
-For more information, see [Key cache](../../../../install-and-setup/setup/advance-configurations/configuring-caching.md#key-cache) in the WSO2 API Manager documentation.
+For more information, see [Key cache](../../../../install-and-setup/setup/advance-configurations/configuring-caching.md#key-manager-cache) in the WSO2 API Manager documentation.
 
 ### Scaling Gateways and Traffic Managers
 

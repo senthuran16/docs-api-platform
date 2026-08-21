@@ -1,6 +1,6 @@
 ---
 title: "Rate Limiting for Streaming APIs"
-description: "Configure count-based, time-based, and count-time hybrid rate limiting policies for WebSocket, SSE, and WebSub (WebHook) Streaming APIs in WSO2 API Manager, and apply them through Business Plans."
+description: "Configure count-based, time-based, and hybrid rate limiting policies for WebSocket, SSE, and WebSub Streaming APIs via Business Plans."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/rate-limiting-for-streaming-apis/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/rate-limiting/rate-limiting-for-streaming-apis.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - streaming-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -72,4 +72,4 @@ The following is the list of default Business Plans that are related to Streamin
 
 ### Custom Business Plans
 
-Instead of using the default Business Plans, a user who has the admin role, with access to the Admin Portal, can create Custom Business Plans, which API Creators can use. For more information, see [Adding a new subscription-level rate limiting tier](../../../manage-apis/design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-throttling-tier).
+Instead of using the default Business Plans, a user who has the admin role, with access to the Admin Portal, can create Custom Business Plans, which API Creators can use. For more information, see [Adding a new subscription-level rate limiting tier](../../../manage-apis/design/rate-limiting/adding-new-throttling-policies.md#adding-a-new-subscription-level-rate-limiting-tier).

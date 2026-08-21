@@ -1,6 +1,6 @@
 ---
 title: "API Management Governance Overview"
-description: "Overview of API governance in WSO2 API Manager: the benefits of a governance strategy, including security, consistency, lifecycle management, and discoverability."
+description: "Explains the benefits of API governance in WSO2 API Manager: security, consistency, lifecycle management, and discoverability."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/governance/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/governance/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - governance
   - lifecycle-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # WSO2 API Management Governance

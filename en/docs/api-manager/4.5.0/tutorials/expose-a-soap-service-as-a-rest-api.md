@@ -1,6 +1,6 @@
 ---
 title: "Expose a SOAP Service as a REST API"
-description: "Tutorial walking through designing a Pass Through API from a SOAP/WSDL backend in API Publisher, publishing it, and invoking it as a REST API with a generated access token."
+description: "Tutorial walking through designing a Pass Through API from a SOAP/WSDL backend, publishing it, and invoking it as a REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/expose-a-soap-service-as-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/tutorials/expose-a-soap-service-as-a-rest-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - soap
   - pass-through
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -92,7 +92,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
 
      The generated JSON Web Token (JWT) appears in the popup. Make sure to copy it.
      <html>
-     <img src="../assets/img/learn/generate-access-token-popup.jpg" height="400" width="580">
+     <img src="../../assets/img/learn/generate-access-token-popup.jpg" height="400" width="580">
      </html>
 
     Let's invoke the API.

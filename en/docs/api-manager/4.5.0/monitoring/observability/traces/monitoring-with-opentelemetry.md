@@ -1,6 +1,6 @@
 ---
 title: "Monitoring with OpenTelemetry"
-description: "Enable distributed tracing for WSO2 API Manager with OpenTelemetry, exporting trace data to Jaeger, Zipkin, a local log file, or an OTLP endpoint, or by implementing a custom tracer."
+description: "Enable distributed tracing for WSO2 API Manager with OpenTelemetry, exporting traces to Jaeger, Zipkin, a log file, or OTLP."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/traces/monitoring-with-opentelemetry/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/monitoring/observability/traces/monitoring-with-opentelemetry.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - tracing
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

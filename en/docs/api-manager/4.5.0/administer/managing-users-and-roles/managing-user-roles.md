@@ -1,6 +1,6 @@
 ---
 title: "Managing User Roles"
-description: "Create, edit, and delete user roles in WSO2 API Manager, map roles to REST API scope assignments, and rename the default admin role before or after first startup."
+description: "Create, edit, and delete user roles in WSO2 API Manager, map roles to REST API scopes, and rename the default admin role at any time."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-roles/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-roles.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-management
   - rbac
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -47,12 +47,12 @@ Follow the instructions below to create the `creator`, `publisher`, and `subscri
 
     !!! warning
 
-            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](`https://localhost:9443/admin`) from **Settings** > **Advanced**.
+            In WSO2 API Manager, Developer Portal and Publisher Web Application UIs are populated by API-M REST APIs and all the authentication and authorization to access the different components in the UI solely depend on the scope role mapping defined in `/_system/config/apimgt/applicationdata/tenant-conf.json` that can be accessed through the [Admin Console](https://localhost:9443/admin) from **Settings** > **Advanced**.
 
             By default, the scope-role mapping contains `Internal/creator`, `Internal/publisher`, `Internal/subscriber`, `Internal/analytics`, and `Internal/devops` as the default roles. If there are custom roles defined with API creator, API publisher, admin and API subscriber permissions, those roles have to be configured in the `tenant-conf.json` file under the relevant scopes.
 
 !!! info
-     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](managing-permissions.md#adding-role-based-permissions)
+     For more information on **role mapping** or **scope mapping**, see [Adding role permissions](managing-permissions.md#role-based-permissions)
 
 !!! warning
     As a limitation, when you delete a user and create another with the same username, applications of the previous user will be visible on the Developer Portal applications listing page.
@@ -186,7 +186,7 @@ create_admin_account = true
 
 The following steps guide you through updating the role names after you have used the product for some time.
 
-1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles.md#update-before-the-first-startup-recommended).
+1.  Make the configuration changes indicated in [the above section](../../administer/managing-users-and-roles/managing-user-roles.md#updating-before-the-first-startup-recommended).
 
 2.  Do the following user store level changes for existing users:
 

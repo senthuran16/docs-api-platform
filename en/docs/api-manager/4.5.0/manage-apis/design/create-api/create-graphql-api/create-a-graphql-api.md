@@ -1,6 +1,6 @@
 ---
 title: "Create a GraphQL API"
-description: "Design a GraphQL API in WSO2 API Manager from an SDL schema, and configure authorization, security, and rate limiting for query, mutation, and subscription operations."
+description: "Design a GraphQL API from an SDL schema, and configure authorization, security, and rate limiting for query, mutation, and subscription operations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-graphql-api/create-a-graphql-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-graphql-api/create-a-graphql-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - graphql
   - rate-limiting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -86,4 +86,4 @@ Learn more on the concepts that you need to know when creating a GraphQL API:
 -   [API Documentation](../../../../manage-apis/design/api-documentation/add-api-documentation.md)
 -   [Custom Properties](../../../../manage-apis/design/create-api/adding-custom-properties-to-apis.md)
 
-- Try out the tutorial on <a href="../../../../tutorials/create-and-publish-a-graphql-api.md">Creating and Publishing a GraphQL API</a>.
+- Try out the tutorial on <a href="../../../../../tutorials/create-and-publish-a-graphql-api.md">Creating and Publishing a GraphQL API</a>.

@@ -1,6 +1,6 @@
 ---
 title: "Change the Default User Role in Workflows"
-description: "Update the default admin user role used in API Manager workflow configurations, including the BPS .epr files, workflow-extensions.xml registry resource, shared database, LDAP, and .ht human task files."
+description: "Update the default admin user role used in API Manager workflow configurations across BPS, the registry, and human task files."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/changing-the-default-user-role-in-workflows/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/changing-the-default-user-role-in-workflows.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - workflows
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

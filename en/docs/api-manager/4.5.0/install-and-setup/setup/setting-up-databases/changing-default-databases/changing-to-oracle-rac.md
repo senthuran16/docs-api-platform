@@ -1,6 +1,6 @@
 ---
 title: "Changing to Oracle RAC"
-description: "Replace the default embedded H2 database with Oracle Real Application Clusters (RAC) in WSO2 API Manager: set up database users, drivers, run the oracle_rac.sql scripts, and configure the datasource in deployment.toml."
+description: "Replace the default embedded H2 database with Oracle RAC: set up users and drivers, run the oracle_rac.sql scripts, and configure the datasource."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-oracle-rac/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-oracle-rac.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - databases
   - oracle-rac
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

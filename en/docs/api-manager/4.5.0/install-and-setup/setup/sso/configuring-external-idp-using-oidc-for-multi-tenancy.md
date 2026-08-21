@@ -1,6 +1,6 @@
 ---
 title: "Configure an External IdP Using OIDC for Multi-Tenancy"
-description: "Connect WSO2 Identity Server as a third-party identity provider to WSO2 API Manager over OIDC for multi-tenant SSO workflows, covering tenant creation, service provider setup, federated authenticators, and JIT provisioning."
+description: "Connect WSO2 Identity Server as a third-party identity provider to API Manager over OIDC for multi-tenant single sign-on workflows."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/sso/configuring-external-idp-using-oidc-for-multi-tenancy/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/sso/configuring-external-idp-using-oidc-for-multi-tenancy.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - sso
   - multi-tenancy
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Administration Overview"
-description: "A landing page linking to WSO2 API Manager administration tasks: managing users and roles, secondary user stores, multitenancy, key managers, and advanced configurations."
+description: "Links to WSO2 API Manager administration tasks: managing users and roles, user stores, multitenancy, key managers, and advanced configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/admin-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/admin-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - administration
   - user-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Administration Overview

@@ -1,6 +1,6 @@
 ---
 title: "Supported Cipher Suites"
-description: "Reference list of secure, functional TLSv1.2 and TLSv1.3 cipher suites for Tomcat in API Manager, and guidance on avoiding weak ciphers such as those using DES/3DES, RC4, and MD5."
+description: "Reference secure TLSv1.2 and TLSv1.3 cipher suites for Tomcat in API Manager, and learn to avoid weak ciphers such as DES/3DES, RC4, and MD5."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/reference/supported-cipher-suites/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/reference/supported-cipher-suites.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - transport-security
   - tls
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

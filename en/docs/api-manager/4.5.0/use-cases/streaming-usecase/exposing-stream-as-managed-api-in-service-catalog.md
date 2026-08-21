@@ -1,6 +1,6 @@
 ---
 title: "Exposing a Stream as a Managed API in the Service Catalog"
-description: "Create a Siddhi streaming backend, generate an AsyncAPI definition for a Streaming API, and publish it to the WSO2 API Manager Service Catalog via the Streaming Integrator."
+description: "Create a Siddhi streaming backend, generate an AsyncAPI definition, and publish it to the API Manager Service Catalog."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - streaming-apis
   - service-catalog
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

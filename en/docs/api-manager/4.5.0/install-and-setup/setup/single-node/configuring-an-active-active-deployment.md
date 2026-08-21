@@ -1,6 +1,6 @@
 ---
 title: "Configuring an Active-Active Deployment"
-description: "Manually configure WSO2 API Manager with two all-in-one active nodes sharing SSL certificates, databases, a synchronized file system, load balancer, gateway URLs, and rate limiting for an active-active deployment."
+description: "Manually configure WSO2 API Manager with two all-in-one active nodes sharing databases, a synchronized file system, and a load balancer."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - high-availability
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This page walks you through how to manually configure WSO2 API Manager (WSO2 API-M) with two active nodes that each has all the components of the API-M together in one instance (all-in-one instance).
 
-<a href="../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../assets/img/setup-and-install/active-active-apim-deployment.png" width="70%" alt="active-active apim deployment"></a>
+<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" width="70%" alt="active-active apim deployment"></a>
 
 Follow the instructions below to configure and deploy API-M by using an Active-Active deployment:
 
@@ -235,11 +235,11 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../../..//install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist/).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../../..//install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
 
 ## Step 11 - Start the WSO2 API-M Servers
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 === "Linux/Mac OS"
     ```bash

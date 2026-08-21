@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -26,6 +26,7 @@ This section guides you through the following areas:
 
 When requests to an API are to be permitted from a set of known/trusted IPs only, you can achieve this by configuring a group of Allowed IPs through the Advanced Rate Limiting feature.
 
+<a name="creating-the-advanced-rate-limit-policy"></a>
 ##### Creating the Advanced Rate Limit policy
 
 1.  Login to the admin portal of WSO2 API Manager (https://&lt;ip\_address&gt;:9443/admin).
@@ -65,6 +66,7 @@ When requests to an API are to be permitted from a set of known/trusted IPs only
        
     You have now successfully created the policy. Now we should engage this policy to an API.
 
+<a name="engage-the-policy-with-an-api"></a>
 ##### Engage the policy with an API
 
 1.  Login to API Publisher https://:9443/publisher.
@@ -108,6 +110,7 @@ Select the item to deny, enter a value and click **Deny**.
 
 [![Denied condition status](../../../assets/img/learn/denied-condition-status.png)](../../../assets/img/learn/denied-condition-status.png)
 
+<a name="denying-phoneverification-api"></a>
 ##### Denying PhoneVerification API
 
 As described above you can deny requests for APIs, by Applications, to IP Addresses and for Users. Let's see how we can deny requests to an API.

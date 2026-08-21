@@ -1,6 +1,6 @@
 ---
 title: "WSO2 Admin Services"
-description: "Discover the WSDLs of WSO2 API Manager's internal SOAP admin services via the OSGi console, then authenticate and invoke them directly using generated Axis2 client stubs."
+description: "Discover the WSDLs of WSO2 API Manager's internal SOAP admin services via the OSGi console, then invoke them directly."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/wso2-admin-services/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/wso2-admin-services.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - admin-services
   - soap
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

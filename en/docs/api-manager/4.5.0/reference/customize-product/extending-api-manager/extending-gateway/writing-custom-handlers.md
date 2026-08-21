@@ -1,6 +1,6 @@
 ---
 title: "Writing Custom Gateway Handlers"
-description: "Understand the default API Gateway handler chain in WSO2 API Manager and learn how to write, build, and engage a custom handler such as a custom authentication handler."
+description: "Understand the default API Gateway handler chain in API Manager and learn to write, build, and engage a custom handler."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-gateway/writing-custom-handlers/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-gateway/writing-custom-handlers.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-gateway
   - custom-handlers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -139,7 +139,7 @@ Let's see how you can write a custom handler and apply it to the API Manager. In
 authentication handler. Make sure your custom handler name is not the same as the name of an existing handler.
 
 WSO2 API Manager provides the OAuth2 bearer token as its default authentication mechanism. A sample implementation 
-is <a href="../../../../assets/attachments/learn/api-authentication-handler.java.md" download>here</a>. Similarly, you can extend the API Manager to 
+is <a href="../../../../../assets/attachments/learn/api-authentication-handler.java" download>here</a>. Similarly, you can extend the API Manager to 
 support any custom authentication mechanism by writing your own authentication handler class.
 
 Given below is an example implementation. Please find the complete project archive [here](../../../../assets/attachments/reference/org.wso2.carbon.test.authenticator.zip). 

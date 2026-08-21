@@ -1,6 +1,6 @@
 ---
 title: "Writing Custom Grant Types"
-description: "Extend API Manager's OAuth 2.0 grant handlers for authorization_code, password, client_credentials, refresh_token, and saml2-bearer, and review key considerations before removing a custom grant type from deployment.toml."
+description: "Extend API Manager's OAuth 2.0 grant handlers and review key considerations before removing a custom grant type from deployment.toml."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-key-management/writing-custom-grant-types/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-key-management/writing-custom-grant-types.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

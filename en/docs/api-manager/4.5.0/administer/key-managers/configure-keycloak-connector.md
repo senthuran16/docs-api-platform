@@ -1,6 +1,6 @@
 ---
 title: "Configure Keycloak as a Key Manager"
-description: "Configure Keycloak as a third-party Key Manager in WSO2 API Manager using the API-M Keycloak connector: set up Keycloak clients and scopes, register the Key Manager in the Admin Portal, and generate application keys through the Developer Portal."
+description: "Configure Keycloak as a third-party Key Manager in WSO2 API Manager, including client and scope setup and Developer Portal key generation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-keycloak-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/key-managers/configure-keycloak-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -8,7 +8,7 @@ tags:
   - governance
   - api-security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -21,8 +21,8 @@ The OWASP Top 10 ruleset enforces security best practices based on OWASP guideli
 | Rule Name | Severity | Description |
 |-----------|----------|-------------|
 | [owasp:api2:2023-no-http-basic](#owaspapi22023-no-http-basic) | Error | Prevents usage of HTTP Basic Authentication, which is vulnerable to interception. |
-| [owasp:api2:2023-jwt-best-practice](#owaspapi22023-jwt-best-practice) | Error | Ensures JWT implementations explicitly reference RFC8725 to avoid known security issues. |
-| [owasp:api3:2023-no-additionalproperties](#owaspapi32023-no-additionalProperties) | Warning | Prevents mass assignment issues by disallowing additional properties in JSON Schema. |
+| [owasp:api2:2023-jwt-best-practice](#owasp-api2-2023-jwt-best-practices) | Error | Ensures JWT implementations explicitly reference RFC8725 to avoid known security issues. |
+| [owasp:api3:2023-no-additionalproperties](#owaspapi32023-no-additionalproperties) | Warning | Prevents mass assignment issues by disallowing additional properties in JSON Schema. |
 | [owasp:api3:2023-constrained-additionalProperties](#owaspapi32023-constrained-additionalproperties) | Warning | Ensures `maxProperties` is defined when `additionalProperties` is not strictly disabled. |
 | [owasp:api3:2023-no-unevaluatedProperties](#owaspapi32023-no-unevaluatedproperties) | Warning | Prevents unvalidated properties in JSON Schema definitions. |
 | [owasp:api3:2023-constrained-unevaluatedProperties](#owaspapi32023-constrained-unevaluatedproperties) | Warning | Ensures `maxProperties` is defined when `unevaluatedProperties` is not strictly disabled. |

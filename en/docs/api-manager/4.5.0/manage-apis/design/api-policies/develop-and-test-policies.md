@@ -1,6 +1,6 @@
 ---
 title: "Develop and Test Custom API Policies"
-description: "Develop custom API Manager policies locally using the WSO2 Micro Integrator VS Code extension, validate Synapse mediator syntax, test them with a local Micro Integrator runtime, and upload them to API Manager."
+description: "Develop custom API Manager policies locally using the Micro Integrator VS Code extension, test them, and upload them to API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/develop-and-test-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/develop-and-test-policies.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-policies
   - developer-tools
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

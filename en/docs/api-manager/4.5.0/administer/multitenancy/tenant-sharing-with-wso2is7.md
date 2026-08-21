@@ -1,6 +1,6 @@
 ---
 title: "Tenant Sharing between API Manager and Identity Server 7.x"
-description: "Configure mutual SSL and tenant synchronization between WSO2 API Manager and WSO2 Identity Server 7.x in either direction, and set WSO2 IS 7.x as the default or third-party key manager for new tenants."
+description: "Configure mutual SSL and tenant synchronization between WSO2 API Manager and WSO2 Identity Server 7.x, and set IS 7.x as the key manager for new tenants."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/multitenancy/tenant-sharing-with-wso2is7/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/multitenancy/tenant-sharing-with-wso2is7.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - multitenancy
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

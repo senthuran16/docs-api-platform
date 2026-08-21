@@ -1,6 +1,6 @@
 ---
 title: "Secure Endpoint with OAuth 2.0"
-description: "Configure OAuth 2.0 endpoint security for a backend in WSO2 API Manager, including Client Credentials and Resource Owner Password grant types, Redis-based token caching, and OAuth token management behavior."
+description: "Configure OAuth 2.0 endpoint security for a backend, including the Client Credentials and Resource Owner Password grant types."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/endpoints/endpoint-security/oauth-2.0/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/endpoints/endpoint-security/oauth-2.0.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - endpoint-security
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

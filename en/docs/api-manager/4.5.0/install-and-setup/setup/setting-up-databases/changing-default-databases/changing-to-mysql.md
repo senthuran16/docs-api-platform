@@ -1,6 +1,6 @@
 ---
 title: "Changing to MySQL"
-description: "Replace the default embedded H2 database with MySQL in WSO2 API Manager: create the databases and users, set up the JDBC driver, run the DB scripts, and configure the datasource connections."
+description: "Replace the default embedded H2 database with MySQL: create databases and users, install the JDBC driver, run scripts, and configure datasources."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-mysql.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - databases
   - mysql
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

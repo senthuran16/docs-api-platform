@@ -8,7 +8,7 @@ tags:
   - multiple-gateways
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -26,7 +26,7 @@ Similarly, when the permission type for the role-based restriction is set to **D
 
 ## Option 1: Configure visibility for a Gateway environment via the Admin Portal
 
-1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 
@@ -94,7 +94,7 @@ Follow the instructions below to use the `deployment.toml` file, which is the ce
     websub_event_receiver_https_endpoint = "https://localhost:8021"
    ```
 
-3. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+3. [Start WSO2 API Manager](../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
    This will start WSO2 API Manager in the all-in-one mode, which includes the default Gateway as well.
 

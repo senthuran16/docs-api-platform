@@ -8,7 +8,7 @@ tags:
   - endpoints
   - resiliency
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -29,8 +29,8 @@ In API Manager, by default, the gateway suspends an API for 30 seconds when it c
  <p class="admonition-title">What's Next?</p>
 
  <p>For more information on endpoint timeout configurations, see -
- <ul><li><a href="../../../../manage-apis/design/endpoints/resiliency/endpoint-timeouts.md">Endpoint Timeouts</a>
+ <ul><li><a href="../endpoint-timeouts.md">Endpoint Timeouts</a>
  </li>
-<li><a href="../../../../manage-apis/design/endpoints/resiliency/prevent-api-suspension.md">Prevent API Suspension</a></li></ul></p>
+<li><a href="../prevent-api-suspension.md">Prevent API Suspension</a></li></ul></p>
  </div>
 

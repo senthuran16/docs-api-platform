@@ -1,6 +1,6 @@
 ---
-title: "Distributed Deployment with Key Manager Separated from the Control Plane"
-description: "Configure a distributed WSO2 API Manager deployment where the Key Manager component runs on a separate node from the API Control Plane, alongside the Universal Gateway and Traffic Manager nodes."
+title: "Deploy with Key Manager separated from the Control Plane"
+description: "Configure a distributed WSO2 API Manager deployment where the Key Manager runs on a separate node from the API Control Plane, Gateway, and Traffic Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - distributed-deployment
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -64,6 +64,6 @@ Given below are the API-M nodes you can have in a distributed deployment with Ke
     </tr>
 </table>
 
-<a href="../../../assets/img/setup-and-install/deployment-km.png"><img src="../../../assets/img/setup-and-install/deployment-km.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/deployment-km.png"><img src="../../../../assets/img/setup-and-install/deployment-km.png" width="100%"></a>
 
 --8<-- "api-manager/4.5.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-km-separation.md"

@@ -1,6 +1,6 @@
 ---
 title: "Add Additional Headers to Test a REST API"
-description: "Configure CORS settings and add a custom header parameter to a REST API resource so it can be supplied and tested via the Integrated API Console in the Developer Portal."
+description: "Configure CORS settings and add a custom header to a REST API resource so it can be tested via the Integrated API Console."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - cors
   - api-console
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

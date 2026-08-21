@@ -1,6 +1,6 @@
 ---
 title: "Deploy API Manager on Kubernetes: Pattern 0 All-in-One"
-description: "Deploy WSO2 API Manager on Kubernetes as a single all-in-one node using Helm charts, covering gateway routing, keystore mounting, secret encryption, and database configuration."
+description: "Deploy WSO2 API Manager on Kubernetes as a single all-in-one node using Helm charts, covering routing, keystores, secrets, and databases."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - helm-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This deployment consists of a single API-M node with a single API-M runtime. You can use this pattern if you expect to receive low traffic to your deployment and do not need any high availability in your environment.
 
-<a href="../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
+<a href="../../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
 
 !!! info
     For advanced details on the deployment pattern, please refer to the official [documentation](../../../../install-and-setup/setup/deployment-overview.md).
@@ -380,7 +380,7 @@ This section covers the specific configurations relevant to the All-in-One deplo
 
 ### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load that comes in, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways)
 ```yaml
 gateway:
     # -- APIM Gateway environments
@@ -414,7 +414,7 @@ gateway:
 
 ### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores):
 
 ```yaml
     userStore:
@@ -428,7 +428,7 @@ You can configure user store properties as described in this [documentation](htt
 !!! warning "Configuration Note"
     If you do not want to configure any of these properties, you must remove the `properties` block from the YAML file to prevent deployment issues.
 
-For a complete list of available user store properties and their descriptions, refer to the [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/).
+For a complete list of available user store properties and their descriptions, refer to the [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores).
 
 ### 2.3 Configure JWKS URL
 By default, for the super tenant, the Resident Key Manager's JWKS URL is set to `https://<HOSTNAME>:9443/oauth2/jwks`. If you are using a virtual host like `am.wso2.com` that is not globally routable, this URL will be incorrect. You can configure the correct JWKS URL for the super tenant using the Helm chart as shown below:

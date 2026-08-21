@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-vendors
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -20,8 +20,8 @@ This guide explains how to integrate WSO2 API Manager with **Claude**, allowing 
 2. Navigate to the **AI/LLM Vendors** section and click on **Add AI/LLM Vendor**.
 
     <div style="text-align: center;">
-        <a href="../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/add-ai-vendor.png">
-            <img src="../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/add-ai-vendor.png" width="600" />
+        <a href="../../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/add-ai-vendor.png">
+            <img src="../../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/add-ai-vendor.png" width="600" />
         </a>
     </div>
 
@@ -104,8 +104,8 @@ This guide explains how to integrate WSO2 API Manager with **Claude**, allowing 
     Refer the image below for the LLM configuration.
 
     <div style="text-align: center;">
-        <a href="../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/llm-configurations.png">
-            <img src="../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/llm-configurations.png" width="500" />
+        <a href="../../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/llm-configurations.png">
+            <img src="../../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/llm-configurations.png" width="500" />
         </a>
     </div>
 
@@ -117,8 +117,8 @@ This guide explains how to integrate WSO2 API Manager with **Claude**, allowing 
 6. Configure the authentication configurations by setting the type to `authHeader` and the identifier to `x-api-key`.
 
     <div style="text-align: center;">
-        <a href="../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/auth-header.png">
-            <img src="../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/auth-header.png" width="400" />
+        <a href="../../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/auth-header.png">
+            <img src="../../../../assets/img/learn/ai-gateway/custom-ai-vendor/add-anthropic-claude/auth-header.png" width="400" />
         </a>
     </div>
 

@@ -1,6 +1,6 @@
 ---
 title: "About This Release - WSO2 API Manager 4.5.0"
-description: "Summary of what's new in WSO2 API Manager 4.5.0, including new features like API Governance and Multi-Model Routing, improvements, key architectural changes, compatible product versions, and fixed/known issues."
+description: "Summary of new features like API Governance and Multi-Model Routing, key architectural changes, and fixed and known issues in 4.5.0."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/get-started/about-this-release/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/get-started/about-this-release.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - release-notes
   - modular-architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -22,7 +22,7 @@ For more information on WSO2 API Manager, see the [overview](overview.md).
 
 ## Downloads
 
-<a href="https://wso2.com/api-manager/#"><img src="../assets/img/get_started/download-apim.png" title="Download WSO2 API Manager" width="25%" alt="Download WSO2 API Manager"/></a>
+<a href="https://wso2.com/api-manager/#"><img src="../../assets/img/get_started/download-apim.png" title="Download WSO2 API Manager" width="25%" alt="Download WSO2 API Manager"/></a>
 
 ## New features
 

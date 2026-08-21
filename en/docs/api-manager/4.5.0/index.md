@@ -1,16 +1,16 @@
 ---
-template: templates/no-navbars.html
 title: "WSO2 API Manager 4.5.0 Documentation"
-description: "Home page for WSO2 API Manager 4.5.0 documentation, with links to getting started guides, deployment options, setup, developer resources, tutorials, and the control plane and gateway components that make up the product."
-canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/index/
-md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/index.md
+description: "Home page for WSO2 API Manager 4.5.0 documentation, linking to getting started guides, deployment options, setup, and developer resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0.md
 tags:
   - api-manager
   - getting-started
   - architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
+template: templates/no-navbars.html
 ---
 
 <style>
@@ -311,7 +311,7 @@ content_type: "overview"
         "links": [
             {"name": "Deploy on VM", "url": "install-and-setup/install/installing-the-product/running-the-api-m/"},
             {"name": "Deploy on Kubernetes", "url": "install-and-setup/install/deploying-api-manager-with-kubernetes-resources/"},
-            {"name": "SaaS", "url": "https://wso2.com/bijira/docs/"}
+            {"name": "SaaS", "url": "https://wso2.com/api-platform/docs/"}
         ]
     }],
     [{

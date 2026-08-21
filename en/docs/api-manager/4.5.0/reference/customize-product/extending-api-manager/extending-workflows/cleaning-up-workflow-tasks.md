@@ -1,6 +1,6 @@
 ---
 title: "Clean Up Workflow Tasks"
-description: "Configure the WorkflowExecutor cleanUpPendingTask method and a BPEL cancel event in WSO2 Business Process Server so deleted applications, subscriptions, and keys don't leave stale approval tasks in the Admin Portal."
+description: "Configure WorkflowExecutor cleanup and a BPEL cancel event so deleted applications and subscriptions don't leave stale tasks."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/cleaning-up-workflow-tasks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/cleaning-up-workflow-tasks.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - workflow-extensions
   - business-process-server
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

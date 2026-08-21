@@ -1,6 +1,6 @@
 ---
 title: "CI/CD for APIs Overview"
-description: "Overview of how WSO2 API Controller (apictl) automates promoting APIs across environments in a CI/CD pipeline, covering the roles of API developers, publishers, and DevOps."
+description: "Explains how apictl automates promoting APIs across environments in a CI/CD pipeline, covering developer, publisher, and DevOps roles."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/api-controller/ci-cd-with-wso2-api-management.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - api-controller
   - ci-cd
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # CI/CD for APIs - Overview
@@ -33,4 +33,4 @@ API Developers and Publishers work with a version control system, which acts as 
 See the following topics for instructions:
 
 -   [Building a CI/CD Pipeline for APIs using the CLI](../../../install-and-setup/setup/api-controller/cicd-using-cli.md)
--   [Building a CI/CD Pipeline for APIs using Jenkins](../../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach.md)
+-   [Building a CI/CD Pipeline for APIs using Jenkins](building-jenkins-ci-cd-pipeline)

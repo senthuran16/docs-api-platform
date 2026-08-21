@@ -1,6 +1,6 @@
 ---
 title: "Adding Internationalization and Localization"
-description: "Localize the API Publisher and Developer Portal by changing the browser language, adding a new language locale file, switching UI direction to RTL, and enabling the in-app language switch."
+description: "Localize the API Publisher and Developer Portal by changing the browser language, adding locale files, and enabling RTL support."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/adding-internationalization/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/adding-internationalization.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - customization
   - internationalization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -196,7 +196,7 @@ Follow the instructions below to change the direction of the UI:
     ```
 
     !!! tip
-    Learn more about [Tenant theming](customizing-the-developer-portal/overriding-developer-portal-theme.md#uploading-via-the-admin-portal-tenants-only).
+    Learn more about [Tenant theming](customizing-the-developer-portal/overriding-developer-portal-theme.md#uploading-devportal-theme-via-the-admin-portal-tenants-only).
 
 
 ## Enabling the language switch

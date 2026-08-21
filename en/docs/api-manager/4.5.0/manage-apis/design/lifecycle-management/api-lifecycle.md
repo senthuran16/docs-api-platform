@@ -1,6 +1,6 @@
 ---
 title: "Manage the API Lifecycle"
-description: "Understand the six default API lifecycle states in WSO2 API Manager - CREATED, PRE-RELEASED, PUBLISHED, BLOCKED, DEPRECATED, and RETIRED - and how to transition an API between them from the Publisher portal."
+description: "Understand the six default API lifecycle states - CREATED, PRE-RELEASED, PUBLISHED, BLOCKED, DEPRECATED, RETIRED - and transition an API between them."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/lifecycle-management/api-lifecycle/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/lifecycle-management/api-lifecycle.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - lifecycle-management
   - api-publisher
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -41,17 +41,17 @@ Follow the instructions below to manage the API lifecycle appropriately:
 
 2.  Click on the API for which you need to change its lifecycle state.
 
-     <a href="../../../assets/img/learn/select-created-api-with-business-info.png" ><img src="../../../assets/img/learn/select-created-api-with-additional-info.png" alt="Select API" title="Select API" width="40%" /></a>
+     <a href="../../../../assets/img/learn/select-created-api-with-business-info.png" ><img src="../../../../assets/img/learn/select-created-api-with-additional-info.png" alt="Select API" title="Select API" width="40%" /></a>
 
 3.  Click **Lifecycle**.
 
-     <a href="../../../assets/img/learn/lifecycle-tab.png" ><img src="../../../assets/img/learn/lifecycle-tab.png" alt="Lifecycle tab" title="Lifecycle tab" width="70%" /></a>
+     <a href="../../../../assets/img/learn/lifecycle-tab.png" ><img src="../../../../assets/img/learn/lifecycle-tab.png" alt="Lifecycle tab" title="Lifecycle tab" width="70%" /></a>
     
      The lifecycle state transition grid and the lifecycle change history appears. The current lifecycle state and the next possible lifecycle transitions are available in lifecycle state grid. The lifecycle history contains the data such as the lifecycle transition action, the user who performed the transition and the timestamp of the state change. 
 
 4. Click on the lifecycle state change buttons to change the lifecycle state.
 
-     [![](../../../assets/img/learn/lifecycle-transition-grid.png")](../../../assets/img/learn/lifecycle-transition-grid.png")
+     [![](../../../assets/img/learn/lifecycle-transition-grid.png)](../../../assets/img/learn/lifecycle-transition-grid.png)
     
 
 

@@ -1,6 +1,6 @@
 ---
 title: "AI Gateway Overview"
-description: "Overview of WSO2 API Manager's AI Gateway: create and expose AI APIs for OpenAI, Azure OpenAI, Mistral, and custom vendors with token-based rate limiting, multi-model routing, and observability."
+description: "Create and expose AI APIs for OpenAI, Azure OpenAI, Mistral, and custom vendors with rate limiting, multi-model routing, and observability."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - ai-gateway
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # AI Gateway

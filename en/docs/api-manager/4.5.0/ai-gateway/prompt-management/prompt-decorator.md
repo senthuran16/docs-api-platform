@@ -1,6 +1,6 @@
 ---
 title: "Prompt Decorator"
-description: "Configure the Prompt Decorator policy, a Synapse mediator for WSO2 API Manager's AI Gateway that injects prepended or appended prompt decorations into text and chat-based AI API payloads."
+description: "Configure the Prompt Decorator policy, a Synapse mediator that injects prepended or appended prompt text into AI Gateway API payloads."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/prompt-management/prompt-decorator/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/prompt-management/prompt-decorator.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - prompt-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

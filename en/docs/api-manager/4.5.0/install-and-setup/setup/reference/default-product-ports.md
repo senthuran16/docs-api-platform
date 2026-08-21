@@ -1,6 +1,6 @@
 ---
 title: "Default Product Ports"
-description: "Reference list of the default ports used by the WSO2 API Manager runtime, including HTTPS/HTTP transports, LDAP, message broker, throttling, and random ports opened at startup."
+description: "Reference the default ports used by the WSO2 API Manager runtime, including HTTPS/HTTP transports, LDAP, message broker, and throttling ports."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/reference/default-product-ports/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/reference/default-product-ports.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment
   - ports
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -21,7 +21,7 @@ This page describes the default ports used by each runtime of WSO2 API Manager.
 
 ## API-M ports
 
-Listed below are the ports used by the API-M runtime when the [port offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md#configuring-the-port-offset) is 0.
+Listed below are the ports used by the API-M runtime when the [port offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md#changing-the-default-api-m-ports) is 0.
 
 !!! Info
     See the instructions on [changing the default API-I ports](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset.md#changing-the-default-api-m-ports).

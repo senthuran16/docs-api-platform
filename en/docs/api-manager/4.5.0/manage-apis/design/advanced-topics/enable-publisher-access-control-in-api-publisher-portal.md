@@ -8,7 +8,7 @@ tags:
   - access-control
   - api-publisher
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -50,7 +50,7 @@ The APIs created in the API Publisher are visible to any user who signs in to th
      <head>
      </head>
      <body>
-     <img src="../../../assets/img/learn/save-api-publisher.png" alt="Save API" title="Save API" width="250" height="50"/>
+     <img src="../../../../assets/img/learn/save-api-publisher.png" alt="Save API" title="Save API" width="250" height="50"/>
      </body>
      </html>
 
@@ -63,7 +63,7 @@ The APIs created in the API Publisher are visible to any user who signs in to th
 
 ## Using the REST API
 
-Use the [existing REST API](../../../develop/product-apis/restful-apis.md) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
+Use the [existing REST API](../../../reference/product-apis/overview) to add an API. Make sure to add the following two elements in your request body to create an API with publisher access control restriction.
 
 ``` 
 "accessControl" : "RESTRICTED",

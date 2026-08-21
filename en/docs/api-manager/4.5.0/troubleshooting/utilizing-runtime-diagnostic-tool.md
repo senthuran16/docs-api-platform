@@ -1,6 +1,6 @@
 ---
 title: "Utilizing the WSO2 Runtime Diagnostic Tool"
-description: "Configure the WSO2 Runtime Diagnostic Tool's watchers, action executors, and post-action file transfer options, then analyze the generated diagnostic logs and zip archives to troubleshoot memory, CPU, and traffic issues in API Manager."
+description: "Configure the WSO2 Runtime Diagnostic Tool's watchers and action executors, then analyze diagnostic logs to troubleshoot API Manager issues."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/troubleshooting/utilizing-runtime-diagnostic-tool/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/troubleshooting/utilizing-runtime-diagnostic-tool.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - troubleshooting
   - diagnostics
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "troubleshooting"
 ---
 

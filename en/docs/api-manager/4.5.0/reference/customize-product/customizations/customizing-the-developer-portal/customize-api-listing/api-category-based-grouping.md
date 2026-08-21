@@ -1,6 +1,6 @@
 ---
 title: "API Category Based Grouping"
-description: "Group APIs in the Developer Portal using API categories: create categories in the Admin Portal, attach them to APIs in the Publisher, and let consumers browse by category via the Tag Cloud."
+description: "Group APIs in the Developer Portal using API categories: create them in the Admin Portal and attach them to APIs in the Publisher."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/customizing-the-developer-portal/customize-api-listing/api-category-based-grouping.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - api-categories
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -33,7 +33,7 @@ You can add an API category using any of the following methods:
 
 2. Click **API Category** and then click **API Categories**.
     
-    <img src="../../../../../assets/img/develop/new_api_category_left_tag.png" width="250" alt="API categories menu">
+    <img src="../../../../../../assets/img/develop/new_api_category_left_tag.png" width="250" alt="API categories menu">
     
 3. Click **Add New Category**.
 
@@ -46,7 +46,7 @@ You can add an API category using any of the following methods:
      |  Name          |  Food                  |
      |  Description   |  Fast food related APIs     |
 
-    <img src="../../../../../assets/img/develop/new_add_category.png" width="500" alt="Add API category">
+    <img src="../../../../../../assets/img/develop/new_add_category.png" width="500" alt="Add API category">
 
 5. Click **Save**.
 
@@ -60,7 +60,7 @@ You can add an API category using any of the following methods:
 
 3. Click **Portal Configurations > Basic Info**. 
 
-     <img src="../../../../../assets/img/develop/api-portal-config-basic-info.png" width="235" alt="Add API category">
+     <img src="../../../../../../assets/img/develop/api-portal-config-basic-info.png" width="235" alt="Add API category">
 
 4. Select the API category.
 

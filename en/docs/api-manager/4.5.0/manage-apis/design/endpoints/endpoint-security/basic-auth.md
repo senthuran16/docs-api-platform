@@ -1,6 +1,6 @@
 ---
 title: "Secure a Backend Endpoint with Basic Auth"
-description: "Configure Basic Authentication as the endpoint security type for a Production or Sandbox backend endpoint in the API Publisher, so credentials are sent as a Base64-encoded Authorization header."
+description: "Configure Basic Authentication as the endpoint security type for a production or sandbox backend endpoint, so credentials are sent as a Base64-encoded header."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/endpoints/endpoint-security/basic-auth/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/endpoints/endpoint-security/basic-auth.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - endpoint-security
   - backend-endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Configure a Single Node Deployment"
-description: "Manually configure and deploy WSO2 API Manager as a single standalone node: set up keystores, the load balancer, databases, gateway and Dev Portal URLs, analytics, and production hardening."
+description: "Manually configure and deploy WSO2 API Manager as a single standalone node, including keystores, the load balancer, and databases."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/single-node/configuring-a-single-node/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/single-node/configuring-a-single-node.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment
   - single-node
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This page walks you through how to manually configure and deploy WSO2 API Manager in a single standalone instance, without using a distributed or HA deployment patterns. 
 
-<a href="../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../assets/img/setup-and-install/single-node-apim-deployment.png" width="70%" alt="single-node api-m deployment"></a>
+<a href="../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/single-node-apim-deployment.png" width="70%" alt="single-node api-m deployment"></a>
 
 Follow the instructions below to configure and deploy API-M using a single node:
 
@@ -122,14 +122,14 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
   
 ## Step 8 - Start the WSO2 API-M server
 
 If you want to deploy WSO2 API-M using a hybrid single node deployment, where WSO2 Identity Server is used as the Key Manager while the rest of the WSO2 API-M components are all in one node, configure and start the Key Manager (e.g., configure and start WSO2 Identity Server as the Key Manager) before starting the WSO2 API-M server.
 
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 === "Linux/Mac OS"
     ```bash

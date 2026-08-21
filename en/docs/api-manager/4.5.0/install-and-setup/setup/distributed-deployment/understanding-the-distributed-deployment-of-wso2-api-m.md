@@ -1,6 +1,6 @@
 ---
 title: "Understanding the Distributed Deployment of WSO2 API-M"
-description: "Overview of WSO2 API Manager's distributed deployment architecture: the API Control Plane, Universal Gateway, and Traffic Manager distributions, their components, database usage, and the simple scalable deployment patterns with and without Key Manager separation."
+description: "Learn how WSO2 API Manager's distributed deployment architecture separates the Control Plane, Universal Gateway, and Traffic Manager components."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md
 tags:
@@ -8,14 +8,14 @@ tags:
   - distributed-deployment
   - architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
 # API-M Distributed Deployment - Overview
 
 Before deploying WSO2 API Manager (WSO2 API-M), let's understand how the WSO2 API-M distributed deployment works.
-According to the recommended [deployment patterns](../../../install-and-setup/setup/deployment-overview.md#simple-scalable-deployment), a distributed deployment includes the WSO2 API Control Plane, WSO2 Universal Gateway and WSO2 Traffic Manager distributions. The relevant distributions only run specific components of API-M.
+According to the recommended [deployment patterns](../../../install-and-setup/setup/deployment-overview.md#pattern-2-api-m-deployment-with-simple-scalable-setup), a distributed deployment includes the WSO2 API Control Plane, WSO2 Universal Gateway and WSO2 Traffic Manager distributions. The relevant distributions only run specific components of API-M.
 
 ## API-M Component Distributions
 

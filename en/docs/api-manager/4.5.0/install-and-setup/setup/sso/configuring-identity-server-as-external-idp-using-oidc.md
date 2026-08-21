@@ -1,6 +1,6 @@
 ---
 title: "Configure Identity Server as an External IdP using OIDC"
-description: "Configure WSO2 Identity Server as a third-party OIDC identity provider for WSO2 API Manager, covering service provider setup, user/role mapping, claim mapping, and single sign-on for the Publisher and Developer Portal."
+description: "Configure WSO2 Identity Server as a third-party OIDC identity provider for API Manager, covering service provider and claim mapping setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-oidc/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-oidc.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - sso
   - oidc
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

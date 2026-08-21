@@ -1,6 +1,6 @@
 ---
 title: "Create a Streaming API from an AsyncAPI Definition"
-description: "Import an existing AsyncAPI definition, by URL or file upload, into WSO2 API Manager to create a WebSocket, WebSub, or SSE streaming API, then configure its topics."
+description: "Import an AsyncAPI definition, by URL or file upload, to create a WebSocket, WebSub, or SSE streaming API, then configure its topics."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/create-api/create-streaming-api/create-a-streaming-api-from-an-asyncapi-definition.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - streaming-api
   - asyncapi
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -26,7 +26,8 @@ Follow the instructions below to create a Streaming API using an AsyncAPI defini
 
 ## Step 1 - Design a Streaming API
 
-1. --8<-- "api-manager/4.5.0/includes/sign-in-publisher.md"
+1.  
+    --8<-- "api-manager/4.5.0/includes/sign-in-publisher.md"
 
 2. Click **CREATE API** and then click **Import AsyncAPI Definition**.
 
@@ -51,7 +52,7 @@ Follow the instructions below to create a Streaming API using an AsyncAPI defini
      https://raw.githubusercontent.com/asyncapi/spec/v2.0.0/examples/2.0.0/streetlights.yml
      ```
 
-     <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-url-import.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-url-import.png" width="80%" alt ="Import Websocket Streaming API from AsyncAPI URL"></a>
+     <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-url-import.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-url-import.png" width="80%" alt ="Import Websocket Streaming API from AsyncAPI URL"></a>
 
 4.  Edit the Streaming API information and click **Create**.
 
@@ -71,7 +72,7 @@ Follow the instructions below to create a Streaming API using an AsyncAPI defini
       | Protocol | WebSocket (or any other type of Streaming API) |
       | Endpoint | ws://localhost:8080 |
  
-      <a href="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-configure-values.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-configure-values.png" width="80%" alt="AsyncAPI configuration values"></a>
+      <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-configure-values.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-streaming-api-from-asyncapi-configure-values.png" width="80%" alt="AsyncAPI configuration values"></a>
 
       Now, the **StreetlightsAPI API** overview page will appear.
 
@@ -91,7 +92,7 @@ Click **AsyncAPI Definition** under **API Configurations**.
 
 The AsyncAPI definition of the streaming API, which you just created, appears.
     
-   <a href="../../../../assets/img/design/create-api/streaming-api/websocket-view-asyncapi.png"><img src="../../../../assets/img/design/create-api/streaming-api/websocket-view-asyncapi.png" alt="WebSocket API AsyncAPI Definition"></a>
+   <a href="../../../../../assets/img/design/create-api/streaming-api/websocket-view-asyncapi.png"><img src="../../../../../assets/img/design/create-api/streaming-api/websocket-view-asyncapi.png" alt="WebSocket API AsyncAPI Definition"></a>
 
 Now, you have successfully created a Streaming API from an Async API Definition. 
 
@@ -102,9 +103,9 @@ Next, publish the API, for more information, see [Publish an API](../../../../ma
 <p class="admonition-title">What's Next?</p>
 <p>Learn how to create Streaming APIs from scratch by trying out the following tutorials: 
 <ul>
-<li><a href="../../../../tutorials/streaming-api/create-and-publish-websocket-api.md">Create and Publish a WebSocket API</a></li>
-<li><a href="../../../../tutorials/streaming-api/create-and-publish-websub-api.md">Create and Publish a WebSub API</a></li>
-<li><a href="../../../../tutorials/streaming-api/create-and-publish-sse-api.md">Create and Publish a Server Sent Events API</a></li>
+<li><a href="../../../../../tutorials/streaming-api/create-and-publish-websocket-api.md">Create and Publish a WebSocket API</a></li>
+<li><a href="../../../../../tutorials/streaming-api/create-and-publish-websub-api.md">Create and Publish a WebSub API</a></li>
+<li><a href="../../../../../tutorials/streaming-api/create-and-publish-sse-api.md">Create and Publish a Server Sent Events API</a></li>
 </ul>
 </p>
 </div>

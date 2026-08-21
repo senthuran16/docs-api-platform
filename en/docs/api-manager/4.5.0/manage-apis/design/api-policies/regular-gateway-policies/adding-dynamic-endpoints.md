@@ -1,6 +1,6 @@
 ---
 title: "Adding Dynamic Endpoints"
-description: "Construct a dynamic back-end endpoint for an API in WSO2 API Manager by using the default endpoint and a mediation sequence that builds the To header at runtime."
+description: "Construct a dynamic backend endpoint for an API using the default endpoint and a mediation sequence that builds the To header at runtime."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/adding-dynamic-endpoints/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-policies/regular-gateway-policies/adding-dynamic-endpoints.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - endpoints
   - message-mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -42,4 +42,4 @@ In this example, you have constructed the `service_ep` property dynamically and 
 
 You can copy the content of the above sequence to an XML file and upload it to an API configured with a dynamic endpoint using the Publisher Portal UI.
 
-For more information, visit [Creating and Uploading Manually in API Publisher](../../../../learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests.md#creating-and-uploading-manually-in-api-publisher).
+For more information, visit [Creating and Uploading Manually in API Publisher](../attach-policy#attaching-policies).

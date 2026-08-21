@@ -1,6 +1,6 @@
 ---
 title: "Create a Prototype API with a Mock JavaScript Implementation"
-description: "Create a Prototype API in WSO2 API Manager using an auto-generated mock JavaScript implementation based on an OpenAPI definition, customize the inline script, and invoke it through the Publisher and Developer Portal."
+description: "Create a Prototype API using an auto-generated mock JavaScript implementation based on an OpenAPI definition, customize the inline script, and invoke it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/prototype-api/create-mocked-js-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/prototype-api/create-mocked-js-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - prototype-api
   - mock-implementation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

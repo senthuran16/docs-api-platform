@@ -1,6 +1,6 @@
 ---
-title: "Pattern 5: All-in-One with Separated Key Manager and Gateway on Kubernetes"
-description: "Deploy WSO2 API Manager on Kubernetes using an All-in-One Control Plane, separate Key Manager instances, and separate Universal Gateway instances via Helm charts."
+title: "Pattern 5: separated Key Manager and Gateway"
+description: "Deploy WSO2 API Manager on Kubernetes using an All-in-One Control Plane with separate Key Manager and Universal Gateway instances."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-5-all-in-one-gw-km/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-5-all-in-one-gw-km.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -24,14 +24,14 @@ This document provides step-by-step instructions to deploy WSO2 API Manager in a
     - 2 Universal Gateway instances
     - External databases for high availability
 
-<a href="../../../../assets/img/setup-and-install/deployment-km.png"><img src="../../../../assets/img/setup-and-install/deployment-km.png" alt="Simple Scalable Deployment" width="100%"></a>
+<a href="../../../../../assets/img/setup-and-install/deployment-km.png"><img src="../../../../../assets/img/setup-and-install/deployment-km.png" alt="Simple Scalable Deployment" width="100%"></a>
 
 !!! info
     For advanced details on this deployment pattern, please refer to the official [WSO2 API Manager documentation](../../../../install-and-setup/setup/deployment-overview.md).
 
 ## Contents
 
-- [WSO2 API Manager Pattern 5: API-M Deployment with Simple Scalable Setup](#wso2-api-manager-pattern-5-api-m-deployment-with-simple-scalable-setup)
+- [WSO2 API Manager Pattern 5: API-M Deployment with Simple Scalable Setup](#pattern-5-api-m-deployment-with-simple-scalable-setup-with-key-manager-separated)
   - [Contents](#contents)
   - [Prerequisites](#prerequisites)
     - [Step 1 - Set Up Basic Configurations](#step-1-set-up-basic-configurations)

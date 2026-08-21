@@ -1,6 +1,6 @@
 ---
 title: "JSON Schema Validator"
-description: "Enable and use the JSON Schema Validator in WSO2 API Manager to validate request and response payloads against the schema defined in the API's swagger.json, blocking invalid requests with a 400 and invalid responses with a 500."
+description: "Enable the JSON Schema Validator to validate request and response payloads against the API's swagger.json schema, blocking invalid ones with 400 or 500."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-request-response-schema-validation/json-schema-validator/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/api-security/api-request-response-schema-validation/json-schema-validator.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-security
   - schema-validation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -28,13 +28,13 @@ If the request fails the validations, the JSON Schema Validator sends a bad requ
 
 The following diagram illustrates the message flow when sending a valid request.
 
-<a href="../../../../assets/img/learn/json-validator-send-valid-request.png"><img src="../../../../assets/img/learn/json-validator-send-valid-request.png" width="70%" alt="JSON schema validator - Sending a valid request"></a> 
+<a href="../../../../../assets/img/learn/json-validator-send-valid-request.png"><img src="../../../../../assets/img/learn/json-validator-send-valid-request.png" width="70%" alt="JSON schema validator - Sending a valid request"></a> 
 
 **Sending an invalid request**
 
 The following diagram illustrates the message flow when sending an invalid request.
 
-<a href="../../../../assets/img/learn/json-validator-send-invalid-request.png"><img src="../../../../assets/img/learn/json-validator-send-invalid-request.png" width="70%" alt="JSON schema validator - Sending an invalid request"></a>
+<a href="../../../../../assets/img/learn/json-validator-send-invalid-request.png"><img src="../../../../../assets/img/learn/json-validator-send-invalid-request.png" width="70%" alt="JSON schema validator - Sending an invalid request"></a>
 
 **Example:**
 
@@ -60,13 +60,13 @@ The following response is displayed.
 
 The following diagram illustrates the message flow when sending a valid response.
 
-<a href="../../../../assets/img/learn/json-validator-send-valid-response.png"><img src="../../../../assets/img/learn/json-validator-send-valid-response.png" width="70%" alt="JSON schema validator - Sending a valid response"></a>
+<a href="../../../../../assets/img/learn/json-validator-send-valid-response.png"><img src="../../../../../assets/img/learn/json-validator-send-valid-response.png" width="70%" alt="JSON schema validator - Sending a valid response"></a>
 
 **Invalid response from the backend**
 
 The following diagram illustrates the message flow when sending an invalid response.
 
-<a href="../../../../assets/img/learn/json-validator-send-invalid-response.png"><img src="../../../../assets/img/learn/json-validator-send-invalid-response.png" width="70%" alt="JSON schema validator - Sending an invalid response"></a>
+<a href="../../../../../assets/img/learn/json-validator-send-invalid-response.png"><img src="../../../../../assets/img/learn/json-validator-send-invalid-response.png" width="70%" alt="JSON schema validator - Sending an invalid response"></a>
 
 **Example**
 

@@ -1,6 +1,6 @@
 ---
 title: "Prompt Management Overview"
-description: "Overview of Prompt Management in the WSO2 AI Gateway: create, organize, and govern reusable prompt templates and prompt decorators to standardize and secure AI interactions."
+description: "Create, organize, and govern reusable prompt templates and decorators in the WSO2 AI Gateway to standardize and secure AI interactions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/prompt-management/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/prompt-management/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - ai-gateway
   - prompt-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Prompt Management

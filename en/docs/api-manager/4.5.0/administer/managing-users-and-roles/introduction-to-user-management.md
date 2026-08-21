@@ -1,6 +1,6 @@
 ---
 title: "Introduction to User Management"
-description: "Learn the core concepts of user management in WSO2 API Manager, including users, permissions, and user roles, and how these components work together to control access."
+description: "Learn the core concepts of user management in WSO2 API Manager, including users, permissions, and user roles, and how they control access."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/introduction-to-user-management/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/introduction-to-user-management.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-management
   - roles-and-permissions
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

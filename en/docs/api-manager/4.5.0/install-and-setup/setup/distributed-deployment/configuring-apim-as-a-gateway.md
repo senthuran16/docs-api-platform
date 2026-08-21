@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Gateway Integration with API Manager"
-description: "Overview of how the WSO2 API Control Plane integrates with WSO2 Kubernetes Gateway through the APIM-APK Agent, covering the control plane architecture, agent responsibilities, and supported features."
+description: "See how the WSO2 API Control Plane integrates with WSO2 Kubernetes Gateway through the APIM-APK Agent, covering architecture and supported features."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/configuring-apim-as-a-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/configuring-apim-as-a-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -25,7 +25,7 @@ Kubernetes Gateway only supports REST API and GraphQL API creation for now.
 
 Following diagram depicts the architecture of how the WSO2 API Control Plane connects with WSO2 Kubernetes Gateway using APIM-APK Agent.
 
-<a href="../../../assets/img/setup-and-install/apk-overview.png" ><img src="../../../assets/img/setup-and-install/apk-overview.png" alt="Architecture" title="Architecture" width="100%" /></a>
+<a href="../../../../assets/img/setup-and-install/apk-overview.png" ><img src="../../../../assets/img/setup-and-install/apk-overview.png" alt="Architecture" title="Architecture" width="100%" /></a>
 
 ## APIM APK Agent
 

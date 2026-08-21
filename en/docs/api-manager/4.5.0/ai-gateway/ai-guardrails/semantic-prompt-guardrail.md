@@ -1,6 +1,6 @@
 ---
 title: "Semantic Prompt Guardrail"
-description: "Configure the Semantic Prompt Guardrail mediator for WSO2 API Manager to allow, deny, or hybrid-validate AI API requests based on semantic similarity to defined prompt lists."
+description: "Configure the Semantic Prompt Guardrail to allow, deny, or hybrid-validate AI API requests based on semantic similarity to defined prompt lists."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/semantic-prompt-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/ai-gateway/ai-guardrails/semantic-prompt-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

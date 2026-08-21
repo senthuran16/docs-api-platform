@@ -1,6 +1,6 @@
 ---
 title: "Invoke API Manager from the BPEL Engine"
-description: "Call back the API Manager workflow callback endpoint from a BPEL engine using its SOAP or REST URIs, with sample curl and SOAP requests for progressing a workflow."
+description: "Call the API Manager workflow callback endpoint from a BPEL engine via its SOAP or REST URIs to progress a workflow."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/extending-api-manager/extending-workflows/invoking-the-api-manager-from-the-bpel-engine.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - workflows
   - bpel
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

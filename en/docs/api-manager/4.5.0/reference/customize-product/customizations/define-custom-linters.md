@@ -1,6 +1,6 @@
 ---
 title: "Define Custom Linter Rules"
-description: "Define a custom Spectral lint rule for API Manager to validate API definition fields, such as enforcing a corporate email pattern in the OpenAPI contact field."
+description: "Define a custom Spectral lint rule for API Manager to validate API definition fields, such as enforcing an email pattern."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/define-custom-linters/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/define-custom-linters.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - governance
   - api-linting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Direct the Root Context to the Developer Portal"
-description: "Configure WSO2 API Manager so that the root context URL redirects to the Developer Portal instead of the default Publisher, by editing the styles component bundle."
+description: "Configure API Manager so the root context URL redirects to the Developer Portal instead of the default Publisher."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/directing-the-root-context-to-the-developer-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/reference/customize-product/customizations/directing-the-root-context-to-the-developer-portal.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Pattern 1: All-in-One HA Deployment on Kubernetes"
-description: "Deploy a highly available WSO2 API Manager all-in-one cluster on Kubernetes using Helm charts, with Envoy Gateway or NGINX Ingress routing, external databases, and multiple replicas."
+description: "Deploy a highly available WSO2 API Manager all-in-one cluster on Kubernetes using Helm, with ingress routing, external databases, and replicas."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-1-all-in-one-ha/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-1-all-in-one-ha.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This deployment consists of a highly available API-M cluster with multiple nodes of the API-M runtime. You can use this pattern if you expect to receive moderate traffic and require high availability in your environment.
 
-<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active api-m deployment" width="60%"></a>
+<a href="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active api-m deployment" width="60%"></a>
 
 !!! info
     For advanced details on this deployment pattern, please refer to the official [documentation](../../../../install-and-setup/setup/deployment-overview.md).
@@ -455,7 +455,7 @@ please refer to the [official WSO2 container guide](https://github.com/wso2/cont
 
 ### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways)
 ```yaml
     gateway:
         # -- APIM Gateway environments
@@ -489,7 +489,7 @@ If you need to distribute the Gateway load, you can configure multiple API Gatew
 
 ### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores):
 
 ```yaml
     userStore:

@@ -1,6 +1,6 @@
 ---
 title: "API Manager Deployment Patterns Overview"
-description: "Compares WSO2 API Manager 4.5.0 deployment patterns, including all-in-one, distributed, and multi-DC setups, to help you choose the right configuration for your environment."
+description: "Compare WSO2 API Manager 4.5.0 deployment patterns, including all-in-one, distributed, and multi-DC setups, to choose the right configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/single-node/deployment-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/single-node/deployment-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Overview

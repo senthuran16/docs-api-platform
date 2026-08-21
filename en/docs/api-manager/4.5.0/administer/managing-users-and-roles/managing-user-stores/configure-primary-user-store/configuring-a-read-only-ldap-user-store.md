@@ -1,6 +1,6 @@
 ---
 title: "Configuring a Read-Only LDAP User Store"
-description: "Configure a read-only LDAP or Active Directory user store as the primary user store for WSO2 API Manager, including connection properties, group mapping, and updating the system administrator."
+description: "Configure a read-only LDAP or Active Directory user store as the primary user store for WSO2 API Manager, including connection properties and group mapping."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - ldap
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -73,7 +73,7 @@ Following are the minimum userstore properties that are required to configure th
 <br />
 If you are connecting over ldaps (secured LDAP).<br />
 you need to import the certificate of the userstore to <code><&ZeroWidthSpace;APIM_HOME>/repository/resources/security/client-truststore.jks</code>. For information on how to add certificates to the truststore and how keystores are configured and used in a system, see <br />
-<a href="../../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md">Using asymmetric encryption</a><br />
+<a href="../../../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md">Using asymmetric encryption</a><br />
 <br />
 If LDAP connection pooling is used, see enable connection pooling for LDAPS connections.</br>
 </p></td>
@@ -172,7 +172,7 @@ read_groups = true
 <td><p>This is a uniquely identifying attribute that represents the username of the user. Users can be authenticated using their email address, UID, etc. The value of the attribute is considered as the username.</p>
 <p>Default: uid<br />
 <br />
- Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../administer/product-security/logins-and-passwords/maintaining-logins-and-passwords.md#setting-up-an-e-mail-login">Using email address as the username</a></p></td>
+ Note: email address is considered as a special case in WSO2 products, if you want to set the email address as username, see <a href="../../../../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md#setup-an-e-mail-login">Using email address as the username</a></p></td>
 </tr>
 <tr class="odd">
 <td>UserIDAttribute</td>
@@ -496,7 +496,7 @@ Following are some key points to consider :
            -   You also need to [enable connection pooling](https://is.docs.wso2.com/en/5.10.0/setup/performance-tuning-recommendations/#pooling-ldaps-connections) for LDAPS connections at the time of starting your server, which will enhance server performance.
     
 
-   2.  Obtain a user who has permission to read all users/attributes and perform searches on the user store from your LDAP/Active Directory administrator. For example, if the privileged user is `admin` and the password is `admin`, update the following sections of the user store configuration as shown below. Note that this user does NOT have to be the system administrator that you define [here](#admin_ConfiguringaRead-OnlyLDAPUserStore-Updatingthesystemadministrator) .
+   2.  Obtain a user who has permission to read all users/attributes and perform searches on the user store from your LDAP/Active Directory administrator. For example, if the privileged user is `admin` and the password is `admin`, update the following sections of the user store configuration as shown below. Note that this user does NOT have to be the system administrator that you define [here](#step-2-updating-the-system-administrator) .
 
      ``` 
      ConnectionName="uid=admin,ou=system"

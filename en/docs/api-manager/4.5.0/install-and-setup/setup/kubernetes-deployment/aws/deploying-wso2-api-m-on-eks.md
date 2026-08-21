@@ -1,6 +1,6 @@
 ---
 title: "Deploying WSO2 API Manager on AWS EKS"
-description: "Step-by-step guide to deploying WSO2 API Manager on Amazon EKS using Helm charts, with Amazon RDS/Aurora for databases and an Application Load Balancer for ingress."
+description: "Deploy WSO2 API Manager on Amazon EKS using Helm charts, with Amazon RDS/Aurora for databases and an Application Load Balancer for ingress."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/aws/deploying-wso2-api-m-on-eks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/aws/deploying-wso2-api-m-on-eks.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - aws-eks
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -93,11 +93,11 @@ This deployment follows the standard WSO2 Kubernetes architecture, extended to u
 
 ### AWS Deployment Architecture
 
-<a href="../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png"><img src="../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png" alt="AWS deployment architecture overview" width="80%"></a>
+<a href="../../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png"><img src="../../../../../assets/img/setup-and-install/aws-eks-deployment-architecture.png" alt="AWS deployment architecture overview" width="80%"></a>
 
 ### WSO2 API Manager Deployment Architecture
 
-<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="WSO2 API Manager deployment architecture" width="80%"></a>
+<a href="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="WSO2 API Manager deployment architecture" width="80%"></a>
 
 ## Step 1: Create and Prepare the EKS Cluster
 

@@ -1,6 +1,6 @@
 ---
 title: "Configuring Transport Level Security"
-description: "Configure transport-level security for WSO2 API Manager: disable weak ciphers and TLS versions for Tomcat and PassThrough transports, change the server name in HTTP response headers, and disable unused HTTP, WebSocket, and WebHook transports."
+description: "Disable weak ciphers and TLS versions for Tomcat and PassThrough transports, and change the server name in HTTP response headers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/configuring-transport-level-security/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/security/configuring-transport-level-security.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - transport-security
   - tls
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

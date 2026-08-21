@@ -1,6 +1,6 @@
 ---
-title: "Deploy API Manager Pattern 2: All-in-One with Universal Gateway on Kubernetes"
-description: "Deploy WSO2 API Manager's simple scalable setup on Kubernetes using Helm, with a single All-in-One node and separate Universal Gateway replicas for improved scalability."
+title: "Deploy Pattern 2: All-in-One with Gateway on Kubernetes"
+description: "Deploy WSO2 API Manager's simple scalable setup on Kubernetes using Helm, with one All-in-One node and separate Universal Gateway replicas."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-2-all-in-one-gw/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-2-all-in-one-gw.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - helm-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -16,7 +16,7 @@ content_type: "how-to"
 
 This is the standard distributed deployment for API Manager. The default configuration consists of a single All-in-One and two Universal Gateways for better scalability and performance.
 
-<a href="../../../../assets/img/setup-and-install/deployment-no-tm.png"><img src="../../../../assets/img/setup-and-install/deployment-no-tm.png" alt="simple scalable api-m deployment" width="60%"></a>
+<a href="../../../../../assets/img/setup-and-install/deployment-no-tm.png"><img src="../../../../../assets/img/setup-and-install/deployment-no-tm.png" alt="simple scalable api-m deployment" width="60%"></a>
 
 !!! info
     For advanced details on the deployment pattern, please refer to the official [documentation](../../../../install-and-setup/setup/deployment-overview.md).
@@ -504,7 +504,7 @@ please refer to the [official WSO2 container guide](https://github.com/wso2/cont
 
 ### 2.1 Configure Multiple Gateways
 
-If you need to distribute the Gateway load, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/)
+If you need to distribute the Gateway load, you can configure multiple API Gateway environments in WSO2 API Manager to publish to a single Developer Portal. [See more...](../../../../manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways)
 ```yaml
     gateway:
         # -- APIM Gateway environments
@@ -538,7 +538,7 @@ If you need to distribute the Gateway load, you can configure multiple API Gatew
 
 ### 2.2 Configure User Store Properties
 
-You can configure user store properties as described in this [documentation](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/):
+You can configure user store properties as described in this [documentation](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores):
 
 ```yaml
     userStore:

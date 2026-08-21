@@ -1,6 +1,6 @@
 ---
 title: "Working with Databases"
-description: "Overview of the default H2 databases shipped with WSO2 API Manager and how to switch to a production-grade RDBMS such as MySQL, Oracle, PostgreSQL, MSSQL, or IBM DB2."
+description: "Learn about the default H2 databases shipped with WSO2 API Manager and how to switch to a production RDBMS such as MySQL or PostgreSQL."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/setting-up-databases/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - databases
   - rdbms
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Working with Databases
@@ -28,7 +28,7 @@ Explained below are the default databases which will be used within API Manager.
 
 The following image shows the default databases and the data that are stored in each database.
 
-<a href="../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
+<a href="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" ><img src="../../../../assets/img/setup-and-install/working-with-dbs-overview.png" alt="Data bases" title="Data bases" width="100%" /></a>
 
 See how these databases are used when you [run API-M in a distributed deployment](../../../install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md).
 

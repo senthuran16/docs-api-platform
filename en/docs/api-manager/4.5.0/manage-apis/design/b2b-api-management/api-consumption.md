@@ -1,6 +1,6 @@
 ---
 title: "B2B API Consumption"
-description: "Configure WSO2 API Manager for B2B API consumption: federate WSO2 Identity Server 7.1.0 for organization hierarchies, register organizations and organization-specific key managers, set API organization visibility, and invoke APIs from the developer portal as an organization user."
+description: "Configure API Manager for B2B API consumption: federate an organization-aware Identity Server and invoke APIs as an organization user."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/b2b-api-management/api-consumption/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/manage-apis/design/b2b-api-management/api-consumption.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - b2b
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

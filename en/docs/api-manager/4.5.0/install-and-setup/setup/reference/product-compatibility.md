@@ -8,7 +8,7 @@ tags:
   - compatibility
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -34,6 +34,7 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 | Rocky Linux          | 9.3  |
 | RHEL                 | 9    |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **WSO2 API-M** runtime has been tested with the following JDKs:
@@ -59,6 +60,7 @@ The **WSO2 API-M** runtime is tested with the following databases:
     CREATE DATABASE <APIM_DATABASE_NAME> character set latin1;
     ```
 
+<a name="wso2-product-compatibility-matrix"></a>
 #### WSO2 Product Compatibility Matrix
 
 The following is a list of other WSO2 products and components that have been tested with WSO2 API Manager 4.5.0.

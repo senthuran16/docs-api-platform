@@ -1,6 +1,6 @@
 ---
 title: "Generate Access Tokens Per Device"
-description: "Use device-prefixed OAuth2 scopes (device_) to obtain unique JWT access tokens per device for the same application, user, and scope combination instead of revoking the previous token."
+description: "Use device-prefixed OAuth2 scopes to obtain a unique JWT access token per device for the same application, user, and scope."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/generate-keys/obtain-access-token/access-tokens-per-device/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/consume/manage-application/generate-keys/obtain-access-token/access-tokens-per-device.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

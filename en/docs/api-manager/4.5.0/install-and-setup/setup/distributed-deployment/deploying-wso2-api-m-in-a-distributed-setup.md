@@ -1,6 +1,6 @@
 ---
 title: "Configuring a Distributed API-M Deployment"
-description: "Deploy WSO2 API Manager as a distributed setup with separate nodes for the API Control Plane, Universal Gateway, and Traffic Manager, including guidance for high availability."
+description: "Deploy WSO2 API Manager as a distributed setup with separate nodes for the API Control Plane, Universal Gateway, and Traffic Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.5.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-15
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -56,6 +56,6 @@ Given below are the API-M nodes you can have in a distributed deployment by defa
     </tr>
 </table>
 
-<a href="../../../assets/img/setup-and-install/deployment-tm.png"><img src="../../../assets/img/setup-and-install/deployment-tm.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/deployment-tm.png"><img src="../../../../assets/img/setup-and-install/deployment-tm.png" width="100%"></a>
 
 --8<-- "api-manager/4.5.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md"
