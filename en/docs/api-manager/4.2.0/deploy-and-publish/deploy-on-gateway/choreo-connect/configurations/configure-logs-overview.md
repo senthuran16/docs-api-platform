@@ -1,3 +1,18 @@
+---
+title: "Overview"
+description: "Locate the log_config.toml and log4j2.properties files used to configure Choreo Connect logging across deployment types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overview
 
 Logging in Choreo Connect is really important when debugging issues in a short period of time and looking into the underlying details of how each component works.  Choreo Connect provides facilities for getting the logs in various formats (JSON, Plain text), various output methods and various logging levels.
@@ -45,21 +60,21 @@ In addition to these, the adapter and enforcer components have been defined with
 
 Here is a summary of topics that will be covered under this log configurations section.
 
-- [Adapter Log Configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter/)
-    - [Adapter root level configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter#adapter-root-level-configurations)
-    - [Adapter package level configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter#adapter-package-level-configurations)
+- [Adapter Log Configurations](configure-logs-adapter)
+    - [Adapter root level configurations](configure-logs-adapter#adapter-root-level-configurations)
+    - [Adapter package level configurations](configure-logs-adapter#adapter-package-level-configurations)
 
-- [Enforcer Log Configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer)
-    - [Configuring Log4j2 Properties](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#configuring-log4j2-properties)
-        - [Setting the Log Level](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#setting-the-log-level)
-        - [Setting the Threshold](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#setting-the-threshold)
-        - [Configuring Log4j2 Appenders](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#configuring-log4j2-appenders)
-        - [Configuring Log4j2 Loggers](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#configuring-log4j2-loggers)
-    - [Enforcer Access Logs](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#enforcer-access-logs)
-    - [Setting the log format](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#setting-the-log-format)
-        - [Plain Text format](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#plain-text-format)
-        - [JSON format](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-enforcer/#json-format)
+- [Enforcer Log Configurations](configure-logs-enforcer)
+    - [Configuring Log4j2 Properties](configure-logs-enforcer#configuring-log4j2-properties)
+        - [Setting the Log Level](configure-logs-enforcer#setting-the-log-level)
+        - [Setting the Threshold](configure-logs-enforcer#setting-the-threshold)
+        - [Configuring Log4j2 Appenders](configure-logs-enforcer#configuring-log4j2-appenders)
+        - [Configuring Log4j2 Loggers](configure-logs-enforcer#configuring-log4j2-loggers)
+    - [Enforcer Access Logs](configure-logs-enforcer#enforcer-access-logs)
+    - [Setting the log format](configure-logs-enforcer#setting-the-log-format)
+        - [Plain Text format](configure-logs-enforcer#plain-text-format)
+        - [JSON format](configure-logs-enforcer#json-format)
 
-- [Router Log Configurations](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/#router-log-configurations)
-    - [Router Access Logging](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/#router-access-logging)
-    - [Router Debug Logs](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/#router-debug-logs)
+- [Router Log Configurations](configure-logs-router#router-log-configurations)
+    - [Router Access Logging](configure-logs-router#router-access-logging)
+    - [Router Debug Logs](configure-logs-router#router-debug-logs)

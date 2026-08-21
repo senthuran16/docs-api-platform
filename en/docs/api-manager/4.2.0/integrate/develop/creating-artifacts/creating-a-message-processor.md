@@ -1,3 +1,18 @@
+---
+title: "Creating a message processor"
+description: "Provides steps to create a message processor artifact for sampling or forwarding messages in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-a-message-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-a-message-processor.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Message Processor
 
 Follow the instructions given below to create a new [Message Processor](../../../reference/synapse-properties/about-message-stores-processors) artifact in WSO2 Integration Studio.
@@ -6,7 +21,7 @@ Follow the instructions given below to create a new [Message Processor](../../..
 
 ### Creating the Message Processor artifact
 
-1.  Right-click the [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) and go to **New → Message Processor** to open the **New Message Processor Artifact** dialog box.
+1.  Right-click the [ESB Config project](../create-integration-project#sub-projects) and go to **New → Message Processor** to open the **New Message Processor Artifact** dialog box.
 
 	<img src="../../../../assets/img/integrate/create_artifacts/new_message_processor/select-message-processor.jpg">
 

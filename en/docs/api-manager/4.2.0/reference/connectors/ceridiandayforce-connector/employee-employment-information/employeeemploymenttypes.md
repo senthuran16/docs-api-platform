@@ -1,3 +1,18 @@
+---
+title: "Working with employee employment types"
+description: "Reference of the operation used to retrieve an employee's employment type with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeemploymenttypes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeemploymenttypes.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Employment Types
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve employment type of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-employment-types"></a>
 #### Retrieving Employee Employment Types
 We can use GET Employee Employment Types operation with required parameters to get the employment type of an employee.
 

@@ -1,3 +1,18 @@
+---
+title: "Amazon lambda connector example"
+description: "Example of using the Amazon Lambda connector's createFunction operation to create an AWS Lambda function from an API call."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Amazon Lambda Connector Example 
 
 Given below is a sample scenario that demonstrates how to create an Amazon Lambda function in the AWS Lambda Service using the WSO2 Amazon Lambda Connector.
@@ -27,7 +42,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right click on the created Integration Project and select, -> **New** -> **Rest API** to create the REST API.
 
@@ -101,7 +116,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     ```
 3. Now we can export the imported connector and the API into a single CAR application. The CAR application is what we are going to deploy during server runtime.
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Create Amazon Lambda Deployment Package (Lambda function) 
 In this scenario we created sample AWS Deployment Package (Lambda function) in Python.
@@ -140,7 +155,7 @@ Please use command line terminal or shell to run following commands. Commands ar
 
 ## Create Execution Role
 
-You need to create an Execution Role by referring to the [Setting up the Amazon Lambda Environment](../../../reference/connectors/amazonlambda-connector/setting-up-amazonlambda/) documentation.  
+You need to create an Execution Role by referring to the [Setting up the Amazon Lambda Environment](setting-up-amazonlambda) documentation.  
 
 ## Get the project
 
@@ -157,7 +172,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -239,4 +254,4 @@ Follow these steps to deploy the exported CApp in the integration runtime.
  
 ## What's next
 
-* To customize this example for your own scenario, see [Amazon Lambda Connector Configuration](../../../reference/connectors/amazonlambda-connector/amazonlambda-connector-config/) documentation.
+* To customize this example for your own scenario, see [Amazon Lambda Connector Configuration](amazonlambda-connector-config) documentation.

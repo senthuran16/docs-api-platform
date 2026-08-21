@@ -1,3 +1,18 @@
+---
+title: "Setting up the PushTopic in salesforce"
+description: "Create and subscribe to a Salesforce PushTopic to connect the WSO2 Salesforce inbound endpoint to Salesforce."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-inbound-endpoint-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-inbound-endpoint-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the PushTopic in Salesforce
 
 This documentation explains how to set up the Salesforce environment to connect with WSO2 Salesforce Inbound Endpoint. Please follow up the steps given below

@@ -1,3 +1,18 @@
+---
+title: "Generating and viewing AsyncAPI definitions"
+description: "Generate, edit, and view AsyncAPI definitions in the Async API view of the Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/working-with-the-async-api-view/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/working-with-the-async-api-view.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - working-with-the-async-api-view
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Generating and Viewing AsyncAPI Definitions
 
 This section covers how to generate, edit and view AsyncAPI definitions in the **Async API** view of Streaming Integrator Tooling.

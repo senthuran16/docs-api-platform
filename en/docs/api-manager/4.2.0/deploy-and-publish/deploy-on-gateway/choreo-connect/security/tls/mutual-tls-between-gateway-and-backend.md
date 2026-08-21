@@ -1,3 +1,18 @@
+---
+title: "Mutual TLS between Choreo connect and backend"
+description: "Export certificates and configure Mutual TLS so the Choreo Connect Router and backend servers verify each other."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/mutual-tls-between-gateway-and-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/mutual-tls-between-gateway-and-backend.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mutual TLS Between Choreo Connect and Backend
 
 In Mutual TLS, in addition to the client verifying the server, the server also verifies the client. By having Mutual TLS between Choreo Connect and the backend, both of the following security measures are applied.
@@ -26,11 +41,11 @@ In Mutual TLS, in addition to the client verifying the server, the server also v
         openssl req -x509 -new -key backend.key -out backend.pem -subj "/CN=example.com" -reqexts SAN -extensions SAN -config <(cat /etc/ssl/openssl.cnf <(printf "[SAN]\nsubjectAltName=DNS:example.com,DNS:www.example.com")) 
         ```
 
-    3. Add the certificate in `backend.pem` to the router as described in [Adding Certificates to Specific Clusters](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/transport-security/#adding-certificates-to-specific-clusters).
+    3. Add the certificate in `backend.pem` to the router as described in [Adding Certificates to Specific Clusters](backend-certificates#adding-certificates-to-specific-clusters).
 
-    Important: The ciphers configured [here](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/transport-security/#configuration) must match the ciphers supported by your backend.
+    Important: The ciphers configured [here](backend-certificates#configuration) must match the ciphers supported by your backend.
 
-For Mutual TLS, in addition to the [configurations done for TLS](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/transport-security/#adding-certificates-to-specific-clusters), the certificate of the router must also exist in the backend truststore.
+For Mutual TLS, in addition to the [configurations done for TLS](backend-certificates#adding-certificates-to-specific-clusters), the certificate of the router must also exist in the backend truststore.
 ### Add the Router Certificate to the Backend Truststore
 
 - If the backend truststore is in `.jks` format, use:
@@ -45,5 +60,5 @@ The certificate for router keystore can be found in `<distribution>/docker-compo
 
 ## Test Mutual TLS between Choreo Connect and Backend
 
-1. [Create an API](../../../../../design/create-api/create-rest-api/create-a-rest-api/)
-2. [Test the API](../../../../../design/create-api/create-rest-api/test-a-rest-api/)
+1. [Create an API](../../../../../design/create-api/create-rest-api/create-a-rest-api)
+2. [Test the API](../../../../../design/create-api/create-rest-api/test-a-rest-api)

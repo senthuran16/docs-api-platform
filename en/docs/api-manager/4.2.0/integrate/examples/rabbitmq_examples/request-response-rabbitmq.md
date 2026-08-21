@@ -1,3 +1,18 @@
+---
+title: "Synchronous messaging with request-reply pattern"
+description: "Implement a dual-channel request-reply pattern between two proxy services using a RabbitMQ broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/request-response-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/request-response-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Synchronous messaging with request-reply pattern
 
 This sample demonstrates how you can implement the <b>request-reply</b> messaging scenario (dual-channel scenario) using the RabbitMQ broker and WSO2 Micro Integrator. 
@@ -74,12 +89,12 @@ See the instructions on how to [build and run](#build-and-run) this example.
 
 ## Build and run
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
 4. Enable the RabbitMQ sender and receiver in the Micro-Integrator from the deployment.toml. Refer the 
  [configuring RabbitMQ documentation](../../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq) for more information.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 6. Make sure you have a RabbitMQ broker instance running.
 7. Send a message to the `Order Request Proxy Service` with the following payload. 
 

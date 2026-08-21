@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Reference the throughput and response time results measured for Choreo Connect under varying concurrent user loads and payload sizes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/performance-test-results-overview-cc/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/performance-test-results-overview-cc.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Test Results
 
 The performance of Choreo Connect was measured using an API that invokes a simple "Netty Echo Service". The task covered by the Netty service is to echo back any request posted to the service. The API used for the test cases was a secured API, which directly invokes the backend through Choreo Connect using JWT tokens.

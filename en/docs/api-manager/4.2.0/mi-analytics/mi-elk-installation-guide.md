@@ -1,3 +1,17 @@
+---
+title: "Elastic Stack-based analytics for Micro Integrator"
+description: "Install and configure the Elastic Stack to publish and view operational analytics for the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/mi-elk-installation-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/mi-analytics/mi-elk-installation-guide.md
+tags:
+  - api-manager
+  - mi-analytics
+  - mi-elk-installation-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Elastic Stack-Based Operational Analytics for Micro Integrator
 
 As an alternative for WSO2 EI Analytics, from version 4.2.0 onwards, Micro Integrator now supports publishing operational analytics for Elastic Stack. As a part of the feature, WSO2 will provide some dashboards that include operational data from the following entities.

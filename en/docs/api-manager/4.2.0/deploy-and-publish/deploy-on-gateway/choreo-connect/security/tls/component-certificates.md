@@ -1,3 +1,18 @@
+---
+title: "Component certificates"
+description: "Add a certificate to a Choreo Connect component's truststore for TLS connections and component-specific security tasks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/component-certificates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/component-certificates.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Component Certificates
 
 Choreo Connect components use SSL certificates (public keys and private keys) for two main purposes.
@@ -20,7 +35,7 @@ Certificates are also used for component specific purposes.
 
 - The Enforcer uses its truststore for signature validation of JWTs and to connect to external Key Manager endpoints. Therefore, in this case the public certificate of the external Key Manager (Identity Provider) should be added to the Enforcer truststore.
 - Adapter uses its certificates to connect to external entities such as the Control Plane, and Service Discovery entities.
-- Although the router also has its truststore and keystore in the above mentioned locations, there is a special case when the above locations will not be referred. This is when connecting to backend services exposed by the APIs. For more information on how to add certificates of backend services, see [Backend Certificates](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/backend-certificates/#adding-certificates-to-specific-clusters).
+- Although the router also has its truststore and keystore in the above mentioned locations, there is a special case when the above locations will not be referred. This is when connecting to backend services exposed by the APIs. For more information on how to add certificates of backend services, see [Backend Certificates](backend-certificates#adding-certificates-to-specific-clusters).
 
 As the certificates are used for different purposes, the certificate location referred for each purpose can be changed by editing the `config.toml` and the relevant Docker container volume mounts.
 

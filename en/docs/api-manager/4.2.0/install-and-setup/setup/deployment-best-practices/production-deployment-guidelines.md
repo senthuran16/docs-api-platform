@@ -1,3 +1,18 @@
+---
+title: "Production deployment checklist"
+description: "Follow a checklist of best practices for preparing a production WSO2 API Manager environment, covering security, hostnames, and performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Production Deployment Checklist
 
 Given below is a checklist that will guide you to set up your production environment for WSO2 API-M.

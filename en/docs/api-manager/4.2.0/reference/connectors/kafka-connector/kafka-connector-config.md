@@ -1,3 +1,18 @@
+---
+title: "Kafka connector reference"
+description: "Configure Kafka Connector operations for producing messages to Kafka brokers with or without security."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/kafka-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/kafka-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Kafka Connector Reference
 
 The following operations allow you to work with the Kafka Connector. Click an operation name to see parameter details and samples on how to use it.
@@ -570,7 +585,7 @@ To use the Kafka connector, add the `<kafkaTransport.init>` element in your conf
 ### Error codes related to Kafka Connector
 
 !!! note
-    With Kafka connector v3.1.2 and above, when an error occurs, one of the following errors will get set to the message context. For details on how to access these error properties, refer [Generic Properties](../../../reference/mediators/property-reference/generic-properties/#error_code).
+    With Kafka connector v3.1.2 and above, when an error occurs, one of the following errors will get set to the message context. For details on how to access these error properties, refer [Generic Properties](../../mediators/property-reference/generic-properties#error_code).
 
 
 | **Error Code** |   **Detail**                                             |

@@ -1,3 +1,18 @@
+---
+title: "Error handling"
+description: "Lookup table of Router error codes, their corresponding Envoy response flags, and descriptions for troubleshooting Choreo Connect errors."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/error-handling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/error-handling.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Error Handling
 
 ### Error Codes

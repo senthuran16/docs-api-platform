@@ -1,3 +1,18 @@
+---
+title: "Configuring a Read-Write LDAP user store"
+description: "Configure a read-write LDAP user store as the primary user store in WSO2 API Manager, including the minimum required properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Read-Write LDAP User Store
 
 It is assumed that you have already setup your read-write LDAP user store. Follow the given steps to configure it as the primary user store in WSO2 API Manager:
@@ -489,7 +504,7 @@ Following are some key points to consider  :
 
 ### Step 2: Updating the system administrator
 
-The **admin** user is the super tenant that will be able to manage all other users, roles, and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the userstore when you start the system for the first time. Since the LDAP userstore can be written to, you have the option of creating a new admin user in the userstore when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the LDAP. For information about the system administrator user, see [Configuring the System Administrator](../../../../reference/config-catalog/#super-admin-configurations) .
+The **admin** user is the super tenant that will be able to manage all other users, roles, and permissions in the system by using the management console of the product. Therefore, the user that should have admin permissions is required to be stored in the userstore when you start the system for the first time. Since the LDAP userstore can be written to, you have the option of creating a new admin user in the userstore when you start the system for the first time. Alternatively, you can also use a user ID that already exists in the LDAP. For information about the system administrator user, see [Configuring the System Administrator](../../../../reference/config-catalog#super-admin-configurations) .
 
 These two alternative configurations can be done as explained below.
 

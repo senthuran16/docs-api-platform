@@ -1,3 +1,18 @@
+---
+title: "Consuming and producing JMS messages"
+description: "Configure the Micro Integrator as a JMS-to-JMS proxy that consumes messages from one queue and sends them to another."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/consume-produce-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/jms_examples/consume-produce-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Consuming and Producing JMS Messages
 
 This section describes how to configure WSO2 Micro Integrator to work as a JMS-to-JMS proxy service. In this example, the Micro Integrator listens to a JMS queue, consumes messages, and then sends those messages to another JMS queue.
@@ -75,7 +90,7 @@ The Synapse artifacts used are explained below.
 </table>
 
 !!! Info
-    To refer details on JMS transport parameters, you can follow [JMS transport parameters](../../../reference/synapse-properties/transport-parameters/jms-transport-parameters/) used in the Micro Integrator.
+    To refer details on JMS transport parameters, you can follow [JMS transport parameters](../../../reference/synapse-properties/transport-parameters/jms-transport-parameters) used in the Micro Integrator.
 
 !!! Note
     Be sure to replace the ' `& ` ' character in the endpoint URL with '`&amp;`' to avoid the following exception:
@@ -87,14 +102,14 @@ The Synapse artifacts used are explained below.
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the broker:
 
-1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-jms-transport) with your Micro Integrator instance. Let's use Active MQ for this example.
+1.  [Configure a broker](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-jms-transport) with your Micro Integrator instance. Let's use Active MQ for this example.
 2.  Start the broker.
 3.  Start the Micro Integrator (after starting the broker).
 

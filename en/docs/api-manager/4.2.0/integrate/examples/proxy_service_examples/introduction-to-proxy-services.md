@@ -1,3 +1,18 @@
+---
+title: "Using a simple proxy service"
+description: "Create a simple proxy service that forwards requests to a backend service hosted at a given endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/proxy_service_examples/introduction-to-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/proxy_service_examples/introduction-to-proxy-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using a Simple Proxy Service
 This example demonstrates how to use a simple proxy service to expose a back-end service. In this example, a request received by the proxy service is forwarded to the sample service hosted in the backend.
 
@@ -25,15 +40,15 @@ An `inSequence` or `endpoint` or both of these would decide how the message woul
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
 
     !!! Tip
         Download the wsdl file (`sample_proxy_1.wsdl`) from [sample_proxy_1.wsdl](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-protocol-switching/sample_proxy_1.wsdl).
         The wsdl uri in the proxy service needs to be updated with the path to this `sample_proxy_1.wsdl` file.
 
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 When the Micro Integrator starts, you could go to the following URL and view the WSDL generated for the proxy service defined in the configuration. 
 

@@ -1,3 +1,18 @@
+---
+title: "Application keys"
+description: "Generate or renew production and sandbox application access tokens in the Developer Portal, including enabling PKCE and using Okta as key manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/generate-keys/generate-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/generate-keys/generate-api-keys.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - generate-keys
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Application Keys
 
 An API Access Token/Key is a string that is passed as an HTTP header of an API request. WSO2 API-M provides OAuth2.0 bearer token-based authentication for API access, and the API key has to be submitted alongside the API request in order to authenticate the access.
@@ -37,7 +52,7 @@ Follow the instructions below to generate/renew application keys:
      
 
 !!! tip
-    When you generate Access Tokens for APIs that are protected by scopes, you can select the respective [scopes](../../../design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/) and, thereafter, generate the token for it.
+    When you generate Access Tokens for APIs that are protected by scopes, you can select the respective [scopes](../../../design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes) and, thereafter, generate the token for it.
 
 ## Generating application keys with PKCE enabled
 
@@ -64,7 +79,7 @@ The following are the associated options when enabling PKCE.
 ## Generating application keys using Okta
 
 !!! note
-     Before you begin, make sure to follow [steps 1 and 2 in Configure Okta as a Key Manager](../../../administer/key-managers/configure-okta-connector/) guide.
+     Before you begin, make sure to follow [steps 1 and 2 in Configure Okta as a Key Manager](../../../administer/key-managers/configure-okta-connector) guide.
 
 Follow the instructions below to generate keys using Okta as the Key Manager:
 
@@ -89,7 +104,7 @@ Follow the instructions below to generate keys using Okta as the Key Manager:
 ## Generating application keys using Keycloak
 
 !!! note
-     Before you begin, make sure to follow [steps 1 and 2 in Configure Keycloak as a Key Manager](../../../administer/key-managers/configure-keycloak-connector/) guide.
+     Before you begin, make sure to follow [steps 1 and 2 in Configure Keycloak as a Key Manager](../../../administer/key-managers/configure-keycloak-connector) guide.
 
 Follow the instructions below to generate keys using the Keycloak as the Key Manager:
 

@@ -1,3 +1,18 @@
+---
+title: "Using the MQTT transport"
+description: "Configure a proxy service that publishes and consumes messages on MQTT topics using the MQTT transport."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/transport_examples/pub-sub-using-mqtt/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/transport_examples/pub-sub-using-mqtt.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - transport_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the MQTT transport
 This sample demonstrates how to run a Pub-Sub use case using MQTT as the broker.  the MQTT listener in the Micro Integrator consumes messages from a MQTT topic, and the MQTT sender publishes messages to a MQTT topic.
 

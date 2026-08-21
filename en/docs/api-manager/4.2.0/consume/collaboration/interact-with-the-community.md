@@ -1,8 +1,23 @@
+---
+title: "Interact with the community"
+description: "Rate an API, comment and reply on API discussions, and share API links on social media using Developer Portal community features."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/collaboration/interact-with-the-community/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/collaboration/interact-with-the-community.md
+tags:
+  - api-manager
+  - consume
+  - collaboration
+  - interact-with-the-community
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Interact with the Community
 
 The Developer Portal provides community features that help API Consumers collaborate and communicate with the API Publisher and build up constructive conversations. You can actively use the following community features to build and nurture an active community of users for the APIs available in the Developer Portal.
 
-- [Rate an API](#rate-an-API)
+- [Rate an API](#rate-an-api)
 - [Comment and reply to an API](#comment-and-reply-to-an-api)
 - [Share API link on social media](#share-api-link-on-social-media)
 - [Access GitHub and Slack URLs](#access-github-and-slack-urls)
@@ -68,7 +83,7 @@ Let's see how to add a comment and how to reply to a comment:
 ## Share API link on social media
 
 !!! note
-    WSO2 API Manager generates sharable links for Facebook, Twitter, and Reddit out-of-the-box. However, the API sharing options for Facebook, Twitter, and Reddit will appear in the Developer Portal only if the administrator has [enabled this sharing feature.](../../design/api-collaborations/enable-social-media-interaction/#enable-sharing-api-links-on-social-media)
+    WSO2 API Manager generates sharable links for Facebook, Twitter, and Reddit out-of-the-box. However, the API sharing options for Facebook, Twitter, and Reddit will appear in the Developer Portal only if the administrator has [enabled this sharing feature.](../../design/api-collaborations/enable-social-media-interaction#enable-sharing-api-link-on-social-media)
 
 1.  Sign in to the Developer Portal.
 
@@ -91,7 +106,7 @@ Let's see how to add a comment and how to reply to a comment:
 ## Access GitHub and Slack URLs
 
 !!! note
-    The GitHub and Slack URLs will appear in the Developer Portal only if the [API Publisher has defined these URLs for the API.](../../design/api-collaborations/enable-social-media-interaction/#add-github-and-slack-channel-urls-to-an-api)
+    The GitHub and Slack URLs will appear in the Developer Portal only if the [API Publisher has defined these URLs for the API.](../../design/api-collaborations/enable-social-media-interaction#add-github-and-slack-channel-urls-to-an-api)
 
 1. Sign in to the Developer Portal.
 

@@ -1,3 +1,18 @@
+---
+title: "Integrating with google analytics"
+description: "Configure WSO2 API Manager to feed runtime API invocation statistics into a Google Analytics account."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager-analytics/integrating-with-google-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager-analytics/integrating-with-google-analytics.md
+tags:
+  - api-manager
+  - observe
+  - api-manager-analytics
+  - integrating-with-google-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Integrating with Google Analytics
 
 You can configure the API Manager to track runtime statistics of API invocations through [Google Analytics](http://www.google.com/analytics). Google Analytics is a service that allows you to track visits to a website and generate detailed statistics on them.
@@ -27,7 +42,7 @@ This guide explains how to setup API Manager in order to feed runtime statistics
     
 6.  API Manager is now integrated with Google Analytics. A user who has subscribed to a published API through the Developer Portal should see an icon as `Real-Time` after logging into their Google Analytics account. Click on this icon and select **Overview**.
 
-7.  Invoke the above API using the embedded [WSO2 REST Client](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/)(or any third-part rest client such as cURL).
+7.  Invoke the above API using the embedded [WSO2 REST Client](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console)(or any third-part rest client such as cURL).
 
     #### Real-time statistics
 

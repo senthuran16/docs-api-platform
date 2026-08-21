@@ -1,3 +1,18 @@
+---
+title: "PayloadFactory mediator"
+description: "Reference for the PayloadFactory mediator syntax and parameters used to transform or replace the contents of a message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/payloadfactory-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/payloadfactory-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - payloadfactory-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # PayloadFactory Mediator
 
 The **PayloadFactory Mediator** transforms or replaces the contents of a
@@ -16,7 +31,7 @@ The values passed by the arguments are evaluated against the existing
 message.
 
 !!! Info
-    The PayloadFactory mediator is a [content aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The PayloadFactory mediator is a [content aware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 
@@ -1132,6 +1147,7 @@ See the instructions on how to [build and run](#build-and-run) this example.
     </UniversalTransaction>
     ```
 
+<a name="build-and-run"></a>
 #### Build and run
 
 1. [Set up WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio).

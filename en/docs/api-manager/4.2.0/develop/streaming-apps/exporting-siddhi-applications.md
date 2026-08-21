@@ -1,3 +1,18 @@
+---
+title: "Exporting siddhi applications"
+description: "Export Siddhi files as Docker or Kubernetes artifacts using the Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/exporting-siddhi-applications/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/exporting-siddhi-applications.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - exporting-siddhi-applications
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exporting Siddhi Applications
 
 The Streaming Integrator Tooling allows you to export one or more Siddhi files as a Docker or Kubernetes artifact in order to run those Siddhi applications within a Docker or Kubernetes environment.
@@ -18,7 +33,7 @@ To export one or more Siddhi applications as a Docker image, follow the procedur
 
     ![Welcome Page](../../assets/img/streaming/creating-siddhi-applications/welcome-page.png)
 
-2. Create the required Siddhi files. The rest of the documentation assumes that you have one or more Siddhi applications to be exported as a Docker image. For more information, see [Creating a Siddhi Application](../../develop/streaming-apps/creating-a-siddhi-application).
+2. Create the required Siddhi files. The rest of the documentation assumes that you have one or more Siddhi applications to be exported as a Docker image. For more information, see [Creating a Siddhi Application](creating-a-siddhi-application).
 
 3. Click **Export** menu option and then click **For Docker**.
 
@@ -90,7 +105,7 @@ To export one or more Siddhi applications for Kubernetes, follow the procedure b
 
     ![Welcome Page](../../assets/img/streaming/creating-siddhi-applications/welcome-page.png)
 
-2. Create the required Siddhi files. The rest of the documentation assumes that you have one or more Siddhi applications to be exported as a Kubernetes artifact. For more information, see [Creating a Siddhi Application](../../develop/streaming-apps/creating-a-siddhi-application).
+2. Create the required Siddhi files. The rest of the documentation assumes that you have one or more Siddhi applications to be exported as a Kubernetes artifact. For more information, see [Creating a Siddhi Application](creating-a-siddhi-application).
 
 3. Click **Export** menu option and then click **For Kubernetes**.
 

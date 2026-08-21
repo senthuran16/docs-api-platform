@@ -1,3 +1,17 @@
+---
+title: "Streaming key concepts"
+description: "Reference of key streaming terms, including streaming data, stream processing, streaming data integration, and streaming integration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/streaming-key-concepts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/streaming-key-concepts.md
+tags:
+  - api-manager
+  - streaming
+  - streaming-key-concepts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 ## Streaming Key Concepts
 
 | **Concept**                       | **Description**                                                                                                                                                                       |

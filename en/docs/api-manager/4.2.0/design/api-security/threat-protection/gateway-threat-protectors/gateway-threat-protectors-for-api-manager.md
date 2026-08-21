@@ -1,10 +1,25 @@
+---
+title: "Gateway threat protectors"
+description: "Overview of the regular expression, JSON, and XML threat protectors available for the Gateway, and how to combine them with a custom mediation sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/threat-protection/gateway-threat-protectors/gateway-threat-protectors-for-api-manager.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - threat-protection
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Gateway Threat Protectors
 
 WSO2 API Manager has three types of threat protectors for the Gateway.
 
--   [Regular Expression Threat Protection for API Gateway](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway/)
--   [JSON Threat Protection for API Gateway](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/json-threat-protection-for-api-gateway/)
--   [XML Threat Protection for API Gateway](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/xml-threat-protection-for-api-gateway/)
+-   [Regular Expression Threat Protection for API Gateway](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/regular-expression-threat-protection-for-api-gateway)
+-   [JSON Threat Protection for API Gateway](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/json-threat-protection-for-api-gateway)
+-   [XML Threat Protection for API Gateway](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/threat-protectors/xml-threat-protection-for-api-gateway)
 
 ### Combining threat protectors
 
@@ -42,4 +57,4 @@ You can use a combination of the threat protectors given above to validate the m
 ### Add a custom sequence
 
 You can add custom sequences depending on the threats that you need to address. You can create a policy using the custom sequence and attach it to the API. 
-Please refer [API Policies](../../../../design/api-policies/overview/) for more information on how to attach a policy to an API
+Please refer [API Policies](../../../api-policies/overview) for more information on how to attach a policy to an API

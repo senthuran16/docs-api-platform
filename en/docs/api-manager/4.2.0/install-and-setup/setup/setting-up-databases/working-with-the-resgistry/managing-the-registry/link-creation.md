@@ -1,3 +1,18 @@
+---
+title: "Link creation"
+description: "Create symbolic or remote links to resources and collections in the WSO2 API Manager registry."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Link Creation
 
 Follow the instructions below to create a link on a resource/collection.

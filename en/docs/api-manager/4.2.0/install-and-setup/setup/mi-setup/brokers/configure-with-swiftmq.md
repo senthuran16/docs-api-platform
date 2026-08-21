@@ -1,3 +1,18 @@
+---
+title: "Connecting to SwiftMQ"
+description: "Configure WSO2 Micro Integrator's JMS transport to send and receive messages through a SwiftMQ broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-swiftmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/brokers/configure-with-swiftmq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to SwiftMQ
 
 This section describes how to configure WSO2 Micro Integrator to connect with SwiftMQ.
@@ -45,6 +60,6 @@ This section describes how to configure WSO2 Micro Integrator to connect with Sw
     parameter.jms_spec_version = "1.0"
     ```
     !!! Info
-        For details on the JMS configuration parameters used in the code segments above, see [JMS connection factory parameters](../../../../reference/config-catalog-mi/#jms-transport-listener-non-blocking-mode).
+        For details on the JMS configuration parameters used in the code segments above, see [JMS connection factory parameters](../../../../reference/config-catalog-mi#jms-transport-listener-non-blocking-mode).
 
 You have now configured an instance of SwiftMQ and WSO2 Micro Integrator. Refer [JMS Consumer](../../../../integrate/examples/jms_examples/consuming-jms) and [JMS Producer](../../../../integrate/examples/jms_examples/producing-jms) section for implementation details of JMS consumer and producer.

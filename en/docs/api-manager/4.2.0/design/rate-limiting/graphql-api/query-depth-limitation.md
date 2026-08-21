@@ -1,3 +1,18 @@
+---
+title: "Query depth limitation"
+description: "Restrict nested GraphQL queries by enforcing a maximum query depth to prevent expensive, cyclic query attacks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/rate-limiting/graphql-api/query-depth-limitation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/rate-limiting/graphql-api/query-depth-limitation.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - graphql-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 Since GraphQL schemas often have circular relationships, the depth can grow without bounds. 
 An example of such a query is as follows:
 
@@ -59,7 +74,7 @@ subscription policies.
 
 ### Design a GraphQL API
 
-To design a GraphQL API, see [Create a GraphQL API](../../../design/create-api/create-a-graphql-api).
+To design a GraphQL API, see [Create a GraphQL API](../../create-api/create-a-graphql-api).
 
 <html>
 <div class="admonition note">

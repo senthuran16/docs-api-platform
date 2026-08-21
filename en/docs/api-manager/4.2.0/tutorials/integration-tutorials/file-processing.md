@@ -1,3 +1,18 @@
+---
+title: "File processing"
+description: "Pick a file from a folder, insert its records into a database, email its content, log it, and move it to another directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/file-processing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/file-processing.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # File processing
 
 ## What you'll build
@@ -217,6 +232,7 @@ connect to the database to insert data.
 
 2.  Edit the sequence and define the e-mail address to which the notification should be sent.
 
+<a name="create-the-smooks-configuration"></a>
 #### Create the Smooks configuration
 
 Create a smooks configuration file (for example `smooks-config.xml`) as shown below and save it to a location on your computer. 
@@ -256,7 +272,7 @@ Package the artifacts in your composite application module to be able to deploy 
 
 2.  Add the following server configurations (to the `deployment.toml` file) using the upper section in the dialog box.
 
-    -   The **VFS** transport is enabled in the Micro Integrator by default. Enable the [MailTo transport](../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-mailto-transport) for sending the email message as shown below and update the values:
+    -   The **VFS** transport is enabled in the Micro Integrator by default. Enable the [MailTo transport](../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-mailto-transport) for sending the email message as shown below and update the values:
 
         ```toml
         [[transport.mail.sender]]

@@ -1,3 +1,18 @@
+---
+title: "Migrating APIs to different environments"
+description: "Use apictl to export APIs individually or tenant-wide as ZIP archives and import them into another API Manager environment with parameter overrides."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-apis-api-products/migrating-apis-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/managing-apis-api-products/migrating-apis-to-different-environments.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Migrating APIs to Different Environments
 
 **WSO2 API Controller(apictl)** allows you to maintain multiple environments running on the same WSO2 API Manager (WSO2 API-M) version. This allows you to import and export APIs between your environments. For example, if you have an API running in the development environment, you can export it and import it to the production environment. Thereby, APIs do not have to be created from scratch in different environments.
@@ -5,17 +20,17 @@
 !!! info
     **Before you begin**
 
-    -   Make sure apictl is initialized and running, if not follow the steps in [Download and Initialize the apictl](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl).
+    -   Make sure apictl is initialized and running, if not follow the steps in [Download and Initialize the apictl](../getting-started-with-wso2-api-controller#download-and-initialize-the-apictl).
 
     -  Add an environment before you start working with the following apictl commands, because all APIs need to be imported or exported to/from a specific environment.      
-    For more information, visit [Add an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#add-an-environment).
+    For more information, visit [Add an Environment](../getting-started-with-wso2-api-controller#add-an-environment).
     
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export APIs. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../../../../install-and-setup/setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations/#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export APIs. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations#creating-custom-users-to-perform-apictl-operations).
 
 ### Export an API
 
-1.  Log in to the WSO2 API-M in the exporting environment by following steps in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment).  
+1.  Log in to the WSO2 API-M in the exporting environment by following steps in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).  
     
     !!! tip
         If you are already logged-in and your logged-in credentials and keys or the access-token are (is) already available in the `<USER_HOME>/.wso2apictl/keys.json` file, you can skip this step. 
@@ -393,7 +408,7 @@ If the API archive contains information about deployment environments in the dep
 once the API is successfully created or updated, a **new revision will be created** and that revision will be deployed in the
 mentioned gateway environments. If the **deployment environments are not provided, only the working copy will be updated**.  
 
-1.  Log in to the WSO2 API-M in the importing environment by following steps in [Login to an Environment](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#login-to-an-environment).
+1.  Log in to the WSO2 API-M in the importing environment by following steps in [Login to an Environment](../getting-started-with-wso2-api-controller#login-to-an-environment).
     
     !!! tip
         If you are already logged-in and your logged-in credentials and keys or the access-token are (is) already available in the `<USER_HOME>/.wso2apictl/keys.json` file, you can skip this step. 
@@ -481,11 +496,11 @@ mentioned gateway environments. If the **deployment environments are not provide
 !!! note
     **Configuring Environment Specific Parameters**
 
-    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for APIs, see [Defining the params file for an API](../../../../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters/#defining-the-params-file-for-an-api).
+    When the importing and exporting environments are different, before importing the API, you may need to update the exported API with details relevant to the importing environment. For example, the production and sandbox URLs, the timeout configurations, the backend certificates of your endpoints might differ between the dev and production environments. To allow easily configuring environment-specific details, by default apictl supports an additional parameter file. For more information on using an environment parameter file for APIs, see [Defining the params file for an API](../advanced-topics/configuring-environment-specific-parameters#defining-the-parameters-file-for-an-api).
     
     **Add dynamic data to environment configs**
 
-    The above parameter file supports detecting environment variables during the API import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../../../../install-and-setup/setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects/#add-dynamic-data-to-environment-configs).
+    The above parameter file supports detecting environment variables during the API import process. For more information on using dynamic data, see [Add dynamic data to environment configs](../advanced-topics/using-dynamic-data-in-api-controller-projects#add-dynamic-data-to-environment-configurations).
 
 !!! info
     Tiers and sequences are provider-specific. If an exported tier is not already available in the importing environment, that tier is not added to the new environment. However, if an exported API sequence is not available in the importing environment, it is added.

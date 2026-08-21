@@ -1,3 +1,18 @@
+---
+title: "Test a REST API using the integrated API console"
+description: "Subscribe to a REST API, generate an access token, and invoke it using the Developer Portal's Integrated API Console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md
+tags:
+  - api-manager
+  - consume
+  - invoke-apis
+  - invoke-apis-using-tools
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Test a REST API Using the Integrated API Console
 
 WSO2 API Manager has an Integrated API Console, which allows you to visualize the API contract and interact with API's resources without being aware of the backend logic.
@@ -8,7 +23,7 @@ Follow the instructions below to use the API Console, which is available in the 
     You can only try out HTTPS-based APIs via the API Console because the Developer Portal runs on HTTPS.
 
 
-The examples here use the `PizzaShack` REST API, which was created in [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api/).
+The examples here use the `PizzaShack` REST API, which was created in [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api).
 
 1. Sign in to the WSO2 Developer Portal (`https://<hostname>:9443/devportal`) and click an API (e.g., `PizzaShack`).
 
@@ -27,7 +42,7 @@ The examples here use the `PizzaShack` REST API, which was created in [Create a 
     !!! tip
             **Production and Sandbox Tokens**
     
-            To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more information, see [Maintaining Separate Production and Sandbox Gateways](../../../deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways/#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
+            To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more information, see [Maintaining Separate Production and Sandbox Gateways](../../../deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
     
     !!! tip
             **JWT tokens**

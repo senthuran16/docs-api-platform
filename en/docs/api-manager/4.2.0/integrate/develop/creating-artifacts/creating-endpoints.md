@@ -1,3 +1,18 @@
+---
+title: "Creating an endpoint"
+description: "Provides steps to create a static or dynamic endpoint artifact and specify its type in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating an Endpoint
 Follow the instructions given below to create a new [Endpoint](../../../reference/synapse-properties/endpoint-properties) artifact in WSO2 Integration Studio.
 
@@ -5,7 +20,7 @@ Follow the instructions given below to create a new [Endpoint](../../../referenc
 
 ### Creating the Endpoint artifact
 
-1.  Right-click the [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) and go to **New → Endpoint** to open the **New Endpoint Artifact** dialog box.
+1.  Right-click the [ESB Config project](../create-integration-project#sub-projects) and go to **New → Endpoint** to open the **New Endpoint Artifact** dialog box.
 
     <img src="../../../../assets/img/integrate/create_artifacts/new_endpoint/select-endpoint.png">
 
@@ -25,12 +40,12 @@ Follow the instructions given below to create a new [Endpoint](../../../referenc
 
 6.  Specify the location to save the endpoint:
 
-    - To save in an existing ([ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) or [Registry Resource project](../../../integrate/develop/create-integration-project/#registry-resource-project)) in your workspace, click **Browse** and select that project.
+    - To save in an existing ([ESB Config project](../create-integration-project#sub-projects) or [Registry Resource project](../create-integration-project#sub-projects)) in your workspace, click **Browse** and select that project.
     - To save in a new project, click **Create new Project** and create the new project.
 
 7.  Click **Finish**. 
 
-The endpoint is created in the `src/main/synapse-config/endpoints` folder under the ESB Config project or [registry resource project](../../../integrate/develop/create-integration-project/#registry-resource-project) you specified.
+The endpoint is created in the `src/main/synapse-config/endpoints` folder under the ESB Config project or [registry resource project](../create-integration-project#sub-projects) you specified.
 
 ### Designing the integration
 

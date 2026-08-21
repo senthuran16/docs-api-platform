@@ -1,3 +1,18 @@
+---
+title: "Google PubSub connector overview"
+description: "Learn how the Google Pub/Sub connector enables asynchronous messaging flows within mediation logic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-pubsub-connector/googlepubsub-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-pubsub-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Google PubSub Connector Overview
 
 The Google Pub/Sub connector allows you to access the [Google Cloud Pub/Sub API Version v1](https://cloud.google.com/pubsub/docs/reference/rest/) from an integration sequence. Google Cloud Pub/Sub is a fully-managed real-time messaging service that allows you to send and receive messages between independent applications.
@@ -25,11 +40,11 @@ For older versions, see the details in the connector store.
 
 ## Google Pub/Sub Connector documentation
 
-* **[Setting up the Google Pub/Sub Environment](../../../reference/connectors/google-pubsub-connector/googlepubsub-connector-configuration/)**: You need to first generate user credentials and access tokens in order to interact with Google PubSub.
+* **[Setting up the Google Pub/Sub Environment](googlepubsub-connector-configuration)**: You need to first generate user credentials and access tokens in order to interact with Google PubSub.
 
-* **[Google Pub/Sub Connector Example](../../../reference/connectors/google-pubsub-connector/googlepubsub-connector-example/)**: This example demonstrates how to work with the Google Pub/Sub Connector. 
+* **[Google Pub/Sub Connector Example](googlepubsub-connector-example)**: This example demonstrates how to work with the Google Pub/Sub Connector. 
 
-* **[Google Pub/Sub Connector Reference](../../../reference/connectors/google-pubsub-connector/googlepubsub-connector-reference/)**: This documentation provides a reference guide for the Google Pub/Sub Connector.
+* **[Google Pub/Sub Connector Reference](googlepubsub-connector-reference)**: This documentation provides a reference guide for the Google Pub/Sub Connector.
 
 ## How to contribute
 

@@ -1,3 +1,18 @@
+---
+title: "Publishing and receiving CSV events via files"
+description: "Example that calculates the distance between two locations using the siddhi-gpl-execution-geo extension."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/geo-distance-calculation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/geo-distance-calculation.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing and Receiving CSV Events via Files
 
 ## Purpose

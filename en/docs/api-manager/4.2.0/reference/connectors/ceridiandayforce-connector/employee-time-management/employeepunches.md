@@ -1,3 +1,18 @@
+---
+title: "Working with employee punches"
+description: "Retrieve worked shift punch data for employees within a specified transaction time range using this connector operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-time-management/employeepunches/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-time-management/employeepunches.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Punches
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve work  shift data of an employee
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-punches"></a>
 #### Retrieving Employee Punches
 We can use GET Employee Punches operation with required parameters to get work shift data of an employee.
 

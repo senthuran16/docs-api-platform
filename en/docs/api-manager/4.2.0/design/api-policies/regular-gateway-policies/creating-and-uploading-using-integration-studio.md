@@ -1,3 +1,18 @@
+---
+title: "Create and upload policies with Integration Studio"
+description: "Create a custom mediation policy with WSO2 Integration Studio, then export and upload it to the API Publisher to attach it to an API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-policies/regular-gateway-policies/creating-and-uploading-using-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-policies/regular-gateway-policies/creating-and-uploading-using-integration-studio.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating and Uploading Custom Mediation Policies using WSO2 Integration Studio
 
 You can design all custom mediation policies using a tool such as WSO2 Integration Studio and then store the policy in the registry, which can be later deployed to the Gateway.
@@ -16,7 +31,7 @@ This custom policy adds a full trace log that gets printed when you invoke a par
       [![Integration Studio](../../../assets/img/learn/api-gateway/message-mediation/integration-studio.png)](../../../assets/img/learn/api-gateway/message-mediation/integration-studio.png)
 
     !!! tip
-        To learn more about using WSO2 Integration Studio, see the [WSO2 Integration Studio](../../../integrate/develop/wso2-integration-studio/) documentation.
+        To learn more about using WSO2 Integration Studio, see the [WSO2 Integration Studio](../../../integrate/develop/wso2-integration-studio) documentation.
 
 4. Click **Window -> Perspective -> Open Perspective -> Other** to get the Perspective options.
   
@@ -76,7 +91,7 @@ This custom policy adds a full trace log that gets printed when you invoke a par
 
 17. Click **Create API** and then create a new REST type API.
 
-     For more information, see [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api/).
+     For more information, see [Create a REST API](../../create-api/create-rest-api/create-a-rest-api).
 
 18. Click on the created API and click **Runtime Configurations**.
 

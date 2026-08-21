@@ -1,3 +1,18 @@
+---
+title: "Viewing cloud native observability statistics"
+description: "Use Grafana cluster dashboards to view statistics for a cloud native Micro Integrator observability deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/viewing-cloud-native-observability-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/viewing-cloud-native-observability-statistics.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - viewing-cloud-native-observability-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing Cloud Native Observability Statistics
 
 Let's use the **dashboards** from the cloud-native observability deployment to monitor **statistics** from your integration artifacts.
@@ -11,8 +26,8 @@ See the following topics for information and instructions:
 !!! Tip
     If you do not know which dashboard to download when setting up cloud-native observability, check the "Downloading the dashboard" section in the respective sub-sections below for details on the dashboard.
 
--	Setting up [cloud-native observability for a VM environment](../../observe/micro-integrator/setting-up-cloud-native-observability-on-a-vm).
--	Setting up [cloud-native observability for a Kubernetes environment](../../observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes).
+-	Setting up [cloud-native observability for a VM environment](setting-up-cloud-native-observability-on-a-vm).
+-	Setting up [cloud-native observability for a Kubernetes environment](setting-up-cloud-native-observability-in-kubernetes).
 
 ## Cluster dashboard
 

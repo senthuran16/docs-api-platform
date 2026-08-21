@@ -1,3 +1,18 @@
+---
+title: "Publishing data"
+description: "Publish streaming data from WSO2 Streaming Integrator to destinations and messaging systems such as HTTP, TCP, and Kafka."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/publishing-data-to-event-stream-consumers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/publishing-data-to-event-stream-consumers.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - publishing-data-to-event-stream-consumers
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing Data
 
 This guide covers how WSO2 Streaming Integrator publishes data to destinations and messaging systems.
@@ -22,7 +37,7 @@ The above sink configuration publishes all the events in the `StockStream` outpu
 
 To try out the above example, follow the steps below:
 
-1. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
    
 2. Open a new file and copy the following Siddhi Application to it.
 
@@ -97,7 +112,7 @@ WSO2 Streaming Integrator supports the following transport types to send message
 
 ### Supported mappers
 
-Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-the-message-format-when-publishing-data).
+Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](transforming-data#transforming-the-message-format-when-publishing-data).
 
 The following are the supported mappers when you publish data to destinations.
 
@@ -205,7 +220,7 @@ WSO2 Streaming Integrator allows you to publish messages to the following messag
 
 ### Supported mappers
 
-Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data#transforming-the-message-format-when-publishing-data).
+Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](transforming-data#transforming-the-message-format-when-publishing-data).
 
 The following are the supported mappers when you publish data to destinations.
 

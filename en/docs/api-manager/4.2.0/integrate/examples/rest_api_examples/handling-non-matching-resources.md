@@ -1,3 +1,18 @@
+---
+title: "Handling Non-Matching resources"
+description: "Define a sequence that returns an error response when a REST API request has no matching resource definition."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/handling-non-matching-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/handling-non-matching-resources.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Handling Non-Matching Resources
     
 This example demonstrates how you can define a sequence to be invoked if the Micro Integrator is unable to find a matching resource definition for a specific API invocation. This sequence generates a response indicating an error when no matching resource definition is found.
@@ -52,10 +67,10 @@ Following is a sample REST API configuration and Sequence configuration that we 
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [rest API](../../../integrate/develop/creating-artifacts/creating-an-api) and [mediation sequence](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [rest API](../../develop/creating-artifacts/creating-an-api) and [mediation sequence](../../develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

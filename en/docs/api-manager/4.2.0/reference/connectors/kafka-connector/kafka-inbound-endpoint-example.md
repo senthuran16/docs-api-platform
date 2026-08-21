@@ -1,10 +1,25 @@
+---
+title: "Kafka inbound endpoint example"
+description: "Configure the Kafka Inbound Endpoint to bridge messages from a Kafka topic to an HTTP service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/kafka-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/kafka-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Kafka Inbound Endpoint Example
 
 The Kafka inbound endpoint acts as a message consumer. It creates a connection to ZooKeeper and requests messages for either a topic/s or topic filters.
 
 ## What you'll build
 This sample demonstrates how one way message bridging from Kafka to HTTP can be done using the inbound Kafka endpoint.
-See [Configuring Kafka Inbound Endpoint](../../../reference/connectors/kafka-connector/kafka-inbound-endpoint-config/) for more information.
+See [Configuring Kafka Inbound Endpoint](kafka-inbound-endpoint-config) for more information.
 
 The following diagram illustrates all the required functionality of the Kafka service that you are going to build. In this example, you only need to consider about the scenario of message consuming.
 
@@ -14,7 +29,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 ## Set up Kafka
 
-Before you begin, set up Kafka by following the instructions in [Setting up Kafka](../../../reference/connectors/kafka-connector/setting-up-kafka/).
+Before you begin, set up Kafka by following the instructions in [Setting up Kafka](setting-up-kafka).
 
 ## Configure inbound endpoint using WSO2 Integration Studio
 
@@ -122,7 +137,7 @@ You can download the ZIP file and extract the contents to get the project code.
    The Kafka inbound endpoint gets the messages from the Kafka brokers and logs the messages in the Micro Integrator.
 
 ## Configure inbound endpoint with Kafka Avro message
-You can setup WSO2 Micro Integrator inbound endpoint with Kafka Avro messaging format as well. Follow the instructions on [Setting up Kafka](../../../reference/connectors/kafka-connector/setting-up-kafka/) to setup Kafka on the Micro Integrator. In inbound endpoint XML configurations, change the `value.deserializer` parameter to `io.confluent.kafka.serializers.KafkaAvroDeserializer` and `key.deserializer` parameter to `io.confluent.kafka.serializers.KafkaAvroDeserializer`. Add new parameter `schema.registry.url` and add schema registry URL in there. The following is the modiefied sample of the Kafka inbound endpoint:
+You can setup WSO2 Micro Integrator inbound endpoint with Kafka Avro messaging format as well. Follow the instructions on [Setting up Kafka](setting-up-kafka) to setup Kafka on the Micro Integrator. In inbound endpoint XML configurations, change the `value.deserializer` parameter to `io.confluent.kafka.serializers.KafkaAvroDeserializer` and `key.deserializer` parameter to `io.confluent.kafka.serializers.KafkaAvroDeserializer`. Add new parameter `schema.registry.url` and add schema registry URL in there. The following is the modiefied sample of the Kafka inbound endpoint:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <inboundEndpoint name="KAFKAListenerEP" sequence="kafka_process_seq" onError="fault" class="org.wso2.carbon.inbound.kafka.KafkaMessageConsumer" suspend="false" xmlns="http://ws.apache.org/ns/synapse">
@@ -152,4 +167,4 @@ Make sure to start Kafka Schema Registry before starting up the Micro Integrator
 
 ## What's next
 
-* To customize this example for your own scenario, see [Kafka Inbound Endpoint Configuration](../../../reference/connectors/kafka-connector/kafka-inbound-endpoint-config/) documentation.
+* To customize this example for your own scenario, see [Kafka Inbound Endpoint Configuration](kafka-inbound-endpoint-config) documentation.

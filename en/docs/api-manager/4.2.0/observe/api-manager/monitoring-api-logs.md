@@ -1,3 +1,17 @@
+---
+title: "Monitoring API logs"
+description: "Enable and configure API Logs to capture per-request HTTP call logs at OFF, BASIC, STANDARD, or FULL levels using the DevOps REST API or APICTL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/monitoring-api-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/monitoring-api-logs.md
+tags:
+  - api-manager
+  - observe
+  - monitoring-api-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring API Logs
 
 WSO2 API-M enables a simple way to observe requests and responses going through the WSO2 API Gateway by introducing this light weight feature called API Logs. Since Correlation Logs cause lower performance on the API gateway, API Logs can be used to collect HTTP call logs without a considerable performance hit. There are 4 log levels where each log level has a set of properties.
@@ -27,8 +41,8 @@ WSO2 API-M enables a simple way to observe requests and responses going through 
 
 API Logs is disabled by default and can be enabled per API or API Product without restarting the server. There are 2 ways to configure API Logs.
 
-1. [Configure API Logs using Devops REST API](../../observe/api-manager/monitoring-api-logs/#configure-api-logs-using-devops-rest-api)
-2. [Configure API Logs using API Controller (APICTL)](../../observe/api-manager/monitoring-api-logs/#configure-api-logs-using-api-controller-apictl)
+1. [Configure API Logs using Devops REST API](monitoring-api-logs#configure-api-logs-using-devops-rest-api)
+2. [Configure API Logs using API Controller (APICTL)](monitoring-api-logs#configure-api-logs-using-api-controller-apictl)
 
 After enabling API Logs for an API or an API product, logs can be observed in `<APIM_HOME>/repository/logs/api.log` file. Each log contains in-line JSON object with properties assigned with given log level. A sample sets of logs is given below.
 
@@ -85,7 +99,7 @@ Properties, listed above, are mostly used for debugging and users can decide the
 
 ## Configure API Logs using Devops REST API
 
-Devops REST API can be used to configure log level of APIs and API products. It only allows the user with super admin permissions to invoke Devops REST API. For more instructions, see [WSO2 Devops API v0](../../reference/product-apis/devops-apis/devops-v0/devops-v0/).
+Devops REST API can be used to configure log level of APIs and API products. It only allows the user with super admin permissions to invoke Devops REST API. For more instructions, see [WSO2 Devops API v0](../../reference/product-apis/devops-apis/devops-v0/devops-v0).
 
 1. Get log level details of API/API Product.
 
@@ -221,5 +235,5 @@ Devops REST API can be used to configure log level of APIs and API products. It 
 
 APICTL provides the functionality to get and set the log level of APIs. It only allows the user with super admission permissions to configure API Logs. For more instructions, refer to the following doc pages.
 
-1. [Get the log level of APIs or an API in an environment](../../install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products/#get-the-log-level-of-apis-or-an-api-in-an-environment)
-2. [Set the log level of an API in an environment](../../install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products/#set-the-log-level-of-an-api-in-an-environment)
+1. [Get the log level of APIs or an API in an environment](../../install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products#get-the-log-level-of-apis-or-an-api-in-an-environment)
+2. [Set the log level of an API in an environment](../../install-and-setup/setup/api-controller/managing-apis-api-products/managing-apis-and-api-products#set-the-log-level-of-an-api-in-an-environment)

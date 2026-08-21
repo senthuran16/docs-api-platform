@@ -1,7 +1,22 @@
+---
+title: "Applying security to an API"
+description: "Explains how to secure an API in the Micro Integrator using the default Basic Auth handler or a custom handler."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/applying-security-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/applying-security-to-an-api.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Applying Security to an API
 
 ## Using a Basic Auth handler
-A Basic Authentication handler is enabled in the Micro Integrator by default. See the example on [securing an API with basic auth](../../../integrate/examples/rest_api_examples/securing-rest-apis).
+A Basic Authentication handler is enabled in the Micro Integrator by default. See the example on [securing an API with basic auth](../../examples/rest_api_examples/securing-rest-apis).
 
 ## Using a custom basic auth handler
 
@@ -9,7 +24,7 @@ If required, you can implement a custom basic auth handler (instead of the defau
 
 ### Prerequisites
 
-**Before you begin**, be sure to [configure a user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/) for the Micro Integrator and add the required users and roles.
+**Before you begin**, be sure to [configure a user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore) for the Micro Integrator and add the required users and roles.
 
 ### Creating the custom handler
 

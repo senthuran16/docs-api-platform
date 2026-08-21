@@ -1,6 +1,21 @@
+---
+title: "Change the hostname and context path of web UIs"
+description: "Change the host name and context path used to access the Streaming Integrator's web UI applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/change-hostname-and-context-path/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/change-hostname-and-context-path.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Host Name and Context Path of Web UI Applications
 
-When you start any web application of the WSO2 Streaming Integrator (i.e., [Streaming Integrator Tooling](../../../develop/streaming-apps/streaming-integrator-studio-overview), the [Template Editor](../../../use-cases/streaming-tutorials/creating-business-rules-templates/#creating-a-business-rules-template), [Business Rules](../../../use-cases/streaming-tutorials/creating-business-rules-templates), or Policies) the URL to access its user interface is displayed in the start up logs as follows.
+When you start any web application of the WSO2 Streaming Integrator (i.e., [Streaming Integrator Tooling](../../../develop/streaming-apps/streaming-integrator-studio-overview), the [Template Editor](../../../use-cases/streaming-tutorials/creating-business-rules-templates#creating-a-business-rules-template), [Business Rules](../../../use-cases/streaming-tutorials/creating-business-rules-templates), or Policies) the URL to access its user interface is displayed in the start up logs as follows.
 
 ```text
 INFO {org.wso2.carbon.siddhi.editor.core.internal.StartupComponent} - Editor Started on : http://<IP_ADDRESS>:<PORT>/<WEB_UI_APPLICATION_NAME>

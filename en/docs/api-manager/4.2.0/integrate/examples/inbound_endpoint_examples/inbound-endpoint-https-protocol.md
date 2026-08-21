@@ -1,3 +1,18 @@
+---
+title: "Using the HTTPS inbound endpoint"
+description: "Configure the HTTPS inbound endpoint to act as a dynamic HTTPS listener secured with a keystore and truststore."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-https-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-https-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the HTTPS Inbound Endpoint
 This sample demonstrates how an HTTPS inbound endpoint can act as a
 dynamic HTTPS listener. Many HTTPS listeners can be added without
@@ -70,15 +85,15 @@ Set up the back-end service:
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. See the instructions on [creating mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) to define the two sequences given above ('Sequence 1' and 'Sequence 2'). 
-4. See the instructions on [creating an inbound endpoint](../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint) to define the inbound endpoint given above.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. See the instructions on [creating mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences) to define the two sequences given above ('Sequence 1' and 'Sequence 2'). 
+4. See the instructions on [creating an inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint) to define the inbound endpoint given above.
 
     !!! Tip
         Be sure to add an empty namespace for the keystore and truststore elements (`xmlns=""`) in the inbound endpoint as shown above. This is necessary when you run this example in the embedded Micro Integrator of WSO2 Integration Studio.
         
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Invoke the inbound endpoint with the below request. 
 

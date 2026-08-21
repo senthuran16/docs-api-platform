@@ -1,3 +1,18 @@
+---
+title: "Injecting messages to a RESTful endpoint"
+description: "Use the Message Injector to inject a scheduled message into a proxy service that calls a RESTful endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/scheduled-tasks/injecting-messages-to-rest-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/scheduled-tasks/injecting-messages-to-rest-endpoint.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - scheduled-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Injecting Messages to a RESTful Endpoint
 In order to use the Message Injector to inject messages to a RESTful endpoint, you can specify the injector with the required payload and inject the message to the sequence or proxy service as defined below. The sample below shows a RESTful message injection through a proxy service.
 
@@ -52,10 +67,10 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) and a [scheduled task](../../../integrate/develop/creating-artifacts/creating-scheduled-task) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) and a [scheduled task](../../develop/creating-artifacts/creating-scheduled-task) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 The XML message you injected (i.e., This is a scheduled task of the default implementation.) will be printed in the logs of the Micro Integrator twice, 5 seconds apart.
 

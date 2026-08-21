@@ -1,10 +1,25 @@
+---
+title: "All-in-One deployment overview"
+description: "Compares single node and active-active all-in-one deployment options for running all API-M components in one runtime instance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/single-node/all-in-one-deployment-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/single-node/all-in-one-deployment-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # All-in-One Deployment Overview
 
 An all-in-one deployment contains all the API-M components in one runtime instance. This is easy to set up and requires less resources when compared with a distributed deployment. Although a distributed deployment provides high performance and a high level of scalability, it may be too complex if you want to a small to medium scale API management solution. The all-in-one deployment is ideal if you want to start small and iteratively build up a robust API management platform.
 
 - [All-in-One Deployment Overview](#all-in-one-deployment-overview)
   - [Single Node Deployment](#single-node-deployment)
-  - [Active - Active Deployment](#active---active-deployment)
+  - [Active - Active Deployment](#active-active-deployment)
 
 ## Single Node Deployment
 
@@ -22,7 +37,7 @@ In this setup, API traffic is served by one all-in-one instance of WSO2 API Mana
      Not network friendly. Deploying on a demilitarized zone (DMZ) would require a Reverse Proxy.  |
 
 !!! info
-    For more information on manually configuring a single node API-M production server, see [Configuring a Single Node](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-a-single-node/).
+    For more information on manually configuring a single node API-M production server, see [Configuring a Single Node](configuring-a-single-node).
 
 
 ## Active - Active Deployment
@@ -39,4 +54,4 @@ In this setup, API traffic is served by two single node (all-in-one) instances o
     Deployment is up and running within hours.                                                           |    Not network friendly. Deploying on a DMZ would require a Reverse Proxy. |
 
 !!! info
-    For more information on manually configuring active-active API-M production servers, see [Configuring an Active-Active Deployment](../../../install-and-setup/deploying-wso2-api-manager/single-node/configuring-an-active-active-deployment/).
+    For more information on manually configuring active-active API-M production servers, see [Configuring an Active-Active Deployment](configuring-an-active-active-deployment).

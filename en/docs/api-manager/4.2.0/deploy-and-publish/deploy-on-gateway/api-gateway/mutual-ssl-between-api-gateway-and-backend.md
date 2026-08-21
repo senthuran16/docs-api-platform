@@ -1,3 +1,18 @@
+---
+title: "Mutual SSL between API Gateway and backend"
+description: "Export and import certificates to enable mutual SSL authentication between the API Gateway and a backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/api-gateway/mutual-ssl-between-api-gateway-and-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/api-gateway/mutual-ssl-between-api-gateway-and-backend.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mutual SSL Between API Gateway and Backend
 
 In contrast to the usual one-way SSL authentication where a client verifies the identity of the server, in mutual SSL the server validates the identity of the client so that both parties trust each other. This builds a system that has very tight security and avoids any requests made to the client to provide the username/password, as long as the server is aware of the certificates that belong to the client.
@@ -111,6 +126,6 @@ Now both the backend service and API Manager are configured to use default key s
 You can do the following to test your mutual SSL configurations
 
 1.  [Create an API](../../../design/create-api/create-rest-api/create-a-rest-api)
-2.  [Publish the API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api)
+2.  [Publish the API](../../publish-on-dev-portal/publish-an-api)
 3.  [Subscribe to the API](../../../consume/manage-subscription/subscribe-to-an-api)
 4.  [Invoke the API](../../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console)

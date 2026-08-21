@@ -1,6 +1,21 @@
+---
+title: "Adapter log configurations"
+description: "Reference the Adapter log configuration parameters, including log level, format, rotation, and package level settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-adapter.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Adapter Log Configurations
 
-The log configurations file for the Adapter is located in [these directories](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview/#log_config_toml) based on your Choreo Connect deployment method.
+The log configurations file for the Adapter is located in [these directories](configure-logs-overview#log_config_toml) based on your Choreo Connect deployment method.
 
 The sample for Adapter log configurations looks similar to the following.
 

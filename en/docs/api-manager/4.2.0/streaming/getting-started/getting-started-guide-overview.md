@@ -1,3 +1,18 @@
+---
+title: "Streaming integration overview"
+description: "Introduces streaming integration concepts through a sweet factory example before you set up WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/getting-started-guide-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/getting-started-guide-overview.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - getting-started-guide-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Streaming Integration Overview
 
 This section helps you to understand streaming integration and how to perform it with WSO2 Streaming Integrator in less than 30 minutes
@@ -19,10 +34,10 @@ WSO2 Streaming Integrator allows data to be received from multiple sources such 
 
 To understand how Streaming Integration is performed via the WSO2 Streaming Integrator, follow the sections below.
 
-[**Step 1: Download Streaming Integrator and Dependencies**](../../streaming/getting-started/download-install-and-start-si/)<br/><br/>
-[**Step 2: Create the Siddhi Application**](../../streaming/getting-started/create-the-siddhi-application/)<br/><br/>
-[**Step 3: Deploy the Siddhi Application**](../../streaming/getting-started/deploy-siddhi-application/)<br/><br/>
-[**Step 4: Run the Siddhi Application**](../../streaming/getting-started/test-siddhi-application/)<br/><br/>
-[**Step 5: Update the Siddhi Application**](../../streaming/getting-started/update-the-siddhi-application/)<br/><br/>
-[**Step 6: Handle Errors**](../../streaming/getting-started/handle-errors/)<br/><br/>
-[**Step 7: Monitor Statistics**](../../streaming/getting-started/monitor-statistics/)<br/><br/>
+[**Step 1: Download Streaming Integrator and Dependencies**](download-install-and-start-si)<br/><br/>
+[**Step 2: Create the Siddhi Application**](create-the-siddhi-application)<br/><br/>
+[**Step 3: Deploy the Siddhi Application**](deploy-siddhi-application)<br/><br/>
+[**Step 4: Run the Siddhi Application**](test-siddhi-application)<br/><br/>
+[**Step 5: Update the Siddhi Application**](update-the-siddhi-application)<br/><br/>
+[**Step 6: Handle Errors**](handle-errors)<br/><br/>
+[**Step 7: Monitor Statistics**](monitor-statistics)<br/><br/>

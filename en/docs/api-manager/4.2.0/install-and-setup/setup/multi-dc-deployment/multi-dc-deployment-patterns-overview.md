@@ -1,3 +1,18 @@
+---
+title: "Multi-DC deployment patterns - overview"
+description: "Learn what multi-datacenter deployment architecture is and why organizations use it to improve API management availability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - multi-dc-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Multi-DC Deployment Patterns - Overview
 
 ## What is Multi-DC Deployment Architecture?
@@ -103,7 +118,7 @@ This replication provides data redundancy and fault tolerance, allowing for cons
 The control planes (Event Hubs) in each data center setup are interconnected to facilitate real-time communication and data synchronization.
 Control planes play a crucial role in managing and coordinating activities across distributed setups.
 
-Please refer to the [documentation](../../../install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1) for detailed information on configuring pattern 1.
+Please refer to the [documentation](configuring-multi-dc-deployment-pattern-1) for detailed information on configuring pattern 1.
 
 ## Pattern 2: Centralized API Management with Regional Data Planes
 
@@ -136,7 +151,7 @@ Sub regions are configured to handle incoming traffic exclusively. These regions
 This documentation provides information on configuring a single main region with a single sub region. However, the deployment can be horizontally scaled as needed by adding multiple sub regions. This approach ensures flexibility and responsiveness to changes in traffic patterns and loads.
 Please note the recommendations mentioned [here](../../../deploy-and-publish/deploy-on-gateway/api-gateway/scaling-the-gateway) when scaling the Gateways.
 
-Please refer to the [documentation](../../../install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2) for detailed information on configuring pattern 2.
+Please refer to the [documentation](configuring-multi-dc-deployment-pattern-2) for detailed information on configuring pattern 2.
 
 !!! Note
     Both pattern 1 and pattern 2 supports throttling based on the region/geographical area by default. Therefore, throttling will be handled independently for each region from their respective data center traffic.

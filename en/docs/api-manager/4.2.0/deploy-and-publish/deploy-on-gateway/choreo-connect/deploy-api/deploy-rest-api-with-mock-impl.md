@@ -1,3 +1,18 @@
+---
+title: "Deploying a REST API with a mock implementation"
+description: "Deploy a REST API with a mock implementation on Choreo Connect so it responds to requests using OpenAPI examples."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a REST API with a Mock Implementation
 
 In addition to exposing an existing backend implementation as an API, Choreo Connect is also capable of responding to HTTP requests even without a backend. By changing the endpoint type to **Mock Implementation**, you can make Choreo Connect read the examples you have provided in the OpenAPI definition and respond to each HTTP request accordingly. While it supports default responses, you can also request specific responses using the HTTP headers `Prefer` and `Accept`.
@@ -6,13 +21,13 @@ Pick a method given below to start creating an API with a Mock Implementation.
 
 |**Mode**         | **Method**    |
 |--------------|-----------|
-|[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
-|[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
+|[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
+|[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode) |
 
 ### Mock Implementation with OpenAPI examples
 
 !!! abstract
-    {!includes/design/add-oas-example.md!}
+    --8<-- "api-manager/4.2.0/includes/design/add-oas-example.md"
     
 ## Via WSO2 API Manager Publisher Portal
 ### Step 1 - Create a REST API
@@ -30,6 +45,7 @@ Pick a method given below to start creating an API with a Mock Implementation.
 
 ### Step 2 - Implement the API
 
+<a name="step-21-update-the-openapi-specification"></a>
 #### Step 2.1 - Update the OpenAPI Specification
 
 1. Navigate to **API Definition** under **API Configurations** to view the OpenAPI specification.
@@ -72,7 +88,7 @@ Invoke the API using the commands given in the [Invoke the API](#invoke-the-api)
 
 1. Initialize an API Project.
 
-    Use the following command to initialize an API. This is a sample OpenAPI definition containing example responses that will be referred by Choreo Connect to respond to API calls. Refer to [Updating the OpenAPI definition to generate a Mock Implementation](#updating-the-openapi-definition-to-generate-a-mock-implementation) for more information.
+    Use the following command to initialize an API. This is a sample OpenAPI definition containing example responses that will be referred by Choreo Connect to respond to API calls. Refer to [Updating the OpenAPI definition to generate a Mock Implementation](#step-21-update-the-openapi-specification) for more information.
 
     ```bash
     apictl init petstore --oas https://raw.githubusercontent.com/wso2/product-microgateway/main/samples/openAPI-definitions/mock-impl-sample.yaml
@@ -86,13 +102,13 @@ Invoke the API using the commands given in the [Invoke the API](#invoke-the-api)
     endpointImplementationType: MOCKED_OAS
     ```
 
-3. Deploy the API using the commands given in [Deploy REST API - Standalone Mode](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/#via-apictl-for-standalone-mode)
+3. Deploy the API using the commands given in [Deploy REST API - Standalone Mode](deploy-rest-api-in-choreo-connect#via-apictl-for-standalone-mode)
 
 4. Invoke the API the using the commands given below. 
 
 ## Invoke the API
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.2.0/includes/obtain-jwt.md"
 
 Use the command given below to get the default response for the resource `/pet/findByStatus`.
 
@@ -130,6 +146,6 @@ curl -X GET "https://localhost:9095/v3/1.0.6/pet/findByStatus" -H "Accept: appli
 
 ## See Also
 
-- [Mock Implementation with Choreo Connect](../../../../design/prototype-api/create-mocked-oas-api/)
-- [Prototyped APIs (Pre-Released APIs)](../../../../design/prototype-api/overview/)
-- [Enforcer Test Key (JWT)](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt)
+- [Mock Implementation with Choreo Connect](../../../../design/prototype-api/create-mocked-oas-api)
+- [Prototyped APIs (Pre-Released APIs)](../../../../design/prototype-api/overview)
+- [Enforcer Test Key (JWT)](../security/generate-a-test-jwt)

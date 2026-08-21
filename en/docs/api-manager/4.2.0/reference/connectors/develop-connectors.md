@@ -1,3 +1,18 @@
+---
+title: "Connector developer guidelines"
+description: "Follow guidelines for building a new integration connector from scratch, including architecture and UI schema."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/develop-connectors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/develop-connectors.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - develop-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connector Developer Guidelines
 
 Integration Connectors are extensions to the integration runtime of WSO2 (compatible with EI 6.x, EI 7.x, as well as APIM 4.0.0). This enables developers to interact with SaaS applications on the cloud, databases, and popular B2B protocols.
@@ -12,7 +27,7 @@ This document is an in-depth guide for developers to follow when developing a ne
 
 A connector is a collection or a set of operations that can be used in the integration flow to access a specific service or functionality. These operations are invoked from proxy services, sequences, and APIs to interact.
 
-* A connector operation is made using [sequence templates](../../reference/synapse-properties/template-properties/). 
+* A connector operation is made using [sequence templates](../synapse-properties/template-properties). 
 * The integration logic inside a connector operation is constructed using mediators. 
 * The integration logic inside a connector operation needs some custom functionality not provided by mediators, a java implementation can be attached to the associated sequence template. This is using the Custom Class Mediator approach. 
 * If the third-party service provider provides a Java SDK to interact with the service, connector operation can use them extending the java implementation. 
@@ -771,10 +786,10 @@ If the connector has many operations, instead of adding templates for all the op
 Developers may define a template with the `<hidden>true</hidden>` property in `component.xml` related to the template ([example component.xml](https://github.com/wso2-extensions/esb-connector-email/blob/master/src/main/resources/config/component.xml)). Then that template will not be presented as a connector operation to the users when rendered in WSO2 Integration Studio. It is a private template which you can refer to construct logic in other templates. This provides a way to keep a reusable logic inside the connector for easy maintenance. See the [example](https://github.com/niruhan/esb-connector-salesforcerest/tree/master/src/main/resources/salesforcerest-config) for more information. 
 
 **Use property Group if there are a lot of properties to define** 
-Within some operations we need to define a number of properties together. When you use WSO2 Integration Studio to develop the logic, this fact makes sequence template logic to render in a lengthy manner in the UI. It makes it harder to navigate. To prevent this and to make XML definition also more readable you can group properties together using [Property Group mediator](../../reference/mediators/property-group-mediator/). 
+Within some operations we need to define a number of properties together. When you use WSO2 Integration Studio to develop the logic, this fact makes sequence template logic to render in a lengthy manner in the UI. It makes it harder to navigate. To prevent this and to make XML definition also more readable you can group properties together using [Property Group mediator](../mediators/property-group-mediator). 
 
 **Use `$ctx`: syntax instead of `get-property()` when reading properties**
-When you use the [property mediator](../../reference/mediators/property-mediator/) to read properties, always use `$ctx:` syntax. It delivers better performance. Make sure to use properties in the correct scope. 
+When you use the [property mediator](../mediators/property-mediator) to read properties, always use `$ctx:` syntax. It delivers better performance. Make sure to use properties in the correct scope. 
 
 **Avoid old mediators** 
 Please do not use mediators like `<send/>`, `<loopback/>` in sequence templates. They are there for the sake of backward compatibility. Always stick to mediators like `<call/>` and `<respond/>`. 
@@ -785,13 +800,13 @@ Connection timeout is an environment dependent configuration. Developers may def
 **Handle errors meaningfully. Use ERROR CODES**
 Sometimes it is required to handle errors within the connector. Sometimes it is required to let the calling template handle the error. Sometimes it is required to forward the error message back to the connector operation invoker as it is. It is good to analyze use cases, and then design which errors need to be handled at which instance. However, it is a good practice to define and use error codes. 
 
-Please read the [WSO2 Error Code guide](../../troubleshooting/error-handling/#error-codes). 
+Please read the [WSO2 Error Code guide](../../troubleshooting/error-handling#error-codes). 
 
 **Write test cases**
 
 ## Input and Output schema
 
-Input and output schema can be defined for connectors so that a [datamapper mediator](../../reference/mediators/data-mapper-mediator/) can be used to easily transform the payloads required for each operation.
+Input and output schema can be defined for connectors so that a [datamapper mediator](../mediators/data-mapper-mediator) can be used to easily transform the payloads required for each operation.
 
 These schemas are placed inside `/resources` under `input_schema` and `output_schema` folders.
 

@@ -1,3 +1,18 @@
+---
+title: "Enabling security for Kafka"
+description: "Generate TLS keys and certificates and configure TLS authentication for Kafka brokers, producers, and consumers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/enabling-security-for-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/kafka-connector/enabling-security-for-kafka.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enabling Security for Kafka
 
 Security is an important aspect today because cyber-attacks have become a common occurrence and the threat of data breaches is a reality for businesses of all sizes. Before version 0.9, Kafka did not support built-in security. Although it was possible to lock down access at the network level, that approach was not viable for a large shared multi-tenant cluster used across a large company.
@@ -128,7 +143,7 @@ Use the following configuration to create a producer that sends messages to the 
 ````
 The console producer is a convenient way to send a small amount of data to the broker.
 
-Follow the sample scenario in [Kafka configuration documentation](../../../reference/connectors/kafka-connector/kafka-connector-config/), and send the following message to the Kafka broker:
+Follow the sample scenario in [Kafka configuration documentation](kafka-connector-config), and send the following message to the Kafka broker:
 
 > **Note**: Be sure to include the following configuration in the proxy service when you are building the sample:
 

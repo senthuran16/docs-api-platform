@@ -1,3 +1,18 @@
+---
+title: "Configure multiple gateways with Choreo connect"
+description: "Configure multiple Choreo Connect Gateway environments to register with WSO2 API Manager using the Distributed Adapter pattern."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-multiple-gateways-with-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-multiple-gateways-with-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configure Multiple Gateways with Choreo Connect
 
 Choreo Connect supports the configuration of multiple Gateways with WSO2 API Manager. This can be achieved with the Distributed Adapter pattern.

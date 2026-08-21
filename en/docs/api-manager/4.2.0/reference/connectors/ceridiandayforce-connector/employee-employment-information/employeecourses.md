@@ -1,3 +1,18 @@
+---
+title: "Working with employee courses"
+description: "Reference of the operation used to retrieve courses associated with an employee using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeecourses/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeecourses.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Courses
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -8,12 +23,13 @@ The following operations allow you to retrieve courses of an employee
 
 | Operation | Description |
 | ------------- |-------------|
-|[GET Employee Courses](#retrieving-courses-of-employee)| Retrieve courses associated to an employee. |
+|[GET Employee Courses](#retrieving-employee-courses)| Retrieve courses associated to an employee. |
 
 ### Operation details
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-courses"></a>
 #### Retrieving Employee Courses
 We can use GET Employee Courses operation with required parameters to search and find the courses associated with employees.
 

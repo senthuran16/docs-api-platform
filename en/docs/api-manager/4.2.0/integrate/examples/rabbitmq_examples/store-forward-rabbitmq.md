@@ -1,3 +1,18 @@
+---
+title: "Message store and message processor for guaranteed delivery"
+description: "Implement a store-and-forward messaging scenario for guaranteed delivery using a RabbitMQ message store and processor."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/store-forward-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/store-forward-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Message store and message processor for guaranteed delivery
 
 This sample demonstrates how a <b>store and forward</b> messaging scenario can be implemented using the RabbitMQ
@@ -94,10 +109,10 @@ See the instructions on how to [build and run](#build-and-run) this example.
 
 ## Build and run
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
 3. Create the artifacts (proxy service, message-processor, message-store, endpoint) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 5. Make sure you have a RabbitMQ broker instance running.
 6. Send a message to the `sales-delivery-proxy` with the following payload.
 	```xml

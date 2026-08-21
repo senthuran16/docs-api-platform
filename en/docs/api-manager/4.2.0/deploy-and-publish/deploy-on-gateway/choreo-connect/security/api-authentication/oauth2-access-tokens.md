@@ -1,3 +1,18 @@
+---
+title: "OAuth 2.0 authentication"
+description: "Understand how Choreo Connect self-validates OAuth2 JWT access tokens using the issuer, signature, subject, and expiry claims."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/oauth2-access-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/oauth2-access-tokens.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # OAuth 2.0 Authentication
 
 Choreo Connect can accept JWTs issued by **trusted** Key Managers as valid Access Tokens to invoke the APIs. JWTs are self-validated by Choreo Connect without validating it against the Authorization Server (Key Manager) that issued the JWT. This is done by validating based on the following attributes/claims of the JWT.
@@ -7,16 +22,16 @@ Choreo Connect can accept JWTs issued by **trusted** Key Managers as valid Acces
 -   **Subject(sub)** - The subject claim is also a mandatory claim in a token. Choreo Connect uses the value of the **sub** claim as the user of the secured API.
 -   **Expiry time(exp)** - "exp" claim is also a mandatory claim. Choreo Connect validates the validity period of the token using the **exp** claim
 
-By default all APIs expect an access token during invocation, unless [security has been disabled](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/disabling-security/) for the API.
+By default all APIs expect an access token during invocation, unless [security has been disabled](disabling-security) for the API.
 
-When API-M acts as the Control Plane for Choreo Connect, you can generate an access token and invoke the API by following the steps [here](../../../../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/). This is an access token retrieved from the Resident Key Manager packaged in an API Manager pack (of profile `control-plane`).
+When API-M acts as the Control Plane for Choreo Connect, you can generate an access token and invoke the API by following the steps [here](../../../../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console). This is an access token retrieved from the Resident Key Manager packaged in an API Manager pack (of profile `control-plane`).
 
 ## JWT validation configuration
 
-- When [Control Plane is enabled](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/), configurations for all Key Managers are fetched from API-M. 
-- For [Standalone Mode](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/), trusted Key Managers can be configured in `config.toml`. 
+- When [Control Plane is enabled](../../concepts/apim-as-control-plane), configurations for all Key Managers are fetched from API-M. 
+- For [Standalone Mode](../../concepts/as-a-standalone-gateway), trusted Key Managers can be configured in `config.toml`. 
 
-Refer to [Configuring an External Key Manager](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/configuring-an-external-key-manager/) to learn more.
+Refer to [Configuring an External Key Manager](configuring-an-external-key-manager) to learn more.
 
 The following is an example standalone mode configuration for a trusted Key Manager. When Choreo Connect has API Manager as the Control Plane, these configurations will be overridden with the Key Manager configurations retrieved from API Manager if the issuers (Key Managers) are identical. This means the value for `issuer` in both configurations is the same. Furthermore, if the corresponding Key Manager is removed from the API Manager Admin Portal, the token service added from the configuration will be used.
 
@@ -35,17 +50,17 @@ The following is an example standalone mode configuration for a trusted Key Mana
 
 - The `issuer` of the above configuration will be used to validate the "iss" claim of the JWT. 
 
-- The JWT signature can be validated either by the certificate in `certificateFilePath` (which the alias is defined in `certificateAlias`) or using the issuer's `jwksURL` endpoint. When configured both properties, if the JWT contains the kid (key ID), the token will be validated through the JWKS endpoint. Importing the public certificate into the Choreo Connect trust store and configuring the certificate alias in the JWT validation configuration section is explained in the [importing certificates to the Choreo Connect truststore](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/importing-certificates-to-the-choreo-connect-truststore/).
-- To enable [subscription validation](#subscription-validation), set `validateSubscription` to true and set `consumerKeyClaim` to the name of the claim in JWT which contains the consumer key of the application.
+- The JWT signature can be validated either by the certificate in `certificateFilePath` (which the alias is defined in `certificateAlias`) or using the issuer's `jwksURL` endpoint. When configured both properties, if the JWT contains the kid (key ID), the token will be validated through the JWKS endpoint. Importing the public certificate into the Choreo Connect trust store and configuring the certificate alias in the JWT validation configuration section is explained in the [importing certificates to the Choreo Connect truststore](../tls/component-certificates).
+- To enable [subscription validation](#enable-subscription-validation), set `validateSubscription` to true and set `consumerKeyClaim` to the name of the claim in JWT which contains the consumer key of the application.
 
-Refer to [Token Service in Enforcer Configurations](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/enforcer-configurations/#token-service) to learn about the remaining parameters.
+Refer to [Token Service in Enforcer Configurations](../../configurations/enforcer-configurations#token-service) to learn about the remaining parameters.
 
 ### Enable subscription validation
-As mentioned above, [subscription](../../../../../consume/manage-subscription/subscribe-to-an-api/) validation is configurable for tokens issued by each issuer.
+As mentioned above, [subscription](../../../../../consume/manage-subscription/subscribe-to-an-api) validation is configurable for tokens issued by each issuer.
 
 If an external key manager is used directly with Choreo Connect, and does not know about the subscription details then, subscription validation can be turned off for that particular JWT issuer. Enable subscription validation to make sure only a token retrieved after subscribing to an API can be used to invoke that specific API.
 
-For information on the subscription model and configuration steps, please refer to [the document on Subscription Validation](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/subscription-validation).
+For information on the subscription model and configuration steps, please refer to [the document on Subscription Validation](../api-authorization/subscription-validation).
 
 ### Configure multiple JWT issuers
 
@@ -53,12 +68,12 @@ For information on the subscription model and configuration steps, please refer 
 
  **Multiple JWT Issuers**
 
-Please refer [Configuring an External Key Manager](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/configuring-an-external-key-manager/)
+Please refer [Configuring an External Key Manager](configuring-an-external-key-manager)
 
 
 ## See also
 
-- [Access Token Configurations in API-M](../../../../../design/api-security/api-authentication/secure-apis-using-oauth2-tokens/) 
-- [Disable Security](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/disabling-security/)
-- [Configuring an External Key Manager](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/configuring-an-external-key-manager/)
-- [Subscription Validation](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authorization/subscription-validation)
+- [Access Token Configurations in API-M](../../../../../design/api-security/api-authentication/secure-apis-using-oauth2-tokens) 
+- [Disable Security](disabling-security)
+- [Configuring an External Key Manager](configuring-an-external-key-manager)
+- [Subscription Validation](../api-authorization/subscription-validation)

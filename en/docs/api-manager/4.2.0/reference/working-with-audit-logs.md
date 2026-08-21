@@ -1,3 +1,17 @@
+---
+title: "Working with audit logs"
+description: "Configure and use WSO2 API Manager's audit logs to trace user actions and changes to modules over a period of time."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/working-with-audit-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/working-with-audit-logs.md
+tags:
+  - api-manager
+  - reference
+  - working-with-audit-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Working with Audit Logs
 
 Auditing is a primary requirement when it comes to monitoring production servers. For examples, DevOps need to have a clear mechanism for identifying who did what, and to filter possible system violations or breaches.

@@ -1,3 +1,18 @@
+---
+title: "GDPR compliance in the WSO2 Micro Integrator"
+description: "Remove personally identifiable information from the WSO2 Micro Integrator to comply with GDPR requirements."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/gdpr_ei/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/gdpr_ei.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # GDPR Compliance in the WSO2 Micro Integrator
 
 WSO2 Micro Integrator can persist
@@ -57,7 +72,7 @@ The Micro Integrator can persist PII in various log files (carbon logs, audit lo
     the deleted user with either a randomly generated UUID value or a
     specified pseudonym. You can download the tool from this [link](https://github.com/wso2-docs/WSO2_EI/raw/master/Forget-Me-Tool/org.wso2.carbon.privacy.forgetme.tool-1.3.1.zip).
     . Find out about all the capabilities of the Forget-Me tool
-    from [here](../../../../install-and-setup/setup/mi-setup/security/about_forgetme_tool).
+    from [here](about_forgetme_tool).
 
     **Important!** In the case of log files, note that the Forget-Me
     Tool does not replace PII values in the actual log files. Instead,
@@ -65,7 +80,7 @@ The Micro Integrator can persist PII in various log files (carbon logs, audit lo
     values. The organization can then remove the original log files.
 
     !!! Note
-        If you want to use the Forget-Me tool to remove PII in multiple WSO2 products at the same time, you can use the standalone version of the tool. Find more information on how to [build and run the Forget-Me tool in standalone mode](../../../../install-and-setup/setup/mi-setup/security/about_forgetme_tool).
+        If you want to use the Forget-Me tool to remove PII in multiple WSO2 products at the same time, you can use the standalone version of the tool. Find more information on how to [build and run the Forget-Me tool in standalone mode](about_forgetme_tool).
 
 
 ## Prerequisites for removing PII
@@ -222,7 +237,7 @@ Let's look at how to anonymize the username value in log files.
         ```
 
         !!! Info
-            For the list of commands you can run using the Forget-Me tool, see this [link](../../../../install-and-setup/setup/mi-setup/security/about_forgetme_tool).
+            For the list of commands you can run using the Forget-Me tool, see this [link](about_forgetme_tool).
 
 ## Deleting original (archived) log files
 

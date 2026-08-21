@@ -1,8 +1,23 @@
+---
+title: "JDBC message store"
+description: "Reference for the required and optional properties used when creating a JDBC message store in WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-stores/jdbc-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-stores/jdbc-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # JDBC Message Store
 ## Introduction
 Used for storing and retrieving messages more efficiently in comparison with other message stores. This is a variation of the already existing synapse message store implementation and is designed in a manner similar to the same message store. The JDBC message store uses a JDBC connector to connect to external relational databases.
 
-To try this out quickly, see the [JDBC Message Store example](../../../integrate/examples/message_store_processor_examples/using-jdbc-message-store/).
+To try this out quickly, see the [JDBC Message Store example](../../../integrate/examples/message_store_processor_examples/using-jdbc-message-store).
 
 The advantages of using a JDBC message store instead of any other message store are as follows:
 <ul>
@@ -19,11 +34,11 @@ The advantages of using a JDBC message store instead of any other message store 
 
 ## Properties
 
-Listed below are the properties used for [creating a JDBC Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store/).
+Listed below are the properties used for [creating a JDBC Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store).
 
 ### Required Properties
 
-The following properties are required when [creating a JDBC Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store/).
+The following properties are required when [creating a JDBC Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store).
 
 <table>
   <tr>

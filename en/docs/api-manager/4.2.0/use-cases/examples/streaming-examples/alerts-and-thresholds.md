@@ -1,3 +1,18 @@
+---
+title: "Receiving email alerts"
+description: "Example Siddhi application that generates an email alert via WSO2 Streaming Integrator Tooling when a threshold value is exceeded."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/alerts-and-thresholds/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/alerts-and-thresholds.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Email Alerts
 
 ## Purpose:

@@ -1,3 +1,17 @@
+---
+title: "Error codes in Micro Integrator"
+description: "Reference of transport, mediation, and other error codes returned by the Micro Integrator, with their meanings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/error-handling-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/error-handling-mi.md
+tags:
+  - api-manager
+  - troubleshooting
+  - error-handling-mi
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Error codes in Micro Integrator
 
 This section describes error codes and their meanings.
@@ -58,7 +72,7 @@ Therefore, Error code = 101504 + 3 = 101507
 
 ## Endpoint Error Codes
 
-This section describes the error codes for endpoint failures. For more information on handling endpoint errors, see [Endpoint Error Handling](../reference/synapse-properties/endpoint-properties/#endpoint-error-handling-properties).
+This section describes the error codes for endpoint failures. For more information on handling endpoint errors, see [Endpoint Error Handling](../reference/synapse-properties/endpoint-properties#endpoint-error-handling-properties).
 
 ### General errors
 

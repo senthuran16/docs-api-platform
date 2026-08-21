@@ -1,9 +1,24 @@
+---
+title: "Mock implementation with Choreo connect"
+description: "Generate mock responses from OpenAPI specification examples using Choreo Connect as the API Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/prototype-api/create-mocked-oas-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/prototype-api/create-mocked-oas-api.md
+tags:
+  - api-manager
+  - design
+  - prototype-api
+  - create-mocked-oas-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mock Implementation with Choreo Connect
 
 This Mock Implementation allows you to generate mock responses based on examples provided in the OpenAPI specification and directly get the response. For non-default cases, the exact response can be requested using the `Prefer` and `Accept` headers.
 
 !!! important
-    This is currently supported only when [Choreo Connect](../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview/) is used as the Gateway.
+    This is currently supported only when [Choreo Connect](../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview) is used as the Gateway.
 
 ## Step 1 - Create the interface of the API
 
@@ -69,21 +84,21 @@ Follow the instructions below to enable mock response generation based on the Op
 11. Click **Save** to enable mock implementation with OAS examples.
 
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.2.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 
 1. Click **View in Dev Portal** to navigate to the Developer Portal.
 
     !!! note 
-        If you have enabled security for the prototype API, follow the [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api/) guide to subscribe and obtain an access token to invoke the prototype API.
+        If you have enabled security for the prototype API, follow the [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api) guide to subscribe and obtain an access token to invoke the prototype API.
 
 2. Click **Try Out** to navigate to the API Console.
 
 3. If you have enabled security, you can either use the access token that you got from the above step or use the **GET TEST KEY** option.
      
     !!! note
-        Skip this step if you have [disabled security for the API](../../design/api-security/api-authentication/disable-security/), and leave the **Access Token** field empty.
+        Skip this step if you have [disabled security for the API](../api-security/api-authentication/disable-security), and leave the **Access Token** field empty.
 
      [![Try out prototype](../../assets/img/learn/prototype-api/create-prototype-api-dev-portal-tryout-petstore.png)](../../assets/img/learn/prototype-api/create-prototype-api-dev-portal-tryout-petstore.png)
 
@@ -102,8 +117,8 @@ Follow the instructions below to enable mock response generation based on the Op
 ## Mock Implementation with OpenAPI examples
 
 !!! abstract
-    {!includes/design/add-oas-example.md!}
+    --8<-- "api-manager/4.2.0/includes/design/add-oas-example.md"
 ## See also
 
-- [Deploy a REST API with a Mock Implementation in Choreo Connect](../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl/)    
-- [Expose an existing backend implementation as a Pre-Released API](../../design/prototype-api/backend-url-prototype-api/) 
+- [Deploy a REST API with a Mock Implementation in Choreo Connect](../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-with-mock-impl)    
+- [Expose an existing backend implementation as a Pre-Released API](backend-url-prototype-api) 

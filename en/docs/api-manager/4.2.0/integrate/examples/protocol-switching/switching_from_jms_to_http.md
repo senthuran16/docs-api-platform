@@ -1,3 +1,18 @@
+---
+title: "Switching from JMS to HTTP(S)"
+description: "Configure a proxy service that receives messages over JMS and forwards them to a backend using HTTP(S)."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_jms_to_http/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/protocol-switching/switching_from_jms_to_http.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from JMS to HTTP(S)
 
 This example demonstrates how the Micro Integrator receives a messages over the JMS transport and forwards it over an HTTP/S transport. In this sample, the client sends a request message to the proxy service exposed in JMS. The Micro Integrator forwards this message to the HTTP endpoint and returns the reply back to the client through a JMS temporary queue.
@@ -33,10 +48,10 @@ Following are the integration artifacts (proxy service) that we can used to impl
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 5. Start the selected message broker and create a queue with name <strong>Queue1</strong>. 
 6. [Configure MI with the selected message broker](../../../install-and-setup/setup/mi-setup/brokers/configure-with-activemq) and start the Micro-Integrator.
 

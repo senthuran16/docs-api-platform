@@ -1,3 +1,18 @@
+---
+title: "File inbound endpoint"
+description: "Reference for the File inbound endpoint, which uses the VFS transport to process files from a specified source directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/file-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/file-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # File Inbound Endpoint
 ## Introduction
 

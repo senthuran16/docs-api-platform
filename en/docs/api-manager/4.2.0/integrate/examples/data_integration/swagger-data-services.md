@@ -1,3 +1,18 @@
+---
+title: "Using Swagger documents of RESTful data services"
+description: "Demonstrates how to access and publish a custom Swagger definition for a RESTful data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/swagger-data-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/swagger-data-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Swagger Documents of RESTful Data Services
 
 When RESTful resources are added to the data service, the Micro Integrator generates a corresponding swagger 3.0 (OpenApi) definition automatically. You can access this Swagger document by suffixing the service URL with `?swagger.json` or `?swagger.yaml` as shown below.
@@ -92,14 +107,14 @@ Following is a sample data service configuration with a custom Swagger definitio
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with a <b>Registry Resources</b> module and a <b>Composite Exporter</b>.
-3. [Create a Data Service project](../../../integrate/develop/create-data-services-configs) inside the integration project.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with a <b>Registry Resources</b> module and a <b>Composite Exporter</b>.
+3. [Create a Data Service project](../../develop/create-data-services-configs) inside the integration project.
 4. To create the data service with the above configurations:
     - Download the Swagger file: [custom_data_service_swagger.yaml](https://github.com/wso2-docs/WSO2_EI/blob/master/samples-rest-apis/simple_petstore.yaml).
-    - Follow the instructions on [creating a data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services).
+    - Follow the instructions on [creating a data service](../../develop/creating-artifacts/data-services/creating-data-services).
 
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 
 Copy the following URLs to your browser to see the Swagger documents of your RESTful data service:

@@ -1,3 +1,18 @@
+---
+title: "Monitoring MI artifacts and logs"
+description: "Use the Micro Integrator dashboard to view server nodes, monitor deployed integration artifacts, and manage logs across a cluster."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/mi-observe/working-with-monitoring-dashboard/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/mi-observe/working-with-monitoring-dashboard.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - working-with-monitoring-dashboard
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Monitoring MI Artifacts and Logs
 
 The Micro Integrator (MI) dashboard monitors the MI instances in a deployment. This can be a single MI instance or multiple MI instances in a group (cluster). It provides a graphical view of the integration artifacts that are deployed in the MI instances. You can also perform various management 
@@ -152,7 +167,7 @@ Follow the steps given below to configure the MI servers to publish data to the 
 
         -   The user credentials for signing in to the dashboard should be stored in your user store. This can be the default **file-based user store** or an **external LDAP/RDBMS** user store.
         -   [User management](../../install-and-setup/setup/mi-setup/user_stores/managing_users) is possible only if you have an RDBMS or LDAP user store for your Micro Integrator.
-        -   If you have an [external RDBMS user store](../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/#configuring-an-rdbms-user-store), be sure that the RDBMS driver is correctly added to the `<MI_HOME>/lib` folder. You will not be able to sign in without the driver.
+        -   If you have an [external RDBMS user store](../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore#configuring-an-rdbms-user-store), be sure that the RDBMS driver is correctly added to the `<MI_HOME>/lib` folder. You will not be able to sign in without the driver.
 
 3.  Regardless of the user who logs in, the dashboard uses the user configured in its `deployment.toml` to fetch the data to the dashboard server. Then the dashboard renders these data in the UI according to logged-in user. Hence, configure the super admin user credentials in the user store as mentioned below in the `deployment.toml` file (stored in the `<MI-DASHBOARD_HOME>/conf/` folder).
 
@@ -198,7 +213,7 @@ Follow the steps given below.
       
 ### Step 5 - Sign in to the Dashboard
 
-Once you have [set up and started the dashboard](#setting-up-the-dashboard), you can access the dashboard URL.
+Once you have [set up and started the dashboard](#using-the-mi-dashboard), you can access the dashboard URL.
 
 !!! Note "Before you begin"
     Be sure to have at least one Micro Integrator server connected to the dashboard before attempting to sign in to it. This can be verified by checking the presence of the following log.

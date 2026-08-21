@@ -1,6 +1,21 @@
+---
+title: "Scenario 3 - implementing an API"
+description: "Tutorial walkthrough using Micro Integrator to aggregate three telecom backend services into a single API Manager API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario3-implementing-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario3-implementing-an-api.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario3-implementing-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 3 - Implementing an API
 
-This is a tutorial that is part of a series and can be used as a standalone tutorial on how to implement the API. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview).
+This is a tutorial that is part of a series and can be used as a standalone tutorial on how to implement the API. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview).
 
 **_Time to Complete : 8 minutes_**
 
@@ -70,4 +85,4 @@ In this setup, the API is already deployed from the Publisher and you can view i
 
 ## What's next
 
-Try out the next scenario in the series, [Signing up a New User](../../tutorials/scenarios/scenario4-user-signup-approval-flow).
+Try out the next scenario in the series, [Signing up a New User](scenario4-user-signup-approval-flow).

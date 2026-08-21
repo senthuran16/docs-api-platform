@@ -1,3 +1,18 @@
+---
+title: "Enriching data"
+description: "Enrich a streaming data flow by joining it with a data store or another data stream in WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/enriching-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/enriching-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - enriching-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Enriching Data
 
 Enriching data involves integrated the data received into a streaming integration flow with data from other medium such as a data store, another data stream, or an external service to derive an expected result.
@@ -123,7 +138,7 @@ To try out the examples given above, follow the steps below.
                 isAutoCommit: false
         ```
     
-2. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+2. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 3. Open a new file in Streaming Integrator Tooling. Then add and save the following Siddhi application.
 

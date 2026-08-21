@@ -1,3 +1,18 @@
+---
+title: "Data mapper mediator"
+description: "Reference for the Data Mapper mediator, which converts and transforms message data between XML, JSON, and CSV formats."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/data-mapper-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/data-mapper-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - data-mapper-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Data Mapper Mediator
 
 Data Mapper mediator is a data mapping solution that can be integrated
@@ -16,7 +31,7 @@ capability into WSO2 Micro Integrator.
 Data Mapper mediator finds the configuration files from the Registry and configures the Data Mapper Engine with the input message type (XML/JSON/CSV) and output message type (XML/JSON/CSV). Then it takes the request message from the Micro Integrator message flow and uses the configured Data Mapper Engine to execute the transformation and adds the output message to the Micro Integrator message flow.
 
 !!! Info
-    The Data Mapper mediator is a [content-aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The Data Mapper mediator is a [content-aware](about-mediators#classification-of-mediators) mediator.
     If you are running JDK 17 or later NashornJS is not provided by JDK and you need to manually add org.openjdk.nashorn.nashorn-core version 15.3 (https://mvnrepository.com/artifact/org.openjdk.nashorn/nashorn-core/15.3) and org.ow2.asm.asm-util verion 9.3 jars (https://mvnrepository.com/artifact/org.ow2.asm/asm-util/9.2) to `<MI_HOME>/lib` directory
 
 ## Syntax
@@ -119,7 +134,7 @@ Mapper tool generates them when loading the input and output files as
 shown below.
 
 !!! Info
-    You can also create the input and output JSON Schemas manually using the Data Mapper Diagram Editor. For instructions, see [Creating a JSON Schema Manually](../../reference/mediators/data-mapper-json-schema-specification).
+    You can also create the input and output JSON Schemas manually using the Data Mapper Diagram Editor. For instructions, see [Creating a JSON Schema Manually](data-mapper-json-schema-specification).
 
 ![](../../assets/img/integrate/mediators/119131284/119134796.png) 
 [![](../../assets/img/integrate/mediators/119131284/119131291.png){: style="width:70%"}](../../assets/img/integrate/mediators/119131284/119131291.png)

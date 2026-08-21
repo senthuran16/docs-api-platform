@@ -1,3 +1,18 @@
+---
+title: "Microsoft Azure storage connector overview"
+description: "Learn how the Microsoft Azure Storage connector accesses Azure blob, table, file, and queue storage services."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Microsoft Azure Storage Connector Overview
 
 The Microsoft Azure Storage Connector allows you to access the [Azure Storage services](https://azure.microsoft.com/en-us/) (using Microsoft Azure Storage Java SDK) from an integration sequence. Azure Storage is a Microsoft-managed cloud service that provides storage that is highly available, secure, durable, scalable and redundant. The Azure Storage consists of four primary Azure Storage types. They are blob storage, table storage, file storage, and queue storage.
@@ -24,11 +39,11 @@ For older versions, see the details in the connector store.
 
     - Support Client credentials authentication.
 
-* **[Setting up the Microsoft Azure Storage Environment](../../../reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/)**: This involves setting up a Microsoft Azure Storage account and obtaining access credentials.
+* **[Setting up the Microsoft Azure Storage Environment](microsoft-azure-storage-configuration)**: This involves setting up a Microsoft Azure Storage account and obtaining access credentials.
 
-* **[Microsoft Azure Storage Connector Example](../../../reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-connector-example/)**: This example demonstrates how to work with container and blob operations using the WSO2 Microsoft Azure Storage Connector. 
+* **[Microsoft Azure Storage Connector Example](2.x/microsoft-azure-storage-connector-example)**: This example demonstrates how to work with container and blob operations using the WSO2 Microsoft Azure Storage Connector. 
 
-* **[Microsoft Azure Storage Connector Reference](../../../reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-reference/)**: This documentation provides a reference guide for the Microsoft Azure Storage Connector.
+* **[Microsoft Azure Storage Connector Reference](2.x/microsoft-azure-storage-reference)**: This documentation provides a reference guide for the Microsoft Azure Storage Connector.
 
 For older versions, see the details in the relevant links.
 

@@ -1,3 +1,18 @@
+---
+title: "Splitting messages and aggregating responses"
+description: "Split an incoming message with the Iterate mediator and aggregate the backend responses with the Aggregate mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/routing_examples/splitting_aggregating_messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/routing_examples/splitting_aggregating_messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - routing_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Splitting Messages and Aggregating Responses
 
 This example scenario uses a back-end service with two stock quote inventories (IBM and SUN). A proxy service is configured in the Micro Integrator with the **Iterate** mediator (to split the incoming message) and the **Aggregate** mediator (to aggregate the responses).
@@ -49,10 +64,10 @@ Listed below are the synapse configurations (proxy service) for implementing thi
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

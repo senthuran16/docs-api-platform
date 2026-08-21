@@ -1,3 +1,18 @@
+---
+title: "Adding internationalization and localization"
+description: "Localize the API Publisher and Developer Portal by changing the browser language or adding new languages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/adding-internationalization/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/adding-internationalization.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding Internationalization and Localization
 
 The API Manager includes two Web interfaces, namely the API Publisher and Developer Portal. The steps below explain how you can localize the API Publisher and the Developer Portal.
@@ -182,7 +197,7 @@ Follow the instructions below to change the direction of the UI:
     ```
 
     !!! tip
-    Learn more about [Tenant theming](../../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#uploading-devportal-theme-via-the-admin-portal-tenants-only).
+    Learn more about [Tenant theming](customizing-the-developer-portal/overriding-developer-portal-theme#uploading-devportal-theme-via-the-admin-portal-tenants-only).
 
 
 ## Enabling the language switch

@@ -1,7 +1,22 @@
+---
+title: "HTTP transport properties"
+description: "Reference for HTTP transport properties that configure how the HTTP transport processes messages via the Property mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/http-transport-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/http-transport-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # HTTP Transport Properties
 
 !!! Info
-	The following are HTTP transport properties that can be used with the [Property mediator](../../../reference/mediators/property-Mediator) and the [Property Group mediator](../../../reference/mediators/property-Group-Mediator).
+	The following are HTTP transport properties that can be used with the [Property mediator](../../../reference/mediators/property-mediator) and the [Property Group mediator](../../../reference/mediators/property-group-mediator).
 
 HTTP transport properties allow you to configure how the HTTP transport
 processes messages, such as forcing a 202 HTTP response to the client so

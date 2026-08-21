@@ -1,3 +1,18 @@
+---
+title: "RabbitMQ inbound"
+description: "Reference for the syntax and properties used to configure a RabbitMQ inbound endpoint in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/inbound-endpoints/event-based-inbound-endpoints/rabbitmq-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/inbound-endpoints/event-based-inbound-endpoints/rabbitmq-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # RabbitMQ Inbound 
 ## Introduction
 
@@ -24,7 +39,7 @@
 
 ## Properties
 
-Listed below are the properties used for [creating a RabbitMQ inbound endpoint](../../../../integrate//develop/creating-artifacts/creating-an-inbound-endpoint).
+Listed below are the properties used for [creating a RabbitMQ inbound endpoint](../../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint).
 
 ### Required Properties
 
@@ -344,4 +359,4 @@ fails after 5 retry attempts, the Micro Integrator terminates the connection.
 
 ### Mediator Properties
 
-In addition to the parameters described above, you can define RabbitMQ properties using the [Property mediator](../../../../reference/mediators/property-mediator) and the [Property Group mediator](../../../../reference/mediators/property-group-mediator).
+In addition to the parameters described above, you can define RabbitMQ properties using the [Property mediator](../../../mediators/property-mediator) and the [Property Group mediator](../../../mediators/property-group-mediator).

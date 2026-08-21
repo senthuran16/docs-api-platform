@@ -1,3 +1,18 @@
+---
+title: "Using the HL7 inbound endpoint (with auto ack)"
+description: "Configure the HL7 inbound endpoint with automatic acknowledgment using the Minimal Lower Layer Protocol."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-hl7-protocol-auto-ack/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-hl7-protocol-auto-ack.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the HL7 Inbound Endpoint (with Auto Ack)
 The HL7 inbound endpoint implementation is fully asynchronous and is based on the Minimal Lower Layer Protocol(MLLP) implemented on top of event driven I/O.
 
@@ -47,10 +62,10 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create two sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) (Main and Fault) and an [inbound endpoint](../../../integrate/develop/creating-an-inbound-endpoint) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create two sequences](../../develop/creating-artifacts/creating-reusable-sequences) (Main and Fault) and an [inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 To execute the sample, use the **HAPI HL7 TestPanel**:
 

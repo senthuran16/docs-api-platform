@@ -1,19 +1,34 @@
+---
+title: "Using a remote Micro Integrator"
+description: "Explains how to package artifacts and deploy them to a remote Micro Integrator instance from WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/using-remote-micro-integrator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/using-remote-micro-integrator.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - using-remote-micro-integrator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using a Remote Micro Integrator
 
-The light-weight Micro Integrator is already included in your WSO2 Integration Studio package, which allows you to [deploy and run the artifacts instantly](../../integrate/develop/using-embedded-micro-integrator). 
+The light-weight Micro Integrator is already included in your WSO2 Integration Studio package, which allows you to [deploy and run the artifacts instantly](using-embedded-micro-integrator). 
 
 The following instructions can be used to run your artifacts in a remote Micro Integrator instance.
 
 ## Deploy and run artifacts in a remote instance
 
 1.	[Download and install](../../install-and-setup/install/installing-the-product/installing-mi) the Micro Integrator server and on your computer. 
-2.	[Package your Synapse artifacts](../../integrate/develop/packaging-artifacts) from WSO2 Integration Studio.
+2.	[Package your Synapse artifacts](packaging-artifacts) from WSO2 Integration Studio.
 
 However, when your solutions are ready to be moved to your production environments, it is recommended to use a **CICD pipeline**.
 
 !!! Note
     As an alternative, you can skip the steps given below and manually copy the exported CAR file to the `<MI_HOME>/repository/deployment/server/carbonapps/` folder, where `<MI_HOME>` is the root folder of your Micro Integrator installation.
-    For more information on how to export a CAR file, see [Exporting Artifacts](../../integrate/develop/exporting-artifacts).
+    For more information on how to export a CAR file, see [Exporting Artifacts](exporting-artifacts).
 
 ## Add a new remote instance
 
@@ -34,7 +49,7 @@ However, when your solutions are ready to be moved to your production environmen
     !!! Note
     
 		-   If you selected an <b>Enterprise Integrator</b> server in the previous step, enter the port details required for an Enterprise Integrator.
-        -   If you are already running another server on these ports, give unused ports. See [Default ports](../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/) of the Micro Integrator for more information.
+        -   If you are already running another server on these ports, give unused ports. See [Default ports](../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset) of the Micro Integrator for more information.
 
 ## Deploy and run artifacts in a remote instance
 

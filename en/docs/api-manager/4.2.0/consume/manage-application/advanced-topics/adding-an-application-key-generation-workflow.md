@@ -1,8 +1,23 @@
+---
+title: "Adding an application key generation workflow"
+description: "Engage a custom approval workflow executor to control production and sandbox key generation requests for applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding an Application Key Generation Workflow
 
 This section explains as to how you can attach a simple approval workflow to the **application registration** operation in the API Manager. 
 
-[Application creation](../../../consume/manage-application/advanced-topics/adding-an-application-creation-workflow) and **Application registration** are different workflows. After an application is created, you can subscribe to available APIs, but you get the consumer key/secret and access tokens only after registering the application. There are two types of registrations with regard to an application: production and sandbox. The following are the situations in which you need to change the default application registration workflow:
+[Application creation](adding-an-application-creation-workflow) and **Application registration** are different workflows. After an application is created, you can subscribe to available APIs, but you get the consumer key/secret and access tokens only after registering the application. There are two types of registrations with regard to an application: production and sandbox. The following are the situations in which you need to change the default application registration workflow:
 
 -  To only issue sandbox keys when creating production keys is deferred until testing is complete.
 -  To restrict untrusted applications from creating production keys. You allow only the creation of sandbox keys.
@@ -37,7 +52,7 @@ First, enable the application registration workflow.
 
 
     !!! note
-        If you do not have an API already created and an Application subscribed to it, follow [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api/), [Publish an API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api/), and [Subscribe to an API](../../../consume/manage-subscription/subscribe-to-an-api) to create an API and subscribe to it.
+        If you do not have an API already created and an Application subscribed to it, follow [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api), [Publish an API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api), and [Subscribe to an API](../../manage-subscription/subscribe-to-an-api) to create an API and subscribe to it.
 
 5.  Select **Production Keys** or **Sandbox Keys** from the side navigation bar and click on **GENERATE KEYS**.
     

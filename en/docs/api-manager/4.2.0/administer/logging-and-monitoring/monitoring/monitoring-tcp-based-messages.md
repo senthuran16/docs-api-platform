@@ -1,3 +1,18 @@
+---
+title: "Monitoring TCP-based messages"
+description: "Install and run the TCPMon utility to view and debug TCP-based messages exchanged with WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/logging-and-monitoring/monitoring/monitoring-tcp-based-messages.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - monitoring
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring TCP-based Messages
 
 Users can view and monitor the messages passed along a TCP-based conversation using the TCPMon utility. Therefore, this is a convenient tool, particularly useful for debugging when you develop Web services. TCPMon is an Apache project that is distributed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -12,12 +27,12 @@ TCPMon is available in the `<API-M_HOME>/bin` directory of any WSO2 Carbon based
 
 Ensure that the following prerequisites are fulfilled in order to run TCPMon.
 
--   [Install JDK](../../../install-and-setup/setup/reference/product-compatibility/#tested-jdks).
+-   [Install JDK](../../../install-and-setup/setup/reference/product-compatibility#tested-jdks).
 -   Set the `JAVA_HOME` variable. 
      This setting is required only if you are using the TCPMon available in the WSO2 Carbon based product pack.
 
     !!! info
-        For information on how to set the `JAVA_HOME` variable, go to [Installing the Product](../../../install-and-setup/install/installing-the-product/installing-api-m-runtime/#setting-up-java_home), select the instructions relevant to your operating system and refer to the 'Setting JAVA\_HOME' section.
+        For information on how to set the `JAVA_HOME` variable, go to [Installing the Product](../../../install-and-setup/install/installing-the-product/installing-api-m-runtime#setting-up-java_home), select the instructions relevant to your operating system and refer to the 'Setting JAVA\_HOME' section.
 
 
 Follow the instructions below to run the TCPMon available with your WSO2 Carbon product pack:

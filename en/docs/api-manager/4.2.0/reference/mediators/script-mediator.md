@@ -1,3 +1,18 @@
+---
+title: "Script mediator"
+description: "Reference for the Script mediator, which invokes JavaScript, Groovy, or Ruby functions during message mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/script-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/script-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - script-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Script Mediator
 
 The **Script Mediator** is used to invoke the functions of a variety of scripting languages such as JavaScript, Groovy, or Ruby.
@@ -5,8 +20,8 @@ The **Script Mediator** is used to invoke the functions of a variety of scripti
 !!! Note
     The Micro Integrator uses Rhino engine to execute JavaScript. Rhino engine converts the script to a method inside a Java class. Therefore, when processing large JSON data volumes, the code length must be less than 65536 characters, since the Script mediator converts the payload into a Java object. However, you can use the following alternative options to process large JSON data volumes.
 
-    -   Achieve the same functionality via a [Class mediator](../../reference/mediators/class-mediator).
-    -   If the original message consists of repetitive sections, you can use the [Iterate mediator](../../reference/mediators/iterate-mediator/) to generate a relatively
+    -   Achieve the same functionality via a [Class mediator](class-mediator).
+    -   If the original message consists of repetitive sections, you can use the [Iterate mediator](iterate-mediator) to generate a relatively
     small payload using those repetitive sections. This will then allow you to use the Script mediator.
     -   The Script Mediator supports using Nashorn to execute JavaScripts, in addition to its default Rhino engine.
 
@@ -62,7 +77,7 @@ when using JavaScript `         getPayloadXML        ` and
 and when using Ruby, REXML documents.
 
 !!! Info
-    The Script mediator is a [content-aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The Script mediator is a [content-aware](about-mediators#classification-of-mediators) mediator.
 
 !!! Important "Limitations and Alternatives to Script Mediator"
     While the Script mediator offers enhanced extensibility in the Synapse configuration, it is important to consider its potential limitations. We highly recommend utilizing the Script mediator only when absolutely necessary. In cases where extension requirements can be fulfilled using alternatives such as the Class mediator, we advise opting for the latter due to several reasons. Notably, the use of a Script mediator in moderately complex to sophisticated mediation flows may introduce significant performance overhead compared to a Java-based Class mediator. Therefore, we suggest prioritizing Class mediators as extensions to the mediation flow over Script mediators. However, for simpler tasks, the Script mediator can still serve as a versatile option.

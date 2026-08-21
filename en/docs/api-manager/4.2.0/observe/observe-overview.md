@@ -1,3 +1,17 @@
+---
+title: "Observability overview"
+description: "Links to the API Manager, Micro Integrator, and Streaming Integrator observability solutions covering logs, metrics, and tracing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/observe-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/observe-overview.md
+tags:
+  - api-manager
+  - observe
+  - observe-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Observability Overview
 
 Observability can be viewed as a superset of monitoring where monitoring is enriched with capabilities to perform debugging and profiling through rich context, log analysis, correlation, and tracing. Modern day observability resides on three pillars of **logs**, **metrics**, and **tracing**. Modern businesses require observability systems to self-sufficiently emit their current state (overview), generate alerts for any abnormalities detected to proactively identify failures, and to provide information to find the root causes of a system failure.

@@ -1,3 +1,18 @@
+---
+title: "Using the message sampling processor"
+description: "Configure the message sampling processor to periodically forward sampled messages from a message store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_store_processor_examples/using-message-sampling-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_store_processor_examples/using-message-sampling-processor.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Message Sampling Processor
 This example demonstrates the usage of the message sampling processor.
 
@@ -59,10 +74,10 @@ Following are the artifact configurations that we can use to implement this scen
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), [mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences), [message store](../../../integrate/develop/creating-artifacts/creating-a-message-store), and [message processor](../../../integrate/develop/creating-artifacts/creating-a-message-processor) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), [mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences), [message store](../../develop/creating-artifacts/creating-a-message-store), and [message processor](../../develop/creating-artifacts/creating-a-message-processor) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 [Configure the ActiveMQ broker](../../../install-and-setup/setup/mi-setup/brokers/configure-with-activemq) and set up the JMS Sender.
 

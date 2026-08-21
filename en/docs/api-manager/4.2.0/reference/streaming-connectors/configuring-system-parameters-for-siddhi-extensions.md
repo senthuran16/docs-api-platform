@@ -1,3 +1,18 @@
+---
+title: "Configuring system parameters for siddhi extensions"
+description: "Explains how to override default system parameter values for pre-written Siddhi extensions in the deployment.yaml file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/streaming-connectors/configuring-system-parameters-for-siddhi-extensions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/streaming-connectors/configuring-system-parameters-for-siddhi-extensions.md
+tags:
+  - api-manager
+  - reference
+  - streaming-connectors
+  - configuring-system-parameters-for-siddhi-extensions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring System Parameters for Siddhi Extensions
 
 The pre-written Siddhi extensions supported by the Streaming Integrator are configured with default values for system 

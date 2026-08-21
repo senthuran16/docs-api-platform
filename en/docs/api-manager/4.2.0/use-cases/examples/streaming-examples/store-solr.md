@@ -1,3 +1,18 @@
+---
+title: "Receiving events via simulator and persisting in SOLR store"
+description: "Configure a Siddhi application that performs CRUD operations on a Solr store using Siddhi queries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/store-solr/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/store-solr.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Events via Simulator and Persisting in SOLR Store
 
 ## Purpose

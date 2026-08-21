@@ -1,3 +1,18 @@
+---
+title: "Basic health checks"
+description: "Check the health of WSO2 API Manager components using port connectivity, the Version service, and the Gateway health-check API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/deployment-best-practices/basic-health-checks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/deployment-best-practices/basic-health-checks.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Basic Health Checks
 
 WSO2 API-M exposes health check APIs as explained below.
@@ -12,7 +27,7 @@ Basic health checks can be performed on an API Manager node by connecting to rel
 | Traffic Manager     | 5672 (TCP), 9611 (TCP)       |
 | Key Manager         | 9673 (HTTP), 9443 (HTTPS)                |
 
-For more information on each profile, see [API Manager Profiles](../../../install-and-setup/setup/distributed-deployment/product-profiles).
+For more information on each profile, see [API Manager Profiles](../distributed-deployment/product-profiles).
 
 There can be scenarios where even though the ports are responding, the services are not properly started. It is advisable to use service-level health checks to ensure that the services are started. For example, API Manager by default is shipped with the simple axis2 service named `Version`. This service returns the version of the API Manager instance that is running currently.
 

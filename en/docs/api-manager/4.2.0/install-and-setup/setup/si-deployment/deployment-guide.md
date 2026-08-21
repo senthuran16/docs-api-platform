@@ -1,3 +1,18 @@
+---
+title: "Deployment"
+description: "Learn about the Streaming Integrator's supported deployment patterns for scalability and high availability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-deployment/deployment-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-deployment/deployment-guide.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Deployment
 
 WSO2 Streaming Integrator(SI) is designed to deploy enterprise grade critical systems that demand high 
@@ -8,7 +23,7 @@ installation and deployment, high maintainability, and DevOps-friendliness.
 
 The main deployment patterns supported are:
 
- - [Single Node Deployment](../../../install-and-setup/setup/si-deployment/deploying-si-as-a-single-deployment)
- - [Minimum High Available(HA) Deployment](../../../install-and-setup/setup/si-deployment/deploying-si-as-minimum-ha-cluster)
- - [Scalable High Available(HA) Deployment](../../../install-and-setup/setup/si-deployment/deploying-si-as-a-scalable-cluster)
+ - [Single Node Deployment](deploying-si-as-a-single-deployment)
+ - [Minimum High Available(HA) Deployment](deploying-si-as-minimum-ha-cluster)
+ - [Scalable High Available(HA) Deployment](deploying-si-as-a-scalable-cluster)
  

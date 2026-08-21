@@ -1,3 +1,18 @@
+---
+title: "Using fault sequences"
+description: "Configure fault sequences that handle errors and expose ERROR_CODE and related properties on failed messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/sequence_examples/using-fault-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/sequence_examples/using-fault-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - sequence_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Fault Sequences 
 WSO2 Micro Integrator provides fault sequences for dealing with errors. Whenever an error occurs, the mediation engine attempts to provide as much information as possible on the error to the user by initializing the following properties on the erroneous message:
 
@@ -117,10 +132,10 @@ The following is a sample of the configurations to use the Fault sequence in an 
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service), and the [mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service), and the [mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

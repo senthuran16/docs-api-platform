@@ -1,3 +1,18 @@
+---
+title: "Twitter connector reference"
+description: "Reference for the twitter.init operation and parameters used to interact with the Twitter API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/twitter-connector/twitter-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/twitter-connector/twitter-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - twitter-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Twitter Connector Reference
 
 The following operations allow you to work with the Twitter Connector. Click an operation name to see parameter details and samples on how to use it.

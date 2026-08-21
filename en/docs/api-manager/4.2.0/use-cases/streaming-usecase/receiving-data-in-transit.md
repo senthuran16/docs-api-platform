@@ -1,3 +1,18 @@
+---
+title: "Receiving data in transit"
+description: "Receive data in transit in WSO2 Streaming Integrator from data publishers such as HTTP and messaging systems such as Kafka."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/receiving-data-in-transit/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/receiving-data-in-transit.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - receiving-data-in-transit
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Data in Transit
 
 Data in transit, also known as data in flight refers to data that is in the process of being moved and therefore not permanently stored in a location where they can be in a static state. Streaming data, messages in a queue or a topic in a messaging system, and requests sent to a HTTP listening port are a few examples.
@@ -29,7 +44,7 @@ In this example, an online student registration results in an HTTP request in JS
 
 To try out the example given above, let's include the source configuration in a Siddhi application and simulate an event to it.
 
-1. Open and access Streaming Integrator Tooling. For instructions, see [Streaming Integrator Tooling Overview - Starting Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. Open and access Streaming Integrator Tooling. For instructions, see [Streaming Integrator Tooling Overview - Starting Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file and add the following Siddhi application to it.
 
@@ -107,7 +122,7 @@ The following are the supported transports to capture data in transit from data 
 
 ### Supported mappers
 
-Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-message-formats).
+Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](transforming-data#transforming-message-formats).
 
 The following are the supported mappers when you receive data from data publishers.
 
@@ -228,7 +243,7 @@ The following are the supported transports to capture data in transit from messa
 
 ### Supported mappers
 
-Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data#transforming-message-formats).
+Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](transforming-data#transforming-message-formats).
 
 The following are the supported mappers when you receive data from messaging systems.
 

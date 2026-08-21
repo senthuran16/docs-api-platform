@@ -1,3 +1,18 @@
+---
+title: "Using HL7 messages with file systems"
+description: "Demonstrates transferring HL7 messages between file systems using the HL7 and VFS transports in a proxy service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/hl7-examples/file_transfer_using_hl7/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/hl7-examples/file_transfer_using_hl7.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - hl7-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using HL7 Messages with File Systems
 
 The Micro Integrator allows messages to be transferred between HL7 and the file system using the HL7 
@@ -41,11 +56,11 @@ Given below is a proxy service that is configured to detect HL7 files (`.hl7`) i
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-hl7-transport) in your Micro Integrator.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-hl7-transport) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 To test this scenario:
 
@@ -102,11 +117,11 @@ When the following proxy service runs, an HL7 service will start listening on th
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-hl7-transport) in your Micro Integrator.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-hl7-transport) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 To test this scenario: 
 
@@ -165,11 +180,11 @@ Given below is a proxy service that will detect .hl7 files in the `transport.vfs
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-hl7-transport) in your Micro Integrator.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Configure the HL7 transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-hl7-transport) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 To test this scenario: 
 

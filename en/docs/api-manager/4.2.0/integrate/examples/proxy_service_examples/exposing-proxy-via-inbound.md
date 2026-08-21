@@ -1,3 +1,18 @@
+---
+title: "Exposing a proxy service via inbound endpoint"
+description: "Restrict a proxy service to being exposed only through inbound endpoints using the inbound.only parameter."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/proxy_service_examples/exposing-proxy-via-inbound/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/proxy_service_examples/exposing-proxy-via-inbound.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a Proxy Service via Inbound Endpoint
 If a proxy service is to be exposed only via inbound endpoints, the `inbound.only` service parameter has to be set in the proxy configuration.
 
@@ -38,10 +53,10 @@ Following is a sample proxy service configuration that we can used to implement 
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) and [security policy](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) and [security policy](../../develop/creating-artifacts/registry/creating-local-registry-entries) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

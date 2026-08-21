@@ -1,3 +1,18 @@
+---
+title: "Reusing mediation sequences"
+description: "Create a Sequence Template and reuse it in multiple places of a Micro Integrator mediation flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/using-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/using-templates.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-templates
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Reusing Mediation Sequences
 
 ## What you'll build

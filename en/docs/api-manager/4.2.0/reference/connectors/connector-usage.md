@@ -1,3 +1,18 @@
+---
+title: "Connector usage guidelines"
+description: "Follow guidelines for importing, configuring, and managing connectors throughout their lifecycle in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/connector-usage/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/connector-usage.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - connector-usage
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connector Usage Guidelines
 
 This document provides a set of guidelines on how to use connectors throughout their lifecycle.
@@ -37,25 +52,25 @@ After importing the connector, you can drag and drop operations to the design pa
 * As an [XPATH expression](https://www.w3schools.com/xml/xpath_syntax.asp).
 * As a [JSON expression](https://docs.oracle.com/cd/E60058_01/PDF/8.0.8.x/8.0.8.0.0/PMF_HTML/JsonPath_Expressions.htm). 
 * As a property. 
-    * Most of the time, this will be a custom property you set earlier in the mediation flow using [the property mediator](../../reference/mediators/property-mediator). Any property set with the default scope exists throughout the message flow and you can read it anywhere in the message flow after it is set. The property exists throughout the mediation flow. 
-    * You can also provide properties of other scopes as well (i.e., a header value). However, they may not exist throughout the message flow. Please read [the property mediator documentation](../../reference/mediators/property-mediator) to understand more.
+    * Most of the time, this will be a custom property you set earlier in the mediation flow using [the property mediator](../mediators/property-mediator). Any property set with the default scope exists throughout the message flow and you can read it anywhere in the message flow after it is set. The property exists throughout the mediation flow. 
+    * You can also provide properties of other scopes as well (i.e., a header value). However, they may not exist throughout the message flow. Please read [the property mediator documentation](../mediators/property-mediator) to understand more.
 
 ### Transform message as operation needs 
 
 Some connectors use message content in the $body to execute the operation. In such situations, you may need to transform the current message in the way the connector operation needs before using that with the connector operation. Following are some of the mediators you can use to transform the message. 
 
-* **[PayloadFactory mediator](../../reference/mediators/payloadfactory-mediator)** - This replaces the current message with a message in the format we specify. We can use the information of the current message to construct this new message.
-* **[Enrich mediator](../../reference/mediators/enrich-mediator)** - Enrich the current message modifying or adding new elements. This is also useful to save the current message as a property and to place a message in a property as the current message.
-* **[Datamapper mediator](../../reference/mediators/data-mapper-mediator)** - Transform JSON, XML, CSV messages between formats.
-* **[Script mediator](../../reference/mediators/script-mediator)** - Use JavaScript, Groovy or Ruby scripting languages to transform message in a custom manner.
-* **[Custom class mediator](../../reference/mediators/class-mediator)** - Use Java to transform message in a custom manner (use Axiom, Jackson, or Gson libraries).
+* **[PayloadFactory mediator](../mediators/payloadfactory-mediator)** - This replaces the current message with a message in the format we specify. We can use the information of the current message to construct this new message.
+* **[Enrich mediator](../mediators/enrich-mediator)** - Enrich the current message modifying or adding new elements. This is also useful to save the current message as a property and to place a message in a property as the current message.
+* **[Datamapper mediator](../mediators/data-mapper-mediator)** - Transform JSON, XML, CSV messages between formats.
+* **[Script mediator](../mediators/script-mediator)** - Use JavaScript, Groovy or Ruby scripting languages to transform message in a custom manner.
+* **[Custom class mediator](../mediators/class-mediator)** - Use Java to transform message in a custom manner (use Axiom, Jackson, or Gson libraries).
 * **Mediator Modules (new)** - Import module and use operations to transform message (currently CSV related transformations only).
 
 The above mediators are useful to transform the message anywhere in the mediation flow. Hence, the same mediators can be used to transform the result of a certain connector operation in the way the next connector operation needs. 
 
 ### Result of the operation invocation 
 
-Unless specified otherwise, the result of the connector operation (response from the connector application) will be available in the message context after using the connector operation. You can do any further mediation with the result or send it back to the invoker using [Respond mediator](../../reference/mediators/respond-mediator). 
+Unless specified otherwise, the result of the connector operation (response from the connector application) will be available in the message context after using the connector operation. You can do any further mediation with the result or send it back to the invoker using [Respond mediator](../mediators/respond-mediator). 
 
 ### Export and run a project with connectors 
 
@@ -85,7 +100,7 @@ You can refer to the documentation of the relevant connector and configure the `
 
 <img src="../../../assets/img/integrate/connectors/old-connection-config.png" title="Connection configuration with init" width="500" alt="Connection configuration with init"/>
 
-Instead of having the `init` operation before each connector operation, you can create an [inline XML local-entry](../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries/) with the XML configuration of the `init` operation configuration and refer to it at the beginning of each connector operation.
+Instead of having the `init` operation before each connector operation, you can create an [inline XML local-entry](../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) with the XML configuration of the `init` operation configuration and refer to it at the beginning of each connector operation.
 
 ### Externalizing connector initialization parameters 
 
@@ -105,7 +120,7 @@ The following are some other ways to externalize connection initialization param
 
 There are no special requirements when deploying the integration runtime with artifacts that has connectors. However, the following facts need to be considered. 
 
-To seamlessly refresh tokens, use a registry location that is visible to all [cluster members](../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/) (for example, config registry mounted). Here the refresh token value should be passed as a connector parameter. For detailed information on how this can be done for the relevant connectors, see the relevant documentation.
+To seamlessly refresh tokens, use a registry location that is visible to all [cluster members](../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei) (for example, config registry mounted). Here the refresh token value should be passed as a connector parameter. For detailed information on how this can be done for the relevant connectors, see the relevant documentation.
 
 ## Performance tuning and monitoring
 
@@ -121,16 +136,16 @@ Please refer to the reference documentation of the connector for details.
 
 Connector implementations will have DEBUG and TRACE level logs. You can enable them to see in detail what is going on with the connector. 
 
-* See [Configuring Log4j2 Properties section of the documentation](../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/) on how to enable DEBUG logs specifically for a Java package and on how to view the logs.
+* See [Configuring Log4j2 Properties section of the documentation](../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties) on how to enable DEBUG logs specifically for a Java package and on how to view the logs.
 
-* To get the package name of the connector implementation, refer the [How to contribute section of the overview page of connector documentation](../../reference/connectors/connectors-overview/#contribute-to-the-connector-project). 
+* To get the package name of the connector implementation, refer the [How to contribute section of the overview page of connector documentation](connectors-overview#contribute-to-the-connector-project). 
 
 !!! note
     Add fault sequences to the enclosing entities of connector operations (e.g., API resource) to gracefully handle the errors. 
 
 ### Enable wire logging 
 
-For SaaS connectors that use the HTTP transport of the integration runtime, developers can enable wire logs to see details of the messages that are sent from the runtime to the back-end service and the response sent back. This is useful to check the exact message that is sent out by the connector to the back-end service. See [documentation on monitoring wire logs](../../observe/micro-integrator/classic-observability-logs/monitoring-logs/#wire-logs) for instructions on how to enable wire logs. 
+For SaaS connectors that use the HTTP transport of the integration runtime, developers can enable wire logs to see details of the messages that are sent from the runtime to the back-end service and the response sent back. This is useful to check the exact message that is sent out by the connector to the back-end service. See [documentation on monitoring wire logs](../../observe/micro-integrator/classic-observability-logs/monitoring-logs#wire-logs) for instructions on how to enable wire logs. 
 
 ### Mediation debug 
 
@@ -140,11 +155,11 @@ WSO2 Integration Studio provides debugging capabilities. You cannot use mediatio
 * Whether your input parameters for connector operations contain the expected values.
 * What is the response message after using connector cooperation.
 
-Please refer to [the Debugging Mediation documentation](../../integrate/develop/debugging-mediation/) for instructions on how to use mediation debugging. 
+Please refer to [the Debugging Mediation documentation](../../integrate/develop/debugging-mediation) for instructions on how to use mediation debugging. 
 
 ### Debugging connector code 
 
-You can get the source code of the connector and remotely debug it with your scenario to find out issues. Refer to the ["How to contribute” section of the connector overview page](../../reference/connectors/connectors-overview/#contribute-to-the-connector-project), get the GitHub repository, clone it, checkout the relevant version, and debug. It is open source!
+You can get the source code of the connector and remotely debug it with your scenario to find out issues. Refer to the ["How to contribute” section of the connector overview page](connectors-overview#contribute-to-the-connector-project), get the GitHub repository, clone it, checkout the relevant version, and debug. It is open source!
 
 Start the server with `./integrator.sh -debug <port>` and connect to that port from your IDE (IntelliJ IDEA). 
 

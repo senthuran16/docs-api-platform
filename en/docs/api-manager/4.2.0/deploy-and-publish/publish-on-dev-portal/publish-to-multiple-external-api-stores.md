@@ -1,3 +1,18 @@
+---
+title: "Publish to multiple external Developer Portals"
+description: "Configure the external-api-stores.xml registry file so a Publisher can advertise APIs across other tenants' Developer Portals."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/publish-on-dev-portal/publish-to-multiple-external-api-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/publish-on-dev-portal/publish-to-multiple-external-api-stores.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - publish-on-dev-portal
+  - publish-to-multiple-external-api-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publish to Multiple External Developer Portals
 
 You can share an API with application developers who are subscribed to the Developer Portals of other tenants. Thereby, this allows you to advertise your APIs to a wider community. Subscribers of other tenant developer portals can view and browse your APIs; however, the users must visit your (the original publisher's) Developer Portal to subscribe to the APIs.
@@ -188,7 +203,7 @@ In this guide, let's use two separate instances of WSO2 API Manager, and let's p
 
 8.  Click **Save Content**.
 
-9.  Sign in to the Publisher of the first instance as `admin`/`admin` and if you do not have any APIs that are in the published state created, [create an API](../../design/create-api/create-rest-api/create-a-rest-api/).
+9.  Sign in to the Publisher of the first instance as `admin`/`admin` and if you do not have any APIs that are in the published state created, [create an API](../../design/create-api/create-rest-api/create-a-rest-api).
 
     !!! tip
             In a multi-tenant environment, sign in to the API Publisher using your tenant's credentials.

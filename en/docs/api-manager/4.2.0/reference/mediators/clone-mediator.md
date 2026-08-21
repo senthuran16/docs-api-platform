@@ -1,10 +1,24 @@
+---
+title: "Clone mediator"
+description: "Reference for the Clone mediator syntax and parameters used to split a message into several identical copies."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/clone-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/clone-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - clone-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Clone Mediator
 
-The **Clone Mediator** can be used to clone a message into several messages. It resembles the [Scatter-Gather enterprise integration pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/scatter-gather/). The Clone mediator is similar to the [Iterate mediator](../../reference/mediators/iterate-mediator). The difference between the two mediators is that the Iterate mediator splits a message into different parts, whereas the Clone mediator makes multiple identical copies of the message.
+The **Clone Mediator** can be used to clone a message into several messages. It resembles the [Scatter-Gather enterprise integration pattern](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/message-routing/scatter-gather/). The Clone mediator is similar to the [Iterate mediator](iterate-mediator). The difference between the two mediators is that the Iterate mediator splits a message into different parts, whereas the Clone mediator makes multiple identical copies of the message.
 
 !!! Info
-    The Clone mediator is a [content-aware](../..
-/reference/mediators/about-mediators/#classification-of-mediators) mediator. Also, note that to get the 
+    The Clone mediator is a [content-aware](about-mediators#classification-of-mediators) mediator. Also, note that to get the 
 asynchronous behavior we have to have the sequence to inject the message context to that sequence asynchronously. We 
 can not achieve that by adding the endpoint itself to the target without adding the sequence.
 

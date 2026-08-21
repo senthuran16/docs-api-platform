@@ -1,3 +1,18 @@
+---
+title: "HTTP/2 support in Choreo Connect"
+description: "Understand how Choreo Connect supports HTTP/2 connections between clients and the Gateway, and between the Gateway and endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/http-2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/http-2.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 Choreo Connect is able to support HTTP 2.0 (HTTP/2) in both incoming connections from clients to the Gateway and from the Gateway to endpoints. For more information on HTTP/2 and its benefits, refer to the [HTTP/2 homepage](https://http2.github.io/).
 
 ## How HTTP 2.0 connections are created

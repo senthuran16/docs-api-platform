@@ -1,3 +1,18 @@
+---
+title: "XSLT mediator"
+description: "Reference for the XSLT mediator, which applies an XSLT transformation to a selected element of the message payload."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/xslt-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/xslt-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - xslt-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # XSLT Mediator
 
 The **XSLT Mediator** applies a specified XSLT transformation to a
@@ -10,7 +25,7 @@ selected element of the current message payload. In addition, you can:
     mediator by adding them as resources.
 
 !!! Info
-    The XSLT mediator is a [content aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The XSLT mediator is a [content aware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 

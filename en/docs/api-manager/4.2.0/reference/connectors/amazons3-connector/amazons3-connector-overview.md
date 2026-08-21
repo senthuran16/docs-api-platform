@@ -1,3 +1,18 @@
+---
+title: "Amazon S3 connector overview"
+description: "Overview of the Amazon S3 connector, which lets you access the Amazon S3 REST API or the AWS SDK from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazons3-connector/amazons3-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazons3-connector/amazons3-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazons3-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon S3 Connector Overview
 
 Amazon S3 is a web-based storage service that can be used to store and retrieve data at anytime from anywhere on the web. Amazon uses the same service to run its own network that proves its scalability, reliability, and security.
@@ -21,9 +36,9 @@ For older versions, see the details in the connector store.
 
 ## Amazon S3 Connector documentation (latest - 2.x version)
 
-* **[Amazon S3 Connector Example](../../../reference/connectors/amazons3-connector/amazons3-connector-example/)**: This example demonstrates how to use the Amazon S3 Connector to create an S3 bucket, upload a text message into the bucket, retrieve it, and convert it into a message in the integration runtime. 
+* **[Amazon S3 Connector Example](amazons3-connector-example)**: This example demonstrates how to use the Amazon S3 Connector to create an S3 bucket, upload a text message into the bucket, retrieve it, and convert it into a message in the integration runtime. 
 
-* **[Amazon S3 Connector Reference](../../../reference/connectors/amazons3-connector/amazons3-connector-reference/)**: This documentation provides a reference guide for the Amazon S3 Connector.
+* **[Amazon S3 Connector Reference](amazons3-connector-reference)**: This documentation provides a reference guide for the Amazon S3 Connector.
 
 ## How to contribute
 

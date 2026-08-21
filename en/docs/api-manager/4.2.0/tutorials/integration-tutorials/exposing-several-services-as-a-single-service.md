@@ -1,3 +1,18 @@
+---
+title: "Service orchestration"
+description: "Use the Call mediator to aggregate several backend service calls into a single response for a medical appointment request."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/exposing-several-services-as-a-single-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/exposing-several-services-as-a-single-service.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - exposing-several-services-as-a-single-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Service Orchestration
 
 ## What you'll build

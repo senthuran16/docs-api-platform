@@ -1,3 +1,18 @@
+---
+title: "Working with business rules"
+description: "Create business rules from a template or from scratch using the Streaming Integrator's Business Rules Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/creating-business-rules-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/creating-business-rules-templates.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Working with Business Rules
 
 In streaming integration, there are common use cases for analyzing statistics that involve operations such as calculating the average, minimum, maximum etc., for different endpoints. The Business Rules Manager allows you to define templates and generate business rules from them for different scenarios with common requirements.
@@ -24,7 +39,7 @@ To create a business rule from a template, follow the procedure below:
 2. Access the Business Rule Manager via the URL that appears in the terminal for Business Rules in the `https://<SI_TOOLING_HOST>:<HTTPS_PORT>/business-rules` format.
     
     !!! tip
-        The default URL is `https://0.0.0.0:9743/business-rules`. If required, you can change the host name (i.e., `0.0.0.0`) or the web UI application name (i.e., `business-rules`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](../../../install-and-setup/setup/si-setup/change-hostname-and-context-path).
+        The default URL is `https://0.0.0.0:9743/business-rules`. If required, you can change the host name (i.e., `0.0.0.0`) or the web UI application name (i.e., `business-rules`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](change-hostname-and-context-path).
         
     This opens the following:
 
@@ -79,7 +94,7 @@ To create a business rule from scratch, follow the procedure below:
     | HTTPS    | `https://<SI_TOOLING_HOST>:<HTTPS_PORT>/business-rules` | `https://0.0.0.0:9443/business-rules` |
 
     !!!tip
-            The URLs given above are the defaul URLs. If required, you can change the host name (i.e., `0.0.0.0`) or the web UI application name (i.e., `business-rules`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](../../../install-and-setup/setup/si-setup/change-hostname-and-context-path).
+            The URLs given above are the defaul URLs. If required, you can change the host name (i.e., `0.0.0.0`) or the web UI application name (i.e., `business-rules`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](change-hostname-and-context-path).
             
     This opens the following:
 
@@ -99,7 +114,7 @@ To create a business rule from scratch, follow the procedure below:
 
 5. Click **Input** to expand the **Input** section. Then select the rule template from which the source and input configurations for the business rule must be selected.
 
-    ![Input Section](../../../assets/img/streaming/working-with-business-rules/Select-Input.png)
+    ![Input Section](../../../assets/img/streaming/working-with-business-rules/select-input.png)
 
     This displays the list of available sources and the exposed attributes of the selected template as shown below.
 
@@ -244,14 +259,14 @@ To create a business template using the Business Rules Template editor, follow t
     ![Template Editor URL](../../../assets/img/streaming/working-with-business-rules/template-editor-url.png)
 
     !!! info
-        The default URL is `http://localhost:9390/template-editor`. If required, you can change the host name (i.e., `localhost`) or the web UI application name (i.e., `template-editor`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](../../../install-and-setup/setup/si-setup/change-hostname-and-context-path).
+        The default URL is `http://localhost:9390/template-editor`. If required, you can change the host name (i.e., `localhost`) or the web UI application name (i.e., `template-editor`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](change-hostname-and-context-path).
 
 
 3. The Template Editor opens as shown below. There are two views from which you can interact and create a template group. **Design view** allows you to visualize a template group and interact with it. **Code view** allows you to interact with a template group by typing content. (For more information about template group structure, see
     [Business Rules Templates](#business-rules-templates).)
 
     !!!warning
-        Do not template sensitive information such as passwords in a Siddhi application or expose them directly in a Siddhi application. For detailed instructions to protect sensitive data by obfuscating them, see [Protecting Sensitive Data via the Secure Vault](../../../install-and-setup/setup/si-setup/protecting-sensitive-data-via-the-secure-vault).
+        Do not template sensitive information such as passwords in a Siddhi application or expose them directly in a Siddhi application. For detailed instructions to protect sensitive data by obfuscating them, see [Protecting Sensitive Data via the Secure Vault](protecting-sensitive-data-via-the-secure-vault).
 
 
    ![Business Rules Editor](../../../assets/img/streaming/working-with-business-rules/business-rules-template-editor.png)
@@ -441,7 +456,7 @@ WSO2 SI allows you to make edits to a business rules template that you have alre
     ![Template Editor URL](../../../assets/img/streaming/working-with-business-rules/template-editor-url.png)
 
     !!!info
-        The default URL is `http://localhost:9390/template-editor`. If required, you can change the host name (i.e., `localhost`) or the web UI application name (i.e., `template-editor`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](../../../install-and-setup/setup/si-setup/change-hostname-and-context-path).
+        The default URL is `http://localhost:9390/template-editor`. If required, you can change the host name (i.e., `localhost`) or the web UI application name (i.e., `template-editor`). For instructions, see [Changing the Host Name and Context Path of SI Tooling](change-hostname-and-context-path).
 
 3. The Template Editor opens as follows.
 
@@ -451,7 +466,7 @@ WSO2 SI allows you to make edits to a business rules template that you have alre
 
     ![Choose File](../../../assets/img/streaming/working-with-business-rules/choose-file.png)
 
-4. Edit the template as required. You can update it in the Design View or the Source View as you prefer. For more information, see [Creating a Business Rule Template](../../../install-and-setup/setup/si-setup/creating-business-rules-templates/#creating-business-rules).
+4. Edit the template as required. You can update it in the Design View or the Source View as you prefer. For more information, see [Creating a Business Rule Template](creating-business-rules-templates#creating-business-rules).
 
 5. Save your edits by clicking the **Save** icon in the top panel.
 

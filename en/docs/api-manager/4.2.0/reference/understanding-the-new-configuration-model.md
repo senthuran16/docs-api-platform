@@ -1,3 +1,17 @@
+---
+title: "Understanding the new configuration model"
+description: "How WSO2 API Manager's TOML-based deployment.toml configuration maps to legacy XML files using .j2 templates and default.json."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/understanding-the-new-configuration-model/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/understanding-the-new-configuration-model.md
+tags:
+  - api-manager
+  - reference
+  - understanding-the-new-configuration-model
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Understanding the New Configuration Model
 
 ## Overview
@@ -6,7 +20,7 @@ The new configuration model, which is based on the TOML format, was introduced i
 
 However, with the new WSO2 configuration model, all configuration files have been merged to make the configuration process easier. Therefore, the `<API-M_HOME>/repository/conf/deployment.toml` file is the single source used to configure and tune the various features in WSO2 API Manager.
 
-For more information on the configuration parameters that can be used in the `deployment.toml` file, see the [Configuration Catalog](../reference/config-catalog).
+For more information on the configuration parameters that can be used in the `deployment.toml` file, see the [Configuration Catalog](config-catalog).
 
 The following section explains the mapping between WSO2 API Manager's old configuration files and the new `deployment.toml` file.
 

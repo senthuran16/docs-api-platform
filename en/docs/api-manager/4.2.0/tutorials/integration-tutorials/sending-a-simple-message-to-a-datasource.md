@@ -1,3 +1,18 @@
+---
+title: "Data integration"
+description: "Use WSO2 Integration Studio to work with data service artifacts that provide a web service interface to a datasource."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/sending-a-simple-message-to-a-datasource.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - sending-a-simple-message-to-a-datasource
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Data Integration
 
 ## What you'll build
@@ -274,7 +289,7 @@ Now, let's create a REST resource that can be used to invoke the query.
 4.  Save the resource.
 
 !!!	tip
-    Alternatively, you can generate a data service from a datasource. For more information, refer [Generate Data Services](../../integrate/develop/creating-artifacts/data-services/creating-data-services/#generate-data-service-from-a-datasource).
+    Alternatively, you can generate a data service from a datasource. For more information, refer [Generate Data Services](../../integrate/develop/creating-artifacts/data-services/creating-data-services#generate-data-service-from-a-datasource).
 
 
 ### Step 3: Package the artifacts

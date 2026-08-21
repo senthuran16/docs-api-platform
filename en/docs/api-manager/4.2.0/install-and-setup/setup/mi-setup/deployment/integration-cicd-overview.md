@@ -1,3 +1,18 @@
+---
+title: "CI/CD for integrations - overview"
+description: "Overview of a reference CI/CD implementation for WSO2 Micro Integrator integrations, covering VM- and Kubernetes-based pipelines and project structure."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/integration-cicd-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/integration-cicd-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # CI/CD for Integrations - Overview
 
 Continuous integration(CI) and continuous deployment(CD) for Integration is a must for delivering changes more frequently and reliably.
@@ -5,11 +20,11 @@ Different organizations have different ways of addressing the problem.
 This is a guide of a reference implementation that involves a minimum number of parties in an organization for Integration automation.
 This guide contains three parts.
 
-1. [VM based CI/CD - MI](../../../../install-and-setup/setup/mi-setup/deployment/mi-cicd-vm).
+1. [VM based CI/CD - MI](mi-cicd-vm).
 
-2. [Kubernetes based CI/CD - MI](../../../../install-and-setup/setup/mi-setup/deployment/mi-cicd-k8s).
+2. [Kubernetes based CI/CD - MI](mi-cicd-k8s).
 
-3. [Kubernetes based CI/CD - SI](../../../../install-and-setup/setup/si-setup/si-cicd-k8s).
+3. [Kubernetes based CI/CD - SI](../../si-setup/si-cicd-k8s).
 
 ## Phases of SDLC
 

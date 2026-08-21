@@ -1,3 +1,18 @@
+---
+title: "Working with employee work assignment managers"
+description: "Retrieve, create, and update the managers assigned to an employee through Direct Management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeeworkassignmentmanagers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeeworkassignmentmanagers.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Work Assignment Managers
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update work assignment
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-work-assignment-managers"></a>
 #### Retrieving Employee Work Assignment Managers
 We can use GET Employee Work Assignment Managers operation with required parameters to find the work assignment manager of employees.
 
@@ -79,6 +95,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Work-Assignment-Managers/GET-Employee-Work-Assignment-Managers.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Work-Assignment-Managers/GET-Employee-Work-Assignment-Managers.aspx)
 
+<a name="creating-employee-work-assignment-managers"></a>
 #### Creating Employee Work Assignment Managers
 We can use POST Employee Work Assignment Managers operation with required parameters to create work assignment managers of an employee.
 
@@ -133,6 +150,7 @@ Dayforce returns HTTP Code 200
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Work-Assignment-Managers/POST-Employee-Work-Assignment-Managers.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/Work-Assignment-Managers/POST-Employee-Work-Assignment-Managers.aspx)
 
+<a name="updating-employee-work-assignment-managers"></a>
 #### Updating Employee Work Assignment Managers
 We can use PATCH Employee Work Assignment Managers operation with required parameters to update the work assignment managers of an employee
 

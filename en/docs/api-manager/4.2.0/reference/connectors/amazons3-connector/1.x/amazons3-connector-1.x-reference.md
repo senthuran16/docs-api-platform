@@ -1,3 +1,18 @@
+---
+title: "Amazon S3 connector reference"
+description: "Reference of the init operation and parameters used to configure version 1.x of the Amazon S3 connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazons3-connector/1.x/amazons3-connector-1.x-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazons3-connector/1.x/amazons3-connector-1.x-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazons3-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Amazon S3 Connector Reference
 
 The following operations allow you to work with the Amazon S3 Connector. Click an operation name to see parameter details and samples on how to use it.

@@ -1,9 +1,24 @@
+---
+title: "Creating siddhi applications"
+description: "Create a Siddhi application file using the Siddhi Query Language in the Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/creating-a-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/creating-a-siddhi-application.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - creating-a-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating Siddhi Applications
 
 Siddhi applications are files that define the Siddhi logic to process
 the events sent to the Streaming Integrator. They are written in the [Siddhi Query
 Language](https://siddhi-io.github.io/siddhi/documentation/siddhi-4.x/query-guide-4.x/)
-using the [Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview).
+using the [Streaming Integrator Tooling](streaming-integrator-studio-overview).
 
 A Siddhi file contains the following configurations:
 

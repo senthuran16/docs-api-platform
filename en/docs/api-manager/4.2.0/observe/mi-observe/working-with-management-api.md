@@ -1,9 +1,24 @@
+---
+title: "Using the management API"
+description: "Securely invoke the Micro Integrator Management API by acquiring a JWT token and accessing its administrative resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/mi-observe/working-with-management-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/mi-observe/working-with-management-api.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - working-with-management-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Management API
 
 The Management API of the Micro Integrator is an internal REST API, which was introduced to substitute
 the **admin services** that were available in WSO2 EI 6.x.x.
 
-The [Micro Integrator dashboard](../../observe/mi-observe/working-with-monitoring-dashboard) communicates with this service to
+The [Micro Integrator dashboard](working-with-monitoring-dashboard) communicates with this service to
 obtain administrative information of the server instance and to perform various administration tasks. If you are not using the dashboard, you can directly access the [resources](#accessing-api-resources) of the management API by following the instructions given below.
 
 ## Securely invoking the API

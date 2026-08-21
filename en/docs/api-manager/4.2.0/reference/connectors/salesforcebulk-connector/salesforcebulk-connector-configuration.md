@@ -1,3 +1,18 @@
+---
+title: "Setting up the SalesforceBulk environment"
+description: "Obtain Salesforce OAuth credentials and configure Axis2 message formatters required to use the SalesforceBulk connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforcebulk-connector/salesforcebulk-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforcebulk-connector/salesforcebulk-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforcebulk-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the SalesforceBulk Environment  
 
 The SalesforceBulk connector allows you to access the [SalesforceBulk REST API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/) from an integration sequence. SalesforceBulk is a RESTful API that allows you to either quickly load large sets of your organization's data into Salesforce or delete large sets of your organization's data from Salesforce.
@@ -10,7 +25,7 @@ Salesforce uses the OAuth protocol to allow application users to securely access
 
 Follow the steps below to create a connected application using Salesforce and to obtain the consumer key as well as the consumer secret for the created connected application.
 
-{!includes/reference/connectors/salesforce-connectors/sf-access-token-generation.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/salesforce-connectors/sf-access-token-generation.md"
 
 ### Configuring Axis2 configurations
 

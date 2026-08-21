@@ -1,6 +1,21 @@
+---
+title: "Scenario 12 - guaranteed message delivery"
+description: "Tutorial on implementing a store-and-forward guaranteed message delivery pattern using a Message Store and Processor."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario12-message-delivery/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario12-message-delivery.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario12-message-delivery
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 12 - Guaranteed Message Delivery
 
-This is a tutorial that is part of a series and can be used as a standalone tutorial on how to guarantee message delivery. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview).
+This is a tutorial that is part of a series and can be used as a standalone tutorial on how to guarantee message delivery. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview).
 
 **_Time to Complete : 6 minutes_**
 
@@ -80,4 +95,4 @@ You can refresh the hookbin site and see that the message has been captured now.
 
 ## What's next
 
-Try out the next scenario in the series, [Integrate with Connectors](../../tutorials/scenarios/scenario13-integrate-with-connectors).
+Try out the next scenario in the series, [Integrate with Connectors](scenario13-integrate-with-connectors).

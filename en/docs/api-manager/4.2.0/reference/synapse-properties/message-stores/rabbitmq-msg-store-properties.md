@@ -1,14 +1,29 @@
+---
+title: "RabbitMQ message store"
+description: "Reference for the properties used when creating a RabbitMQ message store that persists messages in a RabbitMQ broker queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-stores/rabbitmq-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/message-stores/rabbitmq-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # RabbitMQ Message Store
 ## Introduction
 Persists messages in a RabbitMQ queue inside a RabbitMQ broker. The RabbitMQ message store can be configured by specifying the class as <code>org.apache.synapse.message.store.impl.rabbitmq.RabbitmqStore</code>.
 
 ## Properties
 
-Listed below are the properties used for [creating a RabbitMQ Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store/).
+Listed below are the properties used for [creating a RabbitMQ Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store).
 
 ###  Required Properties
 
-The following optional properties can be configured when [creating a RabbitMQ Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store/).
+The following optional properties can be configured when [creating a RabbitMQ Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store).
 
 <table>
   <tr>
@@ -37,7 +52,7 @@ The following optional properties can be configured when [creating a RabbitMQ Me
 
 ### Optional Properties
 
-The following optional properties can be configured when [creating a RabbitMQ Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store/).
+The following optional properties can be configured when [creating a RabbitMQ Message Store](../../../integrate/develop/creating-artifacts/creating-a-message-store).
 
 <table>
   <tr>

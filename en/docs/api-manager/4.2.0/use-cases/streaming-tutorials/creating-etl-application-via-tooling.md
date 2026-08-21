@@ -1,3 +1,18 @@
+---
+title: "Creating an ETL application via SI tooling"
+description: "Build an ETL Siddhi application without writing code by using the ETL Flow wizard in Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/creating-etl-application-via-tooling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-tutorials/creating-etl-application-via-tooling.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - creating-etl-application-via-tooling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating an ETL Application via SI Tooling
 
 ## Introduction
@@ -10,9 +25,9 @@ ETL (Extract, Transform, Load) is a form of data processing that involves perfor
 
 3. **Load** Writing the data extracted and transformed into another destination.
 
-Tutorials such as [Performing Real-time ETL with Files](../../use-cases/streaming-tutorials/performing-real-time-etl-with-files) and [Performing Real-time ETL with MySQL](../../use-cases/streaming-tutorials/performing-real-time-etl-with-mysql) show how the WSO2 Streaming Integrator can perform ETL for streaming data by writing and deploying Siddhi applications with ETL functionality. If you need to create such a Siddhi application without writing code, you can use the ETL Flow wizard in Streaming Integrator Tooling.
+Tutorials such as [Performing Real-time ETL with Files](performing-real-time-etl-with-files) and [Performing Real-time ETL with MySQL](performing-real-time-etl-with-mysql) show how the WSO2 Streaming Integrator can perform ETL for streaming data by writing and deploying Siddhi applications with ETL functionality. If you need to create such a Siddhi application without writing code, you can use the ETL Flow wizard in Streaming Integrator Tooling.
 
-In this tutorial, let's create the same Siddhi application created in [Performing Real-time ETL with MySQL](../../use-cases/streaming-tutorials/performing-real-time-etl-with-mysql) using the Streaming Integrator Tooling.
+In this tutorial, let's create the same Siddhi application created in [Performing Real-time ETL with MySQL](performing-real-time-etl-with-mysql) using the Streaming Integrator Tooling.
 
 ## Before you begin
 
@@ -267,5 +282,5 @@ If you open the `/Users/foo/productions.csv` file, the `Chocalate, 100.0` record
 
 !!! info "What's Next?"
     Once you develop an ETL application, you may need to carry out following tasks:<br/><br/>   
-    - **Error Handling**: To understand how to handle errors that may occur when carrying out ETL operations, try the [Managing Streaming Data with Errors tutorial](../../use-cases/streaming-tutorials/handling-requests-with-errors).<br/><br/>     
+    - **Error Handling**: To understand how to handle errors that may occur when carrying out ETL operations, try the [Managing Streaming Data with Errors tutorial](handling-requests-with-errors).<br/><br/>     
     - **Monitoring ETL Statistics**: For instructions to set up pre-configured dashboards provided with WSO2 Streaming Integrator and visualize statistics related to your ETL flows, see [Monitoring ETL Statistics with Grafana](../../observe/streaming-integrator/viewing-etl-flows).

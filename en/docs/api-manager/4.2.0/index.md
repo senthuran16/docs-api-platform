@@ -1,4 +1,14 @@
 ---
+title: "WSO2 API Manager 4.2.0 documentation"
+description: "Landing page for WSO2 API Manager 4.2.0 documentation, with links to design, integration, and streaming integration guides."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0.md
+tags:
+  - api-manager
+  - getting-started
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
 template: templates/no-navbars.html
 ---
 
@@ -148,7 +158,7 @@ template: templates/no-navbars.html
     <div class="section02">
         <h3>Quick Start Guide</h3>
         <div class="linkWrapper">
-            <div class="linkSet2" onclick="location.href='get-started/quick-start-guide/quick-start-guide';">
+            <div class="linkSet2" onclick="location.href='get-started/api-manager-quick-start-guide/';">
                 <img src="assets/img/home/landing-page/design-and-implement-apis.svg" title="Design and Implement APIs" width="75" alt="Design and Implement APIs"/>
                 <h4>Design and implement APIs</h4>
                 <p>
@@ -191,7 +201,7 @@ template: templates/no-navbars.html
             <p>
                 The WSO2 API Manager consists of a management plane, a data plane, and a control plane, along with multiple developer-friendly tools to help you work with the various components.
             </p>
-            <a href='get-started/architecture'><h4>View Architecture</h4></a>
+            <a href='get-started/apim-architecture/'><h4>View Architecture</h4></a>
         </div>
     </div>
     <div class="section04">

@@ -1,3 +1,18 @@
+---
+title: "Setting up cloud native observability on Kubernetes"
+description: "Deploy the Micro Integrator's cloud native observability stack to a Kubernetes cluster using the provided Helm chart."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - setting-up-cloud-native-observability-in-kubernetes
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up Cloud Native Observability on Kubernetes
 
 Follow the instructions given below to set up a cloud native observability solution in a Kubernetes environment. 
@@ -86,7 +101,7 @@ This deployment installs Jaeger-Operator. To install the Jaeger deployment, foll
 
 ##### Configuring Grafana to visualize tracing information
 
-The Helm chart configures the Jaeger data source automatically. Therefore, unlike in Setting up [Cloud Native Observability in a Virtual Machine](../../observe/micro-integrator/setting-up-cloud-native-observability-on-a-vm), it is not required to add it manually. However, to configure the links into Jaeger UI from the service-level dashboards, you need to perform the following steps:
+The Helm chart configures the Jaeger data source automatically. Therefore, unlike in Setting up [Cloud Native Observability in a Virtual Machine](setting-up-cloud-native-observability-on-a-vm), it is not required to add it manually. However, to configure the links into Jaeger UI from the service-level dashboards, you need to perform the following steps:
 
 1. Access Grafana via `localhost:3000` and sign in.
 2. Navigate to the settings section of the service level dashboard by clicking the cog wheel icon in the top right corner.
@@ -148,7 +163,7 @@ To integrate with the observability deployment, you are required to perform the 
     class="org.wso2.micro.integrator.observability.metric.handler.MetricHandler"
     ``` 
     
-    For more information about the Micro Integrator Kubernetes development flow, see [MI Kubernetes guide](../../install-and-setup/setup/mi-setup/deployment/kubernetes_deployment_patterns/).
+    For more information about the Micro Integrator Kubernetes development flow, see [MI Kubernetes guide](../../install-and-setup/setup/mi-setup/deployment/kubernetes_deployment_patterns).
 
 - **Enabling the metrics endpoint**
 
@@ -219,4 +234,4 @@ For more information about the Micro Integrator Kubernetes development flow, see
 
 ## What's Next?
 
-If you have successfully set up your analytics deployment, see the instructions on [viewing cloud native observability statistics](../../observe/micro-integrator/viewing-cloud-native-observability-statistics/).
+If you have successfully set up your analytics deployment, see the instructions on [viewing cloud native observability statistics](viewing-cloud-native-observability-statistics).

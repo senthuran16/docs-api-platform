@@ -1,9 +1,24 @@
+---
+title: "Call template mediator"
+description: "Reference for the Call Template mediator syntax used to construct a sequence by passing values into a sequence template."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/call-template-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/call-template-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - call-template-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Call Template Mediator
 
 The Call Template mediator allows you to construct a sequence by passing values into a **sequence template**.
 
 !!! Info
-    This is currently only supported for special types of mediators such as the [Iterator](../../reference/mediators/iterate-mediator) and [Aggregate Mediators](../../reference/mediators/aggregate-mediator), where actual XPath operations are performed on a different SOAP message, and not on the message coming into the mediator.
+    This is currently only supported for special types of mediators such as the [Iterator](iterate-mediator) and [Aggregate Mediators](aggregate-mediator), where actual XPath operations are performed on a different SOAP message, and not on the message coming into the mediator.
 
 ## Syntax
 

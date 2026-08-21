@@ -1,3 +1,18 @@
+---
+title: "Documentum overview"
+description: "Learn how the Documentum connector performs folder, document, cabinet, and ACL operations in Documentum."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/documentum/documentum-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/documentum/documentum-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - documentum
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Documentum Overview
 
 Content, in a broad sense, is information stored as computer data files. It can include word processing, spreadsheet, graphics, video and audio files. Most content is stored locally on personal computers, organized arbitrarily, and only available to a single user. This means that valuable data is subject to loss, and projects are subject to delay when people cannot get the information they need.
@@ -38,9 +53,9 @@ For older versions, see the details in the connector store.
 
 ## Documentum Connector documentation
 
-* **[Documentum Connector Example](../../../reference/connectors/documentum/documentum-example/)**: This example explains how to use Documentum Connector to create folder, find folder, delete folder, create document, find document, delete document, create cabinets, find cabinet, delete cabinet, get cabinet, create acl, apply acl, delete acl, get all acls, get all version, get current version and delete all versions. 
+* **[Documentum Connector Example](documentum-example)**: This example explains how to use Documentum Connector to create folder, find folder, delete folder, create document, find document, delete document, create cabinets, find cabinet, delete cabinet, get cabinet, create acl, apply acl, delete acl, get all acls, get all version, get current version and delete all versions. 
 
-* **[Documentum Connector Reference](../../../reference/connectors/documentum/documentum-reference/)**: This documentation provides a reference guide for the Documentum Connector.
+* **[Documentum Connector Reference](documentum-reference)**: This documentation provides a reference guide for the Documentum Connector.
 
 ## How to contribute
 

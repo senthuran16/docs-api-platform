@@ -1,3 +1,18 @@
+---
+title: "Role-based permissions"
+description: "Explains role-based permissions in WSO2 API Manager, including super tenant and tenant level permissions and the default roles provided."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-permissions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-permissions.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-permissions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Role-based Permissions
 
 The **User Management** module in WSO2 products enables role-based access. As a result, the permissions enabled for a particular role determines what that user can do using the management console of a WSO2 product. Permissions can be granted to a role at two levels:
@@ -31,7 +46,7 @@ By default, every WSO2 product comes with the following Users, Roles and Permiss
             <Password>admin</Password>
         </AdminUser>
         ```
-        These properties can be customized by configuring the `<PRODUCT_HOME>/repository/conf/deployment.toml` file. For more information, see [Change the super admin credentials](../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/#change-the-super-admin-credentials). 
+        These properties can be customized by configuring the `<PRODUCT_HOME>/repository/conf/deployment.toml` file. For more information, see [Change the super admin credentials](../../install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords#change-the-super-admin-credentials). 
 
     -   The **admin** role has all the permissions in the system enabled by default. Therefore, this is a super tenant, with all permissions enabled.
 
@@ -50,14 +65,14 @@ In addition to the above, the following roles exist by default.
 -  Internal/publisher
 -  Internal/subscriber
 
-For more information about managing roles, see [Managing User Roles](../../administer/managing-users-and-roles/managing-user-roles)
+For more information about managing roles, see [Managing User Roles](managing-user-roles)
 
 You will be able to log in to the management console of the product with the **admin** user defined in the `user-mgt.xml` file. You can then create new users and roles and configure permissions for the roles using the management console. However, note that you cannot modify the permissions of the **admin** role. The possibility of managing users, roles, and permissions is granted by the **User Management** permission. For more information, see [Configuring the User Realm](https://is.docs.wso2.com/en/5.10.0/setup/configuring-the-realm/).
 
 ## Description of role-based permissions
 
 !!! note
-    Note that the descriptions given in this document only explain how permissions control access to operations available on the [Management Console](``https://localhost:9443/carbon``) (`https://<hostname>:9443/carbon`). In addition, not that all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
+    Note that the descriptions given in this document only explain how permissions control access to operations available on the [Management Console](https://localhost:9443/carbon) (`https://<hostname>:9443/carbon`). In addition, not that all the permissions available in the permission tree are listed here. You can get the information related to them throughout the documentation wherever applicable.
 
 ### Log-in permissions
 
@@ -121,14 +136,14 @@ The following table describes the permissions at **Tenant** level. These are als
 <td>Admin</td>
 <td>When the <strong>Admin</strong> permission node is selected, features including the following menus are enabled in the management console:
 <ul><li>
-<strong>Identity/User Stores:</strong> This permission allows users to add new user stores and manage them with the management console. Note that only secondary user stores can be added using this option. See the topic on <a href="../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a> for more details.<br />
+<strong>Identity/User Stores:</strong> This permission allows users to add new user stores and manage them with the management console. Note that only secondary user stores can be added using this option. See the topic on <a href="../managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a> for more details.<br />
 </li><li><strong>Identity/Identity Providers:</strong> For more information, see <a href="https://is.docs.wso2.com/en/5.10.0/learn/adding-and-configuring-an-identity-provider"> working with identity providers</a>.
 </li><li>
 <p>Additionally, all permissions listed under <strong>Admin</strong> in the permissions navigator are selected automatically.</p></li></ul></td>
 </tr>
 <tr class="even">
 <td>Admin/Manage/Identity/User Store Management</td>
-<td>This permission enables the <strong>Identity/User Stores</strong> option in the <strong>Main</strong> menu. This option allows users to add new user stores. For more details on User Store Management, see <a href="../../../administer/product-administration/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a></td>
+<td>This permission enables the <strong>Identity/User Stores</strong> option in the <strong>Main</strong> menu. This option allows users to add new user stores. For more details on User Store Management, see <a href="../managing-user-stores/configuring-secondary-user-stores/">Configuring Secondary User Stores</a></td>
 </tr>
 <tr class="odd">
 <td>Admin/Manage/Identity/Claim</td>
@@ -161,7 +176,7 @@ Additionally, all permissions listed under <strong>Admin/Monitor</strong> in the
 
 !!! note
     Note that the role-scope assignments mentioned here are related to the internal API-M specific scope assignments 
-    which is different from the [role-permission assignments](../../administer/managing-users-and-roles/managing-permissions/#role-based-permissions) done in the management console.
+    which is different from the [role-permission assignments](managing-permissions#role-based-permissions) done in the management console.
 
 1. Sign in to Admin Portal (`https://<APIM_Host>:<APIM_Port>/admin`) and navigate to **Settings** > **Scope Assignments** in the Admin Portal. 
 

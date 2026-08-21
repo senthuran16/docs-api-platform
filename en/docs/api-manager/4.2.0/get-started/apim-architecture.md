@@ -1,10 +1,24 @@
+---
+title: "Architecture and key components"
+description: "Learn the high-level architecture of WSO2 API Manager, including the Management Plane and its API management and integration components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/apim-architecture/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/apim-architecture.md
+tags:
+  - api-manager
+  - get-started
+  - apim-architecture
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Architecture and Key Components
 
 The diagram below is a high-level snapshot of WSO2 API Manager and the various components that it comprises of. 
 
 [![Basic Architecture](../assets/img/get_started/architecture/apim-architecture.png)](../assets/img/get_started/architecture/apim-architecture.png)
 
-The API Manager consists of an API management layer and an integration layer where the above components all fit into and mesh together to address the various use cases of the product. The API management layer contains several components, which you can use in your deployment according to your requirement. The integration layer includes either the Micro Integrator runtime (for services integration) and the Streaming Integrator runtime (for streaming requirements) or both runtimes. For details on deployment patterns, see [Deployment Overview](../install-and-setup/setup/deployment-overview/). The pattern you use would depend on the workload of each component and the traffic that is expected for each of the components and runtimes.
+The API Manager consists of an API management layer and an integration layer where the above components all fit into and mesh together to address the various use cases of the product. The API management layer contains several components, which you can use in your deployment according to your requirement. The integration layer includes either the Micro Integrator runtime (for services integration) and the Streaming Integrator runtime (for streaming requirements) or both runtimes. For details on deployment patterns, see [Deployment Overview](../install-and-setup/setup/deployment-overview). The pattern you use would depend on the workload of each component and the traffic that is expected for each of the components and runtimes.
 
 ## Management Plane
 
@@ -34,7 +48,7 @@ These integration services can be created using WSO2 Integration Studio and a va
 
 - For information on the architecture, see [API Analytics Architecture](../api-analytics/choreo-analytics/api-analytics-architecture)
 
-- For information on working with Analytics, see the [API Analytics Getting Started Guide](../api-analytics/getting-started-guide/).
+- For information on working with Analytics, see the [API Analytics Getting Started Guide](../api-analytics/choreo-analytics/getting-started-guide).
 
 ## Data Plane
 

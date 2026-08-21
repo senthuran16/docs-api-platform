@@ -1,6 +1,21 @@
+---
+title: "Scenario 13 - integrate with services via connectors"
+description: "Tutorial on using Micro Integrator connectors and an Inbound Endpoint to pick up a CSV file and email its contents."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario13-integrate-with-connectors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario13-integrate-with-connectors.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario13-integrate-with-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 13 - Integrate with Services via Connectors
 
-This is a tutorial that is part of a series and can be used as a standalone tutorial on how to use connectors. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview).
+This is a tutorial that is part of a series and can be used as a standalone tutorial on how to use connectors. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview).
 
 **_Time to Complete : 10 minutes_**
 
@@ -64,4 +79,4 @@ Here, for simplicity, the service is already created and exported as a Composite
 
 ## What's next
 
-Try out the next scenario in the series, [External Key Manager Support](../../tutorials/scenarios/scenario14-external-key-manager).
+Try out the next scenario in the series, [External Key Manager Support](scenario14-external-key-manager).

@@ -1,3 +1,18 @@
+---
+title: "Extracting values from a string"
+description: "Example Siddhi application that extracts a named entity of type organization from a provided string using an NLP extension."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/gpl-nlp-find-name-entity-type/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/gpl-nlp-find-name-entity-type.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Extracting Values from a String
 
 ## Purpose:

@@ -1,3 +1,18 @@
+---
+title: "Configuring secondary user stores"
+description: "Enable the user-core feature and add a new secondary user store to the WSO2 Micro Integrator for integration use cases."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores-mi.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Secondary User Stores
 
 For user management purposes, the WSO2 Micro Integrator can connect to several secondary user stores.
@@ -6,7 +21,7 @@ Users from the primary and secondary user store(s) can be authenticated and auth
 
 !!! info
     **Note** : It's mandatory to have a primary user store configured before adding secondary user stores. Refer
-    [configuring an LDAP user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/#configuring-an-ldap-user-store)
+    [configuring an LDAP user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore#configuring-an-ldap-user-store)
 
 ## Enabling the user-core feature
 

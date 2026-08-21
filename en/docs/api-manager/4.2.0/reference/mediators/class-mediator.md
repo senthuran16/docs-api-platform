@@ -1,3 +1,18 @@
+---
+title: "Class mediator"
+description: "Reference for the Class mediator, which creates an instance of a custom-specified Java class and sets it as a mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/class-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/class-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - class-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Class Mediator
 
 The **Class Mediator** creates an instance of a custom-specified class
@@ -12,7 +27,7 @@ for not frequently re-used custom developments and very user-specific
 scenarios, for which, there is no built-in mediator that already
 provides the required functionality.
 
-Your class mediator might not be picked up and updated if you use an existing package when creating. For best results, use [WSO2 Integration Studio](/integrate/develop/installing-wso2-integration-studio) for debugging Class mediators.
+Your class mediator might not be picked up and updated if you use an existing package when creating. For best results, use [WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio) for debugging Class mediators.
 
 ## Syntax
 
@@ -28,7 +43,7 @@ Your class mediator might not be picked up and updated if you use an existing 
 
 ## Example
 
-In this configuration, the Micro Integrator sends the requested message to the endpoint specified via the [Send mediator](../../reference/mediators/send-Mediator). This endpoint is the Axis2server running on port 9000. The response message is passed through a Class mediator before it is sent back to the client. Two parameters named `         variable1        ` and `         variable2        ` are passed to the instance mediator implementation class ( `SimpleClassMediator`).
+In this configuration, the Micro Integrator sends the requested message to the endpoint specified via the [Send mediator](../../reference/mediators/send-mediator). This endpoint is the Axis2server running on port 9000. The response message is passed through a Class mediator before it is sent back to the client. Two parameters named `         variable1        ` and `         variable2        ` are passed to the instance mediator implementation class ( `SimpleClassMediator`).
 
 !!! Info
     If you want, you can pass the same variables as a value or an expression:
@@ -36,7 +51,7 @@ In this configuration, the Micro Integrator sends the requested message to the 
     -   Example for passing the variable as a value: `          <property name="variable1" value="10"/>         `
 
     -   Example for passing the variable as an expression: `          <property name="variable2" expression="get-property('variable1')"/>         `  
-        For more information on using the get property method, see the [Property Mediator](../../reference/mediators/property-Mediator).
+        For more information on using the get property method, see the [Property Mediator](../../reference/mediators/property-mediator).
 
 !!! Warning
         Using the class variables with expressions will lead to the values evaluated being mixed up when there are concurrent requests and will lead to erroneous behaviors. 

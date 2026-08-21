@@ -1,3 +1,18 @@
+---
+title: "Joining streaming data with stored data in RDBMS"
+description: "Configure a Siddhi application that joins streaming credit card transactions with fraud data stored in an RDBMS table."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/join-with-stored-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/join-with-stored-data.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Joining Streaming Data with Stored Data in RDBMS
 
 ## Purpose:

@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Review WSO2 Micro Integrator performance test results for Direct Proxy, Direct API, CBR, and XSLT scenarios across concurrent users and payload sizes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/deployment-best-practices/performance-test-results-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/deployment-best-practices/performance-test-results-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Test Results
 
 The performance of WSO2 Micro Integrator Manager was measured using the following scenarios.

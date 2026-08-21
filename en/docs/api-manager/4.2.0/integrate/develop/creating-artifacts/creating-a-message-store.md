@@ -1,3 +1,18 @@
+---
+title: "Creating a message store"
+description: "Provides steps to create a message store artifact, such as JMS, JDBC, or RabbitMQ, in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-a-message-store/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-a-message-store.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Message Store
 
 Follow the instructions given below to create a new [Message Store](../../../reference/synapse-properties/about-message-stores-processors) artifact in WSO2 Integration Studio.
@@ -6,7 +21,7 @@ Follow the instructions given below to create a new [Message Store](../../../ref
 
 ### Creating the Message Store artifact
 
-1.	Right-click the [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) and go to **New → Message Store** to open the **New Message Store Artifact** dialog box.
+1.	Right-click the [ESB Config project](../create-integration-project#sub-projects) and go to **New → Message Store** to open the **New Message Store Artifact** dialog box.
 
 	<img src="../../../../assets/img/integrate/create_artifacts/new_message_store/select-message-store.png" width="600">
 
@@ -62,10 +77,10 @@ Open the new message store artifact from the project explorer. You can use the *
 
 ## Examples
 
--   [Introduction to Message Stores and Processors](../../../integrate/examples/message_store_processor_examples/intro-message-stores-processors)
--   [JDBC Message Store](../../../integrate/examples/message_store_processor_examples/using-jdbc-message-store)
--   [JMS Message Store](../../../integrate/examples/message_store_processor_examples/using-jms-message-stores)
--   [RabbitMQ Message Store](../../../integrate/examples/message_store_processor_examples/using-rabbitmq-message-stores)
+-   [Introduction to Message Stores and Processors](../../examples/message_store_processor_examples/intro-message-stores-processors)
+-   [JDBC Message Store](../../examples/message_store_processor_examples/using-jdbc-message-store)
+-   [JMS Message Store](../../examples/message_store_processor_examples/using-jms-message-stores)
+-   [RabbitMQ Message Store](../../examples/message_store_processor_examples/using-rabbitmq-message-stores)
 
 ## Tutorials
 

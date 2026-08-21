@@ -1,6 +1,21 @@
+---
+title: "Exporting packaged synapse artifacts"
+description: "Provides steps to export a packaged composite application into a CAR file using WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/exporting-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/exporting-artifacts.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - exporting-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exporting packaged Synapse artifacts
 
-Once you have [packaged your artifacts](../../integrate/develop/packaging-artifacts) into a composite application, you can
+Once you have [packaged your artifacts](packaging-artifacts) into a composite application, you can
 export it into a CAR file (.car file):
 
 1.  Select the Composite Exporter module in the project explorer,

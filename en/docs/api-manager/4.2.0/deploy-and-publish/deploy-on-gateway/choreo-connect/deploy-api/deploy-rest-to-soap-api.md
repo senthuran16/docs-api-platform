@@ -1,8 +1,23 @@
+---
+title: "REST API from a SOAP endpoint"
+description: "Transform a SOAP backend into a REST API using WSO2 Micro Integrator and deploy the converted API on Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # REST API from a SOAP Endpoint
 
 When it comes to web services, they are designed to provide rich functionlity to end users by supporting interoperable interactions over a network. Web services are mainly categorized into two types called SOAP and RESTful services. However, due to various reasons like flexibility, scalability, complexity, performance, etc. RESTful services became better for modern clients. Due to this reason exposing a SOAP endpoint as a RESTfull service is helpful as it provides more flexibilities when integrating web services with various end user applications.
 
-This guide will explain you on how to perform the SOAP to REST transformation using [WSO2 Micro Integrator](../../../../integrate/integration-overview/) and how to deploy the converted API in Choreo Connect gateway to provision the [key features](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/supported-features/) that the Choreo Connect is supporting by using an example.
+This guide will explain you on how to perform the SOAP to REST transformation using [WSO2 Micro Integrator](../../../../integrate/integration-overview) and how to deploy the converted API in Choreo Connect gateway to provision the [key features](../getting-started/supported-features) that the Choreo Connect is supporting by using an example.
 
 The following diagram illustrates the request flow from client to the backend through WSO2 Micro Integrator and the response flow from backend to client through WSO2 Micro Integrator for this example. The WSO2 Micro Integrator acting as the backend for the Choreo Connect Gateway whereas its handling the `JSON` to `SOAP` message transformation as well as `GET` to `POST` method transformation.
 
@@ -27,7 +42,7 @@ Following steps will guide you through creation of SOAP to REST transformation u
 
 !!! info "Before you begin"
 
-    This guide assumes that you already have installed WSO2 Integration Studio, if not you can follow up instructions on [Installing WSO2 Integration Studio](../../../../integrate/develop/installing-wso2-integration-studio/).
+    This guide assumes that you already have installed WSO2 Integration Studio, if not you can follow up instructions on [Installing WSO2 Integration Studio](../../../../integrate/develop/installing-wso2-integration-studio).
 
 !!! Tip
     The project that will be creating in below **Step 1** & **Step 2** is available in `/samples/rest-to-soap-conversion` directory of the [Choreo Connect's github repository](https://github.com/wso2/product-microgateway).
@@ -35,9 +50,9 @@ Following steps will guide you through creation of SOAP to REST transformation u
     If you wish to use that, you can go through the following steps to import it directly to the Integration Studio and use.
 
     1. Clone the [Choreo Connect repository](https://github.com/wso2/product-microgateway).
-    2. Import the `PhoneVerify` sample project to the Integration studio. Refer [Importing Projects](../../../../integrate/develop/importing-projects/) for more information.
-    3. [Configure Micro Integrator to Update APIM Service Catalog](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api/#step-3-configure-micro-integrator-to-update-apim-service-catalog) if required.
-    4. [Deploy the Artifacts](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api/#step-5-deploy-the-artifacts-in-micro-integrator).
+    2. Import the `PhoneVerify` sample project to the Integration studio. Refer [Importing Projects](../../../../integrate/develop/importing-projects) for more information.
+    3. [Configure Micro Integrator to Update APIM Service Catalog](deploy-rest-to-soap-api#step-3-configure-micro-integrator-to-update-apim-service-catalog) if required.
+    4. [Deploy the Artifacts](deploy-rest-to-soap-api#step-5-deploy-the-artifacts-in-micro-integrator).
 
 ### Step 1 - Create an Integration project with ESB Configs module and Composit Exporter module
 
@@ -45,7 +60,7 @@ Select **File->New->Integration Project** from Integration studio and enter the 
 
 Make sure to tick the **Create ESB Configs** and **Create Composite Exporter** when creating the Integration project.
 
-For more information refer to [Creating an Integration Project](../../../../integrate/develop/create-integration-project/).
+For more information refer to [Creating an Integration Project](../../../../integrate/develop/create-integration-project).
 
 ### Step 2 - Create the REST API
 
@@ -54,15 +69,15 @@ For more information refer to [Creating an Integration Project](../../../../inte
 3. Select the **Import API Artifact** option and provide file having [this synapse configuration](https://github.com/wso2/product-microgateway/blob/main/samples/rest-to-soap-conversion/PhoneVerification/PhoneVerificationConfigs/src/main/synapse-config/api/PhoneVerify.xml).
 
 !!! Note
-    If you want to design your API from scratch, select **Create New API Artifact** option in the above step and create it using Integration Studio. For more information on this refer documentation on [Creating a REST API](../../../../integrate/develop/creating-artifacts/creating-an-api/).
+    If you want to design your API from scratch, select **Create New API Artifact** option in the above step and create it using Integration Studio. For more information on this refer documentation on [Creating a REST API](../../../../integrate/develop/creating-artifacts/creating-an-api).
 
 !!! Tip
-    This example is using [PayloadFactory Mediator](../../../../reference/mediators/payloadfactory-mediator/) to transform `JSON` content to `SOAP`. Also a similar example can be find in [Converting JSON to SOAP](../../../../integrate/examples/message_transformation_examples/json-to-soap-conversion/).
+    This example is using [PayloadFactory Mediator](../../../../reference/mediators/payloadfactory-mediator) to transform `JSON` content to `SOAP`. Also a similar example can be find in [Converting JSON to SOAP](../../../../integrate/examples/message_transformation_examples/json-to-soap-conversion).
 
 ### Step 3 - Configure Micro Integrator to Update APIM Service Catalog
 
 !!! Note
-    This step is required only if you are trying [Choreo Connect with WSO2 APIM](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api/#via-wso2-api-manager-publisher-portal) mode and create the API through [Service Catalog](../../../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1/).
+    This step is required only if you are trying [Choreo Connect with WSO2 APIM](deploy-rest-to-soap-api#via-wso2-api-manager-publisher-portal) mode and create the API through [Service Catalog](../../../../reference/product-apis/service-catalog-apis/service-catalog-v1/service-catalog-v1).
 
 You can use the following steps to configure the **Micro Integrator** to update the APIM service catalog for the developped integrations.
 
@@ -103,7 +118,7 @@ This step will show you how to Update the swagger definition to change some impo
 #### Change Server URL
 
 !!! Note
-    Follow this step only if you are using Choreo Connect in [Standalone Mode](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api/#via-apictl-for-standalone-mode) on `docker-compose` and **Micro Integrator** is running on `localhost`.
+    Follow this step only if you are using Choreo Connect in [Standalone Mode](deploy-rest-to-soap-api#via-apictl-for-standalone-mode) on `docker-compose` and **Micro Integrator** is running on `localhost`.
 
 1. Open the file in `PhoneVerification/PhoneVerificationConfigs/src/main/resources/metadata/PhoneVerify_swagger.yaml`.
 2. Change the URL under `servers` section as follows.
@@ -120,9 +135,9 @@ This step will show you how to Update the swagger definition to change some impo
 
 ### Step 5 - Deploy the Artifacts in Micro Integrator
 
-You have multiple options to deploy your REST API. See the [Deploying Artifacts](../../../../integrate/develop/deploy-artifacts/#deploy-artifacts-in-the-embedded-micro-integrator) for more information.
+You have multiple options to deploy your REST API. See the [Deploying Artifacts](../../../../integrate/develop/deploy-artifacts#deploy-artifacts-in-the-embedded-micro-integrator) for more information.
 
-In this example we are using the [Embedded Micro Integrator](../../../../integrate/develop/deploy-artifacts/#deploy-artifacts-in-the-embedded-micro-integrator) in your WSO2 Integration Studio.
+In this example we are using the [Embedded Micro Integrator](../../../../integrate/develop/deploy-artifacts#deploy-artifacts-in-the-embedded-micro-integrator) in your WSO2 Integration Studio.
 
 Below steps will show you, how to deploy your REST API.
 
@@ -131,7 +146,7 @@ Below steps will show you, how to deploy your REST API.
 3. Select **Run on Micro Integrator** and click **OK**.
 4. Then select the created API artifact under `PhoneVerificationConfigs` and click **Finish**.
 
-Refer to [Deploy Artifacts using Embedded Micro Integrator](../../../../integrate/develop/using-embedded-micro-integrator/) for more information.
+Refer to [Deploy Artifacts using Embedded Micro Integrator](../../../../integrate/develop/using-embedded-micro-integrator) for more information.
 
 !!! Tip
     Once the REST API is deployed you may use following `cURL` command to test it directly.
@@ -146,8 +161,8 @@ You can deploy the created REST API in the following ways depending on the Chore
 
 |**Mode**         | **Method**    |
 |--------------|-----------|
-|[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)   | [Via WSO2 API Manager Publisher Portal](#workflow-when-deploying-an-api)  |
-|[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)  |[Via apictl for Standalone Mode](#step-2-redeploy-the-project) |
+|[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
+|[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)  |[Via apictl for Standalone Mode](#step-2-deploy-the-api) |
 
 ### Via WSO2 API Manager Publisher Portal
 
@@ -157,16 +172,16 @@ Follow the instructions below to deploy the created Integration Service as an AP
 
     This guide assumes that you already have a Choreo Connect instance configured to run with API Manager. If not,
 
-    - To start Choreo Connect with an existing API Manager instance, follow the steps mentioned in the [Using Choreo Connect Deployed on Docker with WSO2 API Manager Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane).
+    - To start Choreo Connect with an existing API Manager instance, follow the steps mentioned in the [Using Choreo Connect Deployed on Docker with WSO2 API Manager Guide](../getting-started/deploy/cc-on-docker-with-apim-as-control-plane).
 
-    - To start a complete deployment setup that includes a WSO2 API Manager instance and a Choreo Connect instance already configured to work with API Manager, follow the steps in the [Quick Start Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim).
+    - To start a complete deployment setup that includes a WSO2 API Manager instance and a Choreo Connect instance already configured to work with API Manager, follow the steps in the [Quick Start Guide](../getting-started/quick-start-guide-docker-with-apim).
 
 You have two options to deploy the Created API in WSO2 API Manager.
 
 1. Through the API Manager Service Catalog Integrated with Micro Integrator.
 2. Using the Swagger definition of the Created REST API.
 
-This guide will continue with the first option. Therefore you **must** have [Configured Micro Integrator to Update APIM Service Catalog](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-to-soap-api/#step-3-configure-micro-integrator-to-update-apim-service-catalog) in the Step-3 of the Integration creation guide.
+This guide will continue with the first option. Therefore you **must** have [Configured Micro Integrator to Update APIM Service Catalog](deploy-rest-to-soap-api#step-3-configure-micro-integrator-to-update-apim-service-catalog) in the Step-3 of the Integration creation guide.
 
 Following steps will show you how to create the API using WSO2 APIM Publisher and invoke it.
 
@@ -207,7 +222,7 @@ Go to the **Lifecycle** page from the left side panel and click on **Publish** b
 You can use WSO2 API Controller (apictl) to deploy the created REST API in Choreo Connect Gateway. The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token.
 
 !!! Info "Before you begin"
-    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-ctl-tool) `apictl` and Choreo Connect is up and running in [standalone mode](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/#choreo-connect-deployment-options). 
+    [Download and initialize](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#download-and-initialize-the-apictl) `apictl` and Choreo Connect is up and running in [standalone mode](../getting-started/deploy/cc-deploy-overview#choreo-connect-deployment-options). 
 
 The following steps will show you how to create the `apictl` project, deploy it on the Choreo Connect Gateway, and invoke it using a test token.
 
@@ -220,9 +235,10 @@ apictl init PhoneVerify --oas http://localhost:8290/PhoneVerify?swagger.json
 ```
 
 !!! Note
-    The Swagger URL `http://localhost:8290/PhoneVerify?swagger.json` is used to get the Swagger definition of the deployed integration service in previous steps. You may read more details on this from [Using Swagger Documents](../../../../integrate/develop/advanced-development/using-swagger-for-apis/).
+    The Swagger URL `http://localhost:8290/PhoneVerify?swagger.json` is used to get the Swagger definition of the deployed integration service in previous steps. You may read more details on this from [Using Swagger Documents](../../../../integrate/develop/advanced-development/using-swagger-for-apis).
 
 
+<a name="step-2-deploy-the-api"></a>
 #### Step 2 - Deploy the API
 
 Execute the following commands to get your API project deployed in Choreo Connect.
@@ -243,7 +259,7 @@ Execute the following commands to get your API project deployed in Choreo Connec
     ```
 
 !!! Note
-    More details on the above commands can be found in the [Managing Choreo Connect](../../../../install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl/) page under CI/CD documentation.
+    More details on the above commands can be found in the [Managing Choreo Connect](../../../../install-and-setup/setup/api-controller/managing-choreo-connect/managing-choreo-connect-with-ctl) page under CI/CD documentation.
 
 #### Step 3 - Invoke the API
 
@@ -256,7 +272,7 @@ TOKEN=$(curl -X POST "https://localhost:9095/testkey" -H "Authorization: Basic Y
 ```
 
 !!! Info
-    Refer [Enforcer Test Key Authentication](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt/) to learn more on test key generation.
+    Refer [Enforcer Test Key Authentication](../security/generate-a-test-jwt) to learn more on test key generation.
 
 Execute the following `cURL` command to invoke the API using the access token.
 
@@ -266,6 +282,6 @@ curl -X 'GET' 'https://localhost:9095/phoneverify/checkphonenumber?PhoneNumber=8
 
 ## See Also
 
-- [Converting JSON to SOAP](../../../../integrate/examples/message_transformation_examples/json-to-soap-conversion/)
-- [Exposing a SOAP Endpoint as a RESTful API](../../../../integrate/examples/rest_api_examples/enabling-rest-to-soap/)
-- [Exposing an Integration Service as a Managed API](../../../../tutorials/integration-tutorials/service-catalog-tutorial/)
+- [Converting JSON to SOAP](../../../../integrate/examples/message_transformation_examples/json-to-soap-conversion)
+- [Exposing a SOAP Endpoint as a RESTful API](../../../../integrate/examples/rest_api_examples/enabling-rest-to-soap)
+- [Exposing an Integration Service as a Managed API](../../../../tutorials/integration-tutorials/service-catalog-tutorial)

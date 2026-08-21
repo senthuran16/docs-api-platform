@@ -1,3 +1,18 @@
+---
+title: "Connecting web APIs/Cloud services"
+description: "Add an Email connector to a mediation flow so the Micro Integrator sends a confirmation email for an appointment reservation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/using-the-gmail-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/using-the-gmail-connector.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-the-gmail-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Connecting Web APIs/Cloud Services
 
 ## What you'll build

@@ -1,9 +1,24 @@
+---
+title: "NTLM mediator"
+description: "Reference for the NTLM mediator, which enables access to NTLM-protected backend services through challenge-response authentication."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/ntlm-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/ntlm-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - ntlm-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # NTLM Mediator
 
 NTLM (Windows NT LAN Manager) is an authentication protocol provided in Windows server. NTLM authentication is based on a challenge response-based protocol and WSO2 API Manager gives support to access NTLM protected services by using the NTLM mediator. You need to configure the NTLM backend and use that credentials to access NTLM protected services by using the WSO2 API Manager. First you need to initialize the NTLM mediator and then you can use call mediator or callout mediator to send requests to the backend service.
 
 !!! Info
-    - The NTLM mediator is a [content-unaware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    - The NTLM mediator is a [content-unaware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 

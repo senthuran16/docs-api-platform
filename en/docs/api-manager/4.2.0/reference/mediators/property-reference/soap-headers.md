@@ -1,14 +1,29 @@
+---
+title: "SOAP headers"
+description: "Reference for SOAP header properties, such as To and From, retrievable with the Property mediator's get-property function."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/soap-headers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/soap-headers.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # SOAP Headers
 
 !!! Info
-	The following properties are SOAP headers that can be used with the [Property mediator](../../../reference/mediators/property-mediator) and the [Property Group mediator](../../../reference/mediators/property-group-mediator).
+	The following properties are SOAP headers that can be used with the [Property mediator](../property-mediator) and the [Property Group mediator](../property-group-mediator).
 
 SOAP headers provide information about the message, such as the To and
 From values. You can use the `get-property()` function
-in the [Property mediator](../../../reference/mediators/property-mediator) to retrieve these
+in the [Property mediator](../property-mediator) to retrieve these
 headers. You can also add Custom SOAP headers using either the
-[PayloadFactory mediator](../../../reference/mediators/payloadfactory-mediator)
-or the [Script mediator](../../../reference/mediators/script-mediator).
+[PayloadFactory mediator](../payloadfactory-mediator)
+or the [Script mediator](../script-mediator).
 
 ## To
 

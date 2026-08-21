@@ -1,3 +1,18 @@
+---
+title: "Endpoint types"
+description: "Review the endpoint types WSO2 API Manager supports, such as address, WSDL, failover, and load-balance endpoints, for connecting backends."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/endpoints/endpoint-types/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/endpoints/endpoint-types.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-types
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Endpoint Types
 
 An Endpoint is a specific destination for a message such as an address, WSDL, a failover group, a load-balance group etc. WSO2 API Manager supports a range of different endpoint types, allowing the API Gateway to connect with advanced types of backends.

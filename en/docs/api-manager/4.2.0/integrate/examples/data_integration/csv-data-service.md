@@ -1,3 +1,18 @@
+---
+title: "Exposing an CSV datasource"
+description: "Demonstrates how to expose data from a CSV file as a read-only data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/csv-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/csv-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing an CSV Datasource
 
 This example demonstrates how CSV data can be exposed as a data service.
@@ -49,11 +64,11 @@ Given below is the data service configuration you need to build. See the instruc
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create a Data Service project](../../../integrate/develop/create-data-services-configs).
-4. [Create the data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create a Data Service project](../../develop/create-data-services-configs).
+4. [Create the data service](../../develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
    **Be sure** to update the CSV datasource path.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator. 
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator. 
 
 You can send an HTTP GET request to invoke the data service using cURL
 as shown below.

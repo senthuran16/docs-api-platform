@@ -1,13 +1,28 @@
+---
+title: "RabbitMQ parameters"
+description: "Reference for the RabbitMQ transport parameters you can configure in a proxy service artifact for a RabbitMQ connection."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/transport-parameters/rabbitmq-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # RabbitMQ Parameters
 
 When you implement an integration use case that requires a RabbitMQ connection, you can use the following RabbitMQ parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) artifact.
 
 !!! Info
-      The Micro Integrator can listen to a RabbitMQ instance or send messages to a RabbitMQ instance only if the RabbitMQ transport listener and sender are enabled and configured at the server level. Read about the [RabbitMQ transport](../../../install-and-setup/setup/mi-setup/performance_tuning/rabbitmq_transport_tuning/).
+      The Micro Integrator can listen to a RabbitMQ instance or send messages to a RabbitMQ instance only if the RabbitMQ transport listener and sender are enabled and configured at the server level. Read about the [RabbitMQ transport](../../../install-and-setup/setup/mi-setup/performance_tuning/rabbitmq_transport_tuning).
 
 ## Service-Level Parameters (Receiving Messages)
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.2.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) for instructions.
 
@@ -367,4 +382,4 @@ In your integration solution, the following RabbitMQ send parameters can be spec
 
 ### Mediator Properties
 
-In addition to the parameters described above, you can define RabbitMQ properties using the [Property mediator](../../../reference/mediators/property-mediator/) and the [Property Group mediator](../../../reference/mediators/property-group-mediator/).
+In addition to the parameters described above, you can define RabbitMQ properties using the [Property mediator](../../mediators/property-mediator) and the [Property Group mediator](../../mediators/property-group-mediator).

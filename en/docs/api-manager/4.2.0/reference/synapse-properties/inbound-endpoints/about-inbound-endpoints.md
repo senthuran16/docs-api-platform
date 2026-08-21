@@ -1,3 +1,18 @@
+---
+title: "About inbound endpoints"
+description: "Explains inbound endpoints and the three categories of listening, polling, and event-based inbound endpoints they support."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/inbound-endpoints/about-inbound-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/inbound-endpoints/about-inbound-endpoints.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # About Inbound Endpoints
 
 An inbound endpoint is a message entry point that can inject messages directly from the transport layer to the mediation layer without going through the Axis2 engine. One of the advantages of using Inbound Endpoints is in its ability to create inbound messaging channels dynamically. There are three types of inbound endpoints:

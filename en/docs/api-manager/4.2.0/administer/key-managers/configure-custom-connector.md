@@ -1,3 +1,18 @@
+---
+title: "Configure a custom key manager"
+description: "Write, deploy, and register a custom key manager connector to integrate WSO2 API Manager with an external OAuth authorization server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/key-managers/configure-custom-connector/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/key-managers/configure-custom-connector.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - configure-custom-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configure a Custom Key Manager
 
 WSO2 API Manager is capable of integrating with any external OAuth Authorization Server to manage the OAuth clients and tokens that are required by WSO2 API Manager. Essentially, if the API Provider wants to expose their APIs to users who are not in the API Manager’s user-store, you need to use a custom Key Manager connector. To configure a custom Key Manager, you need to do the following:
@@ -88,12 +103,12 @@ You need to write a custom Key Manager connector as explained below.
   
 3. Extend `AbstractKeyManager`.
 
-      The `AbstractKeyManager` implements the `KeyManager` interface. For more information on the operations carried out on the `KeyManager` interface, see [Extending the Key Manager Interface](../../develop/extending-api-manager/extending-key-management/extending-the-key-manager-interface).
+      The `AbstractKeyManager` implements the `KeyManager` interface. For more information on the operations carried out on the `KeyManager` interface, see [Extending the Key Manager Interface](../../reference/customize-product/extending-api-manager/extending-key-management/extending-the-key-manager-interface).
 
 
       In the sample project, the `AbstractKeyManager` interface has been extended using the `org.wso2.custom.client.CustomOAuthClient.java` class.
 
-4. If you need to customize the `JWTValidation` interface, you need to [extend the JWTValidator](../../develop/extending-api-manager/extending-key-management/extending-key-validation).
+4. If you need to customize the `JWTValidation` interface, you need to [extend the JWTValidator](../../reference/customize-product/extending-api-manager/extending-key-management/extending-key-validation).
 
 5. Build the project.
 
@@ -461,4 +476,4 @@ When registering a third-party Identity Provider as a Key Manager in the Admin P
     !!! tip
         If you want to generate the tokens with scopes, make sure that those scopes are defined in the Authorization Server.
 
-6. You can now use the generated token to [invoke an API](../../consume/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console/).
+6. You can now use the generated token to [invoke an API](../../consume/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console).

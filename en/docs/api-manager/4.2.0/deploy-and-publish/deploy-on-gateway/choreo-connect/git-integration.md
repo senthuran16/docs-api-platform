@@ -1,8 +1,23 @@
+---
+title: "Git integration for Choreo connect"
+description: "Configure Git integration so Choreo Connect's Adapter clones, deploys, and redeploys API artifacts from a source repository."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Git Integration for Choreo Connect
 
 The following section provides information on how to integrate Choreo Connect with Git for version controlling of API artifacts.
 
-When Choreo Connect is used as a [standalone gateway](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway), APIs can be deployed through the APICTL command-line tool. Once an API project is added/updated, it must be deployed/redeployed using APICTL. If the Adapter container restarts for any reason, the APIs deployed with APICTL will be lost. To address this requirement, Choreo Connect supports the use of Git for version controlling of API artifacts.
+When Choreo Connect is used as a [standalone gateway](concepts/as-a-standalone-gateway), APIs can be deployed through the APICTL command-line tool. Once an API project is added/updated, it must be deployed/redeployed using APICTL. If the Adapter container restarts for any reason, the APIs deployed with APICTL will be lost. To address this requirement, Choreo Connect supports the use of Git for version controlling of API artifacts.
 
 ## How it works
 
@@ -26,7 +41,7 @@ Follow the instructions below to configure Git Integration for Choreo Connect:
 
 1. Initialize the API project(s).
      
-     For more information, see [Choreo Connect Deployed on Docker with WSO2 API Controller Guide](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker/#step-2-initialize-an-api-project).
+     For more information, see [Choreo Connect Deployed on Docker with WSO2 API Controller Guide](getting-started/deploy/cc-as-a-standalone-gateway-on-docker#step-2-initialize-an-api-project).
      
 2. Create a new repository on any of the following Git hosting services.
 
@@ -165,8 +180,8 @@ The following table describes the above configuration.
 
 The source watcher needs to be authenticated with the Git repository to fetch the artifacts. Authenticating the Git repository can be done in the following ways:
 
-- [Using Username and Access Token](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration/#using-username-and-access-token)
-- [Using SSH Key file](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/git-integration/#using-ssh-key-file)
+- [Using Username and Access Token](git-integration#using-the-username-and-access-token)
+- [Using SSH Key file](git-integration#using-the-ssh-key-file)
 
 __________________________________________
 
@@ -370,7 +385,7 @@ After the containers are up and running, you can monitor the status of the conta
 
 After the APIs are exposed via WSO2 Choreo Connect, you can invoke an API with a valid token (JWT) or by using a test key.
 
-Let's use WSO2 Choreo Connect's test key endpoint to obtain an test key in order to access the API. For more information, see [Generate a Test JWT](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt).
+Let's use WSO2 Choreo Connect's test key endpoint to obtain an test key in order to access the API. For more information, see [Generate a Test JWT](security/generate-a-test-jwt).
 
 === "Sample Token"
     ```bash

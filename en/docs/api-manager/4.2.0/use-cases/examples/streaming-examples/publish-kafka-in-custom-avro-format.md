@@ -1,3 +1,18 @@
+---
+title: "Publishing custom avro events via Kafka"
+description: "Configure a Siddhi application to send sweet production events to Kafka in Avro format using custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/publish-kafka-in-custom-avro-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/publish-kafka-in-custom-avro-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing Custom Avro Events via Kafka
 
 ## Purpose:

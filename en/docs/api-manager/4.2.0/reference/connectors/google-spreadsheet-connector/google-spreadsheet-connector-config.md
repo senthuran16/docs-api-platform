@@ -1,3 +1,18 @@
+---
+title: "Google spreadsheet connector reference"
+description: "Configure Google Spreadsheet connector operations for reading and writing spreadsheet data via OAuth2."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/google-spreadsheet-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-spreadsheet-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Google Spreadsheet Connector Reference
 
 The following operations allow you to work with the Google Spreadsheet Connector. Click an operation name to see parameter details and samples on how to use it.
@@ -8,7 +23,7 @@ The following operations allow you to work with the Google Spreadsheet Connector
 
 To use the Google Spreadsheet connector, add the <googlespreadsheet.init> element in your proxy configuration before use any other Google Spreadsheet operations. The <googlespreadsheet.init> element is used to authenticate the user using OAuth2 authentication and allows the user to access the Google account which contains the spreadsheets. For more information on authorizing requests in Google Spreadsheets, see [https://developers.google.com/sheets/api/guides/authorizing](https://developers.google.com/sheets/api/guides/authorizing).
 
-> **Note**: When trying it out the first time, you need to use valid accessToken to use the connector operations. If the provided accessToken has expired then the token refreshing flow will be handled inside the connector. See the [documetation to set up Google Spreadsheets and get credentials such as clientId, clientSecret, accessToken, and refreshToken](../../../reference/connectors/google-spreadsheet-connector/get-credentials-for-google-spreadsheet/).
+> **Note**: When trying it out the first time, you need to use valid accessToken to use the connector operations. If the provided accessToken has expired then the token refreshing flow will be handled inside the connector. See the [documetation to set up Google Spreadsheets and get credentials such as clientId, clientSecret, accessToken, and refreshToken](get-credentials-for-google-spreadsheet).
 
 ??? note "googlespreadsheet.init"
     The googlespreadsheet.init operation initializes the connector to interact with Google Spreadsheet.

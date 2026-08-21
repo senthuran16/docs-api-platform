@@ -1,11 +1,26 @@
+---
+title: "Production deployment guideline"
+description: "Configure keystores and follow common and mode-specific guidelines for deploying Choreo Connect in a production environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Production Deployment Guideline
 
-Kubernetes should be used for Choreo Connect production deployments. The common guidelines for deploying Choreo Connect in a production environment using the [Helm deployment option](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/) provided below.
+Kubernetes should be used for Choreo Connect production deployments. The common guidelines for deploying Choreo Connect in a production environment using the [Helm deployment option](getting-started/deploy/cc-deploy-overview) provided below.
 
 You can deploy Choreo Connect using one of the following options.
 
-- [API Manager as Control Plane](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)
-- [Standalone Gateway](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)
+- [API Manager as Control Plane](concepts/apim-as-control-plane)
+- [Standalone Gateway](concepts/as-a-standalone-gateway)
 
 This document walk you through following sections.
 
@@ -74,7 +89,7 @@ mkdir -p certs/adapter certs/enforcer certs/router
 
 By default, **SSL Hostnames** for adapter and enforcer is `adapter` and `enforcer`, in case if you want to have your own SAN names in the certificates, update the following values in the helm release with the SAN names in the certificates.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 === "Format"
     ```bash
@@ -119,7 +134,7 @@ Create TLS secrets in the namespace that you wish to install Choreo Connect. Fol
 
 You can set the keystore secrets in the same namespace that Choreo Connect is going to be installed. Set the following values.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 === "Format"
     ```yaml
@@ -186,7 +201,7 @@ When you update the Keystore of any component, the **Truststore of other compone
 You can explicitly mount certs to the truststore of each component.
 The following is a sample how to define the truststore. If you have created a secret in **the same namespace** that Choreo Connect going to be installed, you can refer them in the config as follows.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 === "Format"
     ```yaml
@@ -295,7 +310,7 @@ In the following sample, the `enforcer_admin_pwd` is set using the `value` field
                     key: tm_password
     ```
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 Following are the default values, update to read them from a Kubernetes secret.
 
@@ -347,11 +362,11 @@ Providing TLS Secret name in the following values will replace those default cer
 ### Disable Test Token Issuer
 
 Choreo Connect provides the ability to generate a JWT as a test key to access the APIs. It is recommended to disable the `/testkey` endpoint in the Production environments.
-Refer the document [Generate a Test JWT](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/generate-a-test-jwt/) to read more about Test JWT.
+Refer the document [Generate a Test JWT](security/generate-a-test-jwt) to read more about Test JWT.
 
 Set the following value to `false` when installing the helm chart or set it in the values.yaml file.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```bash
 wso2.deployment.gatewayRuntime.enforcer.security.testTokenIssuer.enabled=false
@@ -416,7 +431,7 @@ If you are using Choreo Connect as a Kubernetes Helm deployment, you can mount t
 **Option 2**
 
 Instead of mounting the JAR file to the dropins directory, you can burn JAR files to the Enforcer docker image. Details relevant to the building customize Enforcer image 
-explained in [here.](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/#create-custom-docker-image-optionally)
+explained in [here.](production-deployment-guideline#create-custom-docker-image-optionally)
 After referring to the above explanation, follow the steps explained below considering the `values.yaml` file. 
 
   1. Set `wso2.deployment.gatewayRuntime.enforcer.dropinsMountEmptyDir` value as `false`. Otherwise, the dropins already in the Docker image will be replaced with a Kubernetes empty directory.
@@ -442,7 +457,7 @@ Then configure the externally installed WSO2 API Manager by updating the followi
 
       deployment:
         # Deployment option: one of "STANDALONE" or "APIM_AS_CP"
-        # Refer deployment options: ../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/
+        # Refer deployment options: getting-started/deploy/cc-deploy-overview.md
         mode: APIM_AS_CP
     ```
 
@@ -461,11 +476,11 @@ Then configure the externally installed WSO2 API Manager by updating the followi
 
       deployment:
         # Deployment option: one of "STANDALONE" or "APIM_AS_CP"
-        # Refer deployment options: ../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/
+        # Refer deployment options: getting-started/deploy/cc-deploy-overview.md
         mode: "APIM_AS_CP"
     ```
 
-Please follow the document about [Deploying Choreo Connect on Kubernetes With WSO2 API Manager as a Control Plane - Helm Artifacts](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/) for deploying Choreo Connect.
+Please follow the document about [Deploying Choreo Connect on Kubernetes With WSO2 API Manager as a Control Plane - Helm Artifacts](getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts) for deploying Choreo Connect.
 
 ## Mode 2: Standalone Gateway Configurations
 
@@ -476,7 +491,7 @@ Hence, in a production deployment with the Standalone deployment option, it is r
 
 #### Step 1: Create Projects
 
-Follow the steps (step 1 and step 2) in the document [Deploy APIs as Immutable Gateway](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-apis-as-immutable-gateway/) to create an `apictl project`. You can include multiple `apictl projects`.
+Follow the steps (step 1 and step 2) in the document [Deploy APIs as Immutable Gateway](deploy-api/deploy-apis-as-immutable-gateway) to create an `apictl project`. You can include multiple `apictl projects`.
 
 For example lets create a directory `apictl-projects-dir` and copy all `apictl projects` (`petstore` project for following sample) to this directory. These projects can be zip files, unzipped project directory or projects that are exported from WSO2 API Manager.
 
@@ -517,7 +532,7 @@ Make sure the files you are adding or copying (with commands `ADD` and `COPY`) e
 
 Update the following values in the helm release with the Adapter docker image, image pull secrets. You can separate each gateway environments by specifying the value `wso2.deployment.labelName`.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 !!! important
     Make sure to set `wso2.deployment.adapter.apiArtifactsMountEmptyDir=false`. This field is available from Helm chart version `1.1.0.5`.
@@ -575,7 +590,7 @@ Update the following values in the helm release with the Adapter docker image, i
 Since we want to make our gateway immutable, we can disable the Adapter Rest API which is used by the `apictl` communicate the Choreo Connect to
 deploy, undeploy APIs. Update the following value of the helm release for that purpose.
 
-{!includes/deploy/cc-prod-guide-helm-values-yaml-tip.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/cc-prod-guide-helm-values-yaml-tip.md"
 
 ```bash
 wso2.deployment.adapter.security.adapterRestService.enabled="false"
@@ -586,7 +601,7 @@ wso2.deployment.adapter.security.adapterRestService.enabled="false"
 
 #### Step 5: Deploy Choreo Connect
 
-Follow the document on [Deploying Choreo Connect as a Standalone Gateway on Kubernetes - Helm Artifacts](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes-helm-artifacts/) to deploy Choreo Connect.
+Follow the document on [Deploying Choreo Connect as a Standalone Gateway on Kubernetes - Helm Artifacts](getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes-helm-artifacts) to deploy Choreo Connect.
 
 ### Applying config changes into a running instance of Choreo Connect 
 

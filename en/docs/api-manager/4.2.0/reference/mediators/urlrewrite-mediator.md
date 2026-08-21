@@ -1,3 +1,18 @@
+---
+title: "URLRewrite mediator"
+description: "Reference for the URLRewrite mediator syntax and parameters used to modify and transform URL values in messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/urlrewrite-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/urlrewrite-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - urlrewrite-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # URLRewrite Mediator
 
 The **URLRewrite Mediator** is used to modify and transform the URL
@@ -6,7 +21,7 @@ action for each fragment of a selected property value. Alternatively,
 you can rewrite the entire URL string at once.
 
 !!! info
-    The URLRewrite mediator is a [content aware](../../reference/mediators/about-mediators/#classification-of-mediators) mediator.
+    The URLRewrite mediator is a [content aware](about-mediators#classification-of-mediators) mediator.
 
 ## Syntax
 

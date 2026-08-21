@@ -1,3 +1,18 @@
+---
+title: "Query parameters"
+description: "Explains how to define queries and input parameters that a data service executes against its underlying data store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/data-services/query-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/data-services/query-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - data-services
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Query Parameters
 
 The query in a data service specifies the type of task that should be
@@ -9,7 +24,7 @@ Consequently, the query connected to the operation/resource is executed
 to perform the task.
 
 !!! Info
-	REST resources and Operations are used depending on whether the particular task should be invoked RESTfully, or by using SOAP. Read more about [REST resources and operations](../../../reference/synapse-properties/data-services/elements-of-a-data-service) in data services.
+	REST resources and Operations are used depending on whether the particular task should be invoked RESTfully, or by using SOAP. Read more about [REST resources and operations](elements-of-a-data-service) in data services.
 
 ## SQL/Query details
 

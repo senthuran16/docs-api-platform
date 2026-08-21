@@ -1,3 +1,18 @@
+---
+title: "Securing APIs with mutual SSL"
+description: "Configure mutual SSL (mTLS) for an API, upload client certificates, invoke the API through Postman, and customize the MTLS certificate header."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/secure-apis-using-mutual-ssl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/secure-apis-using-mutual-ssl.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing APIs with Mutual SSL
 
 In contrast to the usual one-way SSL authentication where a client verifies the identity of the server, in mutual SSL the server validates the identity of the client so that both parties trust each other. This builds a system that has very tight security and avoids any requests made to the client with regard to providing its username/password, as long as the server is aware of the certificates that belong to the client.
@@ -7,13 +22,13 @@ The following section explains as to how the APIs in WSO2 API Manager can be sec
 !!! note
       Mutual SSL/TLS is a security protocol that ensures both the client and the server authenticate with each other. It builds on the standard SSL/TLS protocol used in HTTPS to add an additional layer of security. Hence from APIM 4.0.0 onwards, when using Mutual SSL to invoke APIs, **it is a must to use HTTPS as the transport**.
 
-{!includes/design/create-mtls-api.md!}
+--8<-- "api-manager/4.2.0/includes/design/create-mtls-api.md"
 
 !!! note
      If you are on a Windows environment, the HTTPS listener would have started on a host address of 0:0:0:0:0:0:0:0. You can verify that from the Carbon logs.
      In that case, you need to define 0:0:0:0:0:0:0:0 as the bindAddress in `<APIM_HOME>/repository/resources/security/listenerprofiles.xml`  
     
-{!includes/design/invoke-mtls-api-using-postman.md!}
+--8<-- "api-manager/4.2.0/includes/design/invoke-mtls-api-using-postman.md"
 
 ### Limitations
 

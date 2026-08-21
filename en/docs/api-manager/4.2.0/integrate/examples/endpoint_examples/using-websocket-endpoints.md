@@ -1,6 +1,21 @@
+---
+title: "Using a WebSocket endpoint"
+description: "Demonstrates sending messages between a WebSocket client and a WebSocket endpoint through the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-websocket-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-websocket-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using a WebSocket Endpoint
 
-WebSocket is a protocol that provides full-duplex communication channels over a single TCP connection. This can be used by any client or server application. The Micro Integrator provides WebSocket support via the [WebSocket Transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/#configuring-the-websocket-transport) and the [WebSocket Inbound Protocol](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket).
+WebSocket is a protocol that provides full-duplex communication channels over a single TCP connection. This can be used by any client or server application. The Micro Integrator provides WebSocket support via the [WebSocket Transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-websocket-transport) and the [WebSocket Inbound Protocol](../inbound_endpoint_examples/inbound-endpoint-secured-websocket).
 
 ## Example 1: Sending a Message from a WebSocket Client to a WebSocket Endpoint
 
@@ -15,7 +30,7 @@ back-end to client mediation. Finally you need to configure the
 WebSocket inbound endpoint of WSO2 MI to use the
 created sequences and listen on port 9092.
 
-For sample synapse configurations, see [WebSocket Inbound](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket).
+For sample synapse configurations, see [WebSocket Inbound](../inbound_endpoint_examples/inbound-endpoint-secured-websocket).
 
 If you analyze the log, you will see that a connection from the
 WebSocket client to WSO2 MI is established, and the
@@ -79,7 +94,7 @@ Create the sequence for client to backend mediation, sequence for the backend to
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
 
     !!! Note
         The Websocket sender functionality of the Micro Integrator is disabled by default. To enable the transport, open the `deployment.toml` file from the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/conf/` directory and add the following: 
@@ -89,9 +104,9 @@ Create the artifacts:
         sender.enable = true
         ```
         
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) and the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences) and the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Starting the WebSocket server:
 

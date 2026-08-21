@@ -1,3 +1,17 @@
+---
+title: "Troubleshooting JMS scenarios"
+description: "Diagnose and resolve common JMS integration issues in WSO2 Micro Integrator, including header conversion errors and thread exhaustion."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/troubleshooting-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/troubleshooting-jms.md
+tags:
+  - api-manager
+  - troubleshooting
+  - troubleshooting-jms
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "troubleshooting"
+---
+
 # Troubleshooting JMS scenarios
 
 The following sections will help you to resolve common problems encountered in JMS integration scenarios with WSO2 Micro Integrator.

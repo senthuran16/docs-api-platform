@@ -1,3 +1,18 @@
+---
+title: "Create a WebSocket API"
+description: "Create a WebSocket API in the Publisher Portal to expose a WebSocket backend with OAuth security, throttling, and analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api/create-a-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api/create-a-websocket-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-a-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create a WebSocket API
 
 WebSocket is a protocol similar to HTTP that is part of the HTML5 specification. It enables simultaneous two-way communication (full-duplex communication) between the client and the server over a single connection. 
@@ -9,7 +24,7 @@ The WebSocket protocol is designed to achieve the following:
 -   Be backward compatible with the pre-WebSocket world by starting up as an HTTP connection before switching to WebSocket frames.
 
 A WebSocket API allows an API creator to expose a WebSocket backend as an API to offer services via a WebSocket protocol while providing 
-[OAuth security](../../design/api-security/api-authentication/secure-apis-using-oauth2-tokens), [Throttling](../../design/rate-limiting/introducing-throttling-use-cases/), [Analytics](../../observe/api-manager-analytics/overview-of-api-analytics/), etc.
+[OAuth security](../api-security/api-authentication/secure-apis-using-oauth2-tokens), [Throttling](../rate-limiting/introducing-throttling-use-cases), [Analytics](../../api-analytics/choreo-analytics/getting-started-guide), etc.
 
 Follow the instructions below to design a WebSocket API.
 
@@ -92,9 +107,9 @@ Follow the instructions below to design a WebSocket API.
      
          For more information, see the following sections on endpoint related configurations.
 
-         - [Endpoint Timeouts](../../design/endpoints/resiliency/endpoint-timeouts)
-         - [Endpoint Suspension](../../design/endpoints/resiliency/endpoint-suspension)
-         - [Prevent API Suspension](../../design/endpoints/resiliency/prevent-api-suspension)
+         - [Endpoint Timeouts](../endpoints/resiliency/endpoint-timeouts)
+         - [Endpoint Suspension](../endpoints/resiliency/endpoint-suspension)
+         - [Prevent API Suspension](../endpoints/resiliency/prevent-api-suspension)
 
     [![View endpoint details](../../assets/img/learn/endpoint-view-of-websocket-api.jpg)](../../assets/img/learn/endpoint-view-of-websocket-api.jpg)
 

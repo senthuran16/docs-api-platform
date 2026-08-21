@@ -1,3 +1,18 @@
+---
+title: "SMPP connector example"
+description: "Configure a sample API that uses the SMPP connector to send SMS messages through the SMPP protocol."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/smpp-connector/smpp-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - smpp-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # SMPP Connector Example
 
 SMPP (Short Message Peer-to-Peer Protocol) Connector allows you to send an SMS from an integration sequence. It uses the [jsmpp API](https://jsmpp.org/) to communicate with an SMSC (Short Message Service Center), which is used to store, forward, convert, and deliver Short Message Service (SMS) messages. jsmpp is a Java implementation of the SMPP protocol.
@@ -7,7 +22,7 @@ SMPP (Short Message Peer-to-Peer Protocol) Connector allows you to send an SMS f
 Given below is a sample scenario that demonstrates how to work with the WSO2 SMPP Connector and send SMS messages via the SMPP protocol.
 
 The SMPP server in SMSC have all the ESME (External Short Messaging Entity) addresses. This is an external application that connects to a SMSC and the active connection. When you send an SMS to a destination, it comes to the SMSC. Then one of the modules in SMSC checks if the destination address is available or not. If it is available, it creates a connection object that is responsible for sending the SMS message.
-There are many SMPP gateways available in the world and now almost all the message centers support SMPP. It is not practical always to connect with real SMSC. However, in this scenario we will try it with **SMSC simulator**. Please refer the [Setting up the SMPP Connector](../../../reference/connectors/smpp-connector/smpp-connector-configuration/) documentation.
+There are many SMPP gateways available in the world and now almost all the message centers support SMPP. It is not practical always to connect with real SMSC. However, in this scenario we will try it with **SMSC simulator**. Please refer the [Setting up the SMPP Connector](smpp-connector-configuration) documentation.
 
 The following `sendSMS`operation is exposed via an API. The API with the context `/send` has one resource.
 
@@ -27,7 +42,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the ESB Solution Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
@@ -70,7 +85,7 @@ Create a resource to send an SMS to the Short Message Service Center.
         
         While invoking the API, the above three parameters values come as a user input.
     
-    3. To get the input values in to the API we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown bellow.
+    3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown bellow.
     
         <img src="../../../../assets/img/integrate/connectors/smpp-api-drag-and-drop-property-mediator.png" title="Add property mediators" width="800" alt="Add property mediators"/>
 
@@ -101,7 +116,7 @@ Create a resource to send an SMS to the Short Message Service Center.
         
 2. Get a response from the user.
     
-    When you are invoking the created API, the request of the message is going through the `/send` resource. Finally, it is passed to the [Respond mediator](../../../reference/mediators/respond-mediator/). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
+    When you are invoking the created API, the request of the message is going through the `/send` resource. Finally, it is passed to the [Respond mediator](../../mediators/respond-mediator). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response.            
     
     1. Drag and drop **respond mediator** to the **Design view**. 
     
@@ -173,7 +188,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}   
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

@@ -1,3 +1,18 @@
+---
+title: "Configure the crypto provider"
+description: "Learn what a Java Crypto Provider is and configure the crypto provider used by WSO2 API Manager for security functions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/advance-configurations/configuring-the-crypto-provider/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/advance-configurations/configuring-the-crypto-provider.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - advance-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Configure the Crypto Provider
 
 ## What is a Crypto Provider?

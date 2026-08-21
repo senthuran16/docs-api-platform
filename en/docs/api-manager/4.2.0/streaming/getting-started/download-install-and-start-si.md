@@ -1,3 +1,18 @@
+---
+title: "Step 1: download streaming integrator and dependencies"
+description: "Download and install the Streaming Integrator and its dependencies before trying out a streaming integration scenario."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/download-install-and-start-si/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/download-install-and-start-si.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - download-install-and-start-si
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 1: Download Streaming Integrator and Dependencies
 
 First, you are required to download the Streaming Integrator and the other software needed for the scenario you are trying out. To do this, follow the topics below.
@@ -14,7 +29,7 @@ First, you are required to download the Streaming Integrator and the other softw
 
 ## Downloading the other dependencies for your scenario
 
-This section shows how to prepare your production environment for the scenario described in the [Streaming Integration Overview section](../../streaming/getting-started/getting-started-guide-overview).
+This section shows how to prepare your production environment for the scenario described in the [Streaming Integration Overview section](getting-started-guide-overview).
 
 ## Setting up a MySQL database table
 
@@ -86,5 +101,5 @@ Now you have completed a WSO2 Streaming Integrator setup that is capable of the 
 
 
 !!! tip "What's Next?"
-    To design a Siddhi application, proceed to [Step 2: Create the Siddhi Application](../../streaming/getting-started/create-the-siddhi-application).
+    To design a Siddhi application, proceed to [Step 2: Create the Siddhi Application](create-the-siddhi-application).
 

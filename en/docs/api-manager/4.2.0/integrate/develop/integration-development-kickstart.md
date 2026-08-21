@@ -1,3 +1,18 @@
+---
+title: "Developing your first integration solution"
+description: "Walks through building and running a sample healthcare integration solution from scratch in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/integration-development-kickstart/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/integration-development-kickstart.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - integration-development-kickstart
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Developing Your First Integration Solution
 
 Integration developers need efficient tools to build and test all the integration use cases required by the enterprise before pushing them into a production environment. The following topics will guide you through the process of building and running an example 
@@ -43,7 +58,7 @@ from all the available healthcare centers.
 
 ## Step 1 - Set up the workspace
 
-Download the relevant [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/) based on your operating system. For more information, see [Installing WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio).
+Download the relevant [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/) based on your operating system. For more information, see [Installing WSO2 Integration Studio](installing-wso2-integration-studio).
 
 ## Step 2 - Develop the integration artifacts
 
@@ -215,7 +230,7 @@ go to **New** → **REST API** to open the **API Artifact Creation Options** dia
 
 2. Invoke the GrandOak Endpoint:
 
-    The **Call** mediator is used to invoke a back-end service. In [Step 2](#step-2-create-endpoints), we have already created an Endpoint to represent the GrandOak endpoint.
+    The **Call** mediator is used to invoke a back-end service. In [Step 2](#create-endpoints), we have already created an Endpoint to represent the GrandOak endpoint.
 
     Drag the Call mediator from the mediator palette into one branch of the Clone mediator. 
 
@@ -500,5 +515,5 @@ There are two ways to invoke the service:
 
 ## What's Next?
 
-- [Publish Integrations to the API Manager](../../integrate/develop/working-with-service-catalog).
-- [Writing a unit test for integration artifacts](../../integrate/develop/creating-unit-test-suite).
+- [Publish Integrations to the API Manager](working-with-service-catalog).
+- [Writing a unit test for integration artifacts](creating-unit-test-suite).

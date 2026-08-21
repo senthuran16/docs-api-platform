@@ -1,3 +1,18 @@
+---
+title: "Setting up the microsoft Azure storage environment"
+description: "Sign up for Microsoft Azure and create a storage account to obtain credentials for the Azure Storage connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the Microsoft Azure Storage Environment
 
 To work with the Microsoft Azure Storage connector, you need to have a Microsoft Azure account. If you do not have a Microsoft Azure account, you are prompted to create one when you sign up.
@@ -58,7 +73,7 @@ Follow the steps below to obtain the access credentials from Microsoft Azure Sto
 ## Obtaining the Client credentials
 
 !!! Note
-    If you are planning to use Access key for authentication, skip this and check [Obtaining the access credentials](../../../reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/#obtaining-the-access-key)
+    If you are planning to use Access key for authentication, skip this and check [Obtaining the access credentials](microsoft-azure-storage-configuration#obtaining-the-access-key)
    
    1. Create an Azure Active Directory application and service principal. For more information refer [Create an Azure Active Directory application](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal).
 
@@ -69,7 +84,7 @@ Follow the steps below to obtain the access credentials from Microsoft Azure Sto
 ## Obtaining the Access Key
 
 !!! Note
-    If you are planning to use Client credentials for authentication, skip this and check [Obtaining the Client credentials](../../../reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/#obtaining-the-client-credentials)
+    If you are planning to use Client credentials for authentication, skip this and check [Obtaining the Client credentials](microsoft-azure-storage-configuration#obtaining-the-client-credentials)
    
    1. Navigate to the created **storage account** and click it. 
       

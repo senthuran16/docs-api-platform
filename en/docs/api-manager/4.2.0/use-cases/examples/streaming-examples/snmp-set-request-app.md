@@ -1,3 +1,18 @@
+---
+title: "Sending custom keyvalue events via SNMP"
+description: "Configure a Siddhi application that sends a key-value SNMP set request to an agent using custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/snmp-set-request-app/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/snmp-set-request-app.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Sending Custom Keyvalue Events via SNMP
 
 ## Purpose:

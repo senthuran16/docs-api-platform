@@ -1,3 +1,18 @@
+---
+title: "Observability deployment strategy"
+description: "Set up a cloud-native observability solution for Micro Integrator deployments using Prometheus, Grafana, and Jaeger for metrics, logs, and tracing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/observability/observability-deployment-strategy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/observability/observability-deployment-strategy.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Observability Deployment Strategy
 
 The following diagram depicts the complete **cloud-native** observability solution for your Micro Integrator deployment, which includes **metrics monitoring**, **log monitoring**, and **message tracing** capabilities.
@@ -11,9 +26,9 @@ The cloud-native solution is more suitable in the following scenarios:
 - You are creating a new cloud-native Micro Integrator deployment. 
 
 	!!! Note
-		See the instructions on setting up a cloud-native [Micro Integrator deployment on Kubernetes](../../../../install-and-setup/setup/mi-setup/deployment/kubernetes_deployment_patterns).
+		See the instructions on setting up a cloud-native [Micro Integrator deployment on Kubernetes](../deployment/kubernetes_deployment_patterns).
 
-- You already have Prometheus, Grafana, and Jaeger as your in-house monitoring and observability tools. This applies to [VM deployments](../../../../install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei) as well as [Kuberentes deployments](../../../../install-and-setup/setup/mi-setup/deployment/kubernetes_deployment_patterns).
+- You already have Prometheus, Grafana, and Jaeger as your in-house monitoring and observability tools. This applies to [VM deployments](../deployment/deploying_wso2_ei) as well as [Kuberentes deployments](../deployment/kubernetes_deployment_patterns).
 
 ### Technologies
 

@@ -1,3 +1,18 @@
+---
+title: "Filtering responses by user role"
+description: "Explains how to filter data service responses by user role, including extending filtering via a custom authorization provider."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/extend-role-based-filtering-for-ds/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/advanced-development/extend-role-based-filtering-for-ds.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Filtering Responses by User Role
 
 When you work with data services, you can control access to sensitive
@@ -9,7 +24,7 @@ only accessible to a given type of users.
 
 Follow the steps below to filter a data service according to a specific user role.
 
-1. [Secure the dataservice](../../../integrate/develop/creating-artifacts/data-services/securing-data-services) using `UsernameToken` for user authentication.
+1. [Secure the dataservice](../creating-artifacts/data-services/securing-data-services) using `UsernameToken` for user authentication.
 2. Add `requiredRoles` attribute to the output mapping with the comma separated list of user roles.
     ```xml
     <query id="getEmployeesQuery" useConfig="datasource">
@@ -25,7 +40,7 @@ Follow the steps below to filter a data service according to a specific user rol
 ## Extend role-based filtering via a custom authorization provider
 
 In the Micro Integrator, you can filter content to specific user roles by taking roles from
-the [user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/) connected to the server. However, this extension provides
+the [user store](../../../install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore) connected to the server. However, this extension provides
 the flexibility for you to develop data services by plugging in a
 mechanism to provide those role details from any preferred external
 source (e.g., third party identity provider, JWT token etc.). Hence, in

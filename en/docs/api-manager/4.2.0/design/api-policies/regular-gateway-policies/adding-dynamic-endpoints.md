@@ -1,3 +1,18 @@
+---
+title: "Adding dynamic endpoints"
+description: "Construct a dynamic backend endpoint for an API using the default endpoint and a mediation sequence that builds the To header at runtime."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-policies/regular-gateway-policies/adding-dynamic-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-policies/regular-gateway-policies/adding-dynamic-endpoints.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding Dynamic Endpoints
 
 You cannot dynamically construct the back-end endpoint of an API using the HTTP endpoints in the WSO2 API Manager. To achieve the requirement of a dynamic endpoint, you can use a policy with the [default](https://mi.docs.wso2.com/en/4.2.0/reference/synapse-properties/endpoint-properties/#list-of-endpoints) endpoint instead. The default endpoint sends the message to the address specified in the **To** header. 
@@ -40,7 +55,7 @@ This feature supports for HTTP, SOAP and GraphQL APIs.
     The API policy is applied to all resources of the API. Therefore, all resources will contain a similar logic to construct the endpoint.
 
 !!! tip
-    For more details about working with dynamic endpoints, see [Endpoint Types](../../../learn/design-api/endpoints/endpoint-types).
+    For more details about working with dynamic endpoints, see [Endpoint Types](../../endpoints/endpoint-types).
 
 <!-- You can copy the content of the above sequence to an XML file and upload it to an API configured with a dynamic endpoint using the Publisher Portal UI. -->
 
@@ -117,4 +132,4 @@ Writing a mediation policy to support dynamic endpoints might be tricky for such
 
 For a complete guide on how to create a WebSocket API, refer [Creating and Publish WebSocket API](../../../tutorials/streaming-api/create-and-publish-websocket-api).
 
-For more information, visit [Creating and Uploading Manually in API Publisher](../../../learn/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests#creating-and-uploading-manually-in-api-publisher).
+For more information, visit [Creating and Uploading Manually in API Publisher](../attach-policy#creating-and-uploading-manually-in-api-publisher).

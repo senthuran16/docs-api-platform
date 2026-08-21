@@ -1,3 +1,18 @@
+---
+title: "Store mediator"
+description: "Reference for the Store mediator, which enqueues messages passing through a mediation sequence into a message store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/store-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/store-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - store-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Store Mediator
 
 The **Store mediator** enqueues messages passing through its mediation sequence in a given **message store**. It can serve as a [dead letter channel](https://mi.docs.wso2.com/en/latest/learn/enterprise-integration-patterns/messaging-channels/dead-letter-channel/) if it is included in a fault sequence and if its message store is connected to a **message processor** that forwards all the messages in the store to an endpoint.

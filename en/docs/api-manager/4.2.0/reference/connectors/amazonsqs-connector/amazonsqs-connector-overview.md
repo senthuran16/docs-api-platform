@@ -1,3 +1,18 @@
+---
+title: "Amazon SQS connector overview"
+description: "Overview of the Amazon SQS connector and inbound endpoint, which let you access Amazon SQS from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon SQS Connector Overview
 
 Amazon Simple Queue Service (SQS) is a fully managed message queuing service that allows you to run business applications and services so that the messaging is not dependent on the IT infrastructure itself. This means the messages can run and fail independently of each other in a way that does not cause slowdowns, system-wide faults, or a disturbance within the application. By using Amazon SQS, you can move data between distributed components of your applications that perform different tasks without losing messages or requiring each component to be always available.
@@ -18,17 +33,17 @@ For older versions, see the details in the connector store.
 
 The WSO2 Amazon SQS connector allows you to access the exposed API through the integration runtime. Through this connector, you can perform CRUD operations for queues in Amazon SQS instance, update permissions and can work with messages. For further reference, please refer to [Amazon SQS API reference](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/Welcome.html).
 
-* **[Amazon SQS Connector Example](../../../reference/connectors/amazonsqs-connector/amazonsqs-connector-example/)**: This example explains how to use the Amazon SQS Connector to create a queue in the Amazon SQS, send a message to the queue, forward it to a backend service and send the response to the user. 
+* **[Amazon SQS Connector Example](amazonsqs-connector-example)**: This example explains how to use the Amazon SQS Connector to create a queue in the Amazon SQS, send a message to the queue, forward it to a backend service and send the response to the user. 
 
-* **[Amazon SQS Connector Reference](../../../reference/connectors/amazonsqs-connector/amazonsqs-connector-config/)**: This documentation provides a reference guide for the Amazon SQS Connector.
+* **[Amazon SQS Connector Reference](amazonsqs-connector-config)**: This documentation provides a reference guide for the Amazon SQS Connector.
 
 ## Amazon SQS Inbound Endpoint
 
 The AmazonSQS Inbound Endpoint allows you to connect to Amazon and consume messages form an Amazon SQS queue. The messages are then injected into the mediation engine for further processing and mediation.
 
-* **[Amazon SQS Inbound Endpoint Example](../../../reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example/)**: This example demonstrates how the AmazonSQS inbound endpoint works as a message consumer. 
+* **[Amazon SQS Inbound Endpoint Example](amazonsqs-inbound-endpoint-example)**: This example demonstrates how the AmazonSQS inbound endpoint works as a message consumer. 
 
-* **[Amazon SQS Inbound Endpoint Reference](../../../reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-reference-configuration/)**: This documentation provides a reference guide for the Amazon SQS Inbound Endpoint.
+* **[Amazon SQS Inbound Endpoint Reference](amazonsqs-inbound-endpoint-reference-configuration)**: This documentation provides a reference guide for the Amazon SQS Inbound Endpoint.
 
 ## How to contribute
 

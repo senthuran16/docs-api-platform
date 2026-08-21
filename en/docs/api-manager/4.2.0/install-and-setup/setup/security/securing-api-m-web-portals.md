@@ -1,3 +1,18 @@
+---
+title: "Securing web portals"
+description: "Secure the Management Console, API Publisher, and Developer Portal web applications by updating their SSL certificates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/securing-api-m-web-portals/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/securing-api-m-web-portals.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing Web portals
 
 The WSO2 API Manager runtime contains the following web portals/applications: **Management Console**, **API Publisher**, and the **Developer Portal**. See the topics given below to configure these portals for better security before you use them.
@@ -12,7 +27,7 @@ If you are using the Mozilla Firefox browser, you are usually required to accept
     
 You can use the default certificate for testing purposes or for running the web portals on your company's internal networks. If you want to make these portals available to external users, your organization should obtain a certificate signed by a well-known certificate authority, which verifies that the server has the name it is accessed by and that this server belongs to the given organization. 
 
-See [Creating new keystores](../../../install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores) to learn more about using certificates.
+See [Creating new keystores](configuring-keystores/keystore-basics/creating-new-keystores) to learn more about using certificates.
 
 ## Configuring session time-out
 
@@ -99,4 +114,4 @@ After completing the steps above, the respective web portal will no longer use t
 
 ## What's Next?
 
-[Start the API-M runtime](../../../install-and-setup/install/installing-the-product/running-the-api-m) and access the web portals.
+[Start the API-M runtime](../../install/installing-the-product/running-the-api-m) and access the web portals.

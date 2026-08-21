@@ -1,3 +1,18 @@
+---
+title: "Defining data tables"
+description: "Define in-memory or store-backed data tables, including primary and index keys, to persist Streaming Integrator events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/defining-data-tables/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/defining-data-tables.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Defining Data Tables
 
 This section explains how to configure data tables to store the events you need to persist to carry out time series aggregation.
@@ -10,7 +25,7 @@ The data handled by WSO2 Stream Processor are stored in the following two types 
 -   **Store-backed tables** : These are tables that are defined by you
     in an external database. For a list of database types supported and
     instructions to define table for different database types, see
-    [Defining Tables for External Data Stores](../../../install-and-setup/setup/si-setup/defining-tables-for-physical-stores) .      
+    [Defining Tables for External Data Stores](defining-tables-for-physical-stores) .      
 
 ### Adding primary and index keys
 

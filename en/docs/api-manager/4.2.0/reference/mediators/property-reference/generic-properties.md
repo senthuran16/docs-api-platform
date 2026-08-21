@@ -1,7 +1,22 @@
+---
+title: "Generic properties"
+description: "Reference for generic message properties, usable with the Property and Property Group mediators, that control message processing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/generic-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/property-reference/generic-properties.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Generic Properties
 
 !!! Info
-	The following are generic properties that can be used with the [Property mediator](../../../reference/mediators/property-Mediator) and the [Property Group mediator](../../../reference/mediators/property-Group-Mediator).
+	The following are generic properties that can be used with the [Property mediator](../../../reference/mediators/property-mediator) and the [Property Group mediator](../../../reference/mediators/property-group-mediator).
 
 Generic properties allow you to configure messages as they're processed by the Micro Integrator, such as marking a message as out-only (no response message will be expected), adding a custom error message or code to the message, and disabling WS-Addressing headers.
 
@@ -477,7 +492,7 @@ Generic properties allow you to configure messages as they're processed by the 
 </tr>
 <tr class="odd">
 <td><p><strong>Description</strong></p></td>
-<td><p>If this property is set to <code>              true             </code> , the result of file content processing carried out by the <a href="../../../../reference/mediators/smooks-Mediator">Smooks Mediator</a> will not be loaded into the message context. This is useful in situations where you want to avoid large memory growth/out of heap space issue that may occur when large files processed by the Smooks mediator are reprocessed. Thus refer the VFS Transport for a proxy service configuration where this property is used.</p></td>
+<td><p>If this property is set to <code>              true             </code> , the result of file content processing carried out by the <a href="../../../../reference/mediators/smooks-mediator">Smooks Mediator</a> will not be loaded into the message context. This is useful in situations where you want to avoid large memory growth/out of heap space issue that may occur when large files processed by the Smooks mediator are reprocessed. Thus refer the VFS Transport for a proxy service configuration where this property is used.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Example</strong></p></td>
@@ -777,7 +792,7 @@ Generic properties allow you to configure messages as they're processed by the 
 
 ## RabbitMQ Properties
 
-The following generic properties can be used in the [Property mediator](../../../reference/mediators/property-mediator) and the [Property Group mediator](../../../reference/mediators/property-group-mediator/) for RabbitMQ use cases.
+The following generic properties can be used in the [Property mediator](../property-mediator) and the [Property Group mediator](../property-group-mediator) for RabbitMQ use cases.
 
 ### SET_ROLLBACK_ONLY
 

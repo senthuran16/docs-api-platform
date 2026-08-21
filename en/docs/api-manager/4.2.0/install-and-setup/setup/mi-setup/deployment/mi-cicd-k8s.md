@@ -1,10 +1,25 @@
+---
+title: "Kubernetes-based CI/CD for Micro Integrator"
+description: "Set up Jenkins jobs for Integration Project and Deployment Descriptor repositories to build and deploy Micro Integrator on Kubernetes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-k8s.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 There are two kinds of jobs in Jenkins that we need to maintain. One for the Integration project repositories. Another kind is for the Deployment Descriptor repositories. 
 
 [![K8s based CI/CD for Micro Integrator](../../../../assets/img/deploy/mi-cicd-k8s.png)](../../../../assets/img/deploy/mi-cicd-k8s.png)
 
 #### Integration Project Build Job
 - We need to maintain one Jenkins job per Integration Project repository.
-- The Integration Project has to be a [Maven Multi Module project](../../../../integrate/develop/create-integration-project/#maven-multi-module-projects) and it has to contain one Kubernetes Exporter module. 
+- The Integration Project has to be a [Maven Multi Module project](../../../../integrate/develop/create-integration-project#maven-multi-module-projects) and it has to contain one Kubernetes Exporter module. 
 - The build phase of the job will build the Integration project and run the unit tests if a Unit test server is configured.
 - The release phase of the job generates Docker images using the provided repository, name and project version and pushes the image to the configured Docker registry and creates a release tag in GitHub.
 
@@ -80,6 +95,7 @@ These will be generated inside a folder with the Project Name.
     !!!Info
         Please note that according to current scripts, when you change only the config map, the change won’t get reflected in the running pod. To do a proper deployment you may need to use tools like [kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/).
 
+<a name="setting-up-jenkins-server"></a>
 #### Setting up Jenkins server
 
 1. Docker scripts for setting up a Jenkins environment are provided here. This will spin up a preconfigured Docker image. By default, 4 Jenkins jobs will be created. One project for the Integration project and three more for the environment descriptor repositories (dev, staging, prod). 
@@ -114,6 +130,7 @@ These will be generated inside a folder with the Project Name.
 
 9. After installing Jenkins, the jobs can be accessed via `http://localhost:8080/`
 
+<a name="setting-up-synapse-unit-testing-server"></a>
 #### Setting up Synapse Unit testing server
 
 If you have written Synapse unit tests for your Integration project, you can run them during the Jenkins build.

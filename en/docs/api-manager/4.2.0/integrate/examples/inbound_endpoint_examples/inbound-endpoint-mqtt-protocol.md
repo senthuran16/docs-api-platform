@@ -1,3 +1,18 @@
+---
+title: "Using the MQTT inbound endpoint"
+description: "Configure the MQTT inbound endpoint to publish and receive messages on a topic using a Mosquitto message broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-mqtt-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-mqtt-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the MQTT Inbound Endpoint
 This sample demonstrates how the MQTT connector publishes a message on a
 particular topic and how a MQTT client that is subscribed to that topic
@@ -41,16 +56,16 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create a [mediation sequence](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../../integrate/develop/creating-an-inbound-endpoint) with configurations given in the above example.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create a [mediation sequence](../../develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint) with configurations given in the above example.
 
 Set up the MQTT server:
 
 1.  Install Mosquitto. (This sample is tested for [Mosquitto1.6.7 version](https://mosquitto.org/download/)). The Mosquitto server will run automatically in the background.
 2.  Download [MQTT client library](https://repo.spring.io/plugins-release/org/eclipse/paho/mqtt-client/0.4.0/mqtt-client-0.4.0.jar) with required credentials. (i.e. `          mqtt-client-0.4.0.jar         ` ) and add it to the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/lib/` directory.
 
-[Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+[Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Open a new terminal and enter the below command to send an MQTT message using mosquitto-pub. Be sure to enter the MQTT Topic Name you entered when creating the inbound endpoint as shown below.
 

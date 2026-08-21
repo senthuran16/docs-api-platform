@@ -1,3 +1,18 @@
+---
+title: "Periodic execution of integration process"
+description: "Schedule a task using the default implementation to inject an XML message and print it in the Micro Integrator server logs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/using-scheduled-tasks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/using-scheduled-tasks.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - using-scheduled-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Periodic Execution of Integration Process
 
 ## What you'll build

@@ -1,3 +1,18 @@
+---
+title: "Generating Service Catalog metadata artifact"
+description: "Provides steps to generate Service Catalog metadata artifacts for APIs and proxy services in Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/generate-service-catalog-metadata/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/generate-service-catalog-metadata.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - generate-service-catalog-metadata
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Generating Service Catalog Metadata Artifact
 
 Follow the instructions given below to generate Service Catalog metadata artifacts for APIs and Proxy Services in WSO2 Integration Studio older workspaces to expose integration services as Managed APIs.

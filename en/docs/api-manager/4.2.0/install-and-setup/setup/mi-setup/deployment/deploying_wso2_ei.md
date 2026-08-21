@@ -1,3 +1,18 @@
+---
+title: "Configuring a Micro Integrator cluster"
+description: "Set up a two-node WSO2 Micro Integrator cluster on VMs with a third-party load balancer and shared hostname configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Micro Integrator Cluster
 See the instructions on how to set up a cluster of WSO2 Micro Integrator nodes in an on-premise VM deployment. A third-party load balancer is used for this deployment.
 
@@ -9,7 +24,7 @@ This deployment scenario is a two-node Micro Integrator deployment. That is, two
 
 ## Install the Micro Integrator
 
-[Download and install WSO2 Micro Integrator](../../../../install-and-setup/install/installing-the-product/installing-mi).
+[Download and install WSO2 Micro Integrator](../../../install/installing-the-product/installing-mi).
 
 Let's set up two instances of the Micro Integrator server.
 
@@ -22,7 +37,7 @@ Open the `deployment.toml` file (stored in the `<MI_HOME>/conf` folder) of each 
 hostname = "localhost"
 ```
 
-Find more [parameters](../../../../reference/config-catalog-mi/#deployment) for deployment settings.
+Find more [parameters](../../../../reference/config-catalog-mi#deployment) for deployment settings.
 
 ## Service catalog
 
@@ -36,7 +51,7 @@ username = "admin"
 password = "admin"
 ```
 
-See the descriptions of the [service catalog parameters](../../../../reference/config-catalog-mi/#service-catalog-client).
+See the descriptions of the [service catalog parameters](../../../../reference/config-catalog-mi#service-catalog-client).
 
 ## Cluster coordination
 
@@ -53,11 +68,11 @@ When the nodes in the cluster need to communicate with each other, the Micro Int
 
 1.  Create a database named `clusterdb`.
 
-    - [Setting up a MySQL database](../../../../install-and-setup/setup/mi-setup/databases/setting-up-mysql)
-    - [Setting up an MSSQL database](../../../../install-and-setup/setup/mi-setup/databases/setting-up-mssql)
-    - [Setting up an Oracle database](../../../../install-and-setup/setup/mi-setup/databases/setting-up-oracle)
-    - [Setting up a Postgre database](../../../../install-and-setup/setup/mi-setup/databases/setting-up-postgresql)
-    - [Setting up an IBM database](../../../../install-and-setup/setup/mi-setup/databases/setting-up-ibm-db2)
+    - [Setting up a MySQL database](../databases/setting-up-mysql)
+    - [Setting up an MSSQL database](../databases/setting-up-mssql)
+    - [Setting up an Oracle database](../databases/setting-up-oracle)
+    - [Setting up a Postgre database](../databases/setting-up-postgresql)
+    - [Setting up an IBM database](../databases/setting-up-ibm-db2)
 
 2.  Open the `deployment.toml` file and see that the configurations are updated as shown below.
 
@@ -248,7 +263,7 @@ resolving_frequency = "3"
 
 When you have a cluster of nodes, the integration artifacts deployed in each server node needs to be identical. This can be achieved by synchronizing the deployment directories of each server.
 
-See [deployment synchronization](../../../../install-and-setup/setup/mi-setup/deployment/deployment_synchronization) for instructions.
+See [deployment synchronization](deployment_synchronization) for instructions.
 
 ## Registry synchronization (sharing)
 
@@ -257,14 +272,14 @@ See [deployment synchronization](../../../../install-and-setup/setup/mi-setup/de
 
 The shared registry maintains the state (<b>active</b>/<b>inactive</b>) of the Message Processor artifact. This ensures that the same state is maintained for Message Processor in all the Micro Integrator nodes of the cluster.
 
-1.  Follow the instructions on [configuring the file-based registry](../../../../install-and-setup/setup/mi-setup/deployment/file_based_registry) for a two-node deployment of the Micro Integrator.
-2.  The `<MI_HOME>/registry` folder of each node in the cluster should be shared with each other. You can follow the same instructions as for [deployment synchronization](../../../../install-and-setup/setup/mi-setup/deployment/deployment_synchronization).
+1.  Follow the instructions on [configuring the file-based registry](file_based_registry) for a two-node deployment of the Micro Integrator.
+2.  The `<MI_HOME>/registry` folder of each node in the cluster should be shared with each other. You can follow the same instructions as for [deployment synchronization](deployment_synchronization).
 
 ## Load balancing
 
 If you need the HTTP/HTTPS traffic to be distributed among the nodes, you need to front them via a load balancer of your choice and balance the loads among the node URLs.
 
-Follow the instructions on [setting up a load balancer](../../../../install-and-setup/setup/mi-setup/deployment/setting_up_lb) for a two-node deployment of the Micro Integrator.
+Follow the instructions on [setting up a load balancer](setting_up_lb) for a two-node deployment of the Micro Integrator.
 
 ## Deployment hardening
 

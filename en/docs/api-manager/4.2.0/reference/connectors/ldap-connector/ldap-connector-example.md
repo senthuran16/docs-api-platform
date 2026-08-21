@@ -1,3 +1,18 @@
+---
+title: "LDAP connector example"
+description: "Configure the LDAP connector to create and search LDAP entries on a student directory server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ldap-connector/ldap-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ldap-connector/ldap-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ldap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # LDAP Connector Example
 
 Given below is a sample scenario that demonstrates how to perform CRUD operations on LDAP entries using LDAP Connector.
@@ -19,11 +34,11 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 ## Configure the connector in WSO2 Integration Studio
 
-Before you begin, see [Setting up LDAP](../../../reference/connectors/ldap-connector/setting-up-ldap/) if you need to setup an LDAP and try this out. 
+Before you begin, see [Setting up LDAP](setting-up-ldap) if you need to setup an LDAP and try this out. 
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right click on the created Integration Project and select, **New** -> **Rest API** to create the REST API. 
    
@@ -110,7 +125,7 @@ sequences.
         </sequence>
         ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -124,7 +139,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -214,4 +229,4 @@ You should get all entries that match with the provided filter. A sample respons
 ```
 ## What's Next
 
-* To customize this example for your own scenario, see [LDAP Connector Configuration](../../../reference/connectors/ldap-connector/ldap-server-configuration/) documentation for all operation details of the connector.
+* To customize this example for your own scenario, see [LDAP Connector Configuration](ldap-server-configuration) documentation for all operation details of the connector.

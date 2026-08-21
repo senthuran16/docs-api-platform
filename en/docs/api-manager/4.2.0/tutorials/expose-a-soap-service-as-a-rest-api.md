@@ -1,7 +1,21 @@
+---
+title: "Expose a SOAP service as a REST API"
+description: "Design, publish, and invoke an existing SOAP service as a REST API in WSO2 API Manager using the Pass Through approach."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/expose-a-soap-service-as-a-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/expose-a-soap-service-as-a-rest-api.md
+tags:
+  - api-manager
+  - tutorials
+  - expose-a-soap-service-as-a-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Expose a SOAP service as a REST API
 
 WSO2 API Manager supports the management of an existing SOAP and WSDL based services exposing as REST APIs.
-The organizations who have SOAP/ WSDL based services, can easily bridge their existing services to REST without the cost of a major migration. WSO2 API Manager supports two kinds of services as one for performing a  "pass through" of the SOAP message to the backend and other one is generating [a RESTful API from the backend SOAP service](../design/create-api/generate-rest-api-from-soap-backend/).
+The organizations who have SOAP/ WSDL based services, can easily bridge their existing services to REST without the cost of a major migration. WSO2 API Manager supports two kinds of services as one for performing a  "pass through" of the SOAP message to the backend and other one is generating [a RESTful API from the backend SOAP service](../design/create-api/create-rest-api/generate-rest-api-from-soap-backend).
 
 This tutorial will explain the steps to design, publish and invoke a SOAP service as a RESTful API using **Pass Through**
 
@@ -46,7 +60,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
     <html><div class="admonition note"><p class="admonition-title">Note</p>
     <p>
             If you wish to add scopes to the resources that were created, navigate to ***Resources*** and expand the resources. Thereafter, creating new scopes and specify them under operation scope. If you specify a scope, you need to use the same scope when generating access tokens for the subscribed application to invoke the API. For more information on working with the scopes, see
-    [OAuthscopes](../design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes/)
+    [OAuthscopes](../design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes)
             </p>
         </div></html>   
 
@@ -54,7 +68,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
      <html><div class="admonition note">
      <p class="admonition-title">Note</p>
      <p> Note that when creating this API, the default option of **Rate limiting level** , was selected to **API Level**. For more information on setting advanced throttling policies,
-     see [Enforce Throttling and Resource Access Policies](../design/rate-limiting/setting-throttling-limits/).</p>
+     see [Enforce Throttling and Resource Access Policies](../design/rate-limiting/setting-throttling-limits).</p>
      </div>
      </html>
      
@@ -122,7 +136,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
     <html><div class="admonition note">
      <p class="admonition-title">Note</p>
      <p>You can also invoke this API using a third-party tool such as SOAP UI. For more information on how to invoke an API using a SOAP client, 
-     see [Invoke an API using a SOAP Client](../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client/) .</p>
+     see [Invoke an API using a SOAP Client](../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client) .</p>
      </div>
      </html>
 

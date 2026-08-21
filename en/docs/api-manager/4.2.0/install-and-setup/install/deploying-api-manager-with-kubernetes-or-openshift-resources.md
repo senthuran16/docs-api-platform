@@ -1,3 +1,18 @@
+---
+title: "Deploying API-M on Kubernetes using Helm resources"
+description: "Deploy WSO2 API Manager on Kubernetes using Helm resources from the wso2/kubernetes-apim repository."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/deploying-api-manager-with-kubernetes-or-openshift-resources/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/deploying-api-manager-with-kubernetes-or-openshift-resources.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - deploying-api-manager-with-kubernetes-or-openshift-resources
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying API-M on Kubernetes using Helm Resources
 
 Follow the instructions below to use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M).
@@ -53,7 +68,7 @@ Follow the instructions below to use Kubernetes (K8s) and Helm resources for con
 
 3.  Deploy WSO2 API Manager with WSO2 API Manager Analytics.
 
-     Refer the [Getting Started Guide](../../api-analytics/getting-started-guide) to setup the cloud Analytics solution and obtain an on-prem key.
+     Refer the [Getting Started Guide](../../api-analytics/choreo-analytics/getting-started-guide) to setup the cloud Analytics solution and obtain an on-prem key.
 
     ```
     helm install --dependency-update --name <RELEASE_NAME> <HELM_HOME>/am-single --namespace <NAMESPACE> --set wso2.choreoAnalytics.enabled=true --set wso2.choreoAnalytics.endpoint=<CHOREO_ANALYTICS_ENDPOINT> --set wso2.choreoAnalytics.onpremKey=<ONPREM_KEY>
@@ -95,7 +110,7 @@ Follow the instructions below to use Kubernetes (K8s) and Helm resources for con
 !!! note
     You can read the [README guide](https://github.com/wso2/kubernetes-apim/blob/v4.2.0.2/simple/am-single/README.md) of WSO2 API Manager Git repository for further details on other dependencies and configurations.
 
-For more information, see the deployment configurations with regard to the [Advanced Deployment Patterns](../../install-and-setup/setup/deployment-overview/).
+For more information, see the deployment configurations with regard to the [Advanced Deployment Patterns](../setup/deployment-overview).
 
 - [Standard HA Deployment](https://github.com/wso2/kubernetes-apim/blob/v4.2.0.2/advanced/am-pattern-1/README.md)
 - [Standard HA Deployment with Multitenancy](https://github.com/wso2/kubernetes-apim/blob/v4.2.0.2/advanced/am-pattern-2/README.md)

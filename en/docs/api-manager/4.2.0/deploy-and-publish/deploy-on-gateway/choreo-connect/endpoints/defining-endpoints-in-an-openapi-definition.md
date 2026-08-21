@@ -1,3 +1,18 @@
+---
+title: "Defining endpoints in an OpenAPI definition"
+description: "Reference the OpenAPI vendor extensions used to define API level and resource level production and sandbox endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-endpoints-in-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-endpoints-in-an-openapi-definition.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Defining Endpoints in an OpenAPI Definition
 
 You can use an existing OpenAPI definition to create an API project using APICTL, and deploy that project directly to Choreo Connect. When following this path, the endpoints must be included in the OpenAPI definition itself, so that the inbound request of Choreo Connect can be routed to the corresponding backend service. You, as a developer, can state the endpoint URLs for, 
@@ -298,14 +313,14 @@ If you have added resource level endpoints and you have repeated the same endpoi
 
 Choreo Connect supports the following endpoint features.
 
-- [Load Balanced Endpoints](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/load-balanced-endpoints/): Provides load balancing for the whole API or for a given resource.
+- [Load Balanced Endpoints](load-balanced-endpoints): Provides load balancing for the whole API or for a given resource.
 
-- [Failover Endpoints](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/failover-endpoints/): Handles failover scenarios for the whole API or for a given resource.
+- [Failover Endpoints](failover-endpoints): Handles failover scenarios for the whole API or for a given resource.
 
 !!! info
-        -   [Overriding Endpoint Information](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/overriding-endpoints-for-imported-apis/)
+        -   [Overriding Endpoint Information](overriding-endpoints-for-imported-apis)
         This link will be useful when you need to override the endpoint URL of an API just before starting Choreo Connect, since the original endpoint that was added while it was in a different environment does not suit the current environment.
-        -   [Defining a Backend Security Scheme](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/defining-a-backend-security-scheme/)
+        -   [Defining a Backend Security Scheme](defining-a-backend-security-scheme)
         This link provides information on how to setup Choreo Connect to support BasicAuth Authentication.
-        -   [Service Discovery](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-discovery/)
+        -   [Service Discovery](../service-discovery/choreo-connect-and-service-discovery)
         There can be endpoints that change dynamically over time. In such situations, you can use Service Discovery with Consul service registry to make sure that Choreo Connect is aware of the latest endpoint.

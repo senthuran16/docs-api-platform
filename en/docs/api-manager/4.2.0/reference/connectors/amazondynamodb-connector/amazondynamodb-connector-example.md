@@ -1,3 +1,18 @@
+---
+title: "Amazon DynamoDB connector example"
+description: "Example of using the Amazon DynamoDB connector to create a table and perform CRUD operations on employee item data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazondynamodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Amazon DynamoDB Connector Example
 
  Amazon DynamoDB Connector allows you to access the [Amazon DynamoDB REST API](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html) from an integration sequence.
@@ -26,13 +41,13 @@ All seven operations are exposed via an API. The API with the context `/resource
 * `/listtable` : Retrieve information about the created tables.
 * `/deletetable` : Remove created table in the Amazon DynamoDB.
 
-For more information about these operations, please refer to the [Amazon DynamoDB connector reference guide](../../../reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration/).
+For more information about these operations, please refer to the [Amazon DynamoDB connector reference guide](amazondynamodb-connector-configuration).
 
-> **Note**: Before invoking the API, you need to configure message builders/formatters in deployment.toml. See [Setting up the Amazon DynamoDB Connector](../../../reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration/) documentation for more information.
+> **Note**: Before invoking the API, you need to configure message builders/formatters in deployment.toml. See [Setting up the Amazon DynamoDB Connector](amazondynamodb-connector-configuration) documentation for more information.
 
 The following diagram shows the overall solution. The user creates a table, stores some employee details (items) into the table, and then receives it back. To invoke each operation, the user uses the same API. 
 
-<img src="/assets/img/integrate/connectors/amazon-dynamoDB-connector-example.jpg" title="Amazon DynamoDB connector example" width="800" alt="Amazon DynamoDB connector example"/>
+<img src="../../../../assets/img/integrate/connectors/amazon-dynamoDB-connector-example.jpg" title="Amazon DynamoDB connector example" width="800" alt="Amazon DynamoDB connector example"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -44,7 +59,7 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.  
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
@@ -91,7 +106,7 @@ Now follow the steps below to add resources to the API.
         
         <img src="../../../../assets/img/integrate/connectors/amazon-dynamodb-drag-and-drop-create-table-parameters.jpg" title="Drag and drop create table operation" width="500" alt="Drag and drop create table operation"/> 
     
-    3. To get the input values in to the API we can use the [property mediator](../../../reference/mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under the **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
+    3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator). Navigate into the **Palette** pane and select the graphical mediators icons listed under the **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
     
         <img src="../../../../assets/img/integrate/connectors/amazon-dynamodb-drag-and-drop-property-mediator.png" title="Add property mediators" width="800" alt="Add property mediators"/>
 
@@ -341,7 +356,7 @@ Now follow the steps below to add resources to the API.
     
 #### Get a response.   
  
-When you are invoking the created API, the request of the message is going through the each resource. Finally, it is passed to the [Respond mediator](../../../reference/mediators/respond-mediator/). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response. 
+When you are invoking the created API, the request of the message is going through the each resource. Finally, it is passed to the [Respond mediator](../../mediators/respond-mediator). The Respond Mediator stops the processing on the current message and sends the message back to the client as a response. 
 
 Drag and drop **respond mediator** to the **Design view**.
 
@@ -520,7 +535,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

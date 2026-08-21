@@ -1,3 +1,18 @@
+---
+title: "MongoDB connector example"
+description: "Configure a sample API that uses the MongoDB connector to insert and find documents in a MongoDB database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/mongodb-connector/mongodb-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/mongodb-connector/mongodb-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - mongodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # MongoDB Connector Example
 
 The MongoDB Connector can be used to perform CRUD operations in the local database as well as in MongoDB Atlas (cloud version of MongoDB).
@@ -38,7 +53,7 @@ If you want to connect to MongoDB Atlas, follow the steps mentioned below to get
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
@@ -81,7 +96,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     - Collection - json-eval($.collection)
     - Documents - json-eval($.documents)
 
-9.  Drag the [Respond Mediator](https://ei.docs.wso2.com/en/latest/micro-integrator/references/mediators/respond-Mediator/) to the canvas. This returns the response message to the client (after inserting documents) as shown below.
+9.  Drag the [Respond Mediator](https://ei.docs.wso2.com/en/latest/micro-integrator/references/mediators/respond-mediator/) to the canvas. This returns the response message to the client (after inserting documents) as shown below.
 
     <img src="../../../../assets/img/integrate/connectors/mongodb-conn-8.png" title="Adding the respond mediator." width="800" alt="Adding the respond mediator."/>
 
@@ -96,7 +111,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     - Collection - json-eval($.collection)
     - Query - json-eval($.query)
 
-14. Drag the [Respond Mediator](https://ei.docs.wso2.com/en/latest/micro-integrator/references/mediators/respond-Mediator/) to the canvas. This returns the response message to the client (after retrieving documents) as shown below.
+14. Drag the [Respond Mediator](https://ei.docs.wso2.com/en/latest/micro-integrator/references/mediators/respond-mediator/) to the canvas. This returns the response message to the client (after retrieving documents) as shown below.
 
 15. You can find the complete API XML configuration below. You can go to the source view and copy paste the following config.
 
@@ -129,7 +144,7 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 </api>
 ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 ## Get the project
 
@@ -143,7 +158,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp to the integration runtime.
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ??? note "Click here for instructions on removing the iterative mongodb server logs"
     Add the configuration below to **remove** the iterative `org.mongodb.driver.cluster` server logs;
@@ -262,4 +277,4 @@ Follow these steps to deploy the exported CApp to the integration runtime.
 
 ## What's Next
 
-- To customize this example for your own scenario, see [MongoDB Connector Configuration](../../../reference/connectors/mongodb-connector/mongodb-connector-config/) documentation for all operation details of the connector.
+- To customize this example for your own scenario, see [MongoDB Connector Configuration](mongodb-connector-config) documentation for all operation details of the connector.

@@ -1,3 +1,18 @@
+---
+title: "Converting JSON to SOAP"
+description: "Convert JSON client messages to SOAP for a backend service using the PayloadFactory mediator and other methods."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_transformation_examples/json-to-soap-conversion/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/message_transformation_examples/json-to-soap-conversion.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_transformation_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Converting JSON to SOAP 
 
 Let's consider a scenario where you have a SOAP-based backend and a JSON client. The SOAP backend is exposed as a REST API in the Micro Integrator. 
@@ -68,10 +83,10 @@ See the instructions on how to [build and run](#build-and-run-example-1) this ex
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the REST API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the REST API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 
@@ -194,11 +209,11 @@ See the instructions on how to [build and run](#build-and-run-example-2) this ex
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project).
-3. [Create the REST API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Create a local entry](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) named **in_transform** with the above XSLT configuration.
-5. [Deploy the artifacts](../../../integrate/develop/using-remote-micro-integrator/) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an ESB Config project](../../develop/create-integration-project#sub-projects).
+3. [Create the REST API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Create a local entry](../../develop/creating-artifacts/registry/creating-local-registry-entries) named **in_transform** with the above XSLT configuration.
+5. [Deploy the artifacts](../../develop/using-remote-micro-integrator) in your Micro Integrator.
 
 Set up the back-end service:
 

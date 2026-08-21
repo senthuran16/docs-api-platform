@@ -1,3 +1,18 @@
+---
+title: "Creating an inbound endpoint"
+description: "Provides steps to create an inbound endpoint artifact and configure its protocol parameters in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-an-inbound-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating an Inbound Endpoint
 
 Follow the instructions given below to create a new [Inbound Endpoint](../../../reference/synapse-properties/inbound-endpoints/about-inbound-endpoints) artifact in WSO2 Integration Studio.
@@ -6,7 +21,7 @@ Follow the instructions given below to create a new [Inbound Endpoint](../../../
 
 ### Creating the Inbound Endpoint artifact
 
-1. If you have already created an [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project), right-click the project and go to **New → Inbound Endpoint** to open the **New Inbound Endpoint Artifact**.
+1. If you have already created an [ESB Config project](../create-integration-project#sub-projects), right-click the project and go to **New → Inbound Endpoint** to open the **New Inbound Endpoint Artifact**.
 
     <img src="../../../../assets/img/integrate/create_artifacts/new_inbound_endpoint/select-inbound-endpoint.png" width="500">
 
@@ -89,16 +104,16 @@ Click the **Source** tab to view the XML-based synapse configuration (source cod
 
 ## Examples
 
--   [JMS Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-jms-protocol)
--   [File Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/file-inbound-endpoint)
--   [HTTP Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-http-protocol)
--   [HTTPS Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-https-protocol)
--   [HL7 Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-hl7-protocol-auto-ack)
--   [MQTT Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-mqtt-protocol)
--   [RabbitMQ Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-rabbitmq-protocol)
--   [Kafka Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-kafka)
--   [WebSocket Inbound Endpoint example](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket)
--   [Using Inbound Endpoints with Registry](../../../integrate/examples/inbound_endpoint_examples/inbound-endpoint-with-registry)
+-   [JMS Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-jms-protocol)
+-   [File Inbound Endpoint example](../../examples/inbound_endpoint_examples/file-inbound-endpoint)
+-   [HTTP Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-http-protocol)
+-   [HTTPS Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-https-protocol)
+-   [HL7 Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-hl7-protocol-auto-ack)
+-   [MQTT Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-mqtt-protocol)
+-   [RabbitMQ Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-rabbitmq-protocol)
+-   [Kafka Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-kafka)
+-   [WebSocket Inbound Endpoint example](../../examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket)
+-   [Using Inbound Endpoints with Registry](../../examples/inbound_endpoint_examples/inbound-endpoint-with-registry)
 
 ## Tutorial
 

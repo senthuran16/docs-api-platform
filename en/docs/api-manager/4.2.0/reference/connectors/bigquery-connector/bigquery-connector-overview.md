@@ -1,3 +1,18 @@
+---
+title: "BigQuery connector overview"
+description: "Overview of the BigQuery connector, which lets you access the BigQuery REST API from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/bigquery-connector/bigquery-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/bigquery-connector/bigquery-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - bigquery-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # BigQuery Connector Overview
 
 The BigQuery connector allows you to access the [BigQuery REST API](https://cloud.google.com/bigquery/docs/reference/rest) from an integration sequence. BigQuery is a tool that allows you to execute SQL-like queries on large amounts of data at outstanding speeds. It is a serverless Software as a Service that supports querying using ANSI SQL.
@@ -16,9 +31,9 @@ For older versions, see the details in the connector store.
 
 ## BigQuery Connector Documentation
 
-* **[BigQuery Connector Example](../../../reference/connectors/bigquery-connector/bigquery-connector-example/)**: This example demonstrates how to work with the BigQuery Connector. 
+* **[BigQuery Connector Example](bigquery-connector-example)**: This example demonstrates how to work with the BigQuery Connector. 
 
-* **[BigQuery Connector Reference](../../../reference/connectors/bigquery-connector/bigquery-connector-reference/)**: This documentation provides a reference guide for the BigQuery Connector.
+* **[BigQuery Connector Reference](bigquery-connector-reference)**: This documentation provides a reference guide for the BigQuery Connector.
 
 ## How to contribute
 

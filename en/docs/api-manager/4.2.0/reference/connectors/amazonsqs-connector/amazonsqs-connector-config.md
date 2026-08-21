@@ -1,3 +1,18 @@
+---
+title: "Amazon SQS connector reference"
+description: "Reference of the init operation and parameters used to authenticate and configure the Amazon SQS connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Amazon SQS Connector Reference
 
 The following operations allow you to work with the Amazon SQS Connector. Click an operation name to see parameter details and samples on how to use it.

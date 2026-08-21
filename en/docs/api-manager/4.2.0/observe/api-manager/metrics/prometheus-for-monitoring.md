@@ -1,3 +1,17 @@
+---
+title: "Monitoring with Prometheus"
+description: "Configure the Prometheus JMX Exporter as a Java agent for WSO2 API Manager and scrape its metrics with a Prometheus server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/metrics/prometheus-for-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/api-manager/metrics/prometheus-for-monitoring.md
+tags:
+  - api-manager
+  - observe
+  - metrics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring with Prometheus
 
 Prometheus is an open source toolkit that can monitor systems and produce useful information such as graphs and alerts. It collects statistical data exposed over an HTTP endpoint in the form of multi dimensional time series data, which can be then be visualized and queried. See the [Prometheus documentation](https://prometheus.io/docs/introduction/overview/) for more information.

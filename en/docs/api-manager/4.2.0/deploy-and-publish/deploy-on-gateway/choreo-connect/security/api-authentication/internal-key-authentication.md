@@ -1,12 +1,27 @@
+---
+title: "Internal key authentication"
+description: "Generate and use an Internal Key from the API Manager Publisher Try Out page to test an API deployed on Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Internal Key Authentication
 
 This authentication can be used to test APIs that are created in the API Manager Publisher right after deploying the API and even before publishing. An Internal Key can be generated from the API Manager Publisher Try Out page and can be used for both of the modes given below. 
 
 - Choreo Connect is run with API Manager as the Control Plane
-- Choreo Connect is run as a standalone Gateway and **APIM Publisher** is set as a [token service](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/configuring-an-external-key-manager/)
+- Choreo Connect is run as a standalone Gateway and **APIM Publisher** is set as a [token service](configuring-an-external-key-manager)
 
 ### Step 1 - Create and deploy an API to Choreo Connect via API Manager
-Follow the instructions in the guide [Deploying a REST API in Choreo Connect](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect).
+Follow the instructions in the guide [Deploying a REST API in Choreo Connect](../../deploy-api/deploy-rest-api-in-choreo-connect).
 
 ### Step 2 - Generate an Internal Key from API-M Publisher
 1. Navigate to **Try Out** from the left menu bar in API-M Publisher.

@@ -1,3 +1,18 @@
+---
+title: "MTOM and SwA optimizations and Request/Response correlation"
+description: "Demonstrates how to use MTOM and SwA content optimization mechanisms with endpoints for request and response correlation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/mtom-swa-with-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/mtom-swa-with-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # MTOM and SwA Optimizations and Request/Response Correlation
 
 This sample demonstrates how you can use content optimization mechanisms such as **Message Transmission Optimization Mechanism** (MTOM) and **SOAP with
@@ -64,7 +79,7 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
 2.  Open the `deployment.toml` file (stored in the `MI_HOME/conf` directory) and add the following configurations:
 
     - To enable MTOM:
@@ -95,9 +110,9 @@ Create the artifacts:
     ```
 
 
-3. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-4. Create the [main sequence](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+3. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+4. Create the [main sequence](../../develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 When your client executes successfully, it will upload a file containing
 the ASF logo, receive its response, and save the response to a

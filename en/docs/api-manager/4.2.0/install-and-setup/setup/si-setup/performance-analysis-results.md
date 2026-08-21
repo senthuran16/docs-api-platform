@@ -1,3 +1,18 @@
+---
+title: "Performance analysis results"
+description: "Reference performance test results for the Streaming Integrator consuming and publishing events using Kafka."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/performance-analysis-results/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/performance-analysis-results.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Analysis Results
 
 ## Consuming events using Kafka source

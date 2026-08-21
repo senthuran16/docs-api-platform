@@ -1,3 +1,18 @@
+---
+title: "Using the load balance endpoint"
+description: "Demonstrates session affinity load balancing across multiple endpoints using client-generated session identifiers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-loadbalancing-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-loadbalancing-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Load Balance Endpoint
 
 **Session Affinity Load Balancing between Three Endpoints**
@@ -77,10 +92,10 @@ Following is a sample REST API configuration that we can used to implement this 
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the Proxy](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) and the Sequence with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the Proxy](../../develop/creating-artifacts/creating-a-proxy-service) and the Sequence with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

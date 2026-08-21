@@ -1,3 +1,18 @@
+---
+title: "Deploying integrations using the operator"
+description: "Learn how the K8s API Operator deploys Micro Integrator artifacts in Kubernetes using the Integration custom resource and ingress controller settings."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Deploying Integrations using the Operator
 
 The Kubernetes API operator (**k8s-api-operator**) provides first-class support for Micro Integrator deployments in the Kubernetes ecosystem. It uses the **Integration custom resource** (`integration_cr.yaml` file) that is available in the Kubernetes exporter module (exported from WSO2 Integration Studio) and deploys the integration in your Kubernetes environment.
@@ -12,20 +27,20 @@ Listed below are the system requirements for deploying integration solutions in 
 
 - [Kubernetes](https://kubernetes.io/docs/setup/) cluster and **v1.14+** client. 
 - [Docker](https://docs.docker.com/)
-- [Install K8s API Operator](../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/install)
+- [Install K8s API Operator](../install)
 
 ## Deploy integration solutions in K8s
 
 !!! Tip
     To try the end-to-end process of deploying integration solutions on Kubernetes, see the integration examples: 
 
-    - [Hello World example](../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/hello-world)
-    - [Message Routing example](../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/content-based-routing)
-    - [JMS Sender/Receiver exampe](../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/jms-sender-receiver)
+    - [Hello World example](integration-samples/hello-world)
+    - [Message Routing example](integration-samples/content-based-routing)
+    - [JMS Sender/Receiver exampe](integration-samples/jms-sender-receiver)
 
 Given below are the main steps your will follow when you deploy integration solutions in a Kubernetes cluster.
 
-1.  Be sure that the [system requirements](#prerequisites-system-requirements) are fulfilled, and that the [K8s API operator](../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/install) is installed in your Kubernetes environment.
+1.  Be sure that the [system requirements](#prerequisites-system-requirements) are fulfilled, and that the [K8s API operator](../install) is installed in your Kubernetes environment.
 2.  Your integration solution should be prepared using **WSO2 Integration Studio** as follows:
 
     1. Create the integration solution.
@@ -235,7 +250,7 @@ Given below are the main steps your will follow when you deploy integration solu
 When the integration is successfully deployed, it should create the `hello-world` integration, `hello-world-deployment`, `hello-world-service`, and `ei-operator-ingress` as follows:
 
 !!! Tip
-    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#Disable-ingress-controller-creation).
+    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#disable-ingress-controller-creation).
 
 ```bash
 kubectl get integration
@@ -426,7 +441,7 @@ Follow the steps given below:
     ```
 
 !!! Tip
-    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#Disable-ingress-controller-creation).
+    The `ei-operator-ingress` will not be created if you have [disabled the ingress controller](#disable-ingress-controller-creation).
 
 
 ## Update existing integration deployments
@@ -445,7 +460,7 @@ When you run the above command, Kubernetes will spawn another temporary pod, whi
 
 ## Run inbound endpoints
 
-[Inbound Endpoints](../../../../../reference/synapse-properties/inbound-endpoints/about-inbound-endpoints/) in the Micro Integrator are used for separating endpoint listeners. That is, for each HTTP inbound endpoint, messages are handled separately. Also, we can create any number of inbound endpoints on any port. 
+[Inbound Endpoints](../../../../../reference/synapse-properties/inbound-endpoints/about-inbound-endpoints) in the Micro Integrator are used for separating endpoint listeners. That is, for each HTTP inbound endpoint, messages are handled separately. Also, we can create any number of inbound endpoints on any port. 
 
 Therefore, we can expose the inbound endpoint ports from the Kubernetes cluster by passing the `inboundPorts` property inside our `integration_cr.yaml` custom resource file as follows:
 
@@ -548,7 +563,7 @@ data:
   maxReplicas: "5"
 ```
 
-Note how you can set required resources and resource limits for the pods in the deployment referring to the above section [Managing resources for pods in EI deployment](#Managing-resources-for-pods-in-EI-deployment). HPA configs are injected through the integration configmap. See how you can define it at ([integration_controller_conf.yaml](https://github.com/wso2/k8s-api-operator/blob/master/api-operator/deploy/controller-configs/integration_controller_conf.yaml)) file. 
+Note how you can set required resources and resource limits for the pods in the deployment referring to the above section [Managing resources for pods in EI deployment](#manage-resources-of-pods-in-integration-deployment). HPA configs are injected through the integration configmap. See how you can define it at ([integration_controller_conf.yaml](https://github.com/wso2/k8s-api-operator/blob/master/api-operator/deploy/controller-configs/integration_controller_conf.yaml)) file. 
 
 ```yaml
   hpaMetrics: |

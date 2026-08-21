@@ -1,3 +1,18 @@
+---
+title: "Loading and writing data"
+description: "Load and write streaming data to databases, files, and cloud storage using WSO2 Streaming Integrator Siddhi tables and queries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/loading-and-writing-date/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/loading-and-writing-date.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - loading-and-writing-date
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Loading and Writing Data
 
 Loading and writing data involves publishing the data in a destination where it can be extracted again at any given time for further processing. WSO2 Streaming Integrator supports loading and writing data to databases, files, and cloud storages.
@@ -67,7 +82,7 @@ To try out the example given above, follow the steps below:
               PRIMARY KEY (ref));
             ```
         
-2. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+2. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 3. Install the `RDBMS - MySQL` extension in Streaming Integrator tooling. For instructions to install an extension, see [Installing Siddhi Extensions](../../develop/streaming-apps/installing-siddhi-extensions).
 
@@ -108,7 +123,7 @@ To try out the example given above, follow the steps below:
     
 ### Publishing data on demand via store queries
 
-To understand how to publish data on demand, see [Correlating Data](../../use-cases/streaming-usecase/correlating-data)
+To understand how to publish data on demand, see [Correlating Data](correlating-data)
 
 ### Supported databases
 
@@ -123,13 +138,13 @@ WSO2 Streaming supports the following database types via Siddhi extensions:
 
 ### Supported Mappers
 
-Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-the-message-format-when-publishing-data).
+Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](transforming-data#transforming-the-message-format-when-publishing-data).
 
 The mapper available for loading data to databases is [Keyvalue](https://siddhi-io.github.io/siddhi-map-keyvalue/api/2.1.0/#sinkmapper).
 
 ## Writing data to files
 
-WSO2 Streaming allows you to write data into files so that the data can be available in a static manner for further processing. You can write the data received from another source unchanged or after processing it. This is achieved by defining an output [stream](../../use-cases/streaming-usecase/loading-and-writing-date/) and then connecting a [sink](https://siddhi.io/en/v5.1/docs/query-guide/#sink) of the [file](https://siddhi-io.github.io/siddhi-io-file/api/2.0.10/#sink) type.
+WSO2 Streaming allows you to write data into files so that the data can be available in a static manner for further processing. You can write the data received from another source unchanged or after processing it. This is achieved by defining an output [stream](loading-and-writing-date) and then connecting a [sink](https://siddhi.io/en/v5.1/docs/query-guide/#sink) of the [file](https://siddhi-io.github.io/siddhi-io-file/api/2.0.10/#sink) type.
 
 ![Loading Data to Databases](../../assets/img/streaming/loading-and-writing-data/load-data-to-file.png)
 
@@ -149,7 +164,7 @@ Here, any event directed to the `TemperatureLogStream` is written into the `/use
 
 To try out the above example by including the given output stream and the sink configuration in a complete Siddhi application, follow the steps below:
 
-1. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file and copy the following Siddhi Application to it.
 
@@ -187,7 +202,7 @@ To try out the above example by including the given output stream and the sink c
     
 ### Supported Mappers
 
-Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-message-formats).
+Mappers determine the format in which the event is published. For information about transforming events by changing the format in which the data is published, see [Transforming Data](transforming-data#transforming-message-formats).
 
 The following mappers are supported for the File extension.
 
@@ -228,7 +243,7 @@ To try out the above example, follow the steps below:
     
     3. Create a bucket named `temperaturelog` in the Google Cloud Console.
     
-2. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+2. [Start and access WSO2 Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 3. Open a new file and copy the following Siddhi Application to it.
 
@@ -274,7 +289,7 @@ The following is a list of cloud platforms in which you can store data via WSO2 
 
 ### Supported mappers
 
-Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-message-formats).
+Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](transforming-data#transforming-message-formats).
 
 WSO2 Streaming Integrator supports the following mappers for the cloud-based storages in which it stores data.
 

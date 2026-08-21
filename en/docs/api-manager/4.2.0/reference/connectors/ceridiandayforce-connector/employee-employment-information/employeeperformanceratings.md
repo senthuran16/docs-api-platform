@@ -1,3 +1,18 @@
+---
+title: "Working with employee performance ratings"
+description: "Retrieve an employee's performance review details using the GET Employee Performance Ratings operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeperformanceratings/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/employee-employment-information/employeeperformanceratings.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Performance Ratings
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve, create or update performance rat
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-performance-ratings"></a>
 #### Retrieving Employee Performance Ratings
 We can use GET Employee Performance Ratings operation with required parameters to search and find the performance review of required employees.
 

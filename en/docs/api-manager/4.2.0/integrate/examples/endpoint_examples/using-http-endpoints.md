@@ -1,3 +1,18 @@
+---
+title: "Using the HTTP endpoint"
+description: "Demonstrates how to define and populate an HTTP endpoint with URI template variables during mediation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-http-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-http-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the HTTP Endpoint
 
 See the examples given below on how to effectively use the HTTP endpoint.

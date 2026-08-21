@@ -1,3 +1,18 @@
+---
+title: "Cleansing data"
+description: "Filter and refine streaming data by exact match, regex pattern, or multiple criteria in WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/cleansing-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/cleansing-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - cleansing-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Cleansing Data
 
 When you receive input data via the Streaming Integrator, it may consist of data that is not required to generate the required output, null values for certain attributes, etc. Cleansing data refers to refining the input data received by assigning values where there are missing values (if there are applicable values), filtering out the data that is not required, etc.
@@ -47,7 +62,7 @@ To understand this, consider a scenario where you receive the temperature of mul
 
 To try out the query used in the above example, let's include it in a Siddhi Application and run it.
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file. Then add and save the following Siddhi application.
 
@@ -65,7 +80,7 @@ To try out the query used in the above example, let's include it in a Siddhi App
     select * 
     insert into RoomAnalysisStream;
     ```
-3. Open the event simulator and simulate three events for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application/#simulating-a-single-event).
+3. Open the event simulator and simulate three events for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application#simulating-a-single-event).
 
     | **Event** | **deviceID**  | **roomNo** | **temp** |
     |-----------|---------------|------------|----------|
@@ -101,7 +116,7 @@ To try out the query used in the above example, let's include it in a Siddhi App
     insert into RoomAnalysisStream;
    ```
    
-5. Open the event simulator and simulate three events for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application/#simulating-a-single-event).
+5. Open the event simulator and simulate three events for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application#simulating-a-single-event).
 
     | **Event** | **deviceID**  | **roomNo** | **temp** |
     |-----------|---------------|------------|----------|
@@ -133,7 +148,7 @@ Here, the `cast()` function presents the value for the `roomNo` attribute as a s
 
 To try out the above example, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file. Then add and save the following Siddhi application.
 
@@ -153,7 +168,7 @@ To try out the above example, follow the steps below:
     ```
    In this Siddhi application, the `Temp Stream` has an attribute named `deviceID`, but it is not selected to be included in the output events. The `roomNo`attribute is cast as an string value via `cast(roomNo, "string")`. This means although the value for this attribute is received as an integer, it is presented as a string value in the output.
    
-3. Open the event simulator and simulate an event for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application/#simulating-a-single-event).
+3. Open the event simulator and simulate an event for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application#simulating-a-single-event).
 
     | **deviceID**  | **roomNo** | **temp** |
     |---------------|------------|----------|
@@ -180,7 +195,7 @@ insert into CleansedDataStream
 
 To try out the above example, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file. Then add and save the following Siddhi application.
 
@@ -201,7 +216,7 @@ To try out the above example, follow the steps below:
     ```
    In this Siddhi application, the `Temp Stream` has an attribute named `deviceID`, but it is not selected to be included in the output events. The `roomNo`attribute is cast as an string value via `cast(roomNo, "string")`. This means although the value for this attribute is received as an integer, it is presented as a string value in the output.
    
-3. Open the event simulator and simulate an event for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application/#simulating-a-single-event).
+3. Open the event simulator and simulate an event for the `TempStream` input stream of the `TemperatureApp` Siddhi application with the values for the attributes as given below. For instructions to simulate single events, see [Testing Siddhi Applications - Simulating a single event](../../develop/streaming-apps/testing-a-siddhi-application#simulating-a-single-event).
 
     | **deviceID**                                        | **roomNo** | **temp** |
     |-----------------------------------------------------|------------|----------|

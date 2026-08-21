@@ -1,3 +1,17 @@
+---
+title: "Edit an API by modifying the API definition"
+description: "Use the integrated Swagger Editor in the API Publisher to directly edit an API's OpenAPI definition and add new resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/edit-an-api-by-modifyng-the-api-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/edit-an-api-by-modifyng-the-api-definition.md
+tags:
+  - api-manager
+  - tutorials
+  - edit-an-api-by-modifyng-the-api-definition
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Edit an API by modifying the API Definition
  
 WSO2 API Manager has an integrated Swagger Editor, which is part of the Swagger project.
@@ -11,7 +25,7 @@ API Manager supports [Open API 3.0](https://github.com/OAI/OpenAPI-Specification
 In this tutorial, let's see how you can add interactive documentation to an API by directly editing the Swagger code via the API Publisher UI.
 
 !!! note
-    This tutorial uses the `PizzaShack` API created in [Create a REST API](../design/create-api/create-rest-api/create-a-rest-api/) section and Published in the [Publish an API](../deploy-and-publish/publish-on-dev-portal/publish-an-api/) section.
+    This tutorial uses the `PizzaShack` API created in [Create a REST API](../design/create-api/create-rest-api/create-a-rest-api) section and Published in the [Publish an API](../deploy-and-publish/publish-on-dev-portal/publish-an-api) section.
 
 
 1.  Sign in to the API Publisher and choose to design a new REST API. `https://<hostname>:9443/publisher`
@@ -186,7 +200,7 @@ In this tutorial, let's see how you can add interactive documentation to an API 
 
 
 7. Complete the rest of the API creation process.
-    For more information, see step 7 onwards under [Create a REST API](../design/create-api/create-rest-api/create-a-rest-api/) section and Published in the [Publish an API](../deploy-and-publish/publish-on-dev-portal/publish-an-api/) section.
+    For more information, see step 7 onwards under [Create a REST API](../design/create-api/create-rest-api/create-a-rest-api) section and Published in the [Publish an API](../deploy-and-publish/publish-on-dev-portal/publish-an-api) section.
 
 8. Click **View in Developer Portal** and the API you just published appears.
 9. Click **Try Out**.

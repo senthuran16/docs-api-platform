@@ -1,3 +1,18 @@
+---
+title: "Redis connector overview"
+description: "Overview of the Redis connector, its supported product versions, and links to setup and example documentation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/redis-connector/redis-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/redis-connector/redis-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - redis-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Redis Connector Overview
 
 Redis is an open source (BSD licensed), in-memory data structure store, used as a **cache** or a **database**, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperlogs and geospatial indexes with radius queries.
@@ -20,11 +35,11 @@ For older versions, see the details in the connector store.
 
 ## Redis Connector documentation
 
-* **[Setting up the Redis Environment](../../../reference/connectors/redis-connector/2.4.x/redis-connector-reference/)**: This involves setting up the Redis server and a backend to test the flow.
+* **[Setting up the Redis Environment](2.4.x/redis-connector-reference)**: This involves setting up the Redis server and a backend to test the flow.
 
-* **[Redis Connector Example](../../../reference/connectors/redis-connector/redis-connector-example/)**: This example demonstrates how to work with the Redis Connector and access the Redis server using Redis commands. 
+* **[Redis Connector Example](redis-connector-example)**: This example demonstrates how to work with the Redis Connector and access the Redis server using Redis commands. 
 
-* **[Redis Connector Reference](../../../reference/connectors/redis-connector/2.4.x/redis-connector-reference)**: This documentation provides a reference guide for the Redis Connector.
+* **[Redis Connector Reference](2.4.x/redis-connector-reference)**: This documentation provides a reference guide for the Redis Connector.
 
 ## How to contribute
 

@@ -1,6 +1,21 @@
+---
+title: "Working with WSO2 integration studio"
+description: "Explains how to update a mediation flow of a REST API or proxy service using the design or source view in Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/working-with-wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/working-with-wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - working-with-wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Working with WSO2 Integration Studio
 
-Once you have created a [REST API](../../integrate/develop/creating-artifacts/creating-an-api) or a [Proxy Service](../../integrate/develop/creating-artifacts/creating-a-proxy-service) in WSO2 Integration Studio, you can update the mediation flow by adding new mediation artifacts and changing the existing artifacts.
+Once you have created a [REST API](creating-artifacts/creating-an-api) or a [Proxy Service](creating-artifacts/creating-a-proxy-service) in WSO2 Integration Studio, you can update the mediation flow by adding new mediation artifacts and changing the existing artifacts.
 
 Follow the steps given below.
 

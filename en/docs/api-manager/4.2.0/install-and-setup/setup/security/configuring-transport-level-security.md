@@ -1,3 +1,18 @@
+---
+title: "Configuring transport level security"
+description: "Configure transport-level security for WSO2 API Manager, including disabling weak ciphers and changing server name headers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/configuring-transport-level-security/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/configuring-transport-level-security.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Transport Level Security
 
 Given below are the various transport-level security configurations that are required for WSO2 API Manager. See the following topics for instructions.
@@ -170,4 +185,4 @@ ResponseHeaderFilter com.sample.tomcat.filter.ResponseHeaderFilter Content-Secur
 
 ## What's Next?
 
-See the [Security Guidelines for Production Deployment](../../../install-and-setup/setup/deployment-best-practices/security-guidelines-for-production-deployment) for the full list of security-related recommendations for WSO2 API Manager.
+See the [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment) for the full list of security-related recommendations for WSO2 API Manager.

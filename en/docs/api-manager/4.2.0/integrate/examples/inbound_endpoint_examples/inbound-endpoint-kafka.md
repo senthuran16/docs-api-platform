@@ -1,3 +1,18 @@
+---
+title: "Using the Kafka inbound endpoint"
+description: "Configure the Kafka inbound endpoint to bridge one-way message delivery from a Kafka topic to an HTTP backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-kafka.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Kafka Inbound Endpoint
 
 ## Example use case
@@ -50,10 +65,10 @@ Following are the integration artifacts that we can used to implement this scena
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create a [mediation sequence](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../../integrate/develop/creating-an-inbound-endpoint) with configurations given in the above example.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create a [mediation sequence](../../develop/creating-artifacts/creating-reusable-sequences) and [inbound endpoint](../../develop/creating-artifacts/creating-an-inbound-endpoint) with configurations given in the above example.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service.
 

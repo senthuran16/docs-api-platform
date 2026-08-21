@@ -1,3 +1,18 @@
+---
+title: "DB event inbound endpoint overview"
+description: "Learn how the DB Event Inbound Endpoint listens for database data changes and generates events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - db-event-inbound-endpoint
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # DB Event Inbound Endpoint Overview
 
 Data is the most valuable asset in any business. Almost every cooperate system has an on-premise or cloud-based data storage facility. When the individual systems in a particular business are integrated together, sometimes they are coupled via database systems. For an example, one system can write data, while another system reads and processes them. In such instances, the systems may want to know if there are any changes to the data being performed by external parties or systems. 
@@ -18,9 +33,9 @@ For older versions, see the details in the connector store.
 
 ## DB Event Inbound Endpoint
 
-* **[DB Event Inbound Endpoint Example](../../../reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-example)**: In this example you will learn how to configure `DB-event Inbound Endpoint` so that it can listen to data changes done to a `MySQL` table. 
+* **[DB Event Inbound Endpoint Example](db-event-inbound-endpoint-example)**: In this example you will learn how to configure `DB-event Inbound Endpoint` so that it can listen to data changes done to a `MySQL` table. 
 
-* **[DB Event Inbound Endpoint Reference](../../../reference/connectors/db-event-inbound-endpoint/db-event-inbound-endpoint-config)**: This documentation provides a reference guide for the DB Event Inbound Endpoint.
+* **[DB Event Inbound Endpoint Reference](db-event-inbound-endpoint-config)**: This documentation provides a reference guide for the DB Event Inbound Endpoint.
 
 ## How to contribute
 

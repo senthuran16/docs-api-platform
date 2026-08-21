@@ -1,7 +1,22 @@
+---
+title: "API-M distributed deployment - overview"
+description: "Learn how WSO2 API Manager's distributed deployment architecture separates the Control Plane, Gateway, and Traffic Manager components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # API-M Distributed Deployment - Overview
 
 Before deploying WSO2 API Manager (WSO2 API-M), let's understand how the WSO2 API-M distributed deployment works.
-According to the recommended [deployment patterns](../../../install-and-setup/setup/deployment-overview/#simple-scalable-deployment), a distributed deployment includes API-M server nodes that separately run the [API-M profiles](../../../install-and-setup/setup/distributed-deployment/product-profiles). An API-M profile is a server instance that only runs specific components of the API-M server.
+According to the recommended [deployment patterns](../deployment-overview#simple-scalable-deployment), a distributed deployment includes API-M server nodes that separately run the [API-M profiles](product-profiles). An API-M profile is a server instance that only runs specific components of the API-M server.
 
 ## API-M Profiles
 
@@ -147,18 +162,18 @@ In a typical distributed deployment, all API-M components (excluding the API-M G
 
 ### Simple Scalable Deployment
 
-The following diagram depicts how the Control Plane and Gateway profiles communicate in a distributed deployment setup, and also the database connections of each node. To learn how to configure this deployment, refer [configuring a distributed API-M deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup).
+The following diagram depicts how the Control Plane and Gateway profiles communicate in a distributed deployment setup, and also the database connections of each node. To learn how to configure this deployment, refer [configuring a distributed API-M deployment](deploying-wso2-api-m-in-a-distributed-setup).
 
 [![Distributed deployment](../../../assets/img/setup-and-install/distributed-deployment-no-tm.png){: style="width:57%"}](../../../assets/img/setup-and-install/distributed-deployment-no-tm.png)
 
 ### Simple Scalable Deployment with Traffic Manager Separation
 
-The following diagram depicts how the Control Plane, Traffic Manager, and Gateway profiles communicate in a distributed deployment setup. It also depicts the database connections of each node. Separating out the Traffic Manager Component from the Control plane might be needed if any deployment complexities are present in your environment. To learn how to configure this deployment, refer [configuring a distributed API-M deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-tm-separated).
+The following diagram depicts how the Control Plane, Traffic Manager, and Gateway profiles communicate in a distributed deployment setup. It also depicts the database connections of each node. Separating out the Traffic Manager Component from the Control plane might be needed if any deployment complexities are present in your environment. To learn how to configure this deployment, refer [configuring a distributed API-M deployment](deploying-wso2-api-m-in-a-distributed-setup-with-tm-separated).
 
 [![Distributed deployment](../../../assets/img/setup-and-install/distributed-deployment-tm.png){: style="width:78%"}](../../../assets/img/setup-and-install/distributed-deployment-tm.png)
 
 ## What's Next?
 
--   Find out more about [running API-M profiles](../../../install-and-setup/setup/distributed-deployment/product-profiles).
--   See the instructions on [configuring a distributed API-M deployment](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup).
--   See the instructions on [configuring a distributed API-M deployment with Traffic Manager separated](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-tm-separated).
+-   Find out more about [running API-M profiles](product-profiles).
+-   See the instructions on [configuring a distributed API-M deployment](deploying-wso2-api-m-in-a-distributed-setup).
+-   See the instructions on [configuring a distributed API-M deployment with Traffic Manager separated](deploying-wso2-api-m-in-a-distributed-setup-with-tm-separated).

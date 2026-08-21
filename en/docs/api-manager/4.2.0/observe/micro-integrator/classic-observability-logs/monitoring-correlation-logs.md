@@ -1,3 +1,18 @@
+---
+title: "Monitoring correlation logs"
+description: "Enable correlation logs in the Micro Integrator to track the complete round trip of an HTTP message under one correlation ID."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Correlation Logs
 
 Product observability enables rapid debugging of product issues. The Micro Integrator enables observability using Correlation logs. Correlation logs allow you to monitor individual HTTP requests from the point that a message is received by the Micro Integrator until the corresponding response message is sent back to the original message sender. That is, the complete round trip of an HTTP message (client → Micro Integrator → back-end → Micro Integrator → client) can be tracked and analyzed using a log
@@ -28,7 +43,7 @@ Now when you start the Micro Integrator, the `correlation.log` file is created i
 ### During the runtime 
 
 - You can enable correlation logging by invoking the configs resource of the Management API. For more information, see 
-[enable/disable correlation logs using the Management API](../../../observe/mi-observe/working-with-management-api/#enabledisable-correlation-logging-during-runtime).
+[enable/disable correlation logs using the Management API](../../mi-observe/working-with-management-api#enabledisable-correlation-logging-during-runtime).
 
 - Alternatively, you can enable correlation logging using the MI dashboard. 
 
@@ -36,7 +51,7 @@ Now when you start the Micro Integrator, the `correlation.log` file is created i
 
 ## Sending an HTTP request with a Correlation ID
 
-When the client sends an HTTP request to the Micro Integrator, a Correlation ID for the request can be passed using the Correlation header that is configured in the Micro Integrator. By default, the Correlation header is `activity_id`. If you want to change the default Correlation header, see the topic on [configuring Correlation logs](../../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/#correlations-logs). If the client does not pass a Correlation ID in the request, the Micro Integrator will generate an internal value and assign it to the request. The Correlation ID assigned to the incoming request is assigned to all the log entries that are related to the same request.
+When the client sends an HTTP request to the Micro Integrator, a Correlation ID for the request can be passed using the Correlation header that is configured in the Micro Integrator. By default, the Correlation header is `activity_id`. If you want to change the default Correlation header, see the topic on [configuring Correlation logs](configuring-log4j2-properties#correlations-logs). If the client does not pass a Correlation ID in the request, the Micro Integrator will generate an internal value and assign it to the request. The Correlation ID assigned to the incoming request is assigned to all the log entries that are related to the same request.
 
 Shown below is the POST request that is sent using the CURL client. Note that the Correlation ID is set in this request.
 
@@ -233,4 +248,4 @@ The detail recorded in a log entry is described below.
 
 ## Configuring Correlation Logs (Optional)
 
-For information, see [Configuring Correlation Logs](../../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties/#correlations-logs).
+For information, see [Configuring Correlation Logs](configuring-log4j2-properties#correlations-logs).

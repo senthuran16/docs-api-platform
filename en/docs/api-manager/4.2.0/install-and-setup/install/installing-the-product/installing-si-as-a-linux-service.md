@@ -1,3 +1,18 @@
+---
+title: "Running streaming integrator as a Linux service"
+description: "Set up the required JDK and run WSO2 Streaming Integrator as a Linux service on your system."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/installing-the-product/installing-si-as-a-linux-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/installing-the-product/installing-si-as-a-linux-service.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running Streaming Integrator as a Linux Service
 
 WSO2 Streaming Integrator can be run as a Linux service.
@@ -12,7 +27,7 @@ Go to the WSO2 Streaming Integrator [product page](https://wso2.com/integration/
 
 Extract the download ZIP file to a location on your computer. The <b>streaming-integrator</b> folder inside the extracted ZIP file will be your <b>SI_HOME</b> directory.
 
-For more information, see [Installing via the Binary](../../../install-and-setup/install/installing-the-product/installing-si)
+For more information, see [Installing via the Binary](installing-si)
 
 ## Running WSO2 Streaming Integrator as a Linux Service
 

@@ -1,3 +1,18 @@
+---
+title: "Salesforce SOAP connector configuration"
+description: "Set up a Salesforce account and import the Salesforce certificate required to configure the Salesforce SOAP connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-soap-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-soap-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce SOAP Connector Configuration
 
 The Salesforce SOAP connector allows you to access the [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm?search_text=SOAP%20API%20Developer%20Guide) from the integration sequence. 
@@ -24,7 +39,7 @@ Follow the steps below to import the Salesforce certificate into the integration
      <img src="../../../../assets/img/integrate/connectors/salesforcesoap-certificste-and-key-management.png" title="salesforcesoap-certificste-and-key-management" width="90%" alt="salesforcesoap-certificste-and-key-management"/>  
     
 3. Export the certificate to the file system.
-4. Import the certificate to the integration runtime's client keystore using the following [command](../../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate/#importing-ssl-certificates-to-a-keystore).
+4. Import the certificate to the integration runtime's client keystore using the following [command](../../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate#importing-ssl-certificates-to-a-keystore).
 
     ```
     keytool -importcert -file <certificate file> -keystore <PRODUCT_HOME>/repository/resources/security/client-truststore.jks -alias "Salesforce"
@@ -45,7 +60,7 @@ Follow the steps below to import the Salesforce certificate into the integration
 
 ## Re-using Salesforce configurations
 
-You can save the Salesforce connection configuration as a [local entry](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries/) and then easily reference it with the configKey attribute in your operations. For example, if you saved the above <salesforce.init> entry as a local entry named MySFConfig, you could reference it from an operation like getUserInfo as follows:
+You can save the Salesforce connection configuration as a [local entry](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) and then easily reference it with the configKey attribute in your operations. For example, if you saved the above <salesforce.init> entry as a local entry named MySFConfig, you could reference it from an operation like getUserInfo as follows:
 
 ```
 <salesforce.getUserInformation configKey="MySFConfig"/>

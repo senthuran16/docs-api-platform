@@ -1,3 +1,18 @@
+---
+title: "Disabling or enabling self signup"
+description: "Enable or disable self-signup to the Developer Portal for a specific tenant in a multi-tenant setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Disabling or Enabling Self Signup
 
 #### Disabling Self Signup
@@ -63,4 +78,4 @@ In a multi-tenanted API Manager setup, self-signup to the Developer Portal works
     ```
 
 !!! tip
-    To engage your own signup process, see [Adding a User Signup Workflow](../../../../develop/customizations/adding-a-user-signup-workflow).
+    To engage your own signup process, see [Adding a User Signup Workflow](../adding-a-user-signup-workflow).

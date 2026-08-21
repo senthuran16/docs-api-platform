@@ -1,3 +1,18 @@
+---
+title: "Viewing overview statistics"
+description: "View the Grafana dashboards that summarize overall and per-application input and output statistics in Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/si-observe/viewing-overview-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/si-observe/viewing-overview-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-overview-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 !!! note
     **This page is still a work in progress!**
 

@@ -1,3 +1,18 @@
+---
+title: "Setting query parameters on outgoing messages"
+description: "Set query parameter values from an incoming REST request on the outgoing message sent to a backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/setting-query-params-outgoing-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rest_api_examples/setting-query-params-outgoing-messages.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting Query Parameters on Outgoing Messages
 
 REST clients use query parameters to provide inputs for the relevant operation. These query parameters may be required to carry out the back-end operations either in a REST service or a proxy service.
@@ -82,10 +97,10 @@ The following sample indicates how the expressions can be defined using `get-pro
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. [Create the REST API](../../../integrate/develop/creating-artifacts/creating-an-api) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. [Create the REST API](../../develop/creating-artifacts/creating-an-api) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

@@ -1,3 +1,18 @@
+---
+title: "Configure Choreo Connect with Consul on Kubernetes"
+description: "Configure Choreo Connect with a Consul service mesh deployed on Kubernetes for service discovery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-k8s.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Choreo Connect with Consul Service Mesh Deployed on Kubernetes
 
 Consul service mesh supports first-class integrations between Consul and Kubernetes.
@@ -39,10 +54,10 @@ For instructions, see the [Consul official documentation](https://www.consul.io/
      3. Set `serviceMeshEnabled` to `true`.
      4. Configure `mgwServiceName` as `choreo-connect`.
      5. Add the `caCertFile`, `certFile`, and `keyFile` files that you generated from the previous step.
-     6. [Apply the K8s artifacts for Choreo Connect](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes/#step-1-setup-choreo-connect-in-kubernetes).
+     6. [Apply the K8s artifacts for Choreo Connect](../getting-started/deploy/cc-as-a-standalone-gateway-on-kubernetes#step-1-setup-choreo-connect-in-kubernetes).
 
 ## Step 3 - Deploy the API
 
 Deploy WSO2 API Manger on Kubernetes.
 
-Use WSO2 API Manager to deploy your API as described in the [defining the endpoints](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/service-discovery-overview/#defining-the-endpoints) guide.
+Use WSO2 API Manager to deploy your API as described in the [defining the endpoints](service-discovery-overview#defining-the-endpoints) guide.

@@ -1,6 +1,21 @@
+---
+title: "Step 7: monitor statistics"
+description: "Monitor CDC and file statistics of a Streaming Integrator deployment using pre-configured Grafana dashboards."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/monitor-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/streaming/getting-started/monitor-statistics.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - monitor-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 7: Monitor Statistics
 
-This step shows how you can monitor the CDC and file statistics of the WSO2 Streaming Integrator deployment you started and the `SweetFactoryApp` Siddhi application you created and deployed in the previous steps. For this purpose, you are using the some of the pre-configured dashboards provided by WSO2 Streaming Integrator. You can host these dashboards in Grafana and view statistics related to ETL activities carried out by the Streaming Integrator. For more information about these dashboards, see [Monitoring ETL Statistics with Grafana](../../observe/streaming-integrator/viewing-etl-flows/)
+This step shows how you can monitor the CDC and file statistics of the WSO2 Streaming Integrator deployment you started and the `SweetFactoryApp` Siddhi application you created and deployed in the previous steps. For this purpose, you are using the some of the pre-configured dashboards provided by WSO2 Streaming Integrator. You can host these dashboards in Grafana and view statistics related to ETL activities carried out by the Streaming Integrator. For more information about these dashboards, see [Monitoring ETL Statistics with Grafana](../../observe/streaming-integrator/viewing-etl-flows)
 
 ## Configuring WSO2 SI to visualize statistics
 
@@ -123,7 +138,7 @@ To enable the `SweetFactoryApp` Siddhi application to publish statistics to Prom
         @App:statistics(reporter = 'prometheus')
     ```
 !!! tip 
-    You can update the Siddhi application in Streaming Integrator Tooling and deploy it again in the Streaming Integrator server as you did in [Step 5: Update the Siddhi Application](../../streaming/getting-started/update-the-siddhi-application/).
+    You can update the Siddhi application in Streaming Integrator Tooling and deploy it again in the Streaming Integrator server as you did in [Step 5: Update the Siddhi Application](update-the-siddhi-application).
     
 ## Viewing statistics
 
@@ -131,7 +146,7 @@ To generate some statistics and view them, follow the procedure below.
 
 1. Start WSO2 Streaming Integrator.
 
-2. To generate statistics, insert as many events as you want into the `SweetProductionTable` MySQL table that you created for this scenario in [Step 1: Download Streaming Integrator and Dependencies](../../streaming/getting-started/download-install-and-start-si/). Also, manually add as many rows as you want in the `/Users/foo/productioninserts.csv` file.
+2. To generate statistics, insert as many events as you want into the `SweetProductionTable` MySQL table that you created for this scenario in [Step 1: Download Streaming Integrator and Dependencies](download-install-and-start-si). Also, manually add as many rows as you want in the `/Users/foo/productioninserts.csv` file.
 
 3. Access Grafana via the `localhost:3000` URL.
 
@@ -186,7 +201,7 @@ To generate some statistics and view them, follow the procedure below.
     ![CDC Streaming Statistics](../../assets/img/streaming/quick-start-guide-101/cdc-streaming-statistics.png)
     
 !!! tip "What's Next?"
-    - To learn more about the key concepts of the Streaming Integrator component, see [Streaming Integrator Key Concepts](../../streaming/streaming-key-concepts).<br/>    
+    - To learn more about the key concepts of the Streaming Integrator component, see [Streaming Integrator Key Concepts](../streaming-key-concepts).<br/>    
     - For more hands-on experience with Streaming Integrator component, try the [Streaming Integrator Tutorials](../../use-cases/streaming-tutorials/tutorials-overview).<br/>    
     - To learn about use cases specific to the Streaming Integrator component, see [Streaming Integrator Use Cases](../../use-cases/streaming-usecase/use-cases).<br/>
     -  Learn how to run WSO2 Streaming Integrator in containerized environments, try [Running SI with Docker and Kubernetes](../../use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes)

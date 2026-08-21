@@ -1,3 +1,18 @@
+---
+title: "Message monitoring with TCPMon"
+description: "Use the TCPMon utility to monitor and inspect TCP-based messages exchanged between a client and a back-end server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/mi-observe/tcp/message_monitoring_with_tcpmon/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/mi-observe/tcp/message_monitoring_with_tcpmon.md
+tags:
+  - api-manager
+  - observe
+  - mi-observe
+  - tcp
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Message Monitoring with TCPMon
 
 Users can view and monitor the messages passed along a TCP-based conversation using the TCPMon utility. Therefore, this tool is particularly useful for debugging when you develop Web services. TCPMon is an **Apache** project distributed under **Apache 2.0 License**.
@@ -28,7 +43,7 @@ the back-end server:
 
 To monitor messages from client to server using TCPMon:
 
-1.  [Start TCPMon](../../../observe/mi-observe/tcp/starting_tcp_mon) .
+1.  [Start TCPMon](starting_tcp_mon) .
 2.  Give 8081 (the listening port of TCPMon) in the **Listen Port**
     field (This could be any unused port in your local machine).
 3.  Give the address of the back end server as the target hostname. For

@@ -1,3 +1,18 @@
+---
+title: "Building a CI/CD pipeline for APIs using WSO2 API controller"
+description: "Build an automated CI/CD pipeline for API deployment using apictl with GitHub, JFrog Artifactory, and Jenkins."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Building a CI/CD Pipeline for APIs Using WSO2 API Controller
 
 In the modern digital-era, many organizations adopt digital transformation technologies to keep up with the changes. APIs are one of the basic building blocks used in a digitally-driven organization. When the number of APIs managed by the organization grows, they need to have an automated process to handle the rapid API development process. Having a proper continuous integration and continuous deployment (CI/CD) process would give an added advantage to your organization. 
@@ -21,7 +36,7 @@ Log in to the server and install following.
   sudo apt-get install jq
 
   ```
-2. Install the [apictl tool](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl). Extract to a location henceforth referred as `CTL_HOME`.
+2. Install the [apictl tool](getting-started-with-wso2-api-controller#download-and-initialize-the-apictl). Extract to a location henceforth referred as `CTL_HOME`.
 
 3. Install java.
 
@@ -71,7 +86,7 @@ Source repository is now configured.
 Now let’s initialize the source repository. This will be done from the developer’s local machine.
 
 !!! note
-    If you haven’t setup API Controller, set it up using the [apictl tool](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl) 
+    If you haven’t setup API Controller, set it up using the [apictl tool](getting-started-with-wso2-api-controller#download-and-initialize-the-apictl) 
 
 1. Clone the source repository. Navigate to the repository folder.
 
@@ -138,7 +153,7 @@ Deployment repository will be used to gather configurations for each deployment.
 
 ### Step 4 - Setup API-M instances
 
-Download the WSO2 API Manager 4.2.0 [here](../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl) and start the instance. Set this in a separate instance as the `dev` instance. 
+Download the WSO2 API Manager 4.2.0 [here](getting-started-with-wso2-api-controller#download-and-initialize-the-apictl) and start the instance. Set this in a separate instance as the `dev` instance. 
 
 ### Step 5 - Configure Jenkins Jobs
 

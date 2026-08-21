@@ -1,8 +1,23 @@
+---
+title: "Enable or disable API detail tabs"
+description: "Show or hide API detail page tabs such as credentials, comments, tryout, and SDKs via userTheme.json."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-api-detail-tabs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-api-detail-tabs.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enable or Disable API Detail Tabs
 
 When you go to the API details page, all the linked tabs (credentials, comments, tryout, SDKs, documents) are displayed. You can enable or disable them by configuring the `userTheme.json` file.
 
-The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](../../../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/#global-theming).
+The `defaultTheme.js` file has all the parameters defining the look and feel of the developer portal. To learn more about `defaultTheme.js` refer [here](overriding-developer-portal-theme#global-theming).
 
 By using `defaultTheme.js` as a reference , you could customize these link tabs by modifying `userTheme.json` file. For that
 

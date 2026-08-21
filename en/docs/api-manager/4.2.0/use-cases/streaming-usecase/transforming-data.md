@@ -1,3 +1,18 @@
+---
+title: "Transforming data"
+description: "Transform streaming data formats and values in WSO2 Streaming Integrator using Siddhi extensions and custom scripts."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/transforming-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/transforming-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - transforming-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Transforming Data
 
 The Streaming Integrator allows you to perform a wide range of transformations to the input data received. A main type of transformation supported is transforming a message from one format to another. In addition, you can perform a range of mathematical, regex, string, unit conversion, map, json, etc., transformations via [Siddhi Extensions](https://siddhi.io/en/v5.1/docs/extensions/). You can also write a custom script to perform an required transformation of data.
@@ -14,7 +29,7 @@ The Streaming Integrator can consume events in the default format in which they 
 
 - **Consuming messages in a default format**
 
-    Consuming messages via WSO2 Streaming Integrator by configuring Siddhi sources is explained in [Extracting Data From Static Sources in Real Time](../../use-cases/streaming-usecase/extracting-data-from-static-sources-in-real-time) and [Receiving Data in Trasit](../../use-cases/streaming-usecase/receiving-data-in-transit).
+    Consuming messages via WSO2 Streaming Integrator by configuring Siddhi sources is explained in [Extracting Data From Static Sources in Real Time](extracting-data-from-static-sources-in-real-time) and [Receiving Data in Trasit](receiving-data-in-transit).
     
     To receive data in a specific format, you need to annotate a mapper to the source configuration via the @map annotation. For more information, see [Siddhi Query Guide - Source Mapper](https://siddhi.io/en/v5.1/docs/query-guide/#source-mapper).
     
@@ -157,7 +172,7 @@ In this example, the input event that reports only the name of the product and t
 
 When you want to perform more advanced transformations that are not supported by the inline operators of the WSO2 Streaming Integrator, you can use one or more of the Siddhi extensions from the [Siddhi Store](https://store.wso2.com/store/assets/analyticsextension/list).
 
-Some of these extensions are shipped with the WSO2 Streaming Integrator by default. If you want to use a Siddhi extension that is not shipped by default, you need to download and install it following the instructions in [Downloading and Installing Siddhi Extensions](../../reference/streaming-connectors/downloading-and-installing-siddhi-extensions/).
+Some of these extensions are shipped with the WSO2 Streaming Integrator by default. If you want to use a Siddhi extension that is not shipped by default, you need to download and install it following the instructions in [Downloading and Installing Siddhi Extensions](../../reference/streaming-connectors/downloading-and-installing-siddhi-extensions).
 
 The following table describes the complete list of extensions that provide data transformation functionality.
 
@@ -190,7 +205,7 @@ Here, `js:eval("amount > average", 'bool') as exceedsAverage` is a custom functi
 
 To try out the transformations described above with some of the given examples, follow the steps below:
 
-1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+1. [Start and Access Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
 
 2. Open a new file. Then add and save the following Siddhi application.
 

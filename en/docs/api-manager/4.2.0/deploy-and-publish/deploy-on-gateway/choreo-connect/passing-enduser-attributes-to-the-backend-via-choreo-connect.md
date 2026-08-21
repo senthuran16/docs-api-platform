@@ -1,12 +1,28 @@
+---
+title: "Passing end user attributes to the backend"
+description: "Enable and customize backend JWT generation in Choreo Connect to pass authenticated end-user attributes to the backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/passing-enduser-attributes-to-the-backend-via-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/passing-enduser-attributes-to-the-backend-via-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Passing End User Attributes to the Backend
 
-{!./includes/deploy/backend-jwt-intro.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/backend-jwt-intro.md"
 
 ## Enabling the default backend JWT generator
 
 Before passing end user attributes, you need to enable and configure the JWT implementation, as mentioned below in Choreo Connect.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/deploy/cc-configuration-file.md"
 
 2. Enable and configure the backend JWT implementation.
 
@@ -19,11 +35,11 @@ Before passing end user attributes, you need to enable and configure the JWT imp
 
 3. Start the server.
  
-     For more information, see the [Quick Start Guide](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/).
+     For more information, see the [Quick Start Guide](getting-started/quick-start-guide-docker-with-apim).
 
 ## Enabling a customized backend JWT generator
 
-{!./includes/deploy/backend-jwt-note.md!}
+--8<-- "api-manager/4.2.0/includes/deploy/backend-jwt-note.md"
 
 When generating the backend JWT, it retrieves the claims from the invoked JWT. If you need to change the way that JWT is generated in Choreo Connect, such as by adding additional claims or by completely changing the JWT, follow the instructions below to implement the customized Gateway JWT generation:
 
@@ -71,7 +87,7 @@ When generating the backend JWT, it retrieves the claims from the invoked JWT. I
 2. Build your class and add the JAR file in the `<CHOREO-CONNECT_HOME>/resources/enforcer/dropins` directory.
 
     !!! note 
-         If you use Choreo Connect with Helm Charts, please refer to the documentation in [here](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/#mount-files-into-the-dropins-directory-optional) to add a JAR file into the dropins directory.
+         If you use Choreo Connect with Helm Charts, please refer to the documentation in [here](production-deployment-guideline#mount-files-into-the-dropins-directory-optional) to add a JAR file into the dropins directory.
 
    
 4. Enable and configure the JWT implementation.
@@ -87,7 +103,7 @@ When generating the backend JWT, it retrieves the claims from the invoked JWT. I
 
 5. Start the server.
 
-     For more information, see the [Quick Start Guide](../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/).
+     For more information, see the [Quick Start Guide](getting-started/quick-start-guide-docker-with-apim).
     
 ## Backend JWT generator configuration details
 
@@ -323,4 +339,4 @@ In this example we create a hello route on port 8080 and secure it with JWT. Thi
 
 ## See Also
 
-If you want to learn how you can pass end user attributes to the backend when working with the default API Gateway, see [Passing Enduser Attributes to the Backend](../../../deploy-and-publish/deploy-on-gateway/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway), which is under the API Gateway documentation section.
+If you want to learn how you can pass end user attributes to the backend when working with the default API Gateway, see [Passing Enduser Attributes to the Backend](../api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway), which is under the API Gateway documentation section.

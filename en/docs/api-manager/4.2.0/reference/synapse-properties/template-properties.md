@@ -1,9 +1,24 @@
+---
+title: "Template properties"
+description: "Reference for endpoint and sequence template properties that let you create reusable mediation configuration prototypes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/template-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/synapse-properties/template-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - template-properties
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Template Properties
 ## Introduction
 
-A large number of configuration files in the form of [sequences](../../reference/synapse-properties/sequence-properties), [endpoints](../../reference/synapse-properties/endpoint-properties), [proxy services](../../reference/synapse-properties/proxy-service-properties), and transformations can be required to satisfy all the mediation requirements of your system. To keep your configurations manageable, it's important to avoid scattering configuration files across different locations and to avoid duplicating redundant configurations.
+A large number of configuration files in the form of [sequences](../../reference/synapse-properties/sequence-properties), [endpoints](endpoint-properties), [proxy services](proxy-service-properties), and transformations can be required to satisfy all the mediation requirements of your system. To keep your configurations manageable, it's important to avoid scattering configuration files across different locations and to avoid duplicating redundant configurations.
 
-Templates help minimize this redundancy by creating prototypes that users can use and reuse when needed. This is very much analogous to classes and instances of classes: a template is a class that can be used to wield instance objects such as [sequences](../../reference/synapse-properties/sequence-properties) and [endpoints](../../reference/synapse-properties/endpoint-properties). Thus, templates are an ideal way to improve reusability and readability of configurations/XMLs. Additionally, users can use predefined templates that reflect common enterprise integration patterns for rapid development of message/mediation flows.
+Templates help minimize this redundancy by creating prototypes that users can use and reuse when needed. This is very much analogous to classes and instances of classes: a template is a class that can be used to wield instance objects such as [sequences](../../reference/synapse-properties/sequence-properties) and [endpoints](endpoint-properties). Thus, templates are an ideal way to improve reusability and readability of configurations/XMLs. Additionally, users can use predefined templates that reflect common enterprise integration patterns for rapid development of message/mediation flows.
 
 <table>
     <tr>
@@ -29,7 +44,7 @@ See the topics given below for the list of properties that can be configured whe
 
 ## Sequence Template Properties
 
-The parameters available to [configure the Sequence Template](../../integrate/develop/creating-artifacts/creating-sequence-templates/) are as follows.
+The parameters available to [configure the Sequence Template](../../integrate/develop/creating-artifacts/creating-sequence-templates) are as follows.
 
 <table>
     <tr>
@@ -103,7 +118,7 @@ The parameters available to [configure the Sequence Template](../../integrate/de
 
 ## Endpoint Template Properties
 
-The basic parameters available to [configure the Endpoint template](../../integrate/develop/creating-artifacts/creating-endpoint-templates/) are as follows.
+The basic parameters available to [configure the Endpoint template](../../integrate/develop/creating-artifacts/creating-endpoint-templates) are as follows.
 
 <table>
   <tr>
@@ -187,4 +202,4 @@ An Endpoint Template contains an **Endpoint** artifact. The following Endpoint p
 
 ### Endpoint Properties (Optional)
 
-To configure the other **Endpoint** properties of the inline Endpoint, see [Endpoint Properties](../../reference/synapse-properties/endpoint-properties/).
+To configure the other **Endpoint** properties of the inline Endpoint, see [Endpoint Properties](endpoint-properties).

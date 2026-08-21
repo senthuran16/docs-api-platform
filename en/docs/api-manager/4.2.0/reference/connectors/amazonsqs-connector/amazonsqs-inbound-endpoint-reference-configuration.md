@@ -1,3 +1,18 @@
+---
+title: "AmazonSQS inbound endpoint reference"
+description: "Reference of the configuration parameters used to set up the AmazonSQS inbound endpoint for consuming queue messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-reference-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-reference-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # AmazonSQS Inbound Endpoint Reference
 
 The following configurations allow you to configure AmazonSQS Inbound Endpoint for your scenario. 

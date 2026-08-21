@@ -1,3 +1,18 @@
+---
+title: "Salesforce SOAP connector configuration"
+description: "Set up a Salesforce account and import the Salesforce certificate required to configure the Salesforce SOAP connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-soap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce SOAP Connector Configuration
 
 The Salesforce SOAP connector allows you to access the [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm?search_text=SOAP%20API%20Developer%20Guide) from an integration sequence. 
@@ -26,10 +41,10 @@ Follow the steps below to import the Salesforce certificate into the EI client k
 
 3. Export the certificate to the file system.
 <<<<<<< HEAD
-4. Import the certificate to the EI client keystore using either the following [command](../../../../install-and-setup/setup/mi-setup/setup/security/importing_ssl_certificate/) or the EI Management Console.
+4. Import the certificate to the EI client keystore using either the following [command](../../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate) or the EI Management Console.
 =======
 
-4. Import the certificate to the EI client keystore using either the following [command](../../../install-and-setup/setup/mi-setup/setup/security/importing_ssl_certificate) or the EI Management Console.
+4. Import the certificate to the EI client keystore using either the following [command](../../../install-and-setup/setup/mi-setup/security/importing_ssl_certificate) or the EI Management Console.
 >>>>>>> c2692680c... fixes https://github.com/wso2/docs-apim/issues/5273
 
     ```
@@ -47,11 +62,11 @@ Follow the steps below to import the Salesforce certificate into the EI client k
      </salesforce.init>
     ```
 
-> **Note**: Secure Vault is supported for [encrypting passwords](../../../../setup/security/encrypting_plain_text/). See, Working with Passwords on integrating and using Secure Vault.
+> **Note**: Secure Vault is supported for [encrypting passwords](../../../install-and-setup/setup/mi-setup/security/encrypting_plain_text). See, Working with Passwords on integrating and using Secure Vault.
 
 ## Re-using Salesforce configurations
 
-You can save the Salesforce connection configuration as a [local entry](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries/) and then easily reference it with the configKey attribute in your operations. For example, if you saved the above <salesforce.init> entry as a local entry named MySFConfig, you could reference it from an operation like getUserInfo as follows:
+You can save the Salesforce connection configuration as a [local entry](../../../integrate/develop/creating-artifacts/registry/creating-local-registry-entries) and then easily reference it with the configKey attribute in your operations. For example, if you saved the above <salesforce.init> entry as a local entry named MySFConfig, you could reference it from an operation like getUserInfo as follows:
 
 ```
 <salesforce.getUserInformation configKey="MySFConfig"/>

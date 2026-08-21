@@ -1,3 +1,17 @@
+---
+title: "Integration server configurations"
+description: "Reference of the deployment.toml configuration parameters used to configure a Micro Integrator instance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/config-catalog-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/config-catalog-mi.md
+tags:
+  - api-manager
+  - reference
+  - config-catalog-mi
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Integration Server Configurations
 
 All the server-level configurations of your Micro Integrator instance can be applied using a single configuration file, which is the `deployment.toml` file (stored in the `MI_HOME/conf` directory).
@@ -3088,7 +3102,7 @@ application_binary =  "org.apache.axis2.format.BinaryFormatter"</code></pre>
                             <code>[message_formatters]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>message formatting</a> implementation that is used for formatting messages that are sent out of the Micro Integrator in <b>non-blocking</b> mode. If you are using the Micro Integrator in <b>blocking</b> mode, see the <a href='#message-formatter-blocking-mode'>message formatter configurations for blocking mode</a>.
+                                This configuration header is required for configuring the <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>message formatting</a> implementation that is used for formatting messages that are sent out of the Micro Integrator in <b>non-blocking</b> mode. If you are using the Micro Integrator in <b>blocking</b> mode, see the <a href='#message-formatters-blocking-mode'>message formatter configurations for blocking mode</a>.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -3478,7 +3492,7 @@ class = "org.apache.axis2.json.JSONBadgerfishOMBuilder"</code></pre>
                             <code>[[blocking.custom_message_builders]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the custom message builder implementation class and the selected content types to which the builder should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-builder-non-blocking-mode'>same list of parameters</a> that are available for custom message builders in non-blocking mode.
+                                This configuration header is required for configuring the custom message builder implementation class and the selected content types to which the builder should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-builders-non-blocking-mode'>same list of parameters</a> that are available for custom message builders in non-blocking mode.
                             </p>
                         </div>
                         <div class="params-wrap">
@@ -3592,7 +3606,7 @@ class = "org.apache.axis2.json.JSONBadgerfishMessageFormatter"</code></pre>
                             <code>[[blocking.custom_message_formatters]]</code>
                             <span class="badge-required">Required</span>
                             <p>
-                                This configuration header is required for configuring the custom message formatter implementation class and the selected content types to which the formatter should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-formatter-non-blocking-mode'>same list of parameters</a> that are available for custom message formatters in non-blocking mode.
+                                This configuration header is required for configuring the custom message formatter implementation class and the selected content types to which the formatter should apply <b>in blocking mode</b>. See the instructions on configuring <a href='../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters'>custom message builders and formatters</a>. You can use the <a href='#custom-message-formatters-non-blocking-mode'>same list of parameters</a> that are available for custom message formatters in non-blocking mode.
                             </p>
                         </div>
                         <div class="params-wrap">

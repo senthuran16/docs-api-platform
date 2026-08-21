@@ -1,3 +1,18 @@
+---
+title: "Setting up ReCaptcha"
+description: "Register and configure Google reCaptcha to protect WSO2 products against spam and automated abuse."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting Up ReCaptcha
 
 [reCaptcha](https://developers.google.com/recaptcha/) is a free service
@@ -84,6 +99,6 @@ You have successfully set up reCaptcha for your site. You can now
 configure reCaptcha with any of the following:
 
 -   [Configuring Google reCaptcha for single
-    sign-on](../../../../install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on)
+    sign-on](configuring-recaptcha-for-single-sign-on)
 -   [Configuring Google reCaptcha for self
     signup](../../../../reference/customize-product/customizations/customizing-the-developer-portal/configuring-recaptcha-for-self-signup)

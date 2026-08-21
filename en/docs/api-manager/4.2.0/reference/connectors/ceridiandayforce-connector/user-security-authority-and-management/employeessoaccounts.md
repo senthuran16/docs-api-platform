@@ -1,3 +1,18 @@
+---
+title: "Working with employee SSO accounts"
+description: "Retrieve, create, and update an employee's Single Sign-On (SSO) accounts using the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeessoaccounts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/employeessoaccounts.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee SSO Accounts
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -8,7 +23,7 @@ The following operations allow you to retrieve, create or update SSO accounts of
 
 | Operation | Description |
 | ------------- |-------------|
-|[GET Employee SSO Accounts](#retrieving-employee-sso-accounts)| Retrieve Single Sign-On (SSO) accounts of an employee. |
+|[GET Employee SSO Accounts](#retrieving-employee-addresses)| Retrieve Single Sign-On (SSO) accounts of an employee. |
 |[POST Employee SSO Accounts](#creating-employee-sso-accounts)| Create Single Sign-On (SSO) accounts of an employee. |
 |[PATCH Employee SSO Accounts](#updating-employee-sso-accounts)| Update Single Sign-On (SSO) accounts of an employee. |
 
@@ -16,6 +31,7 @@ The following operations allow you to retrieve, create or update SSO accounts of
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-employee-addresses"></a>
 #### Retrieving Employee Addresses
 We can use GET Employee SSO Accounts operation with required parameters to get the SSO account of an employee.
 
@@ -68,6 +84,7 @@ Given below is a sample response for this operation.
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/SSO-Accounts/GET-Employee-SSO-Accounts.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/SSO-Accounts/GET-Employee-SSO-Accounts.aspx)
 
+<a name="creating-employee-sso-accounts"></a>
 #### Creating Employee SSO Accounts
 We can use POST Employee SSO Accounts operation with required parameters to create SSO account of an employee
 
@@ -111,6 +128,7 @@ Dayforce returns HTTP Code 200
 
 [https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/SSO-Accounts/POST-Employee-SSO-Accounts.aspx](https://developers.dayforce.com/Build/API-Explorer/User-Security,-Authority-Management/SSO-Accounts/POST-Employee-SSO-Accounts.aspx)
 
+<a name="updating-employee-sso-accounts"></a>
 #### Updating Employee SSO Accounts
 We can use PATCH Employee SSO Accounts operation with required parameters to update the SSO account details of an employee
 

@@ -1,3 +1,18 @@
+---
+title: "LDAP connector overview"
+description: "Learn how the LDAP connector performs create, read, update, and delete operations on LDAP entries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ldap-connector/ldap-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ldap-connector/ldap-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ldap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # LDAP Connector Overview
 
 The LDAP connector allows you to connect to any LDAP server through a simple web services interface and perform CRUD 
@@ -18,11 +33,11 @@ For older versions, see the details in the connector store.
 
 ## LDAP Connector documentation
 
-* **[Setting up an LDAP Server](../../../reference/connectors/ldap-connector/setting-up-ldap/)**: This involves setting up an LDAP server.
+* **[Setting up an LDAP Server](setting-up-ldap)**: This involves setting up an LDAP server.
 
-* **[LDAP Connector Example](../../../reference/connectors/ldap-connector/ldap-connector-example/)**: This example demonstrates on how to use the LDAP connector to create and read LDAP entries on a student directory. 
+* **[LDAP Connector Example](ldap-connector-example)**: This example demonstrates on how to use the LDAP connector to create and read LDAP entries on a student directory. 
 
-* **[LDAP Connector Reference](../../../reference/connectors/ldap-connector/ldap-server-configuration/)**: This documentation provides a reference guide for the LDAP Connector.
+* **[LDAP Connector Reference](ldap-server-configuration)**: This documentation provides a reference guide for the LDAP Connector.
 
 ## How to contribute
 

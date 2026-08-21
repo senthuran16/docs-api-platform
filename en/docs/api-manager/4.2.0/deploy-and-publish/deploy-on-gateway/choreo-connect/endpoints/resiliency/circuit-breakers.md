@@ -1,3 +1,18 @@
+---
+title: "Circuit breakers"
+description: "Reference the OpenAPI vendor extension fields used to configure distributed circuit breakers for Choreo Connect endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/circuit-breakers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/circuit-breakers.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Circuit Breakers
 
 In case of backend failure, it is always better to fail quickly and relieve the back pressure from the actual backend, so it can recover quickly. Choreo Connect supports various types of distributed circuit breakers offered by Envoy. 
@@ -79,6 +94,6 @@ For more information on above circuit breakers, refer [the Envoy documentation](
 
 ## See Also
 
-- [Timeout](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/timeout)
+- [Timeout](timeout)
 
 

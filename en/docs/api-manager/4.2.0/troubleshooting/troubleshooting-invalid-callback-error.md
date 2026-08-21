@@ -1,8 +1,22 @@
+---
+title: "Troubleshoot the invalid callback URL error"
+description: "Fix the 'Registered callback does not match' login error in API Publisher and Developer Portal by updating the callback URL regex."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/troubleshooting-invalid-callback-error/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/troubleshooting/troubleshooting-invalid-callback-error.md
+tags:
+  - api-manager
+  - troubleshooting
+  - troubleshooting-invalid-callback-error
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "troubleshooting"
+---
+
 # Troubleshooting 'Registered callback does not match with the provided URL' error
 
 The **Registered callback does not match with the provided URL** error can be encountered during the API Publisher(`https://<hostname>:9443/publisher`) and API Developer Portal (`https://<hostname>:9443/devportal`) login attempts, in a case where the hostname of the API Manager has been changed after accessing the Developer Portal or Publisher apps via different hostnames. 
 
-For example, let's assume that you have started a fresh APIM server and accessed the API Publisher and Developer Portal apps via localhost. If you have [changed the hostname](../install-and-setup/setup/deployment-best-practices/changing-the-hostname/) of the server from `localhost` to `apim.wso2.com`, the next login attempt to API Publisher or Developer Portal will be failed giving this error.
+For example, let's assume that you have started a fresh APIM server and accessed the API Publisher and Developer Portal apps via localhost. If you have [changed the hostname](../install-and-setup/setup/deployment-best-practices/changing-the-hostname) of the server from `localhost` to `apim.wso2.com`, the next login attempt to API Publisher or Developer Portal will be failed giving this error.
 
 <a href="../../assets/img/troubleshooting/invalid-callback-url-error.png" ><img src="../../assets/img/troubleshooting/invalid-callback-url-error.png" alt="Invalid callback url error" 
           title="Invalid callback url error" width="30%" /></a> 

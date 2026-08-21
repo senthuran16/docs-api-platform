@@ -1,8 +1,23 @@
+---
+title: "Viewing general SI statistics"
+description: "View the Grafana dashboards that show overall, server, stream, source, and sink statistics for Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/streaming-integrator/viewing-general-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/observe/streaming-integrator/viewing-general-statistics.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - viewing-general-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing General SI Statistics
 
 !!! note "Before you begin:"
-    - Follow the instructions in the [getting started guide](../../observe/streaming-integrator/setting-up-si-statistics-dashboards) to enable the WSO2 Streaming Integrator to publish statistics in the Grafana dashboard.
-    - [Organize the dashboards in folders](../../observe/streaming-integrator/managing-dashboards).
+    - Follow the instructions in the [getting started guide](setting-up-si-statistics-dashboards) to enable the WSO2 Streaming Integrator to publish statistics in the Grafana dashboard.
+    - [Organize the dashboards in folders](managing-dashboards).
 
 ## General Statistics dashboard
 

@@ -1,3 +1,18 @@
+---
+title: "Directing the root context to the Developer Portal"
+description: "Change the API Manager root context to redirect to the Developer Portal instead of the Publisher by default."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/directing-the-root-context-to-the-developer-portal/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/customize-product/customizations/directing-the-root-context-to-the-developer-portal.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Directing the Root Context to the Developer Portal
 
 WSO2 API Manager includes separate Web applications as the Publisher and the Developer Portal. The root context of the API Manager is set to go to the Publisher by default. For example, assume that the API Manager is hosted on a domain named `apis.com` with default ports. The URLs of the Developer Portal and Publisher will be as follows:
@@ -24,4 +39,4 @@ If you open the root context, which is `https://apis.com:9443` in your browser, 
 5.  Open the default context (`https://apis.com:9443`) again in a browser and note that it directs to the Developer Portal.
 
 !!! tip
-    If you want to configure the Publisher and Developer Portal to pass proxy server requests, configure a [reverse proxy server](../../../reference/faq/#how-can-i-set-up-a-reverse-proxy-server-to-pass-server-requests).
+    If you want to configure the Publisher and Developer Portal to pass proxy server requests, configure a [reverse proxy server](../../faq#how-can-i-set-up-a-reverse-proxy-server-to-pass-server-requests).

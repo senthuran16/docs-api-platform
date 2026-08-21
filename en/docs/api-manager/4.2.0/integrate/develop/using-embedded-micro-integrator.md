@@ -1,10 +1,25 @@
+---
+title: "Using the embedded Micro Integrator"
+description: "Explains how to deploy, run, and view integration artifacts using the Micro Integrator embedded in Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/using-embedded-micro-integrator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/using-embedded-micro-integrator.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - using-embedded-micro-integrator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Embedded Micro Integrator
 
 WSO2 Integration Studio contains an embedded Micro Integrator instance, which you can use for testing your integration solutions during the development process.
 
 ## Deploy and run artifacts in the (embedded) server
 
-Once you have the [integration artifacts packaged](../../integrate/develop/packaging-artifacts) in a composite application, you can deploy and run them in the embedded Micro Integrator using a single click. 
+Once you have the [integration artifacts packaged](packaging-artifacts) in a composite application, you can deploy and run them in the embedded Micro Integrator using a single click. 
 
 1.  Select the composite application in the project explorer.
 2.  Click the <img src="../../../assets/img/integrate/common/play-head-icon.jpg" width="20"> icon in the menu palette to open the <b>Run As</b> dialog box.
@@ -20,7 +35,7 @@ Once you have the [integration artifacts packaged](../../integrate/develop/packa
 	See the startup log in the **Console** tab:  
     <img src="../../../assets/img/integrate/testing-integrations/testing_log.png" width="700">
 
-6.  If you find errors in your mediation sequence, use the [debugging features](../../integrate/develop/debugging-mediation) to troubleshoot.
+6.  If you find errors in your mediation sequence, use the [debugging features](debugging-mediation) to troubleshoot.
 
 ## View deployed endpoints in the (embedded) server
 
@@ -51,7 +66,7 @@ In the upper section, update the server configuration file (`deployment.toml` fi
 
 If you have secrets in the `deployment.toml` file, you can encrypt them using the <b>Cipher Tool</b>. 
 
-1.  Open the [<b>Embedded Micro Integrator Configuration</b>](#update-embedded-server-configs-and-libraries) dialog box. 
+1.  Open the [<b>Embedded Micro Integrator Configuration</b>](#update-embedded-server-configurations-and-libraries) dialog box. 
 2.  Update the static secrets in the `deployment.toml` file as explained in [encrypting server secrets](../../install-and-setup/setup/mi-setup/security/encrypting_plain_text).
 3.  Click <b>Encrypt Secrets</b>.
 	
@@ -76,7 +91,7 @@ WSO2 Micro Integrator supports environment variables for server configurations a
 	To be able to dynamically inject parameters to the embedded Micro Integrator, you must first define the relevant configurations as environment variables. See the following topics for instructions:
 
 	- [Environment variables for server Configurations](../../install-and-setup/setup/mi-setup/dynamic_server_configurations)
-	- [Environment variables for synapse configurations](../../integrate/develop/injecting-parameters)
+	- [Environment variables for synapse configurations](injecting-parameters)
 
 Follow the steps given below.
 

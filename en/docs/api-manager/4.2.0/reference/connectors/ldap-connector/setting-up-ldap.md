@@ -1,3 +1,18 @@
+---
+title: "Setting up an LDAP server"
+description: "Set up an embedded LDAP server using WSO2 Identity Server and configure it with Apache Directory Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ldap-connector/setting-up-ldap/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ldap-connector/setting-up-ldap.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ldap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up an LDAP Server
 
 WSO2 Identity Server offers an embedded LDAP as a primary user store. Download Identity Server from [here](https://wso2.com/identity-and-access-management/) and start the server. See [Quick Start Guide](https://is.docs.wso2.com/en/5.10.0/get-started/quick-start-guide/) for more information.

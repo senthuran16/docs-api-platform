@@ -1,3 +1,18 @@
+---
+title: "Working with user pay adjustment code groups"
+description: "Retrieve the pay adjustment code groups assigned to an employee that control timesheet entries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/userpayadjustmentcodegroups/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/ceridiandayforce-connector/user-security-authority-and-management/userpayadjustmentcodegroups.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with User Pay Adjustment Code Groups
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve User Pay Adjustment Code Groups o
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-user-pay-adjustment-code-groups"></a>
 #### Retrieving User Pay Adjustment Code Groups
 We can use GET User Pay Adjustment Code Groups operation with required parameters to search and find the required employees.
 

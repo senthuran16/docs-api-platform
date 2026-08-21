@@ -1,3 +1,18 @@
+---
+title: "Changing the default ports"
+description: "Change the default Micro Integrator ports to avoid conflicts when running multiple instances or a cluster on the same server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/changing_default_ports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/changing_default_ports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Default Ports
 
 When you run multiple WSO2 Micro Integrator instances or a cluster of instances on a single server or virtual machine (VM),

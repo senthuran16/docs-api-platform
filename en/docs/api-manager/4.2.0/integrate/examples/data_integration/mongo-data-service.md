@@ -1,3 +1,18 @@
+---
+title: "Exposing a mongo datasource"
+description: "Demonstrates how to expose data from a MongoDB datasource as a data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/mongo-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/mongo-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a Mongo Datasource
 
 This example demonstrates how Mongo data can be exposed as a data service.
@@ -66,10 +81,10 @@ Given below is the data service configuration you need to build. See the instruc
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.        
-2. [Create a Data Service project](../../../integrate/develop/create-data-services-configs).
-3. [Create the data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator. 
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.        
+2. [Create a Data Service project](../../develop/create-data-services-configs).
+3. [Create the data service](../../develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator. 
 
 Let's try out this sample by invoking the `find` resource in the data service to GET data. Shown below is the [curl](http://curl.haxx.se/) command to send the GET request:
 

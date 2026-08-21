@@ -1,6 +1,21 @@
+---
+title: "About the identity anonymization tool"
+description: "Build and use the Identity Anonymization (Forget Me) tool in standalone mode to remove a deleted user's PII from WSO2 products."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/about_forgetme_tool/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/security/about_forgetme_tool.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # About the Identity Anonymization Tool
 
-> WSO2 Micro Integrator is shipped with the **Forget Me** tool, which is used for anonymizing personally identifiable information (PII) that are stored in the Micro Integrator. See [GDPR Compliance in the WSO2 Micro Integrator](../../../../install-and-setup/setup/mi-setup/security/gdpr_ei) for instructions.
+> WSO2 Micro Integrator is shipped with the **Forget Me** tool, which is used for anonymizing personally identifiable information (PII) that are stored in the Micro Integrator. See [GDPR Compliance in the WSO2 Micro Integrator](gdpr_ei) for instructions.
 
 The following topics will guide you to use the Identity Anonymization tool in **StandAlone** mode.
 

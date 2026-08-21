@@ -1,3 +1,18 @@
+---
+title: "Scheduling ESB tasks"
+description: "Provides steps to create and configure a scheduled task artifact in WSO2 Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-scheduled-task/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-artifacts/creating-scheduled-task.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Scheduling ESB Tasks
 
 Follow the instructions given below to create a **Scheduled Task** in WSO2 Integration Studio.
@@ -6,7 +21,7 @@ Follow the instructions given below to create a **Scheduled Task** in WSO2 Integ
 
 ### Creating the Scheduled Task artifact
 
-1.  Right-click the [ESB Config project](../../../integrate/develop/create-integration-project/#esb-config-project) and click **New** → **Scheduled Task**.  
+1.  Right-click the [ESB Config project](../create-integration-project#sub-projects) and click **New** → **Scheduled Task**.  
 
     <img src="../../../../assets/img/integrate/create_artifacts/scheduled_task/select-scheduled-task.png">
 
@@ -46,8 +61,8 @@ Update the task properties to specify the incoming message that should trigger t
 
 ## Examples
 
--   [Task Scheduling using a Simple Trigger](../../../integrate/examples/scheduled-tasks/task-scheduling-simple-trigger)
--   [Injecting Messages to a RESTful Endpoint](../../../integrate/examples/scheduled-tasks/injecting-messages-to-rest-endpoint)
+-   [Task Scheduling using a Simple Trigger](../../examples/scheduled-tasks/task-scheduling-simple-trigger)
+-   [Injecting Messages to a RESTful Endpoint](../../examples/scheduled-tasks/injecting-messages-to-rest-endpoint)
 
 ## Tutorials
 

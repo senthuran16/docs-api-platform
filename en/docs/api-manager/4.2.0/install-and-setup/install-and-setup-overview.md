@@ -1,3 +1,17 @@
+---
+title: "Install and setup overview"
+description: "Browse installation and setup instructions for the API Manager, Micro Integrator, and Streaming Integrator runtimes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install-and-setup-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install-and-setup-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install-and-setup-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Install and Setup Overview
 
 The installation and the setup of API Manager involve installing the product, deploying it in the method that is best suited for your requirements, and setting it up to run in the production environment. If you already have an older version of WSO2 API Manager or one of its components, you can follow the upgrading instructions in this guide.
@@ -305,7 +319,7 @@ To implement continuous integration and continuous deployment pipelines for APIs
     </tr>
     <tr>
         <th>
-            <a href="../../install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach">Building a CI/CD Pipeline for APIs using Jenkins</a>
+            <a href="../setup/api-controller/building-jenkins-ci-cd-pipeline/">Building a CI/CD Pipeline for APIs using Jenkins</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for APIs using Jenkins and the API Controller (apictl).
@@ -385,7 +399,7 @@ See the topics given below to manage APIs, API products, Apps, etc. in the API-M
 
 ### Upgrading
 
-To upgrade to the current API Manager component from a previous version, refer the [upgrading WSO2 API Manager](../install-and-setup/upgrading-wso2-api-manager/upgrading-api-manager) page  .
+To upgrade to the current API Manager component from a previous version, refer the [upgrading WSO2 API Manager](upgrading-wso2-api-manager/upgrading-api-manager) page  .
 
 <!---
 <table>
@@ -515,16 +529,16 @@ To set up and configure the Micro Integrator runtime, see the topics given below
                 <a href="../../install-and-setup/setup/mi-setup/databases/setting-up-mysql">Setting up a MySQL Database</a>
             </li>
             <li>
-                <a href="../../install-and-setup/setup/mi-setup/databases/setting-up-MSSQL">Setting up a MSSQL Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-mssql/">Setting up a MSSQL Database</a>
             </li>
             <li>
-                <a href="../../install-and-setup/setup/mi-setup/databases/setting-up-Oracle">Setting up a Oracle Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-oracle/">Setting up a Oracle Database</a>
             </li>
             <li>
                 <a href="../../install-and-setup/setup/mi-setup/databases/setting-up-postgresql">Setting up a Postgre SQL Database</a>
             </li>
             <li>
-                <a href="../../install-and-setup/setup/mi-setup/databases/setting-up-IBM-DB2">Setting up a IBM Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-ibm-db2/">Setting up a IBM Database</a>
             </li>
             <li>
                 <a href="../../install-and-setup/setup/mi-setup/deployment/file_based_registry">Configuring the File-based Registry</a>
@@ -579,7 +593,7 @@ To set up and configure the Micro Integrator runtime, see the topics given below
                 <a href="../../install-and-setup/setup/mi-setup/security/securing_management_api">Securing the Management API</a>
             </li>
             <li>
-                <a href="../../troubleshooting/error-handling/#custom-error-message">Customizing Error Messages</a>
+                <a href="../../troubleshooting/error-handling/#custom-error-messages">Customizing Error Messages</a>
             </li>                                                           
         </ul>
     </td>
@@ -723,7 +737,7 @@ To set up and configure the Micro Integrator runtime, see the topics given below
             <a href="../../observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes/">Setting up Cloud-Native Observability on Kubernetes</a>
         </li>
         <li>
-            <a href="../../install-and-setup/setup/mi-setup/observability/setting-up-classic-observability-deployment">Setting up Classic Observability Deployment</a>
+            <a href="../../mi-analytics/setting-up-mi-analytics/">Setting up Classic Observability Deployment</a>
         </li>
         <li>
             <a>Configuring Logs</a>

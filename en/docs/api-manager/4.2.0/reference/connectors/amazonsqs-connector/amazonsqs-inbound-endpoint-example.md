@@ -1,12 +1,27 @@
+---
+title: "AmazonSQS inbound endpoint example"
+description: "Example of configuring the AmazonSQS inbound endpoint in WSO2 Integration Studio to consume messages from a queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/amazonsqs-connector/amazonsqs-inbound-endpoint-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonsqs-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # AmazonSQS Inbound Endpoint Example
 
 The AmazonSQS Inbound Endpoint allows you to connect to Amazon and consume messages form an Amazon SQS queue. The messages are then injected into the mediation engine for further processing and mediation.
 
 ## What you'll build
 
-This scenario demonstrates how the AmazonSQS inbound endpoint works as a message consumer. In this scenario, you should have a connectivity with Amazon AWS account. Please follow the steps mentioned in the [Setting up the Amazon Lambda Environment](../../../reference/connectors/amazonlambda-connector/setting-up-amazonlambda/) document in order to create an Amazon account and obtain access key id and secret access key.
+This scenario demonstrates how the AmazonSQS inbound endpoint works as a message consumer. In this scenario, you should have a connectivity with Amazon AWS account. Please follow the steps mentioned in the [Setting up the Amazon Lambda Environment](../amazonlambda-connector/setting-up-amazonlambda) document in order to create an Amazon account and obtain access key id and secret access key.
 
-The Amazon SQS queue will receive messages from a third party system, while the integration runtime will keep listening to the messages from that queue. First you need to create a **Queue** inside the **Simple Queue Service** and send a message to the created Queue. The WSO2 AmazonSQS Inbound Endpoint will receive the message and notify. If you are extending this sample scenario, you can perform any kind of mediation using the [mediators](../../../reference/mediators/about-mediators/).
+The Amazon SQS queue will receive messages from a third party system, while the integration runtime will keep listening to the messages from that queue. First you need to create a **Queue** inside the **Simple Queue Service** and send a message to the created Queue. The WSO2 AmazonSQS Inbound Endpoint will receive the message and notify. If you are extending this sample scenario, you can perform any kind of mediation using the [mediators](../../mediators/about-mediators).
 
 The Simple Queue Service will receive messages from the outside, while the AmazonSQS inbound endpoint will consume messages based on the updates.
 
@@ -59,7 +74,7 @@ The Simple Queue Service will receive messages from the outside, while the Amazo
        <log level="full"/>
    </sequence>
    ```
-> **Note**: To configure the `secretKey` and `accessKey` parameter value, please use the [Setting up the Amazon Lambda Environment](../../../reference/connectors/amazonlambda-connector/setting-up-amazonlambda/) documentation.
+> **Note**: To configure the `secretKey` and `accessKey` parameter value, please use the [Setting up the Amazon Lambda Environment](../amazonlambda-connector/setting-up-amazonlambda) documentation.
 > - **secretKey** : The secret key used to sign requests.
 > - **accessKey** : The access key that corresponds to the secret key that you used to sign the request.
 > - **destination** : URL of the Amazon SQS Queue from which you want to consume messages.
@@ -82,11 +97,11 @@ The Simple Queue Service will receive messages from the outside, while the Amazo
   
 2. Copy the exported carbon application to the **<PRODUCT-HOME>/repository/deployment/server/carbonapps** folder. 
 
-3. [Start the integration server](../../../get-started/quick-start-guide/integration-qsg/#start-the-micro-integrator). 
+3. [Start the integration server](../../../get-started/integration-quick-start-guide#start-the-micro-integrator). 
 
 ## Testing  
 
-Please log in to the Amazon **Simple Queue Service**-> created **Queue**. Select the Queue and **right click**-> **Send a Message**-> enter **Message**, or you can even use [AmazonSQS Connector Example](../../../reference/connectors/amazonsqs-connector/amazonsqs-connector-example) we have implemented before.
+Please log in to the Amazon **Simple Queue Service**-> created **Queue**. Select the Queue and **right click**-> **Send a Message**-> enter **Message**, or you can even use [AmazonSQS Connector Example](amazonsqs-connector-example) we have implemented before.
 
 **Sample Message**
 

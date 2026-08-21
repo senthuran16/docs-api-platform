@@ -1,3 +1,18 @@
+---
+title: "Configuring cluster coordination"
+description: "Configure cluster coordination for Streaming Integrator nodes using an RDBMS-based coordination strategy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/configuring-cluster-coordination/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/configuring-cluster-coordination.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Cluster Coordination
 
 Multiple WSO2 SI nodes can be configured to work together by configuring
@@ -39,7 +54,7 @@ should be configured for **all the nodes** as follows:
 | `             enabled            `                               | Set this value to `             true            ` to enable cluster coordination for the node.                                                                                                                                                                                       | `             true/false            `                                                          |
 | `             groupId            `                               | The group ID is used to identify the cluster to which the node belongs. Nodes that belong to the same cluster must be configured with the same group ID.                                                                                                                             | `             group-1            `                                                             |
 | `             coordinationStrategyClass            `             | The clustering class to be used.                                                                                                                                                                                                                                                     | `             org.wso2.carbon.cluster.coordinator.rdbms.RDBMSCoordinationStrategy            ` |
-| `             strategyConfig > datasource            `           | The shared datasource to be used in the cluster. The datasource specified must be properly configured in the `             deployment.yaml            ` file. For detailed instructions to configure a datasource, see [Configuring Datasources](../../../install-and-setup/setup/si-setup/configuring-data-sources) .        | `             WSO2_CARBON_DB            `                                                      |
+| `             strategyConfig > datasource            `           | The shared datasource to be used in the cluster. The datasource specified must be properly configured in the `             deployment.yaml            ` file. For detailed instructions to configure a datasource, see [Configuring Datasources](configuring-data-sources) .        | `             WSO2_CARBON_DB            `                                                      |
 | `             strategyConfig > heartbeatInterval            `    | This value defines the time interval in milliseconds between heartbeat pulses sent by nodes to indicate that they are still alive within the cluster.                                                                                                                                | `             1000            `                                                                |
 | `             strategyConfig > heartbeatMaxRetry            `    | The number of times the heartbeat pulse can be unavailable until a node is identified as unresponsive. If a node fails to send its heartbeat pulse to the leader of the cluster after a number of retries equal to the number specified here, that node is removed from the cluster. | `             2            `                                                                   |
 | `             strategyConfig > eventPollingInterval            ` | The time interval in milliseconds at which a node listens to identify the changes happening within the cluster. The changes may include a new node joining the cluster, a node being removed from the cluster and the coordinator changed event.                                      | `             1000            `                                                                |

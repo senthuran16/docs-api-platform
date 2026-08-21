@@ -1,3 +1,18 @@
+---
+title: "Troubleshooting WSO2 integration studio"
+description: "Lists solutions for common issues encountered when working with WSO2 Integration Studio, such as missing project views."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/troubleshooting-wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/troubleshooting-wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - troubleshooting-wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "troubleshooting"
+---
+
 # Troubleshooting WSO2 Integration Studio
 
 The following are some of the ways to troubleshoot errors that you may encounter when working with WSO2 Integration Studio.
@@ -33,7 +48,7 @@ When you use **display scaling** that exceeds 150% (in **Windows** or **Linux** 
 
 ## Error creating Docker image (on macOS)
 
-When you run WSO2 Integration Studio on MacOS, you will sometimes get the following error when you [generate a Docker image](../../integrate/develop/generate-docker-image) of your integration artifacts: "**Error creating Docker image**".
+When you run WSO2 Integration Studio on MacOS, you will sometimes get the following error when you [generate a Docker image](generate-docker-image) of your integration artifacts: "**Error creating Docker image**".
 
 The details of the error are given below. To access WSO2 Integration Studio errors, see the instructions on [viewing the WSO2 Integration Studio error log](#view-wso2-integration-studio-error-log)
 
@@ -75,7 +90,7 @@ This error is because the **Docker UI** installation on your MacOS has a feature
 
 ## Error creating Docker image (on Windows)
 
-When you build a Docker image either via [Docker Exporter Project](../../integrate/develop/create-docker-project) or [Kubernetes Exporter Project](../../integrate/develop/create-kubernetes-project) in WSO2 Integration Studio on Windows, you may sometimes get the following error: "**Docker image generation failed**".
+When you build a Docker image either via [Docker Exporter Project](create-docker-project) or [Kubernetes Exporter Project](create-kubernetes-project) in WSO2 Integration Studio on Windows, you may sometimes get the following error: "**Docker image generation failed**".
 
 The details of the error are given below. To access WSO2 Integration Studio errors, see the instructions on [viewing the WSO2 Integration Studio error log](#view-wso2-integration-studio-error-log)
 

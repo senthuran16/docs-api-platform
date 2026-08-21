@@ -1,3 +1,18 @@
+---
+title: "Business rules APIs"
+description: "Reference the REST APIs for listing, creating, and managing business rule instances in the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/business-rules-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/develop/streaming-apps/business-rules-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - business-rules-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Business Rules APIs
 
 ## Listing the available business rule instances

@@ -1,3 +1,18 @@
+---
+title: "Create a custom policy"
+description: "Create custom common or API-specific policies for Choreo Connect by reusing existing policy templates with predefined action names and parameters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-policies/choreo-connect-policies/create-custom-cc-policy/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-policies/choreo-connect-policies/create-custom-cc-policy.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - choreo-connect-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create a Custom Policy
 
 Choreo Connect Custom Policies allow reusing existing policy definitions to create your own policies with predefined values. They can be created either as common policies or as API specific policies.
@@ -165,7 +180,7 @@ Let's create a new policy with the action `OPA`. The following is the content of
     ```
 
 !!! note
-    You can create a custom request generator and define it in the parameter `requestGenerator`. For a detailed description on creating a custom request generator, visit [Custom OPA Policy for Choreo Connect](../../../design/api-security/opa-validation/custom-opa-policy-for-choreo-connect/).
+    You can create a custom request generator and define it in the parameter `requestGenerator`. For a detailed description on creating a custom request generator, visit [Custom OPA Policy for Choreo Connect](../../api-security/opa-validation/custom-opa-policy-for-choreo-connect).
 
 Let's say we want to validate requests with a OPA server that is used to validate a set of APIs centrally. Let's create a custom policy with name `centralOpaPolicy`.
 

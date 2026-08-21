@@ -1,3 +1,18 @@
+---
+title: "Sample interceptor services"
+description: "Build and try out a sample interceptor service that transforms a JSON request into XML for a legacy backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/sample-interceptor-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/sample-interceptor-services.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Sample Interceptor Services
 
 ## Sample 1 - JSON to XML transformation for a Legacy Backend - Book Store
@@ -30,7 +45,7 @@ x-wso2-response-interceptor:
 You can find the implementation of the interceptor service in the [Choreo Connect GitHub Repository](https://github.com/wso2/product-microgateway).
 Clone the repository and change to the cloned path.
 
-1. Start the Choreo-Connect Docker compose setup if you have not started it yet. For instructions, see [Deploying Choreo Connect as a Standalone Gateway on Docker](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-as-a-standalone-gateway-on-docker/#quick-start-guide-docker).
+1. Start the Choreo-Connect Docker compose setup if you have not started it yet. For instructions, see [Deploying Choreo Connect as a Standalone Gateway on Docker](../../getting-started/deploy/cc-as-a-standalone-gateway-on-docker#deploying-choreo-connect-as-a-standalone-gateway-on-docker-compose).
 
 2. Find the sample interceptor implementations in the directory [samples/interceptors](https://github.com/wso2/product-microgateway/tree/main/samples/interceptors#readme).
    You can find implementations for following languages or tools.

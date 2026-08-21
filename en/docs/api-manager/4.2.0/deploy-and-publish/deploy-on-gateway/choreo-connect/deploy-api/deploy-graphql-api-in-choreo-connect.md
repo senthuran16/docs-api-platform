@@ -1,3 +1,18 @@
+---
+title: "Deploying a GraphQL API in Choreo connect"
+description: "Deploy a GraphQL API to Choreo Connect via the Publisher Portal or apictl, and review the supported GraphQL features."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-graphql-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-graphql-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a GraphQL API in Choreo Connect
 
 GraphQL is a querying language for APIs that was developed by Facebook. When compared to the REST APIs, GraphQL APIs allow
@@ -11,10 +26,10 @@ Choreo Connect supports the below features in addition to the basic GraphQL API 
 
 - Runtime configurations
     - Transport level security
-    - [GraphQL query analysis (query complexity and query depth limitation)](../../../../design/rate-limiting/graphql-api/overview-query-limits-for-graphql/#static-query-analyzer)
+    - [GraphQL query analysis (query complexity and query depth limitation)](../../../../design/rate-limiting/graphql-api/overview-query-limits-for-graphql#static-query-analyzer)
     - Cross-Origin Resource Sharing (CORS)
-- [Rate limiting policies (API level and operation level) with the support of WSO2 API-M](../../../../design/create-api/create-a-graphql-api/#rate-limiting-for-graphql-operations)
-- [Security scopes](../../../../design/create-api/create-a-graphql-api/#authorization-for-graphql-operations)
+- [Rate limiting policies (API level and operation level) with the support of WSO2 API-M](../../../../design/create-api/create-a-graphql-api#rate-limiting-for-graphql-operations)
+- [Security scopes](../../../../design/create-api/create-a-graphql-api#authorization-for-graphql-operations)
 - Enable/ disable security for GraphQL operations
 
 !!! note
@@ -24,8 +39,8 @@ You can deploy GraphQL APIs using Choreo Connect by following one of the two dep
 
 |**Mode**                               | **Method**    |
 |---------------------------------------|---------------|
-|[Choreo Connect with WSO2 API Manager as a Control Plane](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/apim-as-control-plane/)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
-|[Choreo Connect as a Standalone Gateway](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/as-a-standalone-gateway/)                  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode)                |
+|[Choreo Connect with WSO2 API Manager as a Control Plane](../concepts/apim-as-control-plane)   | [Via WSO2 API Manager Publisher Portal](#via-wso2-api-manager-publisher-portal)  |
+|[Choreo Connect as a Standalone Gateway](../concepts/as-a-standalone-gateway)                  |[Via apictl for Standalone Mode](#via-apictl-for-standalone-mode)                |
 
 ## Via WSO2 API Manager Publisher Portal
 
@@ -33,8 +48,8 @@ Below instructions explain how to deploy a GraphQL API to the Choreo Connect via
 
 !!! info "Before you begin"
 
-    - This guide assumes that you already have a up and running Choreo Connect instance configured with WSO2 API Manager. If not, you can refer to the [Quick Start Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/) on how to run Choreo Connect with WSO2 API Manager. To learn more about Choreo Connect related componentes, refer to the [Overview of Choreo Connect](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview).
-    - You need to have a GraphQL schema file (SDL) and a GraphQL server implementaion relevant to the SDL. You can obtain the SDL file relevant to this example from [here](../../../../assets/attachments/learn/schema_graphql.graphql) and the server implementation relevant to that SDL file from [here](../../../../tutorials/create-and-publish-a-graphql-api/#step-1-start-the-graphql-backend-server).
+    - This guide assumes that you already have a up and running Choreo Connect instance configured with WSO2 API Manager. If not, you can refer to the [Quick Start Guide](../getting-started/quick-start-guide-docker-with-apim) on how to run Choreo Connect with WSO2 API Manager. To learn more about Choreo Connect related componentes, refer to the [Overview of Choreo Connect](../getting-started/choreo-connect-overview).
+    - You need to have a GraphQL schema file (SDL) and a GraphQL server implementaion relevant to the SDL. You can obtain the SDL file relevant to this example from [here](../../../../assets/attachments/learn/schema_graphql.graphql) and the server implementation relevant to that SDL file from [here](../../../../tutorials/create-and-publish-a-graphql-api#step-1-start-the-graphql-backend-server).
 
 ### Step 1 - Create a GraphQL API in WSO2 API Manager Publisher Portal
 
@@ -157,7 +172,7 @@ You can create a GraphQL API in WSO2 API-M Publisher Portal by following the ste
 
 ### Step 4 - Invoke the API by providing a valid GraphQL query
 
-1. Since GraphQL APIs require a GraphQL query to provide results, you need to have a valid query. A sample query is provided in the below section. In API Manager Publisher Portal, GraphiQL is used for build queries. You can use the explorer option available there to build queries. For more information regarding valid GraphQL query generation, see [here](../../../../tutorials/create-and-publish-a-graphql-api/#step-51-optionally-try-out-a-query-operation).
+1. Since GraphQL APIs require a GraphQL query to provide results, you need to have a valid query. A sample query is provided in the below section. In API Manager Publisher Portal, GraphiQL is used for build queries. You can use the explorer option available there to build queries. For more information regarding valid GraphQL query generation, see [here](../../../../tutorials/create-and-publish-a-graphql-api#step-51-optionally-try-out-a-query-operation).
 
     ``` 
     query{
@@ -183,7 +198,7 @@ You can create a GraphQL API in WSO2 API-M Publisher Portal by following the ste
 
 ## Via apictl for Standalone Mode
 
-The CLI tool ([**apictl**](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#download-and-initialize-the-apictl)) 
+The CLI tool ([**apictl**](../../../../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller#download-and-initialize-the-apictl)) 
 does not support initializing projects for GraphQL APIs yet. However, you can download the sample GraphQL API project from 
 [here](https://github.com/wso2/product-microgateway/tree/main/samples/apiProjects/SampleGraphQLApi) and try it out by deploying into the Choreo Connect. When you are using your own GraphQL API with Choreo Connect, you can change the relevant attribute values 
 in `api.yaml`, `graphql-complexity.yaml` and `definitions/schema.graphql` files. There is an explanation regarding those attribute values in 

@@ -1,10 +1,25 @@
+---
+title: "Configure the API Gateway"
+description: "Configure the WSO2 API Gateway to publish analytics data to the Choreo Analytics Cloud, including worker thread count and queue size tuning."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/api-analytics/choreo-analytics/gateways/configure-synapse-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/api-analytics/choreo-analytics/gateways/configure-synapse-gateway.md
+tags:
+  - api-manager
+  - api-analytics
+  - choreo-analytics
+  - gateways
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configure the API Gateway
 
 API Analytics is delivered via the API Analytics Cloud. Therefore, the API Manager Gateway needs to be configured to publish analytics data into the cloud.
 
 ## Basic configurations
 
-{!includes/analytics/configure-synapse-gateway.md!}
+--8<-- "api-manager/4.2.0/includes/analytics/configure-synapse-gateway.md"
 
 ## Advanced configurations
 

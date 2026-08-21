@@ -1,10 +1,25 @@
+---
+title: "Router log configurations"
+description: "Enable and configure Router access logs, debug logs, and wire logs for the Envoy-based Router in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-router.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Router Log Configurations
 
-As Choreo Connect uses an Envoy proxy as the Router component, it only supports the logging mechanisms provided by the Envoy proxy ([read more details about router](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview/#router)). In the following sections, you may find how to enable Router access logs and debug logs.
+As Choreo Connect uses an Envoy proxy as the Router component, it only supports the logging mechanisms provided by the Envoy proxy ([read more details about router](../getting-started/choreo-connect-overview#router)). In the following sections, you may find how to enable Router access logs and debug logs.
 
 ## Router Access Logging
 
-You can enable Router access logs by using the following configs. Router access logs related configurations are in the `log_config.toml` file, which is located in [these directories](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview/#log_config_toml) based on your Choreo Connect deployment method.
+You can enable Router access logs by using the following configs. Router access logs related configurations are in the `log_config.toml` file, which is located in [these directories](configure-logs-overview#log_config_toml) based on your Choreo Connect deployment method.
 
 === "Format"
     ```toml
@@ -188,7 +203,7 @@ Follow [command line options]({{envoy_path}}/operations/cli) for more informatio
 
 By enabling wire logs in the Router component, you can inspect headers, body, and trailers of the request/response. This is helpful to see the changes applied to the request or response after request path and/or response path interceptors.
 
-To enable the wire logs, add the following configuration to the `log_config.toml` file in [these directories](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configurations/configure-logs-overview/#log_config_toml) depending on your Choreo Connect deployment setup.
+To enable the wire logs, add the following configuration to the `log_config.toml` file in [these directories](configure-logs-overview#log_config_toml) depending on your Choreo Connect deployment setup.
 
 ```toml
 [wireLogs]

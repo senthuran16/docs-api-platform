@@ -1,3 +1,18 @@
+---
+title: "Salesforce REST connector reference"
+description: "Reference for the connection configuration and operations of the Salesforce REST connector v2.x using API v59.0."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-rest-connector-config-v2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/salesforce-connectors/sf-rest-connector-config-v2.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Salesforce REST Connector Reference
 
 The following operations allow you to work with the Salesforce REST Connector v2.x that provides seamless integration with the [Salesforce REST API v59.0](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm). Click on an operation name to see the parameter details and samples on how to use it.

@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator in automation mode"
+description: "Run the Micro Integrator in automation mode to trigger, run, and stop integration jobs on demand using Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/running-the-mi-in-automation-mode/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/install/running-the-mi-in-automation-mode.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - running-the-mi-in-automation-mode
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Micro Integrator in Automation Mode
 
 The WSO2 Micro Integrator (MI) runtime has introduced a new automation mode that triggers, runs, and stops an integration job on demand. Paired with the latest capabilities of WSO2 Integration Studio, this new mode provides developers with a more efficient way to handle integration tasks, especially in cloud-native environments. This documentation outlines how to utilize the automation mode in MI using the WSO2 Integration Studio
@@ -18,7 +33,7 @@ Historically confined to server mode, MI's exclusive operational mode limited it
 
 Before you try out the steps in this guide, complete the following:
 
-- [Download and install](../../install-and-setup/install/installing-mi) the latest Micro Integrator.
+- [Download and install](installing-the-product/installing-mi) the latest Micro Integrator.
 - Download the relevant [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/) based on your operating system.
 
 
@@ -27,7 +42,7 @@ Before you try out the steps in this guide, complete the following:
 The main sequence is essential in the automation mode. It serves as the core of your task's integration logic, dictating its execution path. A well-constructed main sequence ensures a consistent and optimal flow for your tasks in the automation mode. Follow the steps below to design the main sequence:
 
 1. Open WSO2 Integration Studio.
-2. [Create an Integration Project](../../develop/create-integration-project) with **Create ESB Configs** and **Create Composite Exporter** options enabled.
+2. [Create an Integration Project](../../integrate/develop/create-integration-project) with **Create ESB Configs** and **Create Composite Exporter** options enabled.
 3. Create a sequence with your integration scenario.
 4. Define the configured sequence as a main sequence for the composite application.
    <img src="../../../assets/img/setup-and-install/select-main-sequence.png" title="Select Main Sequence" width="700" alt="Select Main Sequence"/>
@@ -36,7 +51,7 @@ The main sequence is essential in the automation mode. It serves as the core of 
    This sequence, designated as the main sequence, plays a crucial role in guiding the task's operational flow. While WSO2 Integration Studio provides various mediators for assistance, prioritize clarity and efficiency in your logic.
    
 5. Deploy the composite application. Ensure that the main sequence, with other related artifacts, is packaged appropriately in the `Composite Application project`.
-For a detailed guide on packaging, refer to the [WSO2 documentation on packaging synapse artifacts](https://apim.docs.wso2.com/en/latest/integrate/develop/packaging-artifacts/#packaging-synapse-artifacts).
+For a detailed guide on packaging, refer to the [WSO2 documentation on packaging synapse artifacts](../../integrate/develop/packaging-artifacts#packaging-synapse-artifacts).
 
 ## Starting the MI in automation mode
 

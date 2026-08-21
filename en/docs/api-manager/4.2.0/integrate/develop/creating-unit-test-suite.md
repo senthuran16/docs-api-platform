@@ -1,13 +1,28 @@
+---
+title: "Creating unit test suite"
+description: "Explains how to create and run unit test suites for mediation sequences, proxy services, and REST APIs in Integration Studio."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-unit-test-suite/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/creating-unit-test-suite.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-unit-test-suite
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating Unit Test Suite
 
 Once you have developed an integration solution, WSO2 Integration Studio allows you to build unit tests for the following:
 
-- Test [mediation sequences](../../integrate/develop/creating-artifacts/creating-reusable-sequences), [proxy services](../../integrate/develop/creating-artifacts/creating-a-proxy-service), and [REST apis](../../integrate/develop/creating-artifacts/creating-an-api) with multiple test cases
-- Test the artifacts with [registry resources](../../integrate/develop/creating-artifacts/creating-registry-resources).
-- Test the artifacts with [Connectors](../../integrate/develop/creating-artifacts/adding-connectors).
+- Test [mediation sequences](creating-artifacts/creating-reusable-sequences), [proxy services](creating-artifacts/creating-a-proxy-service), and [REST apis](creating-artifacts/creating-an-api) with multiple test cases
+- Test the artifacts with [registry resources](creating-artifacts/creating-registry-resources).
+- Test the artifacts with [Connectors](creating-artifacts/adding-connectors).
 
     !!! Note
-        [Scheduled Tasks](../../integrate/develop/creating-artifacts/creating-scheduled-task) are not supported by the Unit Testing framework.
+        [Scheduled Tasks](creating-artifacts/creating-scheduled-task) are not supported by the Unit Testing framework.
 
 ## Create Unit Test Suite
 

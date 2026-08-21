@@ -1,3 +1,18 @@
+---
+title: "Create an API using a service"
+description: "Discover Micro Integrator and Streaming Integrator services from the Service Catalog and create REST or Streaming APIs from them."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api/create-an-api-using-a-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api/create-an-api-using-a-service.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-an-api-using-a-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create an API Using a Service
 
 The service catalog in WSO2 API Manager contains services that correspond to either the Micro Integrator or the Streaming Integrator. The Micro Integrator services correspond to the REST API backend services, and the Streaming Integrator services correspond to the Streaming API (i.e., WebSocket, WebHook/WebSub or SSE) backend services that are managed by the respective integration layer (Micro Integrator or Streaming Integrator).
@@ -12,13 +27,14 @@ More information:
 
 - For information on creating and publishing a REST API based on an integration service, see [Exposing an Integration Service as a Managed API](../../integrate/develop/working-with-service-catalog).
 
-- For information on creating and publishing a Streaming API based on a streaming integration service, see [Exposing a Stream as a Managed API](../../use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog/).
+- For information on creating and publishing a Streaming API based on a streaming integration service, see [Exposing a Stream as a Managed API](../../use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog).
 
 ## Step 2 - Discover the services
 
 Follow the instructions below to discover the integration services:
 
-1.  {!includes/sign-in-publisher.md!}
+1.  
+    --8<-- "api-manager/4.2.0/includes/sign-in-publisher.md"
 
 2.  Click **Services**.
 
@@ -66,19 +82,19 @@ Follow the instructions below to discover the integration services:
 
      Now, you have successfully created an API using a service.
 
-After you complete configuring the API, [Publish the API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api/).
+After you complete configuring the API, [Publish the API](../../deploy-and-publish/publish-on-dev-portal/publish-an-api).
 
 ## See Also
 
 Learn more on the concepts that you need to know when creating an API:
 
- - [Endpoints](../../design/endpoints/endpoint-types/)
- -   [API Security](../../design/api-security/api-authentication/secure-apis-using-oauth2-tokens/)
+ - [Endpoints](../endpoints/endpoint-types)
+ -   [API Security](../api-security/api-authentication/secure-apis-using-oauth2-tokens)
  -   Rate Limiting:
-     -   [Rate Limiting for REST APIs](../../design/rate-limiting/introducing-throttling-use-cases/)
-     -   [Rate Limiting for Streaming APIs](../../design/rate-limiting/rate-limiting-for-streaming-apis/)
- -   [Life Cycle Management](../../design/lifecycle-management/api-lifecycle/)
- -   [API Monetization](../../design/api-monetization/monetizing-an-api/)
- -   [API Visibility](../../design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/)
- -   [API Documentation](../../design/api-documentation/add-api-documentation/)
- -   [Custom Properties](../../design/create-api/adding-custom-properties-to-apis/)
+     -   [Rate Limiting for REST APIs](../rate-limiting/introducing-throttling-use-cases)
+     -   [Rate Limiting for Streaming APIs](../rate-limiting/rate-limiting-for-streaming-apis)
+ -   [Life Cycle Management](../lifecycle-management/api-lifecycle)
+ -   [API Monetization](../api-monetization/monetizing-an-api)
+ -   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal)
+ -   [API Documentation](../api-documentation/add-api-documentation)
+ -   [Custom Properties](adding-custom-properties-to-apis)

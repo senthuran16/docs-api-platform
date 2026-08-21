@@ -1,3 +1,18 @@
+---
+title: "Routing messages to a static list of recipients"
+description: "Demonstrates routing a cloned message to a static list of recipient endpoints using a proxy service configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-static-recepient-list-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/endpoint_examples/using-static-recepient-list-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Routing Messages to a Static List of Recipients
 !!! Note
     This documentation is currently under review. You might encounter some errors when trying out this sample in WSO2 Integration Studio. Please refer [this issue](https://github.com/wso2/integration-studio/issues/37) for details.

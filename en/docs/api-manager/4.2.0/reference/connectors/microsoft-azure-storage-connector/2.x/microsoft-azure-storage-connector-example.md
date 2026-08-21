@@ -1,3 +1,18 @@
+---
+title: "Microsoft Azure storage connector example"
+description: "Configure the Microsoft Azure Storage connector version 2.x to create a container and manage employee blob data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - microsoft-azure-storage-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Microsoft Azure Storage Connector Example
 
 Given below is a sample scenario that demonstrates how to work with container and blob operations using the WSO2 Microsoft Azure Storage Connector.
@@ -13,15 +28,15 @@ This example demonstrates how to use Microsoft Azure Storage connector to:
 5. Retrieve the metadata from a specific file (blob). 
 6. Remove created container.
 
-For more information about these operations, please refer to the [Microsoft Azure Storage connector reference guide](../../../../reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-reference/).
+For more information about these operations, please refer to the [Microsoft Azure Storage connector reference guide](microsoft-azure-storage-reference).
 
-> **Note**: Before invoking the API, you need to create a **Storage Account** in **Microsoft Azure Storage account**. See [Azure Storage Configuration](../../../../reference/connectors/microsoft-azure-storage-connector/microsoft-azure-storage-configuration/) documentation for more information.
+> **Note**: Before invoking the API, you need to create a **Storage Account** in **Microsoft Azure Storage account**. See [Azure Storage Configuration](../microsoft-azure-storage-configuration) documentation for more information.
 
 ## Configure the connector in WSO2 Integration Studio
 
 Follow these steps to set up the ESB Solution Project and the Connector Exporter Project.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
@@ -47,7 +62,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     - Tenant ID - The Tenant ID of the application.
 
     !!! note
-        You can either define the Account Access key or Client Credentials for authentication. For more information, please refer [Initialize the connector guide](../../../../reference/connectors/microsoft-azure-storage-connector/2.x/microsoft-azure-storage-reference/#initialize-the-connector).
+        You can either define the Account Access key or Client Credentials for authentication. For more information, please refer [Initialize the connector guide](microsoft-azure-storage-reference#initialize-the-connector).
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_new_connection.png" title="Configuring a new connection" width="500" alt="Microsoft Azure Storage use case"/>
 
@@ -59,7 +74,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_create_container_operation.png" title="Configuring create container operation" width="800" alt="Microsoft Azure Storage use case"/>
 
-7. Drag and drop the [Respond Mediator](../../../../reference/mediators/respond-mediator/) to send back the response from creating the container as shown below.
+7. Drag and drop the [Respond Mediator](../../../mediators/respond-mediator) to send back the response from creating the container as shown below.
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/adding_respond_mediator.png" title="Adding a respond mediator" width="800" alt="Microsoft Azure Storage use case"/>
 
@@ -72,7 +87,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     - Text Content - json-eval($.textContent)
     - Metadata - json-eval($.metadata)
 
-10. Drag and drop the [Respond Mediator](../../../../reference/mediators/respond-mediator/) to send back the response from uploading the blob.
+10. Drag and drop the [Respond Mediator](../../../mediators/respond-mediator) to send back the response from uploading the blob.
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_add_blob_operation.png" title="Configuring upload blob operation" width="800" alt="Microsoft Azure Storage use case"/>
 
@@ -83,7 +98,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     - Container Name - json-eval($.containerName)
     - Blob name - json-eval($.fileName)
 
-13. Finally, drag and drop the [Respond Mediator](../../../../reference/mediators/respond-mediator/) to send back the response from the downloadBlob operation.
+13. Finally, drag and drop the [Respond Mediator](../../../mediators/respond-mediator) to send back the response from the downloadBlob operation.
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_blob_download_operation.png" title="Configuring download blob operation" width="800" alt="Microsoft Azure Storage use case"/>
 
@@ -94,7 +109,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     - Container Name - json-eval($.containerName)
     - Blob name - json-eval($.fileName)
 
-16. Finally, drag and drop the [Respond Mediator](../../../../reference/mediators/respond-mediator/) to send back the response from the deleteBlob operation.
+16. Finally, drag and drop the [Respond Mediator](../../../mediators/respond-mediator) to send back the response from the deleteBlob operation.
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_blob_delete_operation.png" title="Configuring delete blob operation" width="800" alt="Microsoft Azure Storage use case"/>
 
@@ -105,7 +120,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
     - Container Name - json-eval($.containerName)
     - Blob name - json-eval($.fileName)
 
-19. Finally, drag and drop the [Respond Mediator](../../../../reference/mediators/respond-mediator/) to send back the response from the listMetadata operation.
+19. Finally, drag and drop the [Respond Mediator](../../../mediators/respond-mediator) to send back the response from the listMetadata operation.
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_list_metadata_operation.png" title="Configuring list metadata operation" width="800" alt="Microsoft Azure Storage use case"/>
 
@@ -115,7 +130,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
 
     - Container Name - json-eval($.containerName)
 
-22. Finally, drag and drop the [Respond Mediator](../../../../reference/mediators/respond-mediator/) to send back the response from the deleteContainer operation.
+22. Finally, drag and drop the [Respond Mediator](../../../mediators/respond-mediator) to send back the response from the deleteContainer operation.
 
     <img src="../../../../../assets/img/integrate/connectors/msazure-connector-2x/configure_delete_container_operation.png" title="Configuring delete container operation" width="800" alt="Microsoft Azure Storage use case"/>
 
@@ -196,7 +211,7 @@ Follow these steps to set up the ESB Solution Project and the Connector Exporter
 
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are going to deploy to server runtime.
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/exporting-artifacts.md"
 
 Now the exported CApp can be deployed in the integration runtime so that we can run it and test.
 
@@ -215,7 +230,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.2.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 
@@ -335,4 +350,4 @@ Invoke the API as shown below using the curl command. Curl Application can be do
 
 ## What's next
 
-* You can deploy and run your project on Docker or Kubernetes. See the instructions in [Running the Micro Integrator on Containers](../../../../integrate/develop/deploy-artifacts/).
+* You can deploy and run your project on Docker or Kubernetes. See the instructions in [Running the Micro Integrator on Containers](../../../../integrate/develop/deploy-artifacts).

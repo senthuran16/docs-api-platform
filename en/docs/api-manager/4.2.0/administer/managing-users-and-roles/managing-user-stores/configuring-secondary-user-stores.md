@@ -1,3 +1,18 @@
+---
+title: "Configuring secondary user stores"
+description: "Configure secondary user stores in WSO2 API Manager manually or through the management console so users from multiple stores can log in."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores.md
+tags:
+  - api-manager
+  - administer
+  - managing-users-and-roles
+  - managing-user-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Secondary User Stores
 
 The default configuration of the WSO2 API Manager has a single, embedded user store (primary user store). If required, you can configure WSO2 products to connect to several secondary user stores as well. After configuration, users from different stores can log in and perform operations depending on their roles/permissions. You can also configure customized user stores and connect them with the products as secondary stores.
@@ -50,7 +65,7 @@ There are two approaches to configure a secondary user store. It can be configur
     </tbody>
     </table>
 
-    You can also populate this drop-down list with custom user store manager implementations by adding them to the server. For information on implementing a custom user store manager, see [Writing a Custom User Store Manager](../../../administer/managing-users-and-roles/managing-user-stores/writing-a-custom-user-store-manager).
+    You can also populate this drop-down list with custom user store manager implementations by adding them to the server. For information on implementing a custom user store manager, see [Writing a Custom User Store Manager](writing-a-custom-user-store-manager).
 
     For samples, see [Sample Custom User Store Manager](https://github.com/wso2/product-is/tree/v5.10.0/modules/samples/user-mgt/sample-custom-user-store-manager) in the WSO2 Identity Server product repository.
 

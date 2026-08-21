@@ -1,3 +1,18 @@
+---
+title: "Exposing an RDBMS datasource"
+description: "Demonstrates how to expose data stored in a MySQL RDBMS as a data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/rdbms-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/data_integration/rdbms-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing an RDBMS Datasource
 
 This example demonstrates how RDBMS data (stored in a MySQL database) can be exposed as a data service.
@@ -89,22 +104,22 @@ Given below is the data service configuration you need to build. See the instruc
 
 !!! Tip
     If you use **External** instead of the **Default** as the datasource type, your datasource should be supported by an external provider class, such as `com.mysql.jdbc.jdbc2.optional.MysqlXADataSource`.</br></br>
-    After an external datasource is created, it can be used as another datasource in queries. See the example on [handling distributed transactions](../../../integrate/examples/data_integration/distributed-trans-data-service) for more information on using external datasources.
+    After an external datasource is created, it can be used as another datasource in queries. See the example on [handling distributed transactions](distributed-trans-data-service) for more information on using external datasources.
 
 ## Build and run
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio). The path to this folder is referred to as `MI_TOOLING_HOME` throughout this tutorial.
 2.  Download the JDBC driver for MySQL from [here](http://dev.mysql.com/downloads/connector/j/) and copy it to the `MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/lib/` (for MacOS) or 
 `MI_TOOLING_HOME/runtime/microesb/lib/` (for Windows) directory. 
 
     !!! Note
         If the driver class does not exist in the relevant folders when you create the datasource, you will get an exception such as `Cannot load JDBC driver class com.mysql.jdbc.Driver`.
         
-3. [Create a Data Service project](../../../integrate/develop/create-data-services-configs).
-4. [Create the data service](../../../integrate/develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator. 
+3. [Create a Data Service project](../../develop/create-data-services-configs).
+4. [Create the data service](../../develop/creating-artifacts/data-services/creating-data-services) with the configurations given above.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator. 
 
 Let's take a look at the curl commands that are used to send the HTTP
 requests for each of the resources:

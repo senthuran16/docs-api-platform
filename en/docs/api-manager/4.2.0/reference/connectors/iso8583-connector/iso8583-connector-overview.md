@@ -1,3 +1,18 @@
+---
+title: "ISO8583 connector overview"
+description: "Learn how the ISO8583 connector sends ISO8583 standard financial transaction messages from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/iso8583-connector/iso8583-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/iso8583-connector/iso8583-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # ISO8583 Connector Overview
 
 The ISO8583 message format is used for financial transactions such as ATM, POS, Credit Card, Mobile Banking, Internet Banking, KIOSK, e-commerce, etc. transactions.
@@ -23,19 +38,19 @@ For older versions, see the details in the connector store.
 
 The ISO8583 Connector allows you to send ISO8583 standard messages from an integration sequence. ISO8583 is an international messaging standard for financial transaction card originated messages, and is commonly used in transactions between devices such as point-of-sale(POS) terminals and automated teller machines(ATMs). Although there are various versions of the ISO8583 standard, this connector is developed based on the 1987 version. 
 
-* **[Setting up ISO8583 Connector](../../../reference/connectors/iso8583-connector/iso8583-connector-configuration)**: This includes instructions on setting up the environment and the test server in order to try this out. 
+* **[Setting up ISO8583 Connector](iso8583-connector-configuration)**: This includes instructions on setting up the environment and the test server in order to try this out. 
 
-* **[ISO8583 Connector Example](../../../reference/connectors/iso8583-connector/iso8583-connector-example)**: This example demonstrates how to expose core banking system functionality working with ISO8583 protocol as an API. 
+* **[ISO8583 Connector Example](iso8583-connector-example)**: This example demonstrates how to expose core banking system functionality working with ISO8583 protocol as an API. 
 
-* **[ISO8583 Connector Reference](../../../reference/connectors/iso8583-connector/iso8583-connector-reference/)**: This documentation provides a reference guide for the ISO8583 Connector.
+* **[ISO8583 Connector Reference](iso8583-connector-reference)**: This documentation provides a reference guide for the ISO8583 Connector.
 
 ## ISO8583 Inbound Endpoint documentation
 
 The ISO8583 inbound endpoint acts as a message consumer. This is bundled with the ISO8583 connector and can be obtained from the connector store. The ISO8583 inbound endpoint supported via the integration runtime of WSO2 is a listening inbound endpoint that can consume ISO8583 standard messages. The ISO8583 connector allows outbound messages from the integration runtime to third-party applications, while the inbound endpoint only allows incoming messages. The inbound endpoint converts the messages to XML format and injects messages to a sequence.
 
-* **[ISO8583 Inbound Endpoint Example](../../../reference/connectors/iso8583-connector/iso8583-inbound-endpoint-example)**: This example demonstrates how the ISO8583 inbound endpoint works as an ISO8583 message consumer. 
+* **[ISO8583 Inbound Endpoint Example](iso8583-inbound-endpoint-example)**: This example demonstrates how the ISO8583 inbound endpoint works as an ISO8583 message consumer. 
 
-* **[ISO8583 Inbound Endpoint Reference](../../../reference/connectors/iso8583-connector/iso8583-inbound-endpoint-config/)**: This documentation provides a reference guide for the ISO8583 Inbound Endpoint.
+* **[ISO8583 Inbound Endpoint Reference](iso8583-inbound-endpoint-config)**: This documentation provides a reference guide for the ISO8583 Inbound Endpoint.
 
 ## How to contribute
 

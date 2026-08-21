@@ -1,3 +1,18 @@
+---
+title: "Consume and republish events between Kafka topics"
+description: "Example Siddhi application that consumes JSON events from one Kafka topic and republishes them in XML format to another."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/hello-kafka/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/hello-kafka.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Consuming Events from a Kafka Topic and Publishing to Another Kafka Topic
 
 ## Purpose:

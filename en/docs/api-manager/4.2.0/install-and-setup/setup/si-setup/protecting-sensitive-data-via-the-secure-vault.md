@@ -1,3 +1,18 @@
+---
+title: "Protecting sensitive data via the secure Vault"
+description: "Secure sensitive data such as passwords and access tokens in Streaming Integrator configurations using the Cipher tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/protecting-sensitive-data-via-the-secure-vault/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/si-setup/protecting-sensitive-data-via-the-secure-vault.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Protecting Sensitive Data via the Secure Vault
 
 The Streaming Integrator uses several artifacts for its functionality including deployment configurations for tuning its operation as well as deployable artifacts for extending its functionality. In each of these scenarios, there can be situations where the data specified is of a sensitive nature e.g., access tokens, passwords, etc.
@@ -20,7 +35,7 @@ The Streaming Integrator offers the Cipher tool to encrypt sensitive data in dep
 
 ## Protecting sensitive data in Siddhi applications
 
-A parameter named ref is used to secure sensitive information in Siddhi applications that are deployed in the Streaming Integrator. For Siddhi applications that use storage technologies supported by [Carbon Data sources](../../../install-and-setup/setup/si-setup/configuring-data-sources), it is also possible to use Carbon data sources instead of specifying the connection parameters directly on the Siddhi file.
+A parameter named ref is used to secure sensitive information in Siddhi applications that are deployed in the Streaming Integrator. For Siddhi applications that use storage technologies supported by [Carbon Data sources](configuring-data-sources), it is also possible to use Carbon data sources instead of specifying the connection parameters directly on the Siddhi file.
 
 ### Using the ref parameter
 

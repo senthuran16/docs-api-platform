@@ -1,3 +1,18 @@
+---
+title: "Working with transactions"
+description: "Learn how the Micro Integrator handles distributed and JMS transactions with the transaction mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/working-with-transactions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/working-with-transactions.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - working-with-transactions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Working with Transactions
 
 !!! Warning
@@ -29,14 +44,14 @@ subordinate relationship. These relationships are relevant only for a
 particular transaction.
 
 For an example that demonstrates how the [transaction
-mediator](../../reference/mediators/transaction-mediator/) can
+mediator](../../reference/mediators/transaction-mediator) can
 be used to manage distributed transactions , see [Transaction Mediator
 Example](https://wso2docs.atlassian.net/wiki/spaces/EI650/pages/35554191/Transaction+Mediator+Example).
 
 ### Java Message Service (JMS) transactions
 
 In addition to the [transaction
-mediator](../../reference/mediators/transaction-mediator/) ,
+mediator](../../reference/mediators/transaction-mediator) ,
 WSO2 Micro Integrator (WSO2 MI) also supports JMS transactions.
 
 !!! Note
@@ -215,7 +230,7 @@ The sample scenario can be depicted as follows:
 
     !!! Info
         Due to the asynchronous behavior of the [Send
-        Mediator](../../reference/mediators/send-mediator/) , you
+        Mediator](../../reference/mediators/send-mediator) , you
         cannot you use it with a http/https endpoint, but you can use it in
         asynchronous use cases, for example with another JMS as endpoint.
     

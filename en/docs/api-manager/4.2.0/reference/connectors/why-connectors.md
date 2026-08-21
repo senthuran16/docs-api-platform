@@ -1,3 +1,18 @@
+---
+title: "When to use integration connectors"
+description: "Explains why and when to use integration connectors for hybrid integration and building reusable modules."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/why-connectors/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/why-connectors.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - why-connectors
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "explanation"
+---
+
 # When to Use Integration Connectors
 
 A connector is a collection or a set of operations that can be used in an integration flow to access a specific service or a functionality. This can be a third-party HTTP API, remote SOAP service, a legacy system with a proprietary protocol, or even a local library function.
@@ -40,6 +55,6 @@ Operations of the WSO2 connector that you import are listed on the right-side pa
 
 ## What's Next?
 
-* [Learn how to write a connector from scratch](../../reference/connectors/develop-connectors/) 
+* [Learn how to write a connector from scratch](develop-connectors) 
 * Publication process for connectors 
-* [Connector best practices and Integration Studio](../../reference/connectors/connector-usage/) 
+* [Connector best practices and Integration Studio](connector-usage) 

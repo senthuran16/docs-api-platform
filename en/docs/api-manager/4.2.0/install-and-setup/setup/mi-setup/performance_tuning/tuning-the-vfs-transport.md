@@ -1,3 +1,18 @@
+---
+title: "Tuning the VFS transport"
+description: "Enable VFS file streaming in the Micro Integrator to reduce memory consumption when transferring large files."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/performance_tuning/tuning-the-vfs-transport/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/performance_tuning/tuning-the-vfs-transport.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Tuning the VFS Transport
 
 When you work with the [VFS transport](../../../../reference/synapse-properties/transport-parameters/vfs-transport-parameters), you might have a scenario where you need to send large files to a destination. If you use the normal VFS configuration, the memory consumption will be very high since WSO2 Micro Integrator builds the files that are within. The Micro Integrator provides VFS file streaming support to overcome this issue. With VFS file streaming, only the stream is

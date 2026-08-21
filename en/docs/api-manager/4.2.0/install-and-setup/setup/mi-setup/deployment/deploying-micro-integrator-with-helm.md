@@ -1,3 +1,18 @@
+---
+title: "Deploy the Micro Integrator on Kubernetes with Helm"
+description: "Deploy WSO2 Micro Integrator on Kubernetes using Helm resources, including the NGINX Ingress Controller setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/deploying-micro-integrator-with-helm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/deploying-micro-integrator-with-helm.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying the Micro Integrator on Kubernetes using Helm Resources
 
 Follow the instructions given below to deploy the Micro Integrator on Kubernetes (K8s) using Helm resources.

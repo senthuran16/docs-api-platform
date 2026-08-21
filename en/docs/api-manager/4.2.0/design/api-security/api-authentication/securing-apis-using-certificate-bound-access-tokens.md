@@ -1,3 +1,18 @@
+---
+title: "Securing APIs with certificate bound access tokens"
+description: "Configure API Manager to validate certificate bound (Holder of Key) JWT access tokens and invoke a secured API using mutual TLS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/securing-apis-using-certificate-bound-access-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/api-security/api-authentication/securing-apis-using-certificate-bound-access-tokens.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing APIs with Certificate Bound Access Tokens
 
 While OAuth 2.0 relies on bearer tokens for securing access to protected resources, bearer tokens require Transport Layer Security between an OAuth client and the resource server when presenting the access token to get access to a resource. In this security model, it is crucial to prevent access token leakage. Therefore, access token storage and transfer have to be done with care.
@@ -60,7 +75,7 @@ APIs in WSO2 API Manager can be secured using Certificate Bound Access Tokens, a
         To generate JWT tokens that include the client certificate thumbprint as the `cnf` claim, you can optionally configure the HTTP header name from which the client certificate is retrieved when invoking the token endpoint.
 
         !!! warning "Update Level 42"
-              This capability is available only in Update Level 42 and later releases. For more information, see [Updating WSO2 API Manager](../../../administer/product-administration/updating-wso2-api-manager).
+              This capability is available only in Update Level 42 and later releases. For more information, see [Updating WSO2 API Manager](../../../administer/updating-wso2-api-manager).
 
         Add the following configuration to the `<API-M_HOME>/repository/conf/deployment.toml` file, replacing `<header-name>` with your header:
 
@@ -86,7 +101,7 @@ APIs in WSO2 API Manager can be secured using Certificate Bound Access Tokens, a
 
      `https://<hostname>:9443/publisher`
 
-2. [Create an API](../../../design/create-api/create-rest-api/create-a-rest-api).     
+2. [Create an API](../../create-api/create-rest-api/create-a-rest-api).     
     
 ### Invoke an API secured with Certificate Bound Access Token using Postman
 

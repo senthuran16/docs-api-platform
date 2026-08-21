@@ -1,3 +1,18 @@
+---
+title: "Store and forward messages for guaranteed delivery"
+description: "Store request messages in a RabbitMQ broker and use a Message Processor to retrieve and deliver them for guaranteed delivery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/storing-and-forwarding-messages/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/integration-tutorials/storing-and-forwarding-messages.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - storing-and-forwarding-messages
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Store and Forward Messages for Guaranteed Delivery
 
 ## What you'll build

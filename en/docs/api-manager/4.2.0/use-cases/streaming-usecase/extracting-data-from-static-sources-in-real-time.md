@@ -1,3 +1,18 @@
+---
+title: "Extracting data from static sources in real time"
+description: "Extract data in real time from databases, files, and cloud storage in WSO2 Streaming Integrator using CDC, polling, and file sources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/extracting-data-from-static-sources-in-real-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/streaming-usecase/extracting-data-from-static-sources-in-real-time.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - extracting-data-from-static-sources-in-real-time
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Extracting Data from Static Sources in Real Time
 
 WSO2 Streaming Integrator can extract data from static sources such as databases, files and cloud storages in real-tme. 
@@ -121,9 +136,9 @@ Let's try out the example where you want to view the online bookings saved in a 
           people INT NULL,
           PRIMARY KEY (ref));`
           
-    4. [Start the Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview/#starting-streaming-integrator-tooling).
+    4. [Start the Streaming Integrator Tooling](../../develop/streaming-apps/streaming-integrator-studio-overview#starting-streaming-integrator-tooling).
     
-    5. Download the `cdc-mysql`Siddhi extension for Streaming Integrator Tooling. For instructions, see [Installing Siddhi Extensions](../../develop/streaming-apps/installing-siddhi-extensions/#installing-an-extension).
+    5. Download the `cdc-mysql`Siddhi extension for Streaming Integrator Tooling. For instructions, see [Installing Siddhi Extensions](../../develop/streaming-apps/installing-siddhi-extensions#installing-an-extension).
     
     6. In Streaming Integrator Tooling, open a new file. Copy and paste the following Siddhi application to it.
     
@@ -176,7 +191,7 @@ The following is a list of Siddhi extensions that support change data capturing 
 
 ### Supported mappers
 
-Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-message-formats).
+Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](transforming-data#transforming-message-formats).
 
 The mapper available for extracting data from databases is [Keyvalue](https://siddhi-io.github.io/siddhi-map-keyvalue/api/2.1.0/#sourcemapper).
 
@@ -464,7 +479,7 @@ define stream InStream (symbol string, message_id string);
 To transfer the content of the cloud storage to a file, add another stream with a sink of the `file` type as shown in the example below.
 
 !!! tip
-    To learn more about publishing data to files, see [Loading and Writing Data](../../use-cases/streaming-usecase/loading-and-writing-date).
+    To learn more about publishing data to files, see [Loading and Writing Data](loading-and-writing-date).
 
 ```
 @sink(type = 'file', 
@@ -521,7 +536,7 @@ The following is a list of cloud platforms from which you can extract stored dat
 
 ### Supported mappers
 
-Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](../../use-cases/streaming-usecase/transforming-data/#transforming-message-formats).
+Mappers determine the format in which the event is received. For information about transforming events by changing the format in which the data is received/published, see [Transforming Data](transforming-data#transforming-message-formats).
 
 WSO2 Streaming Integrator supports the following mappers for the cloud-based storages from which it extracts data.
 

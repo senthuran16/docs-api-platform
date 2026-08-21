@@ -1,3 +1,18 @@
+---
+title: "Creating an integration project"
+description: "Explains how to create an integration project and sub-projects in WSO2 Integration Studio for building integration solutions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/create-integration-project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/create-integration-project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-integration-project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating an Integration Project
 
 An integration project consists of one or several project directories. These directories store the various artifacts that you create for your integration sequence. An integration project can be created as a Maven Multi Module (MMM) project by default. This enables you to add ESB Configs, Composite Exporter, Registry Resources, Connector Exporter, Docker Exporter, and Kubernetes Exporter as sub-modules to the project. 
@@ -8,7 +23,7 @@ An integration project is the recommended way of creating an “Integration Solu
 
 To create an integration project:
 
-1. [Download](https://wso2.com/integration/integration-studio/) and [install WSO2 Integration Studio](../../integrate/develop/wso2-integration-studio/).
+1. [Download](https://wso2.com/integration/integration-studio/) and [install WSO2 Integration Studio](wso2-integration-studio).
 
 2. Open WSO2 Integration Studio and click **New Integration Project** in the **Getting Started** view as shown below.
     <img src="../../../assets/img/integrate/new-project/new-integration-project.png" title="New Integration Project" width="700" alt="New Integration Project"/>
@@ -83,7 +98,7 @@ The following table lists out the available projects that can be associated with
     </tr>
     <tr>
         <td>Kubernetes Exporter</td>
-        <td>A Kubernetes Exporter allows you to deploy your integration solutions in a Kubernetes environment. This module allows you to package multiple integration projects and modules into a single Docker image. Also, a file named integration_cr.yaml is generated, which can be used to carry out Kubernetes deployments based on the <a href="../../../install-and-setup/setup/mi-setup/deployment/kubernetes_deployment/#ei-kubernetes-k8s-operator">k8s-ei-operator</a>. For more information on Kubernetes-specific project creation information, see <a href="../../../integrate/develop/create-kubernetes-project/#creating-the-kubernetes-project">Create Kubernetes Project</a>.</td>
+        <td>A Kubernetes Exporter allows you to deploy your integration solutions in a Kubernetes environment. This module allows you to package multiple integration projects and modules into a single Docker image. Also, a file named integration_cr.yaml is generated, which can be used to carry out Kubernetes deployments based on the <a href="../../../install-and-setup/setup/mi-setup/deployment/kubernetes_deployment/#using-the-k8s-operator">k8s-ei-operator</a>. For more information on Kubernetes-specific project creation information, see <a href="../../../integrate/develop/create-kubernetes-project/#creating-the-kubernetes-project">Create Kubernetes Project</a>.</td>
     </tr>
 </table>
 

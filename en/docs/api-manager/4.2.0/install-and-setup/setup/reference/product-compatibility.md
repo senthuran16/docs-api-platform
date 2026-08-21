@@ -1,3 +1,18 @@
+---
+title: "Product compatibility"
+description: "Reference the tested operating systems, JDKs, and other compatibility details for WSO2 API Manager 4.2.0 runtimes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/reference/product-compatibility/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/reference/product-compatibility.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Product Compatibility
 
 Given below are the compatibility details of the WSO2 API Manager (WSO2 API-M) 4.2.0 runtimes.
@@ -18,6 +33,7 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 |CentOS              | 7.4, 7.5     |
 |Rockyise Linux   | 9.3   |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **WSO2 API-M** runtime has been tested with the following JDKs:
@@ -48,6 +64,7 @@ The **WSO2 API-M** runtime is tested with the following databases:
     CREATE DATABASE <APIM_DATABASE_NAME> character set latin1;
     ```
 
+<a name="tested-wso2-products"></a>
 #### Tested WSO2 Products
 
 The following is a list of other WSO2 products that have been tested with WSO2 API Manager 4.2.0.
@@ -96,6 +113,7 @@ The **Micro Integrator** runtime is tested with the following operating systems:
 |MacOS               | 10.15      |
 |SUSE Linux          | 12         |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **Micro Integrator** runtime is tested with the following JDKs:
@@ -132,6 +150,7 @@ The **Streaming Integrator** runtime is tested with the following operating syst
 |Ubuntu              |16.04<br/>17.04<br/>18.04|
 |MacOS High Sierra   | |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **Streaming Integrator** runtime is tested with the following JDKS:

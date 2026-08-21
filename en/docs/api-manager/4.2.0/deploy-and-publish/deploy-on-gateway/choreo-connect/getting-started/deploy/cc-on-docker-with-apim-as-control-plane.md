@@ -1,3 +1,18 @@
+---
+title: "Deploy Choreo Connect on Docker Compose with API Manager"
+description: "Deploy Choreo Connect on Docker Compose with WSO2 API Manager as the Control Plane and deploy an API through the Publisher."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-apim-as-control-plane.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect on Docker Compose With WSO2 API Manager as a Control Plane
 
 Let's deploy an API on Choreo Connect, which running on Docker Compose, with WSO2 API Manager as the Control Plane.
@@ -8,7 +23,7 @@ Let's deploy an API on Choreo Connect, which running on Docker Compose, with WSO
 
     - Download the latest Choreo Connect release from [https://wso2.com/choreo/choreo-connect/](https://wso2.com/choreo/choreo-connect/) and extract it to a folder of your choice. The extracted folder will be referred to as `CHOREO-CONNECT_HOME` here onwards.
 
-    - This guide assumes that you have already started the WSO2 API Manager instance. If not, download the latest [release](https://wso2.com/api-manager/) and follow the steps [here](../../../../../get-started/api-manager-quick-start-guide/).
+    - This guide assumes that you have already started the WSO2 API Manager instance. If not, download the latest [release](https://wso2.com/api-manager/) and follow the steps [here](../../../../../get-started/api-manager-quick-start-guide).
 
 ## Step 1 - Find the APIM IP Address
 
@@ -58,4 +73,4 @@ docker-compose up -d
 
 ## Step 4 - Deploy the sample API via WSO2 API Manager
 
-Follow the instructions in [create and publish an API from API Manager](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/#step-3-create-and-publish-an-api-from-api-manager).
+Follow the instructions in [create and publish an API from API Manager](../quick-start-guide-docker-with-apim#step-4-create-and-publish-an-api-via-api-manager).

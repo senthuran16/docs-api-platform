@@ -1,3 +1,18 @@
+---
+title: "Secure endpoint with OAuth 2.0"
+description: "Secure an API endpoint with OAuth 2.0 by configuring an authorization grant type so the client obtains an access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/endpoints/endpoint-security/oauth-2.0/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/endpoints/endpoint-security/oauth-2.0.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure Endpoint with OAuth 2.0
 
 A secured endpoint is when you have access-protected resources. WSO2 API Manager supports Basic Authentication, Digest Authentication, and OAuth 2.0. They differ on how the credentials are communicated and how access is granted by the backend server.
@@ -16,7 +31,7 @@ The OAuth 2.0 Authorization Framework specification declares 4 grant-types to ob
 
 ## Securing an endpoint with OAuth 2.0 in WSO2 API Manager
 
-When you [create an API](../../../design/create-api/create-rest-api/create-a-rest-api) using the API Publisher, you can specify the production and sandbox endpoints of the API backend implementation via the **Endpoints** page.
+When you [create an API](../../create-api/create-rest-api/create-a-rest-api) using the API Publisher, you can specify the production and sandbox endpoints of the API backend implementation via the **Endpoints** page.
 
 Follow the instructions below to use OAuth 2.0 as the endpoint authorization type when using a secured endpoint and allow WSO2 API Manager to communicate with the backend to retrieve access tokens on behalf of the API.
 
@@ -25,7 +40,7 @@ Follow the instructions below to use OAuth 2.0 as the endpoint authorization typ
 2. Click the Endpoint Security symbol that corresponds to the endpoint that you want to secure with OAuth 2.0.
 
 <<<<<<< HEAD
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 =======
       [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 >>>>>>> upstream/doc-migration

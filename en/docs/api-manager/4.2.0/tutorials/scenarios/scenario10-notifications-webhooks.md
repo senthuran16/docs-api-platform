@@ -1,6 +1,21 @@
+---
+title: "Scenario 10 - notifications using WebHooks"
+description: "Tutorial on subscribing to a WebHooks API, registering a callback URL, and receiving HMAC-signed event notifications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario10-notifications-webhooks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/tutorials/scenarios/scenario10-notifications-webhooks.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario10-notifications-webhooks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 10 - Notifications Using WebHooks
 
-This is a tutorial that is part of a series and can be used as a standalone tutorial on how to work with notifications using WebHook. For more details on the scenario and general prerequisites, please see [the scenario overview page](../../tutorials/scenarios/scenario-overview).
+This is a tutorial that is part of a series and can be used as a standalone tutorial on how to work with notifications using WebHook. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview).
 
 **_Time to Complete : 5 minutes_**
 
@@ -70,4 +85,4 @@ To send a notification, you need to retrieve the callback URL for a topic from t
 
 ## What's next
 
-Try out the next scenario in the series, [GraphQL](../../tutorials/scenarios/scenario11-graphql).
+Try out the next scenario in the series, [GraphQL](scenario11-graphql).

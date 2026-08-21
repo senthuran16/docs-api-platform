@@ -1,3 +1,18 @@
+---
+title: "Configure Choreo Connect with Consul discovery"
+description: "Configure Choreo Connect with Consul service discovery on Kubernetes without a service mesh."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-discovery/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-service-discovery.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Choreo Connect with Consul Discovery (Without Service Mesh)
 
 As the number of services grows within your organization, you may have multiple nodes running the same service.
@@ -45,4 +60,4 @@ For instructions, see the [Consul official documentation](https://www.consul.io/
 
 ## Step 3 - Deploy the API
 
-You can use either WSO2 API Manager or APICTL to deploy APIs as described in [defining the endpoints](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/service-discovery-overview/#defining-the-endpoints).
+You can use either WSO2 API Manager or APICTL to deploy APIs as described in [defining the endpoints](service-discovery-overview#defining-the-endpoints).

@@ -1,10 +1,25 @@
+---
+title: "VM-based CI/CD for Micro Integrator"
+description: "Set up Jenkins jobs for Integration Project and Deployment Descriptor repositories to build and deploy Micro Integrator on a VM."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-vm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/deployment/mi-cicd-vm.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 There are two kinds of jobs in Jenkins that we need to maintain. One for the Integration project repositories. Another kind is for the Deployment Descriptor repositories. 
 
 [![VM based CI/CD for Micro Integrator](../../../../assets/img/deploy/mi-cicd-vm.png)](../../../../assets/img/deploy/mi-cicd-vm.png)
 
 #### Integration Project Build Job
 - We need to maintain one Jenkins job per Integration Project repository.
-- The Integration Project has to be a [Maven Multi Module project](../../../../integrate/develop/create-integration-project/#maven-multi-module-projects) and it has to contain one Composite Exporter module. By default, the sample scripts provided, supports one Exporter module. Users can customize it to support multiple Exporter modules per Integration Project.
+- The Integration Project has to be a [Maven Multi Module project](../../../../integrate/develop/create-integration-project#maven-multi-module-projects) and it has to contain one Composite Exporter module. By default, the sample scripts provided, supports one Exporter module. Users can customize it to support multiple Exporter modules per Integration Project.
 - The build phase of the job will build the Integration project and run the unit tests if a Unit test server, if configured.
 - The release phase of the job will publish the CApps to the Nexus repository and create a release tag in GitHub.
 
@@ -74,6 +89,7 @@ There are two kinds of jobs in Jenkins that we need to maintain. One for the Int
 16. You can repeat steps 13, 14 and 15 for the Staging and Prod environment.
 
 
+<a name="setting-up-jenkins-server"></a>
 ##### Setting up Jenkins Server
 
 1. Docker scripts for setting up a Jenkins environment are provided here. This will spin up a preconfigured Docker image. By default, 4 Jenkins jobs will be created. One project for the Integration project and three more for the environment descriptor repositories (dev, staging, prod). 
@@ -110,6 +126,7 @@ There are two kinds of jobs in Jenkins that we need to maintain. One for the Int
 9. After installing Jenkins, the jobs can be accessed via [http://localhost:8080/](http://localhost:8081/)
 
 
+<a name="setting-up-nexus-server"></a>
 ##### Setting up Nexus Server
 
 1. Docker scripts for setting up a Nexus environment are provided here. This will spin up a preconfigured Docker image. This Nexus container will be used to host the Carbon applications for different versions. The default repository is named as ‘Integration’
@@ -136,6 +153,7 @@ There are two kinds of jobs in Jenkins that we need to maintain. One for the Int
 
 7. After installing nexus, the repository browser can be accessed via [http://localhost:8081/](http://localhost:8081/) . 
 
+<a name="setting-up-synapse-unit-testing-server"></a>
 ##### Setting up Synapse Unit testing server
 
 If you have written Synapse unit tests for your Integration project, you can run them during the Jenkins build.

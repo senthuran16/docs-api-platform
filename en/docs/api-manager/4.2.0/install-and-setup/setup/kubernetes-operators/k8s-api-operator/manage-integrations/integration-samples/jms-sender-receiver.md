@@ -1,3 +1,18 @@
+---
+title: "K8s deployment sample 3: JMS Sender/Receiver"
+description: "Build a JMS sender and receiver integration in WSO2 Integration Studio and deploy it to Kubernetes using the K8s API Operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/jms-sender-receiver/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-samples/jms-sender-receiver.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # K8s Deployment Sample 3: JMS Sender/Receiver
 
 Let's define a JMS (sender and receiver) scenario using WSO2 Micro Integrator and deploy it on your Kubernetes environment.
@@ -7,7 +22,7 @@ Let's define a JMS (sender and receiver) scenario using WSO2 Micro Integrator an
 -   Install and set up [WSO2 Integration Studio](../../../../../../integrate/develop/installing-wso2-integration-studio).
 -   Install a [Kubernetes](https://kubernetes.io/docs/setup/) cluster and **v1.11+** client. Alternatively, you can [run Kubernetes locally via Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/).
 -   Install [Docker](https://docs.docker.com/).
--   Install the [Kubernetes API Operator](../../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/install).
+-   Install the [Kubernetes API Operator](../../install).
 
 -   Deploy an ActiveMQ pod inside your Kubernetes cluster.
 
@@ -279,7 +294,7 @@ Run the `docker image ls` command to verify that the Docker image is created.
 ## Step 4 - Deploy the solution in K8s
 
 !!! Info
-    **Before you begin**, the [API Kubernetes Operator](../../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/install) should be installed in your Kubernetes environment.
+    **Before you begin**, the [API Kubernetes Operator](../../install) should be installed in your Kubernetes environment.
 
 Follow the steps given below:
 
@@ -293,7 +308,7 @@ Follow the steps given below:
 When the integration is successfully deployed, it should create the `jms-example` integration, `jms-example-deployment`, `jms-example-service`, and `ei-operator-ingress` as follows:
 
 !!! Tip
-    The `ei-operator-ingress` is not created if you have [disabled the ingress controller](../../../../../../install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-integrations/integration-deployments/#disable-ingress-controller-creation).
+    The `ei-operator-ingress` is not created if you have [disabled the ingress controller](../integration-deployments#disable-ingress-controller-creation).
 
 ```bash
 kubectl get integration

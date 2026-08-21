@@ -1,3 +1,18 @@
+---
+title: "Requeue RabbitMQ messages with a delay on error"
+description: "Requeue failed RabbitMQ messages with a delay while preserving message order when backend delivery fails."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/requeue-msgs-with-errors-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/rabbitmq_examples/requeue-msgs-with-errors-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Requeue a message preserving the message order with a delay in case of error
 
 This sample demonstrates how WSO2 Micro Integrator can ensure guaranteed delivery of messages by requeueing messages when an error occurs during delivery. That is, the Micro Integrator can be configured to requeue messages to a RabbitMQ queue when the delivery fails. 
@@ -48,12 +63,12 @@ See the instructions on how to [build and run](#build-and-run) this example.
 
 ## Build and run
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) with the configurations given above.
 4. Enable the RabbitMQ sender and receiver in the Micro-Integrator from the deployment.toml. Refer the 
  [configuring RabbitMQ documentation](../../../install-and-setup/setup/mi-setup/brokers/configure-with-rabbitmq) for more information.
-5. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+5. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 6. Make the `http://localhost:8280/students` endpoint unavailable temporarily. 
 7. Make sure you have a RabbitMQ broker instance running.
 8. Publish a message to the `student-registration` queue.

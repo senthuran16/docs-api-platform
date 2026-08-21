@@ -1,3 +1,18 @@
+---
+title: "Network and OS level performance tuning"
+description: "Configure network and OS-level parameters, such as TCP connection settings, to optimize Micro Integrator performance."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/performance_tuning/network_os_performance/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/install-and-setup/setup/mi-setup/performance_tuning/network_os_performance.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Network and OS Level Performance Tuning
 
 When it comes to performance, the OS that the server runs plays an

@@ -1,3 +1,18 @@
+---
+title: "Routing based on message headers"
+description: "Route a request message to different mediation sequences based on the value of a message header."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/routing_examples/routing_based_on_headers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/examples/routing_examples/routing_based_on_headers.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - routing_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Routing Based on Message Headers
 
 This example scenario uses an inventory of stocks as the back-end service. A proxy service is configured in the Micro Integrator to use separate mediation sequences for processing request messages with different **message headers**. 
@@ -86,10 +101,10 @@ Listed below are the synapse configurations for implementing this scenario. See 
 
 Create the artifacts:
 
-1. [Set up WSO2 Integration Studio](../../../integrate/develop/installing-wso2-integration-studio).
-2. [Create an integration project](../../../integrate/develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
-3. Create the [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service) and [mediation sequences](../../../integrate/develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
-4. [Deploy the artifacts](../../../integrate/develop/deploy-artifacts) in your Micro Integrator.
+1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio).
+2. [Create an integration project](../../develop/create-integration-project) with an <b>ESB Configs</b> module and an <b>Composite Exporter</b>.
+3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service) and [mediation sequences](../../develop/creating-artifacts/creating-reusable-sequences) with the configurations given above.
+4. [Deploy the artifacts](../../develop/deploy-artifacts) in your Micro Integrator.
 
 Set up the back-end service:
 

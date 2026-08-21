@@ -1,3 +1,18 @@
+---
+title: "Redis connector reference"
+description: "Reference for the redis.init operation and connection parameters of Redis connector version 1.0.1."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/redis-connector/1.0.1/redis-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/redis-connector/1.0.1/redis-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - redis-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Redis Connector Reference
 
 To use the Redis connector, add the <redis.init> element in your configuration before carrying out any other Redis operations. 

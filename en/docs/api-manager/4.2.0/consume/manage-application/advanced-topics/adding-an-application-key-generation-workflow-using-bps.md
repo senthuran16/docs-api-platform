@@ -1,8 +1,23 @@
+---
+title: "Adding an application key generation workflow"
+description: "Attach a custom approval workflow to application key generation in WSO2 API Manager using WSO2 Enterprise Integrator's Business Process Server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/consume/manage-application/advanced-topics/adding-an-application-key-generation-workflow-using-bps.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding an Application Key Generation Workflow
 
 This section explains as to how you can attach a custom workflow to the **application registration** operation in the API Manager. 
 
-[Application creation](../../../consume/manage-application/advanced-topics/adding-an-application-creation-workflow) and **Application registration** are different workflows. After an application is created, you can subscribe to available APIs, but you get the consumer key/secret and access tokens only after registering the application. There are two types of registrations with regard to an application: production and sandbox. The following are the situations in which you need to change the default application registration workflow:
+[Application creation](adding-an-application-creation-workflow) and **Application registration** are different workflows. After an application is created, you can subscribe to available APIs, but you get the consumer key/secret and access tokens only after registering the application. There are two types of registrations with regard to an application: production and sandbox. The following are the situations in which you need to change the default application registration workflow:
 
 -  To only issue sandbox keys when creating production keys is deferred until testing is complete.
 -  To restrict untrusted applications from creating production keys. You allow only the creation of sandbox keys.
@@ -81,7 +96,7 @@ This section explains as to how you can attach a custom workflow to the **applic
 
 
         !!! note
-            MySQL is used to configure the datasources in this documentation. You can configure this based on the database that you are using. For more information, see the [Working with Database](../../../install-and-setup/setting-up-databases/overview/).
+            MySQL is used to configure the datasources in this documentation. You can configure this based on the database that you are using. For more information, see the [Working with Database](../../../install-and-setup/setup/setting-up-databases/overview).
 
 
         b. Change the datasource to point the WSO2UM\_DB by changing the realm configuration in the `<API-M_HOME>/repository/conf/user-mgt.xml` file as shown below.
@@ -116,7 +131,7 @@ This section explains as to how you can attach a custom workflow to the **applic
 ## Step 1 - Configure the Business Process server
 
 1.  Download [WSO2 Enterprise Integrator](https://wso2.com/enterprise-integrator/6.5.0).
-2.  Set an offset of 2 to the default EI port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset/).
+2.  Set an offset of 2 to the default EI port in the `<EI_HOME>/wso2/business-process/conf/carbon.xml` file. This prevents port conflicts that occur when you start more than one WSO2 product on the same server. For more information, see [Changing the Default Ports with Offset](../../../install-and-setup/setup/deployment-best-practices/changing-the-default-ports-with-offset).
 
     ``` java
     <Offset>2</Offset>
@@ -234,7 +249,7 @@ First, enable the application registration workflow.
 3.  Sign in to the API Developer Portal (<https://localhost:9443/devportal>) as a Developer Portal user and open the application with which you subscribed to the API.
 
     !!! note
-        If you do not have an API already created and an Application subscribed to it, follow [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api/), [Publish an API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api/), and [Subscribe to an API](../../../consume/manage-subscription/subscribe-to-an-api) to create an API and subscribe to it.
+        If you do not have an API already created and an Application subscribed to it, follow [Create a REST API](../../../design/create-api/create-rest-api/create-a-rest-api), [Publish an API](../../../deploy-and-publish/publish-on-dev-portal/publish-an-api), and [Subscribe to an API](../../manage-subscription/subscribe-to-an-api) to create an API and subscribe to it.
 
 
 4.  Click **Applications**, **Production Keys**, and **Generate Keys**.

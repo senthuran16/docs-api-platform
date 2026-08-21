@@ -1,6 +1,21 @@
+---
+title: "Log mediator"
+description: "Reference for the Log mediator syntax and parameters used to log mediated messages at different log categories."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/log-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/mediators/log-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - log-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Log Mediator
 
-The **Log mediator** is used to log mediated messages. For more information on logging, see [Monitoring Logs](../../observe/micro-integrator/classic-observability-logs/monitoring-logs/).
+The **Log mediator** is used to log mediated messages. For more information on logging, see [Monitoring Logs](../../observe/micro-integrator/classic-observability-logs/monitoring-logs).
 
 !!! Info
 	The Log mediator is a [conditionally](../../concepts/message-processing-units/#classification-of-mediators) [content aware](../../concepts/message-processing-units/#classification-of-mediators) mediator.

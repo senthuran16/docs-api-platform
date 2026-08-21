@@ -1,3 +1,18 @@
+---
+title: "Publish custom attributes with analytics"
+description: "Build a custom analytics data provider JAR to publish request headers, response headers, and trailers with Choreo Connect analytics events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/analytics/publish-custom-analytics-attributes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/analytics/publish-custom-analytics-attributes.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publish Custom Attributes With Analytics
 
 Choreo Connect provides default set of attributes with the analytics data when an API invocation happens. In addition to that, users
@@ -14,7 +29,7 @@ You need to create a new `Java Maven` project to obtain this JAR.
 
 There is an existing sample project available [here](https://github.com/wso2/product-microgateway/tree/main/samples/analytics-custom-data-provider).
 If you wish to use that sample instead of developing the sample from scratch, you can ignore the steps of creating
-the sample and start from [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/analytics/publish-custom-analytics-attributes/#build-the-project-jar-addition-to-the-enforcer).
+the sample and start from [here](publish-custom-analytics-attributes#build-the-project-jar-addition-to-the-enforcer).
 
 ### Configuring the pom.xml file
 
@@ -81,7 +96,7 @@ Therefore, by processing it you can obtain the required headers.
 ## Creating The Custom Reporter JAR to log analytics data
 
 1. In order to log the custom attributes for the event occurrences, you need to add the Custom Reporter JAR to the `dropins` folder.
-   You can follow the `Step 1.1` explained [here](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics/#step-11-compile-the-reporter-implementation})
+   You can follow the `Step 1.1` explained [here](../configure-analytics#step-11-configure-the-configtoml-file)
    to obtain the JAR. Similar to the above after obtaining the JAR mount it to the `enforcer/dropins` folder.
 
     1. Configure the `log4j2.properties` file with the following configurations.

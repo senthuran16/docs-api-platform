@@ -1,11 +1,26 @@
+---
+title: "Enforce rate limiting and resource access policies"
+description: "Enforce a rate limiting policy on an API and verify that resource access is throttled according to the subscribed tier."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/rate-limiting/enforce-throttling-and-resource-access-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/rate-limiting/enforce-throttling-and-resource-access-policies.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - enforce-throttling-and-resource-access-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Enforce Rate Limiting and Resource Access Policies
 
-**Rate limiting** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of rate limiting in WSO2 API Manager (WSO2 API-M), see [rate limiting tiers](../../design/rate-limiting/setting-throttling-limits/).
+**Rate limiting** allows you to limit the number of hits to an API during a given period, typically to protect your APIs from security attacks and your backend services from overuse, regulate traffic according to infrastructure limitations and to regulate usage for monetization. For information on different levels of rate limiting in WSO2 API Manager (WSO2 API-M), see [rate limiting tiers](setting-throttling-limits).
 
 !!! note
     This tutorial uses the `PizzaShack` API, which has  GET and POST methods to access it and a rate limiting policy enforced.
 
-    **Before you begin** , follow the [Create and Publish an API](../../design/create-api/create-rest-api/create-a-rest-api) to create and publish the `PizzaShack` API and then the [Subscribe to an API](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/) to subscribe to the API using the `Bronze` rate limiting tier.
+    **Before you begin** , follow the [Create and Publish an API](../create-api/create-rest-api/create-a-rest-api) to create and publish the `PizzaShack` API and then the [Subscribe to an API](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console) to subscribe to the API using the `Bronze` rate limiting tier.
 
 
 After you created, published, and subscribed to the API, let's see how the API Gateway enforces rate limiting and resource access policies to the API.

@@ -1,3 +1,18 @@
+---
+title: "Jira connector overview"
+description: "Learn how the Jira connector views, updates, and works with issues and filters through the Jira REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/jira-connector/jira-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/jira-connector/jira-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - jira-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Jira Connector Overview
 
 The JIRA Connector allows you to connect to JIRA, which is an online issue-tracking database. The connector uses the JIRA REST API to connect to JIRA, view and update issues, work with filters, and more.
@@ -14,9 +29,9 @@ For older versions, see the details in the connector store.
 
 ## Email Connector documentation
 
-* **[Jira Connector Example](../../../reference/connectors/jira-connector/jira-connector-example)**: This example explains how to use the Jira Connector to create new issues and to get existing issues from Jira.
+* **[Jira Connector Example](jira-connector-example)**: This example explains how to use the Jira Connector to create new issues and to get existing issues from Jira.
 
-* **[Jira Connector Reference](../../../reference/connectors/jira-connector/jira-connector-config)**: This documentation provides a reference guide for the Jira connector.
+* **[Jira Connector Reference](jira-connector-config)**: This documentation provides a reference guide for the Jira connector.
 
 ## How to contribute
 

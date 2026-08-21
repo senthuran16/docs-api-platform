@@ -1,3 +1,18 @@
+---
+title: "Quick start guide"
+description: "Start Choreo Connect with WSO2 API Manager as the Control Plane, deploy an API via Publisher, and invoke it with an access token."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/quick-start-guide-docker-with-apim.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide
 
 Let's start Choreo Connect with a WSO2 API Manager instance which will be acting as the Control Plane, deploy an API via Publisher, and invoke the API with an Access Token from Developer Portal.
@@ -15,15 +30,15 @@ Let's start Choreo Connect with a WSO2 API Manager instance which will be acting
 
     The Docker Compose based deployment option explained here is ***only for tryout purposes.*** This method is ***not recommended for production deployments***. For production deployments, you can use the following.
 
-    - Kubernetes based Choreo Connect deployment with [Helm artifacts](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/) or [YAML artifacts](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane/)
-    - [Production Deployment Guideline](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/) for Choreo Connect 
+    - Kubernetes based Choreo Connect deployment with [Helm artifacts](deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts) or [YAML artifacts](deploy/cc-on-kubernetes-with-apim-as-control-plane)
+    - [Production Deployment Guideline](../production-deployment-guideline) for Choreo Connect 
 
     **Production Deployments - API Manager**
 
     The Docker Compose files referred in this guide are to deploy API Manager with ***basic configurations***. They are the docker-compose scripts ***provided with the Choreo Connect distribution*** and are only meant for tryout purposes. In order to deploy WSO2 API Manager in production grade, you can use the following. 
     
     - Docker setup artifacts from the [API Manager page](https://wso2.com/api-manager/)
-    - [Production Deployment Guideline](../../../../install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/#common-guidelines-and-checklist) for API Manager
+    - [Production Deployment Guideline](../../../../install-and-setup/setup/deployment-best-practices/production-deployment-guidelines#production-deployment-checklist) for API Manager
 
 ### Step 1 - Download and extract the Choreo Connect distribution .zip file
 
@@ -103,7 +118,7 @@ Let's start Choreo Connect with a WSO2 API Manager instance which will be acting
 
     !!! tip
 
-        When invoking the API, this Internal Key authentication token will be included in the header `Internal-Key`. To learn more, click [Internal Key](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/internal-key-authentication/). 
+        When invoking the API, this Internal Key authentication token will be included in the header `Internal-Key`. To learn more, click [Internal Key](../security/api-authentication/internal-key-authentication). 
 
 3. Select one of the listed HTTP methods. Click **Try it out** and then click **Execute** to invoke the API.
 
@@ -134,7 +149,7 @@ You can follow the next few steps to get an idea about API Subscriptions, Applic
     [![Generate production keys](../../../../assets/img/learn/generate-keys-production.png)](../../../../assets/img/learn/generate-keys-production.png)
 
     !!! tip
-        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more information, see [Maintaining Separate Production and Sandbox Gateways](../../../../deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways/#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
+        To generate keys for the Sandbox endpoint, go to the **Sandbox Keys** tab. For more information, see [Maintaining Separate Production and Sandbox Gateways](../../api-gateway/maintaining-separate-production-and-sandbox-gateways#multiple-gateways-to-handle-production-and-sandbox-requests-separately).
 
 6. Copy the generated access token before proceeding to the next step.
 
@@ -174,7 +189,7 @@ __Congratulations!__ You have successfully created your first API, subscribed to
 
 ## See also
 
-- [Choreo Connect Overview](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview/)
-- [Supported Features](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/supported-features/)
-- [Deployment Options](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/)
-- [Production Deployment Guide](../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/production-deployment-guideline/)
+- [Choreo Connect Overview](choreo-connect-overview)
+- [Supported Features](supported-features)
+- [Deployment Options](deploy/cc-deploy-overview)
+- [Production Deployment Guide](../production-deployment-guideline)

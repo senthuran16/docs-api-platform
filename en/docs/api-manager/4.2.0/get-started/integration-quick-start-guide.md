@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - integration"
+description: "Run a simple integration use case locally with WSO2 Micro Integrator to get started with integration development."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/integration-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/get-started/integration-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - integration-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "quickstart"
+---
+
 # Quick Start Guide - Integration
 
 Let's get started with WSO2 Micro Integrator by running a simple integration use case in your local environment. 
@@ -7,13 +21,13 @@ Let's get started with WSO2 Micro Integrator by running a simple integration use
 1. Install Java SE Development Kit (JDK) version 11 and set the `JAVA_HOME` environment variable.
 
     !!! Info
-        For information on the compatible JDK types and setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-api-m-runtime/).
+        For information on the compatible JDK types and setting the `JAVA_HOME` environment variable for different operating systems, see [Setup and Install](../install-and-setup/install/installing-the-product/installing-api-m-runtime).
 
 2. Go to the [WSO2 Micro Integrator web page](https://wso2.com/integration/micro-integrator/#), click **Download**, and then click **Zip Archive** to download the Micro Integrator distribution as a ZIP file.
 3. Optionally, navigate to the [API Manager Tooling web page](https://wso2.com/api-management/tooling/), and download WSO2 Integration Studio.
 
     !!! Info
-        For more information, see the [installation instructions](../install-and-setup/install-and-setup-overview/#installing_1).
+        For more information, see the [installation instructions](../install-and-setup/install-and-setup-overview#installing_1).
 
 4. Download the [sample files](../assets/attachments/quick-start-guide/mi-qsg-home.zip). From this point onwards, let's refer to this directory as `<mi-qsg-home>`.
 5. Download [curl](https://curl.haxx.se/) or a similar tool that can call an HTTP endpoint.
@@ -385,6 +399,6 @@ The REST API you deployed in the Micro Integrator is an **integration service** 
 ## What's next?
 
 - [Develop your first integration solution](../integrate/develop/integration-development-kickstart).
-- Try out the **examples** available in the [Integrate section of our documentation](../integrate/integration-overview/).
-- Try out the entire developer guide on [Exposing an Integration Service as a Managed API](../tutorials/integration-tutorials/service-catalog-tutorial/).
-- Try out the entire developer guide on [Exposing an Integration SOAP Service as a Managed API](../tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services/).
+- Try out the **examples** available in the [Integrate section of our documentation](../integrate/integration-overview).
+- Try out the entire developer guide on [Exposing an Integration Service as a Managed API](../tutorials/integration-tutorials/service-catalog-tutorial).
+- Try out the entire developer guide on [Exposing an Integration SOAP Service as a Managed API](../tutorials/integration-tutorials/service-catalog-tutorial-for-proxy-services).

@@ -1,3 +1,18 @@
+---
+title: "Mutual SSL authentication"
+description: "Enable Mutual SSL certificate-based authentication for APIs invoked through the Choreo Connect Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/mutual-ssl-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/mutual-ssl-authentication.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Mutual SSL Authentication
 
 Certificate-based authentication on the Choreo Connect is authenticating a request based on a digital certificate, before granting access to the backend. By way of certificate-based authentication, the Choreo Connect supports mutual SSL. In mutual SSL, both parties the client and the server identifies themselves in order to create a successful SSL connection. Mutual SSL allows a client to make a request without a username and password, provided that the server is aware of the client's certificate.
@@ -48,16 +63,16 @@ Certificate-based authentication on the Choreo Connect is authenticating a reque
         </table>
           
 
-{!includes/design/create-mtls-api.md!}
+--8<-- "api-manager/4.2.0/includes/design/create-mtls-api.md"
 
 !!! Important
     To invoke mTLS enabled APIs that deployed in Choreo Connect, the CA certificates of the client's public certificates should be added as trusted certificates to the router.
 
-      - [Add a Certificate to Choreo Connect Router as a Trusted Certificate](../../../../../deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/backend-certificates/#add-a-certificate-to-choreo-connect-router-as-a-trusted-certificate)
+      - [Add a Certificate to Choreo Connect Router as a Trusted Certificate](../tls/backend-certificates#add-a-certificate-to-choreo-connect-router-as-a-trusted-certificate)
 
     If you need to change the location of the volume mount, the `trustedCertPath` value under the `[router.downstream.tls]` in config.toml should also be changed.
 
-{!includes/design/invoke-mtls-api-using-postman.md!}
+--8<-- "api-manager/4.2.0/includes/design/invoke-mtls-api-using-postman.md"
 
 ### Invoke an API secured with Mutual SSL using cURL
 

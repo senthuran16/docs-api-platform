@@ -1,3 +1,18 @@
+---
+title: "Quick tour - WSO2 integration studio"
+description: "Introduces the WSO2 Integration Studio workbench and the Getting Started view for creating integration projects."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/wso2-integration-studio/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/integrate/develop/wso2-integration-studio.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - wso2-integration-studio
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Quick Tour - WSO2 Integration Studio
 
 WSO2 Integration Studio is your development environment for designing, developing, debugging, and testing integration solutions. As an integration developer, you can execute all the phases of the development lifecycle using this tool. When your integration solutions are production-ready, you can easily push the artifacts to your continuous integration/continuous deployment pipeline.
@@ -34,7 +49,7 @@ To get started, you need to first create the required project directories. Alter
         </th>
         <td>
             <p>
-                The <b>Getting Started</b> view lists a set of sample projects and integration artifacts that represent common integration scenarios. You can use these to explore WSO2 Micro Integrator and to try out common integration use cases. The <a href="#sample-guide">sample guide</a> will provide instructions on how to run the samples.
+                The <b>Getting Started</b> view lists a set of sample projects and integration artifacts that represent common integration scenarios. You can use these to explore WSO2 Micro Integrator and to try out common integration use cases. The <a href="#template-guide">sample guide</a> will provide instructions on how to run the samples.
             </p>
             <img src="../../../assets/img/integrate/workbench/getting-started-templates.jpg" width="800">
         </td>
@@ -102,7 +117,7 @@ The Console view displays a variety of console types depending on the type of de
 
 WSO2 Integration Studio is shipped with an embedded Micro Integrator server, which allows developers to deploy and run integration artifacts during the development phase. To deploy the artifacts and to run the embedded Micro Integrator, right-click the composite application project (which includes your artifacts) and click **Export Project Artifacts and Run**.
 
-Find out more about [using the embedded Micro Integrator](../../integrate/develop/using-embedded-micro-integrator).
+Find out more about [using the embedded Micro Integrator](using-embedded-micro-integrator).
 
 <img src="../../../assets/img/integrate/create_project/testing_export_run.png" width="500">
 
@@ -110,7 +125,7 @@ Find out more about [using the embedded Micro Integrator](../../integrate/develo
 
 WSO2 Integration Studio is shipped with mediation debugging capabilities, which allows developers to debug an integration project using the tool. The embedded Micro Integrator server and debugging capabilities enable developers to comprehensively test, debug, and improve integration solutions before the artifacts are released to a production environment.
 
-You need to select your integration project in the project explorer and go to **Run -> Debug** as shown below. Find out more about [mediation debugging](../../integrate/develop/debugging-mediation).
+You need to select your integration project in the project explorer and go to **Run -> Debug** as shown below. Find out more about [mediation debugging](debugging-mediation).
 
 <img src="../../../assets/img/integrate/workbench/debugging-capabilities.png" width="500">
 
@@ -128,6 +143,6 @@ of the toolbar are also editor-specific.
 
 ## What's Next?
 
--   See [Installing WSO2 Integration Studio](../../integrate/develop/installing-wso2-integration-studio) for installation instructions.
--   See [Working with WSO2 Integration Studio](../../integrate/develop/working-with-wso2-integration-studio) for more information on how to setup and use tooling.
--   See [Troubleshooting WSO2 Integration Studio](../../integrate/develop/troubleshooting-wso2-integration-studio) for information on troubleshooting errors you may run into while using WSO2 Integration Studio.
+-   See [Installing WSO2 Integration Studio](installing-wso2-integration-studio) for installation instructions.
+-   See [Working with WSO2 Integration Studio](working-with-wso2-integration-studio) for more information on how to setup and use tooling.
+-   See [Troubleshooting WSO2 Integration Studio](troubleshooting-wso2-integration-studio) for information on troubleshooting errors you may run into while using WSO2 Integration Studio.

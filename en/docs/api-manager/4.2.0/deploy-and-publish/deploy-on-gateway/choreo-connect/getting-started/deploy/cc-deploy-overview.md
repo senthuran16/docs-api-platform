@@ -1,3 +1,18 @@
+---
+title: "Choreo connect deployment options"
+description: "Compare the Docker Compose and Kubernetes options for deploying Choreo Connect as a standalone or control-plane-connected Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-deploy-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Choreo Connect Deployment Options
 
 Choreo Connect is a specialized form of WSO2 API Gateway, and is a lightweight gateway distribution that can be used to deploy a single API or multiple APIs. You can deploy Choreo Connect using one of the following options.

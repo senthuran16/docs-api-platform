@@ -1,3 +1,18 @@
+---
+title: "Block subscription to an API"
+description: "Block and unblock subscriptions to an API in WSO2 API Manager, fully or for production access only, to disable access for an application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/advanced-topics/block-subscription-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/advanced-topics/block-subscription-to-an-api.md
+tags:
+  - api-manager
+  - design
+  - advanced-topics
+  - block-subscription-to-an-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Block Subscription to an API
 
 An API publisher can **block subscription** to an API as a way of disabling access to it and managing its usage and monetization. Subscription blocking can be temporary or permanent. There is an unblocking facility to allow API invocations again.
@@ -5,7 +20,7 @@ An API publisher can **block subscription** to an API as a way of disabling acce
 You can block APIs by subscription by blocking access to a respective user to access a specific API that they had subscribed to using a particular application. If a user has subscribed to two APIs, using the same application, and you block access to only one of the APIs, the respective user can continue to invoke the other API that they had previously subscribed to using the same application. In addition, the user can continue to access the same API subscribed to using different applications.
 
 !!! info
-    API level subscription blocking is useful to control only the subscriptions created for a specific API by a user. If you want to block all API requests from a specific application/user/specific IP address or to a specific API, you can use [request denylisting](../../design/rate-limiting/access-control/#denying-requests).
+    API level subscription blocking is useful to control only the subscriptions created for a specific API by a user. If you want to block all API requests from a specific application/user/specific IP address or to a specific API, you can use [request denylisting](../rate-limiting/access-control#denying-requests).
 
 
 Blocking can be done at two levels:
@@ -23,9 +38,9 @@ Blocking can be done at two levels:
   <p class="admonition-title">Note</p>
   <p>See the following topics for the descriptions on the concepts that you need to know when you block subscriptions to an API:
   <ul>
-    <li><a href="../../../getting-started/key-concepts/#application">Applications</a></li>
-    <li><a href="../../../getting-started/key-concepts/#rate-limits">Rate Limiting</a></li>
-    <li> <a href="../../../getting-started/key-concepts/#access-token">Access tokens</a></li></ul>
+    <li><a href="../../../get-started/apim-architecture/#application">Applications</a></li>
+    <li><a href="../../../get-started/apim-architecture/#rate-limits">Rate Limiting</a></li>
+    <li> <a href="../../../get-started/apim-architecture/#access-token">Access tokens</a></li></ul>
     </p>
   </div> 
   </html>
@@ -42,7 +57,7 @@ Blocking can be done at two levels:
          <html>
          <div class="admonition tip"> 
          <p class="admonition-title">Tip</p>
-         <p>For more information, see [Create and Publish an API](../../design/create-api/create-rest-api/create-a-rest-api/).</p>
+         <p>For more information, see [Create and Publish an API](../create-api/create-rest-api/create-a-rest-api).</p>
          </div>
          </html>
          
@@ -70,7 +85,7 @@ Blocking can be done at two levels:
       <html>
       <div class="admonition tip"> 
       <p class="admonition-title">Tip</p>
-      <p>For more information, see  [Consume an API](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console/).</p>
+      <p>For more information, see  [Consume an API](../../consume/invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console).</p>
       </div>
       </html>
 

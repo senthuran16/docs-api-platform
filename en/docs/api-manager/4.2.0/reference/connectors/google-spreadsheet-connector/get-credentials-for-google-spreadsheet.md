@@ -1,3 +1,18 @@
+---
+title: "Get credentials for google spreadsheet"
+description: "Obtain the access token, client ID, client secret, and refresh token needed for the Google Spreadsheet connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/get-credentials-for-google-spreadsheet/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/google-spreadsheet-connector/get-credentials-for-google-spreadsheet.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - google-spreadsheet-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Get Credentials for Google Spreadsheet
 
 To obtain the Access Token, Client Id, Client Secret and Refresh Token, we need to follow the below steps. 

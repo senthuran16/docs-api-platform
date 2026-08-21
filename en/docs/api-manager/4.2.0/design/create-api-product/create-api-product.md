@@ -1,6 +1,20 @@
+---
+title: "Create an API Product"
+description: "Step-by-step guide to creating an API Product in API Manager by combining resources from multiple APIs, then deploying and publishing it."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api-product/create-api-product/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/design/create-api-product/create-api-product.md
+tags:
+  - api-manager
+  - design
+  - create-api-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create an API Product
 
-Let's create an API Product named customer leasing that includes resources from the Customer Info API & Leasing API, as discussed in the [previous example](../../design/create-api-product/api-product-overview/#how-it-works).
+Let's create an API Product named customer leasing that includes resources from the Customer Info API & Leasing API, as discussed in the [previous example](api-product-overview#how-it-works).
 
 1. Sign in to the API Publisher.
 
@@ -9,7 +23,7 @@ Let's create an API Product named customer leasing that includes resources from 
      (e.g., `https://localhost:9443/publisher`). 
 
 2. Create the following two APIs by [importing 
-the attached OpenAPI definition (a.k.a Swagger definition) files](../../design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/).
+the attached OpenAPI definition (a.k.a Swagger definition) files](../create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition).
 
       - Customer Info API - [customer-info-api.yaml](../../assets/attachments/learn/customer-info-api.yaml) 
 
@@ -147,13 +161,13 @@ the attached OpenAPI definition (a.k.a Swagger definition) files](../../design/c
 
      (e.g., `https://localhost:9443/devportal`). 
 
-     For more information on how to subscribe to an API, see [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api/).
+     For more information on how to subscribe to an API, see [Subscribe to an API](../../consume/manage-subscription/subscribe-to-an-api).
     
 
      <html>
       <div class="admonition note">
       <p class="admonition-title">Note</p>
       
-      <ul><li><p>API product versioning is available after WSO2 API Manager U2 update level 55 onwards. If you are using the latest U2 update level please refer [Create a New API Version](../../design/api-versioning/create-a-new-api-version/).</p></li></ul>
+      <ul><li><p>API product versioning is available after WSO2 API Manager U2 update level 55 onwards. If you are using the latest U2 update level please refer [Create a New API Version](../api-versioning/create-a-new-api-version).</p></li></ul>
       </div> 
      </html>

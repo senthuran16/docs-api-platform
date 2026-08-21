@@ -1,3 +1,18 @@
+---
+title: "Publishing HTTP requests and processing the responses"
+description: "Configure a Siddhi application to send sweet production events over HTTP, receive the response, and process it with Siddhi."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/http-request-response-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/use-cases/examples/streaming-examples/http-request-response-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publishing HTTP Requests and Processing the Responses
 
 ## Purpose:

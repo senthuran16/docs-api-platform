@@ -1,3 +1,18 @@
+---
+title: "Snowflake connector reference"
+description: "Reference for the connection configuration and operations available in the Snowflake connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/snowflake-connector/snowflake-connector-reference/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.2.0/reference/connectors/snowflake-connector/snowflake-connector-reference.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - snowflake-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Snowflake Connector Reference
 
 The following operations allow you to work with the Snowflake Connector. Click an operation name to see parameter details.
