@@ -1,3 +1,18 @@
+---
+title: "Using StreamingML kmeans for clustering"
+description: "Configure a Siddhi application that uses the StreamingML kmeans incremental function to cluster production events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/streaming-kmeans-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/streaming-kmeans-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using StreamingML Kmeans for Clustering
 
 ## Purpose

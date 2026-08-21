@@ -1,10 +1,25 @@
+---
+title: "Email connector overview"
+description: "Learn how the Email Connector lists, sends, and manages emails over IMAP, POP3, and SMTP protocols."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/email-connector/email-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/email-connector/email-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - email-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Email Connector Overview
 
 The Email Connector allows you to list, send emails and perform other actions such as mark email as read, mark email as deleted, delete email and expunge folder on different mailboxes using protocols IMAP, POP3 and SMTP.
 
 To see the available Email connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "Email".
 
-<img src="../../../assets/img/integrate/connectors/email-connector-store.png" title="Email Connector Store" width="200" alt="Email Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/email-connector-store.png" title="Email Connector Store" width="200" alt="Email Connector Store"/>
 
 ## Compatibility
 

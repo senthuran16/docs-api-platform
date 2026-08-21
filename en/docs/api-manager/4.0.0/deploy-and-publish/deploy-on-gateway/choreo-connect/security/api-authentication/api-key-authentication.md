@@ -1,3 +1,18 @@
+---
+title: "API key authentication"
+description: "Define, apply, generate, and invoke an API using API Key authentication for an API deployed on Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/api-key-authentication/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/api-key-authentication.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # API Key Authentication
 
 API Key Authentication in Choreo Connect is a simple authentication scheme that accepts a valid self-contained JWT token issued for accessing APIs. Since self-contained tokens can have all authorization information, the token processing time is fast and more efficient. The common practice is to have a short expiration time for self-contained access tokens.
@@ -104,7 +119,7 @@ curl -k -X GET "https://localhost:9095/petstore/v1/pet/1" -H  "accept: applicati
 
 Choreo Connect API Key Authentication supports API key restriction for IP address and HTTP referrer. 
 
-{!includes/design/additional-api-key.md!}
+--8<-- "api-manager/4.0.0/includes/design/additional-api-key.md"
 
 ## Configurations related to API Key
 

@@ -1,3 +1,18 @@
+---
+title: "Header mediator"
+description: "Reference for the Header mediator syntax and parameters used to set or remove SOAP and HTTP headers on a message."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/header-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/header-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - header-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Header Mediator
 
 The **Header Mediator** allows you to manipulate SOAP and HTTP headers.

@@ -1,10 +1,25 @@
+---
+title: "Configuring a user store"
+description: "Configure a file-based or LDAP user store for the Micro Integrator, including adding users and encrypting passwords."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/user_stores/setting_up_a_userstore.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a User Store
 
 A user store is a repository that stores user credentials (user names and passwords).
 
 ## Users in the Micro Integrator
 
-Find out about [user credentials in the Micro Integrator](managing_users.md#users-credentials-in-the-mi).
+Find out about [user credentials in the Micro Integrator](managing_users.md#user-credentials-in-the-mi).
 
 ## File-based user store (Default)
 
@@ -66,7 +81,7 @@ Follow the steps given below to connect the Micro Integrator to your LDAP user s
 				<code>connection_url</code>
 			</td>
 			<td>
-				The URL for connecting to the LDAP. If you are connecting over ldaps (secured LDAP), you need to import the certificate of the user store to the truststore (wso2truststore.jks by default). See the instructions on how to <a href="../security/importing_ssl_certificate.md">add certificates to the truststore</a>.
+				The URL for connecting to the LDAP. If you are connecting over ldaps (secured LDAP), you need to import the certificate of the user store to the truststore (wso2truststore.jks by default). See the instructions on how to <a href="../../security/importing_ssl_certificate.md">add certificates to the truststore</a>.
 			</td>
 		</tr>
 		<tr>
@@ -105,7 +120,7 @@ Follow the steps given below to connect the Micro Integrator to your LDAP user s
 		</tr>
 	</table>
 
-See the [complete list of parameters](../../../../reference/config-catalog-mi.md#ldap-user-store) you can configure for the ldap user store.
+See the [complete list of parameters](../../../../reference/config-catalog-mi.md#external-user-store) you can configure for the ldap user store.
 
 ## Configuring an RDBMS user store
 

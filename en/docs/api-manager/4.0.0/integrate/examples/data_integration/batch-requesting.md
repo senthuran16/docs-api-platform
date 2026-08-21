@@ -1,3 +1,18 @@
+---
+title: "Batch requesting"
+description: "Demonstrates how to send multiple IN-Only requests to a datasource using the batch requesting feature of a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/batch-requesting/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/batch-requesting.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Batch Requesting
 
 The batch requests feature allows you to send multiple (IN-Only)

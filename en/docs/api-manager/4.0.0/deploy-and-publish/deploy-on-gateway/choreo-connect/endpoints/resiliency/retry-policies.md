@@ -1,3 +1,18 @@
+---
+title: "Configuring retry policies in Choreo connect"
+description: "Reference the OpenAPI vendor extension fields used to configure endpoint level retry policies in Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/retry-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/resiliency/retry-policies.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Configuring Retry Policies in Choreo Connect
 
 The backend endpoint can be unavailable for a short period of time due to various reasons, such as due to the load or due to a transient error. Choreo Connect handles such scenarios by configuring a Retry Policy which would make the router retry the HTTP request on behalf of the client. You can configure a Retry Policy at the [endpoint level](#endpoint-level-retry-policy). In addition, you can set [Global Level Retry Policy Configurations](#global-level-retry-policy-configurations), which you can use to enforce limitations on the defined Endpoint Level Retry Policies.
@@ -56,7 +71,8 @@ For more information, see [x-envoy-max-retries]({{envoy_path}}/configuration/htt
 !!! note
     The Global Level Retry Policy Configurations are **applicable only when Endpoint Level Retry Policies are defined**. 
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 2. Use the following configurations to define the Global Level Retry Policy.
 

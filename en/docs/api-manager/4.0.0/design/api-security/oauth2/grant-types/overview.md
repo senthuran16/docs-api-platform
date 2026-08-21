@@ -1,3 +1,18 @@
+---
+title: "OAuth2 grant types"
+description: "Links to the OAuth2 grant types WSO2 API Manager supports for acquiring access tokens, including password, client credentials, and JWT grants."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/grant-types/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/grant-types/overview.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 #OAuth2 Grant Types
 
 

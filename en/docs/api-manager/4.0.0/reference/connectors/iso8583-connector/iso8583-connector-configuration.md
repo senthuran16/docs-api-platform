@@ -1,3 +1,18 @@
+---
+title: "Setting up ISO8583 connector"
+description: "Set up client libraries and a test server to configure the WSO2 ISO8583 connector for financial messaging."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/iso8583-connector/iso8583-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/iso8583-connector/iso8583-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - iso8583-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up ISO8583 Connector 
 
 ISO8583 is an international standard for financial transaction messaging protocol. It is the International Organization for Standardization standard for systems that exchange electronic transactions initiated by cardholders using payment cards.
@@ -24,4 +39,4 @@ If you use the [sample Java server program](https://github.com/wso2-docs/CONNECT
 
 The ISO8583 connector uses the jpos library, which is a third party library that provides a high-performance bridge between card messages generated at point of sale terminals, ATMs, and internal systems across the entire financial messaging network. The jposdef.xml file has the field definitions of standard ISO8583 messages. According to the field definitions, each ISO8583 message in XML format coming from the REST client is packed and sent to the test server. Therefore, you need to create a file called jposdef.xml (with the contents given [here](https://github.com/wso2-extensions/esb-connector-iso8583/blob/master/src/main/resources/jposdef.xml)) in the <PRODUCT_HOME> directory.
  
-Now you have connected to the test server. For more information, see [ISO8583 Connector Example](../ISO8583-connector/ISO8583-connector-example.md).
+Now you have connected to the test server. For more information, see [ISO8583 Connector Example](../iso8583-connector/iso8583-connector-example.md).

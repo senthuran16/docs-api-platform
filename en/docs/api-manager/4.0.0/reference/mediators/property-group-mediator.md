@@ -1,3 +1,18 @@
+---
+title: "Property group mediator"
+description: "Reference for the Property Group mediator, which sets or removes multiple message context properties as a single group."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-group-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-group-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-group-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Property Group Mediator
 
 The Property Group Mediator is similar to the [Property Mediator](property-mediator.md). It sets or removes properties on the message context flowing through synapse. However, unlike the Property mediator, the Property Group mediator handles multiple properties as a

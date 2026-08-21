@@ -1,3 +1,18 @@
+---
+title: "Working with reports"
+description: "Run a Ceridian Dayforce report and receive its results using the GET Reports connector operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/reporting/reports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/reporting/reports.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Reports
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve reports
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-reports"></a>
 #### Retrieving Reports
 We can use GET Reports operation with required parameters to find reports
 

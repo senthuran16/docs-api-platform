@@ -1,3 +1,18 @@
+---
+title: "Load balancing with message forwarding processor"
+description: "Configure the message forwarding processor to load balance stored messages across multiple backend endpoints."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/loadbalancing-with-message-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/loadbalancing-with-message-processor.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Load Balancing with Message Forwarding Processor
 This example demonstrates how the message forwarding processor handles load balancing.
 

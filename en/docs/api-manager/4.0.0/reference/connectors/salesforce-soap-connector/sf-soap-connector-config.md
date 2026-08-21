@@ -1,3 +1,18 @@
+---
+title: "Salesforce SOAP connector configuration"
+description: "Set up a Salesforce account and import the Salesforce certificate required to configure the Salesforce SOAP connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-soap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce SOAP Connector Configuration
 
 The Salesforce SOAP connector allows you to access the [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm?search_text=SOAP%20API%20Developer%20Guide) from an integration sequence. 

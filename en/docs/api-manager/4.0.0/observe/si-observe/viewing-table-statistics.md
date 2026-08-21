@@ -1,3 +1,18 @@
+---
+title: "Viewing table statistics"
+description: "View the Grafana dashboard that shows operation and latency statistics for Siddhi table operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/si-observe/viewing-table-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/si-observe/viewing-table-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-table-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing Table Statistics
 
 ![Table statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/table_statistics_dashboard.jpg)
@@ -6,7 +21,7 @@ This dashboard displays the following information for your Streaming Integrator 
 
 ## Table Statistics Summary Table
 
-![Table Statistics Summary](../../assets/img/streaming/table-statistics/table-statistics-summary.png)
+![Table Statistics Summary](../../assets/img/streaming/table-statistics.png/table-statistics-summary.png)
 
 This lists all the table operations defined in all the Siddhi applications in your Streaming Integrator server. The table displays the following for each operation:
 
@@ -25,12 +40,12 @@ This lists all the table operations defined in all the Siddhi applications in yo
    
 ## Latency
 
-![Table Latency](../../assets/img/streaming/table-statistics/table-latency.png)
+![Table Latency](../../assets/img/streaming/table-statistics.png/table-latency.png)
 
 This shows the latency of each table operation in your Streaming Integrator server.
 
 ## Throughput
 
-![Table Throughput](../../assets/img/streaming/table-statistics/table-throughput.png)
+![Table Throughput](../../assets/img/streaming/table-statistics.png/table-throughput.png)
 
 This shows the throughput of each table operation in your Streaming Integrator server.

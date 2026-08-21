@@ -1,3 +1,18 @@
+---
+title: "Maintaining logins and passwords"
+description: "Change super admin credentials, recover passwords, and customize login behavior in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/logins-and-passwords/maintaining-logins-and-passwords.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Maintaining Logins and Passwords
 
 The following section explains how you can change your credentials, recover your password, and customize your login.

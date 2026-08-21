@@ -1,3 +1,18 @@
+---
+title: "Switching from FTP listener to mail sender"
+description: "Configure a proxy service that receives messages via the FTP transport listener and forwards them by email."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_ftp_listener_to_mail_sender/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_ftp_listener_to_mail_sender.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from FTP Listener to Mail Sender
 
 This example demonstrates how WSO2 Micro Integrator receives messages through the FTP transport listener and forwards the messages through the mail transport sender.

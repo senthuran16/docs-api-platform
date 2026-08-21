@@ -1,5 +1,15 @@
 ---
-title: Monitoring WebSocket Access Logs - WSO2 API Manager 4.0.0
+title: "Monitoring WebSocket Access Logs - WSO2 API Manager 4.0.0"
+description: "Enable and configure WebSocket access logs and general debug logs in WSO2 API Manager to monitor and troubleshoot API invocations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/monitoring-websocket-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/monitoring-websocket-logs.md
+tags:
+  - api-manager
+  - observe
+  - monitoring-websocket-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Monitoring WebSocket Logs

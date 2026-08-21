@@ -1,3 +1,17 @@
+---
+title: "Troubleshooting WebSocket APIs"
+description: "Enable debug logging for WebSocket API traffic in API Manager by adding WebSocket-related loggers to the log4j2.properties file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/troubleshooting/troubleshooting-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/troubleshooting/troubleshooting-websocket-api.md
+tags:
+  - api-manager
+  - troubleshooting
+  - troubleshooting-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "troubleshooting"
+---
+
 ### Troubleshooting WebSocket APIs
 
 If you require more detailed logs in the WebSocket API flow in order to troubleshoot and debug an error in your scenario, you can enable debug logs as indicated below.

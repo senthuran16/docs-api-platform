@@ -1,3 +1,17 @@
+---
+title: "Using the registry REST API"
+description: "Deploy the registry REST API webapp and use it to perform CRUD operations on WSO2 API Manager registry resources."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/using-the-registry-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/using-the-registry-rest-api.md
+tags:
+  - api-manager
+  - reference
+  - using-the-registry-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Registry REST API
 
  You can use the registry REST API to perform CRUD operations on registry resources. This is not packed with WSO2 API Manager by default. Follow the instructions below to use the registry REST API with WSO2 API Manager.

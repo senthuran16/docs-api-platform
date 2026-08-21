@@ -1,11 +1,26 @@
+---
+title: "VFS parameters"
+description: "Reference for the VFS transport parameters you can configure in a proxy service artifact for file processing use cases."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/transport-parameters/vfs-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/transport-parameters/vfs-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # VFS Parameters
 
 When you implement an integration use case that requires file processing, you can use the following VFS parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.
 
 !!! Info
-    The VFS transport is enabled and configured for the Micro Integrator by default, which allows you to run VFS use cases without any server configurations. Read about the [VFS transport](/install-and-setup/setup/mi-setup/transport_configurations/configuring-transports).
+    The VFS transport is enabled and configured for the Micro Integrator by default, which allows you to run VFS use cases without any server configurations. Read about the [VFS transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports).
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.0.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) for instructions.
 
@@ -390,7 +405,7 @@ When you use the [transport.vfs.FileURI](#vfs-transport-file_url) parameter, you
       </tr>
       <tr>
          <td>vfs.ssl.keystore</td>
-         <td>Private key store to use for mutual SSL. Your keystore must be signed by a certificate authority. For more information, see <a href="index">http://docs.oracle.com/cd/E19509-01/820-3503/ggfen/index.html</a>. Possible value: String (Path of keystore).</td>
+         <td>Private key store to use for mutual SSL. Your keystore must be signed by a certificate authority. For more information, see <a href="../../../../">http://docs.oracle.com/cd/E19509-01/820-3503/ggfen/index.html</a>. Possible value: String (Path of keystore).</td>
       </tr>
       <tr>
          <td>vfs.ssl.kspassword</td>

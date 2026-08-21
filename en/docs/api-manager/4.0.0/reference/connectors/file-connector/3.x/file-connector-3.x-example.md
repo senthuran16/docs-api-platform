@@ -1,3 +1,18 @@
+---
+title: "File connector example"
+description: "Configure File Connector version 3 to create a file in the local file system and read its content."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/file-connector/3.x/file-connector-3.x-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/file-connector/3.x/file-connector-3.x-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # File Connector Example
 
 File Connector can be used to perform operations in the local file system as well as in a remote server such as FTP and SFTP. 
@@ -10,11 +25,11 @@ It will have two HTTP API resources, which are `create` and `read`.
 
 * `/create `: The user sends the request payload which includes the location where the file needs to be saved and the content needs to be added to the file. This request is sent to the integration runtime by invoking the FileConnector API. It saves the file in the specified location with the relevant content. 
 
-    <p><img src="../../../../assets/img/integrate/connectors/filecon-3.x/fileconnector-03.png" title="Adding a Rest API" width="800" alt="Adding a Rest API" /></p>
+    <p><img src="../../../../../assets/img/integrate/connectors/filecon-3.x/fileconnector-03.png" title="Adding a Rest API" width="800" alt="Adding a Rest API" /></p>
 
 * `/read `: The user sends the request payload, which includes the location of the file that needs to be read. This request is sent to the integration runtime where the FileConnector API resides. Once the API is invoked, it first checks if the file exists in the specified location. If it exists, the content is read and response is sent to the user. If the file does not exist, it sends an error response to the user. 
 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/fileconnector-02.png" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/fileconnector-02.png" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 If you do not want to configure this yourself, you can simply [get the project](#get-the-project) and run it.
 
@@ -22,7 +37,7 @@ If you do not want to configure this yourself, you can simply [get the project](
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.0.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ## Creating the Integration Logic
 
@@ -32,14 +47,14 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 2. Provide the API name as File Connector and the API context as `/fileconnector`.
 
 3. First we will create the `/create` resource. Right click on the API Resource and go to **Properties** view. We use a URL template called `/create` as we have two API resources inside single API. The method will be `Post`. 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon-3.png" title="Adding the API resource." width="800" alt="Adding the API resource."/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon-3.png" title="Adding the API resource." width="800" alt="Adding the API resource."/>
 
 4. In this operation we are going to receive input from the user which is `filePath` and `inputContent`. 
     - filePath - location that the file is going to be created.
     - inputContent - what needs to be written to the file. 
 
 5. The above two parameters are saved to properties. Drag and drop the Property Mediator onto the canvas in the design view and do as shown below. For further reference, you can read about the [Property mediator](../../../mediators/property-mediator.md).
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon-1.png" title="Adding a property" width="800" alt="Adding a property"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon-1.png" title="Adding a property" width="800" alt="Adding a property"/>
 
 6. Add the another Property Mediator to get the InputContent value copied. Do the same as in the above step. 
     - property name: InputContent
@@ -47,10 +62,10 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     - Value Expression: json-eval($.inputContent)
 
 7. Drag and drop the create operation of the File Connector to the Design View as shown below. Set the parameter values as below. We use the property values that we added in step 4 and 5 in this step as `$ctx:filePath` and `$ctx:inputContent`.
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/file-con2.png" title="Adding createFile operation" width="800" alt="Adding createFile operation"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/file-con2.png" title="Adding createFile operation" width="800" alt="Adding createFile operation"/>
 
 8. Add a Respond Mediator as the user needs to see the response. Now we are done with creating the first API resource, and it is displayed as shown below. 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon9.png" title="First API Resource" width="800" alt="First API Resource"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon9.png" title="First API Resource" width="800" alt="First API Resource"/>
 
 9. Create the next API resource, which is `/read`. From this we are going to read the file content from a user specified location. 
 
@@ -58,19 +73,19 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
     <img src="../../../../assets/img/integrate/connectors/filecon-3.x/apiResource.png" title="Adding an API resource" width="800" alt="Adding an API resource"/>
 
 11. In this operation, the user sends the file location as the request payload. It will be written to the property as we did in step 10. 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon4.png" title="Adding property mediator" width="800" alt="Adding property mediator"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon4.png" title="Adding property mediator" width="800" alt="Adding property mediator"/>
 
 12. Then we are going to check if the file actually exists in the specified location. We can use `isFileExists` operation of the File Connector. 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon5.png" title="Adding property mediator" width="800" alt="Adding property mediator"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon5.png" title="Adding property mediator" width="800" alt="Adding property mediator"/>
 
 13. Then we copy the `isFileExists` response to a property mediator. Add another property mediator and add values as shown below. 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon6.png" title="Adding property mediator" width="800" alt="Adding property mediator"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon6.png" title="Adding property mediator" width="800" alt="Adding property mediator"/>
 
 14. Based on its response, we decide if we read the file or print an error to the user. In this case, we use a Switch Mediator.
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon7.png" title="Adding switch mediator" width="800" alt="Adding switch mediator"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon7.png" title="Adding switch mediator" width="800" alt="Adding switch mediator"/>
 
 15. Drag and drop the read operation to the **case** in the Switch mediator. In the default case log an error and drops the message. 
-    <img src="../../../../assets/img/integrate/connectors/filecon-3.x/filecon8.png" title="switch mediator" width="800" alt="switch mediator"/>
+    <img src="../../../../../assets/img/integrate/connectors/filecon-3.x/filecon8.png" title="switch mediator" width="800" alt="switch mediator"/>
 
  16. You can find the complete API XML configuration below. You can go to the source view and copy paste the following config. 
 
@@ -122,22 +137,22 @@ Follow these steps to set up the Integration Project and the Connector Exporter 
 
     ```
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/exporting-artifacts.md"
 
 
 ## Get the project
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../../assets/attachments/connectors/fileconnector.zip">
-    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../../assets/attachments/connectors/fileconnector.zip">
+    <img src="../../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 ## Deployment
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

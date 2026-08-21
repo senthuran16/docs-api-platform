@@ -1,3 +1,18 @@
+---
+title: "Handling HTTP status codes"
+description: "Set a custom HTTP status code on a REST API response using the HTTP_SC property in the outSequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/setting-https-status-codes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/setting-https-status-codes.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Handling HTTP Status Codes
 A REST service typically sends HTTP status codes with its response. When you configure an API that send messages to a SOAP back-end service, you can set the status code of the HTTP response within the configuration. To achieve this, set the status code parameter within the **Out** sequence of the API definition.
 

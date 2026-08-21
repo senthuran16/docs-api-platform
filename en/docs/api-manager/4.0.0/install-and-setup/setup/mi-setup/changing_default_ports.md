@@ -1,3 +1,18 @@
+---
+title: "Changing the default ports"
+description: "Change the default Micro Integrator ports to avoid conflicts when running multiple instances or a cluster on the same server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/changing_default_ports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/changing_default_ports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Changing the Default Ports
 
 When you run multiple WSO2 Micro Integrator instances or a cluster of instances on a single server or virtual machine (VM),
@@ -39,7 +54,7 @@ By default, the Micro Integrator is **internally** configured with a port offset
 			<code>9201</code>
 		</td>
 		<td>
-			The HTTP port of the <a href="../../../observe/mi-observe/working-with-management-api.md">Management API</a> of WSO2 Micro Integrator.</br></br>
+			The HTTP port of the <a href="../../../../observe/mi-observe/working-with-management-api.md">Management API</a> of WSO2 Micro Integrator.</br></br>
 			<b>Configuring the default HTTP port</b></br>
 			If required, you can manually change the HTTP port in the <code>deployment.toml</code> file (stored in the <code>MI_HOME/conf</code> folder) as shown below.</br></br>
 			<div>
@@ -54,7 +69,7 @@ By default, the Micro Integrator is **internally** configured with a port offset
 			<code>9164</code>
 		</td>
 		<td>
-			The HTTPS port of the <a href="../../../observe/mi-observe/working-with-management-api.md">Management API</a> of WSO2 Micro Integrator.</br></br>
+			The HTTPS port of the <a href="../../../../observe/mi-observe/working-with-management-api.md">Management API</a> of WSO2 Micro Integrator.</br></br>
 			<b>Configuring the default HTTPS port</b></br>
 			If required, you can manually change the HTTPS port in the <code>deployment.toml</code> file (stored in the <code>MI_HOME/conf</code> folder) as shown below.</br></br>
 			<div>

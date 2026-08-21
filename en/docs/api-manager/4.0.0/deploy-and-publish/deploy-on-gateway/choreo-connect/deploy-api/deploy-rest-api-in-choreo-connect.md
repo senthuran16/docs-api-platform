@@ -1,3 +1,18 @@
+---
+title: "Deploying a REST API in Choreo connect"
+description: "Deploy a REST API to Choreo Connect via the WSO2 API Manager Publisher Portal or apictl for standalone mode."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-rest-api-in-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a REST API in Choreo Connect
 
 You can deploy a REST type API in Choreo Connect using either one of the following Choreo Connect modes:
@@ -48,8 +63,8 @@ Whenever a new event occurs in API Manager such as an API being deployed, API Ma
 
 ###  Step 4 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.0.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.
@@ -132,8 +147,8 @@ apictl mg deploy api -f <path_to_the_API_project_just_created>/petstore -e dev -
 
 ###  Step 6 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.0.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.

@@ -1,3 +1,18 @@
+---
+title: "Adding a user signup workflow"
+description: "Attach a custom business process workflow to the user signup operation in API Manager using EI or BPS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/customizations/adding-a-user-signup-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/customizations/adding-a-user-signup-workflow-using-bps.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding a User Signup Workflow
 
 This section explains how to attach a custom workflow to the user signup operation in the API Manager. 
@@ -21,6 +36,7 @@ This section explains how to attach a custom workflow to the user signup operati
         </htd:argument>
     ```
 
+<a name="configuring-the-enterprise-integrator"></a>
 #### Configuring the Enterprise Integrator
 
 !!! note
@@ -95,6 +111,7 @@ This section explains how to attach a custom workflow to the user signup operati
 
     ![Add Human Task to EI](../../../assets/img/learn/add-human-task-signup.png)
 
+<a name="configuring-the-business-process-server"></a>
 #### Configuring the Business Process Server
 
 !!! note
@@ -207,7 +224,7 @@ This section explains how to attach a custom workflow to the user signup operati
 <html>
     <body>
         <div>
-            <img src="../../../assets/img/learn/register-now.png" alt="Register now option" width="600"/>
+            <img src="../../../../assets/img/learn/register-now.png" alt="Register now option" width="600"/>
         </div>
     </body>
 </html>
@@ -215,7 +232,7 @@ This section explains how to attach a custom workflow to the user signup operati
 
 4.  Note the message that appears if the BPEL is invoked correctly, saying that the request is successfully submitted.
 
-5.  Log in to the [Admin Portal](`https://localhost:9443/admin`) (`https://<Server-Host>:9443/admin`) of API Manager giving the admin username and password.
+5.  Log in to the [Admin Portal](https://localhost:9443/admin) (`https://<Server-Host>:9443/admin`) of API Manager giving the admin username and password.
 
 6.  Navigate to **Tasks** > **User Creation** and approve the user signup task listed. This will resume the BPEL process and complete the signup process.
 

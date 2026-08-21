@@ -1,3 +1,18 @@
+---
+title: "Using a simple REST API"
+description: "Configure a REST API with resources that convert incoming REST calls into SOAP calls sent to a backend service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/introduction-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rest_api_examples/introduction-rest-api.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rest_api_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using a Simple REST API
 
 You can configure REST endpoints in the Micro Integrator by directly specifying HTTP verbs, URL patterns, URI templates, HTTP media types, and other related headers. You can define REST APIs and the associated resources by combining REST APIs with mediation features provided by the underlying messaging framework.

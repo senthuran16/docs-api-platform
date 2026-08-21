@@ -1,3 +1,18 @@
+---
+title: "Amazon lambda connector reference"
+description: "Reference of the operations and parameters available in the Amazon Lambda connector, including account, function, and permission operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-config/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-config.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Amazon Lambda Connector Reference
 
 The following operations allow you to work with the Amazon Lambda Connector. Click an operation name to see parameter details and samples on how to use it.

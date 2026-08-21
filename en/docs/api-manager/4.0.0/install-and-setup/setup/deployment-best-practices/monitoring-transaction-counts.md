@@ -1,3 +1,18 @@
+---
+title: "Monitoring integration transactions counts"
+description: "Enable the transaction counter component in Micro Integrator to track and persist inbound request counts across HTTP and JMS transports."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/deployment-best-practices/monitoring-transaction-counts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/deployment-best-practices/monitoring-transaction-counts.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Integration Transactions Counts
 
 A **Transaction** in WSO2 Micro Integrator is typically defined as an inbound request (a request coming to the server). That is, any inbound request to a [REST API](../../../integrate/develop/creating-artifacts/creating-an-api.md), [Proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md), or [Inbound Endpoint](../../../integrate/develop/creating-artifacts/creating-an-inbound-endpoint.md) is considered as one transaction.
@@ -14,11 +29,11 @@ Configure a relational database to persist transaction count information and the
 
 1.  Select the preferred database type from the list given below and follow the relevant link to set up a database.
 
-    - [Setting up a MySQL database](../mi-setup/databases/setting-up-MySQL.md)
-    - [Setting up an MSSQL database](../mi-setup/databases/setting-up-MSSQL.md)
-    - [Setting up an Oracle database](../mi-setup/databases/setting-up-Oracle.md)
-    - [Setting up a Postgre database](../mi-setup/databases/setting-up-PostgreSQL.md)
-    - [Setting up an IBM database](../mi-setup/databases/setting-up-IBM-DB2.md)
+    - [Setting up a MySQL database](../mi-setup/databases/setting-up-mysql.md)
+    - [Setting up an MSSQL database](../mi-setup/databases/setting-up-mssql.md)
+    - [Setting up an Oracle database](../mi-setup/databases/setting-up-oracle.md)
+    - [Setting up a Postgre database](../mi-setup/databases/setting-up-postgresql.md)
+    - [Setting up an IBM database](../mi-setup/databases/setting-up-ibm-db2.md)
 
 2.  Once you have set up the database, verify that the `deployment.toml` file of your Micro Integrator contains the relevant datasource configurations:
 

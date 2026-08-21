@@ -1,3 +1,18 @@
+---
+title: "Working with employee addresses"
+description: "Reference of the operation used to retrieve the list of documents attached to an employee with the Ceridian Dayforce connector."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-documents/listofdocuments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employee-documents/listofdocuments.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with Employee Addresses
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to retrieve list of documents attached to an 
 
 This section provides more details on each of the operations.
 
+<a name="retrieving-a-list-of-documents"></a>
 #### Retrieving a List of Documents
 We can use GET a List of Documents operation with required parameters to get the list of documents related to an employee.
 

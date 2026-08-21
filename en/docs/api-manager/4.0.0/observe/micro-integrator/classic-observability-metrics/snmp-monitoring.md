@@ -1,5 +1,16 @@
 ---
-title: SNMP Monitoring - WSO2 API Manager 4.0.0
+title: "SNMP Monitoring - WSO2 API Manager 4.0.0"
+description: "Enable SNMP in the Micro Integrator to expose its MBeans for monitoring over the Simple Network Management Protocol."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-metrics/snmp-monitoring/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-metrics/snmp-monitoring.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-metrics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # SNMP Monitoring

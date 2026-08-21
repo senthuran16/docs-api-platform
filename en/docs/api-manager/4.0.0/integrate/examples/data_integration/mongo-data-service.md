@@ -1,3 +1,18 @@
+---
+title: "Exposing a mongo datasource"
+description: "Demonstrates how to expose data from a MongoDB datasource as a data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/mongo-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/mongo-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing a Mongo Datasource
 
 This example demonstrates how Mongo data can be exposed as a data service.

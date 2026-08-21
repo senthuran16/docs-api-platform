@@ -1,3 +1,18 @@
+---
+title: "Generate REST API from SOAP backend"
+description: "Generate a RESTful API from a SOAP backend using a WSDL, including supported and unsupported XML schema component types."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/generate-rest-api-from-soap-backend/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/generate-rest-api-from-soap-backend.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Generate REST API from SOAP Backend
 
 This feature allows users to expose their legacy SOAP backends as REST APIs through WSO2 API Manager. 

@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Review WSO2 Micro Integrator performance test results for Direct Proxy, Direct API, CBR, and XSLT scenarios across concurrent users and payload sizes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/deployment-best-practices/performance-test-results-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/deployment-best-practices/performance-test-results-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - deployment-best-practices
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Test Results
 
 The performance of WSO2 Micro Integrator Manager was measured using the following scenarios.
@@ -100,34 +115,34 @@ The following results compare the throughput against the number of concurrent us
 
 ##### Direct Proxy
 
-<a href="../../../assets/img/setup-and-install/performance-test-results/mi/direct-proxy-tp.png"><img src="../../../assets/img/setup-and-install/performance-test-results/mi/direct-proxy-tp.png" alt="Direct Proxy Throughput" title="Direct Proxy Throughput" width="70%" /></a>
+<a href="../../../../assets/img/setup-and-install/performance-test-results/mi/direct-proxy-tp.png"><img src="../../../../assets/img/setup-and-install/performance-test-results/mi/direct-proxy-tp.png" alt="Direct Proxy Throughput" title="Direct Proxy Throughput" width="70%" /></a>
 
 ##### Direct API
 
-<a href="../../../assets/img/setup-and-install/performance-test-results/mi/direct-api-tp.png"> <img src="../../../assets/img/setup-and-install/performance-test-results/mi/direct-api-tp.png" alt="Direct API Throughput" title="Direct API Throughput" width="70%" /></a>
+<a href="../../../../assets/img/setup-and-install/performance-test-results/mi/direct-api-tp.png"> <img src="../../../../assets/img/setup-and-install/performance-test-results/mi/direct-api-tp.png" alt="Direct API Throughput" title="Direct API Throughput" width="70%" /></a>
 
 ##### CBR Transport Header Proxy
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/mi/cbr-transport-header-proxy-tp.png" alt="CBR Transport Header Proxy Throughput" title="CBR Transport Header Proxy Throughput" width="70%" />
+<img src="../../../../assets/img/setup-and-install/performance-test-results/mi/cbr-transport-header-proxy-tp.png" alt="CBR Transport Header Proxy Throughput" title="CBR Transport Header Proxy Throughput" width="70%" />
 
 ##### XSLT Proxy
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/mi/xslt-proxy-tp.png" alt="XSLT Proxy Throughput" title="XSLT Proxy Throughput" width="70%" />
+<img src="../../../../assets/img/setup-and-install/performance-test-results/mi/xslt-proxy-tp.png" alt="XSLT Proxy Throughput" title="XSLT Proxy Throughput" width="70%" />
 
 #### Average response time (ms) vs. concurrent users
 The following results compare the average response time of the Micro Integrator server against the number of users in each scenario.
 ##### Direct Proxy
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/mi/direct-proxy-rt.png" alt="Direct Proxy Response Time" title="Direct Proxy Response Time" width="70%" />
+<img src="../../../../assets/img/setup-and-install/performance-test-results/mi/direct-proxy-rt.png" alt="Direct Proxy Response Time" title="Direct Proxy Response Time" width="70%" />
 
 ##### Direct API
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/mi/direct-api-rt.png" alt="Direct API Response Time" title="Direct API Response Time" width="70%" />
+<img src="../../../../assets/img/setup-and-install/performance-test-results/mi/direct-api-rt.png" alt="Direct API Response Time" title="Direct API Response Time" width="70%" />
 
 ##### CBR Transport Header Proxy
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/mi/cbr-transport-header-proxy-rt.png" alt="CBR Transport Header Proxy Response Time" title="CBR Transport Header Proxy Response Time" width="70%" />
+<img src="../../../../assets/img/setup-and-install/performance-test-results/mi/cbr-transport-header-proxy-rt.png" alt="CBR Transport Header Proxy Response Time" title="CBR Transport Header Proxy Response Time" width="70%" />
 
 ##### XSLT Proxy
 
-<img src="../../../assets/img/setup-and-install/performance-test-results/mi/xslt-proxy-rt.png" alt="XSLT Proxy Response Time" title="XSLT Proxy Response Time" width="70%" />
+<img src="../../../../assets/img/setup-and-install/performance-test-results/mi/xslt-proxy-rt.png" alt="XSLT Proxy Response Time" title="XSLT Proxy Response Time" width="70%" />

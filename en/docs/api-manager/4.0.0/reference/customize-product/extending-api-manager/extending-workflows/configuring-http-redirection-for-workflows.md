@@ -1,3 +1,18 @@
+---
+title: "Configuring HTTP redirection for workflows"
+description: "Redirect users to a third-party entity as part of a custom subscription workflow extension."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-http-redirection-for-workflows/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/extending-api-manager/extending-workflows/configuring-http-redirection-for-workflows.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring HTTP Redirection for Workflows
 
 This section guides you on how to redirect to a third party entity (using the redirect URL) as part of a custom workflow extension. For example, consider the scenario where an API Publisher publishes an API and monetizes that API. When a Subscriber subscribes to this API, if there are no payment details of the subscriber, then that subscriber needs to be forwarded to a third party entity that collects the payment details etc. In API Manager this is done by customizing the subscription workflow and configuring the redirect URL. Let's look at this in detail below.  
@@ -245,4 +260,4 @@ To customize the default workflow extension, you override the **`execute()`** an
     ```
 ### Invoking the API Manager from a third party BPEL engine
 
-The API Manager can be invoked from a third party entity through the [update workflow status method](../../../product-apis/admin-apis/admin-v2/admin-v2.md#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post). Refer the [Admin REST APIs]({{base_path}}/develop/product-apis/admin-apis/admin-v1/admin-v1/#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post) to learn how to invoke it.  Note that the Admin REST API resources require authentication before invocation.
+The API Manager can be invoked from a third party entity through the [update workflow status method](../../../product-apis/admin-apis/admin-v2/admin-v2.md#tag/Workflows/paths/~1workflows~1update-workflow-status/post)/paths/~1workflows~1update-workflow-status/post). Refer the [Admin REST APIs]({{base_path}}/develop/product-apis/admin-apis/admin-v1/admin-v1/#tag/Workflows-(Individual)/paths/~1workflows~1update-workflow-status/post) to learn how to invoke it.  Note that the Admin REST API resources require authentication before invocation.

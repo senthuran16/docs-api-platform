@@ -1,3 +1,18 @@
+---
+title: "Amazon S3 connector overview"
+description: "Overview of the Amazon S3 connector, which lets you access the Amazon S3 REST API or the AWS SDK from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazons3-connector/amazons3-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazons3-connector/amazons3-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazons3-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon S3 Connector Overview
 
 Amazon S3 is a web-based storage service that can be used to store and retrieve data at anytime from anywhere on the web. Amazon uses the same service to run its own network that proves its scalability, reliability, and security.
@@ -8,7 +23,7 @@ The versions 2.0.0 and above allow you to access the AWS component via AWS [SDK]
 
 To see the Amazon S3 connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "Amazon".
 
-<img src="../../../assets/img/integrate/connectors/amazon-s3-store.png" title="Amazon S3 Connector Store" width="200" alt="Amazon S3 Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/amazon-s3-store.png" title="Amazon S3 Connector Store" width="200" alt="Amazon S3 Connector Store"/>
 
 ## Compatibility
 

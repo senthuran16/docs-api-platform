@@ -1,3 +1,18 @@
+---
+title: "Troubleshooting"
+description: "Check K8s API Operator pod logs and use kubectl commands to list and describe APIs, Integrations, and TargetEndpoints for troubleshooting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/troubleshooting/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/troubleshooting.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "troubleshooting"
+---
+
 # Troubleshooting
 
 ## Check logs in the K8s API Operator

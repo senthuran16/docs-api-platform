@@ -1,3 +1,18 @@
+---
+title: "Using a WebSocket endpoint"
+description: "Demonstrates sending messages between a WebSocket client and a WebSocket endpoint through the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/endpoint_examples/using-websocket-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/endpoint_examples/using-websocket-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using a WebSocket Endpoint
 
 WebSocket is a protocol that provides full-duplex communication channels over a single TCP connection. This can be used by any client or server application. The Micro Integrator provides WebSocket support via the [WebSocket Transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md#configuring-the-websocket-transport) and the [WebSocket Inbound Protocol](../inbound_endpoint_examples/inbound-endpoint-secured-websocket.md).

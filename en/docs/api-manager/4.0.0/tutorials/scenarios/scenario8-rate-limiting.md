@@ -1,3 +1,18 @@
+---
+title: "Scenario 8 - rate limiting"
+description: "Tutorial on applying a subscription rate limiting policy and a backend maximum throughput limit to an API, then observing throttling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/scenarios/scenario8-rate-limiting/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/scenarios/scenario8-rate-limiting.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario8-rate-limiting
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 8 - Rate Limiting
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to set up rate limiting for an API. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).
@@ -8,7 +23,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 While analyzing the traffic patterns and data, the GOGO DevOps team noticed that their backend is receiving a high number of requests and due to these high demand, their latency numbers also increased. The DevOps team did some performance tests on their user info backend and identified that their backend service can handle a maximum of 1000 TPS. So GOGO management decided to introduce rate limiting to manage their free users.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario8.png" title="Rate Limiting Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario8.png" title="Rate Limiting Description" width="630"/>
 
 ## Step 1: Apply a rate limiting policy.
 

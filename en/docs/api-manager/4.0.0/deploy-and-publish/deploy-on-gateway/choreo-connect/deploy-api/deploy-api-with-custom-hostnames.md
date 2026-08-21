@@ -1,3 +1,18 @@
+---
+title: "Exposing APIs with custom hostnames in Choreo Connect"
+description: "Expose APIs deployed on Choreo Connect with custom hostnames by defining virtual hosts in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-with-custom-hostnames/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-with-custom-hostnames.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing APIs With Custom Hostnames in Choreo Connect Using WSO2 API Manager
 
 You can expose APIs with custom hostnames in Choreo Connect using either one of the following Choreo Connect modes:
@@ -48,7 +63,7 @@ When deploying the API, select the Virtual Host you defined earlier (i.e. `us.ws
 
 You have successfully deployed the API to Choreo Connect with the VHost `us.wso2.com`.
 
-To invoke the API, skip to the steps [here](#invoke-the-api).
+To invoke the API, skip to the steps [here](#step-5-invoke-the-api).
 
 ### Step 5 - Invoke the API
 
@@ -59,7 +74,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 
@@ -157,7 +172,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 

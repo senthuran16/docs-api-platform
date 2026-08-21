@@ -1,3 +1,18 @@
+---
+title: "Connecting to JBossMQ"
+description: "Configure WSO2 Micro Integrator's JMS transport to connect with JBossMQ, the default JMS provider in JBoss Application Server 4.2."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-jbossmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-jbossmq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to JBossMQ
 
 This section describes how to configure WSO2 Micro Integrator to connect with [JBossMQ](https://developer.jboss.org/docs/DOC-10525). The default JMS provider in JBoss Application Server 4.2. JBossMQ was replaced by [JBoss Messaging](http://www.jboss.org/jbossmessaging) in JBoss Application Server 5.0.

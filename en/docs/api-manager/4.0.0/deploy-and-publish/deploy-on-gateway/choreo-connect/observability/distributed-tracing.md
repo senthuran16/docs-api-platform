@@ -1,3 +1,18 @@
+---
+title: "Distributed tracing"
+description: "Configure Choreo Connect to publish distributed traces to Jaeger, Zipkin, Azure Application Insights, or OTLP gRPC backends."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/distributed-tracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/observability/distributed-tracing.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Distributed Tracing
 
 Performance issues, errors, and exceptions are unfortunate events that may occur in a production environment. In order to identify such an event, observing the production environment is essential. Choreo Connect provides the ability to observe how the requests are handled via an OpenTelemetry based distributed tracing implementation. By connecting Choreo Connect to one of the supported distributed tracing systems, users are able to easily debug and identify production issues.
@@ -39,7 +54,8 @@ When using **Jaeger** for tracing, the format is same as for **Zipkin** to publi
 1. Set the following environment variable to `jaeger` container/pod.
 
     `COLLECTOR_ZIPKIN_HOST_PORT=9411`
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 
@@ -67,7 +83,8 @@ You will be able to browse through the request traces and expand each trace to v
 
 Follow these steps to configure WSO2 Choreo Connect with Zipkin.
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 
@@ -101,7 +118,8 @@ Follow these steps to configure WSO2 Choreo Connect with Azure Application Insig
     * Log in to azure portal.
 
     * Copy the `Connection String` from the overview page of `Application Insights` resource. E.g., `InstrumentationKey=ab71943f-xxxx-xxxx-xxxx-fb2eb69ae11d;IngestionEndpoint=https://region.applicationinsights.azure.com/`.
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 1. Add the following configuration.
 

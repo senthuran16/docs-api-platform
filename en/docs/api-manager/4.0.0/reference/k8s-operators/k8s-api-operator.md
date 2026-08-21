@@ -1,3 +1,18 @@
+---
+title: "Kubernetes API operator"
+description: "Explains how the WSO2 API Operator for Kubernetes deploys Micro Integrator APIs as managed resources in a Kubernetes cluster."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/k8s-operators/k8s-api-operator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/k8s-operators/k8s-api-operator.md
+tags:
+  - api-manager
+  - reference
+  - k8s-operators
+  - k8s-api-operator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Kubernetes API Operator
 
 As microservices are increasingly being deployed on Kubernetes, the need to expose these microservices as well

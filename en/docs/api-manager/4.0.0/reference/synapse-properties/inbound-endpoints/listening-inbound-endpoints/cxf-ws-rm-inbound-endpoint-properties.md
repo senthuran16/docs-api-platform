@@ -1,3 +1,18 @@
+---
+title: "CXF WS-RM inbound endpoint"
+description: "Reference for the syntax and properties used to configure a CXF WS-RM inbound endpoint for reliable message delivery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/cxf-ws-rm-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/inbound-endpoints/listening-inbound-endpoints/cxf-ws-rm-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # CXF WS-RM Inbound Endpoint
 ## Introduction
 

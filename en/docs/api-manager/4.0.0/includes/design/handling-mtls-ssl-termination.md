@@ -9,5 +9,5 @@ When SSL termination of API requests takes place at the Load Balancer or Reverse
 
 The following diagram illustrates how Mutual SSL works in such an environment.
 
-[![MTLS Load Balancer](https://apim.docs.wso2.com/en/4.0.0/assets/img/learn/mtls-loadbalancer.png)](https://apim.docs.wso2.com/en/4.0.0/assets/img/learn/mtls-loadbalancer.png)
+[![MTLS Load Balancer](/api-platform/docs/api-manager/4.0.0/assets/img/learn/mtls-loadbalancer.png)](/api-platform/docs/api-manager/4.0.0/assets/img/learn/mtls-loadbalancer.png)
 

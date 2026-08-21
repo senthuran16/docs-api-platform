@@ -1,3 +1,18 @@
+---
+title: "Choreo connect overview"
+description: "Understand the Router, Enforcer, and Adapter components that make up the Choreo Connect API Gateway architecture."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Choreo Connect Overview
 
 Choreo Connect (the API Microgateway) is a cloud-native, decentralized, lightweight API Gateway designed especially for microservices. Choreo Connect provides API security, rate-limiting, load-balancing, observability and many other API management related quality of services (QoS) while maintaining a high throughput and a low latency.

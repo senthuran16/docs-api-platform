@@ -1,3 +1,18 @@
+---
+title: "Publish custom attributes with analytics"
+description: "Add custom request and response header or trailer values as additional attributes published with Choreo Connect analytics events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/analytics/pulbish-custom-analytics-attributes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/analytics/pulbish-custom-analytics-attributes.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Publish Custom Attributes With Analytics
 
 Choreo Connect provides default set of attributes with the analytics data when an API invocation happens. Additional to that, users
@@ -94,7 +109,7 @@ Therefore, by processing it you can obtain the required headers.
 ## Creating The Custom Reporter JAR to log analytics data
 
 1. In order to log the custom attributes for the event occurrences, you need to add Custom Reporter JAR to the dropins folder.
-You can follow the `Step 1.1` explained [here](../configure-analytics.md#step-11-compile-the-reporter-implementation}) 
+You can follow the `Step 1.1` explained [here](../configure-analytics.md#step-11-compile-the-reporter-implementation) 
 to obtain the JAR. Similar to the above after obtaining the JAR mount it to the `enforcer/dropins` folder.
 
    1. Configure the `log4j2.properties` file with the following configurations.

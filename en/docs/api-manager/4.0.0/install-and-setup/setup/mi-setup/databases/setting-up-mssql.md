@@ -1,3 +1,18 @@
+---
+title: "Setting up a microsoft SQL database"
+description: "Set up a Microsoft SQL Server database, including enabling TCP/IP, for use with WSO2 Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/databases/setting-up-mssql/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/databases/setting-up-mssql.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up a Microsoft SQL Database
 
 Follow the steps given below to set up the required MSSQL databases for your Micro Integrator.
@@ -5,8 +20,8 @@ Follow the steps given below to set up the required MSSQL databases for your Mic
 !!! Tip
 	WSO2 Micro Integrator requires databases for the following scenarios:
 
-	-	<a href='../deployment/deploying_wso2_ei.md#cluster-coordination'>cluster coordination</a>
-    -	<a href='../user_stores/setting_up_a_userstore.md'>using an RDBMS user store</a>
+	-	<a href='../../deployment/deploying_wso2_ei.md#cluster-coordination'>cluster coordination</a>
+    -	<a href='../../user_stores/setting_up_a_userstore.md'>using an RDBMS user store</a>
     -	<a href='{{base_path}}/install-and-setup/setup/mi-setup/deployment/deployment_checklist#monitoring-transaction-counts'>monitoring transaction counts</a>.
 
 ## Enable TCP/IP
@@ -32,12 +47,12 @@ You can run the scripts on one database instance or set up separate instances fo
 	</tr>
 	<tr>
 		<td>mssql_cluster.sql</td>
-		<td>This script creates the database tables that are required for <a href='{base_path}}/install-and-setup/setup/mi-setup/deployment/deploying_wso2_ei#cluster-coordination'>cluster coordination</a> (i.e., coordinating the server nodes in your VM deployment).This is only applicable if you have stateful integration artifacts deployed in a clustered setup.
+		<td>This script creates the database tables that are required for <a href='../../deployment/deploying_wso2_ei/#cluster-coordination'>cluster coordination</a> (i.e., coordinating the server nodes in your VM deployment).This is only applicable if you have stateful integration artifacts deployed in a clustered setup.
 		</td>
 	</tr>
 	<tr>
 		<td>mssql_user.sql</td>
-		<td>This script creates the database tables that are required for storing users and roles. This is only required if you have configured an <a href='../user_stores/setting_up_a_userstore.md'>RDBMS user store</a>.</td>
+		<td>This script creates the database tables that are required for storing users and roles. This is only required if you have configured an <a href='../../user_stores/setting_up_a_userstore.md'>RDBMS user store</a>.</td>
 	</tr>
 	<tr>
 		<td>mssql_transaction_count.sql</td>
@@ -105,6 +120,6 @@ data_source = "WSO2_TRANSACTION_DB"
 update_interval = 2
 ```
 
-{!includes/integration/pull-content-user-store-db-id.md!}
+--8<-- "api-manager/4.0.0/includes/integration/pull-content-user-store-db-id.md"
 
 See the descriptions of [database connection parameters](../../../../reference/config-catalog-mi.md#database-connection).

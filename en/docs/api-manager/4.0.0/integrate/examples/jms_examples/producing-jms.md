@@ -1,3 +1,18 @@
+---
+title: "Producing JMS messages"
+description: "Configure the Micro Integrator to accept messages over HTTP and forward them to a JMS queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/producing-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/producing-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Producing JMS Messages
 
 This section describes how to configure WSO2 Micro Integrator to send messages to a JMS Queue. In this example, the Micro Integrator accepts messages via HTTP and sends them to a JMS queue.

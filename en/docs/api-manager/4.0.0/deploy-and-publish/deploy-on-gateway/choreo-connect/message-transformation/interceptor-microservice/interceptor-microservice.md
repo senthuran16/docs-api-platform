@@ -1,3 +1,18 @@
+---
+title: "Interceptor microservice"
+description: "Understand the Interceptor OpenAPI Definition used to build a custom interceptor microservice for Choreo Connect message transformation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-microservice/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/message-transformation/interceptor-microservice/interceptor-microservice.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Interceptor Microservice
 
 Interceptor microservice defines your logic of the transformation. You can update the payload body, headers and trailers

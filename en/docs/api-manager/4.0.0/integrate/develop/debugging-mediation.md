@@ -1,3 +1,18 @@
+---
+title: "Debugging mediation"
+description: "Explains how to debug a mediation flow using instant debugging in Integration Studio or an external Micro Integrator server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/debugging-mediation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/debugging-mediation.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - debugging-mediation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Debugging Mediation
 
 Once you [deploy and run](using-embedded-micro-integrator.md) your integration solution, you may encounter errors and identify the required modifications for your artifacts. Use the mediation debugging feature in WSO2 Integration Studio to troubleshoot errors.

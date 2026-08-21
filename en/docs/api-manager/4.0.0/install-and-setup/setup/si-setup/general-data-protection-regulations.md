@@ -1,3 +1,18 @@
+---
+title: "Data protection regulations (GDPR) for Streaming Integrator"
+description: "Learn about GDPR requirements and how they apply to personally identifiable information processed by Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/general-data-protection-regulations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/general-data-protection-regulations.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # General Data Protection Regulations (GDPR) for Streaming Integrator
 
 The General Data Protection Regulation (GDPR) is a new legal framework formalized by the European Union (EU) in 2016. This regulation is effective since 28, May 2018, and can affect any organization that processes Personally Identifiable Information (PII) of individuals who live in Europe. Organizations that fail to demonstrate GDPR compliance are subjected to financial penalties.
@@ -23,7 +38,7 @@ The General Data Protection Regulation (GDPR) is a new legal framework formalize
 
 ## Removing personally identifiable information via the Forget-me tool
 
-In the Streaming Integrator, streams specify the schema for events to be selected into the streaming integration event flow to be processed. This schema can include user IDs and other PII (Personally Identifiable Information) that you want to delete from log files and such. This can be done via the [Forget-me Tool](#Forget-me_Tool_Overview).
+In the Streaming Integrator, streams specify the schema for events to be selected into the streaming integration event flow to be processed. This schema can include user IDs and other PII (Personally Identifiable Information) that you want to delete from log files and such. This can be done via the [Forget-me Tool](#forget-me-tool-overview).
 
 
 **Step 1: Configure the config.json file**
@@ -159,8 +174,8 @@ The obfuscation/removal of such PII (Personally Identifiable Information) can be
 
 The following sections explain how obfuscation/deletion of sensitive data can be managed via Siddhi queries in a custom Siddhi application developed based on a specific user case.
 
-- [Obfuscating PII](#CreatingGDPRCompliantSiddhiApplications-ObfuscatingPII)
-- [Deleting PII](#CreatingGDPRCompliantSiddhiApplications-DeletingPII)
+- [Obfuscating PII](#obfuscating-pii)
+- [Deleting PII](#deleting-pii)
 
 ### Obfuscating PII
 

@@ -1,3 +1,18 @@
+---
+title: "Setting up a load balancer"
+description: "Configure NGINX as a load balancer to distribute incoming traffic across the nodes of a clustered Micro Integrator deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/deployment/setting_up_lb/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/deployment/setting_up_lb.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up a Load balancer
 
 When you have a [clustered deployment](deploying_wso2_ei.md), you need to set up a load balancer to manage the incoming traffic. The load balancer automatically distributes incoming traffic across the

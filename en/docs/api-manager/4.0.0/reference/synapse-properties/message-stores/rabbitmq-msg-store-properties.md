@@ -1,3 +1,18 @@
+---
+title: "RabbitMQ message store"
+description: "Reference for the properties used when creating a RabbitMQ message store that persists messages in a RabbitMQ broker queue."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/message-stores/rabbitmq-msg-store-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/message-stores/rabbitmq-msg-store-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - message-stores
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # RabbitMQ Message Store
 ## Introduction
 Persists messages in a RabbitMQ queue inside a RabbitMQ broker. The RabbitMQ message store can be configured by specifying the class as <code>org.apache.synapse.message.store.impl.rabbitmq.RabbitmqStore</code>.

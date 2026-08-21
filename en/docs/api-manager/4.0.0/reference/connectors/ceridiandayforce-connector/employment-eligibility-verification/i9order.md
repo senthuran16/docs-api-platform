@@ -1,3 +1,18 @@
+---
+title: "Working with I-9 order"
+description: "Update I-9 employment eligibility verification order status using the PATCH I-9 Order operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employment-eligibility-verification/i9order/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/employment-eligibility-verification/i9order.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Working with I-9 Order
 
 [[Overview]](#overview)  [[Operation details]](#operation-details)  [[Sample configuration]](#sample-configuration)
@@ -14,6 +29,7 @@ The following operations allow you to update i-9 employment eligibility of an em
 
 This section provides more details on each of the operations.
 
+<a name="updating-i-9-order"></a>
 #### Updating I-9 Order
 We can use PATCH I-9 Order operation with required parameters to search and find employment eligibility of an employee
 

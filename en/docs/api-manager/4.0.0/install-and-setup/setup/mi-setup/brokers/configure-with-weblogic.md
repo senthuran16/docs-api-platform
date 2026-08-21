@@ -1,3 +1,18 @@
+---
+title: "Connecting to Oracle WebLogic"
+description: "Configure WSO2 Micro Integrator's JMS transport to connect with Oracle WebLogic Server, including connection factory and queue setup."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-weblogic/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-weblogic.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to Oracle WebLogic
 
 This section describes how to configure WSO2 Micro Integrator to connect with Oracle WebLogic 10.3.4.0.

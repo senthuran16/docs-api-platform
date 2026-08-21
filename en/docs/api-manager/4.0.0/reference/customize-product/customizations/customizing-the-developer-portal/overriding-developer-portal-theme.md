@@ -1,3 +1,18 @@
+---
+title: "Overriding Developer Portal theme"
+description: "Explains how to override the Developer Portal theme using userTheme.json or by overriding React components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Overriding Developer Portal Theme
 
 There are mainly two ways to customize and override the developer portal theme. 

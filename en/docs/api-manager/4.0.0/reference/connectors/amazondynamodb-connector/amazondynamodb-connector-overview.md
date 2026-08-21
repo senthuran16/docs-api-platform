@@ -1,3 +1,18 @@
+---
+title: "Amazon DynamoDB connector overview"
+description: "Overview of the Amazon DynamoDB connector, which lets an integration sequence access the Amazon DynamoDB REST API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazondynamodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon DynamoDB Connector Overview
 
 Amazon DynamoDB Connector allows you to access the [Amazon DynamoDB REST API](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html) from an integration sequence.
@@ -6,7 +21,7 @@ Amazon DynamoDB is a fully managed NoSQL database service that provides fast and
 
 To see the Amazon DynamoDB connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "DynamoDB".
 
-<img src="../../../assets/img/integrate/connectors/amazon-dynamodb-store.png" title="Amazon DynamoDB Connector Store" width="200" alt="Amazon DynamoDB Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/amazon-dynamodb-store.png" title="Amazon DynamoDB Connector Store" width="200" alt="Amazon DynamoDB Connector Store"/>
 
 ## Compatibility
 

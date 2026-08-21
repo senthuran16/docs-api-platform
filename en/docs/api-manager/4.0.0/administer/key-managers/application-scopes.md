@@ -1,3 +1,18 @@
+---
+title: "Application scopes"
+description: "Enable and configure application scopes so client credentials grant tokens include additional approved scopes for an application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/administer/key-managers/application-scopes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/administer/key-managers/application-scopes.md
+tags:
+  - api-manager
+  - administer
+  - key-managers
+  - application-scopes
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Application Scopes
 
 Application scopes are configured at the application level as allowed scopes for specific application. In the client credentials grant type, if these scopes are requested during a token request, these will be granted along with the other approved scopes.

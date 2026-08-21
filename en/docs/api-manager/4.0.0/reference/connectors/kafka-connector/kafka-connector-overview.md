@@ -1,3 +1,18 @@
+---
+title: "Kafka connector overview"
+description: "Learn how the Kafka connector publishes messages to Kafka brokers using the Kafka Producer API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/kafka-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/kafka-connector/kafka-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - kafka-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Kafka Connector Overview
 
 Kafka is a distributed publish-subscribe messaging system that maintains feeds of messages in topics. Producers write data to topics and consumers read from topics. For more information on Apache Kafka, see [Apache Kafka documentation](http://kafka.apache.org/documentation.html).
@@ -6,7 +21,7 @@ Kafka mainly operates based on a topic model. A topic is a category or feed name
 
 To see the Kafka Connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "Kafka".
 
-<img src="../../../assets/img/integrate/connectors/kafka-store.png" title="Kafka Connector Store" width="200" alt="Kafka Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/kafka-store.png" title="Kafka Connector Store" width="200" alt="Kafka Connector Store"/>
 
 ## Compatibility
 

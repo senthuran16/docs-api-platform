@@ -1,3 +1,18 @@
+---
+title: "Filtering responses by user role"
+description: "Explains how to filter data service responses by user role, including extending filtering via a custom authorization provider."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/advanced-development/extend-role-based-filtering-for-ds/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/advanced-development/extend-role-based-filtering-for-ds.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Filtering Responses by User Role
 
 When you work with data services, you can control access to sensitive

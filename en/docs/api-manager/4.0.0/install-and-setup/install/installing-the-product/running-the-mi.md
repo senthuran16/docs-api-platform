@@ -1,3 +1,18 @@
+---
+title: "Running the Micro Integrator runtime"
+description: "Run the WSO2 Micro Integrator runtime after downloading and installing it on your local environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/running-the-mi/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/running-the-mi.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Micro Integrator Runtime
 
 Follow the steps given below to run the WSO2 Micro Integrator (MI) runtime.

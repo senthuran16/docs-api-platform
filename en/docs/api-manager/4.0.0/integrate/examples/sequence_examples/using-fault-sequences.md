@@ -1,3 +1,18 @@
+---
+title: "Using fault sequences"
+description: "Configure fault sequences that handle errors and expose ERROR_CODE and related properties on failed messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/sequence_examples/using-fault-sequences/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/sequence_examples/using-fault-sequences.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - sequence_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Fault Sequences 
 WSO2 Micro Integrator provides fault sequences for dealing with errors. Whenever an error occurs, the mediation engine attempts to provide as much information as possible on the error to the user by initializing the following properties on the erroneous message:
 

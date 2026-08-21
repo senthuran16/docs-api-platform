@@ -1,3 +1,18 @@
+---
+title: "Invoking multiple operations via request box"
+description: "Demonstrates how to use the request box feature to invoke multiple data service operations consecutively in one call."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/request-box/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/request-box.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Invoking Multiple Operations via Request Box
 
 This example demonstrates how a data service can invoke request

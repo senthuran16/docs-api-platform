@@ -1,3 +1,18 @@
+---
+title: "Search"
+description: "Search for APIs in the Developer Portal or API Publisher using unified search or clauses such as name, provider, version, and tag."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/discover-apis/search/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/discover-apis/search.md
+tags:
+  - api-manager
+  - consume
+  - discover-apis
+  - search
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Search
 
 The Developer Portal provides several useful features to build and nurture an active community of users for your APIs. This is required to advertise APIs, learn user requirements, and market trends.

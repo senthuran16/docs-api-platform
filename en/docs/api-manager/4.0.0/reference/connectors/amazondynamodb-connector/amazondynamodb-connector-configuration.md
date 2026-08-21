@@ -1,3 +1,18 @@
+---
+title: "Setting up the amazon DynamoDB connector"
+description: "Configure message builders and formatters required to use the Amazon DynamoDB connector in an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazondynamodb-connector/amazondynamodb-connector-configuration.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazondynamodb-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Setting up the Amazon DynamoDB Connector 
 
 Amazon DynamoDB Connector allows you to access the [Amazon DynamoDB REST API](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html) from integration sequence. 
@@ -10,7 +25,7 @@ Before you start configuring the  Amazon DynamoDB connector, you also need to co
 
 Specific message builders/formatters configuration needs to be enabled in the product as shown below before starting the integration service.
 
-If you are using the Micro Integrator of **EI7** or **APIM 4.0.0**, you need to enable this property by adding the following to the **<PRODUCT_HOME>/conf/deployment.toml** file. You can further refer to the [Working with Message Builders and Formatters](../../config-catalog.md#http-transport) and [Product Configurations](../../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters.md) documentations.
+If you are using the Micro Integrator of **EI7** or **APIM 4.0.0**, you need to enable this property by adding the following to the **<PRODUCT_HOME>/conf/deployment.toml** file. You can further refer to the [Working with Message Builders and Formatters](../../config-catalog.md#custom-message-builders-non-blocking-mode) and [Product Configurations](../../../install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters.md) documentations.
 
 ```toml
 [[custom_message_formatters]]
@@ -47,11 +62,11 @@ Please find the following steps to navigate in to the Amazon DynamoDB using the 
 
 1. Sign in to the AWS Management Console and search **Database** section under **Services**.
 
-    <img src="../../../assets/img/integrate/connectors/dynamodb-aws-console.png" title="Amazon Dynamodb aws console" width="600" alt="Amazon Dynamodb aws console"/> 
+    <img src="../../../../assets/img/integrate/connectors/dynamodb-aws-console.png" title="Amazon Dynamodb aws console" width="600" alt="Amazon Dynamodb aws console"/> 
 
 2. You can see the following operations and sub operations. The output in the AWS DynamoDB console are shown below.
 
     - Working with Items in Amazon DynamoDB
     - Working with Tables in Amazon DynamoDB
 
-<img src="../../../assets/img/integrate/connectors/dynamodb-aws-results-console.png" title="Amazon Dynamodb Table view" width="600" alt="Amazon Dynamodb Table view"/> 
+<img src="../../../../assets/img/integrate/connectors/dynamodb-aws-results-console.png" title="Amazon Dynamodb Table view" width="600" alt="Amazon Dynamodb Table view"/> 

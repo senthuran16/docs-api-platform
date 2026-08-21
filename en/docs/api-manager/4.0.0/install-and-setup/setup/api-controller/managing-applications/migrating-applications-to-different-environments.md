@@ -1,3 +1,18 @@
+---
+title: "Migrating apps to different environments"
+description: "Use apictl to export applications from one environment and import them into another, preserving or changing the owner and optionally skipping keys."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/api-controller/managing-applications/migrating-applications-to-different-environments/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/api-controller/managing-applications/migrating-applications-to-different-environments.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Migrating Apps to Different Environments
 **WSO2 API Controller (apictl)** allows you to maintain multiple environments running on the same WSO2 API Manager (WSO2 API-M) version. This feature allows you to import and export applications between your environments. For example, if you have an application running in the development environment, you can import it and export it to the production environment. Thereby, applications do not have to be created from scratch in different environments.
 
@@ -10,7 +25,7 @@
        For more information, see [Add an Environment](../getting-started-with-wso2-api-controller.md#add-an-environment).
     
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import/export Applications. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import/export Applications. To create a custom user who can import/export APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#minimal-permissions-and-scopes-required-to-perform-apictl-operations).
 
 ## Manage the application lifecycle
 

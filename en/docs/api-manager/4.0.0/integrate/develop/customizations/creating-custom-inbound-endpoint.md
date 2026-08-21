@@ -1,3 +1,18 @@
+---
+title: "Creating a custom inbound endpoint"
+description: "Explains how to develop, deploy, and add a custom listening, polling, or event-based inbound endpoint."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/customizations/creating-custom-inbound-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/customizations/creating-custom-inbound-endpoint.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating a Custom Inbound Endpoint
 
 WSO2 Micro Integrator supports several inbound endpoints. However, there can be scenarios that require functionality not provided by the existing inbound endpoints. For example, you might need an inbound endpoint to connect to a certain back-end server or vendor specific protocol.
@@ -18,12 +33,12 @@ To support such scenarios, you can write your own custom inbound endpoint by ext
 
 You need to copy the built jar file to the `MI_HOME/lib` directory and restart the Micro Integrator to load the class.
 To copy the jar file to the <b>Embedded Micro Integrator</b>, open the <b>Embedded Micro 
-Integrator Server Configuration Wizard</b> by clicking on the (<img src="../../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20">)
+Integrator Server Configuration Wizard</b> by clicking on the (<img src="../../../../assets/img/integrate/tutorials/common/server-config-64x64.png" width="20">)
 icon on the upper menu and add the jar to select libraries section.
 
 ### Step 3: Adding the custom Inbound Endpoint
 
-1. If you have already created an [Integration Project](../create-integration-project.md), right-click the [ESB Config module](../create-integration-project.md#types-of-projects) and go to **New → Inbound Endpoint** to open the **New Inbound Endpoint Artifact**.
+1. If you have already created an [Integration Project](../create-integration-project.md), right-click the [ESB Config module](../create-integration-project.md#sub-projects) and go to **New → Inbound Endpoint** to open the **New Inbound Endpoint Artifact**.
 2. Select **Create a New Inbound Endpoint** and click **Next**.
 3. Type a unique name for the inbound endpoint, and then select **Custom** as the **Inbound Endpoint Creation Type**.
 5. Specify the location where the artifact should be saved: Select an existing ESB Config project in your workspace, or click **Create new Project** and create a new project.
@@ -46,7 +61,7 @@ icon on the upper menu and add the jar to select libraries section.
           class
          </td>
          <td>
-          Name of the custom class you implemented in <a href="#step-1-developing-a-custom-inbound-endpoint">step 1</a>.
+          Name of the custom class you implemented in <a href="#step-1-developing-the-custom-inbound-endpoint">step 1</a>.
          </td>
       </tr>
       <tr>

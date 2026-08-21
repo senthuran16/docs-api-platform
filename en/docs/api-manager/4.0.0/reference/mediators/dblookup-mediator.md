@@ -1,3 +1,18 @@
+---
+title: "DBLookup mediator"
+description: "Reference for the DBLookup mediator, which executes a SQL select statement and sets the result as a message property."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/dblookup-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/dblookup-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - dblookup-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # DBLookup Mediator
 
 The **DBLookup Mediator** can execute an arbitrary SQL select statement

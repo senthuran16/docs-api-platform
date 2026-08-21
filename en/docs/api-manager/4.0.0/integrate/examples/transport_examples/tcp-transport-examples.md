@@ -1,3 +1,18 @@
+---
+title: "Using the TCP transport"
+description: "Configure the TCP transport to split and send multiple messages over the same TCP channel using delimiters."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/transport_examples/tcp-transport-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/transport_examples/tcp-transport-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - transport_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the TCP Transport
 
 **Sending multiple messages via the same TCP channel**
@@ -174,7 +189,7 @@ The sample proxy below splits the input message by appending a special characte
 Create the artifacts:
 
 1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio.md).
-2. [Create an ESB Solution project](../../develop/create-integration-project.md#esb-config-project).
+2. [Create an ESB Solution project](../../develop/create-integration-project.md#sub-projects).
 3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service.md) with the configurations given above.
 4. [Deploy the artifacts]({{base_path}}/integrate/develop/deploy-and-run) in your Micro Integrator.
 
@@ -260,7 +275,7 @@ The sample proxy below splits the input message by a sequence of characters.
 Create the artifacts:
 
 1. [Set up WSO2 Integration Studio](../../develop/installing-wso2-integration-studio.md).
-2. [Create an ESB Solution project](../../develop/create-integration-project.md#esb-config-project).
+2. [Create an ESB Solution project](../../develop/create-integration-project.md#sub-projects).
 3. Create the [proxy service](../../develop/creating-artifacts/creating-a-proxy-service.md) with the configurations given above.
 4. [Deploy the artifacts]({{base_path}}/integrate/develop/deploy-and-run) in your Micro Integrator.
 

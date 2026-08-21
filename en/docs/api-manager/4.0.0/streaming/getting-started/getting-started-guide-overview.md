@@ -1,3 +1,18 @@
+---
+title: "Streaming integration overview"
+description: "Introduces streaming integration concepts through a sweet factory example before you set up WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/getting-started-guide-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/getting-started-guide-overview.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - getting-started-guide-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Streaming Integration Overview
 
 This section helps you to understand streaming integration and how to perform it with WSO2 Streaming Integrator in less than 30 minutes

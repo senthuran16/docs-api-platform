@@ -1,3 +1,18 @@
+---
+title: "Identifying event patterns based on order of event arrival"
+description: "Configure a Siddhi application that detects a pattern where room temperature rises by 5 degrees within 2 minutes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/pattern-matching/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/pattern-matching.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Identifying Event Patterns Based On Order of Event Arrival
 
 ## Purpose:

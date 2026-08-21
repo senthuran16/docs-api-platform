@@ -1,3 +1,18 @@
+---
+title: "Securing web portals"
+description: "Secure the Management Console, API Publisher, and Developer Portal web applications by updating their SSL certificates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/securing-api-m-web-portals/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/securing-api-m-web-portals.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing Web portals
 
 The WSO2 API Manager runtime contains the following web portals/applications: **Management Console**, **API Publisher**, and the **Developer Portal**. See the topics given below to configure these portals for better security before you use them.

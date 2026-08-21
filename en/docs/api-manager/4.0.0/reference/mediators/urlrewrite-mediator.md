@@ -1,3 +1,18 @@
+---
+title: "URLRewrite mediator"
+description: "Reference for the URLRewrite mediator syntax and parameters used to modify and transform URL values in messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/urlrewrite-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/urlrewrite-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - urlrewrite-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # URLRewrite Mediator
 
 The **URLRewrite Mediator** is used to modify and transform the URL

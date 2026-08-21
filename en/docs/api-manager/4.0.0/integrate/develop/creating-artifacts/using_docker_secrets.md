@@ -1,3 +1,18 @@
+---
+title: "Using Docker secrets in synapse configurations"
+description: "Explains how to create and access Docker secrets from synapse configurations in containerized Micro Integrator deployments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/creating-artifacts/using_docker_secrets/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/creating-artifacts/using_docker_secrets.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - creating-artifacts
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Docker Secrets in Synapse Configurations
 
 WSO2 Micro Integrator comes with a built-in secret repository as a part of its [secure vault implementation](../../../install-and-setup/setup/security/logins-and-passwords/working-with-encrypted-passwords.md) by default. In addition to this, the Micro Integrator also provides built-in support for Docker secrets and Kubernetes secrets for your containerized deployments.
@@ -92,7 +107,7 @@ Once the secrets are added to the environment, you need to enable <b>secure vaul
 1. Open your Integration Project in WSO2 Integration Studio, which contains all the integration artifacts and the Docker Exporter.
 2. Open the `pom.xml` of the Docker Exporter module and select the <b>Enable Cipher Tool</b> check box as shown below.
 
-    <img src="../../../assets/img/integrate/enable-cipher-tool-in-docker.png">
+    <img src="../../../../assets/img/integrate/enable-cipher-tool-in-docker.png">
 
 3.  When you build the Docker image from your Docker Exporter, the secrets will get enabled in the environment.
 

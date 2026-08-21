@@ -1,3 +1,17 @@
+---
+title: "Create and publish an AWS lambda API"
+description: "Create a REST API in API Manager backed by an AWS Lambda endpoint, configuring credentials and mapping function ARNs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/create-and-publish-awslambda-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/create-and-publish-awslambda-api.md
+tags:
+  - api-manager
+  - tutorials
+  - create-and-publish-awslambda-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Create and Publish an AWS Lambda API
 
 When using AWS Lambda, you can execute your code without having to manage or provision servers. For more information on AWS Lambda, see [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).

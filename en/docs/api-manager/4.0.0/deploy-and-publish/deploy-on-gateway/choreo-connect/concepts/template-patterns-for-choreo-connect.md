@@ -1,3 +1,18 @@
+---
+title: "Template patterns for OpenAPI definitions"
+description: "Reference the supported OpenAPI path template patterns and resource ordering rules for APIs deployed on Choreo Connect."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/template-patterns-for-choreo-connect/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/template-patterns-for-choreo-connect.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Template Patterns for OpenAPI Definitions
 
 You can use these template patterns when defining OpenAPI (Swagger) definitions for APIs that will be deployed on Choreo Connect.

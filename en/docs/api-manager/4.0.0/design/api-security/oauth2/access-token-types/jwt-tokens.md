@@ -1,3 +1,18 @@
+---
+title: "Secure APIs using JWT (Self contained) access tokens"
+description: "Use self-contained, signed JWT OAuth2 access tokens as API credentials in WSO2 API Manager, and understand the prerequisites for JWT-based tokens."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/access-token-types/jwt-tokens/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/access-token-types/jwt-tokens.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure APIs using JWT (Self Contained) Access Tokens
 
 JSON Web Token (JWT) is an open standard of transmitting information securely between two parties. As the tokens are digitally signed, the information is secured. The authentication and authorization process uses JWT access tokens. It is ideal to use JWT access tokens as API credentials because JWT access tokens can carry claims (data) that are used in order to authenticate and authorize requests.
@@ -23,7 +38,7 @@ The following prerequisites have to be satisfied for JWT based tokens to work.
 
      `base64(header).base64(payload).base64(signature)`
 
--   The public certificate of the private key that is used to sign the tokens should be added to the trust store under the `"gateway_certificate_alias"` alias. For more information, see [Import the public certificate into the client trust store.](#import)
+-   The public certificate of the private key that is used to sign the tokens should be added to the trust store under the `"gateway_certificate_alias"` alias. For more information, see [Import the public certificate into the client trust store.](#importing-the-public-certificate-into-the-client-trust-store)
 
       <html>
       <div class="admonition note">

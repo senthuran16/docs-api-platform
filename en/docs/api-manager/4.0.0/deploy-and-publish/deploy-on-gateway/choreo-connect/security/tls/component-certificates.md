@@ -1,3 +1,18 @@
+---
+title: "Component certificates"
+description: "Add a certificate to a Choreo Connect component's truststore for TLS connections and component-specific security tasks."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/component-certificates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/tls/component-certificates.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Component Certificates
 
 Choreo Connect components use SSL certificates (public keys and private keys) for two main purposes.

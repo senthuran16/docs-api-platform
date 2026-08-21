@@ -1,3 +1,18 @@
+---
+title: "Use custom hostnames for APIs in Choreo Connect"
+description: "Expose an API with a custom hostname in Choreo Connect using the WSO2 API Controller (apictl) command-line tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-with-custom-hosts-with-apictl/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-with-custom-hosts-with-apictl.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Exposing APIs With Custom Hostnames in Choreo Connect Using WSO2 API Controller
 
 Follow the instructions below to deploy an API with a custom hostname in Choreo Connect using the WSO2 API Controller (apictl), which is the CLI Tool:
@@ -5,7 +20,7 @@ Follow the instructions below to deploy an API with a custom hostname in Choreo 
 !!! info
     **Before you begin**
 
-    This guide assumes that you already have a Choreo Connect instance that is up and running. If not, checkout the [Quick Start Guide]({{base_path}}/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-docker-with-api-controller) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../getting-started/choreo-connect-overview.md).
+    This guide assumes that you already have a Choreo Connect instance that is up and running. If not, checkout the [Quick Start Guide](../getting-started/deploy/cc-as-a-standalone-gateway-on-docker) on how to install and run Choreo Connect. To learn more about Choreo Connect, have a look at the [Overview of Choreo Connect](../getting-started/choreo-connect-overview.md).
 
 Follow the all steps except **Deploy API** in the (Deploy an API via apictl documentation)[deploy-api-via-apictl.md].
 
@@ -74,7 +89,7 @@ Add the following entry to `/etc/hosts` file
 127.0.0.1   us.wso2.com
 ```
 
-{! ./includes/obtain-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
 
 Execute the following cURL command to Invoke the API using the JWT.
 

@@ -1,3 +1,18 @@
+---
+title: "Default ports of WSO2 API-M analytics"
+description: "Reference the default ports used by WSO2 API-M Analytics for Thrift, the Siddhi Store REST API, and the dashboard."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager-analytics/default-ports-of-wso2-api-m-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager-analytics/default-ports-of-wso2-api-m-analytics.md
+tags:
+  - api-manager
+  - observe
+  - api-manager-analytics
+  - default-ports-of-wso2-api-m-analytics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Default Ports of WSO2 API-M Analytics
 
 Given below are the specific ports used by WSO2 API-M Analytics.

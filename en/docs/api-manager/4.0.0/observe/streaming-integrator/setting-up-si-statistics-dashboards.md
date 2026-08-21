@@ -1,5 +1,16 @@
 ---
-title: Setting up Dashboards for SI Statistics - Getting Started Guide - WSO2 API Manager 4.0.0
+title: "Setting up dashboards for SI statistics"
+description: "Configure WSO2 Streaming Integrator servers to publish metrics to Prometheus and display them in Grafana dashboards."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/streaming-integrator/setting-up-si-statistics-dashboards/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/streaming-integrator/setting-up-si-statistics-dashboards.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - setting-up-si-statistics-dashboards
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Setting up Dashboards for SI Statistics - Getting Started Guide

@@ -1,22 +1,36 @@
+---
+title: "Consumer API - overview"
+description: "Explains the API consumer workflow in WSO2 API Manager: discovering, subscribing to, testing, rating, and supporting APIs via the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/consume-api-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/consume/consume-api-overview.md
+tags:
+  - api-manager
+  - consume
+  - consume-api-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Consumer API - Overview
 
 An API Consumer is typically an application developer who may be internal or external to your organization. Consuming APIs is the process by which the application developer accesses the various APIs that are exposed by you (the API provider) and then uses those APIs to develop one’s own software applications and products. 
 
 API consumers discover and access APIs from the **Developer Portal** of your WSO2 API Manager as shown below.
 
-<img src="../assets/img/get_started/architecture/developer-portal-overview.png" alt="developer portal of wso2 api manager">
+<img src="../../assets/img/get_started/architecture/developer-portal-overview.png" alt="developer portal of wso2 api manager">
 
 ## API Consumer Tasks
 
 The process of consuming an API from WSO2 API Manager involves the following steps:
 
-<img src="../assets/img/consume/api-consumer-workflow.png" alt="main tasks for an api consumer">
+<img src="../../assets/img/consume/api-consumer-workflow.png" alt="main tasks for an api consumer">
 
 ### Discover APIs
 
 When APIs are created and published through the **Publisher**, they become available through the **Developer Portal**. Developers can use the search option to find APIs of interest.
 
--   <a href="discover-apis/search.md">Searching for APIs</a>
+-   <a href="../discover-apis/search.md">Searching for APIs</a>
 
 ### Subscribe to APIs
 
@@ -38,11 +52,11 @@ Developers need to select a business plan for each API subscription. The busines
 
 Before using an API for development, the API consumer may want to test it’s capabilities. The following options are available in the Developer Portal for testing:
 
--   <a href="invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md">Test APIs using the Integrated API Console</a>
-    -   <a href="invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console.md">Include Additional Headers in the API Console</a>
--   <a href="invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md">Test GraphQL APIs Using the Integrated GraphQL Console</a>
--   <a href="invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client.md">Test an API Using a SOAP Client</a>
- -   <a href="invoke-apis/invoke-apis-using-tools/try-out-using-postman.md">Test a REST API Using Postman</a>
+-   <a href="../invoke-apis/invoke-apis-using-tools/invoke-an-api-using-the-integrated-api-console.md">Test APIs using the Integrated API Console</a>
+    -   <a href="../invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console.md">Include Additional Headers in the API Console</a>
+-   <a href="../invoke-apis/invoke-apis-using-tools/invoke-an-graphql-api-using-the-integrated-graphql-console.md">Test GraphQL APIs Using the Integrated GraphQL Console</a>
+-   <a href="../invoke-apis/invoke-apis-using-tools/invoke-an-api-using-a-soap-client.md">Test an API Using a SOAP Client</a>
+ -   <a href="../invoke-apis/invoke-apis-using-tools/try-out-using-postman.md">Test a REST API Using Postman</a>
 
 ## Rate and Support APIs
 

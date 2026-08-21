@@ -1,3 +1,18 @@
+---
+title: "Ceridian dayforce connector example"
+description: "Example of using the Ceridian Dayforce connector to retrieve an employee's address and create employee contact details."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/ceridiandayforce-connector/ceridiandayforce-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - ceridiandayforce-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Ceridian Dayforce Connector Example 
 
 The Ceridian Dayforce connector allows you to  access the REST API of Ceridian Dayforce HCM. Dayforce is a 
@@ -28,10 +43,10 @@ Dayforce sample APIs. Keep them saved to be used in the next steps.
 
 Follow these steps to set up the Integration Project and import Dayforce connector into it.
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.0.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 1. Right click on the created ESB Solution Project and select, -> **New** -> **Rest API** to create the REST API.
-   <img src="../../../assets/img/integrate/connectors/adding-an-api.jpg" 
+   <img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" 
    title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 2. Specify the API name as `DayforceConnectorTestAPI` and API context as `/dayforceconnector`. You can go to the 
@@ -99,7 +114,7 @@ source view of the XML configuration file of the API and copy the following conf
 Now we can export the imported connector and the API into a single CAR application. CAR application is the one we are 
 going to deploy to server runtime. 
 
-{!includes/reference/connectors/exporting-artifacts.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/exporting-artifacts.md"
 
 Now the exported CApp can be deployed in the integration runtime so that we can run it and test.
 
@@ -107,15 +122,15 @@ Now the exported CApp can be deployed in the integration runtime so that we can 
 
 You can download the ZIP file and extract the contents to get the project code.
 
-<a href="../../../assets/attachments/connectors/ceridiandayforce-connector-1.0.0.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+<a href="../../../../assets/attachments/connectors/ceridiandayforce-connector-1.0.0.zip">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 ## Deployment
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

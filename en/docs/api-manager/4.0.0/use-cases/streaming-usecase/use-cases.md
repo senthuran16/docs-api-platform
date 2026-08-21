@@ -1,3 +1,17 @@
+---
+title: "Streaming integrator use cases overview"
+description: "Get an overview of how WSO2 Streaming Integrator extracts, processes, and publishes data, with links to detailed use-case guides."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/use-cases/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/use-cases.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Streaming Integrator Use Cases Overview
 
 WSO2 Streaming Integrator receives input data, processes it and presents an output as shown in the diagram below.

@@ -1,3 +1,18 @@
+---
+title: "Step 2: create the siddhi application"
+description: "Create a Siddhi application that captures database changes and publishes them to a file with a modified product name field."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/create-the-siddhi-application/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/create-the-siddhi-application.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - create-the-siddhi-application
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 2: Create the Siddhi Application
 
 Let's create your first Siddhi application.

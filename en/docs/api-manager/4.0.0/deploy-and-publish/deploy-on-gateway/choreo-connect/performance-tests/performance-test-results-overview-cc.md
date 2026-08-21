@@ -1,3 +1,18 @@
+---
+title: "Performance test results"
+description: "Reference the throughput and response time results measured for Choreo Connect under varying concurrent user loads and payload sizes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/performance-test-results-overview-cc/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/performance-tests/performance-test-results-overview-cc.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Performance Test Results
 
 The performance of Choreo Connect was measured using an API that invokes a simple "Netty Echo Service". The task covered by the Netty service is to echo back any request posted to the service. The API used for the test cases was a secured API, which directly invokes the backend through Choreo Connect using JWT tokens.
@@ -84,13 +99,13 @@ Since we used the `c5.xlarge` instances (CPU count = 4) for the performance test
     <td>1</td>
     <td>1000 (1CPU)</td>
     <td>2</td>
-    <td><a href="router-with-one-cpu-for-rest-api.md">Router with one CPU</a</td>
+    <td><a href="../router-with-one-cpu-for-rest-api.md">Router with one CPU</a</td>
   </tr>
   <tr>
     <td>2</td>
     <td>2000 (2CPU)</td>
     <td>4</td>
-    <td><a href="router-with-two-cpu-for-rest-api.md">Router with two CPU</a</td>
+    <td><a href="../router-with-two-cpu-for-rest-api.md">Router with two CPU</a</td>
   </tr>
 </tbody>
 </table>

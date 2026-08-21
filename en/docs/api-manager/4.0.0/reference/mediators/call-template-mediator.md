@@ -1,3 +1,18 @@
+---
+title: "Call template mediator"
+description: "Reference for the Call Template mediator syntax used to construct a sequence by passing values into a sequence template."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/call-template-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/call-template-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - call-template-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Call Template Mediator
 
 The Call Template mediator allows you to construct a sequence by passing values into a **sequence template**.

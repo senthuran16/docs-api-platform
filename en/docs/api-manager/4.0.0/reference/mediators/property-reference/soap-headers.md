@@ -1,3 +1,18 @@
+---
+title: "SOAP headers"
+description: "Reference for SOAP header properties, such as To and From, retrievable with the Property mediator's get-property function."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-reference/soap-headers/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-reference/soap-headers.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # SOAP Headers
 
 !!! Info

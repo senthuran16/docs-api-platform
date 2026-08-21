@@ -1,3 +1,17 @@
+---
+title: "Integrate with HashiCorp Vault"
+description: "Integrate WSO2 API Manager with HashiCorp Vault using Root Token or App-Role authentication to store secrets."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/logins-and-passwords/harshicrop-vault-extension/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/logins-and-passwords/harshicrop-vault-extension.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
 
 # Integrate with HashiCorp Vault
 

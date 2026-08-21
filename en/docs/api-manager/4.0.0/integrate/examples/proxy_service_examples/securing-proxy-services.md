@@ -1,3 +1,18 @@
+---
+title: "Securing a proxy service"
+description: "Secure a proxy service with WS-Security signing and encryption enforced through a WS policy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/proxy_service_examples/securing-proxy-services/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/proxy_service_examples/securing-proxy-services.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - proxy_service_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Securing a Proxy Service
 This sample demonstrates how you can use WS-Security signing and encryption with proxy services through a WS policy.
 

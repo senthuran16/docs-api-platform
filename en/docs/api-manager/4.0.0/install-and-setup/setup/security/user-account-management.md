@@ -1,3 +1,18 @@
+---
+title: "User account management"
+description: "Manage Developer Portal, Publisher, and Admin Portal user accounts, including enabling password recovery in WSO2 API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/user-account-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/user-account-management.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # User Account Management
 
 The following sections explain how to manage Developer Portal, Publisher, and the Admin Portal related user accounts.
@@ -140,7 +155,7 @@ When changing the password, the new password will be validated against the user 
   
 You can display a list of policy guidelines in the change password page that appears in the Developer Portal.  
   
-<img src="../../../assets/img/learn/change-devportal-password-policy-guideline-display.png" alt="Displaying Developer Portal password policy guidelines" width="700"/>
+<img src="../../../../assets/img/learn/change-devportal-password-policy-guideline-display.png" alt="Displaying Developer Portal password policy guidelines" width="700"/>
   
 1. Enable password changing guidelines in the `settings.js` file.  
 

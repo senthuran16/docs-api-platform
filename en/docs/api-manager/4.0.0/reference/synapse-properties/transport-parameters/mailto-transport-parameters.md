@@ -1,11 +1,26 @@
+---
+title: "MailTo parameters"
+description: "Reference for the MailTo transport parameters you can configure in a proxy service artifact to send or receive emails."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/transport-parameters/mailto-transport-parameters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/transport-parameters/mailto-transport-parameters.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - transport-parameters
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # MailTo Parameters
 
 When you implement an integration use case that requires the capability of sending emails (over SMTP) or receive emails (over POP3 or IMAP), you can use the following parameters in your [proxy service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) artifact.
 
 !!! Info
-    The Micro Integrator can use the MailTo transport only if the transport listener and sender are enabled and configured at the server level. Read about the [MailTo transport]({{base_path}}/install-and-setup/transport_configurations/configuring-transports/#configuring-the-mailto-transport).
+    The Micro Integrator can use the MailTo transport only if the transport listener and sender are enabled and configured at the server level. Read about the [MailTo transport](../../../install-and-setup/setup/mi-setup/transport_configurations/configuring-transports#configuring-the-mailto-transport).
 
-{!reference/synapse-properties/pull/proxy-service-add-properties-pull.md!}
+--8<-- "api-manager/4.0.0/reference/synapse-properties/pull/proxy-service-add-properties-pull.md"
 
 See [Creating a Proxy Service](../../../integrate/develop/creating-artifacts/creating-a-proxy-service.md) for instructions.
 

@@ -1,3 +1,18 @@
+---
+title: "Using the message sampling processor"
+description: "Configure the message sampling processor to periodically forward sampled messages from a message store."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-message-sampling-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/message_store_processor_examples/using-message-sampling-processor.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - message_store_processor_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Message Sampling Processor
 This example demonstrates the usage of the message sampling processor.
 

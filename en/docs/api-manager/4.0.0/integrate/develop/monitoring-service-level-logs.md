@@ -1,3 +1,18 @@
+---
+title: "Monitoring Service-Level logs"
+description: "Explains how to configure log4j2 to create a dedicated per-service log file for a proxy or data service in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/monitoring-service-level-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/monitoring-service-level-logs.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - monitoring-service-level-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Monitoring Service-Level Logs
 
 The advantage of having per-service log files is that it is very easy to analyze/monitor what went wrong in this particular service (proxy service, data service etc.) by looking at the service log. Enabling this feature will not terminate the `wso2carbon.log` file. This file will contain the complete log with every log statement, including the service logs that you have configured to be logged into a different log file. In other words, the service log is an additional log file, which will contain a copy of the logs to that particular service.

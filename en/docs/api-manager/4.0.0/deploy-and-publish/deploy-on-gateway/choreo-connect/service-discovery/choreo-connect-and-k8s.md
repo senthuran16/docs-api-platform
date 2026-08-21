@@ -1,3 +1,18 @@
+---
+title: "Choreo Connect with Consul service mesh on Kubernetes"
+description: "Configure Choreo Connect with a Consul service mesh deployed on Kubernetes for service discovery."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-k8s/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/service-discovery/choreo-connect-and-k8s.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Choreo Connect with Consul Service Mesh Deployed on Kubernetes
 
 Consul service mesh supports first-class integrations between Consul and Kubernetes.

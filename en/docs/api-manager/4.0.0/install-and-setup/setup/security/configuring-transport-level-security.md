@@ -1,3 +1,18 @@
+---
+title: "Configuring transport level security"
+description: "Configure transport-level security for WSO2 API Manager, including disabling weak ciphers and changing server name headers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/configuring-transport-level-security/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/security/configuring-transport-level-security.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Transport Level Security
 
 Given below are the various transport-level security configurations that are required for WSO2 API Manager. See the following topics for instructions.
@@ -24,7 +39,7 @@ To prevent these types of security attacks, it is encouraged to disable the weak
      See the list of [supported cipher suites](https://docs.wso2.com/display/ADMIN44x/Supported+Cipher+Suites) .
 
 4.  Start the server.
-5.  To verify that the configurations are all set correctly, download and run the [testsslserver.jar](/assets/attachments/administer/testsslserver-jar.zip).
+5.  To verify that the configurations are all set correctly, download and run the [testsslserver.jar](../../../assets/attachments/administer/testsslserver-jar.zip).
 
     !!! note
         Note the following when you run `testsslserver.jar` :

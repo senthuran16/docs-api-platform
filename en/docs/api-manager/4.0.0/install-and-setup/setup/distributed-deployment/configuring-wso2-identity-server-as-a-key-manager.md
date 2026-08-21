@@ -1,3 +1,18 @@
+---
+title: "Set up WSO2 identity server as a key manager"
+description: "Configure WSO2 Identity Server as the global Key Manager for a distributed API Manager deployment, covering databases and high availability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Set up WSO2 Identity Server as a Key Manager
 
 Follow the instructions below to configure WSO2 Identity Server (WSO2 IS) as the Key Manager of the WSO2 API Manager (WSO2 API-M) deployment globally.
@@ -40,7 +55,7 @@ You can create the required databases for the API-M deployment on a separate ser
 
 The following diagram depicts how the databases are shared between WSO2 IS and WSO2 API-M.
 
-<a href="../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
+<a href="../../../../assets/img/setup-and-install/is-as-km-dbs.png" ><img src="../../../../assets/img/setup-and-install/is-as-km-dbs.png" alt="IS-AS-KM-DBS" title="IS-AS-KM-DBS" width="90%" /></a>
 
 -   **WSO2SHARED_DB** - This database contains the registry and user management data. 
 

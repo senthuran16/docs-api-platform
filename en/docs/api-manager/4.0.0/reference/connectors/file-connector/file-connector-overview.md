@@ -1,3 +1,18 @@
+---
+title: "File connector overview"
+description: "Learn how the File Connector connects to local and remote file systems and performs file operations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/file-connector/file-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/file-connector/file-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - file-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # File Connector Overview
 
 The File Connector allows you to connect to different file systems and perform various operations. The File Connector uses the [Apache Commons VFS](https://commons.apache.org/proper/commons-vfs/) I/O functionalities to execute operations.
@@ -6,7 +21,7 @@ File Connector introduces the independent operations related to the file system 
 
 To see the available File connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "File".
 
-<img src="../../../assets/img/integrate/connectors/file-connector-store.png" title="File Connector Store" width="200" alt="File Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/file-connector-store.png" title="File Connector Store" width="200" alt="File Connector Store"/>
 
 ## Compatibility
 

@@ -1,8 +1,23 @@
+---
+title: "Configuring cluster coordination"
+description: "Configure cluster coordination for Streaming Integrator nodes using an RDBMS-based coordination strategy."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-cluster-coordination/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/configuring-cluster-coordination.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Cluster Coordination
 
 Multiple WSO2 SI nodes can be configured to work together by configuring
 a cluster coordination strategy that is used in various deployments such
-as the <a target="_blank" href="../si-deployment/deploying-si-as-minimum-ha-cluster.md">Minimum High Available(HA) Deployment</a>
+as the <a target="_blank" href="../../si-deployment/deploying-si-as-minimum-ha-cluster.md">Minimum High Available(HA) Deployment</a>
 and <a target="_blank" href="scalable-ha-deployment">Scalable High Available(HA) Deployment</a>
 . At present, cluster coordination is supported via an RDBMS instance
 using and RDBMS coordination strategy. Support for cluster coordination

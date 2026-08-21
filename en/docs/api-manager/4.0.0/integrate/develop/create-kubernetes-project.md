@@ -1,3 +1,18 @@
+---
+title: "Creating Kubernetes exporter"
+description: "Provides steps to create a Kubernetes exporter project for deploying integration solutions to a Kubernetes environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/create-kubernetes-project/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/create-kubernetes-project.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - create-kubernetes-project
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Creating Kubernetes Exporter
 
 Create a Kubernetes Exporter if you want to deploy your integration solutions in a Kubernetes environment. 
@@ -16,7 +31,7 @@ Follow the steps given below.
 
 2.  In the **New Kubernetes Exporter** dialog box that opens, enter a name for the Kubernetes exporter and other parameters as shown below.
 
-    <img src="../../assets/img/integrate/create_project/docker_k8s_project/new_k8s_project_info.png" width="500">
+    <img src="../../../assets/img/integrate/create_project/docker_k8s_project/new_k8s_project_info.png" width="500">
 
     Enter the following information:
 
@@ -142,7 +157,7 @@ Follow the steps given below.
 
 3.  Optionally, click **Next** and configure Maven details for the Kubernetes exporter.
 
-    <img src="../../assets/img/integrate/create_project/docker_k8s_project/new_k8s_project_maven_info.png" width="500">
+    <img src="../../../assets/img/integrate/create_project/docker_k8s_project/new_k8s_project_maven_info.png" width="500">
     
 4.  Click **Finish**. The Kubernetes exporter is created in the project explorer. 
 
@@ -161,7 +176,7 @@ Follow the steps given below.
 
 Expand the **Kubernetes Exporter** in the project explorer. See that the following folders and files are created:
 
-<img src="../../assets/img/integrate/create_project/docker_k8s_project/proj_explorer_k8s_project.png" width="400">
+<img src="../../../assets/img/integrate/create_project/docker_k8s_project/proj_explorer_k8s_project.png" width="400">
 
 <table>
     <tr>
@@ -193,7 +208,7 @@ Expand the **Kubernetes Exporter** in the project explorer. See that the followi
             deployment.toml
         </td>
         <td>
-            The <a href="../../reference/config-catalog.md">product configuration file</a>.
+            The <a href="../../../reference/config-catalog.md">product configuration file</a>.
         </td>
     </tr>
     <tr>
@@ -228,7 +243,7 @@ Before you begin:
 
 -   Create your integration artifacts in an [ESB Config sub project](create-integration-project.md#sub-projects) and package the artifacts in a [Composite Exporter](packaging-artifacts.md). For example, see the HelloWorld sample given below.
 
-    <img alt="Integration artifacts for Docker" src="../../assets/img/integrate/create_project/docker_k8s_project/integration-projects-for-k8s.png" width="300">
+    <img alt="Integration artifacts for Docker" src="../../../assets/img/integrate/create_project/docker_k8s_project/integration-projects-for-k8s.png" width="300">
 
 -   Be sure to start your Docker instance before building the image. If Docker is not started, the build process will fail.
 
@@ -253,13 +268,13 @@ To <b>build</b> and <b>push</b> the Docker image:
 
 1.  Open the **pom.xml** file inside the Kubernetes exporter and click **Refresh** on the top-right. Your composite application project with integration artifacts will be listed under **Dependencies** as follows:
 
-    <img alt="Kubernetes pom view" src="../../assets/img/integrate/create_project/docker_k8s_project/k8s-pom.png" width="600">
+    <img alt="Kubernetes pom view" src="../../../assets/img/integrate/create_project/docker_k8s_project/k8s-pom.png" width="600">
     
 2.  Select the composite applications that should be packed inside the Docker image (under **Dependencies**).
 3.  If required, you can update the **Target Repository** to which the image should be pushed and the **Target Tag**.
 4.  Save the file and click **Build & Push** on the top-right to start the Docker image build-and-push process. The **Enter Docker Registry Credentials** wizard opens.
 
-    <img alt="Docker Registry Auth Details" src="../../assets/img/integrate/create_project/docker_k8s_project/k8s-auth.png" width="500">
+    <img alt="Docker Registry Auth Details" src="../../../assets/img/integrate/create_project/docker_k8s_project/k8s-auth.png" width="500">
     
 4.  Enter the following details in the wizard:
 
@@ -301,8 +316,8 @@ To <b>build</b> and <b>push</b> the Docker image:
 5.  Once you enter the above details, click **Push Image**.
 6.  First, it will build the Docker image based on the Dockerfile and the Target details. When the image is created, you will see the following message.
 
-    <img src="../../assets/img/integrate/create_project/docker_k8s_project/build.png" alt="Docker Build Success">
+    <img src="../../../assets/img/integrate/create_project/docker_k8s_project/build.png" alt="Docker Build Success">
 
 7.  Finally, it will start to push the image to the given registry. Once the process is completed, you will see the following message.
 
-    <img src="../../assets/img/integrate/create_project/docker_k8s_project/push.png" alt="Docker Push Success">
+    <img src="../../../assets/img/integrate/create_project/docker_k8s_project/push.png" alt="Docker Push Success">

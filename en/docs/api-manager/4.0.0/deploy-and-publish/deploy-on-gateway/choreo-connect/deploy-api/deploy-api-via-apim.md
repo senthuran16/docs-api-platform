@@ -1,3 +1,18 @@
+---
+title: "Deploy a REST API in Choreo Connect using API Manager"
+description: "Deploy a REST API to Choreo Connect by configuring API Manager as the control plane and publishing through the Publisher Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-via-apim/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/deploy-api/deploy-api-via-apim.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying a REST API in Choreo Connect Using WSO2 API Manager
 
 Follow the instructions below to use the WSO2 API Manager Publisher Portal to deploy a REST type API in Choreo Connect:
@@ -34,8 +49,8 @@ Whenever a new event occurs in API Manager such as an API being deployed, API Ma
 
 ##  Step 4 - Invoke the API
 
-{! ./includes/obtain-jwt.md !}
-{! ./includes/invoke-api-with-jwt.md !}
+--8<-- "api-manager/4.0.0/includes/obtain-jwt.md"
+--8<-- "api-manager/4.0.0/includes/invoke-api-with-jwt.md"
 
 <!-- brought the following here because the path becomes relative when included in the includes folder -->
 Refer to [Generate a Test JWT](../security/generate-a-test-jwt.md) for more details.

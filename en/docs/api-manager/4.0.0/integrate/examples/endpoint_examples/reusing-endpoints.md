@@ -1,3 +1,18 @@
+---
+title: "Reusing endpoints"
+description: "Demonstrates how to reuse endpoints in a Send mediator using indirect and resolving endpoint configurations."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/endpoint_examples/reusing-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/endpoint_examples/reusing-endpoints.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Reusing Endpoints
 
 ## Using Indirect Endpoints

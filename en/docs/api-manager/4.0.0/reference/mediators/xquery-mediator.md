@@ -1,3 +1,18 @@
+---
+title: "XQuery mediator"
+description: "Reference for the XQuery mediator syntax and parameters used to perform an XQuery transformation on messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/xquery-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/xquery-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - xquery-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # XQuery Mediator
 
 The **XQuery Mediator** performs an XQuery transformation on messages.

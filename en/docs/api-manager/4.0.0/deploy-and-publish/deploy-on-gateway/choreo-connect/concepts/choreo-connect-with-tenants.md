@@ -1,3 +1,18 @@
+---
+title: "Choreo connect tenant support"
+description: "Configure the Control Plane connection and rate limiting settings so a Choreo Connect deployment serves a single tenant's APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/choreo-connect-with-tenants/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/choreo-connect-with-tenants.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Choreo Connect Tenant Support
 
 Choreo Connect supports only a single tenant. It can not expose APIs of different tenants. A single deployment of

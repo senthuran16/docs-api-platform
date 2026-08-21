@@ -1,3 +1,18 @@
+---
+title: "Choreo Connect on Kubernetes with APIM control plane (Helm)"
+description: "Deploy Choreo Connect on Kubernetes using Helm charts with WSO2 API Manager as the Control Plane."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/deploy/cc-on-kubernetes-with-apim-as-control-plane-helm-artifacts.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Deploying Choreo Connect on Kubernetes With WSO2 API Manager as a Control Plane - Helm Artifacts
 
 Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 API Manager as the Control Plane. You can select one of the options to install Choreo Connect Helm Chart in the middle of the documentation.
@@ -27,7 +42,7 @@ Let's deploy an API on Choreo Connect, which running on Kubernetes, with WSO2 AP
 !!! Note
     Helm resources for WSO2 product deployment patterns are compatible with the [`nginx-ingress-controller-v1.1.3`](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.1.3) release.
 
-{!includes/deploy/k8s-setup-note.md!}
+--8<-- "api-manager/4.0.0/includes/deploy/k8s-setup-note.md"
 
 ## Deploy API Manager as Control Plane
 
@@ -315,4 +330,4 @@ Follow the steps given below.
  - Publisher Portal:  [https://am.wso2.com/publisher/](https://am.wso2.com/publisher/)
  - Developer Portal:  [https://am.wso2.com/devportal/](https://am.wso2.com/devportal/)
 
-Follow the instructions in [create and publish an API via API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-from-api-manager).
+Follow the instructions in [create and publish an API via API Manager](../quick-start-guide-docker-with-apim.md#step-3-create-and-publish-an-api-via-api-manager).

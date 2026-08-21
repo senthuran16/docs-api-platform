@@ -1,3 +1,18 @@
+---
+title: "JMS synchronous invocations: dual channel HTTP-to-JMS"
+description: "Configure dual-channel HTTP-to-JMS synchronous invocations using proxy services and a JMS correlation ID."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/dual-channel-http-to-jms/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/jms_examples/dual-channel-http-to-jms.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - jms_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # JMS Synchronous Invocations: Dual Channel HTTP-to-JMS
 
 A JMS synchronous invocation takes place when a JMS producer receives a response to a JMS request produced by it when invoked. The WSO2 Micro Integrator uses an internal **JMS correlation ID** to correlate the request and the response. See [JMSRequest/ReplyExample](http://www.eaipatterns.com/RequestReplyJmsExample.html) for more information. JMS synchronous invocations are further explained in the following use case.

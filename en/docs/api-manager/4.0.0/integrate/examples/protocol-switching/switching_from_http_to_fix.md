@@ -1,3 +1,18 @@
+---
+title: "Switching from HTTP to FIX"
+description: "Configure a proxy service that receives messages over HTTP and forwards them to a backend using the FIX transport."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_http_to_fix/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_http_to_fix.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switching from HTTP to FIX
 
 This example demonstrates how WSO2 Micro Integrator receives messages in HTTP and forwards them through FIX.

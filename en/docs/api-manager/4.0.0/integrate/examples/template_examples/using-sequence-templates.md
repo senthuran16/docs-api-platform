@@ -1,3 +1,18 @@
+---
+title: "Using sequence templates"
+description: "Call a sequence template with the Call Template mediator to pass parameter values into a reusable sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/template_examples/using-sequence-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/template_examples/using-sequence-templates.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - template_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Sequence Templates
 
 !!! Info
@@ -61,7 +76,7 @@ Instead of printing our "hello" message for each and every language inside the s
 
 ### Synapse configuration
 
-Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
+Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-1) this example.
 
 ```xml tab="Sequence template"
 <template name="Hello_Logger" xmlns="http://ws.apache.org/ns/synapse">
@@ -164,7 +179,7 @@ You can test this out with the following payload sent to the proxy via `http://l
 
 ## Example 2: Mandatory parameters and default values
 
-Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run) this example.
+Following are the integration artifacts we can use to implement this scenario. See the instructions on how to [build and run](#build-and-run-example-2) this example.
 
 ### Synapse configuration
 

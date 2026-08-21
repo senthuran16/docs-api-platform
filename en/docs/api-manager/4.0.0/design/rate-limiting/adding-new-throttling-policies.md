@@ -1,3 +1,18 @@
+---
+title: "Adding new rate limiting policies"
+description: "Add new advanced, application-level, and subscription-level rate limiting policies as a WSO2 API Manager administrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/rate-limiting/adding-new-throttling-policies/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/rate-limiting/adding-new-throttling-policies.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - adding-new-throttling-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding New Rate Limiting Policies
 
 WSO2 API Manager admins can add new rate limiting policies and define extra properties to the rate limiting policies. To get started, click on the level of rate limiting that you want to add a new policy to:
@@ -151,11 +166,11 @@ You have added a new application-level rate limiting policy.
 
      **Request bandwidth based quota limits**
 
-     <a href="../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png"><img src="../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png" width="70%" alt="Request bandwidth based quota limits"></a>
+     <a href="../../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png"><img src="../../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png" width="70%" alt="Request bandwidth based quota limits"></a>
 
      **Event Based (AsyncAPI) quota limits**
 
-     <a href="../../assets/img/design/rate-limiting/event-based-quota-limits.png"><img src="../../assets/img/design/rate-limiting/event-based-quota-limits.png" width="70%" alt="Event Based (AsyncAPI) quota limits"></a>
+     <a href="../../../assets/img/design/rate-limiting/event-based-quota-limits.png"><img src="../../../assets/img/design/rate-limiting/event-based-quota-limits.png" width="70%" alt="Event Based (AsyncAPI) quota limits"></a>
 
     !!! note
         - Event Based (Async API) - These configurations are applicable to all the Streaming APIs (WebSocket, SSE, and WebHook (WebSub) APIs).

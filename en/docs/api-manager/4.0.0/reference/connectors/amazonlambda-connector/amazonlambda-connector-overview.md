@@ -1,3 +1,18 @@
+---
+title: "Amazon lambda connector overview"
+description: "Overview of the Amazon Lambda connector, which lets you access the AWS Lambda REST API from an integration sequence."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/amazonlambda-connector/amazonlambda-connector-overview.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - amazonlambda-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Amazon Lambda Connector Overview
 
 AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second.
@@ -6,7 +21,7 @@ The Amazon Lambda Connector allows you to access the REST API of [Amazon Web Ser
 
 To see the Amazon Lambda connector, navigate to the [connector store](https://store.wso2.com/store/assets/esbconnector/list) and search for "Amazon".
 
-<img src="../../../assets/img/integrate/connectors/amazon-lambda-store.png" title="Amazon Lambda Connector Store" width="200" alt="Amazon Lambda Connector Store"/>
+<img src="../../../../assets/img/integrate/connectors/amazon-lambda-store.png" title="Amazon Lambda Connector Store" width="200" alt="Amazon Lambda Connector Store"/>
 
 ## Compatibility
 

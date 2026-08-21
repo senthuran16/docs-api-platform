@@ -1,3 +1,18 @@
+---
+title: "Applying security to an API"
+description: "Explains how to secure an API in the Micro Integrator using the default Basic Auth handler or a custom handler."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/advanced-development/applying-security-to-an-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/develop/advanced-development/applying-security-to-an-api.md
+tags:
+  - api-manager
+  - integrate
+  - develop
+  - advanced-development
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Applying Security to an API
 
 ## Using a Basic Auth handler

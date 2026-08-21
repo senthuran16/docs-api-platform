@@ -1,3 +1,18 @@
+---
+title: "Service orchestration"
+description: "Use the Call mediator to aggregate several backend service calls into a single response for a medical appointment request."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/exposing-several-services-as-a-single-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/integration-tutorials/exposing-several-services-as-a-single-service.md
+tags:
+  - api-manager
+  - tutorials
+  - integration-tutorials
+  - exposing-several-services-as-a-single-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Service Orchestration
 
 ## What you'll build
@@ -31,11 +46,11 @@ An Integration project is a maven multi module project, which will contain all t
 1.  Open **WSO2 Integration Studio**.
 2.  Click **New Integration Project** in the **Getting Started** tab as shown below. 
 
-    <img src="../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
+    <img src="../../../assets/img/integrate/tutorials/common/create-integration-project.jpg" width="700">
 
     This will open the <b>New Integration Project</b> dialog box.
 
-    <img src="../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
+    <img src="../../../assets/img/integrate/tutorials/common/create-simple-message-project.jpg" width="500">
 
 3.  Enter `SampleServices` as the project name and select the following check boxes to create the required modules.
     -   **Create ESB Configs**
@@ -340,7 +355,7 @@ You can now start updating the API resource with the mediation flow.
         <td>
           <div class="content-wrapper">
             <p>Follow the steps given below to specify the expression value:</p>
-            <img src="../../assets/img/integrate/tutorials/119132155/expression-value.png">
+            <img src="../../../assets/img/integrate/tutorials/119132155/expression-value.png">
           <ol>
               <li>
                 Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.
@@ -389,7 +404,7 @@ You can now start updating the API resource with the mediation flow.
         <td>
             <div class="content-wrapper">
                 <p>Follow the steps given below to specify the expression:</p>
-                <img src="../../assets/img/integrate/tutorials/119132228/expression-value.png">
+                <img src="../../../assets/img/integrate/tutorials/119132228/expression-value.png">
                 <ol>
                     <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                     <li>
@@ -469,7 +484,7 @@ You can now start updating the API resource with the mediation flow.
         <td>
             <div class="content-wrapper">
                 <p>Follow the steps given below to specify the expression:</p>
-                <img src="../../assets/img/integrate/tutorials/119132228/expression-value.png">
+                <img src="../../../assets/img/integrate/tutorials/119132228/expression-value.png">
                 <ol>
                     <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                     <li>
@@ -532,7 +547,7 @@ You can now start updating the API resource with the mediation flow.
                 <td>
                     <div class="content-wrapper">
                         <p>Follow the steps given below to specify the expression:</p>
-                        <img src="../../assets/img/integrate/tutorials/119132228/expression-value.png">
+                        <img src="../../../assets/img/integrate/tutorials/119132228/expression-value.png">
                         <ol>
                             <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                             <li>
@@ -583,7 +598,7 @@ You can now start updating the API resource with the mediation flow.
                 <td>
                     <div class="content-wrapper">
                         <p>Follow the steps given below to specify the expression:</p>
-                        <img src="../../assets/img/integrate/tutorials/119132228/expression-value.png">
+                        <img src="../../../assets/img/integrate/tutorials/119132228/expression-value.png">
                         <ol>
                             <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                             <li>
@@ -645,7 +660,7 @@ You can now start updating the API resource with the mediation flow.
                 <td>
                     <div class="content-wrapper">
                         <p>Follow the steps given below to specify the expression:</p>
-                        <img src="../../assets/img/integrate/tutorials/119132228/expression-value.png">
+                        <img src="../../../assets/img/integrate/tutorials/119132228/expression-value.png">
                         <ol>
                             <li>Click the <strong>Ex</strong> button before the <b>Value</b> field. This specifies the value type as <i>expression</i>.</li>
                             <li>
@@ -702,7 +717,7 @@ You can now start updating the API resource with the mediation flow.
     | Payload        | `{"appointmentNumber":$1, "doctor":$2, "patient":$3, "fee":$4, "confirmed":"false", "card_number":"$5"}`</br></br> This is the message payload to send with the request to SettlePaymentEP. In this payload, $1, $2, $3, $4, and $5 indicate variables. |
     
 16. To add the arguments for the PayloadFactory mediator:
-    1. Click the **plus** icon (<img src="../../assets/img/integrate/tutorials/common/plus-icon.png" width="30">) in the **Args** field to open the **PayloadFactoryArgument** dialog. 
+    1. Click the **plus** icon (<img src="../../../assets/img/integrate/tutorials/common/plus-icon.png" width="30">) in the **Args** field to open the **PayloadFactoryArgument** dialog. 
     2. Enter the following information in the **PayloadFactoryArgument** dialog box. This provides the argument that defines the actual value of the first variable (used in the format definition given in the previous step).
 
         !!! Tip
@@ -813,7 +828,7 @@ Let's send a request to the API resource to make a reservation. You can use the 
     !!! Tip
         If you don't see the <b>HTTP Client</b> pane, go to <b>Window -> Show View - Other</b> and select <b>HTTP Client</b> to enable the client pane.
     
-2. Enter the request information as given below and click the <b>Send</b> icon (<img src="../../assets/img/integrate/tutorials/common/play-head-icon.png" width="20">).
+2. Enter the request information as given below and click the <b>Send</b> icon (<img src="../../../assets/img/integrate/tutorials/common/play-head-icon.png" width="20">).
     
     <table>
         <tr>

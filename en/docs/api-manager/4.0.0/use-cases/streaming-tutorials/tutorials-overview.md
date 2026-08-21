@@ -1,3 +1,18 @@
+---
+title: "Tutorials overview"
+description: "Links to WSO2 Streaming Integrator tutorials covering ETL, Kafka, APIs, the Micro Integrator, and error handling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/tutorials-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/tutorials-overview.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - tutorials-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Tutorials Overview
 
 The following table lists the tutorials available for different user scenarios.

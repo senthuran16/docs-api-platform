@@ -1,3 +1,18 @@
+---
+title: "Synchronous messaging with request-reply pattern"
+description: "Implement a dual-channel request-reply pattern between two proxy services using a RabbitMQ broker."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/request-response-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/request-response-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Synchronous messaging with request-reply pattern
 
 This sample demonstrates how you can implement the <b>request-reply</b> messaging scenario (dual-channel scenario) using the RabbitMQ broker and WSO2 Micro Integrator. 
@@ -5,7 +20,7 @@ This sample demonstrates how you can implement the <b>request-reply</b> messagin
 As shown below, the `OrderRequest` proxy service in the Micro Integrator receives an HTTP
 request, which it publishes to a RabbitMQ queue. This message is consumed and processed by the `OrderProcessing` proxy service in the Micro Integrator, and the response is sent back to the client over HTTP.
 
-<img src="../../../assets/img/integrate/rabbitmq/rabbitmq-request-response.png">
+<img src="../../../../assets/img/integrate/rabbitmq/rabbitmq-request-response.png">
 
 ## Synapse configurations
 

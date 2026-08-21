@@ -1,5 +1,16 @@
 ---
-title: Setting up Cloud Native Observability on a VM - WSO2 API Manager 4.0.0
+title: "Setting up cloud native observability on a VM"
+description: "Set up Prometheus, Grafana, and optional log and trace add-ons to observe a Micro Integrator deployment running on a VM."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/setting-up-cloud-native-observability-on-a-vm/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/setting-up-cloud-native-observability-on-a-vm.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - setting-up-cloud-native-observability-on-a-vm
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Setting up Cloud Native Observability on a VM

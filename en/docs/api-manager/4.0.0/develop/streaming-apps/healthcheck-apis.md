@@ -1,3 +1,18 @@
+---
+title: "Healthcheck API"
+description: "Reference the Healthcheck REST API used to check the availability status of the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/healthcheck-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/healthcheck-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - healthcheck-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Healthcheck API
 
 ### Overview

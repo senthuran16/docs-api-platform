@@ -1,3 +1,18 @@
+---
+title: "Viewing trigger statistics"
+description: "View the Grafana dashboard that shows summary and throughput statistics for Siddhi triggers."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/si-observe/viewing-trigger-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/si-observe/viewing-trigger-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-trigger-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Viewing Trigger Statistics
 
 ![Trigger statistics dashboard](../../assets/img/streaming/streaming-integrator-grafana-dashboard/trigger_statistics_dashboard.png)

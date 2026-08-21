@@ -1,3 +1,18 @@
+---
+title: "Introduction to user management"
+description: "Learn the basic concepts of user management, including users, roles, user stores, and permissions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/introduction-to-user-management/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/introduction-to-user-management.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Introduction to User Management
 
 User management is a mechanism which involves defining and managing

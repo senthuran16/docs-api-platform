@@ -1,8 +1,23 @@
+---
+title: "Control retries and delay for failed messages"
+description: "Control the number of delivery retries and the delay applied to failed RabbitMQ messages before they are dropped."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/retry-delay-failed-msgs-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/retry-delay-failed-msgs-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Control the number of retries and delay message in case of error
 
 This sample demonstrates how the WSO2 Micro Integrator can guarantee message delivery to an endpoint by controlling the number of delivery retries during errors. You can also configure a delay in message delivery from the RabbitMQ broker.
 
-<img src="../../../assets/img/integrate/rabbitmq/rabbitmq-retry-delay-messages.png">
+<img src="../../../../assets/img/integrate/rabbitmq/rabbitmq-retry-delay-messages.png">
 
 1.  The Micro Integrator first consumes a message from RabbitMQ and attempts to deliver it to the endpoint. 
 2.  When there is an error in delivery, the `SET_ROLLBACK_ONLY` property in the Micro Integrator moves the message to the dead letter exchange (DLX) configured in RabbitMQ.

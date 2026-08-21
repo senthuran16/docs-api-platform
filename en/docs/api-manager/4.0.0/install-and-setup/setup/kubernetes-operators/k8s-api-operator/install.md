@@ -1,3 +1,18 @@
+---
+title: "Installing the API K8s operator"
+description: "Install the K8s API Operator in standalone or cluster mode, or through OperatorHub.io, in a Kubernetes environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/install/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/install.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing the API K8s Operator
 
 Follow the instructions given below to install and set up the API K8s Operator in your Kubernetes environment.

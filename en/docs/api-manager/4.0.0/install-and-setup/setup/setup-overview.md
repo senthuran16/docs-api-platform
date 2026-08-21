@@ -1,3 +1,18 @@
+---
+title: "Setup overview"
+description: "Get an overview of the setup tasks required for API Manager, Micro Integrator, and Streaming Integrator components."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/setup-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/setup-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setup-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Setup Overview
 
 Setting up involves doing the required configurations for the API Manager and its components before running them in the production environment. The following are some common set up tasks that you are required to do separately for each component.
@@ -13,7 +28,7 @@ Setting up involves doing the required configurations for the API Manager and it
     For instructions to set up databases for each component, see the following topics:
     
     - [Setting up Databases for the API Manager](setting-up-databases/overview.md)
-    - [Setting up Databases for the Micro Integrator](mi-setup/databases/setting-up-MySQL.md)
+    - [Setting up Databases for the Micro Integrator](mi-setup/databases/setting-up-mysql.md)
     - [Setting up Databases for the Streaming Integrator](si-setup/configuring-data-sources.md)
     
 - **Configuring primary user stores**
@@ -85,7 +100,7 @@ In addition, the component-specific setup tasks are as follows:
     
         The Micro Integrator is shipped with a file-system-based registry to store registry artifacts. This section explains the default directory structure of the registry and how to change it if required.
     
-    -*[**Setting up message brokers**](mi-setup/brokers/deploy-rabbitMQ.md)
+    -*[**Setting up message brokers**](mi-setup/brokers/deploy-rabbitmq.md)
     
         This section explains how to set up the different message brokers with which the Micro Integrator component can integrate.
         

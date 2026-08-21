@@ -1,3 +1,18 @@
+---
+title: "Using distributed transactions in data services"
+description: "Demonstrates how to use XA datasources to coordinate distributed transactions across multiple RDBMSs in a data service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/distributed-trans-data-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/data_integration/distributed-trans-data-service.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - data_integration
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using Distributed Transactions in Data Services
 
 !!! Warning

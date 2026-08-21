@@ -1,3 +1,18 @@
+---
+title: "Running the streaming integrator runtime"
+description: "Run the WSO2 Streaming Integrator runtime after downloading and installing it on your local environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/running-the-si/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/running-the-si.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Running the Streaming Integrator Runtime
 
 Follow the steps given below to run the WSO2 Streaming Integrator (SI) runtime.

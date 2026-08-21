@@ -1,3 +1,18 @@
+---
+title: "Cleansing data"
+description: "Filter and refine streaming data by exact match, regex pattern, or multiple criteria in WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/cleansing-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/cleansing-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - cleansing-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Cleansing Data
 
 When you receive input data via the Streaming Integrator, it may consist of data that is not required to generate the required output, null values for certain attributes, etc. Cleansing data refers to refining the input data received by assigning values where there are missing values (if there are applicable values), filtering out the data that is not required, etc.

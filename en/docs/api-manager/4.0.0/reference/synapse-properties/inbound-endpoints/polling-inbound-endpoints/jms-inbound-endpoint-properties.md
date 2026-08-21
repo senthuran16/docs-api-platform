@@ -1,3 +1,18 @@
+---
+title: "JMS inbound"
+description: "Reference for the properties required to configure a JMS inbound endpoint that receives messages from a JMS server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/jms-inbound-endpoint-properties/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/synapse-properties/inbound-endpoints/polling-inbound-endpoints/jms-inbound-endpoint-properties.md
+tags:
+  - api-manager
+  - reference
+  - synapse-properties
+  - inbound-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # JMS Inbound 
 ## Introduction
 

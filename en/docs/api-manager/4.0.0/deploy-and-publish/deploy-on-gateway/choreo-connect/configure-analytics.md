@@ -1,3 +1,18 @@
+---
+title: "Configuring analytics for Choreo connect"
+description: "Configure Choreo Connect to publish analytics events to Choreo Portal Analytics or to an ELK-based analytics platform."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/configure-analytics.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Analytics for Choreo Connect
 
 Choreo Connect is capable of publishing fine grained analytics events which can then be used to generate reports, dashboards, statistics, and graphs for the APIs deployed on Choreo Connect.
@@ -24,7 +39,7 @@ Follow the instructions below to configure analytics with Choreo:
 3. Open the `docker-compose.yaml` file, which based on your setup is located in the `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect` or `<CHOREO-CONNECT_HOME>/docker-compose/choreo-connect-with-apim` directory.
 
     !!! info
-        You can configure Choreo Connect to publish Analytics to the Choreo cloud via the [standalone mode](getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#step-3-start-choreo-connect) or via the [with Control Plane mode](getting-started/quick-start-guide-docker-with-apim.md#step-3-start-choreo-connect-and-api-manager).
+        You can configure Choreo Connect to publish Analytics to the Choreo cloud via the [standalone mode](getting-started/deploy/cc-as-a-standalone-gateway-on-docker.md#step-3-start-choreo-connect) or via the [with Control Plane mode](getting-started/quick-start-guide-docker-with-apim.md#step-2-start-choreo-connect-and-api-manager).
 
 4. Locate the environment variables section under the `enforcer` and change the following variables.
 
@@ -35,7 +50,9 @@ Follow the instructions below to configure analytics with Choreo:
         analytics_authToken=<your-on-prem-key>
     ```
 
-5. Enable analytics before starting Choreo Connect. First of all, navigate to the configuration file location. {!includes/deploy/cc-configuration-file.md!}
+5. Enable analytics before starting Choreo Connect. First of all, navigate to the configuration file location.
+
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
     1. Locate the [Analytics](configurations/analytics-configurations.md) section.
 
@@ -98,6 +115,7 @@ The Enforcer component in Choreo Connect can log analytics-related data to be us
 
 ### Step 1 - Configure Choreo Connect
 
+<a name="step-11-compile-the-reporter-implementation"></a>
 #### Step 1.1 - Compile the reporter implementation
 
 Follow the instructions below to compile the reporter implementation as a JAR file:
@@ -111,7 +129,8 @@ Follow the instructions below to compile the reporter implementation as a JAR fi
 
 #### Step 1.2 - Configure the config.toml file
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 2. Change the analytics section based on the following configurations.
 

@@ -1,3 +1,18 @@
+---
+title: "Connecting to HornetQ"
+description: "Configure WSO2 Micro Integrator's JMS transport to connect with a standalone HornetQ server or one embedded in JBoss EAP."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-hornetq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/brokers/configure-with-hornetq.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Connecting to HornetQ
 
 This section describes how to configure WSO2 WSO2 Micro Integrator to connect with

@@ -1,3 +1,17 @@
+---
+title: "About this release"
+description: "Get an overview of WSO2 API Manager 4.0.0, the successor to API Manager 3.2.0 and Enterprise Integrator 7.1.0, and its new features."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/about-this-release/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/get-started/about-this-release.md
+tags:
+  - api-manager
+  - get-started
+  - about-this-release
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "release-notes"
+---
+
 # About this Release
 
 WSO2 API Manager is a complete platform for building, integrating, and exposing your digital services as managed APIs in the cloud, on-premise, and hybrid architectures to drive your digital transformation strategy. It allows API developers to design, publish, and manage the lifecycle of APIs and API product managers to create API products from one or more APIs. APIs can be built by integrating different types of APIs such as traditional request-response style APIs and Event-driven APIs using a low-code/no-code development experience, and the APIs can be exposed to consumers through its API Gateway. 
@@ -67,7 +81,7 @@ It is now available to download from [here](https://wso2.com/api-management/#).
 
 - **Microgateway Labels**
 
-      [Grouping APIs with Microgateway Labels](https://apim.docs.wso2.com/en/3.2.0/learn/api-microgateway/grouping-apis-with-labels/)
+      [Grouping APIs with Microgateway Labels](../deploy-and-publish/deploy-on-gateway/choreo-connect/getting-started/choreo-connect-overview)
       is removed from this release. Instead, you can use [Virtual Hosts (VHosts)](../deploy-and-publish/deploy-on-gateway/deploy-api/exposing-apis-via-custom-hostnames.md)
       and dynamically manageable Gateway environments to group and expose APIs with custom hostnames.
 
@@ -227,7 +241,7 @@ The following table explains the availability of the most critical features in t
 			XML-based configurations
 		</td>
 		<td>
-			<a href="../reference/config-catalog-mi.md">TOML-based configurations</a>
+			<a href="../../reference/config-catalog-mi.md">TOML-based configurations</a>
 		</td>
 	</tr>
 	<tr>
@@ -268,10 +282,10 @@ The following table explains the availability of the most critical features in t
 			Tooling
 		</td>
 		<td>
-			<a href="../integrate/develop/wso2-integration-studio.md">WSO2 Integration Studio</a>
+			<a href="../../integrate/develop/wso2-integration-studio.md">WSO2 Integration Studio</a>
 		</td>
 		<td>
-			<a href="../integrate/develop/wso2-integration-studio.md">WSO2 Integration Studio</a>
+			<a href="../../integrate/develop/wso2-integration-studio.md">WSO2 Integration Studio</a>
 		</td>
 	</tr>
 	<tr>
@@ -282,8 +296,8 @@ The following table explains the availability of the most critical features in t
 			Management Console
 		</td>
 		<td>
-			<a href="../observe/mi-observe/working-with-monitoring-dashboard.md">Micro Integrator Dashboard</a></br>
-			<a href="../install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl.md">API Controller (CLI)</a>
+			<a href="../../observe/mi-observe/working-with-monitoring-dashboard.md">Micro Integrator Dashboard</a></br>
+			<a href="../../install-and-setup/setup/api-controller/managing-integrations/managing-integrations-with-ctl.md">API Controller (CLI)</a>
 		</td>
 	</tr>
 	<tr>
@@ -305,7 +319,7 @@ The following table explains the availability of the most critical features in t
 			RDBMS-based Registry
 		</td>
 		<td>
-			<a href="../install-and-setup/setup/mi-setup/deployment/file_based_registry.md">File system based Registry</a>
+			<a href="../../install-and-setup/setup/mi-setup/deployment/file_based_registry.md">File system based Registry</a>
 		</td>
 	</tr>
 	<tr>
@@ -342,10 +356,10 @@ The following features, which are available in ESB runtimes, are removed from th
 			Management Console
 		</td>
 		<td>
-			<a href="../integrate/develop/wso2-integration-studio.md">WSO2 Integration Studio</a> is the recommended tool for developing integration solutions. The monitoring capabilities available in the management console (of the ESB profile) are available through the new <a href="../observe/mi-observe/working-with-monitoring-dashboard.md">Micro Integrator dashboard</a>.
+			<a href="../../integrate/develop/wso2-integration-studio.md">WSO2 Integration Studio</a> is the recommended tool for developing integration solutions. The monitoring capabilities available in the management console (of the ESB profile) are available through the new <a href="../../observe/mi-observe/working-with-monitoring-dashboard.md">Micro Integrator dashboard</a>.
 		</td>
 		<td>
-			<a href="../observe/mi-observe/working-with-monitoring-dashboard.md">Micro Integrator Dashboard</a>
+			<a href="../../observe/mi-observe/working-with-monitoring-dashboard.md">Micro Integrator Dashboard</a>
 		</td>
 	</tr>
 	<tr>
@@ -378,7 +392,7 @@ The following features, which are available in ESB runtimes, are removed from th
 			-
 		</td>
 		<td>
-			<a href="../install-and-setup/setup/mi-setup/deployment/file_based_registry.md">File system based Registry</a>
+			<a href="../../install-and-setup/setup/mi-setup/deployment/file_based_registry.md">File system based Registry</a>
 		</td>
 	</tr>
 	<tr>
@@ -491,9 +505,9 @@ It is now available to download from [here](https://wso2.com/api-management/tool
 - Support import/export revisioning of APIs and API Products
 - [Adding proxy environment variables support for apictl](../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#set-proxy-environment-variables-for-apictl)
 - Resolve parameters at server-side while importing an API/API Product project
-- [Parameter file support for API Products](../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api-product)
+- [Parameter file support for API Products](../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api-product)
 - Introducing new schemas for apictl API/API Product/Application project artifacts
-- [Support to override subscription policies of an API using the parameters file](../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#defining-the-params-file-for-an-api)
+- [Support to override subscription policies of an API using the parameters file](../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#defining-the-parameters-file-for-an-api)
 - [Support TLS renegotiation configuration](../install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller.md#set-tls-renegotiation-mode)
 - [Support apictl bundle command (archives an API Project)](../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#bundling-the-generated-directory-before-import)
 - [Introducing a structure for deployment and source repositories](../install-and-setup/setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md#generating-the-deployment-directory)
@@ -629,7 +643,7 @@ It is now available to download from [here](https://github.com/wso2/streaming-in
 	 
 	 The following sinks/sources can be exposed as an Async API : [WebSocket server (sink)](https://siddhi-io.github.io/siddhi-io-websocket/api/3.0.2/#websocket-server-sink),  [web socket-server (source)](https://siddhi-io.github.io/siddhi-io-websocket/api/3.0.2/#websocket-server-source), [WebSocket (source)](https://siddhi-io.github.io/siddhi-io-websocket/api/3.0.2/#websocket-source), [SSE server (sink)](https://siddhi-io.github.io/siddhi-io-http/api/2.3.3/#sse-server-sink), [WebSubHub (source)](https://siddhi-io.github.io/siddhi-io-http/api/2.3.3/#websubhub-source)
      
-      See the [example use case](https://apim.docs.wso2.com/en/4.0.0/use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog/).
+      See the [example use case](../use-cases/streaming-usecase/exposing-stream-as-managed-api-in-service-catalog).
 
 - **Tooling support for WebSubHub Source and WebSubHub Sink**
     
@@ -643,7 +657,7 @@ It is now available to download from [here](https://github.com/wso2/streaming-in
 
 	 This release enables **error replay** for database connection errors. Errors that occur during ADD, DELETE, UPDATE, ADDORUPDATE operations can be replayed from the Error Store explorer. 
 	 
-	 See the tutorial on [handling store-type errors](https://apim.docs.wso2.com/en/4.0.0/use-cases/streaming-tutorials/handling-requests-with-errors/#step-7-handle-events-that-fail-at-database-level).
+	 See the tutorial on [handling store-type errors](../use-cases/streaming-tutorials/handling-requests-with-errors#step-7-handle-events-that-fail-at-database-level).
 
 <hr style="border:8px solid gray"> </hr>
 

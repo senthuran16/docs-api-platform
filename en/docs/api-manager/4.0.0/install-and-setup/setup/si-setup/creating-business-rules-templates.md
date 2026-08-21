@@ -1,3 +1,18 @@
+---
+title: "Working with business rules"
+description: "Create business rules from a template or from scratch using the Streaming Integrator's Business Rules Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/creating-business-rules-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-setup/creating-business-rules-templates.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Working with Business Rules
 
 In streaming integration, there are common use cases for analyzing statistics that involve operations such as calculating the average, minimum, maximum etc., for different endpoints. The Business Rules Manager allows you to define templates and generate business rules from them for different scenarios with common requirements.
@@ -99,7 +114,7 @@ To create a business rule from scratch, follow the procedure below:
 
 5. Click **Input** to expand the **Input** section. Then select the rule template from which the source and input configurations for the business rule must be selected.
 
-    ![Input Section](../../../assets/img/streaming/working-with-business-rules/Select-Input.png)
+    ![Input Section](../../../assets/img/streaming/working-with-business-rules/select-input.png)
 
     This displays the list of available sources and the exposed attributes of the selected template as shown below.
 

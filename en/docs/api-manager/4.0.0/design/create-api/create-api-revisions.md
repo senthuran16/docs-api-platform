@@ -1,3 +1,18 @@
+---
+title: "API revisions"
+description: "Create, deploy, and restore API revisions to decouple publishing from Gateway deployment and safely roll back changes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-api-revisions/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-api-revisions.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-api-revisions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # API Revisions
 
 [Publishing](../../deploy-and-publish/publish-on-dev-portal/publish-an-api.md) displays the 
@@ -26,7 +41,7 @@ Follow the instructions below to either deploy a new revision or deploy an exist
 
 ### Depoly a new revision
 
-{!includes/design/deploy-revision.md!}
+--8<-- "api-manager/4.0.0/includes/design/deploy-revision.md"
 
 ### Deploy an existing revision
 

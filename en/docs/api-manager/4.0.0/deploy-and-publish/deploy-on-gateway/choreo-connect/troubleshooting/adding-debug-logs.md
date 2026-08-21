@@ -1,3 +1,18 @@
+---
+title: "Adding debug and trace logs"
+description: "Enable debug and access logs in the Choreo Connect Adapter, Enforcer, and Router components to troubleshoot request processing issues."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/adding-debug-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/troubleshooting/adding-debug-logs.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Adding Debug and Trace Logs
 
 Following explain how to add debug and trace logs for the main three components of the Choreo Connect which are Adapter, Enforcer and Router.

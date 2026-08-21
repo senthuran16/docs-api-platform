@@ -1,8 +1,23 @@
+---
+title: "Configuring an Active-Active deployment"
+description: "Walks through manually configuring WSO2 API Manager with two active all-in-one nodes for an active-active deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/single-node/configuring-an-active-active-deployment.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - single-node
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring an Active-Active Deployment
 
 This page walks you through how to manually configure WSO2 API Manager (WSO2 API-M) with two active nodes that each has all the components of the API-M together in one instance (all-in-one instance).
 
-<a href="../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active apim deployment"></a>
+<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="active-active apim deployment"></a>
 
 Follow the instructions below to configure and deploy API-M by using an Active-Active deployment:
 
@@ -12,9 +27,9 @@ Follow the instructions below to configure and deploy API-M by using an Active-A
 -   [Step 4 - Configure the Second WSO2 API-M Node](#step-4-configure-the-second-wso2-api-m-node)
 -   [Step 5 - Configure the Artifact Synchronization](#step-5-configure-the-artifact-synchronization)
 -   [Step 6 - Configure Publisher with the Gateway](#step-6-configure-publisher-with-the-gateway)
--   [Step 7 - Configure Gateway URLs to Expose APIs](#step-7-configure-gateway-urls-to-expose-apis)
--   [Step 8 - Configure Throttling](#step-8-configure-throttling)
--   [Step 9 - Optionally, enable distributed cache invalidation](#step-9-optionally-enable-distributed-cache-invalidation)  
+-   [Step 7 - Configure Gateway URLs to Expose APIs](#step-6-configure-gateway-urls-to-expose-apis)
+-   [Step 8 - Configure Throttling](#step-7-configure-throttling)
+-   [Step 9 - Optionally, enable distributed cache invalidation](#step-8-optionally-enable-distributed-cache-invalidation)  
 -   [Step 10 - Configure API-M Analytics](#step-9-configure-api-m-analytics)
 -   [Step 11 - Configure Production Hardening](#step-10-configure-production-hardening)
 -   [Step 12 - Start the WSO2 API-M Servers](#step-11-start-the-wso2-api-m-servers)
@@ -230,11 +245,11 @@ guidelines (e.g., tuning parameters, backup and recovery recommendations etc.) b
 
 For more information on security hardening guidelines, see [Security Guidelines for Production Deployment](../deployment-best-practices/security-guidelines-for-production-deployment.md).
 
-For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information on other production deployment guidelines, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
 
 ## Step 11 - Start the WSO2 API-M Servers
 
-Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-server).
+Start the WSO2 API-M servers using the standard start-up script. For more information, see [Starting the server](../../install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
 ```tab="Linux/Mac OS"
 cd <API-M_HOME>/bin/

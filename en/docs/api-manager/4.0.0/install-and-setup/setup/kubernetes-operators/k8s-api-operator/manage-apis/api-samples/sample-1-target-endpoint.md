@@ -1,3 +1,18 @@
+---
+title: "Sample 1: target endpoint"
+description: "Deploy a sample backend with the TargetEndpoint custom resource on Kubernetes and apply API management to it using the K8s API Operator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-apis/api-samples/sample-1-target-endpoint/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/kubernetes-operators/k8s-api-operator/manage-apis/api-samples/sample-1-target-endpoint.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - kubernetes-operators
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Sample 1: Target Endpoint
 
 Let's deploy a backend using Target Endpoint resource on your Kubernetes environment and apply API management.

@@ -1,3 +1,18 @@
+---
+title: "Password grant"
+description: "Generate OAuth2 access tokens using the resource owner password credentials grant: encode client credentials and invoke the Token API."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/grant-types/password-grant/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-security/oauth2/grant-types/password-grant.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Password Grant
 
 You can obtain an access token by providing the resource owner's username and password as an authorization grant. It requires the base64 encoded string of the `consumer-key:consumer-secret` combination. You need to meet the following prerequisites before using the Token API to generate a token.
@@ -14,9 +29,9 @@ The diagram below illustrates the resource owner password credentials grant flow
 
 #### Prerequisites
 
--   A valid user account in the API Developer Portal. You can self sign up if it is [enabled by an admin]({{base_path}}/consume/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup/).
+-   A valid user account in the API Developer Portal. You can self sign up if it is [enabled by an admin](../../../../reference/customize-product/customizations/customizing-the-developer-portal/enabling-or-disabling-self-signup).
 -   A valid consumer key and consumer secret pair. Initially, these keys must be generated through the API Developer Portal by clicking **GENERATE KEYS** on the **Production Keys** tab of the application.
--   A running API Gateway instance (typically an API Manager instance should be running). For instructions on API Gateway, see [Components]({{base_path}}/getting-started/basic-architecture/#api-gateway).
+-   A running API Gateway instance (typically an API Manager instance should be running). For instructions on API Gateway, see [Components](../../../../get-started/key-concepts#api-gateway).
 
 -   If the Key Manager is on a different server than the API Gateway, change the server URL (host and ports) of the Key Manager accordingly by adding following configuration in `<APIM_HOME>/repository/conf/deployment.toml` file.
 

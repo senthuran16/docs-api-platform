@@ -1,5 +1,16 @@
 ---
-title: Monitoring Correlation Logs - WSO2 API Manager 4.0.0
+title: "Monitoring Correlation Logs - WSO2 API Manager 4.0.0"
+description: "Enable correlation logs in the Micro Integrator to track the complete round trip of an HTTP message under one correlation ID."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/micro-integrator/classic-observability-logs/monitoring-correlation-logs.md
+tags:
+  - api-manager
+  - observe
+  - micro-integrator
+  - classic-observability-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Monitoring Correlation Logs

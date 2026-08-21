@@ -1,3 +1,18 @@
+---
+title: "Deployment"
+description: "Learn about the Streaming Integrator's supported deployment patterns for scalability and high availability."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-deployment/deployment-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/si-deployment/deployment-guide.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Deployment
 
 WSO2 Streaming Integrator(SI) is designed to deploy enterprise grade critical systems that demand high 

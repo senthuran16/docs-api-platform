@@ -1,3 +1,18 @@
+---
+title: "Switch from FIX to AMQP"
+description: "Configure a proxy service that receives FIX messages and forwards them to a backend over AMQP using JMS."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_fix_to_amqp/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/protocol-switching/switching_from_fix_to_amqp.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - protocol-switching
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Switch from FIX to AMQP
 
 This example demonstrates how WSO2 Micro Integrator receives messages through FIX and forwards them through AMQP.

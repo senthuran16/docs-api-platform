@@ -1,3 +1,17 @@
+---
+title: "Install and setup overview"
+description: "Browse installation and setup instructions for the API Manager, Micro Integrator, and Streaming Integrator runtimes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install-and-setup-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install-and-setup-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install-and-setup-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Install and Setup Overview
 
 The installation and the setup of API Manager involve installing the product, deploying it in the method that is best suited for your requirements, and setting it up to run in the production environment. If you already have an older version of WSO2 API Manager or one of its components, you can follow the upgrading instructions in this guide.
@@ -15,7 +29,7 @@ To install and run the API Manager in virtual machines, see the following topics
 <table>
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-api-m-runtime.md">Installing the API Manager Runtime</a>
+            <a href="../install/installing-the-product/installing-api-m-runtime.md">Installing the API Manager Runtime</a>
         </th>
         <td>
             Explains how to download the API Manager component as a binary and install it on a virtual machine.
@@ -23,7 +37,7 @@ To install and run the API Manager in virtual machines, see the following topics
     </tr>  
     <tr>
         <th>
-            <a href="install/installing-the-product/running-the-api-m.md">Running the API-M Runtime</a>
+            <a href="../install/installing-the-product/running-the-api-m.md">Running the API-M Runtime</a>
         </th>
         <td>
             Explains how you can execute the API-M runtime and start using its features.
@@ -31,7 +45,7 @@ To install and run the API Manager in virtual machines, see the following topics
     </tr> 
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-api-m-as-a-linux-service.md">Running API-M as a Linux Service</a>
+            <a href="../install/installing-the-product/installing-api-m-as-a-linux-service.md">Running API-M as a Linux Service</a>
         </th>
         <td>
             Explains how to install and run the API Manager as a Linux service.
@@ -39,7 +53,7 @@ To install and run the API Manager in virtual machines, see the following topics
     </tr>
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-api-m-as-a-windows-service.md">Running API-M as a Windows Service</a>
+            <a href="../install/installing-the-product/installing-api-m-as-a-windows-service.md">Running API-M as a Windows Service</a>
         </th>
         <td>
             Explains how to install and run the API Manager as a Windows service.
@@ -54,7 +68,7 @@ To set up the API Manager component, see the following topics.
 <table>
 <tr>
     <th>
-        <a href="../administer/updating-wso2-api-manager.md">Applying WSO2 WUM Updates</a>
+        <a href="../../administer/updating-wso2-api-manager.md">Applying WSO2 WUM Updates</a>
     </th>
     <td>
         Explains how to get the latest updates that are available for a particular release of the API Manager.
@@ -68,17 +82,17 @@ To set up the API Manager component, see the following topics.
         The key manager of the API Manager handles all clients, security, and access token-related operations. This section covers the following topics:
         <ul>
             <li>
-                <a href="setup/distributed-deployment/configure-a-third-party-key-manager.md">Configure a Third-party Key Manager</a>
+                <a href="../setup/distributed-deployment/configure-a-third-party-key-manager.md">Configure a Third-party Key Manager</a>
             </li>
             <li>
-                <a href="setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md">Configuring WSO2 Identity Server as a Key Manager</a>
+                <a href="../setup/distributed-deployment/configuring-wso2-identity-server-as-a-key-manager.md">Configuring WSO2 Identity Server as a Key Manager</a>
             </li>
         </ul>
     </td>
 </tr>
 <tr>
     <th>
-        <a href="setup/setting-up-databases/overview.md">Setting up Databases</a>
+        <a href="../setup/setting-up-databases/overview.md">Setting up Databases</a>
     </th>
     <td>
         The API Manager is shipped with an H2 database for storing data. This guide explains the default H2 databases used within API Manager as well as how to switch to a different database supported for the API Manager such as MSSQL, MySQL, PostgreSQL, Oracle, MariaDB, IBM DB2, and Oracle RAC. In addition, this section covers how to manage data growth and improve performance when storing metadata and runtime data in databases.
@@ -91,10 +105,10 @@ To set up the API Manager component, see the following topics.
         A load balancer or reverse proxy is required to map external traffic with ports and URLs that the APi Manager component uses internally. This section covers the following topics relating to the proxy server and the load balancer.
         <ul>
             <li>
-                <a href="setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md">Configuring the Proxy Server and the Load Balancer</a>
+                <a href="../setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md">Configuring the Proxy Server and the Load Balancer</a>
             </li>
             <li>
-                <a href="setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path.md">Adding a Custom Proxy Path</a>
+                <a href="../setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path.md">Adding a Custom Proxy Path</a>
             </li>
         </ul>
     </td>
@@ -110,80 +124,80 @@ To set up the API Manager component, see the following topics.
                 <a>Logins and Passwords</a>
             </li>
                 <li>
-                    <a href="setup/security/logins-and-passwords/maintaining-logins-and-passwords.md">Maintaining Logins and Passwords</a>
+                    <a href="../setup/security/logins-and-passwords/maintaining-logins-and-passwords.md">Maintaining Logins and Passwords</a>
                 </li>
                 <li>
                     <a>Securing Passwords</a>
                 </li>
                     <li>
-                        <a href="setup/security/logins-and-passwords/carbon-secure-vault-implementation.md">Customizing Secure Vault</a>
+                        <a href="../setup/security/logins-and-passwords/carbon-secure-vault-implementation.md">Customizing Secure Vault</a>
                     </li>
                     <li>
-                        <a href="setup/security/logins-and-passwords/set-passwords-using-vars-and-sys-props.md">Set Passwords using Environment Variables/System Properties</a>
+                        <a href="../setup/security/logins-and-passwords/set-passwords-using-vars-and-sys-props.md">Set Passwords using Environment Variables/System Properties</a>
                     </li>
                     <li>
-                        <a href="setup/security/logins-and-passwords/working-with-encrypted-passwords.md">Working with Encrypted Passwords</a>
+                        <a href="../setup/security/logins-and-passwords/working-with-encrypted-passwords.md">Working with Encrypted Passwords</a>
                     </li>
             <li>
                 <a>Configuring Keystores</a>
             </li>
                 <li>
-                    <a href="setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md">Configuring Keystores in API Manager</a>
+                    <a href="../setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md">Configuring Keystores in API Manager</a>
                 </li>
                 <li>
                     <a>Keystore Basics</a>
                 </li>
                     <li>
-                        <a href="setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md">Creating a New Keystore</a>
+                        <a href="../setup/security/configuring-keystores/keystore-basics/creating-new-keystores.md">Creating a New Keystore</a>
                     </li>
                     <li>
-                        <a href="setup/security/configuring-keystores/keystore-basics/renewing-a-ca-signed-certificate-in-a-keystore.md">Renewing a CA Signed Certificate</a>
+                        <a href="../setup/security/configuring-keystores/keystore-basics/renewing-a-ca-signed-certificate-in-a-keystore.md">Renewing a CA Signed Certificate</a>
                     </li>
                     <li>
-                        <a href="setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md">About Asymetric Cryptography</a>
+                        <a href="../setup/security/configuring-keystores/keystore-basics/about-asymetric-cryptography.md">About Asymetric Cryptography</a>
                     </li>
             <li>
-                <a href="setup/security/enabling-hostname-verification.md">Enabling HostName Verification</a>
+                <a href="../setup/security/enabling-hostname-verification.md">Enabling HostName Verification</a>
             </li>
             <li>
-                <a href="setup/security/enabling-java-security-manager.md">Enabling Java Security Manager</a>
+                <a href="../setup/security/enabling-java-security-manager.md">Enabling Java Security Manager</a>
             </li>
             <li>
-                <a href="setup/security/general-data-protection-regulation-gdpr-for-wso2-api-manager.md">General Data Protection Regulation (GDPR) for WSO2 API Manager</a>
+                <a href="../setup/security/general-data-protection-regulation-gdpr-for-wso2-api-manager.md">General Data Protection Regulation (GDPR) for WSO2 API Manager</a>
             </li>
             <li>
-                <a href="setup/security/configuring-transport-level-security.md">Configuring Transport Level Security</a>
+                <a href="../setup/security/configuring-transport-level-security.md">Configuring Transport Level Security</a>
             </li>
             <li>
-                <a href="setup/security/user-account-management.md">User Account Management</a>
+                <a href="../setup/security/user-account-management.md">User Account Management</a>
             </li>                                                                                      
         </ul>
     </td>
 </tr>
 <tr>
     <th>
-        <a href="../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md">Configuring User Stores</a>
+        <a href="../../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md">Configuring User Stores</a>
     </th>
     <td>
         You can configure primary user stores as well as secondary user stores for the API Manager component. This section explains the concept of user stores and provides instructions to configure primary user stores. The topics covered are as follows:
         <ul>
             <li>
-                <a href="../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md">Introduction to User Stores</a>
+                <a href="../../administer/managing-users-and-roles/managing-user-stores/introduction-to-userstores.md">Introduction to User Stores</a>
             </li>
                 <li>
-                    <a href="../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md"> Configuring Primary User Stores</a>
+                    <a href="../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-the-primary-user-store.md"> Configuring Primary User Stores</a>
                 </li>
                 <li>
-                    <a href="../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md">Configuring a JDBC User Store</a>
+                    <a href="../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-jdbc-user-store.md">Configuring a JDBC User Store</a>
                 </li>
                 <li>
-                    <a href="../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md">Configuring a Read-Write LDAP User Store</a>
+                    <a href="../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-ldap-user-store.md">Configuring a Read-Write LDAP User Store</a>
                 </li>   
                 <li>
-                    <a href="../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store.md"> Configuring a Read-Only LDAP User Store</a>
+                    <a href="../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-only-ldap-user-store.md"> Configuring a Read-Only LDAP User Store</a>
                 </li>
                 <li>
-                    <a href="../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store.md">Configuring a Read-Write Active Directory User Store</a>
+                    <a href="../../administer/managing-users-and-roles/managing-user-stores/configure-primary-user-store/configuring-a-read-write-active-directory-user-store.md">Configuring a Read-Write Active Directory User Store</a>
                 </li>
         </ul>                                                                       
     </td>
@@ -195,16 +209,16 @@ To set up the API Manager component, see the following topics.
     <td>
         Explains how to configure SSO (Single Sign On) for the API Manager component with an external identity provider. The topics covered are as follows.
         <li>
-            <a href="setup/sso/configuring-identity-server-as-external-idp-using-oidc.md">Configuring Identity Server As External IDP with OIDC</a>
+            <a href="../setup/sso/configuring-identity-server-as-external-idp-using-oidc.md">Configuring Identity Server As External IDP with OIDC</a>
         </li>
         <li>
-            <a href="setup/sso/configuring-identity-server-as-external-idp-using-saml.md">Configuring Identity Server As External IDP with SAML</a>
+            <a href="../setup/sso/configuring-identity-server-as-external-idp-using-saml.md">Configuring Identity Server As External IDP with SAML</a>
         </li>
         <li>
-            <a href="setup/sso/okta-as-an-external-idp-using-oidc.md">Using OKTA As An External IDP With OIDC</a>
+            <a href="../setup/sso/okta-as-an-external-idp-using-oidc.md">Using OKTA As An External IDP With OIDC</a>
         </li>
         <li>
-            <a href="setup/sso/okta-as-an-external-idp-using-saml.md">Using OKTA As An External IDP With SAML</a>
+            <a href="../setup/sso/okta-as-an-external-idp-using-saml.md">Using OKTA As An External IDP With SAML</a>
         </li>                                   
     </td>
 </tr>   
@@ -215,13 +229,13 @@ To set up the API Manager component, see the following topics.
     <td>
         Covers some advance configurations including how to change the transport used by the API Manager component from the default PassThrough transport to a different transport, how to configure caching, and how to change the user interfaces of the API Manager component.
         <li>
-            <a href="setup/advance-configurations/changing-the-default-transport.md">Changing the Default Transport</a>
+            <a href="../setup/advance-configurations/changing-the-default-transport.md">Changing the Default Transport</a>
         </li>
         <li>
-            <a href="setup/advance-configurations/configuring-caching.md">Configuring Caching</a>
+            <a href="../setup/advance-configurations/configuring-caching.md">Configuring Caching</a>
         </li>
         <li>
-            <a href="setup/advance-configurations/customizing-the-management-console.md">Customizing the Management Console</a>
+            <a href="../setup/advance-configurations/customizing-the-management-console.md">Customizing the Management Console</a>
         </li>                   
     </td>
 </tr>
@@ -234,7 +248,7 @@ To deploy the API Manager runtime, see the topics given below.
 <table>
     <tr>
         <th>
-            <a href="setup/deployment-overview.md">Deployment Patterns</a>
+            <a href="../setup/deployment-overview.md">Deployment Patterns</a>
         </th>
         <td>
             This explains all the deployment patterns you can follow when you deploy WSO2 API manager. These patterns involve deploying the API Manager component together with Micro Integrator and Streaming Integrator components in clustered setups.
@@ -242,7 +256,7 @@ To deploy the API Manager runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="setup/single-node/all-in-one-deployment-overview.md">All-in-One Deployment</a>
+            <a href="../setup/single-node/all-in-one-deployment-overview.md">All-in-One Deployment</a>
         </th>
         <td>
             This describes the all-in-one deployment patterns where you can deploy all the sub components of the API Manager component in one instance.
@@ -250,7 +264,7 @@ To deploy the API Manager runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md">Distributed Deployment</a>
+            <a href="../setup/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m.md">Distributed Deployment</a>
         </th>
         <td>
             This describes the distributed deployment patterns where you can deploy the sub-components of the API Manager component in a distributed manner in order to handle a high volume of requests in an efficient manner.
@@ -258,7 +272,7 @@ To deploy the API Manager runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="setup/kubernetes-operators/k8s-api-operator/configuration-overview.md">Deploy API-M on Kubernetes using the Operator</a>
+            <a href="../setup/kubernetes-operators/k8s-api-operator/configuration-overview.md">Deploy API-M on Kubernetes using the Operator</a>
         </th>
         <td>
             Explains how the WSO2 API Manager Kubernetes operator deploys the API Manager component in Kubernetes.
@@ -266,7 +280,7 @@ To deploy the API Manager runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="install/deploying-api-manager-with-kubernetes-or-openshift-resources.md">Deploy API-M on Kubernetes using Helm Resources</a>
+            <a href="../install/deploying-api-manager-with-kubernetes-or-openshift-resources.md">Deploy API-M on Kubernetes using Helm Resources</a>
         </th>
         <td>
             Explains how Helm resources deploy the API Manager component in Kubernetes.
@@ -274,7 +288,7 @@ To deploy the API Manager runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="setup/kubernetes-operators/k8s-api-operator/manage-apis/api-deployments.md">Deploy APIs on Kubernetes</a>
+            <a href="../setup/kubernetes-operators/k8s-api-operator/manage-apis/api-deployments.md">Deploy APIs on Kubernetes</a>
         </th>
         <td>
             Explains how the Kubernetes operator can deploy APIs in Kubernetes as managed APIs.
@@ -289,7 +303,7 @@ To implement continuous integration and continuous deployment pipelines for APIs
 <table>
     <tr>
         <th>
-            <a href="setup/api-controller/ci-cd-with-wso2-api-management.md">CI/CD for APIs - Overview</a>
+            <a href="../setup/api-controller/ci-cd-with-wso2-api-management.md">CI/CD for APIs - Overview</a>
         </th>
         <td>
             Find out about the methods of implementing CI/CD for APIs using the API Controller (apictl).
@@ -297,7 +311,7 @@ To implement continuous integration and continuous deployment pipelines for APIs
     </tr>
      <tr>
         <th>
-            <a href="setup/api-controller/cicd-using-cli.md">Building a CI/CD Pipeline for APIs using the CLI</a>
+            <a href="../setup/api-controller/cicd-using-cli.md">Building a CI/CD Pipeline for APIs using the CLI</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for APIs using the API Controller (apictl).
@@ -305,7 +319,7 @@ To implement continuous integration and continuous deployment pipelines for APIs
     </tr>
     <tr>
         <th>
-            <a href="{{base_path}}/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach">Building a CI/CD Pipeline for APIs using Jenkins</a>
+            <a href="../setup/api-controller/building-jenkins-ci-cd-pipeline/">Building a CI/CD Pipeline for APIs using Jenkins</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for APIs using Jenkins and the API Controller (apictl).
@@ -318,7 +332,7 @@ See the topics given below to manage APIs, API products, Apps, etc. in the API-M
 <table>
     <tr>
         <th>
-            <a href="setup/api-controller/getting-started-with-wso2-api-controller.md">Getting Started with WSO2 API Controller</a>
+            <a href="../setup/api-controller/getting-started-with-wso2-api-controller.md">Getting Started with WSO2 API Controller</a>
         </th>
         <td>
             Explains how to set up the API Controller.
@@ -331,16 +345,16 @@ See the topics given below to manage APIs, API products, Apps, etc. in the API-M
         <td>
             This section covers the following topics.
             <li>
-                <a href="setup/api-controller/managing-apis-api-products/managing-apis-and-api-products.md">Managing APIs and API Products</a>
+                <a href="../setup/api-controller/managing-apis-api-products/managing-apis-and-api-products.md">Managing APIs and API Products</a>
             </li>
             <li>
-                <a href="setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach.md">Importing APIs Via Dev First Approach</a>
+                <a href="../setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach.md">Importing APIs Via Dev First Approach</a>
             </li>
             <li>
-                <a href="setup/api-controller/managing-apis-api-products/migrating-apis-to-different-environments.md">Migrating APIs to Different Environments</a>
+                <a href="../setup/api-controller/managing-apis-api-products/migrating-apis-to-different-environments.md">Migrating APIs to Different Environments</a>
             </li> 
             <li>
-                <a href="setup/api-controller/managing-apis-api-products/migrating-api-products-to-different-environments.md">Migrating API Products (with or without dependent APIs) to Different Environments</a>
+                <a href="../setup/api-controller/managing-apis-api-products/migrating-api-products-to-different-environments.md">Migrating API Products (with or without dependent APIs) to Different Environments</a>
             </li>       
         </td>
     </tr>
@@ -351,10 +365,10 @@ See the topics given below to manage APIs, API products, Apps, etc. in the API-M
         <td>
             This section covers the following topics.
             <li>
-                <a href="setup/api-controller/managing-applications/managing-applications.md">Managing Applications</a>
+                <a href="../setup/api-controller/managing-applications/managing-applications.md">Managing Applications</a>
             </li>
             <li>
-                <a href="setup/api-controller/managing-applications/migrating-applications-to-different-environments.md">Migrating Apps to Different Environments</a>
+                <a href="../setup/api-controller/managing-applications/migrating-applications-to-different-environments.md">Migrating Apps to Different Environments</a>
             </li>                
         </td>
     </tr>
@@ -365,19 +379,19 @@ See the topics given below to manage APIs, API products, Apps, etc. in the API-M
         <td>
             This section covers the following topics.
             <li>
-                <a href="setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md">Creating Custom Users to Perform API Controller Operations</a>
+                <a href="../setup/api-controller/advanced-topics/creating-custom-users-to-perform-api-controller-operations.md">Creating Custom Users to Perform API Controller Operations</a>
             </li>
             <li>
-                <a href="setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md">Configuring Environment Specific Parameters</a>
+                <a href="../setup/api-controller/advanced-topics/configuring-environment-specific-parameters.md">Configuring Environment Specific Parameters</a>
             </li>
             <li>
-                <a href="setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects.md">Using Dynamic Data in API Controller Projects</a>
+                <a href="../setup/api-controller/advanced-topics/using-dynamic-data-in-api-controller-projects.md">Using Dynamic Data in API Controller Projects</a>
             </li>
             <li>
-                <a href="setup/api-controller/advanced-topics/configuring-different-endpoint-types.md">Configuring Different Endpoint Types</a>
+                <a href="../setup/api-controller/advanced-topics/configuring-different-endpoint-types.md">Configuring Different Endpoint Types</a>
             </li>
             <li>
-                <a href="setup/api-controller/advanced-topics/formatting-the-output-of-get-command.md">Formatting the outputs of get commands</a>
+                <a href="../setup/api-controller/advanced-topics/formatting-the-output-of-get-command.md">Formatting the outputs of get commands</a>
             </li>                        
         </td>
     </tr>
@@ -399,7 +413,7 @@ To install and run the Micro Integrator on a virtual machine, see the topics giv
 <table>
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-mi.md">Installing the Micro Integrator Runtime</a>
+            <a href="../install/installing-the-product/installing-mi.md">Installing the Micro Integrator Runtime</a>
         </th>
         <td>
             Explains how to download the Micro Integrator runtime as a binary and install it on a virtual machine.
@@ -407,7 +421,7 @@ To install and run the Micro Integrator on a virtual machine, see the topics giv
     </tr>   
     <tr>
         <th>
-            <a href="install/installing-the-product/running-the-mi.md">Running the Micro Integrator Runtime</a>
+            <a href="../install/installing-the-product/running-the-mi.md">Running the Micro Integrator Runtime</a>
         </th>
         <td>
             Explains how you can execute the Micro Integrator runtime and start using its features.
@@ -415,7 +429,7 @@ To install and run the Micro Integrator on a virtual machine, see the topics giv
     </tr> 
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-mi-as-a-windows-service.md">Running the Micro Integrator as a Windows Service</a>
+            <a href="../install/installing-the-product/installing-mi-as-a-windows-service.md">Running the Micro Integrator as a Windows Service</a>
         </th>
         <td>
             Explains how to install and run the Micro Integrator as a Windows service.
@@ -428,7 +442,7 @@ To install and run the Micro Integrator Dashboard on a virtual machine, see the 
 <table>
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-mi-dashboard.md">Installing the Micro Integrator Dashboard</a>
+            <a href="../install/installing-the-product/installing-mi-dashboard.md">Installing the Micro Integrator Dashboard</a>
         </th>
         <td>
             Explains how to download the Micro Integrator Dashboard as a binary and install it on a virtual machine.
@@ -436,7 +450,7 @@ To install and run the Micro Integrator Dashboard on a virtual machine, see the 
     </tr>   
     <tr>
         <th>
-            <a href="install/installing-the-product/running-the-mi-dashboard.md">Running the Micro Integrator Dashboard</a>
+            <a href="../install/installing-the-product/running-the-mi-dashboard.md">Running the Micro Integrator Dashboard</a>
         </th>
         <td>
             Explains how you can execute the Micro Integrator Dashboard and start using its features.
@@ -451,7 +465,7 @@ To set up and configure the Micro Integrator runtime, see the topics given below
 <table>
 <tr>
     <th>
-        <a href="setup/mi-setup/updating-mi.md">Applying WSO2 Updates</a>
+        <a href="../setup/mi-setup/updating-mi.md">Applying WSO2 Updates</a>
     </th>
     <td>
         Explains how to get the latest updates that are available for a particular release of the Micro Integrator.
@@ -459,31 +473,31 @@ To set up and configure the Micro Integrator runtime, see the topics given below
 </tr>
 <tr>
     <th>
-        <a href="setup/mi-setup/updating-mi.md">Data Stores</a>
+        <a href="../setup/mi-setup/updating-mi.md">Data Stores</a>
     </th>
     <td>
         Explains how to set up a user store, databases (multiple types), and a file-based registry. The topics covered are as follows:
         <ul>
             <li>
-                <a href="setup/mi-setup/user_stores/setting_up_a_userstore.md">Configuring a User Store</a>
+                <a href="../setup/mi-setup/user_stores/setting_up_a_userstore.md">Configuring a User Store</a>
             </li>
             <li>
-                <a href="setup/mi-setup/databases/setting-up-mysql.md">Setting up a MySQL Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-mysql.md">Setting up a MySQL Database</a>
             </li>
             <li>
-                <a href="setup/mi-setup/databases/setting-up-MSSQL.md">Setting up a MSSQL Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-mssql/">Setting up a MSSQL Database</a>
             </li>
             <li>
-                <a href="setup/mi-setup/databases/setting-up-Oracle.md">Setting up a Oracle Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-oracle/">Setting up a Oracle Database</a>
             </li>
             <li>
-                <a href="setup/mi-setup/databases/setting-up-postgresql.md">Setting up a Postgre SQL Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-postgresql.md">Setting up a Postgre SQL Database</a>
             </li>
             <li>
-                <a href="setup/mi-setup/databases/setting-up-IBM-DB2.md">Setting up a IBM Database</a>
+                <a href="../setup/mi-setup/databases/setting-up-ibm-db2/">Setting up a IBM Database</a>
             </li>
             <li>
-                <a href="setup/mi-setup/deployment/file_based_registry.md">Configuring the File-based Registry</a>
+                <a href="../setup/mi-setup/deployment/file_based_registry.md">Configuring the File-based Registry</a>
             </li>
         </ul>                                                               
     </td>
@@ -499,43 +513,43 @@ To set up and configure the Micro Integrator runtime, see the topics given below
                 <a>Setting up Keystores</a>
             </li>
                 <li>
-                    <a href="setup/mi-setup/security/creating_keystores.md">Creating New Keystores</a>
+                    <a href="../setup/mi-setup/security/creating_keystores.md">Creating New Keystores</a>
                 </li>
                 <li>
-                    <a href="setup/mi-setup/security/importing_ssl_certificate.md">Adding SSL certificates to keystores</a>
+                    <a href="../setup/mi-setup/security/importing_ssl_certificate.md">Adding SSL certificates to keystores</a>
                 </li>
                 <li>
-                    <a href="setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore.md">Renewing a CA-signed Certificate</a>
+                    <a href="../setup/mi-setup/security/renewing_ca_signed_certificate_in_keystore.md">Renewing a CA-signed Certificate</a>
                 </li>
                 <li>
-                    <a href="setup/mi-setup/security/configuring_keystores.md">Configuring Keystores</a>
+                    <a href="../setup/mi-setup/security/configuring_keystores.md">Configuring Keystores</a>
                 </li>                                                                               
             <li>
                 <a>Complying with GDPR</a>
             </li>
                 <li>
-                    <a href="setup/mi-setup/security/gdpr_ei.md">GDPR for the WSO2 Micro Integrator</a>
+                    <a href="../setup/mi-setup/security/gdpr_ei.md">GDPR for the WSO2 Micro Integrator</a>
                 </li>
                 <li>
-                    <a href="setup/mi-setup/security/about_forgetme_tool.md">About the Identity Anonymization Tool</a>
+                    <a href="../setup/mi-setup/security/about_forgetme_tool.md">About the Identity Anonymization Tool</a>
                 </li>                               
             <li>
                 <a>Working with Secrets</a>
             </li>
                 <li>
-                    <a href="setup/mi-setup/security/encrypting_plain_text.md">Encrypting Secrets using WSO2 Secure Vault</a>
+                    <a href="../setup/mi-setup/security/encrypting_plain_text.md">Encrypting Secrets using WSO2 Secure Vault</a>
                 </li>
                 <li>
-                    <a href="setup/mi-setup/security/using-hashicorp-secrets.md">Using Hashicorp Secrets</a>
+                    <a href="../setup/mi-setup/security/using-hashicorp-secrets.md">Using Hashicorp Secrets</a>
                 </li>
                 <li>
-                    <a href="setup/mi-setup/security/single_key_encryption.md">Using Symmetric Encryption</a>
+                    <a href="../setup/mi-setup/security/single_key_encryption.md">Using Symmetric Encryption</a>
                 </li>                                                       
             <li>
-                <a href="setup/mi-setup/security/securing_management_api.md">Securing the Management API</a>
+                <a href="../setup/mi-setup/security/securing_management_api.md">Securing the Management API</a>
             </li>
             <li>
-                <a href="../troubleshooting/error-handling.md#custom-error-messages">Customizing Error Messages</a>
+                <a href="../../troubleshooting/error-handling.md#custom-error-messages">Customizing Error Messages</a>
             </li>                                                           
         </ul>
     </td>
@@ -547,28 +561,28 @@ To set up and configure the Micro Integrator runtime, see the topics given below
     <td>
         Explains how to configure the Micro Integrator at different levels to optimize performance.
         <li>
-            <a href="setup/mi-setup/performance_tuning/tuning_jvm_performance.md">Tuning JVM Performance</a>
+            <a href="../setup/mi-setup/performance_tuning/tuning_jvm_performance.md">Tuning JVM Performance</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/network_os_performance.md">Tuning Network and OS Performance</a>
+            <a href="../setup/mi-setup/performance_tuning/network_os_performance.md">Tuning Network and OS Performance</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/jdbc_tuning.md">Tuning JDBC Configurations</a>
+            <a href="../setup/mi-setup/performance_tuning/jdbc_tuning.md">Tuning JDBC Configurations</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/http_transport_tuning.md">Tuning the HTTP Transport</a>
+            <a href="../setup/mi-setup/performance_tuning/http_transport_tuning.md">Tuning the HTTP Transport</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/jms_transport_tuning.md">Tuning the JMS Transport</a>
+            <a href="../setup/mi-setup/performance_tuning/jms_transport_tuning.md">Tuning the JMS Transport</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/tuning-the-vfs-transport.md">Tuning the VFS Transport</a>
+            <a href="../setup/mi-setup/performance_tuning/tuning-the-vfs-transport.md">Tuning the VFS Transport</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/rabbitmq_transport_tuning.md">Tuning the RabbitMQ Transport</a>
+            <a href="../setup/mi-setup/performance_tuning/rabbitmq_transport_tuning.md">Tuning the RabbitMQ Transport</a>
         </li>
         <li>
-            <a href="setup/mi-setup/performance_tuning/tuning-inbound-endpoints.md">Tuning the Inbound Endpoints</a>
+            <a href="../setup/mi-setup/performance_tuning/tuning-inbound-endpoints.md">Tuning the Inbound Endpoints</a>
         </li>
     </td>
 </tr>
@@ -582,61 +596,61 @@ To set up and configure the Micro Integrator runtime, see the topics given below
             <a>AMQP (RabbitMQ)</a>
         </li>
             <li>
-                <a href="setup/mi-setup/brokers/deploy-rabbitmq.md">Deploying RabbitMQ</a>
+                <a href="../setup/mi-setup/brokers/deploy-rabbitmq.md">Deploying RabbitMQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-rabbitmq.md">Connecting to RabbitMQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-rabbitmq.md">Connecting to RabbitMQ</a>
             </li>                
         <li>
             <a>JMS</a>
         </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-activemq.md">Connecting to ActiveMQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-activemq.md">Connecting to ActiveMQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-apache-artemis.md">Connecting to Apache Artemis</a>
+                <a href="../setup/mi-setup/brokers/configure-with-apache-artemis.md">Connecting to Apache Artemis</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-hornetq.md">Connecting to HornetQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-hornetq.md">Connecting to HornetQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-ibm-websphere-app-server.md">Connecting to IBM Websphere App Server</a>
+                <a href="../setup/mi-setup/brokers/configure-with-ibm-websphere-app-server.md">Connecting to IBM Websphere App Server</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-ibm-webspheremq.md">Connecting to IBM WebSphere MQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-ibm-webspheremq.md">Connecting to IBM WebSphere MQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-jbossmq.md">Connecting to JBoss MQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-jbossmq.md">Connecting to JBoss MQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-msmq.md">Connecting to MSMQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-msmq.md">Connecting to MSMQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-swiftmq.md">Connecting to Swift MQ</a>
+                <a href="../setup/mi-setup/brokers/configure-with-swiftmq.md">Connecting to Swift MQ</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-tibco-ems.md">Connecting to TIBCO EMS</a>
+                <a href="../setup/mi-setup/brokers/configure-with-tibco-ems.md">Connecting to TIBCO EMS</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-weblogic.md">Connecting to Weblogic</a>
+                <a href="../setup/mi-setup/brokers/configure-with-weblogic.md">Connecting to Weblogic</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-wso2-mb.md">Connecting to WSO2 MB</a>
+                <a href="../setup/mi-setup/brokers/configure-with-wso2-mb.md">Connecting to WSO2 MB</a>
             </li>
             <li>
-                <a href="setup/mi-setup/brokers/configure-with-multiple-brokers.md">Connecting to Multiple Brokers</a>
+                <a href="../setup/mi-setup/brokers/configure-with-multiple-brokers.md">Connecting to Multiple Brokers</a>
             </li>                                                                                                                                                                
         <li>
-            <a href="setup/mi-setup/feature_configs/configuring-kafka.md">Kafka</a>
+            <a href="../setup/mi-setup/feature_configs/configuring-kafka.md">Kafka</a>
         </li>
         <li>
-            <a href="setup/mi-setup/brokers/configure-with-azureservicebus.md">Azure Service Bus</a>
+            <a href="../setup/mi-setup/brokers/configure-with-azureservicebus.md">Azure Service Bus</a>
         </li>                                   
     </td>
 </tr>
 <tr>
     <th>
-        <a href="setup/mi-setup/transport_configurations/configuring-transports.md">Transports</a>
+        <a href="../setup/mi-setup/transport_configurations/configuring-transports.md">Transports</a>
     </th>
     <td>
         Explains how to configure the Micro Integrator component to work with a range of transports. These include all the widely used transports including HTTP/S, JMS, VFS, as well as domain-specific transports such as FIX.
@@ -644,7 +658,7 @@ To set up and configure the Micro Integrator runtime, see the topics given below
 </tr>
 <tr>
     <th>
-        <a href="setup/mi-setup/transport_configurations/multi-https-transport.md">Multi-HTTPS Transport</a>
+        <a href="../setup/mi-setup/transport_configurations/multi-https-transport.md">Multi-HTTPS Transport</a>
     </th>
     <td>
         Explains how to enable dynamic SSL profiles for the Micro Integrator component and how to  dynamically load the SSL profiles at runtime using a periodic schedule or JMX invocation.
@@ -652,7 +666,7 @@ To set up and configure the Micro Integrator runtime, see the topics given below
 </tr>
 <tr>
     <th>
-        <a href="setup/mi-setup/message_builders_formatters/message-builders-and-formatters.md">Message Builders and Formatters</a>
+        <a href="../setup/mi-setup/message_builders_formatters/message-builders-and-formatters.md">Message Builders and Formatters</a>
     </th>
     <td>
         When the Micro Integrator receives a request via a mode of transport, the transport uses a **message builder** to process the payload and convert it to SOAP. Similarly, when the Micro Integrator sends a message via a mode of transport, the publishing transport uses a **message formatter** to present the payload in the required format. This section explains how to configure these message builders and message formatters.
@@ -660,7 +674,7 @@ To set up and configure the Micro Integrator runtime, see the topics given below
 </tr>
 <tr>
     <th>
-        <a href="setup/mi-setup/message_builders_formatters/message-relay.md">Message Relay</a>
+        <a href="../setup/mi-setup/message_builders_formatters/message-relay.md">Message Relay</a>
     </th>
     <td>
         Enabling message relay allows the Micro Integrator component to to pass messages along without building or processing them unless specifically requested to do so. This way, the Micro Integrator can handle a higher throughput.
@@ -668,39 +682,39 @@ To set up and configure the Micro Integrator runtime, see the topics given below
 </tr>
 <tr>
     <th>
-        <a href="../observe/micro-integrator/cloud-native-observability-overview.md">Observability</a>
+        <a href="../../observe/micro-integrator/cloud-native-observability-overview.md">Observability</a>
     </th>
     <td>
         There are two possible observability solutions that you can enable for the Micro Integrator component. This section explains how to set them up and well as how to configure logging. The topics covered are as follows:
         <li>
-            <a href="../observe/micro-integrator/setting-up-cloud-native-observability-on-a-vm.md">Setting up Cloud-Native Observability on a VM</a>
+            <a href="../../observe/micro-integrator/setting-up-cloud-native-observability-on-a-vm.md">Setting up Cloud-Native Observability on a VM</a>
         </li>
         <li>
-            <a href="../observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes.md">Setting up Cloud-Native Observability on Kubernetes</a>
+            <a href="../../observe/micro-integrator/setting-up-cloud-native-observability-in-kubernetes.md">Setting up Cloud-Native Observability on Kubernetes</a>
         </li>
         <li>
-            <a href="{{base_path}}/install-and-setup/setup/mi-setup/observability/setting-up-classic-observability-deployment">Setting up Classic Observability Deployment</a>
+            <a href="../../mi-analytics/setting-up-mi-analytics/">Setting up Classic Observability Deployment</a>
         </li>
         <li>
             <a>Configuring Logs</a>
         </li>
             <li>
-                <a href="../observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component.md">Enabling Logs for a Component</a>
+                <a href="../../observe/micro-integrator/classic-observability-logs/enabling-logs-for-a-component.md">Enabling Logs for a Component</a>
             </li>
             <li>
-                <a href="../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties.md">Configuring Logs</a>
+                <a href="../../observe/micro-integrator/classic-observability-logs/configuring-log4j2-properties.md">Configuring Logs</a>
             </li>
             <li>
-                <a href="../administer/logging-and-monitoring/logging/managing-log-growth.md">Managing Log Growth</a>
+                <a href="../../administer/logging-and-monitoring/logging/managing-log-growth.md">Managing Log Growth</a>
             </li>
             <li>
-                <a href="../administer/logging-and-monitoring/logging/masking-sensitive-information-in-logs.md">Masking Sensitive Information in Logs</a>
+                <a href="../../administer/logging-and-monitoring/logging/masking-sensitive-information-in-logs.md">Masking Sensitive Information in Logs</a>
             </li>                                                                                           
     </td>
 </tr>
 <tr>
     <th>
-        <a href="setup/mi-setup/feature_configs/configuring_timestamp_conversion_for_rdbms.md">Timestamp Conversion for RDBMS</a>
+        <a href="../setup/mi-setup/feature_configs/configuring_timestamp_conversion_for_rdbms.md">Timestamp Conversion for RDBMS</a>
     </th>
     <td>
         Explains how to enable/disable time stamp conversions for the RDBMS databases configured for the Micro Integrator component..
@@ -718,7 +732,7 @@ To deploy the Micro Integrator runtime, see the topics given below.
 <table>
     <tr>
         <th>
-            <a href="setup/deployment-overview.md">Deployment Patterns</a>
+            <a href="../setup/deployment-overview.md">Deployment Patterns</a>
         </th>
         <td>
             This explains all the deployment patterns you can follow when you deploy WSO2 API manager. These patterns involve deploying the API Manager component together with Micro Integrator and Streaming Integrator components in clustered setups.
@@ -726,7 +740,7 @@ To deploy the Micro Integrator runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="setup/mi-setup/deployment/deploying_wso2_ei.md">Configuring a Micro Integrator Cluster</a>
+            <a href="../setup/mi-setup/deployment/deploying_wso2_ei.md">Configuring a Micro Integrator Cluster</a>
         </th>
         <td>
             Explains how to set up a two-node Micro Integrator cluster.
@@ -734,7 +748,7 @@ To deploy the Micro Integrator runtime, see the topics given below.
     </tr>
     <tr>
         <th>
-            <a href="setup/mi-setup/deployment/deployment_synchronization.md">Deployment Synchronization</a>
+            <a href="../setup/mi-setup/deployment/deployment_synchronization.md">Deployment Synchronization</a>
         </th>
         <td>
             Set up deployment synchronization for the Micro Integrator.
@@ -749,7 +763,7 @@ To implement continuous integration and continuous deployment pipelines for inte
 <table>
     <tr>
         <th>
-            <a href="setup/mi-setup/deployment/mi-cicd-overview.md">CI/CD for Integrations - Overview</a>
+            <a href="../setup/mi-setup/deployment/mi-cicd-overview.md">CI/CD for Integrations - Overview</a>
         </th>
         <td>
             Find out about the methods of implementing CI/CD for integrations in the Micro Integrator.
@@ -757,7 +771,7 @@ To implement continuous integration and continuous deployment pipelines for inte
     </tr>
      <tr>
         <th>
-            <a href="setup/mi-setup/deployment/mi-cicd-vm.md">Building a CI/CD Pipeline for Integrations (VM deployment)</a>
+            <a href="../setup/mi-setup/deployment/mi-cicd-vm.md">Building a CI/CD Pipeline for Integrations (VM deployment)</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for integrations in a VM deployment of the Micro Integrator.
@@ -765,7 +779,7 @@ To implement continuous integration and continuous deployment pipelines for inte
     </tr>
     <tr>
         <th>
-            <a href="setup/mi-setup/deployment/mi-cicd-k8s.md">Building a CI/CD Pipeline for Integrations (K8s deployment)</a>
+            <a href="../setup/mi-setup/deployment/mi-cicd-k8s.md">Building a CI/CD Pipeline for Integrations (K8s deployment)</a>
         </th>
         <td>
             See the instructions on how to implement a CI/CD pipeline for integrations in a Kubernetes deployment of the Micro Integrator.
@@ -778,7 +792,7 @@ To manage integration artifacts and logs in the Micro Integrator by using the AP
 <table>
     <tr>
         <th>
-            <a href="setup/api-controller/getting-started-with-wso2-api-controller.md">Getting Started with WSO2 API Controller</a>
+            <a href="../setup/api-controller/getting-started-with-wso2-api-controller.md">Getting Started with WSO2 API Controller</a>
         </th>
         <td>
             Explains how to set up the API Controller.
@@ -786,7 +800,7 @@ To manage integration artifacts and logs in the Micro Integrator by using the AP
     </tr>
     <tr>
         <th>
-            <a href="setup/api-controller/managing-integrations/managing-integrations-with-ctl.md">Managing Integrations</a>
+            <a href="../setup/api-controller/managing-integrations/managing-integrations-with-ctl.md">Managing Integrations</a>
         </th>
         <td>
             Explains how to manage integrations with the API Controller.
@@ -801,47 +815,47 @@ The Micro integrator of WSO2 Enterprise Integrator is the predecessor of the Mic
 <table>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Upgrading from WSO2 EI 7.1.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Upgrading from WSO2 EI 7.1.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Upgrading from WSO2 EI 7.0.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Upgrading from WSO2 EI 7.0.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Upgrading from WSO2 EI 6.6.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Upgrading from WSO2 EI 6.6.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.5.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.5.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.4.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.4.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.3.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.3.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.2.x to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.2.x to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.1.1 to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.1.1 to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.1.0 to WSO2 API-M 4.0.0</a>
+            <a href="../upgrading-wso2-api-manager/upgrading-api-manager.md">Migrating from WSO2 EI 6.1.0 to WSO2 API-M 4.0.0</a>
         </td>
     </tr>
 </table>
@@ -857,7 +871,7 @@ To install and run the Streaming Integrator, see the following topics.
 <table>
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-si.md">Installing the Streaming Integrator Runtime</a>
+            <a href="../install/installing-the-product/installing-si.md">Installing the Streaming Integrator Runtime</a>
         </th>
         <td>
             Explains how to download the Streaming Integrator runtime as a binary and install it on a virtual machine.
@@ -865,7 +879,7 @@ To install and run the Streaming Integrator, see the following topics.
     </tr>   
     <tr>
         <th>
-            <a href="install/installing-the-product/running-the-si.md">Running the Streaming Integrator Runtime</a>
+            <a href="../install/installing-the-product/running-the-si.md">Running the Streaming Integrator Runtime</a>
         </th>
         <td>
             Explains how you can execute the Streaming Integrator runtime and start using its features.
@@ -873,7 +887,7 @@ To install and run the Streaming Integrator, see the following topics.
     </tr> 
     <tr>
         <th>
-            <a href="install/installing-the-product/installing-si-as-a-linux-service.md">Running the Streaming Integrator as a Linux Service</a>
+            <a href="../install/installing-the-product/installing-si-as-a-linux-service.md">Running the Streaming Integrator as a Linux Service</a>
         </th>
         <td>
             Explains how to install and run the Streaming Integrator as a Linux service.
@@ -881,7 +895,7 @@ To install and run the Streaming Integrator, see the following topics.
     </tr>
     <tr>
         <th>
-            <a href="{{base_path}}/install-and-setup/install/installing-the-product/installing-si-as-a-windows-service">Running the Streaming Integrator as a Windows Service</a>
+            <a href="../install/installing-the-product/installing-si-as-windows-service/">Running the Streaming Integrator as a Windows Service</a>
         </th>
         <td>
             Explains how to install and run the Streaming Integrator as a Windows service.
@@ -894,10 +908,10 @@ To install and run the Streaming Integrator, see the following topics.
 		<td>
 			Explains how to install the Streaming Integrator component in different containerized environments. The topics covered are as follows:
 			<li>
-				<a href="install/installing-the-product/installing-in-containers/installing-si-using-docker.md">Installing the Streaming Integrator on Docker</a>
+				<a href="../install/installing-the-product/installing-in-containers/installing-si-using-docker.md">Installing the Streaming Integrator on Docker</a>
 			</li>
 			<li>
-				<a href="install/installing-the-product/installing-in-containers/installing-si-using-kubernetes.md">Installing the Streaming Integrator on kubernetes</a>
+				<a href="../install/installing-the-product/installing-in-containers/installing-si-using-kubernetes.md">Installing the Streaming Integrator on kubernetes</a>
 			</li>           
 		</td>
 	</tr>
@@ -910,7 +924,7 @@ Setting up the Streaming Integrator component involves performing the following 
  <table>
     <tr>
         <th>
-            <a href="setup/si-setup/updating-si.md">Applying WSO2 Updates</a>
+            <a href="../setup/si-setup/updating-si.md">Applying WSO2 Updates</a>
         </th>
         <td>
             Explains how to get the latest updates that are available for a particular release of the Streaming Integrator.
@@ -918,7 +932,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/production-checklist.md">Production Checklist</a>
+            <a href="../setup/si-setup/production-checklist.md">Production Checklist</a>
         </th>
         <td>
             Lists all the setup tasks you need to complete in order to run the Streaming Integrator component in a production environment.
@@ -926,7 +940,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/performance-analysis-results.md">Performance Analysis Results</a>
+            <a href="../setup/si-setup/performance-analysis-results.md">Performance Analysis Results</a>
         </th>
         <td>
             This has the results of the performance tests carried out for the Streaming Integrator component.
@@ -934,7 +948,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/configuring-business-rules-deployment.md">Configuring Business Rules Deployment</a>
+            <a href="../setup/si-setup/configuring-business-rules-deployment.md">Configuring Business Rules Deployment</a>
         </th>
         <td>
             Explains how to configure a Streaming Integrator node to use a specified business rule template. Business rules templates are templates Streaming applications and queries that allow you to use the streaming logic ofWSO2 API Manager without writing queries from scratch.
@@ -942,7 +956,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/configuring-data-sources.md">Configuring Data Sources</a>
+            <a href="../setup/si-setup/configuring-data-sources.md">Configuring Data Sources</a>
         </th>
         <td>
             Explains how to configure the data sources vis which the Streaming Integrator server and the Streaming Integrator Tooling connect to databases. This section also explains the default data sources configured for the Streaming Integrator and the Streaming Integrator Tooling.   
@@ -955,19 +969,19 @@ Setting up the Streaming Integrator component involves performing the following 
         <td>
             Explains how to secure the Streaming Integrator component and the data it handles. The topics covered are as follows.
             <li>
-                <a href="setup/si-setup/general-data-protection-regulations.md">General Data Protection Regulations</a>
+                <a href="../setup/si-setup/general-data-protection-regulations.md">General Data Protection Regulations</a>
             </li>
             <li>
-                <a href="setup/si-setup/working-with-keystores.md">Working with Keystores</a>
+                <a href="../setup/si-setup/working-with-keystores.md">Working with Keystores</a>
             </li>
             <li>
-                <a href="setup/si-setup/protecting-sensitive-data-via-the-secure-vault.md">Protecting Sensitive Data via the Secure Vault</a>
+                <a href="../setup/si-setup/protecting-sensitive-data-via-the-secure-vault.md">Protecting Sensitive Data via the Secure Vault</a>
             </li>
         </td>
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/supporting-different-transports.md">Supporting Different Transports</a>
+            <a href="../setup/si-setup/supporting-different-transports.md">Supporting Different Transports</a>
         </th>
         <td>
             Explains the setup tasks you need to complete to allow the Streaming Integrator component to work with different transports.
@@ -975,7 +989,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/configuring-database-and-file-system-state-persistence.md">Configuring State Persistence</a>
+            <a href="../setup/si-setup/configuring-database-and-file-system-state-persistence.md">Configuring State Persistence</a>
         </th>
         <td>
             Explains how to prevent the loss of data that can result from a system failure by persisting the state of Streaming Integrator component periodically either into a database system or into the file system.
@@ -983,7 +997,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/configuring-cluster-coordination.md">Configuring Cluster Coordination</a>
+            <a href="../setup/si-setup/configuring-cluster-coordination.md">Configuring Cluster Coordination</a>
         </th>
         <td>
             Explains how to configure a cluster coordination strategy that determines how the Streaming Integrator nodes in a cluster coordinate with each other.
@@ -991,7 +1005,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/adding-third-party-non-osgi-libraries.md">Adding Third Party Non OSGi Libraries</a>
+            <a href="../setup/si-setup/adding-third-party-non-osgi-libraries.md">Adding Third Party Non OSGi Libraries</a>
         </th>
         <td>
             The Streaming Integrator component is OSGi-based. Therefore, when you are adding non-OSGi libraries to the Streaming Integrator pack, you need to first convert them into OSGi bundles. This section provides instructions to do this.
@@ -999,7 +1013,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/configuring-default-ports.md">Configuring Default Ports</a>
+            <a href="../setup/si-setup/configuring-default-ports.md">Configuring Default Ports</a>
         </th>
         <td>
             Explains the default ports that the Streaming Integrator component uses for different purposes when the port offset is 0.
@@ -1007,7 +1021,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/change-hostname-and-context-path.md">Changing the Host Name and Context Path of Web UI Applications</a>
+            <a href="../setup/si-setup/change-hostname-and-context-path.md">Changing the Host Name and Context Path of Web UI Applications</a>
         </th>
         <td>
             Explains how to change the host name and the context path specified in the URLS via which the user interfaces of the Streaming Integrator are accessed.
@@ -1015,7 +1029,7 @@ Setting up the Streaming Integrator component involves performing the following 
     </tr>
     <tr>
         <th>
-            <a href="setup/si-setup/monitoring-received-events-count-via-logs.md">Enabling Logs for Received Event Count</a>
+            <a href="../setup/si-setup/monitoring-received-events-count-via-logs.md">Enabling Logs for Received Event Count</a>
         </th>
         <td>
             Explains how to configure the Streaming Integrator component to log the total number of events it received via its sources per given time interval.
@@ -1030,7 +1044,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
 <table>
     <tr>
         <th>
-            <a href="setup/deployment-overview.md">Deployment Patterns</a>
+            <a href="../setup/deployment-overview.md">Deployment Patterns</a>
         </th>
         <td>
             This explains all the deployment patterns you can follow when you deploy WSO2 API manager. These patterns involve deploying the API Manager component together with Micro Integrator and Streaming Integrator components in clustered setups.
@@ -1038,7 +1052,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/si-deployment/deploying-si-as-a-single-deployment.md">Single-Node Streaming Integrator Deployment</a>
+            <a href="../setup/si-deployment/deploying-si-as-a-single-deployment.md">Single-Node Streaming Integrator Deployment</a>
         </th>
         <td>
             Instructions on setting up a single-node Streaming Integrator deployment.
@@ -1046,7 +1060,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/si-deployment/deploying-si-as-minimum-ha-cluster.md">Minimum HA Streaming Integrator Deployment</a>
+            <a href="../setup/si-deployment/deploying-si-as-minimum-ha-cluster.md">Minimum HA Streaming Integrator Deployment</a>
         </th>
         <td>
             Instructions on setting up a Streaming Integrator deployment with minimum high availablity.
@@ -1054,7 +1068,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/si-deployment/deploying-si-as-an-active-active-deployment.md">Active-Active Streaming Integrator Deployment</a>
+            <a href="../setup/si-deployment/deploying-si-as-an-active-active-deployment.md">Active-Active Streaming Integrator Deployment</a>
         </th>
         <td>
             Instructions on setting up an Active-Active Streaming Integrator deployment.
@@ -1062,7 +1076,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/si-deployment/deploying-si-as-a-scalable-cluster.md">Scalable Streaming Integrator Deployment</a>
+            <a href="../setup/si-deployment/deploying-si-as-a-scalable-cluster.md">Scalable Streaming Integrator Deployment</a>
         </th>
         <td>
             Instructions on setting up a scalable Streaming Integrator deployment.
@@ -1075,7 +1089,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
 <table>
     <tr>
         <th>
-            <a href="setup/reference/common-runtime-and-configuration-artifacts.md">Common Runtime and Configuration Artifacts</a>
+            <a href="../setup/reference/common-runtime-and-configuration-artifacts.md">Common Runtime and Configuration Artifacts</a>
         </th>
         <td>
             Describes some artifacts that are commonly used with the API Manager component.
@@ -1083,7 +1097,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/reference/default-product-ports.md">Default Product Ports</a>
+            <a href="../setup/reference/default-product-ports.md">Default Product Ports</a>
         </th>
         <td>
             Explains the defauly ports used by the API Manager component.
@@ -1091,7 +1105,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/reference/product-compatibility.md">Product Compatibility</a>
+            <a href="../setup/reference/product-compatibility.md">Product Compatibility</a>
         </th>
         <td>
             Provides details relating to the compatibility of the API Manager component with different operating systems and JDKs, databases, key managers, web browsers, and other WSO2 products.
@@ -1099,7 +1113,7 @@ See the topics given below for instructions on setting up a Streaming Integrator
     </tr>
     <tr>
         <th>
-            <a href="setup/reference/supported-cipher-suites.md">Supported Cipher Suites</a>
+            <a href="../setup/reference/supported-cipher-suites.md">Supported Cipher Suites</a>
         </th>
         <td>
             Provides details of the supported cipher suites.

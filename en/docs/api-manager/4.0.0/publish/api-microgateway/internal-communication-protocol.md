@@ -1,3 +1,18 @@
+---
+title: "Communication protocol of API microgateway components"
+description: "Explains how the API Microgateway Adapter and Enforcer components use the xDS protocol over gRPC to exchange resource updates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/publish/api-microgateway/internal-communication-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/publish/api-microgateway/internal-communication-protocol.md
+tags:
+  - api-manager
+  - publish
+  - api-microgateway
+  - internal-communication-protocol
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "explanation"
+---
+
 # Communication Protocol of API Microgateway Components
 
 WSO2 API Microgateway uses an implementation of Envoy's [xDS protocol]({{envoy_path}}/api-docs/xds_protocol#xds-rest-and-grpc-protocol) to communicate between its components, especially the Adapter -> Enforcer and Adapter -> Router communication. Here, the Adapter -> Router communication is already implemented by Envoy and its control plane. WSO2 implements the same protocol for Adapter -> Enforcer communication.

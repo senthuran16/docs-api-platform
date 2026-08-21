@@ -1,3 +1,18 @@
+---
+title: "Accessing properties with XPath"
+description: "Reference for the custom XPath extension functions and variables the Micro Integrator provides for accessing message properties."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-reference/accessing-properties-with-xpath/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/property-reference/accessing-properties-with-xpath.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - property-reference
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Accessing Properties with XPath
 
 The WSO2 Micro Integrator supports standard XPath functions and variables through its underlying XPath engine. It supports XPath 1.0 by default where as the support for XPath 2.0 can be introduced by adding the following property in <MI_HOME>/conf/deployment.toml.
@@ -499,7 +514,7 @@ The prefix used to get the URI element of a request URL.
 
 **Example of $url usage:**
 
-1.  Create a REST API with the following configuration using instructions given in page [Working with APIs](generic-Properties.md).
+1.  Create a REST API with the following configuration using instructions given in page [Working with APIs](generic-properties.md).
 
     ``` xml
     <api xmlns="http://ws.apache.org/ns/synapse" name="Editing" context="/editing">
@@ -593,7 +608,7 @@ Prefix used to get a SOAP 1.1 or 1.2 envelope level element. For example, to get
 
 **Example of $env usage:**
 
-1.  Create an API with the following configuration. For information on how to create an API, see [Working with APIs](generic-Properties.md).
+1.  Create an API with the following configuration. For information on how to create an API, see [Working with APIs](generic-properties.md).
 
     ``` xml
     <api context="/soapEnvelopeTest" name="SoapEnvelopeTest">

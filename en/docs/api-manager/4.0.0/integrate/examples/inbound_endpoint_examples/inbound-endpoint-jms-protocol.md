@@ -1,3 +1,18 @@
+---
+title: "Using the JMS inbound endpoint"
+description: "Configure the JMS inbound endpoint to bridge one-way messages from a JMS queue to an HTTP backend."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-jms-protocol/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-jms-protocol.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the JMS Inbound Endpoint
 This sample demonstrates how one way message bridging from JMS to HTTP can be done using the inbound JMS endpoint.
 

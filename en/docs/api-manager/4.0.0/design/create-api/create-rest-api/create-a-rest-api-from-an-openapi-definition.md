@@ -1,3 +1,18 @@
+---
+title: "Create an API from an OpenAPI definition"
+description: "Create a REST API in the Publisher Portal by importing an existing OpenAPI definition using the basic creation flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/create-api/create-rest-api/create-a-rest-api-from-an-openapi-definition.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Create an API from an OpenAPI Definition
 
 An OpenAPI definition is a format that describes REST APIs. 
@@ -156,7 +171,7 @@ You will notice that all the API resources are created automatically when the Op
      | Sandbox endpoint    | Let's only work with the production endpoint for this sample. Therefore, deselect the sandbox endpoint option. |
 
      <html>
-     <img src="../../../assets/img/learn/endpoint-menu.png" width="200">
+     <img src="../../../../assets/img/learn/endpoint-menu.png" width="200">
      </html>
 
 3. Click **Save** to save the changes.
@@ -172,9 +187,9 @@ Click **API Configurations** and click **Runtime** to navigate to the Runtime Co
      
 The Transport Level Security defines the transport protocol on which the API is exposed.
 
-<a href="../../../assets/img/learn/runtime-config-menu.png"><img src="../../../assets/img/learn/runtime-config-menu.png" width="20%"></a>
+<a href="../../../../assets/img/learn/runtime-config-menu.png"><img src="../../../../assets/img/learn/runtime-config-menu.png" width="20%"></a>
 
-<a href="../../../assets/img/learn/transport-level-security-pet-store.png"><img src="../../../assets/img/learn/transport-level-security-pet-store.png" width="90%">
+<a href="../../../../assets/img/learn/transport-level-security-pet-store.png"><img src="../../../../assets/img/learn/transport-level-security-pet-store.png" width="90%">
 </a>
 
 <html><div class="admonition note">
@@ -198,8 +213,8 @@ The Transport Level Security defines the transport protocol on which the API is 
 
 1. Click **Portal Configurations** and click **Subscriptions** to navigate to the Business Plans page.
 
-     <a href="../../../assets/img/learn/subscriptions-menu.png">
-     <img src="../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu" width="20%">
+     <a href="../../../../assets/img/learn/subscriptions-menu.png">
+     <img src="../../../../assets/img/learn/subscriptions-menu.png" alt="subscriptions menu" width="20%">
      </a>
 
 2. Select **Gold** and **Silver** as the Business Plans.

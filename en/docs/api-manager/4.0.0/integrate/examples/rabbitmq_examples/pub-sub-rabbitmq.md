@@ -1,10 +1,25 @@
+---
+title: "A topic used to broadcast a message to all consumers"
+description: "Implement a publisher-subscriber messaging scenario where a proxy broadcasts messages to consumers via a RabbitMQ topic."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/pub-sub-rabbitmq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/rabbitmq_examples/pub-sub-rabbitmq.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - rabbitmq_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # A topic used to broadcast a message to all consumers
 
 This sample demonstrates how WSO2 Micro Integrator can be used to implement a publisher-subscriber messaging scenario using RabbitMQ topics. That is, a message publisher can broadcast a message to multiple consumers through the RabbitMQ topic.
 
 As shown below, the publisher proxy in the Micro Integrator will publish messages to a RabbitMQ topic, which multiple subscriber proxies (defined in the Micro Integrator) will consume.
 
-<img src="../../../assets/img/integrate/rabbitmq/rabbitmq-pub-sub.png">
+<img src="../../../../assets/img/integrate/rabbitmq/rabbitmq-pub-sub.png">
 
 ## Synapse configurations
 

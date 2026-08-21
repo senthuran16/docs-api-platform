@@ -1,3 +1,18 @@
+---
+title: "Working with message builders and formatters"
+description: "Understand how Micro Integrator selects message builders and formatters based on content type, and view the default set enabled by default."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/message_builders_formatters/message-builders-and-formatters.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Working with Message Builders and Formatters
 
 ## Overview
@@ -9,7 +24,7 @@ sending a message out from Micro Integrator, a **message formatter** is used to 
 the outgoing stream from the message. As with message builders, the
 message formatter is selected based on the message's content type. Given below is the typical workflow:
 
-<a href=""><img src="../../../../assets/img/integrate/message-builders-formatters.png"></a>
+<a href=""><img src="../../../../../assets/img/integrate/message-builders-formatters.png"></a>
 
 You can use the messageType property to change the message's content
 type as it flows through the Micro Integrator. For example, if the incoming message is in

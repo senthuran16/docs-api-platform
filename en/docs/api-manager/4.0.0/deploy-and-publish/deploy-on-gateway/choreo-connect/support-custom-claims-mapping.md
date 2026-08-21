@@ -1,3 +1,18 @@
+---
+title: "Custom claims mapping"
+description: "Map claim keys and values from an incoming JWT token to the claims Choreo Connect and the backend service expect, using custom claim mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/support-custom-claims-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/support-custom-claims-mapping.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Custom Claims Mapping
 
 Choreo Connect provides the capability to map any claims in an incoming authentication JWT token, to claims expected by the backend upstream service using the custom claim mapping feature.
@@ -17,7 +32,8 @@ The following instructions are based on the [above example](#example). Let's cha
 
 If the key of the remote claim is different from the custom claim, you can configure claim mapping as follows:
 
-1. {!includes/deploy/cc-configuration-file.md!}
+1.  
+    --8<-- "api-manager/4.0.0/includes/deploy/cc-configuration-file.md"
 
 2. Add the following configuration under the `enforcer.jwtTokenConfig` tag.
 

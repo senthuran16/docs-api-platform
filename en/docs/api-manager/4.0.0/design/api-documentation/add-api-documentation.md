@@ -1,3 +1,18 @@
+---
+title: "Add API documentation"
+description: "Add in-line, URL, file, and Markdown documentation to an API in the WSO2 API Publisher, and control API document visibility in the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-documentation/add-api-documentation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/api-documentation/add-api-documentation.md
+tags:
+  - api-manager
+  - design
+  - api-documentation
+  - add-api-documentation
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Add API Documentation
 
 **API documentation** helps API subscribers to understand the functionality of the API and API publishers to market their APIs better and sustain competition. Using the API Publisher, you can add different types of documentation from various sources. All documents created in the API Publisher have unique URLs to help improve SEO support.

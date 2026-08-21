@@ -1,3 +1,18 @@
+---
+title: "Step 7: monitor statistics"
+description: "Monitor CDC and file statistics of a Streaming Integrator deployment using pre-configured Grafana dashboards."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/monitor-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/streaming/getting-started/monitor-statistics.md
+tags:
+  - api-manager
+  - streaming
+  - getting-started
+  - monitor-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Step 7: Monitor Statistics
 
 This step shows how you can monitor the CDC and file statistics of the WSO2 Streaming Integrator deployment you started and the `SweetFactoryApp` Siddhi application you created and deployed in the previous steps. For this purpose, you are using the some of the pre-configured dashboards provided by WSO2 Streaming Integrator. You can host these dashboards in Grafana and view statistics related to ETL activities carried out by the Streaming Integrator. For more information about these dashboards, see [Monitoring ETL Statistics with Grafana](../../observe/streaming-integrator/viewing-etl-flows.md)

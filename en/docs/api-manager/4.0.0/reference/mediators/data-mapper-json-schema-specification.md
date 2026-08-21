@@ -1,3 +1,18 @@
+---
+title: "Data mapper JSON Schema specification"
+description: "Specifies the Data Mapper JSON schema format used to define input and output types for the Data Mapper mediator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/data-mapper-json-schema-specification/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/data-mapper-json-schema-specification.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - data-mapper-json-schema-specification
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Data Mapper JSON Schema Specification
 
 The following specification defines the Data Mapper JSON schema of the

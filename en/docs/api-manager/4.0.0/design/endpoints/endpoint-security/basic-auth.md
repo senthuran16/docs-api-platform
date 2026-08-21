@@ -1,3 +1,18 @@
+---
+title: "Secure endpoint with Basic Auth"
+description: "Secure an API endpoint with Basic Authentication by configuring a username and password sent in the authorization header."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/endpoints/endpoint-security/basic-auth/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/endpoints/endpoint-security/basic-auth.md
+tags:
+  - api-manager
+  - design
+  - endpoints
+  - endpoint-security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure Endpoint with Basic Auth
 
 A secured endpoint is when there are access-protected resources. You have to specify the username and the password when a request is sent to a secured endpoint. The endpoint authentication mechanism can either be Basic Authentication or Digest Authentication. They differ on how the credentials are communicated and how access is granted by the backend server.
@@ -18,7 +33,7 @@ Follow the instructions below to use Basic Auth as the endpoint authentication t
 
 2. Click the Endpoint Security symbol of the endpoint that you want to secure with Basic Auth.
 
-      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 
 3. Select **Basic Auth** as the endpoint authentication type from the drop-down menu.
 

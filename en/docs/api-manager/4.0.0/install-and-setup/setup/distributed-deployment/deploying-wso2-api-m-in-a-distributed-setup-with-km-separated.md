@@ -1,3 +1,18 @@
+---
+title: "Configure a distributed deployment with KM and TM separated"
+description: "Deploy WSO2 API Manager with the Key Manager and Traffic Manager separated from the Control Plane for migrated opaque-token environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup-with-km-separated.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring a Distributed API-M Deployment with Key Manager and Traffic Manager Separation
 
 This document describes how to configure a distributed WSO2 API Manager deployment with the Key Manager and Traffic Manager separated from the Control Plane for migrated environments using Opaque tokens.
@@ -7,7 +22,7 @@ This document describes how to configure a distributed WSO2 API Manager deployme
 
 The following diagram shows the communications between the Control Plane, Gateway, Key Manager and the Traffic Manager nodes in the distributed deployment of API Manager for a migrated environment using Opaque (Reference) tokens.
 
-<a href="../../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../../assets/img/setup-and-install/distributed-deployment-km.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/distributed-deployment-km.png"><img src="../../../../assets/img/setup-and-install/distributed-deployment-km.png" width="100%"></a>
 
 For more information on the distributed deployment patterns, refer to the [Understanding Distributed Deployment of WSO2 API Manager](understanding-the-distributed-deployment-of-wso2-api-m.md) page.
 

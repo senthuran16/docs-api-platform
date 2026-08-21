@@ -1,3 +1,18 @@
+---
+title: "Using HashiCorp secrets"
+description: "Configure the Micro Integrator to use HashiCorp secrets instead of WSO2 secure vault for synapse configuration secrets."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/using-hashicorp-secrets/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/security/using-hashicorp-secrets.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using HashiCorp Secrets 
 
 !!! Info

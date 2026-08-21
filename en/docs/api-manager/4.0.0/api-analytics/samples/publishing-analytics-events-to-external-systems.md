@@ -1,5 +1,16 @@
 ---
-title: Publishing Analytics Events to External Systems - API Manager Documentation 4.0.0
+title: "Publishing analytics events to external systems"
+description: "Implement, deploy, and configure a custom event publisher to send WSO2 API Manager analytics data to an external system such as ELK."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/samples/publishing-analytics-events-to-external-systems/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/samples/publishing-analytics-events-to-external-systems.md
+tags:
+  - api-manager
+  - api-analytics
+  - samples
+  - publishing-analytics-events-to-external-systems
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Publishing Analytics Events to External Systems
@@ -63,6 +74,7 @@ In order to achieve this behavior, create a class implementing the `MetricReport
 
 Implementation of this class should look something similar to [this](https://github.com/wso2/samples-apim/blob/master/analytics-event-publisher/src/main/java/org.wso2.am.analytics.publisher.sample.reporter/CustomReporter.java).
 
+<a name="build-the-project"></a>
 #### Build the Project
 
 Build the project using,

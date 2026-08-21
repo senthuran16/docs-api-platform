@@ -1,3 +1,18 @@
+---
+title: "Configuring transports"
+description: "Configure the HTTP/S, JMS, VFS, and other transports supported by the Micro Integrator for sending and receiving messages."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/transport_configurations/configuring-transports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/mi-setup/transport_configurations/configuring-transports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - mi-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Configuring Transports
 
 A transport protocol is responsible for carrying messages that are in a specific format. WSO2 Micro Integrator supports all the widely used transports including HTTP/S, JMS, VFS, as well as domain-specific transports like FIX. Each transport provides a receiver implementation for receiving messages, and a sender implementation for sending messages.
@@ -103,7 +118,7 @@ listener.parameter.PreferredCiphers = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,T
 ```
 
 !!! Note
-    To check the above configuration changes related to SSL. Download [testsslserver.jar](/assets/attachments/admin/TestSSLServer.jar) and test with the following command.
+    To check the above configuration changes related to SSL. Download [testsslserver.jar](../../../../assets/attachments/admin/TestSSLServer.jar) and test with the following command.
 
     $ java -jar testsslserver.jar localhost 8253
 

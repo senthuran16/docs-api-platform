@@ -1,3 +1,18 @@
+---
+title: "Transaction mediator"
+description: "Reference for the Transaction mediator, which manages distributed transactions for its child mediators in the Micro Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/transaction-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/transaction-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - transaction-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Transaction Mediator
 
 A transaction is a set of operations executed as a single unit. It also

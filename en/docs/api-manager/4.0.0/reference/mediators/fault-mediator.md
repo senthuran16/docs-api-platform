@@ -1,3 +1,18 @@
+---
+title: "Fault mediator"
+description: "Reference for the Fault mediator syntax and parameters used to transform the current message into a SOAP or POX fault."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/fault-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/mediators/fault-mediator.md
+tags:
+  - api-manager
+  - reference
+  - mediators
+  - fault-mediator
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Fault Mediator
 
 The **Fault Mediator** (also called the **Makefault Mediator**) transforms the current message into a fault message. However, this

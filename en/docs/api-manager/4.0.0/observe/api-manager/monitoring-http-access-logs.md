@@ -1,5 +1,15 @@
 ---
-title: Monitoring HTTP Access Logs - WSO2 API Manager 4.0.0
+title: "Monitoring HTTP Access Logs - WSO2 API Manager 4.0.0"
+description: "Configure HTTP access logs for both the HTTP servlet transport and the PassThrough or NIO gateway transports in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/monitoring-http-access-logs/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/observe/api-manager/monitoring-http-access-logs.md
+tags:
+  - api-manager
+  - observe
+  - monitoring-http-access-logs
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Monitoring HTTP Access Logs

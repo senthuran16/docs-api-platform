@@ -1,3 +1,18 @@
+---
+title: "Streaming integrator tooling overview"
+description: "Learn about the Streaming Integrator Tooling and its four interfaces for developing Siddhi applications."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/streaming-integrator-studio-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/develop/streaming-apps/streaming-integrator-studio-overview.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - streaming-integrator-studio-overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Streaming Integrator Tooling Overview
 
 The Streaming Integrator Tooling is a developer tool that is shipped with the Streaming Integrator to develop Siddhi applications. It provides four interfaces to develop Siddhi applications.
@@ -199,7 +214,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **File Explorer**
 
-    The file explorer. This is also available in the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The file explorer. This is also available in the [Side Panel](#side-panel).
 
 - **Extension Installer**
 
@@ -215,7 +230,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
     -   Feed Simulation
 
     For detailed information about event simulation, see [Simulating Events](testing-a-siddhi-application.md#simulating-events).
-    The event simulator can also be accessed from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    The event simulator can also be accessed from the [Side Panel](#side-panel).
 
 - **Error Store Explorer**
 
@@ -259,7 +274,7 @@ The **Tools** menu provides access to the following tools that are shipped with 
 
 - **Console**
 
-    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#StreamProcessorStudioOverview-SidePanel).
+    This is an output console that provides feedback on various user activities carried out on the Streaming Integration Tooling. It is accessible from the [Side Panel](#side-panel).
 
 - **Sample Event Generator**
 

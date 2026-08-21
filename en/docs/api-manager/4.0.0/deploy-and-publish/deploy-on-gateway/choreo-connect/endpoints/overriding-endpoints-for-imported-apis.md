@@ -1,3 +1,18 @@
+---
+title: "Overriding endpoints for deployed APIs"
+description: "Override the production and sandbox endpoint URLs of APIs imported into Choreo Connect using Adapter environment variables."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/overriding-endpoints-for-imported-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/endpoints/overriding-endpoints-for-imported-apis.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Overriding Endpoints for deployed APIs
 
 The API deployed from the API Manager once deployed in Choreo Connect, it needs to be moved across different environments. When moving from one environment to the other backend service details can be altered. In those cases, we need to override the endpoint details of the API

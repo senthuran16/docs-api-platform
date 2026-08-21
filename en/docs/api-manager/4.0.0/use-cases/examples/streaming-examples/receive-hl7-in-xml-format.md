@@ -1,3 +1,18 @@
+---
+title: "Receiving custom XML messages via HL7"
+description: "Configure a Siddhi application that receives HL7 events in XML format over the MLLP protocol using custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-hl7-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-hl7-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving Custom XML Messages via HL7
 
 ## Purpose:

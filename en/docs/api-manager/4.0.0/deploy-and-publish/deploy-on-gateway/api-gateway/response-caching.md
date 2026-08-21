@@ -1,3 +1,18 @@
+---
+title: "Response caching"
+description: "Enable response caching for an API using the cache mediator, tune cache mediator properties, and invalidate cached responses via JMX."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/api-gateway/response-caching.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 #Response caching
 
 The API Manager uses [WSO2 ESB's cache mediator](https://docs.wso2.com/display/EI650/Cache+Mediator) to cache response messages for each API. Caching improves performance, because the backend server does not have to process the same data for a request multiple times. You need to set an appropriate timeout period to offset the risk of stale data in the cache.
@@ -58,7 +73,7 @@ Please follow below steps to enable response caching for an API.
     <tr class="even">
     <td><p><code>              hashGenerator             </code></p></td>
     <td><p>Defines the hash generator class.</p>
-    <p>When caching response messages, a hash value is generated based on the request's URI, transport headers and the payload (if available). WSO2 has a default <code>              HttpRequestHashGenerator             </code> class written to generate the hash value. See sample <a href="../../../assets/attachments/103333424/103333429.java">here</a> . Please note that prior to API-M 4.0.0, a different hash generator implementation <code>REQUESTHASHGenerator</code> was used by default and from API-M 4.0.0, this new hash generator implementation is being used. </p>
+    <p>When caching response messages, a hash value is generated based on the request's URI, transport headers and the payload (if available). WSO2 has a default <code>              HttpRequestHashGenerator             </code> class written to generate the hash value. See sample <a href="../../../../assets/attachments/103333424/103333429.java">here</a> . Please note that prior to API-M 4.0.0, a different hash generator implementation <code>REQUESTHASHGenerator</code> was used by default and from API-M 4.0.0, this new hash generator implementation is being used. </p>
     <p>If you want to change this default implementation (for example, to exclude certain headers), you can write a new hash generator implementation by extending the <code>              HttpRequestHashGenerator             </code> and overriding its <code>              getDigest()             </code> method. Once done, add the new class as the <code>              hashGenerator             </code> attribute of the <code>              &lt;cache&gt;             </code> element in the <code>              velocity_template.xml             </code> file and <code>              api_product_template.xml             </code>  file.</p></td>
     </tr>
     </tbody>

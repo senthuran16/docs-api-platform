@@ -1,3 +1,18 @@
+---
+title: "Transforming streaming data"
+description: "Transform streaming data from one format to another, such as CSV to JSON, using WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/transforming-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/transforming-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - transforming-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Transforming Streaming Data
 
 ## Introduction

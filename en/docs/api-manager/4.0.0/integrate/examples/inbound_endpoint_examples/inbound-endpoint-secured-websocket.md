@@ -1,3 +1,18 @@
+---
+title: "Using the secure WebSocket inbound endpoint"
+description: "Configure the secure WebSocket inbound endpoint to read and transform WebSocket frame content using subprotocols."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/inbound_endpoint_examples/inbound-endpoint-secured-websocket.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - inbound_endpoint_examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Using the Secure WebSocket Inbound Endpoint
 
 If you need to read and transform the content of WebSocket frames, the

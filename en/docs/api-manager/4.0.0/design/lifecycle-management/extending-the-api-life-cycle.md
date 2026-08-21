@@ -1,3 +1,18 @@
+---
+title: "Extending the API life cycle"
+description: "View and extend the default API lifecycle configuration in WSO2 API Manager by customizing its XML-based state definitions."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/lifecycle-management/extending-the-api-life-cycle/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/design/lifecycle-management/extending-the-api-life-cycle.md
+tags:
+  - api-manager
+  - design
+  - lifecycle-management
+  - extending-the-api-life-cycle
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Extending the API Life Cycle
 
 -  [Default API Lifecycle in WSO2 API Manager](#default-api-lifecycle-in-wso2-api-manager)

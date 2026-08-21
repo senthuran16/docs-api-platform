@@ -1,3 +1,18 @@
+---
+title: "Scenario 4 - signing up a new user"
+description: "Set up a self-signup approval workflow, register a new external user through the Developer Portal, and approve it in the Admin Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/scenarios/scenario4-user-signup-approval-flow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/tutorials/scenarios/scenario4-user-signup-approval-flow.md
+tags:
+  - api-manager
+  - tutorials
+  - scenarios
+  - scenario4-user-signup-approval-flow
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Scenario 4 - Signing up a New User
 
 This is a tutorial that is part of a series and can be used as a standalone tutorial on how to sign up a new user. For more details on the scenario and general prerequisites, please see [the scenario overview page](scenario-overview.md).
@@ -8,7 +23,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 Quantis allows external users to access their APIs. To take the full benefit out of these APIs, they have decided to open the registration to outside users since it can be a burden to enter all the details for every single user/consumer. Therefore, they request an approval workflow for user registration in such a way that the users will be registered to the system when a user with administrative privileges approves their registration after a manual validation of the user.  By allowing external parties to register to their system under a supervision, Quantis expects higher revenue in future.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario4.png" title="Signup Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario4.png" title="Signup Description" width="630"/>
 
 ## Step 1: Set up the self-signup workflow
 

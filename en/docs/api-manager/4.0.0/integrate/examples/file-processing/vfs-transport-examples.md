@@ -1,3 +1,18 @@
+---
+title: "VFS transport"
+description: "Demonstrates using the VFS transport to process files from the local file system as a transport medium."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/file-processing/vfs-transport-examples/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/integrate/examples/file-processing/vfs-transport-examples.md
+tags:
+  - api-manager
+  - integrate
+  - examples
+  - file-processing
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # VFS Transport
 
 The Micro Integrator can access the local file system using the [VFS transport](../../../reference/synapse-properties/transport-parameters/vfs-transport-parameters.md) sender and

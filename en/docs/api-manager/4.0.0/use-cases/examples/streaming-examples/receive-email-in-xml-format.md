@@ -1,3 +1,18 @@
+---
+title: "Receiving XML events via email"
+description: "Configure a Siddhi application that receives XML-formatted events from an email inbox using siddhi-io-email."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-email-in-xml-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/examples/streaming-examples/receive-email-in-xml-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Receiving XML Events via Email
 
 ## Purpose:

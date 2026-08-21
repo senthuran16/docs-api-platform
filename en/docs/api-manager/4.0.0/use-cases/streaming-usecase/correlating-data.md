@@ -1,3 +1,18 @@
+---
+title: "Correlating data"
+description: "Detect patterns and trends in streaming data using Siddhi patterns and sequences in WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/correlating-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-usecase/correlating-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - correlating-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Correlating Data
 
 The streaming integrator can correlate data in order to detect patterns and trends in streaming data. Correlating can be done via patterns as well as sequences.

@@ -1,3 +1,18 @@
+---
+title: "Configuring the gateway in a distributed setup with rsync"
+description: "Configure the API Gateway in a distributed environment using rsync as the content synchronization mechanism across manager and worker nodes."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/distributed-deployment/configuring-the-gateway-in-a-distributed-environment-with-rsync.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring the Gateway in a Distributed Environment with rsync
 
 !!! note

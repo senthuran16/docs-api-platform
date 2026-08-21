@@ -1,3 +1,18 @@
+---
+title: "Installing streaming integrator using Kubernetes"
+description: "Deploy WSO2 Streaming Integrator on Kubernetes using the Siddhi Kubernetes Operator and a siddhi-process.yaml configuration."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-in-containers/installing-si-using-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/install/installing-the-product/installing-in-containers/installing-si-using-kubernetes.md
+tags:
+  - api-manager
+  - install-and-setup
+  - install
+  - installing-the-product
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Installing Streaming Integrator Using Kubernetes
 
 WSO2 Streaming Integrator can be deployed natively on Kubernetes via the Siddhi Kubernetes Operator.

@@ -1,3 +1,18 @@
+---
+title: "Expose a Kafka stream as a managed WebSocket API"
+description: "Configure the Streaming Integrator to consume a Kafka topic and expose it as a managed WebSocket API in API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/expose-a-kafka-topic-as-a-managed-websocket-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/use-cases/streaming-tutorials/expose-a-kafka-topic-as-a-managed-websocket-api.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - expose-a-kafka-topic-as-a-managed-websocket-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "tutorial"
+---
+
 # Expose a Kafka Stream as a Managed WebSocket API
 
 The Streaming Integrator (SI) component in WSO2 API Manager (WSO2 API-M) can consume events from a third-party streaming provider topic (e.g., Kafka topic) and publish those events to a Streaming Backend (e.g., WebSocket Streaming Backend) in a streaming manner. When a stream of events are received by the third-party streaming provider source (e.g., Kafka source), they are published to the Streaming Backend simultaneously. 
@@ -191,7 +206,7 @@ Follow the instructions below to generate an AsyncAPI Definition via the Streami
 
      Click **Add Async API** to add the generated AsyncAPI definition to the Siddhi application.
 
-     <a href="../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
+     <a href="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png"><img src="../../../assets/img/streaming/working-with-async-api/add-async-api-button.png" width="20%" alt="Add Async API"></a>
 
 3. Click **Code View** to view the Siddhi application with the AsyncAPI definition that was generated and save it so that it can be deployed on SI server.
 
@@ -298,7 +313,7 @@ Follow the instructions below to publish the API via the WSO2 API Manager Publis
 
     2. Copy the authorization token that appears in here.
 
-         <a href="../../assets/img/learn/generate-access-token-popup.jpg"><img src="../../assets/img/learn/generate-access-token-popup.jpg" width="55%" alt="Authorization token"></a>
+         <a href="../../../assets/img/learn/generate-access-token-popup.jpg"><img src="../../../assets/img/learn/generate-access-token-popup.jpg" width="55%" alt="Authorization token"></a>
 
 4. Try out the operations.
 

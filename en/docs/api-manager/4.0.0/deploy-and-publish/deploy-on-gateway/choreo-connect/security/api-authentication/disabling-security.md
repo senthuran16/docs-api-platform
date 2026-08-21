@@ -1,3 +1,18 @@
+---
+title: "Disabling security for APIs"
+description: "Reference the x-wso2-disable-security OpenAPI extension used to disable authentication for an API, resource, or operation."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/disabling-security/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/security/api-authentication/disabling-security.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "reference"
+---
+
 # Disabling Security for APIs
 
 An API can be invoked without authentication by disabling security. Pick one of the following methods to disable security depending on the Choreo Connect **mode** you have chosen.

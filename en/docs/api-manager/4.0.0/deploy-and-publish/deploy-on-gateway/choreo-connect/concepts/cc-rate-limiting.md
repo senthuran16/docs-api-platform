@@ -1,3 +1,18 @@
+---
+title: "Rate limiting"
+description: "Understand the API, resource, subscription, and application level rate limiting options Choreo Connect supports, including distributed limiting."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/cc-rate-limiting/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/deploy-and-publish/deploy-on-gateway/choreo-connect/concepts/cc-rate-limiting.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - choreo-connect
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "concept"
+---
+
 # Rate Limiting
 
 Rate limiting allows users to limit the number of incoming requests to Choreo Connect. Choreo Connect connects
@@ -21,7 +36,7 @@ supports distributed Rate Limiting where it is able to work with a central traff
 multiple Choreo Connect instances can connect with WSO2 API Manager ([WSO2 Traffic Manager](../../../../install-and-setup/setup/distributed-deployment/product-profiles.md) and perform rate-limiting precisely. Find information on how to enable distributed rate limiting from [here](../rate-limiting/distributed-throttling.md).
 
 !!! note
-    If you start the WSO2 API Manager without providing any profile, it runs as All in One Node (All the profiles are activated). For testing purposes, you can simply start the API Manager following the [quick start guide]({{base_path}}/getting-started/quick-start-guide/) and test.
+    If you start the WSO2 API Manager without providing any profile, it runs as All in One Node (All the profiles are activated). For testing purposes, you can simply start the API Manager following the [quick start guide](../../../../get-started/api-manager-quick-start-guide) and test.
 
 ## Different levels of Rate Limiting
 

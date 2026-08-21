@@ -1,5 +1,16 @@
 ---
-title: Publishing Custom Analytics Events Data - API Manager Documentation 4.0.0
+title: "Publishing custom analytics events data"
+description: "Create and configure a custom sample to publish custom analytics event data from WSO2 API Manager using the existing event schema."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/samples/publishing-custom-analytics-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/api-analytics/samples/publishing-custom-analytics-data.md
+tags:
+  - api-manager
+  - api-analytics
+  - samples
+  - publishing-custom-analytics-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
 ---
 
 # Publishing Custom Analytics Events Data
@@ -111,6 +122,7 @@ In order to achieve this behavior, create a class implementing the `AnalyticsCus
 
 Implementation of this class should look something similar to [this](https://github.com/wso2/samples-apim/blob/4.0.0/analytics-custom-data-provider/src/main/java/org/wso2/carbon/apimgt/gateway/sample/publisher/CustomDataProvider.java).
 
+<a name="build-the-project"></a>
 #### Build the Project
 
 Build the project using,

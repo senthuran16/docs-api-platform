@@ -1,3 +1,18 @@
+---
+title: "Secure APIs with API keys"
+description: "Secure an API with the API key authentication scheme and generate a JWT-based API key from the Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/learn/api-security/api-authentication/secure-apis-using-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/learn/api-security/api-authentication/secure-apis-using-api-keys.md
+tags:
+  - api-manager
+  - learn
+  - api-security
+  - api-authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Secure APIs with API Keys
 
 An API key is the simplest form of application-based security that you can configure for an API. You can obtain an API key for a client application from WSO2 API Manager's Developer Portal, via the UI, or via REST APIs. Thereafter, the client application can use the API key to invoke the APIs that are secured with the API key security scheme.

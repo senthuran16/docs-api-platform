@@ -1,3 +1,18 @@
+---
+title: "Salesforce rest API connector example"
+description: "Configure a sample that uses the Salesforce SOAP connector to create an account and query records with SOQL."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-example/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/reference/connectors/salesforce-soap-connector/sf-soap-connector-example.md
+tags:
+  - api-manager
+  - reference
+  - connectors
+  - salesforce-soap-connector
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Salesforce Rest API Connector Example
 
 The Salesforce REST Connector allows you to work with records in Salesforce, a web-based service that allows organizations to manage contact relationship management (CRM) data. You can use the Salesforce connector to create, query, retrieve, update, and delete records in your organization's Salesforce data. The connector uses the [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm?search_text=SOAP%20API%20Developer%20Guide) to interact with Salesforce.
@@ -19,7 +34,7 @@ All two operations are exposed via an `salesforce-soap-API` API. The API with th
 * `/createRecords`: Creates a new `Account` object in Salesforce.
 * `/queryRecords` : Retrieve the Account Names in all the existing accounts in Salesforce.
 
-<img src="../../../assets/img/integrate/connectors/salesforcesoap-connector.png" title="Using Salesforcesoap SOAP Connector" width="800" alt="Using Salesforcesoap SOAP Connector"/>
+<img src="../../../../assets/img/integrate/connectors/salesforcesoap-connector.png" title="Using Salesforcesoap SOAP Connector" width="800" alt="Using Salesforcesoap SOAP Connector"/>
 
 The user calls the Salesforce SOAP API. It invokes the **createRecords** resource and creates a new account in Salesforce. Then through the **queryRecords** resource, it displays all the existing account details to the user. 
 
@@ -33,13 +48,13 @@ Connectors can be added to integration flows in [WSO2 Integration Studio](https:
 
 Follow these steps to set up the Integration Project and the Connector Exporter Project. 
 
-{!includes/reference/connectors/importing-connector-to-integration-studio.md!} 
+--8<-- "api-manager/4.0.0/includes/reference/connectors/importing-connector-to-integration-studio.md"
 
 ### Add integration logic
 
 First create an API, which will be where we configure the integration logic. Right click on the created Integration Project and select, **New** -> **Rest API** to create the REST API. Specify the API name as `salesforcerest` and API context as `/salesforcerest`.
     
-<img src="../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
+<img src="../../../../assets/img/integrate/connectors/adding-an-api.jpg" title="Adding a Rest API" width="800" alt="Adding a Rest API"/>
 
 #### Configuring the createRecords resource
 
@@ -49,7 +64,7 @@ Now follow the steps below to add configurations to the resource.
     
     1. Navigate into the **Palette** pane and select the graphical operations icons listed under **Salesforce Connector** section. Then drag and drop the `init` operation into the Design pane.
     
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-init-drag-and-drop.png" title="Drag and drop init operation" width="500" alt="Drag and drop init operation"/> 
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-init-drag-and-drop.png" title="Drag and drop init operation" width="500" alt="Drag and drop init operation"/> 
                 
     2. Add the property values into the `init` operation as shown below. Replace the `username`, `password`, `loginUrl` and `blocking` with your values.
             
@@ -72,11 +87,11 @@ Now follow the steps below to add configurations to the resource.
     
     2. Navigate into the **Palette** pane and select the graphical operations icons listed under **Salesforce Connector** section. Then drag and drop the `create` operation into the Design pane.
     
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-drag-and-drop-create.png" title="Drag and drop create operation" width="500" alt="Drag and drop create operations"/>
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-drag-and-drop-create.png" title="Drag and drop create operation" width="500" alt="Drag and drop create operations"/>
     
     3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator.md). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown bellow.
     
-         <img src="../../../assets/img/integrate/connectors/salesforce-api-drag-and-drop-property-mediator.png" title="Add property mediators" width="800" alt="Add property mediators"/>
+         <img src="../../../../assets/img/integrate/connectors/salesforce-api-drag-and-drop-property-mediator.png" title="Add property mediators" width="800" alt="Add property mediators"/>
 
         The parameters available for configuring the Property mediator are as follows:
     
@@ -88,11 +103,11 @@ Now follow the steps below to add configurations to the resource.
          - **expression** : //Name/text()
          - **type** : STRING
    
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-api-property-mediator-property1-value1.png" title="Add values to capture sObjectName value" width="600" alt="Add values to capture sObjectName value"/>
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-api-property-mediator-property1-value1.png" title="Add values to capture sObjectName value" width="600" alt="Add values to capture sObjectName value"/>
     
     5. Add the [payload factory](../../mediators/payloadfactory-mediator.md) mediator to capture the sObject content.
           
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-payloadfactory-mediator-property1-value1.png" title="Add values to capture sObject value" width="600" alt="Add values to capture sObjec value"/>
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-payloadfactory-mediator-property1-value1.png" title="Add values to capture sObject value" width="600" alt="Add values to capture sObjec value"/>
     
     6. Forward the backend response to the API caller.
         
@@ -100,7 +115,7 @@ Now follow the steps below to add configurations to the resource.
         
          Drag and drop **respond mediator** to the **Design view**. 
         
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-respond-mediator.png" title="Add Respond mediator" width="800" alt="Add Respond mediator"/> 
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-respond-mediator.png" title="Add Respond mediator" width="800" alt="Add Respond mediator"/> 
              
 #### Configuring the queryRecords resource
 
@@ -121,7 +136,7 @@ Now follow the steps below to add configurations to the resource.
         
     2. Navigate into the **Palette** pane and select the graphical operations icons listed under **Salesforce Connector** section. Then drag and drop the `query` operation into the Design pane.
         
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-drag-and-drop-query.png" title="Drag and drop create operation" width="500" alt="Drag and drop query operations"/>
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-drag-and-drop-query.png" title="Drag and drop create operation" width="500" alt="Drag and drop query operations"/>
         
     3. To get the input values in to the API we can use the [property mediator](../../mediators/property-mediator.md). Navigate into the **Palette** pane and select the graphical mediators icons listed under **Mediators** section. Then drag and drop the `Property` mediators into the Design pane as shown below.
         
@@ -131,7 +146,7 @@ Now follow the steps below to add configurations to the resource.
          - **expression** : //queryString/text()
          - **type** : STRING
       
-        <img src="../../../assets/img/integrate/connectors/salesforcesoap-api-property-querystring-mediator-property1-value1.png" title="Add values to capture queryString value" width="600" alt="Add values to capture queryString value"/>
+        <img src="../../../../assets/img/integrate/connectors/salesforcesoap-api-property-querystring-mediator-property1-value1.png" title="Add values to capture queryString value" width="600" alt="Add values to capture queryString value"/>
 
     5. Forward the backend response to the API caller.
             
@@ -139,7 +154,7 @@ Now follow the steps below to add configurations to the resource.
             
          Drag and drop **respond mediator** to the **Design view**. 
            
-         <img src="../../../assets/img/integrate/connectors/salesforcesoap-respond-mediator.png" title="Add Respond mediator" width="800" alt="Add Respond mediator"/> 
+         <img src="../../../../assets/img/integrate/connectors/salesforcesoap-respond-mediator.png" title="Add Respond mediator" width="800" alt="Add Respond mediator"/> 
                         
     Now you can switch into the Source view and check the XML configuration files of the created API and sequences. 
 
@@ -205,7 +220,7 @@ Now follow the steps below to add configurations to the resource.
 You can download the ZIP file and extract the contents to get the project code.
 
 <a href="../../../assets/attachments/connectors/salesforcesoap.zip">
-    <img src="../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
+    <img src="../../../../assets/img/integrate/connectors/download-zip.png" width="200" alt="Download ZIP">
 </a>
 
 !!! tip
@@ -215,7 +230,7 @@ You can download the ZIP file and extract the contents to get the project code.
 
 Follow these steps to deploy the exported CApp in the integration runtime. 
 
-{!includes/reference/connectors/deploy-capp.md!}
+--8<-- "api-manager/4.0.0/includes/reference/connectors/deploy-capp.md"
 
 ## Testing
 

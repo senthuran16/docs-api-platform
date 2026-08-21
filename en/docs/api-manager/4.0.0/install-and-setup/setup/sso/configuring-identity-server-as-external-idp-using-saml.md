@@ -1,3 +1,18 @@
+---
+title: "Configuring identity server as external IDP using SAML"
+description: "Explains how to configure SAML 2.0 single sign-on with WSO2 Identity Server across the API Publisher and Developer Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-saml/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.0.0/install-and-setup/setup/sso/configuring-identity-server-as-external-idp-using-saml.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - sso
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-20
+content_type: "how-to"
+---
+
 # Configuring Identity Server as External IDP using SAML
 
 The Single Sign-On with the SAML 2.0 feature in WSO2 API Manager is implemented according to the SAML 2.0 browser-based SSO support facilitated by WSO2 Identity Server(WSO2 IS). This feature is available in all WSO2 IS packs from 4.1.0 onwards. The version used in this guide is WSO2 IS 5.10.0.
@@ -115,7 +130,7 @@ WSO2 Identity Server acts as an identity service provider of systems enabled wit
 
     4.  Upload the public certificate of the API Manager by selecting **Select SP Certificate Type**.
 
-        [![upload-certificate-in-SP-for-saml2-sso.png](../../../../assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)](../../../../assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)
+        [![upload-certificate-in-SP-for-saml2-sso.png](../../../assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)](../../../assets/img/setup-and-install/upload-certificate-in-sp-for-saml2-sso.png)
 
 ### Step - 2 Create users and roles
 
