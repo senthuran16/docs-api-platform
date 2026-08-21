@@ -1,3 +1,18 @@
+---
+title: "Setting up ReCaptcha"
+description: "Register reCaptcha API keys with Google and configure WSO2 API Manager to verify users during login."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/security/logins-and-passwords/setting-up-recaptcha.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - security
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Setting Up ReCaptcha
 
 [reCaptcha](https://developers.google.com/recaptcha/) is a free service

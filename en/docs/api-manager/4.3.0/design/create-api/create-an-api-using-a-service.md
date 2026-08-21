@@ -1,3 +1,18 @@
+---
+title: "Create an API using a service"
+description: "Discover integration or streaming integration services from the service catalog and create a managed API from a service."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/create-an-api-using-a-service/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/create-an-api-using-a-service.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-an-api-using-a-service
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Create an API Using a Service
 
 The service catalog in WSO2 API Manager contains services that correspond to either the Micro Integrator or the Streaming Integrator. The Micro Integrator services correspond to the REST API backend services, and the Streaming Integrator services correspond to the Streaming API (i.e., WebSocket, WebHook/WebSub or SSE) backend services that are managed by the respective integration layer (Micro Integrator or Streaming Integrator).

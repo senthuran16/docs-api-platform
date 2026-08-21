@@ -1,3 +1,18 @@
+---
+title: "Setting limits for rate limiting"
+description: "Explains the API, application, resource, and subscription levels at which rate limits can be configured."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/rate-limiting/setting-throttling-limits/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/rate-limiting/setting-throttling-limits.md
+tags:
+  - api-manager
+  - design
+  - rate-limiting
+  - setting-throttling-limits
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # Setting Limits for Rate Limiting
 
 Rate Limiting allows you to limit the number of successful hits to an API during a given period, typically in cases such as the following:

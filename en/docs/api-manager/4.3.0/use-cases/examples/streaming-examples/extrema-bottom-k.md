@@ -1,3 +1,18 @@
+---
+title: "Counting the frequency of values with BottomK"
+description: "Run a Siddhi sample that counts the frequency of values using the extrema extension's bottomK function."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/extrema-bottom-k/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/extrema-bottom-k.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Counting the Frequency of Values with BottomK
 
 ## Purpose:

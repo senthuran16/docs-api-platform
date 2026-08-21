@@ -1,3 +1,18 @@
+---
+title: "Add additional headers to test a REST API"
+description: "Configure CORS settings in deployment.toml to add custom headers when testing a REST API via the API console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/invoke-apis/invoke-apis-using-tools/include-additional-headers-in-the-api-console.md
+tags:
+  - api-manager
+  - consume
+  - invoke-apis
+  - invoke-apis-using-tools
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Add Additional Headers to Test a REST API
 
 Follow the instructions below to add additional headers when testing a REST API via the Integrated API Console:

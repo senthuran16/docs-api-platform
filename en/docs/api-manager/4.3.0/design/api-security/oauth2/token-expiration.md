@@ -1,3 +1,18 @@
+---
+title: "Token expiration"
+description: "Configure the expiration time for application access tokens by editing the deployment.toml configuration file."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/token-expiration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/token-expiration.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Token Expiration
 
 ### Configuring the token expiration time

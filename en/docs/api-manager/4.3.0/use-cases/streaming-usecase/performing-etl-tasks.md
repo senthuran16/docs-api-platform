@@ -1,3 +1,18 @@
+---
+title: "Performing ETL operations"
+description: "Explains how WSO2 Streaming Integrator performs real-time ETL operations to extract, transform, and load streaming data."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/performing-etl-tasks/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/performing-etl-tasks.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - performing-etl-tasks
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "concept"
+---
+
 # Performing ETL Operations
 
 ETL (Extract Transform Load) is a form of data processing that involves **extracting** data from one or multiple sources (typically from multiple sources), **transforming data** to generate the required output, and then **loading** that output to one or more destinations to make it available for further processing.

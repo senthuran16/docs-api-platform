@@ -1,3 +1,18 @@
+---
+title: "Application keys"
+description: "Generate or renew production and sandbox application keys used as OAuth2 bearer tokens to authenticate API requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/manage-application/generate-keys/generate-api-keys/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/manage-application/generate-keys/generate-api-keys.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - generate-keys
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Application Keys
 
 An API Access Token/Key is a string that is passed as an HTTP header of an API request. WSO2 API-M provides OAuth2.0 bearer token-based authentication for API access, and the API key has to be submitted alongside the API request in order to authenticate the access.

@@ -1,3 +1,18 @@
+---
+title: "Protecting sensitive data via the secure vault"
+description: "Encrypt sensitive data in deployment configurations and Siddhi applications using the Secure Vault and Cipher tool."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/protecting-sensitive-data-via-the-secure-vault/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/protecting-sensitive-data-via-the-secure-vault.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Protecting Sensitive Data via the Secure Vault
 
 The Streaming Integrator uses several artifacts for its functionality including deployment configurations for tuning its operation as well as deployable artifacts for extending its functionality. In each of these scenarios, there can be situations where the data specified is of a sensitive nature e.g., access tokens, passwords, etc.

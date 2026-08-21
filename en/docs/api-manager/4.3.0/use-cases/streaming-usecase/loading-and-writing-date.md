@@ -1,3 +1,18 @@
+---
+title: "Loading and writing data"
+description: "Explains how WSO2 Streaming Integrator loads and writes streaming data to databases, files, and cloud storage."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/loading-and-writing-date/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/loading-and-writing-date.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - loading-and-writing-date
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Loading and Writing Data
 
 Loading and writing data involves publishing the data in a destination where it can be extracted again at any given time for further processing. WSO2 Streaming Integrator supports loading and writing data to databases, files, and cloud storages.

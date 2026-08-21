@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - streaming integration"
+description: "Walks through starting the Streaming Integrator and Tooling, and deploying a sample Siddhi application to a WebSocket server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/get-started/streaming-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/get-started/streaming-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - streaming-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "tutorial"
+---
+
 # Quick Start Guide - Streaming Integration
 
 Let's get started with WSO2 Streaming Integrator(SI) by running a simple streaming use case in your local environment. 

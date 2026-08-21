@@ -1,3 +1,18 @@
+---
+title: "Enable or disable banner"
+description: "Show an announcement banner on the Developer Portal and configure its text, image, color, and spacing via userTheme.js."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/customizing-the-developer-portal/enable-or-disable-banner/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/customizing-the-developer-portal/enable-or-disable-banner.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Enable or Disable Banner
 
 The banner section is hidden by default. The banner section can be used to show an announcement to the developer portal users as follows. 

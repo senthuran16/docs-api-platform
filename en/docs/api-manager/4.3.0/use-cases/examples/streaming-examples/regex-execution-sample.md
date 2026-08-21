@@ -1,3 +1,18 @@
+---
+title: "Identifying Sub-sequences in input sequences"
+description: "Use the regex function to find sub-sequences in an input sequence that match a given pattern."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/regex-execution-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/regex-execution-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Identifying Sub-sequences in Input Sequences
 
 ## Purpose:

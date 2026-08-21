@@ -1,3 +1,18 @@
+---
+title: "Performing Real-time ETL with files"
+description: "Perform real-time ETL on data stored in files using the different modes and options available in the Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/performing-real-time-etl-with-files/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/performing-real-time-etl-with-files.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - performing-real-time-etl-with-files
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "tutorial"
+---
+
 # Performing Real-time ETL with Files
 
 ## Introduction

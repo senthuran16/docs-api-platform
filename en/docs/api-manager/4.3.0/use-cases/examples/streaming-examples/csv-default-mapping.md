@@ -1,3 +1,18 @@
+---
+title: "CSV default mapping"
+description: "Run a Siddhi sample that publishes and receives data events to files using the default CSV mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/csv-default-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/csv-default-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # CSV Default Mapping
 
 ## Purpose:

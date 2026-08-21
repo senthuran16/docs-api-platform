@@ -1,3 +1,18 @@
+---
+title: "Adding an application deletion workflow"
+description: "Enable an approval workflow executor so an admin must approve application deletion requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/manage-application/advanced-topics/adding-an-application-deletion-workflow/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/manage-application/advanced-topics/adding-an-application-deletion-workflow.md
+tags:
+  - api-manager
+  - consume
+  - manage-application
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Adding an Application Deletion Workflow
 
 Attaching a custom workflow to application deletion, enables an admin to approve/reject application deletion requests made for existing applications. Note that only an admin is able to approve/reject an application deletion request.

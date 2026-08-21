@@ -1,3 +1,18 @@
+---
+title: "Configuring the log provider"
+description: "Implement the LogProvider and LogFileProvider interfaces and configure Carbon to plug in a custom log provider."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/logging-and-monitoring/logging/admin-configuring-the-log-provider/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/administer/logging-and-monitoring/logging/admin-configuring-the-log-provider.md
+tags:
+  - api-manager
+  - administer
+  - logging-and-monitoring
+  - logging
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Configuring the Log Provider
 
 Logs of a system can be stored in many ways. For example, they can be stored in a file system, an SQL server such as MySQL, a no-sql server like Cassandra, etc. According to the default configurations in a Carbon product, the logs are stored in the `<PRODUCT_HOME>/repository/logs/` directory as `.log` files.

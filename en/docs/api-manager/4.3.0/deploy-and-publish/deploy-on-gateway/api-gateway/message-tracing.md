@@ -1,3 +1,18 @@
+---
+title: "Message tracing"
+description: "Enable the deprecated Message Tracer feature to log and debug the message flow of API transactions through the Gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/deploy-and-publish/deploy-on-gateway/api-gateway/message-tracing/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/deploy-and-publish/deploy-on-gateway/api-gateway/message-tracing.md
+tags:
+  - api-manager
+  - deploy-and-publish
+  - deploy-on-gateway
+  - api-gateway
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Message Tracing
 
 !!! Info "Deprecated feature"

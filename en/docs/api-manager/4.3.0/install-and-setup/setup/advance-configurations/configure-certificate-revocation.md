@@ -1,3 +1,18 @@
+---
+title: "Verifying certificate revocation"
+description: "Enable OCSP or CRL-based certificate revocation verification for the HTTPS transport listener."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/advance-configurations/configure-certificate-revocation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/advance-configurations/configure-certificate-revocation.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - advance-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Verifying Certificate Revocation
 
 The default HTTPS transport listener (Secured Pass-Through) can verify with the certificate authority whether a certificate is still trusted before it completes an SSL connection. If the certificate authority has revoked the certificate, a connection will not be completed.

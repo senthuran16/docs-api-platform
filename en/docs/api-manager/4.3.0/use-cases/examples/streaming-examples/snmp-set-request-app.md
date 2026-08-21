@@ -1,3 +1,18 @@
+---
+title: "Sending custom keyvalue events via SNMP"
+description: "Configure the Streaming Integrator to send key-value events as SNMP set requests using a custom mapping."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/snmp-set-request-app/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/snmp-set-request-app.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Sending Custom Keyvalue Events via SNMP
 
 ## Purpose:

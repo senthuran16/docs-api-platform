@@ -1,3 +1,18 @@
+---
+title: "Publishing aggregated events to the Amazon AWS S3 bucket"
+description: "Run a Siddhi sample that aggregates stock quote events and publishes them to an Amazon S3 bucket."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/amazon-s3-sink-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/amazon-s3-sink-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Publishing Aggregated Events to the Amazon AWS S3 Bucket
 
 ## Purpose:

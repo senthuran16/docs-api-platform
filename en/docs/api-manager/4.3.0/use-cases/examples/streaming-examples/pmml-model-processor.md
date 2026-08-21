@@ -1,3 +1,18 @@
+---
+title: "Making predictions via PMML model"
+description: "Configure a pretrained PMML model to predict required raw materials from sweet production events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/pmml-model-processor/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/pmml-model-processor.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Making Predictions via PMML Model
 
 ## Purpose:

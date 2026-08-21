@@ -1,3 +1,18 @@
+---
+title: "Extending scope validation"
+description: "Configure scope allowlisting to skip role validation for OAuth scopes that are not associated with user roles."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/extending-api-manager/extending-key-management/extending-scope-validation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/extending-api-manager/extending-key-management/extending-scope-validation.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Extending Scope Validation
 
 OAuth scopes, allow you to have fine grained access control to API resources based on the user roles. It allows you to define scopes per API and associate defined scopes with API resources. OAuth 2.0 bearer tokens are obtained for a set of requested scopes and the token obtained is not allowed to access any API resources beyond the associated scopes. For more information, see [Fine Grained Access Control with OAuth Scopes](../../../../design/api-security/oauth2/oauth2-scopes/fine-grained-access-control-with-oauth-scopes.md#fine-grained-access-control-with-oauth-scopes).

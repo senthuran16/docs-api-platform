@@ -1,3 +1,18 @@
+---
+title: "Working with an influxDB store"
+description: "Perform insert, search, update, and delete operations on an InfluxDB store using Siddhi queries."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/store-influxdb/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/store-influxdb.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Working with an influxDB Store
 
 ## Purpose:

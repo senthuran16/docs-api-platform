@@ -1,3 +1,16 @@
+---
+title: "Converting string values to lowercase"
+description: "Learn how a Siddhi string extension converts string attribute values to lowercase in a streaming sample application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/string-extension-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/string-extension-sample.md
+tags:
+  - siddhi
+  - string-functions
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Converting String Values to Lowercase
 
 ## Purpose

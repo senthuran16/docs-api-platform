@@ -1,3 +1,18 @@
+---
+title: "Making predictions via a streaming perceptron model"
+description: "Train and test a streaming Perceptron model to perform binary classification on incoming events."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/streaming-perceptron-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/streaming-perceptron-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Making Predictions via a Streaming Perceptron Model
 
 ## Purpose

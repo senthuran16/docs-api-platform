@@ -1,3 +1,18 @@
+---
+title: "Managing rate limiting policies"
+description: "Use apictl to get, delete, export, and import rate limiting policies in an API Manager environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/managing-rate-limiting-policies/throttle-policy-import-export/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/managing-rate-limiting-policies/throttle-policy-import-export.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Managing Rate Limiting Policies
 
 WSO2 API Controller (apictl) allows the following actions on rate limiting Policies.

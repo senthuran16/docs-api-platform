@@ -1,3 +1,18 @@
+---
+title: "Viewing stream statistics"
+description: "View the stream statistics dashboard showing throughput and total stream count for your deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-stream-statistics/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/si-observe/viewing-stream-statistics.md
+tags:
+  - api-manager
+  - observe
+  - si-observe
+  - viewing-stream-statistics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "reference"
+---
+
 !!! note
     **This page is still a work in progress!**
     

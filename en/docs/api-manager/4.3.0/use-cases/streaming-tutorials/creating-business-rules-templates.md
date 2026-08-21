@@ -1,3 +1,18 @@
+---
+title: "Working with business rules"
+description: "Create business rules from templates or from scratch using the Business Rules Manager for common streaming scenarios."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/creating-business-rules-templates/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/creating-business-rules-templates.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - creating-business-rules-templates
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Working with Business Rules
 
 In streaming integration, there are common use cases for analyzing statistics that involve operations such as calculating the average, minimum, maximum etc., for different endpoints. The Business Rules Manager allows you to define templates and generate business rules from them for different scenarios with common requirements.

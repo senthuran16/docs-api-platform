@@ -1,3 +1,18 @@
+---
+title: "OAuth2 grant types overview"
+description: "Explore the OAuth2 grant types supported by WSO2 API Manager and when to use each one to obtain access tokens."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/grant-types/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-security/oauth2/grant-types/overview.md
+tags:
+  - api-manager
+  - design
+  - api-security
+  - oauth2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 #OAuth2 Grant Types
 
 

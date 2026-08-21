@@ -1,3 +1,18 @@
+---
+title: "Adding an API subscription workflow using BPS"
+description: "Attach a custom subscription approval workflow using WSO2 EI or WSO2 BPS so admins can hold subscriptions for review."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/manage-subscription/advanced-topics/adding-an-api-subscription-workflow-using-bps.md
+tags:
+  - api-manager
+  - consume
+  - manage-subscription
+  - advanced-topics
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Adding an API Subscription Workflow
 
 This section explains how to attach a custom workflow to the API subscription operation in the API Manager. First, see [Workflow Extensions](../../../reference/customize-product/extending-api-manager/extending-workflows/customizing-a-workflow-extension.md) for information on different types of workflows executors.

@@ -1,3 +1,18 @@
+---
+title: "Adding a class mediator"
+description: "Write a Java class mediator that extends AbstractMediator to customize an API's mediation flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/adding-a-class-mediator/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/adding-a-class-mediator.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Adding a Class Mediator
 
 `Class Mediator` is one specific example of a mediation extension. When creating a class mediator, we are allowed to write a Java class that extends the `org.apache.synapse.mediators.AbstractMediator` class.

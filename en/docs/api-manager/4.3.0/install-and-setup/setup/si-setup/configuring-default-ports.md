@@ -1,3 +1,18 @@
+---
+title: "Configuring default ports"
+description: "Reference the default ports used by each Streaming Integrator runtime and how to apply a port offset."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/configuring-default-ports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/configuring-default-ports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "reference"
+---
+
 # Configuring Default Ports
 
 This page describes the default ports that are used for each runtime

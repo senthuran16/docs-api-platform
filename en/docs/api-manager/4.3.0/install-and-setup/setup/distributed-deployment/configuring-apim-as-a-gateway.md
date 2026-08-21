@@ -1,3 +1,18 @@
+---
+title: "Use APK as the gateway in API Manager"
+description: "Explains the APIM-APK Agent architecture that connects the API Manager control plane to the WSO2 APK gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/distributed-deployment/configuring-apim-as-a-gateway/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/distributed-deployment/configuring-apim-as-a-gateway.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - distributed-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # APK as Gateway in API Manager
 
 ## Overview

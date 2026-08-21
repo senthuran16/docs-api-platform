@@ -1,3 +1,17 @@
+---
+title: "Quick start guide - API management"
+description: "Walks through installing API Manager and creating, publishing, subscribing to, and invoking an API end to end."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/get-started/api-manager-quick-start-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/get-started/api-manager-quick-start-guide.md
+tags:
+  - api-manager
+  - get-started
+  - api-manager-quick-start-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "tutorial"
+---
+
 # Quick Start Guide - API Management
 
 New to WSO2 API Manager? No worries; we'll guide you through the basics!

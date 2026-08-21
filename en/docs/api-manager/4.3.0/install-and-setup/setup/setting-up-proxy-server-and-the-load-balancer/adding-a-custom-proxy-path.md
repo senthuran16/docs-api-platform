@@ -1,3 +1,18 @@
+---
+title: "Access WSO2 API Manager through a custom proxy path"
+description: "Configure a custom proxy path so clients can access API Manager through a proxy URL mapped to the backend server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/adding-a-custom-proxy-path.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-proxy-server-and-the-load-balancer
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Access WSO2 API Manager through a custom proxy path
 
 Adding a custom proxy path is useful when you have a proxy server

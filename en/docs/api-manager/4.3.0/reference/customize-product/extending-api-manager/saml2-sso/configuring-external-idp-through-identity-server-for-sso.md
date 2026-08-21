@@ -1,3 +1,18 @@
+---
+title: "Configuring external IDP through identity server for SSO"
+description: "Add and configure an external Identity Provider in WSO2 Identity Server for SAML2 SSO with API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/extending-api-manager/saml2-sso/configuring-external-idp-through-identity-server-for-sso.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - extending-api-manager
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Configuring External IDP through Identity Server for SSO
 
 !!! note

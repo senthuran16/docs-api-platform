@@ -1,3 +1,18 @@
+---
+title: "Rounding up amounts via the math function"
+description: "Use the math extension's ceil function to round up production amounts in a Siddhi application."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/math-extension-sample/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/math-extension-sample.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Rounding up Amounts via the Math Function
 
 ## Purpose:

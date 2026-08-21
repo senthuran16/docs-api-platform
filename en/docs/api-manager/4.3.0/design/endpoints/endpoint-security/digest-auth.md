@@ -1,3 +1,16 @@
+---
+title: "Secure endpoint with digest auth"
+description: "Configure Digest Authentication for a backend endpoint so credentials are hashed before being sent over the network."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/endpoints/endpoint-security/digest-auth/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/endpoints/endpoint-security/digest-auth.md
+tags:
+  - endpoint-security
+  - authentication
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Secure Endpoint with Digest Auth
 
 A secured endpoint is where we have access-protected resources. You have to specify the username and the password when a request is sent to a secured endpoint.  The endpoint authentication mechanism can either be Basic Authentication or Digest Authentication. They differ on how the credentials are communicated and how access is granted by the backend server. 

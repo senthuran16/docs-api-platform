@@ -1,3 +1,18 @@
+---
+title: "Adding a Non-Blocking send operation"
+description: "Create a policy that removes the ClientAPINonBlocking property so large VFS file transfers avoid out-of-memory failures."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/adding-a-non-blocking-send-operation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/regular-gateway-policies/adding-a-non-blocking-send-operation.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - regular-gateway-policies
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Adding a Non-Blocking Send Operation
 
 In this example, the `Send` mediator in a proxy service using the VFS transport is transferring a file to a VFS endpoint. 

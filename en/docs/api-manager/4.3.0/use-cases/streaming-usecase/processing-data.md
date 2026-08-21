@@ -1,3 +1,18 @@
+---
+title: "Stream processing"
+description: "Describes the categories of stream processing operations supported by WSO2 Streaming Integrator, including cleansing and enrichment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/processing-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/processing-data.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - processing-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Stream Processing
 
 Stream processing involves making changes to streaming data to generate a required output. WSO2 Streaming Integrator allows you to carry out a wide range of operations to process streaming data. These operations are supported via [Siddhi Extensions](https://siddhi.io/en/v5.1/docs/extensions/). These operations can be broadly categorized into five categories as follows:

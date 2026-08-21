@@ -1,3 +1,18 @@
+---
+title: "Test a REST API"
+description: "Use the Publisher test console to try out a REST API's resources and verify its functionality before publishing."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/create-rest-api/test-a-rest-api/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/create-rest-api/test-a-rest-api.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - create-rest-api
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Test a REST API
 
 Testing APIs refers to the process of trying out the APIs in the Publisher itself to make sure that the APIs meet the required functionalities and behavior.

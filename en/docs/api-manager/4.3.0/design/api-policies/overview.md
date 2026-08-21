@@ -1,3 +1,18 @@
+---
+title: "API policies overview"
+description: "Learn how request, response, and fault flow policies let you modify API invocations at the gateway."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/api-policies/overview.md
+tags:
+  - api-manager
+  - design
+  - api-policies
+  - overview
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "concept"
+---
+
 # API Policies Overview
 
 Policies generally enforce some business logic that needs to be executed on the `Request`, `Response`, or `Fault` flow of an API invocation. A policy is a collection of rules that will be executed at the API Gateway. Using policies we can make API invocations undergo slight behavioural modifications before reaching the backend. In a similar manner, we can modify the API response a client receives.

@@ -1,3 +1,18 @@
+---
+title: "HTTP status codes"
+description: "Lists the HTTP status codes returned by the Streaming Integrator REST APIs for successful and failed requests."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/http-status-codes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/http-status-codes.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - http-status-codes
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "reference"
+---
+
 # HTTP Status Codes
 
 When REST API requests are sent to carry out various actions, various HTTP status codes will be returned based on the state of the action (success or failure) and the HTTP method (`POST`, `GET`, `PUT`, `DELETE`) executed. The following are the definitions of the various HTTP status codes that are returned.

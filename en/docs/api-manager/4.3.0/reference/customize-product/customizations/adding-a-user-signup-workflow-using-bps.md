@@ -1,3 +1,18 @@
+---
+title: "Adding a user signup workflow using BPS"
+description: "Attach a custom workflow to the user signup operation using the Enterprise Integrator or Business Process Server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/adding-a-user-signup-workflow-using-bps/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/customize-product/customizations/adding-a-user-signup-workflow-using-bps.md
+tags:
+  - api-manager
+  - reference
+  - customize-product
+  - customizations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Adding a User Signup Workflow
 
 This section explains how to attach a custom workflow to the user signup operation in the API Manager. 

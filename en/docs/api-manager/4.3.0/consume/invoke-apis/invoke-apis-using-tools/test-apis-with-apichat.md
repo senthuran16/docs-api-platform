@@ -1,3 +1,18 @@
+---
+title: "Test APIs with API chat"
+description: "Register your environment with Choreo and test REST APIs using natural language through API Chat."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/invoke-apis/invoke-apis-using-tools/test-apis-with-apichat.md
+tags:
+  - api-manager
+  - consume
+  - invoke-apis
+  - invoke-apis-using-tools
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Test APIs with API Chat
 
 Testing APIs is an essential step in the API development lifecycle. API Manager simplifies the testing task by allowing you to engage with your APIs using natural language through API Chat. It eliminates manual test scenario creation, payload mocking, etc. It enables easy API communication using human language and requires no coding for handling sequences with multiple resource calls. This makes your API testing efficient and user-friendly.

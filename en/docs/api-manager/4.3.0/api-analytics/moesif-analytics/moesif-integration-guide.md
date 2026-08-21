@@ -1,3 +1,18 @@
+---
+title: "Moesif analytics integration guide"
+description: "Integrate Moesif Analytics with WSO2 API Manager to publish API usage, traffic, and error data to Moesif."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/moesif-analytics/moesif-integration-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/moesif-analytics/moesif-integration-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - moesif-analytics
+  - moesif-integration-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Moesif Analytics Integration Guide
 
 This guide outlines the steps required to integrate **Moesif Analytics** with **WSO2 API Manager**. The integration enables you to collect and publish API analytics data to the **Moesif dashboard**, providing insights into API usage, traffic trends, and error tracking.

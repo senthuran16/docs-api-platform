@@ -1,3 +1,18 @@
+---
+title: "Deploying siddhi applications"
+description: "Shows how to deploy a Siddhi application to the Streaming Integrator server from the Tooling interface."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/deploying-streaming-applications/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/deploying-streaming-applications.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - deploying-streaming-applications
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Deploying Siddhi Applications
 
 After creating and testing a Siddhi application, you need to deploy it in the Streaming Integrator server. You can also deploy it in Docker and Kubernetes.

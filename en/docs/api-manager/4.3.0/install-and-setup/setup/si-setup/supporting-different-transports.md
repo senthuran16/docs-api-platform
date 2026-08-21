@@ -1,3 +1,18 @@
+---
+title: "Supporting different transports"
+description: "Configure the Kafka, JMS, and other transports required to receive and publish events via WSO2 Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/supporting-different-transports/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-setup/supporting-different-transports.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-setup
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Supporting Different Transports
 
 Follow the relevant section for the steps that need to be carried out before using the required transport to receive and publish events via the Streaming Integrator.

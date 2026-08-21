@@ -1,3 +1,18 @@
+---
+title: "Receiving events via file"
+description: "Configure the siddhi-io-file extension to receive events from files and move processed files to a consumed directory."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-events-from-file/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-events-from-file.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving Events via File
 
 ## Purpose:

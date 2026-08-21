@@ -1,3 +1,18 @@
+---
+title: "Advanced configurations"
+description: "Configure scope-to-role mappings and allowed origins for the WSO2 API Manager product REST APIs."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/product-apis/advanced-configurations/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/product-apis/advanced-configurations.md
+tags:
+  - api-manager
+  - reference
+  - product-apis
+  - advanced-configurations
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
+---
+
 # Advanced Configurations
 
 This section explains how to configure scope to role mappings for API Manager REST APIs.

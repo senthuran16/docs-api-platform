@@ -1,3 +1,18 @@
+---
+title: "Running the streaming integrator in containers"
+description: "Run the Streaming Integrator in Docker and Kubernetes, and deploy Siddhi applications in containerized environments."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/running-si-with-docker-and-kubernetes.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - running-si-with-docker-and-kubernetes
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Running the Streaming Integrator in Containerized Environments
 
 ## Running the Streaming Integrator with Docker

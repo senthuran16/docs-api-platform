@@ -1,3 +1,18 @@
+---
+title: "Triggering integration flows"
+description: "Shows how to configure the Streaming Integrator to trigger Micro Integrator flows using a gRPC sink."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/triggering-integration-flows/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/triggering-integration-flows.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - triggering-integration-flows
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Triggering Integration Flows
 
 ## Introduction

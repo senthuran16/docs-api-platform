@@ -1,3 +1,18 @@
+---
+title: "Choreo based analytics getting started guide"
+description: "Sign in to Choreo and register your on-premise environment to start using WSO2 API Manager analytics."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/choreo-analytics/getting-started-guide/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/choreo-analytics/getting-started-guide.md
+tags:
+  - api-manager
+  - api-analytics
+  - choreo-analytics
+  - getting-started-guide
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "quickstart"
+---
+
 # Choreo Based Analytics Getting Started Guide
 
 API Manager offers analytics as a cloud service. Therefore, you need to register with the analytics cloud in order to use API Manager Analytics. Follow the instructions below to get started with analytics:

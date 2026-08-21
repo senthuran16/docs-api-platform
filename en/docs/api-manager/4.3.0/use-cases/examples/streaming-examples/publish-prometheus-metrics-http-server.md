@@ -1,3 +1,18 @@
+---
+title: "Publish events to Prometheus via an HTTP server"
+description: "Configure Streaming Integrator to publish consumed events as Prometheus metrics exposed over an HTTP server."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-prometheus-metrics-http-server/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-prometheus-metrics-http-server.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Publishing Consumed Events to Prometheus Metrics and Exposing then via HTTP
 
 ## Purpose:

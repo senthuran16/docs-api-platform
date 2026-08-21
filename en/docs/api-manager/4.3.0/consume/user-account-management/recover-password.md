@@ -1,3 +1,18 @@
+---
+title: "Recover password"
+description: "Recover a forgotten Developer Portal password using the Forgot Password link and an email-based reset flow."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/user-account-management/recover-password/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/consume/user-account-management/recover-password.md
+tags:
+  - api-manager
+  - consume
+  - user-account-management
+  - recover-password
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Recover Password
 
 !!! note

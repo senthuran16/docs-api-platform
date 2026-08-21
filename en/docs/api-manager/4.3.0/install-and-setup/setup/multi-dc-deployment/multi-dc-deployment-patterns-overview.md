@@ -1,3 +1,18 @@
+---
+title: "Multi-DC deployment patterns - overview"
+description: "Explains what a multi-datacenter deployment architecture is and why organizations use it for API management."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/multi-dc-deployment/multi-dc-deployment-patterns-overview.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - multi-dc-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Multi-DC Deployment Patterns - Overview
 
 ## What is Multi-DC Deployment Architecture?

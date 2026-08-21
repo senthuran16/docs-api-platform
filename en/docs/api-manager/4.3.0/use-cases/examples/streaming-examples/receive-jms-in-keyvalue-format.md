@@ -1,3 +1,18 @@
+---
+title: "Receiving key value events via JMS"
+description: "Configure WSO2 Streaming Integrator to receive key-value events over JMS transport using ActiveMQ."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-jms-in-keyvalue-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-jms-in-keyvalue-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving Key Value Events via JMS
 
 ## Purpose:

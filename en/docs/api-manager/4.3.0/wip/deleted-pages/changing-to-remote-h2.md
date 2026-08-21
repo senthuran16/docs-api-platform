@@ -1,3 +1,18 @@
+---
+title: "Changing to remote H2"
+description: "Explains how to set up a remote H2 database and configure datasources to replace the embedded H2 database."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/wip/deleted-pages/changing-to-remote-h2/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/wip/deleted-pages/changing-to-remote-h2.md
+tags:
+  - api-manager
+  - wip
+  - deleted-pages
+  - changing-to-remote-h2
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Changing to Remote H2
 
 By default, WSO2 API Manager uses the embedded H2 database as the database for storing user management and registry data. Given below are the instructions you need to follow in order to use remote H2 for this purpose.

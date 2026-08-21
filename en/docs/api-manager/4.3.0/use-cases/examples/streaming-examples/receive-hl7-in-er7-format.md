@@ -1,3 +1,18 @@
+---
+title: "Receiving ER7 events via HL7"
+description: "Configure WSO2 Streaming Integrator to receive HL7 events in ER7 format over the MLLP protocol and log them to the console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-hl7-in-er7-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-hl7-in-er7-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving ER7 Events via HL7
 
 ## Purpose:

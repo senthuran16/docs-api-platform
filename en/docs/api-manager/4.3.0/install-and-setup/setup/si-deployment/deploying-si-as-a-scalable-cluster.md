@@ -1,3 +1,18 @@
+---
+title: "Scalable deployment"
+description: "Deploy Streaming Integrator as a scalable cluster using stateless or stateful high availability patterns."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-deployment/deploying-si-as-a-scalable-cluster/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/si-deployment/deploying-si-as-a-scalable-cluster.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - si-deployment
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Scalable Deployment
 
 Scalable high availability deployment predominantly focuses on scaling the system according to the load or the TPS of

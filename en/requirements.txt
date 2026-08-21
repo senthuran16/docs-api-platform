@@ -1,4 +1,6 @@
 mkdocs==1.4.2
+# pkg_resources still required by markdown==3.2.1; removed from setuptools>=80
+setuptools<80
 Pygments==2.14.0
 pymdown-extensions==9.10
 mkdocs-minify-plugin==0.6.2

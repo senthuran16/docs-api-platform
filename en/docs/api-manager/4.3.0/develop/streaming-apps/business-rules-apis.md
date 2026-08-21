@@ -1,3 +1,18 @@
+---
+title: "Business rules APIs"
+description: "Lists the REST API operations for creating, listing, updating, and deleting business rule instances and templates."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/business-rules-apis/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/develop/streaming-apps/business-rules-apis.md
+tags:
+  - api-manager
+  - develop
+  - streaming-apps
+  - business-rules-apis
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "reference"
+---
+
 # Business Rules APIs
 
 ## Listing the available business rule instances

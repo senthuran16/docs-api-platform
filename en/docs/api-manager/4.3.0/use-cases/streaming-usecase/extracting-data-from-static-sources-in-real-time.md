@@ -1,3 +1,18 @@
+---
+title: "Extracting data from static sources in real time"
+description: "Explains how WSO2 Streaming Integrator extracts data from static sources such as databases, files, and cloud storage in real time."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/extracting-data-from-static-sources-in-real-time/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-usecase/extracting-data-from-static-sources-in-real-time.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-usecase
+  - extracting-data-from-static-sources-in-real-time
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "concept"
+---
+
 # Extracting Data from Static Sources in Real Time
 
 WSO2 Streaming Integrator can extract data from static sources such as databases, files and cloud storages in real-tme. 

@@ -1,3 +1,17 @@
+---
+title: "FAQ"
+description: "Answers frequently asked questions about WSO2 API Manager licensing, support, ports, protocols, and deployment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/faq/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/faq.md
+tags:
+  - api-manager
+  - reference
+  - faq
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "faq"
+---
+
 # FAQ
 
 ## About WSO2 API Manager

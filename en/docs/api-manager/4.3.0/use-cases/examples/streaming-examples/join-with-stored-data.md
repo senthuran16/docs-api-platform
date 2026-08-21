@@ -1,3 +1,18 @@
+---
+title: "Joining streaming data with stored data in RDBMS"
+description: "Join streaming transaction data with fraud records stored in an RDBMS table to detect suspicious trades."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/join-with-stored-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/join-with-stored-data.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Joining Streaming Data with Stored Data in RDBMS
 
 ## Purpose:

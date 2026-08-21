@@ -1,3 +1,18 @@
+---
+title: "Creating an ETL application via SI tooling"
+description: "Build an ETL Siddhi application without writing code, using the ETL Flow wizard in Streaming Integrator Tooling."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/creating-etl-application-via-tooling/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/streaming-tutorials/creating-etl-application-via-tooling.md
+tags:
+  - api-manager
+  - use-cases
+  - streaming-tutorials
+  - creating-etl-application-via-tooling
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "tutorial"
+---
+
 # Creating an ETL Application via SI Tooling
 
 ## Introduction

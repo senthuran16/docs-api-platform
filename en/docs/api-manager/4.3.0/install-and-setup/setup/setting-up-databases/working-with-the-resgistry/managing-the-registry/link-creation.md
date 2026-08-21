@@ -1,3 +1,18 @@
+---
+title: "Link creation"
+description: "Create symbolic and remote links to resources or collections in the registry using the Entries panel."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/setting-up-databases/working-with-the-resgistry/managing-the-registry/link-creation.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - setting-up-databases
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Link Creation
 
 Follow the instructions below to create a link on a resource/collection.

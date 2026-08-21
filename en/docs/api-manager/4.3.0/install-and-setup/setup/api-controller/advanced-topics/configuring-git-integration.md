@@ -1,3 +1,18 @@
+---
+title: "Configuring Git integration"
+description: "Configure apictl Git integration options such as enabling project deletion and externalizing the VCS configuration file location."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/advanced-topics/configuring-git-integration/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/install-and-setup/setup/api-controller/advanced-topics/configuring-git-integration.md
+tags:
+  - api-manager
+  - install-and-setup
+  - setup
+  - api-controller
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 #  Configuring Git Integration
 
 **WSO2 API Controller (apictl)** natively supports identifying APIs or any other types of projects in a Git repository and seamlessly deploying the changes of the projects to a given WSO2 API Manager (WSO2 API-M) environment. This topic is regarding some of the configurations that you can use to optimize the Git integration functionality.

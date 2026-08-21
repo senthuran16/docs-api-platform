@@ -1,3 +1,18 @@
+---
+title: "Publishing binary events via TCP"
+description: "Configure Streaming Integrator to publish events over TCP transport in binary format and view the output on the console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-tcp-in-binary-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/publish-tcp-in-binary-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Publishing Binary Events via TCP
 
 ## Purpose:

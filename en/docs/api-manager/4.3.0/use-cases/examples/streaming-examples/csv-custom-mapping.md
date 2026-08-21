@@ -1,3 +1,18 @@
+---
+title: "Receiving and publishing events in custom CSV format"
+description: "Run a Siddhi sample that receives and publishes events in a custom CSV format using file source and sink."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/csv-custom-mapping/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/csv-custom-mapping.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Receiving and Publishing Events in Custom CSV Format
 
 ## Purpose

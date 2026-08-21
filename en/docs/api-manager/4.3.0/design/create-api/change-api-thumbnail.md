@@ -1,3 +1,18 @@
+---
+title: "Change the thumbnail of an API"
+description: "Change an API's thumbnail image by uploading a new image file through the Publisher Portal."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/change-api-thumbnail/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/design/create-api/change-api-thumbnail.md
+tags:
+  - api-manager
+  - design
+  - create-api
+  - change-api-thumbnail
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Change the Thumbnail of an API
 
 The thumbnail of an API can be changed by uploading an image for the thumbnail or by designing a new thumbnail image via the Publisher.

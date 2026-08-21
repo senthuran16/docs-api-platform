@@ -1,3 +1,17 @@
+---
+title: "Best practices for working with endpoints"
+description: "Recommended practices for naming endpoints and configuring socket, endpoint, and other timeout parameters before production."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/best-practices-endpoints/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/reference/best-practices-endpoints.md
+tags:
+  - api-manager
+  - reference
+  - best-practices-endpoints
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "reference"
+---
+
 # Best practices for working with endpoints
 
 - Do not use anonymous endpoints. Always use [named endpoints](https://mi.docs.wso2.com/en/latest/reference/synapse-properties/endpoint-properties/). As anynymous endpoints have auto-generated names in the synapse

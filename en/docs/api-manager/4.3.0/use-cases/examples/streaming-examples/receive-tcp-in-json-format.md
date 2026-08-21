@@ -1,3 +1,18 @@
+---
+title: "Receiving JSON events via TCP"
+description: "Configure the Streaming Integrator to receive events over TCP in JSON format and log them to the console."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-tcp-in-json-format/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/use-cases/examples/streaming-examples/receive-tcp-in-json-format.md
+tags:
+  - api-manager
+  - use-cases
+  - examples
+  - streaming-examples
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-16
+content_type: "how-to"
+---
+
 # Receiving JSON Events via TCP
 
 ## Purpose:

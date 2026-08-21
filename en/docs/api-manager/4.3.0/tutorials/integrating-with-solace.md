@@ -1,3 +1,17 @@
+---
+title: "External broker and gateway integration with API Manager"
+description: "Configure API Manager to integrate with the Solace event broker as an external gateway environment."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/tutorials/integrating-with-solace/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/tutorials/integrating-with-solace.md
+tags:
+  - api-manager
+  - tutorials
+  - integrating-with-solace
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "tutorial"
+---
+
 # External Broker and Gateway Integration with API Manager
 
 WSO2 API Manager now supports integrating external third party Gateways and Brokers. Solace is an advanced event broker which is efficiently streaming events and information across cloud, on-premises, and IoT environments. In this section, you will integrate the Solace gateway environment with API Manager.

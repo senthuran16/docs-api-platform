@@ -1,5 +1,16 @@
 ---
-title: Publishing Custom Analytics Events Data - API Manager Documentation 4.2.0
+title: "Publishing custom analytics events data"
+description: "Create a Java sample using the AnalyticsCustomDataProvider interface to publish custom analytics data with API Manager."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/samples/publishing-custom-analytics-data/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/api-analytics/samples/publishing-custom-analytics-data.md
+tags:
+  - api-manager
+  - api-analytics
+  - samples
+  - publishing-custom-analytics-data
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-08-18
+content_type: "how-to"
 ---
 
 # Publishing Custom Analytics Events Data

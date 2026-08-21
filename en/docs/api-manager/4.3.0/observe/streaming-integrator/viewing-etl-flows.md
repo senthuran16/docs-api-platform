@@ -1,3 +1,18 @@
+---
+title: "Viewing ETL flow statistics"
+description: "Navigate Grafana dashboards to monitor ETL flows and view CDC, file, and other statistics in Streaming Integrator."
+canonical_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/streaming-integrator/viewing-etl-flows/
+md_url: https://wso2.com/api-platform/docs/api-manager/4.3.0/observe/streaming-integrator/viewing-etl-flows.md
+tags:
+  - api-manager
+  - observe
+  - streaming-integrator
+  - viewing-etl-flows
+author: WSO2 API Platform Documentation Team
+last_updated: 2026-07-17
+content_type: "how-to"
+---
+
 # Viewing ETL Flow Statistics
 
 !!! note "Before you begin:"
