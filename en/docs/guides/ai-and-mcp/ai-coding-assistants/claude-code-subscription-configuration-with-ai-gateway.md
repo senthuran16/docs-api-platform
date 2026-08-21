@@ -51,7 +51,9 @@ A single Claude Code request travels through five stages:
 4. **Policy enforcement.** The Gateway applies the policies attached to the LLM provider, such as prompt decoration, cost tracking, guardrails, and rate limiting.
 5. **Upstream forwarding.** The Gateway forwards the request to Anthropic with the `Authorization` header untouched, so Anthropic bills the developer's subscription.
 
-The two credentials stay independent. Anthropic never sees the enterprise token, and the identity provider never sees the Claude token.
+The two credentials stay independent. Anthropic validates only the Claude token, and the identity provider never sees it.
+
+By default, the [JWT Auth](https://wso2.com/api-platform/policy-hub/policies/jwt-auth) policy forwards the validated enterprise token upstream. It copies the token to the `x-forwarded-authorization` header and removes the original custom header. Anthropic then receives both tokens, and ignores the one it doesn't recognize. If you'd rather the enterprise token stop at the Gateway, you can set the policy's `forwardToken` parameter to `false`.
 
 ---
 
@@ -176,9 +178,9 @@ Two settings differ from the defaults. Change both before you deploy the provide
 
     This guide uses the **JWT Auth** policy. Under its advanced settings, provide:
 
-    - **Issuer** — the key manager name you declared in `config.toml` in Step 2, for example `WSO2IDP`
-    - **Header name** — the custom header that carries the enterprise token, for example `AuthorizationGW`
-    - **User ID claim** — optional. The claim that identifies the developer, used to attribute usage and cost.
+    - **Issuer**: the key manager name you declared in `config.toml` in Step 2, for example `WSO2IDP`
+    - **Header name**: the custom header that carries the enterprise token, for example `AuthorizationGW`
+    - **User ID claim**: optional. The claim that identifies the developer, used to attribute usage and cost.
 
 ### Deploy the Anthropic provider to the AI Gateway
 
@@ -212,7 +214,7 @@ Replace:
 - `<LLM PROVIDER URL>` with the AI Gateway host, port, and the context of the deployed Anthropic LLM provider
 - `<ENTERPRISE ACCESS TOKEN>` with an access token issued by your identity provider
 
-The access token is a credential. Typing it into an export command records it in your shell history, and it stays readable in the process environment, so treat the terminal session as you would one holding any other secret. [Refresh the enterprise token automatically](#optional-refresh-the-enterprise-token-automatically) describes how a token helper supplies the value without it being typed at all.
+The access token is a credential. Typing it into an export command records it in your shell history. It also stays readable in the process environment. Treat the terminal session as you would one holding any other secret. [Refresh the enterprise token automatically](#optional-refresh-the-enterprise-token-automatically) describes how a token helper supplies the value without it being typed at all.
 
 The header name must match the **Header name** you set on the authentication policy in Step 3 and, for the JWT Auth policy, the header configured in `config.toml`. If the names differ, the Gateway finds no credential and rejects the request with a `401` status code.
 
@@ -363,7 +365,7 @@ WSO2 API Manager AI Gateway supports Prompt Decorators, which allow you to modif
 
 Under a flat subscription, usage that isn't related to work costs the organization capacity rather than money, and it puts an organizational account behind requests the organization never intended to make. A Prompt Decorator applied in the request flow prepends an organizational usage restriction to the system prompt of every request, which keeps the restriction outside any single developer's control.
 
-A Prompt Decorator guides the model rather than filtering traffic. It states the policy on every request, and the model acts on it, but the Gateway still forwards the request. To reject off-policy prompts before they reach Anthropic, pair the decorator with a guardrail such as [Semantic Prompt Guard](../../../ai-gateway/1.2.0/llm-proxy/guardrails/semantic-prompt-guard.md), which compares each prompt against allowed and denied phrase lists and blocks the ones that fall outside them.
+A Prompt Decorator guides the model rather than filtering traffic. It states the policy on every request, and the model acts on it, but the Gateway still forwards the request. To reject off-policy prompts before they reach Anthropic, pair the decorator with a guardrail. [Semantic Prompt Guard](../../../ai-gateway/1.2.0/llm-proxy/guardrails/semantic-prompt-guard.md) compares each prompt against allowed and denied phrase lists. It blocks the prompts that fall outside them.
 
 The following policy configuration states the restriction. Adjust the wording of `text` to match your organization's acceptable use policy.
 
