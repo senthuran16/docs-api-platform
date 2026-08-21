@@ -1,6 +1,6 @@
 ---
 title: "API Governance Administrative Capabilities"
-description: "Manage API governance rulesets and policies in the WSO2 API Manager Admin Portal: create and customize rulesets, define policies with enforcement criteria, monitor artifact compliance through dashboards, and configure the governance scheduler."
+description: "Create and manage governance rulesets and policies in the Admin Portal, monitor artifact compliance, and configure the governance scheduler."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/governance/api-governance-admin-capabilities/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/governance/api-governance-admin-capabilities.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - admin-portal
   - mcp
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -26,8 +26,8 @@ The **Rulesets Catalog** provides a list of predefined governance rulesets that 
 2. Go to the **Governance** section in the main menu.  
 3. Click **Rulesets Catalog** to view all available rulesets.  
 
-<a href="../../assets/img/governance/ruleset_view.png">
-  <img src="../../assets/img/governance/ruleset_view.png" alt="APIM Governance Ruleset View"/>
+<a href="../../../assets/img/governance/ruleset_view.png">
+  <img src="../../../assets/img/governance/ruleset_view.png" alt="APIM Governance Ruleset View"/>
 </a>
 
 ### Create a New Ruleset
@@ -46,8 +46,8 @@ To create a new ruleset, click on the **Create Ruleset**. When creating a new ru
 
 After providing the required information, click on the **Create** button to create the ruleset.
 
-<a href="../../assets/img/governance/ruleset_create.png">
-  <img src="../../assets/img/governance/ruleset_create.png" alt="APIM Governance Ruleset Create" width="60%"/>
+<a href="../../../assets/img/governance/ruleset_create.png">
+  <img src="../../../assets/img/governance/ruleset_create.png" alt="APIM Governance Ruleset Create" width="60%"/>
 </a>
 
 ### Writing Your Own Ruleset
@@ -82,8 +82,8 @@ The **Policies** section in the **API Manager Admin Portal** provides a list of 
 1. Navigate to the **Governance** section in the **API Manager Admin Portal**.  
 2. Click **Policies** to view the list of available policies.  
 
-<a href="../../assets/img/governance/policy_view.png">
-  <img src="../../assets/img/governance/policy_view.png" alt="APIM Governance Ruleset Create"/>
+<a href="../../../assets/img/governance/policy_view.png">
+  <img src="../../../assets/img/governance/policy_view.png" alt="APIM Governance Ruleset Create"/>
 </a>
 
 ### Create a new Policy
@@ -101,8 +101,8 @@ To create a new policy, click the **Create Policy** button and provide the follo
 
 After providing the required information, click on the **Create** button to create the policy.
 
-<a href="../../assets/img/governance/policy_create.png">
-  <img src="../../assets/img/governance/policy_create.png" alt="APIM Governance Policy Create" width="60%" />
+<a href="../../../assets/img/governance/policy_create.png">
+  <img src="../../../assets/img/governance/policy_create.png" alt="APIM Governance Policy Create" width="60%" />
 </a>
 
 ### Default Policies
@@ -133,8 +133,8 @@ Compliance monitoring is a key aspect of governance. It ensures that artifacts a
 2. Go to the **Governance** section in the main menu.
 3. Click **Compliance** to view the compliance status of Artifacts.
 
-<a href="../../assets/img/governance/admin_compliance.png">
-  <img src="../../assets/img/governance/admin_compliance.png" alt="APIM Governance Compliance Dashboard"/>
+<a href="../../../assets/img/governance/admin_compliance.png">
+  <img src="../../../assets/img/governance/admin_compliance.png" alt="APIM Governance Compliance Dashboard"/>
 </a>
 
 ### **Policy Adherence**

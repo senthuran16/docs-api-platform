@@ -1,6 +1,6 @@
 ---
 title: "Pattern 2: Simple Scalable Setup"
-description: "Deploy WSO2 API Manager in a simple scalable setup with the All-in-One node and Classic Gateway as separate nodes, covering database setup, SSL certificates, analytics, gateway and all-in-one node configuration, and high availability."
+description: "Deploy WSO2 API Manager in a simple scalable setup with the All-in-One node and Classic Gateway as separate nodes for independent scaling."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-simple-scalable-setup/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-simple-scalable-setup.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -48,7 +48,7 @@ Given below are the API-M nodes you can have in a distributed deployment by defa
     </tr>
 </table>
 
-<a href="../../../assets/img/setup-and-install/simple-distributed.png"><img src="../../../assets/img/setup-and-install/simple-distributed.png" width="100%"></a>
+<a href="../../../../assets/img/setup-and-install/simple-distributed.png"><img src="../../../../assets/img/setup-and-install/simple-distributed.png" width="100%"></a>
 
 ### Step 1 - Install WSO2 API-M
 
@@ -66,7 +66,7 @@ For information, see [Installing and Configuring the Databases](../setting-up-da
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M.
 
-For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#common-guidelines-and-checklist).
+For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md#production-deployment-checklist).
 
 !!! Note
     Configure the same encryption key on all API Manager instances before starting any node for the first time so they can decrypt shared registry resources consistently. For more information, see [Configuring Encryption Key](../security/encryption/symmetric-encryption.md#generate-a-secret-key).
@@ -454,7 +454,7 @@ Follow the steps given below to configure the All-in-One nodes to communicate wi
     **Add Event Hub Configurations**
 
     !!! Info
-        {!includes/deploy/enable-jms-ssl-for-eventhub.md!}
+        --8<-- "api-manager/4.7.0/includes/deploy/enable-jms-ssl-for-eventhub.md"
 
     === "All-in-One with High Availability"
         ```toml

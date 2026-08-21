@@ -1,6 +1,6 @@
 ---
 title: "Subscribe to an MCP Server"
-description: "Subscribe an application to a published MCP Server in the WSO2 API Manager Developer Portal to complete authentication and obtain the access tokens needed to invoke its tools."
+description: "Subscribe an application to a published MCP Server in the Developer Portal to obtain the access tokens needed to invoke its tools."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/subscribe-to-a-mcp-server/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/subscribe-to-a-mcp-server.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mcp
   - subscriptions
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -29,7 +29,7 @@ If you already have an existing application, follow the instructions below to su
         
 2.  Click **SUBSCRIBE TO AN APPLICATION**.
 
-    <a href="../../assets/img/learn/from-existing-app.png" ><img src="../../assets/img/learn/from-existing-app.png" alt="Subscribe to new app" title="Subscribe to new app" /></a>
+    <a href="../../../assets/img/learn/from-existing-app.png" ><img src="../../../assets/img/learn/from-existing-app.png" alt="Subscribe to new app" title="Subscribe to new app" /></a>
     
 3.  Select the application, the throttling policy, and click **Subscribe**.
 

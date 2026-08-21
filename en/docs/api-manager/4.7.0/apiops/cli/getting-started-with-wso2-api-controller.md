@@ -1,6 +1,6 @@
 ---
 title: "Get Started with WSO2 API Controller (apictl)"
-description: "Download, initialize, and configure the WSO2 API Controller (apictl) command-line tool: adding and managing environments, logging in, setting proxies, HTTP timeouts, TLS renegotiation, export directories, and SSL certificates."
+description: "Download, initialize, and configure the WSO2 API Controller (apictl) command-line tool, including environments, login, and proxy settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/getting-started-with-wso2-api-controller/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/getting-started-with-wso2-api-controller.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 

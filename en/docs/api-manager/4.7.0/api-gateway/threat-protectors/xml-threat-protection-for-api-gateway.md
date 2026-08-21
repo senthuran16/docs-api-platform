@@ -1,6 +1,6 @@
 ---
 title: "Configure XML Threat Protection for the Classic Gateway"
-description: "Configure the XML validator sequence in WSO2 API Manager's Classic Gateway to limit XML depth, element count, attribute count, and entity expansion, enable schema validation per resource, and apply and test the policy on an API."
+description: "Configure the XML validator sequence in the Classic Gateway to limit XML depth, element count, attribute count, and entity expansion, with schema validation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/threat-protectors/xml-threat-protection-for-api-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/threat-protectors/xml-threat-protection-for-api-gateway.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - mediation
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -116,7 +116,7 @@ in sequence.
 2. Go to **Policies** under the **API Configuration** sub-section from the left hand panel.
 3. As required, drag and drop the **XML Validator** from the Policy List tab into Request Flow.
 
-    <a href="../../assets/img/learn/mediation-xml-validator.png"><img src="../../assets/img/learn/mediation-xml-validator.png" width="70%" alt="Drag and drop the XML Validator from the policy list"></a> 
+    <a href="../../../assets/img/learn/mediation-xml-validator.png"><img src="../../../assets/img/learn/mediation-xml-validator.png" width="70%" alt="Drag and drop the XML Validator from the policy list"></a> 
     
 4. Scroll down the page and click **Save** to save the changes (click **Save and Deploy** and deploy the API for the changes to take effect in the gateways).
 

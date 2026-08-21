@@ -1,6 +1,6 @@
 ---
 title: "Allowlist OAuth2 Scopes to Skip Role Validation"
-description: "Configure scope allowlisting in WSO2 API Manager so specific OAuth2 scopes (such as openid or device_ scopes) can be issued in access tokens without requiring an associated user role."
+description: "Allowlist OAuth2 scopes such as openid or device_ in API Manager so they can be issued in access tokens without an associated user role."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/authorization/oauth2-scopes/scope-whitelisting/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/authorization/oauth2-scopes/scope-whitelisting.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

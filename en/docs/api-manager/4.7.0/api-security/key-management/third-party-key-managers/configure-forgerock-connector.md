@@ -1,6 +1,6 @@
 ---
 title: "Configure ForgeRock as a Key Manager"
-description: "Set up ForgeRock as a third-party Key Manager in WSO2 API Manager, covering ForgeRock OAuth2 provider and client configuration and adding the connector details in the Admin Portal."
+description: "Set up ForgeRock as a third-party Key Manager in WSO2 API Manager, covering OAuth2 provider and client configuration in the Admin Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-forgerock-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-forgerock-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -184,7 +184,7 @@ If you want to work with scopes, then you need to assign the relevant scopes to 
 
 Follow the instructions given below to configure WSO2 API Manager to work with the ForgeRock Authorization Server.
 
-1. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server).
+1. [Start WSO2 API Manager](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server).
 
      `<API-M_HOME>` refers to the root folder of the extracted WSO2 API-M distribution.
 

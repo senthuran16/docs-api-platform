@@ -1,6 +1,6 @@
 ---
 title: "Deploying WSO2 API Manager on Kubernetes"
-description: "Overview of WSO2 API Manager's Kubernetes deployment patterns using Helm charts, from All-in-One and HA setups to fully distributed configurations, along with prerequisites and supported Kubernetes versions."
+description: "An overview of WSO2 API Manager's Kubernetes deployment patterns using Helm charts, from All-in-One and HA setups to fully distributed configurations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/kubernetes/kubernetes-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/kubernetes/kubernetes-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - kubernetes
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Deploying WSO2 API Manager on Kubernetes

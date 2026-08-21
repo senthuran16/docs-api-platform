@@ -1,6 +1,6 @@
 ---
 title: "Choosing a Deployment Platform for WSO2 API Manager"
-description: "A comparison of running WSO2 API Manager on-premises/virtual machines versus Kubernetes and cloud-native environments, covering key characteristics of each platform, OpenShift deployment considerations, and guidance on when to choose each option."
+description: "Compare running WSO2 API Manager on virtual machines versus Kubernetes and cloud-native platforms, and when to choose each option."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/deployment-platforms/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/deployment-platforms.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - kubernetes
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -27,7 +27,7 @@ Deploying on Virtual Machines is the traditional approach, where you install and
 
 This model gives you full control over the network, storage, and operating system, and it supports the full range of architectural patterns. You can run a simple **[All-in-One pattern](./deployment-patterns.md)** on a single VM for development, or scale up to a fully **[Distributed](./deployment-patterns.md)** or **[Multi-Datacenter](./deployment-patterns.md)** architecture across multiple VMs for a robust, production-grade environment.
 
-> **Next Steps:** [View the VM Installation Guides]({{base_path}}/install-and-setup/setup/deployment-overview/)
+> **Next Steps:** [View the VM Installation Guides](deployment-patterns)
 
 ### Key Characteristics
 

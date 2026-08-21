@@ -1,6 +1,6 @@
 ---
 title: "Obtain User Profile Information with OpenID Connect"
-description: "Retrieve end-user profile information from WSO2 API Manager using OpenID Connect by requesting the openid scope, then either decoding the returned id_token JWT or invoking the userinfo endpoint, and customize the claims returned."
+description: "Retrieve end-user profile information using OpenID Connect by requesting the openid scope, decoding the id_token JWT or calling the userinfo endpoint."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/identity/obtaining-user-profile-information-with-openid-connect/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/identity/obtaining-user-profile-information-with-openid-connect.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - jwt
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -24,6 +24,7 @@ The following two options are available to obtain the actual user information.
     -   [Decoding the id_token](#decoding-the-id_token)
     -   [Invoking the userinfo endpoint](#invoking-the-userinfo-endpoint)
     
+<a name="decoding-the-id_token"></a>
 #### Decoding the id_token
 
 Follow the instructions below to obtain user profile information with OpenID connect with WSO2 API Manager.
@@ -72,6 +73,7 @@ Follow the instructions below to obtain user profile information with OpenID con
     }
     ```
 
+<a name="invoking-the-userinfo-endpoint"></a>
 #### Invoking the userinfo endpoint
 
 You can obtain user information as a payload by invoking the userinfo endpoint with the access token obtained in step 1. The format of the curl command and a sample is given below

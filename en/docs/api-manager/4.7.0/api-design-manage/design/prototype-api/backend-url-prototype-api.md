@@ -1,6 +1,6 @@
 ---
 title: "Expose a Backend Implementation as a Prototype API"
-description: "Create a Prototype (Pre-Released) API in WSO2 API Manager backed by an actual working backend URL, configure the endpoint in the Publisher, and invoke it from the Developer Portal to test the implementation."
+description: "Create a Prototype (Pre-Released) API backed by a working backend URL, configure the endpoint in the Publisher, and invoke it from the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/prototype-api/backend-url-prototype-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/prototype-api/backend-url-prototype-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - endpoints
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -60,7 +60,7 @@ If you did not provide an endpoint in the above step, follow the steps given bel
     !!! note
         For more information, see [Endpoint Types](../endpoints/endpoint-types.md) and the other sections related to the **Endpoints** documentation.
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.7.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 

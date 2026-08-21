@@ -1,6 +1,6 @@
 ---
 title: "Role-Based Access Control for Choreo API Analytics"
-description: "Manage collaborative access to Choreo Insights using organizations, covering how to invite new users as Admin or Developer, and how to view or modify organization settings."
+description: "Manage collaborative access to Choreo Insights using organizations, including inviting new users as an Admin or Developer."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/choreo-analytics/role-based-access-control/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/choreo-analytics/role-based-access-control.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - analytics
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -42,7 +42,7 @@ Enterprises and companies who want to use Choreo Insights collaboratively can ut
    
 5. Click **Invite**.
 
-     <a href="../../../assets/img/observe/invite-dialogue-box.png"><img src="../../../assets/img/observe/invite-dialogue-box.png" title="Invite dialog box" width="380"/></a>
+     <a href="../../../../assets/img/observe/invite-dialogue-box.png"><img src="../../../../assets/img/observe/invite-dialogue-box.png" title="Invite dialog box" width="380"/></a>
 
      After the invitation is successfully submitted, the invitee will receive an email. After the invitee clicks on the activation link, he/she will be added to the respective organization.
 

@@ -1,6 +1,6 @@
 ---
 title: "Pattern 0: All-in-One Kubernetes Setup"
-description: "Deploy all WSO2 API Manager components in a single Kubernetes node using Helm, covering the quick start with default settings and customized configurations for images, databases, security, routing, and user management."
+description: "Deploy all WSO2 API Manager components on a single Kubernetes node using Helm, suitable for development, testing, and evaluation environments."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 
@@ -17,7 +17,7 @@ content_type: "quickstart"
 
 This pattern deploys all WSO2 API Manager components — Control Plane, Gateway, Traffic Manager, and Key Manager — in a single node. It is suitable for development, testing, and evaluation environments where high availability is not required.
 
-<a href="../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
+<a href="../../../../../assets/img/setup-and-install/single-node-apim-deployment.png"><img src="../../../../../assets/img/setup-and-install/single-node-apim-deployment.png" alt="single-node api-m deployment" width="60%"></a>
 
 ---
 
@@ -404,7 +404,7 @@ Keep the following in mind:
 - Use the **same secret name** in both the `kubectl` command above and in your `values.yaml`.
 - If you are using different keystore filenames or aliases, update the helm chart configurations accordingly.
 
-Then reference the secret name in your `values.yaml`. For more details on configuring keystores, see [Configuring Keystores in WSO2 API Manager](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/).
+Then reference the secret name in your `values.yaml`. For more details on configuring keystores, see [Configuring Keystores in WSO2 API Manager](../../security/configuring-keystores/configuring-keystores-in-wso2-api-manager).
 
 #### 3.2 Configure the Internal Encryption Key
 
@@ -444,7 +444,7 @@ sh ciphertool.sh -Dconfigure -Dsymmetric -Dkey.based.encryption
 
 **Option 2: apictl**
 
-You can also use `apictl` to encrypt secrets. For further guidance, refer to [Encrypting Secrets with apictl](https://apim.docs.wso2.com/en/latest/install-and-setup/setup/api-controller/encrypting-secrets-with-ctl/).
+You can also use `apictl` to encrypt secrets. For further guidance, refer to [Encrypting Secrets with apictl](../../../../apiops/cli/encrypting-secrets-with-ctl).
 
 1. Initialize `apictl` using the trust store:
 
@@ -673,7 +673,7 @@ gateway:
       websubHostname: "websub.wso2.com"
 ```
 
-See [Deploy through multiple API Gateways](https://apim.docs.wso2.com/en/latest/manage-apis/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways/) for more details.
+See [Deploy through multiple API Gateways](../../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/deploy-through-multiple-api-gateways) for more details.
 
 #### 5.2 Configure User Store Properties
 
@@ -689,7 +689,7 @@ userStore:
 !!! warning
     If you do not need to set any custom properties, remove the `properties` block entirely. An empty `properties` block will cause the deployment to fail.
 
-See [Working with user store properties](https://apim.docs.wso2.com/en/latest/administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores/) for the full list of options.
+See [Working with user store properties](../../../../administer/managing-users-and-roles/managing-user-stores/working-with-properties-of-user-stores) for the full list of options.
 
 ### 6. Deploy with Custom Values { #section-6 }
 

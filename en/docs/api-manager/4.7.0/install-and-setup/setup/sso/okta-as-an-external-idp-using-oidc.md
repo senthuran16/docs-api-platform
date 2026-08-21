@@ -1,6 +1,6 @@
 ---
 title: "Configure Okta as an External IdP Using OIDC"
-description: "Connect Okta as a third-party identity provider to WSO2 API Manager using OIDC, covering Okta application and claim setup, API Manager role and scope mapping, identity provider configuration, and enabling Just-in-Time provisioning."
+description: "Connect Okta as a third-party identity provider to WSO2 API Manager using OIDC, including role and scope mapping and Just-in-Time provisioning."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-oidc/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/sso/okta-as-an-external-idp-using-oidc.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - sso
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -225,7 +225,7 @@ Before you begin, make sure you do the following.
          </tr>
          </table>
          
-         <a href="../../../assets/img/learn/okta-apim-add-role-name.png"><img src="../../../assets/img/learn/okta-apim-add-role-name.png" width="50%"/></a>
+         <a href="../../../../assets/img/learn/okta-apim-add-role-name.png"><img src="../../../../assets/img/learn/okta-apim-add-role-name.png" width="50%"/></a>
 
 3. Add scope mapping via the WSO2 API Manager Admin Portal.
 
@@ -537,11 +537,11 @@ Before you begin, make sure you do the following.
      
          You can check if the user logged in has the role `any` and assign the local `okta_role`.
 
-        <a href="../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"/></a>
+        <a href="../../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-role-mapping.png"/></a>
 
      7. Enable **Just-in-Time Provisioning** for the user to be saved in the API Manager user store.
 
-         <a href="../../../assets/img/learn/okta-apim-role-oidc-jit.png"><img src="../../../assets/img/learn/okta-apim-role-oidc-jit.png" width="600"/></a>
+         <a href="../../../../assets/img/learn/okta-apim-role-oidc-jit.png"><img src="../../../../assets/img/learn/okta-apim-role-oidc-jit.png" width="600"/></a>
 
     !!! info
         When Just-In-Time Provisioning is enabled, the user details will be saved in the API Manager user store. User profile details will be updated via the federation following each login event. To preserve the user profile details without any changes, you need to enable `SystemRolesRetainedProvisionHandler`.

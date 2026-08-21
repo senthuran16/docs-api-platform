@@ -1,6 +1,6 @@
 ---
 title: "GDPR Compliance for WSO2 API Manager"
-description: "Use the Forget-Me Tool (Identity Anonymization Tool) to remove references to a deleted external user's identity from WSO2 API Manager databases and log files in order to meet GDPR requirements."
+description: "Use the Forget-Me Tool to remove references to a deleted external user's identity from WSO2 API Manager databases and log files for GDPR compliance."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/general-data-protection-regulation-gdpr-for-wso2-api-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/general-data-protection-regulation-gdpr-for-wso2-api-manager.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - user-management
   - governance
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -250,6 +250,7 @@ Follow the instructions below to run the Forget-Me Tool in standalone mode:
     
      Example:  `Report-log-file-1598483873677.txt`
      
+<a name="supported-command-line-options-when-running-the-forget-me-tool"></a>
 #### Supported command-line options when running the Forget-Me Tool
 
 The following is the list of all the command-line options that can be used with this command.

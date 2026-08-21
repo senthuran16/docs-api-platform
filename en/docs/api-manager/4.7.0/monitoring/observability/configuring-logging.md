@@ -1,6 +1,6 @@
 ---
 title: "Configure Logging in WSO2 API Manager"
-description: "Configure and use the different log types in WSO2 API Manager, including Carbon Logs, Gateway Wire Logs, HTTP Access Logs, Audit Logs, and API Logs, covering log4j2.properties settings, per-tenant and per-component logging, and log levels."
+description: "Configure and use the log types in WSO2 API Manager, including Carbon Logs, Gateway Wire Logs, HTTP Access Logs, Audit Logs, and API Logs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/configuring-logging/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/configuring-logging.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - logging
   - observability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

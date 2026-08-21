@@ -1,6 +1,6 @@
 ---
 title: "Configure Intelligent Model Routing for AI APIs"
-description: "Configure the LLM-powered Intelligent Model Routing policy in WSO2 API Manager to classify incoming AI requests by intent using an LLM classifier and route them to models based on configurable, plain-language routing rules."
+description: "Configure the LLM-powered Intelligent Model Routing policy to classify AI requests by intent and route them using plain-language rules."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/multi-model-routing/intelligent-model-routing/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/multi-model-routing/intelligent-model-routing.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - multi-model-routing
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

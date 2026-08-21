@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "troubleshooting"
 ---
 

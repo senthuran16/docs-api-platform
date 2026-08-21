@@ -1,6 +1,6 @@
 ---
 title: "Enable Social Media Interaction for APIs"
-description: "Enable social media sharing links (Facebook, Twitter, Reddit) in the Developer Portal, and add GitHub and Slack channel URLs to an API so consumers can engage with its community."
+description: "Enable social media sharing links in the Developer Portal, and add GitHub and Slack URLs so consumers can engage with an API's community."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-collaborations/enable-social-media-interaction/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-collaborations/enable-social-media-interaction.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - theming
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -21,11 +21,11 @@ In addition, the GitHub and Slack channel URLs will not appear in the Developer 
 
 - [Enable Social Media Interaction](#enable-social-media-interaction)
   - [Enable sharing API link on social media](#enable-sharing-api-link-on-social-media)
-    - [Step 1 - Enable the community links option](#step-1---enable-the-community-links-option)
-    - [Step 2 - Verify the changes](#step-2---verify-the-changes)
+    - [Step 1 - Enable the community links option](#step-1-enable-the-community-links-option)
+    - [Step 2 - Verify the changes](#step-2-verify-the-changes)
   - [Add GitHub and Slack channel URLs to an API](#add-github-and-slack-channel-urls-to-an-api)
-    - [Step 1 - Define your GitHub and Slack channel URLs](#step-1---define-your-github-and-slack-channel-urls)
-    - [Step 2 - Verify the changes](#step-2---verify-the-changes-1)
+    - [Step 1 - Define your GitHub and Slack channel URLs](#step-1-define-your-github-and-slack-channel-urls)
+    - [Step 2 - Verify the changes](#step-2-verify-the-changes_1)
 
 ## Enable sharing API link on social media
 
@@ -43,7 +43,7 @@ Follow the instructions below to enable API Consumers to be able to share the AP
     The default configuration comes with an empty configuration object declaration. You can override the default configuration in the <code>userTheme.js</code> file.
     </li>
     <li>
-    <p>For more information on the content that is in the default configuration, see <a href="../../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md#content-of-defaultthemejs">Overriding the Developer Portal theme</a>.</p>
+    <p>For more information on the content that is in the default configuration, see <a href="../../../../reference/customize-product/customizations/customizing-the-developer-portal/overriding-developer-portal-theme.md#content-of-defaultthemejs">Overriding the Developer Portal theme</a>.</p>
     </li>
     </ul>
     </div> 

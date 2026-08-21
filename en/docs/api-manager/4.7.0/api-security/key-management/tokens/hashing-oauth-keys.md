@@ -1,6 +1,6 @@
 ---
 title: "Hashing OAuth2 Access Tokens"
-description: "Enable OAuth2 token hashing in WSO2 API Manager to protect access tokens, refresh tokens, consumer secrets, and authorization codes against database security breaches."
+description: "Enable OAuth2 token hashing in WSO2 API Manager to protect access tokens, refresh tokens, consumer secrets, and authorization codes against database breaches."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/hashing-oauth-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/hashing-oauth-keys.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -41,6 +41,6 @@ Follow the instructions below to set up OAuth token hashing.
     ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN DROP CONSTRAINT IF EXISTS CON_APP_KEY
     ```
                
-4.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server). 
+4.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server). 
 
 5.  Follow the [Generate Application Keys](../../../api-developer-portal/manage-application/generate-keys/generate-api-keys.md) guide to create a new application, generate application consumer keys, and to obtain an access token.

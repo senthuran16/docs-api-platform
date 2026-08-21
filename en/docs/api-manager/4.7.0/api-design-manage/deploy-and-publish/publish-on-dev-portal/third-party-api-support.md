@@ -1,6 +1,6 @@
 ---
 title: "Add a Third-Party API"
-description: "Advertise APIs that are deployed on an external gateway by creating a third-party API in WSO2 API Manager, converting an existing API or importing a streaming API, and understand the resulting feature limitations."
+description: "Advertise APIs deployed on an external gateway by creating a third-party API, and understand the resulting feature limitations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/publish-on-dev-portal/third-party-api-support/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/publish-on-dev-portal/third-party-api-support.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - publisher-portal
   - streaming-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -50,7 +50,7 @@ Listed below are the fields available when adding third-party API details to the
 You can see an indicator added to the API thumbnail in the API Publisher Portal to distinguish whether an API is from a third-party, as shown below.
 
 
-<a href="../../../assets/img/develop/third-party-tag-with-business-info.png"><img src="../../../assets/img/develop/third-party-tag-with-business-info.png" width="20%"></a>
+<a href="../../../../assets/img/develop/third-party-tag-with-business-info.png"><img src="../../../../assets/img/develop/third-party-tag-with-business-info.png" width="20%"></a>
 
 You can use the new default property `thirdParty` to search for APIs that are from a third-party.
 

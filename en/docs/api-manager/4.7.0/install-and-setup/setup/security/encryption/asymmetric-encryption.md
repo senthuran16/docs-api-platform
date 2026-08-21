@@ -1,6 +1,6 @@
 ---
 title: "Asymmetric Encryption in WSO2 API Manager"
-description: "Understand how asymmetric encryption uses public and private key pairs in WSO2 API Manager, and how to switch from the default symmetric encryption to asymmetric encryption via deployment.toml configuration."
+description: "Understand how asymmetric encryption uses public and private key pairs in WSO2 API Manager, and how to switch from symmetric encryption to it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/encryption/asymmetric-encryption/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/encryption/asymmetric-encryption.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - security
   - keystores
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

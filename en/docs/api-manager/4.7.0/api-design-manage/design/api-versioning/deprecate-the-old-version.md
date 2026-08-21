@@ -1,6 +1,6 @@
 ---
 title: "Publish a New API Version and Deprecate Old Versions"
-description: "Publish a new API version and automatically deprecate older versions using the Deprecate old versions after publishing the API option, so existing subscribers can migrate before the old version is retired."
+description: "Publish a new API version and deprecate older versions using the publish-time option, so subscribers can migrate before retirement."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-versioning/deprecate-the-old-version/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-versioning/deprecate-the-old-version.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-lifecycle
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

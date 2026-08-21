@@ -1,6 +1,6 @@
 ---
-title: "Configure Multi-DC Pattern 1: Geo-Regional Synchronized API Management"
-description: "Configure Multi-DC Pattern 1 for WSO2 API Manager, covering database replication setup, API Manager node configuration, and cross-region control plane communication using JMS event publishers and JNDI configuration."
+title: "Configure Multi-DC Pattern 1: replicated databases"
+description: "Configure Multi-DC Pattern 1 for WSO2 API Manager, covering database replication and cross-region control plane communication."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-1.md
 tags:
@@ -9,13 +9,13 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
 # Configure Pattern 1: Geo-Regional Synchronized API Management with Replicated Databases
 
-<a href="../../../assets/img/setup-and-install/multi-dc-pattern-1.png"><img src="../../../assets/img/setup-and-install/multi-dc-pattern-1.png" alt="Multi-DC Pattern 1" width="80%"></a>
+<a href="../../../../assets/img/setup-and-install/multi-dc-pattern-1.png"><img src="../../../../assets/img/setup-and-install/multi-dc-pattern-1.png" alt="Multi-DC Pattern 1" width="80%"></a>
 
 All the regions are identical in this pattern. therefore, the documentation will provide information about configuring a single region.
 
@@ -66,7 +66,7 @@ You should consult your database administrator on replication related configurat
 
 ## Step 2: Configure the API Manager Nodes
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md!}
+--8<-- "api-manager/4.7.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md"
 
 ## Step 3: Configure the Communication Between Control Plane Nodes Across Regions
 
@@ -111,7 +111,7 @@ Moreover, jndi.properties files should be added per region to provide informatio
 
 Since the control planes are only connected through the JMS connections, the TCP port 5672 should be exposed to the external parties (Other regions' control planes).
 
-<a href="../../../assets/img/setup-and-install/multi-dc-cp-to-cp-communication.png"><img src="../../../assets/img/setup-and-install/multi-dc-cp-to-cp-communication.png" alt="Multi-DC CP to CP Communication" width="80%"></a>
+<a href="../../../../assets/img/setup-and-install/multi-dc-cp-to-cp-communication.png"><img src="../../../../assets/img/setup-and-install/multi-dc-cp-to-cp-communication.png" alt="Multi-DC CP to CP Communication" width="80%"></a>
 
 Follow the steps below to configure the control plane node(s) in region 1 to communicate with the region 2 control plane. Similarly region 1 configurations should be added to the region 2 control plane.
 

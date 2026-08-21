@@ -1,6 +1,6 @@
 ---
 title: "Secure APIs Using API Keys"
-description: "Secure APIs in WSO2 API Manager 4.7.0 using API-bound API keys - opaque tokens scoped to a single API - covering key generation, invocation, regeneration, revocation, and IP/referrer restrictions."
+description: "Secure APIs in WSO2 API Manager using API-bound API keys scoped to a single API, covering generation, invocation, regeneration, and revocation."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/secure-apis-using-api-keys/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/secure-apis-using-api-keys.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-security
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -40,11 +40,11 @@ Follow the instructions below to use API key Authentication in WSO2 API Manager.
 
 Create, publish and deploy an API that is secured with the API key security scheme as the application-level security. Let's work with the sample app for this purpose.
 
-{!includes/design/create-publish-api.md!}
+--8<-- "api-manager/4.7.0/includes/design/create-publish-api.md"
 
 ### Step 2 - Generate the API Key
 
-{!includes/design/generate-api-key.md!}
+--8<-- "api-manager/4.7.0/includes/design/generate-api-key.md"
 
 ### Step 3 - Invoke the API
 

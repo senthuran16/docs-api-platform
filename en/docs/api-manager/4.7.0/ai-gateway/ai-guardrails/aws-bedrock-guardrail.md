@@ -1,6 +1,6 @@
 ---
 title: "AWS Bedrock Guardrail"
-description: "Enforce AI API safeguards using the AWS Bedrock Guardrails Service with WSO2 AI Gateway's AWS Bedrock Guardrail policy, supporting blocking, PII anonymization, and PII redaction modes."
+description: "Enforce AI API safeguards using the AWS Bedrock Guardrails Service, supporting blocking, PII anonymization, and redaction modes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/aws-bedrock-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/aws-bedrock-guardrail.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-guardrails
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

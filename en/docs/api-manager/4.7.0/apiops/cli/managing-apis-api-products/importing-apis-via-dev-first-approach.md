@@ -1,6 +1,6 @@
 ---
 title: "Import APIs Using the Dev First Approach with API Controller"
-description: "Create and deploy APIs without the Publisher Portal by initializing an apictl project from scratch or from an OpenAPI/Swagger specification, editing api.yaml, and importing the project into a WSO2 API Manager environment."
+description: "Create and deploy APIs without the Publisher Portal by initializing an apictl project from scratch or an OpenAPI specification."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-apis-api-products/importing-apis-via-dev-first-approach/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/managing-apis-api-products/importing-apis-via-dev-first-approach.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - openapi
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -367,7 +367,7 @@ content_type: "how-to"
 
         **Generate APIs with Dynamic Data**
 
-        When initializing an API Project, apictl is capable of detecting environment variables in the default definition file or in the provided custom definition file. For more information on using dynamic data, see [Initialize API Projects with Dynamic Data](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#initialize-api-projects-with-dynamic-data).
+        When initializing an API Project, apictl is capable of detecting environment variables in the default definition file or in the provided custom definition file. For more information on using dynamic data, see [Initialize API Projects with Dynamic Data](../advanced-topics/using-dynamic-data-in-api-controller-projects.md#add-dynamic-data-to-environment-configurations).
 
 4. Open the `<API Project>/api.yaml` file. You can edit the **mandatory configurations** in the field named `data` as listed below.
 
@@ -418,7 +418,7 @@ content_type: "how-to"
 
 
 !!! tip
-    A user with `Internal/devops` role or `admin` role are allowed to import APIs. To create a custom user who can import APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#steps-to-create-a-custom-user-who-can-perform-api-controller-operations).
+    A user with `Internal/devops` role or `admin` role are allowed to import APIs. To create a custom user who can import APIs, refer [Steps to Create a Custom User who can Perform API Controller Operations](../advanced-topics/creating-custom-users-to-perform-api-controller-operations.md#creating-custom-users-to-perform-apictl-operations).
 
 After editing the mandatory fields in the API Project, you can import the API to an environment using any of the following commands.  
 

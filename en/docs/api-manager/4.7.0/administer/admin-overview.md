@@ -1,6 +1,6 @@
 ---
 title: "Administration Overview"
-description: "Overview of WSO2 API Manager administration tasks, covering user and role management, multitenant environment configuration, key manager registration, and advanced configuration options."
+description: "Find WSO2 API Manager admin tasks: managing users and roles, multitenancy, key manager registration, and advanced configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/admin-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/admin-overview.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - user-management
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Administration Overview
@@ -20,5 +20,5 @@ This section covers administration tasks you need to perform in WSO2 API Manager
 - [Managing Users and Roles](managing-users-and-roles/managing-user-stores/introduction-to-userstores.md)
 - [Secondary User Stores](managing-users-and-roles/managing-user-stores/introduction-to-userstores.md)
 - [Multitenancy](multitenancy/introduction-to-multitenancy.md)
-- [Key Managers]({{base_path}}/administer/key-managers/overview)
+- [Key Managers](../api-security/key-management/third-party-key-managers/overview)
 - [Advanced Configurations](advanced-configurations.md)

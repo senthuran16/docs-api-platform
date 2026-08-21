@@ -1,6 +1,6 @@
 ---
 title: "Scenario 11: GraphQL Support"
-description: "Scenario tutorial on creating a GraphQL API in WSO2 API Manager by importing a GraphQL SDL schema, then publishing it, subscribing to it from the Developer Portal, and invoking a sample query through the Try Out console."
+description: "Create a GraphQL API by importing a GraphQL SDL schema, then publish, subscribe, and invoke a sample query via the Try Out console."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario11-graphql/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario11-graphql.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - graphql
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -22,7 +22,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 Quantis is more focused on providing more capability to the developer community. They expect the developer community to build their own mobile applications and web apps to use their APIs. To make this process much easier, Quantis wants to expose GraphQL API to the public.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario11.png" title="GraphQL Description" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario11.png" title="GraphQL Description" width="630"/>
 
 ## Step 1: Create a GraphQL API
 

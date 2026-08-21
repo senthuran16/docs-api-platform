@@ -1,6 +1,6 @@
 ---
 title: "Maintain Separate Production and Sandbox Gateways"
-description: "Configure a single hybrid Classic Gateway or separate production and sandbox Gateways in WSO2 API Manager's deployment.toml file to isolate production and sandbox token traffic, including multi-region setups."
+description: "Configure a hybrid Classic Gateway or separate production and sandbox Gateways to isolate production and sandbox token traffic."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/maintaining-separate-production-and-sandbox-gateways.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -25,6 +25,7 @@ This is the default scenario. Because this Gateway instance handles both product
 
 [![Hybrid Gateway](../../../../assets/img/learn/hybrid-gw.png)](../../../../assets/img/learn/hybrid-gw.png)
 
+<a name="multiple-gateways-to-handle-production-and-sandbox-requests-separately"></a>
 #### Multiple Gateways to handle production and sandbox requests separately
 
 Having a single Gateway instance to pass through both types of requests can negatively impact the performance of the production server. To avoid this, you can set up separate Classic Gateways. The production Classic Gateway handles requests that are made using PRODUCTION type tokens and the sandbox Classic Gateway handles requests that are made using SANDBOX type tokens.

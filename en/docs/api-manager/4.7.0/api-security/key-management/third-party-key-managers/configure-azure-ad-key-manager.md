@@ -1,6 +1,6 @@
 ---
 title: "Configure Azure AD as a Third-Party Key Manager"
-description: "Connect WSO2 API Manager to Microsoft Entra ID (Azure AD) using the WSO2 API-M Azure AD Connector: register an application, configure API permissions and secrets in Azure, add Azure AD as a Key Manager in the Admin Portal, and configure separate Key Managers for V1 and V2 JWT tokens."
+description: "Connect WSO2 API Manager to Microsoft Entra ID (Azure AD) as a Key Manager, including app registration, permissions, and separate V1/V2 JWT configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-azure-ad-key-manager/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-azure-ad-key-manager.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Discover APIs on Envoy Gateway in Kubernetes"
-description: "Set up Envoy Gateway as a federated API gateway on Kubernetes by installing Envoy Gateway and the APIM Common Agent via Helm, registering the environment in the Admin Portal, and observing automatically discovered HTTPRoutes as APIs in the Publisher."
+description: "Set up Envoy Gateway as a federated API gateway on Kubernetes, and observe automatically discovered HTTPRoutes as APIs in the Publisher."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/envoygateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/envoygateway/eg-k8s/discover-apis-on-eg-gateway-in-kubernetes.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - federated-gateways
   - kubernetes
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

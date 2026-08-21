@@ -1,6 +1,6 @@
 ---
 title: "Get Started with Choreo-Based API Analytics"
-description: "Register your on-premise environment with the deprecated Choreo Analytics Cloud, generate an on-prem key, and configure the WSO2 API Manager Gateway's deployment.toml to publish analytics data, including worker thread, queue size, and flushing delay tuning."
+description: "Register your on-premise environment with the deprecated Choreo Analytics Cloud and configure the Gateway's deployment.toml to publish analytics data."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/choreo-analytics/getting-started-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/choreo-analytics/getting-started-guide.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - analytics
   - observability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Create and Publish an AWS Lambda API"
-description: "Tutorial for creating a REST API backed by AWS Lambda functions in WSO2 API Manager: configure the AWS Lambda endpoint access method and STS AssumeRole, map function ARNs to resources, and deploy and publish the API, including proxy response mapping and SDK retry settings."
+description: "Create a REST API backed by AWS Lambda functions: configure the endpoint access method and STS AssumeRole, then deploy and publish it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/create-and-publish-awslambda-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/create-and-publish-awslambda-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - endpoints
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

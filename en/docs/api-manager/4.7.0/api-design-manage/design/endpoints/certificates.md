@@ -1,6 +1,6 @@
 ---
 title: "Managing Endpoint Certificates"
-description: "Upload, view, and delete backend certificates for self-signed or non-CA-signed API endpoints in WSO2 API Manager without restarting the server, and configure keystore/truststore settings for default and custom SSL profiles."
+description: "Upload, view, and delete backend certificates for self-signed API endpoints without restarting the server, and configure SSL keystore/truststore profiles."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/certificates/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/certificates.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - endpoints
   - tls
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

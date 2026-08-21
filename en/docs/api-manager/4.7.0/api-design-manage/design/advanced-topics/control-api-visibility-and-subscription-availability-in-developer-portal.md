@@ -1,6 +1,6 @@
 ---
-title: "Control API Visibility and Subscription Availability in the Developer Portal"
-description: "Configure API visibility (public, restricted by roles, or visible to my domain) and cross-tenant subscription availability for APIs in the Developer Portal, using either the Publisher UI or the REST API."
+title: "Control API visibility and subscription availability"
+description: "Configure API visibility and cross-tenant subscription availability in the Developer Portal using the Publisher UI or REST API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - multitenancy
   - access-control
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -47,7 +47,7 @@ Given below is how visibility levels work for users in different roles:
 4.  Save the API.
 
 ### Control API visibility using the REST API
-You can use the [existing REST API]({{base_path}}/develop/product-apis/restful-apis/) to control the visibility of the API. Add the following element to the request body, including the relevant visibility,
+You can use the [existing REST API](../../../reference/product-apis/overview) to control the visibility of the API. Add the following element to the request body, including the relevant visibility,
 
 `"visibility" : "PUBLIC"        `
 
@@ -125,7 +125,7 @@ The diagram below depicts the relationship between the API's visibility and subs
 
 ### Control subscription availability using the REST API
 
-You can use the [existing REST API]({{base_path}}/develop/product-apis/restful-apis/) to control the subscription availability of the API. Add the following element to the request body including the relevant subscription availability.
+You can use the [existing REST API](../../../reference/product-apis/overview) to control the subscription availability of the API. Add the following element to the request body including the relevant subscription availability.
 
 `"subscriptionAvailability" : "ALL_TENANTS"        `
 

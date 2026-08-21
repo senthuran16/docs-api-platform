@@ -1,6 +1,6 @@
 ---
 title: "Configuring Token Expiration"
-description: "Configure the application access token expiration time and time stamp skew in WSO2 API Manager to control how long access tokens remain valid across Key Managers."
+description: "Configure application access token expiration time and time stamp skew in WSO2 API Manager to control how long tokens stay valid across Key Managers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/token-expiration/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/token-expiration.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

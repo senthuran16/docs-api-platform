@@ -1,6 +1,6 @@
 ---
 title: "Configuring Distributed Throttling for API Manager"
-description: "Connect multiple Traffic Manager nodes in a distributed WSO2 API Manager deployment to a Redis or Valkey cluster so global rate-limiting counters stay synchronized, and tune the sync_interval and core_pool_size settings for counter accuracy."
+description: "Connect Traffic Manager nodes in a distributed deployment to a Redis or Valkey cluster so rate-limiting counters stay synchronized, and tune sync settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/rate-limiting/distributed-throttling/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/rate-limiting/distributed-throttling.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - throttling
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

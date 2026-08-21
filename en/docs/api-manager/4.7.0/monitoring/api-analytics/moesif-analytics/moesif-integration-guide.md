@@ -1,6 +1,6 @@
 ---
 title: "Integrate Moesif Analytics with WSO2 API Manager"
-description: "Integrate Moesif Analytics with WSO2 API Manager by configuring the deployment.toml apim.analytics block with your Moesif API key, covering data masking for PII, the apim_event_response and apim_event_faulty event schemas, and troubleshooting steps."
+description: "Integrate Moesif Analytics with WSO2 API Manager by configuring the deployment.toml apim.analytics block with your Moesif API key."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/moesif-analytics/moesif-integration-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/moesif-analytics/moesif-integration-guide.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - analytics
   - observability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -34,8 +34,8 @@ Before you begin, ensure you have:
 The Moesif integration captures both **successful** and **failed** API invocations in WSO2 API Manager and publishes them to your Moesif dashboard in near real-time. This allows for powerful analytics and monitoring capabilities.
 
 <div style="text-align:center;">
-  <a href="../../../assets/img/analytics/moesif/moesif-data-flow.png">
-    <img src="../../../assets/img/analytics/moesif/moesif-data-flow.png" alt="Moesif integration diagram">
+  <a href="../../../../assets/img/analytics/moesif/moesif-data-flow.png">
+    <img src="../../../../assets/img/analytics/moesif/moesif-data-flow.png" alt="Moesif integration diagram">
   </a>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 title: "Monitor WSO2 API Manager Using JMX"
-description: "Enable and configure JMX in WSO2 API Manager, then monitor the server with JConsole or Jolokia, covering JMX ports, datasource JMX, and the ServerAdmin, StatisticsAdmin, and DataSource MBeans."
+description: "Enable and configure JMX in WSO2 API Manager, then monitor the server with JConsole or Jolokia using the available server and datasource MBeans."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/metrics/jmx-based-monitoring/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/observability/metrics/jmx-based-monitoring.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - observability
   - monitoring
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -240,4 +240,4 @@ Follow the steps below to use Jolokia to monitor a WSO2 product.
          
      -   Reading Heap Memory: `http://localhost:9763/jolokia/read/java.lang:type=Memory/HeapMemoryUsage`
 
-     For more information on the JMX MBeans that are available in WSO2 products, see [Monitoring a WSO2 product with JConsole](#using-the-serviceadmin-mbean).
+     For more information on the JMX MBeans that are available in WSO2 products, see [Monitoring a WSO2 product with JConsole](#using-the-serveradmin-mbean).

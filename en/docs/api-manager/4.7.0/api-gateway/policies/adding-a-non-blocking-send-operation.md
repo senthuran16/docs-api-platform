@@ -1,6 +1,6 @@
 ---
 title: "Adding a Non-Blocking Send Operation"
-description: "Configure a non-blocking VFS Send mediator sequence that removes the ClientAPINonBlocking property before transferring large files, to avoid out-of-memory failures, and create a policy from the sequence."
+description: "Configure a non-blocking VFS Send mediator sequence that avoids out-of-memory failures when transferring large files, then create a policy."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/adding-a-non-blocking-send-operation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/adding-a-non-blocking-send-operation.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - mediation
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

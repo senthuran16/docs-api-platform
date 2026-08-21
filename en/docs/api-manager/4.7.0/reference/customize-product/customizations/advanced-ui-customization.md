@@ -1,6 +1,6 @@
 ---
 title: "Advanced UI Customization"
-description: "Customize the Developer Portal, Publisher, and Admin Portal React applications beyond theme-based options by building the webapps, overriding specific React components, and deploying the resulting production build."
+description: "Customize the Developer Portal, Publisher, and Admin Portal React applications beyond theme options by building and overriding React components."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/advanced-ui-customization/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/advanced-ui-customization.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - admin-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

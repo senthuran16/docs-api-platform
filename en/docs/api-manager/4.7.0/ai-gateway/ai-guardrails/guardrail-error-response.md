@@ -1,6 +1,6 @@
 ---
 title: "Guardrail Error Response"
-description: "Understand the structure of WSO2 AI Gateway's default guardrail error response and learn how to customize the fault sequence for AI Guardrail policy interventions."
+description: "Learn the structure of the AI Gateway's default guardrail error response, and customize the fault sequence for guardrail interventions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/guardrail-error-response/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/guardrail-error-response.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Create a Custom AI Vendor Connector"
-description: "Build and deploy a custom AI service provider connector for WSO2 API Manager by implementing the LLMProviderService interface, packaging it as a JAR, and deploying it to the API Manager server."
+description: "Build and deploy a custom AI service provider connector by implementing the LLMProviderService interface and packaging it as a JAR."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/custom-ai-vendors/custom-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/custom-ai-vendors/custom-connector.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-gateway
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

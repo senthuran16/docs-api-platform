@@ -1,6 +1,6 @@
 ---
 title: "Configure the Azure AI Foundry AI Service Provider"
-description: "Configure Azure AI Foundry as a multi-model AI Service Provider in the WSO2 API Manager Admin Portal by adding model provider families such as Azure OpenAI, Cohere, and xAI, and their associated models."
+description: "Configure Azure AI Foundry as a multi-model AI Service Provider by adding model provider families such as Azure OpenAI and Cohere."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/azure-ai-foundry/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-vendor-management/azure-ai-foundry.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-gateway
   - multi-model-routing
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

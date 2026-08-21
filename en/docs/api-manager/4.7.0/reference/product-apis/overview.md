@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager REST APIs Overview"
-description: "Overview and index of the REST APIs exposed by the API Publisher, Developer Portal, Admin Portal, Gateway, Service Catalog, DevOps, and Governance components, plus a downloadable Postman collection for a quick start."
+description: "Overview and index of the REST APIs exposed by the Publisher, Developer Portal, Admin Portal, Gateway, and other API Manager components."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/product-apis/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/product-apis/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - rest-api
   - publisher-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # RESTful APIs
@@ -19,28 +19,28 @@ The following topics list the APIs exposed from the API Publisher, Developer Por
 <br>
 <table>
   <tr>
-    <td nowrap="true"><a href="publisher-apis/publisher-v4/publisher-v4.md">WSO2 Publisher API v4</a></td>
+    <td nowrap="true"><a href="../publisher-apis/publisher-v4/publisher-v4.md">WSO2 Publisher API v4</a></td>
     <td rowspan="3" class="md-typeset__td"><b>WSO2 recommends that you use the latest REST APIs</b> as it is up to date and has support for the latest WSO2 API Manager features.
     </td>
   </tr>
   <tr>
-    <td nowrap="true"><a href="devportal-apis/devportal-v3/devportal-v3.md">WSO2 Developer Portal API v3</a></td>
+    <td nowrap="true"><a href="../devportal-apis/devportal-v3/devportal-v3.md">WSO2 Developer Portal API v3</a></td>
   </tr>
    <tr>
-    <td nowrap="true"><a href="admin-apis/admin-v4/admin-v4.md">WSO2 Admin Portal API v4</a></td>
+    <td nowrap="true"><a href="../admin-apis/admin-v4/admin-v4.md">WSO2 Admin Portal API v4</a></td>
   </tr>
   <tr>
-    <td nowrap="true"><a href="gateway-apis/gateway-v2/gateway-v2.md">WSO2 Gateway API v2</a></td>
+    <td nowrap="true"><a href="../gateway-apis/gateway-v2/gateway-v2.md">WSO2 Gateway API v2</a></td>
     <td rowspan="3" class="md-typeset__td"></td>
   </tr>
   <tr>
-    <td nowrap="true"><a href="service-catalog-apis/service-catalog-v1/service-catalog-v1.md">WSO2 Service Catalog API v1</a></td>
+    <td nowrap="true"><a href="../service-catalog-apis/service-catalog-v1/service-catalog-v1.md">WSO2 Service Catalog API v1</a></td>
   </tr>
   <tr>
-    <td nowrap="true"><a href="devops-apis/devops-v0/devops-v0.md">WSO2 Devops API v0</a></td>
+    <td nowrap="true"><a href="../devops-apis/devops-v0/devops-v0.md">WSO2 Devops API v0</a></td>
   </tr>
   <tr>
-    <td nowrap="true"><a href="governance-apis/governance-v1/governance-v1.md">WSO2 Governance API v1</a></td>
+    <td nowrap="true"><a href="../governance-apis/governance-v1/governance-v1.md">WSO2 Governance API v1</a></td>
     </td>
   </tr>
 </table>

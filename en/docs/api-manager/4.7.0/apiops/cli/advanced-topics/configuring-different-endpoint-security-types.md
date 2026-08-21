@@ -1,6 +1,6 @@
 ---
 title: "Configure Endpoint Security Types with API Controller"
-description: "Configure Basic, Digest, or OAuth 2.0 endpoint security for production and sandbox backends in an apictl parameters file, including the mandatory fields for each security type."
+description: "Configure Basic, Digest, or OAuth2 endpoint security for production and sandbox backends in an apictl parameters file."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/configuring-different-endpoint-security-types/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/configuring-different-endpoint-security-types.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - endpoint-security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

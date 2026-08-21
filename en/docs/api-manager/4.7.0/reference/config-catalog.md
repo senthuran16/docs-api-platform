@@ -1,6 +1,6 @@
 ---
 title: "API Manager Configuration Catalog"
-description: "Comprehensive reference of the deployment.toml configuration parameters available in WSO2 API Manager, covering server, gateway, key manager, database, and other feature-specific configuration sections."
+description: "A comprehensive reference of the deployment.toml configuration parameters in WSO2 API Manager, covering server, gateway, key manager, and database."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/config-catalog/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/config-catalog.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment-toml
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

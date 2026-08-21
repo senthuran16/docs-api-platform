@@ -1,6 +1,6 @@
 ---
 title: "Secure APIs Using Certificate Bound Access Tokens"
-description: "Bind JWT access tokens to client certificates (Holder of Key tokens) in WSO2 API Manager, including truststore setup, enabling certificate-bound tokens, and invoking APIs with Postman."
+description: "Bind JWT access tokens to client certificates (Holder of Key tokens) in API Manager, covering truststore setup and invoking secured APIs with Postman."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/securing-apis-using-certificate-bound-access-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/securing-apis-using-certificate-bound-access-tokens.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - jwt
   - tls
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

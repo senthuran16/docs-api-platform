@@ -1,6 +1,6 @@
 ---
 title: "WSO2 Rule Validator Reference"
-description: "Reference for the WSO2 Rule Validator, a Java implementation of Stoplight Spectral used by the API Manager governance feature to lint OpenAPI and AsyncAPI documents, covering supported core functions, ruleset syntax, aliases, and known limitations."
+description: "Reference for the WSO2 Rule Validator, a Java implementation of Stoplight Spectral used to lint OpenAPI and AsyncAPI documents."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/governance/rule-validator/rule-validator/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/governance/rule-validator/rule-validator.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-design
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

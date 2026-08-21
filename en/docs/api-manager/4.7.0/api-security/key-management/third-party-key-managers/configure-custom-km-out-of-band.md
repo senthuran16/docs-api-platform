@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom Key Manager for Out-of-Band Provisioning"
-description: "Integrate an external OAuth authorization server as a Key Manager in Out-of-Band (OOB) provisioning mode, configuring endpoints, claim URIs, and token validation so token generation and OAuth app creation happen outside WSO2 API Manager."
+description: "Integrate an external OAuth authorization server as a Key Manager in Out-of-Band mode, configuring endpoints and token validation outside WSO2 API Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-custom-km-out-of-band/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-custom-km-out-of-band.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

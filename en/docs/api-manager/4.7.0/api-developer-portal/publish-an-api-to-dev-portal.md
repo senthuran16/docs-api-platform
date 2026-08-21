@@ -1,6 +1,6 @@
 ---
 title: "Publish an API to the Developer Portal"
-description: "Publish APIs, AI APIs, MCP Servers, and API Products from the Publisher Portal to the Developer Portal so application developers can discover, subscribe to, and consume them."
+description: "Publish APIs, AI APIs, MCP Servers, and API Products from the Publisher Portal to the Developer Portal for developers to discover and consume."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/publish-an-api-to-dev-portal/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/publish-an-api-to-dev-portal.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - api-lifecycle-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -64,7 +64,7 @@ Before publishing, ensure the following requirements are met:
 
 1. Click on an API or AI API or API Product or MCP Server that is in the **CREATED** state
 
-   <img src="../assets/img/learn/select-created-api.png" alt="Select API" title="Select API" width="35%" />
+   <img src="../../assets/img/learn/select-created-api.png" alt="Select API" title="Select API" width="35%" />
 
 !!! note "Enhanced API Visibility"
     You can enhance the API tile display in developer portal by configuring the following settings in:
@@ -85,7 +85,7 @@ Before publishing, ensure the following requirements are met:
     - Business owner information (with email on hover)
     - Technical owner information (with email on hover)
     
-    <img src="../assets/img/learn/select-created-api-with-monetization.png" alt="API with Business Info" title="Select API" width="35%" />
+    <img src="../../assets/img/learn/select-created-api-with-monetization.png" alt="API with Business Info" title="Select API" width="35%" />
 
 ### Step 3: Navigate to Lifecycle
 

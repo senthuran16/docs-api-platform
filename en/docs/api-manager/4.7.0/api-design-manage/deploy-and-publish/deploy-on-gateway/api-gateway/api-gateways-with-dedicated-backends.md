@@ -1,6 +1,6 @@
 ---
 title: "Configure API Gateways with Dedicated Backends"
-description: "Use parameterized endpoint URLs and system properties in WSO2 API Manager so that each Classic Gateway instance resolves to its own dedicated backend host and port at runtime, instead of a single shared endpoint."
+description: "Use parameterized endpoint URLs so each Classic Gateway instance resolves to its own dedicated backend host and port."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/api-gateways-with-dedicated-backends/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/api-gateways-with-dedicated-backends.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Styling the API Details Left Menu"
-description: "Customize the position, icon style, colors, and dimensions of the Developer Portal's API and application details left menu by configuring the leftMenu properties in userTheme.json."
+description: "Customize the position, icon style, colors, and dimensions of the Developer Portal's left menu by configuring userTheme.json."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-left-menu/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/customizing-the-developer-portal/styling-api-details-left-menu.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - theming
   - ui-customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Publish API Manager Analytics Events to External Systems"
-description: "Build, deploy, and configure a custom event publisher to send WSO2 API Manager analytics data to an external system such as ELK, covering the CounterMetric and MetricReporter interfaces, deployment.toml configuration, and visualizing the data in Kibana."
+description: "Build, deploy, and configure a custom event publisher to send WSO2 API Manager analytics data to an external system such as ELK."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/samples/publishing-analytics-events-to-external-systems/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/samples/publishing-analytics-events-to-external-systems.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - analytics
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

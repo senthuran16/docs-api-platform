@@ -1,6 +1,6 @@
 ---
 title: "Add an Application Update Workflow"
-description: "Attach an approval workflow to the application update operation in WSO2 API Manager so administrators can review and approve or reject pending application changes before they take effect."
+description: "Attach an approval workflow to the application update operation so administrators can review pending application changes before they apply."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/advanced-topics/adding-an-application-update-workflow/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/advanced-topics/adding-an-application-update-workflow.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - applications
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -29,7 +29,7 @@ First, enable the approval workflow executor for application update.
 
 2.  Click Main → Registry → Browse.
 
-    <a href="../../../assets/img/learn/navigate-main-resources.png"><img src="../../../assets/img/learn/navigate-main-resources.png" width="250" height="100"/></a>
+    <a href="../../../../assets/img/learn/navigate-main-resources.png"><img src="../../../../assets/img/learn/navigate-main-resources.png" width="250" height="100"/></a>
 
 3.  Go to the /_system/governance/apimgt/applicationdata/workflow-extensions.xml resource, click on Edit as text to edit the file, disable the Simple Workflow Executor, and enable Approval Workflow Executor for application update.
 

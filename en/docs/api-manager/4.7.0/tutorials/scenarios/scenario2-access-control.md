@@ -1,6 +1,6 @@
 ---
 title: "Scenario 2: Engage Access Control to the API"
-description: "Scenario tutorial on restricting an internal API's Developer Portal visibility to users with a specific role, and protecting individual resources with OAuth2 scopes so only tokens carrying the required scope can invoke privileged operations."
+description: "Restrict an API's Developer Portal visibility to a role and protect resources with OAuth2 scopes so only tokens with the scope can invoke them."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario2-access-control/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario2-access-control.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - oauth2
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -25,11 +25,11 @@ ColTrain has a separate API to manage schedules for their internal staff. This A
 
 We could configure the API to be visible for a set of users. For example, this API should be visible for only Developer Portal users with **coltrain_employee** role only.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario2.png" title="Rate limiting" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario2.png" title="Rate limiting" width="630"/>
 
 Also WSO2 API Manager provides capability to provide access control to the resources of the API by using OAuth2 scopes. Requests containing access tokens with the correct scope will be able to access these resources. 
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario2a.png" title="Rate limiting" width="630"/>
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario2a.png" title="Rate limiting" width="630"/>
 
 !!! Note 
     This setup contains roles **schedule_admin**  and **coltrain_employee** already created in the ColTrain tenant domain. **schedule_admin** and **coltrain_employee** roles are assigned to the user **jenny@coltrain.com** and only **coltrain_employee** role is assigned to **george@coltrain.com** . 

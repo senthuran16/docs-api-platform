@@ -1,6 +1,6 @@
 ---
 title: "Create Applications in the Developer Portal"
-description: "Create a new application in the WSO2 API Manager Developer Portal to represent a client app, configure its per-token quota, and use it to subscribe to one or more APIs."
+description: "Create a new application in the Developer Portal to represent a client app, configure its per-token quota, and subscribe it to one or more APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/create-application/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/create-application.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - applications
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

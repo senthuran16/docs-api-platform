@@ -1,6 +1,6 @@
 ---
 title: "Discover and Invoke WSO2 Admin Services"
-description: "Enable and discover the SOAP-based admin services that WSO2 API Manager uses internally, then invoke them directly from a Java client by authenticating, generating client stubs, and calling operations such as listing users, bypassing the management console UI."
+description: "Enable and discover the SOAP-based admin services API Manager uses internally, then invoke them directly from a Java client."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/wso2-admin-services/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/wso2-admin-services.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - admin-portal
   - user-stores
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

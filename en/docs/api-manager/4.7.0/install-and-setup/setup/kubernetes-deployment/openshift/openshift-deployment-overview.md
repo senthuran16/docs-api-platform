@@ -1,6 +1,6 @@
 ---
 title: "Deploy WSO2 API Manager on OpenShift"
-description: "Deploy WSO2 API Manager on OpenShift using Helm charts with the same deployment patterns as standard Kubernetes, covering OpenShift-compatible Docker images, security context settings, Route configuration, distributed deployment patterns, and troubleshooting."
+description: "Deploy WSO2 API Manager on OpenShift using Helm charts, covering OpenShift-specific Docker images, security context settings, and Route configuration."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/openshift/openshift-deployment-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/openshift/openshift-deployment-overview.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

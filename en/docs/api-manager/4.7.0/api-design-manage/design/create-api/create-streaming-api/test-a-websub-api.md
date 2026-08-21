@@ -1,6 +1,6 @@
 ---
 title: "Test a WebSub/WebHook API"
-description: "Test a published WebSub/WebHook API from the Developer Portal by generating an access token, registering a callback URL, and subscribing to and unsubscribing from a topic."
+description: "Test a published WebSub/WebHook API from the Developer Portal by generating a token, registering a callback URL, and subscribing to a topic."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-streaming-api/test-a-websub-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-streaming-api/test-a-websub-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - websub
   - streaming-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -25,7 +25,8 @@ Follow the instructions below to test a WebSub API (WebHook API):
 
 The examples here use the `RepoWatcher` WebSub/WebHook API, which was created in [Create a WebSub/WebHook API](../../../../design/create-api/create-streaming-api/create-a-websub-streaming-api).
 
-1. {!includes/sign-in-devportal.md!}
+1.  
+    --8<-- "api-manager/4.7.0/includes/sign-in-devportal.md"
 
 2. Click on the WebSub/WebHook API.
 

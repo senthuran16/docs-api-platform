@@ -1,6 +1,6 @@
 ---
 title: "API Documentation YAML Representation Reference"
-description: "Reference for the YAML structure WSO2 API Manager uses to represent API documentation metadata, including document type, source type, visibility, and content fields exposed through governance and export artifacts."
+description: "Reference for the YAML structure API Manager uses to represent API documentation metadata, including type, source, visibility, and content fields."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/governance/api-doc-yaml-representation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/governance/api-doc-yaml-representation.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-design
   - rest-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

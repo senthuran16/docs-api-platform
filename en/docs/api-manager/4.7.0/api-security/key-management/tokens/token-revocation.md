@@ -1,6 +1,6 @@
 ---
 title: "Revoking Access Tokens"
-description: "Revoke OAuth2 access and refresh tokens in WSO2 API Manager using the Revoke API, and configure immediate token revocation notifications when using third-party Key Managers."
+description: "Revoke OAuth2 access and refresh tokens in WSO2 API Manager via the Revoke API, and configure revocation notifications for third-party Key Managers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/token-revocation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/token-revocation.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

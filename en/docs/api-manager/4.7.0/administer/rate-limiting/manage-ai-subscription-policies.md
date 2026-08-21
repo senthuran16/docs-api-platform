@@ -1,6 +1,6 @@
 ---
 title: "Manage AI Subscription Policies"
-description: "Create and configure token-based AI subscription rate limiting policies in the WSO2 API Manager Admin Portal, covering request count, prompt/completion/total token quotas, and billing plan settings for AI APIs."
+description: "Create token-based AI subscription rate limiting policies covering request count, token quotas, and billing plan settings."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-ai-subscription-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-ai-subscription-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-gateway
   - admin-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Configure Multi-DC Pattern 2: Centralized API Management with Regional Data Planes"
-description: "Configure Multi-DC Pattern 2 for WSO2 API Manager, covering the main region control plane setup and sub-region Gateway and Traffic Manager configuration for connecting to the main region's control plane."
+title: "Configure Multi-DC Pattern 2: regional data planes"
+description: "Configure Multi-DC Pattern 2 for WSO2 API Manager, covering the main region control plane and sub-region Gateway and Traffic Manager setup."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/multi-dc-deployment/configuring-multi-dc-deployment-pattern-2.md
 tags:
@@ -9,19 +9,19 @@ tags:
   - distributed-deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
 # Configure Pattern 2: Centralized API Management with Regional Data Planes
 
-<a href="../../../assets/img/setup-and-install/multi-dc-pattern-2.png"><img src="../../../assets/img/setup-and-install/multi-dc-pattern-2.png" alt="Multi-DC Pattern 2" width="80%"></a>
+<a href="../../../../assets/img/setup-and-install/multi-dc-pattern-2.png"><img src="../../../../assets/img/setup-and-install/multi-dc-pattern-2.png" alt="Multi-DC Pattern 2" width="80%"></a>
 
 ## Configuring Main Region
 
 The main region will be similar to the setup in a particular region as Pattern 1. Hence, the configuration will be similar except for the DB replication and event hub communication.
 
-{!includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md!}
+--8<-- "api-manager/4.7.0/includes/deploy/steps-to-deploy-apim-in-a-distributed-setup-with-tm-separation.md"
 
 Since the control plane only resides in the main region, the gateway nodes and the traffic manager nodes in the sub regions should communicate with the main region via the control plane (event hub). Therefore, the following should be exposed to external usage.
 

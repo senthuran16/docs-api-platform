@@ -1,6 +1,6 @@
 ---
 title: "Publish Custom Analytics Data in WSO2 API Manager"
-description: "Extend the WSO2 API Manager analytics event schema with custom data by implementing the AnalyticsCustomDataProvider interface, deploying the resulting JAR, configuring deployment.toml, and enabling trace logs to verify the custom properties."
+description: "Extend the WSO2 API Manager analytics event schema with custom data by implementing the AnalyticsCustomDataProvider interface."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/samples/publishing-custom-analytics-data/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-analytics/samples/publishing-custom-analytics-data.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - analytics
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -94,6 +94,7 @@ In order to achieve this behavior, create a class implementing the `AnalyticsCus
 
 Implementation of this class should look something similar to [this](https://github.com/wso2/samples-apim/blob/master/analytics-custom-data-provider/src/main/java/org/wso2/carbon/apimgt/gateway/sample/publisher/CustomDataProvider.java).
 
+<a name="build-the-project"></a>
 #### Build the Project
 
 Build the project using,

@@ -1,6 +1,6 @@
 ---
 title: "Expose a SOAP Service as a REST API"
-description: "Tutorial on bridging an existing SOAP/WSDL backend to REST using WSO2 API Manager's Pass Through mode: design the API from a WSDL URL or archive, publish it, and invoke the exposed REST resource with a SOAP payload and access token."
+description: "Bridge an existing SOAP/WSDL backend to REST using Pass Through mode: design the API from a WSDL, publish it, and invoke the resource."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/expose-a-soap-service-as-a-rest-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/expose-a-soap-service-as-a-rest-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - rest-api
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -69,7 +69,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
      <html><div class="admonition note">
      <p class="admonition-title">Note</p>
      <p> Note that when creating this API, the default option of **Rate limiting level** , was selected to **API Level**. For more information on setting advanced throttling policies,
-     see [Enforce Throttling and Resource Access Policies]({{base_path}}/manage-apis/design/rate-limiting/setting-throttling-limits/).</p>
+     see [Enforce Throttling and Resource Access Policies](../api-gateway/rate-limiting/understand-rate-limit-enforcement).</p>
      </div>
      </html>
      
@@ -93,7 +93,7 @@ This tutorial will explain the steps to design, publish and invoke a SOAP servic
 
      The generated JSON Web Token (JWT) appears in the popup. Make sure to copy it.
      <html>
-     <img src="../assets/img/learn/generate-access-token-popup.jpg" height="400" width="580">
+     <img src="../../assets/img/learn/generate-access-token-popup.jpg" height="400" width="580">
      </html>
 
     Let's invoke the API.

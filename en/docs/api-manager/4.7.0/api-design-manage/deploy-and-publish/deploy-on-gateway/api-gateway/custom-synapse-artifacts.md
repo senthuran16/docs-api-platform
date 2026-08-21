@@ -1,6 +1,6 @@
 ---
 title: "Store Custom Synapse Artifacts on the Gateway"
-description: "Configure the deployment.toml skip list on WSO2 API Manager Gateway nodes to prevent specific runtime Synapse artifacts, such as APIs, endpoints, sequences, and local entries, from being overwritten during synchronization."
+description: "Configure the deployment.toml skip list to prevent runtime Synapse artifacts from being overwritten during synchronization."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/custom-synapse-artifacts/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/deploy-and-publish/deploy-on-gateway/api-gateway/custom-synapse-artifacts.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment-toml
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

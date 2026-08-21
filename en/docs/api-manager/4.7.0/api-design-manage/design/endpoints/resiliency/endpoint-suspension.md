@@ -1,6 +1,6 @@
 ---
 title: "Endpoint Suspension"
-description: "Understand how the WSO2 API Manager Gateway automatically suspends an unreachable backend endpoint for a default period of 30 seconds, and the error response returned to clients during suspension."
+description: "The Gateway automatically suspends an unreachable backend endpoint for a default 30-second period, returning an error response to clients."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/resiliency/endpoint-suspension/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/endpoints/resiliency/endpoint-suspension.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - resiliency
   - endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -29,8 +29,8 @@ In API Manager, by default, the gateway suspends an API for 30 seconds when it c
  <p class="admonition-title">What's Next?</p>
 
  <p>For more information on endpoint timeout configurations, see -
- <ul><li><a href="endpoint-timeouts.md">Endpoint Timeouts</a>
+ <ul><li><a href="../endpoint-timeouts.md">Endpoint Timeouts</a>
  </li>
-<li><a href="prevent-api-suspension.md">Prevent API Suspension</a></li></ul></p>
+<li><a href="../prevent-api-suspension.md">Prevent API Suspension</a></li></ul></p>
  </div>
 

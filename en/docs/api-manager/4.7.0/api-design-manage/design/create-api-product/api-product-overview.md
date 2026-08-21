@@ -1,6 +1,6 @@
 ---
 title: "API Product Overview"
-description: "Understand what an API Product is in WSO2 API Manager, how it lets publishers bundle resources from multiple existing APIs into a single consumable interface, and how attributes like OAuth scopes, authentication, and throttling policies are reused from the parent APIs."
+description: "An API Product bundles resources from multiple existing APIs into one consumable interface, reusing scopes, authentication, and throttling policies."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api-product/api-product-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api-product/api-product-overview.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-design
   - publisher-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

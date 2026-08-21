@@ -1,6 +1,6 @@
 ---
 title: "Configuring reCAPTCHA for Single Sign-On"
-description: "Configure reCaptcha for the Single Sign-On (SSO) login flow in WSO2 API Manager to mitigate or block brute force login attacks, including always-prompt and max-failed-attempts options."
+description: "Configure reCaptcha for the Single Sign-On login flow in WSO2 API Manager to mitigate or block brute force login attacks."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/logins-and-passwords/configuring-recaptcha-for-single-sign-on.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - saml2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -43,7 +43,7 @@ attacks, by configuring reCaptcha.
         Select this option to prompt reCaptcha only after the number of maximum failed attempts has been exceeded. 
     
         If this option is selected, enter a value for the **Max failed attempts for reCaptcha** field as well. For example, if you enter 3, reCaptcha will be re-enabled after 3 failed attempts.  
-        ![configure-captcha-for-sso]({{base_path}}/assets/img/learn/api-security/recaptcha/recaptcha-sso.png)
+        ![configure-captcha-for-sso](../../../../assets/img/learn/api-security/recaptcha/recaptcha-sso.png)
         
         Note the following when selecting this option:
         

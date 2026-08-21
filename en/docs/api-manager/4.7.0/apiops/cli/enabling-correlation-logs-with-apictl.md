@@ -1,6 +1,6 @@
 ---
 title: "Enable Correlation Logs with API Controller"
-description: "Use apictl commands to get the correlation logging components in an environment and enable or disable correlation logs (http, jdbc, ldap, synapse, method-calls) in WSO2 API Manager without a server restart."
+description: "Use apictl commands to view and enable or disable correlation logs, such as http, jdbc, and synapse, in API Manager without a restart."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/enabling-correlation-logs-with-apictl/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/enabling-correlation-logs-with-apictl.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

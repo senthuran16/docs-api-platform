@@ -1,6 +1,6 @@
 ---
 title: "About Keystores and Truststores"
-description: "Learn the core concepts behind keystores and truststores in WSO2 API Manager, including key pairs, digital certificates, certificate signing authorities, and the default keystore and truststore files shipped with the product."
+description: "Learn the core concepts behind keystores and truststores in WSO2 API Manager, including key pairs, digital certificates, and certificate authorities."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-keystores-and-truststores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/about-keystores-and-truststores.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - keystores
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

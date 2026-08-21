@@ -1,6 +1,6 @@
 ---
 title: "Log In to the Developer Portal Using Social Media"
-description: "Integrate WSO2 Identity Server with WSO2 API Manager to let users log in to the Developer Portal and Publisher with Facebook credentials, by creating a Facebook app, configuring it as a federated identity provider, mapping claims, and associating social logins."
+description: "Integrate WSO2 Identity Server with API Manager so users can log in to the Developer Portal and Publisher with Facebook credentials."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/log-in-to-the-dev-portal-using-social-media/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/customizations/log-in-to-the-dev-portal-using-social-media.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - sso
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

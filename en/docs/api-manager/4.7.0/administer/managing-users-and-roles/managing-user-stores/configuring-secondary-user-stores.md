@@ -1,6 +1,6 @@
 ---
 title: "Configuring Secondary User Stores"
-description: "Configure secondary user stores in WSO2 API Manager through the management console or manually via XML files, covering supported user store manager types such as LDAP, Active Directory, and JDBC."
+description: "Configure secondary user stores through the management console or XML files, covering LDAP, Active Directory, and JDBC types."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/managing-users-and-roles/managing-user-stores/configuring-secondary-user-stores.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - user-stores
   - user-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

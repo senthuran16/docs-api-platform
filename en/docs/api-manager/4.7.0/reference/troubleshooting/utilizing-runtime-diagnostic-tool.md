@@ -1,6 +1,6 @@
 ---
 title: "Utilizing the WSO2 Runtime Diagnostic Tool"
-description: "Guide to configuring and using the WSO2 Runtime Diagnostic Tool's memory, CPU, log, and traffic watchers and action executors to automatically capture diagnostic data for troubleshooting production issues, plus how to analyze the generated diagnostics log."
+description: "Guide to configuring the WSO2 Runtime Diagnostic Tool's watchers and action executors to capture diagnostic data automatically."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/utilizing-runtime-diagnostic-tool/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/utilizing-runtime-diagnostic-tool.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - monitoring
   - logging
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

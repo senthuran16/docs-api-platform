@@ -1,6 +1,6 @@
 ---
 title: "Write a Client Application Using a Generated SDK"
-description: "Build a Java client application using an SDK downloaded from the WSO2 API Manager Developer Portal, including a version that automatically renews expired access tokens via an OkHttp interceptor."
+description: "Build a Java client application using an SDK downloaded from the Developer Portal, including automatic renewal of expired access tokens."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/generating-sdks/write-a-client-application-using-the-sdk/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/generating-sdks/write-a-client-application-using-the-sdk.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -154,7 +154,7 @@ content_type: "tutorial"
 
     <div class="admonition warning">
         <p class="admonition-title">Warning</p>
-        <p>You need an access token to invoke the API. It is important to have a valid subscription before using the SDK, to obtain an access token. Note that the obtained access token has an [expiration time](/learn/consume-api/manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time).</p>
+        <p>You need an access token to invoke the API. It is important to have a valid subscription before using the SDK, to obtain an access token. Note that the obtained access token has an [expiration time](../manage-application/generate-keys/obtain-access-token/changing-the-default-token-expiration-time).</p>
     </div>
     
 9.  Set the base path to the API client.

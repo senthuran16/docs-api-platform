@@ -1,6 +1,6 @@
 ---
 title: "Reset Application Throttling Policies"
-description: "Reset the application-level rate limiting quota for a specific end-user in the Developer Portal, and identify the correct username or UUID to use based on the OAuth grant type."
+description: "Reset the application-level rate limiting quota for a specific end-user, and identify the correct username or UUID based on the OAuth grant type."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/rate-limiting/resetting-application-throttling-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/rate-limiting/resetting-application-throttling-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - throttling
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

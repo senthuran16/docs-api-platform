@@ -1,6 +1,6 @@
 ---
 title: "Message Flow in the API Manager Gateway"
-description: "Describes how a request flows through the WSO2 API Manager Gateway, covering the request and response handlers such as CORS, authentication, and throttling, mediation extensions, and the in-sequence and out-sequence processing model."
+description: "Explains how a request flows through the API Manager Gateway, covering request and response handlers and the in/out sequence model."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/guides/message-flow-in-the-api-manager-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/guides/message-flow-in-the-api-manager-gateway.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

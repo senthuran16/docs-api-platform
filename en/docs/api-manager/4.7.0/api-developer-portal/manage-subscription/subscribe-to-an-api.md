@@ -1,6 +1,6 @@
 ---
 title: "Subscribe to an API"
-description: "Subscribe an application to a published API in the Developer Portal using the Subscription and Key Generation Wizard or an existing application, update subscription tiers, and unsubscribe from an API."
+description: "Subscribe an application to a published API using the Subscription and Key Generation Wizard or an existing application, then manage the tier."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-subscription/subscribe-to-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-subscription/subscribe-to-an-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - subscriptions
   - applications
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -37,7 +37,7 @@ The following are the two methods available in the Developer Portal to subscribe
  
 2.  Click **SUBSCRIPTION & KEY GENERATION WIZARD** to start the key generation wizard.
 
-    <a href="../../assets/img/learn/key-generation-wizard.png" ><img src="../../assets/img/learn/key-generation-wizard.png" alt="Key Gen Wizard" title="Key Gen Wizard" /></a>
+    <a href="../../../assets/img/learn/key-generation-wizard.png" ><img src="../../../assets/img/learn/key-generation-wizard.png" alt="Key Gen Wizard" title="Key Gen Wizard" /></a>
 
 3.  Enter the application details in the **Create application** process and click **Next** to continue.
 
@@ -78,7 +78,7 @@ If you already have an existing application, follow the instructions below to su
         
 2.  Click **SUBSCRIBE TO AN APPLICATION**.
 
-     <a href="../../assets/img/learn/from-existing-app.png" ><img src="../../assets/img/learn/from-existing-app.png" alt="Subscribe to new app" title="Subscribe to new app" /></a>
+     <a href="../../../assets/img/learn/from-existing-app.png" ><img src="../../../assets/img/learn/from-existing-app.png" alt="Subscribe to new app" title="Subscribe to new app" /></a>
     
 3.  Select the application, the throttling policy, and click **Subscribe**.
 

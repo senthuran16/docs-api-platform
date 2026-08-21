@@ -1,6 +1,6 @@
 ---
 title: "Extend the Key Validation Interface"
-description: "Understand how JWT token validation and subscription validation work at the Gateway, and how to extend the JWTValidator and KeyValidationHandler interfaces to customize token, subscription, and scope validation logic."
+description: "Understand JWT and subscription validation at the Gateway, and extend the JWTValidator and KeyValidationHandler interfaces to customize it."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-key-management/extending-key-validation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-key-management/extending-key-validation.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - oauth2
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -98,7 +98,7 @@ A few examples are listed below.
 <td>When creating a key via the API Developer Portal, the subscriber can specify which domains are allowed to make calls using a token granted against a particular consumer key. If this validation does not add any value, these trivial steps can be ignored and skipped by extending the <code>KeyValidationHandler</code>.
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>For another example scenario, see <a href="extending-scope-validation.md">Skipping Role Validation for Scopes</a>.</p>
+<p>For another example scenario, see <a href="../extending-scope-validation.md">Skipping Role Validation for Scopes</a>.</p>
 </div>
 </td>
 </tr>

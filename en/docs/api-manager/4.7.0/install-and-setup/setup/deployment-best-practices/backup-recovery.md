@@ -1,6 +1,6 @@
 ---
 title: "Backup and Recovery for WSO2 API Manager"
-description: "Plan backups and recovery for a WSO2 API Manager deployment: back up databases and the product instance, follow recovery recommendations based on RTO and backup frequency, and recover a setup using saved artifacts and databases."
+description: "Plan backups and recovery for a WSO2 API Manager deployment, covering database and instance backups and recovery based on RTO and backup frequency."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/backup-recovery/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/backup-recovery.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment
   - high-availability
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

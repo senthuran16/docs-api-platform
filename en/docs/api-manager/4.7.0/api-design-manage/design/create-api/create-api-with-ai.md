@@ -1,6 +1,6 @@
 ---
 title: "API Design Assistant"
-description: "Use the AI-powered API Design Assistant to create REST, GraphQL, and Async (WebSub, WebSocket, SSE) APIs from natural language descriptions, by registering an AI Subscription Portal account and configuring WSO2 API Manager to connect to it."
+description: "Use the AI-powered API Design Assistant to create REST, GraphQL, and Async APIs from natural language descriptions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-api-with-ai/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/create-api/create-api-with-ai.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-apis
   - api-design
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

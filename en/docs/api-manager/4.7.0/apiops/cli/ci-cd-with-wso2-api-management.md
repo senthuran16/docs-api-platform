@@ -1,6 +1,6 @@
 ---
 title: "CI/CD for APIs with WSO2 API Manager: Overview"
-description: "Overview of continuous integration and continuous deployment for APIs with WSO2 API Manager, describing the roles of API Developers, Publishers, and DevOps, and pointing to CLI and Jenkins based pipeline approaches."
+description: "Understand the roles of API Developers, Publishers, and DevOps in CI/CD for APIs with API Manager, using CLI- or Jenkins-based pipelines."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/ci-cd-with-wso2-api-management/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/ci-cd-with-wso2-api-management.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - ci-cd
   - api-controller
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # CI/CD for APIs - Overview
@@ -33,4 +33,4 @@ API Developers and Publishers work with a version control system, which acts as 
 See the following topics for instructions:
 
 -   [Building a CI/CD Pipeline for APIs using the CLI](cicd-using-cli.md)
--   [Building a CI/CD Pipeline for APIs using Jenkins]({{base_path}}/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline-for-dev-first-approach)
+-   [Building a CI/CD Pipeline for APIs using Jenkins](building-jenkins-ci-cd-pipeline)

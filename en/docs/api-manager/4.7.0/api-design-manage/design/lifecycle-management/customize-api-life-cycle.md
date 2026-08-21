@@ -1,6 +1,6 @@
 ---
 title: "Customize the API Lifecycle"
-description: "Add a custom state and transitions to the default WSO2 API Manager API lifecycle by editing the LifeCycle configuration in the Management Console, and update the lifecycle diagram shown in the Publisher portal."
+description: "Add a custom state and transitions to the default API lifecycle by editing the LifeCycle configuration in the Management Console."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/lifecycle-management/customize-api-life-cycle/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/lifecycle-management/customize-api-life-cycle.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-lifecycle
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

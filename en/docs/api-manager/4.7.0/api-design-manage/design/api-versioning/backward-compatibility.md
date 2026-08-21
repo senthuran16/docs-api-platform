@@ -1,6 +1,6 @@
 ---
 title: "API Versioning: Default Version and Backward Compatibility"
-description: "Understand how setting a default API version affects invocation URLs in the Developer Portal, and why changes to a default version must remain backward compatible for existing subscribers."
+description: "Learn how setting a default API version affects invocation URLs, and why default version changes must stay backward compatible."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-versioning/backward-compatibility/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-versioning/backward-compatibility.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-versioning
   - developer-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

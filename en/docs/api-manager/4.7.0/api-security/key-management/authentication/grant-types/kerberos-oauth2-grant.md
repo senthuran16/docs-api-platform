@@ -1,6 +1,6 @@
 ---
 title: "Kerberos OAuth2 Grant"
-description: "Explains how WSO2 API Manager's Kerberos OAuth2 grant exchanges a Kerberos ticket for an OAuth2 access token, and walks through configuring WSO2 Identity Server as a Key Manager with Kerberos as an allowed grant type."
+description: "Learn how the Kerberos OAuth2 grant exchanges a Kerberos ticket for an access token, and configure WSO2 Identity Server as a Key Manager."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/kerberos-oauth2-grant/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/authentication/grant-types/kerberos-oauth2-grant.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - grant-types
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "API YAML Representation Reference"
-description: "Detailed reference for the structure and fields of the api.yaml file used by WSO2 API Manager to represent an API, including business information, CORS, WebSub, endpoint, and operation-level configuration, with a full sample."
+description: "Reference for the structure and fields of the api.yaml file used by API Manager to represent an API, with a full sample."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/governance/api-yaml-representation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/governance/api-yaml-representation.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-design
   - rest-api
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

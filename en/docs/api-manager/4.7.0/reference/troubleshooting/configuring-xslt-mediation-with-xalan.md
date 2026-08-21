@@ -1,6 +1,6 @@
 ---
 title: "Configuring XSLT Mediation with Xalan"
-description: "Explains the 'Could not find function: ends-with' error that occurs when Xalan is used instead of Saxon for XSLT message transformation, and how to resolve it with a TransformerFactory system parameter."
+description: "Explains the 'Could not find function: ends-with' error from using Xalan instead of Saxon, and how to resolve it with a system parameter."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/configuring-xslt-mediation-with-xalan/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/troubleshooting/configuring-xslt-mediation-with-xalan.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - mediation
   - troubleshooting
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "troubleshooting"
 ---
 

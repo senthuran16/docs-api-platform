@@ -1,6 +1,6 @@
 ---
 title: "Configure WSO2 IS 7.x as a Key Manager"
-description: "Configure WSO2 Identity Server 7.x as a Key Manager in WSO2 API Manager, covering deployment.toml settings, endpoint configuration, connector authentication options, and role creation conventions."
+description: "Configure WSO2 Identity Server 7.x as a Key Manager in WSO2 API Manager, covering deployment.toml settings, endpoints, and role creation conventions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-wso2is7-connector/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/third-party-key-managers/configure-wso2is7-connector.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - key-managers
   - identity-and-access-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Deploy WSO2 API Manager on Google Cloud GKE"
-description: "Step-by-step guide to deploying WSO2 API Manager on Google Kubernetes Engine, covering cluster creation, Envoy Gateway installation, Cloud SQL setup, custom Docker images, keystore generation, Helm chart deployment, Gateway/DNS configuration, and troubleshooting."
+description: "Deploy WSO2 API Manager on Google Kubernetes Engine, covering cluster setup, Envoy Gateway, Cloud SQL, custom Docker images, and Helm chart deployment."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/gke/deploying-wso2-api-m-on-gke/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/gke/deploying-wso2-api-m-on-gke.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -446,7 +446,7 @@ Check:
 
 ## Next Steps
 
-- Set up [Rate Limiting]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+- Set up [Rate Limiting](../../../../api-gateway/rate-limiting/understand-rate-limit-enforcement)
 - Enable [Analytics](../../../../monitoring/api-analytics/analytics-overview.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 ---
 title: "API Governance CLI Tool Reference"
-description: "Configure and use the API Governance CLI Tool to validate APIs against a set of rules, customize validation rules in rules.yaml, and generate violation reports for compliance auditing."
+description: "Configure and use the API Governance CLI Tool to validate APIs against rules in rules.yaml and generate violation reports."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/api-governance-cli-tool/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/api-governance-cli-tool.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - governance
   - api-controller
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

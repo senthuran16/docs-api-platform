@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Quick Start Guide"
-description: "A first walkthrough of WSO2 API Manager: start the All-in-one package, create and publish a REST API from the Publisher Portal, subscribe to it from the Developer Portal, and invoke it using a generated access token."
+description: "Start the WSO2 API Manager All-in-one package, create and publish a REST API, subscribe from the Developer Portal, and invoke it with a token."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/api-manager-quick-start-guide/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/api-manager-quick-start-guide.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - getting-started
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 
@@ -54,13 +54,13 @@ Choose a deployment option to start the WSO2 API Manager All-in-one package. Thi
 
 === "Run on Kubernetes"
 
-    To use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M), follow the steps in [Deploying API-M on Kubernetes using Helm Resources.](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md#step-1-set-up-basic-configurations)
+    To use Kubernetes (K8s) and Helm resources for container-based deployments of WSO2 API Manager (API-M), follow the steps in [Deploying API-M on Kubernetes using Helm Resources.](../install-and-setup/setup/kubernetes-deployment/kubernetes/am-pattern-0-all-in-one.md#quick-start)
 
 ### What you'll build
 
 In this sample scenario, you'll implement the full lifecycle of an API using WSO2 API Manager.
 
-<a href="../assets/img/get_started/apim-qsg-diagram.png"><img src="../assets/img/get_started/apim-qsg-diagram.png" width="60%"></a>
+<a href="../../assets/img/get_started/apim-qsg-diagram.png"><img src="../../assets/img/get_started/apim-qsg-diagram.png" width="60%"></a>
 
 Here are the steps that we are going to follow:
 

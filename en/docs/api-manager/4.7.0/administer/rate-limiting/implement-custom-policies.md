@@ -1,6 +1,6 @@
 ---
 title: "Implement Custom Rate Limiting Policies"
-description: "Define custom global rate limiting policies in WSO2 API Manager using Siddhi query language key templates, and add a custom throttling policy through the Admin Portal."
+description: "Define custom global rate limiting policies using Siddhi query language key templates, and add them through the Admin Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/implement-custom-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/implement-custom-policies.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - rate-limiting
   - throttling
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -34,7 +34,7 @@ For example, the following sample custom policy allows the admin user to send 5 
 
 2.  Click **Rate Limiting Policies** tab and click **Custom Policies** tab.
 
-     <a href="../../assets/img/learn/custom_policy_left_tag.png"><img src="../../assets/img/learn/custom_policy_left_tag.png" alt="Add Custom policy page" width="30%"></a>
+     <a href="../../../assets/img/learn/custom_policy_left_tag.png"><img src="../../../assets/img/learn/custom_policy_left_tag.png" alt="Add Custom policy page" width="30%"></a>
     
 3.  To add a new policy, click **Define Policy**.
 

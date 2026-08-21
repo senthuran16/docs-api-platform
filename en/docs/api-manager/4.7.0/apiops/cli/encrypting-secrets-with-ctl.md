@@ -1,6 +1,6 @@
 ---
 title: "Encrypt Secrets with API Controller"
-description: "Encrypt plain-text secrets with apictl using symmetric AES-256 or asymmetric RSA keystore-based encryption, and export the results as environment variables, properties files, or Kubernetes secrets."
+description: "Encrypt plain-text secrets with apictl using symmetric AES-256 or asymmetric RSA encryption, then export them as environment variables or secrets."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/encrypting-secrets-with-ctl/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/encrypting-secrets-with-ctl.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - secure-vault
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

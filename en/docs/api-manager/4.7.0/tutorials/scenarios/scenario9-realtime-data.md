@@ -1,6 +1,6 @@
 ---
 title: "Scenario 9: Realtime Data with a WebSocket API"
-description: "Scenario tutorial on using WSO2 Streaming Integrator to convert real-time train sensor events into a WebSocket stream, expose it as a Streaming API through API Manager, and subscribe to a specific train's location topic with the wscat client and an access token."
+description: "Convert real-time sensor events into a WebSocket stream exposed as a Streaming API, then subscribe to a topic with the wscat client."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario9-realtime-data/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario9-realtime-data.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - streaming-api
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -23,7 +23,7 @@ This is a tutorial that is part of a series and can be used as a standalone tuto
 
 Quantis wants to provide real time location of their trains to their customers. The sensors in the train will be providing real time events and Quantis wants to convert it to WebSockets and expose it as a Streaming API so that the client mobile applications can subscribe to it and receive real time events.
 
-<img src="../../assets/img/tutorials/scenario-tutorials/scenario9.png" alt="Realtime Notifications" title="Realtime Notifications" width="60%" />
+<img src="../../../assets/img/tutorials/scenario-tutorials/scenario9.png" alt="Realtime Notifications" title="Realtime Notifications" width="60%" />
 
 WSO2 Streaming Integrator(SI) is a streaming data processing server that integrates streaming data and takes action based on streaming data. Quantis is planning to use Streaming Integrator to process the real time event data.
 
@@ -31,7 +31,7 @@ WSO2 Streaming Integrator(SI) is a streaming data processing server that integra
 
 To develop a service in Streaming Integrator, you need to use Streaming Integrator tooling. Siddhi is the Event Processing Engine that is used inside the Streaming Integrator. To process the WebSockets you can write the service in Siddhi Query Language. You can test the service in the tooling itself. Once the development is complete you can export it as a Siddhi app and add it to the Streaming Integrator runtime.
 
-<img src="../../assets/img/tutorials/scenarios/streaming_api_tooling.png" alt="Streaming Integrator Tooling" title="Streaming Integrator Tooling" width="60%" />
+<img src="../../../assets/img/tutorials/scenarios/streaming_api_tooling.png" alt="Streaming Integrator Tooling" title="Streaming Integrator Tooling" width="60%" />
 
 Here, for simplicity, the service is already created and exported as a SiddhiApp and added to the Streaming Integrator instance in the tutorial setup. You can test the Streaming Integrator service by invoking it directly. You will start receiving Realtime events by connecting a WebSocket client (you can use [wscat](https://www.npmjs.com/package/wscat)).
 
@@ -48,9 +48,9 @@ Once you expose the events via a WebSocket Server, you can expose the WebSockets
 2. Sign in with a Quantis, Developer Portal user. Use user as `bob@quantis.com` and password as `user123`.
 3. Click on `TrainRealLocationAPI` and click subscribe using a policy and generate the access token.
 
-    <img src="../../assets/img/tutorials/scenarios/realtime_api_devportal.png" alt="Devportal View" title="Devportal View" width="60%" />
+    <img src="../../../assets/img/tutorials/scenarios/realtime_api_devportal.png" alt="Devportal View" title="Devportal View" width="60%" />
     
-    <img src="../../assets/img/tutorials/scenarios/realtime_api_subscriptions.png" alt="Subscription View" title="Subscription View" width="60%" />
+    <img src="../../../assets/img/tutorials/scenarios/realtime_api_subscriptions.png" alt="Subscription View" title="Subscription View" width="60%" />
 
 
 4. You can use the above fetched access token to subscribe to the location of the train 456 (Topic : loc-train-qnt-456), using a WebSocket client. For example you can use wscat tool, subscribe as below.

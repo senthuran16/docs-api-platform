@@ -1,13 +1,13 @@
 ---
 title: "Introduction to User Stores"
-description: "An introduction to user stores in WSO2 API Manager, explaining how user and authorization information is stored in the embedded H2 database by default, the option to connect external user stores, and the read/write versus read-only operating modes."
+description: "Learn how WSO2 API Manager stores user and authorization data in the embedded H2 database by default, and how to connect external user stores instead."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/configure-userstores/introduction-to-userstores/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/configure-userstores/introduction-to-userstores.md
 tags:
   - api-manager
   - user-stores
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

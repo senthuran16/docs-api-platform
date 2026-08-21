@@ -1,6 +1,6 @@
 ---
 title: "Enable CORS for APIs"
-description: "Enable Cross-Origin Resource Sharing (CORS) globally for all APIs via deployment.toml or per individual API through the Publisher Portal, and configure the supported CORS response headers."
+description: "Enable CORS globally via deployment.toml or per API through the Publisher Portal, and configure supported CORS headers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/enabling-cors-for-apis/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/enabling-cors-for-apis.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -105,7 +105,7 @@ Follow the instructions below to enable CORS response headers globally. Once thi
 
 5.  Click **Save**.
 
-     <a href="../../../assets/img/learn/configure-cors-properties.png"><img src="../../../assets/img/learn/configure-cors-properties.png" width="70%" alt="Configure CORS properties"></a> 
+     <a href="../../../../assets/img/learn/configure-cors-properties.png"><img src="../../../../assets/img/learn/configure-cors-properties.png" width="70%" alt="Configure CORS properties"></a> 
 
 
 You have successfully enabled CORS for a specific API.

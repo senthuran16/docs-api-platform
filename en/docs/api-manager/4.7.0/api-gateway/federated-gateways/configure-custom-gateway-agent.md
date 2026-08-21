@@ -1,6 +1,6 @@
 ---
 title: "Configure a Custom Gateway Agent"
-description: "Build and deploy a custom Gateway Agent so WSO2 API Manager can deploy APIs to a third-party gateway with no out-of-the-box connector, by implementing the GatewayAgentConfiguration and GatewayDeployer interfaces, registering the gateway in the Admin Portal, and deploying an API to it from the Publisher Portal."
+description: "Build and deploy a custom Gateway Agent so API Manager can deploy APIs to a third-party gateway with no out-of-the-box connector."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/configure-custom-gateway-agent/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/configure-custom-gateway-agent.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - federated-gateways
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

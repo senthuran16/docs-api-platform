@@ -8,7 +8,7 @@ tags:
   - endpoint-security
   - endpoints
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -32,7 +32,7 @@ Follow the instructions below to use Basic Auth as the endpoint authentication t
 
 2. Click the Endpoint Security symbol of the endpoint that you want to secure with Basic Auth.
 
-      [![Endpoint security symbol](../../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)]({{base_path}}/assets/img/learn/endpoint-security-symbol.png)
+      [![Endpoint security symbol](../../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)](../../../../assets/img/design/endpoints/endpoint-security/endpoint-security-symbol.png)
 
 3. Select **Basic Auth** as the endpoint authentication type from the drop-down menu.
 

@@ -1,6 +1,6 @@
 ---
 title: "Configure API Security Audits with 42Crunch"
-description: "Set up WSO2 API Manager's integration with the 42Crunch API Security Audit platform by configuring an API token and collection ID, run an OpenAPI security audit on an API from the Publisher Portal, and interpret the audit report's score, format, security, and data validation sections."
+description: "Set up the 42Crunch API Security Audit integration, run an OpenAPI security audit on an API from the Publisher Portal, and interpret the audit report."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/design-time/configuring-api-security-audit/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/design-time/configuring-api-security-audit.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-security
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -149,7 +149,7 @@ You need to add the API Token and Collection ID properties inside the configurat
 
      [![sample audit report](../../assets/img/learn/sample-audit-report.png)](../../assets/img/learn/sample-audit-report.png)
 
-     For more information on the details provided in the report, see [Audit report sections](#auditreports)
+     For more information on the details provided in the report, see [Audit report sections](#audit-report-sections)
 
 <a href="auditreports"></a>
 

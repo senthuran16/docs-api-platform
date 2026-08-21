@@ -1,6 +1,6 @@
 ---
 title: "Use Dynamic Data in API Controller Projects"
-description: "Inject environment variables into apictl project files, including environment configuration parameters and operation policy templates, so CI/CD pipelines can control API endpoint URLs and mediation values dynamically."
+description: "Inject environment variables into apictl project files, such as environment parameters and policy templates, for dynamic CI/CD pipelines."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/using-dynamic-data-in-api-controller-projects/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/apiops/cli/advanced-topics/using-dynamic-data-in-api-controller-projects.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-controller
   - ci-cd
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

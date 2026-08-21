@@ -1,6 +1,6 @@
 ---
-title: "Gateway Runtimes Overview: Platform, Classic, and Third-Party Gateways"
-description: "Compares the gateway runtimes supported by WSO2 API Manager's single control plane model — the self-hosted Platform Gateway, the Classic Gateway (Universal), and federated third-party gateways — and when to use each deployment option."
+title: "Gateway runtimes: Platform, Classic, and third-party"
+description: "Compares the gateway runtimes supported under API Manager's single control plane: Platform Gateway, Classic Gateway, and third-party gateways."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/platform-gateway-capability/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/platform-gateway-capability.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - deployment
   - architecture
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Overview

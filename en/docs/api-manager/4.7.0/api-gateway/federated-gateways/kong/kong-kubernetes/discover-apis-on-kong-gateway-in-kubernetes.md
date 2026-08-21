@@ -1,6 +1,6 @@
 ---
 title: "Discover APIs on Kong Gateway in Kubernetes"
-description: "Configure Kong Gateway running on Kubernetes as a federated API gateway: install prerequisites, register the gateway environment in the Admin Portal, upload a PEM certificate to the Key Manager, deploy the WSO2 Kong Gateway Agent with Helm, and discover, publish, and invoke APIs from Kong custom resources."
+description: "Configure Kong Gateway on Kubernetes as a federated API gateway, deploy the Kong Gateway Agent, and discover, publish, and invoke APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/kong/kong-kubernetes/discover-apis-on-kong-gateway-in-kubernetes/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/kong/kong-kubernetes/discover-apis-on-kong-gateway-in-kubernetes.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - federated-gateways
   - kubernetes
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

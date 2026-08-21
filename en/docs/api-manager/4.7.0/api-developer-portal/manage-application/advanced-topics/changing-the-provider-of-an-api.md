@@ -1,6 +1,6 @@
 ---
 title: "Change the Provider of an API"
-description: "Transfer ownership of an API to another user in WSO2 API Manager by updating the API provider field in the Admin Portal, granting the new provider permission to edit or delete the API."
+description: "Transfer ownership of an API to another user by updating the API provider field in the Admin Portal, granting edit and delete access."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/advanced-topics/changing-the-provider-of-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/advanced-topics/changing-the-provider-of-an-api.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-lifecycle-management
   - publisher-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

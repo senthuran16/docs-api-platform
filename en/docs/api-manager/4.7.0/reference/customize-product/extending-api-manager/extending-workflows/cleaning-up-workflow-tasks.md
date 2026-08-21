@@ -1,6 +1,6 @@
 ---
 title: "Clean Up Workflow Tasks"
-description: "Use the WorkflowExecutor task clean-up feature and a cancel event in the BPEL process to remove pending application, subscription, and key generation approval tasks from the Admin Portal when the originating item is deleted."
+description: "Use the WorkflowExecutor task clean-up feature to remove pending approval tasks from the Admin Portal when the originating item is deleted."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-workflows/cleaning-up-workflow-tasks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/customize-product/extending-api-manager/extending-workflows/cleaning-up-workflow-tasks.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - customization
   - admin-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

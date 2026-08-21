@@ -1,6 +1,6 @@
 ---
 title: "Directory Structure of WSO2 Products"
-description: "Reference guide to the standard Carbon-based directory structure shared by WSO2 products, listing the purpose and file path of each folder such as bin, repository, conf, components, logs, and samples."
+description: "Reference guide to the Carbon-based directory structure shared by WSO2 products, listing the purpose of each folder such as bin and repository."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/guides/directory-structure-of-wso2-products/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/guides/directory-structure-of-wso2-products.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - installation
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 

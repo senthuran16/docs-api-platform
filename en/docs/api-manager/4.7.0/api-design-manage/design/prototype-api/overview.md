@@ -1,6 +1,6 @@
 ---
 title: "Prototyped (Pre-Released) APIs Overview"
-description: "Learn how WSO2 API Manager's PRE-RELEASED lifecycle state lets publishers share work-in-progress APIs, with mock or real backend implementations, so subscribers can try them out and give feedback before the API is published."
+description: "The PRE-RELEASED lifecycle state lets publishers share work-in-progress APIs, with mock or real backends, for subscribers to try and give feedback."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/prototype-api/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/prototype-api/overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - lifecycle-management
   - api-lifecycle
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Prototyped APIs (Pre-Released APIs)

@@ -1,6 +1,6 @@
 ---
 title: "Semantic Prompt Guardrail"
-description: "Enforce intent boundaries on AI API prompts using embedding-based semantic similarity with WSO2 AI Gateway's Semantic Prompt Guardrail, supporting Allow, Deny, and Hybrid modes."
+description: "Enforce intent boundaries on AI API prompts using embedding-based semantic similarity, with Allow, Deny, and Hybrid modes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/semantic-prompt-guardrail/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/ai-guardrails/semantic-prompt-guardrail.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - ai-guardrails
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

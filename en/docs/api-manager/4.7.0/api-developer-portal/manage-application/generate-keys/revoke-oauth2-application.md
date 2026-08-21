@@ -1,6 +1,6 @@
 ---
 title: "Revoke an OAuth2 Application"
-description: "Revoke or deactivate an OAuth2 application's consumer secret and access tokens from the Management Console, and regenerate the secret to reactivate the application."
+description: "Revoke or deactivate an OAuth2 application's consumer secret and access tokens from the Management Console, then regenerate the secret to reactivate."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/revoke-oauth2-application/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/manage-application/generate-keys/revoke-oauth2-application.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

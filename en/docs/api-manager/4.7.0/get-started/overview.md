@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Overview"
-description: "An overview of WSO2 API Manager's core capabilities, covering API design and creation, AI Gateway and MCP Gateway features, classic and federated gateways, security, the Developer Portal, rate limiting, analytics and monetization, lifecycle governance, and deployment flexibility."
+description: "Overview of WSO2 API Manager's core capabilities: API design, AI Gateway and MCP Gateway features, security, the Developer Portal, and analytics."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/get-started/overview.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - api-security
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Overview

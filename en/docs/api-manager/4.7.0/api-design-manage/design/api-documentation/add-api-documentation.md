@@ -1,6 +1,6 @@
 ---
 title: "Add API Documentation"
-description: "Add in-line, URL-based, file, and Markdown documentation to an API in the Publisher Portal, and control the visibility of that documentation in the Developer Portal."
+description: "Add in-line, URL-based, file, and Markdown documentation to an API, and control its visibility in the Developer Portal."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-documentation/add-api-documentation/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/api-documentation/add-api-documentation.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - developer-portal
   - customization
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

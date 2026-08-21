@@ -8,7 +8,7 @@ tags:
   - installation
   - key-managers
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "reference"
 ---
 
@@ -32,6 +32,7 @@ As WSO2 API Manager is a Java application, you can generally run it on most oper
 |Windows Server      | 2022         |
 |Ubuntu              | 24.04        |
 
+<a name="tested-jdks"></a>
 #### Tested JDKs
 
 The **WSO2 API-M** runtime has been tested with the following JDKs:
@@ -51,11 +52,12 @@ The **WSO2 API-M** runtime is tested with the following databases:
 |Microsoft SQL Server| 2022        |
 |PostgreSQL            | 18      |
 
+<a name="wso2-product-compatibility-matrix"></a>
 #### WSO2 Product Compatibility Matrix
 
 The following is a list of other WSO2 products and components that have been tested with WSO2 API Manager 4.7.0.
 
-{!includes/compatibility-matrix.md!}
+--8<-- "api-manager/4.7.0/includes/compatibility-matrix.md"
 
 #### Compatible WSO2 Identity Servers (as Key Manager)
 

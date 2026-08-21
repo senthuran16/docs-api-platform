@@ -1,6 +1,6 @@
 ---
-title: "Deploy APIs to Federated Gateways: WSO2 API Manager with AWS API Gateway"
-description: "Practical guide to federated API gateway deployment: use WSO2 API Manager as the central control plane while deploying APIs to AWS API Gateway, covering AWS IAM setup, registering AWS as a federated gateway, and securing invocations with an OAuth 2.0 Lambda Authorizer."
+title: "Deploy APIs to federated gateways with AWS API Gateway"
+description: "Use API Manager as the central control plane while deploying APIs to AWS API Gateway, secured with an OAuth 2.0 Lambda Authorizer."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/deploying-apis-to-federated-gateways-with-wso2/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/deploying-apis-to-federated-gateways-with-wso2.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-gateway
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -116,7 +116,7 @@ We will now proceed to register the AWS API Gateway as a federated gateway withi
 
 ## Register AWS API Gateway as a Federated Gateway in WSO2 API Manager
 
-1. Start the WSO2 API Control Plane (ACP) as explained in [Single CP for Multiple Gateways](https://apim.docs.wso2.com/en/latest/tutorials/single-control-plane-for-multiple-gateways/#setting-up-the-api-control-plane-and-universal-gateway).
+1. Start the WSO2 API Control Plane (ACP) as explained in [Single CP for Multiple Gateways](single-control-plane-for-multiple-gateways#setting-up-the-api-control-plane-and-classic-gateway).
 2. Sign in to the Admin Portal via `https://localhost:9444/admin`.
 3. Navigate to the **Gateways** section and click **Add Gateway Environment**.
 
@@ -177,7 +177,7 @@ Main steps involved are:
 
 In order to enable security for the created API, you need to configure a third party key manager which runs in a cloud environment first.
 
-Follow this [guide](https://apim.docs.wso2.com/en/latest/administer/key-managers/configure-auth0-connector/) to configure and setup Auth0 as the third party key manager in the setup.
+Follow this [guide](../api-security/key-management/third-party-key-managers/configure-auth0-connector) to configure and setup Auth0 as the third party key manager in the setup.
 
 ## Configure Security for the API
 

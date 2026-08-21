@@ -1,6 +1,6 @@
 ---
 title: "Mock API Responses with the API Gateway"
-description: "Create a Prototype API with an auto-generated JavaScript mock implementation based on an OpenAPI specification, customize the inline mock scripts, restrict Java class/method access in scripts, and invoke the mocked responses via the Publisher and Developer Portals."
+description: "Create a Prototype API with an auto-generated JavaScript mock implementation based on an OpenAPI specification, then invoke the mocked responses."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/prototype-api/create-mocked-js-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/prototype-api/create-mocked-js-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-gateway
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 
@@ -174,7 +174,7 @@ Follow the instructions below to add a mock implementation to the API:
 
      [![Save inline scripts](../../../assets/img/learn/create-api-prototype-click-save.png)](../../../assets/img/learn/create-api-prototype-click-save.png)
 
-{!includes/design/invoke-prerelease-api.md!}
+--8<-- "api-manager/4.7.0/includes/design/invoke-prerelease-api.md"
 
 ## Step 6 - Invoke the API
 
@@ -315,7 +315,7 @@ Learn more on the concepts that you need to know when creating a Prototype API:
 
 -   [Endpoints](../endpoints/endpoint-types.md)
 -   [API Security](../../../api-security/runtime/api-authentication/secure-apis-using-oauth2-tokens.md)
--   [Rate Limiting]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+-   [Rate Limiting](../../../api-gateway/rate-limiting/understand-rate-limit-enforcement)
 -   [Life Cycle Management](../lifecycle-management/api-lifecycle.md)
 -   [API Monetization](../../../monitoring/api-monetization/monetizing-an-api.md)
 -   [API Visibility](../advanced-topics/control-api-visibility-and-subscription-availability-in-developer-portal.md)

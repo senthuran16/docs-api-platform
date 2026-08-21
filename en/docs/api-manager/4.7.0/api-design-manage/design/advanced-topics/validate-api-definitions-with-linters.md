@@ -1,6 +1,6 @@
 ---
 title: "Validate API Definitions with Custom Linter Rules"
-description: "Define custom Spectral-based linter rules in the Admin Portal to validate API definitions beyond the standard OpenAPI specification, and observe the linter results when creating, importing, or editing an API."
+description: "Define custom Spectral-based linter rules to validate API definitions beyond the standard OpenAPI specification."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/validate-api-definitions-with-linters/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-design-manage/design/advanced-topics/validate-api-definitions-with-linters.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - openapi
   - admin-portal
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

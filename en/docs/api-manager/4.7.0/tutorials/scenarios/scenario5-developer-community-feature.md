@@ -1,6 +1,6 @@
 ---
 title: "Scenario 5: Getting the Developer Community Involved"
-description: "Scenario tutorial on Developer Portal features that support an API's developer community, such as generating a client SDK for an API, and using that SDK in a sample Java application to invoke the API with an access token."
+description: "Generate a client SDK for an API from the Developer Portal and use it in a sample Java application to invoke the API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario5-developer-community-feature/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/tutorials/scenarios/scenario5-developer-community-feature.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - developer-portal
   - tutorials
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "tutorial"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "OAuth2 Token Persistence"
-description: "Understand how WSO2 API Manager persists JWT and opaque OAuth2 tokens, including token persistence optimization for JWTs, synchronous versus asynchronous opaque token persistence, and the recovery flow for constraint violations."
+description: "Understand how WSO2 API Manager persists JWT and opaque OAuth2 tokens, including persistence optimization for JWTs and recovery from constraint violations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/token-persistence/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/token-persistence.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - jwt
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 

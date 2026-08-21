@@ -1,6 +1,6 @@
 ---
 title: "Run WSO2 API Manager as a Linux Service"
-description: "Set up WSO2 API Manager to run as a Linux service using a startup script registered with update-rc.d, including guidance on Red Hat-based distributions that require chkconfig instead."
+description: "Set up WSO2 API Manager to run as a Linux service with a startup script registered via update-rc.d, or chkconfig on Red Hat-based distributions."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/install/installing-the-product/installing-api-m-as-a-linux-service.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - installation
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -22,7 +22,7 @@ content_type: "how-to"
 
     **Before you begin:**
 
-    - See [our compatibility matrix]({{base_path}}/install-and-setup/ProductCompatibility) to check the compatible JDK versions. 
+    - See [our compatibility matrix](../../../reference/product-compatibility) to check the compatible JDK versions. 
     - Set up the `JAVA_HOME` environment variable.
 
 #### Setting up CARBON\_HOME

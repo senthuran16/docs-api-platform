@@ -1,6 +1,6 @@
 ---
 title: "Create an MCP Server from an OpenAPI Definition"
-description: "Import an OpenAPI definition into the WSO2 API Manager Publisher Portal, select which operations to expose, and configure the resulting MCP Server's name, context, version, and runtime endpoint."
+description: "Import an OpenAPI definition into the Publisher Portal and configure the resulting MCP Server's name, context, and endpoint."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/create-from-openapi/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/mcp-gateway/create-from-openapi.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mcp
   - openapi
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

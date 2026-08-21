@@ -1,6 +1,6 @@
 ---
 title: "B2B API Consumption with Organization-Based Access"
-description: "Set up organization-based B2B API consumption in WSO2 API Manager: configure a federated Identity Server, register organizations, set up organization-specific key managers, control API visibility by organization, and invoke APIs as an organization user."
+description: "Set up organization-based B2B API consumption: configure a federated Identity Server, register organizations, and control API visibility by organization."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/b2b-api-consumption/api-consumption/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/b2b-api-consumption/api-consumption.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - multitenancy
   - sso
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

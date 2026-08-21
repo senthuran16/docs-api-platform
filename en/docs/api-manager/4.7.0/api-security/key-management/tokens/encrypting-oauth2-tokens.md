@@ -1,6 +1,6 @@
 ---
 title: "Encrypting OAuth2 Tokens"
-description: "Enable symmetric encryption of OAuth2 access tokens, refresh tokens, consumer secrets, and authorization codes in WSO2 API Manager so sensitive OAuth2 data is stored encrypted in the database."
+description: "Enable symmetric encryption of OAuth2 access tokens, refresh tokens, consumer secrets, and authorization codes so they are stored encrypted in the database."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/encrypting-oauth2-tokens/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/key-management/tokens/encrypting-oauth2-tokens.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - oauth2
   - security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -38,13 +38,13 @@ Follow the steps below to enable OAuth2 token encryption
     enable_token_encryption = true
     ```
     
-3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-server). 
+3.  [Start the server](../../../install-and-setup/install/installing-the-product/running-the-api-m.md#starting-the-api-m-server). 
 
 4.  Follow the [Generate Application Keys](../../../api-developer-portal/manage-application/generate-keys/generate-api-keys.md) guide to create a new application, generate application consumer keys, and to obtain an access token.
 
     !!! tip
 
-        -   If you use a [Distributed API Manager setup]({{base_path}}/install-and-setup/deploying-wso2-api-manager/distributed-deployment/understanding-the-distributed-deployment-of-wso2-api-m) , the changes must be made on both the Developer Portal and Key Manager nodes.
+        -   If you use a [Distributed API Manager setup](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup) , the changes must be made on both the Developer Portal and Key Manager nodes.
         -   If you use WSO2 Identity Server [(WSO2 IS) as the Key Manager setup](../third-party-key-managers/configure-wso2is-connector.md) , you need to make changes in both WSO2 IS and WSO2 API Manager.
 
 

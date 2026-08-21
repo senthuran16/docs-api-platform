@@ -1,6 +1,6 @@
 ---
 title: "Configure Caching in WSO2 API Manager"
-description: "Configure and tune the various caches used by WSO2 API Manager in deployment.toml, including the Classic Gateway cache, resource cache, Key Manager OAuth cache, response cache, JWT claims cache, and Publisher and Developer Portal caches."
+description: "Configure and tune the caches used by WSO2 API Manager in deployment.toml, including the Gateway, Key Manager, response, and portal caches."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/advance-configurations/configuring-caching/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/advance-configurations/configuring-caching.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - configuration
   - deployment-toml
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

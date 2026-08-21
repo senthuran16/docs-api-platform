@@ -1,6 +1,6 @@
 ---
 title: "Renewing a CA-Signed Certificate in a Keystore"
-description: "Check a certificate's validity period, generate a certificate signing request, and import the renewed CA-signed certificate into a WSO2 API Manager keystore to avoid SSL handshake failures from an expired certificate."
+description: "Check a certificate's validity period, generate a signing request, and import the renewed CA-signed certificate into a WSO2 API Manager keystore."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/renewing-a-ca-signed-certificate-in-a-keystore/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/renewing-a-ca-signed-certificate-in-a-keystore.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - tls
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

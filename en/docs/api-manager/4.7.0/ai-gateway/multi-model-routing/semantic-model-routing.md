@@ -1,6 +1,6 @@
 ---
 title: "Configure Semantic Model Routing for AI APIs"
-description: "Configure the embedding-based Semantic Routing policy in WSO2 API Manager to direct AI requests to specific models based on the semantic similarity of user input to predefined utterances."
+description: "Configure the embedding-based Semantic Routing policy to direct AI requests to models based on similarity to predefined utterances."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/multi-model-routing/semantic-model-routing/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/multi-model-routing/semantic-model-routing.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - multi-model-routing
   - ai-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

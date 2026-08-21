@@ -1,6 +1,6 @@
 ---
 title: "Monetize an API with Stripe in WSO2 API Manager"
-description: "Set up API monetization in WSO2 API Manager using the Stripe billing engine, covering Stripe account and webhook configuration, connecting the billing engine, enabling monetization on an API, subscribing to a monetized tier, publishing usage data for metered plans, and managing billing and invoices."
+description: "Set up API monetization in WSO2 API Manager using the Stripe billing engine, including account setup, tier subscription, and invoice management."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-monetization/monetizing-an-api/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/monitoring/api-monetization/monetizing-an-api.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - monetization
   - subscriptions
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -643,7 +643,7 @@ For more information go to, [Using Connect with Standard Accounts](https://strip
 
 2. Create a subscription policy.
 
-    Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy]({{base_path}}/manage-apis/design/rate-limiting/adding-new-throttling-policies#Adding-a-new-subscription---level-throttling-tier).
+    Specify the subscription policy-related data based on your monetization goals. For more information, see [Adding a new subscription-level throttling policy](../../administer/rate-limiting/manage-subscription-policies#adding-a-new-subscription-level-rate-limiting-tier).
 
     !!! note
         When using Stripe as a billing engine it only allows you to create monetization plans for commercial business plans. Therefore, make sure to create a subscription policy that has a paid business plan.
@@ -652,7 +652,7 @@ For more information go to, [Using Connect with Standard Accounts](https://strip
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/subscription-commercial-tier.png" alt="Subscription to a paid business plan" title="Paid business plan" width="400" />
+    <img src="../../../assets/img/learn/subscription-commercial-tier.png" alt="Subscription to a paid business plan" title="Paid business plan" width="400" />
     </body>
     </html>
 
@@ -689,7 +689,7 @@ When a subscriber selects a monetized API tier in the Developer Portal, APIM ini
 
     The subscription is created in APIM with a pending status while payment is being collected.
 
-3. The Developer Portal can be configured to display a **Complete Payment** link that redirects the subscriber to the Stripe-hosted Checkout page. See [Step 4 - Customize the Developer Portal for Stripe payment flows](#step-4---customize-the-developer-portal-for-stripe-payment-flows) for details.
+3. The Developer Portal can be configured to display a **Complete Payment** link that redirects the subscriber to the Stripe-hosted Checkout page. See [Step 4 - Customize the Developer Portal for Stripe payment flows](#step-4-customize-the-developer-portal-for-stripe-payment-flows) for details.
 
     !!! note
         The Checkout link is valid for 24 hours. If the subscriber does not complete payment within that window, the pending subscription is automatically cancelled when Stripe fires a `checkout.session.expired` event.
@@ -715,7 +715,7 @@ The subscriber must be authenticated (via OIDC) to access this endpoint. If no v
 !!! note
     The Checkout link is valid for 24 hours. If the subscriber does not complete payment within that window, Stripe fires a `checkout.session.expired` event and the pending subscription is automatically cancelled.
 
-On the Stripe Checkout page, the subscriber enters their payment details and confirms. For details on how the subscription is activated after payment, see [Step 3 - Subscribe to a monetized API](#step-3---subscribe-to-a-monetized-api).
+On the Stripe Checkout page, the subscriber enters their payment details and confirms. For details on how the subscription is activated after payment, see [Step 3 - Subscribe to a monetized API](#step-3-subscribe-to-a-monetized-api).
 
 #### Redirecting to the Customer Portal
 
@@ -839,7 +839,7 @@ The Application Developers who are subscribed to a dynamic business plan can sig
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Subscriber's Invoice details" title="Subscriber's invoice details" width="500" />
     </body>
     </html>
 
@@ -865,7 +865,7 @@ The API Publisher can access the billing information related to each of the subs
     <head>
     </head>
     <body>
-    <img src="../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
+    <img src="../../../assets/img/learn/invoice-details.png" alt="Invoice details" title="Invoice details" width="500" />
     </body>
     </html>
 

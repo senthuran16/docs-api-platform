@@ -1,6 +1,6 @@
 ---
 title: "Accessing API Manager from Multiple Devices Simultaneously"
-description: "Explains the access token conflicts that occur when the same user logs in to WSO2 API Manager from multiple devices using the Password grant, and recommends handling authentication failures with the refresh token approach."
+description: "Explains access token conflicts from multiple-device logins with the Password grant, and recommends handling failures via refresh tokens."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/guides/accessing-api-manager-by-multiple-devices-simultaneously/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/reference/guides/accessing-api-manager-by-multiple-devices-simultaneously.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - grant-types
   - access-tokens
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "concept"
 ---
 
@@ -21,9 +21,9 @@ When there are many users who use production deployment setups, accessing API 
     This will be a guide for you if you create client applications having API Manager underlying. Note that, you need to use [Password Grant](https://docs.wso2.com/display/AM260/Password+Grant) type in this scenario.
 
 
--   [Issue in having multiple access tokens](#AccessingAPIManagerbyMultipleDevicesSimultaneously-Issueinhavingmultipleaccesstokens)
--   [Recommended Solution](#AccessingAPIManagerbyMultipleDevicesSimultaneously-RecommendedSolution)
--   [How this should work](#AccessingAPIManagerbyMultipleDevicesSimultaneously-Howthisshouldwork)
+-   [Issue in having multiple access tokens](#issue-in-having-multiple-access-tokens)
+-   [Recommended Solution](#recommended-solution)
+-   [How this should work](#how-this-should-work)
 
 ### Issue in having multiple access tokens
 

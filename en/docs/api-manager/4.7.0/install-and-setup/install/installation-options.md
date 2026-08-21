@@ -1,6 +1,6 @@
 ---
 title: "WSO2 API Manager Installation Options"
-description: "A summary of the installation options available for WSO2 API Manager 4.7.x, with links to the Helm-based Kubernetes deployment, Docker/Docker Compose, and Puppet artifact repositories."
+description: "See the installation options for WSO2 API Manager 4.7.x, including Helm-based Kubernetes deployment, Docker Compose, and Puppet artifacts."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/install/installation-options/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/install/installation-options.md
 tags:
@@ -9,8 +9,8 @@ tags:
   - kubernetes
   - deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Installation Options

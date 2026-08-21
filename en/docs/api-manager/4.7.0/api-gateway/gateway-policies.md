@@ -1,6 +1,6 @@
 ---
 title: "Managing Gateway Policies"
-description: "Create, deploy, and undeploy Global Level Policies on the WSO2 API Manager gateway using the Publisher Portal UI instead of manually creating XML policy files, including how deployed global policies apply across APIs and tenants."
+description: "Create, deploy, and undeploy Global Level Policies on the Gateway using the Publisher Portal UI instead of manually creating XML policy files."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/gateway-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/gateway-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - api-policies
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

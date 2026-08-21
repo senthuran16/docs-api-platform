@@ -1,6 +1,6 @@
 ---
 title: "API Authentication Overview"
-description: "Overview of the authentication mechanisms WSO2 API Manager offers to secure APIs from unauthenticated access, including OAuth2, API keys, Mutual SSL, Basic Authentication, and multiple Key Manager support."
+description: "Browse the authentication mechanisms WSO2 API Manager offers to secure APIs, including OAuth2, API keys, Mutual SSL, Basic Authentication, and Key Managers."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/api-authentication-overview/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-security/runtime/api-authentication/api-authentication-overview.md
 tags:
@@ -8,8 +8,8 @@ tags:
   - api-security
   - oauth2
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
-content_type: "overview"
+last_updated: 2026-08-20
+content_type: "concept"
 ---
 
 # Overview

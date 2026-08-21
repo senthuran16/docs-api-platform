@@ -1,6 +1,6 @@
 ---
 title: "Store Custom Synapse Artifacts"
-description: "Configure WSO2 API Manager to keep custom runtime Synapse artifacts, such as APIs, endpoints, sequences, and local entries, in the Gateway file system using deployment.toml."
+description: "Configure API Manager to keep custom runtime Synapse artifacts, such as APIs, endpoints, and sequences, in the Gateway file system."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/custom-synapse-artifacts/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/custom-synapse-artifacts.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - mediation
   - deployment-toml
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

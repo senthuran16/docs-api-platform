@@ -1,6 +1,6 @@
 ---
 title: "Manage Subscription Policies (Business Plans)"
-description: "Create and configure subscription-level rate limiting policies (business plans) in WSO2 API Manager, including default tiers, GraphQL query depth/complexity limits, and streaming API event-based quotas."
+description: "Create subscription-level rate limiting policies (business plans), including GraphQL query limits and streaming API event quotas."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-subscription-policies/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/administer/rate-limiting/manage-subscription-policies.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - graphql
   - streaming-apis
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -50,11 +50,11 @@ The system includes the following default tiers:
 
      **Request bandwidth based quota limits**
 
-     <a href="../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png"><img src="../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png" width="70%" alt="Request bandwidth based quota limits"></a>
+     <a href="../../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png"><img src="../../../assets/img/design/rate-limiting/request-bandwith-based-quota-limits.png" width="70%" alt="Request bandwidth based quota limits"></a>
 
      **Event Based (AsyncAPI) quota limits**
 
-     <a href="../../assets/img/design/rate-limiting/event-based-quota-limits.png"><img src="../../assets/img/design/rate-limiting/event-based-quota-limits.png" width="70%" alt="Event Based (AsyncAPI) quota limits"></a>
+     <a href="../../../assets/img/design/rate-limiting/event-based-quota-limits.png"><img src="../../../assets/img/design/rate-limiting/event-based-quota-limits.png" width="70%" alt="Event Based (AsyncAPI) quota limits"></a>
 
     !!! note
         - Event Based (Async API) - These configurations are applicable to all the Streaming APIs (WebSocket, SSE, and WebHook (WebSub) APIs).
@@ -68,7 +68,7 @@ The system includes the following default tiers:
      | Request Count/Request Bandwidth/Event Count | The maximum number of requests/maximum bandwidth/maximum events allowed to the API within the time period given in the next field.|
      | Unit Time                       | Time within which the number of requests given in the previous field is allowed to the API. This can be defined in minutes, hours, days, weeks, months or years.                   |
      | Burst Control (Rate Limiting)   | You can define the request count/bandwidth per unit time on an addition layer by using rate limiting. This is usually a smaller number of requests/bandwidth for a shorter time span than what is enforced in the above fields. For instance, if there's a subscription level policy enforced over a long period, you may not want users to consume the entire quota within a short time span. Enforcing a rate limit protects the backend from sudden request bursts and controls the usage at a subscription and API level. |
-     | GraphQL                         | Provide the [maximum complexity]({{base_path}}/manage-apis/design/rate-limiting/graphql-api/query-complexity-limitation/) and [maximum depth values]({{base_path}}/manage-apis/design/rate-limiting/graphql-api/query-depth-limitation/) for GraphQL APIs using this policy.|
+     | GraphQL                         | Provide the [maximum complexity](../../api-design-manage/design/rate-limiting/graphql-api/query-complexity-analysis) and [maximum depth values](../../api-design-manage/design/rate-limiting/graphql-api/query-depth-analysis) for GraphQL APIs using this policy.|
      | WebHooks                        | Maximum number of WebHooks allowed for a WebHooks API using this policy. |
      | Stop On Quota Reach             | This indicates the action to be taken when a user goes beyond the allocated quota. If the check box is selected, the user's requests are dropped and an error response (HTTP Status code 429) is given. If the check box is cleared, the requests are allowed to pass through.             |
      | Billing Plan                    | This field only makes sense if you have API Monetization enabled. The available **billing plans** are **Free, Commercial, and Freemium**. An API is tagged/labelled as Free, Paid, or Freemium depending on its subscription tiers(e.g., Unlimited, Gold, etc.), which are the tiers selected when creating an API. |

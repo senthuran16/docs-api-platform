@@ -1,6 +1,6 @@
 ---
 title: "Tuning Performance for WSO2 API Manager"
-description: "Recommended performance tuning configurations for WSO2 API Manager covering OS-level settings, JVM settings, Carbon platform settings, timeout configurations, connection pool tuning, and database indexing."
+description: "Tune WSO2 API Manager performance with recommended OS-level, JVM, Carbon platform, timeout, connection pool, and database indexing configurations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/tuning-performance/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/tuning-performance.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - databases
   - configuration
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -302,7 +302,7 @@ default_max_per_route = 50
      <p class="admonition-title">Note</p>
      <p>Note that when the endpoint is suspended, the default action is defined here as invoking the fault sequence.</p>
 </div> 
-<p><img src="../../../assets/img/setup-and-install/timeout-configuration.png" alt="timeout-configuration.png" width="734" /></p></li>
+<p><img src="../../../../assets/img/setup-and-install/timeout-configuration.png" alt="timeout-configuration.png" width="734" /></p></li>
 <li><p>Click <strong>Save</strong>.</p></li>
 </ol>
 <div class="admonition note">

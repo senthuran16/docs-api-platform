@@ -1,6 +1,6 @@
 ---
 title: "Basic Health Checks for WSO2 API Manager"
-description: "Perform basic health checks on WSO2 API Manager components using port checks, the Version service, WebSocket health endpoints, and the Gateway startup health-check API to confirm APIs are deployed and ready."
+description: "Perform health checks on WSO2 API Manager components using port checks, the Version service, WebSocket endpoints, and the Gateway startup health API."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/basic-health-checks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/deployment-best-practices/basic-health-checks.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - deployment
   - monitoring
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with the AI Gateway"
-description: "A quickstart walkthrough for creating, securing, deploying, testing, and invoking your first AI API in WSO2 API Manager using the OpenAI provider, with pointers to advanced AI Gateway capabilities."
+description: "Create, secure, deploy, and invoke your first AI API in WSO2 API Manager using the OpenAI provider."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/getting-started-with-ai-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/ai-gateway/getting-started-with-ai-gateway.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - ai-apis
   - getting-started
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "quickstart"
 ---
 
@@ -36,7 +36,7 @@ LLM Gateway gives you the ability to create AI APIs, which serve as a bridge bet
 
     <div class="admonition tip">
     <p class="admonition-title">Tip</p>
-    <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default Service Providers, you can add custom AI Service Providers by following the <a href='ai-vendor-management/custom-ai-vendors/overview.md'>custom AI Service Provider integration</a> documentation.</p>
+    <p>The built-in AI service providers and versions will appear on relevant dropdowns. In addition to the default Service Providers, you can add custom AI Service Providers by following the <a href='../ai-vendor-management/custom-ai-vendors/overview.md'>custom AI Service Provider integration</a> documentation.</p>
     </div>
 
 4. Fill in the AI API details and click **Create**.
@@ -155,4 +155,4 @@ Now that you've successfully created your first AI API, explore these advanced c
 - **[AI APIs via SDKs](using-proxy-apis-in-sdks.md)** - Generate and use SDKs for your AI APIs
 
 ### Explore MCP Gateway
-- **[MCP Gateway]({{base_path}}/mcp/overview/)** - Transform your APIs into AI-ready tools for Large Language Models
+- **[MCP Gateway](mcp-gateway/overview)** - Transform your APIs into AI-ready tools for Large Language Models

@@ -1,6 +1,6 @@
 ---
 title: "Discover APIs on Kong Gateway (Standalone)"
-description: "Connect a standalone Kong Gateway to WSO2 API Manager as a federated gateway by generating a Kong Connect access token, retrieving the Gateway's Admin API details, registering it in the Admin Portal, and publishing and invoking the discovered APIs."
+description: "Connect a standalone Kong Gateway as a federated gateway by generating a Kong Connect access token, then publish and invoke discovered APIs."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/kong/kong-standalone/discover-apis-on-kong-gateway/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/federated-gateways/kong/kong-standalone/discover-apis-on-kong-gateway.md
 tags:
@@ -8,7 +8,7 @@ tags:
   - api-gateway
   - federated-gateways
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Removing Specific Request Headers from the Response"
-description: "Strip sensitive HTTP headers from API responses, per API or globally, by adding a remove property to the out sequence, and handle header removal in error scenarios via the main.xml and fault.xml sequences."
+description: "Strip sensitive HTTP headers from API responses, per API or globally, by adding a remove property to the out sequence or error sequences."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/removing-specific-request-headers-from-response/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-gateway/policies/removing-specific-request-headers-from-response.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - api-gateway
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -29,7 +29,7 @@ To remove request headers from responses for per API or globally, add the name o
         ``` bash
         <property name="CustomTransportHeader" scope="transport" action="remove"/>
         ```
-Check out [Changing the Default Mediation Flow of API Requests]({{base_path}}/api-gateway/message-mediation/changing-the-default-mediation-flow-of-api-requests) to learn on how to
+Check out [Changing the Default Mediation Flow of API Requests](../../api-design-manage/design/api-policies/attach-policy) to learn on how to
 add the above mediation policy per API or globally.
 
 ## Handling Error Responses

@@ -9,7 +9,7 @@ tags:
   - ai-tools
   - ai-vendor-management
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -189,7 +189,7 @@ For example, an admin could view the token usage by users and applications to id
 
 [![analytics token usage example](../../assets/img/llm-gateway/analytics-token-usage-example.png)](../../assets/img/llm-gateway/analytics-token-usage-example.png)
 
-For more information on Analytics, refer to the official [WSO2 API Manager Documentation](https://apim.docs.wso2.com/en/latest/monitoring/api-analytics/analytics-overview/)
+For more information on Analytics, refer to the official [WSO2 API Manager Documentation](../../monitoring/api-analytics/analytics-overview)
 
 ---
 
@@ -203,7 +203,7 @@ For example, a **PII Masking Regex Guardrail** can be configured in the request 
 
 [![codex cli guardrail example](../../assets/img/llm-gateway/codex-guardrail-redacted-example.png)](../../assets/img/llm-gateway/codex-guardrail-redacted-example.png)
 
-For more information on AI Guardrails, refer to the official [WSO2 API Manager Documentation](https://apim.docs.wso2.com/en/latest/ai-gateway/ai-guardrails/overview/)
+For more information on AI Guardrails, refer to the official [WSO2 API Manager Documentation](../ai-guardrails/overview)
 
 ---
 
@@ -219,7 +219,7 @@ The following screenshot illustrates Codex CLI operating under a configured AI G
 
 [![codex cli rate limit example](../../assets/img/llm-gateway/codex-rate-limit-example.png)](../../assets/img/llm-gateway/codex-rate-limit-example.png)
 
-For more information on Rate Limiting, refer to the official [WSO2 API Manager documentation](https://apim.docs.wso2.com/en/latest/ai-gateway/rate-limiting/)
+For more information on Rate Limiting, refer to the official [WSO2 API Manager documentation](../rate-limiting)
 
 
 ---
@@ -236,4 +236,4 @@ Once configured, every request sent from Codex CLI is automatically modified by 
 
 [![codex cli prompt decorator example](../../assets/img/llm-gateway/codex-prompt-decorator-example.png)](../../assets/img/llm-gateway/codex-prompt-decorator-example.png)
 
-For more information on Prompt Management, refer to the official [WSO2 API Manager documentation](https://apim.docs.wso2.com/en/latest/ai-gateway/prompt-management/overview/)
+For more information on Prompt Management, refer to the official [WSO2 API Manager documentation](../prompt-management/overview)

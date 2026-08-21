@@ -1,6 +1,6 @@
 ---
 title: "Enabling Hostname Verification"
-description: "Enable and configure hostname verification in WSO2 API Manager, including the DefaultAndLocalhost, Strict, and AllowAll verification modes and hostname verification settings for WebSocket connections."
+description: "Enable and configure hostname verification in WSO2 API Manager, including the DefaultAndLocalhost, Strict, and AllowAll verification modes."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/enabling-hostname-verification/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/security/enabling-hostname-verification.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - security
   - endpoint-security
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Deploy WSO2 API Manager on Azure AKS"
-description: "Step-by-step guide to deploying WSO2 API Manager on Azure AKS, covering cluster creation, Envoy Gateway installation, Azure Database setup, custom Docker images, keystore generation, Helm chart deployment, Gateway/DNS configuration, and troubleshooting."
+description: "Deploy WSO2 API Manager on Azure AKS, covering cluster setup, Envoy Gateway, Azure databases, custom Docker images, and Helm chart deployment."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/azure/deploying-wso2-api-m-on-aks/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/install-and-setup/setup/kubernetes-deployment/azure/deploying-wso2-api-m-on-aks.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - deployment
   - distributed-deployment
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
@@ -28,7 +28,7 @@ This guide provides a step-by-step approach to deploying WSO2 API Manager on Azu
     - [Azure Requirements](#azure-requirements)
     - [WSO2 Requirements](#wso2-requirements)
   - [Architecture Overview](#architecture-overview)
-    - [Azure Deployment Architecture](#azure-deployment-architecture)
+    - [Azure Deployment Architecture](#architecture-overview)
     - [WSO2 API Manager Deployment Architecture](#wso2-api-manager-deployment-architecture)
   - [Step 1: Create and Prepare the AKS Cluster](#step-1-create-and-prepare-the-aks-cluster)
   - [Step 2: Install Envoy Gateway API Controller](#step-2-install-envoy-gateway-api-controller)
@@ -95,7 +95,7 @@ This deployment follows the standard WSO2 Kubernetes architecture, extended to u
 
 ### WSO2 API Manager Deployment Architecture
 
-<a href="../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="WSO2 API Manager deployment architecture" width="80%"></a>
+<a href="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png"><img src="../../../../../assets/img/setup-and-install/active-active-apim-deployment.png" alt="WSO2 API Manager deployment architecture" width="80%"></a>
 
 ## Step 1: Create and Prepare the AKS Cluster
 
@@ -485,7 +485,7 @@ Check:
 
 ## Next Steps
 
-- Set up [Rate Limiting]({{base_path}}/manage-apis/design/rate-limiting/introducing-throttling-use-cases/)
+- Set up [Rate Limiting](../../../../api-gateway/rate-limiting/understand-rate-limit-enforcement)
 - Enable [Analytics](../../../../monitoring/api-analytics/analytics-overview.md)
 
 ## See Also

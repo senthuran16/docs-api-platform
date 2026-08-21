@@ -1,6 +1,6 @@
 ---
-title: "Set Up WSO2 Identity Server as a Federated Authenticator for B2B"
-description: "Configure WSO2 Identity Server 7.1.0 as a federated authenticator for API Manager's B2B organization feature: create an application, assign groups and users, and register organizations for multi-tenant API consumption."
+title: "Set up Identity Server as a federated authenticator for B2B"
+description: "Configure WSO2 Identity Server 7.1.0 as a federated authenticator for the B2B organization feature, including groups, users, and organizations."
 canonical_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/b2b-api-consumption/setup-identity-server/
 md_url: https://wso2.com/api-platform/docs/api-manager/4.7.0/api-developer-portal/b2b-api-consumption/setup-identity-server.md
 tags:
@@ -9,7 +9,7 @@ tags:
   - key-managers
   - multitenancy
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-07-17
+last_updated: 2026-08-20
 content_type: "how-to"
 ---
 
