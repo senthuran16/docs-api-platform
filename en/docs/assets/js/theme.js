@@ -351,6 +351,65 @@ onEachPage(function () {
   // current URL contains the matching version as a path segment — e.g.
   // Developer Portal and AI Workspace appear at root level on /next/... and
   // /api-gateway/next/... pages.
+
+  // Base URL for manifest and resource loading.
+  var versionedNavScope = window.__md_scope;
+  if (!versionedNavScope) {
+    console.warn('[Version Switcher] window.__md_scope not set by theme. Versioned sections will not initialize.');
+    return;  // Exit early to prevent errors
+  }
+  
+  // Validate versionedNavScope is a valid URL.
+  try {
+    new URL('test', versionedNavScope);
+  } catch (e) {
+    console.error('[Version Switcher] Invalid versionedNavScope URL:', versionedNavScope, e);
+    return;  // Exit early, version switcher cannot work
+  }
+
+  // Fetch with timeout
+  function fetchWithTimeout(url, timeoutMs) {
+    timeoutMs = timeoutMs || 5000;
+    var controller = new AbortController();
+    var timeoutId = setTimeout(function () { controller.abort(); }, timeoutMs);
+    return fetch(url, { signal: controller.signal })
+      .then(function (r) {
+        clearTimeout(timeoutId);
+        if (!r.ok) {
+          console.warn('Failed to fetch manifest: HTTP ' + r.status);
+          throw new Error('HTTP ' + r.status);
+        }
+        return r.json();
+      })
+      .catch(function (err) {
+        clearTimeout(timeoutId);
+        if (err.name === 'AbortError') {
+          console.warn('Manifest fetch timed out after ' + timeoutMs + 'ms');
+        } else {
+          console.warn('Failed to fetch manifest:', err);
+        }
+        throw err;
+      });
+  }
+
+  var versionManifestPromise = null;
+  // Cache manifest after first fetch
+  function loadVersionManifest() {
+    if (!versionManifestPromise) {
+      var url = new URL('assets/version-manifest.json', versionedNavScope).href;
+      versionManifestPromise = fetchWithTimeout(url).catch(function (err) {
+        versionManifestPromise = null;
+        return Promise.reject(err);
+      });
+    }
+    return versionManifestPromise;
+  }
+
+  function showVersionError(message) {
+    console.error('[Version Switcher] ' + message);
+  }
+
+  // Show version-scoped nav sections based on URL
   var pathSegments = window.location.pathname.split('/').filter(Boolean);
   document.querySelectorAll('.md-nav--primary [data-md-scoped-version]').forEach(function (el) {
     var visible = pathSegments.indexOf(el.getAttribute('data-md-scoped-version')) !== -1;
@@ -361,17 +420,31 @@ onEachPage(function () {
     var slug = section.getAttribute('data-md-versioned-section');
     var defaultVersion = section.getAttribute('data-md-default-version');
     var select = section.querySelector('.md-nav__version-dropdown');
-    var groups = Array.prototype.slice.call(
-      section.querySelectorAll('.md-nav__version-group')
-    );
-    if (!slug || !select || groups.length === 0) return;
+    if (!slug || !select) return;
+
+    var versionedNavScope = window.__md_scope;
+    if (!versionedNavScope) {
+      console.warn('[Version Switcher] window.__md_scope not set by theme. Versioned section "' + slug + '" will not support version switching.');
+      return;
+    }
 
     var storageKey = 'docVersion:' + slug;
 
-    // Available version values, in the order rendered.
-    var versions = groups.map(function (g) {
-      return g.getAttribute('data-md-version');
-    });
+    var pendingNavigationId = 0;
+
+    // Known-valid versions for this section, read synchronously from the DOM
+    // (same attribute the search-breadcrumbs code uses) so both the URL
+    // segment and the stored preference can be validated before the manifest
+    // fetch resolves. Refined to the manifest's keys once it loads.
+    var versions = [];
+    var allVersionsJson = section.getAttribute('data-md-all-versions');
+    if (allVersionsJson) {
+      try {
+        versions = JSON.parse(allVersionsJson);
+      } catch (e) {
+        console.warn('[Version Switcher] Failed to parse versions from data-md-all-versions:', e);
+      }
+    }
 
     // Resolve the active version: URL path segment wins, then stored
     // preference, then the configured default.
@@ -381,7 +454,7 @@ onEachPage(function () {
       var idx = parts.lastIndexOf(slug);
       if (idx !== -1 && idx + 1 < parts.length) {
         var candidate = parts[idx + 1];
-        if (versions.indexOf(candidate) !== -1) return candidate;
+        if (versions.length === 0 || versions.indexOf(candidate) !== -1) return candidate;
       }
       return null;
     }
@@ -393,20 +466,19 @@ onEachPage(function () {
       stored = null;
     }
 
-    var active =
-      versionFromPath() ||
-      (versions.indexOf(stored) !== -1 ? stored : null) ||
-      (versions.indexOf(defaultVersion) !== -1 ? defaultVersion : versions[0]);
+    // Only trust a stored version if it's a known version (or versions are
+    // not yet known), so a stale/removed value can't take effect.
+    function validStored() {
+      return (versions.length === 0 || versions.indexOf(stored) !== -1) ? stored : null;
+    }
 
-    function showVersion(version) {
-      groups.forEach(function (g) {
-        g.classList.toggle('is-active', g.getAttribute('data-md-version') === version);
-      });
-      // A version can be active without being offered in the dropdown (e.g.
-      // "next" exists in the nav but is reachable only by URL). Append it
-      // under its own group so the select reflects the active version
-      // instead of going blank, and so the user can switch back to a
-      // released version.
+    var isViewingThisSection = window.location.pathname.split('/').filter(Boolean).indexOf(slug) !== -1;
+
+    // Reflects `version` in the dropdown (adding an "Unreleased" option if
+    // it isn't one of the rendered choices yet). Display only - does not
+    // touch storage, since this runs on every page whether or not the user
+    // is actually viewing this section.
+    function applyActiveVersion(version) {
       if (!select.querySelector('option[value="' + version + '"]')) {
         var unreleasedGroup = select.querySelector('optgroup[label="Unreleased"]');
         if (!unreleasedGroup) {
@@ -420,6 +492,9 @@ onEachPage(function () {
         unreleasedGroup.appendChild(option);
       }
       if (select.value !== version) select.value = version;
+    }
+
+    function persistVersion(version) {
       try {
         window.localStorage.setItem(storageKey, version);
       } catch (e) {
@@ -427,18 +502,39 @@ onEachPage(function () {
       }
     }
 
-    showVersion(active);
+    // Only persist when the URL itself identifies this section's version.
+    // On any other page `active` is just a display fallback (e.g.
+    // defaultVersion) - persisting it would overwrite a real stored
+    // preference every time the user browses away from this section.
+    var urlVersion = versionFromPath();
+    var active = urlVersion || (isViewingThisSection ? validStored() : null) || defaultVersion;
 
-    // Collect the set of page paths available in a given version's group, plus
-    // that version's overview (first link) as the fallback target.
-    function groupForVersion(version) {
-      return groups.filter(function (g) {
-        return g.getAttribute('data-md-version') === version;
-      })[0];
-    }
+    applyActiveVersion(active);
+    if (urlVersion) persistVersion(active);
+    var lastSelectValue = select.value;
+
+    var initialManifestId = ++pendingNavigationId;
+    loadVersionManifest().then(function (manifest) {
+      if (initialManifestId !== pendingNavigationId) return;
+      if (manifest[slug]) {
+        versions = Object.keys(manifest[slug]);
+        if (versions.length === 0) {
+          console.warn('[Version Switcher] Section "' + slug + '" has no versions in manifest. Version switching disabled for this section.');
+        }
+        var newUrlVersion = versionFromPath();
+        var newActive = newUrlVersion || (isViewingThisSection ? validStored() : null) || defaultVersion;
+        if (newActive && newActive !== active) {
+          active = newActive;
+          applyActiveVersion(newActive);
+          if (newUrlVersion) persistVersion(newActive);
+        }
+      }
+    }).catch(function () {
+      // Manifest load failed; skip validation.
+    });
 
     function pathTailAfterVersion(pathname, version) {
-      // Returns the part of the path after "<slug>/<version>/", or null.
+      // Get path after "<slug>/<version>/"
       var marker = '/' + slug + '/' + version + '/';
       var i = pathname.indexOf(marker);
       if (i === -1) return null;
@@ -446,43 +542,103 @@ onEachPage(function () {
     }
 
     select.addEventListener('change', function () {
+      // Store previous value for rollback on error
+      var previousValue = lastSelectValue;
       var target = select.value;
-      var group = groupForVersion(target);
-      if (!group) return;
+      lastSelectValue = target;
 
-      var links = Array.prototype.slice.call(group.querySelectorAll('a[href]'));
-      if (links.length === 0) {
-        showVersion(target);
-        return;
+      // Undo both the dropdown selection and the pending value on any
+      // failure path, so a later change event's "previous value" reflects
+      // the version actually active on the page, not a failed attempt.
+      function rollback(message) {
+        select.value = previousValue;
+        lastSelectValue = previousValue;
+        // Restore the version actually active on the page (not the failed
+        // target) so the next page load doesn't fall back to defaultVersion.
+        try {
+          window.localStorage.setItem(storageKey, previousValue);
+        } catch (e) {
+          /* ignore */
+        }
+        showVersionError(message);
       }
 
-      // Build the equivalent URL: same tail path, new version segment. Compare
-      // against each link's resolved pathname (hrefs in the nav are relative).
-      var current = versionFromPath();
-      var tail = current ? pathTailAfterVersion(window.location.pathname, current) : null;
+      // Track navigation to prevent race conditions
+      var thisNavigationId = ++pendingNavigationId;
 
-      var destination = null;
-      if (tail !== null) {
-        var wanted = ('/' + slug + '/' + target + '/' + tail).replace(/\/+$/, '');
-        for (var i = 0; i < links.length; i++) {
-          var linkPath = new URL(links[i].href).pathname.replace(/\/+$/, '');
-          if (linkPath.slice(-wanted.length) === wanted) {
-            destination = links[i].href;
-            break;
+      // Load manifest to find equivalent page
+      loadVersionManifest().then(function (manifest) {
+        // Abort if newer navigation started
+        if (thisNavigationId !== pendingNavigationId) return;
+
+        // Check section exists in manifest
+        if (!manifest[slug]) {
+          rollback('Section "' + slug + '" not found in manifest');
+          return;
+        }
+
+        // Get pages for target version
+        var versionUrls = manifest[slug][target] || [];
+        if (!versionUrls || versionUrls.length === 0) {
+          rollback('No pages in version "' + target + '"');
+          return;
+        }
+
+        // Find equivalent page in target version
+        var current = versionFromPath();
+        var tail = current ? pathTailAfterVersion(window.location.pathname, current) : null;
+
+        var destination = null;
+        if (tail !== null) {
+          var wanted = (slug + '/' + target + '/' + tail).replace(/\/+$/, '');
+          for (var i = 0; i < versionUrls.length; i++) {
+            var urlPath = versionUrls[i].replace(/\/+$/, '');
+            if (urlPath === wanted || urlPath.slice(-(wanted.length + 1)) === '/' + wanted) {
+              destination = versionUrls[i];
+              break;
+            }
           }
         }
-      }
 
-      // Fall back to the new version's overview (its first rendered link).
-      if (!destination) destination = links[0].href;
+        // Fall back to first page (overview) in target version
+        if (!destination) destination = versionUrls[0];
 
-      // Persist before navigating so the new page restores the same version.
-      try {
-        window.localStorage.setItem(storageKey, target);
-      } catch (e) {
-        /* ignore */
-      }
-      window.location.href = destination;
+        // Resolve destination URL against site base to handle subpath deployments correctly.
+        // For a site at https://example.com/subpath/docs/, relative URL api/overview
+        // must become https://example.com/subpath/docs/api/overview
+        // new URL(relative, base) correctly resolves relative to base for subpaths.
+        // Validate the URL (throws synchronously, not caught by the promise's
+        // .catch) before persisting anything, so a bad destination never gets
+        // written to localStorage.
+        var absoluteUrl;
+        try {
+          absoluteUrl = new URL(destination, versionedNavScope).href;
+        } catch (e) {
+          rollback('Invalid destination URL: ' + e.message);
+          return;
+        }
+
+        // Manifest URLs are build-time restricted to doc-local relative
+        // paths (see hooks.py _collect_page_urls), but re-check at runtime
+        // so a manifest that somehow carries an absolute URL can't send the
+        // browser off-scope.
+        if (absoluteUrl.indexOf(new URL(versionedNavScope).href) !== 0) {
+          rollback('Destination URL escapes site scope: ' + absoluteUrl);
+          return;
+        }
+
+        // Persist before navigating so new page restores same version
+        try {
+          window.localStorage.setItem(storageKey, target);
+        } catch (e) {
+          /* ignore */
+        }
+        window.location.href = absoluteUrl;
+      }).catch(function (err) {
+        // Restore dropdown and show error
+        if (thisNavigationId !== pendingNavigationId) return;
+        rollback('Manifest load failed: ' + err);
+      });
     });
   });
 });
@@ -508,7 +664,7 @@ onEachPage(function () {
   var output = null;
 
   // Material exposes the site root as an absolute URL in `window.__md_scope`
-  // (set on every page, e.g. https://host/bijira/docs/). Use it to build the
+  // (set on every page, e.g. https://host/api-platform/docs/). Use it to build the
   // fetch URL and to turn a result's pathname into a build-time breadcrumb key.
   // Fall back to a <base> tag, then the server root.
   var scope = window.__md_scope ||
@@ -530,10 +686,22 @@ onEachPage(function () {
       var def = section.getAttribute('data-md-default-version');
       if (!slug) return;
       var versions = [];
-      section.querySelectorAll('.md-nav__version-group').forEach(function (g) {
-        var v = g.getAttribute('data-md-version');
-        if (v) versions.push(v);
-      });
+      // Read all versions from data attribute (includes inactive versions)
+      var allVersionsJson = section.getAttribute('data-md-all-versions');
+      if (allVersionsJson) {
+        try {
+          versions = JSON.parse(allVersionsJson);
+        } catch (e) {
+          console.warn('[Version Switcher] Failed to parse versions from data-md-all-versions:', e);
+        }
+      }
+      // Fallback: read only active version from DOM (for compatibility)
+      if (versions.length === 0) {
+        section.querySelectorAll('.md-nav__version-group').forEach(function (g) {
+          var v = g.getAttribute('data-md-version');
+          if (v) versions.push(v);
+        });
+      }
       var active = null;
       var parts = window.location.pathname.split('/').filter(Boolean);
       var idx = parts.lastIndexOf(slug);
