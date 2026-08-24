@@ -1,0 +1,10 @@
+.git
+venv
+__pycache__
+*.pyc
+.python-version
+en/site
+
+# Keep the ~5GB en/docs/api-manager tree out of the build context entirely -
+# see Dockerfile.no-apim and strip-apim-nav.py.
+en/docs/api-manager
