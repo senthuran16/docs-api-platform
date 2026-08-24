@@ -1,6 +1,7 @@
 import re
 import os
 import json
+import yaml
 import hashlib
 import logging
 import tempfile
@@ -21,6 +22,38 @@ _breadcrumbs: dict[str, list[str]] = {}
 
 # Slug -> version -> page URLs for version switching
 _version_manifest: dict[str, dict[str, list[str]]] = {}
+
+
+def load_redirects() -> dict[str, str]:
+    """Read redirect_maps out of redirects.yml, kept separate from mkdocs.yml
+    so the (very long) redirect list doesn't have to live inline in the config.
+    """
+    redirects_path = os.path.join(_HOOKS_DIR, "redirects.yml")
+    if not os.path.exists(redirects_path):
+        return {}
+    with open(redirects_path, encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+    return data.get("redirect_maps") or {}
+
+
+def on_config(config, **kwargs):
+    """Inject redirects.yml's redirect_maps into the redirects plugin's config.
+
+    Runs before on_files, which is when the plugin reads redirect_maps off its
+    own config - see mkdocs_redirects/plugin.py.
+    """
+    redirects = load_redirects()
+    if not redirects:
+        return config
+
+    redirects_plugin = config["plugins"].get("redirects")
+    if redirects_plugin is None:
+        logger.warning("redirects.yml has %d entries but the redirects plugin isn't configured", len(redirects))
+        return config
+
+    redirects_plugin.config["redirect_maps"].update(redirects)
+    logger.info("Loaded %d redirects from redirects.yml", len(redirects))
+    return config
 
 
 def _file_hash(path: str) -> str:
