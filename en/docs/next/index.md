@@ -79,7 +79,7 @@ The next question is: **who runs the infrastructure?**
     
     * **What is included:** Self-hosted control plane (Publisher, Developer Portal), self-hosted gateways (API Gateway, AI Gateway). Moesif analytics can be connected separately. Third-party gateways can be federated.
     
-    * [API Manager documentation](../api-manager/4.5.0/get-started/overview.md)
+    * [API Manager documentation](https://wso2.com/bijira/docs/api-manager/4.5.0/get-started/overview/)
 
 #### How do the three options compare?
 
@@ -137,7 +137,7 @@ The following is a complete view of all components and where to find their docum
 ### Control plane components
 | Component | What it does | Docs |
 | :--- | :--- | :--- |
-| **API Control Plane** | Design, publish, version, and govern APIs through the web UI and configuration files. Enforce policies across all connected gateways. | Part of [Cloud](../cloud/introduction/what-is-bijira.md) and [API Manager](../api-manager/4.5.0/get-started/overview.md) |
+| **API Control Plane** | Design, publish, version, and govern APIs through the web UI and configuration files. Enforce policies across all connected gateways. | Part of [Cloud](../cloud/introduction/what-is-bijira.md) and [API Manager](https://wso2.com/bijira/docs/api-manager/4.5.0/get-started/overview/) |
 | **AI Workspace** | The enterprise control plane for AI. Manage LLM providers, MCP servers, and GenAI applications. Configure cost and token-based rate limits, enforce guardrails, and view AI consumption insights at the organizational level. Connected to one or more AI Gateways. | [AI Workspace docs](ai-workspace/overview.md) |
 | **API Portal and MCP Hub** | Developer facing portal for API discovery, subscription management, SDK generation, and theming. Includes agentic consumption capabilities for AI agents, such as the llms.txt endpoint, MCP registry, and Arazzo workflow support. | [API Portal docs](developer-portal/theming-devportal-with-ai.md) |
 | **Analytics and Monetization** | Traffic monitoring, runtime and audit logs, usage tracking, and API monetization with usage-based billing. Powered by Moesif. | <ul><li>[Analytics docs](../analytics/overview.md)</li><li>[Monetization docs](../monetization/overview.md)</li></ul> |
@@ -156,7 +156,7 @@ The following is a complete view of all components and where to find their docum
 | :--- | :--- |
 | Get up and running fast with a managed cloud platform | [Cloud](../cloud/introduction/what-is-bijira.md) |
 | Use a cloud control plane but keep API traffic in my infrastructure | [Hybrid setup](../cloud/api-platform-gateway/getting-started.md) |
-| Run everything on my own infrastructure with a UI | [API Manager](../api-manager/4.5.0/get-started/overview.md) |
+| Run everything on my own infrastructure with a UI | [API Manager](https://wso2.com/bijira/docs/api-manager/4.5.0/get-started/overview/) |
 | Run a lightweight API gateway with no UI | [API Gateway](../api-gateway/next/overview.md) |
 | Govern LLM traffic (rate limits, guardrails, cost control) | [AI Gateway LLM Proxy](../ai-gateway/next/llm-proxy/quick-start-guide.md) |
 | Expose my APIs as MCP tools for AI agents | [AI Gateway MCP Proxy](../ai-gateway/next/mcp-proxy/quick-start-guide.md) |

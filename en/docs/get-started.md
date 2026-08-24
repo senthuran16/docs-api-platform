@@ -72,7 +72,7 @@ Once you have completed a quick start guide, here is where to go next:
 
 | I want to... | Go here |
 | :--- | :--- |
-| Explore the full feature docs for my product | [Cloud](cloud/introduction/what-is-bijira.md) · [API Manager](api-manager/4.5.0/get-started/overview.md) · [API Gateway](api-gateway/1.1.0/overview.md) · [AI Gateway](ai-gateway/1.1.0/overview.md) |
+| Explore the full feature docs for my product | [Cloud](cloud/introduction/what-is-bijira.md) · [API Manager](https://wso2.com/bijira/docs/api-manager/4.5.0/get-started/overview/) · [API Gateway](api-gateway/1.1.0/overview.md) · [AI Gateway](ai-gateway/1.1.0/overview.md) |
 | Follow end-to-end scenarios spanning multiple components | [Guides](guides/ai-and-mcp/convert-rest-api-to-mcp-server.md) |
 | Try runnable code samples | [Samples](cloud/samples/samples-overview.md) |
 | Understand platform concepts (organizations, projects, data planes) | [Concepts](cloud/bijira-concepts/organization.md) |
