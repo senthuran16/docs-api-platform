@@ -1,10 +1,10 @@
 ## Create an API secured with Mutual SSL
 
-1.  [Create an API](/api-platform/docs/api-manager/4.2.0/design/create-api/create-rest-api/create-a-rest-api/).
+1.  [Create an API]({BASE_URL}/api-manager/4.2.0/design/create-api/create-rest-api/create-a-rest-api/).
 2.  Click **Develop -> API Configurations -> Runtime**.
 3.  Select **Mutual SSL**.
     
-     [![Enable mutual SSL](/api-platform/docs/api-manager/4.2.0/assets/img/learn/enable-mutual-ssl.png)](/api-platform/docs/api-manager/4.2.0/assets/img/learn/enable-mutual-ssl.png)
+     [![Enable mutual SSL]({BASE_URL}/api-manager/4.2.0/assets/img/learn/enable-mutual-ssl.png)]({BASE_URL}/api-manager/4.2.0/assets/img/learn/enable-mutual-ssl.png)
 
     !!! note
           HTTP transport will be disabled for an API if it has Mutual SSL enabled.
@@ -19,7 +19,7 @@
 
 5.  Provide an alias and public certificate. Select the tier that should be used to throttle out the calls using this particular client certificate and click **Upload**.
     
-     [![Upload Certificate](/api-platform/docs/api-manager/4.2.0/assets/img/learn/upload-certificate.png)](/api-platform/docs/api-manager/4.2.0/assets/img/learn/upload-certificate.png)
+     [![Upload Certificate]({BASE_URL}/api-manager/4.2.0/assets/img/learn/upload-certificate.png)]({BASE_URL}/api-manager/4.2.0/assets/img/learn/upload-certificate.png)
     
 6.  **Save and Deploy** the API.
 

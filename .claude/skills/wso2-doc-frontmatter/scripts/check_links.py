@@ -8,7 +8,7 @@ from links_lib import (  # noqa: E402
     find_targets, harvest_anchors, strip_noise, url_base, page_id,
     read_toc_depth, read_redirect_maps, redirect_targets,
     non_web_scheme, is_http_typo, resolve_candidates, read_extra_vars,
-    renders_anchors_clientside,
+    renders_anchors_clientside, strip_base_url,
     version_root, build_include_map, MD_LINK, HTML_SRC,
 )
 
@@ -172,7 +172,21 @@ for p in sorted(md_files):
         #
         # Judging a passed-through link source-relative is how a link that is broken
         # in the browser gets reported as clean.
-        if path.startswith("/"):
+        #
+        # `{BASE_URL}/...` is the fourth case, and it is not relative at all:
+        # `hooks.py` swaps the token for the site base path, so what follows is a
+        # path from the docs root and means the same thing on every page. Judging
+        # it against any base is what reported 525 already-converted links as
+        # broken — 497 of them as PARTIAL_LINK_BROKEN, which reads as the block
+        # being wrong when the block is the one part that is right.
+        base_rel = strip_base_url(path)
+        if base_rel is not None:
+            # normpath, because these name the PUBLISHED path and so end in a
+            # slash — and `resolve_candidates` appends, so an unnormalised
+            # `.../create-api-revisions/` is tried as `.../create-api-revisions/.md`
+            # and every one of them reads as a broken link to a page that is there.
+            cand, rewritten = os.path.normpath(base_rel), False
+        elif path.startswith("/"):
             cand = path.lstrip("/")
             rewritten = False
         else:
@@ -184,8 +198,11 @@ for p in sorted(md_files):
             add(p, "blocking", "LINK_ESCAPES_ROOT", f"Link `{t}` resolves outside the docs root.")
             continue
 
-        # A shared block: resolve from each including page instead of from here.
-        if p in INCLUDED:
+        # A shared block: resolve from each including page instead of from here —
+        # unless the address is depth-independent, in which case every includer
+        # gets the identical answer and re-resolving it per page only invites the
+        # per-includer branch to disagree with the root-relative one above.
+        if p in INCLUDED and base_rel is None:
             landings = {}
             for inc in sorted(INCLUDED[p]):
                 ibase = os.path.dirname(inc)

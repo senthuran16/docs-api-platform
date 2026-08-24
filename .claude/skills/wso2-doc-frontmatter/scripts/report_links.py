@@ -33,7 +33,8 @@ from links_lib import (  # noqa: E402
     slug, resolve_candidates, version_root as _version_root,
     find_includes, snippet_for, match_anchor, normalise_var,
     build_include_map, legacy_path, read_toc_depth, non_web_scheme,
-    has_uri_scheme, renders_anchors_clientside,
+    has_uri_scheme, renders_anchors_clientside, strip_base_url, base_url_link,
+    absolute_candidates,
 )
 
 
@@ -187,7 +188,7 @@ def main():
     tiers = {k: [] for k in ("templated_fixable", "templated", "malformed", "dir_style",
                              "depth", "renamed", "case", "include", "gone", "stale",
                              "anchor", "anchor_case", "anchor_legacy", "anchor_punct",
-                             "templated_typo", "partial", "partial_fixable",
+                             "templated_typo", "partial", "include_abs",
                              "stale_mapped", "anchor_deep")}
 
     # Tiers whose fix is a relative path, and so cannot be applied inside a partial.
@@ -300,11 +301,28 @@ def main():
             """File a proposal under its tier — unless this page is a partial.
 
             A relative fix inside a partial is unsafe no matter how carefully it is
-            computed, so the proposal is kept to be read and moved out of
-            reach of `fix_links.py`. `suggested` is renamed on the way, because a
-            key named `suggested` is exactly what an agent would apply."""
+            computed, because it is resolved from the includer's url and not from
+            this file. Where the tier identified a real target, that is exactly the
+            case `{BASE_URL}` exists for: re-aim the same fix at the docs root and
+            it stops depending on depth. Where it did not, the proposal is kept to
+            be read and moved out of reach of `fix_links.py` — `suggested` is
+            renamed on the way, because a key named `suggested` is exactly what an
+            agent would apply."""
             if includers and name in RELATIVE_TIERS:
                 entry = dict(entry)
+                target = entry.get("resolves_to") or entry.get("found_at")
+                if target and target in all_files:
+                    frag = entry.get("link", "").partition("#")[2]
+                    entry["suggested"] = base_url_link(target, frag)
+                    entry["resolves_to"] = target
+                    entry["includers"] = includers
+                    entry["intended_tier"] = name
+                    entry["why"] = (
+                        f"{entry.get('why', name)} — and this page is included into "
+                        f"{len(includers)} other page(s), so the fix is written from "
+                        f"the docs root rather than as a relative path")
+                    tiers["include_abs"].append(entry)
+                    return
                 entry["unsafe_suggestion"] = entry.pop("suggested", None)
                 entry["intended_tier"] = name
                 entry["includers"] = includers
@@ -343,7 +361,7 @@ def main():
             target = re.match(r'--8<--\s*"([^"]+)"', fixed).group(1)
             if target in all_files and target in block_unready:
                 # Switching this block on would put its own broken links onto this
-                # page. Fix the block first — the `partial_fixable` and `partial`
+                # page. Fix the block first — the `include_abs` and `partial`
                 # groups list exactly what is wrong with it.
                 tiers["include"].append({
                     "file": p, "link": whole, "kind": "shared block",
@@ -351,7 +369,7 @@ def main():
                     "note": f"`{target}` has links that do not resolve from this "
                             f"page, so switching the block on would move its broken "
                             f"links onto {len(included.get(target, ()))} page(s). "
-                            f"Fix the block first — see `partial_fixable` / `partial`."})
+                            f"Fix the block first — see `include_abs` / `partial`."})
             elif target in all_files:
                 tiers["include"].append({
                     "file": p, "link": whole, "suggested": fixed,
@@ -380,6 +398,12 @@ def main():
             # the user-store pages were filed under `gone`. non_web_scheme()
             # returns None for HTTP_TYPOS, so `ttps://` stays a `malformed` fix.
             if non_web_scheme(t):
+                continue
+
+            # Already written from the docs root. `check_links.py` resolves these
+            # and reports a genuinely missing target; there is no tier for them
+            # here, because there is no rewrite to propose.
+            if strip_base_url(t) is not None:
                 continue
 
             # Malformed syntax, caught before resolution so it isn't mis-filed as a
@@ -466,9 +490,18 @@ def main():
                 # all die together when that site is retired. Most can be mapped
                 # mechanically, because the migration kept the path: look the old
                 # path up under THIS page's version.
-                lp = legacy_path(t)
                 lfrag = t.partition("#")[2]
-                mapped = resolved(f"{vroot}/{lp}") if (lp and vroot) else None
+                # Two shapes reach here. An old-site URL keeps its path but not
+                # its version — see legacy_path(). A hardcoded site base path
+                # (`/bijira/docs/...`) is already a path inside this repo, so it
+                # is resolved as one rather than having its version discarded.
+                if t.startswith("/"):
+                    mapped = next((m for m in (
+                        resolved(c) for c in absolute_candidates(
+                            t.partition("#")[0], vroot)) if m), None)
+                else:
+                    lp = legacy_path(t)
+                    mapped = resolved(f"{vroot}/{lp}") if (lp and vroot) else None
                 if mapped and mapped != p:
                     place("stale_mapped", {
                         "file": p, "link": t, "resolves_to": mapped,
@@ -643,9 +676,20 @@ def main():
     # They resolve from the block, they point at nothing from the includer, and
     # nothing flagged them — because from the block's own folder they look right.
     #
-    # So resolve from each includer instead. Where every includer agrees on one
-    # path, that path is the fix. Where they disagree, no relative link can serve
-    # them all, so it has to be decided rather than computed.
+    # So resolve from each includer instead — and where the target can be
+    # identified, the fix is not a relative path at all.
+    #
+    # THE CONVENTION, settled for this repo: a link inside a shared block is
+    # written `{BASE_URL}/<path from the docs root>`. `hooks.py` swaps the token
+    # for the site base path, so the address does not depend on the depth of the
+    # page the block lands on — which is the one thing no relative path can
+    # manage. It applies to every link in a block, not only the broken ones: a
+    # relative link that works today does so because every page using the block
+    # happens to sit at the same depth, and the next page to use it need not.
+    #
+    # Ordinary pages are deliberately NOT converted. mkdocs only validates
+    # relative Markdown links (`path_to_url` returns anything absolute untouched),
+    # so making a page absolute buys nothing and gives up build-time checking.
     for part in sorted(included):
         if args.scope and not part.startswith(args.scope):
             continue
@@ -657,9 +701,31 @@ def main():
                 continue
             if has_uri_scheme(t):
                 continue
+            if strip_base_url(t) is not None:
+                continue                       # already converted
             path, _, frag = t.partition("#")
             path = urllib.parse.unquote(path)
-            if not path or path.startswith("/"):
+            if not path:
+                continue
+
+            # An ABSOLUTE link in a block does not depend on the including page,
+            # so there is nothing to resolve per includer — but it is still the
+            # wrong address. `/bijira/docs/...` hardcodes a site base path that
+            # `site_url` can change, and `/deploy-and-publish/...` meant "the
+            # version root" in the old one-site-per-version repo and now points
+            # at the server root. Both become `{BASE_URL}` like everything else,
+            # and only when the target is actually found on disk.
+            if path.startswith("/"):
+                hit = next((m for m in (resolved(c) for c in
+                            absolute_candidates(path, version_root(part))) if m), None)
+                if hit:
+                    tiers["include_abs"].append({
+                        "file": part, "link": t, "suggested": base_url_link(hit, frag),
+                        "resolves_to": hit, "is_html": is_html, "includers": incs,
+                        "broken_for": [], "kind": kind,
+                        "why": "absolute link inside a shared block; `{BASE_URL}` "
+                               "replaces a hardcoded site base path with one that "
+                               "follows `site_url`"})
                 continue
 
             def land(page, _path=path, _html=is_html):
@@ -671,16 +737,27 @@ def main():
                 return resolved(os.path.normpath(os.path.join(rel, _path)).replace("\\", "/"))
 
             landings = {i: land(i) for i in incs}
-            if all(landings.values()):
-                continue                       # works from every including page
             broken_for = [i for i, v in landings.items() if not v]
+            # Where the includers that DO resolve disagree about which file they
+            # land on, the same text means two different pages depending on where
+            # the block is used. Converting would silently pick one of them.
+            distinct = {v for v in landings.values() if v}
+            if len(distinct) > 1:
+                tiers["partial"].append({
+                    "file": part, "link": t, "includers": incs,
+                    "broken_for": broken_for, "kind": kind,
+                    "candidates": sorted(distinct),
+                    "note": "resolves to a DIFFERENT file depending on which page "
+                            "includes the block, so no single address is right — "
+                            "someone has to say which page was meant"})
+                continue
 
-            # What did the author mean? Whatever the link resolves to from the
-            # block's own folder is the best evidence there is — that is the base
-            # whoever wrote it was thinking in.
-            intent = land(part) or next((v for v in landings.values() if v), None)
+            # What did the author mean? The file the includers land on, and failing
+            # that whatever the link resolves to from the block's own folder — that
+            # is the base whoever wrote it was thinking in.
+            intent = next(iter(distinct), None) or land(part)
             if not intent:
-                # Broken from every including page AND from the block itself, so
+                # Resolves from no including page AND not from the block itself, so
                 # there is no evidence of what was meant. Still has to be reported:
                 # the main loop deliberately skips block pages now, so if this
                 # returned early the finding would vanish entirely.
@@ -692,25 +769,18 @@ def main():
                             "— someone has to say where it was meant to point"})
                 continue
 
-            fixes = {link_to(intent, i, is_html) + (("#" + frag) if frag else "")
-                     for i in incs}
-            if len(fixes) == 1:
-                tiers["partial_fixable"].append({
-                    "file": part, "link": t, "suggested": fixes.pop(),
-                    "resolves_to": intent, "is_html": is_html, "includers": incs,
-                    "broken_for": broken_for, "kind": kind,
-                    "why": f"resolves from the block's own folder but not from "
-                           f"{len(broken_for)} of {len(incs)} including page(s); "
-                           f"one relative path works for all of them"})
-            else:
-                tiers["partial"].append({
-                    "file": part, "link": t, "includers": incs,
-                    "broken_for": broken_for, "kind": kind,
-                    "candidates": sorted(fixes),
-                    "note": "the including pages sit at different depths, so no "
-                            "single relative path is correct for all of them — this "
-                            "needs an address that does not depend on depth, or the "
-                            "link moved out of the block into each page"})
+            why = (f"broken from {len(broken_for)} of {len(incs)} including page(s)"
+                   if broken_for else
+                   f"resolves from all {len(incs)} including page(s) today, but only "
+                   f"because they sit at the same depth")
+            tiers["include_abs"].append({
+                "file": part, "link": t,
+                "suggested": base_url_link(intent, frag),
+                "resolves_to": intent, "is_html": is_html, "includers": incs,
+                "broken_for": broken_for, "kind": kind,
+                "why": f"link inside a shared block — {why}; `{{BASE_URL}}` "
+                       f"addresses it from the docs root, so it does not depend on "
+                       f"the depth of the page the block lands on"})
 
     # ---------------- write the report ----------------
     n = {k: len(v) for k, v in tiers.items()}
@@ -719,7 +789,7 @@ def main():
     auto = (n["templated_fixable"] + n["malformed"] + n["dir_style"] + n["depth"]
             + n["case"] + n["anchor_case"] + n["anchor_legacy"] + n["anchor_punct"]
             + n["templated_typo"]
-            + n["partial_fixable"] + n["stale_mapped"] + n["anchor_deep"]
+            + n["include_abs"] + n["stale_mapped"] + n["anchor_deep"]
             + len([e for e in tiers["include"] if e.get("suggested")])
             + len([x for x in tiers["renamed"] if x["confidence"] == "high"]))
 
@@ -754,7 +824,7 @@ def main():
     w(f"| 9 | `anchor_legacy` | Original Confluence anchor | {n['anchor_legacy']} | Matched to the one heading that agrees letter for letter |")
     w(f"| 9b | `anchor_punct` | Anchor names a real heading, different hyphens/underscores | {n['anchor_punct']} | Exact — same words in the same order, one heading matches |")
     w(f"| 10 | `templated_typo` | `{{{{base_path}}}}` misspelled, resource present | {n['templated_typo']} | Corrects the spelling and writes a relative path |")
-    w(f"| 11 | `partial_fixable` | Link in a shared block, broken for the pages that include it | {n['partial_fixable']} | One path that works from every includer |")
+    w(f"| 11 | `include_abs` | Link inside a shared block, written as a relative path | {n['include_abs']} | Rewrite as `{{BASE_URL}}/…` from the docs root, so it does not depend on the depth of the page the block lands on |")
     w(f"| 12 | `stale_mapped` | Old-site url whose path exists under this version | {n['stale_mapped']} | Point it inside the new docs instead |")
     w(f"| 13 | `anchor_deep` | Heading exists but is deeper than h{TOC}, so it has no id | {n['anchor_deep']} | Insert `<a name>` above the heading |")
     w("")
@@ -977,7 +1047,7 @@ def main():
           f"({auto} mechanically fixable, {n['gone']} need a decision)")
     for k in ("templated_fixable", "templated_typo", "templated", "malformed",
               "dir_style", "depth", "renamed", "case", "include", "anchor_case",
-              "anchor_legacy", "anchor_punct", "partial_fixable", "stale_mapped",
+              "anchor_legacy", "anchor_punct", "include_abs", "stale_mapped",
               "anchor_deep",
               "stale", "anchor", "gone", "partial"):
         print(f"  {n[k]:5d}  {k}")

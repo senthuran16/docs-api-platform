@@ -9,11 +9,11 @@ Follow the instructions below to deploy a new revision for an API:
     
       The Deployments page appears as follows when you do not have any existing revisions.
 
-      [![New revision](/api-platform/docs/api-manager/4.4.0/assets/img/design/revision/deploy-first-revision.png){: style="width:80%"}](/api-platform/docs/api-manager/4.4.0/assets/img/design/revision/deploy-first-revision.png)
+      [![New revision]({BASE_URL}/api-manager/4.4.0/assets/img/design/revision/deploy-first-revision.png){: style="width:80%"}]({BASE_URL}/api-manager/4.4.0/assets/img/design/revision/deploy-first-revision.png)
 
       The Deployments page appears as follows when you have at least one revision.
 
-      [![Deploy new revision option](/api-platform/docs/api-manager/4.4.0/assets/img/design/revision/deploy-new-revision.png)](/api-platform/docs/api-manager/4.4.0/assets/img/design/revision/deploy-new-revision.png)
+      [![Deploy new revision option]({BASE_URL}/api-manager/4.4.0/assets/img/design/revision/deploy-new-revision.png)]({BASE_URL}/api-manager/4.4.0/assets/img/design/revision/deploy-new-revision.png)
 
     !!! note
         The **Information icon** will appear only if you have added a product revision description. You can view the description when you hover over the information icon.
@@ -30,4 +30,4 @@ Follow the instructions below to deploy a new revision for an API:
 !!! warning
     You cannot deploy more than 5 revisions. If you want to deploy a new revision after the maximum allowed number of revisions are reached, you need to delete one of the existing revisions.
 
-     [![Delete revision if max count is reached](/api-platform/docs/api-manager/4.4.0/assets/img/design/revision/delete-and-deploy-revision.png){: style="width:60%"}](/api-platform/docs/api-manager/4.4.0/assets/img/design/revision/delete-and-deploy-revision.png)
+     [![Delete revision if max count is reached]({BASE_URL}/api-manager/4.4.0/assets/img/design/revision/delete-and-deploy-revision.png){: style="width:60%"}]({BASE_URL}/api-manager/4.4.0/assets/img/design/revision/delete-and-deploy-revision.png)

@@ -8,28 +8,28 @@ To install and set up the API-M servers:
 
 You can create the required databases for the API-M deployment in a separate server and point to the databases from the respective nodes. 
 
-For information, see [Installing and Configuring the Databases](../setting-up-databases/overview.md).
+For information, see [Installing and Configuring the Databases]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/setting-up-databases/overview/).
 
 ### Step 3 - Configure your deployment with production hardening
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M. 
 
-For more information, see [Production Deployment Guidelines](../deployment-best-practices/production-deployment-guidelines.md).
+For more information, see [Production Deployment Guidelines]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/).
 
 ### Step 4 - Create and import SSL certificates
 
 Create an SSL certificate for each of the WSO2 API-M nodes and import them to the keystore and the truststore. This ensures that hostname mismatch issues in the certificates will not occur. 
 
 !!! Note
-    The same primary keystore should be used for all API Manager instances to decrypt the registry resources. For more information, see [Configuring the Primary Keystore](../security/configuring-keystores/configuring-keystores-in-wso2-api-manager.md#configuring-the-primary-keystore).
+    The same primary keystore should be used for all API Manager instances to decrypt the registry resources. For more information, see [Configuring the Primary Keystore]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/security/configuring-keystores/configuring-keystores-in-wso2-api-manager/#configuring-the-primary-keystore).
 
-For more information, see [Creating SSL Certificates](../security/configuring-keystores/keystore-basics/creating-new-keystores.md).
+For more information, see [Creating SSL Certificates]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/).
 
 ### Step 5 - Configure API-M Analytics
 
 API Manager Analytics is delivered via the API Manager Analytics cloud solution. You need to configure the WSO2 Universal Gateway distribution to publish analytics data to the cloud.
 
-See the instructions on [configuring the Gateway](../../../monitoring/api-analytics/moesif-analytics/moesif-integration-guide.md) with the cloud-based analytics solution.
+See the instructions on [configuring the Gateway]({BASE_URL}/api-manager/4.6.0/monitoring/api-analytics/moesif-analytics/moesif-integration-guide/) with the cloud-based analytics solution.
 
 ### Step 6 - Configure and start the component nodes
 
@@ -144,11 +144,11 @@ Follow the instructions given below to configure the Gateway node so that it can
         ```
 
     !!! Info
-        To further optimize the gateway notification feature, you can use additional `gateway_notification` configurations. For more information, see [API-M Revision Deployment Monitoring](../../../reference/config-catalog.md#api-m-gateway-notification-configurations).
+        To further optimize the gateway notification feature, you can use additional `gateway_notification` configurations. For more information, see [API-M Revision Deployment Monitoring]({BASE_URL}/api-manager/4.6.0/reference/config-catalog/#api-m-gateway-notification-configurations).
 
-5. Enable JSON Web Token (JWT) if required. For instructions, see [Generating JSON Web Token](../../../api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway.md).
+5. Enable JSON Web Token (JWT) if required. For instructions, see [Generating JSON Web Token]({BASE_URL}/api-manager/4.6.0/api-gateway/passing-enduser-attributes-to-the-backend-via-api-gateway/).
 
-6. Add the public certificate of the private key (that is used for signing the tokens) to the truststore under the "gateway_certificate_alias" alias. For instructions, see [Create and import SSL certificates](../security/configuring-keystores/keystore-basics/creating-new-keystores.md).
+6. Add the public certificate of the private key (that is used for signing the tokens) to the truststore under the "gateway_certificate_alias" alias. For instructions, see [Create and import SSL certificates]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/security/configuring-keystores/keystore-basics/creating-new-keystores/).
 
     !!! Note
         This is not applicable if you use the default certificates, which are the certificates that are shipped with the product itself.
@@ -157,7 +157,7 @@ Follow the instructions given below to configure the Gateway node so that it can
 
     1. Create a copy of the WSO2 Universal Gateway node that you just configured. This is the second node of the Gateway cluster.
 
-    2. Configure a load balancer fronting the two Gateway nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer](../setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md).
+    2. Configure a load balancer fronting the two Gateway nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/).
 
         !!! Note
             To keep custom runtime artifacts deployed in the Gateway, add the following configuration in the `<UNIVERSAL-GW_HOME>/repository/conf/deployment.toml` file of the Gateway nodes.
@@ -384,7 +384,7 @@ Follow the steps given below to configure the API Control Plane nodes to communi
         ```
 
     !!! Info
-        This configuration is used for deploying APIs to the Gateway and for connecting the Developer Portal component to the Gateway if the Gateway is shared across tenants. If the Gateway is not used in multiple tenants, you can create a [Gateway Environment using the Admin Portal](../../../api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/exposing-apis-via-custom-hostnames.md#using-a-new-gateway-environment-to-expose-apis-via-custom-hostnames).  
+        This configuration is used for deploying APIs to the Gateway and for connecting the Developer Portal component to the Gateway if the Gateway is shared across tenants. If the Gateway is not used in multiple tenants, you can create a [Gateway Environment using the Admin Portal]({BASE_URL}/api-manager/4.6.0/api-design-manage/deploy-and-publish/deploy-on-gateway/deploy-api/exposing-apis-via-custom-hostnames/#using-a-new-gateway-environment-to-expose-apis-via-custom-hostnames).  
 
         Note that in the above configurations, the `service_url` points to the `9443` port of the Gateway node, while `http_endpoint` and `https_endpoint` points to the `http` and `https nio ports` (8280 and 8243).
     
@@ -469,7 +469,7 @@ Follow the steps given below to configure the API Control Plane nodes to communi
         'header.X-WSO2-KEY-MANAGER' = "default"
         ```
 
-3. If required, encrypt the Auth Keys (access tokens, client secrets, and authorization codes), see [Encrypting OAuth Keys](../../../api-security/key-management/tokens/encrypting-oauth2-tokens.md).
+3. If required, encrypt the Auth Keys (access tokens, client secrets, and authorization codes), see [Encrypting OAuth Keys]({BASE_URL}/api-manager/4.6.0/api-security/key-management/tokens/encrypting-oauth2-tokens/).
 
 4. Optionally, add the following configuration to enable distributed cache invalidation within the API Control Plane nodes.
 
@@ -484,7 +484,7 @@ Follow the steps given below to configure the API Control Plane nodes to communi
 
     1. Create a copy of the API Control Plane node that you just configured. This is the second node of the API Control Plane cluster.
 
-    2. Configure a load balancer fronting the two API Control Plane nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer](../setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer.md).
+    2. Configure a load balancer fronting the two API Control Plane nodes in your deployment. For instructions, see [Configuring the Proxy Server and the Load Balancer]({BASE_URL}/api-manager/4.6.0/install-and-setup/setup/setting-up-proxy-server-and-the-load-balancer/configuring-the-proxy-server-and-the-load-balancer/).
 
 ###### Sample configuration for the API Control Plane
 

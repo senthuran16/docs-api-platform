@@ -1,3 +1,3 @@
 
 !!! note
-    Enable JWT in all Gateway nodes. For more information on setting up a distributed deployment of API Manager, see [Deploying WSO2 API-M in a Distributed Setup](../../../install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup.md).
+    Enable JWT in all Gateway nodes. For more information on setting up a distributed deployment of API Manager, see [Deploying WSO2 API-M in a Distributed Setup]({BASE_URL}/api-manager/4.1.0/install-and-setup/setup/distributed-deployment/deploying-wso2-api-m-in-a-distributed-setup/).
