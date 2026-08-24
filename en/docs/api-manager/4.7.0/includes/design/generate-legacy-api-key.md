@@ -11,18 +11,18 @@
 
 5. Click **Subscribe**.
 
-     [![Subscribe to the API](/api-platform/docs/api-manager/4.7.0/assets/img/learn/subscribe-to-api.png)](/api-platform/docs/api-manager/4.7.0/assets/img/learn/subscribe-to-api.png)
+     [![Subscribe to the API]({BASE_URL}/api-manager/4.7.0/assets/img/learn/subscribe-to-api.png)]({BASE_URL}/api-manager/4.7.0/assets/img/learn/subscribe-to-api.png)
 
 6. Click **MANAGE APP**, corresponding to the application that you used to subscribe to the API.
 
-     [![View list of credentials](/api-platform/docs/api-manager/4.7.0/assets/img/learn/view-credentials-manage-app.png)](/api-platform/docs/api-manager/4.7.0/assets/img/learn/view-credentials-manage-app.png)
+     [![View list of credentials]({BASE_URL}/api-manager/4.7.0/assets/img/learn/view-credentials-manage-app.png)]({BASE_URL}/api-manager/4.7.0/assets/img/learn/view-credentials-manage-app.png)
 
 7. Go to Legacy API Keys. 
-     [![Generate Legacy API Key Option](/api-platform/docs/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-option.png)](/api-platform/docs/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-option.png)
+     [![Generate Legacy API Key Option]({BASE_URL}/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-option.png)]({BASE_URL}/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-option.png)
 
 8. Click **Generate Legacy API Key** to open the key generation form.
 
-     [![Generate Legacy API key](/api-platform/docs/api-manager/4.7.0/assets/img/learn/api-keys/generate-legacy-api-key.png){: style="width:80%"}](/api-platform/docs/api-manager/4.7.0/assets/img/learn/api-keys/generate-legacy-api-key.png)
+     [![Generate Legacy API key]({BASE_URL}/api-manager/4.7.0/assets/img/learn/api-keys/generate-legacy-api-key.png){: style="width:80%"}]({BASE_URL}/api-manager/4.7.0/assets/img/learn/api-keys/generate-legacy-api-key.png)
 
 9. Optionally, configure the validity period before generating the key.
 
@@ -37,5 +37,5 @@
      </div>
      </html>
 
-     [![Copy Legacy API Key](/api-platform/docs/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-response.png){: style="width:80%"}](/api-platform/docs/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-response.png)
+     [![Copy Legacy API Key]({BASE_URL}/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-response.png){: style="width:80%"}]({BASE_URL}/api-manager/4.7.0/assets/img/learn/api-keys/legacy-api-key-response.png)
      

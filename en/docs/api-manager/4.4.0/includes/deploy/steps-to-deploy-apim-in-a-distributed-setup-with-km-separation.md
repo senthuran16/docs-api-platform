@@ -16,7 +16,7 @@ For information, see [Installing and Configuring the Databases](../../../../inst
 
 Ensure that you have taken into account the respective security hardening factors (e.g., changing and encrypting the default passwords, configuring JVM security, etc.) before deploying WSO2 API-M. 
 
-For more information, see [Production Deployment Guidelines](/api-platform/docs/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/).
+For more information, see [Production Deployment Guidelines]({BASE_URL}/api-manager/4.4.0/install-and-setup/setup/deployment-best-practices/production-deployment-guidelines/).
 
 ### Step 4 - Create and import SSL certificates
 
