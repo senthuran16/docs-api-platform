@@ -9,5 +9,5 @@
 
 4. Select **API Key** and click **Save and Deploy**. `APIKey` is used as the default header. This value can be changed using the `APIKey Header` field.
 
-     [![Configure API key authentication](../../../assets/img/learn/api-key-option.png)](../../../assets/img/learn/api-key-option.png)
+     [![Configure API key authentication]({BASE_URL}/api-manager/4.3.0/assets/img/learn/api-key-option.png)]({BASE_URL}/api-manager/4.3.0/assets/img/learn/api-key-option.png)
      

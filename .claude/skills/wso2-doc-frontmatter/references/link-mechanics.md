@@ -29,6 +29,13 @@ HTML, on an `index.md` page and on a page that is not one.
 
 Three more rules the reporter enforces, and you must not work around:
 
+- **`{{base_path}}` is not `{BASE_URL}`, and the difference is not cosmetic.**
+  `{{...}}` is Jinja, substituted by `markdownextradata` at `on_page_markdown` —
+  which runs BEFORE Markdown parsing, and therefore before `pymdownx.snippets` has
+  spliced any shared block in. A `{{...}}` written inside a block is never seen by
+  the plugin and reaches the reader as literal text. `{BASE_URL}` is a plain string
+  replace in `hooks.py` after the page HTML is assembled, which is why it is the
+  one that works in a block. Never "modernise" one into the other.
 - **`{{base_path}}` is version-root-relative.** Where the resource exists at that
   path, convert the link to a relative path and drop the variable — that is an exact
   fix. Where it does not exist, leave it: it may be served by a redirect.
@@ -82,9 +89,41 @@ Three more rules the reporter enforces, and you must not work around:
   block breaks it on every page that uses the block, and nothing flags it because
   from the block it looks right.
   `build_include_map()` is shared by the checker and the reporter so the two cannot
-  disagree about this. Where every includer needs the same path, that path is the
-  fix (`partial_fixable`). Where they need different paths, no relative link can
-  serve them all and it goes to `partial`, refused.
+  disagree about this.
+- **The fix for a link in a shared block is not a relative path at all.** It is
+  `{BASE_URL}/<path from the docs root>` — the `include_abs` tier. `hooks.py`
+  replaces the token with the path half of `site_url` in `on_post_page`, so the
+  address means the same thing wherever the block lands. The tier covers every
+  relative link in a block, not only the broken ones: one that works today does so
+  because the pages using the block happen to sit at the same depth, and the next
+  page to use it need not. `partial` is now only the two cases with no computable
+  answer — no target of that name anywhere, or a link that resolves to a *different*
+  file depending on which page includes the block.
+- **`{BASE_URL}` names the PUBLISHED path, not the source file.** `path_to_url`
+  returns any URL starting with `/` untouched, and after substitution these do, so
+  mkdocs will not turn a `.md` into a pretty url the way it does for a relative
+  Markdown link. `…/endpoint-types/` is right; `…/endpoint-types.md` ships the `.md`
+  verbatim and serves Markdown source to the reader. Assets are served where they
+  sit, so they keep their extension and take no trailing slash. `base_url_link()`
+  is the single place this is decided — the same answer for Markdown and raw HTML,
+  which is the one respect in which the two syntaxes stop differing.
+- **Three different link shapes are written as one leading slash.**
+  `/bijira/docs/api-manager/4.1.0/x` hardcodes the site base path,
+  `/api-manager/4.1.0/x` is already docs-root-relative, and `/deploy-and-publish/x`
+  meant the VERSION root back when every version was built as its own site.
+  `absolute_candidates()` returns all three, best first, and the caller takes the
+  first that exists on disk — so a shape naming nothing proposes nothing. Where a
+  candidate names a version other than the page's own, a copy re-anchored on the
+  page's version follows it: a cross-version link sends the reader to a different
+  release. Note `check_links.py` is RIGHT to report these as broken and must not
+  be "fixed" to resolve them — an absolute link really is passed through to the
+  browser verbatim. It is the reporter's job to propose the rewrite.
+- **Resolve a `{BASE_URL}` target from the docs root, and normpath it first.** The
+  page links end in a slash and `resolve_candidates` appends, so an unnormalised
+  `…/create-api-revisions/` is tried as `…/create-api-revisions/.md`. Skipping that
+  detail reported 525 already-converted links as broken — 497 of them as
+  `PARTIAL_LINK_BROKEN`, which reads as the shared block being wrong when the block
+  is the one part that is right.
 
 `stale`, `anchor`, `gone` and `partial` need information that is not in the repo,
 and an agent asked to fix them produces confident links to the wrong pages — worse

@@ -18,15 +18,15 @@
 
 5. Click **Subscribe**.
 
-     [![Subscribe to the API](/api-platform/docs/api-manager/4.5.0/assets/img/learn/subscribe-to-api.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/subscribe-to-api.png)
+     [![Subscribe to the API]({BASE_URL}/api-manager/4.5.0/assets/img/learn/subscribe-to-api.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/subscribe-to-api.png)
 
 6. Click **MANAGE APP**, corresponding to the application that you used to subscribe to the API.
 
-     [![View list of credentials](/api-platform/docs/api-manager/4.5.0/assets/img/learn/view-credentials-manage-app.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/view-credentials-manage-app.png)
+     [![View list of credentials]({BASE_URL}/api-manager/4.5.0/assets/img/learn/view-credentials-manage-app.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/view-credentials-manage-app.png)
 
 7. Click **API KEY** and click **GENERATE KEY**.
 
-     [![Generate API key](/api-platform/docs/api-manager/4.5.0/assets/img/learn/generate-api-key.png){: style="width:80%"}](/api-platform/docs/api-manager/4.5.0/assets/img/learn/generate-api-key.png)
+     [![Generate API key]({BASE_URL}/api-manager/4.5.0/assets/img/learn/generate-api-key.png){: style="width:80%"}]({BASE_URL}/api-manager/4.5.0/assets/img/learn/generate-api-key.png)
 
 8. Optionally, define a validity period for the token.
 
@@ -38,4 +38,4 @@
      
 9.  Copy the API key.
 
-     [![Copy API key](/api-platform/docs/api-manager/4.5.0/assets/img/learn/copy-api-key.png){: style="width:60%"}](/api-platform/docs/api-manager/4.5.0/assets/img/learn/copy-api-key.png)
+     [![Copy API key]({BASE_URL}/api-manager/4.5.0/assets/img/learn/copy-api-key.png){: style="width:60%"}]({BASE_URL}/api-manager/4.5.0/assets/img/learn/copy-api-key.png)

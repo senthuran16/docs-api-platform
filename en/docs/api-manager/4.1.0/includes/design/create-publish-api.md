@@ -9,5 +9,5 @@
 
 4. Select **API Key** and click **Save and Deploy**.
 
-     [![Configure API key authentication](/bijira/docs/api-manager/4.1.0/assets/img/learn/api-key-option.png)](/bijira/docs/api-manager/4.1.0/assets/img/learn/api-key-option.png)
+     [![Configure API key authentication]({BASE_URL}/api-manager/4.1.0/assets/img/learn/api-key-option.png)]({BASE_URL}/api-manager/4.1.0/assets/img/learn/api-key-option.png)
      

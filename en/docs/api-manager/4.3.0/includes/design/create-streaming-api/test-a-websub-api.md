@@ -7,9 +7,9 @@ Follow the instructions below to test a WebSub API (WebHook API):
 !!! Prerequisites
      1. The WebSub/WebHook API should have been published.
 
-     2. The WebSub/WebHook API topic should have been registered with your WebHook provider. For more details, see [Create a WebSub/WebHook API](../../../../use-cases/streaming-usecase/create-streaming-api/create-a-websub-streaming-api).
+     2. The WebSub/WebHook API topic should have been registered with your WebHook provider. For more details, see [Create a WebSub/WebHook API]({BASE_URL}/api-manager/4.3.0/use-cases/streaming-usecase/create-streaming-api/create-a-websub-streaming-api/).
 
-The examples here use the `RepoWatcher` WebSub/WebHook API, which was created in [Create a WebSub/WebHook API](../../../../use-cases/streaming-usecase/create-streaming-api/create-a-websub-streaming-api).
+The examples here use the `RepoWatcher` WebSub/WebHook API, which was created in [Create a WebSub/WebHook API]({BASE_URL}/api-manager/4.3.0/use-cases/streaming-usecase/create-streaming-api/create-a-websub-streaming-api/).
 
 1. 
     --8<-- "api-manager/4.3.0/includes/sign-in-devportal.md"
@@ -36,11 +36,11 @@ The examples here use the `RepoWatcher` WebSub/WebHook API, which was created in
      
            A unique URL will be created for you. 
 
-           [![Create Callback URL](../../../assets/img/tutorials/streaming-api/websub-api-create-callback-url.png)](../../../assets/img/tutorials/streaming-api/websub-api-create-callback-url.png)
+           [![Create Callback URL]({BASE_URL}/api-manager/4.3.0/assets/img/tutorials/streaming-api/websub-api-create-callback-url.png)]({BASE_URL}/api-manager/4.3.0/assets/img/tutorials/streaming-api/websub-api-create-callback-url.png)
 
      3. Click **Copy to clipboard**, which is next to **Your unique URL**.
 
-           [![Copy Callback URL](../../../assets/img/tutorials/streaming-api/websub-api-copy-callback-url.png)](../../../assets/img/tutorials/streaming-api/websub-api-copy-callback-url.png)
+           [![Copy Callback URL]({BASE_URL}/api-manager/4.3.0/assets/img/tutorials/streaming-api/websub-api-copy-callback-url.png)]({BASE_URL}/api-manager/4.3.0/assets/img/tutorials/streaming-api/websub-api-copy-callback-url.png)
 
      4. URL-encode the URL, which you have copied.
 
