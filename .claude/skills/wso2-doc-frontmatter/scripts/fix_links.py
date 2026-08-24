@@ -39,7 +39,7 @@ import collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from links_lib import (  # noqa: E402
     url_base, page_id, slug, harvest_anchors, resolve_candidates,
-    rewrite_target, is_raw_html, renders_anchors_clientside,
+    rewrite_target, is_raw_html, renders_anchors_clientside, strip_base_url,
 )
 
 APPLICABLE = {
@@ -54,8 +54,9 @@ APPLICABLE = {
     "anchor_legacy": "original Confluence anchor, matched to the one heading that agrees",
     "anchor_punct": "anchor names a real heading, different hyphens or underscores — exact",
     "templated_typo": "`{{base_path}}` misspelled and the resource exists — exact",
-    "partial_fixable": ("link in a shared block; one path works from every page that "
-                        "includes it"),
+    "include_abs": ("link inside a shared block, rewritten as `{BASE_URL}/…` from the "
+                    "docs root so it does not depend on the depth of the page the "
+                    "block lands on"),
     "stale_mapped": "old-site url whose path exists under this version — exact",
     "anchor_deep": ("heading is deeper than toc_depth so it has no id; insert "
                     "`<a name>` above it"),
@@ -135,6 +136,15 @@ def resolve(root, src_rel, target, is_html=False):
     target = target.split("#")[0].split("?")[0]
     if not target:
         return src_rel
+    # `{BASE_URL}/…` is not relative to anything: `hooks.py` swaps the token for
+    # the site base path, so the rest is a path from the docs root and lands in
+    # the same place from every page. normpath because these name the published
+    # path and end in a slash, which `resolve_candidates` would append to.
+    base_rel = strip_base_url(target)
+    if base_rel is not None:
+        cand = os.path.normpath(base_rel).replace("\\", "/")
+        return next((c for c in resolve_candidates(cand)
+                     if os.path.isfile(os.path.join(root, c))), None)
     base = url_base(src_rel) if is_html else os.path.dirname(src_rel)
     cand = os.path.normpath(os.path.join(base, target)).replace("\\", "/")
     for c in resolve_candidates(cand):
