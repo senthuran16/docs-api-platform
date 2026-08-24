@@ -64,6 +64,18 @@ Deliverables at the end: every page in scope with complete frontmatter,
   the same problem; do not go and fix them.
 - **Leave and report beats guess.** A wrong link that resolves is worse than a broken
   one, because nothing will ever flag it again.
+- **An absolute link is not already correct.** `/bijira/docs/…` bakes in a
+  `site_url` that changes; `/deploy-and-publish/…` meant "the version root" in the
+  old one-site-per-version repo and now points at the server root. Both are
+  `include_abs` too — see `absolute_candidates()`, which resolves the three shapes
+  and proposes nothing when none of them names a file.
+- **`{BASE_URL}` belongs inside `includes/` and nowhere else.** A shared block is
+  spliced into pages at different depths, so no relative path is right for all of
+  them; `{BASE_URL}/<path from the docs root>` does not depend on depth. Ordinary
+  pages stay source-relative on purpose — mkdocs only validates relative Markdown
+  links, so making a page absolute gives up build-time checking and buys nothing.
+  Single braces: `{{base_path}}` is Jinja, substituted before Markdown parsing and
+  therefore before any block has been spliced in, so it can never work in a block.
 
 **Which spec you are working from.** At the start of every run, check for
 `.claude/rules/doc-frontmatter-and-metadata.md` in the target repo:
@@ -175,6 +187,7 @@ fixes and different risk:
 | `renamed` | Renamed or moved target | A file of that name exists elsewhere; proposed, with confidence | Yes, `high` confidence only by default |
 | `case` | Right path, wrong capital letters | Corrects the link to match the file | Yes |
 | `include` | `{! !}` shared block, which this repo does not process | Converts to `--8<--` with the version spelled out | Yes, but only when the block's own links are clean |
+| `include_abs` | Relative **or absolute** link inside a shared block | Rewrites it as `{BASE_URL}/…` from the docs root — so a relative one stops depending on the depth of the page the block lands on, and an absolute one stops hardcoding a site base path that `site_url` can change | Yes |
 | `anchor_case` | Anchor names a real heading, wrong capitals | Lower-cases it — heading ids always are | Yes |
 | `anchor_deep` | Heading exists but sits below `toc_depth`, so it has no id | Inserts `<a name>` above the heading in the TARGET page | Yes |
 | `stale_mapped` | Old-site url whose path exists under this version | Points it inside the new docs, at this page's own version | Yes |
@@ -185,7 +198,7 @@ fixes and different risk:
 | `stale` | Pre-migration domain | Needs the new equivalent page | No — refused |
 | `anchor` | Missing anchor | Heading was reworded | No — refused |
 | `gone` | No target anywhere | Was it dropped, missed, or merged? | No — refused |
-| `partial` | Would be mechanical, but the page is an included partial | Needs a decision on how partials link at all | No — refused |
+| `partial` | Link in a shared block whose target cannot be identified, or that means a different file depending on which page includes it | Needs someone to say which page was meant | No — refused |
 
 **External links are in no tier** — they are checked separately, by
 `check_external.py` in step 7.
@@ -208,7 +221,7 @@ Work the tiers in this order, safest first:
 1. `malformed`
 2. `anchor_deep` — give deep headings an id, so the target exists before anything is
    pointed at it
-3. `partial_fixable`
+3. `include_abs`
 4. `include` — changes what the page contains
 5. `case`
 6. `templated_typo`, `templated_fixable`

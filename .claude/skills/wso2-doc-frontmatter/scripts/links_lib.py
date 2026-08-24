@@ -457,6 +457,106 @@ def link_to(target, page, is_html):
     return "./" if rel == "." else rel.rstrip("/") + "/"
 
 
+# ------------------------------------------------------- the {BASE_URL} address
+#
+# `{BASE_URL}` is the repo's depth-independent way of writing a link. `hooks.py`
+# replaces the literal string with the path half of `site_url` (`/api-platform/
+# docs`) in `on_post_page`, after the page HTML is assembled — so what follows the
+# token is a path from the DOCS ROOT, and it means the same thing no matter which
+# page the text ends up on.
+#
+# That last part is the whole point. `pymdownx.snippets` splices a shared block
+# into pages at different depths, so no relative path can be right for all of
+# them; a `{BASE_URL}` address does not depend on depth at all. This repo uses it
+# inside `includes/` and nowhere else — ordinary pages stay source-relative,
+# because those are the only links mkdocs validates at build time.
+#
+# SINGLE braces, and that is deliberate. `{{base_path}}` is Jinja, substituted by
+# `markdownextradata` at `on_page_markdown` — which runs BEFORE Markdown parsing,
+# and therefore before snippets has spliced any block in. A `{{...}}` written in a
+# block is never seen by the plugin and reaches the reader as literal text.
+BASE_URL_TOKEN = "{BASE_URL}"
+
+
+def strip_base_url(target):
+    """The docs-root-relative path inside a `{BASE_URL}/...` target, else None.
+
+    None means "not one of these", which is not the same as an empty path, so
+    callers must test `is not None` rather than truthiness.
+    """
+    if not target.startswith(BASE_URL_TOKEN):
+        return None
+    return target[len(BASE_URL_TOKEN):].lstrip("/")
+
+
+def base_url_link(target, frag=""):
+    """The `{BASE_URL}` address for `target`, a path from the docs root.
+
+    mkdocs does not resolve a link it considers absolute (`path_to_url` returns
+    any URL starting with `/` untouched), and after substitution these do start
+    with `/`. So unlike a Markdown relative link, this must name the PUBLISHED
+    path, not the source file: `.../endpoint-types/`, never `.../endpoint-types.md`,
+    which would ship the `.md` verbatim and serve Markdown source to the reader.
+
+    An asset is served where it sits, so it keeps its extension and takes no
+    trailing slash.
+    """
+    if target.endswith(".md"):
+        addr = f"{BASE_URL_TOKEN}/{published(target)}/"
+    else:
+        addr = f"{BASE_URL_TOKEN}/{target}"
+    return addr + (("#" + frag) if frag else "")
+
+
+# Site base paths that have been hardcoded into links in these pages. This is
+# CONFIGURATION, not logic — add a value when another turns up. `/bijira/docs` is
+# the current `site_url`; `/api-platform/docs` is what the local preview uses and
+# what most of the migrated pages were written against.
+SITE_BASE_PREFIXES = ("/bijira/docs", "/api-platform/docs")
+
+_VERSION_SEG = re.compile(r"^\d+\.\d+\.\d+$")
+
+
+def absolute_candidates(path, vroot=""):
+    """Docs-root-relative paths an ABSOLUTE link might have meant, best first.
+
+    An absolute link is passed through to the browser untouched, so unlike a
+    relative one it does not depend on the page — but it also is not checked by
+    anything, and three different meanings are written the same way here:
+
+      /bijira/docs/api-manager/4.1.0/x   the site base path, hardcoded
+      /api-manager/4.1.0/x               already relative to the docs root
+      /deploy-and-publish/x              relative to the VERSION root, which is
+                                         what it meant in the old repo, where
+                                         every version was built as its own site
+
+    The caller resolves these in order and takes the first that exists, so a
+    shape that names nothing on disk proposes nothing. Where a candidate names a
+    version other than the page's own, a copy re-anchored on `vroot` is offered
+    after it — a cross-version link sends the reader to a different release, and
+    this page's version is the right answer.
+    """
+    p = path.strip("/")
+    if not p:
+        return []
+    out = []
+    for prefix in SITE_BASE_PREFIXES:
+        pre = prefix.strip("/")
+        if p == pre or p.startswith(pre + "/"):
+            out.append(p[len(pre):].strip("/"))
+    out.append(p)
+    if vroot:
+        out.append(f"{vroot}/{p}")
+    if vroot:
+        for c in list(out):
+            parts = c.split("/")
+            if len(parts) > 2 and _VERSION_SEG.match(parts[1]) and \
+                    "/".join(parts[:2]) != vroot:
+                out.append(f"{vroot}/" + "/".join(parts[2:]))
+    seen = set()
+    return [c for c in out if c and not (c in seen or seen.add(c))]
+
+
 def version_root(rel, split_version):
     """`<product>/<version>/a/b.md` -> `<product>/<version>`, else ''.
 
