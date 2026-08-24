@@ -148,7 +148,10 @@ def _build_version_manifest(nav, config):
                     slug, version_item.title
                 )
 
-    # Validate configured default and versions exist
+    # Validate the config's own shape. A version (including the default) with
+    # no locally-collected pages is *not* an error here: it means that
+    # version is hosted on a separate deployment (see theme.js's version
+    # switcher fallback) rather than built into this site. Just note it.
     build_errors = []
     for section_cfg in versioned_sections.values():
         slug = section_cfg.get('slug')
@@ -182,25 +185,16 @@ def _build_version_manifest(nav, config):
         version_titles = ', '.join(sorted(versions_dict.keys())) if versions_dict else '(none)'
 
         if default and default not in versions_dict:
-            error_msg = (f'Default version "{default}" not found in nav (slug: {slug}). '
-                         f'Available: {version_titles}')
-            logger.error(error_msg)
-            build_errors.append(error_msg)
+            logger.info('Default version "%s" has no local pages (slug: %s); treating it as '
+                        'hosted on a separate deployment. Local versions: %s',
+                        default, slug, version_titles)
 
         for version in configured_versions:
             if version not in versions_dict:
-                error_msg = (f'Configured version "{version}" not found in nav (slug: {slug}). '
-                             f'Available: {version_titles}')
-                logger.error(error_msg)
-                build_errors.append(error_msg)
+                logger.info('Configured version "%s" has no local pages (slug: %s); treating it as '
+                            'hosted on a separate deployment. Local versions: %s',
+                            version, slug, version_titles)
 
-    # Validate sections have content
-    for section_slug, versions_dict in _version_manifest.items():
-        if not versions_dict:
-            error_msg = f"Section '{section_slug}' has no versions"
-            logger.error(error_msg)
-            build_errors.append(error_msg)
-    
     if build_errors:
         error_summary = '\n'.join(f'  - {msg}' for msg in build_errors)
         raise ValueError(f'Manifest validation failed:\n{error_summary}')

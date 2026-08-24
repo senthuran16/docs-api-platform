@@ -158,7 +158,8 @@
       class="{{ class }} md-nav__item--nested md-nav__item--versioned {{ has_icon_class }}"
       data-md-versioned-section="{{ v_slug }}"
       data-md-default-version="{{ v_default }}"
-      data-md-all-versions='{{ (nav_item.children | map(attribute='title') | list) | tojson }}'
+      data-md-all-versions='{{ v_versions | tojson }}'
+      data-md-canonical-root="{{ config.site_url }}"
     >
       <input
         class="md-nav__toggle md-toggle"
@@ -214,7 +215,7 @@
         {% if active_version_item %}
         <div class="md-nav__version-group is-active" data-md-version="{{ active_version_item.title }}">
           <ul class="md-nav__list" data-md-scrollfix>
-            {% for sub in active_version_item.children %}
+            {% for sub in (active_version_item.children or []) %}
               {{ render(sub, path ~ "_v_" ~ loop.index, level + 1, current_title) }}
             {% endfor %}
           </ul>

@@ -419,6 +419,7 @@ onEachPage(function () {
   document.querySelectorAll('.md-nav__item--versioned').forEach(function (section) {
     var slug = section.getAttribute('data-md-versioned-section');
     var defaultVersion = section.getAttribute('data-md-default-version');
+    var canonicalRoot = section.getAttribute('data-md-canonical-root');
     var select = section.querySelector('.md-nav__version-dropdown');
     if (!slug || !select) return;
 
@@ -563,6 +564,20 @@ onEachPage(function () {
         showVersionError(message);
       }
 
+      // A version absent from this build's manifest isn't an error - it
+      // means that version lives on a separate deployment (see hooks.py's
+      // _build_version_manifest). Land on that deployment's version root
+      // rather than an equivalent page, since we have no manifest for it.
+      function navigateExternal(reason) {
+        if (!canonicalRoot) {
+          rollback(reason + ' and no canonical root configured for cross-deployment navigation');
+          return;
+        }
+        var dest = canonicalRoot.replace(/\/+$/, '') + '/' + slug + '/' + target + '/';
+        persistVersion(target);
+        window.location.href = dest;
+      }
+
       // Track navigation to prevent race conditions
       var thisNavigationId = ++pendingNavigationId;
 
@@ -573,14 +588,14 @@ onEachPage(function () {
 
         // Check section exists in manifest
         if (!manifest[slug]) {
-          rollback('Section "' + slug + '" not found in manifest');
+          navigateExternal('Section "' + slug + '" not found in manifest');
           return;
         }
 
         // Get pages for target version
         var versionUrls = manifest[slug][target] || [];
         if (!versionUrls || versionUrls.length === 0) {
-          rollback('No pages in version "' + target + '"');
+          navigateExternal('No pages in version "' + target + '"');
           return;
         }
 
