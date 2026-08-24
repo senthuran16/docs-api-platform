@@ -4,7 +4,7 @@ import json
 import hashlib
 import logging
 import tempfile
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlparse
 
 logger = logging.getLogger('mkdocs.plugins.' + __name__)
 
@@ -348,6 +348,14 @@ def on_post_template(output, template_name, config, **kwargs):
     return output
 
 
+def _extract_base_url(site_url: str) -> str:
+    """Extract the base path from site_url, e.g.
+    https://wso2.com/api-platform/docs -> /api-platform/docs
+    """
+    path = urlparse(site_url).path.rstrip("/")
+    return path if path else "/"
+
+
 def on_post_page(output, page, config, **kwargs):
     output = _collapse_whitespace(_strip_html_comments(output))
 
@@ -359,6 +367,12 @@ def on_post_page(output, page, config, **kwargs):
             rf'\1?v={_theme_css_version}\2',
             output,
         )
+
+    # Replace {BASE_URL} placeholders with the actual base path derived from
+    # site_url.
+    site_url = config.get("site_url", "")
+    if site_url:
+        output = output.replace("{BASE_URL}", _extract_base_url(site_url))
 
     if page.is_homepage:
         return output

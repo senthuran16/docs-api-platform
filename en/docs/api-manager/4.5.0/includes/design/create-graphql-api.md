@@ -22,7 +22,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
 
     Once the above steps are done, the Star Wars server will be running on `http://localhost:8080`.
 
-    [![CLI output](/api-platform/docs/api-manager/4.5.0/assets/img/learn/cli-output.png){: style="width:45%"}](/api-platform/docs/api-manager/4.5.0/assets/img/learn/cli-output.png)
+    [![CLI output]({BASE_URL}/api-manager/4.5.0/assets/img/learn/cli-output.png){: style="width:45%"}]({BASE_URL}/api-manager/4.5.0/assets/img/learn/cli-output.png)
 
     You can use `http://localhost:8080/graphql` as the endpoint when creating the GraphQL API.
 
@@ -38,14 +38,14 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
 
 2. Click **Create API** and then click **Create GraphQL API**.
 
-     [![Create GraphQL Schema Option](/api-platform/docs/api-manager/4.5.0/assets/img/learn/create-graphql-schema-option.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/create-graphql-schema-option.png)
+     [![Create GraphQL Schema Option]({BASE_URL}/api-manager/4.5.0/assets/img/learn/create-graphql-schema-option.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/create-graphql-schema-option.png)
 
 3. Select one of the following options:
 
 	* **GraphQL File/Archive** - If you select this option, drag and drop or click **Browse File to Upload** to upload the file.
 	* **GraphQL SDL URL** - If you select this option, you need to provide the URL of the schema definition.
 
-    Let's use the [StarWarsAPI schema definition](/api-platform/docs/api-manager/4.5.0/assets/attachments/learn/schema_graphql.graphql) to create the schema file. 
+    Let's use the [StarWarsAPI schema definition]({BASE_URL}/api-manager/4.5.0/assets/attachments/learn/schema_graphql.graphql) to create the schema file. 
 
 4. Select **GraphQL File/Archive** and import the schema by dragging and dropping the file or by uploading the file. Click **Next**.
 
@@ -56,7 +56,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
     <li>The file extension can be either `.graphql`, `.txt`, or `.json`. </li><li> The file name can be any name, which is based on your preference.</li></ul>
     </div>
 
-    [![Import a GraphQL schema by adding a file](/api-platform/docs/api-manager/4.5.0/assets/img/learn/import-graphql-schema-via-file.png){: style="width:80%"}](/api-platform/docs/api-manager/4.5.0/assets/img/learn/import-graphql-schema-via-file.png)
+    [![Import a GraphQL schema by adding a file]({BASE_URL}/api-manager/4.5.0/assets/img/learn/import-graphql-schema-via-file.png){: style="width:80%"}]({BASE_URL}/api-manager/4.5.0/assets/img/learn/import-graphql-schema-via-file.png)
     
 
 5. Enter the GraphQL API related details and click **Create**.
@@ -120,7 +120,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
     </tr>
     </table>
 
-    [![Add GraphQL API details](/api-platform/docs/api-manager/4.5.0/assets/img/learn/create-graphql-api-details.png){: style="width:75%"}](/api-platform/docs/api-manager/4.5.0/assets/img/learn/create-graphql-api-details.png)
+    [![Add GraphQL API details]({BASE_URL}/api-manager/4.5.0/assets/img/learn/create-graphql-api-details.png){: style="width:75%"}]({BASE_URL}/api-manager/4.5.0/assets/img/learn/create-graphql-api-details.png)
 
 6. Optionally, modify the existing GraphQL schema definition.
 
@@ -130,7 +130,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
 
          The existing GraphQL API schema gets downloaded.
 
-         [![Add schema definition](/api-platform/docs/api-manager/4.5.0/assets/img/learn/download-schema-definition.png){: style="width:80%"}](/api-platform/docs/api-manager/4.5.0/assets/img/learn/download-schema-definition.png)
+         [![Add schema definition]({BASE_URL}/api-manager/4.5.0/assets/img/learn/download-schema-definition.png){: style="width:80%"}]({BASE_URL}/api-manager/4.5.0/assets/img/learn/download-schema-definition.png)
 
     3. Update the schema definition as required.
 
@@ -142,7 +142,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
 
     1. Click **Show More** under the **Operations** section in the **Overview** page to navigate to the operations page.
 
-         [![GraphQL API operations](/api-platform/docs/api-manager/4.5.0/assets/img/learn/operations.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/operations.png)  
+         [![GraphQL API operations]({BASE_URL}/api-manager/4.5.0/assets/img/learn/operations.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/operations.png)  
      
     2. Update the operations as required.
          
@@ -154,7 +154,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
 
             1. Click **Local Scopes**, and then click **Create Scopes**.
 
-                [![Add a scope page](/api-platform/docs/api-manager/4.5.0/assets/img/learn/add-scope.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/add-scope.png)
+                [![Add a scope page]({BASE_URL}/api-manager/4.5.0/assets/img/learn/add-scope.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/add-scope.png)
 
             2. Enter the required details.
 
@@ -172,13 +172,13 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
                    | `FilmSubscriber` | `FilmSubscriber` |
                    | `adminScope` | `admin` |
 
-                   [![Create a scope](/api-platform/docs/api-manager/4.5.0/assets/img/learn/create-scope.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/create-scope.png)
+                   [![Create a scope]({BASE_URL}/api-manager/4.5.0/assets/img/learn/create-scope.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/create-scope.png)
 
             3. Press `Enter` to add each role. 
 
             4. Click **Save**.
 
-                 [![List of added scopes](/api-platform/docs/api-manager/4.5.0/assets/img/learn/starwars-scope-list.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/starwars-scope-list.png)
+                 [![List of added scopes]({BASE_URL}/api-manager/4.5.0/assets/img/learn/starwars-scope-list.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/starwars-scope-list.png)
 
          2. **Define the operation level configurations**.
 
@@ -186,7 +186,7 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
             
             2. Click **Operation Level** to apply Rate Limiting for operations.
 
-                [![Update GraphQL API operations](/api-platform/docs/api-manager/4.5.0/assets/img/learn/update-operations.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/update-operations.png) 
+                [![Update GraphQL API operations]({BASE_URL}/api-manager/4.5.0/assets/img/learn/update-operations.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/update-operations.png) 
 
             3. Select a Rate Limiting Policy, scope, and enable or disable security for each of the operations. 
 
@@ -201,4 +201,4 @@ Let's use the Star Wars sample backend server as the backend for the GraphQL API
 
                  If you check the list of scopes, it should appear as follows:
 
-                 [![Scope list](/api-platform/docs/api-manager/4.5.0/assets/img/learn/scope-list.png)](/api-platform/docs/api-manager/4.5.0/assets/img/learn/scope-list.png)
+                 [![Scope list]({BASE_URL}/api-manager/4.5.0/assets/img/learn/scope-list.png)]({BASE_URL}/api-manager/4.5.0/assets/img/learn/scope-list.png)
