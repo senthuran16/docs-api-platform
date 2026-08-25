@@ -448,7 +448,14 @@ onEachPage(function () {
     select.addEventListener('change', function () {
       var target = select.value;
       var group = groupForVersion(target);
-      if (!group) return;
+
+      // This version isn't part of the current build (e.g. a single-version
+      // image built from one of the per-version Dockerfiles) — send the user
+      // to that version's docs on the live site instead.
+      if (!group) {
+        window.location.href = 'https://wso2.com/api-platform/docs/' + slug + '/' + target + '/';
+        return;
+      }
 
       var links = Array.prototype.slice.call(group.querySelectorAll('a[href]'));
       if (links.length === 0) {
