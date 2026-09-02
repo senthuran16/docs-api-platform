@@ -1,0 +1,12 @@
+{
+  "api-manager": {
+    "slug": "api-manager",
+    "manifestUrl": "/api-manager/product-nav-manifest.json",
+    "defaultVersion": "4.7.0"
+  },
+  "ai-gateway": {
+    "slug": "ai-gateway",
+    "manifestUrl": "/ai-gateway/product-nav-manifest.json",
+    "defaultVersion": "1.1.0"
+  }
+}
