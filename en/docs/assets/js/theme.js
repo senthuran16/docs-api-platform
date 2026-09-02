@@ -510,10 +510,14 @@ onEachPage(function () {
  * belongs to a different build), routed by the reverse proxy to that
  * product's own deployment.
  *
- * PoC simplification: fetches every other product eagerly and renders
- * only its default version. A real implementation should lazy-fetch on
- * section-expand and offer the same version dropdown a locally-built
- * section gets (see the block above).
+ * Each rendered section gets its own version dropdown too (mirroring the
+ * native one above), sourced from the manifest's full allVersions list;
+ * selecting a version this build's manifest doesn't have data for falls
+ * back to the live site, same as the same-product dropdown.
+ *
+ * PoC simplification: fetches every other product eagerly on page load. A
+ * real implementation should lazy-fetch a product's manifest only the
+ * first time its section is expanded.
  */
 onEachPage(function () {
   var primaryList = document.querySelector('.md-nav--primary > .md-nav__list');
@@ -601,20 +605,127 @@ onEachPage(function () {
     return li;
   }
 
+  // Mirrors the native versioned-section markup (nav-item.html's
+  // .md-nav__item--versioned block) so a cross-product section looks and
+  // behaves the same as a locally-built one, including its own version
+  // dropdown - existing CSS styles it correctly with no changes needed.
   function renderProductSection(slug, product, manifest) {
     if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
-    var version = (manifest.default && manifest.versions[manifest.default])
+
+    var allVersions = (manifest.allVersions && manifest.allVersions.length)
+      ? manifest.allVersions
+      : Object.keys(manifest.versions);
+    if (!allVersions.length) return;
+
+    // Latest/Previous grouping, same as the native dropdown: the
+    // configured default if it's in the advertised list, else just the
+    // first entry.
+    var latestLabel = (manifest.default && allVersions.indexOf(manifest.default) !== -1)
       ? manifest.default
-      : Object.keys(manifest.versions)[0];
-    var tree = version && manifest.versions[version];
-    if (!tree || !tree.length) return;
-    // Each node's url is already site-root-relative (it includes its own
-    // slug/version prefix - see hooks.py's _nav_tree, sourced from mkdocs'
-    // own page.url), so resolve against the site root, not a per-version
-    // base - resolving against slug/version/ would double that prefix.
-    var li = renderNode({ title: product.title || slug, children: resolveHrefs(tree, scope) });
+      : allVersions[0];
+    var previousLabels = allVersions.filter(function (v) { return v !== latestLabel; });
+
+    // What to actually show first must be a version this manifest has data
+    // for - not necessarily latestLabel, which can be configured as the
+    // overall default while THIS build only has some other version (e.g. a
+    // single-version API Manager image). Falling back to latestLabel here
+    // would redirect the reader away the moment the sidebar renders.
+    var presentVersions = Object.keys(manifest.versions);
+    var initialVersion = (manifest.default && manifest.versions[manifest.default])
+      ? manifest.default
+      : presentVersions[0];
+    if (!initialVersion) return;
+
+    var id = nextId();
+    var li = document.createElement('li');
+    li.className = 'md-nav__item md-nav__item--nested md-nav__item--versioned';
     li.setAttribute('data-md-xproduct', slug);
+
+    var input = document.createElement('input');
+    input.className = 'md-nav__toggle md-toggle';
+    input.type = 'checkbox';
+    input.id = id;
+    li.appendChild(input);
+
+    var header = document.createElement('div');
+    header.className = 'md-nav__link md-nav__versioned-header';
+
+    var titleLabel = document.createElement('label');
+    titleLabel.className = 'md-nav__versioned-title';
+    titleLabel.setAttribute('for', id);
+    var titleSpan = document.createElement('span');
+    titleSpan.textContent = product.title || slug;
+    titleLabel.appendChild(titleSpan);
+    header.appendChild(titleLabel);
+
+    var select = document.createElement('select');
+    select.className = 'md-nav__version-dropdown';
+    select.setAttribute('aria-label', (product.title || slug) + ' version');
+
+    function addOption(group, version) {
+      var option = document.createElement('option');
+      option.value = version;
+      option.textContent = version;
+      if (version === initialVersion) option.selected = true;
+      group.appendChild(option);
+    }
+
+    var latestGroup = document.createElement('optgroup');
+    latestGroup.label = 'Latest Version';
+    addOption(latestGroup, latestLabel);
+    select.appendChild(latestGroup);
+
+    if (previousLabels.length) {
+      var previousGroup = document.createElement('optgroup');
+      previousGroup.label = 'Previous Versions';
+      previousLabels.forEach(function (v) { addOption(previousGroup, v); });
+      select.appendChild(previousGroup);
+    }
+    header.appendChild(select);
+
+    var toggle = document.createElement('label');
+    toggle.className = 'md-nav__icon md-icon md-nav__versioned-toggle';
+    toggle.setAttribute('for', id);
+    header.appendChild(toggle);
+
+    li.appendChild(header);
+
+    var nested = document.createElement('nav');
+    nested.className = 'md-nav';
+    var nestedTitle = document.createElement('label');
+    nestedTitle.className = 'md-nav__title';
+    nestedTitle.setAttribute('for', id);
+    nestedTitle.textContent = product.title || slug;
+    nested.appendChild(nestedTitle);
+    li.appendChild(nested);
+
+    function showVersion(version) {
+      var tree = manifest.versions[version];
+      if (!tree) {
+        // Not built into this deployment - same fallback the same-product
+        // dropdown uses: send the reader to that version on the live site.
+        window.location.href = 'https://wso2.com/api-platform/docs/' + slug + '/' + version + '/';
+        return;
+      }
+      var existing = nested.querySelector('.md-nav__version-group');
+      if (existing) existing.remove();
+      var group = document.createElement('div');
+      group.className = 'md-nav__version-group is-active';
+      group.setAttribute('data-md-version', version);
+      var ul = document.createElement('ul');
+      ul.className = 'md-nav__list';
+      // Each node's url is already site-root-relative (it includes its own
+      // slug/version prefix - see hooks.py's _nav_tree, sourced from
+      // mkdocs' own page.url), so resolve against the site root.
+      resolveHrefs(tree, scope).forEach(function (n) { ul.appendChild(renderNode(n)); });
+      group.appendChild(ul);
+      nested.appendChild(group);
+    }
+
+    select.addEventListener('change', function () { showVersion(select.value); });
+
     primaryList.appendChild(li);
+    showVersion(initialVersion);
   }
 
   fetch(new URL('assets/root-index.json', scope))
