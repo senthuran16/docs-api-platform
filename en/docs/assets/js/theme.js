@@ -511,9 +511,11 @@ onEachPage(function () {
  * product's own deployment.
  *
  * Each rendered section gets its own version dropdown too (mirroring the
- * native one above), sourced from the manifest's full allVersions list;
- * selecting a version this build's manifest doesn't have data for falls
- * back to the live site, same as the same-product dropdown.
+ * native one above), sourced from the manifest's full allVersions list.
+ * Unlike the native dropdown there's no "current page in this other
+ * product" to find an equivalent of, so picking a version always navigates
+ * to that version's overview page - whether it's served locally or (like a
+ * same-product version this build doesn't have) only on the live site.
  *
  * PoC simplification: fetches every other product eagerly on page load. A
  * real implementation should lazy-fetch a product's manifest only the
@@ -699,16 +701,11 @@ onEachPage(function () {
     nested.appendChild(nestedTitle);
     li.appendChild(nested);
 
-    function showVersion(version) {
+    // Renders the given version's tree into the section - used once, for
+    // whichever version is shown when the section first appears.
+    function renderVersionGroup(version) {
       var tree = manifest.versions[version];
-      if (!tree) {
-        // Not built into this deployment - same fallback the same-product
-        // dropdown uses: send the reader to that version on the live site.
-        window.location.href = 'https://wso2.com/api-platform/docs/' + slug + '/' + version + '/';
-        return;
-      }
-      var existing = nested.querySelector('.md-nav__version-group');
-      if (existing) existing.remove();
+      if (!tree) return;
       var group = document.createElement('div');
       group.className = 'md-nav__version-group is-active';
       group.setAttribute('data-md-version', version);
@@ -722,18 +719,38 @@ onEachPage(function () {
       nested.appendChild(group);
     }
 
+    // Finds the first page url in a tree, depth-first - the "overview" page
+    // for whatever version this is (mkdocs' own nav puts a section's index
+    // page first, same convention the same-product dropdown's own "fall
+    // back to the new version's overview" relies on).
+    function firstPageUrl(nodes) {
+      for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        if (n.url !== undefined) return n.url;
+        if (n.children && n.children.length) {
+          var found = firstPageUrl(n.children);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
     select.addEventListener('change', function () {
-      showVersion(select.value);
-      // Picking a version updates the tree in place rather than navigating
-      // (there's no "current page" in another product to find an
-      // equivalent of - see the module comment). Without this the update
-      // happens invisibly behind a collapsed toggle and looks like the
-      // click did nothing.
-      input.checked = true;
+      var version = select.value;
+      // There's no "current page in this other product" to find an
+      // equivalent of, unlike the same-product dropdown - so a cross-
+      // product version switch always takes the reader to that version's
+      // overview page, whether it's served locally or (like an absent
+      // same-product version) only on the live site.
+      var tree = manifest.versions[version];
+      var url = tree && firstPageUrl(tree);
+      window.location.href = url
+        ? new URL(url, scope).href
+        : 'https://wso2.com/api-platform/docs/' + slug + '/' + version + '/';
     });
 
     primaryList.appendChild(li);
-    showVersion(initialVersion);
+    renderVersionGroup(initialVersion);
   }
 
   fetch(new URL('assets/root-index.json', scope))
