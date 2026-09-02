@@ -1,4 +1,8 @@
-# Stage 1: Build the MkDocs static site
+# Stage 1: Build the MkDocs static site for AI Gateway 1.1.0 only.
+# en/mkdocs.yml's nav lists every AI Gateway version; trim-mkdocs-version.py
+# strips it down to just this one before `mkdocs build` runs, and
+# Dockerfile.1.1.0.dockerignore keeps every other version's docs out of the
+# build context so they never reach this image.
 FROM python:3.12 AS builder
 
 WORKDIR /app
@@ -8,6 +12,8 @@ RUN pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir "setuptools<80"
 
 COPY en/ .
+COPY trim-mkdocs-version.py .
+RUN python3 trim-mkdocs-version.py mkdocs.yml 1.1.0
 
 RUN mkdocs build
 
