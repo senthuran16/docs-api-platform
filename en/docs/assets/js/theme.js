@@ -540,6 +540,25 @@ onEachPage(function () {
     ownSlugs[el.getAttribute('data-md-versioned-section')] = true;
   });
 
+  // Every top-level product section - native or cross-product - must sit in
+  // the same place regardless of which product's page rendered it, or the
+  // sidebar reorders itself depending on where you're browsing from.
+  // root-index.json's key order (preserved by JS for string keys) is the
+  // single canonical order every page agrees on.
+  function insertProductSection(li, slug, order) {
+    var targetRank = order.indexOf(slug);
+    if (targetRank === -1) targetRank = order.length;
+    var items = primaryList.children;
+    for (var i = 0; i < items.length; i++) {
+      var itemSlug = items[i].getAttribute('data-md-versioned-section') || items[i].getAttribute('data-md-xproduct');
+      if (itemSlug && order.indexOf(itemSlug) > targetRank) {
+        primaryList.insertBefore(li, items[i]);
+        return;
+      }
+    }
+    primaryList.appendChild(li);
+  }
+
   var idCounter = 0;
   function nextId() { return '__xproduct_' + idCounter++; }
 
@@ -616,7 +635,7 @@ onEachPage(function () {
   // .md-nav__item--versioned block) so a cross-product section looks and
   // behaves the same as a locally-built one, including its own version
   // dropdown - existing CSS styles it correctly with no changes needed.
-  function renderProductSection(slug, product, manifest) {
+  function renderProductSection(slug, product, manifest, order) {
     if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
 
     var allVersions = (manifest.allVersions && manifest.allVersions.length)
@@ -754,20 +773,21 @@ onEachPage(function () {
         : LIVE_SITE_BASE + slug + '/' + version + '/';
     });
 
-    primaryList.appendChild(li);
+    insertProductSection(li, slug, order);
     renderVersionGroup(initialVersion);
   }
 
   fetch(new URL('assets/root-index.json', scope))
     .then(function (r) { return r.ok ? r.json() : {}; })
     .then(function (index) {
-      Object.keys(index).forEach(function (slug) {
+      var order = Object.keys(index);
+      order.forEach(function (slug) {
         if (ownSlugs[slug]) return;
         var product = index[slug];
         fetch(new URL(product.manifestUrl, scope))
           .then(function (r) { return r.ok ? r.json() : null; })
           .then(function (manifest) {
-            if (manifest) renderProductSection(slug, product, manifest);
+            if (manifest) renderProductSection(slug, product, manifest, order);
           })
           .catch(function () { /* best-effort: skip this product on error */ });
       });
