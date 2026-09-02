@@ -608,8 +608,11 @@ onEachPage(function () {
       : Object.keys(manifest.versions)[0];
     var tree = version && manifest.versions[version];
     if (!tree || !tree.length) return;
-    var base = new URL(slug + '/' + version + '/', scope);
-    var li = renderNode({ title: product.title || slug, children: resolveHrefs(tree, base) });
+    // Each node's url is already site-root-relative (it includes its own
+    // slug/version prefix - see hooks.py's _nav_tree, sourced from mkdocs'
+    // own page.url), so resolve against the site root, not a per-version
+    // base - resolving against slug/version/ would double that prefix.
+    var li = renderNode({ title: product.title || slug, children: resolveHrefs(tree, scope) });
     li.setAttribute('data-md-xproduct', slug);
     primaryList.appendChild(li);
   }
