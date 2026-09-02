@@ -495,6 +495,143 @@ onEachPage(function () {
 });
 
 /*
+ * Cross-product navigation (PoC)
+ * -------------------------------------------------------------------------
+ * Each product (API Manager, AI Gateway, ...) is built and deployed
+ * independently - see the per-product branches - so a page from one
+ * product doesn't have any other product's pages locally. To still show
+ * one unified, cross-linked sidebar, every page fetches a small
+ * assets/root-index.json (product -> manifest URL, identical on every
+ * deployment) plus, for every OTHER product, that product's own
+ * <slug>/product-nav-manifest.json - a full title+url+children tree
+ * written by hooks.py's _build_product_nav_manifest. That's enough to
+ * render the other product's section from data alone; clicking into it is
+ * a real navigation (forced past instant-loading, since the target page
+ * belongs to a different build), routed by the reverse proxy to that
+ * product's own deployment.
+ *
+ * PoC simplification: fetches every other product eagerly and renders
+ * only its default version. A real implementation should lazy-fetch on
+ * section-expand and offer the same version dropdown a locally-built
+ * section gets (see the block above).
+ */
+onEachPage(function () {
+  var primaryList = document.querySelector('.md-nav--primary > .md-nav__list');
+  if (!primaryList) return;
+
+  var scope = window.__md_scope ||
+    (document.querySelector('base') ? new URL(document.querySelector('base').href) : new URL('/', location));
+
+  // Sections already rendered server-side (this build's own product) don't
+  // need to be fetched again.
+  var ownSlugs = {};
+  document.querySelectorAll('.md-nav__item--versioned[data-md-versioned-section]').forEach(function (el) {
+    ownSlugs[el.getAttribute('data-md-versioned-section')] = true;
+  });
+
+  var idCounter = 0;
+  function nextId() { return '__xproduct_' + idCounter++; }
+
+  // Resolve each node's page url into an absolute href up front, relative
+  // to that product+version's own base, so renderNode itself doesn't need
+  // to know about slugs/versions/scope.
+  function resolveHrefs(nodes, base) {
+    return nodes.map(function (n) {
+      if (n.url !== undefined) {
+        return { title: n.title, href: new URL(n.url, base).href };
+      }
+      return { title: n.title, children: resolveHrefs(n.children || [], base) };
+    });
+  }
+
+  function renderNode(node) {
+    var li = document.createElement('li');
+    li.className = 'md-nav__item';
+
+    if (node.children && node.children.length) {
+      li.className += ' md-nav__item--nested';
+      var id = nextId();
+
+      var input = document.createElement('input');
+      input.className = 'md-nav__toggle md-toggle';
+      input.type = 'checkbox';
+      input.id = id;
+      li.appendChild(input);
+
+      var label = document.createElement('label');
+      label.className = 'md-nav__link';
+      label.setAttribute('for', id);
+      var titleSpan = document.createElement('span');
+      titleSpan.textContent = node.title;
+      label.appendChild(titleSpan);
+      var icon = document.createElement('span');
+      icon.className = 'md-nav__icon md-icon';
+      label.appendChild(icon);
+      li.appendChild(label);
+
+      var nested = document.createElement('nav');
+      nested.className = 'md-nav';
+      var nestedTitle = document.createElement('label');
+      nestedTitle.className = 'md-nav__title';
+      nestedTitle.setAttribute('for', id);
+      nestedTitle.textContent = node.title;
+      nested.appendChild(nestedTitle);
+      var ul = document.createElement('ul');
+      ul.className = 'md-nav__list';
+      node.children.forEach(function (child) { ul.appendChild(renderNode(child)); });
+      nested.appendChild(ul);
+      li.appendChild(nested);
+    } else {
+      var a = document.createElement('a');
+      a.className = 'md-nav__link';
+      a.href = node.href;
+      var linkSpan = document.createElement('span');
+      linkSpan.textContent = node.title;
+      a.appendChild(linkSpan);
+      // Force a real navigation past instant-loading: the target page
+      // belongs to a different product's build, not this one. Keep the
+      // real href so open-in-new-tab / copy-link / hover preview still work.
+      a.addEventListener('click', function (e) {
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        window.location.href = node.href;
+      });
+      li.appendChild(a);
+    }
+    return li;
+  }
+
+  function renderProductSection(slug, product, manifest) {
+    if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
+    var version = (manifest.default && manifest.versions[manifest.default])
+      ? manifest.default
+      : Object.keys(manifest.versions)[0];
+    var tree = version && manifest.versions[version];
+    if (!tree || !tree.length) return;
+    var base = new URL(slug + '/' + version + '/', scope);
+    var li = renderNode({ title: product.title || slug, children: resolveHrefs(tree, base) });
+    li.setAttribute('data-md-xproduct', slug);
+    primaryList.appendChild(li);
+  }
+
+  fetch(new URL('assets/root-index.json', scope))
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (index) {
+      Object.keys(index).forEach(function (slug) {
+        if (ownSlugs[slug]) return;
+        var product = index[slug];
+        fetch(new URL(product.manifestUrl, scope))
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (manifest) {
+            if (manifest) renderProductSection(slug, product, manifest);
+          })
+          .catch(function () { /* best-effort: skip this product on error */ });
+      });
+    })
+    .catch(function () { /* best-effort: no cross-product nav this load */ });
+});
+
+/*
  * Search result breadcrumbs + version scoping
  * -------------------------------------------------------------------------
  * Across products / versions many pages share a title ("Overview", "Regex
