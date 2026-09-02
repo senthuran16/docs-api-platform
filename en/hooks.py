@@ -172,6 +172,13 @@ def _build_product_nav_manifest(nav, config):
         _product_manifest[slug] = {
             "slug": slug,
             "default": cfg.get("default"),
+            # The full configured version list (may include versions this
+            # particular build doesn't physically have - e.g. a single-
+            # version API Manager image still advertises all 11). The
+            # cross-product dropdown lists all of these; selecting one
+            # missing from "versions" below falls back to the live site,
+            # same as the same-product dropdown already does.
+            "allVersions": cfg.get("versions") or [],
             "versions": versions,
         }
 
