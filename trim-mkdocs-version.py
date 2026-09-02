@@ -20,7 +20,13 @@ import sys
 
 
 def trim_nav(text, version):
-    m = re.search(r"(\n  - API Manager:\n)(.*?)(?=\n  - API Gateway:\n)", text, re.S)
+    # The end boundary is either the next top-level nav item (2-space indent,
+    # as "API Gateway:" normally is) or, on a branch scoped to just API
+    # Manager (see the product/api-manager PoC branch), the end of the nav
+    # list itself.
+    m = re.search(
+        r"(\n  - API Manager:\n)(.*?)(?=\n  - \S|\nmarkdown_extensions:\n)", text, re.S
+    )
     if not m:
         sys.exit("could not locate the 'API Manager' nav block in mkdocs.yml")
     body = m.group(2)
