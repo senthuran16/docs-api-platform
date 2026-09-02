@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
-"""Trim en/mkdocs.yml down to a single API Manager version, in place.
+"""Trim en/mkdocs.yml down to a single version of this branch's one
+versioned product, in place, for a single-version image.
 
-Keeps only the requested version's nav subtree under "API Manager" so a
-single-version image only builds that version's pages. extra.versioned_sections
-is left untouched: the version dropdown still lists every version, and
-theme.js sends a version not present in this build's nav out to that
-version's page on the live site (see the "not built into this image" branch
-in theme.js's dropdown change handler).
+Each product/<name> branch's nav is scoped to exactly Overview, Get
+Started, and that one product (see the "Scope branch to <product>"
+commit), so the product's own nav block can be found generically by
+position rather than by a hardcoded product name - this script is shared,
+byte-identical, across every product branch.
 
-Uses scoped regex surgery rather than a full YAML parse/dump: mkdocs.yml here
-carries custom Python tags (e.g. pymdownx.emoji.to_svg) that a generic YAML
-loader can't construct, and the block being edited has fixed, well-known
-indentation, so a full parse buys nothing over slicing the two blocks by hand.
+extra.versioned_sections is left untouched: the version dropdown still
+lists every configured version, and theme.js sends a version not present
+in this build's nav out to that version's page on the live site (see the
+"not built into this image" branch in theme.js's dropdown change handler).
+
+Uses scoped regex surgery rather than a full YAML parse/dump: mkdocs.yml
+here carries custom Python tags (e.g. pymdownx.emoji.to_svg) that a
+generic YAML loader can't construct, and the block being edited has fixed,
+well-known indentation, so a full parse buys nothing over slicing the
+block by hand.
 
 Usage: python3 trim-mkdocs-version.py en/mkdocs.yml 4.6.0
 """
@@ -20,15 +26,13 @@ import sys
 
 
 def trim_nav(text, version):
-    # The end boundary is either the next top-level nav item (2-space indent,
-    # as "API Gateway:" normally is) or, on a branch scoped to just API
-    # Manager (see the product/api-manager PoC branch), the end of the nav
-    # list itself.
     m = re.search(
-        r"(\n  - API Manager:\n)(.*?)(?=\n  - \S|\nmarkdown_extensions:\n)", text, re.S
+        r"(\n  - Get Started: get-started\.md\n  - [^\n:]+:\n)(.*?)(?=\nmarkdown_extensions:\n)",
+        text,
+        re.S,
     )
     if not m:
-        sys.exit("could not locate the 'API Manager' nav block in mkdocs.yml")
+        sys.exit("could not locate this branch's product nav block in mkdocs.yml")
     body = m.group(2)
     blocks = re.split(r"(?=^    - \"[^\"]+\":\n)", body, flags=re.M)
     blocks = [b for b in blocks if b.strip()]
@@ -47,7 +51,7 @@ def main():
     text = open(path, encoding="utf-8").read()
     text = trim_nav(text, version)
     open(path, "w", encoding="utf-8").write(text)
-    print(f"mkdocs.yml trimmed to API Manager {version}")
+    print(f"mkdocs.yml trimmed to {version}")
 
 
 if __name__ == "__main__":
