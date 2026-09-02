@@ -722,7 +722,15 @@ onEachPage(function () {
       nested.appendChild(group);
     }
 
-    select.addEventListener('change', function () { showVersion(select.value); });
+    select.addEventListener('change', function () {
+      showVersion(select.value);
+      // Picking a version updates the tree in place rather than navigating
+      // (there's no "current page" in another product to find an
+      // equivalent of - see the module comment). Without this the update
+      // happens invisibly behind a collapsed toggle and looks like the
+      // click did nothing.
+      input.checked = true;
+    });
 
     primaryList.appendChild(li);
     showVersion(initialVersion);
