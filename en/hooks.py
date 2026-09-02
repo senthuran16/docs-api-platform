@@ -19,6 +19,13 @@ _theme_css_version: str = ""
 # results UI can show which doc set / version a result belongs to.
 _breadcrumbs: dict[str, list[str]] = {}
 
+# slug -> {slug, default, versions: {version: [nav tree]}} for this build's
+# own versioned top-level section(s). Populated in on_nav; written to a JSON
+# asset in on_post_build so OTHER products' deployments can render this
+# product's expandable nav section client-side without hosting its pages.
+# See theme.js's cross-product nav block and root-index.json.
+_product_manifest: dict[str, dict] = {}
+
 
 def load_redirects() -> dict[str, str]:
     """Read redirect_maps out of redirects.yml, kept separate from mkdocs.yml
@@ -107,7 +114,66 @@ def on_nav(nav, config, files):
             item = item.parent
         if page.url and crumbs:
             _breadcrumbs[page.url] = crumbs
+
+    _build_product_nav_manifest(nav, config)
     return nav
+
+
+def _nav_tree(item):
+    """Convert one nav item into a {title, url} or {title, children} dict for
+    the cross-product manifest. Returns None for an item with nothing worth
+    sending (an external link, or a section with no local pages under it).
+    """
+    if getattr(item, "is_page", False):
+        url = item.url or ""
+        if url.startswith("/"):
+            return None
+        return {"title": item.title, "url": url}
+    if getattr(item, "is_link", False):
+        # Only doc-local relative links are sent to other products - an
+        # absolute/external link isn't something another deployment can
+        # usefully render into its own sidebar.
+        return None
+    children = [
+        node for node in (_nav_tree(c) for c in getattr(item, "children", None) or []) if node
+    ]
+    if not children:
+        return None
+    return {"title": item.title, "children": children}
+
+
+def _build_product_nav_manifest(nav, config):
+    """Build slug -> version -> nav tree for this build's own versioned
+    top-level section(s) (see extra.versioned_sections in mkdocs.yml).
+
+    This is deliberately a full tree (title + url + nested children), not
+    the flat per-version page-url list a same-product redirect needs: the
+    cross-product sidebar has to render another product's whole expandable
+    section from data alone, since it doesn't have that product's pages.
+    """
+    _product_manifest.clear()
+    versioned_sections = (config.get("extra") or {}).get("versioned_sections") or {}
+    slug_by_title = {
+        title: cfg["slug"] for title, cfg in versioned_sections.items() if cfg.get("slug")
+    }
+    if not slug_by_title:
+        return
+
+    for item in nav.items:
+        slug = slug_by_title.get(getattr(item, "title", None))
+        if not slug:
+            continue
+        cfg = versioned_sections[item.title]
+        versions = {}
+        for version_item in getattr(item, "children", None) or []:
+            tree = _nav_tree(version_item)
+            if tree:
+                versions[version_item.title] = tree.get("children", [])
+        _product_manifest[slug] = {
+            "slug": slug,
+            "default": cfg.get("default"),
+            "versions": versions,
+        }
 
 
 def on_post_build(config, **kwargs):
@@ -121,6 +187,20 @@ def on_post_build(config, **kwargs):
     os.makedirs(os.path.dirname(breadcrumbs_path), exist_ok=True)
     with open(breadcrumbs_path, "w", encoding="utf-8") as f:
         json.dump(_breadcrumbs, f, ensure_ascii=False)
+
+    # Write this build's own product nav manifest, so other products'
+    # deployments can render this product's section into their sidebar.
+    # Written under the product's own slug (e.g. ai-gateway/product-nav-
+    # manifest.json), not under the shared assets/ dir: assets/ is a sibling
+    # of every product's page tree under docs_dir, so a path under it is
+    # identical across every product's build and can't carry per-product
+    # data. Nesting under the slug puts it inside the same URL prefix
+    # (/<slug>/*) the reverse proxy already routes to this deployment.
+    for slug, manifest in _product_manifest.items():
+        manifest_path = os.path.join(site_dir, slug, "product-nav-manifest.json")
+        os.makedirs(os.path.dirname(manifest_path), exist_ok=True)
+        with open(manifest_path, "w", encoding="utf-8") as f:
+            json.dump(manifest, f, ensure_ascii=False)
 
     theme_css_path = os.path.join(site_dir, "assets", "css", "theme.css")
 
