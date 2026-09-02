@@ -332,6 +332,11 @@ if (preRelLink) {
   request.send();
 });
 
+// Base URL for a version not present in the current build - used by both
+// the same-product dropdown below and the cross-product dropdown further
+// down, whenever a selected version isn't part of this deployment.
+var LIVE_SITE_BASE = 'https://wso2.com/api-platform/docs/';
+
 /*
  * Per-section versioned navigation
  * -------------------------------------------------------------------------
@@ -453,7 +458,7 @@ onEachPage(function () {
       // image built from one of the per-version Dockerfiles) — send the user
       // to that version's docs on the live site instead.
       if (!group) {
-        window.location.href = 'https://wso2.com/api-platform/docs/' + slug + '/' + target + '/';
+        window.location.href = LIVE_SITE_BASE + slug + '/' + target + '/';
         return;
       }
 
@@ -746,7 +751,7 @@ onEachPage(function () {
       var url = tree && firstPageUrl(tree);
       window.location.href = url
         ? new URL(url, scope).href
-        : 'https://wso2.com/api-platform/docs/' + slug + '/' + version + '/';
+        : LIVE_SITE_BASE + slug + '/' + version + '/';
     });
 
     primaryList.appendChild(li);
