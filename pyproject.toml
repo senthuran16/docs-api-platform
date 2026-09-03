@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docs-shared-hooks"
+version = "1.0.0"
+description = "Shared mkdocs build hooks for every WSO2 API Platform product/version branch."
+requires-python = ">=3.10"
+dependencies = ["pyyaml"]
+
+[tool.setuptools]
+packages = ["docs_shared_hooks"]
