@@ -7,12 +7,6 @@ FROM python:3.12 AS builder
 
 WORKDIR /app
 
-# The real hooks.py logic - see the docs-shared branch. Referenced here as a
-# named build context (--build-context docs-shared=<path>) rather than a real
-# git+https URL, since docs-shared isn't pushed anywhere yet; requirements.txt
-# expects it at exactly this path.
-COPY --from=docs-shared . /tmp/docs-shared-pkg
-
 COPY en/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir "setuptools<80"
