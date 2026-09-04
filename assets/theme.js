@@ -645,6 +645,13 @@ onEachPage(function () {
   function renderProductSection(slug, product, manifest, order) {
     if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
 
+    // The manifest's node urls are root-relative to THAT product's own
+    // deployment (see hooks.py's _nav_tree), not to this page's - each
+    // product+version is now its own separate origin, so resolve against
+    // the origin manifestUrl was actually fetched from, not this page's
+    // own scope.
+    var productOrigin = new URL(product.manifestUrl, scope).origin + '/';
+
     var allVersions = (manifest.allVersions && manifest.allVersions.length)
       ? manifest.allVersions
       : Object.keys(manifest.versions);
@@ -744,8 +751,9 @@ onEachPage(function () {
       ul.className = 'md-nav__list';
       // Each node's url is already site-root-relative (it includes its own
       // slug/version prefix - see hooks.py's _nav_tree, sourced from
-      // mkdocs' own page.url), so resolve against the site root.
-      resolveHrefs(tree, scope).forEach(function (n) { ul.appendChild(renderNode(n)); });
+      // mkdocs' own page.url), so resolve against that product's own
+      // origin - not this page's.
+      resolveHrefs(tree, productOrigin).forEach(function (n) { ul.appendChild(renderNode(n)); });
       group.appendChild(ul);
       nested.appendChild(group);
     }
@@ -776,7 +784,7 @@ onEachPage(function () {
       var tree = manifest.versions[version];
       var url = tree && firstPageUrl(tree);
       window.location.href = url
-        ? new URL(url, scope).href
+        ? new URL(url, productOrigin).href
         : LIVE_SITE_BASE + slug + '/' + version + '/';
     });
 
