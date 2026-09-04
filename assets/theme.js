@@ -525,12 +525,13 @@ onEachPage(function () {
  * real implementation should lazy-fetch a product's manifest only the
  * first time its section is expanded.
  */
-// root-index.json now lives in the docs-shared deployment, not bundled into
-// each product's own build - fetched from a fixed path rather than resolved
-// relative to whichever page happens to be open. Every other manifest fetch
-// below still resolves against that page's own scope, since each product's
-// manifest stays in that product's own deployment.
-var SHARED_BASE = '/shared/';
+// root-index.json now lives in its own docs-shared deployment, not bundled
+// into each product's own build. theme.js runs in the context of whichever
+// page loaded it - not docs-shared's own origin - so this must be an
+// absolute URL, not a path relative to the current page. Every other
+// manifest fetch below still resolves against that page's own scope, since
+// each product's manifest stays in that product's own deployment.
+var SHARED_BASE = 'https://apip-shared.choreoapps.dev/';
 
 onEachPage(function () {
   var primaryList = document.querySelector('.md-nav--primary > .md-nav__list');

@@ -2,13 +2,13 @@
   "api-manager": {
     "slug": "api-manager",
     "title": "API Manager",
-    "manifestUrl": "api-manager/product-nav-manifest.json",
+    "manifestUrl": "https://apip-apim-470.choreoapps.dev/api-manager/product-nav-manifest.json",
     "defaultVersion": "4.7.0"
   },
   "ai-gateway": {
     "slug": "ai-gateway",
     "title": "AI Gateway",
-    "manifestUrl": "ai-gateway/product-nav-manifest.json",
+    "manifestUrl": "https://apip-aigw-110.choreoapps.dev/ai-gateway/product-nav-manifest.json",
     "defaultVersion": "1.1.0"
   }
 }
