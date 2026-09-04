@@ -531,7 +531,7 @@ onEachPage(function () {
 // absolute URL, not a path relative to the current page. Every other
 // manifest fetch below still resolves against that page's own scope, since
 // each product's manifest stays in that product's own deployment.
-var SHARED_BASE = 'https://apip-shared.choreoapps.dev/';
+var SHARED_BASE = 'https://apipd-shared.choreoapps.dev/';
 
 onEachPage(function () {
   var primaryList = document.querySelector('.md-nav--primary > .md-nav__list');
