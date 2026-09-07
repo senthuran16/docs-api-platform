@@ -76,137 +76,174 @@ strict: false
 nav:
   - Overview: index.md
   - Get Started: get-started.md
-  - AI Gateway:
+  - AI Workspace:
     - "next":
-        - Overview: ai-gateway/next/overview.md
-        - LLM Proxy:
-            - Quick Start Guide: ai-gateway/next/llm-proxy/quick-start-guide.md
-            - LLM Provider Templates: ai-gateway/next/llm-proxy/llm-templates.md
-            - Guardrails:
-                - AWS Bedrock Guardrail: ai-gateway/next/llm-proxy/guardrails/aws-bedrock-guardrail.md
-                - Azure Content Safety: ai-gateway/next/llm-proxy/guardrails/azure-content-safety.md
-                - Content Length Guardrail: ai-gateway/next/llm-proxy/guardrails/content-length.md
-                - JSON Schema Guardrail: ai-gateway/next/llm-proxy/guardrails/json-schema.md
-                - PII Masking Regex Guardrail: ai-gateway/next/llm-proxy/guardrails/pii-masking-regex.md
-                - Regex Guardrail: ai-gateway/next/llm-proxy/guardrails/regex.md
-                - Semantic Prompt Guardrail: ai-gateway/next/llm-proxy/guardrails/semantic-prompt-guard.md
-                - Sentence Count Guardrail: ai-gateway/next/llm-proxy/guardrails/sentence-count.md
-                - URL Guardrail: ai-gateway/next/llm-proxy/guardrails/url.md
-                - Word Count Guardrail: ai-gateway/next/llm-proxy/guardrails/word-count.md
-            - Load Balancing:
-                - Model Round Robin: ai-gateway/next/llm-proxy/load-balancing/model-round-robin.md
-                - Model Weighted Round Robin: ai-gateway/next/llm-proxy/load-balancing/model-weighted-round-robin.md
-            - Prompt Management:
-                - Prompt Decorator: ai-gateway/next/llm-proxy/prompt-management/prompt-decorator.md
-                - Prompt Template: ai-gateway/next/llm-proxy/prompt-management/prompt-template.md
-            - Semantic Caching: ai-gateway/next/llm-proxy/semantic-caching.md
-        - MCP Proxy:
-            - Quick Start Guide: ai-gateway/next/mcp-proxy/quick-start-guide.md
-            - Policies:
-                - MCP Access Control List: ai-gateway/next/mcp-proxy/policies/mcp-acl-list.md
-                - MCP Authentication: ai-gateway/next/mcp-proxy/policies/mcp-authentication.md
-                - MCP Authorization: ai-gateway/next/mcp-proxy/policies/mcp-authorization.md
-                - MCP Rewrite: ai-gateway/next/mcp-proxy/policies/mcp-rewrite.md
-        - Deployment Modes:
-          - Immutable Gateway: ai-gateway/next/deployment-modes/immutable-gateway.md
-          - Kubernetes:
-            - Overview: ai-gateway/next/deployment-modes/kubernetes/overview.md
-            - Standalone Mode: ai-gateway/next/deployment-modes/kubernetes/kubernetes-standalone.md
-            - Kubernetes Operator Mode: ai-gateway/next/deployment-modes/kubernetes/gateway-operator.md
-        - Resiliency:
-            - Timeouts: ai-gateway/next/resiliency/timeouts.md
-        - Observability:
-            - Logging: ai-gateway/next/observability/logging.md
-            - Tracing: ai-gateway/next/observability/tracing.md
-        - Analytics:
-            - Moesif Analytics: ai-gateway/next/analytics/moesif-analytics.md
-            - Analytics Header Filter: ai-gateway/next/analytics/analytics-header-filter.md
-    - "1.1.0":
-        - Overview: ai-gateway/1.1.0/overview.md
-        - LLM Proxy:
-            - Quick Start Guide: ai-gateway/1.1.0/llm-proxy/quick-start-guide.md
-            - LLM Provider Templates: ai-gateway/1.1.0/llm-proxy/llm-templates.md
-            - Guardrails:
-                - AWS Bedrock Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/aws-bedrock-guardrail.md
-                - Azure Content Safety: ai-gateway/1.1.0/llm-proxy/guardrails/azure-content-safety.md
-                - Content Length Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/content-length.md
-                - JSON Schema Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/json-schema.md
-                - PII Masking Regex Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/pii-masking-regex.md
-                - Regex Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/regex.md
-                - Semantic Prompt Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/semantic-prompt-guard.md
-                - Sentence Count Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/sentence-count.md
-                - URL Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/url.md
-                - Word Count Guardrail: ai-gateway/1.1.0/llm-proxy/guardrails/word-count.md
-            - Load Balancing:
-                - Model Round Robin: ai-gateway/1.1.0/llm-proxy/load-balancing/model-round-robin.md
-                - Model Weighted Round Robin: ai-gateway/1.1.0/llm-proxy/load-balancing/model-weighted-round-robin.md
-            - Prompt Management:
-                - Prompt Decorator: ai-gateway/1.1.0/llm-proxy/prompt-management/prompt-decorator.md
-                - Prompt Template: ai-gateway/1.1.0/llm-proxy/prompt-management/prompt-template.md
-            - Semantic Caching: ai-gateway/1.1.0/llm-proxy/semantic-caching.md
-        - MCP Proxy:
-            - Quick Start Guide: ai-gateway/1.1.0/mcp-proxy/quick-start-guide.md
-            - Policies:
-                - MCP Access Control List: ai-gateway/1.1.0/mcp-proxy/policies/mcp-acl-list.md
-                - MCP Authentication: ai-gateway/1.1.0/mcp-proxy/policies/mcp-authentication.md
-                - MCP Authorization: ai-gateway/1.1.0/mcp-proxy/policies/mcp-authorization.md
-                - MCP Rewrite: ai-gateway/1.1.0/mcp-proxy/policies/mcp-rewrite.md
-        - Deployment Modes:
-          - Immutable Gateway: ai-gateway/1.1.0/deployment-modes/immutable-gateway.md
-          - Kubernetes:
-            - Overview: ai-gateway/1.1.0/deployment-modes/kubernetes/overview.md
-            - Standalone Mode: ai-gateway/1.1.0/deployment-modes/kubernetes/kubernetes-standalone.md
-            - Kubernetes Operator Mode: ai-gateway/1.1.0/deployment-modes/kubernetes/gateway-operator.md
-        - Observability:
-            - Logging: ai-gateway/1.1.0/observability/logging.md
-            - Tracing: ai-gateway/1.1.0/observability/tracing.md
-        - Analytics:
-            - Moesif Analytics: ai-gateway/1.1.0/analytics/moesif-analytics.md
-            - Analytics Header Filter: ai-gateway/1.1.0/analytics/analytics-header-filter.md
+      - Overview: ai-workspace/next/overview.md
+      - About this Release: ai-workspace/next/about-this-release.md
+      - Getting Started: ai-workspace/next/getting-started.md
+      # Set up the workspace itself.
+      - Setting Up:
+          - Configuration & Interpolation: ai-workspace/next/setting-up/configuration.md
+          - Ports: ai-workspace/next/setting-up/ports.md
+          - Database: ai-workspace/next/setting-up/database.md
+          - Authentication:
+              - Overview: ai-workspace/next/setting-up/authentication/overview.md
+              - Connect an Identity Provider: ai-workspace/next/setting-up/authentication/connect-an-identity-provider.md
+              - Set up Asgardeo: ai-workspace/next/setting-up/authentication/asgardeo-setup.md
+              - Set up Microsoft Entra ID: ai-workspace/next/setting-up/authentication/entra-id-setup.md
+      # Take the same workspace to production, on a VM or on Kubernetes.
+      - Production Deployment:
+          - Overview: ai-workspace/next/production/overview.md
+          - Deploy to Production: ai-workspace/next/production/deploy.md
+          - Provision Secrets and Keys: ai-workspace/next/production/secrets-and-keys.md
+          - Secure Traffic with TLS: ai-workspace/next/production/tls.md
+          - Expose AI Workspace: ai-workspace/next/production/expose-the-workspace.md
+          - Run in High Availability: ai-workspace/next/production/high-availability.md
+          - Harden the Deployment: ai-workspace/next/production/harden.md
+          - Connect AI Gateways: ai-workspace/next/production/connect-gateways.md
+          - Operate the Deployment: ai-workspace/next/production/operate.md
+      # Build the artifacts, in the order you create them.
+      - AI Gateways:
+          - Setting Up: ai-workspace/next/ai-gateways/setting-up.md
+      - LLM Providers:
+          - Overview: ai-workspace/next/llm-providers/overview.md
+          - Configure Provider: ai-workspace/next/llm-providers/configure-provider.md
+          - Manage Provider: ai-workspace/next/llm-providers/manage-provider.md
+      - LLM Provider Templates:
+          - Overview: ai-workspace/next/llm-provider-templates/overview.md
+          - Create a Custom Template: ai-workspace/next/llm-provider-templates/configure-template.md
+          - Manage Templates: ai-workspace/next/llm-provider-templates/manage-template.md
+      - App LLM Proxies:
+          - Overview: ai-workspace/next/llm-proxies/overview.md
+          - Configure App LLM Proxy: ai-workspace/next/llm-proxies/configure-proxy.md
+          - Manage App LLM Proxy: ai-workspace/next/llm-proxies/manage-proxy.md
+      - MCP Proxies:
+          - Overview: ai-workspace/next/mcp-proxies/overview.md
+          - Configure Proxy: ai-workspace/next/mcp-proxies/configure-proxy.md
+          - Apply Policies: ai-workspace/next/mcp-proxies/apply-policies.md
+      # Credentials the artifacts above reference.
+      - Secrets Management: ai-workspace/next/secrets-management.md
+      # The other two ways artifacts get created.
+      - Manage Gateway-deployed AI artifacts: ai-workspace/next/sync-gateway-created-artifacts.md
+      - CI/CD:
+          - Overview: ai-workspace/next/ci-cd/overview.md
+          - Configure CI/CD Workflow: ai-workspace/next/ci-cd/configure-ci-cd-workflow.md
+      # Govern what you built.
+      - Policies:
+          - Overview: ai-workspace/next/policies/overview.md
+          - Custom Policies:
+              - Writing an AI Policy: ai-workspace/next/policies/writing-an-ai-policy.md
+              - Building the Gateway with AI Policies: ai-workspace/next/policies/build-gateway-with-ai-policies.md
+              - Apply AI Policies to Proxies: ai-workspace/next/policies/apply-ai-policies-to-proxies.md
+      - Insights: ai-workspace/next/insights.md
+      # Consume it from an application.
+      - GenAI Applications: ai-workspace/next/genai-applications.md
+      - Configure Inbound Auth: ai-workspace/next/configure-inbound-auth.md
+      - Invoke via SDKs: ai-workspace/next/using-sdks.md
+      - Troubleshooting: ai-workspace/next/troubleshooting.md
+      # REST reference for everything above.
+      - References:
+          - Platform API:
+              - Overview: ai-workspace/next/platform-api/overview.md
+              - Authentication: ai-workspace/next/platform-api/authentication.md
+              - Projects: ai-workspace/next/platform-api/projects.md
+              - Gateways: ai-workspace/next/platform-api/gateways.md
+              - Gateway Tokens: ai-workspace/next/platform-api/gateway-tokens.md
+              - Gateway Policies: ai-workspace/next/platform-api/gateway-policies.md
+              - LLM Provider Templates: ai-workspace/next/platform-api/llm-provider-templates.md
+              - LLM Providers: ai-workspace/next/platform-api/llm-providers.md
+              - LLM Provider Deployments: ai-workspace/next/platform-api/llm-provider-deployments.md
+              - LLM Proxies: ai-workspace/next/platform-api/llm-proxies.md
+              - LLM Proxy Deployments: ai-workspace/next/platform-api/llm-proxy-deployments.md
+              - MCP Proxies: ai-workspace/next/platform-api/mcp-proxies.md
+              - MCP Proxy Deployments: ai-workspace/next/platform-api/mcp-proxy-deployments.md
+              - Applications: ai-workspace/next/platform-api/applications.md
+              - API Keys: ai-workspace/next/platform-api/api-keys.md
+              - Secrets: ai-workspace/next/platform-api/secrets.md
+              - Schemas: ai-workspace/next/platform-api/schemas.md
     - "1.0.0":
-        - Overview: ai-gateway/1.0.0/overview.md
-        - LLM Proxy:
-            - Quick Start Guide: ai-gateway/1.0.0/llm-proxy/quick-start-guide.md
-            - LLM Provider Templates: ai-gateway/1.0.0/llm-proxy/llm-templates.md
-            - Guardrails:
-                - AWS Bedrock Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/aws-bedrock-guardrail.md
-                - Azure Content Safety: ai-gateway/1.0.0/llm-proxy/guardrails/azure-content-safety.md
-                - Content Length Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/content-length.md
-                - JSON Schema Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/json-schema.md
-                - PII Masking Regex Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/pii-masking-regex.md
-                - Regex Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/regex.md
-                - Semantic Prompt Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/semantic-prompt-guard.md
-                - Sentence Count Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/sentence-count.md
-                - URL Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/url.md
-                - Word Count Guardrail: ai-gateway/1.0.0/llm-proxy/guardrails/word-count.md
-            - Load Balancing:
-                - Model Round Robin: ai-gateway/1.0.0/llm-proxy/load-balancing/model-round-robin.md
-                - Model Weighted Round Robin: ai-gateway/1.0.0/llm-proxy/load-balancing/model-weighted-round-robin.md
-            - Prompt Management:
-                - Prompt Decorator: ai-gateway/1.0.0/llm-proxy/prompt-management/prompt-decorator.md
-                - Prompt Template: ai-gateway/1.0.0/llm-proxy/prompt-management/prompt-template.md
-            - Semantic Caching: ai-gateway/1.0.0/llm-proxy/semantic-caching.md
-        - MCP Proxy:
-            - Quick Start Guide: ai-gateway/1.0.0/mcp-proxy/quick-start-guide.md
-            - Policies:
-                - MCP Access Control List: ai-gateway/1.0.0/mcp-proxy/policies/mcp-acl-list.md
-                - MCP Authentication: ai-gateway/1.0.0/mcp-proxy/policies/mcp-authentication.md
-                - MCP Authorization: ai-gateway/1.0.0/mcp-proxy/policies/mcp-authorization.md
-                - MCP Rewrite: ai-gateway/1.0.0/mcp-proxy/policies/mcp-rewrite.md
-        - Deployment Modes:
-          - Immutable Gateway: ai-gateway/1.0.0/deployment-modes/immutable-gateway.md
-          - Kubernetes:
-            - Overview: ai-gateway/1.0.0/deployment-modes/kubernetes/overview.md
-            - Standalone Mode: ai-gateway/1.0.0/deployment-modes/kubernetes/kubernetes-standalone.md
-            - Kubernetes Operator Mode: ai-gateway/1.0.0/deployment-modes/kubernetes/gateway-operator.md
-        - Observability:
-            - Logging: ai-gateway/1.0.0/observability/logging.md
-            - Tracing: ai-gateway/1.0.0/observability/tracing.md
-        - Analytics:
-            - Moesif Analytics: ai-gateway/1.0.0/analytics/moesif-analytics.md
-            - Analytics Header Filter: ai-gateway/1.0.0/analytics/analytics-header-filter.md
-  # In-development 'next' doc sets, only shown in the nav while browsing a
-  # /next/ (or <component>/next/) URL — see extra.version_scoped_navs.
+      - Overview: ai-workspace/1.0.0/overview.md
+      - About this Release: ai-workspace/1.0.0/about-this-release.md
+      - Getting Started: ai-workspace/1.0.0/getting-started.md
+      # Set up the workspace itself.
+      - Setting Up:
+          - Configuration & Interpolation: ai-workspace/1.0.0/setting-up/configuration.md
+          - Ports: ai-workspace/1.0.0/setting-up/ports.md
+          - Database: ai-workspace/1.0.0/setting-up/database.md
+          - Authentication:
+              - Overview: ai-workspace/1.0.0/setting-up/authentication/overview.md
+              - Connect an Identity Provider: ai-workspace/1.0.0/setting-up/authentication/connect-an-identity-provider.md
+              - Set up Asgardeo: ai-workspace/1.0.0/setting-up/authentication/asgardeo-setup.md
+              - Set up Microsoft Entra ID: ai-workspace/1.0.0/setting-up/authentication/entra-id-setup.md
+      - Production Deployment:
+          - Overview: ai-workspace/1.0.0/production/overview.md
+          - Deploy to Production: ai-workspace/1.0.0/production/deploy.md
+          - Provision Secrets and Keys: ai-workspace/1.0.0/production/secrets-and-keys.md
+          - Secure Traffic with TLS: ai-workspace/1.0.0/production/tls.md
+          - Expose AI Workspace: ai-workspace/1.0.0/production/expose-the-workspace.md
+          - Run in High Availability: ai-workspace/1.0.0/production/high-availability.md
+          - Harden the Deployment: ai-workspace/1.0.0/production/harden.md
+          - Connect AI Gateways: ai-workspace/1.0.0/production/connect-gateways.md
+          - Operate the Deployment: ai-workspace/1.0.0/production/operate.md
+      # Build the artifacts, in the order you create them.
+      - AI Gateways:
+          - Setting Up: ai-workspace/1.0.0/ai-gateways/setting-up.md
+      - LLM Providers:
+          - Overview: ai-workspace/1.0.0/llm-providers/overview.md
+          - Configure Provider: ai-workspace/1.0.0/llm-providers/configure-provider.md
+          - Manage Provider: ai-workspace/1.0.0/llm-providers/manage-provider.md
+      - LLM Provider Templates:
+          - Overview: ai-workspace/1.0.0/llm-provider-templates/overview.md
+          - Create a Custom Template: ai-workspace/1.0.0/llm-provider-templates/configure-template.md
+          - Manage Templates: ai-workspace/1.0.0/llm-provider-templates/manage-template.md
+      - App LLM Proxies:
+          - Overview: ai-workspace/1.0.0/llm-proxies/overview.md
+          - Configure App LLM Proxy: ai-workspace/1.0.0/llm-proxies/configure-proxy.md
+          - Manage App LLM Proxy: ai-workspace/1.0.0/llm-proxies/manage-proxy.md
+      - MCP Proxies:
+          - Overview: ai-workspace/1.0.0/mcp-proxies/overview.md
+          - Configure Proxy: ai-workspace/1.0.0/mcp-proxies/configure-proxy.md
+          - Apply Policies: ai-workspace/1.0.0/mcp-proxies/apply-policies.md
+      # Credentials the artifacts above reference.
+      - Secrets Management: ai-workspace/1.0.0/secrets-management.md
+      # The other two ways artifacts get created.
+      - Manage gateway-deployed AI artifacts: ai-workspace/1.0.0/sync-gateway-created-artifacts.md
+      - CI/CD:
+          - Overview: ai-workspace/1.0.0/ci-cd/overview.md
+          - Configure CI/CD Workflow: ai-workspace/1.0.0/ci-cd/configure-ci-cd-workflow.md
+      # Govern what you built.
+      - Policies:
+          - Overview: ai-workspace/1.0.0/policies/overview.md
+          - Custom Policies:
+              - Writing an AI Policy: ai-workspace/1.0.0/policies/writing-an-ai-policy.md
+              - Building the Gateway with AI Policies: ai-workspace/1.0.0/policies/build-gateway-with-ai-policies.md
+              - Apply AI Policies to Proxies: ai-workspace/1.0.0/policies/apply-ai-policies-to-proxies.md
+      - Insights: ai-workspace/1.0.0/insights.md
+      # Consume it from an application.
+      - GenAI Applications: ai-workspace/1.0.0/genai-applications.md
+      - Configure Inbound Auth: ai-workspace/1.0.0/configure-inbound-auth.md
+      - Invoke via SDKs: ai-workspace/1.0.0/using-sdks.md
+      - Troubleshooting: ai-workspace/1.0.0/troubleshooting.md
+      # REST reference for everything above.
+      - References:
+          - Platform API:
+              - Overview: ai-workspace/1.0.0/platform-api/overview.md
+              - Authentication: ai-workspace/1.0.0/platform-api/authentication.md
+              - Projects: ai-workspace/1.0.0/platform-api/projects.md
+              - Gateways: ai-workspace/1.0.0/platform-api/gateways.md
+              - Gateway Tokens: ai-workspace/1.0.0/platform-api/gateway-tokens.md
+              - Gateway Policies: ai-workspace/1.0.0/platform-api/gateway-policies.md
+              - LLM Provider Templates: ai-workspace/1.0.0/platform-api/llm-provider-templates.md
+              - LLM Providers: ai-workspace/1.0.0/platform-api/llm-providers.md
+              - LLM Provider Deployments: ai-workspace/1.0.0/platform-api/llm-provider-deployments.md
+              - LLM Proxies: ai-workspace/1.0.0/platform-api/llm-proxies.md
+              - LLM Proxy Deployments: ai-workspace/1.0.0/platform-api/llm-proxy-deployments.md
+              - MCP Proxies: ai-workspace/1.0.0/platform-api/mcp-proxies.md
+              - MCP Proxy Deployments: ai-workspace/1.0.0/platform-api/mcp-proxy-deployments.md
+              - Applications: ai-workspace/1.0.0/platform-api/applications.md
+              - API Keys: ai-workspace/1.0.0/platform-api/api-keys.md
+              - Secrets: ai-workspace/1.0.0/platform-api/secrets.md
+              - Schemas: ai-workspace/1.0.0/platform-api/schemas.md
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.def_list
@@ -268,11 +305,10 @@ extra:
   # here is rendered with a version selector; its direct children must be the
   # version groups (titled with the version string). See nav-item.html / theme.js.
   versioned_sections:
-    AI Gateway:
-      slug: ai-gateway
-      default: "1.1.0"
+    AI Workspace:
+      slug: ai-workspace
+      default: "1.0.0"
       versions:
-        - "1.1.0"
         - "1.0.0"
   # Choreo Connect gateway version referenced by {{ choreo_connect.* }}
   # placeholders in the API Manager 4.2.0 docs.
