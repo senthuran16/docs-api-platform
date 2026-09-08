@@ -837,10 +837,16 @@ onEachPage(function () {
   fetch(new URL(SHARED_BASE + 'root-index.json', scope))
     .then(function (r) { return r.ok ? r.json() : {}; })
     .then(function (index) {
-      var order = Object.keys(index);
+      // _liveSiteBase overrides the LIVE_SITE_BASE fallback declared above,
+      // if the mounted root-index.json provides one - falls back to that
+      // hardcoded default if this fetch hasn't resolved yet or fails.
+      if (index._liveSiteBase) LIVE_SITE_BASE = index._liveSiteBase;
+
+      var products = index.products || {};
+      var order = Object.keys(products);
       order.forEach(function (slug) {
         if (ownSlugs[slug]) return;
-        var product = index[slug];
+        var product = products[slug];
         fetch(new URL(product.manifestUrl, scope))
           .then(function (r) { return r.ok ? r.json() : null; })
           .then(function (manifest) {
