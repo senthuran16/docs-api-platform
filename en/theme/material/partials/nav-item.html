@@ -61,6 +61,19 @@
     {% set versioned_cfg = config.extra.versioned_sections[nav_item.title] %}
   {% endif %}
 
+  <!-- Unversioned cross-product section config (see extra.unversioned_sections
+       in mkdocs.yml, e.g. platform-common's Analytics/Monetization/...). Only
+       applies to top-level tabs (level 1). Tags the rendered li with the same
+       data-md-xproduct attribute theme.js's own cross-product rendering uses,
+       so its insertProductSection can correctly rank a fetched-in section
+       against this build's own unversioned ones too - without this, only
+       versioned sections were identifiable, and any cross-product section
+       fetched onto an unversioned-section page could land in the wrong slot. -->
+  {% set unversioned_cfg = None %}
+  {% if level == 1 and config.extra.unversioned_sections and nav_item.title in config.extra.unversioned_sections %}
+    {% set unversioned_cfg = config.extra.unversioned_sections[nav_item.title] %}
+  {% endif %}
+
   <!-- Version-scoped nav config (see extra.version_scoped_navs in mkdocs.yml).
        Top-level sections listed there are rendered hidden and revealed by
        theme.js only while the matching doc version (e.g. "next") is active.
@@ -279,6 +292,7 @@
     <li
       class="{{ class }} md-nav__item--nested {{ has_icon_class }} {{ hide_nav_class }}"
       {% if scoped_version %}data-md-scoped-version="{{ scoped_version }}"{% endif %}
+      {% if unversioned_cfg %}data-md-xproduct="{{ unversioned_cfg.slug }}"{% endif %}
     >
       {% set expanded = "navigation.expand" in features %}
       {% set active = nav_item.active or expanded %}
