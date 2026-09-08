@@ -1,20 +1,25 @@
 {
+  "cloud": {
+    "slug": "cloud",
+    "title": "Cloud",
+    "manifestUrl": "https://apipd-cloud.choreoapps.dev/cloud/product-nav-manifest.json"
+  },
   "api-manager": {
     "slug": "api-manager",
     "title": "API Manager",
     "manifestUrl": "https://c9706fb9-26b2-439f-a11d-84cab2096a4f.e1-us-east-azure.choreoapps.dev/api-manager/product-nav-manifest.json",
     "defaultVersion": "4.7.0"
   },
-  "ai-gateway": {
-    "slug": "ai-gateway",
-    "title": "AI Gateway",
-    "manifestUrl": "https://apipd-aigw-120.choreoapps.dev/ai-gateway/product-nav-manifest.json",
-    "defaultVersion": "1.2.0"
-  },
   "api-gateway": {
     "slug": "api-gateway",
     "title": "API Gateway",
     "manifestUrl": "https://apipd-apigw-120.choreoapps.dev/api-gateway/product-nav-manifest.json",
+    "defaultVersion": "1.2.0"
+  },
+  "ai-gateway": {
+    "slug": "ai-gateway",
+    "title": "AI Gateway",
+    "manifestUrl": "https://apipd-aigw-120.choreoapps.dev/ai-gateway/product-nav-manifest.json",
     "defaultVersion": "1.2.0"
   },
   "api-portal": {
@@ -28,11 +33,6 @@
     "title": "AI Workspace",
     "manifestUrl": "https://apipd-aiws-100.choreoapps.dev/ai-workspace/product-nav-manifest.json",
     "defaultVersion": "1.0.0"
-  },
-  "cloud": {
-    "slug": "cloud",
-    "title": "Cloud",
-    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/cloud/product-nav-manifest.json"
   },
   "analytics": {
     "slug": "analytics",
