@@ -438,7 +438,7 @@ extra_css:
 extra_javascript:
   - assets/lib/json-formatter/json-formatter.umd.js
   - assets/lib/highlightjs/highlight.min.js
-  - https://apipd-shared.choreoapps.dev/theme.js
+  - https://2d1adeb6-27bc-4c21-9ac4-b709df94a71c.e1-us-east-azure.choreoapps.dev/theme.js
 extra:
   show_repo_in_nav: false
   page_title_suffix: "API Platform Docs"
