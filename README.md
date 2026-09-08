@@ -4,6 +4,24 @@ This is the WSO2 API Platform documentation repository. This repository is open 
 
 To see the API Platform documentation site, go to [https://wso2.com/api-platform/docs/](https://wso2.com/api-platform/docs/)
 
+## Important: `docs-shared-hooks` pin in this branch
+
+`en/requirements.txt` installs the shared build-hook logic straight from a
+git tag:
+```
+docs-shared-hooks @ git+https://github.com/senthuran16/docs-api-platform.git@shared-v3
+```
+
+That URL currently points at a personal fork (`senthuran16/docs-api-platform`),
+used for this experiment. **When this moves to WSO2's own repository, this
+line has to be updated on every product+version branch** — easy to miss,
+since it's one line inside one config file, with no build-time error to
+catch it (pip will happily keep installing from the old fork forever).
+
+Separately: the `@shared-vN` tag itself needs bumping whenever
+`docs_shared_hooks`'s actual code changes — a branch pinned to an old tag
+silently keeps using old hook logic, with no warning either.
+
 ## Local Development Setup
 
 This documentation site is built using [MkDocs](https://www.mkdocs.org/) with the Material theme. Follow these steps to set up and run the documentation locally.
