@@ -581,12 +581,28 @@ onEachPage(function () {
     });
   }
 
-  function renderNode(node) {
+  // A raw SVG string, for a section's own nav_icons entry (see hooks.py's
+  // _section_icon) - mirrors nav-item.html's own icon rendering, since a
+  // page showing another product's section has no local .icons/ directory
+  // to resolve an icon name from itself.
+  function iconSpan(svg) {
+    var span = document.createElement('span');
+    span.className = 'icon';
+    span.innerHTML = svg;
+    return span;
+  }
+
+  // sectionIcon is only ever passed for the single top-level call building
+  // a cross-product section (see renderFlatProductSection) - recursive
+  // calls below for a node's own children never pass one, since nav_icons
+  // only ever applies to a level-1 section, never a nested child.
+  function renderNode(node, sectionIcon) {
     var li = document.createElement('li');
     li.className = 'md-nav__item';
 
     if (node.children && node.children.length) {
       li.className += ' md-nav__item--nested';
+      if (sectionIcon) li.className += ' md-nav--has-icon';
       var id = nextId();
 
       var input = document.createElement('input');
@@ -599,7 +615,12 @@ onEachPage(function () {
       label.className = 'md-nav__link';
       label.setAttribute('for', id);
       var titleSpan = document.createElement('span');
-      titleSpan.textContent = node.title;
+      if (sectionIcon) {
+        titleSpan.appendChild(iconSpan(sectionIcon));
+        titleSpan.appendChild(document.createTextNode(' ' + node.title));
+      } else {
+        titleSpan.textContent = node.title;
+      }
       label.appendChild(titleSpan);
       var icon = document.createElement('span');
       icon.className = 'md-nav__icon md-icon';
@@ -678,7 +699,8 @@ onEachPage(function () {
 
     var id = nextId();
     var li = document.createElement('li');
-    li.className = 'md-nav__item md-nav__item--nested md-nav__item--versioned';
+    li.className = 'md-nav__item md-nav__item--nested md-nav__item--versioned'
+      + (manifest.icon ? ' md-nav--has-icon' : '');
     li.setAttribute('data-md-xproduct', slug);
 
     var input = document.createElement('input');
@@ -694,7 +716,12 @@ onEachPage(function () {
     titleLabel.className = 'md-nav__versioned-title';
     titleLabel.setAttribute('for', id);
     var titleSpan = document.createElement('span');
-    titleSpan.textContent = product.title || slug;
+    if (manifest.icon) {
+      titleSpan.appendChild(iconSpan(manifest.icon));
+      titleSpan.appendChild(document.createTextNode('\xa0' + (product.title || slug)));
+    } else {
+      titleSpan.textContent = product.title || slug;
+    }
     titleLabel.appendChild(titleSpan);
     header.appendChild(titleLabel);
 
@@ -802,7 +829,7 @@ onEachPage(function () {
 
     var productOrigin = new URL(product.manifestUrl, scope).origin + '/';
     var resolved = resolveHrefs(manifest.tree, productOrigin);
-    var li = renderNode({ title: product.title || slug, children: resolved });
+    var li = renderNode({ title: product.title || slug, children: resolved }, manifest.icon);
     li.setAttribute('data-md-xproduct', slug);
     insertProductSection(li, slug, order);
   }

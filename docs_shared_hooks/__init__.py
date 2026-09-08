@@ -153,6 +153,50 @@ def _nav_tree(item):
     return {"title": item.title, "children": children}
 
 
+_icon_svg_cache: dict[str, str] = {}
+
+
+def _icon_svg(icon: str) -> str | None:
+    """Read a Material icon's raw SVG content (e.g. 'octicons/sliders-16'),
+    for embedding directly into a cross-product manifest. A page rendering
+    another product's section has no local .icons/ directory to resolve an
+    icon name from itself - see nav-item.html's own nav_icon() macro, which
+    this mirrors, but for a build-time string instead of a Jinja include.
+    """
+    if icon in _icon_svg_cache:
+        return _icon_svg_cache[icon]
+    svg = None
+    try:
+        import material
+        path = os.path.join(os.path.dirname(material.__file__), ".icons", icon + ".svg")
+        with open(path, encoding="utf-8") as f:
+            svg = f.read()
+    except Exception:
+        logger.warning("Could not read icon %r for cross-product manifest", icon)
+    _icon_svg_cache[icon] = svg
+    return svg
+
+
+def _section_icon(title: str, config) -> str | None:
+    """This section's icon, if config.extra.nav_icons configures one for it.
+
+    Mirrors nav-item.html's own icon resolution: a versioned or unversioned
+    top-level section is always level 1, so only consider a nav_icons entry
+    that doesn't restrict itself to some other level.
+    """
+    nav_icons = (config.get("extra") or {}).get("nav_icons") or {}
+    cfg = nav_icons.get(title)
+    if not cfg:
+        return None
+    level = cfg.get("level")
+    if level is not None:
+        levels = level if isinstance(level, list) else [level]
+        if 1 not in levels:
+            return None
+    icon = cfg.get("icon")
+    return _icon_svg(icon) if icon else None
+
+
 def _build_product_nav_manifest(nav, config):
     """Build a cross-product manifest for this build's own top-level
     section(s) - both versioned (extra.versioned_sections) and unversioned
@@ -201,6 +245,7 @@ def _build_product_nav_manifest(nav, config):
                 # same as the same-product dropdown already does.
                 "allVersions": cfg.get("versions") or [],
                 "versions": versions,
+                "icon": _section_icon(title, config),
             }
         elif title in unversioned_slug_by_title:
             slug = unversioned_slug_by_title[title]
@@ -209,6 +254,7 @@ def _build_product_nav_manifest(nav, config):
                 _product_manifest[slug] = {
                     "slug": slug,
                     "tree": tree.get("children", []),
+                    "icon": _section_icon(title, config),
                 }
 
 
