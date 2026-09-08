@@ -541,29 +541,66 @@ onEachPage(function () {
     (document.querySelector('base') ? new URL(document.querySelector('base').href) : new URL('/', location));
 
   // Sections already rendered server-side (this build's own product) don't
-  // need to be fetched again.
-  var ownSlugs = {};
-  document.querySelectorAll('.md-nav__item--versioned[data-md-versioned-section]').forEach(function (el) {
-    ownSlugs[el.getAttribute('data-md-versioned-section')] = true;
-  });
+  // need to be fetched again. A DOM attribute only ever identifies a
+  // *versioned* native section (see nav-item.html's plain-item branch, which
+  // sets none), so an unversioned build's own sections were previously
+  // invisible to this check - causing them to be fetched and re-rendered as
+  // if they belonged to some other product. own-product-slugs.json is
+  // written at build time (see hooks.py's on_post_build) from the exact set
+  // of top-level sections this build actually produced, versioned or not.
+  var ownSlugsPromise = fetch(new URL('assets/own-product-slugs.json', scope))
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (slugs) {
+      var map = {};
+      (slugs || []).forEach(function (s) { map[s] = true; });
+      return map;
+    })
+    .catch(function () { return {}; });
 
   // Every top-level product section - native or cross-product - must sit in
   // the same place regardless of which product's page rendered it, or the
   // sidebar reorders itself depending on where you're browsing from.
   // root-index.json's key order (preserved by JS for string keys) is the
   // single canonical order every page agrees on.
-  function insertProductSection(li, slug, order) {
+  //
+  // hr, if given, is this section's expanded_navs divider (see hooks.py's
+  // _section_style) - it must land immediately before the li itself, same as
+  // nav-item.html renders it as the li's preceding sibling.
+  function insertProductSection(li, slug, order, hr) {
     var targetRank = order.indexOf(slug);
     if (targetRank === -1) targetRank = order.length;
     var items = primaryList.children;
     for (var i = 0; i < items.length; i++) {
       var itemSlug = items[i].getAttribute('data-md-versioned-section') || items[i].getAttribute('data-md-xproduct');
       if (itemSlug && order.indexOf(itemSlug) > targetRank) {
-        primaryList.insertBefore(li, items[i]);
+        // Capture the reference once: items is the live children collection,
+        // so inserting hr first shifts this same item to a new index, and
+        // re-reading items[i] afterward would resolve to hr itself instead -
+        // landing li BEFORE its own divider.
+        var ref = items[i];
+        if (hr) primaryList.insertBefore(hr, ref);
+        primaryList.insertBefore(li, ref);
         return;
       }
     }
+    if (hr) primaryList.appendChild(hr);
     primaryList.appendChild(li);
+  }
+
+  // Builds this section's expanded_navs styling - a divider <hr> (or null)
+  // plus the class names nav-item.html would apply to the section's own li -
+  // from the divider/verticleLine/expandedSection fields hooks.py's
+  // _section_style wrote into the manifest.
+  function sectionStyle(manifest) {
+    var classes = '';
+    if (manifest.expandedSection) classes += ' md-nav--expanded-section';
+    if (manifest.verticleLine) classes += ' md-nav--expanded-section-verticle-line';
+    var hr = null;
+    if (manifest.divider) {
+      hr = document.createElement('hr');
+      hr.className = 'md-nav--expanded-section-divider';
+    }
+    return { classes: classes, hr: hr };
   }
 
   var idCounter = 0;
@@ -697,10 +734,11 @@ onEachPage(function () {
       : presentVersions[0];
     if (!initialVersion) return;
 
+    var style = sectionStyle(manifest);
     var id = nextId();
     var li = document.createElement('li');
     li.className = 'md-nav__item md-nav__item--nested md-nav__item--versioned'
-      + (manifest.icon ? ' md-nav--has-icon' : '');
+      + (manifest.icon ? ' md-nav--has-icon' : '') + style.classes;
     li.setAttribute('data-md-xproduct', slug);
 
     var input = document.createElement('input');
@@ -815,7 +853,7 @@ onEachPage(function () {
         : LIVE_SITE_BASE + slug + '/' + version + '/';
     });
 
-    insertProductSection(li, slug, order);
+    insertProductSection(li, slug, order, style.hr);
     renderVersionGroup(initialVersion);
   }
 
@@ -831,12 +869,18 @@ onEachPage(function () {
     var resolved = resolveHrefs(manifest.tree, productOrigin);
     var li = renderNode({ title: product.title || slug, children: resolved }, manifest.icon);
     li.setAttribute('data-md-xproduct', slug);
-    insertProductSection(li, slug, order);
+    var style = sectionStyle(manifest);
+    if (style.classes) li.className += style.classes;
+    insertProductSection(li, slug, order, style.hr);
   }
 
-  fetch(new URL(SHARED_BASE + 'root-index.json', scope))
-    .then(function (r) { return r.ok ? r.json() : {}; })
-    .then(function (index) {
+  Promise.all([
+    ownSlugsPromise,
+    fetch(new URL(SHARED_BASE + 'root-index.json', scope)).then(function (r) { return r.ok ? r.json() : {}; })
+  ])
+    .then(function (results) {
+      var ownSlugs = results[0];
+      var index = results[1];
       // _liveSiteBase overrides the LIVE_SITE_BASE fallback declared above,
       // if the mounted root-index.json provides one - falls back to that
       // hardcoded default if this fetch hasn't resolved yet or fails.

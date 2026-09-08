@@ -197,6 +197,37 @@ def _section_icon(title: str, config) -> str | None:
     return _icon_svg(icon) if icon else None
 
 
+def _section_style(title: str, config) -> dict:
+    """This section's expanded_navs styling (divider / vertical line), if
+    configured. Mirrors nav-item.html's own matched_expanded_nav lookup, so
+    a cross-product section gets the same styling a native one would -
+    without this, theme.js has no way to know a section should render one.
+
+    "verticle-line" and "verticle-line-only" both draw the vertical line
+    (verticleLine), but only plain "verticle-line" also adds the wrapping
+    md-nav--expanded-section class (expandedSection) - nav-item.html applies
+    that one separately (see its two matched_expanded_nav branches).
+    """
+    expanded_navs = (config.get("extra") or {}).get("expanded_navs") or []
+    for entry in expanded_navs:
+        if entry.get("title") != title:
+            continue
+        # A top-level manifest section is always level 1 (mirrors
+        # _section_icon's own guard) - skip an entry that restricts itself to
+        # some other level, e.g. the "AI Workspace" / "Monetization" entries
+        # that exist to style a same-named nested item instead.
+        level = entry.get("level")
+        if level is not None and level != 1:
+            continue
+        options = entry.get("options") or []
+        return {
+            "divider": "divider" in options,
+            "verticleLine": "verticle-line" in options or "verticle-line-only" in options,
+            "expandedSection": "verticle-line" in options,
+        }
+    return {"divider": False, "verticleLine": False, "expandedSection": False}
+
+
 def _build_product_nav_manifest(nav, config):
     """Build a cross-product manifest for this build's own top-level
     section(s) - both versioned (extra.versioned_sections) and unversioned
@@ -246,6 +277,7 @@ def _build_product_nav_manifest(nav, config):
                 "allVersions": cfg.get("versions") or [],
                 "versions": versions,
                 "icon": _section_icon(title, config),
+                **_section_style(title, config),
             }
         elif title in unversioned_slug_by_title:
             slug = unversioned_slug_by_title[title]
@@ -255,6 +287,7 @@ def _build_product_nav_manifest(nav, config):
                     "slug": slug,
                     "tree": tree.get("children", []),
                     "icon": _section_icon(title, config),
+                    **_section_style(title, config),
                 }
 
 
@@ -263,6 +296,17 @@ def on_post_build(config, **kwargs):
     so that CDN / browser caches are busted whenever a partial file changes.
     Also writes the search breadcrumb map collected in on_nav."""
     site_dir = config["site_dir"]
+
+    # Write this build's own top-level product slugs (versioned AND
+    # unversioned), so theme.js can tell "already present on this page"
+    # apart from "needs fetching cross-product" without inspecting the DOM -
+    # a DOM attribute only ever exists for versioned sections, so relying on
+    # it silently missed every unversioned one (see the "products" nesting
+    # note in root-index.json's own history for the matching client-side fix).
+    own_slugs_path = os.path.join(site_dir, "assets", "own-product-slugs.json")
+    os.makedirs(os.path.dirname(own_slugs_path), exist_ok=True)
+    with open(own_slugs_path, "w", encoding="utf-8") as f:
+        json.dump(list(_product_manifest.keys()), f, ensure_ascii=False)
 
     # Write the breadcrumb map for the search results UI.
     breadcrumbs_path = os.path.join(site_dir, "assets", "search-breadcrumbs.json")
