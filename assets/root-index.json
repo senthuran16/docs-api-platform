@@ -2,7 +2,7 @@
   "api-manager": {
     "slug": "api-manager",
     "title": "API Manager",
-    "manifestUrl": "https://apipd-apim-470.choreoapps.dev/api-manager/product-nav-manifest.json",
+    "manifestUrl": "https://c9706fb9-26b2-439f-a11d-84cab2096a4f.e1-us-east-azure.choreoapps.dev/api-manager/product-nav-manifest.json",
     "defaultVersion": "4.7.0"
   },
   "ai-gateway": {
@@ -32,31 +32,31 @@
   "cloud": {
     "slug": "cloud",
     "title": "Cloud",
-    "manifestUrl": "https://apipd-common.choreoapps.dev/cloud/product-nav-manifest.json"
+    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/cloud/product-nav-manifest.json"
   },
   "analytics": {
     "slug": "analytics",
     "title": "Analytics",
-    "manifestUrl": "https://apipd-common.choreoapps.dev/analytics/product-nav-manifest.json"
+    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/analytics/product-nav-manifest.json"
   },
   "monetization": {
     "slug": "monetization",
     "title": "Monetization",
-    "manifestUrl": "https://apipd-common.choreoapps.dev/monetization/product-nav-manifest.json"
+    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/monetization/product-nav-manifest.json"
   },
   "policy-hub": {
     "slug": "policy-hub",
     "title": "Policy Hub",
-    "manifestUrl": "https://apipd-common.choreoapps.dev/policy-hub/product-nav-manifest.json"
+    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/policy-hub/product-nav-manifest.json"
   },
   "guides": {
     "slug": "guides",
     "title": "Guides",
-    "manifestUrl": "https://apipd-common.choreoapps.dev/guides/product-nav-manifest.json"
+    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/guides/product-nav-manifest.json"
   },
   "tools": {
     "slug": "tools",
     "title": "Tools",
-    "manifestUrl": "https://apipd-common.choreoapps.dev/tools/product-nav-manifest.json"
+    "manifestUrl": "https://221a4916-3cf5-4bcb-addf-d3ccad05d9af.e1-us-east-azure.choreoapps.dev/tools/product-nav-manifest.json"
   }
 }
