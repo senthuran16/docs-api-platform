@@ -10,5 +10,53 @@
     "title": "AI Gateway",
     "manifestUrl": "https://apipd-aigw-120.choreoapps.dev/ai-gateway/product-nav-manifest.json",
     "defaultVersion": "1.2.0"
+  },
+  "api-gateway": {
+    "slug": "api-gateway",
+    "title": "API Gateway",
+    "manifestUrl": "https://apipd-apigw-120.choreoapps.dev/api-gateway/product-nav-manifest.json",
+    "defaultVersion": "1.2.0"
+  },
+  "api-portal": {
+    "slug": "api-portal",
+    "title": "API Portal",
+    "manifestUrl": "https://apipd-portal-100.choreoapps.dev/api-portal/product-nav-manifest.json",
+    "defaultVersion": "1.0.0"
+  },
+  "ai-workspace": {
+    "slug": "ai-workspace",
+    "title": "AI Workspace",
+    "manifestUrl": "https://apipd-aiws-100.choreoapps.dev/ai-workspace/product-nav-manifest.json",
+    "defaultVersion": "1.0.0"
+  },
+  "cloud": {
+    "slug": "cloud",
+    "title": "Cloud",
+    "manifestUrl": "https://apipd-common.choreoapps.dev/cloud/product-nav-manifest.json"
+  },
+  "analytics": {
+    "slug": "analytics",
+    "title": "Analytics",
+    "manifestUrl": "https://apipd-common.choreoapps.dev/analytics/product-nav-manifest.json"
+  },
+  "monetization": {
+    "slug": "monetization",
+    "title": "Monetization",
+    "manifestUrl": "https://apipd-common.choreoapps.dev/monetization/product-nav-manifest.json"
+  },
+  "policy-hub": {
+    "slug": "policy-hub",
+    "title": "Policy Hub",
+    "manifestUrl": "https://apipd-common.choreoapps.dev/policy-hub/product-nav-manifest.json"
+  },
+  "guides": {
+    "slug": "guides",
+    "title": "Guides",
+    "manifestUrl": "https://apipd-common.choreoapps.dev/guides/product-nav-manifest.json"
+  },
+  "tools": {
+    "slug": "tools",
+    "title": "Tools",
+    "manifestUrl": "https://apipd-common.choreoapps.dev/tools/product-nav-manifest.json"
   }
 }
