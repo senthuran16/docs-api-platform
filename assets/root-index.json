@@ -3,7 +3,7 @@
     "cloud": {
       "slug": "cloud",
       "title": "Cloud",
-      "manifestUrl": "https://apipd-cloud.choreoapps.dev/cloud/product-nav-manifest.json"
+      "manifestUrl": "https://e6ead1e0-ba90-477d-8857-cbd51e54bae7.e1-us-east-azure.choreoapps.dev/cloud/product-nav-manifest.json"
     },
     "api-manager": {
       "slug": "api-manager",
