@@ -154,44 +154,62 @@ def _nav_tree(item):
 
 
 def _build_product_nav_manifest(nav, config):
-    """Build slug -> version -> nav tree for this build's own versioned
-    top-level section(s) (see extra.versioned_sections in mkdocs.yml).
+    """Build a cross-product manifest for this build's own top-level
+    section(s) - both versioned (extra.versioned_sections) and unversioned
+    (extra.unversioned_sections) in mkdocs.yml.
 
     This is deliberately a full tree (title + url + nested children), not
     the flat per-version page-url list a same-product redirect needs: the
     cross-product sidebar has to render another product's whole expandable
     section from data alone, since it doesn't have that product's pages.
+
+    A versioned section's manifest has a "versions" key (see below); an
+    unversioned one has a flat "tree" instead - theme.js's renderer branches
+    on which key is present to decide whether to render a version dropdown.
     """
     _product_manifest.clear()
-    versioned_sections = (config.get("extra") or {}).get("versioned_sections") or {}
+    extra = config.get("extra") or {}
+    versioned_sections = extra.get("versioned_sections") or {}
+    unversioned_sections = extra.get("unversioned_sections") or {}
     slug_by_title = {
         title: cfg["slug"] for title, cfg in versioned_sections.items() if cfg.get("slug")
     }
-    if not slug_by_title:
+    unversioned_slug_by_title = {
+        title: cfg["slug"] for title, cfg in unversioned_sections.items() if cfg.get("slug")
+    }
+    if not slug_by_title and not unversioned_slug_by_title:
         return
 
     for item in nav.items:
-        slug = slug_by_title.get(getattr(item, "title", None))
-        if not slug:
-            continue
-        cfg = versioned_sections[item.title]
-        versions = {}
-        for version_item in getattr(item, "children", None) or []:
-            tree = _nav_tree(version_item)
+        title = getattr(item, "title", None)
+        if title in slug_by_title:
+            slug = slug_by_title[title]
+            cfg = versioned_sections[title]
+            versions = {}
+            for version_item in getattr(item, "children", None) or []:
+                tree = _nav_tree(version_item)
+                if tree:
+                    versions[version_item.title] = tree.get("children", [])
+            _product_manifest[slug] = {
+                "slug": slug,
+                "default": cfg.get("default"),
+                # The full configured version list (may include versions this
+                # particular build doesn't physically have - e.g. a single-
+                # version API Manager image still advertises all 11). The
+                # cross-product dropdown lists all of these; selecting one
+                # missing from "versions" below falls back to the live site,
+                # same as the same-product dropdown already does.
+                "allVersions": cfg.get("versions") or [],
+                "versions": versions,
+            }
+        elif title in unversioned_slug_by_title:
+            slug = unversioned_slug_by_title[title]
+            tree = _nav_tree(item)
             if tree:
-                versions[version_item.title] = tree.get("children", [])
-        _product_manifest[slug] = {
-            "slug": slug,
-            "default": cfg.get("default"),
-            # The full configured version list (may include versions this
-            # particular build doesn't physically have - e.g. a single-
-            # version API Manager image still advertises all 11). The
-            # cross-product dropdown lists all of these; selecting one
-            # missing from "versions" below falls back to the live site,
-            # same as the same-product dropdown already does.
-            "allVersions": cfg.get("versions") or [],
-            "versions": versions,
-        }
+                _product_manifest[slug] = {
+                    "slug": slug,
+                    "tree": tree.get("children", []),
+                }
 
 
 def on_post_build(config, **kwargs):

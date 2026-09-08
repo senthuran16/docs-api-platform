@@ -792,6 +792,21 @@ onEachPage(function () {
     renderVersionGroup(initialVersion);
   }
 
+  // An unversioned product's manifest (see hooks.py's _build_product_nav_
+  // manifest) is a flat {slug, tree} - no version dropdown, so this reuses
+  // renderNode's plain nested-item rendering directly instead of the
+  // versioned header/dropdown markup above.
+  function renderFlatProductSection(slug, product, manifest, order) {
+    if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
+    if (!manifest.tree || !manifest.tree.length) return;
+
+    var productOrigin = new URL(product.manifestUrl, scope).origin + '/';
+    var resolved = resolveHrefs(manifest.tree, productOrigin);
+    var li = renderNode({ title: product.title || slug, children: resolved });
+    li.setAttribute('data-md-xproduct', slug);
+    insertProductSection(li, slug, order);
+  }
+
   fetch(new URL(SHARED_BASE + 'root-index.json', scope))
     .then(function (r) { return r.ok ? r.json() : {}; })
     .then(function (index) {
@@ -802,7 +817,12 @@ onEachPage(function () {
         fetch(new URL(product.manifestUrl, scope))
           .then(function (r) { return r.ok ? r.json() : null; })
           .then(function (manifest) {
-            if (manifest) renderProductSection(slug, product, manifest, order);
+            if (!manifest) return;
+            if (manifest.versions) {
+              renderProductSection(slug, product, manifest, order);
+            } else {
+              renderFlatProductSection(slug, product, manifest, order);
+            }
           })
           .catch(function () { /* best-effort: skip this product on error */ });
       });
