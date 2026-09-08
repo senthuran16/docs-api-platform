@@ -8,7 +8,7 @@ tags:
   - ai-gateway
   - platform-overview
 author: WSO2 API Platform Documentation Team
-last_updated: 2026-06-11
+last_updated: 2026-08-09
 content_type: "overview"
 ---
 
@@ -76,7 +76,7 @@ The next question is: **who runs the infrastructure?**
     
     * **What is included:** Self-hosted control plane (Publisher, Developer Portal), self-hosted gateways (API Gateway, AI Gateway). Moesif analytics can be connected separately. Third-party gateways can be federated.
     
-    * [API Manager documentation](api-manager/4.5.0/get-started/overview.md)
+    * [API Manager documentation](api-manager/overview.md)
 
 #### How do the three options compare?
 
@@ -93,6 +93,16 @@ The next question is: **who runs the infrastructure?**
 | **Air-gapped or fully offline** | No | No | Yes |
 
 > All three options use the same underlying gateway technology. You can start with Cloud and move to Hybrid or Self-Managed later without rearchitecting.
+
+#### Can I self-host only the control plane components I need?
+
+Yes. Apart from the full API Manager stack, you can run individual control plane components on your own infrastructure and connect them to your self-hosted gateways:
+
+* **AI Workspace**—A self-hosted control plane for AI traffic. Connect AI Gateway runtimes and configure LLM providers, App LLM proxies, and MCP proxies. Apply guardrails and rate limits, manage secrets, and deploy the configuration to one or more gateways. See [AI Workspace documentation](ai-workspace/1.0.0/overview.md).
+
+* **API Portal**—A self-hosted developer portal where consumers discover APIs and MCP servers, create applications, and manage subscriptions and keys. See [API Portal documentation](api-portal/1.0.0/overview.md).
+
+Run these components when you want centralized governance in your own environment without adopting the entire platform.
 
 ### I only want an API or AI gateway (and have no need for a UI or full platform capabilities)
 If you do not need a full management console and want a high-performance gateway that you configure using YAML files, CLI, or REST APIs, the standalone gateways are the right choice. There is no web UI, no control plane, and no portal. You download a lightweight binary and run it.
@@ -122,11 +132,11 @@ In platform mode, the gateway is connected to a control plane and you manage eve
 | **How you configure it** | Through the platform web UI or configuration files | YAML files, CLI, REST API |
 | **Control plane** | Available. Manage APIs, policies, subscriptions, and lifecycle visually | None. You manage everything in configuration files |
 | **Developer portal** | Available. Developers discover and subscribe to your APIs | None |
-| **AI Workspace** | Available. Manage LLM providers, guardrails, and MCP at org level | None. Configure per gateway |
+| **AI Workspace** | Available. Manage LLM providers, guardrails, and Model Context Protocol (MCP) proxies at the organization level | Configure LLM providers, guardrails, and MCP proxies per gateway, or connect a self-hosted AI Workspace |
 | **Analytics and monetization** | Available (via Moesif) | Basic observability (logs, traces) |
 | **Best for** | Teams managing many APIs across the organization | Individual developers or small teams that want a lightweight gateway |
 
-> You can start with a standalone gateway and connect it to a control plane later. The standalone gateways can be attached to the Cloud control plane (making them hybrid gateways) or to the API Manager control plane when you need more governance. This is a common adoption path: a developer starts with a standalone gateway, and the organization later adds the control plane for unified governance.
+> Start with a standalone gateway and connect it to a control plane later. Attach it to the Cloud control plane, which makes it a hybrid gateway. Attach it to a self-hosted control plane such as AI Workspace. Or attach it to the API Manager control plane when you need more governance. This is a common adoption path: you start with a standalone gateway, and your organization later adds a control plane for unified governance.
 
 ## Platform components
 The following is a complete view of all components and where to find their documentation.
@@ -134,9 +144,9 @@ The following is a complete view of all components and where to find their docum
 ### Control plane components
 | Component | What it does | Docs |
 | :--- | :--- | :--- |
-| **API Control Plane** | Design, publish, version, and govern APIs through the web UI and configuration files. Enforce policies across all connected gateways. | Part of [Cloud](cloud/introduction/what-is-bijira.md) and [API Manager](api-manager/4.5.0/get-started/overview.md) |
-| **AI Workspace** | The enterprise control plane for AI. Manage LLM providers, MCP servers, and GenAI applications. Configure cost and token-based rate limits, enforce guardrails, and view AI consumption insights at the organizational level. Connected to one or more AI Gateways. | [AI Workspace docs](cloud/ai-workspace/overview.md) |
-| **API Portal and MCP Hub** | Developer facing portal for API discovery, subscription management, SDK generation, and theming. Includes agentic consumption capabilities for AI agents, such as the llms.txt endpoint, MCP registry, and Arazzo workflow support. | [API Portal docs](cloud/devportal/theming-devportal-with-ai.md) |
+| **API Control Plane** | Design, publish, version, and govern APIs through the web UI and configuration files. Enforce policies across all connected gateways. | Part of [Cloud](cloud/introduction/what-is-bijira.md) and [API Manager](api-manager/overview.md) |
+| **AI Workspace** | The enterprise control plane for AI. Manage LLM providers, MCP servers, and generative AI (GenAI) applications. Configure cost and token-based rate limits, enforce guardrails, and view AI consumption insights at the organizational level. Connected to one or more AI Gateways. Available in Cloud and as a self-hosted control plane. | <ul><li>[Cloud AI Workspace docs](cloud/ai-workspace/overview.md)</li><li>[Self-hosted AI Workspace docs](ai-workspace/1.0.0/overview.md)</li></ul> |
+| **API Portal and MCP Hub** | Developer-facing portal for API discovery, subscription management, software development kit (SDK) generation, and theming. Includes agentic consumption capabilities for AI agents, such as the `llms.txt` endpoint, MCP registry, and Arazzo workflow support. Available in Cloud and as a self-hosted portal. | <ul><li>[Cloud API Portal docs](cloud/devportal/theming-devportal-with-ai.md)</li><li>[Self-hosted API Portal docs](api-portal/1.0.0/overview.md)</li></ul> |
 | **Analytics and Monetization** | Traffic monitoring, runtime and audit logs, usage tracking, and API monetization with usage-based billing. Powered by Moesif. | [Analytics docs](analytics-and-monetization/overview.md) |
 
 ### Gateway components
@@ -153,13 +163,15 @@ The following is a complete view of all components and where to find their docum
 | :--- | :--- |
 | Get up and running fast with a managed cloud platform | [Cloud](cloud/introduction/what-is-bijira.md) |
 | Use a cloud control plane but keep API traffic in my infrastructure | [Hybrid setup](cloud/api-platform-gateway/getting-started.md) |
-| Run everything on my own infrastructure with a UI | [API Manager](api-manager/4.5.0/get-started/overview.md) |
+| Run everything on my own infrastructure with a UI | [API Manager](api-manager/overview.md) |
 | Run a lightweight API gateway with no UI | [API Gateway](api-gateway/1.1.0/overview.md) |
 | Govern LLM traffic (rate limits, guardrails, cost control) | [AI Gateway LLM Proxy](ai-gateway/1.1.0/llm-proxy/quick-start-guide.md) |
 | Expose my APIs as MCP tools for AI agents | [AI Gateway MCP Proxy](ai-gateway/1.1.0/mcp-proxy/quick-start-guide.md) |
 | Govern MCP traffic (inbound + outbound) | [AI Gateway MCP Proxy](ai-gateway/1.1.0/mcp-proxy/quick-start-guide.md) |
 | Manage LLM providers and AI policies at the organizational level | [AI Workspace](cloud/ai-workspace/overview.md) |
+| Run a self-hosted control plane for AI gateways, LLM providers, and AI policies | [Self-hosted AI Workspace](ai-workspace/1.0.0/overview.md) |
 | Set up a developer portal for API discovery | [API Portal](cloud/devportal/theming-devportal-with-ai.md) |
+| Run a self-hosted developer portal | [Self-hosted API Portal](api-portal/1.0.0/overview.md) |
 | Monitor traffic and monetize my APIs | [Analytics and Monetization](analytics-and-monetization/overview.md) |
 | Follow end-to-end scenario walkthroughs | [Guides](guides/ai-and-mcp/convert-rest-api-to-mcp-server.md) |
 
