@@ -142,16 +142,34 @@ onEachPage(function() {
   // navigation should always stay in the same tab, matching how the
   // dynamically-rendered cross-product sections below already force
   // same-tab navigation despite also being cross-origin.
+  //
+  // mkdocs-material's own bundle also sets target="_blank" on cross-origin
+  // links natively (confirmed: it's there even with this whole file
+  // blocked), and it runs AFTER this code - so neither declining to set
+  // target ourselves nor explicitly clearing it survives. Forcing the actual
+  // navigation via a click handler sidesteps the target attribute entirely,
+  // the same way the dynamically-rendered cross-product links below already
+  // do (see renderNode's click handler).
   var primaryNav = document.querySelector('.md-nav--primary');
   var links = document.links;
   for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    var crossOrigin = links[i].hostname != window.location.hostname;
     var inPrimaryNav = primaryNav && primaryNav.contains(links[i]);
-    if (links[i].hostname != window.location.hostname && !inPrimaryNav) {
+    if (crossOrigin && !inPrimaryNav) {
       links[i].target = "_blank";
       links[i].setAttribute("rel", "noopener noreferrer");
       links[i].classList.add("externalLink");
     } else {
       links[i].classList.add("localLink");
+      // Same-origin primary-nav links are left alone - mkdocs-material's own
+      // instant-loading click handling already covers those correctly.
+      if (crossOrigin && inPrimaryNav) {
+        links[i].addEventListener("click", function (e) {
+          if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          window.location.href = this.href;
+        });
+      }
     }
   }
   
