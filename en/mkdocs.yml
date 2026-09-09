@@ -74,8 +74,8 @@ theme:
 strict: false
 # Navigation
 nav:
-  - Overview: index.md
-  - Get Started: get-started.md
+  - Overview: https://50dcbee2-0809-4bf1-801f-b820c18e9816.e1-us-east-azure.choreoapps.dev/
+  - Get Started: https://50dcbee2-0809-4bf1-801f-b820c18e9816.e1-us-east-azure.choreoapps.dev/get-started/
   - API Portal:
     - "next":
         - Overview: api-portal/next/overview.md
