@@ -1,4 +1,8 @@
 redirect_maps:
+  # This deployment's own bare root (/) - test case for redirecting away from
+  # the generic site Overview to this branch's own product+version landing
+  # page instead, since this deployment's real content isn't at the root.
+  index.md: api-manager/4.7.0/index.md
   # AI/API Gateway versioning restructuring (per-product Cloud/Self-Hosted variants)
   ai-gateway/ai-gateway-rest-api/authentication.md: ai-gateway/1.1.0/ai-gateway-rest-api/authentication.md
   ai-gateway/analytics/analytics-header-filter.md: ai-gateway/1.1.0/analytics/analytics-header-filter.md
