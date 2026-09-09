@@ -136,9 +136,17 @@ onEachPage(function() {
   // Open external links in new tab. Header and footer links survive instant
   // navigation and are seen again on every page, so use classList.add rather
   // than appending to className, which would stack duplicate class names.
+  //
+  // Primary-nav links are exempt even when cross-origin (e.g. Overview/Get
+  // Started now point straight at platform-common's own deployment): sidebar
+  // navigation should always stay in the same tab, matching how the
+  // dynamically-rendered cross-product sections below already force
+  // same-tab navigation despite also being cross-origin.
+  var primaryNav = document.querySelector('.md-nav--primary');
   var links = document.links;
   for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-    if (links[i].hostname != window.location.hostname) {
+    var inPrimaryNav = primaryNav && primaryNav.contains(links[i]);
+    if (links[i].hostname != window.location.hostname && !inPrimaryNav) {
       links[i].target = "_blank";
       links[i].setAttribute("rel", "noopener noreferrer");
       links[i].classList.add("externalLink");
