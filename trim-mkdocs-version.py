@@ -27,7 +27,7 @@ import sys
 
 def trim_nav(text, version):
     m = re.search(
-        r"(\n  - Get Started: get-started\.md\n  - [^\n:]+:\n)(.*?)(?=\nmarkdown_extensions:\n)",
+        r"(\n  - Get Started: [^\n]+\n  - [^\n:]+:\n)(.*?)(?=\nmarkdown_extensions:\n)",
         text,
         re.S,
     )
