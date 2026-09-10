@@ -1,0 +1,65 @@
+{
+  "products": {
+    "cloud": {
+      "slug": "cloud",
+      "title": "Cloud",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/cloud/product-nav-manifest.json"
+    },
+    "api-manager": {
+      "slug": "api-manager",
+      "title": "API Manager",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/api-manager/product-nav-manifest.json",
+      "defaultVersion": "4.7.0"
+    },
+    "api-gateway": {
+      "slug": "api-gateway",
+      "title": "API Gateway",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/api-gateway/product-nav-manifest.json",
+      "defaultVersion": "1.2.0"
+    },
+    "ai-gateway": {
+      "slug": "ai-gateway",
+      "title": "AI Gateway",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/ai-gateway/product-nav-manifest.json",
+      "defaultVersion": "1.2.0"
+    },
+    "api-portal": {
+      "slug": "api-portal",
+      "title": "API Portal",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/api-portal/product-nav-manifest.json",
+      "defaultVersion": "1.0.0"
+    },
+    "ai-workspace": {
+      "slug": "ai-workspace",
+      "title": "AI Workspace",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/ai-workspace/product-nav-manifest.json",
+      "defaultVersion": "1.0.0"
+    },
+    "analytics": {
+      "slug": "analytics",
+      "title": "Analytics",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/analytics/product-nav-manifest.json"
+    },
+    "monetization": {
+      "slug": "monetization",
+      "title": "Monetization",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/monetization/product-nav-manifest.json"
+    },
+    "policy-hub": {
+      "slug": "policy-hub",
+      "title": "Policy Hub",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/policy-hub/product-nav-manifest.json"
+    },
+    "guides": {
+      "slug": "guides",
+      "title": "Guides",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/guides/product-nav-manifest.json"
+    },
+    "tools": {
+      "slug": "tools",
+      "title": "Tools",
+      "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/tools/product-nav-manifest.json"
+    }
+  },
+  "_liveSiteBase": "https://wso2.com/api-platform/docs-rearranged/"
+}
