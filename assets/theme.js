@@ -644,20 +644,30 @@ onEachPage(function () {
     });
   }
 
-  // Where to resolve a cross-product section's links against. Every
-  // deployment serves its own content under the same <slug>/<version>/
-  // prefix a router in front of the whole site would also use (see
-  // docs-rearranged) - so when this page is being viewed through such a
-  // router, cross-product links should stay same-origin and let the router
-  // forward them, instead of jumping straight to the other product's own
-  // raw Choreo address and leaving whatever domain the reader started on.
-  // Only fall back to that raw address when there's clearly no router in
-  // front - visiting a *.choreoapps.dev URL directly, e.g. while testing.
-  function productOriginFor(product) {
-    if (/\.choreoapps\.dev$/.test(window.location.hostname)) {
-      return new URL(product.manifestUrl, scope).origin + '/';
+  // Where to resolve a cross-product section's links against - whatever
+  // manifestUrl actually says, in full, not just its origin. manifestUrl
+  // always ends in "<slug>/product-nav-manifest.json"; stripping exactly
+  // that suffix leaves the correct base to resolve the tree's relative
+  // page urls against, whether manifestUrl is a bare Choreo address
+  // (https://50dcbee2-.../analytics/product-nav-manifest.json -> base
+  // https://50dcbee2-.../) or one that carries its own path prefix
+  // (https://wso2.com/api-platform/docs-rearranged/analytics/product-nav-
+  // manifest.json -> base https://wso2.com/api-platform/docs-rearranged/).
+  //
+  // Using .origin here (an earlier version of this function did) silently
+  // drops any such prefix, since .origin is always just protocol+host -
+  // that's what previously sent cross-product links to
+  // https://wso2.com/analytics/overview/ instead of
+  // https://wso2.com/api-platform/docs-rearranged/analytics/overview/.
+  function productOriginFor(product, slug) {
+    var manifestUrl = new URL(product.manifestUrl, scope).href;
+    var suffix = slug + '/product-nav-manifest.json';
+    if (manifestUrl.slice(-suffix.length) === suffix) {
+      return manifestUrl.slice(0, manifestUrl.length - suffix.length);
     }
-    return scope.origin + '/';
+    // manifestUrl didn't have the expected shape - fall back to its origin
+    // rather than produce a broken base.
+    return new URL(product.manifestUrl, scope).origin + '/';
   }
 
   // A raw SVG string, for a section's own nav_icons entry (see hooks.py's
@@ -747,7 +757,7 @@ onEachPage(function () {
 
     // The manifest's node urls are root-relative under <slug>/<version>/ -
     // see productOriginFor for which origin that gets resolved against.
-    var productOrigin = productOriginFor(product);
+    var productOrigin = productOriginFor(product, slug);
 
     var allVersions = (manifest.allVersions && manifest.allVersions.length)
       ? manifest.allVersions
@@ -904,7 +914,7 @@ onEachPage(function () {
     if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
     if (!manifest.tree || !manifest.tree.length) return;
 
-    var productOrigin = productOriginFor(product);
+    var productOrigin = productOriginFor(product, slug);
     var resolved = resolveHrefs(manifest.tree, productOrigin);
     var li = renderNode({ title: product.title || slug, children: resolved }, manifest.icon);
     li.setAttribute('data-md-xproduct', slug);
