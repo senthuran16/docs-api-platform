@@ -61,5 +61,6 @@
       "manifestUrl": "https://wso2.com/api-platform/docs-rearranged/tools/product-nav-manifest.json"
     }
   },
-  "_liveSiteBase": "https://wso2.com/api-platform/docs-rearranged/"
+  "_liveSiteBase": "https://wso2.com/api-platform/docs-rearranged/",
+  "_platformCommonBase": "https://wso2.com/api-platform/docs-rearranged/"
 }

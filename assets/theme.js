@@ -935,6 +935,26 @@ onEachPage(function () {
       // hardcoded default if this fetch hasn't resolved yet or fails.
       if (index._liveSiteBase) LIVE_SITE_BASE = index._liveSiteBase;
 
+      // Overview/Get Started are plain top-level links, baked into every
+      // branch's own mkdocs.yml nav pointing at platform-common's URL at
+      // build time - unlike a product section, they're not in
+      // versioned_sections/unversioned_sections, so nav-item.html gives them
+      // no data-md-xproduct/data-md-versioned-section to identify them by.
+      // Matched by title text instead, among top-level items only, so a
+      // platform-common redeploy only means updating _platformCommonBase
+      // here, not editing and rebuilding every product branch.
+      if (index._platformCommonBase) {
+        var platformCommonLinks = { 'Overview': '', 'Get Started': 'get-started/' };
+        Array.prototype.forEach.call(primaryList.children, function (item) {
+          var link = item.querySelector && item.querySelector(':scope > a.md-nav__link');
+          if (!link) return;
+          var title = link.textContent.trim();
+          if (Object.prototype.hasOwnProperty.call(platformCommonLinks, title)) {
+            link.href = new URL(index._platformCommonBase + platformCommonLinks[title], scope).href;
+          }
+        });
+      }
+
       var products = index.products || {};
       var order = Object.keys(products);
       order.forEach(function (slug) {
