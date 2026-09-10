@@ -644,6 +644,22 @@ onEachPage(function () {
     });
   }
 
+  // Where to resolve a cross-product section's links against. Every
+  // deployment serves its own content under the same <slug>/<version>/
+  // prefix a router in front of the whole site would also use (see
+  // docs-rearranged) - so when this page is being viewed through such a
+  // router, cross-product links should stay same-origin and let the router
+  // forward them, instead of jumping straight to the other product's own
+  // raw Choreo address and leaving whatever domain the reader started on.
+  // Only fall back to that raw address when there's clearly no router in
+  // front - visiting a *.choreoapps.dev URL directly, e.g. while testing.
+  function productOriginFor(product) {
+    if (/\.choreoapps\.dev$/.test(window.location.hostname)) {
+      return new URL(product.manifestUrl, scope).origin + '/';
+    }
+    return scope.origin + '/';
+  }
+
   // A raw SVG string, for a section's own nav_icons entry (see hooks.py's
   // _section_icon) - mirrors nav-item.html's own icon rendering, since a
   // page showing another product's section has no local .icons/ directory
@@ -729,12 +745,9 @@ onEachPage(function () {
   function renderProductSection(slug, product, manifest, order) {
     if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
 
-    // The manifest's node urls are root-relative to THAT product's own
-    // deployment (see hooks.py's _nav_tree), not to this page's - each
-    // product+version is now its own separate origin, so resolve against
-    // the origin manifestUrl was actually fetched from, not this page's
-    // own scope.
-    var productOrigin = new URL(product.manifestUrl, scope).origin + '/';
+    // The manifest's node urls are root-relative under <slug>/<version>/ -
+    // see productOriginFor for which origin that gets resolved against.
+    var productOrigin = productOriginFor(product);
 
     var allVersions = (manifest.allVersions && manifest.allVersions.length)
       ? manifest.allVersions
@@ -891,7 +904,7 @@ onEachPage(function () {
     if (primaryList.querySelector('[data-md-xproduct="' + slug + '"]')) return;
     if (!manifest.tree || !manifest.tree.length) return;
 
-    var productOrigin = new URL(product.manifestUrl, scope).origin + '/';
+    var productOrigin = productOriginFor(product);
     var resolved = resolveHrefs(manifest.tree, productOrigin);
     var li = renderNode({ title: product.title || slug, children: resolved }, manifest.icon);
     li.setAttribute('data-md-xproduct', slug);
