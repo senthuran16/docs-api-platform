@@ -148,10 +148,12 @@
       {% if "verticle-line" in matched_expanded_nav.options %}
         {% set class = class ~ " md-nav--expanded-section md-nav--expanded-section-verticle-line" %}
       {% endif %}
-      {% if "divider" in matched_expanded_nav.options %}
-        <hr class="md-nav--expanded-section-divider" />
-      {% endif %}
     {% endif %}
+    <!-- Every top-level product section gets a divider, unconditionally -
+         this branch only ever renders for a versioned top-level product
+         (see the nav_item.children and versioned_cfg guard above), so
+         there's no per-product config to read or omit here. -->
+    <hr class="md-nav--expanded-section-divider" />
     {% set has_icon_class = "md-nav--has-icon" if icon %}
 
     <li
@@ -240,9 +242,6 @@
       {% if "verticle-line" in matched_expanded_nav.options or "verticle-line-only" in matched_expanded_nav.options %}
         {% set class = class ~ " md-nav--expanded-section-verticle-line" %}
       {% endif %}
-      {% if "divider" in matched_expanded_nav.options and not hide_nav %}
-        <hr class="md-nav--expanded-section-divider" />
-      {% endif %}
       {% if "no-indent" in matched_expanded_nav.options %}
         {% set class = class ~ " md-nav--expanded-section-no-indent" %}
       {% endif %}
@@ -250,6 +249,16 @@
         {% set show_collapsible_icon = false %}
         {% set class = class ~ " md-nav--no-collapsible" %}
       {% endif %}
+    {% endif %}
+
+    <!-- Every top-level product section gets a divider, unconditionally -
+         unversioned_cfg identifies this as a top-level unversioned product
+         (e.g. Cloud, Analytics); a nested item (e.g. MCP Servers) still
+         follows its own expanded_navs "divider" option, if any. -->
+    {% if unversioned_cfg and not hide_nav %}
+      <hr class="md-nav--expanded-section-divider" />
+    {% elif matched_expanded_nav is defined and matched_expanded_nav.options is defined and "divider" in matched_expanded_nav.options and not hide_nav %}
+      <hr class="md-nav--expanded-section-divider" />
     {% endif %}
 
     <!-- Set css class if there is an icon -->
