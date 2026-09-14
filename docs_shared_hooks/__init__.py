@@ -198,10 +198,18 @@ def _section_icon(title: str, config) -> str | None:
 
 
 def _section_style(title: str, config) -> dict:
-    """This section's expanded_navs styling (divider / vertical line), if
-    configured. Mirrors nav-item.html's own matched_expanded_nav lookup, so
-    a cross-product section gets the same styling a native one would -
-    without this, theme.js has no way to know a section should render one.
+    """This section's expanded_navs styling (vertical line), if configured.
+    Mirrors nav-item.html's own matched_expanded_nav lookup, so a
+    cross-product section gets the same styling a native one would.
+
+    The divider is unconditional, not read from config: nav-item.html now
+    hardcodes a divider before every top-level product section (native or
+    cross-product), since that was always true in practice on the real
+    site and never actually optional - leaving it config-driven let a
+    branch (e.g. API Portal) silently drift out of sync. This function is
+    only ever called once per top-level product (see
+    _build_product_nav_manifest), so there's no case where a title reaching
+    here shouldn't get one.
 
     "verticle-line" and "verticle-line-only" both draw the vertical line
     (verticleLine), but only plain "verticle-line" also adds the wrapping
@@ -221,11 +229,11 @@ def _section_style(title: str, config) -> dict:
             continue
         options = entry.get("options") or []
         return {
-            "divider": "divider" in options,
+            "divider": True,
             "verticleLine": "verticle-line" in options or "verticle-line-only" in options,
             "expandedSection": "verticle-line" in options,
         }
-    return {"divider": False, "verticleLine": False, "expandedSection": False}
+    return {"divider": True, "verticleLine": False, "expandedSection": False}
 
 
 def _build_product_nav_manifest(nav, config):
