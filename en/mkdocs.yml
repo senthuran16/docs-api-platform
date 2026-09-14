@@ -296,7 +296,6 @@ extra:
     - title: Cloud
       options:
         - verticle-line
-        - divider
     - title: MCP Servers
       options:
         - verticle-line-only
@@ -324,32 +323,25 @@ extra:
     - title: API Manager
       options:
         - verticle-line
-        - divider
     - title: API Gateway
       options:
         - verticle-line
-        - divider
     - title: AI Gateway
       options:
         - verticle-line
-        - divider
     - title: Analytics
       options:
         - verticle-line
-        - divider
     - title: Monetization
       level: 1
       options:
         - verticle-line
-        - divider
     - title: Policy Hub
       options:
         - verticle-line
-        - divider
     - title: Guides
       options:
         - verticle-line
-        - divider
     - title: Samples
       options:
         - verticle-line
@@ -357,7 +349,6 @@ extra:
     - title: Tools
       options:
         - verticle-line
-        - divider
   nav_icons:
     Home:
       icon: octicons/home-16
