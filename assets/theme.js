@@ -604,6 +604,17 @@ onEachPage(function () {
         // re-reading items[i] afterward would resolve to hr itself instead -
         // landing li BEFORE its own divider.
         var ref = items[i];
+        // If ref already owns a leading divider (its own expanded_navs
+        // divider, rendered as ref's preceding sibling by nav-item.html),
+        // that hr belongs to ref, not to whatever's being inserted here.
+        // Inserting before ref itself would land the new li (and its own
+        // hr) BETWEEN ref's divider and ref - stealing ref's divider
+        // position and leaving ref with none. Insert before that divider
+        // instead, so ref keeps its own and the new one still precedes it.
+        var prev = ref.previousElementSibling;
+        if (prev && prev.tagName === 'HR' && prev.classList.contains('md-nav--expanded-section-divider')) {
+          ref = prev;
+        }
         if (hr) primaryList.insertBefore(hr, ref);
         primaryList.insertBefore(li, ref);
         return;
