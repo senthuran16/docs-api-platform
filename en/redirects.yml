@@ -1,4 +1,7 @@
 redirect_maps:
+  # next has no root overview page - redirect the bare version root to its
+  # real first page, so it isn't a dead 403 (same fix as apim-4.6.0).
+  ai-workspace/next/index.md: ai-workspace/next/overview.md
   # AI Workspace docs relocated under cloud/
   ai-workspace/ai-gateways/setting-up.md: cloud/ai-workspace/ai-gateways/setting-up.md
   ai-workspace/configure-inbound-auth.md: cloud/ai-workspace/configure-inbound-auth.md
