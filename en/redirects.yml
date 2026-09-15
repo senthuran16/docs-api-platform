@@ -1,4 +1,7 @@
 redirect_maps:
+  # 1.1.0 has no root overview page - redirect the bare version root to its
+  # real first page, so it isn't a dead 403 (same fix as apim-4.6.0).
+  api-gateway/1.1.0/index.md: api-gateway/1.1.0/overview.md
   # AI/API Gateway versioning restructuring (per-product Cloud/Self-Hosted variants)
   api-gateway/analytics/analytics-header-filter.md: api-gateway/1.1.0/analytics/analytics-header-filter.md
   api-gateway/analytics/moesif-analytics.md: api-gateway/1.1.0/analytics/moesif-analytics.md
