@@ -1,4 +1,7 @@
 redirect_maps:
+  # next has no root overview page - redirect the bare version root to its
+  # real first page, so it isn't a dead 403 (same fix as apim-4.6.0).
+  api-portal/next/index.md: api-portal/next/overview.md
   # API Portal: overview + documentation pages merged into Browse APIs
   api-portal/next/discover-apis/api-overview.md: api-portal/next/discover-apis/browse-apis.md
   api-portal/next/discover-apis/api-documentations.md: api-portal/next/discover-apis/browse-apis.md
