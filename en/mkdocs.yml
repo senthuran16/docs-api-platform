@@ -469,6 +469,9 @@ extra:
     Developer Portal:
       icon: octicons/book-16
       level: 1
+    API Portal:
+      icon: octicons/book-16
+      level: 1
     Analytics & Monetization:
         icon: octicons/graph-16
         level: 1
