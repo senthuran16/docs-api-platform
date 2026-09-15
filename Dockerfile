@@ -1,8 +1,5 @@
-# Serves theme.js and root-index.json for every product+version deployment -
-# no mkdocs/Python build stage needed, these are plain static files.
 FROM nginx:1.26-alpine
 
-COPY --chown=10014:nginx assets /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 RUN apk upgrade --no-cache libcrypto3 libssl3
