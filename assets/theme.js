@@ -662,14 +662,14 @@ onEachPage(function () {
   // page urls against, whether manifestUrl is a bare Choreo address
   // (https://50dcbee2-.../analytics/product-nav-manifest.json -> base
   // https://50dcbee2-.../) or one that carries its own path prefix
-  // (https://wso2.com/api-platform/docs-rearranged/analytics/product-nav-
-  // manifest.json -> base https://wso2.com/api-platform/docs-rearranged/).
+  // (https://wso2.com/api-platform/docs-staging/analytics/product-nav-
+  // manifest.json -> base https://wso2.com/api-platform/docs-staging/).
   //
   // Using .origin here (an earlier version of this function did) silently
   // drops any such prefix, since .origin is always just protocol+host -
   // that's what previously sent cross-product links to
   // https://wso2.com/analytics/overview/ instead of
-  // https://wso2.com/api-platform/docs-rearranged/analytics/overview/.
+  // https://wso2.com/api-platform/docs-staging/analytics/overview/.
   function productOriginFor(product, slug) {
     var manifestUrl = new URL(product.manifestUrl, scope).href;
     var suffix = slug + '/product-nav-manifest.json';
