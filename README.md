@@ -1,47 +1,29 @@
-# docs-shared
+# router_api-portal
 
-Hosts the artifacts every product+version branch depends on at runtime/build
-time, so they're maintained in exactly one place instead of copy-pasted
-across dozens of branches:
+Experiment: one routing rule for infra instead of one per version - same
+pattern as `router_api-manager`, applied to API Portal.
 
-- `assets/theme.js` - client-side cross-product navigation, version
-  dropdowns, search breadcrumbs. Every product+version deployment loads this
-  via `extra_javascript` in its own `mkdocs.yml`.
-- `assets/root-index.json` - the single list of every product's slug, title,
-  and `manifestUrl` (where to fetch that product's cross-product nav data),
-  plus `_liveSiteBase` (fallback URL for a version not present in the current
-  build). `theme.js` fetches this at runtime to build the cross-product
-  sidebar.
-- `docs_shared_hooks/` - the mkdocs build-hook logic (manifest building,
-  cache-busting, redirects, `{BASE_URL}` resolution). Installed by every
-  product+version branch via `pip install git+https://github.com/<fork>/docs-api-platform.git@<tag>`
-  (see `requirements.txt` in any product branch) - never copied.
+Today, infra has to configure a separate gateway rule for every single
+`api-portal-<version>` deployment. This is a tiny nginx deployment that sits in
+front of all of them - infra points ONE rule (`/api-portal`) at this
+deployment's URL, and `nginx.conf` decides, per version, which real
+deployment to invisibly forward to (`proxy_pass`, server-side - the
+reader's address bar never sees the raw Choreo URL underneath).
 
-This branch deploys as its own tiny nginx-only Choreo component (see
-`Dockerfile`) - no mkdocs/Python build stage, just static files.
+Versions covered: `1.0.0`, `next` (default: `1.0.0`).
 
-## Choreo config mount
+Adding a new API Portal version later means editing `nginx.conf` here
+and redeploying this one component - infra's gateway rule never changes
+again.
 
-**`root-index.json` is the one file in this whole architecture meant to be
-overridden via Choreo's config-file-mount feature**, since it's the only
-place a `manifestUrl` lives and it's read at runtime (fetched by the
-browser), not baked into any build.
+This is purely additive: it doesn't modify, replace, or depend on any
+existing deployment. Each location block just points at that version's
+already-live, unmodified Choreo URL.
 
-- **File to mount:** `root-index.json`
-- **Container path:** `/usr/share/nginx/html/root-index.json`
-- **Content:** the `{"products": {...}, "_liveSiteBase": "..."}` structure -
-  see the current committed `assets/root-index.json` for the exact shape.
+## Known gaps (same as router_api-manager)
 
-No other file here, and no other branch in this whole project, needs a
-config mount. Everything else (the `theme.js` URL baked into each product's
-`extra_javascript`, the `docs-shared-hooks` git tag pin in each product's
-`requirements.txt`, this branch's own `SHARED_BASE` constant inside
-`theme.js`) is baked in at build time and requires an actual commit + rebuild
-to change - see each product branch's own `README.md` for that gotcha.
-
-## Tagging
-
-Cut a new `shared-vN` tag whenever `docs_shared_hooks` or `theme.js`
-actually changes, then bump every product branch's `requirements.txt` pin to
-match - a branch left on an old tag silently keeps using old hook logic with
-no warning.
+- The default-version manifest block (`/api-portal/product-nav-manifest.json`)
+  has to be updated by hand whenever the configured default version changes.
+- Backend URLs here are static, resolved once at container start. If a
+  version's Choreo URL ever changes, this file needs updating and
+  redeploying, same as `SHARED_BASE` in `docs-shared`'s `theme.js`.
