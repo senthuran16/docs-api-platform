@@ -26,3 +26,8 @@ CVE-2020-9548
 # (usr/share/nginx/html/api-manager/4.2.0/assets/attachments/developing-first-integration/doctorinfo-jdk11.jar).
 # Same reasoning as above: a documentation attachment, not code that runs in this image.
 CVE-2019-20444
+
+# netty-handler CVE bundled inside a static downloadable sample artifact
+# (usr/share/nginx/html/api-manager/4.2.0/assets/attachments/developing-first-integration/doctorinfo-jdk11.jar).
+# Same reasoning as above: a documentation attachment, not code that runs in this image.
+CVE-2026-75595
