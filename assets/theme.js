@@ -567,21 +567,33 @@ onEachPage(function () {
     (document.querySelector('base') ? new URL(document.querySelector('base').href) : new URL('/', location));
 
   // Sections already rendered server-side (this build's own product) don't
-  // need to be fetched again. A DOM attribute only ever identifies a
-  // *versioned* native section (see nav-item.html's plain-item branch, which
-  // sets none), so an unversioned build's own sections were previously
-  // invisible to this check - causing them to be fetched and re-rendered as
-  // if they belonged to some other product. own-product-slugs.json is
-  // written at build time (see hooks.py's on_post_build) from the exact set
-  // of top-level sections this build actually produced, versioned or not.
-  var ownSlugsPromise = fetch(new URL('assets/own-product-slugs.json', scope))
-    .then(function (r) { return r.ok ? r.json() : []; })
-    .then(function (slugs) {
-      var map = {};
-      (slugs || []).forEach(function (s) { map[s] = true; });
-      return map;
-    })
-    .catch(function () { return {}; });
+  // need to be fetched again. Previously this was decided by fetching
+  // assets/own-product-slugs.json (relative to `scope`, which - by design,
+  // so Referer-routed /assets/ works - always resolves to the bare site
+  // root, stripping the product/version prefix the external URL has). That
+  // request therefore carries no product-identifying path segment of its
+  // own, so infra can only ever forward it to ONE fixed backend - every
+  // product's page ended up fetching whichever product's own-slugs file
+  // that backend happens to serve, not its own. Caught live: every page
+  // reported another specific product's slug back, wrongly suppressing
+  // that product's cross-product section everywhere while failing to
+  // suppress its OWN section on its own page (rendering it twice).
+  //
+  // The current URL's own path doesn't have this problem - it's the one
+  // piece of product-identifying context a cross-origin asset fetch can
+  // never give, but `location` already has for free. _liveSiteBase (below)
+  // gives the common prefix every product's URL shares; the first path
+  // segment after it is this page's own product slug.
+  function currentSlugFromLocation(liveSiteBase) {
+    try {
+      var basePath = new URL(liveSiteBase, location).pathname.replace(/\/+$/, '') + '/';
+      var path = location.pathname;
+      if (path.indexOf(basePath) !== 0) return null;
+      return path.slice(basePath.length).split('/')[0] || null;
+    } catch (e) {
+      return null;
+    }
+  }
 
   // Every top-level product section - native or cross-product - must sit in
   // the same place regardless of which product's page rendered it, or the
@@ -934,17 +946,13 @@ onEachPage(function () {
     insertProductSection(li, slug, order, style.hr);
   }
 
-  Promise.all([
-    ownSlugsPromise,
-    fetch(new URL(SHARED_BASE + 'root-index.json', scope)).then(function (r) { return r.ok ? r.json() : {}; })
-  ])
-    .then(function (results) {
-      var ownSlugs = results[0];
-      var index = results[1];
+  fetch(new URL(SHARED_BASE + 'root-index.json', scope)).then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (index) {
       // _liveSiteBase overrides the LIVE_SITE_BASE fallback declared above,
       // if the mounted root-index.json provides one - falls back to that
       // hardcoded default if this fetch hasn't resolved yet or fails.
       if (index._liveSiteBase) LIVE_SITE_BASE = index._liveSiteBase;
+      var currentSlug = currentSlugFromLocation(LIVE_SITE_BASE);
 
       // Overview/Get Started are plain top-level links, baked into every
       // branch's own mkdocs.yml nav pointing at platform-common's URL at
@@ -969,7 +977,7 @@ onEachPage(function () {
       var products = index.products || {};
       var order = Object.keys(products);
       order.forEach(function (slug) {
-        if (ownSlugs[slug]) return;
+        if (slug === currentSlug) return;
         var product = products[slug];
         fetch(new URL(product.manifestUrl, scope))
           .then(function (r) { return r.ok ? r.json() : null; })
